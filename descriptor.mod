@@ -1,0 +1,17 @@
+version="0.1"
+picture="thumbnail.png"
+tags={
+	"Alternative History"
+	"Events"
+	"Gameplay"
+	"Map"
+	"National Focuses"
+	"Technologies"
+	"Sound"
+	"Translation"
+	"Ideologies"
+	"Military"
+}
+name="Donbass Flames"
+supported_version="1.16.4"
+remote_file_id="3463905875"
