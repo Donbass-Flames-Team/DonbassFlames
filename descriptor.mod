@@ -12,6 +12,7 @@ tags={
 	"Ideologies"
 	"Military"
 }
+replace_path="music"
 name="Donbass Flames"
 supported_version="1.16.5"
 remote_file_id="3463905875"
