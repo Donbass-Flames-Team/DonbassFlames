@@ -1,4 +1,8 @@
 version="0.1"
+replace_path="gfx/loadingscreens"
+replace_path="music"
+replace_path="music/hoi3"
+replace_path="music/hoi2"
 picture="thumbnail.png"
 tags={
 	"Alternative History"
