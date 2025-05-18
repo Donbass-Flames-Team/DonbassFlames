@@ -1,8 +1,4 @@
 version="0.1"
-replace_path="gfx/loadingscreens"
-replace_path="music"
-replace_path="music/hoi3"
-replace_path="music/hoi2"
 picture="thumbnail.png"
 tags={
 	"Alternative History"
@@ -16,7 +12,10 @@ tags={
 	"Ideologies"
 	"Military"
 }
+replace_path="gfx/loadingscreens"
 replace_path="music"
+replace_path="music/hoi3"
+replace_path="music/hoi2"
 name="Donbass Flames"
 supported_version="1.16.5"
 remote_file_id="3463905875"
