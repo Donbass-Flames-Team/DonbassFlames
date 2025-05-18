@@ -1,0 +1,28 @@
+﻿set_technology = {
+	
+}
+
+add_ideas = {
+}
+
+create_faction = "CSTP"
+add_to_faction = BLR
+recruit_character = vladimir_putin
+capital = 558
+
+2013.11.21 = {
+	set_politics = {
+		ruling_party = autoritarian_democracy
+		last_election = "2012.03.04"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		social_democratic = 4 
+		nationalism_group = 12
+		communism = 19
+		socialism = 11
+		autoritarian_democracy = 54
+	}
+
+}

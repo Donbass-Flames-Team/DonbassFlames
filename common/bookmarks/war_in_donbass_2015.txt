@@ -1,0 +1,109 @@
+bookmarks = {
+	bookmark = {
+		name = "DONBASS_WAR_NAME"
+		desc = "DONBASS_WAR_DESC"
+		date = 2015.1.1.12
+		picture = "GFX_select_date_2015"
+		default_country = "UKR"
+		default = yes
+		
+		"UKR"={
+			history = "UKR_EC_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"RUS"={
+			history = "RUS_EC_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+
+			}	
+		}
+		"DPR"={
+			history = "UKR_EC_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+				UKR_Yanukovich_rule
+				UKR_Protests_on_streets
+				UKR_Join_Union_State_project
+			}	
+		}
+		"LPR"={
+			history = "UKR_EC_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+				UKR_Yanukovich_rule
+				UKR_Protests_on_streets
+				UKR_Join_Union_State_project
+			}	
+		}
+
+		#Minor countries
+		"AZV"={
+			history = "UKR_EC_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+				AZV_fight_for_ukraine
+			}
+			focuses = {
+				AZV_batalion_of_azov
+				AZV_assault_on_Mariupol
+			}	
+		}
+		"POL"={
+			history = "UKR_EC_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"MLV"={
+			history = "UKR_EC_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"ROM"={
+			history = "UKR_EC_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"BLR"={
+			history = "UKR_EC_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"TMR"={
+			history = "UKR_EC_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+	}
+}
