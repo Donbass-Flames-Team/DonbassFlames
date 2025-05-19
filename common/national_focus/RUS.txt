@@ -1,0 +1,37 @@
+focus_tree = {
+	id = russia_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 15
+			tag = RUS
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 3000 y = 1350 }
+
+	focus = {
+		id = RUS_putins_rule
+		icon = GFX_focus_RUS
+		cost = 1
+		x = 15
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+}	

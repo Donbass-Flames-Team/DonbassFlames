@@ -1,0 +1,28 @@
+focus_tree = {
+	id = ukraine_focus_before_war
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = UKR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2200 y = 1000 }
+	
+	focus = {
+		id = UKR_yanukovychs_results
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 5
+		x = 13
+		y = 0
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
+		}
+	}
+}

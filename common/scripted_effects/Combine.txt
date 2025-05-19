@@ -1,0 +1,412 @@
+#####
+##### Sector SYSTEM #####
+#####
+
+#COM_loyalty_modifier_increase_effect = { #Called on_weekly to apply the modifier
+	#custom_effect_tooltip = COM_loyalty_modifier_increase_effect_tt
+	#set_temp_variable = { COM_loyalty_total_weekly_modifier_increase = COM_loyalty_modifier_increase } #Get default weekly modifier increase value
+	#multiply_temp_variable = { COM_loyalty_total_weekly_modifier_increase = COM_loyalty_weekly_modifiers_amount } #Multiply default weekly modifier increase by the number of active weekly modifiers
+	#add_to_variable = { COM_loyalty = COM_loyalty_total_weekly_modifier_increase } #Apply the result and add to loyalty
+	#COM_loyalty_clamp_and_update_ui_effect = yes
+#}
+
+#COM_loyalty_modifier_update_gui_tooltip = { #Only updates the tooltip in the decision GUI
+	#ROOT = { set_variable = { COM_loyalty_weekly_modifier_ui = COM_loyalty_modifier_increase } } #Get default weekly modifier increase value
+	#ROOT = { multiply_variable = { COM_loyalty_weekly_modifier_ui = COM_loyalty_weekly_modifiers_amount } } #Multiply default weekly modifier increase by the number of active weekly modifiers
+#}
+
+update_sector_gui_effect = {
+	add_to_variable = {
+		var = update_sector_gui
+		value = 1
+	}
+	clamp_variable = {
+		var = COM_uprising
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM_weekly_resistance
+		min = -10
+		max = 10
+	}
+	clamp_variable = {
+		var = COM_weekly_loyalty
+		min = -10
+		max = 10
+	}
+	
+	#loyalty clamps
+	
+	clamp_variable = {
+		var = COM.loyalty_values^0
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.loyalty_values^1
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.loyalty_values^2
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.loyalty_values^3
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.loyalty_values^4
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.loyalty_values^5
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.loyalty_values^6
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.loyalty_values^7
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.loyalty_values^8
+		min = 0
+		max = 100
+	}
+	
+	#Resistance clamps
+	
+	clamp_variable = {
+		var = COM.resistance_values^0
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.resistance_values^1
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.resistance_values^2
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.resistance_values^3
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.resistance_values^4
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.resistance_values^5
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.resistance_values^6
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.resistance_values^7
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM.resistance_values^8
+		min = 0
+		max = 100
+	}
+}
+
+set_sector_variables = {
+	set_variable = {
+		var = COM_average_global_loyalty
+		value = 0
+		tooltip = setting_up_average_loyalty_tt
+	}
+	set_variable = {
+		var = COM_average_global_resistance
+		value = 0
+		tooltip = setting_up_average_resistance_tt
+	}
+	set_variable = {
+		var = update_sector_gui
+		value = 1
+	}
+	set_variable = { COM_weekly_resistance = 1 }
+	set_variable = { COM_weekly_loyalty = -0.5 }
+}
+
+global_resistance_and_loyalty_check = {
+
+	#Check loyalty average
+	
+	set_variable = {
+		var = COM_average_global_loyalty
+		value = 0
+	}
+	add_to_variable = {
+		var = COM_average_global_loyalty
+		value = COM.loyalty_values^0
+	}
+	add_to_variable = {
+		var = COM_average_global_loyalty
+		value = COM.loyalty_values^1
+	}
+	add_to_variable = {
+		var = COM_average_global_loyalty
+		value = COM.loyalty_values^2
+	}
+	add_to_variable = {
+		var = COM_average_global_loyalty
+		value = COM.loyalty_values^3
+	}
+	add_to_variable = {
+		var = COM_average_global_loyalty
+		value = COM.loyalty_values^4
+	}
+	add_to_variable = {
+		var = COM_average_global_loyalty
+		value = COM.loyalty_values^5
+	}
+	add_to_variable = {
+		var = COM_average_global_loyalty
+		value = COM.loyalty_values^6
+	}
+	add_to_variable = {
+		var = COM_average_global_loyalty
+		value = COM.loyalty_values^7
+	}
+	add_to_variable = {
+		var = COM_average_global_loyalty
+		value = COM.loyalty_values^8
+	}
+	divide_variable = {
+		var = COM_average_global_loyalty
+		value = 9
+	}
+	round_variable = COM_average_global_loyalty
+	
+	#Check resistance average
+	set_variable = {
+		var = COM_average_global_resistance
+		value = 0
+	}
+	add_to_variable = {
+		var = COM_average_global_resistance
+		value = COM.resistance_values^0
+	}
+	add_to_variable = {
+		var = COM_average_global_resistance
+		value = COM.resistance_values^1
+	}
+	add_to_variable = {
+		var = COM_average_global_resistance
+		value = COM.resistance_values^2
+	}
+	add_to_variable = {
+		var = COM_average_global_resistance
+		value = COM.resistance_values^3
+	}
+	add_to_variable = {
+		var = COM_average_global_resistance
+		value = COM.resistance_values^4
+	}
+	add_to_variable = {
+		var = COM_average_global_resistance
+		value = COM.resistance_values^5
+	}
+	add_to_variable = {
+		var = COM_average_global_resistance
+		value = COM.resistance_values^6
+	}
+	add_to_variable = {
+		var = COM_average_global_resistance
+		value = COM.resistance_values^7
+	}
+	add_to_variable = {
+		var = COM_average_global_resistance
+		value = COM.resistance_values^8
+	}
+	divide_variable = {
+		var = COM_average_global_resistance
+		value = 9
+	}
+	round_variable = COM_average_global_resistance
+	
+	clamp_variable = {
+		var = COM_average_global_loyalty
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = COM_average_global_resistance
+		min = 0
+		max = 100
+	}
+}
+
+set_sector_arrays = {
+
+	#Loyalty values
+
+	add_to_array = {
+		array = COM.loyalty_values
+		value = 0
+		#america sector
+		index = 0
+	}
+	add_to_array = {
+		array = COM.loyalty_values
+		value = 10
+		#west europe sector
+		index = 1
+	}
+	add_to_array = {
+		array = COM.loyalty_values
+		value = 10
+		#central europe sector
+		index = 2
+	}
+	add_to_array = {
+		array = COM.loyalty_values
+		value = 2.5
+		#east europe sector
+		index = 3
+	}
+	add_to_array = {
+		array = COM.loyalty_values
+		value = 20
+		#admin sector
+		index = 4
+	}
+	add_to_array = {
+		array = COM.loyalty_values
+		value = 0
+		#middle east sector
+		index = 5
+	}
+	add_to_array = {
+		array = COM.loyalty_values
+		value = 15
+		#central asia sector
+		index = 6
+	}
+	add_to_array = {
+		array = COM.loyalty_values
+		value = 15
+		#south asia sector
+		index = 7
+	}
+	add_to_array = {
+		array = COM.loyalty_values
+		value = 10
+		#east asia sector
+		index = 8
+	}
+	
+	#Resistance values
+	
+	add_to_array = {
+		array = COM.resistance_values
+		value = 100
+		#america sector
+		index = 0
+	}
+	add_to_array = {
+		array = COM.resistance_values
+		value = 65
+		#west europe sector
+		index = 1
+	}
+	add_to_array = {
+		array = COM.resistance_values
+		value = 70
+		#central europe sector
+		index = 2
+	}
+	add_to_array = {
+		array = COM.resistance_values
+		value = 90
+		#east europe sector
+		index = 3
+	}
+	add_to_array = {
+		array = COM.resistance_values
+		value = 50
+		#admin sector
+		index = 4
+	}
+	add_to_array = {
+		array = COM.resistance_values
+		value = 95
+		#middle east sector
+		index = 5
+	}
+	add_to_array = {
+		array = COM.resistance_values
+		value = 75
+		#central asia sector
+		index = 6
+	}
+	add_to_array = {
+		array = COM.resistance_values
+		value = 70
+		#south asia sector
+		index = 7
+	}
+	add_to_array = {
+		array = COM.resistance_values
+		value = 75
+		#east asia sector
+		index = 8
+	}
+}
+
+## Citadel construction
+
+COM_citadel_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = citadel_construction
+		min = 0
+		max = 100
+	}
+	COM_update_ui_effect = yes
+}
+
+## Technology teleportation
+
+COM_technology_teleportation_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = COM_technology_teleportation_value
+		min = 0
+		max = 100
+	}
+	COM_update_ui_effect = yes
+}
+
+## Local resistance
+
+COM_local_resistance_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = COM_local_resistance
+		min = 0
+		max = 100
+	}
+	COM_update_ui_effect = yes
+}
