@@ -1,0 +1,20 @@
+######################################
+category = {
+	name = "SuperEvents"
+	soundeffects = {
+		seven_hour_war
+	}
+	soundeffects = {
+		cascade_resonance_sound
+	}
+	compressor =  {
+		enabled = yes
+		pregain = 5.0
+		postgain = 6.0
+		ratio = 15.0
+		threshold = -15.0
+		attacktime = 0.03
+		releasetime = 0.0
+	}
+}
+}

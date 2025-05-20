@@ -1,0 +1,24 @@
+soundeffect = {
+	name = seven_hour_war
+	loop = no
+	sounds = {
+		sound = seven_hour_war
+	}
+	is3d = no
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.0
+}
+
+soundeffect = {
+	name = cascade_resonance_sound
+	loop = no
+	sounds = {
+		sound = cascade_resonance_sound
+	}
+	is3d = no
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.0
+}
+

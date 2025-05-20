@@ -21,6 +21,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		available = {
+			has_country_flag = WorkInProgress
+		}
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
 		}

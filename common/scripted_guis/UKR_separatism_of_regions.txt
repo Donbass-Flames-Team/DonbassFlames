@@ -1,3 +1,56 @@
 scripted_gui = {
 
+    UKR_separatism = {
+       context_type = decision_category
+	   window_name = "UKR_separatism"
+ 
+        visible = {
+            tag = UKR
+        }
+ 
+		effects = {
+			UKR_separatism_button_click = {
+				if = {
+					limit = { has_variable = show_separatism_in_ukraine_map }
+					clear_variable = show_separatism_in_ukraine_map
+				}
+				else = {
+					set_variable = { show_separatism_in_ukraine_map = 1 }
+				}
+			}
+		}
+
+        triggers = {
+
+        }
+		
+		properties = {
+			
+		}
+    }
+
+    UKR_separatism_map = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "UKR_separatism_map"
+		dirty = show_separatism_in_ukraine_map
+
+		visible = {
+			check_variable = { show_separatism_in_ukraine_map > 0 }
+		}
+		
+		effects = {
+			close_map_button_click = {
+				clear_variable = show_separatism_in_ukraine_map
+		    }
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+		properties = {
+
+		}
+	}
 }

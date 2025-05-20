@@ -1,0 +1,51 @@
+guiTypes = {
+	containerWindowType = {
+		name = "UKR_separatism"
+		size = { width = 142 height = 220 }
+		position = { x = 0 y = 0 }
+	   
+		buttonType {
+			name = "UKR_separatism_button"
+			spriteType = "GFX_ukraine_separatism_btn"
+			position = { x = 115 y = 25 }
+			shortcut = "shift+c"
+			buttonText = "Open map"
+			buttonFont = "hoi_16mbs"
+			pdx_tooltip = "[CAT_OPENING]"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}		   
+    }
+
+	containerWindowType = {
+		name = "UKR_separatism_map"
+		position = { x = 230 y = -10 }
+		size = { width = 1300 height = 770 }
+		orientation = center
+		origo = center
+		moveable = yes
+		
+		instantTextBoxType = {
+			name ="UKR_map_main_title"
+			position = { x = 140 y = 40 }
+			font = "hoi_36header"
+			text = UKR_map_main_title
+			format = centre
+			maxWidth = 700
+		}
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+		
+		buttonType = {
+			name = "close_map_button"
+			position = { x = 1255 y = 12 }
+			quadTextureSprite = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+	}
+}
