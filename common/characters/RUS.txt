@@ -1,0 +1,34 @@
+characters = {
+	vladimir_putin = {
+		name = vladimir_putin
+		portraits = {
+			civilian = {
+				small = "/gfx/leaders/RUS/Vladimir_Putin.dds"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democractic
+			traits = {  
+				№
+			}
+		}
+	}
+
+	sergey_shoigu = {
+		name = sergey_shoigu
+		portraits = {
+			civilian = {
+				small = "/gfx/leaders/RUS/.dds"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+}
