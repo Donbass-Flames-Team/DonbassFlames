@@ -25,7 +25,7 @@ guiTypes = {
 	### MAIN MENU PANEL (upperleft)
 	containerWindowType = {
 		name  ="mainmenu_panel_upperleft"
-		position = { x=0 y =-350 }
+		position = { x=0 y =-200 }
 		show_position = { x=0 y =-1 }
 		animation_type = decelerated
 		animation_time = 1000
@@ -35,7 +35,7 @@ guiTypes = {
 		{
 			name ="frontend_game_logo"
 			spriteType = "GFX_frontend_game_logo"
-			position = { x= 1370 y = 20 }
+			position = { x= 1200 y = 20 }
 			scale = 0.9
 		}
 		
@@ -218,7 +218,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 129 y = 138 }
+			position = { x = 129 y = 300 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_EXIT"			
@@ -248,7 +248,7 @@ guiTypes = {
 
 		positionType = {
 			name = "version_label_subscription_position"
-			position = { x = 1300 y = 70 }
+			position = { x = 1235 y = 159 }
 		}
 		
 		buttonType = {
@@ -292,7 +292,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 129 y = 178 }
+			position = { x = 656 y = 658 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
