@@ -7,6 +7,28 @@ set_country_flag = startup_information_country_info
 	set_technology = {
 		infantry_weapons = 1
 	}
+    
+
+	# Separatism variables
+	set_variable = {
+        var = DPR_separatism_value
+        value = 30
+    }
+
+	set_variable = {
+        var = LPR_separatism_value
+        value = 25
+    }
+
+	set_variable = {
+        var = HPR_separatism_value
+        value = 5
+    }
+
+	set_variable = {
+        var = OPR_separatism_value
+        value = 4
+    }
 	
 	set_politics = {
 		ruling_party = autoritarian_democracy

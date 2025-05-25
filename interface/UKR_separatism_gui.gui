@@ -3,18 +3,85 @@ guiTypes = {
 		name = "UKR_separatism"
 		size = { width = 142 height = 220 }
 		position = { x = 0 y = 0 }
+
+		
+		iconType = {
+		    name = "UKR_separatism_background"
+			spriteType = "GFX_ukraine_background_separatism"
+			position = { x = 7 y = -15 }
+		}
 	   
 		buttonType {
 			name = "UKR_separatism_button"
 			spriteType = "GFX_ukraine_separatism_btn"
-			position = { x = 115 y = 25 }
+			position = { x = 25 y = 5 }
 			shortcut = "shift+c"
-			buttonText = "Open map"
+			buttonText = ""
 			buttonFont = "hoi_16mbs"
 			pdx_tooltip = "[CAT_OPENING]"
 			clicksound = click_ok
 			oversound = ui_menu_over
+		}
+
+		iconType {
+			name = "UKR_separatism_dpr_icon"
+			spriteType = "GFX_ukraine_dpr_icon"
+			position = { x = 415 y = 25 }
+			pdx_tooltip = "[CAT_OPENING]"
 		}		   
+
+		iconType {
+			name = "UKR_separatism_lpr_icon"
+			spriteType = "GFX_ukraine_lpr_icon"
+			position = { x = 415 y = 65 }
+			pdx_tooltip = "[CAT_OPENING]"
+		}
+
+		iconType {
+			name = "UKR_separatism_hpr_icon"
+			spriteType = "GFX_ukraine_hpr_icon"
+			position = { x = 415 y = 105 }
+			pdx_tooltip = "[CAT_OPENING]"
+		}
+
+		iconType {
+			name = "UKR_separatism_opr_icon"
+			spriteType = "GFX_ukraine_opr_icon"
+			position = { x = 415 y = 145 }
+			pdx_tooltip = "[CAT_OPENING]"
+		}
+
+		instantTextBoxType {
+			name = "UKR_separatism_dpr_value"
+			text = "DPR_separatism_value_text"
+			font = "hoi_16mbs"
+			position = { x = 390 y = 40 }
+			pdx_tooltip = "[CAT_OPENING]"
+		}
+
+		instantTextBoxType {
+			name = "UKR_separatism_lpr_value"
+			text = "LPR_separatism_value_text"
+			font = "hoi_16mbs"
+			position = { x = 390 y = 80 }
+			pdx_tooltip = "[CAT_OPENING]"
+		}
+
+		instantTextBoxType {
+			name = "UKR_separatism_hpr_value"
+			text = "HPR_separatism_value_text"
+			font = "hoi_16mbs"
+			position = { x = 390 y = 120 }
+			pdx_tooltip = "[CAT_OPENING]"
+		}
+
+		instantTextBoxType {
+			name = "UKR_separatism_opr_value"
+			text = "OPR_separatism_value_text"
+			font = "hoi_16mbs"
+			position = { x = 390 y = 160 }
+			pdx_tooltip = "[CAT_OPENING]"
+		}
     }
 
 	containerWindowType = {

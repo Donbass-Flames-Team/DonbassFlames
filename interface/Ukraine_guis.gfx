@@ -1,7 +1,32 @@
 spriteTypes = {
-	#superevents
+	#separatism gui
 	spriteType = {
 		name = "GFX_ukraine_separatism_btn"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Ukraine_separatism_btn.png"
+	}
+
+	spriteType = {
+		name = "GFX_ukraine_dpr_icon"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/dpr.png"
+	}
+
+	spriteType = {
+		name = "GFX_ukraine_hpr_icon"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/hpr.png"
+	}
+
+	spriteType = {
+		name = "GFX_ukraine_lpr_icon"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/lpr.png"
+	}
+
+	spriteType = {
+		name = "GFX_ukraine_opr_icon"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/opr.png"
+	}
+
+	spriteType = {
+		name = "GFX_ukraine_background_separatism"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Background_separatism.png"
 	}
 }

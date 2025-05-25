@@ -1,0 +1,44 @@
+
+## DPR resistance
+
+UKR_dpr_separatism_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = DPR_separatism_value
+		min = 0
+		max = 100
+	}
+	UKR_update_ui_effect = yes
+}
+
+## LPR resistance
+
+UKR_lpr_separatism_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = LPR_separatism_value
+		min = 0
+		max = 100
+	}
+	UKR_update_ui_effect = yes
+}
+
+## HPR resistance
+
+UKR_lpr_separatism_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = HPR_separatism_value
+		min = 0
+		max = 100
+	}
+	UKR_update_ui_effect = yes
+}
+
+## OPR resistance
+
+UKR_lpr_separatism_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = OPR_separatism_value
+		min = 0
+		max = 100
+	}
+	UKR_update_ui_effect = yes
+}
