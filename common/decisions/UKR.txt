@@ -2,3 +2,43 @@ UKR_separatism_decision = {
 
 }
 
+UKR_maidan_decision = {
+
+    UKR_suppress_protests = {
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			tag = UKR
+		}
+		
+	    fire_only_once = no
+		days_re_enable = 60
+		cost = 75
+		complete_effect = {
+		    
+		}
+		ai_will_do = {
+			factor = 75
+		}
+	}
+
+    UKR_carry_out_mass_arrests = {
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			tag = UKR
+		}
+		
+	    fire_only_once = no
+		days_re_enable = 60
+		cost = 75
+		complete_effect = {
+		    
+		}
+		ai_will_do = {
+			factor = 75
+		}
+	}
+}

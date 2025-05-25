@@ -26,28 +26,35 @@ guiTypes = {
 		iconType {
 			name = "UKR_separatism_dpr_icon"
 			spriteType = "GFX_ukraine_dpr_icon"
-			position = { x = 415 y = 25 }
+			position = { x = 415 y = 5 }
 			pdx_tooltip = "[CAT_OPENING]"
 		}		   
 
 		iconType {
 			name = "UKR_separatism_lpr_icon"
 			spriteType = "GFX_ukraine_lpr_icon"
-			position = { x = 415 y = 65 }
+			position = { x = 415 y = 45 }
 			pdx_tooltip = "[CAT_OPENING]"
 		}
 
 		iconType {
 			name = "UKR_separatism_hpr_icon"
 			spriteType = "GFX_ukraine_hpr_icon"
-			position = { x = 415 y = 105 }
+			position = { x = 415 y = 85 }
 			pdx_tooltip = "[CAT_OPENING]"
 		}
 
 		iconType {
 			name = "UKR_separatism_opr_icon"
 			spriteType = "GFX_ukraine_opr_icon"
-			position = { x = 415 y = 145 }
+			position = { x = 415 y = 125 }
+			pdx_tooltip = "[CAT_OPENING]"
+		}
+
+		iconType {
+			name = "UKR_separatism_zkr_icon"
+			spriteType = "GFX_ukraine_zkr_icon"
+			position = { x = 415 y = 165 }
 			pdx_tooltip = "[CAT_OPENING]"
 		}
 
@@ -55,7 +62,7 @@ guiTypes = {
 			name = "UKR_separatism_dpr_value"
 			text = "DPR_separatism_value_text"
 			font = "hoi_16mbs"
-			position = { x = 390 y = 40 }
+			position = { x = 390 y = 20 }
 			pdx_tooltip = "[CAT_OPENING]"
 		}
 
@@ -63,7 +70,7 @@ guiTypes = {
 			name = "UKR_separatism_lpr_value"
 			text = "LPR_separatism_value_text"
 			font = "hoi_16mbs"
-			position = { x = 390 y = 80 }
+			position = { x = 390 y = 60 }
 			pdx_tooltip = "[CAT_OPENING]"
 		}
 
@@ -71,7 +78,7 @@ guiTypes = {
 			name = "UKR_separatism_hpr_value"
 			text = "HPR_separatism_value_text"
 			font = "hoi_16mbs"
-			position = { x = 390 y = 120 }
+			position = { x = 390 y = 100 }
 			pdx_tooltip = "[CAT_OPENING]"
 		}
 
@@ -79,7 +86,15 @@ guiTypes = {
 			name = "UKR_separatism_opr_value"
 			text = "OPR_separatism_value_text"
 			font = "hoi_16mbs"
-			position = { x = 390 y = 160 }
+			position = { x = 390 y = 140 }
+			pdx_tooltip = "[CAT_OPENING]"
+		}
+
+	    instantTextBoxType {
+			name = "UKR_separatism_zkr_value"
+			text = "ZKR_separatism_value_text"
+			font = "hoi_16mbs"
+			position = { x = 390 y = 180 }
 			pdx_tooltip = "[CAT_OPENING]"
 		}
     }

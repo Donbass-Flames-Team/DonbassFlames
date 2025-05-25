@@ -1,5 +1,5 @@
 
-## DPR resistance
+## DPR separatism
 
 UKR_dpr_separatism_clamp_and_update_ui_effect = {
 	clamp_variable = {
@@ -10,7 +10,7 @@ UKR_dpr_separatism_clamp_and_update_ui_effect = {
 	UKR_update_ui_effect = yes
 }
 
-## LPR resistance
+## LPR separatism
 
 UKR_lpr_separatism_clamp_and_update_ui_effect = {
 	clamp_variable = {
@@ -21,9 +21,9 @@ UKR_lpr_separatism_clamp_and_update_ui_effect = {
 	UKR_update_ui_effect = yes
 }
 
-## HPR resistance
+## HPR separatism
 
-UKR_lpr_separatism_clamp_and_update_ui_effect = {
+UKR_hpr_separatism_clamp_and_update_ui_effect = {
 	clamp_variable = {
 		var = HPR_separatism_value
 		min = 0
@@ -32,11 +32,22 @@ UKR_lpr_separatism_clamp_and_update_ui_effect = {
 	UKR_update_ui_effect = yes
 }
 
-## OPR resistance
+## OPR separatism
 
-UKR_lpr_separatism_clamp_and_update_ui_effect = {
+UKR_opr_separatism_clamp_and_update_ui_effect = {
 	clamp_variable = {
 		var = OPR_separatism_value
+		min = 0
+		max = 100
+	}
+	UKR_update_ui_effect = yes
+}
+
+## ZKR separatism
+
+UKR_zkr_separatism_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = ZKR_separatism_value
 		min = 0
 		max = 100
 	}

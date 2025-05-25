@@ -29,6 +29,11 @@ set_country_flag = startup_information_country_info
         var = OPR_separatism_value
         value = 4
     }
+
+	set_variable = {
+        var = ZKR_separatism_value
+        value = 1
+    }
 	
 	set_politics = {
 		ruling_party = autoritarian_democracy
