@@ -1,0 +1,18 @@
+﻿###########################
+# Ukranian Events
+###########################
+
+add_namespace = ukraine
+
+country_event = {
+	id = ukraine.1
+	title = ukraine.1.t
+	desc = ukraine.1.d
+	picture = [GetHitlerHandshakeEventPicture]
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ukraine.1.a
+	}
+}

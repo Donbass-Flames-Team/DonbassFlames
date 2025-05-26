@@ -1,0 +1,20 @@
+################
+##### RUS ######
+################
+# made in kaja
+
+RUS_support_separatism_decision = {
+
+	priority = 85
+	
+	icon = SOV_propaganda
+	
+	allowed = {
+		original_tag = RUS 
+	}
+	picture = GFX_decision_RUS_separatism
+
+	visible = {
+        tag = RUS
+	}
+}

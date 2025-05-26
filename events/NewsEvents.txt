@@ -1,0 +1,21 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = news_events
+
+# 
+news_event = {
+	id = news_events.1
+	title = news_events.1.t
+	desc = news_events.1.d
+	picture = when
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_events.1.a
+	}
+}

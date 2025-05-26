@@ -5,6 +5,8 @@ ideologies = {
 		types = {
 			liberalism = {
 			}
+			libertarianism = {
+			}
 		}
 
 		dynamic_faction_names = {
@@ -16,7 +18,7 @@ ideologies = {
 			"FACTION_NAME_LIBERAL_DEMOCRATIC_6"
 		}
 
-		color = { 52 125 235 }
+		color = { 27 40 114 }
 
 		rules = {
 			can_create_collaboration_government = no
@@ -151,7 +153,7 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 
 		modifiers = {
-			generate_wargoal_tension = 1.00
+			generate_wargoal_tension = 1.05
 			join_faction_tension = 0.80
 			lend_lease_tension = 0.50
 			send_volunteers_tension = 0.50
@@ -280,6 +282,8 @@ ideologies = {
 
 			autoritarian_democractic = {
 			}
+			populism = {
+			}
 		}
 
 		dynamic_faction_names = {
@@ -327,7 +331,7 @@ ideologies = {
 
 	nationalism_group = {
 		types = {
-			nationalistic = {
+			nationalism = {
 			}
 		}
 
