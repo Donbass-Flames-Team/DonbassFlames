@@ -1,8 +1,18 @@
 spriteTypes = {
 
 	spriteType = { 
-		name = "GFX_placeholder"
-		texturefile = "gfx/interface/Placeholder.dds"
+		name = "GFX_startgui_background"
+		texturefile = "gfx/interface/startgui/Startgui_background.dds"
+	}
+	
+	spriteType = { 
+		name = "GFX_startgui_button"
+		texturefile = "gfx/interface/startgui/Startgui_button.dds"
+	}
+	
+	spriteType = { 
+		name = "GFX_ukraine_background"
+		texturefile = "gfx/interface/startgui/Startgui_ukraine_background.dds"
 	}
 
 }

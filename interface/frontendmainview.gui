@@ -188,29 +188,29 @@ guiTypes = {
 			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 129 y = 18 }
-			quadTextureSprite ="GFX_main_lobby_button"
+			position = { x = 129 y = -30 }
+			quadTextureSprite ="GFX_main_lobby_button_singlplayer"
 			font = "hoi_24header"			
-			text = "FE_SINGLE_PLAYER"				
+			#text = "FE_SINGLE_PLAYER"				
 			clicksound = click_default			
 			oversound = ui_menu_over
 		}
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 129 y = 58}
-			quadTextureSprite ="GFX_main_lobby_button"
+			position = { x = 129 y = 105}
+			quadTextureSprite ="GFX_main_lobby_button_multiplayer"
 			font = "hoi_24header"			
-			text = "FE_MULTI_PLAYER"			
+			#text = "FE_MULTI_PLAYER"			
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 		
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 129 y = 98 }
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "OPTIONS"
+			position = { x = 129 y = 240 }
+			quadTextureSprite ="GFX_main_lobby_button_settings"	
+			#buttonText = "OPTIONS"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -218,10 +218,10 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 129 y = 138 }
-			quadTextureSprite ="GFX_main_lobby_button"
+			position = { x = 129 y = 375 }
+			quadTextureSprite ="GFX_main_lobby_button_exit"
 			font = "hoi_24header"			
-			text = "FE_EXIT"			
+			#text = "FE_EXIT"			
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -253,17 +253,15 @@ guiTypes = {
 		
 		buttonType = {
 			name = "career_profile_button"
-			position = { x = 16 y = 138 }
+			position = { x = 300 y = 515 }
 			quadTextureSprite ="discord"
-			buttonText = "MENU_BAR_CAREER_PROFILE"
-			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 		
 		iconType = {
 			name = "career_profile_button_star"
-			position = { x = -37 y = 155 }
+			position = { x = -720 y = 50 }
 			spriteType = "GFX_icon_best_in_career"
 			centerposition = yes
 			orientation = upper_right
@@ -272,28 +270,24 @@ guiTypes = {
 		
 		buttonType = {
 			name = "friends_button"
-			position = { x = 16 y = 178 }
+			position = { x = -33 y = 515 }
 			quadTextureSprite ="discord"
-			buttonText = "MENU_BAR_FRIENDS"
-			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 
 		ButtonType = {
 			name = "credits_button"
-			position = {  x = 16 y = 218 }
+			position = { x = 133 y = 515 }
 			quadTextureSprite ="discord"	
-			buttonText = "FE_CREDITS"
-			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 129 y = 178 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			position = { x = 1499 y = 638 }
+			quadTextureSprite ="discord"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
 		}
@@ -370,30 +364,39 @@ guiTypes = {
 			position = { x=48 y=-17 }
             ButtonType = {
                 name = "discord_button"
-                position = { x=-672 y=-425 }
+                position = { x=-720 y=-490 }
                 quadTextureSprite ="discord"
                 #clicksound = click_default
                 pdx_tooltip = "MENU_DISCORD"
                 web_link = "discord.gg/S78gN83k2Q"
-                scale = 0.9
+                scale = 1
             }
 			ButtonType = {
                 name = "telegram_button"
-                position = { x=-672 y=-155 }
-                quadTextureSprite ="discord"
+                position = { x=-720 y=-355 }
+                quadTextureSprite ="GFX_telegram_icon"
                 #clicksound = click_default
                 pdx_tooltip = "MENU_DISCORD"
                 web_link = "discord.gg/S78gN83k2Q"
-                scale = 0.9
+                scale = 1
             }
 			ButtonType = {
                 name = "youtube_button"
-                position = { x=-672 y=155 }
-                quadTextureSprite ="discord"
+                position = { x=-720 y=-220 }
+                quadTextureSprite ="youtube"
+                #clicksound = click_default
+                pdx_tooltip = "MENU_DISCORD"
+                web_link = "https://youtube.com/@donbassflames?si=oAXcDqGUVgPU-rSr"
+                scale = 1
+            }
+			ButtonType = {
+                name = "tiktok_button"
+                position = { x=-720 y=-85 }
+                quadTextureSprite ="GFX_tiktok_icon"
                 #clicksound = click_default
                 pdx_tooltip = "MENU_DISCORD"
                 web_link = "discord.gg/S78gN83k2Q"
-                scale = 0.9
+                scale = 1
             }
         }
 	}

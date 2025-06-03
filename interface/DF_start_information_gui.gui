@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "Start_gui"
-		position = { x = 230 y = -10 }
+		position = { x = 0 y = 0 }
 		size = { width = 1300 height = 770 }
 		orientation = center
 		origo = center
@@ -18,16 +18,46 @@ guiTypes = {
 		
 		background = {
 			name = "Background"
-			quadTextureSprite = "GFX_tiled_bg"
+			quadTextureSprite = "GFX_startgui_background"
+		}
+		
+		background = {
+			name = "Ukraine_Background"
+			quadTextureSprite = "GFX_ukraine_background"
+			position = { x = 25 y = 15 }
 		}
 		
 		buttonType = {
 			name = "close_startgui_button"
-			position = { x = 1255 y = 12 }
+			position = { x = 1260 y = 32 }
 			quadTextureSprite = "GFX_closebutton"
 			pdx_tooltip = "CLOSE"
 			clicksound = click_close
 			shortcut = "ESCAPE"
+		}
+		
+		buttonType = {
+			name = "information_country_startgui_button"
+			position = { x = 160 y = 700 }
+			quadTextureSprite = "GFX_startgui_button"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+		
+		buttonType = {
+			name = "information_mod_startgui_button"
+			position = { x = 510 y = 700 }
+			quadTextureSprite = "GFX_startgui_button"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+		
+		buttonType = {
+			name = "play_startgui_button"
+			position = { x = 860 y = 700 }
+			quadTextureSprite = "GFX_startgui_button"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
 		}
 	}
 }

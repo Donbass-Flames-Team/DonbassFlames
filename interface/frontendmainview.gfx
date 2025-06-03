@@ -7,6 +7,51 @@ spriteTypes = {
 		noOfFrames = 3
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 	}
+	
+	textSpriteType = {
+		name = "GFX_main_lobby_button_singlplayer"
+		textureFile = "gfx/interface/singlplayer_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	
+	textSpriteType = {
+		name = "GFX_main_lobby_button_multiplayer"
+		textureFile = "gfx/interface/multiplayer_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	
+	textSpriteType = {
+		name = "GFX_main_lobby_button_settings"
+		textureFile = "gfx/interface/options_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	
+	textSpriteType = {
+		name = "GFX_main_lobby_button_exit"
+		textureFile = "gfx/interface/exit_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	
+	textSpriteType = {
+		name = "GFX_main_lobby_button_exit"
+		textureFile = "gfx/interface/exit_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	
+	SpriteType = {
+		name = "GFX_tiktok_icon"
+		textureFile = "gfx/interface/tiktok_icon.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_telegram_icon"
+		textureFile = "gfx/interface/telegram_icon.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_main_lobby_button_highlight"
