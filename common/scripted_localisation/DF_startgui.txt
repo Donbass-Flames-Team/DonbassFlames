@@ -1,0 +1,35 @@
+defined_text = {
+    name = COUNTRY_INFO_STARTGUI
+
+    text = {
+        trigger = {
+            tag = UKR
+        }
+        localization_key = "country_info_startgui_ukr"
+    }
+
+    text = {
+        trigger = {
+            tag = RUS
+        }
+        localization_key = "country_info_startgui_rus"
+    }
+}
+
+defined_text = {
+    name = get_background_startgui
+
+    text = {
+        trigger = {
+            tag = UKR
+        }
+        localization_key = "GFX_ukraine_background"
+    }
+
+    text = {
+        trigger = {
+            tag = RUS
+        }
+        localization_key = "GFX_russia_background"
+    }
+}

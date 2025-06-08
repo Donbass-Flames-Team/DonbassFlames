@@ -6,21 +6,19 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes
-		
-		instantTextBoxType = {
-			name ="DF_modinfo_title"
-			position = { x = 140 y = 40 }
-			font = "hoi_36header"
-			text = Half life
-			format = centre
-			maxWidth = 700
+
+		iconType = {
+		    name = "Startgui_text"
+			spriteType = "GFX_Startgui_text_RUS"
+			position = { x = 300 y = 225 }
+			scale = 0.8
 		}
 
 		iconType = {
-		    name = "UKR_separatism_background"
-			spriteType = "GFX_frontend_game_logo"
+		    name = "Startgui_logo"
+			spriteType = "GFX_logo_startgui"
 			position = { x = 455 y = 45 }
-			scale = 0.7
+			scale = 0.8
 		}
 		
 		background = {
@@ -29,8 +27,164 @@ guiTypes = {
 		}
 		
 		background = {
-			name = "Ukraine_Background"
-			quadTextureSprite = "GFX_ukraine_background"
+			name = "main_Background"
+			quadTextureSprite = "GFX_main_startgui_background"
+			position = { x = 25 y = 15 }
+		}
+		
+		buttonType = {
+			name = "close_startgui_button"
+			position = { x = 1260 y = 32 }
+			quadTextureSprite = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+		
+		buttonType = {
+			name = "information_country_startgui_button"
+			position = { x = 160 y = 700 }
+			quadTextureSprite = "GFX_startgui_button"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "COUNTRY INFO"
+		}
+		
+		buttonType = {
+			name = "play_startgui_button"
+			position = { x = 510 y = 700 }
+			quadTextureSprite = "GFX_startgui_button"
+			pdx_tooltip = "PLAY"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "PLAY"
+		}
+				
+		buttonType = {
+			name = "information_mod_startgui_button"
+			position = { x = 860 y = 700 }
+			quadTextureSprite = "GFX_startgui_button"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "MOD INFO"
+		}
+	}
+
+	containerWindowType = {
+		name = "Start_gui_country_info"
+		position = { x = 0 y = 0 }
+		size = { width = 1300 height = 770 }
+		orientation = center
+		origo = center
+		moveable = yes
+		
+		instantTextBoxType = {
+			name ="DF_modinfo_title"
+			position = { x = 380 y = 240 }
+			font = "hoi_24header"
+			text = "[COUNTRY_INFO_STARTGUI]"
+			format = centre
+			maxWidth = 750
+		}
+
+		iconType = {
+		    name = "startgui_leader_frame"
+			spriteType = "GFX_startgui_leader_frame"
+			position = { x = 85 y = 215 }
+			scale = 0.8
+		}
+
+		iconType = {
+		    name = "startgui_country_name"
+			spriteType = "GFX_startgui_UKR_name"
+			position = { x = 395 y = 105 }
+		}
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_startgui_background"
+		}
+		
+		background = {
+			name = "country_background"
+			quadTextureSprite = "GFX_russia_background"
+			position = { x = 25 y = 15 }
+		}
+		
+		buttonType = {
+			name = "close_startgui_button"
+			position = { x = 1260 y = 32 }
+			quadTextureSprite = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+		
+		buttonType = {
+			name = "information_country_startgui_button"
+			position = { x = 160 y = 700 }
+			quadTextureSprite = "GFX_startgui_button"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "COUNTRY INFO"
+		}
+		
+		buttonType = {
+			name = "play_startgui_button"
+			position = { x = 510 y = 700 }
+			quadTextureSprite = "GFX_startgui_button"
+			pdx_tooltip = "PLAY"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "PLAY"
+		}
+				
+		buttonType = {
+			name = "information_mod_startgui_button"
+			position = { x = 860 y = 700 }
+			quadTextureSprite = "GFX_startgui_button"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "MOD INFO"
+		}
+	}
+
+	containerWindowType = {
+		name = "Start_gui_mod_info"
+		position = { x = 0 y = 0 }
+		size = { width = 1300 height = 770 }
+		orientation = center
+		origo = center
+		moveable = yes
+		
+		instantTextBoxType = {
+			name ="DF_modinfo_developers"
+			position = { x = 420 y = 200 }
+			font = "hoi_36header"
+			text = DEVELOPERS
+			format = centre
+			maxWidth = 700
+		}
+
+		iconType = {
+		    name = "UKR_logo_modinfo"
+			spriteType = "GFX_logo_startgui"
+			position = { x = 255 y = 125 }
+			scale = 1
+		}
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_startgui_background"
+		}
+		
+		background = {
+			name = "mod_info_Background"
+			quadTextureSprite = "GFX_modinfo_background"
 			position = { x = 25 y = 15 }
 		}
 		

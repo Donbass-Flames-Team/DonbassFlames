@@ -9,10 +9,45 @@ spriteTypes = {
 		name = "GFX_startgui_button"
 		texturefile = "gfx/interface/startgui/Startgui_button.dds"
 	}
-	
+
+	spriteType = { 
+		name = "GFX_main_startgui_background"
+		texturefile = "gfx/interface/startgui/Startgui_main_background.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_modinfo_background"
+		texturefile = "gfx/interface/startgui/Startgui_modinfo_background.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_logo_startgui"
+		texturefile = "gfx/interface/startgui/Startgui_logo.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_Startgui_text_RUS"
+		texturefile = "gfx/interface/startgui/Startgui_text_RUS.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_startgui_leader_frame"
+		texturefile = "gfx/interface/startgui/Startgui_leader_frame.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_startgui_UKR_name"
+		texturefile = "gfx/interface/startgui/Ukraine_country_info.dds"
+	}
+
 	spriteType = { 
 		name = "GFX_ukraine_background"
 		texturefile = "gfx/interface/startgui/Startgui_ukraine_background.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_russia_background"
+		texturefile = "gfx/interface/startgui/Startgui_russia_background.dds"
 	}
 
 }
