@@ -8,12 +8,19 @@ guiTypes = {
 		moveable = yes
 		
 		instantTextBoxType = {
-			name ="DF_main_title"
+			name ="DF_modinfo_title"
 			position = { x = 140 y = 40 }
 			font = "hoi_36header"
 			text = Half life
 			format = centre
 			maxWidth = 700
+		}
+
+		iconType = {
+		    name = "UKR_separatism_background"
+			spriteType = "GFX_frontend_game_logo"
+			position = { x = 455 y = 45 }
+			scale = 0.7
 		}
 		
 		background = {
@@ -42,22 +49,28 @@ guiTypes = {
 			quadTextureSprite = "GFX_startgui_button"
 			pdx_tooltip = "CLOSE"
 			clicksound = click_close
-		}
-		
-		buttonType = {
-			name = "information_mod_startgui_button"
-			position = { x = 510 y = 700 }
-			quadTextureSprite = "GFX_startgui_button"
-			pdx_tooltip = "CLOSE"
-			clicksound = click_close
+			font = "hoi_36header"			
+			text = "COUNTRY INFO"
 		}
 		
 		buttonType = {
 			name = "play_startgui_button"
+			position = { x = 510 y = 700 }
+			quadTextureSprite = "GFX_startgui_button"
+			pdx_tooltip = "PLAY"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "PLAY"
+		}
+				
+		buttonType = {
+			name = "information_mod_startgui_button"
 			position = { x = 860 y = 700 }
 			quadTextureSprite = "GFX_startgui_button"
 			pdx_tooltip = "CLOSE"
 			clicksound = click_close
+			font = "hoi_36header"			
+			text = "MOD INFO"
 		}
 	}
 }

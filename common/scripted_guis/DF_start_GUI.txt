@@ -24,7 +24,13 @@ scripted_gui = {
                     value = 1
                 }
 		    }
-			
+
+			play_startgui_button_click = {
+				set_variable = {
+                    var = show_startgui
+                    value = 1
+                }
+		    }
 		}
 		
 		dynamic_lists = {
@@ -36,5 +42,4 @@ scripted_gui = {
 		}
 	}
 	
-
 }
