@@ -106,15 +106,6 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes
-		
-		instantTextBoxType = {
-			name ="UKR_map_main_title"
-			position = { x = 140 y = 40 }
-			font = "hoi_36header"
-			text = UKR_map_main_title
-			format = centre
-			maxWidth = 700
-		}
 
 		fade_time = 100
 		moveable = yes
@@ -124,12 +115,18 @@ guiTypes = {
 
 		background = {
 			name = "Background"
+			quadTextureSprite = "GFX_startgui_background"
+		}
+
+		background = {
+			name = "Background"
 			quadTextureSprite = "GFX_ukraine_separatism_map"
+			position = { x = 27 y = 27 }
 		}
 		
 		buttonType = {
 			name = "close_map_button"
-			position = { x = 1225 y = 12 }
+			position = { x = 1265 y = 30 }
 			quadTextureSprite = "GFX_closebutton"
 			pdx_tooltip = "CLOSE"
 			clicksound = click_close
