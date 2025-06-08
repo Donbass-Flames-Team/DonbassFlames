@@ -567,7 +567,7 @@ guiTypes = {
 			buttonType = {
 				name = "button_speeddown"
 				quadTextureSprite ="GFX_zoom_out"
-				position = { x = 58 y = 1 }
+				position = { x = 57 y = 1 }
 				shortcut = "KP_MINUS"
 				pdx_tooltip = "SPEED_DECREASE"
 				clicksound = time_down
@@ -577,7 +577,7 @@ guiTypes = {
 			buttonType = {
 				name = "button_speedstep1"
 				quadTextureSprite ="GFX_speed_step"
-				position = { x=94 y =27 }
+				position = { x=95 y =27 }
 				clicksound = click_default
 			}
 			
@@ -612,7 +612,7 @@ guiTypes = {
 			buttonType = {
 				name = "button_speedup"
 				quadTextureSprite ="GFX_zoom_in"
-				position = { x = 233 y =1 }
+				position = { x = 234 y =1 }
 				shortcut = "KP_PLUS"
 				pdx_tooltip = "SPEED_INCREASE"
 				clicksound = time_up
@@ -636,7 +636,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "menu_button"
-			position = { x = -35 y = 7 }
+			position = { x = -35 y = 6 }
 			quadTextureSprite ="GFX_menu_button"
 			buttonText = ""
 			buttonFont = "Main_14_black"
@@ -661,7 +661,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "achievements_button"
-			position = { x = -131 y = 67 }
+			position = { x = -131 y = 62 }
 			quadTextureSprite ="GFX_achievements_button"
 			buttonText = ""
 			buttonFont = "Main_14_black"
@@ -672,7 +672,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "playlist_button"
-			position = { x = -132 y = 31 }
+			position = { x = -133 y = 31 }
 			quadTextureSprite ="GFX_playlist_button"
 			buttonText = ""
 			buttonFont = "Main_14_black"
@@ -684,7 +684,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "dismissed_alerts_button"
-			position = { x = -35 y = 62 }
+			position = { x = -34 y = 62 }
 			quadTextureSprite ="GFX_show_dismissed_alerts_icon"
 			buttonText = ""
 			buttonFont = "Main_14_black"
@@ -976,7 +976,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "navy_button"
-				position = { x = -226 y = 8 }
+				position = { x = -227 y = 14 }
 				quadTextureSprite ="GFX_navyoverview_button"
 				Orientation = "UPPER_right"
 				shortcut = "p"
@@ -986,7 +986,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "air_button"
-				position = { x = -180 y = 8 }
+				position = { x = -179 y = 14 }
 				quadTextureSprite ="GFX_airoverview_button"
 				Orientation = "UPPER_right"
 				shortcut = "l"
