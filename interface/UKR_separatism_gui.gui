@@ -115,19 +115,39 @@ guiTypes = {
 			format = centre
 			maxWidth = 700
 		}
-		
+
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+
 		background = {
 			name = "Background"
-			quadTextureSprite = "GFX_tiled_bg"
+			quadTextureSprite = "GFX_ukraine_separatism_map"
 		}
 		
 		buttonType = {
 			name = "close_map_button"
-			position = { x = 1255 y = 12 }
+			position = { x = 1225 y = 12 }
 			quadTextureSprite = "GFX_closebutton"
 			pdx_tooltip = "CLOSE"
 			clicksound = click_close
 			shortcut = "ESCAPE"
+		}
+
+		buttonType = {
+			name = "crimea_button"
+			position = { x = 461 y = 540 }
+			quadTextureSprite = "GFX_crimea_seapartism_gui"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "donetsk_button"
+			position = { x = 628 y = 352 }
+			quadTextureSprite = "GFX_donetsk_seapartism_gui"
+			clicksound = click_close
 		}
 	}
 }

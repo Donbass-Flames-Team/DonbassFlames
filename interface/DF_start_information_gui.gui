@@ -5,7 +5,7 @@ guiTypes = {
 		size = { width = 1300 height = 770 }
 		orientation = center
 		origo = center
-		moveable = yes
+		moveable = no
 
 		iconType = {
 		    name = "Startgui_text"
@@ -78,7 +78,7 @@ guiTypes = {
 		size = { width = 1300 height = 770 }
 		orientation = center
 		origo = center
-		moveable = yes
+		moveable = no
 		
 		instantTextBoxType = {
 			name ="DF_modinfo_title"
@@ -110,7 +110,7 @@ guiTypes = {
 		background = {
 			name = "country_background"
 			quadTextureSprite = "GFX_russia_background"
-			position = { x = 25 y = 15 }
+			position = { x = 25 y = 25 }
 		}
 		
 		buttonType = {
@@ -159,7 +159,7 @@ guiTypes = {
 		size = { width = 1300 height = 770 }
 		orientation = center
 		origo = center
-		moveable = yes
+		moveable = no
 		
 		instantTextBoxType = {
 			name ="DF_modinfo_developers"

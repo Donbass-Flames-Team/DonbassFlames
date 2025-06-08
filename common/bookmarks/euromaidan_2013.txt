@@ -34,26 +34,16 @@ bookmarks = {
 
 		#Minor countries
 		"POL"={
-			history = "UKR_EC_DESC"
+			history = "POL_EC_DESC"
 			ideology = neutrality
 			minor = yes
 			ideas = {
-			}
-			focuses = {
-			}	
-		}
-		"MLV"={
-			history = "UKR_EC_DESC"
-			ideology = neutrality
-			minor = yes
-			ideas = {
-				MLV_Transnistria_problem
 			}
 			focuses = {
 			}	
 		}
 		"ROM"={
-			history = "UKR_EC_DESC"
+			history = "ROM_EC_DESC"
 			ideology = neutrality
 			minor = yes
 			ideas = {
@@ -62,7 +52,16 @@ bookmarks = {
 			}	
 		}
 		"BLR"={
-			history = "UKR_EC_DESC"
+			history = "BLR_EC_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"MLV"={
+			history = "MLV_EC_DESC"
 			ideology = neutrality
 			minor = yes
 			ideas = {
@@ -71,7 +70,7 @@ bookmarks = {
 			}	
 		}
 		"TMR"={
-			history = "UKR_EC_DESC"
+			history = "TMR_EC_DESC"
 			ideology = neutrality
 			minor = yes
 			ideas = {

@@ -34,4 +34,125 @@ spriteTypes = {
 		name = "GFX_ukraine_background_separatism"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Background_separatism.png"
 	}
+
+	spriteType = {
+		name = "GFX_ukraine_separatism_map"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Ukraine_separatism_background.png"
+	}
+
+    # Regions
+	spriteType = {
+		name = "GFX_crimea"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Crimea.png"
+	}
+
+	spriteType = {
+		name = "GFX_crimea_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Crimea.png"
+	}
+
+	spriteType = {
+		name = "GFX_crimea_captured_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Crimea_captured.png"
+	}
+
+	spriteType = {
+		name = "GFX_donetsk_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Donetsk.png"
+	}
+
+	spriteType = {
+		name = "GFX_donetsk_captured_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Donetsk_captured.png"
+	}
+	
+	spriteType = {
+		name = "GFX_herson_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Herson.png"
+	}
+
+	spriteType = {
+		name = "GFX_herson_captured_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Herson_captured.png"
+	}
+
+	spriteType = {
+		name = "GFX_kharkov_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Kharkov.png"
+	}
+
+	spriteType = {
+		name = "GFX_kharkov_captured_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Kharkov_captured.png"
+	}
+
+	spriteType = {
+		name = "GFX_luhansk_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Luhansk.png"
+	}
+
+	spriteType = {
+		name = "GFX_luhansk_captured_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Luhansk_captured.png"
+	}
+
+	spriteType = {
+		name = "GFX_mid_ukraine_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Mid_ukraine.png"
+	}
+
+	spriteType = {
+		name = "GFX_mid_ukraine_captured_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Mid_ukraine_captured.png"
+	}
+
+	spriteType = {
+		name = "GFX_nikolaev_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Nikolaev.png"
+	}
+
+	spriteType = {
+		name = "GFX_nikolaev_captured_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Nikolaev_captured.png"
+	}
+
+	spriteType = {
+		name = "GFX_odessa_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Odessa.png"
+	}
+
+	spriteType = {
+		name = "GFX_odessa_captured_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Odessa_captured.png"
+	}
+
+	spriteType = {
+		name = "GFX_zakarpatie_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Zakarpatie.png"
+	}
+
+	spriteType = {
+		name = "GFX_zakarpatie_captured_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Zakarpatie_captured.png"
+	}
+
+	spriteType = {
+		name = "GFX_zaporozhie_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Zaporozhie.png"
+	}
+
+	spriteType = {
+		name = "GFX_zaporozhie_captured_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Zaporozhie_captured.png"
+	}
+
+	spriteType = {
+		name = "GFX_western_ukraine_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Western_ukraine.png"
+	}
+
+	spriteType = {
+		name = "GFX_western_ukraine_captured_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Western_ukraine_captured.png"
+	}
 }

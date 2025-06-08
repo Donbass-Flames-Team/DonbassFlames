@@ -126,15 +126,15 @@ ideologies = {
 		}
 
 		dynamic_faction_names = {
-			"FACTION_NAME_CONSERVATISM_DEMOCRATIC_1"
-			"FACTION_NAME_CONSERVATISM_DEMOCRATIC_2"
-			"FACTION_NAME_CONSERVATISM_DEMOCRATIC_3"
-			"FACTION_NAME_CONSERVATISM_DEMOCRATIC_4"
-			"FACTION_NAME_CONSERVATISM_DEMOCRATIC_5"
-			"FACTION_NAME_CONSERVATISM_DEMOCRATIC_6"
+			"FACTION_NAME_SOCIAL_DEMOCRATIC_1"
+			"FACTION_NAME_SOCIAL_DEMOCRATIC_2"
+			"FACTION_NAME_SOCIAL_DEMOCRATIC_3"
+			"FACTION_NAME_SOCIAL_DEMOCRATIC_4"
+			"FACTION_NAME_SOCIAL_DEMOCRATIC_5"
+			"FACTION_NAME_SOCIAL_DEMOCRATIC_6"
 		}
 
-		color = { 107 116 191 }
+		color = { 109 117 191 }
 
 		rules = {
 			can_create_collaboration_government = no
@@ -180,7 +180,7 @@ ideologies = {
 
 		types = {
 
-			communistic = {
+			communism = {
 			}
 		}
 
@@ -230,7 +230,7 @@ ideologies = {
 
 		types = {
 
-			socialistic = {
+			socialism = {
 			}
 		}
 

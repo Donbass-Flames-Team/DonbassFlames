@@ -8,7 +8,7 @@ bookmarks = {
 		default = yes
 		
 		"UKR"={
-			history = "UKR_EC_DESC"
+			history = "UKR_DW_DESC"
 			ideology = neutrality
 			ideas = {
 			}
@@ -16,7 +16,7 @@ bookmarks = {
 			}	
 		}
 		"RUS"={
-			history = "RUS_EC_DESC"
+			history = "RUS_DW_DESC"
 			ideology = neutrality
 			ideas = {
 			}
@@ -25,52 +25,25 @@ bookmarks = {
 			}	
 		}
 		"DPR"={
-			history = "UKR_EC_DESC"
+			history = "DPR_DW_DESC"
 			ideology = neutrality
 			ideas = {
 			}
 			focuses = {
-				UKR_Yanukovich_rule
-				UKR_Protests_on_streets
-				UKR_Join_Union_State_project
 			}	
 		}
 		"LPR"={
-			history = "UKR_EC_DESC"
+			history = "LPR_EC_DESC"
 			ideology = neutrality
 			ideas = {
 			}
 			focuses = {
-				UKR_Yanukovich_rule
-				UKR_Protests_on_streets
-				UKR_Join_Union_State_project
 			}	
 		}
 
 		#Minor countries
-		"AZV"={
-			history = "UKR_EC_DESC"
-			ideology = neutrality
-			minor = yes
-			ideas = {
-				AZV_fight_for_ukraine
-			}
-			focuses = {
-				AZV_batalion_of_azov
-				AZV_assault_on_Mariupol
-			}	
-		}
 		"POL"={
-			history = "UKR_EC_DESC"
-			ideology = neutrality
-			minor = yes
-			ideas = {
-			}
-			focuses = {
-			}	
-		}
-		"MLV"={
-			history = "UKR_EC_DESC"
+			history = "POL_EC_DESC"
 			ideology = neutrality
 			minor = yes
 			ideas = {
@@ -79,7 +52,7 @@ bookmarks = {
 			}	
 		}
 		"ROM"={
-			history = "UKR_EC_DESC"
+			history = "ROM_EC_DESC"
 			ideology = neutrality
 			minor = yes
 			ideas = {
@@ -88,7 +61,16 @@ bookmarks = {
 			}	
 		}
 		"BLR"={
-			history = "UKR_EC_DESC"
+			history = "BLR_EC_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"MOL"={
+			history = "MOL_DW_DESC"
 			ideology = neutrality
 			minor = yes
 			ideas = {
@@ -97,7 +79,7 @@ bookmarks = {
 			}	
 		}
 		"TMR"={
-			history = "UKR_EC_DESC"
+			history = "UKR_DW_DESC"
 			ideology = neutrality
 			minor = yes
 			ideas = {
