@@ -1,0 +1,18 @@
+ideas = {
+
+	country = {
+
+		UKR_ukraine_army = {
+            
+			removal_cost = -1
+			picture = generic_production_bonus
+			
+			modifier = {
+			    stability_factor = 0.1
+				consumer_goods_factor = -0.20
+				production_speed_buildings_factor = 0.15 
+			}
+		}
+	}
+
+}
