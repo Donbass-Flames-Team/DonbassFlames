@@ -60,7 +60,7 @@ ideologies = {
 		ai_give_core_state_control_threshold = 0 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
 	}
 
-	conservatism_democratic = {
+	conservatism_democracy = {
 
 		types = {
 			conservatism = {
@@ -118,7 +118,7 @@ ideologies = {
 		ai_give_core_state_control_threshold = 0 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
 	}
 
-	social_democratic = {
+	social_democracy = {
 
 		types = {
 			social_democracy = {
@@ -134,14 +134,14 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_DEMOCRATIC_6"
 		}
 
-		color = { 109 117 191 }
+		color = { 168 72 72 }
 
 		rules = {
 			can_create_collaboration_government = no
 			can_declare_war_on_same_ideology = no
 			can_force_government = yes
 			can_send_volunteers = no
-			can_puppet = no
+			can_puppet = yes
 			can_lower_tension = yes
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
@@ -192,7 +192,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNISTIC_5"
 		}
 
-		color = { 163 21 21 }
+		color = { 196 18 16 }
 
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -280,7 +280,7 @@ ideologies = {
 
 		types = {
 
-			autoritarian_democractic = {
+			autoritarian_democracy = {
 			}
 			populism = {
 			}
@@ -329,7 +329,7 @@ ideologies = {
 		ai_give_core_state_control_threshold = 10000
 	}
 
-	nationalism_group = {
+	nationalism = {
 		types = {
 			nationalism = {
 			}
