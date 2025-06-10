@@ -127,6 +127,17 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_lviv_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Lviv.png"
+	}
+
+	spriteType = {
+		name = "GFX_lviv_captured_seapartism_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Lviv_captured.png"
+	}
+
+
+	spriteType = {
 		name = "GFX_zakarpatie_seapartism_gui"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Zakarpatie.png"
 	}
