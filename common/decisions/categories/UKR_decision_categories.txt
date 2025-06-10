@@ -21,7 +21,7 @@ UKR_separatism_decision = {
 	visible_when_empty = yes
 }
 
-UKR_maidan_decision = {
+UKR_parlamient_decision = {
 
 	priority = 85
 	
@@ -34,6 +34,25 @@ UKR_maidan_decision = {
 
 	visible = {
         tag = UKR
+	}
+	visible_when_empty = yes
+}
+
+UKR_maidan_decision = {
+
+	priority = 85
+	
+	icon = SOV_propaganda
+	
+	allowed = {
+		original_tag = UKR 
+		has_country_flag = UKRBeforeOverthrowOfYanukovych
+	}
+	picture = GFX_decision_UKR_separatism
+
+	visible = {
+        tag = UKR
+		has_country_flag = UKRBeforeOverthrowOfYanukovych
 	}
 	visible_when_empty = yes
 }

@@ -1,9 +1,9 @@
 ﻿
 capital = 93
 
-set_country_flag = startup_information_country_info
-
 2013.11.21 = {
+
+	set_country_flag = UKRBeforeOverthrowOfYanukovych
 	
 	set_technology = {
 		infantry_weapons = 1
@@ -44,11 +44,11 @@ set_country_flag = startup_information_country_info
 	}
 	
 	set_popularities = {
-		liberal_democratic = 15
-		conservatism_democratic = 35
-		nationalism_group = 15
-		communism = 10
-		autoritarian_democracy = 25
+		liberal_democracy = 18
+		conservatism_democracy = 37
+		nationalism = 15
+		communism = 9
+		autoritarian_democracy = 21
 	}
 
 	create_country_leader = {
@@ -62,7 +62,7 @@ set_country_flag = startup_information_country_info
 	create_country_leader = {
 		name = victor_yanukovich
 		#desc = victor_yanukovich_desc
-		ideology = autoritarian_democractic
+		ideology = autoritarian_democracy
 		picture = gfx/leaders/UKR/Yanukovich.dds
 		traits = {}
 	}
