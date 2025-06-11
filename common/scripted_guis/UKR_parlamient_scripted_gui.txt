@@ -4,6 +4,18 @@ scripted_gui = {
 		context_type = decision_category
 		window_name = "UKR_parlamient_ui_window"
 
+		effects = {
+			UKR_rada_button_click = {
+				if = {
+					limit = { has_variable = show_parlamient_general_window }
+					clear_variable = show_parlamient_general_window
+				}
+				else = {
+					set_variable = { show_parlamient_general_window = 1 }
+				}
+			}
+		}
+
 		properties = {
 			senate_icon = {
 				frame = current_senate_icon_frame
@@ -12,6 +24,31 @@ scripted_gui = {
 			house_icon = {
 				frame = current_house_icon_frame
 			}
+		}
+	}
+
+    UKR_parlamient_general_window = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "UKR_parlamient_general_window"
+		dirty = show_parlamient_general_window
+
+		visible = {
+			check_variable = { show_parlamient_general_window > 0 }
+		}
+		
+		effects = {
+			close_map_button_click = {
+				clear_variable = show_parlamient_general_window
+		    }
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+		properties = {
+
 		}
 	}
 	
