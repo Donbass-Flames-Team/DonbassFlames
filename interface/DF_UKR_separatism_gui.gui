@@ -141,9 +141,30 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "lviv_button"
-			position = { x = 486 y = 569 }
-			quadTextureSprite = "GFX_lviv_seapartism_gui"
+			name = "Zapad_button"
+			position = { x = 73 y = 197 }
+			quadTextureSprite = "GFX_western_ukraine_seapartism_gui"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "Zakarpatya_button"
+			position = { x = 53 y = 388 }
+			quadTextureSprite = "GFX_zakarpatie_seapartism_gui"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "Mid_Ukraine"
+			position = { x = 265 y = 170 }
+			quadTextureSprite = "GFX_mid_ukraine_gui"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "Kherson"
+			position = { x = 444 y = 484 }
+			quadTextureSprite = "GFX_herson_seapartism_gui"
 			clicksound = click_close
 		}
 
