@@ -7,12 +7,12 @@ UKR_separatism_decision = {
 
 	priority = 85
 	
-	icon = SOV_propaganda
+	icon = GFX_decision_UKR_separatism
 	
 	allowed = {
 		original_tag = UKR 
 	}
-	picture = GFX_decision_UKR_separatism
+	#picture = GFX_decision_UKR_separatism
 
 	visible = {
         tag = UKR
@@ -25,12 +25,12 @@ UKR_parlamient_decision = {
 
 	priority = 85
 	
-	icon = SOV_propaganda
+	icon = GFX_decision_UKR_separatism
 	
 	allowed = {
 		original_tag = UKR 
 	}
-	picture = GFX_decision_UKR_separatism
+	#picture = GFX_decision_UKR_separatism
 
 	visible = {
         tag = UKR
@@ -43,13 +43,13 @@ UKR_maidan_decision = {
 
 	priority = 85
 	
-	icon = SOV_propaganda
+	icon = GFX_decision_UKR_separatism
 	
 	allowed = {
 		original_tag = UKR 
 		has_country_flag = UKRBeforeOverthrowOfYanukovych
 	}
-	picture = GFX_decision_UKR_separatism
+	#picture = GFX_decision_UKR_separatism
 
 	visible = {
         tag = UKR
