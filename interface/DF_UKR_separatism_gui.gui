@@ -141,6 +141,13 @@ guiTypes = {
 		}
 
 		buttonType = {
+			name = "crimea_button1"
+			position = { x = 486 y = 569 }
+			quadTextureSprite = "GFX_crimea_captured_seapartism_gui"
+			clicksound = click_close
+		}
+
+		buttonType = {
 			name = "Zapad_button"
 			position = { x = 73 y = 197 }
 			quadTextureSprite = "GFX_western_ukraine_seapartism_gui"
@@ -148,9 +155,39 @@ guiTypes = {
 		}
 
 		buttonType = {
+			name = "Zapad_button1"
+			position = { x = 73 y = 197 }
+			quadTextureSprite = "GFX_western_ukraine_captured_seapartism_gui"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "Odessa"
+			position = { x = 306 y = 443 }
+			quadTextureSprite = "GFX_odessa_seapartism_gui"
+			clicksound = click_close
+		}
+
+
+		buttonType = {
+			name = "Odessa1"
+			position = { x = 306 y = 443 }
+			quadTextureSprite = "GFX_odessa_captured_seapartism_gui"
+			clicksound = click_close
+		}
+
+
+		buttonType = {
 			name = "Zakarpatya_button"
 			position = { x = 53 y = 388 }
 			quadTextureSprite = "GFX_zakarpatie_seapartism_gui"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "Zakarpatya_button1"
+			position = { x = 53 y = 388 }
+			quadTextureSprite = "GFX_zakarpatie_captured_seapartism_gui"
 			clicksound = click_close
 		}
 
@@ -162,9 +199,44 @@ guiTypes = {
 		}
 
 		buttonType = {
+			name = "Mid_Ukraine1"
+			position = { x = 265 y = 170 }
+			quadTextureSprite = "GFX_mid_ukraine_captured_seapartism_gui"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "Dnepr"
+			position = { x = 420 y = 400 }
+			quadTextureSprite = "GFX_zaporozhie_seapartism_gui"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "KharkoV"
+			position = { x = 589 y = 300 }
+			quadTextureSprite = "GFX_kharkov_seapartism_gui"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "KharkoV1"
+			position = { x = 589 y = 300 }
+			quadTextureSprite = "GFX_kharkov_captured_seapartism_gui"
+			clicksound = click_close
+		}
+
+		buttonType = {
 			name = "Kherson"
 			position = { x = 444 y = 484 }
 			quadTextureSprite = "GFX_herson_seapartism_gui"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "Kherson1"
+			position = { x = 444 y = 484 }
+			quadTextureSprite = "GFX_herson_captured_seapartism_gui"
 			clicksound = click_close
 		}
 
