@@ -141,23 +141,9 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "crimea_button1"
-			position = { x = 486 y = 569 }
-			quadTextureSprite = "GFX_crimea_captured_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
 			name = "Zapad_button"
 			position = { x = 73 y = 197 }
 			quadTextureSprite = "GFX_western_ukraine_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
-			name = "Zapad_button1"
-			position = { x = 73 y = 197 }
-			quadTextureSprite = "GFX_western_ukraine_captured_seapartism_gui"
 			clicksound = click_close
 		}
 
@@ -168,15 +154,6 @@ guiTypes = {
 			clicksound = click_close
 		}
 
-
-		buttonType = {
-			name = "Odessa1"
-			position = { x = 306 y = 443 }
-			quadTextureSprite = "GFX_odessa_captured_seapartism_gui"
-			clicksound = click_close
-		}
-
-
 		buttonType = {
 			name = "Zakarpatya_button"
 			position = { x = 53 y = 388 }
@@ -185,44 +162,44 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "Zakarpatya_button1"
-			position = { x = 53 y = 388 }
-			quadTextureSprite = "GFX_zakarpatie_captured_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
 			name = "Mid_Ukraine"
-			position = { x = 265 y = 170 }
+			position = { x = 264 y = 170 }
 			quadTextureSprite = "GFX_mid_ukraine_gui"
 			clicksound = click_close
 		}
 
 		buttonType = {
-			name = "Mid_Ukraine1"
-			position = { x = 265 y = 170 }
-			quadTextureSprite = "GFX_mid_ukraine_captured_seapartism_gui"
+			name = "luhansk"
+			position = { x = 713 y = 325 }
+			quadTextureSprite = "GFX_luhansk_seapartism_gui"
 			clicksound = click_close
 		}
 
 		buttonType = {
-			name = "Dnepr"
-			position = { x = 420 y = 400 }
+			name = "Nikolaev"
+			position = { x = 391 y = 444 }
+			quadTextureSprite = "GFX_nikolaev_seapartism_gui"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "Zaporzhie"
+			position = { x = 557 y = 446 }
 			quadTextureSprite = "GFX_zaporozhie_seapartism_gui"
 			clicksound = click_close
 		}
 
 		buttonType = {
 			name = "KharkoV"
-			position = { x = 589 y = 300 }
+			position = { x = 587 y = 300 }
 			quadTextureSprite = "GFX_kharkov_seapartism_gui"
 			clicksound = click_close
 		}
 
 		buttonType = {
-			name = "KharkoV1"
-			position = { x = 589 y = 300 }
-			quadTextureSprite = "GFX_kharkov_captured_seapartism_gui"
+			name = "Dnepr"
+			position = { x = 508 y = 383 }
+			quadTextureSprite = "GFX_dnieper_seapartism_gui"
 			clicksound = click_close
 		}
 
@@ -234,15 +211,8 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "Kherson1"
-			position = { x = 444 y = 484 }
-			quadTextureSprite = "GFX_herson_captured_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
 			name = "donetsk_button"
-			position = { x = 690 y = 365 }
+			position = { x = 657 y = 380 }
 			quadTextureSprite = "GFX_donetsk_seapartism_gui"
 			clicksound = click_close
 		}
