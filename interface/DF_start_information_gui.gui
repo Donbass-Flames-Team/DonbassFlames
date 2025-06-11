@@ -26,10 +26,11 @@ guiTypes = {
 			quadTextureSprite = "GFX_startgui_background"
 		}
 		
-		background = {
+		iconType = {
 			name = "main_Background"
 			quadTextureSprite = "GFX_main_startgui_background"
-			position = { x = 25 y = 15 }
+			position = { x = -1 y = -1 }
+			scale = 1.2
 		}
 		
 		buttonType = {
@@ -79,38 +80,57 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = no
+
+		iconType = {
+		    name = "startgui_country_name"
+			spriteType = "GFX_closebutton"
+			position = { x = 415 y = 105 }
+		}
 		
 		instantTextBoxType = {
 			name ="DF_modinfo_title"
-			position = { x = 380 y = 240 }
+			position = { x = 350 y = 260 }
 			font = "hoi_24header"
 			text = "[COUNTRY_INFO_STARTGUI]"
 			format = centre
-			maxWidth = 750
+			maxWidth = 800
+		}
+
+		iconType = {
+			name = "country_background_startgui"
+			position = { x = 25 y = 25 }
+			multiline = yes
+			spriteType = "GFX_closebutton"
+			alwaystransparent = yes
 		}
 
 		iconType = {
 		    name = "startgui_leader_frame"
 			spriteType = "GFX_startgui_leader_frame"
 			position = { x = 85 y = 215 }
-			scale = 0.8
+			scale = 0.79
 		}
 
 		iconType = {
-		    name = "startgui_country_name"
-			spriteType = "GFX_startgui_UKR_name"
-			position = { x = 395 y = 105 }
+		    name = "startgui_leader"
+			spriteType = "GFX_closebutton"
+			position = { x = 110 y = 241 }
+			scale = 1.25
+			multiline = yes
+		}
+
+		instantTextBoxType = {
+			name ="startgui_leader_name"
+			position = { x = -200 y = 530 }
+			font = "hoi_30header"
+			text = "[get_leader_name_startgui]"
+			format = centre
+			maxWidth = 800
 		}
 		
 		background = {
 			name = "Background"
 			quadTextureSprite = "GFX_startgui_background"
-		}
-		
-		background = {
-			name = "country_background"
-			quadTextureSprite = "GFX_russia_background"
-			position = { x = 25 y = 25 }
 		}
 		
 		buttonType = {
@@ -163,9 +183,9 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="DF_modinfo_developers"
-			position = { x = 420 y = 200 }
+			position = { x = 300 y = 300 }
 			font = "hoi_36header"
-			text = DEVELOPERS
+			text = "DEVELOPERS"
 			format = centre
 			maxWidth = 700
 		}
@@ -173,8 +193,7 @@ guiTypes = {
 		iconType = {
 		    name = "UKR_logo_modinfo"
 			spriteType = "GFX_logo_startgui"
-			position = { x = 255 y = 125 }
-			scale = 1
+			position = { x = 400 y = 25 }
 		}
 		
 		background = {
@@ -185,7 +204,8 @@ guiTypes = {
 		background = {
 			name = "mod_info_Background"
 			quadTextureSprite = "GFX_modinfo_background"
-			position = { x = 25 y = 15 }
+			position = { x = 25 y = 20 }
+			scale = 0.98
 		}
 		
 		buttonType = {

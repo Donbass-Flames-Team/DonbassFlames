@@ -20,16 +20,69 @@ defined_text = {
     name = get_background_startgui
 
     text = {
-        trigger = {
-            tag = UKR
-        }
+        trigger = { original_tag = UKR }
         localization_key = "GFX_ukraine_background"
     }
 
     text = {
-        trigger = {
-            tag = RUS
-        }
+        trigger = { original_tag = RUS }
         localization_key = "GFX_russia_background"
+    }
+}
+
+defined_text = {
+    name = get_country_name_startgui
+
+    text = {
+        trigger = { original_tag = UKR }
+        localization_key = "GFX_startgui_UKR_name"
+    }
+
+    text = {
+        trigger = { original_tag = RUS }
+        localization_key = "GFX_startgui_RUS_name"
+    }
+
+    text = {
+        trigger = { original_tag = DPR }
+        localization_key = "GFX_startgui_DPR_name"
+    }
+
+    text = {
+        trigger = { original_tag = LPR }
+        localization_key = "GFX_startgui_LPR_name"
+    }
+
+    text = {
+        trigger = { original_tag = POL }
+        localization_key = "GFX_startgui_RUS_name"
+    }
+}
+
+defined_text = {
+    name = get_leader_name_startgui
+
+    text = {
+        trigger = { tag = UKR }
+        localization_key = "country_leader_name_startgui_ukr"
+    }
+
+    text = {
+        trigger = { tag = RUS }
+        localization_key = "country_leader_name_startgui_rus"
+    }
+}
+
+defined_text = {
+    name = get_leader_startgui
+
+    text = {
+        trigger = { tag = UKR }
+        localization_key = "GFX_startgui_UKR_yanukovich"
+    }
+
+    text = {
+        trigger = { tag = RUS }
+        localization_key = "GFX_startgui_RUS_putin"
     }
 }

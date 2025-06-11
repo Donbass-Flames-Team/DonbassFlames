@@ -45,7 +45,8 @@ capital = 93
 	
 	set_popularities = {
 		liberal_democracy = 18
-		conservatism_democracy = 37
+		conservatism_democracy = 34
+		social_democracy = 3
 		nationalism = 15
 		communism = 9
 		autoritarian_democracy = 21
@@ -65,6 +66,13 @@ capital = 93
 		ideology = autoritarian_democracy
 		picture = gfx/leaders/UKR/Yanukovich.dds
 		traits = {}
+	}
+
+	add_ideas = {
+		UKR_protests
+		UKR_helpless_government
+		UKR_separatism
+		UKR_ukraine_army
 	}
 	
 	add_manpower = 60000

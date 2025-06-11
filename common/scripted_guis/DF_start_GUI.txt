@@ -53,7 +53,7 @@ scripted_gui = {
 
 	Start_gui_country_info = {
 		context_type = player_context
-		parent_window_token = Start_gui
+		parent_window_token = top_bar
 		window_name = "Start_gui_country_info"
 		parent_window_name = Start_gui
 		dirty = show_startgui
@@ -96,8 +96,14 @@ scripted_gui = {
 		}
 		
 		properties = {
-            country_background = {
+            country_background_startgui = {
 				image = "[get_background_startgui]"
+			}
+			startgui_country_name = {
+				image = "[get_country_name_startgui]"
+			}
+			startgui_leader = {
+				image = "[get_leader_startgui]"
 			}
 		}
 	}

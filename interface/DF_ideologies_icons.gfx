@@ -1,11 +1,21 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_ideology_UKR_autoritarian_democractic"
-		textureFile = "gfx/interface/ideologies/autoritarian_democracy_desc.dds"
+		name = "GFX_ideology_RUS_autoritarian_democracy"
+		textureFile = "gfx/interface/ideologies/RUS_united_russia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_UKR_autoritarian_democracy"
+		textureFile = "gfx/interface/ideologies/UKR_party_of_regions.dds"
 	}
 
 	spriteType = {
-		name = "GFX_ideology_RUS_autoritarian_democractic"
-		textureFile = "gfx/interface/ideologies/united_russia.dds"
+		name = "GFX_ideology_UKR_fascism"
+		textureFile = "gfx/interface/ideologies/UKR_national_corpus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_UKR_conservatism_democracy"
+		textureFile = "gfx/interface/ideologies/UKR_batkavshina.dds"
 	}
 }

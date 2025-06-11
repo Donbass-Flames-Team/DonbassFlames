@@ -34,12 +34,40 @@ spriteTypes = {
 		name = "GFX_startgui_leader_frame"
 		texturefile = "gfx/interface/startgui/Startgui_leader_frame.dds"
 	}
+    
+	# leaders
+	spriteType = { 
+		name = "GFX_startgui_UKR_yanukovich"
+		texturefile = "gfx/leaders/UKR/Yanukovich.dds"
+	}
 
+	spriteType = { 
+		name = "GFX_startgui_RUS_putin"
+		texturefile = "gfx/leaders/RUS/Vladimir_Putin.dds"
+	}
+    
+	# countries
 	spriteType = { 
 		name = "GFX_startgui_UKR_name"
 		texturefile = "gfx/interface/startgui/Ukraine_country_info.dds"
 	}
 
+	spriteType = { 
+		name = "GFX_startgui_RUS_name"
+		texturefile = "gfx/interface/startgui/Russia_country_info.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_startgui_DPR_name"
+		texturefile = "gfx/interface/startgui/DPR_country_info.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_startgui_LPR_name"
+		texturefile = "gfx/interface/startgui/LPR_country_info.dds"
+	}
+
+    # backgrounds
 	spriteType = { 
 		name = "GFX_ukraine_background"
 		texturefile = "gfx/interface/startgui/Startgui_ukraine_background.dds"
