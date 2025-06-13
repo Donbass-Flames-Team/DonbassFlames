@@ -57,3 +57,54 @@ UKR_maidan_decision = {
 	}
 	visible_when_empty = yes
 }
+
+UKR_general_staff = {
+
+	priority = 85
+	
+	icon = GFX_decision_UKR_separatism
+	
+	allowed = {
+		original_tag = UKR 
+	}
+	#picture = GFX_decision_UKR_separatism
+
+	visible = {
+        tag = UKR
+	}
+	visible_when_empty = yes
+}
+
+UKR_depreservation_decision = {
+
+	priority = 85
+	
+	icon = GFX_decision_UKR_separatism
+	
+	allowed = {
+		original_tag = UKR 
+	}
+	#picture = GFX_decision_UKR_separatism
+
+	visible = {
+        tag = UKR
+	}
+	visible_when_empty = yes
+}
+
+UKR_ATO_decision = {
+
+	priority = 85
+	
+	icon = GFX_decision_UKR_separatism
+	
+	allowed = {
+		original_tag = UKR 
+	}
+	#picture = GFX_decision_UKR_separatism
+
+	visible = {
+        tag = UKR
+	}
+	visible_when_empty = yes
+}

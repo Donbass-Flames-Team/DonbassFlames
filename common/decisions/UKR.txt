@@ -47,3 +47,63 @@ UKR_maidan_decision = {
 		}
 	}
 }
+
+UKR_depreservation_decision = {
+
+    UKR_depreservation_of_tanks = {
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			tag = UKR
+		}
+		
+	    fire_only_once = no
+		days_re_enable = 60
+		cost = 75
+		complete_effect = {
+		    
+		}
+		ai_will_do = {
+			factor = 75
+		}
+	}
+
+    UKR_depreservation_of_ifvs = {
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			tag = UKR
+		}
+		
+	    fire_only_once = no
+		days_re_enable = 60
+		cost = 75
+		complete_effect = {
+		    
+		}
+		ai_will_do = {
+			factor = 75
+		}
+	}
+
+	UKR_depreservation_of_infantry_weapons = {
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			tag = UKR
+		}
+		
+	    fire_only_once = no
+		days_re_enable = 60
+		cost = 75
+		complete_effect = {
+		    
+		}
+		ai_will_do = {
+			factor = 75
+		}
+	}
+}
