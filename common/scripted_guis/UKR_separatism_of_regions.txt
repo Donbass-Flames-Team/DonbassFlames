@@ -43,14 +43,85 @@ scripted_gui = {
 			close_map_button_click = {
 				clear_variable = show_separatism_in_ukraine_map
 		    }
+			crimea_button_click = {
+				set_variable = { select_separatists_region = 1}
+			}
+			donetsk_button_click = {
+				set_variable = { select_separatists_region = 2}
+			}
+			western_ukraine_button_click = {
+				set_variable = { select_separatists_region = 3}
+			}
+			odessa_button_click = {
+				set_variable = { select_separatists_region = 4}
+			}
+			zakarpatya_button_click = {
+				set_variable = { select_separatists_region = 5}
+			}
+			middle_ukraine_button_click = {
+				set_variable = { select_separatists_region = 6}
+			}
+			luhansk_button_click = {
+				set_variable = { select_separatists_region = 7}
+			}
+			nikolaev_button_click = {
+				set_variable = { select_separatists_region = 8}
+			}
+			zaporzhie_button_click = {
+				set_variable = { select_separatists_region = 9}
+			}
+			kharkov_button_click = {
+				set_variable = { select_separatists_region = 10}
+			}
+			dnieper_button_click = {
+				set_variable = { select_separatists_region = 11}
+			}
+			kherson_button_click = {
+				set_variable = { select_separatists_region = 12}
+			}
 		}
 		
 		dynamic_lists = {
 
 		}
 		
-		properties = {
-
-		}
+	    properties = {
+			crimea_button = {
+				image = "[crimea_image]"
+			} 
+			donetsk_button = {
+				image = "[donetsk_image]"
+			} 
+			western_ukraine_button = {
+				image = "[western_ukraine_image]"
+			} 
+			odessa_button = {
+				image = "[odessa_image]"
+			} 
+			zakarpatya_button = {
+				image = "[zakarpatya_image]"
+			} 
+			middle_ukraine_button = {
+				image = "[middle_ukraine_image]"
+			} 
+			luhansk_button = {
+				image = "[luhansk_image]"
+			} 
+			nikolaev_button = {
+				image = "[nikolaev_image]"
+			}
+			zaporzhie_button = {
+				image = "[zaporzhie_image]"
+			}
+			kharkov_button = {
+				image = "[kharkov_image]"
+			}	
+			dnieper_button = {
+				image = "[dnieper_image]"
+			}	
+			kherson_button = {
+				image = "[kherson_image]"
+			}		
+		}	
 	}
 }

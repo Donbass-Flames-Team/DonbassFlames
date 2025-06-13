@@ -108,3 +108,22 @@ UKR_ATO_decision = {
 	}
 	visible_when_empty = yes
 }
+
+UKR_HUR_decision = {
+
+	priority = 85
+	
+	icon = GFX_decision_UKR_separatism
+	
+	allowed = {
+		original_tag = UKR 
+		has_country_flag = UKR_expand_hur
+	}
+	#picture = GFX_decision_UKR_separatism
+
+	visible = {
+        tag = UKR
+		has_country_flag = UKR_expand_hur
+	}
+	visible_when_empty = yes
+}
