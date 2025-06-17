@@ -1,0 +1,25 @@
+defined_text = {
+    name = ukr_parlamient_speaker_image
+
+    text = {
+        trigger = {
+            UKR = {
+                has_country_flag = Speaker_Is_Turchinov
+            }
+        }
+        localization_key = "GFX_turchinov_speaker"
+    }
+}
+
+defined_text = {
+    name = ukr_parlamient_speaker_name
+
+    text = {
+        trigger = {
+            UKR = {
+                has_country_flag = Speaker_Is_Turchinov
+            }
+        }
+        localization_key = "UKR_Turchinov_speaker_name"
+    }
+}

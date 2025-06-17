@@ -5,15 +5,10 @@
 
 guiTypes = {
 
-	# Верхняя панель с иконкой и заголовком
 	containerWindowType = {
 		name = "UKR_parlamient_ui_window"
 		position = { x = 0 y = 0 }
 		size = { width = 100% height = 192 }
-		background = {
-			name = "HeaderBackground"
-			quadTextureSprite = "GFX_ui_panel_bg"
-		}
 
 		iconType = {
 			name = "UKR_parlamient_support_icon"
@@ -25,7 +20,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "senate_support_header"
-			position = { x = 110 y = 120 }
+			position = { x = 110 y = 60 }
 			font = "hoi_18"
 			text = "UKR_parlamient_support"
 			format = center
@@ -36,118 +31,142 @@ guiTypes = {
 		buttonType = {
 			name = "UKR_rada_button"
 			spriteType = "GFX_UKR_parlamient_icon"
-			position = { x = 260 y = 15 }
+			position = { x = 260 y = -15 }
 			scale = 0.6
 			hoverSpriteType = "GFX_UKR_parlamient_icon_hover"
 			tooltip = "Открыть меню съезда"
 		}
 	}
 
-	# Главное окно съезда
-containerWindowType = {
-	name = "UKR_parlamient_general_window"
-	position = { x = 230 y = 10 }
-	size = { width = 1300 height = 770 }
-	orientation = center
-	origo = center
-	moveable = yes
-	click_to_front = yes
-	clipping = yes
-	fade_time = 150
-	fade_type = smooth
+    containerWindowType = {
+	    name = "UKR_parlamient_general_window"
+	    position = { x = 0 y = 10 }
+	    size = { width = 1300 height = 770 }
+	    orientation = center
+	    origo = center
+	    moveable = yes
+	    click_to_front = yes
+	    clipping = yes
+	    fade_time = 150
+	    fade_type = smooth
 
-	background = {
-		name = "Background"
-		quadTextureSprite = "GFX_startgui_background"
-	}
+	    background = {
+		    name = "Background"
+		    quadTextureSprite = "GFX_startgui_background"
+	    }
 
-	iconType = {
-		name = "UKR_siezd_icon"
-		spriteType = "GFX_ukraine_siezd_icon"
-		position = { x = 40 y = 300 }
-		scale = 1.2
-		shadow = yes
-	}
+	    iconType = {
+		    name = "UKR_siezd_icon"
+		    spriteType = "GFX_ukraine_siezd_icon"
+		    position = { x = 140 y = 158 }
+		    scale = 1.2
+		    shadow = yes
+	    } 
 
-	instantTextBoxType = {
-		name = "UKR_rada_congress_title"
-		position = { x = 600 y = 40 }
-		font = "hoi_16mbs"
-		text = "13 Съезд Верховной Рады"
-		format = center
-		shadow = yes
-	}
+	    instantTextBoxType = {
+		    name = "UKR_rada_congress_title"
+		    position = { x = 600 y = 40 }
+		    font = "hoi_24header"
+		    text = "13 Съезд Верховной Рады"
+		    format = center
+		    shadow = yes
+	    }
 
-	instantTextBoxType = {
-		name = "UKR_speaker_name"
-		position = { x = 900 y = 320 }
-		font = "hoi_16mbs"
-		text = "сюда портрет крч"
-	}
+		iconType = {
+		    name = "UKR_speaker_parlamient_frame"
+			spriteType = "GFX_startgui_leader_frame"
+			position = { x = 985 y = 185 }
+			scale = 0.79
+		}
 
-	instantTextBoxType = {
-		name = "party_regiony"
-		position = { x = 400 y = 100 }
-		font = "hoi_16mbs"
-		text = "Партия регионов: 187"
-	}
-	instantTextBoxType = {
-		name = "party_batkivshchyna"
-		position = { x = 400 y = 120 }
-		font = "hoi_16mbs"
-		text = "ВО «Батькивщина»: 102"
-	}
-	instantTextBoxType = {
-		name = "party_udar"
-		position = { x = 400 y = 140 }
-		font = "hoi_16mbs"
-		text = "УДАР: 40"
-	}
-	instantTextBoxType = {
-		name = "party_kpu"
-		position = { x = 400 y = 160 }
-		font = "hoi_16mbs"
-		text = "КПУ: 32"
-	}
-	instantTextBoxType = {
-		name = "party_svoboda"
-		position = { x = 120 y = 220 }
-		font = "hoi_16mbs"
-		text = "Свобода: 38"
-	}
+		iconType = {
+		    name = "UKR_speaker_parlamient_portrait"
+			spriteType = "GFX_closebutton"
+			position = { x = 1009 y = 210 }
+			scale = 1.25
+			multiline = yes
+		}
 
-	instantTextBoxType = {
-		name = "party_chenter"
-		position = { x = 120 y = 200 }
-		font = "hoi_16mbs"
-		text = "Единый Центр: 3"
-	}
+	    instantTextBoxType = {
+		    name = "UKR_speaker_name"
+		    position = { x = 1035 y = 500 }
+		    font = "hoi_24header"
+		    text = "[ukr_parlamient_speaker_name]"
+	    }
 
-	instantTextBoxType = {
-		name = "party_narodnyaya"
-		position = { x = 120 y = 175 }
-		font = "hoi_16mbs"
-		text = "Народная партия: 2"
-	}
+	    instantTextBoxType = {
+		    name = "party_regiony"
+		    position = { x = 50 y = 540 }
+		    font = "hoi_16mbs"
+		    text = "Партия регионов: 187"
+	    }
+	    instantTextBoxType = {
+		    name = "party_batkivshchyna"
+		    position = { x =  50 y = 560 }
+		    font = "hoi_16mbs"
+		    text = "ВО «Батькивщина»: 102"
+	    }
+	    instantTextBoxType = {
+		    name = "party_udar"
+		    position = { x = 50 y = 580 }
+		    font = "hoi_16mbs"
+		    text = "УДАР: 40"
+	    }
+	    instantTextBoxType = {
+		    name = "party_kpu"
+		    position = { x = 50 y = 600 }
+		    font = "hoi_16mbs"
+		    text = "КПУ: 32"
+	    }
+	    instantTextBoxType = {
+		    name = "party_svoboda"
+		    position = { x = 50 y = 620 }
+		    font = "hoi_16mbs"
+		    text = "Свобода: 38"
+	   }
 
-	instantTextBoxType = {
-		name = "party_RPOL"
-		position = { x = 120 y = 140 }
-		font = "hoi_16mbs"
-		text = "Радикальная партия Олега Ляшко: 1"
-	}
+	    instantTextBoxType = {
+		    name = "party_center"
+		    position = { x = 420 y = 540  }
+		    font = "hoi_16mbs"
+		    text = "Единый Центр: 3"
+	    }
 
-	instantTextBoxType = {
-		name = "party_Soyuz"
-		position = { x = 120 y = 120 }
-		font = "hoi_16mbs"
-		text = "Союз: 1"
-	}
+	    instantTextBoxType = {
+		    name = "party_narodnyaya"
+		    position = { x = 420 y = 560 }
+		    font = "hoi_16mbs"
+		    text = "Народная партия: 2"
+	    }
 
-	instantTextBoxType = {
-		name = "Noyname"
-		position = { x = 120 y = 100 }
-		font = "hoi_16mbs"
-		text = "Самовыдвиженцы: 44"
-	}
+	    instantTextBoxType = {
+		    name = "party_RPOL"
+		    position = { x = 420 y = 580 }
+		    font = "hoi_16mbs"
+		    text = "Радикальная партия Олега Ляшко: 1"
+	    }
+
+	    instantTextBoxType = {
+		    name = "party_Soyuz"
+		    position = { x = 420 y = 615 }
+		    font = "hoi_16mbs"
+		    text = "Союз: 1"
+	    }
+
+	    instantTextBoxType = {
+		    name = "Noyname"
+		    position = { x = 620 y = 615 }
+		    font = "hoi_16mbs"
+		    text = "Самовыдвиженцы: 44"
+	    }
+
+		buttonType = {
+			name = "close_map_button"
+			position = { x = 1265 y = 30 }
+			quadTextureSprite = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+    }
 }

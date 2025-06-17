@@ -1,0 +1,42 @@
+spriteTypes = {
+
+	### generic equipment archetypes ###
+
+	SpriteType = {
+		name = "GFX_archetype_infantry_equipment_medium"
+		texturefile = "gfx/interface/archetypes/archetype_infantry_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_UKR_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/AKM.dds"
+	}	
+	SpriteType = {
+		name = "GFX_UKR_infantry_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/AKMS.dds"
+	}	
+	SpriteType = {
+		name = "GFX_UKR_infantry_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/aks74u.dds"
+	}	
+	SpriteType = {
+		name = "GFX_UKR_infantry_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/AK74m.dds"
+	}	
+	SpriteType = {
+		name = "GFX_UKR_infantry_weapons4_medium"
+		texturefile = "gfx/interface/technologies/ak105.dds"
+	}	
+	SpriteType = {
+		name = "GFX_UKR_infantry_weapons5_medium"
+		texturefile = "gfx/interface/technologies/ak12.dds"
+	}	
+	SpriteType = {
+		name = "GFX_UKR_infantry_weapons6_medium"
+		texturefile = "gfx/interface/technologies/ak203.dds"
+	}
+	SpriteType = {
+		name = "GFX_UKR_infantry_weapons7_medium"
+		texturefile = "gfx/interface/technologies/ak12m1.dds"
+	}
+}

@@ -4,6 +4,7 @@ capital = 93
 2013.11.21 = {
 
 	set_country_flag = UKRBeforeOverthrowOfYanukovych
+	set_country_flag = Speaker_Is_Turchinov
 	set_research_slots = 3
 	
 	set_technology = {
@@ -77,4 +78,14 @@ capital = 93
 	}
 	
 	add_manpower = 60000
+	
+	recruit_character = aleksandr_sirskiy
+	recruit_character = valery_zaluzhny
+	recruit_character = mikhail_drapatiy
+	recruit_character = sergey_krivonos
+	recruit_character = mikhail_zabrodsky
+	recruit_character = andrey_taran
+	recruit_character = oleg_mikats
+	recruit_character = yuri_allerov
+	recruit_character = sergey_naev
 }
