@@ -1,5 +1,5 @@
 spriteTypes = {
-	#separatism gui
+	### Separatism gui
 	spriteType = {
 		name = "GFX_ukraine_separatism_btn"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Ukraine_separatism_btn.png"
@@ -160,5 +160,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_dnieper_captured_seapartism_gui"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Dnieper_captured.png"
+	}
+
+    ### Maidan powers
+
+	spriteType = {
+		name = "GFX_maidanites_maidan_powers_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Maidan_powers/Maidanovci.png"
+	}
+
+	spriteType = {
+		name = "GFX_nationalists_maidan_powers_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Maidan_powers/Nationalists.png"
+	}
+
+	spriteType = {
+		name = "GFX_prorussians_maidan_powers_gui"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Maidan_powers/Prorussians.png"
 	}
 }

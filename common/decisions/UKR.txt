@@ -9,6 +9,54 @@ UKR_parlamient_decision = {
 
 UKR_maidan_decision = {
 
+	UKR_yanukovich_overthrow = {
+		icon = mission_icon
+		is_good = no
+		selectable_mission = no
+		fire_only_once = yes
+		days_mission_timeout = 55
+		available = {
+			tag = UKR
+			NOT = { 
+				has_country_flag = UKRBeforeOverthrowOfYanukovych
+			}
+		}
+		activation = {
+			tag = UKR
+			has_country_flag = UKRBeforeOverthrowOfYanukovych
+		}
+		timeout_effect = {
+			set_global_flag = UKR_Yanukovich_After_Overthrow_Crisis
+            clr_country_flag = UKRBeforeOverthrowOfYanukovych
+
+			hidden_effect = {
+			news_event = news.7
+			UKR = {
+                set_country_flag = UKR_Yanukovich_overthrown
+
+				set_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_DPR
+				set_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+				set_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_OPR
+				set_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_KPR
+				
+				retire_country_leader = yes
+				create_country_leader = {
+					name = verhovna_rada_ukrainy
+					#desc = victor_yanukovich_desc
+					ideology = conservatism
+					picture = gfx/leaders/UKR/UKR_anarchy.dds
+					traits = {}
+				}
+
+				set_politics = {
+				    ruling_party = conservatism_democracy
+				    elections_allowed = no
+			    }
+			}
+		    }
+	    }
+    }
+
     UKR_suppress_protests = {
 		allowed = {
 			original_tag = UKR

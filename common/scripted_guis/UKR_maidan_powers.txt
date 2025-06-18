@@ -1,0 +1,22 @@
+scripted_gui = {
+
+    UKR_maidan_powers = {
+       context_type = decision_category
+	   window_name = "UKR_maidan_powers"
+ 
+        visible = {
+            tag = UKR
+        }
+ 
+		effects = {
+		}
+
+        triggers = {
+
+        }
+		
+		properties = {
+			
+		}
+    }
+}

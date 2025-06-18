@@ -18,7 +18,61 @@ characters = {
 		name = sergey_shoigu
 		portraits = {
 			civilian = {
-				small = "/gfx/leaders/RUS/.dds"
+				small = "/gfx/leaders/RUS/Sergei_Shoigu.dds"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+
+	sergey_surovikin = {
+		name = sergey_surovikin
+		portraits = {
+			civilian = {
+				small = "/gfx/leaders/RUS/Sergei_Surovikin.dds"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+
+	igor_turchenuk = {
+		name = igor_turchenuk
+		portraits = {
+			civilian = {
+				small = "/gfx/leaders/RUS/Igor_Turchenuk.dds"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+
+	alexander_lapin = {
+		name = alexander_lapin
+		portraits = {
+			civilian = {
+				small = "/gfx/leaders/RUS/Alexander_Lapin.dds"
 			}
 		}
 		corps_commander = {
