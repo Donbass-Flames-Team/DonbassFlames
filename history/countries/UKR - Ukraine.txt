@@ -12,7 +12,7 @@ capital = 93
 	}
     
 
-	# Separatism variables
+	# Separatism values
 	set_variable = {
         var = DPR_separatism_value
         value = 30
@@ -36,6 +36,22 @@ capital = 93
 	set_variable = {
         var = ZKR_separatism_value
         value = 1
+    }
+
+    # Radicalisation values
+	set_variable = {
+        var = UKR_radicalisation_of_prorussians_value
+        value = 15
+    }
+
+	set_variable = {
+        var = UKR_radicalisation_of_proeuropeans_value
+        value = 40
+    }
+
+	set_variable = {
+        var = UKR_radicalisation_of_nationalists_value
+        value = 30
     }
 	
 	set_politics = {
@@ -79,6 +95,9 @@ capital = 93
 	
 	add_manpower = 60000
 	
+	recruit_character = victor_muzhenko
+	recruit_character = stepan_poltorak
+	recruit_character = mikhail_koval
 	recruit_character = aleksandr_sirskiy
 	recruit_character = valery_zaluzhny
 	recruit_character = mikhail_drapatiy

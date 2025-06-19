@@ -1,5 +1,196 @@
 UKR_separatism_decision = {
 
+	UKR_suppress_protests = {
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			tag = UKR
+		}
+		
+	    fire_only_once = no
+		days_re_enable = 60
+		cost = 75
+		complete_effect = {
+		    
+		}
+		ai_will_do = {
+			factor = 75
+		}
+	}
+
+	UKR_donetsk_uprising = {
+		icon = GFX_flag_of_dpr
+		is_good = no
+		days_mission_timeout = 42
+		selectable_mission = no
+		fire_only_once = yes
+		available = {
+			always = no
+		}
+		activation = {
+			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_DPR
+		}
+		visible = {
+			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_DPR
+			original_tag = UKR
+		}
+		timeout_effect = {
+			custom_effect_tooltip = dpr_uprising_tt
+
+			hidden_effect = {
+				UKR = {
+					country_event = super.1
+				}
+
+                IF = {
+					limit = {
+						has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_DPR
+					}
+					clr_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_DPR
+					UKR = {
+						add_dynamic_modifier = {
+							modifier = Escalation_modifier
+						}
+					}
+					IF = {
+						limit = {
+							check_variable = { UKR.separatism_support_in_donetska > 20}
+						}
+
+						ukraine_rebel_dpr_1 = yes
+					}
+				}
+			}
+		}
+	}
+
+	UKR_luhansk_uprising = {
+		icon = GFX_flag_of_lpr
+		is_good = no
+		days_mission_timeout = 62
+		selectable_mission = no
+		fire_only_once = yes
+		available = {
+			always = no
+		}
+		activation = {
+			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+		}
+		visible = {
+			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+			original_tag = UKR
+		}
+		timeout_effect = {
+            custom_effect_tooltip = lpr_uprising_tt
+            
+			hidden_effect = {
+				IF = {
+					limit = {
+						has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+					}
+					clr_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+				LPR = {
+					add_dynamic_modifier = {
+						modifier = Escalation_modifier
+					}
+				}
+					IF = {
+						limit = {
+							check_variable = { UKR.separatism_support_in_luhanska > 20}
+						}
+
+						ukraine_rebel_lpr_1 = yes
+					}
+				}
+			}
+		}
+	}
+
+	UKR_kharkov_uprising = {
+		icon = GFX_flag_of_kpr
+		is_good = no
+		days_mission_timeout = 40
+		selectable_mission = no
+		fire_only_once = yes
+		available = {
+			check_variable = {
+				UKR.separatism_support_in_kharkivska < 20 
+				tooltip = kharkiv_pr_uprising_avaliable
+			}
+		}
+		activation = {
+			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_KPR
+		}
+		visible = {
+			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_KPR
+			original_tag = UKR
+		}
+		cancel_trigger = {
+			check_variable = { UKR.separatism_support_in_kharkivska < 20 }
+		}
+		cancel_effect = {
+			country_event = ukraine.21
+		}
+		timeout_effect = {
+            custom_effect_tooltip = kpr_uprising_tt
+
+			hidden_effect = {
+				IF = {
+					limit = {
+						has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_KPR
+					}
+					clr_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_KPR
+				KPR = {
+					add_dynamic_modifier = {
+						modifier = Escalation_modifier
+					}
+				}
+
+					IF = {
+						limit = {
+							check_variable = { UKR.separatism_support_in_kharkivska > 20}
+						}
+
+						ukraine_rebel_kpr_1 = yes
+
+						else_if = {
+							limit = { check_variable = { UKR.separatism_support_in_kharkivska < 20 } }
+
+							country_event = ukraine.21
+						}
+					}
+				}
+			}
+		}
+	}
+
+	UKR_odessa_uprising = {
+		icon = GFX_flag_of_opr
+		is_good = no
+		days_mission_timeout = 67
+		selectable_mission = no
+		fire_only_once = yes
+		available = {
+			check_variable = {
+				UKR.separatism_support_in_odeska < 20
+				tooltip = odesa_pr_uprising_avaliable
+			}
+		}
+		activation = {
+			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_OPR
+		}
+		visible = {
+			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_OPR
+			original_tag = UKR
+		}
+		timeout_effect = {
+            custom_effect_tooltip = opr_uprising_tt
+			hidden_effect = {
+
+			}
+		}
+	}
 }
 
 UKR_parlamient_decision = {
@@ -30,29 +221,28 @@ UKR_maidan_decision = {
             clr_country_flag = UKRBeforeOverthrowOfYanukovych
 
 			hidden_effect = {
-			news_event = news.7
-			UKR = {
-                set_country_flag = UKR_Yanukovich_overthrown
+			    UKR = {
+                    set_country_flag = UKR_Yanukovich_overthrown
 
-				set_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_DPR
-				set_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
-				set_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_OPR
-				set_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_KPR
-				
-				retire_country_leader = yes
-				create_country_leader = {
-					name = verhovna_rada_ukrainy
-					#desc = victor_yanukovich_desc
-					ideology = conservatism
-					picture = gfx/leaders/UKR/UKR_anarchy.dds
-					traits = {}
-				}
+				    set_global_flag = UKR_yanukovich_after_overthrow_dpr_uprising
+					set_global_flag = UKR_yanukovich_after_overthrow_lpr_uprising
+					set_global_flag = UKR_yanukovich_after_overthrow_kpr_uprising
+					set_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
 
-				set_politics = {
-				    ruling_party = conservatism_democracy
-				    elections_allowed = no
+				    retire_country_leader = yes
+				    create_country_leader = {
+					    name = verkhovna_rada_of_ukraine
+					    desc = verkhovna_rada_of_ukraine_desc
+					    ideology = conservatism
+					    picture = gfx/leaders/UKR/UKR_anarchy.dds
+					    traits = {}
+				    }
+
+				    set_politics = {
+				        ruling_party = conservatism_democracy
+				        elections_allowed = no
+			        }
 			    }
-			}
 		    }
 	    }
     }

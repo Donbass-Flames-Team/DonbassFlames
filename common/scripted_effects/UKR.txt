@@ -1,4 +1,4 @@
-
+### Separatism mechanic
 ## DPR separatism
 
 UKR_dpr_separatism_clamp_and_update_ui_effect = {
@@ -48,6 +48,40 @@ UKR_opr_separatism_clamp_and_update_ui_effect = {
 UKR_zkr_separatism_clamp_and_update_ui_effect = {
 	clamp_variable = {
 		var = ZKR_separatism_value
+		min = 0
+		max = 100
+	}
+	UKR_update_ui_effect = yes
+}
+
+### Maidan powers mechanic
+## radicalisation of prorussians
+
+UKR_radicalisation_of_prorussians_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = UKR_radicalisation_of_prorussians_value
+		min = 0
+		max = 100
+	}
+	UKR_update_ui_effect = yes
+}
+
+## radicalisation of proeuropeans
+
+UKR_radicalisation_of_proeuropeans_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = UKR_radicalisation_of_proeuropeans_value
+		min = 0
+		max = 100
+	}
+	UKR_update_ui_effect = yes
+}
+
+## radicalisation of nationalists
+
+UKR_radicalisation_of_nationalists_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = UKR_radicalisation_of_nationalists_value
 		min = 0
 		max = 100
 	}
