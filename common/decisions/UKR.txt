@@ -1,12 +1,13 @@
 UKR_separatism_decision = {
 
-	UKR_suppress_protests = {
+	UKR_suppress_separatism = {
 		allowed = {
 			original_tag = UKR
 		}
 		visible = {
 			tag = UKR
 		}
+		icon = GFX_decision_UKR_maidan_mass_arests
 		
 	    fire_only_once = no
 		days_re_enable = 60
@@ -20,65 +21,54 @@ UKR_separatism_decision = {
 	}
 
 	UKR_donetsk_uprising = {
-		icon = GFX_flag_of_dpr
+		icon = GFX_decision_flag_of_dpr
 		is_good = no
 		days_mission_timeout = 42
 		selectable_mission = no
 		fire_only_once = yes
 		available = {
-			always = no
+			NOT = { 
+				has_global_flag = UKR_yanukovich_after_overthrow_dpr_uprising
+			}
 		}
 		activation = {
-			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_DPR
+			has_global_flag = UKR_yanukovich_after_overthrow_dpr_uprising
 		}
 		visible = {
-			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_DPR
+			has_global_flag = UKR_yanukovich_after_overthrow_dpr_uprising
 			original_tag = UKR
 		}
 		timeout_effect = {
 			custom_effect_tooltip = dpr_uprising_tt
 
 			hidden_effect = {
-				UKR = {
-					country_event = super.1
-				}
 
                 IF = {
 					limit = {
-						has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_DPR
+						has_global_flag = UKR_yanukovich_after_overthrow_dpr_uprising
 					}
-					clr_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_DPR
-					UKR = {
-						add_dynamic_modifier = {
-							modifier = Escalation_modifier
-						}
-					}
-					IF = {
-						limit = {
-							check_variable = { UKR.separatism_support_in_donetska > 20}
-						}
-
-						ukraine_rebel_dpr_1 = yes
-					}
+					clr_global_flag = UKR_yanukovich_after_overthrow_dpr_uprising
 				}
 			}
 		}
 	}
 
 	UKR_luhansk_uprising = {
-		icon = GFX_flag_of_lpr
+		icon = GFX_decision_flag_of_lpr
 		is_good = no
 		days_mission_timeout = 62
 		selectable_mission = no
 		fire_only_once = yes
 		available = {
-			always = no
+			NOT = { 
+				has_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
+			}
 		}
 		activation = {
-			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+			has_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
 		}
 		visible = {
-			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+			has_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
 			original_tag = UKR
 		}
 		timeout_effect = {
@@ -108,26 +98,25 @@ UKR_separatism_decision = {
 	}
 
 	UKR_kharkov_uprising = {
-		icon = GFX_flag_of_kpr
+		icon = GFX_decision_flag_of_kpr
 		is_good = no
 		days_mission_timeout = 40
 		selectable_mission = no
 		fire_only_once = yes
 		available = {
-			check_variable = {
-				UKR.separatism_support_in_kharkivska < 20 
-				tooltip = kharkiv_pr_uprising_avaliable
+			NOT = { 
+				has_global_flag = UKR_yanukovich_after_overthrow_kpr_uprising
 			}
 		}
 		activation = {
-			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_KPR
+			has_global_flag = UKR_yanukovich_after_overthrow_kpr_uprising
 		}
 		visible = {
-			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_KPR
+			has_global_flag = UKR_yanukovich_after_overthrow_kpr_uprising
 			original_tag = UKR
 		}
 		cancel_trigger = {
-			check_variable = { UKR.separatism_support_in_kharkivska < 20 }
+
 		}
 		cancel_effect = {
 			country_event = ukraine.21
@@ -136,59 +125,106 @@ UKR_separatism_decision = {
             custom_effect_tooltip = kpr_uprising_tt
 
 			hidden_effect = {
-				IF = {
-					limit = {
-						has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_KPR
-					}
-					clr_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_KPR
-				KPR = {
-					add_dynamic_modifier = {
-						modifier = Escalation_modifier
-					}
-				}
-
-					IF = {
-						limit = {
-							check_variable = { UKR.separatism_support_in_kharkivska > 20}
-						}
-
-						ukraine_rebel_kpr_1 = yes
-
-						else_if = {
-							limit = { check_variable = { UKR.separatism_support_in_kharkivska < 20 } }
-
-							country_event = ukraine.21
-						}
-					}
-				}
+				clr_global_flag = UKR_yanukovich_after_overthrow_kpr_uprising
 			}
 		}
 	}
 
 	UKR_odessa_uprising = {
-		icon = GFX_flag_of_opr
+		icon = GFX_decision_flag_of_opr
 		is_good = no
 		days_mission_timeout = 67
 		selectable_mission = no
 		fire_only_once = yes
 		available = {
-			check_variable = {
-				UKR.separatism_support_in_odeska < 20
-				tooltip = odesa_pr_uprising_avaliable
+			NOT = { 
+				has_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
 			}
 		}
 		activation = {
-			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_OPR
+			has_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
 		}
 		visible = {
-			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_OPR
+			has_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
 			original_tag = UKR
 		}
 		timeout_effect = {
             custom_effect_tooltip = opr_uprising_tt
+			clr_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
 			hidden_effect = {
 
 			}
+		}
+	}
+
+	UKR_weekly_separatism_value = {
+		icon = GFX_decision_UKR_maidan_supress_the_protests
+		allowed = {
+			original_tag = UKR
+		}
+		
+		available = {
+			NOT = {
+			    has_country_flag = UKRBeforeOverthrowOfYanukovych
+			}
+		}
+		
+		selectable_mission = no
+		
+		activation = {
+			has_country_flag = UKRBeforeOverthrowOfYanukovych
+		}
+		
+		days_mission_timeout = 7
+		fire_only_once = no
+		is_good = no
+		
+		timeout_effect = {
+			activate_mission = UKR_weekly_separatism_value
+			add_to_variable = {
+                var = DPR_separatism_value
+                value = 4
+            }
+			add_to_variable = {
+                var = LPR_separatism_value
+                value = 3
+            }
+			add_to_variable = {
+                var = HPR_separatism_value
+                value = 2
+            }
+			add_to_variable = {
+                var = OPR_separatism_value
+                value = 2
+            }
+			add_to_variable = {
+                var = ZKR_separatism_value
+                value = 1
+            }
+			custom_effect_tooltip = UKR_add_separatism
+		}
+		
+		complete_effect = {
+			add_to_variable = {
+                var = DPR_separatism_value
+                value = 1
+            }
+			add_to_variable = {
+                var = LPR_separatism_value
+                value = 2.5
+            }
+			add_to_variable = {
+                var = HPR_separatism_value
+                value = 2
+            }
+			add_to_variable = {
+                var = OPR_separatism_value
+                value = 1.5
+            }
+			add_to_variable = {
+                var = ZKR_separatism_value
+                value = -7
+            }
 		}
 	}
 }
@@ -201,7 +237,7 @@ UKR_parlamient_decision = {
 UKR_maidan_decision = {
 
 	UKR_yanukovich_overthrow = {
-		icon = mission_icon
+		icon = GFX_decision_UKR_maidan_end_of_regime
 		is_good = no
 		selectable_mission = no
 		fire_only_once = yes
@@ -254,6 +290,7 @@ UKR_maidan_decision = {
 		visible = {
 			tag = UKR
 		}
+		icon = GFX_decision_UKR_maidan_supress_the_protests
 		
 	    fire_only_once = no
 		days_re_enable = 60
@@ -273,6 +310,7 @@ UKR_maidan_decision = {
 		visible = {
 			tag = UKR
 		}
+		icon = GFX_decision_UKR_maidan_mass_arests
 		
 	    fire_only_once = no
 		days_re_enable = 60
@@ -282,6 +320,53 @@ UKR_maidan_decision = {
 		}
 		ai_will_do = {
 			factor = 75
+		}
+	}
+
+	UKR_weekly_radicalisation_value = {
+		icon = GFX_decision_UKR_maidan_supress_the_protests
+		allowed = {
+			original_tag = UKR
+		}
+		
+		available = {
+			NOT = {
+			    has_country_flag = UKRBeforeOverthrowOfYanukovych
+			}
+		}
+		
+		selectable_mission = no
+		
+		activation = {
+			has_country_flag = UKRBeforeOverthrowOfYanukovych
+		}
+		
+		days_mission_timeout = 7
+		fire_only_once = no
+		is_good = no
+		
+		timeout_effect = {
+			activate_mission = UKR_weekly_radicalisation_value
+			add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = 4
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = 3
+            }
+			add_to_variable = {
+                var = HPR_separatism_value
+                value = 2
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_prorussians_value
+                value = 2
+            }
+			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
+		}
+		
+		complete_effect = {
 		}
 	}
 }

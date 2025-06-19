@@ -32,7 +32,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "UKR_maidanites_text"
 			position = { x = 0 y = 90 }
-			font = "hoi_18"
+			font = "hoi_16mbs"
 			text = "UKR_maidanites_radicalization"
 			format = center
 			shadow = yes
@@ -42,7 +42,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "UKR_nationalists_text"
 			position = { x = 150 y = 90 }
-			font = "hoi_18"
+			font = "hoi_16mbs"
 			text = "UKR_nationalists_radicalization"
 			format = center
 			shadow = yes
@@ -52,7 +52,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "UKR_prorussians_text"
 			position = { x = 300 y = 90 }
-			font = "hoi_18"
+			font = "hoi_16mbs"
 			text = "UKR_prorussians_radicalization"
 			format = center
 			shadow = yes

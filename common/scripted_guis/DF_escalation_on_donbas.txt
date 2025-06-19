@@ -1,0 +1,27 @@
+scripted_gui = {
+
+    Escalation_on_Donbas = {
+       context_type = decision_category
+	   window_name = "Escalation_on_Donbas"
+ 
+        visible = {
+            OR = {
+                tag = UKR
+                tag = LPR
+                tag = DPR
+                tag = RUS
+            }
+        }
+ 
+		effects = {
+		}
+
+        triggers = {
+
+        }
+		
+		properties = {
+			
+		}
+    }
+}

@@ -4,6 +4,52 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_decision_UKR_separatism_icon"
-		texturefile = "gfx/interface/decisions/decision_UKR_separatism.dds"
+		texturefile = "gfx/interface/decisions/UKR/decision_UKR_separatism_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_UKR_maidan_end_of_regime"
+		texturefile = "gfx/interface/decisions/UKR/maidan/UKR_maidan_end_of_regime.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_UKR_maidan_mass_arests"
+		texturefile = "gfx/interface/decisions/UKR/maidan/UKR_maidan_mass_arests.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_afu_icon"
+		texturefile = "gfx/interface/decisions/UKR/icon_of_AFU.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_UKR_verkhovna_rada_icon"
+		texturefile = "gfx/interface/decisions/UKR/Verkhovna_rada_decision.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_decision_UKR_maidan_supress_the_protests"
+		texturefile = "gfx/interface/decisions/UKR/maidan/UKR_maidan_supress_the_protests.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_flag_of_dpr"
+		texturefile = "gfx/interface/decisions/UKR/flag_of_dpr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_flag_of_lpr"
+		texturefile = "gfx/interface/decisions/UKR/flag_of_lpr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_flag_of_opr"
+		texturefile = "gfx/interface/decisions/UKR/flag_of_opr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_flag_of_kpr"
+		texturefile = "gfx/interface/decisions/UKR/flag_of_kpr.dds"
 	}
 }

@@ -1,0 +1,28 @@
+scripted_gui = {
+
+    SMO_escalation = {
+       context_type = decision_category
+	   window_name = "SMO_escalation"
+ 
+        visible = {
+            OR = {
+                tag = UKR
+                tag = LPR
+                tag = DPR
+                tag = RUS
+            }
+            has_global_flag = Russo_Ukranian_war
+        }
+ 
+		effects = {
+		}
+
+        triggers = {
+
+        }
+		
+		properties = {
+			
+		}
+    }
+}
