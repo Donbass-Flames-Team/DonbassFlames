@@ -27,13 +27,14 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
+			add_stability = -0.025
 		}
 	}
 
 	focus = {
 		id = UKR_next_steps
 		icon = GFX_focus_UKR_next_steps
-		cost = 5
+		cost = 3
 		x = 0
 		y = 1
 
@@ -50,13 +51,14 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
+			country_event = ukraine.6
 		}
 	}
 
 	focus = {
 		id = UKR_remain_neutral
 		icon = GFX_focus_UKR_hold_the_center_line
-		cost = 5
+		cost = 1
 		x = 0
 		y = 2
 		
@@ -97,6 +99,20 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 18
+			}
+
+			add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = 5
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = 3
+            }
+			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 		}
 	}
 
@@ -360,6 +376,7 @@ focus_tree = {
 			country_event = ukraine.38
 		}
 	}
+
 	focus = {
 		id = UKR_expanding_economic_ties
 		icon = GFX_goal_unknown
@@ -378,6 +395,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Expanding_economic_ties"
 		}
 	}
+
 	focus = {
 		id = UKR_loan_agreement_with_russia
 		icon = GFX_goal_unknown
@@ -385,9 +403,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		prerequisite = {
-			focus = UKR_expanding_economic_ties
-		}
+		prerequisite = { focus = UKR_expanding_economic_ties }
 		relative_position_id = UKR_expanding_economic_ties
 
 		cancel_if_invalid = yes
@@ -398,6 +414,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Loan_agreement_with_Russia"
 		}
 	}
+
 	focus = {
 		id = UKR_lower_gas_prices
 		icon = GFX_goal_unknown
@@ -405,9 +422,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		prerequisite = {
-			focus = UKR_loan_agreement_with_russia
-		}
+		prerequisite = { focus = UKR_loan_agreement_with_russia }
 		relative_position_id = UKR_expanding_economic_ties
 
 		cancel_if_invalid = yes
@@ -418,6 +433,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Lower_gas_prices"
 		}
 	}
+
 	focus = {
 		id = UKR_countering_international_pressure
 		icon = GFX_goal_unknown
@@ -436,6 +452,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Countering_international_pressure"
 		}
 	}
+
 	focus = {
 		id = UKR_political_pressure_on_the_west_with_the_help_of_russia
 		icon = GFX_goal_unknown
@@ -443,9 +460,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		prerequisite = {
-			focus = UKR_countering_international_pressure
-		}
+		prerequisite = { focus = UKR_countering_international_pressure }
 		relative_position_id = UKR_countering_international_pressure
 
 		cancel_if_invalid = yes
@@ -456,6 +471,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Political_pressure_on_the_West_with_the_help_of_Russia"
 		}
 	}
+
 	focus = {
 		id = UKR_information_campaign_against_maidan
 		icon = GFX_goal_unknown
@@ -472,8 +488,14 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 5
+			}
+			add_stability = 0.025
 		}
 	}
+
 	focus = {
 		id = UKR_financing_pro_government_protests
 		icon = GFX_goal_unknown
@@ -490,8 +512,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Financing_pro_government_protests"
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 5
+			}
 		}
 	}
+
 	focus = {
 		id = UKR_coordination_with_pro_russian_movements
 		icon = GFX_goal_unknown
@@ -499,9 +526,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		prerequisite = {
-			focus = UKR_financing_pro_government_protests
-		}
+		prerequisite = { focus = UKR_financing_pro_government_protests }
 		relative_position_id = UKR_information_campaign_against_maidan
 
 		cancel_if_invalid = yes
@@ -510,8 +535,26 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Coordination_with_pro_Russian_movements"
+			add_to_variable = {
+                var = DPR_separatism_value
+                value = 4
+            }
+			add_to_variable = {
+                var = LPR_separatism_value
+                value = 3
+            }
+			add_to_variable = {
+                var = HPR_separatism_value
+                value = 2
+            }
+			add_to_variable = {
+                var = OPR_separatism_value
+                value = 2
+            }
+			custom_effect_tooltip = UKR_add_separatism
 		}
 	}
+
 	focus = {
 		id = UKR_involvement_of_russian_advisors
 		icon = GFX_goal_unknown
@@ -519,9 +562,7 @@ focus_tree = {
 		x = 0
 		y = 3
 
-		prerequisite = {
-			focus = UKR_coordination_with_pro_russian_movements
-		}
+		prerequisite = { focus = UKR_coordination_with_pro_russian_movements }
 		relative_position_id = UKR_information_campaign_against_maidan
 
 		cancel_if_invalid = yes
@@ -530,8 +571,30 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Involvement_of_Russian_advisors"
+			add_to_variable = {
+                var = DPR_separatism_value
+                value = 4
+            }
+			add_to_variable = {
+                var = LPR_separatism_value
+                value = 3
+            }
+			add_to_variable = {
+                var = HPR_separatism_value
+                value = 2
+            }
+			add_to_variable = {
+                var = OPR_separatism_value
+                value = 2
+            }
+			add_to_variable = {
+                var = ZKR_separatism_value
+                value = 1
+            }
+			custom_effect_tooltip = UKR_add_separatism
 		}
 	}
+
 	focus = {
 		id = UKR_deployment_of_russian_forces_to_stabilize_the_situation
 		icon = GFX_goal_unknown
@@ -539,9 +602,7 @@ focus_tree = {
 		x = 0
 		y = 4
 
-		prerequisite = {
-			focus = UKR_involvement_of_russian_advisors
-		}
+		prerequisite = { focus = UKR_involvement_of_russian_advisors }
 		relative_position_id = UKR_information_campaign_against_maidan
 
 		cancel_if_invalid = yes
@@ -550,6 +611,20 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Deployment_of_Russian_forces_to_stabilize_the_situation"
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 15
+			}
+
+			add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = 5
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = 5
+            }
+			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 		}
 	}
 }

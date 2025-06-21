@@ -4,6 +4,7 @@
 
 add_namespace = ukraine
 
+#overthrow of yanukovych
 country_event = {
 	id = ukraine.1
 	title = ukraine.1.t
@@ -14,5 +15,122 @@ country_event = {
 	
 	option = {
 		name = ukraine.1.a
+		load_focus_tree = ukraine_focus_tree
+	}
+}
+
+#dpr uprising
+country_event = {
+	id = ukraine.2
+	title = ukraine.2.t
+	desc = ukraine.2.d
+	picture = [GetHitlerHandshakeEventPicture]
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ukraine.2.a
+	}
+
+	option = {
+		name = ukraine.2.b
+		DPR = {
+			change_tag_from = root
+		}
+	}
+}
+
+#lpr uprising
+country_event = {
+	id = ukraine.3
+	title = ukraine.3.t
+	desc = ukraine.3.d
+	picture = [GetHitlerHandshakeEventPicture]
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ukraine.3.a
+	}
+
+	option = {
+		name = ukraine.3.b
+		LPR = {
+			change_tag_from = root
+		}
+	}
+}
+
+#hpr uprising
+country_event = {
+	id = ukraine.4
+	title = ukraine.4.t
+	desc = ukraine.4.d
+	picture = [GetHitlerHandshakeEventPicture]
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ukraine.4.a
+	}
+
+	option = {
+		name = ukraine.4.b
+		HPR = {
+			change_tag_from = root
+		}
+	}
+}
+
+#opr uprising
+country_event = {
+	id = ukraine.5
+	title = ukraine.5.t
+	desc = ukraine.5.d
+	picture = [GetHitlerHandshakeEventPicture]
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ukraine.5.a
+	}
+
+	option = {
+		name = ukraine.5.b
+		OPR = {
+			change_tag_from = root
+		}
+	}
+}
+
+#нanukovych select path
+country_event = {
+	id = ukraine.6
+	title = ukraine.6.t
+	desc = ukraine.6.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+    #Be neutral
+	option = {
+		name = ukraine.36.a
+
+		complete_national_focus = UKR_remain_neutral
+		ai_chance = {
+			base = 2.5
+			modifier = {
+				factor = 35
+				if = {
+					limit = { is_historical_focus_on = yes }
+				}
+			}
+			modifier = {
+				factor = 15
+				if = {
+					limit = { is_historical_focus_on = no }
+				}
+			}
+		}
 	}
 }

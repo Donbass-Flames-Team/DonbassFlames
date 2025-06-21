@@ -1,0 +1,52 @@
+focus_tree = {
+	id = ukraine_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 15
+			tag = UKR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2500 y = 500 }
+	
+	focus = {
+		id = UKR_government_in_anarchy
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 5
+		y = 0
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_new_parliament_composition
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 5
+		y = 1
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+}

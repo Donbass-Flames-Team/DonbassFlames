@@ -58,16 +58,16 @@ guiTypes = {
 	    iconType = {
 		    name = "UKR_siezd_icon"
 		    spriteType = "GFX_ukraine_siezd_icon"
-		    position = { x = 140 y = 158 }
+		    position = { x = 310 y = 153 }
 		    scale = 1.2
 		    shadow = yes
 	    } 
 
 	    instantTextBoxType = {
 		    name = "UKR_rada_congress_title"
-		    position = { x = 600 y = 40 }
+		    position = { x = 550 y = 40 }
 		    font = "hoi_24header"
-		    text = "13 Съезд Верховной Рады"
+		    text = "[ukr_congress_rada]"
 		    format = center
 		    shadow = yes
 	    }
@@ -75,87 +75,87 @@ guiTypes = {
 		iconType = {
 		    name = "UKR_speaker_parlamient_frame"
 			spriteType = "GFX_startgui_leader_frame"
-			position = { x = 985 y = 185 }
+			position = { x = 1025 y = 185 }
 			scale = 0.79
 		}
 
 		iconType = {
 		    name = "UKR_speaker_parlamient_portrait"
 			spriteType = "GFX_closebutton"
-			position = { x = 1009 y = 210 }
+			position = { x = 1049 y = 210 }
 			scale = 1.25
 			multiline = yes
 		}
 
 	    instantTextBoxType = {
 		    name = "UKR_speaker_name"
-		    position = { x = 1035 y = 500 }
+		    position = { x = 1070 y = 500 }
 		    font = "hoi_24header"
 		    text = "[ukr_parlamient_speaker_name]"
 	    }
 
 	    instantTextBoxType = {
 		    name = "party_regiony"
-		    position = { x = 50 y = 540 }
+		    position = { x = 50 y = 160 }
 		    font = "hoi_16mbs"
 		    text = "Партия регионов: 187"
 	    }
 	    instantTextBoxType = {
 		    name = "party_batkivshchyna"
-		    position = { x =  50 y = 560 }
+		    position = { x =  50 y = 180 }
 		    font = "hoi_16mbs"
 		    text = "ВО «Батькивщина»: 102"
 	    }
 	    instantTextBoxType = {
 		    name = "party_udar"
-		    position = { x = 50 y = 580 }
+		    position = { x = 50 y = 200 }
 		    font = "hoi_16mbs"
 		    text = "УДАР: 40"
 	    }
 	    instantTextBoxType = {
 		    name = "party_kpu"
-		    position = { x = 50 y = 600 }
+		    position = { x = 50 y = 220 }
 		    font = "hoi_16mbs"
 		    text = "КПУ: 32"
 	    }
 	    instantTextBoxType = {
 		    name = "party_svoboda"
-		    position = { x = 50 y = 620 }
+		    position = { x = 50 y = 240 }
 		    font = "hoi_16mbs"
 		    text = "Свобода: 38"
 	   }
 
 	    instantTextBoxType = {
 		    name = "party_center"
-		    position = { x = 420 y = 540  }
+		    position = { x = 50 y = 260  }
 		    font = "hoi_16mbs"
 		    text = "Единый Центр: 3"
 	    }
 
 	    instantTextBoxType = {
 		    name = "party_narodnyaya"
-		    position = { x = 420 y = 560 }
+		    position = { x = 50 y = 280  }
 		    font = "hoi_16mbs"
 		    text = "Народная партия: 2"
 	    }
 
 	    instantTextBoxType = {
 		    name = "party_RPOL"
-		    position = { x = 420 y = 580 }
+		    position = { x = 50 y = 300 }
 		    font = "hoi_16mbs"
 		    text = "Радикальная партия Олега Ляшко: 1"
 	    }
 
 	    instantTextBoxType = {
 		    name = "party_Soyuz"
-		    position = { x = 420 y = 615 }
+		    position = { x = 50 y = 320 }
 		    font = "hoi_16mbs"
 		    text = "Союз: 1"
 	    }
 
 	    instantTextBoxType = {
 		    name = "Noyname"
-		    position = { x = 620 y = 615 }
+		    position = { x = 50 y = 340 }
 		    font = "hoi_16mbs"
 		    text = "Самовыдвиженцы: 44"
 	    }
