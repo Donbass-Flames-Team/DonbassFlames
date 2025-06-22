@@ -27,7 +27,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/UKR/Verkhovna_rada_decision.dds"
 	}
 
-
 	spriteType = {
 		name = "GFX_decision_UKR_maidan_supress_the_protests"
 		texturefile = "gfx/interface/decisions/UKR/maidan/UKR_maidan_supress_the_protests.dds"
@@ -51,5 +50,143 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_flag_of_kpr"
 		texturefile = "gfx/interface/decisions/UKR/flag_of_kpr.dds"
+	}
+
+	#ukr volounteers batalions
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_11"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/11.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_aidar"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/aidar.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_artemivsk"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/aretmivsk.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_bogdan"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/bogdan.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_chernygiv"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/chernygiv.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_dnipro"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/dnipro.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_dnipro2"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/dnipro2.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_dnipropetrovsk"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/dnipropetrovsk.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_donbass"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/donbass.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_goldgates"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/goldgates.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_ivanofrankovsk"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/ivanofrankovsk.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_kharkov"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/kharkov.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_kherson"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/kherson.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_kiev"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/kiev.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_kievskarus"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/kievskarus.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_kirovograd"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/kirovograd.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_kiyv2"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/kiyv2.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_kremenchuk"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/kremenchuk.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_krivbas"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/krivbas.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_kulchickogo"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/kulchickogo.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_luhansk"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/luhansk.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_lviv"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/lviv.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_mikolaiv"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/mikolaiv.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_mirotvorec"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/mirotvorec.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_oun"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/oun.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_poltava"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/poltava.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_praviysektor"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/praviysektor.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_shatarsk"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/shatarsk.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_sich"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/sich.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_sicheslav"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/sicheslav.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_slabozansina"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/slabozansina.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_storm"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/storm.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_svitaz"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/svitaz.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_batalion_vinitsa"
+		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/vinitsa.png"
 	}
 }
