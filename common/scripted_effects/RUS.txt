@@ -1,0 +1,9 @@
+## Stability of regime
+
+RUS_stability_of_regime_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = RUS_stability_of_regime
+		min = 0
+		max = 100
+	}
+}

@@ -1,0 +1,22 @@
+scripted_gui = {
+
+    RUS_stability_of_regime = {
+       context_type = decision_category
+	   window_name = "RUS_stability_of_regime"
+ 
+        visible = {
+            tag = UKR
+        }
+ 
+		effects = {
+		}
+
+        triggers = {
+
+        }
+		
+		properties = {
+			
+		}
+    }
+}

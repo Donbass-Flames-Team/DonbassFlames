@@ -9,51 +9,69 @@ guiTypes = {
 			name = "UKR_maidanites"
 			spriteType = "GFX_maidanites_maidan_powers_gui"
 			position = { x = 170 y = -15 }
-			scale = 1
-			tooltip = "UKR_maidan_powers_maidanites_tt"
+		}
+
+		buttonType = {
+			name = "UKR_maidanites_button"
+			position = { x = 174 y = 0 }
+			spriteType = "GFX_maidanites_icon_maidan_powers_gui"
+			pdx_tooltip = "UKR_maidan_powers_maidanites_tt"
 		}
 
 		iconType = {
 			name = "UKR_nationalists"
 			spriteType = "GFX_nationalists_maidan_powers_gui"
 			position = { x = 5 y = -15 }
-			scale = 1
-			tooltip = "UKR_maidan_powers_nationalists_tt"
+		}
+
+		buttonType = {
+			name = "UKR_nationalists_button"
+			position = { x = 30 y = -10 }
+			spriteType = "GFX_nationalists_icon_maidan_powers_gui"
+			pdx_tooltip = "UKR_maidan_powers_nationalists_tt"
 		}
 
 		iconType = {
 			name = "UKR_prorussians"
 			spriteType = "GFX_prorussians_maidan_powers_gui"
-			position = { x = 330 y = -15 }
-			scale = 1
-			tooltip = "UKR_maidan_powers_prorussians_tt"
+			position = { x = 320 y = -15 }
+		}
+
+		buttonType = {
+			name = "UKR_prorussians_button"
+			position = { x = 340 y = 0 }
+			quadTextureSprite = "GFX_prorussians_icon_maidan_powers_gui"
+			pdx_tooltip = "UKR_maidan_powers_prorussians_tt"
 		}
 
 		instantTextBoxType = {
 			name = "UKR_maidanites_text"
-			position = { x = 150 y = 155 }
+			position = { x = 150 y = 165 }
 			font = "hoi_16mbs"
 			text = "UKR_maidanites_radicalization"
 			format = center
 			maxHeight = 24
+			tooltip = "UKR_maidan_powers_maidanites_text_tt"
 		}
 
 		instantTextBoxType = {
 			name = "UKR_nationalists_text"
-			position = { x = -15 y = 155 }
+			position = { x = -15 y = 165 }
 			font = "hoi_16mbs"
 			text = "UKR_nationalists_radicalization"
 			format = center
 			maxHeight = 24
+			tooltip = "UKR_maidan_powers_nationalists_text_tt"
 		}
 
 		instantTextBoxType = {
 			name = "UKR_prorussians_text"
-			position = { x = 315 y = 155 }
+			position = { x = 315 y = 165 }
 			font = "hoi_16mbs"
 			text = "UKR_prorussians_radicalization"
 			format = center
 			maxHeight = 24
+			tooltip = "UKR_maidan_powers_prorussians_text_tt"
 		}
 	}
 }

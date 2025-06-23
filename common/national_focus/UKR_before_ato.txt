@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = UKR_force_deal_with_protests
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 5
+		cost = 3
 		x = 2
 		y = 3
 		
@@ -113,6 +113,7 @@ focus_tree = {
                 value = 3
             }
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
+		    add_stability = -0.05
 		}
 	}
 
@@ -136,6 +137,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
+			add_stability = -0.075
 		}
 	}
 
@@ -234,7 +236,7 @@ focus_tree = {
 	focus = {
 		id = UKR_negotations_with_protests
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 5
+		cost = 3
 		x = -2
 		y = 3
 		
@@ -251,6 +253,16 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
+
+			add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = -5
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = -3
+            }
+			custom_effect_tooltip = UKR_minus_radicalisation_of_maidan
 		}
 	}
 
@@ -274,6 +286,16 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
+		
+			add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = -5
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = -3
+            }
+			custom_effect_tooltip = UKR_minus_radicalisation_of_maidan
 		}
 	}
 
@@ -297,6 +319,16 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_amnesty_for_political_prisoners"
+		
+			add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = -5
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = -3
+            }
+			custom_effect_tooltip = UKR_minus_radicalisation_of_maidan
 		}
 	}
 
@@ -316,8 +348,19 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Resignation_of_the_Azarov_government"
+		
+			add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = -5
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = -3
+            }
+			custom_effect_tooltip = UKR_minus_radicalisation_of_maidan
 		}
 	}
+
 	focus = {
 		id = UKR_agree_to_early_elections_and_constitutional_amendments
 		icon = GFX_goal_unknown
@@ -334,8 +377,18 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Agree_to_early_elections_and_constitutional_amendments"
+			add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = -5
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = -3
+            }
+			custom_effect_tooltip = UKR_minus_radicalisation_of_maidan
 		}
 	}
+
 	focus = {
 		id = UKR_agree_to_the_formation_of_a_transitional_government
 		icon = GFX_goal_unknown
@@ -352,6 +405,15 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_agree_to_the_formation_of_a_transitional_government"
+			add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = -5
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = -3
+            }
+			custom_effect_tooltip = UKR_minus_radicalisation_of_maidan
 		}
 	}
 
@@ -450,6 +512,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Countering_international_pressure"
+		    add_political_power = 75
 		}
 	}
 
@@ -469,6 +532,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Political_pressure_on_the_West_with_the_help_of_Russia"
+		    add_political_power = 75
 		}
 	}
 

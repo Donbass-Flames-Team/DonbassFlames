@@ -310,10 +310,23 @@ UKR_maidan_decision = {
 		days_re_enable = 60
 		cost = 75
 		complete_effect = {
-		    
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 5
+			}
+
+			add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = 2
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = 2
+            }
+			custom_effect_tooltip = UKR_add_radicalisation_of_maidan    
 		}
 		ai_will_do = {
-			factor = 75
+			factor = 25
 		}
 	}
 
@@ -330,7 +343,20 @@ UKR_maidan_decision = {
 		days_re_enable = 60
 		cost = 75
 		complete_effect = {
-		    
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 7
+			}
+
+			add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = 2
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = 2
+            }
+			custom_effect_tooltip = UKR_add_radicalisation_of_maidan    
 		}
 		ai_will_do = {
 			factor = 75

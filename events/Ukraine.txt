@@ -27,6 +27,17 @@ country_event = {
 	picture = [GetHitlerHandshakeEventPicture]
 	
 	is_triggered_only = yes
+
+	immediate = { 
+		hidden_effect = {
+			DPR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+			}
+		}
+	}
 	
 	option = {
 		name = ukraine.2.a
@@ -48,6 +59,17 @@ country_event = {
 	picture = [GetHitlerHandshakeEventPicture]
 	
 	is_triggered_only = yes
+
+	immediate = { 
+		hidden_effect = {
+			LPR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+			}
+		}
+	}
 	
 	option = {
 		name = ukraine.3.a
@@ -69,6 +91,17 @@ country_event = {
 	picture = [GetHitlerHandshakeEventPicture]
 	
 	is_triggered_only = yes
+
+	immediate = { 
+		hidden_effect = {
+			HPR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+			}
+		}
+	}
 	
 	option = {
 		name = ukraine.4.a
@@ -90,6 +123,17 @@ country_event = {
 	picture = [GetHitlerHandshakeEventPicture]
 	
 	is_triggered_only = yes
+
+	immediate = { 
+		hidden_effect = {
+			OPR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+			}
+		}
+	}
 	
 	option = {
 		name = ukraine.5.a

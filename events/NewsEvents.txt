@@ -4,7 +4,7 @@
 
 add_namespace = news_events
 
-# 
+# overthrow of yanukovych
 news_event = {
 	id = news_events.1
 	title = news_events.1.t
@@ -17,5 +17,35 @@ news_event = {
 	
 	option = {
 		name = news_events.1.a
+		if = {
+			limit = {
+				original_tag = UKR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.1.b
+		if = {
+			limit = {
+				OR = {
+				    original_tag = RUS
+					original_tag = BLR
+				}
+			}
+		}
+	}
+
+	option = {
+		name = news_events.1.b
+		if = {
+			limit = {
+				NOT = {
+					original_tag = UKR
+				    original_tag = RUS
+					original_tag = BLR
+				}
+			}
+		}
 	}
 }
