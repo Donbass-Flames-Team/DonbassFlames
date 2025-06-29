@@ -13,4 +13,25 @@ spriteTypes = {
 		name = "GFX_turchinov_speaker"
 		textureFile = "gfx/leaders/UKR/Turchinov.dds"
 	}
+
+	spriteType = {
+		name = "GFX_UKR_parlamient_background"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_background.png"
+	}
+
+	spriteType = {
+		name = "GFX_UKR_law_menu_icon"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_Law_icon.png"
+	}
+
+	spriteType = {
+		name = "GFX_UKR_law_accept_icon"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_Law_accepted.png"
+	}
+
+	spriteType = {
+		name = "GFX_UKR_parlamient_parties"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_parties.png"
+		noOfFrames = 13
+	}
 }
