@@ -188,7 +188,7 @@ guiTypes = {
 			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 129 y = -30 }
+			position = { x = 142 y = -16 }
 			quadTextureSprite ="GFX_main_lobby_button_singlplayer"
 			font = "hoi_24header"			
 			#text = "FE_SINGLE_PLAYER"				
@@ -198,7 +198,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 129 y = 105}
+			position = { x = 142 y = 120}
 			quadTextureSprite ="GFX_main_lobby_button_multiplayer"
 			font = "hoi_24header"			
 			#text = "FE_MULTI_PLAYER"			
@@ -208,7 +208,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 129 y = 240 }
+			position = { x = 142 y = 255 }
 			quadTextureSprite ="GFX_main_lobby_button_settings"	
 			#buttonText = "OPTIONS"
 			buttonFont = "hoi_24header"
@@ -218,7 +218,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 129 y = 375 }
+			position = { x = 142 y = 391 }
 			quadTextureSprite ="GFX_main_lobby_button_exit"
 			font = "hoi_24header"			
 			#text = "FE_EXIT"			
