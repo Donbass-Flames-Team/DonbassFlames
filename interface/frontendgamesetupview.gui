@@ -112,7 +112,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "focus_entry"
-		size = { width=60 height=80}
+		size = { width=135 height=100}
 		clipping = no
 
 		iconType = {
@@ -130,7 +130,7 @@ guiTypes = {
 		buttonType = {
 			name = "country_leader"
 			quadTextureSprite ="GFX_leader_unknown"
-			position = { x = 468 y = 22 }
+			position = { x = 466 y = 22 }
 			scale=0.75
 			clicksound = click_checkbox
 		}
@@ -138,7 +138,7 @@ guiTypes = {
 		iconType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_shield_medium"
-			position = { x = 486 y = 186 }
+			position = { x = 483 y = 186 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -146,13 +146,13 @@ guiTypes = {
 		buttonType = {
 			name = "country"
 			quadTextureSprite = "GFX_country_selection_entry"
-			position = { x=451 y =0 }
+			position = { x=449 y =0 }
 			clicksound = click_checkbox
 		}
 
 		instantTextBoxType = {
 			name = "country_name"
-			position = { x = 459 y = 247 }
+			position = { x = 458 y = 247 }
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 131
@@ -859,7 +859,7 @@ guiTypes = {
 					name ="ideas_grid"
 					position = { x = 0 y = 0 }
 					size = { width = 100% height = 70 }
-					slotsize = { width = 60 height = 66 }
+					slotsize = { width = 83 height = 66 }
 					max_slots = { x = 3 y = 1 }
 					add_horizontal = yes
 					format = "UPPER_LEFT"
@@ -875,7 +875,7 @@ guiTypes = {
 					name ="focus_grid"
 					position = { x = 17 y = 8 }
 					size = { width = 100% height = 100 }
-					slotsize = { width = 105 height = 100 }
+					slotsize = { width = 140 height = 120 }
 					max_slots = { x = 4 y = 1 }
 					add_horizontal = yes
 					format = "UPPER_LEFT"

@@ -25,7 +25,7 @@ guiTypes = {
 	### MAIN MENU PANEL (upperleft)
 	containerWindowType = {
 		name  ="mainmenu_panel_upperleft"
-		position = { x=0 y =-350 }
+		position = { x=0 y =-430 }
 		show_position = { x=0 y =-1 }
 		animation_type = decelerated
 		animation_time = 1000
@@ -35,8 +35,8 @@ guiTypes = {
 		{
 			name ="frontend_game_logo"
 			spriteType = "GFX_frontend_game_logo"
-			position = { x= 1370 y = 20 }
-			scale = 0.9
+			position = { x= 1390 y = -25 }
+			scale = 0.75
 		}
 		
 	}
@@ -188,7 +188,7 @@ guiTypes = {
 			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 142 y = -16 }
+			position = { x = 116 y = -43 }
 			quadTextureSprite ="GFX_main_lobby_button_singlplayer"
 			font = "hoi_24header"			
 			#text = "FE_SINGLE_PLAYER"				
@@ -198,7 +198,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 142 y = 120}
+			position = { x = 116 y = 93}
 			quadTextureSprite ="GFX_main_lobby_button_multiplayer"
 			font = "hoi_24header"			
 			#text = "FE_MULTI_PLAYER"			
@@ -208,7 +208,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 142 y = 255 }
+			position = { x = 116 y = 228 }
 			quadTextureSprite ="GFX_main_lobby_button_settings"	
 			#buttonText = "OPTIONS"
 			buttonFont = "hoi_24header"
@@ -218,7 +218,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 142 y = 391 }
+			position = { x = 116 y = 364 }
 			quadTextureSprite ="GFX_main_lobby_button_exit"
 			font = "hoi_24header"			
 			#text = "FE_EXIT"			
@@ -248,12 +248,12 @@ guiTypes = {
 
 		positionType = {
 			name = "version_label_subscription_position"
-			position = { x = 1300 y = 70 }
+			position = { x = 1327 y = 180 }
 		}
 		
 		buttonType = {
 			name = "career_profile_button"
-			position = { x = 300 y = 515 }
+			position = { x = 274 y = 489 }
 			quadTextureSprite ="discord"
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -270,7 +270,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "friends_button"
-			position = { x = -33 y = 515 }
+			position = { x = -33 y = 489 }
 			quadTextureSprite ="discord"
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -278,7 +278,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "credits_button"
-			position = { x = 133 y = 515 }
+			position = { x = 120 y = 489 }
 			quadTextureSprite ="discord"	
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -286,7 +286,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 1499 y = 638 }
+			position = { x = 428 y = 489 }
 			quadTextureSprite ="discord"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
@@ -364,7 +364,7 @@ guiTypes = {
 			position = { x=48 y=-17 }
             ButtonType = {
                 name = "discord_button"
-                position = { x=-720 y=-490 }
+                position = { x=-720 y=-518 }
                 quadTextureSprite ="discord"
                 #clicksound = click_default
                 pdx_tooltip = "MENU_DISCORD"
@@ -373,7 +373,7 @@ guiTypes = {
             }
 			ButtonType = {
                 name = "telegram_button"
-                position = { x=-720 y=-355 }
+                position = { x=-720 y=-381 }
                 quadTextureSprite ="GFX_telegram_icon"
                 #clicksound = click_default
                 pdx_tooltip = "MENU_DISCORD"
@@ -382,7 +382,7 @@ guiTypes = {
             }
 			ButtonType = {
                 name = "youtube_button"
-                position = { x=-720 y=-220 }
+                position = { x=-720 y=-247 }
                 quadTextureSprite ="youtube"
                 #clicksound = click_default
                 pdx_tooltip = "MENU_DISCORD"
@@ -391,7 +391,7 @@ guiTypes = {
             }
 			ButtonType = {
                 name = "tiktok_button"
-                position = { x=-720 y=-85 }
+                position = { x=-720 y=-111 }
                 quadTextureSprite ="GFX_tiktok_icon"
                 #clicksound = click_default
                 pdx_tooltip = "MENU_DISCORD"
