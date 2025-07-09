@@ -1,0 +1,82 @@
+bookmarks = {
+	bookmark = {
+		name = "EUROMAIDAN_NAME"
+		desc = "EUROMAIDAN_DESC"
+		date = 2013.11.21.10
+		picture = "GFX_2013_date"
+		#default_country = "UKR"
+		default = yes
+
+		"UKR"={
+			history = "UKR_EC_DESC"
+			ideology = neutrality
+			ideas = {
+				UKR_protests
+				UKR_ukraine_army
+				UKR_dependence_on_russia
+			}
+			focuses = {
+				UKR_yanukovychs_results
+				UKR_next_steps
+			}	
+		}
+
+		"RUS"={
+			history = "RUS_EC_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+				RUS_putins_russia
+				RUS_troops_in_sevastopol_port
+			}	
+		}
+
+		#Minor countries
+		"POL"={
+			history = "POL_EC_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"ROM"={
+			history = "ROM_EC_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"BLR"={
+			history = "BLR_EC_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"MLV"={
+			history = "MLV_EC_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"TMR"={
+			history = "TMR_EC_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+	}
+}

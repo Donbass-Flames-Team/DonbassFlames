@@ -1,1 +1,113 @@
-capital = 1
+﻿
+capital = 93
+
+2013.11.21 = {
+
+	set_country_flag = UKRBeforeOverthrowOfYanukovych
+	set_country_flag = Speaker_Is_Turchinov
+	set_country_flag = 7_congress_of_rada
+	set_research_slots = 3
+	
+	set_technology = {
+		infantry_weapons = 1
+	}
+    
+
+	# Separatism values
+	set_variable = {
+        var = DPR_separatism_value
+        value = 30
+    }
+
+	set_variable = {
+        var = LPR_separatism_value
+        value = 25
+    }
+
+	set_variable = {
+        var = HPR_separatism_value
+        value = 5
+    }
+
+	set_variable = {
+        var = OPR_separatism_value
+        value = 4
+    }
+
+	set_variable = {
+        var = ZKR_separatism_value
+        value = 1
+    }
+
+    # Radicalisation values
+	set_variable = {
+        var = UKR_radicalisation_of_prorussians_value
+        value = 15
+    }
+
+	set_variable = {
+        var = UKR_radicalisation_of_proeuropeans_value
+        value = 40
+    }
+
+	set_variable = {
+        var = UKR_radicalisation_of_nationalists_value
+        value = 30
+    }
+	
+	set_politics = {
+		ruling_party = autoritarian_democracy
+		last_election = "2010.02.07"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		liberal_democracy = 18
+		conservatism_democracy = 34
+		social_democracy = 3
+		nationalism = 15
+		communism = 9
+		autoritarian_democracy = 21
+	}
+
+	create_country_leader = {
+		name = alexander_tyrchinov
+		#desc = victor_yanukovich_desc
+		ideology = conservatism
+		picture = gfx/leaders/UKR/Turchinov.dds
+		traits = {}
+	}
+
+	create_country_leader = {
+		name = victor_yanukovich
+		#desc = victor_yanukovich_desc
+		ideology = autoritarian_democracy
+		picture = gfx/leaders/UKR/Yanukovich.dds
+		traits = {}
+	}
+
+	add_ideas = {
+		UKR_protests
+		UKR_helpless_government
+		UKR_separatism
+		UKR_ukraine_army
+		UKR_dependence_on_russia
+		UKR_ukranian_mic
+	}
+	
+	add_manpower = 60000
+	
+	recruit_character = victor_muzhenko
+	recruit_character = stepan_poltorak
+	recruit_character = mikhail_koval
+	recruit_character = aleksandr_sirskiy
+	recruit_character = valery_zaluzhny
+	recruit_character = mikhail_drapatiy
+	recruit_character = sergey_krivonos
+	recruit_character = mikhail_zabrodsky
+	recruit_character = andrey_taran
+	recruit_character = oleg_mikats
+	recruit_character = yuri_allerov
+	recruit_character = sergey_naev
+}

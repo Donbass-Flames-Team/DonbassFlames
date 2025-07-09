@@ -1,0 +1,398 @@
+focus_tree = {
+	id = ukraine_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 15
+			tag = UKR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2500 y = 500 }
+	
+	focus = {
+		id = UKR_government_in_anarchy
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 5
+		y = 0
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			swap_ideas = {
+                remove_idea = UKR_helpless_government
+                add_idea = UKR_disorderly_government
+            }
+		}
+	}
+
+	focus = {
+		id = UKR_new_parliament_composition
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_government_in_anarchy }
+		relative_position_id = UKR_government_in_anarchy
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    clr_country_flag = 7_congress_of_rada
+			set_country_flag = 8_congress_of_rada
+		}
+	}
+
+	focus = {
+		id = UKR_mobilization_of_reservists
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 2
+
+		prerequisite = { focus = UKR_government_in_anarchy }
+		relative_position_id = UKR_government_in_anarchy
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_send_millities_to_kharkov
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 3
+		y = 3
+
+		prerequisite = { focus = UKR_mobilization_of_reservists }
+		relative_position_id = UKR_government_in_anarchy
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_crush_kharkov_people_republic
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 3
+		y = 4
+
+		prerequisite = { focus = UKR_send_millities_to_kharkov }
+		relative_position_id = UKR_government_in_anarchy
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_send_additional_forces_to_odessa
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 3
+
+		prerequisite = { focus = UKR_mobilization_of_reservists }
+		relative_position_id = UKR_government_in_anarchy
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_block_the_crimea
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 4
+
+		prerequisite = { focus = UKR_send_additional_forces_to_odessa }
+		relative_position_id = UKR_government_in_anarchy
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_deal_with_prorussians_protests
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -3
+		y = 3
+
+		prerequisite = { focus = UKR_mobilization_of_reservists }
+		relative_position_id = UKR_government_in_anarchy
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_recapture_part_of_donetsk_region
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -4
+		y = 4
+
+		prerequisite = { focus = UKR_deal_with_prorussians_protests }
+		relative_position_id = UKR_government_in_anarchy
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_recapture_part_of_luhansk_region
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -2
+		y = 4
+
+		prerequisite = { focus = UKR_deal_with_prorussians_protests }
+		relative_position_id = UKR_government_in_anarchy
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_end_of_separatism
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 5
+
+		prerequisite = { focus = UKR_block_the_crimea }
+		prerequisite = { focus = UKR_recapture_part_of_luhansk_region }
+		prerequisite = { focus = UKR_crush_kharkov_people_republic }
+		prerequisite = { focus = UKR_recapture_part_of_donetsk_region }
+		relative_position_id = UKR_government_in_anarchy
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_start_of_ato
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 13
+		y = 0
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			swap_ideas = {
+                remove_idea = UKR_ukraine_army
+                add_idea = UKR_volunteer_army
+            }
+		}
+	}
+
+	focus = {
+		id = UKR_strengthen_slavyansk
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_start_of_ato }
+		relative_position_id = UKR_start_of_ato
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_volunteer_battalions
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 4
+		y = 1
+
+		prerequisite = { focus = UKR_start_of_ato }
+		relative_position_id = UKR_start_of_ato
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
+		    add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = UKR_volunteer_battalions_of_mvd
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 2
+		y = 1
+
+		prerequisite = { focus = UKR_volunteer_battalions }
+		relative_position_id = UKR_volunteer_battalions
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
+		    add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = UKR_volunteer_battalion_azov
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_volunteer_battalions }
+		relative_position_id = UKR_volunteer_battalions
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
+		    add_political_power = 50
+		}
+	}
+}

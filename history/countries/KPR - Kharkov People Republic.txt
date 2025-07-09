@@ -1,0 +1,32 @@
+﻿
+capital = 93
+
+2013.11.21 = {
+	set_technology = {
+		infantry_weapons = 1
+	}
+	
+	set_politics = {
+		ruling_party = autoritarian_democracy
+		last_election = "2010.02.07"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		liberal_democracy = 15
+		conservatism_democracy = 35
+		nationalism = 15
+		communism = 10
+		autoritarian_democracy = 25
+	}
+
+	create_country_leader = {
+		name = peoples_militia
+		#desc = victor_yanukovich_desc
+		ideology = autoritarian_democracy
+		picture = gfx/leaders/LPR/Peoples_militia.dds
+		traits = {}
+	}
+	
+}
