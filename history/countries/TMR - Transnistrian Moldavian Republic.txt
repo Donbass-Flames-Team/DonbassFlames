@@ -1,0 +1,36 @@
+capital = 49955
+set_technology = {
+	infantry_weapons = 1
+}
+add_ideas = {
+	not_recognized_state
+	mixed_republic
+	medium_corruption
+
+	no_nuke_state
+	straight_to_the_frontline
+	military_laths
+
+	TMR_pobeda
+	TMR_bad_army
+}
+2013.11.21 = {
+    set_politics = {
+	    ruling_party = autoritarian_democracy
+	    last_election = "2011.12.30"
+	    election_frequency = 48
+	    elections_allowed = no
+    }
+    set_popularities = {
+		communism = 14
+		autoritarian_democracy = 77
+		liberal_democratic = 9
+    }
+	create_country_leader = {
+		name = TMR_shevchyk
+		#desc = TMR_shevchyk_desc
+		ideology = autoritarian_democractic
+		picture = gfx/leaders/TMR/shevchyk.dds
+		traits = {}
+	}
+}

@@ -9,7 +9,7 @@ bookmarks = {
 
 		"UKR"={
 			history = "UKR_EC_DESC"
-			ideology = neutrality
+			ideology = autoritarian_democracy
 			ideas = {
 				UKR_protests
 				UKR_ukraine_army
@@ -23,7 +23,7 @@ bookmarks = {
 
 		"RUS"={
 			history = "RUS_EC_DESC"
-			ideology = neutrality
+			ideology = autoritarian_democracy
 			ideas = {
 			}
 			focuses = {
@@ -35,7 +35,7 @@ bookmarks = {
 		#Minor countries
 		"POL"={
 			history = "POL_EC_DESC"
-			ideology = neutrality
+			ideology = liberal_democracy
 			minor = yes
 			ideas = {
 			}
@@ -44,7 +44,7 @@ bookmarks = {
 		}
 		"ROM"={
 			history = "ROM_EC_DESC"
-			ideology = neutrality
+			ideology = liberal_democracy
 			minor = yes
 			ideas = {
 			}
@@ -53,16 +53,7 @@ bookmarks = {
 		}
 		"BLR"={
 			history = "BLR_EC_DESC"
-			ideology = neutrality
-			minor = yes
-			ideas = {
-			}
-			focuses = {
-			}	
-		}
-		"MLV"={
-			history = "MLV_EC_DESC"
-			ideology = neutrality
+			ideology = autoritarian_democracy
 			minor = yes
 			ideas = {
 			}
@@ -71,7 +62,34 @@ bookmarks = {
 		}
 		"TMR"={
 			history = "TMR_EC_DESC"
-			ideology = neutrality
+			ideology = communism
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"MOL"={
+			history = "MLV_EC_DESC"
+			ideology = liberal_democracy
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"HUN"={
+			history = "TMR_EC_DESC"
+			ideology = liberal_democracy
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+	    "LIT"={
+			history = "TMR_EC_DESC"
+			ideology = liberal_democracy
 			minor = yes
 			ideas = {
 			}
