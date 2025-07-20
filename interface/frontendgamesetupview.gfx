@@ -232,7 +232,7 @@ spriteTypes = {
         spriteType = {
                 name = "GFX_bookmark_entry_bg"
                 texturefile = "gfx/interface/bookmark_entry_bg.dds"
-                noOfFrames = 2
+                noOfFrames = 1
                 effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
         }
 	
@@ -242,13 +242,23 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 	
+	#Scenarios images
+
 	spriteType = {
-		name = "GFX_select_date_1936"
-		texturefile = "gfx/interface/select_date_1936.dds"
+		name = "GFX_2013_date"
+		texturefile = "gfx/GFX_2013_date.dds"
 	}
 	spriteType = {
-		name = "GFX_select_date_1939"
-		texturefile = "gfx/interface/select_date_1939.dds"
+		name = "GFX_2014_date"
+		texturefile = "gfx/GFX_2014_date.dds"
+	}
+	spriteType = {
+		name = "GFX_2015_date"
+		texturefile = "gfx/GFX_2015_date.dds"
+	}
+	spriteType = {
+		name = "GFX_2019_date"
+		texturefile = "gfx/GFX_2019_date.dds"
 	}
 	
 	spriteType = {
