@@ -81,7 +81,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_force_deal_with_protests
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.8
 		x = 2
 		y = 3
@@ -119,7 +119,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_legitimization_of_security_measures
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.7
 		x = 0
 		y = 1
@@ -157,7 +157,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_activation_of_security_forces
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.7
 		x = 0
 		y = 2
@@ -180,7 +180,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_formation_of_titushki_units
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.8
 		x = 0
 		y = 3
@@ -203,7 +203,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_beginning_of_control_restoration
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.9
 		x = 0
 		y = 4
@@ -226,7 +226,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_introduction_of_the_ato_regime_in_kyiv
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.9
 		x = 0
 		y = 5
@@ -249,7 +249,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_negotations_with_protests
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.8
 		x = -2
 		y = 3
@@ -284,7 +284,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_partial_concessions
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.7
 		x = 0
 		y = 1
@@ -319,7 +319,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_amnesty_for_political_prisoners
-		icon = GFX_goal_unknown
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.7
 		x = 0
 		y = 1
@@ -354,7 +354,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_resignation_of_the_azarov_government
-		icon = GFX_goal_unknown
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.8
 		x = 0
 		y = 1
@@ -383,7 +383,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_agree_to_early_elections_and_constitutional_amendments
-		icon = GFX_goal_unknown
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.9
 		x = 0
 		y = 1
@@ -411,7 +411,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_agree_to_the_formation_of_a_transitional_government
-		icon = GFX_goal_unknown
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.9
 		x = 0
 		y = 1
@@ -461,7 +461,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_expanding_economic_ties
-		icon = GFX_goal_unknown
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.8
 		x = -2
 		y = 1
@@ -481,7 +481,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_loan_agreement_with_russia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.8
 		x = 0
 		y = 1
@@ -501,7 +501,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_lower_gas_prices
-		icon = GFX_goal_unknown
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.8
 		x = 0
 		y = 2
@@ -521,7 +521,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_countering_international_pressure
-		icon = GFX_goal_unknown
+		icon = GFX_focus_UKR_choto_tam
 		cost = 0.8
 		x = 0
 		y = 1
@@ -541,7 +541,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_political_pressure_on_the_west_with_the_help_of_russia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.8
 		x = 0
 		y = 1
@@ -561,7 +561,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_information_campaign_against_maidan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.7
 		x = 2
 		y = 1
@@ -585,7 +585,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_financing_pro_government_protests
-		icon = GFX_goal_unknown
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.7
 		x = 0
 		y = 1
@@ -608,7 +608,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_coordination_with_pro_russian_movements
-		icon = GFX_goal_unknown
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.8
 		x = 0
 		y = 2
@@ -648,7 +648,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_involvement_of_russian_advisors
-		icon = GFX_goal_unknown
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.9
 		x = 0
 		y = 3
@@ -692,7 +692,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_deployment_of_russian_forces_to_stabilize_the_situation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 4
