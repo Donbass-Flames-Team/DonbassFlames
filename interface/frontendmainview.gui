@@ -35,8 +35,8 @@ guiTypes = {
 		{
 			name ="frontend_game_logo"
 			spriteType = "GFX_frontend_game_logo"
-			position = { x= 1390 y = -25 }
-			scale = 0.75
+			position = { x= 1450 y = -15 }
+			scale = 0.65
 		}
 		
 	}
@@ -248,7 +248,7 @@ guiTypes = {
 
 		positionType = {
 			name = "version_label_subscription_position"
-			position = { x = 1327 y = 180 }
+			position = { x = 1356 y = 130 }
 		}
 		
 		buttonType = {
