@@ -292,6 +292,9 @@ focus_tree = {
                 remove_idea = UKR_ukraine_army
                 add_idea = UKR_volunteer_army
             }
+			hidden_effect = {
+				country_event = superevent.1
+			}
 		}
 	}
 
