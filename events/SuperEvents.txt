@@ -1,0 +1,29 @@
+################
+# SUPER EVENTS #
+################
+
+add_namespace = superevent
+#Start of ATO
+country_event = {
+	id = superevent.1
+	title = superevent.1.t
+	desc = superevent.1.d
+	#picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = superevent.1.a
+		
+        set_global_flag = Start_of_ATO_SP
+		set_global_flag = Visbile_sp_events
+		play_song = "StartAto"
+	}
+}

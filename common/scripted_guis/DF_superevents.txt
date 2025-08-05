@@ -1,52 +1,34 @@
 scripted_gui = {
-  new_scripted_gui = {
-    window_name = "superevents"
-    context_type = player_context
 
-    visible = {
-		has_global_flag = SE_superevents_activate
-    }
+	sp_event_window = {
+		window_name = "sp_event_window"
+		context_type = player_context
 
-    effects = {
-		superevents_button_click = {
-			clr_global_flag = SE_superevents_activate
-			#superevents
-			clr_global_flag = SE_start_of_ato
+		visible = {
+			has_global_flag = Visbile_sp_events
 		}
-    }
-	
-
-
-    triggers = {
-		supereventsbg_test_visible = {
-			has_global_flag = SE_test
+		
+		triggers = {
+			superevents_start_of_ato_visible = {
+				has_global_flag = Start_of_ATO_SP
+			}
 		}
-		#superevents
-		superevents_start_of_ato_visible = {
-			has_global_flag = SE_start_of_ato
+		
+		############
+		###BUTTON###
+		############
+		
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Visbile_sp_events
+				
+				if = {
+					limit = {
+						has_global_flag = Start_of_ATO_SP
+					}
+					clr_global_flag = Start_of_ATO_SP
+				}		
+			}
 		}
-    }
-
-    dynamic_lists = {
 	}
-
-    properties = {
-    }
-
-    ai_enabled = {
-		always = no
-    }
-
-    ai_test_interval = 290  # The higher, the long it takes the ai to do actions
-	ai_test_variance = 0.5
-	
-    ai_check = {
-    }
-	
-    ai_check_scope = {
-    }
-	
-    ai_weights = {
-    }
-  }
 }

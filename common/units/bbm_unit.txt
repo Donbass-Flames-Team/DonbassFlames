@@ -5,7 +5,7 @@ sub_units = {
 		sprite = bbm_unit_sprite
 		map_icon_category = armored
 		priority = 2501
-		ai_priority = 2000
+		ai_priority = 1000
 		active = yes
 		
 		type = {
@@ -26,6 +26,7 @@ sub_units = {
 
 		need = {
 			bbm_chassis = 25
+			infantry_equipment = 80
 		}
 		manpower = 50
 		max_organisation = 15

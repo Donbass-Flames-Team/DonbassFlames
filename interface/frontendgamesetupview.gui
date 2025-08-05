@@ -422,7 +422,7 @@ guiTypes = {
 			format = centre
 		}
 
-				instantTextBoxType = {
+		instantTextBoxType = {
 			name = "menu_label"
 			position = { x = 145 y = 85 }
 			textureFile = ""
@@ -491,7 +491,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name ="gamesetup_scenario_window"
-		size = { width = 579 height = 512 }
+		size = { width = 1118 height = 837 }
 		clipping = no
 		orientation = center
 		origo = center
@@ -499,9 +499,9 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 390 y = 24 }
+			position = { x = 390 y = 20 }
 			textureFile = ""
-			font = "hoi_30b"
+			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "FE_SELECT_SCENARIO"
 			maxWidth = 340
@@ -535,7 +535,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "button_2015"
-			position = { x = 20 y = -99 }
+			position = { x = 20 y = -422 }
 			quadTextureSprite ="GFX_2015_date"
 			Orientation = "LOWER_LEFT"
 			clicksound = confirm_dog
@@ -544,7 +544,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "button_2019"
-			position = { x = 20 y = 79 }
+			position = { x = 20 y = -245 }
 			quadTextureSprite ="GFX_2019_date"
 			Orientation = "LOWER_LEFT"
 			clicksound = confirm_dog
@@ -553,21 +553,21 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "bookmark_title"
-			position = { x = 705 y = 105 }
-			font = "hoi_20bs"
+			position = { x = 755 y = 105 }
+			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 340
-			maxHeight = 30
+			maxWidth = 170
+			maxHeight = 50
 			format = left
 		}
 
 		instantTextBoxType = {
 			name = "bookmark_desc"
-			position = { x = 585 y = 330 }
-			font = "hoi_16mbs"
+			position = { x = 585 y = 230 }
+			font = "hoi_30header"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 540
-			maxHeight = 30
+			maxWidth = 495
+			maxHeight = 220
 			format = left
 		}
 
