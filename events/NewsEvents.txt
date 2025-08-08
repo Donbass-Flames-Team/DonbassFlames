@@ -37,7 +37,315 @@ news_event = {
 	}
 
 	option = {
-		name = news_events.1.b
+		name = news_events.1.c
+		if = {
+			limit = {
+				NOT = {
+					original_tag = UKR
+				    original_tag = RUS
+					original_tag = BLR
+				}
+			}
+		}
+	}
+}
+
+#Foundation of the DPR
+news_event = {
+	id = news_events.2
+	title = news_events.2.t
+	desc = news_events.2.d
+	picture = GFX_news_event_021
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.2.a
+		if = {
+			limit = {
+				original_tag = UKR
+			}
+		}
+	}
+	
+	option = {
+		name = news_events.2.b
+		if = {
+			limit = {
+				original_tag = RUS
+				original_tag = BLR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.2.c
+		if = {
+			limit = {
+				NOT = {
+					original_tag = UKR
+				    original_tag = RUS
+					original_tag = BLR
+				}
+			}
+		}
+	}
+}
+
+#Foundation of the LPR
+news_event = {
+	id = news_events.3
+	title = news_events.3.t
+	desc = news_events.3.d
+	picture = GFX_news_event_021
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.3.a
+		if = {
+			limit = {
+				original_tag = UKR
+			}
+		}
+	}
+	
+	option = {
+		name = news_events.3.b
+		if = {
+			limit = {
+				original_tag = RUS
+				original_tag = BLR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.3.c
+		if = {
+			limit = {
+				NOT = {
+					original_tag = UKR
+				    original_tag = RUS
+					original_tag = BLR
+				}
+			}
+		}
+	}
+}
+
+#foundation of the KPR
+news_event = {
+	id = news_events.4
+	title = news_events.4.t
+	desc = news_events.4.d
+	picture = GFX_news_event_021
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.4.a
+		if = {
+			limit = {
+				original_tag = UKR
+			}
+		}
+	}
+	
+	option = {
+		name = news_events.4.b
+		if = {
+			limit = {
+				original_tag = RUS
+				original_tag = BLR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.4.c
+		if = {
+			limit = {
+				NOT = {
+					original_tag = UKR
+				    original_tag = RUS
+					original_tag = BLR
+				}
+			}
+		}
+	}
+}
+
+#foundation of the OPR
+news_event = {
+	id = news_events.5
+	title = news_events.5.t
+	desc = news_events.5.d
+	picture = GFX_news_event_021
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.5.a
+		if = {
+			limit = {
+				original_tag = UKR
+			}
+		}
+	}
+	
+	option = {
+		name = news_events.5.b
+		if = {
+			limit = {
+				original_tag = RUS
+				original_tag = BLR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.5.c
+		if = {
+			limit = {
+				NOT = {
+					original_tag = UKR
+				    original_tag = RUS
+					original_tag = BLR
+				}
+			}
+		}
+	}
+}
+
+#Unidentified soldiers in Crimea
+news_event = {
+	id = news_events.6
+	title = news_events.6.t
+	desc = news_events.6.d
+	picture = GFX_news_event_021
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.6.a
+		if = {
+			limit = {
+				original_tag = UKR
+			}
+		}
+	}
+	
+	option = {
+		name = news_events.6.b
+		if = {
+			limit = {
+				original_tag = RUS
+				original_tag = BLR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.6.c
+		if = {
+			limit = {
+				NOT = {
+					original_tag = UKR
+				    original_tag = RUS
+					original_tag = BLR
+				}
+			}
+		}
+	}
+}
+
+#Annexation of Crimea
+news_event = {
+	id = news_events.7
+	title = news_events.7.t
+	desc = news_events.7.d
+	picture = GFX_news_event_021
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.7.a
+		if = {
+			limit = {
+				original_tag = UKR
+			}
+		}
+	}
+	
+	option = {
+		name = news_events.7.b
+		if = {
+			limit = {
+				original_tag = RUS
+				original_tag = BLR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.7.c
+		if = {
+			limit = {
+				NOT = {
+					original_tag = UKR
+				    original_tag = RUS
+					original_tag = BLR
+				}
+			}
+		}
+	}
+}
+
+#Referendum in crimea
+news_event = {
+	id = news_events.8
+	title = news_events.8.t
+	desc = news_events.8.d
+	picture = GFX_news_event_021
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.8.a
+		if = {
+			limit = {
+				original_tag = UKR
+			}
+		}
+	}
+	
+	option = {
+		name = news_events.8.b
+		if = {
+			limit = {
+				original_tag = RUS
+				original_tag = BLR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.8.c
 		if = {
 			limit = {
 				NOT = {

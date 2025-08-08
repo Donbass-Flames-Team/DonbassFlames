@@ -254,7 +254,7 @@ guiTypes = {
 		buttonType = {
 			name = "career_profile_button"
 			position = { x = 274 y = 489 }
-			quadTextureSprite ="discord"
+			quadTextureSprite ="GFX_profile_icon"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -271,7 +271,7 @@ guiTypes = {
 		buttonType = {
 			name = "friends_button"
 			position = { x = -33 y = 489 }
-			quadTextureSprite ="discord"
+			quadTextureSprite ="GFX_friends_icon"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -279,7 +279,7 @@ guiTypes = {
 		ButtonType = {
 			name = "credits_button"
 			position = { x = 120 y = 489 }
-			quadTextureSprite ="discord"	
+			quadTextureSprite ="GFX_authors_icon"	
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -287,7 +287,7 @@ guiTypes = {
 		ButtonType = {
 			name = "nudge_button"
 			position = { x = 428 y = 489 }
-			quadTextureSprite ="discord"	
+			quadTextureSprite ="GFX_nudge_icon"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
 		}

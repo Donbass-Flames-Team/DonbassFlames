@@ -54,6 +54,26 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_friends_icon"
+		textureFile = "gfx/interface/icon_friends.png"
+	}
+
+	SpriteType = {
+		name = "GFX_nudge_icon"
+		textureFile = "gfx/interface/icon_nudge.png"
+	}
+
+	SpriteType = {
+		name = "GFX_authors_icon"
+		textureFile = "gfx/interface/icon_authors.png"
+	}
+
+	SpriteType = {
+		name = "GFX_profile_icon"
+		textureFile = "gfx/interface/icon_profle.png"
+	}
+
+	SpriteType = {
 		name = "GFX_main_lobby_button_highlight"
 		textureFile = "gfx/interface/main_lobby_button_transparent.dds"
 
