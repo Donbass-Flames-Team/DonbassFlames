@@ -74,6 +74,12 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_update_logo"
+		textureFile = "gfx/interface/updatelogo_icon.dds"
+	}
+
+
+	SpriteType = {
 		name = "GFX_main_lobby_button_highlight"
 		textureFile = "gfx/interface/main_lobby_button_transparent.dds"
 
