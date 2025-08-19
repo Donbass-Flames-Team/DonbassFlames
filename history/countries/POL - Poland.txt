@@ -27,6 +27,15 @@
 		election_frequency = 48
 		elections_allowed = no
 	}
+
+    add_ideas = {
+        POL_rapid_economy
+        POL_catholic_nation
+        POL_eastern_NATO_shield
+        POL_political_polarization
+        POL_EU_subsidies
+        POL_eastern_neighbor_concerns
+    }
 	
 	set_popularities = {
 		liberal_democracy = 18
