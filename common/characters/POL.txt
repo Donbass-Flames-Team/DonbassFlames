@@ -1,0 +1,18 @@
+characters = {
+
+    bronislaw_komorowski = {
+        name = bronislaw_komorowski
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/POL/Bronislaw_Komorowski.dds"
+            }
+        }
+        country_leader = {
+            ideology = democratic
+            traits = { }
+            expire = "2020.12.31"
+            id = -1
+        }
+    }
+
+}
