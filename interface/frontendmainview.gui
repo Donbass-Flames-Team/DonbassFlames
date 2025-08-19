@@ -236,7 +236,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name ="version_label"
-			position = { x = 35 y = 401 }
+			position = { x = 135 y = 411 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -248,7 +248,7 @@ guiTypes = {
 
 		positionType = {
 			name = "version_label_subscription_position"
-			position = { x = 2556 y = 130 }
+			position = { x = 1356 y = 130 }
 		}
 		
 		buttonType = {
@@ -402,7 +402,7 @@ guiTypes = {
 		ButtonType = {
 			name = "updatelogo_icon"
 			quadTextureSprite = "GFX_update_logo"
-			position = { x=550 y=0 }
+			position = { x=565 y=-125 }
 			pdx_tooltip = "MENU_UPDATELOGO"
 		}
 	}
@@ -422,4 +422,9 @@ guiTypes = {
 			pdx_tooltip = "MENU_ACHIEVEMENTS"
 		}		
 	}
+}
+	iconType = {
+    name = "event_header_bg"
+    spriteType = "event_header_bg"
+    position = { x = 0 y = 0 }
 }
