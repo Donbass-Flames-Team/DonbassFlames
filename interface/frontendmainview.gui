@@ -364,25 +364,25 @@ guiTypes = {
 			position = { x=48 y=-17 }
             ButtonType = {
                 name = "discord_button"
-                position = { x=-720 y=-518 }
+                position = { x=-720 y=-519 }
                 quadTextureSprite ="discord"
                 #clicksound = click_default
                 pdx_tooltip = "MENU_DISCORD"
-                web_link = "discord.gg/S78gN83k2Q"
+                web_link = "https://discord.com/invite/S78gN83k2Q"
                 scale = 1
             }
 			ButtonType = {
                 name = "telegram_button"
-                position = { x=-720 y=-381 }
+                position = { x=-720 y=-383 }
                 quadTextureSprite ="GFX_telegram_icon"
                 #clicksound = click_default
                 pdx_tooltip = "MENU_DISCORD"
-                web_link = "discord.gg/S78gN83k2Q"
+                web_link = "Our Telegram Channel - https://t.me/donbassflames"
                 scale = 1
             }
 			ButtonType = {
                 name = "youtube_button"
-                position = { x=-720 y=-247 }
+                position = { x=-720 y=-248 }
                 quadTextureSprite ="youtube"
                 #clicksound = click_default
                 pdx_tooltip = "MENU_DISCORD"
@@ -391,11 +391,11 @@ guiTypes = {
             }
 			ButtonType = {
                 name = "tiktok_button"
-                position = { x=-720 y=-111 }
+                position = { x=-720 y=-112 }
                 quadTextureSprite ="GFX_tiktok_icon"
                 #clicksound = click_default
                 pdx_tooltip = "MENU_DISCORD"
-                web_link = "discord.gg/S78gN83k2Q"
+                web_link = "https://www.tiktok.com/@donbassflameshoi4"
                 scale = 1
             }
         }
@@ -422,9 +422,4 @@ guiTypes = {
 			pdx_tooltip = "MENU_ACHIEVEMENTS"
 		}		
 	}
-}
-	iconType = {
-    name = "event_header_bg"
-    spriteType = "event_header_bg"
-    position = { x = 0 y = 0 }
 }

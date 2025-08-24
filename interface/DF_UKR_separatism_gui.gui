@@ -144,26 +144,61 @@ guiTypes = {
             position = { x = 1138 y = 151 }
             quadTextureSprite = "GFX_pol_leader_frame"
         }
+
+		instantTextBoxType {
+			name = "UKR_separatismgui_control_text"
+			text = "Управление"
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 270
+			position = { x = 1047 y = 77 }
+		}
+
+		instantTextBoxType {
+			name = "UKR_separatismgui_region_name"
+			text = "Название области"
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 270
+			position = { x = 1047 y = 118 }
+		}
+
+		instantTextBoxType {
+			name = "UKR_separatismgui_name"
+			text = "Региональный Сепаратизм"
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 270
+			position = { x = 584 y = 35 }
+		}
 		
 		iconType = {
-            name = "separatism_ukraine_noleader"
+            name = "separatismgui_bgkharkiv"
+            position = { x = 802 y = 151 }
+            quadTextureSprite = "GFX_separatismgui_bgkharkiv"
+        }
+		
+		iconType = {
+            name = "separatismgui_ukraine_noleader"
             position = { x = 963 y = 151 }
             quadTextureSprite = "GFX_separatism_ukraine_noleader"
         }
 		
-		buttonType = {
-            name = "separatism_counteract_button"
-            position = { x = 1240 y = 580 }
-            quadTextureSprite = "GFX_separatism_counteract_button"
-            clicksound = click_close
-        }
-		
-		buttonType = {
-            name = "separatism_increase_button"
-            position = { x = 930 y = 580 }
-            quadTextureSprite = "GFX_separatism_increase_button"
-            clicksound = click_close
-        }
+		ButtonType = {
+			name = "separatism_counteract_button"
+			position = { x = 1240 y = 580 }
+			quadTextureSprite = "GFX_separatism_counteract_button"
+			clicksound = click_close
+			scale = 1
+    }
+
+		ButtonType = {
+			name = "separatism_increase_button"
+			position = { x = 930 y = 580 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+			scale = 1
+		}
 		
 		buttonType = {
             name = "coat_cherkasy_button"
