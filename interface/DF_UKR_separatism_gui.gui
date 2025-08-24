@@ -145,6 +145,27 @@ guiTypes = {
             quadTextureSprite = "GFX_pol_leader_frame"
         }
 
+		buttonType = {
+            name = "separatismgui_closebutton_nw"
+            position = { x = 1290 y = 60 }
+            quadTextureSprite = "GFX_separatismgui_closebutton_nw"
+            clicksound = click_close
+        }
+
+		buttonType = {
+            name = "separatismgui_nextbutton_nw"
+            position = { x = 1230 y = 60 }
+            quadTextureSprite = "GFX_separatismgui_nextbutton_nw"
+            clicksound = click_close
+        }
+
+		buttonType = {
+            name = "separatismgui_backbutton_nw"
+            position = { x = 1170 y = 60 }
+            quadTextureSprite = "GFX_separatismgui_backbutton_nw"
+            clicksound = click_close
+        }		
+		
 		instantTextBoxType {
 			name = "UKR_separatismgui_control_text"
 			text = "Управление"
