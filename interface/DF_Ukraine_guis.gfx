@@ -318,7 +318,7 @@ spriteTypes = {
 		name = "GFX_prorussians_icon_maidan_powers_gui"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Maidan_powers/Prorussians_icon.png"
 	}
-}
+
 
 # Portraits
 
@@ -393,7 +393,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Yevgenii_Zhylin.png"
 	}
 
-# Buttons
+    # Buttons
 
 	spriteType = {
     	name = "GFX_separatism_counteract_button"
@@ -402,7 +402,7 @@ spriteTypes = {
 
 	spriteType = {
     	name = "GFX_separatism_increase_button"
-    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Buttons/separatismgui_increase_button.png"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Buttons/separatism_gui_button.png"
 	}
 
 	spriteType = {

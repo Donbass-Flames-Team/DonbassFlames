@@ -285,3 +285,81 @@ defined_text = {
         localization_key = "GFX_herson_captured_seapartism_gui"
     }
 }
+
+defined_text = {
+    name = separatism_gui_background_image
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 1}
+        }
+        localization_key = "GFX_separatismgui_bgdonetsk"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 2}
+        }
+        localization_key = "GFX_separatismgui_bgluhansk"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 3}
+        }
+        localization_key = "GFX_separatismgui_bgkharkiv"
+    }
+
+    text = {
+         trigger = {
+            check_variable = {select_separatists_region = 4}
+        }
+        localization_key = "GFX_separatismgui_bgodesa"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 5}
+        }
+        localization_key = "GFX_separatismgui_bgkrym"
+    }
+}
+
+defined_text = {
+    name = get_region_name_separatism
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 1}
+        }
+        localization_key = "donetsk_region_separatism_gui"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 2}
+        }
+        localization_key = "luhansk_region_separatism_gui"
+    }
+
+    text = {
+         trigger = {
+            check_variable = {select_separatists_region = 3}
+        }
+        localization_key = "kharkiv_region_separatism_gui"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 4}
+        }
+        localization_key = "odesa_region_separatism_gui"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 5}
+        }
+        localization_key = "crimea_region_separatism_gui"
+    }
+}

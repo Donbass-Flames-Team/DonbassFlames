@@ -101,8 +101,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "UKR_separatism_map"
-		position = { x = 230 y = -10 }
-		size = { width = 1349 height = 770 }
+		position = { x = 0 y = 0 }
+		size = { width = 1378 height = 695 }
 		orientation = center
 		origo = center
 		moveable = yes
@@ -115,14 +115,14 @@ guiTypes = {
 
 		background = {
 			name = "Background"
-			quadTextureSprite = "GFX_startgui_background"
-		}
-
-		background = {
-			name = "Background"
 			quadTextureSprite = "GFX_ukraine_separatism_map"
 			position = { x = 27 y = 27 }
 		}
+		iconType = {
+            name = "separatism_gui_background"
+            position = { x = 802 y = 151 }
+            quadTextureSprite = "GFX_closebutton"
+        }
 		
 		buttonType = {
 			name = "close_map_button"
@@ -147,21 +147,21 @@ guiTypes = {
 
 		buttonType = {
             name = "separatismgui_closebutton_nw"
-            position = { x = 1290 y = 60 }
+            position = { x = 1370 y = 80 }
             quadTextureSprite = "GFX_separatismgui_closebutton_nw"
             clicksound = click_close
         }
 
 		buttonType = {
             name = "separatismgui_nextbutton_nw"
-            position = { x = 1230 y = 60 }
+            position = { x = 1330 y = 80 }
             quadTextureSprite = "GFX_separatismgui_nextbutton_nw"
             clicksound = click_close
         }
 
 		buttonType = {
             name = "separatismgui_backbutton_nw"
-            position = { x = 1170 y = 60 }
+            position = { x = 1290 y = 80 }
             quadTextureSprite = "GFX_separatismgui_backbutton_nw"
             clicksound = click_close
         }		
@@ -177,27 +177,21 @@ guiTypes = {
 
 		instantTextBoxType {
 			name = "UKR_separatismgui_region_name"
-			text = "Название области"
-			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 270
 			position = { x = 1047 y = 118 }
+			font = "hoi_36header"
+			text = "[get_region_name_separatism]"
 		}
 
 		instantTextBoxType {
 			name = "UKR_separatismgui_name"
-			text = "Региональный Сепаратизм"
+			text = "UKR_separatismgui_name_text"
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 270
 			position = { x = 584 y = 35 }
 		}
-		
-		iconType = {
-            name = "separatismgui_bgkharkiv"
-            position = { x = 802 y = 151 }
-            quadTextureSprite = "GFX_separatismgui_bgkharkiv"
-        }
 		
 		iconType = {
             name = "separatismgui_ukraine_noleader"
@@ -207,18 +201,20 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "separatism_counteract_button"
-			position = { x = 1240 y = 580 }
-			quadTextureSprite = "GFX_separatism_counteract_button"
+			position = { x = 1150 y = 630 }
+			quadTextureSprite = "GFX_separatism_increase_button"
 			clicksound = click_close
-			scale = 1
-    }
+		    font = "hoi_36header"			
+			text = "separatism_counteract_button_text"
+        }
 
 		ButtonType = {
 			name = "separatism_increase_button"
-			position = { x = 930 y = 580 }
+			position = { x = 880 y = 630 }
 			quadTextureSprite = "GFX_separatism_increase_button"
 			clicksound = click_close
-			scale = 1
+			font = "hoi_36header"			
+			text = "separatism_increase_button_text"
 		}
 		
 		buttonType = {
@@ -393,91 +389,6 @@ guiTypes = {
             position = { x = 237 y = 205 }
             quadTextureSprite = "GFX_ukraine_rivne_coat_of_arms"
             clicksound = click_close
-        }
-	}
-}
-		buttonType = {
-			name = "crimea_button"
-			position = { x = 487 y = 567 }
-			quadTextureSprite = "GFX_crimea_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
-			name = "donetsk_button"
-			position = { x = 657 y = 380 }
-			quadTextureSprite = "GFX_donetsk_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
-			name = "western_ukraine_button"
-			position = { x = 75 y = 199 }
-			quadTextureSprite = "GFX_western_ukraine_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
-			name = "odessa_button"
-			position = { x = 308 y = 444 }
-			quadTextureSprite = "GFX_odessa_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
-			name = "zakarpatya_button"
-			position = { x = 54 y = 388 }
-			quadTextureSprite = "GFX_zakarpatie_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
-			name = "middle_ukraine_button"
-			position = { x = 265 y = 171 }
-			quadTextureSprite = "GFX_mid_ukraine_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
-			name = "luhansk_button"
-			position = { x = 712 y = 324 }
-			quadTextureSprite = "GFX_luhansk_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
-			name = "nikolaev_button"
-			position = { x = 392 y = 444 }
-			quadTextureSprite = "GFX_nikolaev_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
-			name = "zaporzhie_button"
-			position = { x = 558 y = 446 }
-			quadTextureSprite = "GFX_zaporozhie_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
-			name = "kharkov_button"
-			position = { x = 587 y = 300 }
-			quadTextureSprite = "GFX_kharkov_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
-			name = "dnieper_button"
-			position = { x = 508 y = 383 }
-			quadTextureSprite = "GFX_dnieper_seapartism_gui"
-			clicksound = click_close
-		}
-
-		buttonType = {
-			name = "kherson_button"
-			position = { x = 446 y = 483 }
-			quadTextureSprite = "GFX_herson_seapartism_gui"
-			clicksound = click_close
         }
 	}
 }
