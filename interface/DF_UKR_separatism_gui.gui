@@ -101,7 +101,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "UKR_separatism_map"
-		position = { x = 0 y = 0 }
+		position = { x = 245 y = -10 }
 		size = { width = 1378 height = 695 }
 		orientation = center
 		origo = center
@@ -120,7 +120,7 @@ guiTypes = {
 		}
 		iconType = {
             name = "separatism_gui_background"
-            position = { x = 802 y = 151 }
+            position = { x = 882 y = 101 }
             quadTextureSprite = "GFX_closebutton"
         }
 		
@@ -133,11 +133,41 @@ guiTypes = {
 			shortcut = "ESCAPE"
 		}
 
+		instantTextBoxType {
+			name = "UKR_separatismgui_proukr_text"
+			text = "UKR_proukr_text"
+			font = "hoi_16mbs"
+			borderSize = { x = 0 y = 0 }
+			maxWidth = 270
+			position = { x = 945 y = 427 }
+		}
+
+		instantTextBoxType {
+			name = "UKR_separatismgui_prorussian_text"
+			text = "UKR_proruss_text"
+			font = "hoi_16mbs"
+			borderSize = { x = 0 y = 0 }
+			maxWidth = 270
+			position = { x = 1144 y = 427 }
+		}
+
 		iconType = {
-            name = "separatism_leader_frametton"
-            position = { x = 963 y = 151 }
-            quadTextureSprite = "GFX_pol_leader_frame"
-        }
+			name = "separatismgui_hpr_noleader"
+			position = { x = 1146 y = 164 }
+			quadTextureSprite = "GFX_separatismgui_hpr_noleader"
+		}
+
+		iconType = {
+			name = "separatismgui_ukraine_noleader"
+			position = { x = 971 y = 164 }
+			quadTextureSprite = "GFX_separatismgui_ukraine_noleader"
+		}
+
+		iconType = {
+			name = "separatism_leader_frametton"
+			position = { x = 963 y = 151 }
+			quadTextureSprite = "GFX_pol_leader_frame"
+		}
 		
 		iconType = {
             name = "separatism_leader_frametton2"
@@ -147,7 +177,7 @@ guiTypes = {
 
 		buttonType = {
             name = "separatismgui_closebutton_nw"
-            position = { x = 1370 y = 80 }
+            position = { x = 1352 y = 80 }
             quadTextureSprite = "GFX_separatismgui_closebutton_nw"
             clicksound = click_close
         }
@@ -161,7 +191,7 @@ guiTypes = {
 
 		buttonType = {
             name = "separatismgui_backbutton_nw"
-            position = { x = 1290 y = 80 }
+            position = { x = 1302 y = 80 }
             quadTextureSprite = "GFX_separatismgui_backbutton_nw"
             clicksound = click_close
         }		
@@ -172,14 +202,14 @@ guiTypes = {
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 270
-			position = { x = 1047 y = 77 }
+			position = { x = 1029 y = 77 }
 		}
 
 		instantTextBoxType {
 			name = "UKR_separatismgui_region_name"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 270
-			position = { x = 1047 y = 118 }
+			maxWidth = 300
+			position = { x = 1035 y = 118 }
 			font = "hoi_36header"
 			text = "[get_region_name_separatism]"
 		}
@@ -193,15 +223,9 @@ guiTypes = {
 			position = { x = 584 y = 35 }
 		}
 		
-		iconType = {
-            name = "separatismgui_ukraine_noleader"
-            position = { x = 963 y = 151 }
-            quadTextureSprite = "GFX_separatism_ukraine_noleader"
-        }
-		
 		ButtonType = {
 			name = "separatism_counteract_button"
-			position = { x = 1150 y = 630 }
+			position = { x = 1142 y = 672 }
 			quadTextureSprite = "GFX_separatism_increase_button"
 			clicksound = click_close
 		    font = "hoi_36header"			
@@ -210,7 +234,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "separatism_increase_button"
-			position = { x = 880 y = 630 }
+			position = { x = 882 y = 672 }
 			quadTextureSprite = "GFX_separatism_increase_button"
 			clicksound = click_close
 			font = "hoi_36header"			
