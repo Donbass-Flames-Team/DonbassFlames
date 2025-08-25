@@ -326,6 +326,84 @@ defined_text = {
 }
 
 defined_text = {
+    name = get_leader_prorukranian_separatism_gui
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 1}
+        }
+        localization_key = "GFX_separatismgui_Serhii_Taruta"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 2}
+        }
+        localization_key = "GFX_separatismgui_ukraine_noleader"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 3}
+        }
+        localization_key = "GFX_separatismgui_ukraine_noleader"
+    }
+
+    text = {
+         trigger = {
+            check_variable = {select_separatists_region = 4}
+        }
+        localization_key = "GFX_separatismgui_separatismgui_Ihor_Palytsia"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 5}
+        }
+        localization_key = "GFX_separatismgui_ukraine_noleader"
+    }
+}
+
+defined_text = {
+    name = get_leader_prorrussian_separatism_gui
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 1}
+        }
+        localization_key = "GFX_separatismgui_Aleksandr_Zaharchenko"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 2}
+        }
+        localization_key = "GFX_separatismgui_Igor_Plotnitskii"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 3}
+        }
+        localization_key = "GFX_separatismgui_Yevgenii_Zhylin"
+    }
+
+    text = {
+         trigger = {
+            check_variable = {select_separatists_region = 4}
+        }
+        localization_key = "GFX_separatismgui_Anton_Davidchenko"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 5}
+        }
+        localization_key = "GFX_separatismgui_ukraine_noleader"
+    }
+}
+
+defined_text = {
     name = get_region_name_separatism
 
     text = {

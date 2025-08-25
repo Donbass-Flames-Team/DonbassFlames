@@ -320,21 +320,17 @@ spriteTypes = {
 	}
 
 
-# Portraits
+    # Portraits
 
 	spriteType = {
 		name = "GFX_separatismgui_ukraine_noleader"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_ukraine_noleader.png"
 	}	
 
+	#DPR
 	spriteType = {
 		name = "GFX_separatismgui_Aleksandr_Zaharchenko"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Aleksandr_Zaharchenko.png"
-	}	
-
-	spriteType = {
-		name = "GFX_separatismgui_Anton_Davidchenko"
-		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Anton_Davidchenko.png"
 	}	
 
 	spriteType = {
@@ -342,11 +338,35 @@ spriteTypes = {
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Denis_Pushilin.png"
 	}	
 
-
 	spriteType = {
 		name = "GFX_separatismgui_Dmitrii_Trapeznikov"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Dmitrii_Trapeznikov.png"
 	}	
+
+	#OPR
+
+	spriteType = {
+		name = "GFX_separatismgui_Anton_Davidchenko"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Anton_Davidchenko.png"
+	}	
+
+	spriteType = {
+		name = "GFX_separatismgui_opr_noleader"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_opr_noleader.png"
+	}
+
+	#Donetsk ukranian
+
+	spriteType = {
+		name = "GFX_separatismgui_Serhii_Taruta"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Serhii_Taruta.png"
+	}
+
+	#Odesa
+	spriteType = {
+		name = "GFX_separatismgui_separatismgui_Ihor_Palytsia"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Ihor _Palytsia.png"
+	}
 
 	spriteType = {
 		name = "GFX_separatismgui_dpr_noleader"
@@ -358,11 +378,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Hennadii_Kernes.png"
 	}	
 
-	spriteType = {
-    	name = "GFX_separatismgui_hpr_noleader"
-    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_hpr_noleader.png"
-	}
+	#LPR
 
+	spriteType = {
+		name = "GFX_separatismgui_Valerii_Bolotov"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Valerii_Bolotov.png"
+	}
 
 	spriteType = {
 		name = "GFX_separatismgui_Igor_Plotnitskii"
@@ -374,24 +395,16 @@ spriteTypes = {
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_lpr_noleader.png"
 	}
 
-	spriteType = {
-		name = "GFX_separatismgui_opr_noleader"
-		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_opr_noleader.png"
-	}
-
-	spriteType = {
-		name = "GFX_separatismgui_Serhii_Taruta"
-		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Serhii_Taruta.png"
-	}
-
-	spriteType = {
-		name = "GFX_separatismgui_Valerii_Bolotov"
-		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Valerii_Bolotov.png"
-	}
+	#KPR
 
 	spriteType = {
 		name = "GFX_separatismgui_Yevgenii_Zhylin"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Yevgenii_Zhylin.png"
+	}
+
+	spriteType = {
+    	name = "GFX_separatismgui_hpr_noleader"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_hpr_noleader.png"
 	}
 
     # Buttons

@@ -36,7 +36,6 @@ scripted_gui = {
 		dirty = show_separatism_in_ukraine_map
 
 		visible = {
-			tag = UKR
 			check_variable = { show_separatism_in_ukraine_map > 0 }
 		}
 		
@@ -91,6 +90,12 @@ scripted_gui = {
 			separatism_gui_background = {
 				image = "[separatism_gui_background_image]"
 			}	
+			separatismgui_ukraine_noleader = {
+				image = "[get_leader_prorukranian_separatism_gui]"
+			}
+			separatismgui_prorussian_noleader = {
+				image = "[get_leader_prorrussian_separatism_gui]"
+			}
 		}	
 	}
 }
