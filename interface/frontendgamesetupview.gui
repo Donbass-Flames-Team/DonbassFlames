@@ -573,11 +573,10 @@ guiTypes = {
 
 		ButtonType = {
 			name = "back_button"
-			position = { x = 222 y = 262 }
+			position = { x = 32 y = 773 }
 			quadTextureSprite ="GFX_button_221x34"
 			buttonText = "BACK"
 			buttonFont = "hoi_18mbs"
-			Orientation = "LOWER_LEFT"
 			clicksound = click_close
 			oversound = ui_menu_over
 			shortcut = "ESCAPE"
@@ -585,11 +584,10 @@ guiTypes = {
 
 		ButtonType = {
 			name = "select_button"
-			position = { x = 285 y = 262 }
+			position = { x = 863 y = 773 }
 			quadTextureSprite ="GFX_button_221x34"
 			buttonText = "FE_SELECT_SCENARIO"
 			buttonFont = "hoi_18mbs"
-			Orientation = "LOWER_RIGHT"
 			clicksound = click_ok
 			oversound = ui_menu_over
 			shortcut = "RETURN"
