@@ -133,21 +133,12 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name = "UKR_separatismgui_proukr_text"
-			text = "UKR_proukr_text"
+			name = "UKR_separatismgui_separatist_value_text"
+			text = "[get_region_separatists_value]"
 			font = "hoi_16mbs"
 			borderSize = { x = 0 y = 0 }
-			maxWidth = 270
+			maxWidth = 470
 			position = { x = 945 y = 427 }
-		}
-
-		instantTextBoxType = {
-			name = "UKR_separatismgui_prorussian_text"
-			text = "UKR_proruss_text"
-			font = "hoi_16mbs"
-			borderSize = { x = 0 y = 0 }
-			maxWidth = 270
-			position = { x = 1144 y = 427 }
 		}
 
 		iconType = {

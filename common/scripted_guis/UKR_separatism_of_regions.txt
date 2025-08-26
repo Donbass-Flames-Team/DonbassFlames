@@ -61,24 +61,133 @@ scripted_gui = {
 			separatism_increase_button_click = {
 				if = {
 					limit = { check_variable = {select_separatists_region = 1} }
-					
+						subtract_from_variable = {
+		                    var = Donetsk_proukranian_support_value
+		                    value = 5
+	                    }
+						add_to_variable = {
+		                    var = Donetsk_prorussian_support_value
+		                    value = 5
+	                    }
+						clamp_variable = {
+		                    var = Donetsk_proukranian_support_value
+		                    min = 0
+		                    max = 100
+	                    }
+						clamp_variable = {
+		                    var = Donetsk_prorussian_support_value
+		                    min = 0
+		                    max = 100
+	                    }
 				}
 				if = {
 					limit = { check_variable = {select_separatists_region = 2} }
-					
+						subtract_from_variable = {
+		                    var = Luhansk_proukranian_support_value
+		                    value = 5
+	                    }
+						add_to_variable = {
+		                    var = Luhansk_prorussian_support_value
+		                    value = 5
+	                    }
+						clamp_variable = {
+		                    var = Luhansk_proukranian_support_value
+		                    min = 0
+		                    max = 100
+	                    }
+						clamp_variable = {
+		                    var = Luhansk_prorussian_support_value
+		                    min = 0
+		                    max = 100
+	                    }
 				}
 				if = {
 					limit = { check_variable = {select_separatists_region = 3} }
+						subtract_from_variable = {
+		                    var = Kharkiv_proukranian_support_value
+		                    value = 5
+	                    }
+						add_to_variable = {
+		                    var = Kharkiv_prorussian_support_value
+		                    value = 5
+	                    }
+						clamp_variable = {
+		                    var = Kharkiv_proukranian_support_value
+		                    min = 0
+		                    max = 100
+	                    }
+						clamp_variable = {
+		                    var = Kharkiv_prorussian_support_value
+		                    min = 0
+		                    max = 100
+	                    }
 					
 				}
 				if = {
 					limit = { check_variable = {select_separatists_region = 4} }
-					
+						subtract_from_variable = {
+		                    var = Odesa_proukranian_support_value
+		                    value = 5
+	                    }
+						add_to_variable = {
+		                    var = Odesa_prorussian_support_value
+		                    value = 5
+	                    }
+						clamp_variable = {
+		                    var = Odesa_proukranian_support_value
+		                    min = 0
+		                    max = 100
+	                    }
+						clamp_variable = {
+		                    var = Odesa_prorussian_support_value
+		                    min = 0
+		                    max = 100
+	                    }
 				}
 				if = {
 					limit = { check_variable = {select_separatists_region = 5} }
+					subtract_from_variable = {
+		                var = Crimea_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Crimea_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Crimea_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Crimea_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }					
 					
 				}
+			}
+			separatismgui_closebutton_nw_click = {
+				if = {
+					limit = { check_variable = {select_separatists_region = 1} }
+					clear_variable = select_separatists_region
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 2} }
+					clear_variable = select_separatists_region
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 3} }
+					clear_variable = select_separatists_region
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 4} }
+					clear_variable = select_separatists_region
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 5} }
+					clear_variable = select_separatists_region
+				}				
 			}
 		}
 		
@@ -95,6 +204,9 @@ scripted_gui = {
 			}
 			separatismgui_prorussian_noleader = {
 				image = "[get_leader_prorrussian_separatism_gui]"
+			}
+			UKR_separatismgui_separatist_value_text = {
+				image = "[get_region_separatists_value]"
 			}
 		}	
 	}

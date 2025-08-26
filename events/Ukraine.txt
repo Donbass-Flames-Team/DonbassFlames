@@ -147,7 +147,7 @@ country_event = {
 	}
 }
 
-#нanukovych select path
+#yanukovych select path
 country_event = {
 	id = ukraine.6
 	title = ukraine.6.t
@@ -158,7 +158,7 @@ country_event = {
 
     #Be neutral
 	option = {
-		name = ukraine.36.a
+		name = ukraine.6.a
 
 		complete_national_focus = UKR_remain_neutral
 		ai_chance = {
@@ -176,5 +176,325 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+
+#prorussian protests in luhansk
+country_event = {
+	id = ukraine.7
+	title = ukraine.7.t
+	desc = ukraine.7.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.7.a
+		subtract_from_variable = {
+		    var = Luhansk_proukranian_support_value
+		    value = 5
+	    }
+		add_to_variable = {
+		    var = Luhansk_prorussian_support_value
+		    value = 5
+	    }
+		clamp_variable = {
+		    var = Luhansk_proukranian_support_value
+		    min = 0
+		    max = 100
+	    }
+		clamp_variable = {
+		    var = Luhansk_prorussian_support_value
+		    min = 0
+		    max = 100
+	    }
+	}
+}
+
+#proukranian protests in luhansk
+country_event = {
+	id = ukraine.8
+	title = ukraine.8.t
+	desc = ukraine.8.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.8.a
+		subtract_from_variable = {
+		    var = Luhansk_prorussian_support_value
+		    value = 5
+	    }
+		add_to_variable = {
+		    var = Luhansk_proukranian_support_value
+		    value = 5
+	    }
+		clamp_variable = {
+		    var = Luhansk_proukranian_support_value
+		    min = 0
+		    max = 100
+	    }
+		clamp_variable = {
+		    var = Luhansk_prorussian_support_value
+		    min = 0
+		    max = 100
+	    }
+	}
+}
+
+# Donetsk prorussian
+country_event = {
+	id = ukraine.9
+	title = ukraine.9.t
+	desc = ukraine.9.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.9.a
+		subtract_from_variable = {
+		    var = Donetsk_proukranian_support_value
+		    value = 5
+	    }
+		add_to_variable = {
+		    var = Donetsk_prorussian_support_value
+		    value = 5
+	    }
+		clamp_variable = {
+		    var = Donetsk_proukranian_support_value
+		    min = 0
+		    max = 100
+	    }
+		clamp_variable = {
+		    var = Donetsk_prorussian_support_value
+		    min = 0
+		    max = 100
+	    }		
+	}
+}
+
+# Donetsk proukranian
+country_event = {
+	id = ukraine.10
+	title = ukraine.10.t
+	desc = ukraine.10.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.10.a
+		subtract_from_variable = {
+		    var = Donetsk_prorussian_support_value
+		    value = 5
+	    }
+		add_to_variable = {
+		    var = Donetsk_proukranian_support_value
+		    value = 5
+	    }
+		clamp_variable = {
+		    var = Donetsk_proukranian_support_value
+		    min = 0
+		    max = 100
+	    }
+		clamp_variable = {
+		    var = Donetsk_prorussian_support_value
+		    min = 0
+		    max = 100
+	    }
+	}
+}
+
+# Kharkiv prorussian
+country_event = {
+	id = ukraine.11
+	title = ukraine.11.t
+	desc = ukraine.11.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.11.a
+		subtract_from_variable = {
+		    var = Kharkiv_proukranian_support_value
+		    value = 5
+	    }
+		add_to_variable = {
+		    var = Kharkiv_prorussian_support_value
+		    value = 5
+	    }
+		clamp_variable = {
+		    var = Kharkiv_proukranian_support_value
+		    min = 0
+		    max = 100
+	    }
+		clamp_variable = {
+		    var = Kharkiv_prorussian_support_value
+		    min = 0
+		    max = 100
+	    }
+	}
+}
+
+# Kharkiv proukranian
+country_event = {
+	id = ukraine.12
+	title = ukraine.12.t
+	desc = ukraine.12.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.12.a
+		subtract_from_variable = {
+		    var = Kharkiv_prorussian_support_value
+		    value = 5
+	    }
+		add_to_variable = {
+		    var = Kharkiv_proukranian_support_value
+		    value = 5
+	    }
+		clamp_variable = {
+		    var = Kharkiv_proukranian_support_value
+		    min = 0
+		    max = 100
+	    }
+		clamp_variable = {
+		    var = Kharkiv_prorussian_support_value
+		    min = 0
+		    max = 100
+	    }
+	}
+}
+
+# Odesa prorussian
+country_event = {
+	id = ukraine.13
+	title = ukraine.13.t
+	desc = ukraine.13.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.13.a
+		subtract_from_variable = {
+		    var = Odesa_proukranian_support_value
+		    value = 5
+	    }
+		add_to_variable = {
+		    var = Odesa_prorussian_support_value
+		    value = 5
+	    }
+		clamp_variable = {
+		    var = Odesa_proukranian_support_value
+		    min = 0
+		    max = 100
+	    }
+		clamp_variable = {
+		    var = Odesa_prorussian_support_value
+		    min = 0
+		    max = 100
+	    }
+	}
+}
+
+# Odesa proukranian
+country_event = {
+	id = ukraine.14
+	title = ukraine.14.t
+	desc = ukraine.14.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.14.a
+		subtract_from_variable = {
+		    var = Odesa_prorussian_support_value
+		    value = 5
+	    }
+		add_to_variable = {
+		    var = Odesa_proukranian_support_value
+		    value = 5
+	    }
+		clamp_variable = {
+		    var = Odesa_proukranian_support_value
+		    min = 0
+		    max = 100
+	    }
+		clamp_variable = {
+		    var = Odesa_prorussian_support_value
+		    min = 0
+		    max = 100
+	    }
+	}
+}
+
+# Crimea prorussian
+country_event = {
+	id = ukraine.15
+	title = ukraine.15.t
+	desc = ukraine.15.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.15.a
+		subtract_from_variable = {
+		    var = Crimea_proukranian_support_value
+		    value = 5
+	    }
+		add_to_variable = {
+		    var = Crimea_prorussian_support_value
+		    value = 5
+	    }
+		clamp_variable = {
+		    var = Crimea_proukranian_support_value
+		    min = 0
+		    max = 100
+	    }
+		clamp_variable = {
+		    var = Crimea_prorussian_support_value
+		    min = 0
+		    max = 100
+	    }		
+	}
+}
+
+# Crimea proukranian
+country_event = {
+	id = ukraine.16
+	title = ukraine.16.t
+	desc = ukraine.16.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.16.a
+		subtract_from_variable = {
+		    var = Crimea_prorussian_support_value
+		    value = 5
+	    }
+		add_to_variable = {
+		    var = Crimea_proukranian_support_value
+		    value = 5 
+	    }
+		clamp_variable = {
+		    var = Crimea_proukranian_support_value
+		    min = 0
+		    max = 100
+	    }
+		clamp_variable = {
+		    var = Crimea_prorussian_support_value
+		    min = 0
+		    max = 100
+	    }
 	}
 }

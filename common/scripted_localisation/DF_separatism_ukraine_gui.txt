@@ -330,6 +330,20 @@ defined_text = {
 
     text = {
         trigger = {
+            NOT = {
+                check_variable = {select_separatists_region = 1}
+                check_variable = {select_separatists_region = 2}
+                check_variable = {select_separatists_region = 3}
+                check_variable = {select_separatists_region = 4}
+                check_variable = {select_separatists_region = 5}
+                check_variable = {select_separatists_region = 6}
+            }
+        }
+        localization_key = "GFX_separatismgui_ukraine_noleader"
+    }
+
+    text = {
+        trigger = {
             check_variable = {select_separatists_region = 1}
         }
         localization_key = "GFX_separatismgui_Serhii_Taruta"
@@ -369,6 +383,20 @@ defined_text = {
 
     text = {
         trigger = {
+            NOT = {
+                check_variable = {select_separatists_region = 1}
+                check_variable = {select_separatists_region = 2}
+                check_variable = {select_separatists_region = 3}
+                check_variable = {select_separatists_region = 4}
+                check_variable = {select_separatists_region = 5}
+                check_variable = {select_separatists_region = 6}
+            }
+        }
+        localization_key = "GFX_separatismgui_dpr_noleader"
+    }
+
+    text = {
+        trigger = {
             check_variable = {select_separatists_region = 1}
         }
         localization_key = "GFX_separatismgui_Aleksandr_Zaharchenko"
@@ -399,7 +427,7 @@ defined_text = {
         trigger = {
             check_variable = {select_separatists_region = 5}
         }
-        localization_key = "GFX_separatismgui_ukraine_noleader"
+        localization_key = "GFX_separatismgui_dpr_noleader"
     }
 }
 
@@ -439,5 +467,58 @@ defined_text = {
             check_variable = {select_separatists_region = 5}
         }
         localization_key = "crimea_region_separatism_gui"
+    }
+}
+
+defined_text = {
+    name = get_region_separatists_value
+
+    text = {
+        trigger = {
+            NOT = {
+                check_variable = {select_separatists_region = 1}
+                check_variable = {select_separatists_region = 2}
+                check_variable = {select_separatists_region = 3}
+                check_variable = {select_separatists_region = 4}
+                check_variable = {select_separatists_region = 5}
+                check_variable = {select_separatists_region = 6}
+            }
+        }
+        localization_key = "UKR_separatismgui_separatist_value_text"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 1}
+        }
+        localization_key = "donetsk_region_separatists_value_gui"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 2}
+        }
+        localization_key = "luhansk_region_separatists_value_gui"
+    }
+
+    text = {
+         trigger = {
+            check_variable = {select_separatists_region = 3}
+        }
+        localization_key = "kharkiv_region_separatists_value_gui"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 4}
+        }
+        localization_key = "odesa_region_separatists_value_gui"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 5}
+        }
+        localization_key = "crimea_region_separatists_value_gui"
     }
 }
