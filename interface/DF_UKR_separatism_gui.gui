@@ -64,6 +64,7 @@ guiTypes = {
 			font = "hoi_16mbs"
 			position = { x = 390 y = 20 }
 			pdx_tooltip = "[CAT_OPENING]"
+			refresh = yes
 		}
 
 		instantTextBoxType = {
@@ -137,7 +138,7 @@ guiTypes = {
 			text = "[get_region_separatists_value]"
 			font = "hoi_16mbs"
 			maxWidth = 470
-			position = { x = 945 y = 427 }
+			position = { x = 930 y = 427 }
 		}
 
 		iconType = {
