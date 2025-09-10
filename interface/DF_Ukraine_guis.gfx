@@ -365,7 +365,7 @@ spriteTypes = {
 	#Odesa
 	spriteType = {
 		name = "GFX_separatismgui_separatismgui_Ihor_Palytsia"
-		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Ihor _Palytsia.png"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Portraits/separatismgui_Ihor_Palytsia.png"
 	}
 
 	spriteType = {
@@ -614,6 +614,11 @@ spriteTypes = {
 # Backgrounds
 
 	spriteType = {
+    	name = "GFX_separatismgui_bgempty"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Backgrounds/separatismgui_bgempty.png"
+	}
+
+	spriteType = {
     	name = "GFX_separatismgui_bgodesa"
     	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Backgrounds/separatismgui_bgodesa.png"
 	}
@@ -636,6 +641,11 @@ spriteTypes = {
 	spriteType = {
     	name = "GFX_separatismgui_bgdonetsk"
     	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Backgrounds/separatismgui_bgdonetsk.png"
+	}
+
+	spriteType = {
+    	name = "GFX_DF_background_generic_1"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Background_Gen_2.png"
 	}
 }
 

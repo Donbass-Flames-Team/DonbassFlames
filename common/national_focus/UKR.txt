@@ -1,4 +1,4 @@
-focus_tree = {
+ focus_tree = {
 	id = ukraine_focus_tree
 	country = {
 		factor = 0
@@ -9,13 +9,14 @@ focus_tree = {
 	}
 	default = no
 	continuous_focus_position = { x = 2500 y = 500 }
-	
+
 	focus = {
-		id = UKR_government_in_anarchy
-		icon = GFX_focus_UKR_government_in_anarchy
+		id = UKR_unrest_in_the_east
+		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 5
+		x = 15
 		y = 0
+
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -26,23 +27,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-			swap_ideas = {
-                remove_idea = UKR_helpless_government
-                add_idea = UKR_disorderly_government
-            }
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 		}
 	}
 
 	focus = {
-		id = UKR_new_parliament_composition
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		id = UKR_army_review
+		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
 		x = 0
 		y = 1
 
-		prerequisite = { focus = UKR_government_in_anarchy }
-		relative_position_id = UKR_government_in_anarchy
+		prerequisite = { focus = UKR_unrest_in_the_east }
+		relative_position_id = UKR_unrest_in_the_east
+
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -53,22 +51,45 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		    clr_country_flag = 7_congress_of_rada
-			set_country_flag = 8_congress_of_rada
-			add_stability = 0.05
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 		}
 	}
 
 	focus = {
-		id = UKR_mobilization_of_reservists
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		id = UKR_support_of_the_volunteer_battalion
+		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
 		x = 0
+		y = 2.5
+
+		prerequisite = { focus = UKR_unrest_in_the_east }
+		relative_position_id = UKR_unrest_in_the_east
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
+		    add_manpower = 6500
+		}
+	}
+
+	focus = {
+		id = UKR_forced_demobilization
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 2
 		y = 2
 
-		prerequisite = { focus = UKR_government_in_anarchy }
-		relative_position_id = UKR_government_in_anarchy
+		prerequisite = { focus = UKR_army_review }
+		relative_position_id = UKR_unrest_in_the_east
+
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -79,19 +100,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 		}
 	}
 
 	focus = {
-		id = UKR_send_millities_to_kharkov
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		id = UKR_creation_of_tro
+		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 3
+		x = 2
 		y = 3
 
-		prerequisite = { focus = UKR_mobilization_of_reservists }
-		relative_position_id = UKR_government_in_anarchy
+		prerequisite = { focus = UKR_forced_demobilization }
+		relative_position_id = UKR_unrest_in_the_east
+
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -102,134 +124,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 		}
 	}
 
 	focus = {
-		id = UKR_crush_kharkov_people_republic
-		icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
-		x = 3
-		y = 4
-
-		prerequisite = { focus = UKR_send_millities_to_kharkov }
-		relative_position_id = UKR_government_in_anarchy
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		}
-	}
-
-	focus = {
-		id = UKR_send_additional_forces_to_odessa
-		icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
-		x = 0
-		y = 3
-
-		prerequisite = { focus = UKR_mobilization_of_reservists }
-		relative_position_id = UKR_government_in_anarchy
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		}
-	}
-
-	focus = {
-		id = UKR_block_the_crimea
-		icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
-		x = 0
-		y = 4
-
-		prerequisite = { focus = UKR_send_additional_forces_to_odessa }
-		relative_position_id = UKR_government_in_anarchy
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		}
-	}
-
-	focus = {
-		id = UKR_deal_with_prorussians_protests
-		icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
-		x = -3
-		y = 3
-
-		prerequisite = { focus = UKR_mobilization_of_reservists }
-		relative_position_id = UKR_government_in_anarchy
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		}
-	}
-
-	focus = {
-		id = UKR_recapture_part_of_donetsk_region
-		icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
-		x = -4
-		y = 4
-
-		prerequisite = { focus = UKR_deal_with_prorussians_protests }
-		relative_position_id = UKR_government_in_anarchy
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		}
-	}
-
-	focus = {
-		id = UKR_recapture_part_of_luhansk_region
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		id = UKR_appeal_to_the_oligarchs
+		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
 		x = -2
-		y = 4
+		y = 2
 
-		prerequisite = { focus = UKR_deal_with_prorussians_protests }
-		relative_position_id = UKR_government_in_anarchy
+		prerequisite = { focus = UKR_army_review }
+		relative_position_id = UKR_unrest_in_the_east
+
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -240,22 +148,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 		}
 	}
 
 	focus = {
-		id = UKR_end_of_separatism
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		id = UKR_concessions_to_the_oligarchs
+		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 0
-		y = 5
+		x = -2
+		y = 3
 
-		prerequisite = { focus = UKR_block_the_crimea }
-		prerequisite = { focus = UKR_recapture_part_of_luhansk_region }
-		prerequisite = { focus = UKR_crush_kharkov_people_republic }
-		prerequisite = { focus = UKR_recapture_part_of_donetsk_region }
-		relative_position_id = UKR_government_in_anarchy
+		prerequisite = { focus = UKR_appeal_to_the_oligarchs }
+		relative_position_id = UKR_unrest_in_the_east
+
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -266,16 +172,22 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 		}
 	}
+
 
 	focus = {
 		id = UKR_start_of_ato
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 15
-		y = 0
+		x = 0
+		y = 1.5
+
+		prerequisite = { focus = UKR_support_of_the_volunteer_battalion }
+		prerequisite = { focus = UKR_concessions_to_the_oligarchs }
+		prerequisite = { focus = UKR_creation_of_tro }
+		relative_position_id = UKR_support_of_the_volunteer_battalion
 
 
 		cancel_if_invalid = yes
@@ -300,13 +212,37 @@ focus_tree = {
 
 	focus = {
 		id = UKR_emergency_redeployment_of_troops
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_UKR_emergency_redeployment_of_troops
 		cost = 1
 		x = 0
 		y = 1
 
 		prerequisite = { focus = UKR_start_of_ato }
 		relative_position_id = UKR_start_of_ato
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_turn_to_the_west_for_help
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -3
+		y = 1
+
+		prerequisite = { focus = UKR_emergency_redeployment_of_troops }
+		relative_position_id = UKR_emergency_redeployment_of_troops
 
 
 		cancel_if_invalid = yes
@@ -350,7 +286,7 @@ focus_tree = {
 		id = UKR_launch_counterattacks
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 1
+		x = 2
 		y = 3
 
 		prerequisite = { focus = UKR_organize_defense }
@@ -374,7 +310,7 @@ focus_tree = {
 		id = UKR_prepare_the_defense_of_cities
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = -2
+		x = -1
 		y = 3
 
 		prerequisite = { focus = UKR_organize_defense }
