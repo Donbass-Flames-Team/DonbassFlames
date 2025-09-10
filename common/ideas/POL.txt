@@ -7,6 +7,10 @@ ideas = {
                 always = yes
             }
             removal_cost = -1
+
+    		modifier = {
+			    stability_factor = -0.5
+			}
         }
 
         POL_catholic_nation = {
