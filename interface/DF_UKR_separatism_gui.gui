@@ -101,12 +101,12 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "UKR_separatism_map"
-		position = { x = 245 y = -10 }
+		position = { x = 0 y = -10 }
 		size = { width = 1378 height = 695 }
 		orientation = center
 		origo = center
 		fade_time = 100
-		moveable = yes
+		moveable = no
 		fade_type = linear
 		click_to_front = no
 		clipping = no
@@ -423,5 +423,144 @@ guiTypes = {
             clicksound = click_close
 			oversound = ui_menu_over
         }
+	}
+
+	containerWindowType = {
+		name = "UKR_separatism_gui_prorussian_actions_window"
+		position = { x = 245 y = -10 }
+		size = { width = 1378 height = 695 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+
+
+		iconType = {
+			name = "background_actions"
+			position = { x = 624 y = 505 }
+			quadTextureSprite = "GFX_DF_background_generic_1"
+			
+		}
+
+		buttonType = {
+            name = "prorussian_actions_close_button"
+            position = { x = 1125 y = 520 }
+            quadTextureSprite = "GFX_separatismgui_backbutton_nw"
+            clicksound = click_close
+        }
+
+		buttonType = {
+			name = "separatism_hold_prorussian_rally_button"
+			position = { x = 642 y = 662 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "separatism_hold_prorussian_rally_button_text"
+			pdx_tooltip = "separatismgui_prorussian_rally_tt"
+		}
+
+		buttonType = {
+			name = "separatism_prorussian_incerase_button"
+			position = { x = 642 y = 592 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "separatism_prorussian_increase_button_text"
+			pdx_tooltip = "separatism_prorussian_incerase_tt"
+		}
+
+		buttonType = {
+			name = "separatism_radicalize_people_button"
+			position = { x = 900 y = 592 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "separatism_radicalize_people_button_text"
+			pdx_tooltip = "separatism_radicalize_people_tt"
+		}
+
+		buttonType = {
+			name = "arms_supplies_from_russia_button"
+			position = { x = 900 y = 662 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "arms_supplies_from_russia_button_text"
+			pdx_tooltip = "arms_supplies_from_russia_tt"
+		}
+
+		
+	}
+
+	containerWindowType = {
+		name = "UKR_separatism_gui_proukranian_actions_window"
+		position = { x = 245 y = -10 }
+		size = { width = 1378 height = 695 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = no
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+
+		iconType = {
+			name = "background_actions"
+			position = { x = 624 y = 505 }
+			quadTextureSprite = "GFX_DF_background_generic_1"
+			
+		}
+
+		buttonType = {
+            name = "proukranian_actions_close_button"
+            position = { x = 1125 y = 520 }
+            quadTextureSprite = "GFX_separatismgui_backbutton_nw"
+            clicksound = click_close
+        }
+
+		buttonType = {
+			name = "separatism_hold_proukranian_rally_button"
+			position = { x = 642 y = 662 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "separatism_hold_proukranian_rally_button_text"
+			pdx_tooltip = "separatism_hold_proukranian_rally_tt"
+		}
+
+		buttonType = {
+			name = "separatism_proukranian_incerase_button"
+			position = { x = 642 y = 592 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "separatism_proukranian_incerase_button_text"
+			pdx_tooltip = "separatism_proukranian_incerase_tt"
+		}
+
+		buttonType = {
+			name = "separatism_deradicalize_people_button"
+			position = { x = 900 y = 592 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "separatism_deradicalize_people_button_text"
+			pdx_tooltip = "separatism_deradicalize_people_tt"
+		}
+
+		buttonType = {
+			name = "fight_smuggling_from_russia_button"
+			position = { x = 900 y = 662 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "fight_smuggling_from_russia_button_text"
+			pdx_tooltip = "fight_smuggling_from_russia_tt"
+		}
+
+		
 	}
 }

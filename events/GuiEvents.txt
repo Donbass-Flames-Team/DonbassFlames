@@ -1,0 +1,22 @@
+﻿###########################
+# Ukranian Events
+###########################
+
+add_namespace = separatism_gui
+
+#overthrow of yanukovych
+country_event = {
+	id = separatism_gui.1
+	title = separatism_gui.1.t
+	desc = separatism_gui.1.d
+	picture = [GetHitlerHandshakeEventPicture]
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = separatism_gui.1.a
+		clr_country_flag = SeparatismGuiActionUsed
+	}
+}
+

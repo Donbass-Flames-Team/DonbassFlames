@@ -17,6 +17,14 @@ scripted_gui = {
 				else = {
 					set_variable = { show_separatism_in_ukraine_map = 1 }
 				}
+				if = {
+					limit = { check_variable = {show_prorussian_actions_window = 1} }
+					clear_variable = show_prorussian_actions_window
+				}
+				if = {
+					limit = { check_variable = {show_proukranian_actions_window = 1} }
+					clear_variable = show_proukranian_actions_window
+				}
 			}
 		}
 
@@ -42,6 +50,14 @@ scripted_gui = {
 		effects = {
 			close_map_button_click = {
 				clear_variable = show_separatism_in_ukraine_map
+				if = {
+					limit = { check_variable = {show_prorussian_actions_window = 1} }
+					clear_variable = show_prorussian_actions_window
+				}
+				if = {
+					limit = { check_variable = {show_proukranian_actions_window = 1} }
+					clear_variable = show_proukranian_actions_window
+				}
 		    }
 			coat_donetsk_button_click  = {
 				set_variable = { select_separatists_region = 1}
@@ -61,110 +77,45 @@ scripted_gui = {
 			separatism_increase_button_click = {
 				if = {
 					limit = { check_variable = {select_separatists_region = 1} }
-						subtract_from_variable = {
-		                    var = Donetsk_proukranian_support_value
-		                    value = 5
-	                    }
-						add_to_variable = {
-		                    var = Donetsk_prorussian_support_value
-		                    value = 5
-	                    }
-						clamp_variable = {
-		                    var = Donetsk_proukranian_support_value
-		                    min = 0
-		                    max = 100
-	                    }
-						clamp_variable = {
-		                    var = Donetsk_prorussian_support_value
-		                    min = 0
-		                    max = 100
-	                    }
+					set_variable = { show_prorussian_actions_window = 1 }	
 				}
 				if = {
 					limit = { check_variable = {select_separatists_region = 2} }
-						subtract_from_variable = {
-		                    var = Luhansk_proukranian_support_value
-		                    value = 5
-	                    }
-						add_to_variable = {
-		                    var = Luhansk_prorussian_support_value
-		                    value = 5
-	                    }
-						clamp_variable = {
-		                    var = Luhansk_proukranian_support_value
-		                    min = 0
-		                    max = 100
-	                    }
-						clamp_variable = {
-		                    var = Luhansk_prorussian_support_value
-		                    min = 0
-		                    max = 100
-	                    }
+					set_variable = { show_prorussian_actions_window = 1 }	
 				}
 				if = {
 					limit = { check_variable = {select_separatists_region = 3} }
-						subtract_from_variable = {
-		                    var = Kharkiv_proukranian_support_value
-		                    value = 5
-	                    }
-						add_to_variable = {
-		                    var = Kharkiv_prorussian_support_value
-		                    value = 5
-	                    }
-						clamp_variable = {
-		                    var = Kharkiv_proukranian_support_value
-		                    min = 0
-		                    max = 100
-	                    }
-						clamp_variable = {
-		                    var = Kharkiv_prorussian_support_value
-		                    min = 0
-		                    max = 100
-	                    }
-					
+					set_variable = { show_prorussian_actions_window = 1 }	
 				}
 				if = {
 					limit = { check_variable = {select_separatists_region = 4} }
-						subtract_from_variable = {
-		                    var = Odesa_proukranian_support_value
-		                    value = 5
-	                    }
-						add_to_variable = {
-		                    var = Odesa_prorussian_support_value
-		                    value = 5
-	                    }
-						clamp_variable = {
-		                    var = Odesa_proukranian_support_value
-		                    min = 0
-		                    max = 100
-	                    }
-						clamp_variable = {
-		                    var = Odesa_prorussian_support_value
-		                    min = 0
-		                    max = 100
-	                    }
+					set_variable = { show_prorussian_actions_window = 1 }	
 				}
 				if = {
 					limit = { check_variable = {select_separatists_region = 5} }
-					subtract_from_variable = {
-		                var = Crimea_proukranian_support_value
-		                value = 5
-	                }
-					add_to_variable = {
-		                var = Crimea_prorussian_support_value
-		                value = 5
-	                }
-					clamp_variable = {
-		                var = Crimea_proukranian_support_value
-		                min = 0
-		                max = 100
-	                }
-					clamp_variable = {
-		                var = Crimea_prorussian_support_value
-		                min = 0
-		                max = 100
-	                }					
-					
+					set_variable = { show_prorussian_actions_window = 1 }	
+				}
+			}
+			separatism_counteract_button_click = {
+				if = {
+					limit = { check_variable = {select_separatists_region = 1} }
+					set_variable = { show_proukranian_actions_window = 1 }	
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 2} }
+					set_variable = { show_proukranian_actions_window = 1 }	
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 3} }
+					set_variable = { show_proukranian_actions_window = 1 }	
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 4} }
+					set_variable = { show_proukranian_actions_window = 1 }	
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 5} }
+					set_variable = { show_proukranian_actions_window = 1 }	
 				}
 			}
 			separatismgui_closebutton_nw_click = {
@@ -208,6 +159,1257 @@ scripted_gui = {
 			UKR_separatismgui_separatist_value_text = {
 				image = "[get_region_separatists_value]"
 			}
+		}	
+	}
+
+	UKR_separatism_gui_prorussian_actions_window = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "UKR_separatism_gui_prorussian_actions_window"
+
+		visible = {
+			check_variable = { show_prorussian_actions_window > 0 }
+		}
+		
+		effects = {
+			prorussian_actions_close_button_click = {
+				clear_variable = show_prorussian_actions_window
+			}
+			separatism_prorussian_incerase_button_click = {
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 1} 
+				        has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Donetsk_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Donetsk_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Donetsk_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Donetsk_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 2} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Luhansk_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Luhansk_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Luhansk_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Luhansk_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 3} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Kharkiv_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Kharkiv_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Kharkiv_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Kharkiv_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 4} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Odesa_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Odesa_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Odesa_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Odesa_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 5} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Crimea_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Crimea_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Crimea_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Crimea_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }					
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+			}
+			# HOLD A RALLY
+			separatism_hold_prorussian_rally_button_click = {
+				if = {
+				    limit = { 
+						check_variable = {select_separatists_region = 1} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					country_event = {
+                        id = ukraine.9
+                        hours = 4
+                    }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+				    limit = { 
+						check_variable = {select_separatists_region = 2} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					country_event = {
+                        id = ukraine.7
+                        hours = 4
+                    }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+				    limit = { 
+						check_variable = {select_separatists_region = 3} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					country_event = {
+                        id = ukraine.11
+                        hours = 4
+                    }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+				    limit = { 
+						check_variable = {select_separatists_region = 4} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					country_event = {
+                        id = ukraine.13
+                        hours = 4
+                    }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 5} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					country_event = {
+                        id = ukraine.15
+                        hours = 4
+                    }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+			}
+			# RADICALIZATION OF PRORUSSIANS
+			separatism_radicalize_people_button_click = {
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 1} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Donetsk_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Donetsk_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Donetsk_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Donetsk_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 2} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Luhansk_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Luhansk_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Luhansk_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Luhansk_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 3} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Kharkiv_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Kharkiv_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Kharkiv_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Kharkiv_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 4} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Odesa_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Odesa_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Odesa_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Odesa_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 5} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Crimea_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Crimea_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Crimea_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Crimea_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}					
+				}
+			}
+			# SUPPLIES FROM RUSSIAN
+			arms_supplies_from_russia_button_click = {
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 1} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Donetsk_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Donetsk_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Donetsk_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Donetsk_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 2} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Luhansk_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Luhansk_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Luhansk_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Luhansk_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 3} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Kharkiv_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Kharkiv_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Kharkiv_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Kharkiv_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 4} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Odesa_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Odesa_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Odesa_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Odesa_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 5} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Crimea_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Crimea_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Crimea_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Crimea_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }					
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+			}
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+	    properties = {
+
+		}	
+	}
+
+	UKR_separatism_gui_proukranian_actions_window = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "UKR_separatism_gui_proukranian_actions_window"
+
+		visible = {
+			check_variable = { show_proukranian_actions_window > 0 }
+		}
+		
+		effects = {
+			proukranian_actions_close_button_click = {
+				clear_variable = show_proukranian_actions_window
+			}
+			# PROUKRANIAN PROPAGANDA
+			separatism_proukranian_incerase_button_click = {
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 1} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Donetsk_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Donetsk_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Donetsk_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Donetsk_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 2} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Luhansk_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Luhansk_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Luhansk_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Luhansk_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}	
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 3} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Kharkiv_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Kharkiv_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Kharkiv_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Kharkiv_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 4} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Odesa_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Odesa_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Odesa_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Odesa_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}		
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 5} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Crimea_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Crimea_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Crimea_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Crimea_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }	
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}				
+				}
+			}
+			# HOLD A UKRANIAN RALLY
+			separatism_hold_proukranian_rally_button_click = {
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 1} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					country_event = {
+                        id = ukraine.10
+                        hours = 4
+                    }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 2} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					country_event = {
+                        id = ukraine.8
+                        hours = 4
+                    }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 3} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					country_event = {
+                        id = ukraine.12
+                        hours = 4
+                    }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 4} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					country_event = {
+                        id = ukraine.14
+                        hours = 4
+                    }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 5} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15					
+					country_event = {
+                        id = ukraine.16
+                        hours = 4
+                    }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+			}
+			# DERADICALIZATION OF PRORUSSIANS
+			separatism_deradicalize_people_button_click = {
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 1} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Donetsk_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Donetsk_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Donetsk_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Donetsk_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 2} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Luhansk_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Luhansk_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Luhansk_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Luhansk_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 3} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Kharkiv_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Kharkiv_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Kharkiv_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Kharkiv_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 4} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Odesa_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Odesa_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Odesa_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Odesa_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 5} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Crimea_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Crimea_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Crimea_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Crimea_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }					
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+			}
+			# FIGHT SMUGGLING FROM RUSSIA
+			fight_smuggling_from_russia_button_click = {
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 1} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Donetsk_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Donetsk_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Donetsk_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Donetsk_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}	
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 2} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Luhansk_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Luhansk_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Luhansk_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Luhansk_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}	
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 3} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Kharkiv_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Kharkiv_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Kharkiv_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Kharkiv_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 4} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Odesa_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Odesa_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Odesa_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Odesa_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 5} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Crimea_prorussian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Crimea_proukranian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Crimea_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Crimea_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }					
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}	
+				}
+			}
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+	    properties = {
+
 		}	
 	}
 }
