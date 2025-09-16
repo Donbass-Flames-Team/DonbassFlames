@@ -1,0 +1,1104 @@
+consumer_economy_decisions = {
+
+	CE_produce_clothing = {
+
+		icon = GFX_decision_generic_consumer_goods
+		custom_effect_tooltip = clothing_production_tooltip
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 2
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+			local_resources_factor = -0.02
+		}
+
+		days_remove = 50
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+		add_to_variable = {
+         	var = clothing_stockpile
+         	value = 1000
+        			}
+		}
+	}
+
+	CE_mass_produce_clothing = {
+
+		icon = GFX_decision_decision_generic_consumer_goods
+		custom_effect_tooltip = clothing_production_tooltip
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 6
+		}
+		
+		modifier = {
+			civilian_factory_use = 6
+			local_resources_factor = -0.06
+		}
+
+		days_remove = 80
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+		add_to_variable = {
+         	var = clothing_stockpile
+         	value = 3000
+        			}
+		}
+	}
+
+	CE_sell_clothes = {
+
+		icon = GFX_decision_decision_generic_consumer_goods
+		available = {
+		check_variable = { clothing_stockpile > 999 }
+		}
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		modifier = {
+			consumer_goods_factor = -0.05
+			production_factory_efficiency_gain_factor = 0.05
+			local_resources_factor = 0.05
+			stability_weekly = 0.010
+		}
+
+		days_remove = 30
+		cost = 50
+		complete_effect = {
+		subtract_from_variable = {
+         	var = clothing_stockpile
+         	value = 1000
+        				}
+				}	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	CE_mass_sell_clothes = {
+
+		icon = GFX_decision_decision_generic_consumer_goods
+		available = {
+		check_variable = { clothing_stockpile > 2999 }
+		}
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		modifier = {
+			consumer_goods_factor = -0.05
+			production_factory_efficiency_gain_factor = 0.05
+			local_resources_factor = 0.05
+			stability_weekly = 0.010
+		}
+
+		days_remove = 90
+		cost = 100
+		complete_effect = {
+		subtract_from_variable = {
+         	var = clothing_stockpile
+         	value = 3000
+        				}
+				}	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	CE_produce_electronics = {
+
+		icon = GFX_decision_decision_generic_consumer_goods
+		custom_effect_tooltip = electronics_production_tooltip
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 2
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+			local_resources_factor = -0.03
+		}
+
+		days_remove = 50
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+		add_to_variable = {
+         	var = electronics_stockpile
+         	value = 250
+        			}
+		}
+	}
+
+	CE_mass_produce_electronics = {
+
+		icon = GFX_decision_generic_consumer_goods
+		custom_effect_tooltip = electronics_production_tooltip
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 6
+		}
+		
+		modifier = {
+			civilian_factory_use = 6
+			local_resources_factor = -0.09
+		}
+
+		days_remove = 80
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+		add_to_variable = {
+         	var = electronics_stockpile
+         	value = 750
+        			}
+		}
+	}
+
+	CE_sell_electronics = {
+
+		icon = GFX_decision_generic_consumer_goods
+		available = {
+		check_variable = { electronics_stockpile > 249 }
+		}
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		modifier = {
+			consumer_goods_factor = -0.1
+			production_factory_efficiency_gain_factor = 0.05
+			local_resources_factor = 0.1
+			stability_weekly = 0.020
+		}
+
+		days_remove = 30
+		cost = 50
+		complete_effect = {
+		subtract_from_variable = {
+         	var = electronics_stockpile
+         	value = 250
+        				}
+				}	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	CE_mass_sell_electronics = {
+
+		icon = GFX_decision_generic_consumer_goods
+		available = {
+		check_variable = { electronics_stockpile > 749 }
+		}
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		modifier = {
+			consumer_goods_factor = -0.1
+			production_factory_efficiency_gain_factor = 0.05
+			local_resources_factor = 0.1
+			stability_weekly = 0.020
+		}
+
+		days_remove = 90
+		cost = 100
+		complete_effect = {
+		subtract_from_variable = {
+         	var = electronics_stockpile
+         	value = 750
+        				}
+				}	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	CE_produce_automobiles = {
+
+		icon = GFX_decision_generic_motorized
+		custom_effect_tooltip = automobiles_production_tooltip
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 4
+		}
+		
+		modifier = {
+			civilian_factory_use = 4
+			local_resources_factor = -0.07
+		}
+
+		days_remove = 50
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+		add_to_variable = {
+         	var = automobiles_stockpile
+         	value = 100
+        			}
+		}
+	}
+
+	CE_mass_produce_automobiles = {
+
+		icon = GFX_decision_generic_motorized
+		custom_effect_tooltip = automobiles_production_tooltip
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 12
+		}
+		
+		modifier = {
+			civilian_factory_use = 12
+			local_resources_factor = -0.21
+		}
+
+		days_remove = 80
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+		add_to_variable = {
+         	var = automobiles_stockpile
+         	value = 300
+        			}
+		}
+	}
+
+	CE_sell_automobiles = {
+
+		icon = GFX_decision_generic_motorized
+		available = {
+		check_variable = { automobiles_stockpile > 99 }
+		}
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		modifier = {
+			consumer_goods_factor = -0.2
+			industrial_capacity_factory = 0.2
+			local_resources_factor = 0.2
+			stability_weekly = 0.020
+		}
+
+		days_remove = 30
+		cost = 50
+		complete_effect = {
+		subtract_from_variable = {
+         	var = automobiles_stockpile
+         	value = 100
+        				}
+				}	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	CE_mass_sell_automobiles = {
+
+		icon = GFX_decision_generic_motorized
+		available = {
+		check_variable = { automobiles_stockpile > 299 }
+		}
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		modifier = {
+			consumer_goods_factor = -0.2
+			industrial_capacity_factory = 0.2
+			local_resources_factor = 0.2
+			stability_weekly = 0.020
+		}
+
+		days_remove = 90
+		cost = 100
+		complete_effect = {
+		subtract_from_variable = {
+         	var = automobiles_stockpile
+         	value = 300
+        				}
+				}	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}
+national_economy_action_decisions = {
+
+	NEA_rally_civil_markets = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 1
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 100
+
+		cost = 100
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+		    		type = industrial_complex
+		   		level = 1
+		    		instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	NEA_military_investments= {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 1
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 100
+
+		cost = 100
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+		    		type = arms_factory
+		   		level = 1
+		    		instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	NEA_naval_investments= {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 1
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 100
+
+		cost = 100
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+		    		type = dockyard
+		   		level = 1
+		    		instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	NEA_infrastructure_investments= {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 1
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 100
+
+		cost = 100
+			
+		remove_effect = {
+        			random_owned_controlled_state = {
+            			limit = {
+                		is_core_of = ROOT
+                		has_building = {
+                    		type = infrastructure
+                    		level < 5
+                				}
+					}
+           							}
+
+            			add_building_construction = {
+                		type = infrastructure
+                		level = 1
+                		instant_build = yes
+            							}
+        			}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	NEA_military_volunteers = {
+
+		icon = GFX_decision_eng_trade_unions_demand
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		modifier = {
+			political_power_factor = -0.15
+			stability_weekly = -0.020
+		}
+
+		days_remove = 50
+
+		cost = 50
+
+		remove_effect = {
+				add_manpower = 15000
+				}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	NEA_establish_research = {
+
+		icon = SOV_place_hq
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 4
+		}
+		
+		modifier = {
+			civilian_factory_use = 5
+			political_power_factor = -0.15
+			consumer_goods_factor = 0.15
+		}
+		
+
+		days_remove = 300
+		days_re_enable = 300
+
+		cost = 150
+
+		remove_effect = {
+			add_research_slot = 1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	NEA_steel_investments = {
+
+		icon = steel
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 1
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 70
+
+		cost = 120
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_resource = {
+				type = steel
+				amount = 5
+			}
+		}
+	}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	NEA_expand_mining_industry = {
+
+		icon = steel
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 1
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 70
+
+		cost = 120
+		remove_effect = {
+		random_list = {
+                33 = {
+			random_owned_controlled_state = {
+				add_resource = {
+				type = tungsten
+				amount = 5
+						}
+							}
+		}
+                33 = {
+			random_owned_controlled_state = {
+				add_resource = {
+				type = aluminium
+				amount = 5
+						}
+							}
+		}
+
+                33 = {
+			random_owned_controlled_state = {
+				add_resource = {
+				type = aluminium
+				amount = 5
+						}
+							}
+				}
+		}
+		}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	NEA_expand_civil_administration = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 1
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 100
+
+		cost = 50
+			
+		remove_effect = {
+        			random_owned_controlled_state = {
+            			limit = {
+                		is_core_of = ROOT
+                		has_building = {
+                    		type = government_building
+                    		level < 5
+                				}
+					}
+           							}
+
+            			add_building_construction = {
+                		type = government_building
+                		level = 1
+                		instant_build = yes
+            							}
+        			}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	NEA_expand_education_infrastructure = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 1
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 125
+
+		cost = 75
+			
+		remove_effect = {
+        			random_owned_controlled_state = {
+            			limit = {
+                		is_core_of = ROOT
+                		has_building = {
+                    		type = education_infrastructure
+                    		level < 5
+                				}
+					}
+           							}
+
+            			add_building_construction = {
+                		type = education_infrastructure
+                		level = 1
+                		instant_build = yes
+            							}
+        			}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	NEA_invest_media_complex = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 1
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 100
+
+		cost = 100
+			
+		remove_effect = {
+        			random_owned_controlled_state = {
+            			limit = {
+                		is_core_of = ROOT
+                		has_building = {
+                    		type = media_complex
+                    		level < 5
+                				}
+					}
+           							}
+
+            			add_building_construction = {
+                		type = media_complex
+                		level = 1
+                		instant_build = yes
+            							}
+        			}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	NEA_invest_hospital = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 1
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 100
+
+		cost = 100
+			
+		remove_effect = {
+        			random_owned_controlled_state = {
+            			limit = {
+                		is_core_of = ROOT
+                		has_building = {
+                    		type = hospital
+                    		level < 5
+                				}
+					}
+           							}
+
+            			add_building_construction = {
+                		type = hospital
+                		level = 1
+                		instant_build = yes
+            							}
+        			}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	NEA_construct_housing = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 1
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 100
+
+		cost = 100
+			
+		remove_effect = {
+        			random_owned_controlled_state = {
+            			limit = {
+                		is_core_of = ROOT
+                		has_building = {
+                    		type = housing_project
+                    		level < 10
+                				}
+					}
+           							}
+
+            			add_building_construction = {
+                		type = housing_project
+                		level = 1
+                		instant_build = yes
+            							}
+        			}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	NEA_expand_oil_industry = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		visible = { 
+			OR = {
+				NOT = {
+						has_civil_war = yes
+						has_capitulated = yes		
+			    }
+			}
+		}
+		
+		available = {
+		    num_of_civilian_factories_available_for_projects > 2
+		}
+		
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		days_remove = 100
+
+		cost = 100
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+		    		type = synthetic_refinery
+		   		level = 1
+		    		instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+									
+}
