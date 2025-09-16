@@ -36,6 +36,51 @@ country_event = {
                     type = annex_everything
                 }
 			}
+			if = {
+				limit = {
+					check_variable = {
+                        var = DonetskSupplyValue
+                        value = 1
+                        compare = equals
+                    }
+				}
+				DPR = {
+		            add_equipment_to_stockpile = { 
+				        type = infantry_equipment_1 
+				        amount = 1500 
+			        }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+                        var = DonetskSupplyValue
+                        value = 2
+                        compare = equals
+                    }
+				}
+				DPR = {
+		            add_equipment_to_stockpile = { 
+				        type = infantry_equipment_1 
+				        amount = 2500 
+			        }					
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+                        var = DonetskSupplyValue
+                        value = 3
+                        compare = greater_than_or_equals
+                    }
+				}
+				DPR = {
+		            add_equipment_to_stockpile = { 
+				        type = infantry_equipment_1 
+				        amount = 4500 
+			        }					
+				}
+			}
 		}
 	}
 	
@@ -69,6 +114,51 @@ country_event = {
                 }
 			}
 		}
+		if = {
+			limit = {
+				check_variable = {
+                    var = LuhanskSupplyValue
+                    value = 1
+                    compare = equals
+                }
+			}
+			LPR = {
+		        add_equipment_to_stockpile = { 
+				    type = infantry_equipment_1 
+				    amount = 1500 
+			    }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+                    var = LuhanskSupplyValue
+                    value = 2
+                    compare = equals
+                }
+			}
+			LPR = {
+		        add_equipment_to_stockpile = { 
+				    type = infantry_equipment_1 
+				    amount = 2500 
+			    }					
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+                    var = LuhanskSupplyValue
+                    value = 3
+                    compare = greater_than_or_equals
+                }
+			}
+			LPR = {
+		        add_equipment_to_stockpile = { 
+				    type = infantry_equipment_1 
+				    amount = 4500 
+			    }					
+			}
+		}		
 	}
 	
 	option = {
@@ -94,13 +184,58 @@ country_event = {
 
 	immediate = { 
 		hidden_effect = {
-			HPR = {
+			KPR = {
 				declare_war_on = {
                     target = UKR
                     type = annex_everything
                 }
 			}
 		}
+	    if = {
+			limit = {
+				check_variable = {
+                    var = KharkovSupplyValue
+                    value = 1
+                    compare = equals
+                }
+			}
+			KPR = {
+		        add_equipment_to_stockpile = { 
+				    type = infantry_equipment_1 
+				    amount = 1500 
+			    }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+                    var = KharkovSupplyValue
+                    value = 2
+                    compare = equals
+                }
+			}
+			KPR = {
+		        add_equipment_to_stockpile = { 
+				    type = infantry_equipment_1 
+				    amount = 2500 
+			    }					
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+                    var = KharkovSupplyValue
+                    value = 3
+                    compare = greater_than_or_equals
+                }
+			}
+			KPR = {
+		        add_equipment_to_stockpile = { 
+				    type = infantry_equipment_1 
+				    amount = 4500 
+			    }					
+			}
+		}		
 	}
 	
 	option = {
@@ -109,7 +244,7 @@ country_event = {
 
 	option = {
 		name = ukraine.4.b
-		HPR = {
+		KPR = {
 			change_tag_from = root
 		}
 	}
@@ -133,6 +268,51 @@ country_event = {
                 }
 			}
 		}
+	    if = {
+			limit = {
+				check_variable = {
+                    var = OdessaSupplyValue
+                    value = 1
+                    compare = equals
+                }
+			}
+			OPR = {
+		        add_equipment_to_stockpile = { 
+				    type = infantry_equipment_1 
+				    amount = 1500 
+			    }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+                    var = OdessaSupplyValue
+                    value = 2
+                    compare = equals
+                }
+			}
+			OPR = {
+		        add_equipment_to_stockpile = { 
+				    type = infantry_equipment_1 
+				    amount = 2500 
+			    }					
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+                    var = OdessaSupplyValue
+                    value = 3
+                    compare = greater_than_or_equals
+                }
+			}
+			OPR = {
+		        add_equipment_to_stockpile = { 
+				    type = infantry_equipment_1 
+				    amount = 4500 
+			    }					
+			}
+		}		
 	}
 	
 	option = {

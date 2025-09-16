@@ -8,7 +8,7 @@ guiTypes = {
 		iconType = {
 			name = "UKR_maidanites"
 			spriteType = "GFX_maidanites_maidan_powers_gui"
-			position = { x = 170 y = -15 }
+			position = { x = 0 y = -15 }
 		}
 
 		buttonType = {
@@ -18,23 +18,11 @@ guiTypes = {
 			pdx_tooltip = "UKR_maidan_powers_maidanites_tt"
 		}
 
-		iconType = {
-			name = "UKR_nationalists"
-			spriteType = "GFX_nationalists_maidan_powers_gui"
-			position = { x = 5 y = -15 }
-		}
-
 		buttonType = {
 			name = "UKR_nationalists_button"
 			position = { x = 30 y = -10 }
 			spriteType = "GFX_nationalists_icon_maidan_powers_gui"
 			pdx_tooltip = "UKR_maidan_powers_nationalists_tt"
-		}
-
-		iconType = {
-			name = "UKR_prorussians"
-			spriteType = "GFX_prorussians_maidan_powers_gui"
-			position = { x = 320 y = -15 }
 		}
 
 		buttonType = {

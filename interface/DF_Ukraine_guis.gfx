@@ -165,10 +165,17 @@ spriteTypes = {
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Coats/separatismgui_rivne_button.png"
 	}	
 
+	# 
+
+	spriteType = {
+		name = "GFX_placeholder_nothing"
+		textureFile = "gfx/interface/nothing.dds"
+	}
+
     # Regions
 
 	spriteType = {
-		name = "GFX_crimea_seapartism_gui"
+		name = "GFX_crimea_glow_seapartism_gui"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Crimea.png"
 	}
 
@@ -178,7 +185,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_donetsk_seapartism_gui"
+		name = "GFX_donetsk_glow_seapartism_gui"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Donetsk.png"
 	}
 
@@ -198,7 +205,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_kharkov_seapartism_gui"
+		name = "GFX_kharkov_glow_seapartism_gui"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Kharkov.png"
 	}
 
@@ -208,7 +215,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_luhansk_seapartism_gui"
+		name = "GFX_luhansk_glow_seapartism_gui"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Luhansk.png"
 	}
 
@@ -238,7 +245,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_odessa_seapartism_gui"
+		name = "GFX_odessa_glow_seapartism_gui"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/regions/Odessa.png"
 	}
 

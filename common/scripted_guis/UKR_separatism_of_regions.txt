@@ -39,27 +39,15 @@ scripted_gui = {
 
     UKR_separatism_map = {
 		context_type = player_context
-		parent_window_token = top_bar
 		window_name = "UKR_separatism_map"
-		dirty = show_separatism_in_ukraine_map
 
 		visible = {
+			tag = UKR
 			check_variable = { show_separatism_in_ukraine_map > 0 }
 		}
 		
 		effects = {
-			close_map_button_click = {
-				clear_variable = show_separatism_in_ukraine_map
-				if = {
-					limit = { check_variable = {show_prorussian_actions_window = 1} }
-					clear_variable = show_prorussian_actions_window
-				}
-				if = {
-					limit = { check_variable = {show_proukranian_actions_window = 1} }
-					clear_variable = show_proukranian_actions_window
-				}
-		    }
-			coat_donetsk_button_click  = {
+			coat_donetsk_button_click = {
 				set_variable = { select_separatists_region = 1}
 			}
 			coat_luhansk_button_click = {
@@ -74,6 +62,17 @@ scripted_gui = {
 			coat_krym_button_click = {
 				set_variable = { select_separatists_region = 5}
 			}
+			close_map_button_click = {
+				clear_variable = show_separatism_in_ukraine_map
+				if = {
+					limit = { check_variable = {show_prorussian_actions_window = 1} }
+					clear_variable = show_prorussian_actions_window
+				}
+				if = {
+					limit = { check_variable = {show_proukranian_actions_window = 1} }
+					clear_variable = show_proukranian_actions_window
+				}
+		    }
 			separatism_increase_button_click = {
 				if = {
 					limit = { check_variable = {select_separatists_region = 1} }
@@ -139,6 +138,15 @@ scripted_gui = {
 					limit = { check_variable = {select_separatists_region = 5} }
 					clear_variable = select_separatists_region
 				}				
+				if = {
+					limit = { check_variable = {show_proukranian_actions_window = 1} } 
+				    clear_variable = show_proukranian_actions_window
+				}
+				if = {
+					limit = { check_variable = {show_prorussian_actions_window = 1} } 
+				    clear_variable = show_prorussian_actions_window
+				}
+
 			}
 		}
 		
@@ -159,12 +167,26 @@ scripted_gui = {
 			UKR_separatismgui_separatist_value_text = {
 				image = "[get_region_separatists_value]"
 			}
+			donetsk_icon = {
+				image = "[donetsk_icon_glow]"
+			} 
+			luhansk_icon = {
+				image = "[luhansk_icon_glow]"
+			} 
+		    odessa_icon = {
+				image = "[odessa_icon_glow]"
+			}
+			kharkov_icon = {
+				image = "[kharkov_icon_glow]"
+			}
+			crimea_icon = {
+				image = "[crimea_icon_glow]"
+			}
 		}	
 	}
 
 	UKR_separatism_gui_prorussian_actions_window = {
 		context_type = player_context
-		parent_window_token = top_bar
 		window_name = "UKR_separatism_gui_prorussian_actions_window"
 
 		visible = {
@@ -620,6 +642,10 @@ scripted_gui = {
 				    }
 					set_country_flag = SeparatismGuiActionUsed
 					add_political_power = -15
+					add_to_variable = {
+		                var = DonetskSupplyValue
+		                value = 1
+	                }
 					subtract_from_variable = {
 		                var = Donetsk_proukranian_support_value
 		                value = 5
@@ -653,6 +679,10 @@ scripted_gui = {
 				    }
 					set_country_flag = SeparatismGuiActionUsed
 					add_political_power = -15
+					add_to_variable = {
+		                var = LuhanskSupplyValue
+		                value = 1
+	                }
 					subtract_from_variable = {
 		                var = Luhansk_proukranian_support_value
 		                value = 5
@@ -686,6 +716,10 @@ scripted_gui = {
 				    }
 					set_country_flag = SeparatismGuiActionUsed
 					add_political_power = -15
+					add_to_variable = {
+		                var = KharkovSupplyValue
+		                value = 1
+	                }
 					subtract_from_variable = {
 		                var = Kharkiv_proukranian_support_value
 		                value = 5
@@ -719,6 +753,10 @@ scripted_gui = {
 				    }
 					set_country_flag = SeparatismGuiActionUsed
 					add_political_power = -15
+					add_to_variable = {
+		                var = OdessaSupplyValue
+		                value = 1
+	                }
 					subtract_from_variable = {
 		                var = Odesa_proukranian_support_value
 		                value = 5
@@ -789,7 +827,6 @@ scripted_gui = {
 
 	UKR_separatism_gui_proukranian_actions_window = {
 		context_type = player_context
-		parent_window_token = top_bar
 		window_name = "UKR_separatism_gui_proukranian_actions_window"
 
 		visible = {
@@ -1246,6 +1283,19 @@ scripted_gui = {
 				    }
 					set_country_flag = SeparatismGuiActionUsed
 					add_political_power = -15
+	                if = {
+			            limit = {
+				            check_variable = {
+                                var = DonetskSupplyValue
+                                value = 1
+                                compare = greater_than_or_equals
+                            }
+			            }
+						subtract_from_variable = {
+		                    var = DonetskSupplyValue
+		                    value = 1
+	                    }					
+		            }                         					
 					subtract_from_variable = {
 		                var = Donetsk_prorussian_support_value
 		                value = 5
@@ -1279,6 +1329,19 @@ scripted_gui = {
 				    }
 					set_country_flag = SeparatismGuiActionUsed
 					add_political_power = -15
+					if = {
+			            limit = {
+				            check_variable = {
+                                var = LuhanskSupplyValue
+                                value = 1
+                                compare = greater_than_or_equals
+                            }
+			            }
+						subtract_from_variable = {
+		                    var = LuhanskSupplyValue
+		                    value = 1
+	                    }					
+		            }
 					subtract_from_variable = {
 		                var = Luhansk_prorussian_support_value
 		                value = 5
@@ -1312,6 +1375,19 @@ scripted_gui = {
 				    }
 					set_country_flag = SeparatismGuiActionUsed
 					add_political_power = -15
+					if = {
+			            limit = {
+				            check_variable = {
+                                var = KharkovSupplyValue
+                                value = 1
+                                compare = greater_than_or_equals
+                            }
+			            }
+						subtract_from_variable = {
+		                    var = KharkovSupplyValue
+		                    value = 1
+	                    }					
+		            }
 					subtract_from_variable = {
 		                var = Kharkiv_prorussian_support_value
 		                value = 5
@@ -1345,6 +1421,19 @@ scripted_gui = {
 				    }
 					set_country_flag = SeparatismGuiActionUsed
 					add_political_power = -15
+					if = {
+			            limit = {
+				            check_variable = {
+                                var = OdessaSupplyValue
+                                value = 1
+                                compare = greater_than_or_equals
+                            }
+			            }
+						subtract_from_variable = {
+		                    var = OdessaSupplyValue
+		                    value = 1
+	                    }					
+		            }
 					subtract_from_variable = {
 		                var = Odesa_prorussian_support_value
 		                value = 5
