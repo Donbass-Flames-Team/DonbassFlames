@@ -116,6 +116,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_ukraine_separatism_map"
 			position = { x = 27 y = 27 }
 		}
+
 		iconType = {
             name = "separatism_gui_background"
             position = { x = 882 y = 101 }
@@ -225,6 +226,38 @@ guiTypes = {
 			font = "hoi_36header"			
 			text = "separatism_increase_button_text"
 		}
+
+		## GLOW ICONS ##
+		iconType = {
+			name = "donetsk_icon"
+			position = { x = 671 y = 345 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "luhansk_icon"
+			position = { x = 724 y = 289 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "odessa_icon"
+			position = { x = 319 y = 407 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "kharkov_icon"
+			position = { x = 600 y = 265 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "crimea_icon"
+			position = { x = 501 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+		#################
 		
 		buttonType = {
             name = "coat_cherkasy_button"
@@ -448,7 +481,7 @@ guiTypes = {
 		buttonType = {
             name = "prorussian_actions_close_button"
             position = { x = 1125 y = 520 }
-            quadTextureSprite = "GFX_separatismgui_backbutton_nw"
+            quadTextureSprite = "GFX_separatismgui_closebutton_nw"
             clicksound = click_close
         }
 
@@ -517,7 +550,7 @@ guiTypes = {
 		buttonType = {
             name = "proukranian_actions_close_button"
             position = { x = 1125 y = 520 }
-            quadTextureSprite = "GFX_separatismgui_backbutton_nw"
+            quadTextureSprite = "GFX_separatismgui_closebutton_nw"
             clicksound = click_close
         }
 

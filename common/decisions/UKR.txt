@@ -26,6 +26,11 @@ UKR_separatism_decision = {
                 value = 5
 				tooltip = UKR_minus_separatism
             } 
+			clamp_variable = {
+		        var = DPR_separatism_value
+		        min = 0
+		        max = 100
+	        }
 		}
 		ai_will_do = {
 			factor = 120
@@ -58,6 +63,11 @@ UKR_separatism_decision = {
                 value = 5
 				tooltip = UKR_minus_separatism
             } 
+			clamp_variable = {
+		        var = LPR_separatism_value
+		        min = 0
+		        max = 100
+	        }
 		}
 		ai_will_do = {
 			factor = 105
@@ -122,6 +132,11 @@ UKR_separatism_decision = {
                 value = 5
 				tooltip = UKR_minus_separatism
             } 
+			clamp_variable = {
+		        var = OPR_separatism_value
+		        min = 0
+		        max = 100
+	        }
 		}
 		ai_will_do = {
 			factor = 75
@@ -184,7 +199,7 @@ UKR_separatism_decision = {
             custom_effect_tooltip = lpr_uprising_tt
             
 			hidden_effect = {
-				IF = {
+				if = {
 					limit = {
 						has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
 					}
@@ -301,6 +316,28 @@ UKR_separatism_decision = {
                 value = 1
             }
 			custom_effect_tooltip = UKR_add_separatism
+			hidden_effect = {
+			    clamp_variable = {
+		            var = OPR_separatism_value
+		            min = 0
+		            max = 100
+	            }
+			    clamp_variable = {
+		            var = ZKR_separatism_value
+		            min = 0
+		            max = 100
+	            }
+			    clamp_variable = {
+		            var = HPR_separatism_value
+		            min = 0
+		            max = 100
+	            }
+			    clamp_variable = {
+		            var = DPR_separatism_value
+		            min = 0
+		            max = 100
+	            }				
+			}
 		}
 		
 		complete_effect = {
@@ -345,6 +382,28 @@ UKR_separatism_decision = {
                     var = ZKR_separatism_value
                     value = -7
                 }	
+			}
+			hidden_effect = {
+			    clamp_variable = {
+		            var = OPR_separatism_value
+		            min = 0
+		            max = 100
+	            }
+			    clamp_variable = {
+		            var = ZKR_separatism_value
+		            min = 0
+		            max = 100
+	            }
+			    clamp_variable = {
+		            var = HPR_separatism_value
+		            min = 0
+		            max = 100
+	            }
+			    clamp_variable = {
+		            var = DPR_separatism_value
+		            min = 0
+		            max = 100
+	            }				
 			}
 		}
 	}

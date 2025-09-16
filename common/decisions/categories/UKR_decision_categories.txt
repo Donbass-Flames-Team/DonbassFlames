@@ -201,3 +201,22 @@ UKR_russian_ukranian_war_escalation_decision = {
 	scripted_gui = SMO_escalation
 	visible_when_empty = yes
 }
+
+UKR_national_powers_decision = {
+
+	priority = 85
+	
+	icon = GFX_decision_UKR_separatism
+	
+	allowed = {
+		original_tag = UKR 
+		has_country_flag = national_powers_gui
+	}
+	#picture = GFX_decision_UKR_separatism
+
+	visible = {
+        tag = UKR
+		has_country_flag = national_powers_gui
+	}
+	visible_when_empty = yes
+}
