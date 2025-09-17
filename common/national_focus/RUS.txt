@@ -24,6 +24,12 @@ focus_tree = {
 		available = {
 		}
 
+		allow_branch = {
+			NOT = {
+			    has_completed_focus = RUS_coup_in_ukraine
+			}
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -129,13 +135,18 @@ focus_tree = {
 		available = {
 		}
 
+		allow_branch = {
+			NOT = {
+			    has_completed_focus = RUS_coup_in_ukraine
+			}
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			add_political_power = -15
 		}
 	}
 
@@ -162,7 +173,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 35
 			add_stability = 0.025
 		}
 	}
@@ -387,4 +398,507 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = RUS_coup_in_ukraine
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 15
+		y = 6
+
+		offset = {
+			x = 0
+			y = -6
+			trigger = {
+				has_completed_focus = RUS_coup_in_ukraine
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = CoupInUkraine
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	focus = {
+		id = RUS_transfer_of_contingent_to_sevastopol
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = RUS_coup_in_ukraine }
+		relative_position_id = RUS_coup_in_ukraine
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		allow_branch = {
+			has_completed_focus = RUS_coup_in_ukraine
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_support_independent_crimea
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 2
+
+		prerequisite = { focus = RUS_transfer_of_contingent_to_sevastopol }
+		relative_position_id = RUS_coup_in_ukraine
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_status_quo_on_the_peninsula
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 1
+		y = 3
+
+		prerequisite = { focus = RUS_support_independent_crimea }
+		mutually_exclusive = { focus = RUS_referendum_in_crimea }
+		relative_position_id = RUS_coup_in_ukraine
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_republic_of_sailors
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = RUS_status_quo_on_the_peninsula }
+		relative_position_id = RUS_status_quo_on_the_peninsula
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_referendum_in_crimea
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = -1
+		y = 3
+
+		prerequisite = { focus = RUS_support_independent_crimea }
+		mutually_exclusive = { focus = RUS_status_quo_on_the_peninsula }
+		relative_position_id = RUS_coup_in_ukraine
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_return_to_home_port
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = RUS_referendum_in_crimea }
+		relative_position_id = RUS_referendum_in_crimea
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_russian_spring_in_the_east
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 1
+		y = 2
+
+		prerequisite = { focus = RUS_return_to_home_port focus = RUS_republic_of_sailors }
+		relative_position_id = RUS_referendum_in_crimea
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_task_for_fsb
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = -2
+		y = 1
+
+		prerequisite = { focus = RUS_russian_spring_in_the_east }
+		relative_position_id = RUS_russian_spring_in_the_east
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_support_prorussians_protests
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 2
+		y = 1
+
+		prerequisite = { focus = RUS_russian_spring_in_the_east }
+		relative_position_id = RUS_russian_spring_in_the_east
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_help_to_new_republics
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 2
+
+		prerequisite = { focus = RUS_task_for_fsb }
+		prerequisite = { focus = RUS_support_prorussians_protests }
+		relative_position_id = RUS_russian_spring_in_the_east
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_fight_with_proukranians_citizens
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 2
+		y = 3
+
+		prerequisite = { focus = RUS_help_to_new_republics }
+		relative_position_id = RUS_russian_spring_in_the_east
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_task_for_strelkov
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = -2
+		y = 3
+
+		prerequisite = { focus = RUS_help_to_new_republics }
+		prerequisite = { focus = RUS_task_for_fsb }
+		relative_position_id = RUS_russian_spring_in_the_east
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_volunteers_on_donbass
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 4
+
+		prerequisite = { focus = RUS_task_for_strelkov }
+		prerequisite = { focus = RUS_fight_with_proukranians_citizens }
+		relative_position_id = RUS_russian_spring_in_the_east
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_ammunition_supply
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 2
+		y = 5
+
+		prerequisite = { focus = RUS_volunteers_on_donbass }
+		relative_position_id = RUS_russian_spring_in_the_east
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_machinery_supply
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 5
+
+		prerequisite = { focus = RUS_volunteers_on_donbass }
+		relative_position_id = RUS_russian_spring_in_the_east
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_arms_supply
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = -2
+		y = 5
+
+		prerequisite = { focus = RUS_volunteers_on_donbass }
+		relative_position_id = RUS_russian_spring_in_the_east
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_show_kyivs_war_crimes
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 6
+
+		prerequisite = { focus = RUS_machinery_supply }
+		prerequisite = { focus = RUS_arms_supply }
+		prerequisite = { focus = RUS_ammunition_supply }
+		relative_position_id = RUS_russian_spring_in_the_east
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
 }	

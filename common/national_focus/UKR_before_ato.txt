@@ -60,6 +60,7 @@ focus_tree = {
 		y = 1
 
         prerequisite = { focus = UKR_yanukovychs_results }
+		prerequisite = { focus = UKR_situation_is_out_of_control }
 		relative_position_id = UKR_yanukovychs_results
 
 		cancel_if_invalid = yes
@@ -119,6 +120,12 @@ focus_tree = {
 
 		}
 
+		allow_branch = {
+			NOT = {
+			   has_completed_focus = UKR_unrest_in_the_east
+			}
+		}
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
 			add_days_mission_timeout = {
@@ -159,6 +166,12 @@ focus_tree = {
 				has_completed_focus = UKR_yanukovich_escaped
 			}
 			has_country_flag = innextupdate
+		}
+
+		allow_branch = {
+			NOT = {
+			   has_completed_focus = UKR_unrest_in_the_east
+			}
 		}
 
 		completion_reward = {
@@ -994,13 +1007,37 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_launch_counterattacks
+		id = UKR_general_staff
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
 		x = 2
 		y = 3
 
 		prerequisite = { focus = UKR_organize_defense }
+		relative_position_id = UKR_start_of_ato
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_laucnh_counterattacks
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 2
+		y = 4
+
+		prerequisite = { focus = UKR_general_staff }
 		relative_position_id = UKR_start_of_ato
 
 
