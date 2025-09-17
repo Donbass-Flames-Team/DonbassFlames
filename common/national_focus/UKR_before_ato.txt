@@ -1007,6 +1007,55 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_decommissioning_of_stocks
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 4
+		y = 3
+
+		prerequisite = { focus = UKR_organize_defense }
+		relative_position_id = UKR_start_of_ato
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    unlock_decision_category_tooltip = UKR_depreservation_decision
+		}
+	}
+
+	focus = {
+		id = UKR_volunteer_help
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 4
+		y = 4
+
+		prerequisite = { focus = UKR_decommissioning_of_stocks }
+		relative_position_id = UKR_start_of_ato
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
 		id = UKR_general_staff
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
@@ -1154,7 +1203,7 @@ focus_tree = {
 		id = UKR_volunteer_battalions
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 4
+		x = 6
 		y = 2
 
 		prerequisite = { focus = UKR_emergency_redeployment_of_troops }

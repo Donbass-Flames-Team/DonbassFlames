@@ -89,8 +89,8 @@ UKR_depreservation_decision = {
 
 	visible = {
         tag = UKR
+		has_completed_focus = UKR_decommissioning_of_stocks
 	}
-	visible_when_empty = yes
 }
 
 UKR_ATO_decision = {
