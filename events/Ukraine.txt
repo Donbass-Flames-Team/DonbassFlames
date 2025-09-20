@@ -708,10 +708,61 @@ country_event = {
 	desc = ukraine.18.d
 	#picture = GFX_report_event_royal_parade
 	
-	is_triggered_only = yes
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+        tag = UKR
+        check_variable = {
+            var = UKR_radicalisation_of_proeuropeans_value
+            value = 80
+            compare = greater_than_or_equals
+        }
+    }
 
 	option = {
 		name = ukraine.18.a
+		add_days_mission_timeout = {
+			mission = UKR_yanukovich_overthrow
+			days = -15
+		}
+	}
+}
 
+# Nationalists are raging
+country_event = {
+	id = ukraine.19
+	title = ukraine.19.t
+	desc = ukraine.19.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+        tag = UKR
+        check_variable = {
+            var = UKR_radicalisation_of_nationalists_value
+            value = 50
+            compare = greater_than_or_equals
+        }
+    }
+
+	option = {
+		name = ukraine.19.a
+		add_stability = -0.025
+		add_to_variable = {
+            var = UKR_radicalisation_of_proeuropeans_value
+            value = 3
+        }
+		add_to_variable = {
+            var = UKR_radicalisation_of_nationalists_value
+            value = 2
+        }
+		add_to_variable = {
+            var = UKR_radicalisation_of_prorussians_value
+            value = 2
+        }
+		custom_effect_tooltip = UKR_add_radicalisation_of_maidan  
 	}
 }

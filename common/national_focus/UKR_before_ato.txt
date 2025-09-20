@@ -962,6 +962,7 @@ focus_tree = {
             }
 			hidden_effect = {
 				set_global_flag = ATO_Started
+				set_global_flag = Super_Event_Visible
 				country_event = superevent.1
 			}
 		}
