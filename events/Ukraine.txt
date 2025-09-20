@@ -678,3 +678,40 @@ country_event = {
 	    }
 	}
 }
+
+# Elections 2014 
+country_event = {
+	id = ukraine.17
+	title = ukraine.17.t
+	desc = ukraine.17.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.17.a
+		retire_country_leader = yes
+        create_country_leader = {
+		    name = UKR_petro_poroshenko
+		    #desc = victor_yanukovich_desc
+		    ideology = conservatism
+		    picture = gfx/leaders/UKR/Petro_Poroshenko.dds
+		    traits = {}
+	    }				
+	}
+}
+
+# Rallies are intensifying
+country_event = {
+	id = ukraine.18
+	title = ukraine.18.t
+	desc = ukraine.18.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.18.a
+
+	}
+}

@@ -3,19 +3,18 @@ buildings = {
         base_cost = 7000
         per_level_extra_cost = 2000
         infrastructure_construction_effect = yes
-	value = 3
+	    value = 3
 
         icon_frame = 28
-  	country_modifiers = {
-    	modifiers = {				
-	stability_weekly = 0.02
-        political_power_gain = 0.02
-	industry_repair_factor = 0.02
-    	}
-	}
-  	state_modifiers = {
-   	compliance_gain = 0.02
-  	}
+  	    country_modifiers = {
+    	    modifiers = {				
+                political_power_gain = 0.02
+	            industry_repair_factor = 0.02
+    	    }
+	    }
+  	    state_modifiers = {
+   	        compliance_gain = 0.02
+  	    }
 
         level_cap = {
             state_max = 5

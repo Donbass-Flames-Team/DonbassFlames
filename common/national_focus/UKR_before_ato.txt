@@ -75,6 +75,10 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
 		    add_political_power = 25
 			country_event = ukraine.6
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 14
+			}
 		}
 	}
 
@@ -99,13 +103,17 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 7
+			}
 		}
 	}
 
 	focus = {
 		id = UKR_force_deal_with_protests
 		icon = GFX_focus_UKR_activation_of_security_forces
-		cost = 1
+		cost = 2
 		x = 0
 		y = 1
 		
@@ -574,7 +582,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Attracting_Russian_support"
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_arrest_yanukovich"
+			add_stability = 0.025
+			add_political_power = 25
 		}
 	}
 
@@ -599,16 +609,16 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Attracting_Russian_support"
-
-			country_event = ukraine.38
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovich_escaped"
+            add_political_power = -15
+			
 		}
 	}
 
 	focus = {
 		id = UKR_government_in_anarchy
 		icon = GFX_focus_UKR_government_in_anarchy
-		cost = 1
+		cost = 0.3
 		x = -1
 		y = 1
 
@@ -620,7 +630,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-            has_country_flag = YanukovichOverthowen
+            has_country_flag = UKR_Yanukovich_overthrown
 		}
 
 		completion_reward = {
@@ -629,6 +639,14 @@ focus_tree = {
                 remove_idea = UKR_helpless_government
                 add_idea = UKR_disorderly_government
             }
+			retire_country_leader = yes
+	        create_country_leader = {
+		        name = alexander_tyrchinov
+		        #desc = victor_yanukovich_desc
+		        ideology = conservatism
+	        	picture = gfx/leaders/UKR/Turchinov.dds
+		        traits = {}
+	        }
 		}
 	}
 
@@ -654,13 +672,16 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_stability = 0.025
 			add_political_power = 25
+			set_global_flag = UKRelectionsofpresident2014
+            activate_mission = UKR_elections_2014_first_tour
+
 		}
 	}
 
 	focus = {
 		id = UKR_release_political_prisoners_from_prisons
 		icon = GFX_focus_UKR_government_in_anarchy
-		cost = 1
+		cost = 0.2
 		x = -1
 		y = 2
 
@@ -677,6 +698,12 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    add_stability = 0.025
+			add_political_power = 15
+			add_popularity = {
+                ideology = conservatism_democracy
+                popularity = 0.05
+            }
 		}
 	}
 
@@ -707,7 +734,7 @@ focus_tree = {
 	focus = {
 		id = UKR_adoption_of_new_laws
 		icon = GFX_focus_UKR_government_in_anarchy
-		cost = 1
+		cost = 0.5
 		x = 1
 		y = 2
 
@@ -749,13 +776,18 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 			mark_focus_tree_layout_dirty = yes
+			add_popularity = {
+                ideology = autoritarian_democracy
+                popularity = 0.025
+            }
+			add_stability = -0.025
 		}
 	}
 
 	focus = {
 		id = UKR_army_review
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 0.5
 		x = 0
 		y = 1
 
@@ -776,15 +808,16 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
+		    army_experience = 35
 		}
 	}
 
 	focus = {
 		id = UKR_support_of_the_volunteer_battalion
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 0.3
 		x = 0
-		y = 2.5
+		y = 2
 
 		prerequisite = { focus = UKR_army_review }
 		relative_position_id = UKR_unrest_in_the_east
@@ -807,7 +840,7 @@ focus_tree = {
 	focus = {
 		id = UKR_forced_demobilization
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 0.5
 		x = 2
 		y = 2
 
@@ -831,7 +864,7 @@ focus_tree = {
 	focus = {
 		id = UKR_creation_of_tro
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 0.5
 		x = 2
 		y = 3
 
@@ -855,7 +888,7 @@ focus_tree = {
 	focus = {
 		id = UKR_appeal_to_the_oligarchs
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 0.5
 		x = -2
 		y = 2
 
@@ -879,7 +912,7 @@ focus_tree = {
 	focus = {
 		id = UKR_concessions_to_the_oligarchs
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 0.5
 		x = -2
 		y = 3
 
@@ -906,7 +939,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
 		x = 0
-		y = 1.5
+		y = 2
 
 		prerequisite = { focus = UKR_support_of_the_volunteer_battalion }
 		prerequisite = { focus = UKR_concessions_to_the_oligarchs }
@@ -919,7 +952,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-
+            always = no
 		}
 
 		completion_reward = {
@@ -929,6 +962,7 @@ focus_tree = {
                 add_idea = UKR_volunteer_army
             }
 			hidden_effect = {
+				set_global_flag = ATO_Started
 				country_event = superevent.1
 			}
 		}
@@ -955,6 +989,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    add_timed_idea = {
+                idea = UKR_emergency_redeployment_of_troops_idea 
+                days = 25
+            }
 		}
 	}
 
@@ -985,7 +1023,7 @@ focus_tree = {
 	focus = {
 		id = UKR_organize_defense
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
+		cost = 2
 		x = 0
 		y = 2
 
@@ -1003,6 +1041,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    add_timed_idea = {
+                idea = UKR_organize_defence_idea 
+                days = 45
+            }
 		}
 	}
 
@@ -1052,13 +1094,15 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			add_war_support = 0.05
+			activate_mission = UKR_volunteer_help_decision
 		}
 	}
 
 	focus = {
 		id = UKR_general_staff
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
+		cost = 2
 		x = 2
 		y = 3
 
@@ -1106,7 +1150,7 @@ focus_tree = {
 	focus = {
 		id = UKR_prepare_the_defense_of_cities
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
+		cost = 2
 		x = -1
 		y = 3
 
@@ -1124,6 +1168,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    add_timed_idea = {
+                idea = UKR_defence_of_cities_idea 
+                days = 45
+            } 
 		}
 	}
 
@@ -1148,6 +1196,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    add_stability = 0.05
 		}
 	}
 
@@ -1280,7 +1329,7 @@ focus_tree = {
 	focus = {
 		id = UKR_unrest_in_crimea
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 0.5
 		x = 5
 		y = 7
 
@@ -1305,7 +1354,7 @@ focus_tree = {
 	focus = {
 		id = UKR_highlighting_the_situation_in_the_media
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 0.5
 		x = 0
 		y = 1
 
@@ -1342,7 +1391,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-
+			has_country_flag = innextupdate
 		}
 
 		completion_reward = {
@@ -1376,7 +1425,7 @@ focus_tree = {
 	focus = {
 		id = UKR_leave_the_peninsula
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 0.5
 		x = 1
 		y = 2
 
@@ -1441,6 +1490,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_partial_mobilization"
+
 		}
 	}
 

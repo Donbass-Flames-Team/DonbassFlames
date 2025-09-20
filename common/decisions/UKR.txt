@@ -413,6 +413,30 @@ UKR_parlamient_decision = {
 
 }
 
+UKR_elections_of_president = {
+
+	UKR_elections_2014_first_tour = {
+		icon = GFX_decision_UKR_maidan_end_of_regime
+		is_good = no
+		selectable_mission = no
+		fire_only_once = yes
+		days_mission_timeout = 95
+		available = {
+			tag = UKR
+			NOT = {
+				has_global_flag = UKRelectionsofpresident2014
+			}
+		}
+		activation = {
+			tag = UKR
+			has_global_flag = UKRelectionsofpresident2014
+		}
+		timeout_effect = {
+			country_event = ukraine.17
+	    }
+    }
+}
+
 
 UKR_maidan_decision = {
 
@@ -444,7 +468,10 @@ UKR_maidan_decision = {
 					set_global_flag = UKR_yanukovich_after_overthrow_lpr_uprising
 					set_global_flag = UKR_yanukovich_after_overthrow_kpr_uprising
 					set_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
-
+  			        set_politics = {
+				        ruling_party = conservatism_democracy
+				        elections_allowed = no
+			        }
 				    retire_country_leader = yes
 				    create_country_leader = {
 					    name = verkhovna_rada_of_ukraine
@@ -453,11 +480,6 @@ UKR_maidan_decision = {
 					    picture = gfx/leaders/UKR/UKR_anarchy.dds
 					    traits = {}
 				    }
-
-				    set_politics = {
-				        ruling_party = conservatism_democracy
-				        elections_allowed = no
-			        }
 					country_event = ukraine.1
 			    }
 		    }
@@ -642,6 +664,55 @@ UKR_depreservation_decision = {
 		}
 		ai_will_do = {
 			factor = 75
+		}
+	}
+}
+
+UKR_ATO_decision = {
+	UKR_volunteer_help_decision = {
+		icon = GFX_decision_generic_soldier
+		allowed = {
+			original_tag = UKR
+		}
+		
+		available = {
+			OR = { 
+				NOT = {
+			        has_global_flag = ATO_Started 
+			    }	
+			}
+		}
+		
+		selectable_mission = no
+		
+		activation = {
+			always = no
+		}
+		
+		days_mission_timeout = 7
+		fire_only_once = no
+		is_good = yes
+		
+		timeout_effect = {
+			activate_mission = UKR_volunteer_help_decision
+			random_list = {
+                10 = {
+			        add_equipment_to_stockpile = { 
+				        type = infantry_equipment_1 
+				        amount = 150
+			        } 	
+                }
+                10 = {
+			        add_equipment_to_stockpile = { 
+				        type = infantry_equipment_1 
+				        amount = 250
+			        } 
+                }
+            }
+		}
+		
+		complete_effect = {
+
 		}
 	}
 }

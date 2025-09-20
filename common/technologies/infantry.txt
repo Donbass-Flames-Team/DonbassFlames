@@ -295,10 +295,64 @@ technologies = {
 		}
 	}	
 
+	civil_drones = {
+
+		enable_equipments = {
+			
+		}
+		
+		path = {
+			leads_to_tech = introduction_of_drones
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2014
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	introduction_of_drones = {
+
+		enable_equipments = {
+
+		}
+		
+		#path = {
+		#	leads_to_tech = atgl_weapons_2
+		#	research_cost_coeff = 1
+		#}		
+
+		research_cost = 1.5
+		start_year = 1985
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	atgl_weapons = {
 
 		enable_equipments = {
-			atgl_weapons_1
+			grenade_launcher_equipment_0
 		}
 		
 		path = {
@@ -325,7 +379,7 @@ technologies = {
 	atgl_weapons_1 = {
 
 		enable_equipments = {
-			grenade_launcher_equipment
+			grenade_launcher_equipment_1
 		}
 		
 		path = {
@@ -352,7 +406,7 @@ technologies = {
 	atgl_weapons_2 = {
 
 		enable_equipments = {
-			rpg_equipment_2
+			grenade_launcher_equipment_2
 		}
 
 		path = {
@@ -379,7 +433,7 @@ technologies = {
 	atgl_weapons_3 = {
 
 		enable_equipments = {
-			rpg_equipment_3
+			grenade_launcher_equipment_3
 		}
 
 		research_cost = 1.5

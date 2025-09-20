@@ -14,6 +14,21 @@ characters = {
 		}
 	}
 
+	UKR_petro_poroshenko = {
+		name = petro_poroshenko
+		portraits = {
+			civilian = {
+				large = "/gfx/leaders/UKR/Petro_Poroshenko.dds"
+			}
+		}
+		country_leader={
+			ideology = conservatism
+			traits = { }
+			expire="2060.1.1.1"
+			id=-1
+		}
+	}
+
 	#Generals
 	victor_muzhenko = {
 		name = victor_muzhenko
