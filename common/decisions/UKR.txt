@@ -14,6 +14,9 @@ UKR_separatism_decision = {
 		}
 		visible = {
 			tag = UKR
+			NOT = {
+				has_country_flag = UKR_donetsk_uprised
+			}
 		}
 		icon = GFX_decision_coat_of_arms_donetsk_oblast
 		
@@ -51,6 +54,9 @@ UKR_separatism_decision = {
 		}
 		visible = {
 			tag = UKR
+			NOT = {
+				has_country_flag = UKR_luhansk_uprised
+			}
 		}
 		icon = GFX_decision_coat_of_arms_luhansk_oblast
 		
@@ -88,6 +94,9 @@ UKR_separatism_decision = {
 		}
 		visible = {
 			tag = UKR
+			NOT = {
+				has_country_flag = UKR_kharkov_uprised
+			}
 		}
 		icon = GFX_decision_coat_of_arms_kharkov_oblast
 		
@@ -120,6 +129,9 @@ UKR_separatism_decision = {
 		}
 		visible = {
 			tag = UKR
+			NOT = {
+				has_country_flag = UKR_odessa_uprised
+			}
 		}
 		icon = GFX_decision_coat_of_arms_odessa_oblast
 		
@@ -173,6 +185,7 @@ UKR_separatism_decision = {
 					clr_global_flag = UKR_yanukovich_after_overthrow_dpr_uprising
 				}
 				country_event = ukraine.2
+				set_country_flag = UKR_donetsk_uprised
 			}
 		}
 	}
@@ -206,6 +219,7 @@ UKR_separatism_decision = {
 					clr_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
 				}
 				country_event = ukraine.3
+				set_country_flag = UKR_luhansk_uprised
 			}
 		}
 	}
@@ -240,6 +254,7 @@ UKR_separatism_decision = {
 			hidden_effect = {
 				clr_global_flag = UKR_yanukovich_after_overthrow_kpr_uprising
 				country_event = ukraine.4
+				set_country_flag = UKR_kharkov_uprised
 			}
 		}
 	}
@@ -268,6 +283,7 @@ UKR_separatism_decision = {
 			hidden_effect = {
                 country_event = ukraine.5
 			}
+			set_country_flag = UKR_odessa_uprised
 		}
 	}
 

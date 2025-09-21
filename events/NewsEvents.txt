@@ -357,3 +357,47 @@ news_event = {
 		}
 	}
 }
+
+#Poroshenko elected president
+news_event = {
+	id = news_events.9
+	title = news_events.9.t
+	desc = news_events.9.d
+	picture = GFX_news_event_021
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.9.a
+		if = {
+			limit = {
+				original_tag = UKR
+			}
+		}
+	}
+	
+	option = {
+		name = news_events.9.b
+		if = {
+			limit = {
+				original_tag = RUS
+				original_tag = BLR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.9.c
+		if = {
+			limit = {
+				NOT = {
+					original_tag = UKR
+				    original_tag = RUS
+					original_tag = BLR
+				}
+			}
+		}
+	}
+}

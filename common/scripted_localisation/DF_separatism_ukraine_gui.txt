@@ -195,6 +195,107 @@ defined_text = {
 }
 
 defined_text = {
+    name = get_separatism_dpr_value
+
+    text = {
+        trigger = {
+            NOT = {
+                has_country_flag = UKR_donetsk_uprised
+            }
+        }
+        localization_key = "DPR_separatism_value_text"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = UKR_donetsk_uprised
+        }
+        localization_key = "region_Uprised_text"
+    }
+}
+
+defined_text = {
+    name = get_separatism_lpr_value
+
+    text = {
+        trigger = {
+            NOT = {
+                has_country_flag = UKR_luhansk_uprised
+            }
+        }
+        localization_key = "LPR_separatism_value_text"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = UKR_luhansk_uprised
+        }
+        localization_key = "region_Uprised_text"
+    }
+}
+
+defined_text = {
+    name = get_separatism_hpr_value
+
+    text = {
+        trigger = {
+            NOT = {
+                has_country_flag = UKR_kharkov_uprised
+            }
+        }
+        localization_key = "HPR_separatism_value_text"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = UKR_kharkov_uprised
+        }
+        localization_key = "region_Uprised_text"
+    }
+}
+
+defined_text = {
+    name = get_separatism_opr_value
+
+    text = {
+        trigger = {
+            NOT = {
+                has_country_flag = UKR_odessa_uprised
+            }
+        }
+        localization_key = "OPR_separatism_value_text"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = UKR_odessa_uprised
+        }
+        localization_key = "region_Uprised_text"
+    }
+}
+
+defined_text = {
+    name = get_separatism_zkr_value
+
+    text = {
+        trigger = {
+            NOT = {
+                has_country_flag = UKR_zakarpatie_uprised
+            }
+        }
+        localization_key = "ZKR_separatism_value_text"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = UKR_zakarpatie_uprised
+        }
+        localization_key = "region_Uprised_text"
+    }
+}
+
+
+defined_text = {
     name = separatism_gui_background_image
 
     text = {

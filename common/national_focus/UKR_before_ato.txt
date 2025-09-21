@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 2500 y = 500 }
+	continuous_focus_position = { x = 7500 y = 500 }
 
 	focus = {
 		id = UKR_situation_is_out_of_control
@@ -20,6 +20,14 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_unrest_in_the_east
+			}
+		}
 
 		available = {
 
@@ -46,6 +54,14 @@ focus_tree = {
 
 		}
 
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_unrest_in_the_east
+			}
+		}
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
 			add_stability = -0.05
@@ -69,6 +85,14 @@ focus_tree = {
 
 		available = {
 
+		}
+
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_unrest_in_the_east
+			}
 		}
 
 		completion_reward = {
@@ -98,6 +122,14 @@ focus_tree = {
 
 		available = {
 
+		}
+
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_unrest_in_the_east
+			}
 		}
 
 		completion_reward = {
@@ -179,6 +211,14 @@ focus_tree = {
 		allow_branch = {
 			NOT = {
 			   has_completed_focus = UKR_unrest_in_the_east
+			}
+		}
+
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_dictatorship_takes_over
 			}
 		}
 
@@ -569,17 +609,32 @@ focus_tree = {
 	focus = {
 		id = UKR_arrest_yanukovich
 		icon = GFX_focus_UKR_arrest_yanukovich
-		cost = 0.7
+		cost = 0.4
 		x = 0
 		y = 1
 
 		prerequisite = { focus = UKR_remain_neutral }
 		relative_position_id = UKR_remain_neutral
 		mutually_exclusive = { focus = UKR_dictatorship_takes_over }
+		mutually_exclusive = { focus = UKR_yanukovich_escaped }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_unrest_in_the_east
+			}
+		}
+
+		allow_branch = {
+			NOT = {
+			   has_completed_focus = UKR_dictatorship_takes_over
+			}
+		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_arrest_yanukovich"
@@ -591,16 +646,31 @@ focus_tree = {
 	focus = {
 		id = UKR_yanukovich_escaped
 		icon = GFX_focus_UKR_escaped_president
-		cost = 0.7
+		cost = 0.4
 		x = -2
 		y = 1
 
 		prerequisite = { focus = UKR_remain_neutral }
 		relative_position_id = UKR_remain_neutral
+		mutually_exclusive = { focus = UKR_arrest_yanukovich }
 
 		available = {
             NOT = {
 				has_completed_focus = UKR_dictatorship_takes_over
+			}
+		}
+
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_unrest_in_the_east
+			}
+		}
+
+		allow_branch = {
+			NOT = {
+			   has_completed_focus = UKR_dictatorship_takes_over
 			}
 		}
 
@@ -770,6 +840,14 @@ focus_tree = {
 
 		available = {
 
+		}
+
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_unrest_in_the_east
+			}
 		}
 
 		completion_reward = {
@@ -961,10 +1039,411 @@ focus_tree = {
                 add_idea = UKR_volunteer_army
             }
 			hidden_effect = {
-				set_global_flag = ATO_Started
-				set_global_flag = Super_Event_Visible
+				set_global_flag = Start_of_ATO_SP
+				set_global_flag = Visbile_sp_events
 				country_event = superevent.1
+				mark_focus_tree_layout_dirty = yes
 			}
+		}
+	}
+
+	focus = {
+		id = UKR_snap_presidential_elections
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 25
+		y = 0
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            always = no
+		}
+
+		allow_branch = {
+			has_country_flag = UKRElectionsofpresident2014
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_poroshenko_victory
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_snap_presidential_elections }
+		relative_position_id = UKR_snap_presidential_elections
+
+		available = {
+            always = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_timoshenko_victory
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 10
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_snap_presidential_elections }
+		relative_position_id = UKR_snap_presidential_elections
+
+		available = {
+            always = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_oleg_lyashko_victory
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 20
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_snap_presidential_elections }
+		relative_position_id = UKR_snap_presidential_elections
+
+		available = {
+            always = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_military_reforms_afu
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 55
+		y = 0
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = UKRElectionsofpresident2014
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_western_instructors
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_military_reforms_afu }
+		relative_position_id = UKR_military_reforms_afu
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_reliance_on_decentralized_command
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -2
+		y = 2
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_western_instructors }
+		relative_position_id = UKR_military_reforms_afu
+		mutually_exclusive = { focus = UKR_reliance_on_centralized_command }
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_missionary_command
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_reliance_on_decentralized_command }
+		relative_position_id = UKR_reliance_on_decentralized_command
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_reform_of_the_sergeant_corps
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 2
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_missionary_command }
+		relative_position_id = UKR_reliance_on_decentralized_command
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_creation_of_joint_headquarters
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_reform_of_dshv }
+		relative_position_id = UKR_reform_of_dshv
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_reform_of_dshv
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 3
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_reliance_on_decentralized_command focus = UKR_reliance_on_centralized_command}
+		relative_position_id = UKR_military_reforms_afu
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_reliance_on_centralized_command
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 2
+		y = 2
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_western_instructors }
+		relative_position_id = UKR_military_reforms_afu
+		mutually_exclusive = { focus = UKR_reliance_on_decentralized_command }
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_ukranian_mic
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -5
+		y = 2
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_western_instructors }
+		relative_position_id = UKR_military_reforms_afu
+
+
+		available = {
+           
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_new_infantry_equipment
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_ukranian_mic }
+		relative_position_id = UKR_ukranian_mic
+
+
+		available = {
+           
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_creation_of_sso
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 6
+		y = 2
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_western_instructors }
+		relative_position_id = UKR_military_reforms_afu
+
+
+		available = {
+           
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_expansion_of_sso_training_centers
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_creation_of_sso }
+		relative_position_id = UKR_creation_of_sso
+
+
+		available = {
+           
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -978,6 +1457,9 @@ focus_tree = {
 		prerequisite = { focus = UKR_start_of_ato }
 		relative_position_id = UKR_start_of_ato
 
+		allow_branch = {
+			has_completed_focus = UKR_start_of_ato
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1081,6 +1563,36 @@ focus_tree = {
 		y = 4
 
 		prerequisite = { focus = UKR_decommissioning_of_stocks }
+		relative_position_id = UKR_start_of_ato
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			add_war_support = 0.05
+			activate_mission = UKR_volunteer_help_decision
+		}
+	}
+
+	focus = {
+		id = UKR_end_of_separatism
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 5
+
+		prerequisite = { focus = UKR_strengthen_kramatorsk }
+		prerequisite = { focus = UKR_strengthen_slavyansk }
+		prerequisite = { focus = UKR_launch_counterattacks }
+		prerequisite = { focus = UKR_volunteer_help }
+		prerequisite = { focus = UKR_humanitarion_help_to_people }
 		relative_position_id = UKR_start_of_ato
 
 
@@ -1449,7 +1961,7 @@ focus_tree = {
 	focus = {
 		id = UKR_pick_up_weapons_from_warehouses
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 0.3
 		x = 1
 		y = 3
 

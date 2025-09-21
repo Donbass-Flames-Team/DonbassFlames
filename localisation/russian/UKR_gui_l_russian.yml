@@ -1,9 +1,9 @@
 ﻿l_russian:
- DPR_separatism_value_text:0 "[?DPR_separatism_value]%"
- LPR_separatism_value_text:0 "[?LPR_separatism_value]%"
- HPR_separatism_value_text:0 "[?HPR_separatism_value]%"
- OPR_separatism_value_text:0 "[?OPR_separatism_value]%"
- ZKR_separatism_value_text:0 "[?ZKR_separatism_value]%"
+ DPR_separatism_value_text:0 "        [?DPR_separatism_value]%"
+ LPR_separatism_value_text:0 "        [?LPR_separatism_value]%"
+ HPR_separatism_value_text:0 "        [?HPR_separatism_value]%"
+ OPR_separatism_value_text:0 "        [?OPR_separatism_value]%"
+ ZKR_separatism_value_text:0 "        [?ZKR_separatism_value]%"
  UKR_separatism_decision:0 "Региональный сепаратизм"
  UKR_suppress_separatism_in_donetsk:0 "Подваление сепаратистких настроений в Донецке"
  UKR_suppress_separatism_in_luhansk:0 "Подваление сепаратистких настроений в Луганске"
@@ -21,6 +21,8 @@
  kharkiv_region_separatism_gui:0 "          Харьковская область"
  odesa_region_separatism_gui:0 "             Одесская область"
  crimea_region_separatism_gui:0 "Автономная Республика Крым"
+
+ region_Uprised_text:0 "§RВосстал§!"
 
  separatism_increase_button_text:0 "Усилить сопротивление"
  separatism_counteract_button_text:0 "Противодействовать"

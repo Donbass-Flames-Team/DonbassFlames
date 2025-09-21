@@ -15,7 +15,6 @@ country_event = {
 	
 	option = {
 		name = ukraine.1.a
-		complete_national_focus = UKR_government_in_anarchy
 	}
 }
 
@@ -339,23 +338,6 @@ country_event = {
     #Be neutral
 	option = {
 		name = ukraine.6.a
-
-		complete_national_focus = UKR_remain_neutral
-		ai_chance = {
-			base = 2.5
-			modifier = {
-				factor = 35
-				if = {
-					limit = { is_historical_focus_on = yes }
-				}
-			}
-			modifier = {
-				factor = 15
-				if = {
-					limit = { is_historical_focus_on = no }
-				}
-			}
-		}
 	}
 }
 
@@ -697,7 +679,10 @@ country_event = {
 		    ideology = conservatism
 		    picture = gfx/leaders/UKR/Petro_Poroshenko.dds
 		    traits = {}
-	    }				
+	    }
+		hidden_effect = {
+			
+		}				
 	}
 }
 
@@ -748,21 +733,26 @@ country_event = {
         }
     }
 
+	immediate = {
+        hidden_effect = {
+		    add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = 3
+            }
+		    add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = 2
+            }
+		    add_to_variable = {
+                var = UKR_radicalisation_of_prorussians_value
+                value = 2
+            }		
+		}
+	}
+
 	option = {
 		name = ukraine.19.a
 		add_stability = -0.025
-		add_to_variable = {
-            var = UKR_radicalisation_of_proeuropeans_value
-            value = 3
-        }
-		add_to_variable = {
-            var = UKR_radicalisation_of_nationalists_value
-            value = 2
-        }
-		add_to_variable = {
-            var = UKR_radicalisation_of_prorussians_value
-            value = 2
-        }
 		custom_effect_tooltip = UKR_add_radicalisation_of_maidan  
 	}
 }

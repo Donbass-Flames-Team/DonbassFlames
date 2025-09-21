@@ -60,41 +60,41 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "UKR_separatism_dpr_value"
-			text = "DPR_separatism_value_text"
+			text = "[get_separatism_dpr_value]"
 			font = "hoi_16mbs"
-			position = { x = 390 y = 20 }
+			position = { x = 365 y = 20 }
 			pdx_tooltip = "[CAT_OPENING]"
 		}
 
 		instantTextBoxType = {
 			name = "UKR_separatism_lpr_value"
-			text = "LPR_separatism_value_text"
+			text = "[get_separatism_lpr_value]"
 			font = "hoi_16mbs"
-			position = { x = 390 y = 60 }
+			position = { x = 365 y = 60 }
 			pdx_tooltip = "[CAT_OPENING]"
 		}
 
 		instantTextBoxType = {
 			name = "UKR_separatism_hpr_value"
-			text = "HPR_separatism_value_text"
+			text = "[get_separatism_hpr_value]"
 			font = "hoi_16mbs"
-			position = { x = 390 y = 100 }
+			position = { x = 365 y = 100 }
 			pdx_tooltip = "[CAT_OPENING]"
 		}
 
 		instantTextBoxType = {
 			name = "UKR_separatism_opr_value"
-			text = "OPR_separatism_value_text"
+			text = "[get_separatism_opr_value]"
 			font = "hoi_16mbs"
-			position = { x = 390 y = 140 }
+			position = { x = 365 y = 140 }
 			pdx_tooltip = "[CAT_OPENING]"
 		}
 
 	    instantTextBoxType = {
 			name = "UKR_separatism_zkr_value"
-			text = "ZKR_separatism_value_text"
+			text = "[get_separatism_zkr_value]"
 			font = "hoi_16mbs"
-			position = { x = 390 y = 180 }
+			position = { x = 365 y = 180 }
 			pdx_tooltip = "[CAT_OPENING]"
 		}
     }
