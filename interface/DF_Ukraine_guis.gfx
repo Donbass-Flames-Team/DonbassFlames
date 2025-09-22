@@ -654,5 +654,21 @@ spriteTypes = {
     	name = "GFX_DF_background_generic_1"
     	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Background_Gen_2.png"
 	}
+
+
+    #######################################################
+	#################### ELECTIONS GUI ####################
+	#######################################################
+
+	spriteType = {
+    	name = "GFX_ukraine_background_elections"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Background_elections_gui.png"
+	}
+
+	spriteType = {
+    	name = "GFX_ukraine_elections_btn"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Ukraine_elections_btn.png"
+	}
+
 }
 

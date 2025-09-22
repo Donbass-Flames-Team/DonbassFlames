@@ -451,6 +451,28 @@ UKR_elections_of_president = {
 			country_event = ukraine.17
 	    }
     }
+
+	UKR_elections_2019 = {
+		icon = GFX_decision_UKR_maidan_end_of_regime
+		is_good = no
+		selectable_mission = no
+		fire_only_once = yes
+		days_mission_timeout = 95
+		available = {
+			tag = UKR
+			NOT = {
+				has_global_flag = UKRelectionsofpresident2019
+			}
+		}
+		activation = {
+			tag = UKR
+			has_global_flag = UKRelectionsofpresident2019
+		}
+		timeout_effect = {
+			
+	    }
+    }
+
 }
 
 
