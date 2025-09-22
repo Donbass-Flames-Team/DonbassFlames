@@ -7,6 +7,18 @@ capital = 93
 	set_country_flag = Speaker_Is_Turchinov
 	set_country_flag = 7_congress_of_rada
 	set_research_slots = 3
+
+	add_dynamic_modifier = { modifier = UKR_ukraine_army_idea }
+	set_variable = { UKR_AFU_army_org_factor = -0.45 }
+	set_variable = { UKR_AFU_army_org_regain = -0.25 }
+	set_variable = { UKR_AFU_army_morale_factor = -0.25 }
+    set_variable = { UKR_AFU_army_attack_factor = -0.2 }
+    set_variable = { UKR_AFU_army_defence_factor = -0.2 }
+	set_variable = { UKR_AFU_planning_speed = -0.20 }
+    set_variable = { UKR_AFU_army_speed_factor = -0.15 }
+	set_variable = { UKR_AFU_war_breakthrough_factor = -0.15 }
+	set_variable = { UKR_AFU_war_support_factor = -0.15 }
+	set_variable = { UKR_AFU_conscription = -0.02 } 
 	
 	set_technology = {
 		infantry_weapons = 1
@@ -126,7 +138,6 @@ capital = 93
 		UKR_protests
 		UKR_helpless_government
 		UKR_separatism
-		UKR_ukraine_army
 		UKR_dependence_on_russia
 		UKR_ukrainian_mic
 	}

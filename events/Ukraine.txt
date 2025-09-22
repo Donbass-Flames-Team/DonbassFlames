@@ -756,3 +756,18 @@ country_event = {
 		custom_effect_tooltip = UKR_add_radicalisation_of_maidan  
 	}
 }
+
+# Unrest in the east
+country_event = {
+	id = ukraine.20
+	title = ukraine.20.t
+	desc = ukraine.20.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.20.a
+		complete_national_focus = UKR_unrest_in_crimea				
+	}
+}

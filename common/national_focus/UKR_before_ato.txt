@@ -742,8 +742,11 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_stability = 0.025
 			add_political_power = 25
-			set_global_flag = UKRelectionsofpresident2014
+			set_country_flag = Focuses_after_Ato
             activate_mission = 	UKR_elections_2014
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 
@@ -820,7 +823,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		    add_stability = 0.05
+		    add_stability = 0.075
 		}
 	}
 
@@ -852,12 +855,17 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
-			mark_focus_tree_layout_dirty = yes
+			country_event = ukraine.20
 			add_popularity = {
                 ideology = autoritarian_democracy
                 popularity = 0.025
             }
+			swap_ideas = {
+                remove_idea = UKR_protests
+                add_idea = UKR_protests_in_the_east
+            }
 			add_stability = -0.025
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -935,6 +943,9 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
+		    add_to_variable = { UKR_AFU_army_org_factor = 0.075 }
+			add_to_variable = { UKR_AFU_army_morale_factor = 0.15 }
+		    custom_effect_tooltip = UKR_forced_demobilization_tt
 		}
 	}
 
@@ -959,6 +970,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
+			add_to_variable = { UKR_AFU_army_org_factor = 0.15 }
+		    custom_effect_tooltip = UKR_creation_of_tro_tt
 		}
 	}
 
@@ -1014,7 +1027,7 @@ focus_tree = {
 	focus = {
 		id = UKR_start_of_ato
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 0.5
 		x = 0
 		y = 2
 
@@ -1064,7 +1077,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			has_country_flag = UKRElectionsofpresident2014
+			has_country_flag = Focuses_after_Ato
 		}
 
 		completion_reward = {
@@ -1162,7 +1175,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			has_country_flag = UKRElectionsofpresident2014
+			has_country_flag = Focuses_after_Ato
 		}
 
 		completion_reward = {
@@ -1601,13 +1614,16 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-
+            NOT = {
+				has_global_flag = Minsk2_is_signed
+			}
 		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			add_political_power = 75
+			add_stability = 0.05
 			add_war_support = 0.05
-			activate_mission = UKR_volunteer_help_decision
 		}
 	}
 
@@ -1656,6 +1672,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    add_to_variable = { UKR_AFU_army_attack_factor = 0.05 }
+		    custom_effect_tooltip = UKR_launch_counterattacks_tt
 		}
 	}
 
@@ -1783,6 +1801,8 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
 		    add_political_power = 50
+			add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
+		    custom_effect_tooltip = UKR_volunteer_battalions_tt
 		}
 	}
 
@@ -1988,8 +2008,7 @@ focus_tree = {
 		x = 0
 		y = 4
 
-		prerequisite = { focus = UKR_pick_up_weapons_from_warehouses }
-		prerequisite = { focus = UKR_organize_defence_in_crimea }
+		prerequisite = { focus = UKR_pick_up_weapons_from_warehouses focus = UKR_organize_defence_in_crimea }
 		relative_position_id = UKR_unrest_in_crimea
 
 		cancel_if_invalid = yes

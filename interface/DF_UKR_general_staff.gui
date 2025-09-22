@@ -1,0 +1,353 @@
+guiTypes = {
+	containerWindowType = {
+		name = "UKR_general_staff"
+		size = { width = 142 height = 220 }
+		position = { x = 0 y = 0 }
+	   
+		buttonType = {
+			name = "UKR_general_staff_button"
+			spriteType = "GFX_ukraine_separatism_btn"
+			position = { x = 25 y = 5 }
+			shortcut = "shift+c"
+			buttonText = ""
+			buttonFont = "hoi_16mbs"
+			pdx_tooltip = "[CAT_OPENING]"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+    }
+
+	containerWindowType = {
+		name = "UKR_general_staff_map"
+		position = { x = 0 y = -10 }
+		size = { width = 1378 height = 695 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = no
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_ukraine_separatism_map"
+			position = { x = 27 y = 27 }
+		}
+
+		iconType = {
+            name = "separatism_gui_background"
+            position = { x = 882 y = 101 }
+            quadTextureSprite = "GFX_separatismgui_bgempty"
+        }
+		
+		buttonType = {
+			name = "close_map_button"
+			position = { x = 1366 y = 34 }
+			quadTextureSprite = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+
+		instantTextBoxType = {
+			name = "UKR_separatismgui_region_name"
+			maxWidth = 300
+			position = { x = 986 y = 118 }
+			font = "hoi_36header"
+			text = "[get_region_name_separatism]"
+		}
+
+		instantTextBoxType = {
+			name = "UKR_separatismgui_name"
+			text = "UKR_separatismgui_name_text"
+			font = "hoi_36header"
+			maxWidth = 270
+			position = { x = 584 y = 35 }
+		}
+
+		buttonType = {
+			name = "candidate_6_increase_button"
+			position = { x = 1145 y = 545 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+		    font = "hoi_36header"			
+			text = "separatism_counteract_button_text"
+        }
+
+		buttonType = {
+			name = "candidate_5_increase_button"
+			position = { x = 886 y = 545 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+		    font = "hoi_36header"			
+			text = "separatism_counteract_button_text"
+        }
+
+		buttonType = {
+			name = "candidate_4_increase_button"
+			position = { x = 886 y = 602 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+		    font = "hoi_36header"			
+			text = "separatism_counteract_button_text"
+        }
+
+		buttonType = {
+			name = "candidate_3_increase_button"
+			position = { x = 1145 y = 602 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+		    font = "hoi_36header"			
+			text = "separatism_counteract_button_text"
+        }
+		
+		buttonType = {
+			name = "candidate_2_increase_button"
+			position = { x = 1145 y = 662 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+		    font = "hoi_36header"			
+			text = "separatism_counteract_button_text"
+        }
+
+		buttonType = {
+			name = "candidate_increase_button"
+			position = { x = 886 y = 662 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "separatism_increase_button_text"
+		}
+
+		## GLOW ICONS ##
+		iconType = {
+			name = "donetsk_icon"
+			position = { x = 670 y = 345 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "luhansk_icon"
+			position = { x = 724 y = 288 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "odessa_icon"
+			position = { x = 320 y = 408 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "kharkov_icon"
+			position = { x = 600 y = 265 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "crimea_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+		#################
+		
+		buttonType = {
+            name = "coat_cherkasy_button"
+            position = { x = 440 y = 320 }
+            quadTextureSprite = "GFX_ukraine_cherkasy_coat_of_arms"
+            clicksound = click_close
+        }
+		
+		buttonType = {
+            name = "coat_chernihiv_button"
+            position = { x = 460 y = 190 }
+            quadTextureSprite = "GFX_ukraine_chernihiv_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_chernivtsi_button"
+            position = { x = 210 y = 381 }
+            quadTextureSprite = "GFX_ukraine_chernivtsi_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_dnipro_button"
+            position = { x = 577 y = 369 }
+            quadTextureSprite = "GFX_ukraine_dnipro_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_donetsk_button"
+            position = { x = 699 y = 400 }
+            quadTextureSprite = "GFX_ukraine_donetsk_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_ivanofrankivsk_button"
+            position = { x = 155 y = 361 }
+            quadTextureSprite = "GFX_ukraine_ivanofrankivsk_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_kharkiv_button"
+            position = { x = 653 y = 297 }
+            quadTextureSprite = "GFX_ukraine_kharkiv_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_kherson_button"
+            position = { x = 527 y = 478 }
+            quadTextureSprite = "GFX_ukraine_kherson_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }		
+		
+		buttonType = {
+            name = "coat_khmelnytskyi_button"
+            position = { x = 253 y = 305 }
+            quadTextureSprite = "GFX_ukraine_khmelnytskyi_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_krym_button"
+            position = { x = 552 y = 567 }
+            quadTextureSprite = "GFX_ukraine_krym_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_kyiv_button"
+            position = { x = 400 y = 253 }
+            quadTextureSprite = "GFX_ukraine_kyiv_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_kyrovohrad_button"
+            position = { x = 470 y = 372 }
+            quadTextureSprite = "GFX_ukraine_kyrovohrad_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_luhansk_button"
+            position = { x = 750 y = 348 }
+            quadTextureSprite = "GFX_ukraine_luhansk_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_lviv_button"
+            position = { x = 125 y = 290 }
+            quadTextureSprite = "GFX_ukraine_lviv_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_mykolaiv_button"
+            position = { x = 462 y = 444 }
+            quadTextureSprite = "GFX_ukraine_mykolaiv_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_odesa_button"
+            position = { x = 389 y = 474 }
+            quadTextureSprite = "GFX_ukraine_odesa_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_poltava_button"
+            position = { x = 543 y = 294 }
+            quadTextureSprite = "GFX_ukraine_poltava_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_sumy_button"
+            position = { x = 556 y = 204 }
+            quadTextureSprite = "GFX_ukraine_sumy_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_ternopil_button"
+            position = { x = 193 y = 315 }
+            quadTextureSprite = "GFX_ukraine_ternopil_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_vinnytsia_button"
+            position = { x = 323 y = 345 }
+            quadTextureSprite = "GFX_ukraine_vinnytsia_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_volyn_button"
+            position = { x = 168 y = 206 }
+            quadTextureSprite = "GFX_ukraine_volyn_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_zakarpattya_button"
+            position = { x = 103 y = 384 }
+            quadTextureSprite = "GFX_ukraine_zakarpattya_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_zaporizhzhia_button"
+            position = { x = 617 y = 447 }
+            quadTextureSprite = "GFX_ukraine_zaporizhzhia_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		
+		buttonType = {
+            name = "coat_zhytomyr_button"
+            position = { x = 311 y = 227 }
+            quadTextureSprite = "GFX_ukraine_zhytomyr_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+		buttonType = {
+            name = "coat_rivne_button"
+            position = { x = 237 y = 205 }
+            quadTextureSprite = "GFX_ukraine_rivne_coat_of_arms"
+            clicksound = click_close
+			oversound = ui_menu_over
+        }
+	}
+}

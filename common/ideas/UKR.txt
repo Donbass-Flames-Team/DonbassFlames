@@ -20,6 +20,24 @@ ideas = {
 			}
 		}
 
+		UKR_protests_in_the_east = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.15
+				political_power_gain = -0.05
+				stability_weekly = -0.001
+			}
+		}
+
 		UKR_helpless_government = {
             allowed = {
                 always = yes
@@ -93,26 +111,6 @@ ideas = {
 				initiative_factor = -0.075
 				planning_speed = -0.2
 				war_support_factor = -0.15
-			}
-		}
-
-		UKR_volunteer_army = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
-
-			removal_cost = -1
-			
-			modifier = {
-			    army_attack_factor = -0.15
-				army_speed_factor = -0.15
-				army_org_factor = -0.10
-				breakthrough_factor = -0.15
-				planning_speed = -0.1
 			}
 		}
 

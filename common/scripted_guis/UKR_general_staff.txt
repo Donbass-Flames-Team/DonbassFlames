@@ -1,0 +1,171 @@
+scripted_gui = {
+
+    UKR_general_staff = {
+       context_type = decision_category
+	   window_name = "UKR_general_staff"
+ 
+        visible = {
+            tag = UKR
+        }
+ 
+		effects = {
+			UKR_general_staff_button_click = {
+				if = {
+					limit = { has_variable = show_ukraine_general_staff_map }
+					clear_variable = show_ukraine_general_staff_map
+				}
+				else = {
+					set_variable = { show_ukraine_general_staff_map = 1 }
+				}
+			}
+		}
+
+        triggers = {
+
+        }
+		
+		properties = {
+			
+		}
+    }
+
+    UKR_general_staff_map = {
+		context_type = player_context
+		window_name = "UKR_general_staff_map"
+
+		visible = {
+			tag = UKR
+			check_variable = { show_ukraine_general_staff_map > 0 }
+		}
+		
+		effects = {
+			coat_donetsk_button_click = {
+				set_variable = { select_separatists_region = 1}
+			}
+			coat_luhansk_button_click = {
+				set_variable = { select_separatists_region = 2}
+			}
+			coat_kharkiv_button_click = {
+				set_variable = { select_separatists_region = 3}
+			}
+			coat_odesa_button_click = {
+				set_variable = { select_separatists_region = 4}
+			}
+			coat_krym_button_click = {
+				set_variable = { select_separatists_region = 5}
+			}
+			close_map_button_click = {
+				clear_variable = show_ukraine_general_staff_map
+		    }
+			separatism_increase_button_click = {
+				if = {
+					limit = { check_variable = {select_separatists_region = 1} }
+					set_variable = { show_prorussian_actions_window = 1 }	
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 2} }
+					set_variable = { show_prorussian_actions_window = 1 }	
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 3} }
+					set_variable = { show_prorussian_actions_window = 1 }	
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 4} }
+					set_variable = { show_prorussian_actions_window = 1 }	
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 5} }
+					set_variable = { show_prorussian_actions_window = 1 }	
+				}
+			}
+			separatism_counteract_button_click = {
+				if = {
+					limit = { check_variable = {select_separatists_region = 1} }
+					set_variable = { show_proukranian_actions_window = 1 }	
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 2} }
+					set_variable = { show_proukranian_actions_window = 1 }	
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 3} }
+					set_variable = { show_proukranian_actions_window = 1 }	
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 4} }
+					set_variable = { show_proukranian_actions_window = 1 }	
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 5} }
+					set_variable = { show_proukranian_actions_window = 1 }	
+				}
+			}
+			separatismgui_closebutton_nw_click = {
+				if = {
+					limit = { check_variable = {select_separatists_region = 1} }
+					clear_variable = select_separatists_region
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 2} }
+					clear_variable = select_separatists_region
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 3} }
+					clear_variable = select_separatists_region
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 4} }
+					clear_variable = select_separatists_region
+				}
+				if = {
+					limit = { check_variable = {select_separatists_region = 5} }
+					clear_variable = select_separatists_region
+				}				
+				if = {
+					limit = { check_variable = {show_proukranian_actions_window = 1} } 
+				    clear_variable = show_proukranian_actions_window
+				}
+				if = {
+					limit = { check_variable = {show_prorussian_actions_window = 1} } 
+				    clear_variable = show_prorussian_actions_window
+				}
+
+			}
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+	    properties = {
+			separatism_gui_background = {
+				image = "[separatism_gui_background_image]"
+			}	
+			separatismgui_ukraine_noleader = {
+				image = "[get_leader_prorukranian_separatism_gui]"
+			}
+			separatismgui_prorussian_noleader = {
+				image = "[get_leader_prorrussian_separatism_gui]"
+			}
+			UKR_separatismgui_separatist_value_text = {
+				image = "[get_region_separatists_value]"
+			}
+			donetsk_icon = {
+				image = "[donetsk_icon_glow]"
+			} 
+			luhansk_icon = {
+				image = "[luhansk_icon_glow]"
+			} 
+		    odessa_icon = {
+				image = "[odessa_icon_glow]"
+			}
+			kharkov_icon = {
+				image = "[kharkov_icon_glow]"
+			}
+			crimea_icon = {
+				image = "[crimea_icon_glow]"
+			}
+		}	
+	}
+}
