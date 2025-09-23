@@ -700,7 +700,7 @@ country_event = {
         tag = UKR
         check_variable = {
             var = UKR_radicalisation_of_proeuropeans_value
-            value = 80
+            value = 60
             compare = greater_than_or_equals
         }
     }
