@@ -441,6 +441,112 @@ defined_text = {
 }
 
 defined_text = {
+    name = get_leader_prorrussian_text_separatism_gui
+
+    text = {
+        trigger = {
+            NOT = {
+                check_variable = {select_separatists_region = 1}
+                check_variable = {select_separatists_region = 2}
+                check_variable = {select_separatists_region = 3}
+                check_variable = {select_separatists_region = 4}
+                check_variable = {select_separatists_region = 5}
+                check_variable = {select_separatists_region = 6}
+            }
+        }
+        localization_key = ""
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 1}
+        }
+        localization_key = "Aleksandr_Zaharchenko_separatism_gui"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 2}
+        }
+        localization_key = "Igor_Plotnitsky_separatism_gui"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 3}
+        }
+        localization_key = "Yevgenii_Zhylin_separatism_gui"
+    }
+
+    text = {
+         trigger = {
+            check_variable = {select_separatists_region = 4}
+        }
+        localization_key = "Anton_Davidchenko_separatism_gui"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 5}
+        }
+        localization_key = "Anton_Davidchenko_separatism_gui"
+    }
+}
+
+defined_text = {
+    name = get_leader_prorukranian_text_separatism_gui
+
+    text = {
+        trigger = {
+            NOT = {
+                check_variable = {select_separatists_region = 1}
+                check_variable = {select_separatists_region = 2}
+                check_variable = {select_separatists_region = 3}
+                check_variable = {select_separatists_region = 4}
+                check_variable = {select_separatists_region = 5}
+                check_variable = {select_separatists_region = 6}
+            }
+        }
+        localization_key = ""
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 1}
+        }
+        localization_key = "Serhii_Taruta_separatism_gui"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 2}
+        }
+        localization_key = "Serhii_Taruta_separatism_gui"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 3}
+        }
+        localization_key = "Serhii_Taruta_separatism_gui"
+    }
+
+    text = {
+         trigger = {
+            check_variable = {select_separatists_region = 4}
+        }
+        localization_key = "Ihor_Palytsia_separatism_gui"
+    }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 5}
+        }
+        localization_key = "Ihor_Palytsia_separatism_gui"
+    }
+}
+
+defined_text = {
     name = get_region_name_separatism
 
     text = {

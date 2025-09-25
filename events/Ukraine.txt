@@ -15,6 +15,12 @@ country_event = {
 	
 	option = {
 		name = ukraine.1.a
+		hidden_effect = {
+			news_event = {
+				id = news_events.1
+				hours = 12
+			}			
+		}
 	}
 }
 
@@ -681,7 +687,10 @@ country_event = {
 		    traits = {}
 	    }
 		hidden_effect = {
-			
+			news_event = {
+                id = news_events.9
+				hours = 12
+            }
 		}				
 	}
 }

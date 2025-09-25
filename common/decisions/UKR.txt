@@ -178,7 +178,7 @@ UKR_separatism_decision = {
 
 			hidden_effect = {
 
-                IF = {
+                if = {
 					limit = {
 						has_global_flag = UKR_yanukovich_after_overthrow_dpr_uprising
 					}
@@ -186,6 +186,14 @@ UKR_separatism_decision = {
 				}
 				country_event = ukraine.2
 				set_country_flag = UKR_donetsk_uprised
+				if = {
+					limit = { 
+						NOT = {
+							has_completed_focus = UKR_start_of_ato
+						}
+					}
+					complete_national_focus = UKR_start_of_ato
+				}
 			}
 		}
 	}
@@ -220,6 +228,14 @@ UKR_separatism_decision = {
 				}
 				country_event = ukraine.3
 				set_country_flag = UKR_luhansk_uprised
+				if = {
+					limit = { 
+						NOT = {
+							has_completed_focus = UKR_start_of_ato
+						}
+					}
+					complete_national_focus = UKR_start_of_ato
+				}
 			}
 		}
 	}
@@ -255,6 +271,14 @@ UKR_separatism_decision = {
 				clr_global_flag = UKR_yanukovich_after_overthrow_kpr_uprising
 				country_event = ukraine.4
 				set_country_flag = UKR_kharkov_uprised
+				if = {
+					limit = { 
+						NOT = {
+							has_completed_focus = UKR_start_of_ato
+						}
+					}
+					complete_national_focus = UKR_start_of_ato
+				}
 			}
 		}
 	}
@@ -282,6 +306,14 @@ UKR_separatism_decision = {
 			clr_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
 			hidden_effect = {
                 country_event = ukraine.5
+				if = {
+					limit = { 
+						NOT = {
+							has_completed_focus = UKR_start_of_ato
+						}
+					}
+					complete_national_focus = UKR_start_of_ato
+				}
 			}
 			set_country_flag = UKR_odessa_uprised
 		}

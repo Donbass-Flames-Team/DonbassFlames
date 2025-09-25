@@ -1,7 +1,7 @@
 guiTypes = {
 
 	containerWindowType = {
-		name = "superevents"
+		name = "sp_event_window"
 		position = { x = 0 y = 0}	
 		size = { width = 605 height= 615 }
 		orientation = center
@@ -16,12 +16,14 @@ guiTypes = {
 			name = "background"		
 			quadTextureSprite ="GFX_supereventsbg"
 		}
+
 		iconType = {
 			name = "supereventsbg_test"		
 			quadTextureSprite ="GFX_supereventsbg_test"
 			position = { x = 0 y = 0 }
 			alwaystransparent = yes
 		}
+
 		iconType = {
 			name = "superevents_start_of_ato"
 			quadTextureSprite ="GFX_start_of_ato"
@@ -30,7 +32,7 @@ guiTypes = {
 		}
 		
 		buttonType ={
-			name ="superevents_button"
+			name ="sp_event_close_button"
 			spriteType = "GFX_supereventsbutton"
 			position = { x= 170 y = 518 }
 			Orientation = "UPPER_LEFT"

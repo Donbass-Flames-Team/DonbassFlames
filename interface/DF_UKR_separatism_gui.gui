@@ -227,6 +227,22 @@ guiTypes = {
 			text = "separatism_increase_button_text"
 		}
 
+		instantTextBoxType = {
+			name = "UKR_separatismgui_prorussian_leader_text"
+			text = "[get_leader_prorrussian_text_separatism_gui]"
+			font = "hoi_16mbs"
+			maxWidth = 470
+			position = { x = 1155 y = 380 }
+		}
+
+		instantTextBoxType = {
+			name = "UKR_separatismgui_proukranian_leader_text"
+			text = "[get_leader_prorukranian_text_separatism_gui]"
+			font = "hoi_16mbs"
+			maxWidth = 470
+			position = { x = 980 y = 380 }
+		}
+
 		## GLOW ICONS ##
 		iconType = {
 			name = "donetsk_icon"
