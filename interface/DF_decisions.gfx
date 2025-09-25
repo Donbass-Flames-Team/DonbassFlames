@@ -8,10 +8,20 @@ spriteTypes = {
 	}
 
 	### categories
+
+	spriteType = {
+		name = "GFX_decision_UKR_icon_of_ATO"
+		texturefile = "gfx/interface/decisions/UKR/icon_of_ATO.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_decision_UKR_separatism_icon"
 		texturefile = "gfx/interface/decisions/UKR/decision_UKR_separatism_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_UKR_icon_of_maidan_category"
+		texturefile = "gfx/interface/decisions/UKR/maidan/icon_of_maidan_category.dds"
 	}
 
 	spriteType = {

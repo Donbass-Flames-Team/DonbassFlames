@@ -919,6 +919,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 		    add_manpower = 6500
+			add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
+		    custom_effect_tooltip = UKR_support_of_the_volunteer_battalion_tt
+			custom_effect_tooltip = UKR_support_of_the_volunteers_tt
 		}
 	}
 

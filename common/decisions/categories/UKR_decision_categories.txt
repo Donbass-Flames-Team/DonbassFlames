@@ -43,7 +43,7 @@ UKR_maidan_decision = {
 
 	priority = 105
 	
-	icon = GFX_decision_UKR_separatism
+	icon = GFX_decision_UKR_icon_of_maidan_category
 	
 	allowed = {
 		original_tag = UKR 
@@ -97,7 +97,7 @@ UKR_ATO_decision = {
 
 	priority = 95
 	
-	icon = GFX_decision_afu_icon
+	icon = GFX_decision_UKR_icon_of_ATO
 	
 	allowed = {
 		original_tag = UKR 
@@ -169,7 +169,7 @@ UKR_donbas_war_escalation_decision = {
 
 	priority = 85
 	
-	icon = GFX_decision_UKR_separatism
+	icon = GFX_decision_afu_icon
 	
 	allowed = {
 		original_tag = UKR 
