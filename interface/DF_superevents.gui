@@ -27,7 +27,7 @@ guiTypes = {
 		iconType = {
 			name = "superevents_start_of_ato"
 			quadTextureSprite ="GFX_start_of_ato"
-			position = { x = 0 y = 0 }
+			position = { x = 1 y = 40 }
 			alwaystransparent = yes
 		}
 		
@@ -39,6 +39,14 @@ guiTypes = {
 			shortcut = "ESCAPE"
 			clicksound = click_close
 		}
+		
+		buttonType ={
+			name ="Super_Event_button"
+			spriteType = "GFX_Super_Event_button"
+			position = { x= 170 y = 518 }
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}		
 		
 		instantTextboxType = {
 			name = "superevents_title"

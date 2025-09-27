@@ -3,5 +3,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_start_of_ato"
 		textureFile = "gfx/sp_events/Super_Event_start_of_ato.dds"
+
+	buttonType = {
+		name = "GFX_Super_Event_button"
+		textureFile = "gfx/sp_events/Super_Event_button.dds"
 	}
 }
