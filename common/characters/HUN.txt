@@ -1,0 +1,18 @@
+characters = {
+
+    viktor_orban = {
+        name = viktor_orban
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/HUN/Viktor_Orban.dds"
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+            traits = { }
+            expire = "2020.12.31"
+            id = -1
+        }
+    }
+
+}
