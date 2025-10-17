@@ -1,0 +1,19 @@
+characters = {
+
+    dalia_grybauskaite = {
+        name = dalia_grybauskaite
+        country = LTU
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/LTU/Dalia_Grybauskaite.dds"
+            }
+        }
+        country_leader = {
+            ideology = democratic
+            traits = { }
+            expire = "2019.7.12"
+            id = -1
+        }
+    }
+
+}
