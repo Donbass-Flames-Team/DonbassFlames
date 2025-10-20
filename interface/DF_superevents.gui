@@ -33,18 +33,10 @@ guiTypes = {
 		
 		buttonType ={
 			name ="sp_event_close_button"
-			spriteType = "GFX_supereventsbutton"
-			position = { x= 170 y = 518 }
-			Orientation = "UPPER_LEFT"
-			shortcut = "ESCAPE"
-			clicksound = click_close
-		}
-		
-		buttonType ={
-			name ="Super_Event_button"
 			spriteType = "GFX_Super_Event_button"
 			position = { x= 170 y = 518 }
 			Orientation = "UPPER_LEFT"
+			shortcut = "ESCAPE"
 			clicksound = click_close
 		}		
 		
