@@ -23,6 +23,14 @@ oob = "BLR_1936"
 		communism = 15
 		autoritarian_democracy = 45
 	}
+	add_ideas = {
+    	BEL_autocratic_rule
+    	BEL_dependence_on_russia
+    	BEL_weak_economy
+    	BEL_kgb_security_apparatus
+    	BEL_isolation_from_west
+    	BEL_state_propaganda
+}
 
 	create_country_leader = {
 		name = aleksandr_lukashenko
