@@ -622,6 +622,34 @@ UKR_maidan_decision = {
 		}
 	}
 
+	UKR_import_of_prorussian_protesters = {
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			tag = UKR
+		}
+		icon = GFX_decision_UKR_maidan_mass_arests
+		
+	    fire_only_once = no
+		days_re_enable = 60
+		cost = 75
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 7
+			}
+			add_to_variable = {
+                var = UKR_radicalisation_of_prorussians_value
+                value = 2
+            }
+			custom_effect_tooltip = UKR_add_radicalisation_of_maidan    
+		}
+		ai_will_do = {
+			factor = 75
+		}
+	}
+
 	UKR_weekly_radicalisation_value = {
 		icon = GFX_decision_UKR_maidan_supress_the_protests
 		allowed = {
