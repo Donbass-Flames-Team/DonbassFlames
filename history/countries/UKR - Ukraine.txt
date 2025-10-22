@@ -1,5 +1,6 @@
 ﻿
 capital = 93
+DF_economy_setup = yes
 
 2013.11.21 = {
 
@@ -156,4 +157,6 @@ capital = 93
 	recruit_character = oleg_mikats
 	recruit_character = yuri_allerov
 	recruit_character = sergey_naev
+
+	set_variable = { cash = 1 }
 }
