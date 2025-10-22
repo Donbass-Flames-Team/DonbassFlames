@@ -1,4 +1,5 @@
-### Separatism mechanic
+### Separatism mechanic ###
+###########################
 ## DPR separatism
 
 UKR_dpr_separatism_clamp_and_update_ui_effect = {
@@ -48,8 +49,9 @@ UKR_zkr_separatism_clamp_and_update_ui_effect = {
 		max = 100
 	}
 }
-
-### Maidan powers mechanic
+##############################
+### Maidan powers mechanic ###
+##############################
 ## radicalisation of prorussians
 
 UKR_radicalisation_of_prorussians_clamp_and_update_ui_effect = {
@@ -164,5 +166,244 @@ UKR_Crimea_proukranian_suppor_clamp_and_update_ui_effect = {
 		var = Crimea_proukranian_support_value
 		min = 0
 		max = 100
+	}
+}
+
+##############################
+### Election gui mechanic ####
+##############################
+# 1 unit per 500 thousand population
+
+# Zakarpatska Rus poroshenko support
+UKR_Zakarpatska_Rus_poroshenko_support_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Zakarpatska_Rus_poroshenko_support_value
+		min = 0
+		max = 1
+	}
+}
+
+# Lviv poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Lviv_poroshenko_support_value
+		min = 0
+		max = 2
+	}
+}
+
+# Ivano frankovsk poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Ivano_Frankovsk_poroshenko_support_value
+		min = 0
+		max = 4
+	}
+}
+
+# Ternipol poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Ternipol_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Luck poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Luck_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Rivne poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Rivne_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Khmelnicky poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Khmelnicky_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Chernivcy poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Chernivcy_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Zhitomer poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Zhitomer_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Vinitsya poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Vinitsya_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Kievskaya oblast poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Kievskaya_oblast_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Kiev city poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Kiev_city_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Cherkasi poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Cherkasi_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Odessa poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Odessa_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Mikolayev poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Mikolayev_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Kirovgrad poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Kirovgrad_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Kherson poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Kherson_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Dnepropetrovsk poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Dnepropetrovsk_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Chernigiv poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Chernigiv_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Poltava poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Poltava_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Sumi poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Sumi_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Kharkiv poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Kharkiv_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Zaporizhia poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Zaporizhia_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Donetsk poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Donetsk_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Luhansk poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Luhansk_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Crimea poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Crimea_poroshenko_support_value
+		min = 0
+		max = 5
 	}
 }

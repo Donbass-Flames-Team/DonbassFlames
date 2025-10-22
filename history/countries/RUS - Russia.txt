@@ -2,6 +2,8 @@
 	
 }
 
+DF_economy_setup = yes
+
 add_ideas = {
 }
 
@@ -24,4 +26,5 @@ capital = 558
 		socialism = 11
 		autoritarian_democracy = 54
 	}
+	set_variable = { cash = 1 }
 }
