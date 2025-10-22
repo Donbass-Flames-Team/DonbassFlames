@@ -221,3 +221,22 @@ UKR_national_powers_decision = {
 	}
 	visible_when_empty = yes
 }
+
+UKR_western_help_decision = {
+
+	priority = 85
+	
+	icon = GFX_decision_UKR_separatism
+	
+	allowed = {
+		original_tag = UKR 
+		has_country_flag = western_help
+	}
+	#picture = GFX_decision_UKR_separatism
+
+	visible = {
+        tag = UKR
+		has_country_flag = western_help
+	}
+	visible_when_empty = yes
+}

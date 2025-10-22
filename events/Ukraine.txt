@@ -21,6 +21,10 @@ country_event = {
 				hours = 12
 			}			
 		}
+		country_event = {
+			id = ukraine.22
+			hours = 13
+		}
 	}
 }
 
@@ -799,4 +803,19 @@ country_event = {
 	#	name = ukraine.21.a
 	#	set_country_flag = UKRTimoshenkoPresident2014_choosed			
 	#}
+} 
+
+# Yanukovich escaped
+country_event = {
+	id = ukraine.22
+	title = ukraine.22.t
+	desc = ukraine.22.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.22.a
+		
+	}
 } 

@@ -481,6 +481,9 @@ UKR_elections_of_president = {
 		}
 		timeout_effect = {
 			country_event = ukraine.17
+			hidden_effect = {
+				clr_country_flag = Elections2014InProgress
+			}
 	    }
     }
 
