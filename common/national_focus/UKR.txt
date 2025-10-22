@@ -1,5 +1,5 @@
 focus_tree = {
-	id = ukraine_focus_before_ato
+	id = ukraine_focus_tree
 	country = {
 		factor = 0
 		modifier = {
@@ -259,6 +259,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Expanding_economic_ties"
 		    add_political_power = 100
+			add_popularity = {
+                ideology = autoritarian_democracy
+                popularity = 0.05
+            }
 		}
 	}
 
@@ -340,6 +344,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Expanding_economic_ties"
 		    add_political_power = 100
+			add_popularity = {
+                ideology = autoritarian_democracy
+                popularity = 0.05
+            }
 		}
 	}
 
@@ -363,6 +371,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
+			add_stability = -0.035
 		}
 	}
 
@@ -409,6 +418,11 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
+			add_stability = -0.035
+			add_popularity = {
+                ideology = autoritarian_democracy
+                popularity = 0.05
+            }
 		}
 	}
 
