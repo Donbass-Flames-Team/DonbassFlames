@@ -3,14 +3,12 @@ characters = {
 		name = dmitry_trapeznikov
 		portraits = {
 			civilian = {
-				large = "/gfx/leaders/DPR/Trapeznikov.dds"
+				large = "GFX_portrait_dmitry_trapeznikov"
 			}
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = {  
-				№
-			}
+			traits = { }
 		}
 	}
 
@@ -18,14 +16,43 @@ characters = {
 		name = denis_pushilin
 		portraits = {
 			civilian = {
-				large = "/gfx/leaders/DPR/Denis_Pushilin.dds"
+				large = "GFX_portrait_denis_pushilin"
 			}
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = {  
-				№
+			traits = { }
+		}
+	}
+
+	aleksandr_zakharchenko = {
+		name = aleksandr_zakharchenko
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_aleksandr_zakharchenko"
 			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+		}
+	}
+
+	zheka_vasilievich = {
+		name = zheka_vasilievich
+		portraits = {
+			army = {
+				large = "GFX_portrait_zheka_vasilievich"
+				small = "GFX_portrait_zheka_vasilievich_small"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 }

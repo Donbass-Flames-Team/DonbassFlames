@@ -3,14 +3,12 @@ characters = {
 		name = valeryy_bolotov
 		portraits = {
 			civilian = {
-				large = "/gfx/leaders/LPR/Valerii_Bolotov.dds"
+				large = "GFX_portrait_valeryy_bolotov"
 			}
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = {  
-				№
-			}
+			traits = { }
 		}
 	}
 
@@ -18,14 +16,12 @@ characters = {
 		name = igor_polotnicky
 		portraits = {
 			civilian = {
-				large = "/gfx/leaders/LPR/Plotnicky.dds"
+				large = "GFX_portrait_igor_polotnicky"
 			}
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = {  
-				№
-			}
+			traits = { }
 		}
 	}
 
@@ -33,14 +29,12 @@ characters = {
 		name = leonid_pasehcnik
 		portraits = {
 			civilian = {
-				large = "/gfx/leaders/LPR/Plotnicky.dds"
+				large = "GFX_portrait_leonid_pasehcnik"
 			}
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = {  
-				№
-			}
+			traits = { }
 		}
 	}
 }

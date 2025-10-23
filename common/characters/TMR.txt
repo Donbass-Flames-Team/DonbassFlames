@@ -1,0 +1,18 @@
+characters = {
+
+    TMR_shevchyk = {
+        name = TMR_shevchyk
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_TMR_shevchyk"
+            }
+        }
+        country_leader = {
+            ideology = autoritarian_democractic
+            traits = { }
+            expire = "2060.1.1"
+            id = -1
+        }
+    }
+
+}

@@ -2,14 +2,13 @@ characters = {
 
     dalia_grybauskaite = {
         name = dalia_grybauskaite
-        country = LTU
         portraits = {
             civilian = {
-                large = "gfx/leaders/LIT/Dalia_Grybauskaite.dds"
+                large = "GFX_portrait_dalia_grybauskaite"
             }
         }
         country_leader = {
-            ideology = democratic
+            ideology = liberalism
             traits = { }
             expire = "2019.7.12"
             id = -1

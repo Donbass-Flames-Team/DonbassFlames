@@ -1,5 +1,6 @@
-﻿
+
 capital = 93
+recruit_character = zheka_vasilievich
 
 2013.11.21 = {
 	set_technology = {
@@ -21,11 +22,5 @@ capital = 93
 		autoritarian_democracy = 25
 	}
 
-	create_country_leader = {
-		name = aleksandr_zakharchenko
-		#desc = aleksandr_zakharchenko_desc
-		ideology = autoritarian_democracy
-		picture = gfx/leaders/DPR/Zakcharchenko.dds
-		traits = {}
-	}
+	recruit_character = aleksandr_zakharchenko
 }

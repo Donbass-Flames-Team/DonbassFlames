@@ -21,11 +21,6 @@ capital = 192
 		autoritarian_democracy = 25
 	}
 
-	create_country_leader = {
-		name = anton_davidchenko
-		ideology = autoritarian_democracy
-		picture = gfx/leaders/OPR/Anton_Davidchenko.dds
-		traits = {}
-	}
+	recruit_character = anton_davidchenko
 	
 }

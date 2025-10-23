@@ -1,4 +1,4 @@
-﻿
+
 capital = 93
 DF_economy_setup = yes
 
@@ -127,13 +127,7 @@ DF_economy_setup = yes
 		autoritarian_democracy = 21
 	}
 
-	create_country_leader = {
-		name = victor_yanukovich
-		#desc = victor_yanukovich_desc
-		ideology = autoritarian_democracy
-		picture = gfx/leaders/UKR/Yanukovich.dds
-		traits = {}
-	}
+	recruit_character = UKR_victor_yanukovich
 
 	add_ideas = {
 		UKR_protests

@@ -26,11 +26,5 @@ add_ideas = {
 		autoritarian_democracy = 77
 		liberal_democratic = 9
     }
-	create_country_leader = {
-		name = TMR_shevchyk
-		#desc = TMR_shevchyk_desc
-		ideology = autoritarian_democractic
-		picture = gfx/leaders/TMR/shevchyk.dds
-		traits = {}
-	}
+	recruit_character = TMR_shevchyk
 }

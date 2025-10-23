@@ -21,12 +21,6 @@ capital = 93
 		autoritarian_democracy = 25
 	}
 
-	create_country_leader = {
-		name = yevgenii_zhilin
-		#desc = yevgenii_zhilin_desc
-		ideology = autoritarian_democracy
-		picture = gfx/leaders/HPR/Yevgenii_Zhylinpng.dds
-		traits = {}
-	}
+	recruit_character = yevgenii_zhilin
 	
 }

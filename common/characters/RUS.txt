@@ -3,14 +3,12 @@ characters = {
 		name = vladimir_putin
 		portraits = {
 			civilian = {
-				large = "/gfx/leaders/RUS/Vladimir_Putin.dds"
+				large = "GFX_portrait_vladimir_putin"
 			}
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = {  
-				№
-			}
+			traits = { }
 		}
 	}
 
@@ -18,7 +16,7 @@ characters = {
 		name = sergey_shoigu
 		portraits = {
 			civilian = {
-				small = "/gfx/leaders/RUS/Sergei_Shoigu.dds"
+				small = "GFX_portrait_sergey_shoigu_small"
 			}
 		}
 		corps_commander = {
@@ -36,7 +34,7 @@ characters = {
 		name = sergey_surovikin
 		portraits = {
 			civilian = {
-				small = "/gfx/leaders/RUS/Sergei_Surovikin.dds"
+				small = "GFX_portrait_sergey_surovikin_small"
 			}
 		}
 		corps_commander = {
@@ -54,7 +52,7 @@ characters = {
 		name = igor_turchenuk
 		portraits = {
 			civilian = {
-				small = "/gfx/leaders/RUS/Igor_Turchenuk.dds"
+				small = "GFX_portrait_igor_turchenuk_small"
 			}
 		}
 		corps_commander = {
@@ -72,7 +70,7 @@ characters = {
 		name = alexander_lapin
 		portraits = {
 			civilian = {
-				small = "/gfx/leaders/RUS/Alexander_Lapin.dds"
+				small = "GFX_portrait_alexander_lapin_small"
 			}
 		}
 		corps_commander = {

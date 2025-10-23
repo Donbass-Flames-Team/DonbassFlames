@@ -3,7 +3,7 @@ characters = {
 		name = volodymir_zelenskyy
 		portraits = {
 			civilian = {
-				large = "/gfx/leaders/UKR/Volodimir_Zelensky.dds"
+				large = "GFX_portrait_volodymir_zelenskyy"
 			}
 		}
 		country_leader={
@@ -18,11 +18,26 @@ characters = {
 		name = petro_poroshenko
 		portraits = {
 			civilian = {
-				large = "/gfx/leaders/UKR/Petro_Poroshenko.dds"
+				large = "GFX_portrait_petro_poroshenko"
 			}
 		}
 		country_leader={
 			ideology = conservatism
+			traits = { }
+			expire="2060.1.1.1"
+			id=-1
+		}
+	}
+
+	UKR_victor_yanukovich = {
+		name = victor_yanukovich
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_victor_yanukovich"
+			}
+		}
+		country_leader={
+			ideology = autoritarian_democracy
 			traits = { }
 			expire="2060.1.1.1"
 			id=-1
@@ -34,7 +49,7 @@ characters = {
 		name = victor_muzhenko
 		portraits = {
 			army = {
-				large = "/gfx/leaders/UKR/victor_muzhenko.dds"
+				large = "GFX_portrait_victor_muzhenko"
 			}
 		}
 		field_marshal = {
@@ -51,7 +66,7 @@ characters = {
 		name = stepan_poltorak
 		portraits = {
 			army = {
-				large = "/gfx/leaders/UKR/stepan_poltorak.dds"
+				large = "GFX_portrait_stepan_poltorak"
 			}
 		}
 		field_marshal = {
@@ -68,7 +83,7 @@ characters = {
 		name = mikhail_koval
 		portraits = {
 			army = {
-				large = "/gfx/leaders/UKR/mikhail_koval.dds"
+				large = "GFX_portrait_mikhail_koval"
 			}
 		}
 		field_marshal = {
@@ -85,7 +100,7 @@ characters = {
 		name = aleksandr_sirskiy
 		portraits = {
 			army = {
-				large = "/gfx/leaders/UKR/aleksandr_sirskiy.dds"
+				large = "GFX_portrait_aleksandr_sirskiy"
 			}
 		}
 		corps_commander = {
@@ -102,7 +117,7 @@ characters = {
 		name = valery_zaluzhny
 		portraits = {
 			army = {
-				large = "/gfx/leaders/UKR/valery_zaluzhny.dds"
+				large = "GFX_portrait_valery_zaluzhny"
 			}
 		}
 		corps_commander = {
@@ -119,7 +134,7 @@ characters = {
 		name = mikhail_drapatiy
 		portraits = {
 			army = {
-				large = "/gfx/leaders/UKR/mikhail_drapatiy.dds"
+				large = "GFX_portrait_mikhail_drapatiy"
 			}
 		}
 		corps_commander = {
@@ -136,7 +151,7 @@ characters = {
 		name = sergey_krivonos
 		portraits = {
 			army = {
-				large = "/gfx/leaders/UKR/sergey_krivonos.dds"
+				large = "GFX_portrait_sergey_krivonos"
 			}
 		}
 		corps_commander = {
@@ -153,7 +168,7 @@ characters = {
 		name = mikhail_zabrodsky
 		portraits = {
 			army = {
-				large = "/gfx/leaders/UKR/mikhail_zabrodsky.dds"
+				large = "GFX_portrait_mikhail_zabrodsky"
 			}
 		}
 		corps_commander = {
@@ -170,7 +185,7 @@ characters = {
 		name = andrey_taran
 		portraits = {
 			army = {
-				large = "/gfx/leaders/UKR/andrey_taran.dds"
+				large = "GFX_portrait_andrey_taran"
 			}
 		}
 		corps_commander = {
@@ -187,7 +202,7 @@ characters = {
 		name = oleg_mikats
 		portraits = {
 			army = {
-				large = "/gfx/leaders/UKR/oleg_mikats.dds"
+				large = "GFX_portrait_oleg_mikats"
 			}
 		}
 		corps_commander = {
@@ -204,7 +219,7 @@ characters = {
 		name = yuri_allerov
 		portraits = {
 			army = {
-				large = "/gfx/leaders/UKR/yuri_allerov.dds"
+				large = "GFX_portrait_yuri_allerov"
 			}
 		}
 		corps_commander = {
@@ -221,7 +236,7 @@ characters = {
 		name = sergey_naev
 		portraits = {
 			army = {
-				large = "/gfx/leaders/UKR/sergey_naev.dds"
+				large = "GFX_portrait_sergey_naev"
 			}
 		}
 		corps_commander = {

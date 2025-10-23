@@ -1,4 +1,4 @@
-﻿capital = 206 #Minsk
+capital = 206 #Minsk
 
 oob = "BLR_1936"
 
@@ -32,13 +32,7 @@ oob = "BLR_1936"
     	BEL_state_propaganda
 }
 
-	create_country_leader = {
-		name = aleksandr_lukashenko
-		#desc = aleksandr_lukashenko_desc
-		ideology = autoritarian_democracy
-		picture = gfx/leaders/BLR/Aleksandr_Lukashenko.dds
-		traits = {}
-	}
+	recruit_character = aleksandr_lukashenko
 }
 
 
