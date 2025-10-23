@@ -1,0 +1,129 @@
+ideas = {
+
+	country = {
+
+		LPR_republic_without_power = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_republic_without_power
+			
+			modifier = {
+			    stability_factor = -0.30
+				political_power_gain = -0.30
+				consumer_goods_factor = 0.25
+				production_factory_max_efficiency_factor = -0.35
+			}
+		}
+
+		LPR_power_of_gun = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_power_of_gun
+			
+			modifier = {
+			    stability_factor = -0.25
+				political_power_gain = -0.20
+				war_support_factor = -0.15
+			}
+		}
+
+		LPR_fragmented_gangs = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_fragmented_gangs
+			
+			modifier = {
+			    stability_factor = -0.20
+				army_org_factor = -0.20
+				planning_speed = -0.25
+				max_command_power = -25
+			}
+		}
+
+		LPR_eastern_intervention = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+			    army_attack_factor = 0.15
+				army_defence_factor = 0.10
+				equipment_capture_factor = 0.15
+			}
+		}
+
+		LPR_unauthorized_commanders = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_unauthorized_commanders
+			
+			modifier = {
+			    army_org_factor = -0.15
+				planning_speed = -0.20
+				political_power_gain = -0.10
+				max_command_power = -20
+			}
+		}
+
+		LPR_mercenaries_and_supporters = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_mercenaries_and_supporters
+			
+			modifier = {
+			    army_attack_factor = 0.10
+				war_support_factor = 0.10
+				army_morale_factor = 0.10
+			}
+		}
+	}
+
+}

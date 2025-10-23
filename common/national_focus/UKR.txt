@@ -1,5 +1,5 @@
 focus_tree = {
-	id = ukraine_focus_before_ato
+	id = ukraine_focus_tree
 	country = {
 		factor = 0
 		modifier = {
@@ -259,6 +259,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Expanding_economic_ties"
 		    add_political_power = 100
+			add_popularity = {
+                ideology = autoritarian_democracy
+                popularity = 0.05
+            }
 		}
 	}
 
@@ -340,6 +344,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Expanding_economic_ties"
 		    add_political_power = 100
+			add_popularity = {
+                ideology = autoritarian_democracy
+                popularity = 0.05
+            }
 		}
 	}
 
@@ -363,6 +371,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
+			add_stability = -0.035
 		}
 	}
 
@@ -409,6 +418,11 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
+			add_stability = -0.035
+			add_popularity = {
+                ideology = autoritarian_democracy
+                popularity = 0.05
+            }
 		}
 	}
 
@@ -622,6 +636,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		available = {
+            
+		}
+
 		offset = {
 			x = 1
 			y = 0
@@ -672,6 +690,7 @@ focus_tree = {
 			NOT = {
 			   has_completed_focus = UKR_dictatorship_takes_over
 			}
+			has_country_flag = Yanukovich_escaped
 		}
 
 		cancel_if_invalid = yes
@@ -746,6 +765,8 @@ focus_tree = {
             activate_mission = 	UKR_elections_2014
 			hidden_effect = {
 				mark_focus_tree_layout_dirty = yes
+				set_country_flag = Elections2014InProgress
+				complete_national_focus = UKR_snap_presidential_elections
 			}
 		}
 	}
@@ -1091,7 +1112,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-            always = no
+            
 		}
 
 		allow_branch = {
@@ -1119,7 +1140,9 @@ focus_tree = {
 		relative_position_id = UKR_snap_presidential_elections
 
 		available = {
-            always = no
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
 		}
 
 		completion_reward = {
@@ -1143,7 +1166,9 @@ focus_tree = {
 		relative_position_id = UKR_snap_presidential_elections
 
 		available = {
-            always = no
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
 		}
 
 		completion_reward = {
@@ -1167,7 +1192,9 @@ focus_tree = {
 		relative_position_id = UKR_snap_presidential_elections
 
 		available = {
-            always = no
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
 		}
 
 		completion_reward = {
@@ -1189,7 +1216,9 @@ focus_tree = {
 
 
 		available = {
-            
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
 		}
 
 		allow_branch = {
@@ -2029,7 +2058,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_pick_up_weapons_from_warehouses"
 		    add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
-				amount = 2500 
+				amount = 7500 
 			}
 		}
 	}

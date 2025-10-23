@@ -245,6 +245,18 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
+			name = "gdp_value"
+			position = { x = 100 y = 42 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 75
+			maxHeight = 24
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "gdp_value"
+		}
+
+		instantTextBoxType = {
 			name = "healthcare_expense"
 			position = { x = 320 y = 150 }
 			font = hoi_24header
