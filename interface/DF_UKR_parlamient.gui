@@ -31,7 +31,6 @@ guiTypes = {
 			spriteType = "GFX_UKR_parlamient_icon"
 			position = { x = 260 y = -15 }
 			scale = 0.6
-			hoverSpriteType = "GFX_UKR_parlamient_icon_hover"
 			tooltip = "Открыть меню съезда"
 		}
 	}
@@ -47,7 +46,7 @@ guiTypes = {
 	    click_to_front = yes
 	    clipping = yes
 	    fade_time = 150
-	    fade_type = smooth
+	    fade_type = linear
 
 	    background = {
 		    name = "Background"
@@ -87,7 +86,6 @@ guiTypes = {
 			spriteType = "GFX_closebutton"
 			position = { x = 1049 y = 190 }
 			scale = 1.25
-			multiline = yes
 		}
 
 	    instantTextBoxType = {
@@ -222,7 +220,6 @@ guiTypes = {
 			spriteType = "GFX_UKR_parlamient_icon"
 			position = { x = 260 y = -15 }
 			scale = 0.6
-			hoverSpriteType = "GFX_UKR_parlamient_icon_hover"
 			tooltip = "Открыть меню съезда"
 		}
 	}

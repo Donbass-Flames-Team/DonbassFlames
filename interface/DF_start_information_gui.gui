@@ -99,7 +99,6 @@ guiTypes = {
 		iconType = {
 			name = "country_background_startgui"
 			position = { x = 25 y = 25 }
-			multiline = yes
 			spriteType = "GFX_closebutton"
 			alwaystransparent = yes
 		}
@@ -116,7 +115,6 @@ guiTypes = {
 			spriteType = "GFX_closebutton"
 			position = { x = 110 y = 241 }
 			scale = 1.25
-			multiline = yes
 		}
 
 		instantTextBoxType = {
