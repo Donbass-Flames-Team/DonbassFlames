@@ -48,6 +48,22 @@ ideas = {
             removal_cost = -1
         }
 
+        POL_fast_es_eco = {
+            allowed = {
+                always = yes
+            }
+            removal_cost = -1
+            
+            picture = GFX_idea_POL_fast_es_eco
+            
+            modifier = {
+                production_speed_buildings_factor = 0.15
+                industrial_capacity_factory = 0.10
+                production_factory_efficiency_gain_factor = 0.10
+                consumer_goods_factor = -0.05
+            }
+        }
+
     }
 
 }
