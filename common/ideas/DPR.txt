@@ -1,0 +1,131 @@
+ideas = {
+
+	country = {
+
+		DPR_republic_without_state = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_DPR_republic_without_state
+			
+			modifier = {
+			    stability_factor = -0.35
+				political_power_gain = -0.25
+				consumer_goods_factor = 0.30
+				production_factory_max_efficiency_factor = -0.40
+			}
+		}
+
+		DPR_power_of_bandits = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_DPR_power_of_bandits
+			
+			modifier = {
+			    stability_factor = -0.25
+				political_power_gain = -0.15
+				war_support_factor = -0.10
+				army_org_factor = -0.15
+			}
+		}
+
+		DPR_russian_spring = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_DPR_russian_spring
+			
+			modifier = {
+			    war_support_factor = 0.15
+				political_power_gain = 0.05
+				army_morale_factor = 0.10
+			}
+		}
+
+		DPR_blockade_and_chaos = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_DPR_blockade_and_chaos
+			
+			modifier = {
+			    consumer_goods_factor = 0.40
+				production_speed_buildings_factor = -0.35
+				industrial_capacity_factory = -0.30
+				stability_factor = -0.20
+			}
+		}
+
+		DPR_war_for_donbass = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_DPR_war_for_donbass
+			
+			modifier = {
+			    war_support_factor = 0.25
+				army_attack_factor = 0.10
+				army_morale_factor = 0.15
+				breakthrough_factor = 0.10
+			}
+		}
+
+		DPR_hidden_presence = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_DPR_hidden_presence
+			
+			modifier = {
+			    army_attack_factor = 0.15
+				army_defence_factor = 0.10
+				army_org_factor = 0.10
+				equipment_capture_factor = 0.20
+			}
+		}
+	}
+
+}
