@@ -249,11 +249,35 @@ guiTypes = {
 			position = { x = 100 y = 42 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 75
+			maxWidth = 111
 			maxHeight = 24
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "gdp_value"
+		}
+
+		instantTextBoxType = {
+			name = "debt_value"
+			position = { x = 100 y = 72 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 95
+			maxHeight = 24
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "debt_value"
+		}
+
+		instantTextBoxType = {
+			name = "inflation_value"
+			position = { x = 210 y = 72 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 125
+			maxHeight = 24
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "inflation_value"
 		}
 
 		instantTextBoxType = {
