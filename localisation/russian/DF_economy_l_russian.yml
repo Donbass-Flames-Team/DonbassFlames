@@ -20,7 +20,9 @@
  education_expense:0 "Образование:"
  policing_expense:0 "Полиция:"
 
- gdp_value:0 "ВВП:§G[?gdp]§!"
+ gdp_value:0 "ВВП:§G[?gdp]§!млрд."
+ debt_value:0 "Долг:§R[?debt]§!млрд."
+ inflation_value:0 "Инфляция:§Y[?inflation]§!%"
 
  healthcare:0 "Закон о здравоохранении"
  universal_health_care:0 "Всеобщее здравоохранение"
