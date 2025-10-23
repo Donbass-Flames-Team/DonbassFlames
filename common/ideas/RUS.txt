@@ -2,6 +2,42 @@ ideas = {
 
 	country = {
 
+		RUS_western_sanctions = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.15
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		RUS_western_sanctions_2 = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.25
+				political_power_gain = -0.075
+				consumer_goods_factor = 0.25
+			}
+		}
+
 		UKR_protests = {
             allowed = {
                 always = yes

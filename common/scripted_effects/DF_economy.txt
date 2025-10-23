@@ -21,7 +21,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = mil_factories_income
-			value = 5
+			value = 0.3
 		}
 		if = {
 			limit = {
@@ -43,7 +43,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = doc_factories_income
-			value = 10
+			value = 0.3
 		}
 		if = {
 			limit = {
@@ -65,7 +65,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = civ_factories_income
-			value = 25
+			value = 0.4
 		}
 		if = {
 			limit = {
@@ -100,7 +100,7 @@ DF_economy_setup = {
 		}
 		divide_variable = {
 			var = healthcare_expense_show
-			value = 144
+			value = 244
 		}
 		round_variable = healthcare_expense_show
 
@@ -110,7 +110,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = healthcare_expense_universal_health_care
-			value = 6.5
+			value = 0.6
 		}
 
 		set_variable = {
@@ -119,7 +119,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = healthcare_expense_free_checkups
-			value = 4.5
+			value = 0.8
 		}
 
 		set_variable = {
@@ -128,7 +128,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = healthcare_expense_free_emergencies_only
-			value = 1.85
+			value = 0.3
 		}
 
 		set_variable = {
@@ -141,7 +141,7 @@ DF_economy_setup = {
 			}
 			multiply_variable = {
 				var = healthcare_expense
-				value = 6.5
+				value = 0.9
 			}
 			else_if = {
 				limit = {
@@ -149,7 +149,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = healthcare_expense
-					value = 4.5
+					value = 1.2
 				}
 			}
 			else_if = {
@@ -158,7 +158,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = healthcare_expense
-					value = 1.85
+					value = 0.94
 				}
 			}
 			else_if = {
@@ -206,7 +206,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = social_security_expense_welfare_state
-			value = 10.0
+			value = 1.2
 		}
 
 		set_variable = {
@@ -215,7 +215,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = social_security_expense_old_age_benefits
-			value = 7.0
+			value = 0.8
 		}
 
 		set_variable = {
@@ -224,7 +224,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = social_security_expense_veteran_benefits
-			value = 2.5
+			value = 0.95
 		}
 
 		set_variable = {
@@ -237,7 +237,7 @@ DF_economy_setup = {
 			}
 			multiply_variable = {
 				var = social_security_expense
-				value = 10.0
+				value = 2.6
 			}
 			else_if = {
 				limit = {
@@ -245,7 +245,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = social_security_expense
-					value = 7.0
+					value = 0.9
 				}
 			}
 			else_if = {
@@ -254,7 +254,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = social_security_expense
-					value = 2.5
+					value = 0.6
 				}
 			}
 			else_if = {
@@ -302,7 +302,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = education_expense_free_universities
-			value = 5.0
+			value = 0.8
 		}
 
 		set_variable = {
@@ -311,7 +311,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = education_expense_free_high_schools
-			value = 4.5
+			value = 0.7
 		}
 
 		set_variable = {
@@ -320,7 +320,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = education_expense_free_elementary_and_middle_schools
-			value = 3.0
+			value = 0.5
 		}
 
 		set_variable = {
@@ -333,7 +333,7 @@ DF_economy_setup = {
 			}
 			multiply_variable = {
 				var = education_expense
-				value = 5.0
+				value = 0.53
 			}
 			else_if = {
 				limit = {
@@ -341,7 +341,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = education_expense
-					value = 4.5
+					value = 1.1
 				}
 			}
 			else_if = {
@@ -350,7 +350,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = education_expense
-					value = 3.0
+					value = 0.5
 				}
 			}
 			else_if = {
@@ -398,7 +398,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = policing_expense_police_state
-			value = 5.0
+			value = 1.1
 		}
 
 		set_variable = {
@@ -407,7 +407,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = policing_expense_militarized_police
-			value = 2.5
+			value = 0.8
 		}
 
 		set_variable = {
@@ -416,7 +416,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = policing_expense_regular_policing
-			value = 1.0
+			value = 0.6
 		}
 
 		set_variable = {
@@ -429,7 +429,7 @@ DF_economy_setup = {
 			}
 			multiply_variable = {
 				var = policing_expense
-				value = 5.0
+				value = 1.8
 			}
 			else_if = {
 				limit = {
@@ -437,7 +437,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = policing_expense
-					value = 2.5
+					value = 0.3
 				}
 			}
 			else_if = {
@@ -446,7 +446,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = policing_expense
-					value = 1.0
+					value = 0.4
 				}
 			}
 			else_if = {
@@ -499,7 +499,7 @@ DF_economy_setup = {
 	}
 	multiply_variable = {
 		var = mil_factories_gdp
-		value = 35
+		value = 0.5
 	}
 	add_to_variable = {
 		var = gdp
@@ -511,7 +511,7 @@ DF_economy_setup = {
 	}
 	multiply_variable = {
 		var = doc_factories_gdp
-		value = 35
+		value = 1
 	}
 	add_to_variable = {
 		var = gdp
@@ -523,11 +523,51 @@ DF_economy_setup = {
 	}
 	multiply_variable = {
 		var = civ_factories_gdp
-		value = 75
+		value = 2
 	}
 	add_to_variable = {
 		var = gdp
 		value = var:civ_factories_gdp
+	}
+
+    ############
+	### debt ###
+	############
+	set_variable = {
+		var = debt
+		value = 0
+	}
+    if = {
+		limit = { 
+			check_variable = {
+				var = cash
+				value < 0
+				compare = less_than
+			}
+		}
+		add_to_variable = {
+			var = debt
+			value = var:cash
+		}
+		add_to_variable = {
+			var = cash
+			value = var:cash
+		}
+	}
+	#################
+	### inflation ###
+	#################
+	set_variable = {
+		var = inflation
+		value = 0
+	}
+
+	#############
+	### taxes ###
+	#############
+	set_variable = {
+		var = people_taxes
+		value = 0
 	}
 
 }
