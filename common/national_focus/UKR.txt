@@ -1103,7 +1103,7 @@ focus_tree = {
 		id = UKR_snap_presidential_elections
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 25
+		x = 30
 		y = 0
 
 
@@ -1151,10 +1151,37 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_zelensky
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -8
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_snap_presidential_elections }
+		relative_position_id = UKR_snap_presidential_elections
+
+		available = {
+			date = 2018.01.01
+            NOT = {
+				has_country_flag = Elections2019InProgress
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
 		id = UKR_timoshenko_victory
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 10
+		x = 8
 		y = 1
 
 
@@ -1180,7 +1207,7 @@ focus_tree = {
 		id = UKR_oleg_lyashko_victory
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 20
+		x = 15
 		y = 1
 
 

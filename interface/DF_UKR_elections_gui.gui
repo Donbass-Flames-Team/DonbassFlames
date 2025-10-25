@@ -73,60 +73,6 @@ guiTypes = {
 			position = { x = 584 y = 35 }
 		}
 
-		buttonType = {
-			name = "candidate_6_increase_button"
-			position = { x = 1145 y = 545 }
-			quadTextureSprite = "GFX_separatism_increase_button"
-			clicksound = click_close
-		    font = "hoi_36header"			
-			text = "separatism_counteract_button_text"
-        }
-
-		buttonType = {
-			name = "candidate_5_increase_button"
-			position = { x = 886 y = 545 }
-			quadTextureSprite = "GFX_separatism_increase_button"
-			clicksound = click_close
-		    font = "hoi_36header"			
-			text = "separatism_counteract_button_text"
-        }
-
-		buttonType = {
-			name = "candidate_4_increase_button"
-			position = { x = 886 y = 602 }
-			quadTextureSprite = "GFX_separatism_increase_button"
-			clicksound = click_close
-		    font = "hoi_36header"			
-			text = "separatism_counteract_button_text"
-        }
-
-		buttonType = {
-			name = "candidate_3_increase_button"
-			position = { x = 1145 y = 602 }
-			quadTextureSprite = "GFX_separatism_increase_button"
-			clicksound = click_close
-		    font = "hoi_36header"			
-			text = "separatism_counteract_button_text"
-        }
-		
-		buttonType = {
-			name = "candidate_2_increase_button"
-			position = { x = 1145 y = 662 }
-			quadTextureSprite = "GFX_separatism_increase_button"
-			clicksound = click_close
-		    font = "hoi_36header"			
-			text = "separatism_counteract_button_text"
-        }
-
-		buttonType = {
-			name = "candidate_increase_button"
-			position = { x = 886 y = 662 }
-			quadTextureSprite = "GFX_separatism_increase_button"
-			clicksound = click_close
-			font = "hoi_36header"			
-			text = "separatism_increase_button_text"
-		}
-
 		## GLOW ICONS ##
 		iconType = {
 			name = "donetsk_icon"

@@ -410,3 +410,21 @@ UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
 		max = 5
 	}
 }
+
+# Crimea poroshenko support
+UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Crimea_poroshenko_support_value
+		min = 0
+		max = 5
+	}
+}
+
+# Poroshenko stamina
+Poroshenko_stamina_value_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Poroshenko_stamina_value
+		min = 0
+		max = 10
+	}
+}
