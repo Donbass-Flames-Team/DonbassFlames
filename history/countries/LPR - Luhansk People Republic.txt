@@ -6,6 +6,12 @@ capital = 93
 		infantry_weapons = 1
 	}
 	
+	 add_ideas = {
+		war_economy
+		service_by_requirement
+		closed_economy
+	}
+
 	set_politics = {
 		ruling_party = autoritarian_democracy
 		last_election = "2010.02.07"
