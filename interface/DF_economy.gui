@@ -221,6 +221,18 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
+			name = "people_taxes_value"
+			position = { x = 280 y = 270 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 45
+			maxHeight = 24
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "[?people_taxes]"
+		}
+
+		instantTextBoxType = {
 			name = "expense_total"
 			position = { x = 320 y = 110 }
 			font = hoi_24header
@@ -257,6 +269,18 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
+			name = "gdp_per_population_value"
+			position = { x = 220 y = 92 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 195
+			maxHeight = 24
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "gdp_per_population_value"
+		}
+
+		instantTextBoxType = {
 			name = "debt_value"
 			position = { x = 100 y = 72 }
 			font = hoi_24header
@@ -268,16 +292,37 @@ guiTypes = {
 			text = "debt_value"
 		}
 
+		buttonType = {
+			name = "central_bank_button"
+			spriteType = "GFX_cash_smol"
+			position = { x = 65 y = 75 }
+			clicksound = click_close
+			tooltip = cental_bank_tt
+			pdx_tooltip_delayed = cental_bank_tt2
+		}
+
 		instantTextBoxType = {
 			name = "inflation_value"
 			position = { x = 210 y = 72 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 125
+			maxWidth = 195
 			maxHeight = 24
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "inflation_value"
+		}
+
+		instantTextBoxType = {
+			name = "year_inflation_value"
+			position = { x = 210 y = 52 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 195
+			maxHeight = 24
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "year_inflation_text"
 		}
 
 		instantTextBoxType = {
@@ -384,6 +429,30 @@ guiTypes = {
 			oversound = ui_menu_over
 			font = hoi_24header
 			text = "economic_decisions"
+		}
+	}
+
+	containerWindowType = {
+		name = "central_bank_window"
+		position = { x = -205 y = 0 }
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = yes
+		click_to_front = no
+		clipping = no
+
+		background = {
+			name = "Background"	
+			spriteType = "GFX_economy_background"
+		}
+
+		buttonType = {
+			name = "close_button"
+			spriteType = "GFX_Startgui_close_btn"
+			position = { x = 561 y = 8 }
+			clicksound = click_close
+			shortcut = ESCAPE
 		}
 	}
 

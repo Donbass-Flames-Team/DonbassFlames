@@ -81,6 +81,36 @@ DF_economy_setup = {
 			value = var:civ_factories_income
 		}
 	}
+	#############
+	### taxes ###
+	#############
+	set_variable = {
+		var = people_taxes
+		value = ROOT.max_manpower_k
+	}
+	divide_variable = {
+		var = people_taxes
+		value = 700
+	}
+	multiply_variable = {
+		var = people_taxes
+		value = 1.7
+	}
+	add_to_variable = {
+		var = cash
+		value = var:people_taxes
+	 }
+	add_to_variable = {
+		var = income
+		value = var:people_taxes
+	}
+	round_variable = people_taxes
+
+	set_variable = {
+		var = corporate_taxes
+		value = 0
+	} 
+	
 
 	if = {
 		limit = {
@@ -100,7 +130,7 @@ DF_economy_setup = {
 		}
 		divide_variable = {
 			var = healthcare_expense_show
-			value = 244
+			value = 494
 		}
 		round_variable = healthcare_expense_show
 
@@ -196,7 +226,7 @@ DF_economy_setup = {
 		}
 		divide_variable = {
 			var = social_security_expense_show
-			value = 85
+			value = 435
 		}
 		round_variable = social_security_expense_show
 
@@ -206,7 +236,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = social_security_expense_welfare_state
-			value = 1.2
+			value = 0.9
 		}
 
 		set_variable = {
@@ -215,7 +245,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = social_security_expense_old_age_benefits
-			value = 0.8
+			value = 0.7
 		}
 
 		set_variable = {
@@ -224,7 +254,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = social_security_expense_veteran_benefits
-			value = 0.95
+			value = 0.85
 		}
 
 		set_variable = {
@@ -237,7 +267,7 @@ DF_economy_setup = {
 			}
 			multiply_variable = {
 				var = social_security_expense
-				value = 2.6
+				value = 1.6
 			}
 			else_if = {
 				limit = {
@@ -292,7 +322,7 @@ DF_economy_setup = {
 		}
 		divide_variable = {
 			var = education_expense_show
-			value = 500
+			value = 890
 		}
 		round_variable = education_expense_show
 
@@ -530,43 +560,52 @@ DF_economy_setup = {
 		value = var:civ_factories_gdp
 	}
 
-    ############
-	### debt ###
-	############
+	
+	##########################
+	### GDP per population ###
+	##########################
 	set_variable = {
-		var = debt
+		var = gdp_per_population
 		value = 0
 	}
-    if = {
-		limit = { 
+	add_to_variable = {
+		var = gdp_per_population_value
+		value = var:gdp
+	}
+	multiply_variable = {
+		var = gdp_per_population_value
+		value = 10000000000
+	}
+	divide_variable = {
+		var = gdp_per_population_value
+		value = ROOT.max_manpower_k
+	}
+	add_to_variable = {
+		var = gdp_per_population
+		value = var:gdp_per_population_value
+	}
+	if ={
+		limit = {
 			check_variable = {
-				var = cash
-				value < 0
+				var = gdp_per_population
+				value = 0
 				compare = less_than
 			}
 		}
-		add_to_variable = {
-			var = debt
-			value = var:cash
-		}
-		add_to_variable = {
-			var = cash
-			value = var:cash
-		}
+	    multiply_variable = {
+		    var = gdp_per_population_value
+		    value = -1
+	    }		
 	}
+
+    ## debt ##
+	set_variable = { var = ROOT.debt value = var:ROOT.debt }
+
 	#################
 	### inflation ###
 	#################
 	set_variable = {
 		var = inflation
-		value = 0
-	}
-
-	#############
-	### taxes ###
-	#############
-	set_variable = {
-		var = people_taxes
 		value = 0
 	}
 

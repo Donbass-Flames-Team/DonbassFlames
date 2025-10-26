@@ -20,6 +20,8 @@ DF_economy_setup = yes
 	set_variable = { UKR_AFU_war_breakthrough_factor = -0.15 }
 	set_variable = { UKR_AFU_war_support_factor = -0.15 }
 	set_variable = { UKR_AFU_conscription = -0.02 } 
+
+	add_dynamic_modifier = { modifier = GEN_inflation }
 	
 	set_technology = {
 		infantry_weapons = 1
@@ -152,5 +154,6 @@ DF_economy_setup = yes
 	recruit_character = yuri_allerov
 	recruit_character = sergey_naev
 
-	set_variable = { cash = 1 }
+	set_variable = { cash = 8 }
+	set_variable = { debt = -146.94 }
 }

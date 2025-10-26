@@ -29,6 +29,18 @@ scripted_gui = {
 						set_global_flag = economy_tab_on
 					}
 				}
+				if = {
+					limit = {
+						has_global_flag = economy_decisions_tab_on
+					}
+					clr_global_flag = economy_decisions_tab_on
+				}
+				if = {
+					limit = {
+						has_global_flag = cental_bank_tab_on
+					}
+					clr_global_flag = cental_bank_tab_on
+				}
 			}
 			debt_button_click = {
 				if = {
@@ -39,6 +51,18 @@ scripted_gui = {
 					else = {
 						set_global_flag = economy_tab_on
 					}
+				}
+				if = {
+					limit = {
+						has_global_flag = economy_decisions_tab_on
+					}
+					clr_global_flag = economy_decisions_tab_on
+				}
+				if = {
+					limit = {
+						has_global_flag = cental_bank_tab_on
+					}
+					clr_global_flag = cental_bank_tab_on
 				}
 			}
 		}
@@ -100,7 +124,42 @@ scripted_gui = {
 					}
 				}
 			}
+			central_bank_button_click = {
+				if = {
+					limit = {
+						has_global_flag = cental_bank_tab_on
+					}
+					clr_global_flag = cental_bank_tab_on
+					else = {
+						set_global_flag = cental_bank_tab_on
+					}
+				}
+			}
 		}
+	}
+
+	central_bank_window = {
+		window_name = "central_bank_window"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = cental_bank_tab_on
+		}
+
+		triggers = {
+
+		}
+
+		effects = {
+			close_button_click = {
+				clr_global_flag = cental_bank_tab_on
+			}
+		}
+
+		effects = {
+			
+		}
+
 	}
 
 	economy_decisions_window_sg = {

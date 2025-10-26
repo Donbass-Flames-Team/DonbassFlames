@@ -17,8 +17,13 @@ on_actions = {
 			###################
 			add_to_variable = {
 				var = inflation
-				value = 0.03
+				value = 0.02
 			}
+			add_to_variable = { GEN_inflation_political_power_gain = -0.02 }
+			add_to_variable = {
+		        var = year_inflation
+	            value = var:inflation
+	        }			
 		}
 		effect = {
 			if = {
@@ -27,8 +32,13 @@ on_actions = {
 				}
 				add_to_variable = {
 				    var = inflation
-				    value = 0.01
+				    value = 0.03
 			    }
+				add_to_variable = { GEN_inflation_political_power_gain = -0.025 }
+				add_to_variable = {
+		            var = year_inflation
+	                value = var:inflation
+	            }
 			}
 		}
 		effect = {
@@ -38,8 +48,13 @@ on_actions = {
 				}
 				add_to_variable = {
 				    var = inflation
-				    value = 0.03
+				    value = 0.06
 			    }
+				add_to_variable = { GEN_inflation_political_power_gain = -0.05 }
+				add_to_variable = {
+		            var = year_inflation
+	                value = var:inflation
+	            }
 			}
 		}
 		effect = {
@@ -49,8 +64,12 @@ on_actions = {
 				}
 				add_to_variable = {
 				    var = inflation
-				    value = 0.06
+				    value = 0.09
 			    }
+				add_to_variable = {
+		            var = year_inflation
+	                value = var:inflation
+	            }
 			}
 		}
 		effect = {
@@ -60,8 +79,13 @@ on_actions = {
 				}
 				add_to_variable = {
 				    var = inflation
-				    value = 0.08
+				    value = 0.12
 			    }
+				add_to_variable = { GEN_inflation_political_power_gain = -0.09 }
+				add_to_variable = {
+		            var = year_inflation
+	                value = var:inflation
+	            }
 			}
 		}
 		effect = {
@@ -73,6 +97,11 @@ on_actions = {
 				    var = inflation
 				    value = 0.08
 			    }
+				add_to_variable = { GEN_inflation_political_power_gain = -0.07 }
+				add_to_variable = {
+		            var = year_inflation
+	                value = var:inflation
+	            }
 			}
 		}
 		effect = {
@@ -84,6 +113,11 @@ on_actions = {
 				    var = inflation
 				    value = 0.05
 			    }
+				add_to_variable = { GEN_inflation_political_power_gain = -0.04 }
+				add_to_variable = {
+		            var = year_inflation
+	                value = var:inflation
+	            }
 			}
 		}
 		effect = {
@@ -95,6 +129,11 @@ on_actions = {
 				    var = inflation
 				    value = 0.04
 			    }
+				add_to_variable = { GEN_inflation_political_power_gain = -0.03 }
+				add_to_variable = {
+		            var = year_inflation
+	                value = var:inflation
+	            }
 			}
 		}
 		effect = {
@@ -106,6 +145,11 @@ on_actions = {
 				    var = inflation
 				    value = 0.04
 			    }
+				add_to_variable = { GEN_inflation_political_power_gain = -0.03 }
+				add_to_variable = {
+		            var = year_inflation
+	                value = var:inflation
+	            }
 			}
 		}
 		effect = {
@@ -117,6 +161,11 @@ on_actions = {
 				    var = inflation
 				    value = 0.07
 			    }
+				add_to_variable = { GEN_inflation_political_power_gain = -0.06 }
+				add_to_variable = {
+		            var = year_inflation
+	                value = var:inflation
+	            }
 			}
 		}
 	}
@@ -125,10 +174,32 @@ on_actions = {
 			###################
 			#### INFLATION ####
 			###################
+			
 			set_variable = {
 				var = inflation
 				value = 0
 			}
+			set_variable = { GEN_inflation_political_power_gain = 0.0 }			
 		}
 	}
+	on_weekly = {
+		effect = {
+		    if = {
+			limit = {
+				check_variable = {
+					var = cash
+					value = 0
+					compare = less_than
+				}
+			}
+			set_temp_variable = { temp_debt = var:cash }       
+			multiply_variable = { var = temp_debt value = -1 } 
+			add_to_variable = { var = debt value = var:temp_debt } 
+			set_variable = { var = cash value = 1 }    
+			clear_variable = temp_debt     
+	        }	
+		}	
+	}
+
+	
 }

@@ -21,8 +21,12 @@
  policing_expense:0 "Полиция:"
 
  gdp_value:0 "ВВП:§G[?gdp]§!млрд."
+ gdp_per_population_value:0 "ВВП на душу населения:§G[?gdp_per_population]§!$"
  debt_value:0 "Долг:§R[?debt]§!млрд."
- inflation_value:0 "Инфляция:§Y[?inflation]§!%"
+ inflation_value:0 "Мес. Инфляция:§Y[?inflation]§!%"
+ year_inflation_text:0 "Год. инфляция:§Y[?year_inflation]§!%"
+ cental_bank_tt:0 "Центральный банк"
+ cental_bank_tt2:0 "Управляет денежной массой и инфляцией в вашей стране."
 
  healthcare:0 "Закон о здравоохранении"
  universal_health_care:0 "Всеобщее здравоохранение"
