@@ -137,6 +137,9 @@ DF_economy_setup = yes
 		UKR_separatism
 		UKR_dependence_on_russia
 		UKR_ukrainian_mic
+        limited_conscription
+        free_trade
+        civilian_economy
 	}
 	
 	add_manpower = 60000
@@ -153,6 +156,7 @@ DF_economy_setup = yes
 	recruit_character = oleg_mikats
 	recruit_character = yuri_allerov
 	recruit_character = sergey_naev
+
 
 	set_variable = { cash = 8 }
 	set_variable = { debt = -146.94 }
