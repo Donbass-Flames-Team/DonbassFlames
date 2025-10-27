@@ -17,7 +17,10 @@ country_event = {
 		name = russia.1.a
 		custom_effect_tooltip = russia_invasion_of_crimea_tt
 		hidden_effect = {
-
+			declare_war_on = {
+				target = CRI
+				type = annex_evrything
+			}
 		}
 	}
 }
@@ -129,5 +132,31 @@ country_event = {
 	option = {
 		name = russia.8.a
         add_political_power = -75
+	}
+}
+
+#Russian volunteers
+country_event = {
+	id = russia.9
+	title = russia.9.t
+	desc = russia.9.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.9.a
+		if = {
+			limit = {
+				tag = DPR
+			}
+			add_manpower = 4500
+		}
+		if = {
+			limit = {
+				tag = LPR
+			}
+			add_manpower = 3000
+		}
 	}
 }

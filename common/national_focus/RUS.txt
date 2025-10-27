@@ -432,8 +432,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			add_stability = -0.05
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -470,8 +469,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			load_oob = "Crimean_green_people_RUS"
 		}
 	}
 
@@ -497,8 +495,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			add_war_support = 0.025
+			country_event = russia.1
 		}
 	}
 
@@ -581,8 +579,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			
 		}
 	}
 
@@ -608,8 +605,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			add_political_power = 25
+			add_stability = 0.05
 		}
 	}
 
@@ -800,8 +797,18 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			DPR = {
+				country_event = russia.9
+			}
+			OPR = {
+				country_event = russia.9
+			}
+			KPR = {
+				country_event = russia.9
+			}
+			LPR = {
+				country_event = russia.9
+			}
 		}
 	}
 

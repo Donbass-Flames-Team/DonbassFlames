@@ -1,3 +1,83 @@
-RUS_support_separatism_decision = {
-	
+RUS_stability_of_regime_decision = {
+
+}
+
+RUS_influence_in_ukraine_decision = {
+	RUS_send_additional_equipment = {
+
+		icon = GFX_decision_generic_Guns_from_communists
+		
+		available = {
+		    tag = RAS
+		}
+	    
+		visible = {
+			tag = RAS
+			has_completed_focus = RUS_arms_supply		
+		}
+		
+		fire_only_once = yes
+
+		cost = 35
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 10		
+		}
+	}	
+
+	RUS_send_additional_machinery_supply = {
+
+		icon = GFX_decision_generic_Guns_from_communists
+		
+		available = {
+		    tag = RAS
+		}
+	    
+		visible = {
+			tag = RAS
+			has_completed_focus = RUS_arms_supply		
+		}
+		
+		fire_only_once = yes
+
+		cost = 35
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 10		
+		}
+	}
+
+	RUS_send_additional_ammunition = {
+
+		icon = GFX_decision_generic_Guns_from_communists
+		
+		available = {
+		    tag = RAS
+		}
+	    
+		visible = {
+			tag = RAS
+			has_completed_focus = RUS_arms_supply		
+		}
+		
+		fire_only_once = yes
+
+		cost = 35
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 10		
+		}
+	}
 }

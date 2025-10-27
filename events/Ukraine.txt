@@ -20,6 +20,8 @@ country_event = {
 				id = news_events.1
 				hours = 12
 			}			
+			mark_focus_tree_layout_dirty = yes
+			set_global_flag = Yanukovich_escaped
 		}
 		country_event = {
 			id = ukraine.22
@@ -805,7 +807,7 @@ country_event = {
 	#}
 } 
 
-# Yanukovich escaped
+# Yanukovich in donetsk
 country_event = {
 	id = ukraine.22
 	title = ukraine.22.t
@@ -816,6 +818,18 @@ country_event = {
 
 	option = {
 		name = ukraine.22.a
-		
+		random_list = {
+		    95 = {
+                complete_national_focus = UKR_yanukovich_escaped
+            }
+            5 = {
+                complete_national_focus = UKR_arrest_yanukovich
+            }
+		}
+	}
+
+	option = {
+		name = ukraine.22.b
+		complete_national_focus = UKR_yanukovich_escaped
 	}
 } 

@@ -1,0 +1,83 @@
+division_template = {
+	name = "Crimean Militia"
+	regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+    division= {
+        name = "TEST DIVKA"
+        location = 14681
+        division_template = "Crimean Militia"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "TEST DIVKA"
+        location = 4444
+        division_template = "Crimean Militia"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "TEST DIVKA"
+        location = 6405
+        division_template = "Crimean Militia"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "TEST DIVKA"
+        location = 2678
+        division_template = "Crimean Militia"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "TEST DIVKA"
+        location = 14588
+        division_template = "Crimean Militia"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "TEST DIVKA"
+        location = 14597
+        division_template = "Crimean Militia"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "TEST DIVKA"
+        location = 3096
+        division_template = "Crimean Militia"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "TEST DIVKA"
+        location = 4615
+        division_template = "Crimean Militia"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "TEST DIVKA"
+        location = 14430
+        division_template = "Crimean Militia"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+}

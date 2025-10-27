@@ -16,6 +16,21 @@ recruit_character = vladimir_putin
 capital = 558
 
 2013.11.21 = {
+	set_variable = {
+		var = RUS_influence_in_ukraine
+		value = 75
+	}
+	UKR = {
+		set_variable = {
+		    var = RUS_influence_in_ukraine
+		    value = 75
+	    }
+	}
+	clamp_variable = {
+		var = RUS_influence_in_ukraine
+		min = 0
+		max = 100
+	}
 	set_politics = {
 		ruling_party = autoritarian_democracy
 		last_election = "2012.03.04"
