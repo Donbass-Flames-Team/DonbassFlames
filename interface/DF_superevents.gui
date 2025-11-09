@@ -34,7 +34,7 @@ guiTypes = {
 		buttonType ={
 			name ="sp_event_close_button"
 			spriteType = "GFX_Super_Event_button"
-			position = { x= 170 y = 518 }
+			position = { x = 140 y = 496 }
 			Orientation = "UPPER_LEFT"
 			shortcut = "ESCAPE"
 			clicksound = click_close
@@ -53,7 +53,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "superevents_quote"
-			position = { x = 215 y = 345 }
+			position = { x = 215 y = 340 }
 			font = "hoi_18mbs"
 			format = right
 			borderSize = {x = 0 y = 0}
