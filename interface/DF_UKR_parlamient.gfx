@@ -34,4 +34,32 @@ spriteTypes = {
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_parties.png"
 		noOfFrames = 13
 	}
+
+	buttonType = {
+		name = "GFX_UKR_parlamient_button1"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_button1.png"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+    	name = "GFX_separatismgui_closebutton_nw"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Buttons/separatismgui_closebutton_nw.png"
+	}
+
+	spriteType = {
+    	name = "GFX_separatismgui_closebutton_w"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Buttons/separatismgui_closebutton_w.png"
+	}
+
+	spriteType = {
+    	name = "UKR_parlamient_skipbuttonactiv"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_skipbuttonactiv.png"
+	}
+
+	spriteType = {
+		name = "GFX_UKR_parlamient_skipbuttonnonactiv"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_skipbuttonnonactiv.png"
+		noOfFrames = 1
+	}
 }
+

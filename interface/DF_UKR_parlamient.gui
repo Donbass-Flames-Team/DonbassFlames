@@ -37,32 +37,28 @@ guiTypes = {
 
     containerWindowType = {
 	    name = "UKR_parlamient_general_window"
-	    position = { x = 0 y = 10 }
+	    position = { x = 0 y = 0 }
 	    size = { width = 1300 height = 770 }
 	    orientation = center
 	    origo = center
-		
+
 	    moveable = yes
 	    click_to_front = yes
 	    clipping = yes
 	    fade_time = 150
 	    fade_type = linear
 
-	    background = {
-		    name = "Background"
-		    quadTextureSprite = "GFX_startgui_background"
-	    }
-
 		iconType = {
 			name = "parlamient_Background"
 			spriteType = "GFX_UKR_parlamient_background"
-			position = { x = 25 y = 25 }
+			position = { x = 155 y = 90 }
+			scale = 1
 		}
 
 	    iconType = {
 		    name = "UKR_siezd_icon"
 		    spriteType = "GFX_ukraine_siezd_icon"
-		    position = { x = 310 y = 131 }
+		    position = { x = 1310 y = 131 }
 		    scale = 1.2
 	    } 
 
@@ -77,14 +73,14 @@ guiTypes = {
 		iconType = {
 		    name = "UKR_speaker_parlamient_frame"
 			spriteType = "GFX_startgui_leader_frame"
-			position = { x = 1025 y = 165 }
+			position = { x = 11025 y = 165 }
 			scale = 0.79
 		}
 
 		iconType = {
 		    name = "UKR_speaker_parlamient_portrait"
 			spriteType = "GFX_closebutton"
-			position = { x = 1049 y = 190 }
+			position = { x = 1449 y = 190 }
 			scale = 1.25
 		}
 
@@ -163,7 +159,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "close_map_button"
-			position = { x = 1265 y = 30 }
+			position = { x = 1092 y = 96 }
 			quadTextureSprite = "GFX_closebutton"
 			pdx_tooltip = "CLOSE"
 			clicksound = click_close
@@ -172,27 +168,120 @@ guiTypes = {
 
 		instantTextBoxType = {
 		    name = "UKR_law_status_text"
-		    position = { x = 575 y = 490 }
-		    font = "hoi_16mbs"
-		    text = "Голоссование не идет"
+		    position = { x = 516 y = 180 }
+		    font = "hoi_36header"
+			maxWidth = 250
+			format = center
+		    text = "З'ЇЗД ВЕРХОВНОЇ РАДИ НОМЕР VII"
+	    }
+
+		№instantTextBoxType = {
+		    name = "UKR_law_status_text"
+		    position = { x = 516 y = 170 }
+		    font = "hoi_36header"
+			maxWidth = 250
+			format = center
+		    text = "ПОІМЕННЕ ГОЛОСУВАННЯ"
+	    }
+
+		№instantTextBoxType = {
+		    name = "UKR_law_status_text2"
+		    position = { x = 516 y = 240 }
+		    font = "hoi_18mbs"
+			maxWidth = 250
+			format = center
+		    text = "Законопроєкт 12424"
+	    }
+
+		instantTextBoxType = {
+		    name = "UKR_titel"
+		    position = { x = 516 y = 98 }
+		    font = "hoi_36header"
+			maxWidth = 250
+			format = center
+		    text = "Верховная Рада Украины"
+	    }		
+
+		buttonType = {
+			name = "UKR_parlamient_button1"
+			position = { x = 256 y = 602 }
+			spriteType = "GFX_UKR_parlamient_button1"
+			size = { x = 80 y = 80 }
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "UKR_parlamient_button2"
+			position = { x = 523 y = 602 }
+			spriteType = "GFX_UKR_parlamient_button1"
+			size = { x = 80 y = 80 }
+			clicksound = click_close
+		}		
+
+		buttonType = {
+			name = "UKR_parlamient_button3"
+			position = { x = 791 y = 602 }
+			spriteType = "GFX_UKR_parlamient_button1"
+			size = { x = 80 y = 80 }
+			clicksound = click_close
+		}		
+
+		buttonType = {
+			name = "separatismgui_closebutton"
+			position = { x = 1020 y = 142 }
+			spriteType = "GFX_separatismgui_closebutton_nw" 
+			clicksound = click_close 
+		}
+
+		buttonType = {
+			name = "UKR_parlamient_skipbutton"
+			position = { x = 987 y = 142 }
+			spriteType = "GFX_UKR_parlamient_skipbuttonnonactiv" 
+			clicksound = click_close
+		}
+
+		instantTextBoxType = {
+		    name = "UKR_button1"
+		    position = { x = 328 y = 606 }
+		    font = "hoi_36header"
+			maxWidth = 90
+			format = center
+		    text = "Фракции"
+	    }
+
+		instantTextBoxType = {
+		    name = "UKR_button2"
+		    position = { x = 576 y = 606 }
+		    font = "hoi_36header"
+			maxWidth = 130
+			format = center
+		    text = "Голосования"
+	    }		
+
+		instantTextBoxType = {
+		    name = "UKR_button3"
+		    position = { x = 857 y = 606 }
+		    font = "hoi_36header"
+			maxWidth = 100
+			format = center
+		    text = "Коалиции"
 	    }
 
 		iconType = {
 		    name = "UKR_law_status"
 			spriteType = "GFX_UKR_law_menu_icon"
-			position = { x = 420 y = 520 }
+			position = { x = 1200 y = 520 }
 			scale = 0.55
 		}
 
 		buttonType = {
-			name = "UKR_law_menu"
-			position = { x = 855 y = 625 }
-			quadTextureSprite = "GFX_closebutton"
-			pdx_tooltip = "CLOSE"
-			clicksound = click_close
-			shortcut = "ESCAPE"
-		}
-    }
+            name = "separatismgui_closebutton_nw"
+            position = { x = 1452 y = 80 }
+            quadTextureSprite = "GFX_separatismgui_closebutton_nw"
+            clicksound = click_close
+        }
+
+	}
 
 	containerWindowType = {
 		name = "UKR_menu_of_laws_window"
