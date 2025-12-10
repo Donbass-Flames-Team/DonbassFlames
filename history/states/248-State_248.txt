@@ -4,7 +4,11 @@ state={
 	provinces={
 		2226 3909 3983 4501 5392 6492 6981 7228 8437 9491 10504 11725 11979 14558 14559 14597 14608 14627 14635 14672 14674 14691 14692 14710 14716 14746 
 	}
+	history= {
+		owner = UKR
+		add_core = UKR
+	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+    manpower=15000
+    state_category=pastoral
 }

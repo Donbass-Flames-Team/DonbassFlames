@@ -4,8 +4,12 @@ state={
 	provinces={
 		9788 14274 
 	}
-	history={ owner=UKR add_core=UKR }
+	history= {
+		owner = UKR
+		capital = 9788
+		add_core = UKR
+	}
 	buildings_max_level_factor=1.000
-        manpower=211000
-        state_category = town
+    manpower=28000
+    state_category=town
 }
