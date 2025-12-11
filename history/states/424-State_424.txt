@@ -4,11 +4,14 @@ state={
 	provinces={
 		7471 8234 8269 11018 11620 15677 15678 15696 15707 15745 15779 
 	}
-	history={
-        owner=UKR
-        capital=7471 
-        add_core=UKR 
-    }
+history= {
+		owner = UKR
+		add_core_of = UKR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
 	buildings_max_level_factor=1.000
     manpower=350000
     state_category=large_city

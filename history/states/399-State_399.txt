@@ -4,11 +4,14 @@ state={
 	provinces={
 		3148 15557 15558 
 	}
-	history={
-        owner=UKR
-        capital=3148 
-        add_core=UKR 
-    }
+history= {
+		owner = UKR
+		add_core_of = UKR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
 	buildings_max_level_factor=1.000
     manpower=15000
     state_category=town
