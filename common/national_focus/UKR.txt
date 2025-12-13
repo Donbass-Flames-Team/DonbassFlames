@@ -233,7 +233,10 @@ focus_tree = {
 
 		available = {
             NOT = {
-				has_completed_focus = UKR_yanukovich_escaped
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
 			}
 		}
 
@@ -243,13 +246,13 @@ focus_tree = {
 			}
 		}
 
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				has_completed_focus = UKR_dictatorship_takes_over
-			}
-		}
+		#offset = {
+		#	x = -2
+		#	y = 0
+		#	trigger = {
+		#		has_completed_focus = UKR_dictatorship_takes_over
+		#	}
+		#}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
@@ -277,6 +280,15 @@ focus_tree = {
 		prerequisite = { focus = UKR_dictatorship_takes_over }
 		relative_position_id = UKR_dictatorship_takes_over
 
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -301,6 +313,15 @@ focus_tree = {
 		prerequisite = { focus = UKR_receiving_russian_aid }
 		relative_position_id = UKR_dictatorship_takes_over
 
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -321,6 +342,15 @@ focus_tree = {
 		prerequisite = { focus = UKR_violent_suppression_of_protests }
 		relative_position_id = UKR_dictatorship_takes_over
 
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -340,6 +370,15 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_violent_suppression_of_protests }
 		relative_position_id = UKR_dictatorship_takes_over
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -391,7 +430,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
 		}
 
 		completion_reward = {
@@ -415,7 +459,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
 		}
 
 		completion_reward = {
@@ -438,7 +487,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
 		}
 
 		completion_reward = {
@@ -673,11 +727,11 @@ focus_tree = {
 			}
 		}
 
-		allow_branch = {
-			NOT = {
-			   has_completed_focus = UKR_dictatorship_takes_over
-			}
-		}
+		#allow_branch = {
+		#	NOT = {
+		#	   has_completed_focus = UKR_dictatorship_takes_over
+		#	}
+		#}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_arrest_yanukovich"
@@ -713,9 +767,6 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			NOT = {
-			   has_completed_focus = UKR_dictatorship_takes_over
-			}
 			has_country_flag = Yanukovich_escaped
 		}
 
@@ -875,6 +926,30 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_national_decentralization_project
+		icon = GFX_focus_UKR_government_in_anarchy
+		cost = 0.5
+		x = 2
+		y = 3
+
+		prerequisite = { focus = UKR_adoption_of_new_laws }
+		relative_position_id = UKR_government_in_anarchy
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    add_stability = 0.075
+		}
+	}
+
+	focus = {
 		id = UKR_unrest_in_the_east
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
@@ -924,6 +999,7 @@ focus_tree = {
 		y = 1
 
 		prerequisite = { focus = UKR_unrest_in_the_east }
+		prerequisite = { focus = UKR_national_decentralization_project }
 		relative_position_id = UKR_unrest_in_the_east
 
 		allow_branch = {
@@ -1177,10 +1253,134 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_form_new_government
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_poroshenko_victory }
+		relative_position_id = UKR_poroshenko_victory
+
+		available = {
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_police_reform
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 5
+		x = 2
+		y = 2
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_form_new_government }
+		relative_position_id = UKR_poroshenko_victory
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_anti_corruption_reforms
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -4
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_snap_presidential_elections }
+		relative_position_id = UKR_snap_presidential_elections
+
+		available = {
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_form_nabu
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_anti_corruption_reforms }
+		relative_position_id = UKR_anti_corruption_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_public_procurement_law
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 2
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_anti_corruption_reforms }
+		relative_position_id = UKR_anti_corruption_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
 		id = UKR_zelensky
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = -8
+		x = -9
 		y = 1
 
 
@@ -1452,6 +1652,31 @@ focus_tree = {
 		prerequisite = { focus = UKR_western_instructors }
 		relative_position_id = UKR_military_reforms_afu
 		mutually_exclusive = { focus = UKR_reliance_on_decentralized_command }
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_expand_the_general_staff
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 2
+		y = 3
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_western_instructors }
+		relative_position_id = UKR_military_reforms_afu
 
 
 		available = {
@@ -2161,6 +2386,18 @@ focus_tree = {
 
 		allow_branch = {
 			has_completed_focus = UKR_dictatorship_takes_over
+			NOT = {
+				has_completed_focus = UKR_unrest_in_the_east
+			}
+		}
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2186,6 +2423,15 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_information_campaign_against_maidan }
 		relative_position_id = UKR_information_campaign_against_maidan
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
