@@ -2,14 +2,18 @@ state={
 	id=148
 	name="STATE_148"
 	provinces={
-		3570 
+		3570
 	}
 	history=
 	{
 		owner=UKR
-		add_core=UKR
+		add_core_of=UKR
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 	}
 	buildings_max_level_factor=1.000
-        manpower=250000
-        state_category = town
+	manpower=250000
+	state_category=rural
 }
