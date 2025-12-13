@@ -4,9 +4,13 @@ state={
 	provinces={
 		4760 6168 7068 7534 9342 12483 
 	}
-		history= {
+history= {
 		owner = POL
-		add_core = POL
+		add_core_of = POL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
 	}
 	buildings_max_level_factor=1.000
         manpower=1750000

@@ -2,12 +2,15 @@ state={
 	id=618
 	name="STATE_618"
 	provinces={
-		6888 8571 11264 17140 17175 17209 
+		6888 8571 11264 17140 17175 17209 18174 18171
 	}
-	history= {
+history= {
 		owner = UKR
-		capital = 6888
-		add_core = UKR
+		add_core_of = UKR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
 	}
 	buildings_max_level_factor=1.000
     manpower=40000

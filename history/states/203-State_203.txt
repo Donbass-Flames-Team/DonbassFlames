@@ -6,8 +6,12 @@ state={
 	}
 	history= {
 		owner = UKR
+		add_core_of = UKR
 		capital = 1934
-		add_core = UKR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
 	}
 	buildings_max_level_factor=1.000
     manpower=1440000

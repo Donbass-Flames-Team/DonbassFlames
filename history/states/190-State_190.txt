@@ -4,10 +4,13 @@ state={
 	provinces={
 		666 836 1420 1585 1910 3255 3319 4188 4468 5121 5656 6358 6754 7286 8359 9425 13966 14039 14048 14125 14152 14171 14281 14288 14302 14364 
 	}
-	history=
-	{
-		owner=UKR
-		add_core=UKR
+history= {
+		owner = UKR
+		add_core_of = UKR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
 	}
 	buildings_max_level_factor=1.000
         manpower=140000

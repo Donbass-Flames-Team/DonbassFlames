@@ -2,11 +2,15 @@ state={
 	id=567
 	name="STATE_567"
 	provinces={
-		2701 3307 3325 4076 4573 4962 5262 6742 6977 7264 7672 7961 9216 9585 9962 10615 10818 11042 11610 16708 16762 16770 16798 16843 16888 16894 
+		2701 3307 3325 4076 4573 4962 5262 6742 6977 7264 7672 7961 9216 9585 9962 10615 10818 11042 11610 16708 16762 16770 16798 16843 16888 16894 18133
 	}
-	history= {
+history= {
 		owner = UKR
-		add_core = UKR
+		add_core_of = UKR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
 	}
 	buildings_max_level_factor=1.000
     manpower=200000
