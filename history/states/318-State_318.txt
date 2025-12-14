@@ -4,7 +4,7 @@ state={
 	provinces={
 		8800 15057 18227 18228 18229 18230 18231 18232
 	}
-history= {
+history={
 		owner = UKR
 		add_core_of = UKR
 		buildings = {
@@ -12,11 +12,19 @@ history= {
 			industrial_complex = 1
 		}
 		victory_points = {
-			18232 = 40
-			18227 = 5
-			18230 = 5
-			15057 = 5
-			18228 = 5
+			18232 40
+		}
+		victory_points = {
+			18227 5
+		}
+		victory_points = {
+			18230 5
+		}
+		victory_points = {
+			15057 5
+		}
+		victory_points = {
+			18228 5
 		}
 	}
 	buildings_max_level_factor=1.000
