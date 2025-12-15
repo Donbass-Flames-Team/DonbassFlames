@@ -2,9 +2,9 @@ state={
 	id=333
 	name="STATE_333"
 	provinces={
-		1080 2675 4508 11665 15227 15257 15323 
+		1080 2675 4508 11665 15227 15257 15323
 	}
-history= {
+	history= {
 		owner = UKR
 		add_core_of = UKR
 		buildings = {
@@ -13,6 +13,6 @@ history= {
 		}
 	}
 	buildings_max_level_factor=1.000
-    manpower=20000
-    state_category=pastoral
+	manpower=20000
+	state_category=rural
 }

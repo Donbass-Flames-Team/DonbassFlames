@@ -2,9 +2,9 @@ state={
 	id=211
 	name="STATE_211"
 	provinces={
-		2813 3589 3901 4199 6795 9005 9333 9337 10031 10421 11014 11249 11490 14113 14157 14212 14238 14250 14262 14383 14388 14404 
+		2813 3589 3901 4199 6795 9005 9333 9337 10031 10421 11014 11249 11490 14113 14157 14212 14238 14250 14262 14383 14388 14404
 	}
-history= {
+	history= {
 		owner = UKR
 		add_core_of = UKR
 		buildings = {
@@ -13,6 +13,6 @@ history= {
 		}
 	}
 	buildings_max_level_factor=1.000
-    manpower=31000
-    state_category=pastoral
+	manpower=31000
+	state_category=rural
 }
