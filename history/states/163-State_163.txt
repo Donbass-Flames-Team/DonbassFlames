@@ -1,10 +1,14 @@
 state={
 	id=163
-	name="STATE_163"
+	name="STATE_163" # Александровка - Безимено
 	provinces={
-		5018 13824 
+		5018 13824
+	}
+	history= {
+		owner = RUS
+		add_core_of = RUS
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=500
+	state_category = town
 }

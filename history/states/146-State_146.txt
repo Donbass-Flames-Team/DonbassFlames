@@ -1,10 +1,14 @@
 state={
 	id=146
-	name="STATE_146"
+	name="STATE_146" # Грабовское - Староселье
 	provinces={
-		6572 11376 13562 
+		6572 11376 13562
+	}
+	history= {
+		owner = RUS
+		add_core_of = RUS
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=500
+	state_category = town
 }

@@ -1,10 +1,14 @@
 state={
 	id=94
-	name="STATE_94"
+	name="STATE_94" # Рыжевка - Тёткино
 	provinces={
-		8369 12981 
+		8369 12981
+	}
+	history= {
+		owner = RUS
+		add_core_of = RUS
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=500
+	state_category = rural
 }

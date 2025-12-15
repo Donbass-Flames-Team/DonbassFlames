@@ -1,10 +1,14 @@
 state={
 	id=454
-	name="STATE_454"
+	name="STATE_454" # АПП «Матвеев Курган»
 	provinces={
-		11217 15878 
+		11217 15878
+	}
+	history= {
+		owner = RUS
+		add_core_of = RUS
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=500
+	state_category = rural
 }
