@@ -1,10 +1,14 @@
 state={
 	id=118
-	name="STATE_118"
+	name="STATE_118" # Мирополье - Милаевка
 	provinces={
-		9784 13216 13225 
+		9784 13216 13225
+	}
+	history= {
+		owner = RUS
+		add_core_of = RUS
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=500
+	state_category = rural
 }

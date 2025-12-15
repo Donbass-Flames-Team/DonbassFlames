@@ -1,10 +1,14 @@
 state={
 	id=414
-	name="STATE_414"
+	name="STATE_414" # АПП «Новошахтинск»
 	provinces={
-		6512 10988 15730 15864 
+		6512 10988 15730 15864
+	}
+	history= {
+		owner = RUS
+		add_core_of = RUS
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=500
+	state_category = rural
 }
