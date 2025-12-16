@@ -554,6 +554,10 @@ UKR_maidan_decision = {
 					    traits = {}
 				    }
 					country_event = ukraine.1
+                    country_event = {
+						id = ukraine.24
+						days = 43
+					}
 			    }
 		    }
 	    }

@@ -4,6 +4,11 @@ DF_economy_setup = yes
 
 2013.11.21 = {
 
+	country_event = {
+	    id = ukraine.23
+		days = 725
+	}
+
 	set_country_flag = UKRBeforeOverthrowOfYanukovych
 	set_country_flag = Speaker_Is_Turchinov
 	set_country_flag = 7_congress_of_rada
