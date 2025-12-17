@@ -4,7 +4,15 @@ state={
 	provinces={
 		5597 6509 6776 8876 16602 16680 16750 
 	}
+	history={
+        owner = TMR
+        add_core_of = TMR 
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+    }
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+    manpower = 1000
+    state_category = town
 }

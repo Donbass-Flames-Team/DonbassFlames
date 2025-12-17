@@ -4,7 +4,15 @@ state={
 	provinces={
 		210 235 408 711 1132 1491 1876 2153 2302 2656 2702 3035 3462 4041 4158 4603 4641 4805 5081 5082 5591 5704 6392 6410 7101 8229 8395 9099 10049 15260 15295 15418 15550 15566 15567 15648 15923 
 	}
+	history={
+        owner = HUN
+        add_core_of = HUN 
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+    }
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+    manpower = 1000
+    state_category = town
 }

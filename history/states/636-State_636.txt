@@ -4,7 +4,15 @@ state={
 	provinces={
 		777 911 940 1407 2781 3543 3569 4712 5582 8687 17360 
 	}
+	history={
+        owner = SER
+        add_core_of = SER 
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+    }
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+    manpower = 1000
+    state_category = town
 }

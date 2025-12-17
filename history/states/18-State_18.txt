@@ -4,7 +4,15 @@ state={
 	provinces={
 		3796 12194 
 	}
+	history={
+        owner = BLR
+        add_core_of = BLR 
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+    }
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+    manpower = 1000
+    state_category = town
 }
