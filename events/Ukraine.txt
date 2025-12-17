@@ -862,3 +862,17 @@ country_event = {
 		add_stability = -0.025
 	}
 }
+
+# Внеочередные выборы в Верховную Раду Украины 2014
+country_event = {
+	id = ukraine.25
+	title = ukraine.25.t
+	desc = ukraine.25.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.25.a
+	}
+}

@@ -4,7 +4,15 @@ state={
 	provinces={
 		463 2729 2757 4779 5467 5836 8068 9466 9950 10068 10970 13530 13711 13757 13829 
 	}
+	history={
+        owner = RUS
+        add_core_of = RUS 
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+    }
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+    manpower = 1000
+    state_category = town
 }

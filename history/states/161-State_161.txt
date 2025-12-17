@@ -4,7 +4,15 @@ state={
 	provinces={
 		26 68 177 234 252 333 527 731 921 935 1050 1068 1118 1222 1243 1409 1541 1615 1685 1839 2007 2324 2389 2413 2948 3028 3620 3824 4130 4245 4307 4326 4768 4949 5058 5285 5377 5593 5692 5697 6085 6219 6784 6999 7296 7537 7683 7690 7745 7918 8103 8271 8480 8889 9420 9484 9593 10377 10630 10940 11159 11205 11425 13786 14098 14338 14385 14433 14538 14565 
 	}
+	history={
+        owner = POL
+        add_core_of = POL 
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+    }
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+    manpower = 1000
+    state_category = town
 }

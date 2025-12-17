@@ -4,12 +4,15 @@ state={
 	provinces={
 		672 2293 3665 3804 4323 5462 5892 6384 6721 6875 7187 7200 7419 8610 8937 9096 11567 15288 15351 15396 15714 15773 15819 
 	}
-	history= {
-		owner = RF
-		capital = 672
-		add_core = RF
-	}
+	history={
+        owner = RUS
+        add_core_of = RUS 
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+    }
 	buildings_max_level_factor=1.000
-    manpower=90000
-    state_category=pastoral
+    manpower = 1000
+    state_category = rural
 }
