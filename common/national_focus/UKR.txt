@@ -405,6 +405,15 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Expanding_economic_ties"
 		    add_political_power = 100
@@ -819,7 +828,7 @@ focus_tree = {
 	focus = {
 		id = UKR_preparation_for_elections
 		icon = GFX_focus_UKR_government_in_anarchy
-		cost = 0.5
+		cost = 0.3
 		x = -1
 		y = 1
 
@@ -880,7 +889,7 @@ focus_tree = {
 	focus = {
 		id = UKR_coalition_in_parlamient
 		icon = GFX_focus_UKR_government_in_anarchy
-		cost = 0.5
+		cost = 0.3
 		x = 1
 		y = 1
 
@@ -904,7 +913,7 @@ focus_tree = {
 	focus = {
 		id = UKR_adoption_of_new_laws
 		icon = GFX_focus_UKR_government_in_anarchy
-		cost = 0.5
+		cost = 0.2
 		x = 1
 		y = 2
 
@@ -928,7 +937,7 @@ focus_tree = {
 	focus = {
 		id = UKR_national_decentralization_project
 		icon = GFX_focus_UKR_government_in_anarchy
-		cost = 0.5
+		cost = 0.2
 		x = 2
 		y = 3
 

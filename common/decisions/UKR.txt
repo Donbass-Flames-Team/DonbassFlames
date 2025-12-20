@@ -186,14 +186,6 @@ UKR_separatism_decision = {
 				}
 				country_event = ukraine.2
 				set_country_flag = UKR_donetsk_uprised
-				if = {
-					limit = { 
-						NOT = {
-							has_completed_focus = UKR_start_of_ato
-						}
-					}
-					complete_national_focus = UKR_start_of_ato
-				}
 			}
 		}
 	}
@@ -271,14 +263,6 @@ UKR_separatism_decision = {
 				clr_global_flag = UKR_yanukovich_after_overthrow_kpr_uprising
 				country_event = ukraine.4
 				set_country_flag = UKR_kharkov_uprised
-				if = {
-					limit = { 
-						NOT = {
-							has_completed_focus = UKR_start_of_ato
-						}
-					}
-					complete_national_focus = UKR_start_of_ato
-				}
 			}
 		}
 	}
@@ -556,9 +540,32 @@ UKR_maidan_decision = {
 					country_event = ukraine.1
                     country_event = {
 						id = ukraine.24
-						days = 43
+						days = 73
 					}
 			    }
+				388 = { set_demilitarized_zone = yes }
+				441 = { set_demilitarized_zone = yes }
+				465 = { set_demilitarized_zone = yes }
+				468 = { set_demilitarized_zone = yes }
+				467 = { set_demilitarized_zone = yes }
+				489 = { set_demilitarized_zone = yes }
+				502 = { set_demilitarized_zone = yes }
+				518 = { set_demilitarized_zone = yes }
+				526 = { set_demilitarized_zone = yes }
+				363 = { set_demilitarized_zone = yes }
+				329 = { set_demilitarized_zone = yes }
+				288 = { set_demilitarized_zone = yes }
+				351 = { set_demilitarized_zone = yes }
+				533 = { set_demilitarized_zone = yes }
+				511 = { set_demilitarized_zone = yes }
+				173 = { set_demilitarized_zone = yes }
+				182 = { set_demilitarized_zone = yes }
+				203 = { set_demilitarized_zone = yes }
+				291 = { set_demilitarized_zone = yes }
+				327 = { set_demilitarized_zone = yes }
+				567 = { set_demilitarized_zone = yes }
+				585 = { set_demilitarized_zone = yes }
+				549 = { set_demilitarized_zone = yes }
 		    }
 	    }
     }

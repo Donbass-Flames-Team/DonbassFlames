@@ -15,3 +15,17 @@ UKR_ukraine_army_idea = { #NATIONAL SPIRIT
 	conscription = UKR_AFU_conscription #-0.02
 	
 }
+
+arisse_donbas_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_org_factor = 0.10
+	army_attack_factor = 0.075
+	army_defence_factor = 0.15
+	army_org_regain = 0.075
+	army_morale_factor = 0.05
+	army_speed_factor = 0.15
+	supply_factor = 0.075
+}

@@ -41,11 +41,28 @@ country_event = {
 
 	immediate = { 
 		hidden_effect = {
+			432 = { transfer_state_to = DPR }
+			424 = { transfer_state_to = DPR }
+			526 = { transfer_state_to = DPR }
+			650 = { transfer_state_to = DPR }
 			DPR = {
-				declare_war_on = {
-                    target = UKR
-                    type = annex_everything
-                }
+				add_state_core = 432
+				add_state_core = 448
+				add_state_core = 467
+				add_state_core = 489
+				add_state_core = 486
+				add_state_core = 444
+				add_state_core = 438
+				add_state_core = 527
+				add_state_core = 450
+				add_state_core = 518
+				add_state_core = 502
+				add_state_core = 527
+				add_state_core = 526
+				add_state_core = 424
+			}
+			DPR = {
+				load_oob = Donetsk_Uprising_Militia
 			}
 			if = {
 				limit = {
@@ -92,6 +109,10 @@ country_event = {
 			        }					
 				}
 			}
+			country_event = {
+				id = ukraine.26
+				days = 6
+			}
 		}
 	}
 	
@@ -118,13 +139,17 @@ country_event = {
 
 	immediate = { 
 		hidden_effect = {
+			340 = { transfer_state_to = LPR }
+			LPR = {
+				add_state_core = 340
+			}
 			LPR = {
 				declare_war_on = {
                     target = UKR
                     type = annex_everything
                 }
+				load_oob = Luhansk_Uprising_Militia
 			}
-		}
 		if = {
 			limit = {
 				check_variable = {
@@ -169,7 +194,17 @@ country_event = {
 				    amount = 4500 
 			    }					
 			}
-		}		
+		}
+		    340 = {
+			    add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = LPR days = 55 }
+		    }
+		    351 = {
+			    add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = LPR days = 55 }
+		    }
+		    329 = {
+			    add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = LPR days = 55 }
+		    }
+	    }		
 	}
 	
 	option = {
@@ -195,6 +230,14 @@ country_event = {
 
 	immediate = { 
 		hidden_effect = {
+			212 = { transfer_state_to = KPR }
+			KPR = {
+				add_state_core = 212
+				add_state_core = 203
+			}
+			KPR = {
+				load_oob = Kharkov_Uprising_Militia
+			}
 			KPR = {
 				declare_war_on = {
                     target = UKR
@@ -272,6 +315,10 @@ country_event = {
 
 	immediate = { 
 		hidden_effect = {
+			572 = { transfer_state_to = OPR }
+			OPR = {
+				add_state_core = 572
+			}
 			OPR = {
 				declare_war_on = {
                     target = UKR
@@ -820,7 +867,9 @@ country_event = {
 		name = ukraine.22.a
 		random_list = {
 		    95 = {
+				set_country_flag = Yanukovich_escaped
                 complete_national_focus = UKR_yanukovich_escaped
+				mark_focus_tree_layout_dirty = yes
             }
             5 = {
                 complete_national_focus = UKR_arrest_yanukovich
@@ -830,6 +879,8 @@ country_event = {
 
 	option = {
 		name = ukraine.22.b
+		set_country_flag = Yanukovich_escaped
+		mark_focus_tree_layout_dirty = yes
 		complete_national_focus = UKR_yanukovich_escaped
 	}
 } 
@@ -874,5 +925,64 @@ country_event = {
 
 	option = {
 		name = ukraine.25.a
+	}
+}
+
+# Girkin arrived in Slavyansk
+country_event = {
+	id = ukraine.26
+	title = ukraine.26.t
+	desc = ukraine.26.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			318 = { transfer_state_to = DPR }
+			DPR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				load_oob = Donetsk_Slavyansk_Militia
+			}
+			if = {
+				limit = { 
+					NOT = {
+						has_completed_focus = UKR_start_of_ato
+					}
+				}
+				complete_national_focus = UKR_start_of_ato
+			}
+			432 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 35 }
+			}	
+			486 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 50 }
+			}
+			448 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 50 }
+			}
+			444 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 50 }
+			}
+			402 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 50 }
+			}
+			438 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 50 }
+			}
+			430 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 50 }
+			}
+			318 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 15 }
+			}	
+		}
+	}
+
+	option = {
+		name = ukraine.26.a
 	}
 }
