@@ -1,5 +1,5 @@
 division_template = {
-	name = "Crimean Militia"
+	name = "Desantno-Shturmovoi Batalyon"
 	regiments = {
         infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -9,75 +9,60 @@ division_template = {
 
 units = {
     division= {
-        name = "TEST DIVKA"
-        location = 14681
-        division_template = "Crimean Militia"
-        start_experience_factor = 1
+        name = "1-y desantno-shturmovoy batal'on 108-go desantno-shturmovogo polka"
+        location = 17406
+        division_template = "Desantno-Shturmovoi Batalyon"
+        start_experience_factor = 0.36
         start_equipment_factor = 1
 		start_manpower_factor = 1
     }
     division= {
-        name = "TEST DIVKA"
-        location = 4444
-        division_template = "Crimean Militia"
-        start_experience_factor = 1
+        name = "2-y desantno-shturmovoy batal'on 108-go desantno-shturmovogo polka"
+        location = 17406
+        division_template = "Desantno-Shturmovoi Batalyon"
+        start_experience_factor = 0.33
         start_equipment_factor = 1
 		start_manpower_factor = 1
     }
     division= {
-        name = "TEST DIVKA"
-        location = 6405
-        division_template = "Crimean Militia"
-        start_experience_factor = 1
+        name = "542-y otdel'nyy desantno-shturmovoy batal'on morskoy pekhoty"
+        location = 17392
+        division_template = "Desantno-Shturmovoi Batalyon"
+        start_experience_factor = 0.33
         start_equipment_factor = 1
 		start_manpower_factor = 1
     }
     division= {
-        name = "TEST DIVKA"
-        location = 2678
-        division_template = "Crimean Militia"
-        start_experience_factor = 1
+        name = "382-y otdel'nyy batal'on morskoy pekhoty"
+        location = 17189
+        division_template = "Desantno-Shturmovoi Batalyon"
+        start_experience_factor = 0.33
         start_equipment_factor = 1
 		start_manpower_factor = 1
     }
     division= {
-        name = "TEST DIVKA"
-        location = 14588
-        division_template = "Crimean Militia"
-        start_experience_factor = 1
+        name = "1-y desantno-shturmovoy batal'on 31-oy otdel'noy gvardeyskoy desantno-shturmovoy brigady"
+        location = 17406
+        division_template = "Desantno-Shturmovoi Batalyon"
+        start_experience_factor = 0.36
         start_equipment_factor = 1
 		start_manpower_factor = 1
     }
     division= {
-        name = "TEST DIVKA"
-        location = 14597
-        division_template = "Crimean Militia"
-        start_experience_factor = 1
+        name = "2-y desantno-shturmovoy batal'on 31-oy otdel'noy gvardeyskoy desantno-shturmovoy brigady"
+        location = 17406
+        division_template = "Desantno-Shturmovoi Batalyon"
+        start_experience_factor = 0.33
         start_equipment_factor = 1
 		start_manpower_factor = 1
     }
     division= {
-        name = "TEST DIVKA"
-        location = 3096
-        division_template = "Crimean Militia"
-        start_experience_factor = 1
+        name = "3-y parashyutno-desantnyy batal'on 31-oy otdel'noy gvardeyskoy desantno-shturmovoy brigady"
+        location = 17406
+        division_template = "Desantno-Shturmovoi Batalyon"
+        start_experience_factor = 0.33
         start_equipment_factor = 1
 		start_manpower_factor = 1
     }
-    division= {
-        name = "TEST DIVKA"
-        location = 4615
-        division_template = "Crimean Militia"
-        start_experience_factor = 1
-        start_equipment_factor = 1
-		start_manpower_factor = 1
-    }
-    division= {
-        name = "TEST DIVKA"
-        location = 14430
-        division_template = "Crimean Militia"
-        start_experience_factor = 1
-        start_equipment_factor = 1
-		start_manpower_factor = 1
-    }
+
 }

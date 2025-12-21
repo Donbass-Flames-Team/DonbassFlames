@@ -959,15 +959,24 @@ country_event = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 35 }
 			}	
 			486 = {
-				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 50 }
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 55 }
 			}
 			448 = {
-				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 50 }
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 55 }
 			}
 			444 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 55 }
+			}
+			518 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 50 }
+			}
+			502 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 50 }
 			}
 			402 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 50 }
+			}
+			489 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 50 }
 			}
 			438 = {
@@ -979,10 +988,65 @@ country_event = {
 			318 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 15 }
 			}	
+			291 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 15 }
+			}
+			337 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 25 }
+			}
+			359 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 25 }
+			}
+			402 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 45 }
+			}
+			381 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 45 }
+			}
+			421 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 45 }
+			}
+			390 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 45 }
+			}
+			408 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 45 }
+			}
+			342 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 45 }
+			}
+			381 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 45 }
+			}
 		}
 	}
 
 	option = {
 		name = ukraine.26.a
+	}
+}
+
+# Detected Russian troops in Crimea
+country_event = {
+	id = ukraine.27
+	title = ukraine.27.t
+	desc = ukraine.27.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_autonomy = {
+                target = CRI
+                autonomous_state = autonomy_free
+                end_wars = no
+                end_civil_wars = no
+            }
+		}
+	}
+
+	option = {
+		name = ukraine.27.a
 	}
 }

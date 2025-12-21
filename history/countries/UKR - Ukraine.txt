@@ -9,6 +9,12 @@ DF_economy_setup = yes
 		days = 725
 	}
 
+	set_autonomy = {
+	    target = CRI
+	    autonomous_state = autonomy_integrated_puppet
+	    freedom_level = 0.5
+    }
+
 	set_country_flag = UKRBeforeOverthrowOfYanukovych
 	set_country_flag = Speaker_Is_Turchinov
 	set_country_flag = 7_congress_of_rada

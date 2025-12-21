@@ -4,11 +4,12 @@ state={
 	provinces={
 		1587 6222 17304 17314 17324 18203
 	}
-history= {
-		owner = UKR
+    history= {
+		owner = CRI
+		add_core_of = CRI
 		add_core_of = UKR
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			industrial_complex = 1
 		}
 	}

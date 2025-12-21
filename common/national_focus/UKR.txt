@@ -746,6 +746,9 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_arrest_yanukovich"
 			add_stability = 0.025
 			add_political_power = 25
+			RUS = {
+				set_country_flag = CoupInUkraine
+			}
 		}
 	}
 
@@ -786,7 +789,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovich_escaped"
             add_political_power = -15
-			
+			RUS = {
+				set_country_flag = CoupInUkraine
+			}
 		}
 	}
 
@@ -2346,7 +2351,7 @@ focus_tree = {
 	focus = {
 		id = UKR_leave_the_peninsula
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 0.5
+		cost = 0.2
 		x = 1
 		y = 2
 
@@ -2374,7 +2379,7 @@ focus_tree = {
 	focus = {
 		id = UKR_pick_up_weapons_from_warehouses
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 0.3
+		cost = 0.2
 		x = 1
 		y = 3
 

@@ -4,15 +4,16 @@ state={
 	provinces={
 		152 4930 5908 6045 6122 6220 8725 9509 9586 9700 9971 17352 17359 17366 17376 17383 17384 17388 17392 17405 17406 17408 17409 17411 17412 17413 17414 17415 17417 17419 17423 17425 17429 17431 17436 17437 17439 17440 17441 17444 17445 17452 18209
 	}
-history= {
+    history= {
 		owner = UKR
+		add_core_of = CRI
 		add_core_of = UKR
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 4
+			industrial_complex = 3
 		}
 	}
 	buildings_max_level_factor=1.000
-    manpower=390000
-    state_category = town
+    manpower= 342580
+    state_category = city
 }

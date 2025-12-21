@@ -4,8 +4,9 @@ state={
 	provinces={
 		16972 
 	}
-history= {
-		owner = UKR
+    history= {
+		owner = CRI
+		add_core_of = CRI
 		add_core_of = UKR
 		buildings = {
 			infrastructure = 3
@@ -13,6 +14,6 @@ history= {
 		}
 	}
 	buildings_max_level_factor=1.000
-    manpower=5000
+    manpower=300
     state_category = town
 }

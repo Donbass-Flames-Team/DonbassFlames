@@ -420,7 +420,7 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 15
 		}
 
 		available = {
@@ -470,13 +470,20 @@ focus_tree = {
 
 		completion_reward = {
 			load_oob = "Crimean_green_people_RUS"
+			640 = { transfer_state_to = RUS }
+			621 = { transfer_state_to = RUS }
+			hidden_effect = {
+				UKR = {
+			        country_event = ukraine.27
+			    }
+			}
 		}
 	}
 
 	focus = {
 		id = RUS_support_independent_crimea
 		icon = GFX_goal_no_focus_RUS
-		cost = 1
+		cost = 0.2
 		x = 0
 		y = 2
 
@@ -572,6 +579,9 @@ focus_tree = {
 		}
 
 		available = {
+			NOT = {
+				country_exists = CRI
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1201,6 +1211,33 @@ focus_tree = {
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
 		x = 0
+		y = 1
+
+		prerequisite = { focus = RUS_shaky_peace_in_donbass }
+		relative_position_id = RUS_shaky_peace_in_donbass
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_continue_gerasimov_doctrine
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = -5
 		y = 1
 
 		prerequisite = { focus = RUS_shaky_peace_in_donbass }
