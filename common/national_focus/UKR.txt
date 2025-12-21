@@ -966,7 +966,7 @@ focus_tree = {
 	focus = {
 		id = UKR_unrest_in_the_east
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 0.5
 		x = 11
 		y = 7
 
@@ -1008,7 +1008,7 @@ focus_tree = {
 	focus = {
 		id = UKR_army_review
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 0.5
+		cost = 0.3
 		x = 0
 		y = 1
 
@@ -1069,7 +1069,7 @@ focus_tree = {
 	focus = {
 		id = UKR_forced_demobilization
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 0.5
+		cost = 0.3
 		x = 2
 		y = 2
 
@@ -1083,6 +1083,11 @@ focus_tree = {
 
 		bypass = {
 			has_global_flag = Start_Of_ATO
+		}
+		bypass_effect = {
+		    add_to_variable = { UKR_AFU_army_org_factor = 0.075 }
+			add_to_variable = { UKR_AFU_army_morale_factor = 0.15 }
+			custom_effect_tooltip = UKR_forced_demobilization_tt
 		}
 
 		available = {
@@ -1100,7 +1105,7 @@ focus_tree = {
 	focus = {
 		id = UKR_creation_of_tro
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 0.5
+		cost = 0.3
 		x = 2
 		y = 3
 
@@ -1115,15 +1120,31 @@ focus_tree = {
 		bypass = {
 			has_global_flag = Start_Of_ATO
 		}
+		bypass_effect = {
+			add_to_variable = { UKR_AFU_army_org_factor = 0.15 }
+		    custom_effect_tooltip = UKR_creation_of_tro_tt
+			hidden_effect = {
+				country_event = {
+                    id = ukraine.28
+                    days = 46
+                }
+			}
+		}
 
 		available = {
-
+            has_completed_focus = UKR_partial_mobilization
 		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 			add_to_variable = { UKR_AFU_army_org_factor = 0.15 }
 		    custom_effect_tooltip = UKR_creation_of_tro_tt
+			hidden_effect = {
+				country_event = {
+                    id = ukraine.28
+                    days = 46
+                }
+			}
 		}
 	}
 
@@ -2436,7 +2457,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_partial_mobilization"
-
+             
 		}
 	}
 

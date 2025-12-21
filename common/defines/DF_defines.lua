@@ -73,3 +73,6 @@ NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 4		-- Min height of regiments i
 NDefines.NMilitary.DIVISIONAL_COMMANDER_TRAIT_XP_REQUIREMENT = 600.0	--Get a trait if any valid options & xp gained >= this
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5
+
+NDefines.NMilitary.ATTRITION_WHILE_MOVING_FACTOR = 1				-- Attrition multiplier while a unit is moving
+NDefines.NMilitary.ATTRITION_WHILE_MOVING_FACTOR = 0.2				-- attrition multiplier while moving & doing missions
