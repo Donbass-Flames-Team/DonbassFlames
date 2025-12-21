@@ -1050,3 +1050,65 @@ country_event = {
 		name = ukraine.27.a
 	}
 }
+
+# First wave of mobilization 2014
+country_event = {
+	id = ukraine.28
+	title = ukraine.28.t
+	desc = ukraine.28.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+        load_oob = UKR_First_Wave_of_mobilization_2014
+	}
+
+	option = {
+		name = ukraine.28.a
+		country_event = {
+            id = ukraine.29
+            days = 46
+        }
+	}
+}
+
+# Second wave of mobilization 2014
+country_event = {
+	id = ukraine.29
+	title = ukraine.29.t
+	desc = ukraine.29.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+        load_oob = UKR_Second_Wave_of_mobilization_2014
+	}
+
+	option = {
+		name = ukraine.29.a
+		country_event = {
+            id = ukraine.30
+            days = 46
+        }
+	}
+}
+
+# Third wave of mobilization 2014
+country_event = {
+	id = ukraine.30
+	title = ukraine.30.t
+	desc = ukraine.30.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+        load_oob = UKR_Third_Wave_of_mobilization_2014
+	}
+
+	option = {
+		name = ukraine.30.a
+	}
+}
