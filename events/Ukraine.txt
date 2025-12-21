@@ -1112,3 +1112,110 @@ country_event = {
 		name = ukraine.30.a
 	}
 }
+
+# Execution of the heavenly hundred
+country_event = {
+	id = ukraine.31
+	title = ukraine.31.t
+	desc = ukraine.31.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.31.a
+		add_political_power = -100
+	}
+}
+
+# Russia sent titushki 
+country_event = {
+	id = ukraine.32
+	title = ukraine.32.t
+	desc = ukraine.32.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.32.a
+		custom_effect_tooltip = ukraine_increase_prorussian_moods_tt
+        hidden_effect = {
+			subtract_from_variable = {
+		        var = Donetsk_proukranian_support_value
+		        value = 5
+	        }
+			add_to_variable = {
+		        var = Donetsk_prorussian_support_value
+		        value = 5
+	        }
+			clamp_variable = {
+		        var = Donetsk_proukranian_support_value
+		        min = 0
+		        max = 100
+	        }
+			clamp_variable = {
+		        var = Donetsk_prorussian_support_value
+		        min = 0
+		        max = 100
+	        }
+
+			subtract_from_variable = {
+		        var = Luhansk_proukranian_support_value
+		        value = 5
+	        }
+			add_to_variable = {
+		        var = Luhansk_prorussian_support_value
+		        value = 5
+	        }
+			clamp_variable = {
+		        var = Luhansk_proukranian_support_value
+		        min = 0
+		        max = 100
+	        }
+			clamp_variable = {
+		        var = Luhansk_prorussian_support_value
+		        min = 0
+		        max = 100
+	        }
+			
+			subtract_from_variable = {
+		        var = Kharkiv_proukranian_support_value
+		        value = 5
+	        }
+			add_to_variable = {
+		        var = Kharkiv_prorussian_support_value
+		        value = 5
+	        }
+			clamp_variable = {
+		        var = Kharkiv_proukranian_support_value
+		        min = 0
+		        max = 100
+	        }
+			clamp_variable = {
+		        var = Kharkiv_prorussian_support_value
+		        min = 0
+		        max = 100
+	        }	
+			
+			subtract_from_variable = {
+		        var = Odesa_proukranian_support_value
+		        value = 5
+	        }
+			add_to_variable = {
+		        var = Odesa_prorussian_support_value
+		        value = 5
+	        }
+			clamp_variable = {
+		        var = Odesa_proukranian_support_value
+		        min = 0
+		        max = 100
+	        }
+			clamp_variable = {
+		        var = Odesa_prorussian_support_value
+		        min = 0
+		        max = 100
+	        }
+		}
+	}
+}

@@ -311,6 +311,9 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+			UKR = {
+				country_event = ukraine.32
+			}
 		}
 	}
 
