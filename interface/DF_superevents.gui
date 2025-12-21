@@ -11,18 +11,6 @@ guiTypes = {
 		fade_type = linear
 		click_to_front = no
 		clipping = no
-		
-		background = {
-			name = "background"		
-			quadTextureSprite ="GFX_supereventsbg"
-		}
-
-		iconType = {
-			name = "supereventsbg_test"		
-			quadTextureSprite ="GFX_supereventsbg_test"
-			position = { x = 0 y = 0 }
-			alwaystransparent = yes
-		}
 
 		iconType = {
 			name = "superevents_start_of_ato"
@@ -42,33 +30,33 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "superevents_title"
-			position = { x = -200 y = 75 }
+			position = { x = -200 y = 80 }
 			font = "hoi_30header"
 			format = CENTER
 			borderSize = {x = 0 y = 0}
-			text = "[GetSupereventsTitle]"
+			text = "[get_super_event_title]"
 			maxWidth = 1000
 			maxHeight = 893
 			fixedsize = yes
 		}
 		instantTextboxType = {
 			name = "superevents_quote"
-			position = { x = 215 y = 340 }
+			position = { x = 280 y = 340 }
 			font = "hoi_18mbs"
 			format = right
 			borderSize = {x = 0 y = 0}
-			text = "[GetSupereventsBody]"
+			text = "[get_super_event_quote]"
 			maxWidth = 300
 			maxHeight = 300
 			fixedsize = yes
 		}
 		instantTextboxType = {
 			name = "superevents_remark"
-			position = { x = 73 y = 527 }
+			position = { x = 51 y = 504 }
 			font = "hoi_20b"
 			format = CENTER
 			borderSize = {x = 0 y = 0}
-			text = "[GetSupereventsRemark]"
+			text = "[get_super_event_remark]"
 			maxWidth = 500
 			maxHeight = 893
 			fixedsize = yes
