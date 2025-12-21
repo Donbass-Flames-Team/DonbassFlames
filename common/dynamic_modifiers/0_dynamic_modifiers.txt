@@ -29,3 +29,13 @@ arisse_donbas_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
 	army_speed_factor = 0.15
 	supply_factor = 0.075
 }
+
+crimean_spring_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_speed_factor = 0.65
+	army_org_regain = 0.35
+	supply_factor = 0.15
+}
