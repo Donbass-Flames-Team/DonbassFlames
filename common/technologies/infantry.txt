@@ -101,6 +101,22 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
+		infantry = {
+			soft_attack = 0.05
+		}
+		marine = {
+			soft_attack = 0.05
+		}
+		mountaineers = {
+			soft_attack = 0.05
+		}
+		paratrooper = {
+		    soft_attack = 0.05
+		}
+		special_forces_infantry = {
+		    soft_attack = 0.05
+		}
+
 		research_cost = 1.5
 		start_year = 1970
 		folder = {
@@ -174,7 +190,23 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_weapons4
 			research_cost_coeff = 1
-		}		
+		}	
+		
+		infantry = {
+			soft_attack = 0.05
+		}
+		marine = {
+			soft_attack = 0.05
+		}
+		mountaineers = {
+			soft_attack = 0.05
+		}
+		paratrooper = {
+		    soft_attack = 0.05
+		}
+		special_forces_infantry = {
+		    soft_attack = 0.05
+		}
 
 		research_cost = 1.5
 		start_year = 1936
@@ -201,7 +233,23 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_weapons5
 			research_cost_coeff = 1
-		}		
+		}	
+		
+	    infantry = {
+			soft_attack = 0.05
+		}
+		marine = {
+			soft_attack = 0.05
+		}
+		mountaineers = {
+			soft_attack = 0.05
+		}
+		paratrooper = {
+		    soft_attack = 0.05
+		}
+		special_forces_infantry = {
+		    soft_attack = 0.05
+		}
 
 		research_cost = 1.5
 		start_year = 1936
@@ -230,6 +278,22 @@ technologies = {
 			research_cost_coeff = 1
 		}	
 
+		infantry = {
+			soft_attack = 0.05
+		}
+		marine = {
+			soft_attack = 0.05
+		}
+		mountaineers = {
+			soft_attack = 0.05
+		}
+		paratrooper = {
+		    soft_attack = 0.05
+		}
+		special_forces_infantry = {
+		    soft_attack = 0.05
+		}
+
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
@@ -257,6 +321,22 @@ technologies = {
 			research_cost_coeff = 1
 		}	
 
+		infantry = {
+			soft_attack = 0.05
+		}
+		marine = {
+			soft_attack = 0.05
+		}
+		mountaineers = {
+			soft_attack = 0.05
+		}
+		paratrooper = {
+		    soft_attack = 0.05
+		}
+		special_forces_infantry = {
+		    soft_attack = 0.05
+		}
+
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
@@ -277,6 +357,22 @@ technologies = {
 
 		enable_equipments = {
 			infantry_equipment_7
+		}
+
+		infantry = {
+			soft_attack = 0.05
+		}
+		marine = {
+			soft_attack = 0.05
+		}
+		mountaineers = {
+			soft_attack = 0.05
+		}
+		paratrooper = {
+		    soft_attack = 0.05
+		}
+		special_forces_infantry = {
+		    soft_attack = 0.05
 		}
 
 		research_cost = 1.5
@@ -460,7 +556,7 @@ technologies = {
 	atgl_weapons_4 = {
 
 		enable_equipments = {
-			rpg_equipment_4
+			grenade_launcher_equipment_4
 		}
 
 		path = {
@@ -487,7 +583,7 @@ technologies = {
 	atgl_weapons_5 = {
 
 		enable_equipments = {
-			rpg_equipment_5
+			grenade_launcher_equipment_5
 		}
 
 		path = {
@@ -514,7 +610,7 @@ technologies = {
 	atgl_weapons_6 = {
 
 		enable_equipments = {
-			rpg_equipment_6
+			grenade_launcher_equipment_6
 		}
 
 		path = {
@@ -921,8 +1017,7 @@ technologies = {
 
 	tech_trucks = {
 		enable_equipments = {
-			truck_chassis_0
-			#rocket_artillery_equipment_0
+			motorized_equipment
 		}
 		
 		path = {
@@ -943,7 +1038,7 @@ technologies = {
 	}
 	tech_trucks_1 = {
 		enable_equipments = {
-			truck_chassis_1
+			motorized_equipment_1
 		}
 		
 		path = {
@@ -985,7 +1080,7 @@ technologies = {
 	}
 	tech_trucks_3 = {
 		enable_equipments = {
-			truck_chassis_3
+			motorized_equipment_3
 		}
 
 		research_cost = 1.5
