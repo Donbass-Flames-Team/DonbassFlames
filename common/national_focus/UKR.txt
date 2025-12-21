@@ -858,6 +858,7 @@ focus_tree = {
 				mark_focus_tree_layout_dirty = yes
 				set_country_flag = Elections2014InProgress
 				complete_national_focus = UKR_snap_presidential_elections
+				set_global_flag = UKRelectionsofpresident2014
 			}
 		}
 	}
@@ -1044,6 +1045,9 @@ focus_tree = {
 		prerequisite = { focus = UKR_army_review }
 		relative_position_id = UKR_unrest_in_the_east
 
+		ai_will_do = {
+			factor = 25
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1076,6 +1080,9 @@ focus_tree = {
 		prerequisite = { focus = UKR_army_review }
 		relative_position_id = UKR_unrest_in_the_east
 
+		ai_will_do = {
+			factor = 25
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1112,6 +1119,9 @@ focus_tree = {
 		prerequisite = { focus = UKR_forced_demobilization }
 		relative_position_id = UKR_unrest_in_the_east
 
+		ai_will_do = {
+			factor = 25
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1889,6 +1899,10 @@ focus_tree = {
 			has_completed_focus = UKR_start_of_ato
 		}
 
+		ai_will_do = {
+			factor = 25
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1940,6 +1954,9 @@ focus_tree = {
 		prerequisite = { focus = UKR_emergency_redeployment_of_troops }
 		relative_position_id = UKR_start_of_ato
 
+		ai_will_do = {
+			factor = 25
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2052,6 +2069,9 @@ focus_tree = {
 		prerequisite = { focus = UKR_organize_defense }
 		relative_position_id = UKR_start_of_ato
 
+		ai_will_do = {
+			factor = 20
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2076,6 +2096,9 @@ focus_tree = {
 		prerequisite = { focus = UKR_general_staff }
 		relative_position_id = UKR_start_of_ato
 
+		ai_will_do = {
+			factor = 25
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2203,6 +2226,9 @@ focus_tree = {
 		prerequisite = { focus = UKR_emergency_redeployment_of_troops }
 		relative_position_id = UKR_start_of_ato
 
+		ai_will_do = {
+			factor = 25
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2231,6 +2257,9 @@ focus_tree = {
 		prerequisite = { focus = UKR_volunteer_battalions }
 		relative_position_id = UKR_volunteer_battalions
 
+		ai_will_do = {
+			factor = 25
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2257,6 +2286,9 @@ focus_tree = {
 		prerequisite = { focus = UKR_volunteer_battalions }
 		relative_position_id = UKR_volunteer_battalions
 
+		ai_will_do = {
+			factor = 25
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2307,6 +2339,10 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_unrest_in_crimea }
 		relative_position_id = UKR_unrest_in_crimea
+
+		ai_will_do = {
+			factor = 25
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2380,6 +2416,10 @@ focus_tree = {
 		mutually_exclusive = { focus = UKR_no_step_back_from_crimea }
 		relative_position_id = UKR_unrest_in_crimea
 
+		ai_will_do = {
+			factor = 25
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2406,6 +2446,10 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_leave_the_peninsula }
 		relative_position_id = UKR_unrest_in_crimea
+
+		ai_will_do = {
+			factor = 25
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2438,6 +2482,10 @@ focus_tree = {
 		prerequisite = { focus = UKR_pick_up_weapons_from_warehouses focus = UKR_organize_defence_in_crimea }
 		relative_position_id = UKR_unrest_in_crimea
 
+	    ai_will_do = {
+			factor = 25
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2464,7 +2512,7 @@ focus_tree = {
 	focus = {
 		id = UKR_information_campaign_against_maidan
 		icon = GFX_goal_no_focus_UKR
-		cost = 0.7
+		cost = 1
 		x = 6
 		y = 1
 
@@ -2528,7 +2576,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Financing_pro_government_protests"
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
-				days = 5
+				days = 2
 			}
 		}
 	}
@@ -2551,7 +2599,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Coordination_with_pro_Russian_movements"
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
-				days = 3
+				days = 2
 			}
 			add_to_variable = {
                 var = DPR_separatism_value
