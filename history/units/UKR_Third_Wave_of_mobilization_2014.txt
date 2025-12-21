@@ -1,0 +1,55 @@
+units = {
+    division= {
+        name = "18-y batal'on TRO «Odessa»"
+        location = 8540
+        division_template = "Batal'on TRO"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "19-y batal'on TRO «Nikolayev»"
+        location = 8540
+        division_template = "Batal'on TRO"
+        start_experience_factor = 0.05
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "20-y batal'on TRO «Dnepropetrovsk»"
+        location = 8540
+        division_template = "Batal'on TRO"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "21-y batal'on TRO «Kherson»"
+        location = 8540
+        division_template = "Batal'on TRO"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.9
+    }
+
+    division= {
+        name = "22-y batal'on TRO «Khar'kov»"
+        location = 8540
+        division_template = "Batal'on TRO"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.4
+    }
+
+    division= {
+        name = "23-y batal'on TRO «Zaporozh'ye»"
+        location = 8540
+        division_template = "Batal'on TRO"
+        start_experience_factor = 0.05
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.9
+    }
+}
