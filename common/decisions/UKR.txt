@@ -164,6 +164,7 @@ UKR_separatism_decision = {
 		}
 		visible = {
 			tag = UKR
+			has_completed_focus = UKR_unrest_in_the_east
 			
 		}
 		icon = GFX_decision_coat_of_arms_odessa_oblast
@@ -206,6 +207,7 @@ UKR_separatism_decision = {
 			173 = { set_demilitarized_zone = no }
 			230 = { set_demilitarized_zone = no }
 			208 = { set_demilitarized_zone = no }
+			clr_country_flag = UKR_separatist_cells_in_kharkov
 		}
 
 		ai_will_do = {
@@ -248,6 +250,7 @@ UKR_separatism_decision = {
 			549 = { set_demilitarized_zone = no }
 			499 = { set_demilitarized_zone = no }
 			477 = { set_demilitarized_zone = no }
+			clr_country_flag = UKR_separatist_cells_in_odessa
 		}
 
 		ai_will_do = {
@@ -653,6 +656,8 @@ UKR_maidan_decision = {
 						id = ukraine.24
 						days = 73
 					}
+					set_country_flag = UKR_separatist_cells_in_odessa
+					set_country_flag = UKR_separatist_cells_in_kharkov
 			    }
 				388 = { set_demilitarized_zone = yes }
 				441 = { set_demilitarized_zone = yes }

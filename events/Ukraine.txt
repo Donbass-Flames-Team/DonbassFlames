@@ -60,6 +60,12 @@ country_event = {
 				add_state_core = 527
 				add_state_core = 526
 				add_state_core = 424
+				add_state_core = 652
+				add_state_core = 402
+				add_state_core = 388
+				add_state_core = 573
+				add_state_core = 395
+				add_state_core = 441
 			}
 			DPR = {
 				load_oob = Donetsk_Uprising_Militia
@@ -247,8 +253,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				182 = {
-					is_demilitarized_zone = yes
+				UKR = {
+				    has_country_flag = UKR_separatist_cells_in_kharkov
 				}
 			}
 			182 = { transfer_state_to = KPR }
@@ -353,11 +359,11 @@ country_event = {
 			}
 			if = {
 			    limit = {
-				    567 = {
-					    is_demilitarized_zone = yes
+				    UKR = {
+						has_country_flag = UKR_separatist_cells_in_odessa
 				    }
-			    }
-			    567 = { transfer_state_to = KPR }
+				}
+				567 = { transfer_state_to = KPR }
 		     	549 = { transfer_state_to = KPR }
 			    499 = { transfer_state_to = KPR }
 			    477 = { transfer_state_to = KPR }
@@ -371,14 +377,14 @@ country_event = {
 		        499 = {
 			        add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = KPR days = 55 }
 		        }
-
-			    OPR = {
+				OPR = {
 		            add_equipment_to_stockpile = { 
 				        type = infantry_equipment_1 
 				        amount = 2500 
-			        }
+				    }
 			    }
-		    }
+				load_oob = OPR_Uprising_Militia
+			}
 			OPR = {
 				declare_war_on = {
                     target = UKR

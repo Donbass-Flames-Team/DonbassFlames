@@ -1,0 +1,62 @@
+division_template = {
+	name = "Odesskoye opolcheniye"
+	regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+	}
+}
+
+units = {
+    division= {
+        name = "1-y batal'on Odesskogo opolcheniya"
+        location = 8447
+        division_template = "Odesskoye opolcheniye"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "2-y batal'on Odesskogo opolcheniya"
+        location = 16832
+        division_template = "Odesskoye opolcheniye"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "3-y batal'on Odesskogo opolcheniya"
+        location = 11059
+        division_template = "Donetsk Militia"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "4-y batal'on Odesskogo opolcheniya"
+        location = 16801
+        division_template = "Odesskoye opolcheniye"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "5-y batal'on Odesskogo opolcheniya"
+        location = 16784
+        division_template = "Odesskoye opolcheniye"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "5-y batal'on Odesskogo opolcheniya"
+        location = 15811
+        division_template = "Odesskoye opolcheniye"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+}

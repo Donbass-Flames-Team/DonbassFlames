@@ -10,7 +10,7 @@ division_template = {
 
 units = {
     division= {
-        name = "1-st Donetsk Militia Battalion"
+        name = "1-y batal'on Donetskogo opolcheniya"
         location = 7500
         division_template = "Donetsk Militia"
         start_experience_factor = 0.3
@@ -18,7 +18,7 @@ units = {
 		start_manpower_factor = 1
     }
     division= {
-        name = "2-nd Donetsk Militia Battalion"
+        name = "2-y batal'on Donetskogo opolcheniya"
         location = 15766
         division_template = "Donetsk Militia"
         start_experience_factor = 0.3
@@ -26,7 +26,7 @@ units = {
 		start_manpower_factor = 1
     }
     division= {
-        name = "3-rd Donetsk Militia Battalion"
+        name = "3-y batal'on Donetskogo opolcheniya"
         location = 9377
         division_template = "Donetsk Militia"
         start_experience_factor = 0.3
@@ -34,7 +34,7 @@ units = {
 		start_manpower_factor = 1
     }
     division= {
-        name = "4-rd Donetsk Militia Battalion"
+        name = "4-y batal'on Donetskogo opolcheniya"
         location = 10391
         division_template = "Donetsk Militia"
         start_experience_factor = 0.3
@@ -43,7 +43,7 @@ units = {
     }
 
     division= {
-        name = "5-th Donetsk Militia Battalion"
+        name = "5-y batal'on Donetskogo opolcheniya"
         location = 10450
         division_template = "Donetsk Militia"
         start_experience_factor = 0.3
@@ -52,7 +52,7 @@ units = {
     }
 
     division= {
-        name = "5-ii batallyon Donetskogo Opolcheniya"
+        name = "5-y batal'on Donetskogo opolcheniya"
         location = 15811
         division_template = "Donetsk Militia"
         start_experience_factor = 0.3
@@ -61,7 +61,7 @@ units = {
     }
 
     division= {
-        name = "6-oi Battalyon Donetskogo Opolcheniya"
+        name = "6-y batal'on Donetskogo opolcheniya"
         location = 18222
         division_template = "Donetsk Militia"
         start_experience_factor = 0.3
@@ -70,7 +70,7 @@ units = {
     }
 
     division= {
-        name = "7-oi Battalyon Donetskogo Opolcheniya"
+        name = "7-oi batal'on Donetskogo opolcheniya"
         location = 18219
         division_template = "Donetsk Militia"
         start_experience_factor = 0.3
@@ -79,7 +79,7 @@ units = {
     }
 
     division= {
-        name = "8-oi Battalyon Donetskogo Opolcheniya"
+        name = "8-oi batal'on Donetskogo opolcheniya"
         location = 16470
         division_template = "Donetsk Militia"
         start_experience_factor = 0.3
@@ -88,7 +88,7 @@ units = {
     }
 
     division= {
-        name = "9-ii Battalyon Donetskogo Opolcheniya"
+        name = "9-ii batal'on Donetskogo opolcheniya"
         location = 18220
         division_template = "Donetsk Militia"
         start_experience_factor = 0.3
@@ -164,5 +164,67 @@ units = {
         start_experience_factor = 0.3
         start_equipment_factor = 0.5
 		start_manpower_factor = 0.3
+    }
+
+    division= {
+        name = "18-y batal'on Donetskogo opolcheniya"
+        location = 10391
+        division_template = "Donetsk Militia"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.3
+    }
+
+    division= {
+        name = "19-y batal'on Donetskogo opolcheniya"
+        location = 10391
+        division_template = "Donetsk Militia"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.3
+    }
+
+    division= {
+        name = "20-y batal'on Donetskogo opolcheniya"
+        location = 10391
+        division_template = "Donetsk Militia"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.3
+    }
+    division= {
+        name = "21-y batal'on Donetskogo opolcheniya"
+        location = 7500
+        division_template = "Donetsk Militia"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.3
+    }
+
+    division= {
+        name = "22-y batal'on Donetskogo opolcheniya"
+        location = 7500
+        division_template = "Donetsk Militia"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.2
+    }
+
+    division= {
+        name = "23-y batal'on Donetskogo opolcheniya"
+        location = 7500
+        division_template = "Donetsk Militia"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.2
+    }
+
+    division= {
+        name = "24-y batal'on Donetskogo opolcheniya"
+        location = 7500
+        division_template = "Donetsk Militia"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.4
+		start_manpower_factor = 0.25
     }
 }

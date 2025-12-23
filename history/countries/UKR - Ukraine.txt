@@ -38,6 +38,14 @@ DF_economy_setup = yes
 	
 	set_technology = {
 		infantry_weapons = 1
+		infantry_weapons = 2
+		infantry_weapons = 3
+		infantry_weapons = 4
+		infantry_weapons = 5
+
+		toward_artilerry = 1
+		spau_artillery = 1
+		multiple_launch_rocket_system = 1
 	}
     
 
