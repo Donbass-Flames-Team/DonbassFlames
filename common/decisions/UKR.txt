@@ -155,6 +155,117 @@ UKR_separatism_decision = {
 		}
 	}
 
+	UKR_raise_the_sbu = {
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+
+		}
+		visible = {
+			tag = UKR
+			
+		}
+		icon = GFX_decision_coat_of_arms_odessa_oblast
+		
+	    fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			custom_effect_tooltip = UKR_raise_the_sbu_tt
+			hidden_effect = {
+				set_country_flag = UKR_sbu_raised
+				load_oob = "UKR_raised_SBU_2014"
+			}
+		}
+		ai_will_do = {
+			factor = 175
+		}
+	}
+
+	UKR_conduct_kharkov_cleanups = {
+
+		icon = GFX_decision_generic_soldie
+        cost = 15
+		fire_only_once = yes
+		
+		available = {		
+		    tag = UKR
+		}
+	    
+		visible = {
+			tag = UKR
+			NOT = {
+				has_country_flag = UKR_kharkov_uprised
+			}
+			has_country_flag = UKR_sbu_raised
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = UKR_conduct_kharkov_cleanups_tt
+			182 = { set_demilitarized_zone = no }
+			173 = { set_demilitarized_zone = no }
+			230 = { set_demilitarized_zone = no }
+			208 = { set_demilitarized_zone = no }
+		}
+
+		ai_will_do = {
+			factor = 150	
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 182
+				state = 173
+				state = 230
+				state = 208
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	}
+
+	UKR_conduct_odessa_cleanups = {
+
+		icon = GFX_decision_generic_soldie
+        cost = 15
+		fire_only_once = yes
+		
+		available = {		
+		    tag = UKR
+		}
+	    
+		visible = {
+			tag = UKR
+			NOT = {
+				has_country_flag = UKR_odessa_uprised
+			}
+			has_country_flag = UKR_sbu_raised
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = UKR_conduct_odessa_cleanups_tt
+			567 = { set_demilitarized_zone = no }
+			549 = { set_demilitarized_zone = no }
+			499 = { set_demilitarized_zone = no }
+			477 = { set_demilitarized_zone = no }
+		}
+
+		ai_will_do = {
+			factor = 150	
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 567
+				state = 549
+				state = 499
+				state = 477
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	}
+
 	UKR_donetsk_uprising = {
 		icon = GFX_decision_flag_of_dpr
 		is_good = no
@@ -566,6 +677,12 @@ UKR_maidan_decision = {
 				567 = { set_demilitarized_zone = yes }
 				585 = { set_demilitarized_zone = yes }
 				549 = { set_demilitarized_zone = yes }
+				182 = { set_demilitarized_zone = yes }
+				173 = { set_demilitarized_zone = yes }
+				230 = { set_demilitarized_zone = yes }
+				208 = { set_demilitarized_zone = yes }
+			    499 = { set_demilitarized_zone = yes }
+		    	477 = { set_demilitarized_zone = yes }
 		    }
 	    }
     }

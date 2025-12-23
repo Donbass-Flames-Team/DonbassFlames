@@ -245,6 +245,34 @@ country_event = {
                 }
 			}
 		}
+		if = {
+			limit = {
+				182 = {
+					is_demilitarized_zone = yes
+				}
+			}
+			182 = { transfer_state_to = KPR }
+			173 = { transfer_state_to = KPR }
+			230 = { transfer_state_to = KPR }
+			208 = { transfer_state_to = KPR }
+
+			182 = {
+			    add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = KPR days = 55 }
+		    }
+		    173 = {
+			    add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = KPR days = 55 }
+		    }
+		    208 = {
+			    add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = KPR days = 55 }
+		    }
+
+			KPR = {
+		        add_equipment_to_stockpile = { 
+				    type = infantry_equipment_1 
+				    amount = 2500 
+			    }
+			}
+		}
 	    if = {
 			limit = {
 				check_variable = {
@@ -318,7 +346,39 @@ country_event = {
 			572 = { transfer_state_to = OPR }
 			OPR = {
 				add_state_core = 572
+				add_state_core = 567
+				add_state_core = 549
+				add_state_core = 499
+				add_state_core = 477
 			}
+			if = {
+			    limit = {
+				    567 = {
+					    is_demilitarized_zone = yes
+				    }
+			    }
+			    567 = { transfer_state_to = KPR }
+		     	549 = { transfer_state_to = KPR }
+			    499 = { transfer_state_to = KPR }
+			    477 = { transfer_state_to = KPR }
+
+			    567 = {
+			        add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = KPR days = 55 }
+		        }
+		        549 = {
+			        add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = KPR days = 55 }
+		        }
+		        499 = {
+			        add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = KPR days = 55 }
+		        }
+
+			    OPR = {
+		            add_equipment_to_stockpile = { 
+				        type = infantry_equipment_1 
+				        amount = 2500 
+			        }
+			    }
+		    }
 			OPR = {
 				declare_war_on = {
                     target = UKR
