@@ -754,17 +754,21 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
-			country_event = ukraine.20
-			add_popularity = {
-                ideology = autoritarian_democracy
-                popularity = 0.025
-            }
+			add_political_power = 50
 			swap_ideas = {
                 remove_idea = UKR_protests
                 add_idea = UKR_protests_in_the_east
             }
+			add_popularity = {
+                ideology = autoritarian_democracy
+                popularity = 0.025
+            }
 			add_stability = -0.025
-			mark_focus_tree_layout_dirty = yes
+			unlock_decision_tooltip = UKR_raise_the_sbu
+			hidden_effect = {
+				country_event = ukraine.20
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 
