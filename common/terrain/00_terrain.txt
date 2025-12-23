@@ -92,7 +92,7 @@ categories =  {
 	}
 	
 	plains = {
-		color = { 255 129 66 }
+		color = { 165 222 64 }
 		movement_cost = 1.0
 		ai_terrain_importance_factor = 0.1
 		combat_width = 70
@@ -102,25 +102,6 @@ categories =  {
 	}
 	
 	urban = {
-		color = { 120 120 120 }
-		movement_cost = 1.2
-		ai_terrain_importance_factor = 4.0
-		combat_width = 80
-		combat_support_width = 40
-		match_value = 4
-		sound_type = plains
-
-		units = {
-			attack = -0.3
-			#movement = -0.2
-		}
-
-		enemy_army_bonus_air_superiority_factor = -0.50
-				
-		supply_flow_penalty_factor = -0.2
-	}
-
-	kyiv_urban = {
 		color = { 120 120 120 }
 		movement_cost = 1.2
 		ai_terrain_importance_factor = 4.0
