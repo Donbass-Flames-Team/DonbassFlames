@@ -356,6 +356,7 @@ country_event = {
 				add_state_core = 549
 				add_state_core = 499
 				add_state_core = 477
+				load_oob = OPR_Uprising_Militia
 			}
 			if = {
 			    limit = {
@@ -363,19 +364,19 @@ country_event = {
 						has_country_flag = UKR_separatist_cells_in_odessa
 				    }
 				}
-				567 = { transfer_state_to = KPR }
-		     	549 = { transfer_state_to = KPR }
-			    499 = { transfer_state_to = KPR }
-			    477 = { transfer_state_to = KPR }
+				567 = { transfer_state_to = OPR }
+		     	549 = { transfer_state_to = OPR }
+			    499 = { transfer_state_to = OPR }
+			    477 = { transfer_state_to = OPR }
 
 			    567 = {
-			        add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = KPR days = 55 }
+			        add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = OPR days = 55 }
 		        }
 		        549 = {
-			        add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = KPR days = 55 }
+			        add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = OPR days = 55 }
 		        }
 		        499 = {
-			        add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = KPR days = 55 }
+			        add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = OPR days = 55 }
 		        }
 				OPR = {
 		            add_equipment_to_stockpile = { 
@@ -383,7 +384,6 @@ country_event = {
 				        amount = 2500 
 				    }
 			    }
-				load_oob = OPR_Uprising_Militia
 			}
 			OPR = {
 				declare_war_on = {

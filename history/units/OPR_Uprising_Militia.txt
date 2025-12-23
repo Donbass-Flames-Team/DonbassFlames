@@ -39,7 +39,7 @@ units = {
         division_template = "Odesskoye opolcheniye"
         start_experience_factor = 0.3
         start_equipment_factor = 0.5
-		start_manpower_factor = 1
+		start_manpower_factor = 0.6
     }
 
     division= {
@@ -48,15 +48,15 @@ units = {
         division_template = "Odesskoye opolcheniye"
         start_experience_factor = 0.3
         start_equipment_factor = 0.5
-		start_manpower_factor = 1
+		start_manpower_factor = 0.3
     }
 
     division= {
-        name = "5-y batal'on Odesskogo opolcheniya"
-        location = 15811
+        name = "6-y batal'on Odesskogo opolcheniya"
+        location = 8447
         division_template = "Odesskoye opolcheniye"
         start_experience_factor = 0.3
         start_equipment_factor = 0.5
-		start_manpower_factor = 1
+		start_manpower_factor = 0.5
     }
 }

@@ -81,24 +81,26 @@ if = {
 		basic_torpedo = 1
 	}
 }
-set_politics = {
-	ruling_party = democratic
-	last_election = "2014.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
 
-set_popularities = {
-	democratic = 50
-	fascism = 20
-	communism = 30
-}
+set_cosmetic_tag = CRI_UKR_cosmetic
 
 2013.11.21 = { 
-	set_cosmetic_tag = CRI_UKR_cosmetic
+
+    set_politics = {
+	    ruling_party = autoritarian_democracy
+	    last_election = "2014.1.1"
+	    election_frequency = 48
+	    elections_allowed = no
+    }
+
+    set_popularities = {
+	    liberal_democracy = 18
+	    conservatism_democracy = 34
+	    social_democracy = 3
+	    nationalism = 15
+	    communism = 9
+	    autoritarian_democracy = 21
+    }
 }
-
-
-recruit_character = CRI_ilyas_tarkhan
 
 
