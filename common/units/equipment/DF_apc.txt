@@ -1,5 +1,5 @@
 equipments = {
-	apc_chassis = {
+	apc_1 = {
 		year = 1960
 		is_archetype = yes
 		is_buildable = no
@@ -10,10 +10,91 @@ equipments = {
 		interface_category = interface_category_armor
 		priority = 1500
 
-		maximum_speed = 4
+		maximum_speed = 12
 		build_cost_ic = 1
-		reliability = 1
-		hardness = 1
+		reliability = 1.2
+		hardness = 0.95
+		armor_value = 2.3
+		supply_consumption = 0.1
+		resources = {
+			steel = 4
+			aluminium = 1
+			rubber = 1
+		}
+
+		manpower = 3
+		active = yes
+	}
+
+	apc_2 = {
+		year = 1980
+		is_archetype = yes
+		is_buildable = no
+
+		picture = archetype_light_tank_equipment
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 1500
+
+		maximum_speed = 12
+		build_cost_ic = 1
+		reliability = 1.2
+		hardness = 0.95
+		armor_value = 2.3
+		supply_consumption = 0.1
+		resources = {
+			steel = 4
+			aluminium = 1
+			rubber = 1
+		}
+
+		manpower = 3
+		active = yes
+	}
+
+	apc_3 = {
+		year = 2000
+		is_archetype = yes
+		is_buildable = no
+
+		picture = archetype_light_tank_equipment
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 1500
+
+		maximum_speed = 12
+		build_cost_ic = 1
+		reliability = 1.2
+		hardness = 0.95
+		armor_value = 2.3
+		supply_consumption = 0.1
+		resources = {
+			steel = 4
+			aluminium = 1
+			rubber = 1
+		}
+
+		manpower = 3
+		active = yes
+	}
+
+	apc_4 = {
+		year = 2020
+		is_archetype = yes
+		is_buildable = no
+
+		picture = archetype_light_tank_equipment
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 1500
+
+		maximum_speed = 12
+		build_cost_ic = 1
+		reliability = 1.2
+		hardness = 0.95
 		armor_value = 2.3
 		supply_consumption = 0.1
 		resources = {
@@ -26,3 +107,4 @@ equipments = {
 		active = yes
 	}
 }
+

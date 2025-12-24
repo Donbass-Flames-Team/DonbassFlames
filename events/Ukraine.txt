@@ -356,7 +356,6 @@ country_event = {
 				add_state_core = 549
 				add_state_core = 499
 				add_state_core = 477
-				load_oob = OPR_Uprising_Militia
 			}
 			if = {
 			    limit = {
@@ -384,6 +383,7 @@ country_event = {
 				        amount = 2500 
 				    }
 			    }
+				load_oob = OPR_Uprising_Militia
 			}
 			OPR = {
 				declare_war_on = {

@@ -7,6 +7,23 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/UKR_volunteer_battalions_image.dds"
 	}
 
+	### Generic
+
+	spriteType = {
+		name = "GFX_decision_icon_of_AK"
+		texturefile = "gfx/interface/decisions/icon_of_AK.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_icon_of_IFV"
+		texturefile = "gfx/interface/decisions/icon_of_IFV.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_icon_of_Tank"
+		texturefile = "gfx/interface/decisions/icon_of_Tank.dds"
+	}
+
 	### categories
 
 	spriteType = {

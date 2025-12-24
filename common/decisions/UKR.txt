@@ -851,12 +851,16 @@ UKR_depreservation_decision = {
 		visible = {
 			tag = UKR
 		}
+		icon = GFX_decision_icon_of_Tank
 		
 	    fire_only_once = no
 		days_re_enable = 60
 		cost = 75
 		complete_effect = {
-		    
+		    add_equipment_to_stockpile = { 
+				type = modern_tank_chassis 
+				amount = 150 
+			}
 		}
 		ai_will_do = {
 			factor = 75
@@ -870,12 +874,16 @@ UKR_depreservation_decision = {
 		visible = {
 			tag = UKR
 		}
+		icon = GFX_decision_icon_of_IFV
 		
 	    fire_only_once = no
 		days_re_enable = 60
-		cost = 75
+		cost = 65
 		complete_effect = {
-		    
+		    add_equipment_to_stockpile = { 
+				type = modern_tank_chassis 
+				amount = 150 
+			}
 		}
 		ai_will_do = {
 			factor = 75
@@ -889,12 +897,16 @@ UKR_depreservation_decision = {
 		visible = {
 			tag = UKR
 		}
+		icon = GFX_decision_icon_of_AK
 		
 	    fire_only_once = no
 		days_re_enable = 60
-		cost = 75
+		cost = 45
 		complete_effect = {
-		    
+		    add_equipment_to_stockpile = { 
+				type = infantry_equipment_1 
+				amount = 9500 
+			}
 		}
 		ai_will_do = {
 			factor = 75

@@ -1,0 +1,273 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "No Step Back" 
+	}
+	###############
+    ### Engines ###
+	###############
+	tank_engine_v_46 = {
+		abbreviation = "V46"
+		category = tank_heavy_engine_diesel_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.5
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+	tank_engine_v_84 = {
+		abbreviation = "V84"
+		category = tank_heavy_engine_diesel_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3
+			fuel_consumption = 4.5
+			reliability = -0.1
+			maximum_speed = 0.45
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+
+	tank_engine_v_92С2 = {
+		abbreviation = "V92С2"
+		category = tank_heavy_engine_diesel_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.5
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+
+	tank_engine_v_92S2F = {
+		abbreviation = "V92S2F"
+		category = tank_heavy_engine_diesel_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.55
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+
+	tank_engine_gtd_1000t = {
+		abbreviation = "gtd1000t"
+		category = tank_heavy_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.5
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+	tank_engine_gtd_1000F = {
+		abbreviation = "gtd1000F"
+		category = tank_heavy_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3.2
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.53
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+	tank_engine_gtd_1250 = {
+		abbreviation = "gtd1250"
+		category = tank_heavy_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3.3
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.55
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+
+	tank_engine_5tdf = {
+		abbreviation = "5tdf"
+		category = tank_heavy_engine_diesel_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 2.3
+			fuel_consumption = 4.2
+			reliability = -0.1
+			maximum_speed = 0.43
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+
+	tank_engine_6td = {
+		abbreviation = "6td"
+		category = tank_heavy_engine_diesel_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 2.6
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.46
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+
+	tank_engine_6td2 = {
+		abbreviation = "6td2"
+		category = tank_heavy_engine_diesel_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3.2
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.52
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+
+	tank_engine_2v_12_3a = {
+		abbreviation = "2v_12_3a"
+		category = tank_heavy_engine_diesel_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3
+			fuel_consumption = 3.8
+			reliability = -0.1
+			maximum_speed = 0.60
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+
+	tank_engine_kamaz_740 = {
+		abbreviation = "kamaz_740"
+		category = tank_medium_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.5
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+	tank_engine_utd_20 = {
+		abbreviation = "utd_20"
+		category = tank_medium_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.5
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+	tank_engine_3_td = {
+		abbreviation = "3_td"
+		category = tank_medium_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.5
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+
+	tank_engine_ymz_5347 = {
+		abbreviation = "ymz_5347"
+		category = tank_light_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.5
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+	tank_engine_ymz_536 = {
+		abbreviation = "ymz_536"
+		category = tank_light_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.5
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+}
