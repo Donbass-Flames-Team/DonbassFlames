@@ -17,26 +17,59 @@ spriteTypes = {
 	}	
 	SpriteType = {
 		name = "GFX_UKR_infantry_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/aks74u.dds"
+		texturefile = "gfx/interface/technologies/AKS74U.dds"
 	}	
 	SpriteType = {
 		name = "GFX_UKR_infantry_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/AK74m.dds"
+		texturefile = "gfx/interface/technologies/AK74M.dds"
 	}	
 	SpriteType = {
 		name = "GFX_UKR_infantry_weapons4_medium"
-		texturefile = "gfx/interface/technologies/ak105.dds"
+		texturefile = "gfx/interface/technologies/AK105.dds"
 	}	
 	SpriteType = {
 		name = "GFX_UKR_infantry_weapons5_medium"
-		texturefile = "gfx/interface/technologies/ak12.dds"
+		texturefile = "gfx/interface/technologies/AK12.dds"
 	}	
 	SpriteType = {
 		name = "GFX_UKR_infantry_weapons6_medium"
-		texturefile = "gfx/interface/technologies/ak203.dds"
+		texturefile = "gfx/interface/technologies/AK203.dds"
 	}
 	SpriteType = {
 		name = "GFX_UKR_infantry_weapons7_medium"
-		texturefile = "gfx/interface/technologies/ak12m1.dds"
+		texturefile = "gfx/interface/technologies/AK12M1.dds"
+	}
+
+SpriteType = {
+		name = "GFX_RUS_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/AKM.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RUS_infantry_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/AKMS.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RUS_infantry_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/AKS74U.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RUS_infantry_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/AK74M.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RUS_infantry_weapons4_medium"
+		texturefile = "gfx/interface/technologies/AK105.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RUS_infantry_weapons5_medium"
+		texturefile = "gfx/interface/technologies/AK12.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RUS_infantry_weapons6_medium"
+		texturefile = "gfx/interface/technologies/AK203.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_infantry_weapons7_medium"
+		texturefile = "gfx/interface/technologies/AK12M1.dds"
 	}
 }

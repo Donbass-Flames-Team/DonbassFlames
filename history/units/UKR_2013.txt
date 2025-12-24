@@ -6,6 +6,12 @@ division_template = {
 		apc_unit = { x = 0 y = 2 }
         apc_unit = { x = 1 y = 0 }
 	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+	}
 }
 
 division_template = {
@@ -15,6 +21,12 @@ division_template = {
 		modern_armor = { x = 0 y = 1 }
 		modern_armor = { x = 0 y = 2 }
         modern_armor = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
 	}
 }
 
@@ -26,6 +38,12 @@ division_template = {
 		sau_artillery = { x = 0 y = 2 }
         sau_artillery = { x = 1 y = 0 }
 	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+	}
 }
 
 division_template = {
@@ -35,6 +53,12 @@ division_template = {
 		special_forces_infantry = { x = 0 y = 1 }
 		special_forces_infantry = { x = 0 y = 2 }
         special_forces_infantry = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
 	}
 }
 

@@ -22,8 +22,9 @@ technologies = {
 			infantry
 			militia
 			mechanized_infantry
-			marine_infantry
+			marine
 			special_forces_infantry
+			territorial_defense_unit
 
 			engineer
 			recon
@@ -42,38 +43,13 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_weapons1
 			research_cost_coeff = 1
-		}		
-		path = {
-			leads_to_tech = infantry_weapons_2
-			research_cost_coeff = 1
-		}	
+		}			
 
 		research_cost = 1.5
 		start_year = 1970
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = -1 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	infantry_weapons_2 = {
-		enable_equipments = {
-			infantry_equipment2_0
-		}		
-
-		research_cost = 1.5
-		start_year = 1970
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = -1 }
 		}
 		
 		categories = {
@@ -94,12 +70,7 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_weapons2
 			research_cost_coeff = 1
-		}		
-
-		path = {
-			leads_to_tech = infantry_weapons3
-			research_cost_coeff = 1
-		}		
+		}				
 
 		infantry = {
 			soft_attack = 0.05
@@ -114,6 +85,9 @@ technologies = {
 		    soft_attack = 0.05
 		}
 		special_forces_infantry = {
+		    soft_attack = 0.05
+		}
+		territorial_defense_unit = {
 		    soft_attack = 0.05
 		}
 
@@ -132,44 +106,43 @@ technologies = {
 			base = 2
 		}
 	}	
+		
 
 	infantry_weapons2 = {
 
 		enable_equipments = {
 			infantry_equipment_2
 		}
+				
 		path = {
-			leads_to_tech = infantry_weapons1_2
+			leads_to_tech = infantry_weapons3
 			research_cost_coeff = 1
 		}	
+		
+		infantry = {
+			soft_attack = 0.05
+		}
+		marine = {
+			soft_attack = 0.05
+		}
+		mountaineers = {
+			soft_attack = 0.05
+		}
+		paratrooper = {
+		    soft_attack = 0.05
+		}
+		special_forces_infantry = {
+		    soft_attack = 0.05
+		}
+		territorial_defense_unit = {
+		    soft_attack = 0.05
+		}
 
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1936 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			base = 2
-		}
-	}	
-
-	infantry_weapons1_2 = {
-
-		enable_equipments = {
-			infantry_equipment1_2
-		}
-
-		research_cost = 1.5
-		start_year = 1936
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = 5 }
+			position = { x = 0 y = @1938 }
 		}
 		
 		categories = {
@@ -192,7 +165,7 @@ technologies = {
 			research_cost_coeff = 1
 		}	
 		
-		infantry = {
+	    infantry = {
 			soft_attack = 0.05
 		}
 		marine = {
@@ -207,12 +180,15 @@ technologies = {
 		special_forces_infantry = {
 		    soft_attack = 0.05
 		}
+		territorial_defense_unit = {
+		    soft_attack = 0.05
+		}
 
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1938 }
+			position = { x = 0 y = @1939 }
 		}
 		
 		categories = {
@@ -229,13 +205,13 @@ technologies = {
 		enable_equipments = {
 			infantry_equipment_4
 		}
-				
+
 		path = {
 			leads_to_tech = infantry_weapons5
 			research_cost_coeff = 1
 		}	
-		
-	    infantry = {
+
+		infantry = {
 			soft_attack = 0.05
 		}
 		marine = {
@@ -250,12 +226,15 @@ technologies = {
 		special_forces_infantry = {
 		    soft_attack = 0.05
 		}
+		territorial_defense_unit = {
+		    soft_attack = 0.05
+		}
 
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1939 }
+			position = { x = 0 y = @1940 }
 		}
 		
 		categories = {
@@ -293,47 +272,7 @@ technologies = {
 		special_forces_infantry = {
 		    soft_attack = 0.05
 		}
-
-		research_cost = 1.5
-		start_year = 1936
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1940 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			base = 2
-		}
-	}	
-
-	infantry_weapons6 = {
-
-		enable_equipments = {
-			infantry_equipment_6
-		}
-
-		path = {
-			leads_to_tech = infantry_weapons7
-			research_cost_coeff = 1
-		}	
-
-		infantry = {
-			soft_attack = 0.05
-		}
-		marine = {
-			soft_attack = 0.05
-		}
-		mountaineers = {
-			soft_attack = 0.05
-		}
-		paratrooper = {
-		    soft_attack = 0.05
-		}
-		special_forces_infantry = {
+		territorial_defense_unit = {
 		    soft_attack = 0.05
 		}
 
@@ -353,10 +292,10 @@ technologies = {
 		}
 	}	
 
-	infantry_weapons7 = {
+	infantry_weapons6 = {
 
 		enable_equipments = {
-			infantry_equipment_7
+			infantry_equipment_6
 		}
 
 		infantry = {
@@ -372,6 +311,9 @@ technologies = {
 		    soft_attack = 0.05
 		}
 		special_forces_infantry = {
+		    soft_attack = 0.05
+		}
+		territorial_defense_unit = {
 		    soft_attack = 0.05
 		}
 
