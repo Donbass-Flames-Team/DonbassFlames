@@ -1,5 +1,5 @@
 equipments = {
-	ifv_1 = {
+	infantry_fighting_vehicle = {
 		year = 1960
 		is_archetype = yes
 		is_buildable = no
@@ -31,48 +31,29 @@ equipments = {
 		active = yes
 	}
 
-	ifv_2 = {
+	infantry_fighting_vehicle_0 = {
 		year = 1980
-		is_archetype = yes
 		is_buildable = no
-
+           
 		picture = archetype_light_tank_equipment
-		type = armor
 		group_by = archetype
 		interface_category = interface_category_armor
 		priority = 1500
+		archetype = infantry_fighting_vehicle
 
-		soft_attack = 15
-		hard_attack = 2
-		ap_attack = 10
-		air_attack = 0
-
-		maximum_speed = 8
-		build_cost_ic = 1
-		reliability = 0.85
-		hardness = 0.95
-		armor_value = 2.8
-		supply_consumption = 0.1
-		resources = {
-			steel = 4
-			aluminium = 1
-			rubber = 1
-		}
-
-		manpower = 3
 		active = yes
 	}
 
-	ifv_3 = {
+	infantry_fighting_vehicle_1 = {
 		year = 2000
-		is_archetype = yes
 		is_buildable = no
 
 		picture = archetype_light_tank_equipment
-		type = armor
 		group_by = archetype
 		interface_category = interface_category_armor
 		priority = 1500
+		archetype = infantry_fighting_vehicle
+		parent = infantry_fighting_vehicle_0
 
 		soft_attack = 15
 		hard_attack = 2
@@ -95,16 +76,17 @@ equipments = {
 		active = yes
 	}
 
-	ifv_4 = {
+	infantry_fighting_vehicle_2 = {
 		year = 2020
 		is_archetype = yes
 		is_buildable = no
 
 		picture = archetype_light_tank_equipment
-		type = armor
 		group_by = archetype
 		interface_category = interface_category_armor
 		priority = 1500
+		archetype = infantry_fighting_vehicle
+		parent = infantry_fighting_vehicle_1
 
 		soft_attack = 15
 		hard_attack = 2
