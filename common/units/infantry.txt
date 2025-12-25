@@ -48,9 +48,10 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 100
-			grenade_launcher_equipment = 10
-			support_equipment = 15
+			uniform_equipment = 100
 			bulletproof_vests_equipment = 100	
+			support_equipment = 15
+			grenade_launcher_equipment = 10
 		}
 
 		plains = {
@@ -201,9 +202,10 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 100
-			grenade_launcher_equipment = 10
-			support_equipment = 30
 			bulletproof_vests_equipment = 100	
+			uniform_equipment = 100
+			support_equipment = 30
+			grenade_launcher_equipment = 10
 		}
 
 		marsh = {
@@ -320,9 +322,10 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 110
+			uniform_equipment = 110
+			bulletproof_vests_equipment = 100
+			support_equipment = 30	
 			grenade_launcher_equipment = 10
-			support_equipment = 30
-			bulletproof_vests_equipment = 100	
 		}
 
 		hills = {
@@ -382,6 +385,7 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 110
+			uniform_equipment = 110
 			bulletproof_vests_equipment = 100	
 			support_equipment = 35
 			grenade_launcher_equipment = 10
@@ -734,6 +738,7 @@ sub_units = {
 		need = {
 			infantry_equipment = 110
 			bulletproof_vests_equipment = 100
+			uniform_equipment = 110
 			grenade_launcher_equipment = 10
 			support_equipment = 15
 		}
@@ -785,8 +790,10 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 50
-			grenade_launcher_equipment = 8
+			uniform_equipment = 50
+			bulletproof_vests_equipment = 50
 			support_equipment = 35
+			grenade_launcher_equipment = 8
 		}
 
 		plains = {
@@ -866,6 +873,7 @@ sub_units = {
 		need = {
 			infantry_equipment = 110
 			bulletproof_vests_equipment = 110
+			uniform_equipment = 110
 			grenade_launcher_equipment = 25
 			support_equipment = 45
 		}
