@@ -11,8 +11,10 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        sniper_company = { x = 0 y = 4 }
+        sniper_company = { x = 1 y = 0 }
 	}
+
+    is_locked = yes
 }
 
 division_template = {
@@ -28,8 +30,10 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        sniper_company = { x = 0 y = 4 }
+        sniper_company = { x = 1 y = 0 }
 	}
+
+    is_locked = yes
 }
 
 division_template = {
@@ -45,9 +49,31 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        manpads_platoon = { x = 0 y = 4}
-        sniper_company = { x = 0 y = 5 }
+        manpads_platoon = { x = 1 y = 0}
+        sniper_company = { x = 1 y = 1 }
 	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Hirnycho-pikhotnyy batalʹyon"
+	regiments = {
+        mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+        mountaineers = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        manpads_platoon = { x = 1 y = 0}
+        sniper_company = { x = 1 y = 1 }
+	}
+
+    is_locked = yes
 }
 
 division_template = {
@@ -63,10 +89,58 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        sniper_company = { x = 0 y = 4 }
+        sniper_company = { x = 1 y = 1 }
 	}
+
+    is_locked = yes
 }
 
+division_template = {
+	name = "Morska pikhota"
+	regiments = {
+        marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1}
+		signal_company = { x = 0 y = 2}
+		anti_tank = { x = 0 y = 3}
+		medical_company = { x = 1 y = 0}
+		mortar = { x = 1 y = 1 }
+		recon = { x = 1 y = 2 }
+        sniper_company = { x = 1 y = 3 }
+	}
+
+	is_locked = yes
+}
+
+
+division_template = {
+	name = "Desantno-Povitryani Viyska"
+	regiments = {
+        paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1}
+		signal_company = { x = 0 y = 2}
+		anti_tank = { x = 0 y = 3}
+		medical_company = { x = 1 y = 0}
+		mortar = { x = 1 y = 1 }
+		recon = { x = 1 y = 2 }
+        sniper_company = { x = 1 y = 3 }
+	}
+
+	is_locked = yes
+}
 
 units = {
     division= {
@@ -111,4 +185,519 @@ units = {
         start_equipment_factor = 0.4
 		start_manpower_factor = 1
     }
+
+    division= {
+        name = "1-y mekhanizovanyy batalyon 24-yi okremoyi mekhanizovanoyi bryhady imeni korolya Danyla"
+        location = 14196
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "2-y mekhanizovanyy batalyon 24-yi okremoyi mekhanizovanoyi bryhady imeni korolya Danyla"
+        location = 14196
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "3-y mekhanizovanyy batalyon 24-yi okremoyi mekhanizovanoyi bryhady imeni korolya Danyla"
+        location = 14196
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y tankovyy batalyon 24-yi okremoyi mekhanizovanoyi bryhady imeni korolya Danyla"
+        location = 14196
+        division_template = "Tankovyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y batalyon samokhidnoyi artyleriyi 24-yi okremoyi mekhanizovanoyi bryhady imeni korolya Danyla"
+        location = 14196
+        division_template = "Batalyon samokhidnoyi artyleriyi"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y mekhanizovanyy batalyon 28-yi okremoyi mekhanizovanoyi bryhady imeni lytsariv Zymovoho pokhodu"
+        location = 11056
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "2-y mekhanizovanyy batalyon 28-yi okremoyi mekhanizovanoyi bryhady imeni lytsariv Zymovoho pokhodu"
+        location = 11056
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "3-y mekhanizovanyy batalyon 28-yi okremoyi mekhanizovanoyi bryhady imeni lytsariv Zymovoho pokhodu"
+        location = 11056
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y tankovyy batalyon 28-yi okremoyi mekhanizovanoyi bryhady imeni lytsariv Zymovoho pokhodu"
+        location = 11056
+        division_template = "Tankovyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y batalyon samokhidnoyi artyleriyi 28-yi okremoyi mekhanizovanoyi bryhady imeni lytsariv Zymovoho pokhodu"
+        location = 11056
+        division_template = "Batalyon samokhidnoyi artyleriyi"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    ###
+    division= {
+        name = "1-y mekhanizovanyy batalyon 72-yi okremoyi mekhanizovanoyi bryhady imeni Chornykh zaporozhtsiv"
+        location = 14274
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    
+    division= {
+        name = "2-y mekhanizovanyy batalyon 72-yi okremoyi mekhanizovanoyi bryhady imeni Chornykh zaporozhtsiv"
+        location = 14274
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "3-y mekhanizovanyy batalyon 72-yi okremoyi mekhanizovanoyi bryhady imeni Chornykh zaporozhtsiv"
+        location = 14274
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y tankovyy batalyon 72-yi okremoyi mekhanizovanoyi bryhady imeni Chornykh zaporozhtsiv"
+        location = 14274
+        division_template = "Tankovyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y batalyon samokhidnoyi artyleriyi 72-yi okremoyi mekhanizovanoyi bryhady imeni Chornykh zaporozhtsiv"
+        location = 14274
+        division_template = "Batalyon samokhidnoyi artyleriyi"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    ###
+    division= {
+        name = "1-y mekhanizovanyy batalyon 92-ha okremoy shturmovoy bryhady imeni koshovoho otamana Ivana Sirka"
+        location = 7319
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    
+    division= {
+        name = "2-y mekhanizovanyy batalyon 92-ha okremoy shturmovoy bryhady imeni koshovoho otamana Ivana Sirka"
+        location = 7319
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    
+    division= {
+        name = "3-y mekhanizovanyy batalyon 92-ha okremoy shturmovoy bryhady imeni koshovoho otamana Ivana Sirka"
+        location = 7319
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y tankovyy batalyon 92-ha okremoy shturmovoy bryhady imeni koshovoho otamana Ivana Sirka"
+        location = 7319
+        division_template = "Tankovyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y batalyon samokhidnoyi artyleriyi 92-ha okremoy shturmovoy bryhady imeni koshovoho otamana Ivana Sirka"
+        location = 7319
+        division_template = "Batalyon samokhidnoyi artyleriyi"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    ###
+    division= {
+        name = "1-y mekhanizovanyy batalyon 93-y okremiy mekhanizovaniy bryhadi «Kholodnyy Yar»"
+        location = 15113
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    
+    division= {
+        name = "2-y mekhanizovanyy batalyon 93-y okremiy mekhanizovaniy bryhadi «Kholodnyy Yar»"
+        location = 15113
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    
+    division= {
+        name = "3-y mekhanizovanyy batalyon 93-y okremiy mekhanizovaniy bryhadi «Kholodnyy Yar»"
+        location = 15113
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y tankovyy batalyon 93-y okremiy mekhanizovaniy bryhadi «Kholodnyy Yar»"
+        location = 15113
+        division_template = "Tankovyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y batalyon samokhidnoyi artyleriyi 93-y okremiy mekhanizovaniy bryhadi «Kholodnyy Yar»"
+        location = 15113
+        division_template = "Batalyon samokhidnoyi artyleriyi"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    ###
+    division= {
+        name = "1-y mekhanizovanyy batalyon 128-yi okremoyi hirnycho-shturmovoyi bryhady"
+        location = 15333
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    
+    division= {
+        name = "2-y mekhanizovanyy batalyon 128-yi okremoyi hirnycho-shturmovoyi bryhady"
+        location = 15333
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    
+    division= {
+        name = "3-y mekhanizovanyy batalyon 128-yi okremoyi hirnycho-shturmovoyi bryhady"
+        location = 15333
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y tankovyy batalyon 128-yi okremoyi hirnycho-shturmovoyi bryhady"
+        location = 15333
+        division_template = "Tankovyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y batalyon samokhidnoyi artyleriyi 128-yi okremoyi hirnycho-shturmovoyi bryhady"
+        location = 15333
+        division_template = "Batalyon samokhidnoyi artyleriyi"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+    ###
+    division= {
+        name = "1-yi tankovyy batalyon 1-yi okremoyi tankovoyi Siverskoyi bryhady"
+        location = 538
+        division_template = "Tankovyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "2-yi tankovyy batalyon 1-yi okremoyi tankovoyi Siverskoyi bryhady"
+        location = 538
+        division_template = "Tankovyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "3-yi tankovyy batalyon 1-yi okremoyi tankovoyi Siverskoyi bryhady"
+        location = 538
+        division_template = "Tankovyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-yi mekhanizovanyy batalyon 1-yi okremoyi tankovoyi Siverskoyi bryhady"
+        location = 538
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-yi batalyon samokhidnoyi artyleriyi 1-yi okremoyi tankovoyi Siverskoyi bryhady"
+        location = 538
+        division_template = "Batalyon samokhidnoyi artyleriyi"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 0.9
+    }
+    ###
+    division= {
+        name = "1-yi tankovyy batalyon 17-yi okremoyi tankovoyi bryhady"
+        location = 538
+        division_template = "Tankovyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "2-yi tankovyy batalyon 17-yi okremoyi tankovoyi bryhady"
+        location = 538
+        division_template = "Tankovyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "3-yi tankovyy batalyon 17-yi okremoyi tankovoyi bryhady"
+        location = 538
+        division_template = "Tankovyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-yi mekhanizovanyy batalyon 17-yi okremoyi tankovoyi bryhady"
+        location = 538
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-yi batalyon samokhidnoyi artyleriyi 17-yi okremoyi tankovoyi bryhady"
+        location = 538
+        division_template = "Batalyon samokhidnoyi artyleriyi"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 0.9
+    }
+   
+    ##################################
+    ### Desantno-Povitryani Viyska ###
+    ##################################
+    division= {
+		name = "1-y batalyon desantnykh viysk 25-yi okremoyi povitryano-desantnoyi Secheslavska bryhady"
+		location = 10628
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "2-y batalyon desantnykh viysk 25-yi okremoyi povitryano-desantnoyi Secheslavska bryhady"
+		location = 10628
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "3-y batalyon desantnykh viysk 25-yi okremoyi povitryano-desantnoyi Secheslavska bryhady"
+		location = 10628
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "1-y batalyon desantnykh viysk 79-yi okremoyi aeromobilnoyi bryhady"
+		location = 15684
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "2-y batalyon desantnykh viysk 79-yi okremoyi aeromobilnoyi bryhady"
+		location = 15684
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "3-y batalyon desantnykh viysk 79-yi okremoyi aeromobilnoyi bryhady"
+		location = 15684
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+	division= {
+		name = "4-y batalyon desantnykh viysk 79-yi okremoyi aeromobilnoyi bryhady"
+		location = 15684
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "1-y batalyon desantnykh viysk 80-yi okremoyi aeromobilnoyi bryhady"
+		location = 14742
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+	division= {
+		name = "2-y batalyon desantnykh viysk 80-yi okremoyi aeromobilnoyi bryhady"
+		location = 14742
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+	division= {
+		name = "3-y batalyon desantnykh viysk 80-yi okremoyi aeromobilnoyi bryhady"
+		location = 14742
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+	division= {
+		name = "4-y batalyon desantnykh viysk 80-yi okremoyi aeromobilnoyi bryhady"
+		location = 14742
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "1-y batalyon desantnykh viysk 95-yi okremoyi aeromobilnoyi bryhady"
+		location = 13924
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "2-y batalyon desantnykh viysk 95-yi okremoyi aeromobilnoyi bryhady"
+		location = 13924
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "3-y batalyon desantnykh viysk 95-yi okremoyi aeromobilnoyi bryhady"
+		location = 13924
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "4-y batalyon desantnykh viysk 95-yi okremoyi aeromobilnoyi bryhady"
+		location = 13924
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "13-y batalyon desantnykh viysk 95-yi okremoyi aeromobilnoyi bryhady"
+		location = 13924
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "88-y batalyon desantnykh viysk"
+		location = 13924
+		division_template = "Desantno-Povitryani Viyska"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
 }
+
+
+

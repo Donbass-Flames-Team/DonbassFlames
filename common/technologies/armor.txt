@@ -1,5 +1,61 @@
 technologies = {
-	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
+
+	ifv = {
+
+		enable_equipments = {
+			infantry_fighting_vehicle
+
+		}
+		enable_subunits = {
+			ifv_unit
+		}
+		
+		research_cost = 2
+		start_year = 1960
+		folder = {
+			name = armour_folder
+			position = { x =0 y = 0 }
+		}
+
+		path = {
+			leads_to_tech = ifv_2
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+
+	ifv_2 = {
+
+		enable_equipments = {
+			infantry_fighting_vehicle
+
+		}
+		enable_subunits = {
+			ifv_unit
+
+		}
+		
+		research_cost = 2
+		start_year = 1960
+		folder = {
+			name = armour_folder
+			position = { x =1 y = 0 }
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+
 	gwtank = { #Leichttraktor
 
 		enable_equipments = {
