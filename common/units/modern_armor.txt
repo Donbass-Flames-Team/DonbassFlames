@@ -21,12 +21,12 @@ sub_units = {
 			category_army
 		}
 		
-		
-
 		combat_width = 2
 
 		need = {
-			infantry_equipment = 100
+			uniform_equipment = 100
+			infantry_equipment = 70
+			bulletproof_vests_equipment = 65
 			modern_tank_chassis = 10
 		}
 		manpower = 110
