@@ -27,6 +27,9 @@ sub_units = {
 		combat_width = 0
 
 		need = {
+			infantry_equipment = 15
+			uniform_equipment = 15
+			bulletproof_vests_equipment = 15
 			towed_artillery_equipment = 8
 		}
 		manpower = 15
@@ -75,7 +78,10 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			sau_chassis = 2
+			uniform_equipment = 20
+			bulletproof_vests_equipment = 20
+			infantry_equipment = 8
+			spau_chassis = 2
 		}
 		manpower = 20
 		training_time = 200
@@ -124,9 +130,12 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			sau_chassis = 8
+		    uniform_equipment = 40
+			bulletproof_vests_equipment = 25
+			infantry_equipment = 15
+			spau_chassis = 8
 		}
-		manpower = 20
+		manpower = 40
 		training_time = 200
 		max_organisation = 0
 		default_morale = 0.1
@@ -172,10 +181,13 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			mlrs_chassis_0 = 10
+			uniform_equipment = 40
+			bulletproof_vests_equipment = 25
+			infantry_equipment = 15
+			mlrs_chassis_0 = 8
 		}
 
-		manpower = 20
+		manpower = 40
 		training_time = 120
 		max_organisation = 0
 		default_morale = 0.1
