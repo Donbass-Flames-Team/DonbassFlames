@@ -995,6 +995,7 @@ UKR_ATO_volunteer_battalions_decision = {
 		fire_only_once = yes
 		cost = 25
 		complete_effect = {
+			load_oob = "UKR_Aidar_Battalion_2014"
 		}
 		ai_will_do = {
 			factor = 100
