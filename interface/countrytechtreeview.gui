@@ -858,6 +858,12 @@ guiTypes = {
 				}
 			}
 
+			gridboxtype = {
+				name = "ifv_tree"
+				position = { x = 140 y = 1025 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 
 			gridboxtype = {
 				name = "gwtank_tree"
@@ -1162,6 +1168,19 @@ guiTypes = {
 				}
 			}
 
+			gridboxtype = {
+				name = "ifv_chassis_tree"
+				position = { x = 1850 y = 70 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "apc_chassis_tree"
+				position = { x = 2250 y = 70 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 
 			gridboxtype = {
 				name = "gwtank_chassis_tree"
