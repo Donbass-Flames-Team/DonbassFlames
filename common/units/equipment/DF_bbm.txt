@@ -30,31 +30,15 @@ equipments = {
 		}
 		
 		fuel_consumption = 1.2
-		supply_truck = yes
 	}
 
 	bbm_chassis_0 = {
 		year = 1950
 
 		archetype = bbm_chassis
-		priority = 30
-		maximum_speed = 12
-		reliability = 0.8
-		hardness = 0.1
-
-		breakthrough = 3
-		defense = 2.6
-
-		#Space taken in convoy
-		lend_lease_cost = 1
-
-		build_cost_ic = 0.6
-		resources = {
-			steel = 1
-		}
-		
-		fuel_consumption = 1.2
-		supply_truck = yes		
+		active = yes
+		priority = 05
+		visual_level = 0	
 	}
 
 	bbm_chassis_1 = {
@@ -80,7 +64,6 @@ equipments = {
 		}
 		
 		fuel_consumption = 1.2
-		supply_truck = yes
 	}
 
 	bbm_chassis_2 = {
@@ -106,7 +89,6 @@ equipments = {
 		}
 		
 		fuel_consumption = 1.2
-		supply_truck = yes
 	}
 
 	bbm_chassis_3 = {
@@ -132,14 +114,13 @@ equipments = {
 		}
 		
 		fuel_consumption = 1.2
-		supply_truck = yes
 	}
 
 	bbm_chassis_4 = {
 		year = 2015
 
 		archetype = bbm_chassis
-		parent = bbm_chassis_2
+		parent = bbm_chassis_3
 		priority = 30	
 		
 		maximum_speed = 14
@@ -158,14 +139,13 @@ equipments = {
 		}
 		
 		fuel_consumption = 1.2
-		supply_truck = yes
 	}
 
 	bbm_chassis_5 = {
 		year = 2015
 
 		archetype = bbm_chassis
-		parent = bbm_chassis_2
+		parent = bbm_chassis_4
 		priority = 30		
 		
 		maximum_speed = 14
@@ -184,7 +164,6 @@ equipments = {
 		}
 		
 		fuel_consumption = 1.2
-		supply_truck = yes
 	}
 
 }

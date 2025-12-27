@@ -111,19 +111,19 @@ sub_units = {
 		ai_priority = 0
 		active = yes
 		affects_speed = no
+		is_artillery_brigade = yes
 
 		type = {
 			infantry
-			support
+			artillery
 		}
 		
-		group = armor
+		group = combat_support
 		
 		categories = {
-			category_support_battalions
 			category_army
 			category_artillery
-			category_support_artillery
+			category_line_artillery
 		}
 
 
