@@ -1804,7 +1804,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_creation_of_tro
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_focus_UKR_creation_of_tro
 		cost = 0.3
 		x = 2
 		y = 3
@@ -1881,7 +1881,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_concessions_to_the_oligarchs
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_focus_UKR_concessions_to_the_oligarchs
 		cost = 0.5
 		x = -2
 		y = 3
@@ -2618,7 +2618,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_turn_to_the_west_for_help
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_UKR_turn_to_the_west_for_help
 		cost = 0.5
 		x = -3
 		y = 1
@@ -2644,7 +2644,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_organize_defense
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_UKR_organization_of_defense
 		cost = 2
 		x = 0
 		y = 2
@@ -2675,13 +2675,13 @@ focus_tree = {
 
 	focus = {
 		id = UKR_decommissioning_of_stocks
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_UKR_decommissioning_of_stocks
 		cost = 1
-		x = 4
-		y = 3
+		x = 0
+		y = 1
 
-		prerequisite = { focus = UKR_organize_defense }
-		relative_position_id = UKR_start_of_ato
+		prerequisite = { focus = UKR_prepare_the_defense_of_cities }
+		relative_position_id = UKR_prepare_the_defense_of_cities
 
 
 		cancel_if_invalid = yes
@@ -2700,13 +2700,13 @@ focus_tree = {
 
 	focus = {
 		id = UKR_volunteer_help
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_UKR_volunteer_help
 		cost = 1
-		x = 4
-		y = 4
+		x = 0
+		y = 1
 
-		prerequisite = { focus = UKR_decommissioning_of_stocks }
-		relative_position_id = UKR_start_of_ato
+		prerequisite = { focus = UKR_humanitarion_help_to_people }
+		relative_position_id = UKR_humanitarion_help_to_people
 
 
 		cancel_if_invalid = yes
@@ -2726,14 +2726,14 @@ focus_tree = {
 
 	focus = {
 		id = UKR_end_of_separatism
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_UKR_victory_over_separatism
 		cost = 1
 		x = 0
 		y = 5
 
 		prerequisite = { focus = UKR_launch_counterattacks }
 		prerequisite = { focus = UKR_volunteer_help }
-		prerequisite = { focus = UKR_humanitarion_help_to_people }
+		prerequisite = { focus = UKR_decommissioning_of_stocks }
 		relative_position_id = UKR_start_of_ato
 
 
@@ -2757,7 +2757,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_general_staff
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_UKR_general_stuff
 		cost = 2
 		x = 2
 		y = 3
@@ -2784,7 +2784,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_launch_counterattacks
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_UKR_launch_counterattacksh
 		cost = 5
 		x = 2
 		y = 4
@@ -2801,7 +2801,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
 		}
 
 		completion_reward = {
@@ -2813,7 +2815,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_prepare_the_defense_of_cities
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_UKR_prepare_defense
 		cost = 2
 		x = -2
 		y = 3
@@ -2846,8 +2848,8 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		prerequisite = { focus = UKR_prepare_the_defense_of_cities }
-		relative_position_id = UKR_prepare_the_defense_of_cities
+		prerequisite = { focus = UKR_organize_defense }
+		relative_position_id = UKR_organize_defense
 
 
 		cancel_if_invalid = yes
@@ -2868,7 +2870,7 @@ focus_tree = {
 		id = UKR_volunteer_battalions
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 6
+		x = 4
 		y = 2
 
 		prerequisite = { focus = UKR_emergency_redeployment_of_troops }

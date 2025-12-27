@@ -99,7 +99,15 @@ DF_economy_setup = yes
 			set_oob = "UKR_2013"
 	    else = {
 		    set_technology = {
-			    early_fighter = 1
+	 		    apc_chassis = 1
+		        apc_chassis_2 = 1
+		        apc_chassis_3 = 1
+		        apc_chassis_4 = 1
+
+		        ifv_chassis = 1
+		        ifv_chassis_2 = 1
+		        ifv_chassis_3 = 1
+		        ifv_chassis_4 = 1		   
 		    }
 	    }
     }
