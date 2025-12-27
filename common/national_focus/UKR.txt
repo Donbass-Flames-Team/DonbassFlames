@@ -219,7 +219,7 @@ focus_tree = {
 		id = UKR_dictatorship_takes_over
 		icon = GFX_focus_UKR_activation_of_security_forces
 		cost = 0.8
-		x = 1
+		x = 6
 		y = 3
 		
         prerequisite = { focus = UKR_force_deal_with_protests }
@@ -270,205 +270,1132 @@ focus_tree = {
 		}
 	}
 
-	
+	focus = {
+		id = UKR_influence_through_the_media
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 5
+		y = 1
 
-	
+		prerequisite = { focus = UKR_dictatorship_takes_over }
+		relative_position_id = UKR_dictatorship_takes_over
 
-	
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
 
 	focus = {
-		id = UKR_negotations_with_protests
+		id = UKR_prevent_civil_war
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 1
+
+		prerequisite = { focus = UKR_influence_through_the_media }
+		relative_position_id = UKR_influence_through_the_media
+        mutually_exclusive = { focus = UKR_start_company_of_antimaidan }
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+			always = no
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_restoring_the_image_in_the_west
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 2
+
+		prerequisite = { focus = UKR_influence_through_the_media }
+		relative_position_id = UKR_influence_through_the_media
+
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_declaration_of_a_political_thaw
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 3
+
+		prerequisite = { focus = UKR_influence_through_the_media }
+		relative_position_id = UKR_influence_through_the_media
+
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_returning_to_the_eurointegration
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 4
+
+		prerequisite = { focus = UKR_declaration_of_a_political_thaw }
+		relative_position_id = UKR_influence_through_the_media
+
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_start_company_of_antimaidan
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 2
+		y = 1
+
+		prerequisite = { focus = UKR_influence_through_the_media }
+		relative_position_id = UKR_influence_through_the_media
+        mutually_exclusive = { focus = UKR_prevent_civil_war }
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_mobilization_of_titushek
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 1
+
+		prerequisite = { focus = UKR_start_company_of_antimaidan }
+		relative_position_id = UKR_start_company_of_antimaidan
+
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_ensuring_impunity
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 2
+
+		prerequisite = { focus = UKR_start_company_of_antimaidan }
+		relative_position_id = UKR_start_company_of_antimaidan
+
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_deligitization_of_opposition
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 1
+		y = 1
+
+		prerequisite = { focus = UKR_start_company_of_antimaidan }
+		relative_position_id = UKR_start_company_of_antimaidan
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_pressure_on_independent_companies
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 1
+		y = 2
+
+		prerequisite = { focus = UKR_deligitization_of_opposition }
+		relative_position_id = UKR_start_company_of_antimaidan
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_united_voice_of_the_power
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 3
+
+		prerequisite = { focus = UKR_pressure_on_independent_companies }
+		prerequisite = { focus = UKR_ensuring_impunity }
+		relative_position_id = UKR_start_company_of_antimaidan
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_external_coordination
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = -5
+		y = 1
+
+		prerequisite = { focus = UKR_dictatorship_takes_over }
+		relative_position_id = UKR_dictatorship_takes_over
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_appeal_to_russia_for_support
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 1
+
+		prerequisite = { focus = UKR_external_coordination }
+		relative_position_id = UKR_external_coordination
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_coordination_with_fsb
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 1
+		y = 1
+
+		prerequisite = { focus = UKR_external_coordination }
+		relative_position_id = UKR_external_coordination
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_under_the_pretext_of_a_christmas_tree
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 2
+
+		prerequisite = { focus = UKR_appeal_to_russia_for_support }
+		prerequisite = { focus = UKR_coordination_with_fsb }
+		relative_position_id = UKR_external_coordination
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_transition_to_forceful_measures
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
 		y = 3
-		
-        prerequisite = { focus = UKR_remain_neutral }
-		relative_position_id = UKR_yanukovychs_results
+
+		prerequisite = { focus = UKR_under_the_pretext_of_a_christmas_tree }
+		relative_position_id = UKR_external_coordination
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		available = {
-
-		}
-
-		allow_branch = {
-			has_country_flag = innextupdate
-		}
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
-
-			add_to_variable = {
-                var = UKR_radicalisation_of_proeuropeans_value
-                value = -5
-            }
-			add_to_variable = {
-                var = UKR_radicalisation_of_nationalists_value
-                value = -3
-            }
-			custom_effect_tooltip = UKR_minus_radicalisation_of_maidan
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
-			add_political_power = -25
 		}
 	}
 
 	focus = {
-		id = UKR_partial_concessions
+		id = UKR_expansion_of_police_powers
 		icon = GFX_goal_no_focus_UKR
-		cost = 0.7
+		cost = 1
 		x = 0
-		y = 1
-		
-        prerequisite = { focus = UKR_negotations_with_protests }
-		relative_position_id = UKR_negotations_with_protests
+		y = 4
+
+		prerequisite = { focus = UKR_transition_to_forceful_measures }
+		relative_position_id = UKR_external_coordination
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		available = {
-
-		}
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
-		
-			add_to_variable = {
-                var = UKR_radicalisation_of_proeuropeans_value
-                value = -5
-            }
-			add_to_variable = {
-                var = UKR_radicalisation_of_nationalists_value
-                value = -3
-            }
-			custom_effect_tooltip = UKR_minus_radicalisation_of_maidan
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
-			add_political_power = -50
 		}
 	}
 
 	focus = {
-		id = UKR_amnesty_for_political_prisoners
+		id = UKR_strengthening_control
 		icon = GFX_goal_no_focus_UKR
-		cost = 0.7
-		x = 0
-		y = 1
+		cost = 1
+		x = -1
+		y = 5
 
-		prerequisite = { focus = UKR_partial_concessions }
-		relative_position_id = UKR_partial_concessions
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		prerequisite = { focus = UKR_expansion_of_police_powers }
+		relative_position_id = UKR_external_coordination
 
 		available = {
-
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
 		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_amnesty_for_political_prisoners"
-		
-			add_to_variable = {
-                var = UKR_radicalisation_of_proeuropeans_value
-                value = -5
-            }
-			add_to_variable = {
-                var = UKR_radicalisation_of_nationalists_value
-                value = -3
-            }
-			custom_effect_tooltip = UKR_minus_radicalisation_of_maidan
-			add_stability = 0.05
-			add_political_power = -95
-		}
-	}
-
-	focus = {
-		id = UKR_resignation_of_the_azarov_government
-		icon = GFX_goal_no_focus_UKR
-		cost = 0.8
-		x = 0
-		y = 1
-
-		prerequisite = { focus = UKR_amnesty_for_political_prisoners }
-		relative_position_id = UKR_amnesty_for_political_prisoners
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Resignation_of_the_Azarov_government"
-		
-			add_to_variable = {
-                var = UKR_radicalisation_of_proeuropeans_value
-                value = -5
-            }
-			add_to_variable = {
-                var = UKR_radicalisation_of_nationalists_value
-                value = -3
-            }
-			custom_effect_tooltip = UKR_minus_radicalisation_of_maidan
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
 		}
 	}
 
 	focus = {
-		id = UKR_agree_to_early_elections_and_constitutional_amendments
+		id = UKR_black_company
 		icon = GFX_goal_no_focus_UKR
-		cost = 0.9
-		x = 0
-		y = 1
+		cost = 1
+		x = 1
+		y = 5
 
-		prerequisite = { focus = UKR_resignation_of_the_azarov_government }
-		relative_position_id = UKR_resignation_of_the_azarov_government
+		prerequisite = { focus = UKR_expansion_of_police_powers }
+		relative_position_id = UKR_external_coordination
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Agree_to_early_elections_and_constitutional_amendments"
-			add_to_variable = {
-                var = UKR_radicalisation_of_proeuropeans_value
-                value = -5
-            }
-			add_to_variable = {
-                var = UKR_radicalisation_of_nationalists_value
-                value = -3
-            }
-			custom_effect_tooltip = UKR_minus_radicalisation_of_maidan
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
 		}
 	}
 
 	focus = {
-		id = UKR_agree_to_the_formation_of_a_transitional_government
+		id = UKR_ato_in_kiyv
 		icon = GFX_goal_no_focus_UKR
-		cost = 0.9
+		cost = 1
 		x = 0
-		y = 1
+		y = 6
 
-		prerequisite = { focus = UKR_agree_to_early_elections_and_constitutional_amendments }
-		relative_position_id = UKR_agree_to_early_elections_and_constitutional_amendments
+		prerequisite = { focus = UKR_strengthening_control }
+		prerequisite = { focus = UKR_black_company }
+		relative_position_id = UKR_external_coordination
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_agree_to_the_formation_of_a_transitional_government"
-			add_to_variable = {
-                var = UKR_radicalisation_of_proeuropeans_value
-                value = -5
-            }
-			add_to_variable = {
-                var = UKR_radicalisation_of_nationalists_value
-                value = -3
-            }
-			custom_effect_tooltip = UKR_minus_radicalisation_of_maidan
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
 		}
 	}
+
+	focus = {
+		id = UKR_emergency_measures
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_dictatorship_takes_over }
+		relative_position_id = UKR_dictatorship_takes_over
+
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}	
+
+	focus = {
+		id = UKR_researching_for_compromise
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_emergency_measures }
+		relative_position_id = UKR_emergency_measures
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 5
+			}
+			add_stability = 0.025
+		}
+	}
+	
+	focus = {
+		id = UKR_liqudation_of_opposition
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 2
+
+		prerequisite = { focus = UKR_researching_for_compromise }
+		relative_position_id = UKR_emergency_measures
+		mutually_exclusive = { focus = UKR_deal_with_opposition }
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 5
+			}
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_escalation_of_confrontation
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 4
+
+		prerequisite = { focus = UKR_researching_for_compromise }
+		prerequisite = { focus = UKR_negotiations_have_reached_an_impasse focus = UKR_a_step_towards_the_protesters }
+		relative_position_id = UKR_emergency_measures
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_extreme_measures_of_suppression
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 5
+
+		prerequisite = { focus = UKR_escalation_of_confrontation }
+		relative_position_id = UKR_emergency_measures
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_use_of_special_means
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 6
+
+		prerequisite = { focus = UKR_extreme_measures_of_suppression }
+		relative_position_id = UKR_emergency_measures
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_maidan_is_suppressed
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -3
+		y = 7
+
+		prerequisite = { focus = UKR_use_of_special_means }
+		prerequisite = { focus = UKR_ato_in_kiyv }
+		relative_position_id = UKR_emergency_measures
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+			always = yes
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_course_on_the_east
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -3
+		y = 8
+
+		prerequisite = { focus = UKR_maidan_is_suppressed }
+		relative_position_id = UKR_emergency_measures
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_deal_with_opposition
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 1
+		y = 2
+
+		prerequisite = { focus = UKR_researching_for_compromise }
+		relative_position_id = UKR_emergency_measures
+		mutually_exclusive = { focus = UKR_liqudation_of_opposition }
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 5
+			}
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_a_step_towards_the_protesters
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 2
+		y = 3
+
+		prerequisite = { focus = UKR_deal_with_opposition }
+		relative_position_id = UKR_emergency_measures
+		mutually_exclusive = { focus = UKR_negotiations_have_reached_an_impasse }
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+			always = no
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 5
+			}
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_return_to_the_2004_constitution
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 2
+		y = 4
+
+		prerequisite = { focus = UKR_deal_with_opposition }
+		relative_position_id = UKR_emergency_measures
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+			always = no
+			has_completed_focus = UKR_declaration_of_a_political_thaw
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 5
+			}
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_relax_repressive_laws
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 2
+		y = 5
+
+		prerequisite = { focus = UKR_return_to_the_2004_constitution }
+		relative_position_id = UKR_emergency_measures
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+			always = no
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_liqudation_of_berkut
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 3
+		y = 6
+
+		prerequisite = { focus = UKR_relax_repressive_laws }
+		relative_position_id = UKR_emergency_measures
+		mutually_exclusive = { focus = UKR_reform_of_berkut }
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+			always = no
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_reform_of_berkut
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 1
+		y = 6
+
+		prerequisite = { focus = UKR_relax_repressive_laws }
+		relative_position_id = UKR_emergency_measures
+		mutually_exclusive = { focus = UKR_liqudation_of_berkut }
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+			always = no
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_severance_of_economic_ties_with_russia
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 2
+
+		prerequisite = { focus = UKR_reform_of_berkut focus = UKR_liqudation_of_berkut }
+		relative_position_id = UKR_relax_repressive_laws
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+			always = no
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = UKR_sign_an_association_agreement_with_the_eu
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 3
+
+		prerequisite = { focus = UKR_severance_of_economic_ties_with_russia }
+		relative_position_id = UKR_relax_repressive_laws
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+			always = no
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_stability = 0.025
+		}
+	}
+	
+	focus = {
+		id = UKR_negotiations_have_reached_an_impasse
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 3
+
+		prerequisite = { focus = UKR_deal_with_opposition }
+		relative_position_id = UKR_emergency_measures
+		mutually_exclusive = { focus = UKR_a_step_towards_the_protesters }
+
+		available = {
+            NOT = {
+				OR = {
+				    has_completed_focus = UKR_yanukovich_escaped
+				    has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 5
+			}
+			add_stability = 0.025
+		}
+	}	
 
 	focus = {
 		id = UKR_arrest_yanukovich
@@ -1804,8 +2731,6 @@ focus_tree = {
 		x = 0
 		y = 5
 
-		prerequisite = { focus = UKR_strengthen_kramatorsk }
-		prerequisite = { focus = UKR_strengthen_slavyansk }
 		prerequisite = { focus = UKR_launch_counterattacks }
 		prerequisite = { focus = UKR_volunteer_help }
 		prerequisite = { focus = UKR_humanitarion_help_to_people }
@@ -2233,195 +3158,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_partial_mobilization"
              
-		}
-	}
-
-	focus = {
-		id = UKR_information_campaign_against_maidan
-		icon = GFX_goal_no_focus_UKR
-		cost = 1
-		x = 6
-		y = 1
-
-		prerequisite = { focus = UKR_dictatorship_takes_over }
-		relative_position_id = UKR_dictatorship_takes_over
-
-		allow_branch = {
-			has_completed_focus = UKR_dictatorship_takes_over
-			NOT = {
-				has_completed_focus = UKR_unrest_in_the_east
-			}
-		}
-
-		available = {
-            NOT = {
-				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
-			add_days_mission_timeout = {
-				mission = UKR_yanukovich_overthrow
-				days = 5
-			}
-			add_stability = 0.025
-		}
-	}
-
-	focus = {
-		id = UKR_financing_pro_government_protests
-		icon = GFX_goal_no_focus_UKR
-		cost = 0.7
-		x = 0
-		y = 1
-
-		prerequisite = { focus = UKR_information_campaign_against_maidan }
-		relative_position_id = UKR_information_campaign_against_maidan
-
-		available = {
-            NOT = {
-				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Financing_pro_government_protests"
-			add_days_mission_timeout = {
-				mission = UKR_yanukovich_overthrow
-				days = 2
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_coordination_with_pro_russian_movements
-		icon = GFX_goal_no_focus_UKR
-		cost = 0.8
-		x = 0
-		y = 2
-
-		prerequisite = { focus = UKR_financing_pro_government_protests }
-		relative_position_id = UKR_information_campaign_against_maidan
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Coordination_with_pro_Russian_movements"
-			add_days_mission_timeout = {
-				mission = UKR_yanukovich_overthrow
-				days = 2
-			}
-			add_to_variable = {
-                var = DPR_separatism_value
-                value = 4
-            }
-			add_to_variable = {
-                var = LPR_separatism_value
-                value = 3
-            }
-			add_to_variable = {
-                var = HPR_separatism_value
-                value = 2
-            }
-			add_to_variable = {
-                var = OPR_separatism_value
-                value = 2
-            }
-			custom_effect_tooltip = UKR_add_separatism
-		}
-	}
-
-	focus = {
-		id = UKR_involvement_of_russian_advisors
-		icon = GFX_goal_no_focus_UKR
-		cost = 0.9
-		x = 0
-		y = 3
-
-		prerequisite = { focus = UKR_coordination_with_pro_russian_movements }
-		relative_position_id = UKR_information_campaign_against_maidan
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Involvement_of_Russian_advisors"
-			add_days_mission_timeout = {
-				mission = UKR_yanukovich_overthrow
-				days = 3
-			}
-			add_to_variable = {
-                var = DPR_separatism_value
-                value = 4
-            }
-			add_to_variable = {
-                var = LPR_separatism_value
-                value = 3
-            }
-			add_to_variable = {
-                var = HPR_separatism_value
-                value = 2
-            }
-			add_to_variable = {
-                var = OPR_separatism_value
-                value = 2
-            }
-			add_to_variable = {
-                var = ZKR_separatism_value
-                value = 1
-            }
-			custom_effect_tooltip = UKR_add_separatism
-		}
-	}
-
-	focus = {
-		id = UKR_deployment_of_russian_forces_to_stabilize_the_situation
-		icon = GFX_goal_no_focus_UKR
-		cost = 1
-		x = 0
-		y = 4
-
-		prerequisite = { focus = UKR_involvement_of_russian_advisors }
-		relative_position_id = UKR_information_campaign_against_maidan
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Deployment_of_Russian_forces_to_stabilize_the_situation"
-			add_days_mission_timeout = {
-				mission = UKR_yanukovich_overthrow
-				days = 15
-			}
-
-			add_to_variable = {
-                var = UKR_radicalisation_of_proeuropeans_value
-                value = 5
-            }
-			add_to_variable = {
-                var = UKR_radicalisation_of_nationalists_value
-                value = 5
-            }
-			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 		}
 	}
 }
