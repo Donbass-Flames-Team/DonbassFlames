@@ -7,37 +7,44 @@ guiTypes = {
 
 		iconType = {
 			name = "DF_escalation_icon_1"
-			spriteType = "GFX_maidanites_maidan_powers_gui"
+			spriteType = "GFX_escalation_one"
 			position = { x = 180 y = -15 }
 			tooltip = "Donbas_war_escalation_1_tt"
 		}
 
 		iconType = {
 			name = "DF_escalation_icon_2"
-			spriteType = "GFX_nationalists_maidan_powers_gui"
+			spriteType = "GFX_escalation_one"
 			position = { x = 30 y = -15 }
 			tooltip = "Donbas_war_escalation_2_tt"
 		}
 
 		iconType = {
 			name = "DF_escalation_icon_3"
-			spriteType = "GFX_prorussians_maidan_powers_gui"
+			spriteType = "GFX_escalation_one"
 			position = { x = 330 y = -15 }
 			tooltip = "Donbas_war_escalation_3_tt"
 		}
 
 		iconType = {
 			name = "DF_escalation_icon_4"
-			spriteType = "GFX_prorussians_maidan_powers_gui"
+			spriteType = "GFX_escalation_one"
 			position = { x = 330 y = -15 }
 			tooltip = "Donbas_war_escalation_4_tt"
 		}
 
 		iconType = {
 			name = "DF_escalation_icon_5"
-			spriteType = "GFX_prorussians_maidan_powers_gui"
+			spriteType = "GFX_escalation_one"
 			position = { x = 330 y = -15 }
 			tooltip = "Donbas_war_escalation_5_tt"
+		}
+
+		iconType = {
+			name = "DF_escalation_icon_6"
+			spriteType = "GFX_escalation_one"
+			position = { x = 330 y = -15 }
+			tooltip = "Donbas_war_escalation_6_tt"
 		}
 
 	}
