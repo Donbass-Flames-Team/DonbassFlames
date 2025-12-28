@@ -4,10 +4,13 @@ state={
 	provinces={
 		8053 10115 16149
 	}
-	history= {
-		owner = RUS
-		add_core_of = RUS
-	}
+	history={
+        owner = RUS
+        add_core_of = RUS 
+		buildings = {
+			infrastructure = 2
+		}
+    }
 	buildings_max_level_factor=1.000
 	manpower=500
 	state_category = rural
