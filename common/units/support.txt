@@ -129,7 +129,6 @@ sub_units = {
 		}
 		
 		categories = {
-			category_front_line
 			category_support_battalions
 			category_army
 		}
@@ -552,12 +551,12 @@ sub_units = {
 		
 		essential = {
 			support_equipment
-			truck_chassis
+			bbm_chassis
 		}
 
 		need = {
 			support_equipment = 20
-			truck_chassis = 10
+			bbm_chassis  = 10
 		}
 
 	}

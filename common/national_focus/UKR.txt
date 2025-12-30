@@ -2148,7 +2148,6 @@ focus_tree = {
 		x = -9
 		y = 1
 
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2351,7 +2350,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_reform_of_the_sergeant_corps"
 		}
 	}
 
@@ -2376,7 +2375,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_creation_of_joint_headquarters"
 		}
 	}
 
