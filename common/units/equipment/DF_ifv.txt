@@ -48,7 +48,6 @@ equipments = {
 
 	infantry_fighting_vehicle_1 = {
 		year = 1980
-		is_buildable = no
 
 		archetype = infantry_fighting_vehicle
 		parent = infantry_fighting_vehicle_0
@@ -84,7 +83,6 @@ equipments = {
 
 	infantry_fighting_vehicle_2 = {
 		year = 2000
-		is_buildable = no
 
 		archetype = infantry_fighting_vehicle
 		parent = infantry_fighting_vehicle_1
@@ -120,7 +118,6 @@ equipments = {
 
 	infantry_fighting_vehicle_3 = {
 		year = 2020
-		is_buildable = no
 
 		archetype = infantry_fighting_vehicle
 		parent = infantry_fighting_vehicle_2
