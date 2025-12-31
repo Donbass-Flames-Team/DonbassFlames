@@ -1,0 +1,13 @@
+on_daily = {
+	effect = {
+		if = {
+			limit = {
+				has_global_flag = Start_of_ATO_SP
+				tag = UKR
+				date = 2015.1.13
+				NOT = { has_country_flag = UKR_volnovakha_bus_attack_fired }
+			}
+			country_event = { id = ukraine.33 }
+		}
+	}
+}
