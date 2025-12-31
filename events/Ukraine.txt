@@ -1285,3 +1285,23 @@ country_event = {
 		}
 	}
 }
+# Обстрел автобуса под Волновахой — 13 января 2015
+country_event = {
+	id = ukraine.33
+	title = ukraine.33.t
+	desc  = ukraine.33.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = UKR_volnovakha_bus_attack_fired
+	}
+
+	option = {
+		name = ukraine.33.a
+		add_stability = -0.02
+		add_war_support = 0.03
+		add_political_power = -25
+	}
+}
