@@ -1,10 +1,18 @@
 state={
 	id=264
 	name="STATE_264"
-	provinces={
-		17472 
+	provinces = {
+		16092 18347
+	}
+	history= {
+		owner = UKR
+		add_core_of = UKR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
+        manpower=10
         state_category = town
 }
