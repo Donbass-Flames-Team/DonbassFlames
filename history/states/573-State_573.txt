@@ -1,17 +1,18 @@
 state={
 	id=573
 	name="STATE_573"
-	provinces = {
+	provinces={
 		9978 18333 18336
 	}
-	history= {
+	history={
 		victory_points = { 9978 15 }
 		owner = UKR
 		add_core_of = UKR
 		buildings = {
-			infrastructure = 4		
+			infrastructure = 4
+		}
 	}
 	buildings_max_level_factor=1.000
-	manpower=49500
+	manpower = 49500
 	state_category = town
 }
