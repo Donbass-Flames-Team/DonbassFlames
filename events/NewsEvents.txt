@@ -401,3 +401,41 @@ news_event = {
 		}
 	}
 }
+# 2016 — Trump wins
+news_event = {
+    id = us_elections.1
+    title = us_elections.1.t
+    desc = us_elections.1.d
+    picture = GFX_news_event_021
+    major = yes
+
+    is_triggered_only = yes
+
+    option = { name = us_elections.1.a }
+}
+
+# 2020 — Biden wins
+news_event = {
+    id = us_elections.2
+    title = us_elections.2.t
+    desc = us_elections.2.d
+    picture = GFX_news_event_021
+    major = yes
+
+    is_triggered_only = yes
+
+    option = { name = us_elections.2.a }
+}
+
+# 2024 — Trump wins
+news_event = {
+    id = us_elections.3
+    title = us_elections.3.t
+    desc = us_elections.3.d
+    picture = GFX_news_event_021
+    major = yes
+
+    is_triggered_only = yes
+
+    option = { name = us_elections.3.a }
+}
