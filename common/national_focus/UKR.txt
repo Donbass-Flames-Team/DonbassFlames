@@ -1831,6 +1831,21 @@ focus_tree = {
                     id = ukraine.28
                     days = 46
                 }
+				division_template = {
+	                name = "Batal'on TRO"
+	                regiments = {
+                        territorial_defense_unit = { x = 0 y = 0 }
+		                territorial_defense_unit = { x = 0 y = 1 }
+		                territorial_defense_unit = { x = 0 y = 2 }
+                        territorial_defense_unit = { x = 1 y = 0 }
+	                }
+                    support = {
+                        engineer = { x = 0 y = 0 }
+		                recon = { x = 0 y = 1 }
+		                mortar = { x = 0 y = 2 }
+		                atgm_company = { x = 0 y = 3 }
+	                }
+                }
 			}
 		}
 
@@ -1846,6 +1861,21 @@ focus_tree = {
 				country_event = {
                     id = ukraine.28
                     days = 46
+                }
+				division_template = {
+	                name = "Batal'on TRO"
+	                regiments = {
+                        territorial_defense_unit = { x = 0 y = 0 }
+		                territorial_defense_unit = { x = 0 y = 1 }
+		                territorial_defense_unit = { x = 0 y = 2 }
+                        territorial_defense_unit = { x = 1 y = 0 }
+	                }
+                    support = {
+                        engineer = { x = 0 y = 0 }
+		                recon = { x = 0 y = 1 }
+		                mortar = { x = 0 y = 2 }
+		                atgm_company = { x = 0 y = 3 }
+	                }
                 }
 			}
 		}

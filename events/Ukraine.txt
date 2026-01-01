@@ -1377,3 +1377,18 @@ country_event = {
 		add_war_support = 0.025
 	}
 }
+
+# Правый корпус расширяется
+country_event = {
+	id = ukraine.37
+	title = ukraine.37.t
+	desc  = ukraine.37.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.37.a
+		load_oob = UKR_Pravyy_corpus_expanded_2014
+	}
+}

@@ -27,6 +27,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_arrise_donbass"
+			add_ideas = DPR_arrise_donbass
+			add_war_support = 0.05
 		}
 	}
 
@@ -50,6 +52,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_arrise_donbass"
+
 		}
 	}
 
