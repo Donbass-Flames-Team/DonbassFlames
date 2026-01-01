@@ -2774,6 +2774,16 @@ focus_tree = {
 		available = {
             NOT = {
 				has_global_flag = Minsk2_is_signed
+				date > 2015.9.10
+			}
+			tooltip = UKR_end_of_separatism_trigger_tt
+			hidden_trigger = {
+				NOT = {
+				    country_exists = DPR
+					country_exists = KPR
+					country_exists = LPR
+					country_exists = OPR
+			    }
 			}
 		}
 
@@ -2814,7 +2824,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_launch_counterattacks
-		icon = GFX_focus_UKR_launch_counterattacksh
+		icon = GFX_focus_UKR_launch_counterattacks
 		cost = 5
 		x = 0
 		y = 1

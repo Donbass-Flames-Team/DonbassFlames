@@ -24,6 +24,13 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "UKR_separatism_gui_help_button"
+			spriteType = "GFX_DF_question_button"
+			position = { x = 470 y = 5 }
+			pdx_tooltip = "SEPARATISM_GUI_HELP_BUTTON"
+		}
+
+		iconType = {
 			name = "UKR_separatism_dpr_icon"
 			spriteType = "GFX_ukraine_dpr_icon"
 			position = { x = 415 y = 5 }
