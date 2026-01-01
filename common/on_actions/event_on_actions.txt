@@ -41,35 +41,36 @@ on_actions = {
 			    country_event = { id = ukraine.35 }
 		    }
 			# --- US elections global news ---
-			# 08.11.2016
+			# 01.20.2017
 			if = {
 				limit = {
-					date = 2016.11.8
-					NOT = { has_global_flag = US_ELECTION_NEWS_2016_FIRED }
+					date = 2017.20.1
+					NOT = { has_global_flag = US_ELECTION_NEWS_2017_FIRED }
 				}
-				set_global_flag = US_ELECTION_NEWS_2016_FIRED
+				set_global_flag = US_ELECTION_NEWS_2017_FIRED
 				news_event = { id = news_events.10 hours = 6 }
 			}
 
-			# 03.11.2020
+			# 20.1.2021
 			if = {
 				limit = {
-					date = 2020.11.3
-					NOT = { has_global_flag = US_ELECTION_NEWS_2020_FIRED }
+					date = 2021.20.1
+					NOT = { has_global_flag = US_ELECTION_NEWS_2021_FIRED }
 				}
-				set_global_flag = US_ELECTION_NEWS_2020_FIRED
+				set_global_flag = US_ELECTION_NEWS_2021_FIRED
 				news_event = { id = news_events.11 hours = 6 }
 			}
 
-			# 05.11.2024
+			# 01.20.2025
 			if = {
 				limit = {
-					date = 2024.11.5
-					NOT = { has_global_flag = US_ELECTION_NEWS_2024_FIRED }
+					date = 2025.20.1
+					NOT = { has_global_flag = US_ELECTION_NEWS_2025_FIRED }
 				}
-				set_global_flag = US_ELECTION_NEWS_2024_FIRED
+				set_global_flag = US_ELECTION_NEWS_2025_FIRED
 				news_event = { id = news_events.12 hours = 6 }
 			}
         }
 	}
 }
+
