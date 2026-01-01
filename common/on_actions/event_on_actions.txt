@@ -22,6 +22,39 @@ on_actions = {
 			    }
 			    country_event = { id = ukraine.34 }
 		    }
-	    }
-    }
+			# --- US elections global news ---
+			# 08.11.2016
+			if = {
+				limit = {
+					tag = USA
+					date = 2016.11.8
+					NOT = { has_global_flag = US_ELECTION_NEWS_2016_FIRED }
+				}
+				set_global_flag = US_ELECTION_NEWS_2016_FIRED
+				news_event = { id = news_events.10 hours = 6 }
+			}
+
+			# 03.11.2020
+			if = {
+				limit = {
+					tag = USA
+					date = 2020.11.3
+					NOT = { has_global_flag = US_ELECTION_NEWS_2020_FIRED }
+				}
+				set_global_flag = US_ELECTION_NEWS_2020_FIRED
+				news_event = { id = news_events.11 hours = 6 }
+			}
+
+			# 05.11.2024
+			if = {
+				limit = {
+					tag = USA
+					date = 2024.11.5
+					NOT = { has_global_flag = US_ELECTION_NEWS_2024_FIRED }
+				}
+				set_global_flag = US_ELECTION_NEWS_2024_FIRED
+				news_event = { id = news_events.12 hours = 6 }
+			}
+        }
+	}
 }
