@@ -1330,3 +1330,50 @@ country_event = {
 		add_political_power = -15
 	}
 }
+
+# Засада в Мариуполе 
+country_event = {
+	id = ukraine.35
+	title = ukraine.35.t
+	desc  = ukraine.35.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = UKR_zasada_dnr_mariupol_2014
+		}
+	}
+
+	option = {
+		name = ukraine.35.a
+		add_war_support = -0.015
+		add_manpower = -9
+	}
+}
+
+# Сбитие малазийского боинга
+country_event = {
+	id = ukraine.36
+	title = ukraine.36.t
+	desc  = ukraine.36.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = TheDownedMalaysianBoing
+			news_event = {
+				id = news_events.13
+				hours = 9
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.36.a
+		add_war_support = 0.025
+	}
+}

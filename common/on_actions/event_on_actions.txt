@@ -11,6 +11,15 @@ on_actions = {
 			    }
 			    country_event = { id = ukraine.33 }
 		    }
+		    if = {
+			    limit = {
+				    has_global_flag = Start_Of_ATO
+				    tag = UKR
+				    date = 2014.7.17
+				    NOT = { has_global_flag = TheDownedMalaysianBoing }
+			    }
+			    country_event = { id = ukraine.36 }
+		    }
 	    }
 		effect = {
 		    if = {
@@ -21,6 +30,15 @@ on_actions = {
 				    NOT = { has_country_flag = UKR_The_downed_Il_76_near_Luhansk }
 			    }
 			    country_event = { id = ukraine.34 }
+		    }
+			if = {
+			    limit = {
+				    has_global_flag = Start_Of_ATO
+				    tag = UKR
+				    date = 2014.7.14
+				    NOT = { has_country_flag = UKR_zasada_dnr_mariupol_2014 }
+			    }
+			    country_event = { id = ukraine.35 }
 		    }
 			# --- US elections global news ---
 			# 08.11.2016
