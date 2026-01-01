@@ -401,7 +401,7 @@ news_event = {
 		}
 	}
 }
-# 2016 — Trump wins
+# 2017 — Trump wins
 news_event = {
     id = news_events.10
     title = news_events.10.t
@@ -414,28 +414,28 @@ news_event = {
     option = { name = us_elections.1.a }
 }
 
-# 2020 — Biden wins
+# 2021 — Biden wins
 news_event = {
-    id = us_elections.2
-    title = us_elections.2.t
-    desc = us_elections.2.d
+    id = news_events.11
+    title = news_events.11.t
+    desc  = news_events.11.d
     picture = GFX_news_event_021
     major = yes
 
     is_triggered_only = yes
 
-    option = { name = us_elections.2.a }
+    option = { name = news_events.11.a }
 }
 
-# 2024 — Trump wins
+# 2025 — Trump wins
 news_event = {
-    id = us_elections.3
-    title = us_elections.3.t
-    desc = us_elections.3.d
+    id = news_events.12
+    title = news_events.12.t
+    desc  = news_events.12.d
     picture = GFX_news_event_021
     major = yes
 
     is_triggered_only = yes
 
-    option = { name = us_elections.3.a }
+    option = { name = news_events.12.a }
 }
