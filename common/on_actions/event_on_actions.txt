@@ -26,7 +26,6 @@ on_actions = {
 			# 08.11.2016
 			if = {
 				limit = {
-					tag = USA
 					date = 2016.11.8
 					NOT = { has_global_flag = US_ELECTION_NEWS_2016_FIRED }
 				}
@@ -37,7 +36,6 @@ on_actions = {
 			# 03.11.2020
 			if = {
 				limit = {
-					tag = USA
 					date = 2020.11.3
 					NOT = { has_global_flag = US_ELECTION_NEWS_2020_FIRED }
 				}
@@ -48,7 +46,6 @@ on_actions = {
 			# 05.11.2024
 			if = {
 				limit = {
-					tag = USA
 					date = 2024.11.5
 					NOT = { has_global_flag = US_ELECTION_NEWS_2024_FIRED }
 				}

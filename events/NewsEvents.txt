@@ -403,8 +403,8 @@ news_event = {
 }
 # 2016 — Trump wins
 news_event = {
-    id = us_elections.1
-    title = us_elections.1.t
+    id = news_events.10
+    title = news_events.10.t
     desc = us_elections.1.d
     picture = GFX_news_event_021
     major = yes
