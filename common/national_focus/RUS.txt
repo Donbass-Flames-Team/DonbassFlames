@@ -563,6 +563,13 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+			hidden_effect = {
+				RUS = {
+		            delete_unit = {
+                         division_template = "Overwatch Division" 
+		            }
+				}
+			}
 		}
 	}
 
@@ -619,7 +626,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			hidden_effect = {
+				RUS = {
+		            delete_unit = {
+                         division_template = "Overwatch Division" 
+		            }
+				}
+			}
 		}
 	}
 

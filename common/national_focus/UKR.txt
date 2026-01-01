@@ -2631,7 +2631,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-
+            NOT = {
+				has_global_flag = UKRelectionsofpresident2014
+			}
 		}
 
 		completion_reward = {
@@ -2652,7 +2654,7 @@ focus_tree = {
 		relative_position_id = UKR_start_of_ato
 
 		ai_will_do = {
-			factor = 25
+			factor = 35
 		}
 
 		cancel_if_invalid = yes
@@ -2876,7 +2878,7 @@ focus_tree = {
 		relative_position_id = UKR_start_of_ato
 
 		ai_will_do = {
-			factor = 25
+			factor = 15
 		}
 
 		cancel_if_invalid = yes

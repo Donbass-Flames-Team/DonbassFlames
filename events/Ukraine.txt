@@ -1295,7 +1295,9 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_country_flag = UKR_volnovakha_bus_attack_fired
+		hidden_effect = {
+			set_country_flag = UKR_volnovakha_bus_attack_fired
+		}
 	}
 
 	option = {
@@ -1303,5 +1305,29 @@ country_event = {
 		add_stability = -0.02
 		add_war_support = 0.03
 		add_political_power = -25
+	}
+}
+
+
+# Катастрофа Ил-76 в Луганске — 14 июня 2014 года
+country_event = {
+	id = ukraine.34
+	title = ukraine.34.t
+	desc  = ukraine.34.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = UKR_The_downed_Il_76_near_Luhansk
+			
+		}
+	}
+
+	option = {
+		name = ukraine.34.a
+		add_war_support = -0.015
+		add_political_power = -15
 	}
 }
