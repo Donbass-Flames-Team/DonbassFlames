@@ -44,7 +44,7 @@ on_actions = {
 			# 01.20.2017
 			if = {
 				limit = {
-					date = 2017.20.1
+					date = 2017.1.20
 					NOT = { has_global_flag = US_ELECTION_NEWS_2017_FIRED }
 				}
 				set_global_flag = US_ELECTION_NEWS_2017_FIRED
@@ -54,7 +54,7 @@ on_actions = {
 			# 20.1.2021
 			if = {
 				limit = {
-					date = 2021.20.1
+					date = 2021.1.20
 					NOT = { has_global_flag = US_ELECTION_NEWS_2021_FIRED }
 				}
 				set_global_flag = US_ELECTION_NEWS_2021_FIRED
@@ -64,7 +64,7 @@ on_actions = {
 			# 01.20.2025
 			if = {
 				limit = {
-					date = 2025.20.1
+					date = 2025.1.20
 					NOT = { has_global_flag = US_ELECTION_NEWS_2025_FIRED }
 				}
 				set_global_flag = US_ELECTION_NEWS_2025_FIRED

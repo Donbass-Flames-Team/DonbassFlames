@@ -2644,13 +2644,42 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_organize_defense
+		id = UKR_organize_frontline
 		icon = GFX_focus_UKR_organization_of_defense
 		cost = 2
 		x = 0
 		y = 2
 
 		prerequisite = { focus = UKR_emergency_redeployment_of_troops }
+		relative_position_id = UKR_start_of_ato
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    add_to_variable = { UKR_AFU_army_org_factor = 0.15 }
+		    custom_effect_tooltip = UKR_organize_frontline_tt
+		}
+	}
+
+	focus = {
+		id = UKR_organize_defense
+		icon = GFX_focus_UKR_organization_of_defense
+		cost = 2
+		x = 0
+		y = 3
+
+		prerequisite = { focus = UKR_organize_frontline }
 		relative_position_id = UKR_start_of_ato
 
 		ai_will_do = {
@@ -2730,7 +2759,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_victory_over_separatism
 		cost = 1
 		x = 0
-		y = 5
+		y = 6
 
 		prerequisite = { focus = UKR_launch_counterattacks }
 		prerequisite = { focus = UKR_volunteer_help }
@@ -2761,7 +2790,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_general_stuff
 		cost = 2
 		x = 2
-		y = 3
+		y = 4
 
 		prerequisite = { focus = UKR_organize_defense }
 		relative_position_id = UKR_start_of_ato
@@ -2787,11 +2816,11 @@ focus_tree = {
 		id = UKR_launch_counterattacks
 		icon = GFX_focus_UKR_launch_counterattacksh
 		cost = 5
-		x = 2
-		y = 4
+		x = 0
+		y = 1
 
 		prerequisite = { focus = UKR_general_staff }
-		relative_position_id = UKR_start_of_ato
+		relative_position_id = UKR_general_staff
 
 		ai_will_do = {
 			factor = 25
@@ -2809,7 +2838,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		    add_to_variable = { UKR_AFU_army_attack_factor = 0.05 }
+		    add_to_variable = { UKR_AFU_army_attack_factor = 0.15 }
 		    custom_effect_tooltip = UKR_launch_counterattacks_tt
 		}
 	}
@@ -2819,7 +2848,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_prepare_defense
 		cost = 2
 		x = -2
-		y = 3
+		y = 4
 
 		prerequisite = { focus = UKR_organize_defense }
 		relative_position_id = UKR_start_of_ato
@@ -2844,7 +2873,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_humanitarion_help_to_people
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_UKR_humanitarion_help_to_people
 		cost = 1
 		x = 0
 		y = 1

@@ -802,7 +802,7 @@ focus_tree = {
 	focus = {
 		id = RUS_task_for_strelkov
 		icon = GFX_goal_no_focus_RUS
-		cost = 1
+		cost = 0.3
 		x = -2
 		y = 3
 
@@ -1082,8 +1082,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 10
 			add_stability = 0.025
+			add_war_support = 0.025
 		}
 	}
 
@@ -1109,8 +1110,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			DPR = {
+				country_event = DPR.1
+			}
 		}
 	}
 

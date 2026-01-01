@@ -1,0 +1,20 @@
+﻿###########################
+# DPR Events
+###########################
+
+add_namespace = DPR
+
+#Invasion of Crimea
+country_event = {
+	id = DPR.1
+	title = DPR.1.t
+	desc = DPR.1.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.1.a
+		
+	}
+}
