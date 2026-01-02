@@ -2007,7 +2007,869 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-			country_event = ukraine.25
+		}
+	}
+
+	focus = {
+		id = UKR_supreme_commander_in_chiefs_headquarters
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = UKR_battle_for_ukraine }
+		relative_position_id = UKR_battle_for_ukraine
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_ban_opzh
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = UKR_battle_for_ukraine }
+		relative_position_id = UKR_battle_for_ukraine
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_ukrainian_special_services_during_wartime
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 12
+		y = 1
+		
+		prerequisite = { focus = UKR_battle_for_ukraine }
+		relative_position_id = UKR_battle_for_ukraine
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_expand_sbu_alpha_to_division
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = UKR_ukrainian_special_services_during_wartime }
+		relative_position_id = UKR_ukrainian_special_services_during_wartime
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_operations_on_russian_terrotory
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -6
+		y = 2
+		
+		prerequisite = { focus = UKR_ukrainian_special_services_during_wartime }
+		relative_position_id = UKR_ukrainian_special_services_during_wartime
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_organize_operation_web
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 1
+		y = 1 
+		
+		prerequisite = { focus = UKR_operations_on_russian_terrotory }
+		relative_position_id = UKR_operations_on_russian_terrotory
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_creation_of_rdk
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -4
+		y = 1 
+		
+		prerequisite = { focus = UKR_operations_on_russian_terrotory }
+		relative_position_id = UKR_operations_on_russian_terrotory
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_creation_of_lsr
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -4
+		y = 2
+		
+		prerequisite = { focus = UKR_creation_of_rdk }
+		relative_position_id = UKR_operations_on_russian_terrotory
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_organize_destroying_of_our_enemies
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -1
+		y = 1 
+		
+		prerequisite = { focus = UKR_operations_on_russian_terrotory }
+		relative_position_id = UKR_operations_on_russian_terrotory
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_contact_the_resistance
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = UKR_ukrainian_special_services_during_wartime }
+		relative_position_id = UKR_ukrainian_special_services_during_wartime
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_berdyansk_liberation_army
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -2
+		y = 2
+		
+		prerequisite = { focus = UKR_contact_the_resistance }
+		relative_position_id = UKR_ukrainian_special_services_during_wartime
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_atesh
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = UKR_contact_the_resistance }
+		relative_position_id = UKR_ukrainian_special_services_during_wartime
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_srok
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 2
+		y = 2
+		
+		prerequisite = { focus = UKR_contact_the_resistance }
+		relative_position_id = UKR_ukrainian_special_services_during_wartime
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	#Berdyansk Liberation Army
+
+	focus = {
+		id = UKR_army_in_war_time
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 24
+		y = 1
+		
+		prerequisite = { focus = UKR_battle_for_ukraine }
+		relative_position_id = UKR_battle_for_ukraine
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_army_production
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 7
+		y = 1
+		
+		prerequisite = { focus = UKR_army_in_war_time }
+		relative_position_id = UKR_army_in_war_time
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_production_of_rockets
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -4
+		y = 1
+		
+		prerequisite = { focus = UKR_army_production }
+		relative_position_id = UKR_army_production
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_production_of_shells
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = UKR_army_production }
+		relative_position_id = UKR_army_production
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_t64_modernization
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = UKR_army_production }
+		relative_position_id = UKR_army_production
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_bbm_kozak
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = UKR_army_production }
+		relative_position_id = UKR_army_production
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_bohdana
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 5
+		y = 1
+		
+		prerequisite = { focus = UKR_army_production }
+		relative_position_id = UKR_army_production
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_increase_production_of_bohdana
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = UKR_bohdana }
+		relative_position_id = UKR_bohdana
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_reshuffles_in_the_army
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -7
+		y = 1
+		
+		prerequisite = { focus = UKR_army_in_war_time }
+		relative_position_id = UKR_army_in_war_time
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_resolve_management_issues
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = UKR_reshuffles_in_the_army }
+		relative_position_id = UKR_reshuffles_in_the_army
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_create_sbs
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = UKR_army_in_war_time }
+		relative_position_id = UKR_army_in_war_time
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_units_of_sbs
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = UKR_create_sbs }
+		relative_position_id = UKR_create_sbs
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_units_of_sbs
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = UKR_create_sbs }
+		relative_position_id = UKR_create_sbs
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_units_of_sbs
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = UKR_create_sbs }
+		relative_position_id = UKR_create_sbs
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_sbs_recruiting_centers
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -1
+		y = 3
+		
+		prerequisite = { focus = UKR_create_sbs }
+		relative_position_id = UKR_create_sbs
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_creation_of_ebali_system
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = UKR_create_sbs }
+		relative_position_id = UKR_create_sbs
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_brave_market
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = UKR_creation_of_ebali_system }
+		relative_position_id = UKR_create_sbs
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_increase_funding_army_plus
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 1
+		y = 3
+		
+		prerequisite = { focus = UKR_creation_of_ebali_system }
+		relative_position_id = UKR_create_sbs
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_wall_of_drones
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 4
+		
+		prerequisite = { focus = UKR_sbs_recruiting_centers }
+		prerequisite = { focus = UKR_increase_funding_army_plus }
+		relative_position_id = UKR_create_sbs
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_mass_implementation_of_nrk
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 5
+		
+		prerequisite = { focus = UKR_wall_of_drones }
+		relative_position_id = UKR_create_sbs
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_new_combat_log_system # Пидрахуйка
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 6
+		
+		prerequisite = { focus = UKR_wall_of_drones }
+		relative_position_id = UKR_create_sbs
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
