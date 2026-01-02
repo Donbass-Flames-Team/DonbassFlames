@@ -1,76 +1,92 @@
 on_actions = {
-
-    on_weekly = {
-	    effect = {
-		    if = {
-			    limit = {
-				    has_global_flag = Start_Of_ATO
-				    tag = UKR
-				    date = 2015.1.13
-				    NOT = { has_country_flag = UKR_volnovakha_bus_attack_fired }
-			    }
-			    country_event = { id = ukraine.33 }
-		    }
-		    if = {
-			    limit = {
-				    has_global_flag = Start_Of_ATO
-				    tag = UKR
-				    date = 2014.7.17
-				    NOT = { has_global_flag = TheDownedMalaysianBoing }
-			    }
-			    country_event = { id = ukraine.36 }
-		    }
-	    }
-		effect = {
-		    if = {
-			    limit = {
-				    has_global_flag = Start_Of_ATO
-				    tag = UKR
-				    date = 2014.6.14
-				    NOT = { has_country_flag = UKR_The_downed_Il_76_near_Luhansk }
-			    }
-			    country_event = { id = ukraine.34 }
-		    }
-			if = {
-			    limit = {
-				    has_global_flag = Start_Of_ATO
-				    tag = UKR
-				    date = 2014.7.14
-				    NOT = { has_country_flag = UKR_zasada_dnr_mariupol_2014 }
-			    }
-			    country_event = { id = ukraine.35 }
-		    }
-			# --- US elections global news ---
-			# 01.20.2017
-			if = {
-				limit = {
-					date = 2017.1.20
-					NOT = { has_global_flag = US_ELECTION_NEWS_2017_FIRED }
-				}
-				set_global_flag = US_ELECTION_NEWS_2017_FIRED
-				news_event = { id = news_events.10 hours = 6 }
-			}
-
-			# 20.1.2021
-			if = {
-				limit = {
-					date = 2021.1.20
-					NOT = { has_global_flag = US_ELECTION_NEWS_2021_FIRED }
-				}
-				set_global_flag = US_ELECTION_NEWS_2021_FIRED
-				news_event = { id = news_events.11 hours = 6 }
-			}
-
-			# 01.20.2025
-			if = {
-				limit = {
-					date = 2025.1.20
-					NOT = { has_global_flag = US_ELECTION_NEWS_2025_FIRED }
-				}
-				set_global_flag = US_ELECTION_NEWS_2025_FIRED
-				news_event = { id = news_events.12 hours = 6 }
-			}
+  on_daily = {
+    effect = {
+      # 2015-01-13 Volnovakha bus attack
+      if = {
+        limit = {
+          has_global_flag = Start_Of_ATO
+          tag = UKR
+          date > 2015.1.12
+          date < 2015.1.14
+          NOT = { has_country_flag = UKR_volnovakha_bus_attack_fired }
         }
-	}
-}
+        set_country_flag = UKR_volnovakha_bus_attack_fired
+        country_event = { id = ukraine.33 }
+      }
 
+      # 2014-07-17 MH17
+      if = {
+        limit = {
+          has_global_flag = Start_Of_ATO
+          tag = UKR
+          date > 2014.7.16
+          date < 2014.7.18
+          NOT = { has_global_flag = TheDownedMalaysianBoing }
+        }
+        set_global_flag = TheDownedMalaysianBoing
+        country_event = { id = ukraine.36 }
+      }
+
+      # 2014-06-14 IL-76
+      if = {
+        limit = {
+          has_global_flag = Start_Of_ATO
+          tag = UKR
+          date > 2014.6.13
+          date < 2014.6.15
+          NOT = { has_country_flag = UKR_The_downed_Il_76_near_Luhansk }
+        }
+        set_country_flag = UKR_The_downed_Il_76_near_Luhansk
+        country_event = { id = ukraine.34 }
+      }
+
+      # 2014-07-14 Mariupol ambush
+      if = {
+        limit = {
+          has_global_flag = Start_Of_ATO
+          tag = UKR
+          date > 2014.7.13
+          date < 2014.7.15
+          NOT = { has_country_flag = UKR_zasada_dnr_mariupol_2014 }
+        }
+        set_country_flag = UKR_zasada_dnr_mariupol_2014
+        country_event = { id = ukraine.35 }
+      }
+
+      # US elections
+
+      # 2017-01-20
+      if = {
+        limit = {
+          date > 2017.1.19
+          date < 2017.1.21
+          NOT = { has_global_flag = US_ELECTION_NEWS_2017_FIRED }
+        }
+        set_global_flag = US_ELECTION_NEWS_2017_FIRED
+        news_event = { id = news_events.10 hours = 6 }
+      }
+
+      # 2021-01-20
+      if = {
+        limit = {
+          date > 2021.1.19
+          date < 2021.1.21
+          NOT = { has_global_flag = US_ELECTION_NEWS_2021_FIRED }
+        }
+        set_global_flag = US_ELECTION_NEWS_2021_FIRED
+        news_event = { id = news_events.11 hours = 6 }
+      }
+
+      # 2025-01-20
+      if = {
+        limit = {
+          date > 2025.1.19
+          date < 2025.1.21
+          NOT = { has_global_flag = US_ELECTION_NEWS_2025_FIRED }
+        }
+        set_global_flag = US_ELECTION_NEWS_2025_FIRED
+        news_event = { id = news_events.12 hours = 6 }
+      }
+    }
+  }
+}
