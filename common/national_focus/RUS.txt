@@ -478,7 +478,36 @@ focus_tree = {
 			hidden_effect = {
 				UKR = {
 			        country_event = ukraine.27
-			    }
+			    }		
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_support_independent_crimea
+		icon = GFX_goal_no_focus_RUS
+		cost = 0.5
+		x = 0
+		y = 2
+
+		prerequisite = { focus = RUS_transfer_of_contingent_to_sevastopol }
+		relative_position_id = RUS_coup_in_ukraine
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.025
+			country_event = russia.1
+			hidden_effect = {
 				637 = {
 				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
 			    }
@@ -505,35 +534,8 @@ focus_tree = {
 			    }	
 				634 = {
 				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
-			    }		
+			    }
 			}
-		}
-	}
-
-	focus = {
-		id = RUS_support_independent_crimea
-		icon = GFX_goal_no_focus_RUS
-		cost = 0.2
-		x = 0
-		y = 2
-
-		prerequisite = { focus = RUS_transfer_of_contingent_to_sevastopol }
-		relative_position_id = RUS_coup_in_ukraine
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_war_support = 0.025
-			country_event = russia.1
 		}
 	}
 
@@ -626,11 +628,16 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			country_event = russia.2
 			hidden_effect = {
 				RUS = {
 		            delete_unit = {
                         division_template = "Zelenyy Chelovechki" 
 		            }
+				}
+				news_event = {
+					id = news_events.8
+					hours = 9
 				}
 			}
 		}
@@ -658,8 +665,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 25
-			add_stability = 0.05
+			country_event = russia.2
+			hidden_effect = {
+				news_event = {
+					id = news_events.7
+					hours = 9
+				}
+			}
 		}
 	}
 
@@ -739,8 +751,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			
 		}
 	}
 
@@ -760,6 +771,12 @@ focus_tree = {
 		}
 
 		available = {
+			OR = {
+			    country_exists = DPR
+			    country_exists = LPR
+			    country_exists = OPR
+			    country_exists = KPR
+			}
 		}
 
 		cancel_if_invalid = yes

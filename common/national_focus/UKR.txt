@@ -1425,6 +1425,14 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_arrest_yanukovich
+			}
+		}
+
 		#allow_branch = {
 		#	NOT = {
 		#	   has_completed_focus = UKR_dictatorship_takes_over
@@ -1500,6 +1508,14 @@ focus_tree = {
 
 		available = {
             has_country_flag = UKR_Yanukovich_overthrown
+		}
+
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_arrest_yanukovich
+			}
 		}
 
 		completion_reward = {
@@ -1999,7 +2015,7 @@ focus_tree = {
 		id = UKR_snap_presidential_elections
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 30
+		x = 40
 		y = 0
 
 
@@ -2044,6 +2060,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			add_political_power = 25
 		}
 	}
 
@@ -2255,8 +2272,8 @@ focus_tree = {
 	focus = {
 		id = UKR_military_reforms_afu
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
-		x = 55
+		cost = 3
+		x = 65
 		y = 0
 
 
@@ -2284,7 +2301,7 @@ focus_tree = {
 	focus = {
 		id = UKR_western_instructors
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 5
 		x = 0
 		y = 1
 
@@ -2298,7 +2315,7 @@ focus_tree = {
 
 
 		available = {
-            
+            has_completed_focus = UKR_turn_to_the_west_for_help
 		}
 
 		completion_reward = {
@@ -2356,6 +2373,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
+		    custom_effect_tooltip = UKR_missionary_command_tt
 		}
 	}
 
@@ -2670,12 +2689,18 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
             add_stability = 0.025
 			custom_effect_tooltip = UKR_western_help_2014_tt
+			hidden_effect = {
+				country_event = {
+					id = ukraine.38
+					days = 85
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = UKR_organize_frontline
-		icon = GFX_focus_UKR_organization_of_defense
+		icon = GFX_focus_UKR_organize_frontline
 		cost = 2
 		x = 0
 		y = 2
