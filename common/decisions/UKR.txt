@@ -557,6 +557,119 @@ UKR_separatism_decision = {
 
 UKR_parlamient_decision = {
 
+	UKR_buy_the_votes_of_deputies = {
+
+		icon = GFX_decision_UKR_icon_of_SBU
+        cost = 65
+		fire_only_once = no
+		
+		available = {		
+		    tag = UKR
+		}
+	    
+		visible = {
+			tag = UKR
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				random_list = {
+					# НАБУ разоблачило коорупионые схемы
+					3 = {
+                        country_event = {
+							id = ukraine.39
+							random_days = 198
+						}
+					}
+					# Все хорошо
+					10 = {
+                        add_political_power = 1
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10	
+		}
+	}
+
+	UKR_talk_to_the_deputies = {
+
+		icon = GFX_decision_UKR_icon_of_SBU
+        cost = 65
+		fire_only_once = no
+		
+		available = {		
+		    tag = UKR
+		}
+	    
+		visible = {
+			tag = UKR
+		}
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 10	
+		}
+	}
+
+	UKR_arrange_a_feast_with_the_deputies = {
+
+		icon = GFX_decision_UKR_icon_of_SBU
+        cost = 65
+		fire_only_once = no
+		
+		available = {		
+		    tag = UKR
+		}
+	    
+		visible = {
+			tag = UKR
+		}
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 10	
+		}
+	}
+
+	UKR_speech_in_the_verkhovna_rada = {
+
+		icon = GFX_decision_UKR_icon_of_SBU
+        cost = 65
+		fire_only_once = no
+		
+		available = {		
+		    tag = UKR
+		}
+	    
+		visible = {
+			tag = UKR
+		}
+
+		complete_effect = {
+			random_list = {
+				10 = {
+
+				}
+				10 = {
+
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10	
+		}
+	}
+
 }
 
 UKR_elections_of_president = {
@@ -922,7 +1035,9 @@ UKR_ATO_decision = {
 		}
 		
 		available = {
-			has_global_flag = Start_Of_ATO 
+			NOT = {
+			    has_global_flag = Start_Of_ATO 
+			}
 		}
 		
 		selectable_mission = no

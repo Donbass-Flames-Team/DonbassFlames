@@ -475,10 +475,26 @@ focus_tree = {
 			load_oob = "Crimean_green_people_RUS"
 			640 = { transfer_state_to = RUS }
 			621 = { transfer_state_to = RUS }
+			597 = { transfer_state_to = RUS }
+			598 = { transfer_state_to = RUS }
 			hidden_effect = {
 				UKR = {
 			        country_event = ukraine.27
 			    }		
+				add_state_claim = 621
+				add_state_claim = 637
+				add_state_claim = 614
+				add_state_claim = 628
+				add_state_claim = 634
+				add_state_claim = 607
+				add_state_claim = 599
+				add_state_claim = 627
+				add_state_claim = 613
+				add_state_claim = 654
+				add_state_claim = 639
+				add_state_claim = 579
+				add_state_claim = 623
+				add_state_claim = 591
 			}
 		}
 	}
@@ -639,6 +655,20 @@ focus_tree = {
 					id = news_events.8
 					hours = 9
 				}
+				remove_state_claim  = 621
+				remove_state_claim  = 637
+				remove_state_claim  = 614
+				remove_state_claim  = 628
+				remove_state_claim  = 634
+				remove_state_claim  = 607
+				remove_state_claim  = 599
+				remove_state_claim  = 627
+				remove_state_claim  = 613
+				remove_state_claim  = 654
+				remove_state_claim  = 639
+				remove_state_claim  = 579
+				remove_state_claim  = 623
+				remove_state_claim  = 591
 			}
 		}
 	}
@@ -666,6 +696,12 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = russia.2
+			621 = {
+				add_compliance = 30
+			}
+			637 = {
+				add_compliance = 30
+			}
 			hidden_effect = {
 				news_event = {
 					id = news_events.7
@@ -1182,8 +1218,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			add_stability = 0.05
 		}
 	}
 

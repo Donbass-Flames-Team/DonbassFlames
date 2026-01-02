@@ -1414,3 +1414,19 @@ country_event = {
 		}		
 	}
 }
+
+# НАБУ разоблачило коррупционые схемы о покупке голосов депутатов
+country_event = {
+	id = ukraine.39
+	title = ukraine.39.t
+	desc  = ukraine.39.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.39.a
+		add_stability = -0.075
+		add_political_power = -100		
+	}
+}
