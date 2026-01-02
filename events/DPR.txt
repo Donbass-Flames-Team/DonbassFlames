@@ -46,9 +46,88 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = DPR.2.a
+		name = DPR.3.a
 		army_experience = 25
 		add_war_support = -0.025
 		add_stability = -0.025
+	}
+}
+
+#Гиркин в слвянске
+country_event = {
+	id = DPR.4
+	title = DPR.4.t
+	desc = DPR.4.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.4.a
+		add_war_support = 0.025
+	}
+}
+
+#Формирование оплота
+country_event = {
+	id = DPR.5
+	title = DPR.5.t
+	desc = DPR.5.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.5.a
+		add_war_support = 0.015
+		army_experience = 25
+	}
+}
+
+#Формирование дизеля
+country_event = {
+	id = DPR.6
+	title = DPR.6.t
+	desc = DPR.6.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.6.a
+		add_war_support = 0.015
+		army_experience = 25
+	}
+}
+
+#Формирование спарты
+country_event = {
+	id = DPR.7
+	title = DPR.7.t
+	desc = DPR.7.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.7.a
+		add_war_support = 0.015
+		army_experience = 25
+	}
+}
+
+#Формирование сомали
+country_event = {
+	id = DPR.8
+	title = DPR.8.t
+	desc = DPR.8.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.8.a
+		add_war_support = 0.015
+		army_experience = 25
 	}
 }

@@ -283,7 +283,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-            army_experience = 25
+            country_event = DPR.6
 			custom_effect_tooltip = DPR_battalion_diesel_tt
 			hidden_effect = {
 				load_oob = DPR_disel_batallion
@@ -311,7 +311,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-            army_experience = 25
+            country_event = DPR.7
 			custom_effect_tooltip = DPR_battalion_sparta_tt
 			hidden_effect = {
 				load_oob = DPR_sparta_batallion_2014
@@ -339,7 +339,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-            army_experience = 25
+            country_event = DPR.8
 			custom_effect_tooltip = DPR_battalion_somali_tt
 			hidden_effect = {
 				load_oob = DPR_somali_batallion_2014
@@ -367,7 +367,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-            army_experience = 25
+			country_event = DPR.5
 			custom_effect_tooltip = DPR_battalion_oplot_tt
 			hidden_effect = {
 				load_oob = DPR_oplot_batallion
