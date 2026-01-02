@@ -572,6 +572,9 @@ UKR_parlamient_decision = {
 		}
 
 		complete_effect = {
+			custom_effect_tooltip = increase_of_support_in_parlamient_tt
+			custom_effect_tooltip = cash_balance_minus_5_tt
+			subtract_from_variable  = { cash = 0.5 }
 			hidden_effect = {
 				random_list = {
 					# НАБУ разоблачило коорупионые схемы
@@ -583,9 +586,23 @@ UKR_parlamient_decision = {
 					}
 					# Все хорошо
 					10 = {
-                        add_political_power = 1
+						add_to_variable = {
+                            var = UKR_parlamient_support
+                            value = 3
+                        }
+					}
+					2 = {
+						add_to_variable = {
+                            var = UKR_parlamient_support
+                            value = 4
+                        }
 					}
 				}
+				clamp_variable = {
+                    var = UKR_parlamient_support
+					min = 0
+                    max = 390
+                }				
 			}
 		}
 
@@ -597,7 +614,7 @@ UKR_parlamient_decision = {
 	UKR_talk_to_the_deputies = {
 
 		icon = GFX_decision_UKR_icon_of_SBU
-        cost = 65
+        cost = 75
 		fire_only_once = no
 		
 		available = {		
@@ -609,7 +626,14 @@ UKR_parlamient_decision = {
 		}
 
 		complete_effect = {
-			
+			custom_effect_tooltip = increase_of_support_in_parlamient_tt
+			hidden_effect = {
+				clamp_variable = {
+                    var = UKR_parlamient_support
+					min = 0
+                    max = 450
+                }
+			}
 		}
 
 		ai_will_do = {
@@ -632,7 +656,30 @@ UKR_parlamient_decision = {
 		}
 
 		complete_effect = {
-			
+			custom_effect_tooltip = increase_of_support_in_parlamient_tt
+			custom_effect_tooltip = cash_balance_minus_5_tt
+			subtract_from_variable  = { cash = 0.5 }
+			hidden_effect = {
+				random_list = {
+				    10 = {
+						add_to_variable = {
+                            var = UKR_parlamient_support
+                            value = 4
+                        }
+				    }
+				    10 = {
+						add_to_variable = {
+                            var = UKR_parlamient_support
+                            value = 2
+                        }
+				    }
+			    }
+				clamp_variable = {
+                    var = UKR_parlamient_support
+					min = 0
+                    max = 450
+                }				
+			}
 		}
 
 		ai_will_do = {
@@ -655,13 +702,24 @@ UKR_parlamient_decision = {
 		}
 
 		complete_effect = {
-			random_list = {
-				10 = {
+			custom_effect_tooltip = increase_of_support_in_parlamient_tt
+			hidden_effect = {
+				random_list = {
+				    10 = {
+						add_to_variable = {
+                            var = UKR_parlamient_support
+                            value = 4
+                        }
+				    }
+				    10 = {
 
-				}
-				10 = {
-
-				}
+				    }
+			    }
+				clamp_variable = {
+                    var = UKR_parlamient_support
+					min = 0
+                    max = 450
+                }
 			}
 		}
 

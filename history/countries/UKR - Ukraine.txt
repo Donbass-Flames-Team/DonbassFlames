@@ -113,6 +113,18 @@ DF_economy_setup = yes
 		    }
 	    }
     }
+
+	# Pralamient values
+	set_variable = {
+        var = UKR_parlamient_support
+        value = 187
+    }
+
+	set_variable = {
+        var = UKR_unyielding_opponents
+        value = 90
+    }
+	#
     
 
 	# Separatism values
