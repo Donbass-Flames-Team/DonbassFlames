@@ -205,7 +205,6 @@ focus_tree = {
 		}
 	}
 
-
 	focus = {
 		id = RUS_convene_csto_council
 		icon = GFX_goal_no_focus_RUS
@@ -263,7 +262,7 @@ focus_tree = {
 	focus = {
 		id = RUS_deploy_security_forces_to_ukraine
 		icon = GFX_goal_no_focus_RUS
-		cost = 1
+		cost = 0.5
 		x = -1
 		y = 4
 
@@ -282,8 +281,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			UKR = {
+				country_event = ukraine.40
+			}
 		}
 	}
 
@@ -311,6 +311,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+			custom_effect_tooltip = ukraine_increase_prorussian_moods_tt
 			UKR = {
 				country_event = ukraine.32
 			}
@@ -342,6 +343,9 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+			UKR = {
+				
+			}
 		}
 	}
 
@@ -368,8 +372,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			add_political_power = 25
+			custom_effect_tooltip = ukraine_increase_prorussian_moods_tt
+			UKR = {
+                country_event = ukraine.41
+			}
 		}
 	}
 

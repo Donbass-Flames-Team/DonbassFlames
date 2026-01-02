@@ -1430,3 +1430,85 @@ country_event = {
 		add_political_power = -100		
 	}
 }
+
+# Россия отправляет свои спецслужбы
+country_event = {
+	id = ukraine.40
+	title = ukraine.40.t
+	desc  = ukraine.40.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.40.a
+		add_political_power = 15
+	}
+}
+
+# Россия поддерживает пророссийские медиа
+country_event = {
+	id = ukraine.41
+	title = ukraine.41.t
+	desc  = ukraine.41.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.41.a
+		add_political_power = 15
+	}
+}
+
+# Разрушение памятника ленину
+country_event = {
+	id = ukraine.42
+	title = ukraine.42.t
+	desc  = ukraine.42.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.42.a
+	}
+}
+
+# Попытка подавление протестов
+country_event = {
+	id = ukraine.43
+	title = ukraine.43.t
+	desc  = ukraine.43.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.43.a
+		add_days_mission_timeout = {
+			mission = UKR_yanukovich_overthrow
+			days = 5
+		}
+		custom_effect_tooltip = UKR_add_radicalisation_of_maidan
+		add_stability = -0.05
+	}
+}
+
+# Оставка Азарова
+country_event = {
+	id = ukraine.44
+	title = ukraine.44.t
+	desc  = ukraine.44.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.44.a
+		add_days_mission_timeout = {
+			mission = UKR_yanukovich_overthrow
+			days = 2
+		}
+	}
+}

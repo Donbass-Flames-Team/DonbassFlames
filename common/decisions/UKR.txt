@@ -983,7 +983,7 @@ UKR_maidan_decision = {
 			activate_mission = UKR_weekly_radicalisation_value
 			add_to_variable = {
                 var = UKR_radicalisation_of_proeuropeans_value
-                value = 4
+                value = 3
             }
 			add_to_variable = {
                 var = UKR_radicalisation_of_nationalists_value
@@ -991,7 +991,7 @@ UKR_maidan_decision = {
             }
 			add_to_variable = {
                 var = UKR_radicalisation_of_prorussians_value
-                value = 2
+                value = 1
             }
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 		}

@@ -83,7 +83,7 @@ focus_tree = {
 	focus = {
 		id = UKR_next_steps
 		icon = GFX_focus_UKR_next_steps
-		cost = 2
+		cost = 0.3
 		x = 0
 		y = 1
 
@@ -169,7 +169,7 @@ focus_tree = {
 	focus = {
 		id = UKR_force_deal_with_protests
 		icon = GFX_focus_UKR_activation_of_security_forces
-		cost = 2
+		cost = 0.3
 		x = 0
 		y = 1
 		
@@ -197,21 +197,27 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
-			add_days_mission_timeout = {
-				mission = UKR_yanukovich_overthrow
-				days = 18
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_force_deal_with_protests"
+			hidden_effect = {
+	    		add_to_variable = {
+                    var = UKR_radicalisation_of_proeuropeans_value
+                    value = 5
+                }
+			    add_to_variable = {
+                    var = UKR_radicalisation_of_nationalists_value
+                    value = 3
+                }
+			    clamp_variable = {
+				    var = UKR_radicalisation_of_proeuropeans_value
+				    min = 0
+				    max = 100
+			    }
+			    clamp_variable = {
+				    var = UKR_radicalisation_of_nationalists_value
+				    min = 0
+				    max = 100
+			    }			
 			}
-		    add_stability = -0.05
-			add_to_variable = {
-                var = UKR_radicalisation_of_proeuropeans_value
-                value = 5
-            }
-			add_to_variable = {
-                var = UKR_radicalisation_of_nationalists_value
-                value = 3
-            }
-			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 		}
 	}
 
@@ -257,13 +263,17 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
 		    add_stability = -0.05
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 4
+			}
 			add_to_variable = {
                 var = UKR_radicalisation_of_proeuropeans_value
-                value = 5
+                value = 3
             }
 			add_to_variable = {
                 var = UKR_radicalisation_of_nationalists_value
-                value = 3
+                value = 2
             }
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 			mark_focus_tree_layout_dirty = yes
@@ -602,7 +612,7 @@ focus_tree = {
 	focus = {
 		id = UKR_external_coordination
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.5
 		x = -5
 		y = 1
 
@@ -625,13 +635,17 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 1
+			}
 		}
 	}
 
 	focus = {
 		id = UKR_appeal_to_russia_for_support
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.3
 		x = -1
 		y = 1
 
@@ -654,13 +668,17 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 2
+			}
 		}
 	}
 
 	focus = {
 		id = UKR_coordination_with_fsb
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.3
 		x = 1
 		y = 1
 
@@ -683,6 +701,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 2
+			}
 		}
 	}
 
@@ -712,7 +734,31 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
-			add_stability = 0.025
+			country_event = {
+				id = ukraine.43
+				hours = 3
+			}
+			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
+			hidden_effect = {
+				add_to_variable = {
+                    var = UKR_radicalisation_of_proeuropeans_value
+                    value = 1
+                }
+			    add_to_variable = {
+                    var = UKR_radicalisation_of_nationalists_value
+                    value = 1
+                }
+			    clamp_variable = {
+				    var = UKR_radicalisation_of_proeuropeans_value
+				    min = 0
+				    max = 100
+			    }
+			    clamp_variable = {
+				    var = UKR_radicalisation_of_nationalists_value
+				    min = 0
+				    max = 100
+			    }
+			}
 		}
 	}
 
@@ -741,7 +787,26 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
-			add_stability = 0.025
+			add_stability = -0.025
+			add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = 1
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = 1
+            }
+			clamp_variable = {
+				var = UKR_radicalisation_of_proeuropeans_value
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = UKR_radicalisation_of_nationalists_value
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 		}
 	}
 
@@ -770,7 +835,25 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
-			add_stability = 0.025
+			add_to_variable = {
+                var = UKR_radicalisation_of_proeuropeans_value
+                value = 1
+            }
+			add_to_variable = {
+                var = UKR_radicalisation_of_nationalists_value
+                value = 1
+            }
+			clamp_variable = {
+				var = UKR_radicalisation_of_proeuropeans_value
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = UKR_radicalisation_of_nationalists_value
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 		}
 	}
 
@@ -917,11 +1000,11 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
-			add_days_mission_timeout = {
-				mission = UKR_yanukovich_overthrow
-				days = 5
+			add_stability = 0.05
+			country_event = {
+				id = ukraine.44
+				hours = 6
 			}
-			add_stability = 0.025
 		}
 	}
 	
@@ -943,6 +1026,7 @@ focus_tree = {
 				    has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
+			always = no
 		}
 
 		cancel_if_invalid = yes
