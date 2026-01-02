@@ -1506,9 +1506,76 @@ country_event = {
 
 	option = {
 		name = ukraine.44.a
+		add_stability = 0.025
 		add_days_mission_timeout = {
 			mission = UKR_yanukovich_overthrow
 			days = 2
 		}
+	}
+}
+
+# Битва за донецкий аэропорт
+country_event = {
+	id = ukraine.45
+	title = ukraine.45.t
+	desc  = ukraine.45.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.45.a
+		start_border_war = {
+            change_state_after_war = yes
+            attacker = {
+                state = 432
+                num_provinces = 1
+                on_win = ukraine.46
+                on_lose = ukraine.47
+                modifier = 0.1
+                dig_in_factor = 0
+                terrain_factor = 0
+            }	
+            defender = {
+                state = 433
+                num_provinces = 1
+                on_win = DPR.2
+                on_lose = DPR.3
+            }
+        }
+	}
+}
+
+# Донецкий аэропорт за украиной
+country_event = {
+	id = ukraine.46
+	title = ukraine.46.t
+	desc  = ukraine.46.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.46.a
+        army_experience = 25
+		add_war_support = 0.05
+		add_stability = 0.025
+	}
+}
+
+# Донецкий аэропорт за днр
+country_event = {
+	id = ukraine.47
+	title = ukraine.47.t
+	desc  = ukraine.47.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.47.a
+        army_experience = 25
+		add_war_support = -0.025
+		add_stability = -0.015
 	}
 }

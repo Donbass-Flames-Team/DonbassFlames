@@ -1,0 +1,19 @@
+debug_decisions = {
+
+	priority = 95
+	
+	icon = GFX_decision_UKR_separatism_icon
+	
+	allowed = {
+		is_ai = no
+		is_debug = yes
+	}
+	#picture = GFX_decision_UKR_separatism
+
+	visible = {
+        is_ai = no
+		is_debug = yes
+	}
+}
+
+	

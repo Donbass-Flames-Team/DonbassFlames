@@ -50,33 +50,21 @@ debug_decisions = {
 		cost = 0
 
 		complete_effect = {
-			ICE = {
+		    SLO = {
 				annex_country = {
-					target = GER
+					target = UKR
 					peace_time = no
 				}
 				annex_country = {
-					target = ITA
+					target = RUS
 					peace_time = no
 				}
 				annex_country = {
-					target = FRA
+					target = POL
 					peace_time = no
 				}
 				annex_country = {
-					target = SOV
-					peace_time = no
-				}
-				annex_country = {
-					target = CHI
-					peace_time = no
-				}
-				annex_country = {
-					target = JAP
-					peace_time = no
-				}
-				annex_country = {
-					target = ENG
+					target = ROM
 					peace_time = no
 				}
 		    }

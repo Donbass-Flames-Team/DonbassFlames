@@ -175,3 +175,75 @@ country_event = {
 		add_stability = 0.05
 	}
 }
+
+#Minsk protocols
+country_event = {
+	id = russia.11
+	title = russia.11.t
+	desc = russia.11.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.11.a
+		add_stability = 0.05
+		hidden_effect = {
+			white_peace = DPR
+			white_peace = LPR
+			DPR = {
+				transfer_state = 444
+				transfer_state = 437
+				transfer_state = 448
+				transfer_state = 652
+				transfer_state = 486
+				transfer_state = 394
+				transfer_state = 424
+				transfer_state = 402
+				transfer_state = 435
+				transfer_state = 582
+				transfer_state = 438
+				transfer_state = 467
+				transfer_state = 398
+				transfer_state = 418
+				transfer_state = 430
+                transfer_state = 265
+				transfer_state = 452
+				transfer_state = 450
+				transfer_state = 381
+				transfer_state = 397
+				transfer_state = 404
+				transfer_state = 408
+				transfer_state = 432
+			}
+			LPR = {
+				transfer_state = 387
+				transfer_state = 406
+				transfer_state = 351
+				transfer_state = 363
+				transfer_state = 384
+				transfer_state = 416
+				transfer_state = 413
+				transfer_state = 427
+				transfer_state = 346
+				transfer_state = 357
+				transfer_state = 340
+				transfer_state = 329
+				transfer_state = 362
+				transfer_state = 370
+				transfer_state = 366
+				transfer_state = 352
+				transfer_state = 335
+				transfer_state = 339
+				transfer_state = 343
+				transfer_state = 334
+			}
+			UKR = {
+				country_event = {
+					id = ukraine.
+					days = 15
+				}
+			}
+		}
+	}
+}

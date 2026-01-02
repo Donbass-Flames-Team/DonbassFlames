@@ -4,7 +4,7 @@
 
 add_namespace = DPR
 
-#Invasion of Crimea
+#
 country_event = {
 	id = DPR.1
 	title = DPR.1.t
@@ -16,5 +16,39 @@ country_event = {
 	option = {
 		name = DPR.1.a
 		
+	}
+}
+
+#Донецкий аэропорт донецка!
+country_event = {
+	id = DPR.2
+	title = DPR.2.t
+	desc = DPR.2.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.2.a
+		army_experience = 35
+		add_war_support = 0.05
+		add_stability = 0.025
+	}
+}
+
+#Донецкий аэропорт украины!
+country_event = {
+	id = DPR.3
+	title = DPR.3.t
+	desc = DPR.3.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.2.a
+		army_experience = 25
+		add_war_support = -0.025
+		add_stability = -0.025
 	}
 }
