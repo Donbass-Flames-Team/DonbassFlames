@@ -11,9 +11,9 @@ focus_tree = {
 	continuous_focus_position = { x = 2500 y = 500 }
 	
 	focus = {
-		id = DPR_arrise_donbass
+		id = DPR_capture_administrations
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 5
+		cost = 1
 		x = 12
 		y = 0
 
@@ -26,114 +26,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_arrise_donbass"
-			add_ideas = DPR_arrise_donbass
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.05
 		}
 	}
 
 	focus = {
-		id = DPR_strengthening_donetsk
+		id = DPR_formation_of_a_provisional_government
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 3
-		y = 1
-
-		prerequisite = {focus = DPR_arrise_donbass}
-		relative_position_id = DPR_arrise_donbass
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-			
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_arrise_donbass"
-
-		}
-	}
-
-	focus = {
-		id = DPR_mobilisation_of_forces
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
-		x = -2
-		y = 1
-
-		prerequisite = {focus = DPR_arrise_donbass}
-		relative_position_id = DPR_arrise_donbass
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-			
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_arrise_donbass"
-		}
-	}
-
-	focus = {
-		id = DPR_armored_battalion_diesel
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 2
-		x = -4
-		y = 1
-
-		prerequisite = {focus = DPR_mobilisation_of_forces}
-		relative_position_id = DPR_mobilisation_of_forces
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-			
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_arrise_donbass"
-		}
-	}
-
-	focus = {
-		id = DPR_batalion_sparta
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 5
-		x = -2
-		y = 1
-
-		prerequisite = {focus = DPR_mobilisation_of_forces}
-		relative_position_id = DPR_mobilisation_of_forces
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-			
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_arrise_donbass"
-		}
-	}
-
-	focus = {
-		id = DPR_batalion_somali
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 5
 		x = 0
 		y = 1
 
-		prerequisite = {focus = DPR_mobilisation_of_forces}
-		relative_position_id = DPR_mobilisation_of_forces
+		prerequisite = {focus = DPR_capture_administrations}
+		relative_position_id = DPR_capture_administrations
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -144,19 +50,308 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_arrise_donbass"
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+
+		}
+	}
+
+	focus = {
+		id = DPR_call_on_people_to_stand_up_for_the_republic
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 2
+
+		prerequisite = {focus = DPR_capture_administrations}
+		relative_position_id = DPR_capture_administrations
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+
+		}
+	}
+
+	focus = {
+		id = DPR_humanitaran_help_from_russia
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -4
+		y = 3
+
+		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
+		relative_position_id = DPR_capture_administrations
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+
+		}
+	}
+
+	focus = {
+		id = DPR_loot_the_offices_of_the_mvd_and_sbu
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -1
+		y = 3
+
+		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
+		relative_position_id = DPR_capture_administrations
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+
+		}
+	}
+
+	focus = {
+		id = DPR_create_a_people_militia_of_the_dpr
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -1
+		y = 4
+
+		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
+		relative_position_id = DPR_capture_administrations
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+
+		}
+	}
+
+	focus = {
+		id = DPR_create_roadblocks
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -3
+		y = 5
+
+		prerequisite = {focus = DPR_create_a_people_militia_of_the_dpr}
+		relative_position_id = DPR_capture_administrations
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+
+		}
+	}
+
+	focus = {
+		id = DPR_armed_forces_of_dpr
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -6
+		y = 5
+
+		prerequisite = {focus = DPR_create_a_people_militia_of_the_dpr}
+		relative_position_id = DPR_capture_administrations
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+            army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DPR_set_up_ambushes
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 1
+		y = 1
+
+		prerequisite = {focus = DPR_armed_forces_of_dpr}
+		relative_position_id = DPR_armed_forces_of_dpr
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+            army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DPR_creation_of_the_dpr_army_elite
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -1
+		y = 1
+
+		prerequisite = {focus = DPR_armed_forces_of_dpr}
+		relative_position_id = DPR_armed_forces_of_dpr
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+            army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DPR_batallion_disel
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -4
+		y = 2
+
+		prerequisite = {focus = DPR_creation_of_the_dpr_army_elite}
+		relative_position_id = DPR_armed_forces_of_dpr
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+            army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DPR_batallion_disel
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -2
+		y = 2
+
+		prerequisite = {focus = DPR_creation_of_the_dpr_army_elite}
+		relative_position_id = DPR_armed_forces_of_dpr
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+            army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DPR_batallion_sparta
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 2
+
+		prerequisite = {focus = DPR_creation_of_the_dpr_army_elite}
+		relative_position_id = DPR_armed_forces_of_dpr
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+            army_experience = 25
+		}
+	}
+
+	focus = {
+		id = DPR_batallion_somali
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 2
+		y = 2
+
+		prerequisite = {focus = DPR_creation_of_the_dpr_army_elite}
+		relative_position_id = DPR_armed_forces_of_dpr
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+            army_experience = 25
 		}
 	}
 
 	focus = {
 		id = DPR_brigade_oplot
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 5
-		x = 2
-		y = 1
+		cost = 1
+		x = -4
+		y = 2
 
-		prerequisite = {focus = DPR_mobilisation_of_forces}
-		relative_position_id = DPR_mobilisation_of_forces
+		prerequisite = {focus = DPR_creation_of_the_dpr_army_elite}
+		relative_position_id = DPR_armed_forces_of_dpr
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -167,7 +362,277 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_arrise_donbass"
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+            army_experience = 25
 		}
 	}
+
+	focus = {
+		id = DPR_set_up_production
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 1
+		y = 3
+
+		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
+		relative_position_id = DPR_capture_administrations
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+
+		}
+	}
+
+	focus = {
+		id = DPR_reopening_of_captured_ukrainian_warehouses
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 1
+		y = 4
+
+		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
+		relative_position_id = DPR_capture_administrations
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+
+		}
+	}
+
+	focus = {
+		id = DPR_arrise_donbass
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 5
+
+		prerequisite = {focus = DPR_reopening_of_captured_ukrainian_warehouses}
+		prerequisite = {focus = DPR_create_a_people_militia_of_the_dpr}
+		relative_position_id = DPR_capture_administrations
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+            add_war_support = 0.05
+			add_ideas = DPR_arrise_donbass
+		}
+	}
+
+	focus = {
+		id = DPR_defend_of_citites
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 6
+
+		prerequisite = {focus = DPR_arrise_donbass}
+		relative_position_id = DPR_capture_administrations
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+        
+		}
+	}
+
+	focus = {
+		id = DPR_donetsk_castle
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 1
+		y = 1
+
+		prerequisite = {focus = DPR_defend_of_citites}
+		relative_position_id = DPR_defend_of_citites
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+        
+		}
+	}
+
+	focus = {
+		id = DPR_donetsk_castle
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -1
+		y = 1
+
+		prerequisite = {focus = DPR_defend_of_citites}
+		relative_position_id = DPR_defend_of_citites
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+        
+		}
+	}
+
+	focus = {
+		id = DPR_secure_south
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 1
+		y = 1
+
+		prerequisite = {focus = DPR_defend_of_citites}
+		relative_position_id = DPR_defend_of_citites
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+        
+		}
+	}
+
+	focus = {
+		id = DPR_free_the_entire_donetsk_oblast
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 2
+
+		prerequisite = {focus = DPR_secure_south focus = DPR_donetsk_castle}
+		relative_position_id = DPR_defend_of_citites
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+        
+		}
+	}
+
+	focus = {
+		id = DPR_nationalize_the_captured_factories
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 3
+		y = 4
+
+		prerequisite = {focus = DPR_set_up_production}
+		relative_position_id = DPR_capture_administrations
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+
+		}
+	}
+
+	focus = {
+		id = DPR_restore_production
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 3
+		y = 5
+
+		prerequisite = {focus = DPR_set_up_production}
+		relative_position_id = DPR_capture_administrations
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+
+		}
+	}
+
+	focus = {
+		id = DPR_the_mining_issue
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 6
+		y = 5
+
+		prerequisite = {focus = DPR_set_up_production}
+		relative_position_id = DPR_capture_administrations
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+
+		}
+	}
+
+
+
 }
