@@ -298,6 +298,7 @@ focus_tree = {
 				    has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
+			has_completed_focus = UKR_emergency_measures
 		}
 
 		cancel_if_invalid = yes
@@ -711,7 +712,7 @@ focus_tree = {
 	focus = {
 		id = UKR_under_the_pretext_of_a_christmas_tree
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.3
 		x = 0
 		y = 2
 
@@ -765,7 +766,7 @@ focus_tree = {
 	focus = {
 		id = UKR_transition_to_forceful_measures
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.3
 		x = 0
 		y = 3
 
@@ -779,6 +780,7 @@ focus_tree = {
 				    has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
+			has_completed_focus = UKR_researching_for_compromise
 		}
 
 		cancel_if_invalid = yes
@@ -807,6 +809,12 @@ focus_tree = {
 				max = 100
 			}
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
+			hidden_effect = {
+				country_event = {
+				    id = ukraine.44
+				    days = 3
+			    }
+			}
 		}
 	}
 
@@ -963,6 +971,7 @@ focus_tree = {
 				    has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
+			has_completed_focus = UKR_under_the_pretext_of_a_christmas_tree
 		}
 
 		cancel_if_invalid = yes
@@ -4163,6 +4172,14 @@ focus_tree = {
 		    add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
 				amount = 7500 
+			}
+			add_equipment_to_stockpile = { 
+				type = bulletproof_vests_equipment_3 
+				amount = 3500
+			} 		
+			add_equipment_to_stockpile = { 
+				type = uniform_equipment_3 
+				amount = 4500
 			}
 		}
 	}

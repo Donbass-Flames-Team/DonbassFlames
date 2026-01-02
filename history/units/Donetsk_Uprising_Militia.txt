@@ -11,7 +11,66 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
+        manpads_platoon = { x = 1 y = 0}
+        sniper_company = { x = 1 y = 1 }
 	}
+}
+
+division_template = {
+	name = "Tankovyy batal'on"
+	regiments = {
+        modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+        ifv_unit = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        sniper_company = { x = 1 y = 0 }
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Batalyon samokhidnoyi artyleriyi"
+	regiments = {
+        sau_artillery = { x = 0 y = 0 }
+		sau_artillery = { x = 0 y = 1 }
+		sau_artillery = { x = 0 y = 2 }
+        sau_artillery = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        manpads_platoon = { x = 1 y = 0}
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Motosrelkovy batal'on"
+	regiments = {
+        ifv_unit = { x = 0 y = 0 }
+		apc_unit = { x = 0 y = 1 }
+		apc_unit = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        sniper_company = { x = 1 y = 0 }
+	}
+
+    is_locked = yes
 }
 
 units = {

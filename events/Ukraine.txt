@@ -1579,3 +1579,76 @@ country_event = {
 		add_stability = -0.015
 	}
 }
+
+# Российская армия выходит из гончара и генической косы
+country_event = {
+	id = ukraine.48
+	title = ukraine.48.t
+	desc  = ukraine.48.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.48.a
+        UKR = {
+			transfer_state = 597
+			transfer_state = 598
+		}
+	}
+}
+
+# Битва на Рымарской
+country_event = {
+	id = ukraine.49
+	title = ukraine.49.t
+	desc  = ukraine.49.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.49.a
+		add_stability = -0.015
+        203 = {
+			add_manpower = -2
+		}
+	}
+}
+
+# Бои на грушевского
+country_event = {
+	id = ukraine.50
+	title = ukraine.50.t
+	desc  = ukraine.50.d
+	picture = [GetHitlerHandshakeEventPicture]
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.50.a
+		add_stability = -0.035
+        154 = {
+			add_manpower = -4
+		}
+		add_to_variable = {
+            var = UKR_radicalisation_of_proeuropeans_value
+            value = 1
+        }
+		add_to_variable = {
+            var = UKR_radicalisation_of_nationalists_value
+            value = 1
+        }
+		clamp_variable = {
+			var = UKR_radicalisation_of_proeuropeans_value
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = UKR_radicalisation_of_nationalists_value
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = UKR_add_radicalisation_of_maidan		
+	}
+}

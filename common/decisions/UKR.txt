@@ -827,6 +827,10 @@ UKR_maidan_decision = {
 						id = ukraine.24
 						days = 73
 					}
+                    country_event = {
+						id = ukraine.49
+						days = 27
+					}
 					set_country_flag = UKR_separatist_cells_in_odessa
 					set_country_flag = UKR_separatist_cells_in_kharkov
 			    }

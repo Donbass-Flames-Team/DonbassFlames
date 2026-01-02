@@ -44,26 +44,6 @@ ideas = {
 			}
 		}
 
-		DPR_russian_spring = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
-
-			removal_cost = -1
-			
-			picture = GFX_idea_DPR_russian_spring
-			
-			modifier = {
-			    war_support_factor = 0.15
-				political_power_gain = 0.05
-				army_morale_factor = 0.10
-			}
-		}
-
 		DPR_blockade_and_chaos = {
             allowed = {
                 always = yes
@@ -128,7 +108,7 @@ ideas = {
 		}
 
 		
-		DPR_arrise_donbass = {
+		DPR_arrise_donbass_idea = {
             allowed = {
                 always = yes
             }
@@ -144,6 +124,48 @@ ideas = {
 			modifier = {
 				army_defence_factor = 0.10
 				surrender_limit = 0.85
+			}
+		}
+
+		DPR_roadblock_idea = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_DPR_hidden_presence
+			
+			modifier = {
+				stability_factor = 0.1
+				army_defence_factor = 0.075
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				equipment_capture_factor = 0.01
+			}
+		}
+
+		DPR_russian_spring_idea = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_DPR_russian_spring
+			
+			modifier = {
+			    war_support_factor = 0.15
+				political_power_gain = 0.05
+				army_morale_factor = 0.10
 			}
 		}
 	}
