@@ -9,11 +9,12 @@ state={
 		add_core_of = UKR
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 0
+			arms_factory = 0
 		}
 		victory_points = { 15733 5 }
 	}
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor=2.000
 	manpower=2000
 	state_category=rural
 }

@@ -11,9 +11,11 @@ history= {
 		buildings = {
 			infrastructure = 2
 			air_base = 7
+			industrial_complex = 0
+			arms_factory = 0
 		}
 	}
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor=2.000
     manpower=100
     state_category = town
 }

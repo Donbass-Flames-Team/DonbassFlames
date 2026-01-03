@@ -8,8 +8,13 @@ state={
 		victory_points = { 9582 15 }
 		owner = CRI
 		add_core_of = UKR
-	}
-	buildings_max_level_factor=1.000
+	
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 2
+		}
+}
+	buildings_max_level_factor=2.000
 	manpower=1
 	state_category = town
 }

@@ -9,10 +9,11 @@ history= {
 		add_core_of = UKR
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 4
+			arms_factory = 2
 		}
 	}
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor=2.000
     manpower=650000
     state_category = town
 }

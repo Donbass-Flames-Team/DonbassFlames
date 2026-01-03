@@ -9,7 +9,8 @@ state={
 		add_core_of = UKR
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 0
 		}
 		victory_points = { 18232 25 }
 		victory_points = { 18227 5 }
@@ -17,7 +18,7 @@ state={
 		victory_points = { 15057 5 }
 		victory_points = { 18228 5 }
 	}
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor=2.000
 	manpower=115000
 	state_category=town
 }
