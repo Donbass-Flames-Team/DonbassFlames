@@ -1,22 +1,33 @@
 state={
 	id=526
 	name="STATE_526"
-	provinces={
-		5816 5830 7682 8904 16470 16477 16487 18213 18215 16477 18216 8904 18223 18224 18220 16470 18222 18221 18219 18212 18211 18218 18523 18524
+	provinces = {
+		5816 5830 7682 8904 8904 16470 16470 16477 16477 16487 18211 18212 18213 18215 18216 18218 18219 18220 18221 18222 18223 18224 18523 18524 18525 18526
 	}
     history= {
-		victory_points = { 18215 5 }
-		victory_points = { 16477 5 }
-		victory_points = { 18218 5 }
-		victory_points = { 18224 5 }
-		victory_points = { 18221 5 }
-		victory_points = { 5830 5 }
-		victory_points = { 18223 5 }
+		victory_points = { 18524 1 }
+		victory_points = { 8904 1 }
+		victory_points = { 5816 3 }
+		victory_points = { 18213 3 }
+		victory_points = { 18525 3 }
+		victory_points = { 18220 1 }
+		victory_points = { 18526 1 }
+		victory_points = { 18219 3 }
+		victory_points = { 18212 1 }
+		victory_points = { 18216 1 }
+		victory_points = { 18222 3 }
+		victory_points = { 18215 3 }
+		victory_points = { 16477 1 }
+		victory_points = { 18218 3 }
+		victory_points = { 18224 3 }
+		victory_points = { 18221 3 }
+		victory_points = { 5830 3 }
+		victory_points = { 18223 1 }
 		victory_points = { 16487 30 }
 		victory_points = { 16487 25 }
-		victory_points = { 16477 5 }	
-		victory_points = { 18221 5 }
-		victory_points = { 18211 5 }
+		victory_points = { 16477 1 }	
+		victory_points = { 18221 3 }
+		victory_points = { 18211 3 }
 		owner = UKR
 		add_core_of = UKR
 		buildings = {
