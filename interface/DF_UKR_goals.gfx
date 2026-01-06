@@ -85,6 +85,21 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_focus_UKR_volunteer_battalions"
+        texturefile = "gfx/interface/goals/UKR/UKR_volunteer_battalions.dds"
+    }
+
+    spriteType = {
+        name = "GFX_focus_UKR_volunteer_mvd_battalions"
+        texturefile = "gfx/interface/goals/UKR/UKR_volunteer_mvd_battalions.dds"
+    }
+
+    spriteType = {
+        name = "GFX_focus_UKR_volunteer_azov_battalions"
+        texturefile = "gfx/interface/goals/UKR/UKR_volunteer_azov_battalions.dds"
+    }
+
+    spriteType = {
         name = "GFX_focus_UKR_prepare_defense"
         texturefile = "gfx/interface/goals/UKR/UKR_prepare_defense.dds"
     }
@@ -95,8 +110,8 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = "GFX_focus_UKR_launch_counterattacksh"
-        texturefile = "gfx/interface/goals/UKR/UKR_launch_counterattacksh.dds"
+        name = "GFX_focus_UKR_launch_counterattacks"
+        texturefile = "gfx/interface/goals/UKR/UKR_launch_counterattacks.dds"
     }  
     
     spriteType = {
