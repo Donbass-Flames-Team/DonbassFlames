@@ -1,21 +1,20 @@
 capital = 16
-
 oob = "BLR_1936"
 
 2013.11.21 = {
+	set_research_slots = 3
+
 	set_technology = {
 		infantry_weapons = 1
 	}
 
-	set_research_slots = 3
-	
 	set_politics = {
 		ruling_party = autoritarian_democracy
 		last_election = "2010.12.12"
 		election_frequency = 60
 		elections_allowed = yes
 	}
-	
+
 	set_popularities = {
 		liberal_democracy = 10
 		conservatism_democracy = 25
@@ -23,17 +22,18 @@ oob = "BLR_1936"
 		communism = 15
 		autoritarian_democracy = 45
 	}
+
 	add_ideas = {
-    	BEL_autocratic_rule
-    	BEL_dependence_on_russia
-    	BEL_weak_economy
-    	BEL_kgb_security_apparatus
-    	BEL_isolation_from_west
-    	BEL_state_propaganda
+		BEL_autocratic_rule
+		BEL_dependence_on_russia
+		BEL_weak_economy
+		BEL_kgb_security_apparatus
+		BEL_isolation_from_west
+		BEL_state_propaganda
 		free_trade
 		civilian_economy
 		limited_conscription
-}
+	}
 
 	recruit_character = aleksandr_lukashenko
 }

@@ -1,10 +1,7 @@
 ﻿capital = 517
+
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
-	infantry_weapons2 = 1
-	infantry_weapons3 = 1
-	infantry_weapons4 = 1
 
 	atgm_weapons = 1
 	atgm_weapons1 = 1
@@ -33,15 +30,14 @@ DF_economy_setup = yes
 add_dynamic_modifier = { modifier = GEN_inflation }
 
 add_ideas = {
-civilian_economy
-free_trade
-limited_conscription
+	civilian_economy
+	free_trade
+	limited_conscription
 }
 
 create_faction = "CSTO"
 add_to_faction = BLR
 recruit_character = vladimir_putin
-capital = 517
 
 2013.11.21 = {
 	set_variable = {
@@ -50,9 +46,9 @@ capital = 517
 	}
 	UKR = {
 		set_variable = {
-		    var = RUS_influence_in_ukraine
-		    value = 75
-	    }
+			var = RUS_influence_in_ukraine
+			value = 75
+		}
 	}
 	clamp_variable = {
 		var = RUS_influence_in_ukraine
@@ -66,7 +62,7 @@ capital = 517
 		elections_allowed = no
 	}
 	set_popularities = {
-		social_democracy = 6 
+		social_democracy = 6
 		nationalism = 12
 		communism = 17
 		socialism = 11

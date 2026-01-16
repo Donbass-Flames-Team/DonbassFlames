@@ -1,13 +1,8 @@
-
 capital = 192
 
 2013.11.21 = {
 	set_technology = {
 		infantry_weapons = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		infantry_weapons3 = 1
-		infantry_weapons4 = 1
 
 		atgm_weapons = 1
 		atgm_weapons1 = 1
@@ -30,14 +25,14 @@ capital = 192
 		spau_artillery = 1
 		multiple_launch_rocket_system = 1
 	}
-	
+
 	set_politics = {
 		ruling_party = autoritarian_democracy
 		last_election = "2010.02.07"
 		election_frequency = 48
 		elections_allowed = no
 	}
-	
+
 	set_popularities = {
 		liberal_democracy = 8
 		conservatism_democracy = 22
@@ -47,5 +42,4 @@ capital = 192
 	}
 
 	recruit_character = anton_davidchenko
-	
 }
