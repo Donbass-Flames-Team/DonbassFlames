@@ -35,53 +35,12 @@ autonomy_state = {
 	ai_overlord_wants_garrison = {
 		always = no
 	}
-
-	allowed = {
-		OR = {
-			has_dlc = "Death or Dishonor"
-			AND = {
-				OR = {
-					original_tag = POL
-					original_tag = LIT
-					original_tag = LAT
-					original_tag = EST
-				}
-				has_dlc = "No Step Back"
-			}
-		}
-		OVERLORD = { has_government = fascism }
-		if = {
-			limit = { has_dlc = "Waking the Tiger" }
-			NOT = { OVERLORD = { original_tag = JAP } }
-			NOT = { OVERLORD = { original_tag = MAN } }
-		}
-	}
 	
 	can_take_level = {
 		#trigger here
-		IF = {
-			limit = {
-				original_tag = COG
-				has_dlc = "Gotterdammerung"			
-			}
-			has_completed_focus = CONGO_republic_of_congo
-			NOT = {
-				has_completed_focus = CONGO_dominion_of_congo
-			}
-		}
 	}
 
 	can_lose_level = {
 		#trigger here
-		IF = {
-			limit = {
-				OVERLORD = { original_tag = BEL } 
-				original_tag = COG
-				has_dlc = "Gotterdammerung"			
-			}
-			NOT = {
-				has_completed_focus = CONGO_dominion_of_congo
-			}
-		}
 	}
 }

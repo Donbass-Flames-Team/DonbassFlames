@@ -40,10 +40,4 @@ autonomy_state = {
 	ai_overlord_wants_lower = {
 		factor = 0.0
 	}
-
-	allowed = {
-		has_dlc = "La Resistance"
-	
-		has_variable = collaboration_formed_by
-	}
 }
