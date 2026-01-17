@@ -30,18 +30,18 @@
 #                                      where you choose the historical division name.
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
-SOV_INF_01 = 
+RUS_INF_01 = 
 {
 	name = "Rifle Division"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Strelkovaya Diviziya"
 
@@ -465,18 +465,18 @@ SOV_INF_01 =
 	}
 }
 
-SOV_CAV_01 = 
+RUS_CAV_01 = 
 {
 	name = "Cavalry Division"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "cavalry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Kavaleriyskaya Diviziya"
 
@@ -602,18 +602,18 @@ SOV_CAV_01 =
 	}
 }
 
-SOV_MOT_01 = 
+RUS_MOT_01 = 
 {
 	name = "Motor Rifle Division"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "motorized" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { SOV_INF_01 }
+	link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Motostrelkovaya Diviziya"
 
@@ -667,18 +667,18 @@ SOV_MOT_01 =
 	}
 }
 
-SOV_MEC_01 = 
+RUS_MEC_01 = 
 {
 	name = "Mechanized Division"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "mechanized" "motorized" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { SOV_INF_01 }
+	link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Mekhanizirovanaya Diviziya"
 
@@ -720,18 +720,18 @@ SOV_MEC_01 =
 	}
 }
 
-SOV_ARM_01 = 
+RUS_ARM_01 = 
 {
 	name = "Tank Division"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Tankovaya Diviziya"
 
@@ -813,18 +813,18 @@ SOV_ARM_01 =
 	}
 }
 
-SOV_ARM_02 = 
+RUS_ARM_02 = 
 {
 	name = "Tank Corps"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Tankovaya Korpus"
 
@@ -906,18 +906,18 @@ SOV_ARM_02 =
 	}
 }
 
-SOV_ARM_03 = 
+RUS_ARM_03 = 
 {
 	name = "Guard Tank Corps"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { has_war = yes }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Gvardeiskaya Tankovaya Korpus"
 
@@ -999,18 +999,18 @@ SOV_ARM_03 =
 	}
 }
 
-SOV_ARM_04 = 
+RUS_ARM_04 = 
 {
 	name = "Tank Brigade"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Tankovaya Brigada"
 
@@ -1092,18 +1092,18 @@ SOV_ARM_04 =
 	}
 }
 
-SOV_PAR_01 = 
+RUS_PAR_01 = 
 {
 	name = "Paratrooper Division"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "paratrooper" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Vozdushno-Desantnaya Div."
 
@@ -1150,18 +1150,18 @@ SOV_PAR_01 =
 	}
 }
 
-SOV_MAR_01 = 
+RUS_MAR_01 = 
 {
 	name = "Marine Division"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "marine" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Diviziya Morskoi Pekhoty"
 
@@ -1182,18 +1182,18 @@ SOV_MAR_01 =
 	}
 }
 
-SOV_MNT_01 = 
+RUS_MNT_01 = 
 {
 	name = "Mountain Rifle Division"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "mountaineers" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { SOV_INF_01 }
+	link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Gornostrelkovaya Diviziya"
 
@@ -1226,18 +1226,18 @@ SOV_MNT_01 =
 	}
 }
 
-SOV_GAR_01 = 
+RUS_GAR_01 = 
 {
 	name = "Garrison Division"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya NKVD Pogranichnaya Diviziya"
 
@@ -1327,18 +1327,18 @@ SOV_GAR_01 =
 	}
 }
 
-SOV_GRD_01 = 
+RUS_GRD_01 = 
 {
 	name = "Guards Rifles"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Gvardyeiskaya Strelk. Div."
 
@@ -1478,18 +1478,18 @@ SOV_GRD_01 =
 	}
 }
 
-SOV_GMC_01 = 
+RUS_GMC_01 = 
 {
 	name = "Guards Mechanized"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "mechanized" "motorized" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Gvds. Mekhanizirovanaya Korpus"
 
@@ -1509,18 +1509,18 @@ SOV_GMC_01 =
 	}
 }
 
-SOV_GTC_01 = 
+RUS_GTC_01 = 
 {
 	name = "Guards Tanks"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { always = yes }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Gvds. Tankovaya Korpus"
 
@@ -1544,153 +1544,16 @@ SOV_GTC_01 =
 }
 
 
-SOV_CAV_02 = #COSSACK CAVALRY
-{
-	name = "Cossack Cavalry Division"
-
-	for_countries = { SOV UKR }
-
-	can_use = {
-		OR = {
-			AND = {
-				tag = SOV
-				has_completed_focus = SOV_restore_cossack_units
-			}
-			tag = UKR
-		}
-	}
-
-	division_types = { "cavalry" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
-
-	fallback_name = "%dya Kazachya Kavaleriyskaya Diviziya"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		3 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		5 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		7 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		8 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		9 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		11 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		13 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		14 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		15 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		16 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		17 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		18 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		19 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		20 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		21 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		22 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		23 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		24 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		25 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		26 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		29 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		30 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		31 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		32 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		33 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		34 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		36 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		48 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		67 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		27 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		28 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		35 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		38 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		40 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		41 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		43 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		44 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		46 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		47 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		49 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		50 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		51 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		52 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		53 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		54 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		55 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		56 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		57 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		60 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		61 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		62 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		63 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		64 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		66 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		68 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		70 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		72 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		73 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		74 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		75 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		76 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		77 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		78 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		79 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		80 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		81 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		82 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		83 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		87 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		91 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		94 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		97 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		98 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		99 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		100 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		101 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		102 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		103 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		104 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		105 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		106 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		107 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		108 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		109 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		110 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		111 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		112 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		113 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		114 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		115 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		116 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		307 = { "7ya Gvds. Kazachya Kavaleriyskaya Div." }
-		308 = { "8ya Gvds. Kazachya Kavaleriyskaya Div." }
-		309 = { "9ya Gvds. Kazachya Kavaleriyskaya Div." }
-		310 = { "10ya Gvds. Kazachya Kavaleriyskaya Div." }
-		311 = { "11ya Gvds. Kazachya Kavaleriyskaya Div." }
-		312 = { "12ya Gvds. Kazachya Kavaleriyskaya Div." }
-		313 = { "13ya Gvds. Kazachya Kavaleriyskaya Div." }
-		314 = { "14ya Gvds. Kazachya Kavaleriyskaya Div." }
-		315 = { "15ya Gvds. Kazachya Kavaleriyskaya Div." }
-		316 = { "16ya Gvds. Kazachya Kavaleriyskaya Div." }
-		317 = { "17ya Gvds. Kazachya Kavaleriyskaya Div." }
-		59 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-		84 = { "%dya Kazachya Kavaleriyskaya Diviziya" }
-	}
-}
-
-SOV_PEN_01 = 
+RUS_PEN_01 = 
 {
 	name = "Penal Units"
 
-	for_countries = { SOV }
-
-	can_use = { has_completed_focus = SOV_penal_battalions }
+	for_countries = { RUS }
 
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Shtrafnaya Chast"
 
@@ -1830,11 +1693,11 @@ SOV_PEN_01 =
 	}
 }
 
-SOV_INF_02 = 
+RUS_INF_02 = 
 {
 	name = "Trotskyist Revolutionary Militias"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { 
 		always = yes
@@ -1843,7 +1706,7 @@ SOV_INF_02 =
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Diviziya Narodnogo Opolcheniya"
 
@@ -1855,21 +1718,16 @@ SOV_INF_02 =
 	}
 }
 
-SOV_INF_03 = 
+RUS_INF_03 = 
 {
 	name = "Ruki"
 
-	for_countries = { SOV }
-
-	can_use = { 
-		has_completed_focus = SOV_the_eyes_fear
-		always = yes
-	}
+	for_countries = { RUS }
 
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%dya Ruki"
 
@@ -1881,19 +1739,19 @@ SOV_INF_03 =
 	}
 }
 
-SOV_JAP_INF = {
+RUS_JAP_INF = {
 	name = "Japanese Expeditionary Force"
 
-	for_countries = { SOV }
+	for_countries = { RUS }
 
 	can_use = { 
-		ROOT = { has_country_flag = SOV_CSW_transfer_vladivostok_flag }
+		ROOT = { has_country_flag = RUS_CSW_transfer_vladivostok_flag }
 	}
 
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+	#link_numbering_with = { RUS_INF_01 }
 
 	fallback_name = "%d Japanese Expeditionary Division"
 
