@@ -33,7 +33,7 @@ bookmarks = {
 			}	
 		}
 		"LPR"={
-			history = "LPR_EC_DESC"
+			history = "LPR_DW_DESC"
 			ideology = neutrality
 			ideas = {
 			}
@@ -42,7 +42,7 @@ bookmarks = {
 		}
 
 		#Minor countries
-		"POL"={
+"POL"={
 			history = "POL_EC_DESC"
 			ideology = neutrality
 			minor = yes
@@ -54,8 +54,8 @@ bookmarks = {
 			focuses = {
 			}	
 		}
-		"ROM"={
-			history = "ROM_EC_DESC"
+		"LIT"={
+			history = "LIT_DW_DESC"
 			ideology = neutrality
 			minor = yes
 			ideas = {
@@ -63,14 +63,11 @@ bookmarks = {
 			focuses = {
 			}	
 		}
-		"BLR"={
-			history = "BLR_EC_DESC"
+		"ROM"={
+			history = "ROM_DW_DESC"
 			ideology = neutrality
 			minor = yes
 			ideas = {
-				BEL_autocratic_rule
-				BEL_dependence_on_russia
-				BEL_weak_economy
 			}
 			focuses = {
 			}	
@@ -84,8 +81,38 @@ bookmarks = {
 			focuses = {
 			}	
 		}
+		"HUN"={
+			history = "HUN_DW_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"SER"={
+			history = "SER_DW_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"BLR"={
+			history = "BLR_DW_DESC"
+			ideology = neutrality
+			minor = yes
+			ideas = {
+				BEL_autocratic_rule
+				BEL_dependence_on_russia
+				BEL_weak_economy
+			}
+			focuses = {
+			}	
+		}
 		"TMR"={
-			history = "UKR_DW_DESC"
+			history = "TMR_DW_DESC"
 			ideology = neutrality
 			minor = yes
 			ideas = {
