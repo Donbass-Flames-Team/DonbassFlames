@@ -33,6 +33,7 @@ bookmarks = {
 		}
 
 		#Minor countries
+
 		"POL"={
 			history = "POL_EC_DESC"
 			ideology = liberal_democracy
@@ -45,8 +46,45 @@ bookmarks = {
 			focuses = {
 			}	
 		}
+		"LIT"={
+			history = "LIT_EC_DESC"
+			ideology = liberal_democracy
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
 		"ROM"={
 			history = "ROM_EC_DESC"
+			ideology = liberal_democracy
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"MOL"={
+			history = "MOL_EC_DESC"
+			ideology = liberal_democracy
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		"CRI"={
+			history = "CRI_EC_DESC"
+			ideology = liberal_democracy
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+
+		"HUN"={
+			history = "HUN_EC_DESC"
 			ideology = liberal_democracy
 			minor = yes
 			ideas = {
@@ -75,41 +113,4 @@ bookmarks = {
 			focuses = {
 			}	
 		}
-		"MOL"={
-			history = "MLV_EC_DESC"
-			ideology = liberal_democracy
-			minor = yes
-			ideas = {
-			}
-			focuses = {
-			}	
-		}
-		"SER"={
-			history = "SER_EC_DESC"
-			ideology = liberal_democracy
-			minor = yes
-			ideas = {
-			}
-			focuses = {
-			}	
-		}
-		"HUN"={
-			history = "TMR_EC_DESC"
-			ideology = liberal_democracy
-			minor = yes
-			ideas = {
-			}
-			focuses = {
-			}	
-		}
-	    "LIT"={
-			history = "TMR_EC_DESC"
-			ideology = liberal_democracy
-			minor = yes
-			ideas = {
-			}
-			focuses = {
-			}	
-		}
-	}
-}
+
