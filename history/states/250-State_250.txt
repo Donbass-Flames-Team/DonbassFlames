@@ -1,6 +1,9 @@
-state={
+state = {
 	id=250
 	name="STATE_250"
+	resources = {
+		oil = 2
+	}
 	provinces={
 		354 6044 6315 7721 10142 11605 14591 14658 14685 14704 14771 14857 
 	}

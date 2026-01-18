@@ -1,6 +1,9 @@
-state={
+state = {
 	id=196
 	name="STATE_196"
+	resources = {
+		oil = 2
+	}
 	provinces={
 		383 748 898 1556 2014 3674 3906 4946 4982 5346 5620 5719 6020 6885 8394 10165 10997 13980 14022 14065 14076 14167 14183 14184 14196 14393 
 	}
@@ -9,7 +12,6 @@ state={
 		add_core_of = UKR
 		buildings = {
 			infrastructure = 3
-
 			industrial_complex = 2
 			arms_factory = 0
 		}

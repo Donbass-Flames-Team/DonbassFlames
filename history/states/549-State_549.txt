@@ -1,4 +1,4 @@
-state={
+state = {
 	id=549
 	name="STATE_549"
 	provinces={
@@ -12,6 +12,7 @@ history= {
 			infrastructure = 3
 			industrial_complex = 1
 			arms_factory = 0
+			fuel_silo = 2
 		}
 	}
 	buildings_max_level_factor=2.000

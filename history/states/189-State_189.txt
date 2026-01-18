@@ -1,4 +1,4 @@
-state={
+state = {
 	id=189
 	name ="STATE_189"
 	provinces = {
@@ -9,9 +9,9 @@ state={
 		add_core_of = UKR
 		buildings = {
 			infrastructure = 3
-
 			industrial_complex = 2
 			arms_factory = 0
+			fuel_silo = 3
 		}
 	}
 	buildings_max_level_factor=2.000

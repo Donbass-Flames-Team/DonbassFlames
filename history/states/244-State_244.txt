@@ -1,4 +1,4 @@
-state={
+state = {
 	id=244
 	name="STATE_244"
 	provinces={
@@ -11,6 +11,7 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 			arms_factory = 0
+			synthetic_refinery = 1
 		}
 	}
 	buildings_max_level_factor=2.000
