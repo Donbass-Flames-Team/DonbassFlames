@@ -10,7 +10,8 @@ state = {
 
 		victory_points = { 15692 15 }
 
-		buildings = {
+				add_extra_state_shared_building_slots = 3
+buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 			arms_factory = 0

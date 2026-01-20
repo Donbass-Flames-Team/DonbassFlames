@@ -6,7 +6,6 @@ state = {
     state_category = town
     buildings_max_level_factor = 2.000
 
-
     resources = {
         oil = 1
     }
@@ -22,7 +21,8 @@ state = {
         owner = UKR
         add_core_of = UKR
 
-        buildings = {
+                add_extra_state_shared_building_slots = 5
+buildings = {
             infrastructure = 3
             industrial_complex = 2
             arms_factory = 1
