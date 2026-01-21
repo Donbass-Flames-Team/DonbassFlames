@@ -333,10 +333,10 @@ technologies = {
 	APC_1 = { #Leichttraktor
 
 		enable_equipments = {
-			apc_0_equipment
+			apc_chassis_0
 		}
 		enable_subunits = {
-			armoured_personnel_carrier
+			apc_unit
 		}
 		on_research_complete_limit = {
 			

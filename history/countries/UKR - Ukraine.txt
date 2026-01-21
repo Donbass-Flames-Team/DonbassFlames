@@ -65,6 +65,9 @@ DF_economy_setup = yes
 		toward_artilerry = 1
 		spau_artillery = 1
 		multiple_launch_rocket_system = 1
+		uniform_equipment = 1
+		uniform_equipment1 = 1
+		uniform_equipment2 = 1
 	}
 
 	#if = {
@@ -110,6 +113,7 @@ DF_economy_setup = yes
 		        ifv_chassis_4 = 1
 				gwtank_chassis = 1		   
 		    }
+			set_oob = "UKR_2013"
 	    }
     }
 

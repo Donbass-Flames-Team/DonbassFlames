@@ -1084,6 +1084,12 @@ country_event = {
 			381 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 45 }
 			}
+			DPR = {
+			    country_event = {
+				    id = DPR.9
+				    days = 3
+			    }
+			}
 		}
 	}
 
@@ -1532,7 +1538,6 @@ country_event = {
                 num_provinces = 1
                 on_win = ukraine.46
                 on_lose = ukraine.47
-                modifier = 0.1
                 dig_in_factor = 0
                 terrain_factor = 0
             }	

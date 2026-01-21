@@ -86,25 +86,25 @@ DF_economy_setup = {
 	#############
 	set_variable = {
 		var = people_taxes
-		value = ROOT.max_manpower_k
+		value = 0
 	}
-	divide_variable = {
-		var = people_taxes
-		value = 700
-	}
-	multiply_variable = {
-		var = people_taxes
-		value = 1.7
-	}
-	add_to_variable = {
-		var = cash
-		value = var:people_taxes
-	 }
-	add_to_variable = {
-		var = income
-		value = var:people_taxes
-	}
-	round_variable = people_taxes
+	#divide_variable = {
+	#	var = people_taxes
+	#	value = 700
+	#}
+	#multiply_variable = {
+	#	var = people_taxes
+	#	value = 1.7
+	#}
+	#add_to_variable = {
+	#	var = cash
+	#	value = var:people_taxes
+	#}
+	#add_to_variable = {
+	#	var = income
+	#	value = var:people_taxes
+	#}
+	#round_variable = people_taxes
 
 	set_variable = {
 		var = corporate_taxes

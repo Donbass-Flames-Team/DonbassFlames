@@ -131,3 +131,21 @@ country_event = {
 		army_experience = 25
 	}
 }
+
+#Восстание расширяется
+country_event = {
+	id = DPR.9
+	title = DPR.9.t
+	desc = DPR.9.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.9.a
+		add_war_support = 0.015
+		hidden_effect = {
+			load_oob = Donetsk_uprising_expanded
+		}
+	}
+}
