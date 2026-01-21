@@ -261,23 +261,22 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "night_vision_tree"
-				position = { x = 140 y = 210 }
+				name = "infantry_weapons_tree"
+				position = { x = 140 y = 225 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
-				name = "infantry_weapons_tree"
-				position = { x = 140 y = 325 }
+				name = "uniform_equipment_tree"
+				position = { x = 140 y = 585 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
-
 			}
 
 			gridboxtype = {
 				name = "atgl_weapons_tree"
-				position = { x = 140 y = 895 }
+				position = { x = 140 y = 445 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -291,28 +290,28 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "manpads_weapons_tree"
-				position = { x = 140 y = 1025 }
+				position = { x = 140 y = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "mortar_weapons_tree"
-				position = { x = 140 y = 1195 }
+				position = { x = 140 y = 860 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "civil_drones_tree"
-				position = { x = 140 y = 1295 }
+				position = { x = 140 y = 1195 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "tech_trucks_tree"
-				position = { x = 140 y = 620 }
+				position = { x = 140 y = 1200 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
