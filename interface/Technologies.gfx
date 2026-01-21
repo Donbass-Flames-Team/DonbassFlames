@@ -107,6 +107,41 @@ spriteTypes = {
     ################
 	### Infantry ###
 	################
+
+	SpriteType = {
+		name = "GFX_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AKM.dds"
+	}	
+	SpriteType = {
+		name = "GFX_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/AKMS.dds"
+	}	
+	SpriteType = {
+		name = "GFX_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/AKS74U.dds"
+	}	
+	SpriteType = {
+		name = "GFX_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/AK74M.dds"
+	}	
+	SpriteType = {
+		name = "GFX_infantry_weapons4_medium"
+		texturefile = "gfx/interface/technologies/AK105.dds"
+	}	
+	SpriteType = {
+		name = "GFX_infantry_weapons5_medium"
+		texturefile = "gfx/interface/technologies/AK12.dds"
+	}	
+	SpriteType = {
+		name = "GFX_infantry_weapons6_medium"
+		texturefile = "gfx/interface/technologies/AK203.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons7_medium"
+		texturefile = "gfx/interface/technologies/AK12M1.dds"
+	}
+
+
 	SpriteType = {
 		name = "GFX_UKR_infantry_equipment_0_medium"
 		texturefile = "gfx/interface/technologies/AKM.dds"
@@ -140,7 +175,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/AK12M1.dds"
 	}
 
-SpriteType = {
+    SpriteType = {
 		name = "GFX_RUS_infantry_equipment_0_medium"
 		texturefile = "gfx/interface/technologies/AKM.dds"
 	}	
@@ -172,4 +207,243 @@ SpriteType = {
 		name = "GFX_RUS_infantry_weapons7_medium"
 		texturefile = "gfx/interface/technologies/AK12M1.dds"
 	}
+
+    #########################################################
+	### Anti-Tank Guided Missile Equipment (ATGM) ###
+	#########################################################
+
+	SpriteType = {
+		name = "GFX_atgm_weapons_medium"
+		texturefile = "gfx/interface/technologies/atgm0.png"
+	}
+
+	SpriteType = {
+		name = "GFX_atgm_weapons1_medium"
+		texturefile = "gfx/interface/technologies/atgm1.png"
+	}
+
+	SpriteType = {
+		name = "GFX_atgm_weapons2_medium"
+		texturefile = "gfx/interface/technologies/atgm4.png"
+	}
+
+	SpriteType = {
+		name = "GFX_atgm_weapons3_medium"
+		texturefile = "gfx/interface/technologies/atgm2.png"
+	}
+
+	SpriteType = {
+		name = "GFX_atgm_weapons4_medium"
+		texturefile = "gfx/interface/technologies/atgm3.png"
+	}
+
+	SpriteType = {
+		name = "GFX_atgm_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/atgm0.png"
+	}
+
+	SpriteType = {
+		name = "GFX_atgm_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/atgm2.png"
+	}
+
+	SpriteType = {
+		name = "GFX_atgm_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/atgm4.png"
+	}
+
+	SpriteType = {
+		name = "GFX_atgm_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/atgm3.png"
+	}
+
+	SpriteType = {
+		name = "GFX_atgm_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/atgm1.png"
+	}
+
+    #####################
+	### RPG Equipment ###
+	#####################
+
+	SpriteType = {
+		name = "GFX_atgl_weapons_medium"
+		texturefile = "gfx/interface/technologies/rpg0.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_atgl_weapons_1_medium"
+		texturefile = "gfx/interface/technologies/rpg1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_atgl_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/rpg2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_atgl_weapons_3_medium"
+		texturefile = "gfx/interface/technologies/rpg3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_atgl_weapons_4_medium"
+		texturefile = "gfx/interface/technologies/rpg4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_atgl_weapons_5_medium"
+		texturefile = "gfx/interface/technologies/rpg5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_atgl_weapons_6_medium"
+		texturefile = "gfx/interface/technologies/rpg6.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_atgl_weapons_7_medium"
+		texturefile = "gfx/interface/technologies/rpg7.dds"
+	}
+
+    ######################
+	### Tank Equipment ###
+	######################
+
+	SpriteType = {
+		name = "GFX_modern_tank_1_medium"
+		texturefile = "gfx/interface/technologies/generic_modern_tank1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_modern_tank_2_medium"
+		texturefile = "gfx/interface/technologies/generic_modern_tank2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_tank_3_medium"
+		texturefile = "gfx/interface/technologies/generic_modern_tank3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_tank_4_medium"
+		texturefile = "gfx/interface/technologies/generic_modern_tank4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_tank_5_medium"
+		texturefile = "gfx/interface/technologies/generic_modern_tank5.dds"
+	}
+
+    #####################
+	### IFV Equipment ###
+	#####################
+
+	SpriteType = {
+		name = "GFX_ifv_1_medium"
+		texturefile = "gfx/interface/technologies/generic_ifv_1.png"
+	}	
+
+	SpriteType = {
+		name = "GFX_ifv_2_medium"
+		texturefile = "gfx/interface/technologies/generic_ifv_2.png"
+	}
+
+	SpriteType = {
+		name = "GFX_ifv_3_medium"
+		texturefile = "gfx/interface/technologies/generic_ifv_3.png"
+	}
+
+	SpriteType = {
+		name = "GFX_ifv_4_medium"
+		texturefile = "gfx/interface/technologies/generic_ifv_4.png"
+	}
+
+    #####################
+	### APC Equipment ###
+	#####################
+
+	SpriteType = {
+		name = "GFX_APC_1_medium"
+		texturefile = "gfx/interface/technologies/generic_apc_1.png"
+	}	
+
+	SpriteType = {
+		name = "GFX_APC_2_medium"
+		texturefile = "gfx/interface/technologies/generic_apc_2.png"
+	}
+
+	SpriteType = {
+		name = "GFX_APC_3_medium"
+		texturefile = "gfx/interface/technologies/generic_apc_3.png"
+	}
+
+	SpriteType = {
+		name = "GFX_APC_4_medium"
+		texturefile = "gfx/interface/technologies/generic_apc_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_5_medium"
+		texturefile = "gfx/interface/technologies/generic_apc_5.png"
+	}
+
+    ########################
+	### Mortar Equipment ###
+	########################
+
+	SpriteType = {
+		name = "GFX_mortar_weapons_medium"
+		texturefile = "gfx/interface/technologies/mortar1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_mortar_weapons1_medium"
+		texturefile = "gfx/interface/technologies/mortar2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mortar_weapons2_medium"
+		texturefile = "gfx/interface/technologies/mortar3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mortar_weapons3_medium"
+		texturefile = "gfx/interface/technologies/mortar4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_mortar_weapons4_medium"
+		texturefile = "gfx/interface/technologies/mortar5.dds"
+	}
+
+    ########################
+	### Manpad Equipment ###
+	########################
+
+	SpriteType = {
+		name = "GFX_manpads_weapons_medium"
+		texturefile = "gfx/interface/technologies/generic_manpad_0.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_manpads_weapons1_medium"
+		texturefile = "gfx/interface/technologies/generic_manpad_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_manpads_weapons2_medium"
+		texturefile = "gfx/interface/technologies/generic_manpad_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_manpads_weapons3_medium"
+		texturefile = "gfx/interface/technologies/generic_manpad_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_manpads_weapons4_medium"
+		texturefile = "gfx/interface/technologies/generic_manpad_4.dds"
+	}
+
 }

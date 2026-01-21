@@ -341,7 +341,7 @@ technologies = {
 		research_speed_factor = 0.025
 
 		enable_equipments = {
-			
+			drone_equipment_0
 		}
 		
 		path = {
@@ -368,7 +368,7 @@ technologies = {
 	introduction_of_drones = {
 
 		enable_equipments = {
-
+             
 		}
 		
 		#path = {
@@ -690,11 +690,38 @@ technologies = {
 			atgm_equipment_3
 		}	
 
+		path = {
+			leads_to_tech = atgm_weapons4
+			research_cost_coeff = 1
+		}	
+
 		research_cost = 1.5
 		start_year = 2010
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	atgm_weapons4 = {
+
+		enable_equipments = {
+			atgm_equipment_4
+		}	
+
+		research_cost = 1.5
+		start_year = 2010
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1940 }
 		}
 		
 		categories = {
