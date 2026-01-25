@@ -3,7 +3,7 @@ technologies = {
 	@anti_tank = 7
 	@rocket_artillery = 3
 
-	toward_artilerry = {
+	toward_artilery = {
 
 		enable_equipments = {
 			towed_artillery_equipment
@@ -220,7 +220,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 0 }
+			position = { x = 0 y = 0 }
 		}
 
 		categories = {
@@ -248,7 +248,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 2 }
+			position = { x = 0 y = 2 }
 		}
 
 		categories = {
@@ -275,7 +275,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 4 }
+			position = { x = 0 y = 4 }
 		}
 
 		categories = {
@@ -302,7 +302,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 6 }
+			position = { x = 0 y = 6 }
 		}
 
 		categories = {
@@ -362,7 +362,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -8 y = 0 }
+			position = { x = 0 y = 0 }
 		}
 
 		categories = {
@@ -391,7 +391,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -8 y = 2 }
+			position = { x = 0 y = 2 }
 		}
 
 		categories = {
@@ -415,7 +415,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -8 y = 4 }
+			position = { x = 0 y = 4 }
 		}
 
 		categories = {

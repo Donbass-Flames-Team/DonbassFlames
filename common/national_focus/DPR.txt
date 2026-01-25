@@ -54,7 +54,24 @@ focus_tree = {
 			add_war_support = 0.05
 			add_stability = 0.05
 			hidden_effect = {
-				
+				if = {
+					limit = {
+						UKR = { 
+							NOT = {
+								is_ai = yes
+							}
+						}
+						DPR = {
+							is_ai = yes
+						}
+					}
+					DPR = {
+						add_timed_idea = {
+							idea = DPR_ai_buff_idea
+							days = 180
+						} 
+					}
+				}
 			}
 		}
 	}
@@ -472,7 +489,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             add_war_support = 0.05
-			add_ideas = DPR_russian_spring_idea
+			add_ideas = DPR_arrise_donbass_idea
 		}
 	}
 

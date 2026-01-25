@@ -867,7 +867,15 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "ifv_1_tree"
-				position = { x = 0% y = 172 }
+				position = { x = 25% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxType = {
+				name = "bmd_1_tree"
+				position = { x = 40% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -875,7 +883,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "APC_1_tree"
-				position = { x = 25% y = 172 }
+				position = { x = 5% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -1564,7 +1572,7 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "toward_artilerry_tree"
+				name = "toward_artilery_tree"
 				position = { x = 10% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
@@ -1573,7 +1581,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "spau_artillery_tree"
-				position = { x = 30% y = 172 }
+				position = { x = -5% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -1581,7 +1589,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "multiple_launch_rocket_system_tree"
-				position = { x = 30% y = 172 }
+				position = { x = 15% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
