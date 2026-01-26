@@ -23,7 +23,10 @@ recruit_character = dalia_grybauskaite
 	}
 
 	add_ideas = {
-	}
+		volunteer_only
+		free_trade
+		civilian_economy
+}
 
 	set_popularities = {
 		liberal_democracy = 18

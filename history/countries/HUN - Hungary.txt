@@ -4,6 +4,13 @@ recruit_character = viktor_orban
 2013.11.21 = {
 	set_research_slots = 3
 
+
+	add_ideas = {
+		volunteer_only
+		free_trade
+		civilian_economy
+	}
+
 	set_technology = {
 		infantry_weapons = 1
 		mountain_warfare = 1

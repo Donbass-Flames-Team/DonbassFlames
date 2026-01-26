@@ -30,7 +30,11 @@ recruit_character = bronislaw_komorowski
 		POL_political_polarization
 		POL_EU_subsidies
 		POL_eastern_neighbor_concerns
-	}
+
+		volunteer_only
+		free_trade
+		civilian_economy
+}
 
 	set_popularities = {
 		liberal_democracy = 18

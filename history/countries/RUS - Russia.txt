@@ -30,9 +30,9 @@ DF_economy_setup = yes
 add_dynamic_modifier = { modifier = GEN_inflation }
 
 add_ideas = {
-	civilian_economy
-	free_trade
 	limited_conscription
+	limited_exports
+	low_economic_mobilisation
 }
 
 create_faction = "CSTO"

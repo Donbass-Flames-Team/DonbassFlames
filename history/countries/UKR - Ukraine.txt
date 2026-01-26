@@ -239,10 +239,11 @@ DF_economy_setup = yes
 		UKR_separatism
 		UKR_dependence_on_russia
 		UKR_ukrainian_mic
-        limited_conscription
-        free_trade
-        civilian_economy
-	}
+
+		volunteer_only
+		export_focus
+		civilian_economy
+}
 	
 	add_manpower = 60000
 	
