@@ -2043,6 +2043,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
+			add_political_power = 250
 		}
 	}
 
@@ -2074,6 +2075,10 @@ focus_tree = {
 				country_event = superevent.1
 				mark_focus_tree_layout_dirty = yes
 				set_global_flag = Start_Of_ATO
+				country_event = {
+					id = ukraine.53
+					days = 7
+				}
 			}
 		}
 	}
@@ -3829,6 +3834,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			army_experience = 20
 		}
 	}
 
@@ -3913,13 +3919,14 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_stability = 0.05
+			add_political_power = 35
 		}
 	}
 
 	focus = {
 		id = UKR_volunteer_battalions
 		icon = GFX_focus_UKR_volunteer_battalions
-		cost = 1
+		cost = 0.5
 		x = 4
 		y = 2
 
@@ -3943,7 +3950,7 @@ focus_tree = {
 		    unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
 		    add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
 		    custom_effect_tooltip = UKR_volunteer_battalions_tt
-			add_political_power = 50
+			add_political_power = 10
 		}
 	}
 
@@ -3974,7 +3981,7 @@ focus_tree = {
 		    unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
 			add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
 		    custom_effect_tooltip = UKR_volunteer_battalions_tt
-		    add_political_power = 50
+		    add_political_power = 25
 		}
 	}
 
@@ -4005,7 +4012,7 @@ focus_tree = {
 		    unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
 			add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
 		    custom_effect_tooltip = UKR_volunteer_battalions_tt
-		    add_political_power = 50
+		    add_political_power = 10
 		}
 	}
 
