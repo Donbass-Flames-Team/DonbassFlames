@@ -953,8 +953,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			add_political_power = 10
+			unlock_decision_tooltip = RUS_send_additional_ammunition
 		}
 	}
 
@@ -981,7 +981,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.025
+			unlock_decision_tooltip = RUS_send_additional_machinery_supply
 		}
 	}
 
@@ -1008,7 +1008,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.025
+			unlock_decision_tooltip = RUS_send_additional_equipment
 		}
 	}
 
@@ -1036,8 +1036,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 15
 			add_stability = 0.025
+			add_war_support = 0.03
 		}
 	}
 
@@ -1111,7 +1112,7 @@ focus_tree = {
 		}
 
 		available = {
-			date < 2014.12.15
+			date > 2014.12.15
 		}
 
 		allow_branch = {

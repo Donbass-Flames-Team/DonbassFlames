@@ -21,11 +21,13 @@ RUS_influence_in_ukraine_decision = {
 		cost = 35
 
 		complete_effect = {
+            DPR = {
 
+			}
 		}
 
 		ai_will_do = {
-			factor = 10		
+			factor = 50		
 		}
 	}	
 
@@ -51,7 +53,7 @@ RUS_influence_in_ukraine_decision = {
 		}
 
 		ai_will_do = {
-			factor = 10		
+			factor = 30		
 		}
 	}
 
@@ -77,7 +79,7 @@ RUS_influence_in_ukraine_decision = {
 		}
 
 		ai_will_do = {
-			factor = 10		
+			factor = 50		
 		}
 	}
 }

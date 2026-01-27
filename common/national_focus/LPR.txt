@@ -13,7 +13,7 @@ focus_tree = {
 	focus = {
 		id = LPR_arrise_donbass
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 5
+		cost = 0.5
 		x = 12
 		y = 0
 
@@ -27,6 +27,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
+			add_ideas = DPR_arrise_donbass_idea
 		}
 	}
 

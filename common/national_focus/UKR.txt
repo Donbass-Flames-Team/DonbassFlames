@@ -1739,30 +1739,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_national_decentralization_project
-		icon = GFX_focus_UKR_government_in_anarchy
-		cost = 0.2
-		x = 2
-		y = 3
-
-		prerequisite = { focus = UKR_adoption_of_new_laws }
-		relative_position_id = UKR_government_in_anarchy
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		    add_stability = 0.075
-		}
-	}
-
-	focus = {
 		id = UKR_unrest_in_the_east
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 0.5

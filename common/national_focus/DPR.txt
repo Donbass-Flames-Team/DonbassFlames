@@ -13,7 +13,7 @@ focus_tree = {
 	focus = {
 		id = DPR_capture_administrations
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
+		cost = 0.5
 		x = 12
 		y = 0
 
@@ -154,15 +154,15 @@ focus_tree = {
 			add_war_support = 0.03
 			add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
-				amount = 7500 
+				amount = 3500 
 			}
 			add_equipment_to_stockpile = { 
 				type = bulletproof_vests_equipment_3 
-				amount = 1500
+				amount = 750
 			} 		
 			add_equipment_to_stockpile = { 
 				type = uniform_equipment_3 
-				amount = 4500
+				amount = 2500
 			}	
 
 		}
@@ -216,7 +216,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-            add_ideas = DPR_roadblock_idea
+            add_timed_idea = {
+                id = DPR_roadblock_idea
+				days = 180
+            }
 		}
 	}
 
@@ -435,7 +438,7 @@ focus_tree = {
 		x = 1
 		y = 4
 
-		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
+		prerequisite = {focus = DPR_set_up_production}
 		relative_position_id = DPR_capture_administrations
 
 		cancel_if_invalid = yes
@@ -513,7 +516,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-        
+            
 		}
 	}
 
@@ -814,7 +817,7 @@ focus_tree = {
 		x = 3
 		y = 5
 
-		prerequisite = {focus = DPR_set_up_production}
+		prerequisite = {focus = DPR_nationalize_the_captured_factories}
 		relative_position_id = DPR_capture_administrations
 
 		cancel_if_invalid = yes
@@ -838,7 +841,7 @@ focus_tree = {
 		x = 6
 		y = 5
 
-		prerequisite = {focus = DPR_set_up_production}
+		prerequisite = {focus = DPR_nationalize_the_captured_factories}
 		relative_position_id = DPR_capture_administrations
 
 		cancel_if_invalid = yes
