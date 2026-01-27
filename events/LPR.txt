@@ -1,0 +1,32 @@
+﻿###########################
+# LPR Events
+###########################
+
+add_namespace = LPR
+
+# Болотов выздоровел
+country_event = {
+	id = LPR.1
+	title = LPR.1.t
+	desc = LPR.1.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.1.a
+		add_country_leader_role = {
+        character = valeryy_bolotov
+        promote_leader = yes
+            country_leader = {
+                ideology = autoritarian_democracy
+                expire = "2045.1.1.1"
+                traits = { war_industrialist }
+            } 
+        }
+		remove_country_leader_role = {
+            character = gennady_tsipkalov
+            ideology = autoritarian_democracy
+        }
+	}
+}

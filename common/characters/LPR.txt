@@ -1,4 +1,18 @@
 characters = {
+
+	gennady_tsipkalov = {
+		name = gennady_tsipkalov
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_gennady_tsipkalov"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+		}
+	}
+	
     valeryy_bolotov = {
 		name = valeryy_bolotov
 		portraits = {

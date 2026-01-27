@@ -1,5 +1,8 @@
 capital = 93
 
+recruit_character = gennady_tsipkalov
+recruit_character = valeryy_bolotov
+
 2013.11.21 = {
 	set_technology = {
 		infantry_weapons = 1
@@ -30,11 +33,11 @@ capital = 93
 		service_by_requirement
 		closed_economy
 		war_economy
-}
+    }
 
 	set_politics = {
 		ruling_party = autoritarian_democracy
-		last_election = "2010.02.07"
+		last_election = "2014.02.07"
 		election_frequency = 48
 		elections_allowed = no
 	}
@@ -47,5 +50,4 @@ capital = 93
 		autoritarian_democracy = 15
 	}
 
-	recruit_character = valeryy_bolotov
 }

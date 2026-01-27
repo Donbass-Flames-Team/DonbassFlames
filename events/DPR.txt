@@ -34,6 +34,16 @@ country_event = {
 		add_war_support = 0.05
 		add_stability = 0.025
 	}
+
+	option = {
+		name = DPR.2.b
+		army_experience = 25
+		add_war_support = 0.035
+		add_stability = -0.025
+		UKR = {
+			
+		}
+	}
 }
 
 #Донецкий аэропорт украины!

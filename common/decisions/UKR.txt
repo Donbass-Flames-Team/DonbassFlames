@@ -1262,42 +1262,6 @@ UKR_ATO_volunteer_battalions_decision = {
 		}
 	}
 
-	UKR_volunteer_battalion_bogdan = {
-		icon = GFX_decision_UKR_batalion_bogdan
-		allowed = {
-			original_tag = UKR
-		}
-		visible = {
-			original_tag = UKR
-			has_completed_focus = UKR_volunteer_battalions
-		}
-		fire_only_once = yes
-		cost = 25
-		complete_effect = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-
-	UKR_volunteer_battalion_chernigyv = {
-		icon = GFX_decision_UKR_batalion_chernygiv
-		allowed = {
-			original_tag = UKR
-		}
-		visible = {
-			original_tag = UKR
-			has_completed_focus = UKR_volunteer_battalions
-		}
-		fire_only_once = yes
-		cost = 25
-		complete_effect = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-
 	UKR_volunteer_battalion_dnipro = {
 		icon = GFX_decision_UKR_batalion_dnipro
 		allowed = {
@@ -1424,24 +1388,6 @@ UKR_ATO_volunteer_battalions_decision = {
 		}
 	}
 
-	UKR_volunteer_battalion_kherson = {
-		icon = GFX_decision_UKR_batalion_kherson
-		allowed = {
-			original_tag = UKR
-		}
-		visible = {
-			original_tag = UKR
-			has_completed_focus = UKR_volunteer_battalions
-		}
-		fire_only_once = yes
-		cost = 25
-		complete_effect = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-
 	UKR_volunteer_battalion_kiev = {
 		icon = GFX_decision_UKR_batalion_kiev
 		allowed = {
@@ -1478,24 +1424,6 @@ UKR_ATO_volunteer_battalions_decision = {
 		}
 	}
 
-	UKR_volunteer_battalion_kirovograd = {
-		icon = GFX_decision_UKR_batalion_kirovograd
-		allowed = {
-			original_tag = UKR
-		}
-		visible = {
-			original_tag = UKR
-			has_completed_focus = UKR_volunteer_battalions
-		}
-		fire_only_once = yes
-		cost = 25
-		complete_effect = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-
 	UKR_volunteer_battalion_kiyv2 = {
 		icon = GFX_decision_UKR_batalion_kiyv2
 		allowed = {
@@ -1504,24 +1432,6 @@ UKR_ATO_volunteer_battalions_decision = {
 		visible = {
 			original_tag = UKR
 			has_completed_focus = UKR_volunteer_battalions_of_mvd
-		}
-		fire_only_once = yes
-		cost = 25
-		complete_effect = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-
-	UKR_volunteer_battalion_kremenchuk = {
-		icon = GFX_decision_UKR_batalion_kremenchuk
-		allowed = {
-			original_tag = UKR
-		}
-		visible = {
-			original_tag = UKR
-			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
 		cost = 25
@@ -1568,60 +1478,6 @@ UKR_ATO_volunteer_battalions_decision = {
 		}
 	}
 
-	UKR_volunteer_battalion_luhansk = {
-		icon = GFX_decision_UKR_batalion_luhansk
-		allowed = {
-			original_tag = UKR
-		}
-		visible = {
-			original_tag = UKR
-			has_completed_focus = UKR_volunteer_battalions
-		}
-		fire_only_once = yes
-		cost = 25
-		complete_effect = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-
-	UKR_volunteer_battalion_lviv = {
-		icon = GFX_decision_UKR_batalion_lviv
-		allowed = {
-			original_tag = UKR
-		}
-		visible = {
-			original_tag = UKR
-			has_completed_focus = UKR_volunteer_battalions
-		}
-		fire_only_once = yes
-		cost = 10
-		complete_effect = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-
-	UKR_volunteer_battalion_mikolaiv = {
-		icon = GFX_decision_UKR_batalion_mikolaiv
-		allowed = {
-			original_tag = UKR
-		}
-		visible = {
-			original_tag = UKR
-			has_completed_focus = UKR_volunteer_battalions
-		}
-		fire_only_once = yes
-		cost = 25
-		complete_effect = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-
 	UKR_volunteer_battalion_mirotvorec = {
 		icon = GFX_decision_UKR_batalion_mirotvorec
 		allowed = {
@@ -1642,24 +1498,6 @@ UKR_ATO_volunteer_battalions_decision = {
 
 	UKR_volunteer_battalion_oun = {
 		icon = GFX_decision_UKR_batalion_oun
-		allowed = {
-			original_tag = UKR
-		}
-		visible = {
-			original_tag = UKR
-			has_completed_focus = UKR_volunteer_battalions
-		}
-		fire_only_once = yes
-		cost = 25
-		complete_effect = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-
-	UKR_volunteer_battalion_poltava = {
-		icon = GFX_decision_UKR_batalion_poltava
 		allowed = {
 			original_tag = UKR
 		}
@@ -1736,42 +1574,6 @@ UKR_ATO_volunteer_battalions_decision = {
 			factor = 100
 		}
 	}
-
-	UKR_volunteer_battalion_sicheslav = {
-		icon = GFX_decision_UKR_batalion_sicheslav
-		allowed = {
-			original_tag = UKR
-		}
-		visible = {
-			original_tag = UKR
-			has_completed_focus = UKR_volunteer_battalions
-		}
-		fire_only_once = yes
-		cost = 25
-		complete_effect = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-
-	UKR_volunteer_battalion_slabozansina = {
-		icon = GFX_decision_UKR_batalion_slabozansina
-		allowed = {
-			original_tag = UKR
-		}
-		visible = {
-			original_tag = UKR
-			has_completed_focus = UKR_volunteer_battalions
-		}
-		fire_only_once = yes
-		cost = 25
-		complete_effect = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
 	
 	UKR_volunteer_battalion_storm = {
 		icon = GFX_decision_UKR_batalion_storm
@@ -1809,21 +1611,4 @@ UKR_ATO_volunteer_battalions_decision = {
 		}
 	}
 
-	UKR_volunteer_battalion_vinitsa = {
-		icon = GFX_decision_UKR_batalion_vinitsa
-		allowed = {
-			original_tag = UKR
-		}
-		visible = {
-			original_tag = UKR
-			has_completed_focus = UKR_volunteer_battalions
-		}
-		fire_only_once = yes
-		cost = 25
-		complete_effect = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
 }
