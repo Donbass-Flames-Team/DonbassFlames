@@ -452,3 +452,16 @@ news_event = {
 
     option = { name = news_events.13.a }
 }
+
+# Обстрел автобуса под Волновахой
+news_event = {
+    id = news_events.14
+    title = news_events.14.t
+    desc = news_events.14.d
+    picture = GFX_news_event_021
+    major = yes
+
+    is_triggered_only = yes
+
+    option = { name = news_events.14.a }
+}
