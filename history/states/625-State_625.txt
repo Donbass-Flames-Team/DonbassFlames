@@ -1,26 +1,25 @@
 state = {
-	id=625
-	name="STATE_625"
-	provinces={
-		17482 
-	}
-	history= {
-		victory_points = { 17482 3 }
-		owner = CRI
-		add_core_of = CRI
-		add_core_of = UKR
-	
-<<<<<<< HEAD
-				add_extra_state_shared_building_slots = 0
-buildings = {
-			infrastructure = 2
-=======
-		buildings = {
-			arms_factory = 0
->>>>>>> parent of f008c4b (Збільшив максимальне колічество фабрик в україні і КРИМУ, 404)
-		}
-}
-	buildings_max_level_factor=2.000
-    manpower=1
+    id = 625
+    name = "STATE_625"
+    manpower = 1
     state_category = town
+    buildings_max_level_factor = 2.000
+
+    provinces = {
+        17482
+    }
+
+    history = {
+        owner = CRI
+        add_core_of = CRI
+        add_core_of = UKR
+        victory_points = { 17482 3 }
+        
+        add_extra_state_shared_building_slots = 0
+
+        buildings = {
+            infrastructure = 2
+            arms_factory = 0
+        }
+    }
 }
