@@ -1,19 +1,20 @@
-state = {
-	id=257
-	name="STATE_257"
-	provinces={
-		411 445 814 1528 1590 1692 1704 1749 2008 2561 2916 3041 3352 3693 3800 3945 4297 4609 4632 4723 4965 5178 5700 5710 7282 7522 7526 8705 9382 9513 9531 9862 11201 11669 14720 14735 14784 14850 14902 14934 14952 
-	}
-	history={
-        owner = SLO
-        add_core_of = SLO 
-		buildings = {
-			infrastructure = 3
-			arms_factory = 4
-			industrial_complex = 8
+state = { 
+	id = 257 
+	name = "STATE_257" 
+	manpower = 814527 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = SLO 
+		
+		buildings = { 
+			infrastructure = 2 
+			arms_factory = 4 
+			industrial_complex = 8 
 		}
-    }
-	buildings_max_level_factor=1.000
-	manpower = 814527
-	state_category = town
+		
+		add_core_of = SLO 
+	}
+	provinces = { 411 445 814 1528 1590 1692 1704 1749 2008 2561 2916 3041 3352 3693 3800 3945 4297 4609 4632 4723 4965 5178 5700 5710 7282 7522 7526 8705 9382 9513 9531 9862 11201 11669 14720 14735 14784 14850 14902 14934 14952 }
 }

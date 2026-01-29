@@ -1,22 +1,22 @@
-state = {
-	id=528
-	name="STATE_528"
-    resources = {
-        oil = 8
-    }
-	provinces={
-		1015 1205 1250 2788 3691 4090 4299 4883 4900 4979 5020 6436 7231 7639 8048 8152 9524 9696 9764 10232 16457 16583 16601 16738 
-	}
-	history={
-        owner = HUN
-        add_core_of = HUN 
-		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 3
+state = { 
+	id = 528 
+	name = "STATE_528" 
+	manpower = 315345 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	
+	resources = { oil = 8 } 
+	history = { 
+		owner = HUN 
+		
+		buildings = { 
+			infrastructure = 3 
+			arms_factory = 2 
+			industrial_complex = 3 
 		}
-    }
-	buildings_max_level_factor=1.000
-    manpower = 315345	
-    state_category = town
+		
+		add_core_of = HUN 
+	}
+	provinces = { 1015 1205 1250 2788 3691 4090 4299 4883 4900 4979 5020 6436 7231 7639 8048 8152 9524 9696 9764 10232 16457 16583 16601 16738 }
 }

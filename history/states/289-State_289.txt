@@ -1,20 +1,22 @@
-state = {
-	id=289
-	name="STATE_289"
-	provinces={
-		546 696 1065 1427 1899 2764 3275 4316 5293 5699 6363 7910 7945 9009 9473 10814 14929 15121 
-	}
-    history= {
+state = { 
+	id = 289 
+	name = "STATE_289" 
+	manpower = 254080 
+	
+	state_category = town 
+	buildings_max_level_factor = 2 
+	history = { 
+		owner = WAL 
+		
 		victory_points = { 4316 30 }
-		owner = WAL
-		add_core_of = UKR
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
-			arms_factory = 1
+		
+		buildings = { 
+			infrastructure = 3 
+			industrial_complex = 2 
+			arms_factory = 1 
 		}
+		
+		add_core_of = UKR 
 	}
-	buildings_max_level_factor=2.000
-    manpower=254080
-    state_category = town
+	provinces = { 546 696 1065 1427 1899 2764 3275 4316 5293 5699 6363 7910 7945 9009 9473 10814 14929 15121 }
 }

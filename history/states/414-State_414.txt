@@ -1,17 +1,16 @@
-state = {
-	id=414
-	name="STATE_414" # АПП «Новошахтинск»
-	provinces={
-		6512 10988 15730 15864
+state = { 
+	id = 414 
+	name = "STATE_414" # АПП «Новошахтинск»
+	manpower = 500 
+	
+	state_category = rural 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = RUS 
+		
+		buildings = { infrastructure = 2 }
+		
+		add_core_of = RUS 
 	}
-	history={
-        owner = RUS
-        add_core_of = RUS 
-		buildings = {
-			infrastructure = 2
-		}
-    }
-	buildings_max_level_factor=1.000
-	manpower=500
-	state_category = rural
+	provinces = { 6512 10988 15730 15864 }
 }

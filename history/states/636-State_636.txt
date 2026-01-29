@@ -1,18 +1,18 @@
-state = {
-	id=636
-	name="STATE_636"
-	provinces={
-		777 911 940 1407 2781 3543 3569 4712 5582 8687 17360 
-	}
-	history={
+state = { 
+	id = 636 
+	name = "STATE_636" 
+	manpower = 1000 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = SER 
+		
 		victory_points = { 911 100 }
-        owner = SER
-        add_core_of = SER 
-		buildings = {
-			infrastructure = 3
-		}
-    }
-	buildings_max_level_factor=1.000
-	manpower = 1000
-	state_category = town
+		
+		buildings = { infrastructure = 4 }
+		
+		add_core_of = SER 
+	}
+	provinces = { 777 911 940 1407 2781 3543 3569 4712 5582 8687 17360 }
 }

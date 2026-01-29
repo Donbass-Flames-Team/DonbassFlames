@@ -1,49 +1,47 @@
-state = {
-	id=526
-	name="STATE_526"
-resources = {
-    steel = 4
-}
-	provinces = {
-		5816 5830 7682 8904 8904 16470 16470 16477 16477 16487 18211 18212 18213 18215 18216 18218 18219 18220 18221 18222 18224 18523 18524 18525 18526 18527
-	}
-    history= {
-		victory_points = { 18527 1 }
-		victory_points = { 18529 1 }
-		victory_points = { 18528 1 }
-		victory_points = { 18524 1 }
-		victory_points = { 8904 1 }
+state = { 
+	id = 526 
+	name = "STATE_526" 
+	manpower = 490000 
+	
+	state_category = town 
+	buildings_max_level_factor = 2 
+	
+	resources = { steel = 4 } 
+	history = { 
+		owner = UKR 
+		
 		victory_points = { 5816 3 }
-		victory_points = { 18213 1 }
-		victory_points = { 18525 3 }
-		victory_points = { 18220 1 }
-		victory_points = { 18526 1 }
-		victory_points = { 18219 3 }
-		victory_points = { 18212 1 }
-		victory_points = { 18216 1 }
-		victory_points = { 18222 3 }
-		victory_points = { 18215 3 }
-		victory_points = { 16477 1 }
-		victory_points = { 18218 3 }
-		victory_points = { 18224 3 }
-		victory_points = { 18221 3 }
 		victory_points = { 5830 3 }
-		victory_points = { 18223 1 }
-		victory_points = { 16487 30 }
+		victory_points = { 8904 1 }
+		victory_points = { 16477 1 }
+		victory_points = { 16477 1 }
 		victory_points = { 16487 25 }
-		victory_points = { 16477 1 }	
-		victory_points = { 18221 3 }
+		victory_points = { 16487 30 }
 		victory_points = { 18211 3 }
-		owner = UKR
-		add_core_of = UKR
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 5
-			arms_factory = 3
-			dockyard = 2
+		victory_points = { 18212 1 }
+		victory_points = { 18213 1 }
+		victory_points = { 18215 3 }
+		victory_points = { 18216 1 }
+		victory_points = { 18218 3 }
+		victory_points = { 18219 3 }
+		victory_points = { 18220 1 }
+		victory_points = { 18221 3 }
+		victory_points = { 18221 3 }
+		victory_points = { 18222 3 }
+		victory_points = { 18224 3 }
+		victory_points = { 18524 1 }
+		victory_points = { 18525 3 }
+		victory_points = { 18526 1 }
+		victory_points = { 18527 1 }
+		
+		buildings = { 
+			infrastructure = 4 
+			industrial_complex = 5 
+			arms_factory = 3 
+			dockyard = 2 
 		}
+		
+		add_core_of = UKR 
 	}
-	buildings_max_level_factor=2.000
-    manpower=490000
-    state_category = town
+	provinces = { 5816 5830 7682 8904 16470 16477 16487 18211 18212 18213 18215 18216 18218 18219 18220 18221 18222 18224 18523 18524 18525 18526 18527 }
 }

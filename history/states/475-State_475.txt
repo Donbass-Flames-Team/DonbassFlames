@@ -1,20 +1,22 @@
-state = {
-	id=475
-	name="STATE_475"
-	provinces={
-		8184 
-	}
-history= {
+state = { 
+	id = 475 
+	name = "STATE_475" 
+	manpower = 49542 
+	
+	state_category = town 
+	buildings_max_level_factor = 2 
+	history = { 
+		owner = UKR 
+		
 		victory_points = { 8184 15 }
-		owner = UKR
-		add_core_of = UKR
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-			arms_factory = 0
+		
+		buildings = { 
+			infrastructure = 3 
+			industrial_complex = 1 
+			arms_factory = 0 
 		}
+		
+		add_core_of = UKR 
 	}
-	buildings_max_level_factor=2.000
-    manpower=49542
-    state_category = town
+	provinces = { 8184 }
 }

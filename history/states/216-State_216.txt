@@ -1,38 +1,40 @@
-state = {
-	id=216
-	name="STATE_216"
-	provinces={
-		44 91 733 1037 1204 1417 1815 1865 1898 2184 2232 2607 2838 3220 3501 4209 4649 4879 5118 5250 5633 5679 6110 6257 6276 6516 6811 7001 7134 7174 7525 7739 8753 8759 8796 8986 9602 9781 9865 10045 10401 10798 11013 11168 11233 11516 14128 14506 14513 14562 14573 14643 14664 14678 14725 14752 14813 14823 14843 14861 
-	}
-history= {
-		victory_points = { 8753 15 }
-                victory_points = { 5633 10 }
+state = { 
+	id = 216 
+	name = "STATE_216" 
+	manpower = 321659 
+	
+	state_category = town 
+	buildings_max_level_factor = 2 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 44 8 }
+		victory_points = { 91 10 }
 		victory_points = { 1204 2 }
+		victory_points = { 3220 25 }
+		victory_points = { 3501 15 }
+		victory_points = { 5633 10 }
+		victory_points = { 6257 3 }
+		victory_points = { 6276 7 }
+		victory_points = { 6516 10 }
+		victory_points = { 8753 15 }
 		victory_points = { 8759 2 }
 		victory_points = { 10045 2 }
-		victory_points = { 14513 4 }
-		victory_points = { 6276 7 }
-		victory_points = { 44 8 }
-		victory_points = { 14643 2 }
-		victory_points = { 3501 15 }
-		victory_points = { 6516 10 }
 		victory_points = { 10401 3 }
-		victory_points = { 6257 3 }
 		victory_points = { 10798 7 }
-		victory_points = { 3220 25 }
 		victory_points = { 11233 4 }
-		victory_points = { 91 10 }
+		victory_points = { 14513 4 }
+		victory_points = { 14643 2 }
 		victory_points = { 14813 2 }
 		victory_points = { 14861 3 }
-		owner = UKR
-		add_core_of = UKR
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
-			arms_factory = 2
+		
+		buildings = { 
+			infrastructure = 3 
+			industrial_complex = 2 
+			arms_factory = 2 
 		}
+		
+		add_core_of = UKR 
 	}
-	buildings_max_level_factor=2.000
-        manpower=321659
-        state_category = town
+	provinces = { 44 91 733 1037 1204 1417 1815 1865 1898 2184 2232 2607 2838 3220 3501 4209 4649 4879 5118 5250 5633 5679 6110 6257 6276 6516 6811 7001 7134 7174 7525 7739 8753 8759 8796 8986 9602 9781 9865 10045 10401 10798 11013 11168 11233 11516 14128 14506 14513 14562 14573 14643 14664 14678 14725 14752 14813 14823 14843 14861 }
 }

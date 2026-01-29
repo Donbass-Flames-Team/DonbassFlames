@@ -1,19 +1,20 @@
-state = {
-	id=331
-	name="STATE_331"
-	provinces={
-		643 812 1670 2276 2837 2872 2932 2936 3242 3483 4472 6001 6970 7484 8593 8695 8989 10887 11647 11833 15147 15198 15255 15269 15312 15334 15365 15392 15416 15442 15479 
-	}
-history= {
-		owner = UKR
-		add_core_of = UKR
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-			arms_factory = 0
+state = { 
+	id = 331 
+	name = "STATE_331" 
+	manpower = 94914 
+	
+	state_category = town 
+	buildings_max_level_factor = 2 
+	history = { 
+		owner = UKR 
+		
+		buildings = { 
+			infrastructure = 3 
+			industrial_complex = 1 
+			arms_factory = 0 
 		}
+		
+		add_core_of = UKR 
 	}
-	buildings_max_level_factor=2.000
-    manpower=94914
-    state_category = town
+	provinces = { 643 812 1670 2276 2837 2872 2932 2936 3242 3483 4472 6001 6970 7484 8593 8695 8989 10887 11647 11833 15147 15198 15255 15269 15312 15334 15365 15392 15416 15442 15479 }
 }

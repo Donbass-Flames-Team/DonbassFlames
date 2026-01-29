@@ -1,14 +1,16 @@
-state = {
-	id=45
-	name="STATE_45" # Знобь-Трубчевская - Знобь
-	provinces={
-		10599 12463 12470
+state = { 
+	id = 45 
+	name = "STATE_45" # Знобь-Трубчевская - Знобь
+	manpower = 500 
+	
+	state_category = rural 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = RUS 
+		
+		buildings = { infrastructure = 2 }
+		
+		add_core_of = RUS 
 	}
-	history= {
-		owner = RUS
-		add_core_of = RUS
-	}
-	buildings_max_level_factor=1.000
-	manpower=500
-	state_category = rural
+	provinces = { 10599 12463 12470 }
 }

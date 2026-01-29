@@ -1,14 +1,16 @@
-state = {
-	id=146
-	name="STATE_146" # Грабовское - Староселье
-	provinces={
-		6572 11376 13562
+state = { 
+	id = 146 
+	name = "STATE_146" # Грабовское - Староселье
+	manpower = 500 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = RUS 
+		
+		buildings = { infrastructure = 2 }
+		
+		add_core_of = RUS 
 	}
-	history= {
-		owner = RUS
-		add_core_of = RUS
-	}
-	buildings_max_level_factor=1.000
-	manpower=500
-	state_category = town
+	provinces = { 6572 11376 13562 }
 }

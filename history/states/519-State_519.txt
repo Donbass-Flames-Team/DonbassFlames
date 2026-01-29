@@ -1,18 +1,19 @@
-state = {
-	id=519
-	name="STATE_519"
-	provinces={
-		1156 3461 4250 5087 9261 16525 16557 
-	}
-	history={
-        owner = TMR
-        add_core_of = TMR 
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+state = { 
+	id = 519 
+	name = "STATE_519" 
+	manpower = 38536 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = TMR 
+		
+		buildings = { 
+			infrastructure = 3 
+			industrial_complex = 1 
 		}
-    }
-	buildings_max_level_factor=1.000
-	manpower = 38536
-	state_category = town
+		
+		add_core_of = TMR 
+	}
+	provinces = { 1156 3461 4250 5087 9261 16525 16557 }
 }

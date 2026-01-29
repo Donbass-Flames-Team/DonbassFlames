@@ -1,18 +1,19 @@
-state = {
-	id=542
-	name="STATE_542"
-	provinces={
-		426 516 1138 1422 2252 2938 3008 3310 4334 4616 6108 6616 6678 6722 7642 8816 9107 9353 9385 16619 16627 16691 16716 16741 16761 16794 16819 16831 16841 
-	}
-	history={
-        owner = MOL
-        add_core_of = MOL 
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
+state = { 
+	id = 542 
+	name = "STATE_542" 
+	manpower = 101200 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = MOL 
+		
+		buildings = { 
+			infrastructure = 2 
+			industrial_complex = 2 
 		}
-    }
-	buildings_max_level_factor=1.000
-	manpower = 101200
-	state_category = town
+		
+		add_core_of = MOL 
+	}
+	provinces = { 426 516 1138 1422 2252 2938 3008 3310 4334 4616 6108 6616 6678 6722 7642 8816 9107 9353 9385 16619 16627 16691 16716 16741 16761 16794 16819 16831 16841 }
 }

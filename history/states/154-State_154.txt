@@ -1,40 +1,41 @@
-state = {
-	id=154
-	name="STATE_154"
-	provinces={
-		1163 1565 2213 2322 4464 4619 6556 8442 9354 10717 12061 13673 13685 13744 13754 13764 13770 13798 13841 13866 13867 13894 
-	}
-history= {
+state = { 
+	id = 154 
+	name = "STATE_154" 
+	manpower = 1883056 
+	
+	state_category = town 
+	buildings_max_level_factor = 2 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 1163 6 }
+		victory_points = { 1565 10 }
+		victory_points = { 1565 3 }
+		victory_points = { 2213 3 }
+		victory_points = { 2322 3 }
+		victory_points = { 4619 5 }
+		victory_points = { 6556 7 }
 		victory_points = { 8442 100 }
 		victory_points = { 9354 7 }
-		victory_points = { 13744 7 }
-		victory_points = { 13764 7 }
-		victory_points = { 1565 10 }
-		victory_points = { 13798 15 }
-		victory_points = { 13770 5 }
-		victory_points = { 1565 3 }
-		victory_points = { 2322 3 }
-		victory_points = { 13866 5 }
-		victory_points = { 13894 3 }
-		victory_points = { 1163 6 }
-		victory_points = { 6556 7 }
-		victory_points = { 4619 5 }
-		victory_points = { 13754 5 }
-		victory_points = { 13865 10 }
 		victory_points = { 12061 3 }
 		victory_points = { 13673 5 }
+		victory_points = { 13744 7 }
 		victory_points = { 13754 5 }
-		victory_points = { 2213 3 }
-		owner = UKR
-		add_core_of = UKR
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 6
-			arms_factory = 4
-			dockyard = 1
+		victory_points = { 13754 5 }
+		victory_points = { 13764 7 }
+		victory_points = { 13770 5 }
+		victory_points = { 13798 15 }
+		victory_points = { 13866 5 }
+		victory_points = { 13894 3 }
+		
+		buildings = { 
+			infrastructure = 4 
+			industrial_complex = 6 
+			arms_factory = 4 
+			dockyard = 1 
 		}
+		
+		add_core_of = UKR 
 	}
-	buildings_max_level_factor=2.000
-        manpower=1883056
-        state_category = town
+	provinces = { 1163 1565 2213 2322 4464 4619 6556 8442 9354 10717 12061 13673 13685 13744 13754 13764 13770 13798 13841 13866 13867 13894 }
 }

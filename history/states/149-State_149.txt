@@ -1,17 +1,16 @@
-state = {
-	id=149
-	name="STATE_149"
-	provinces={
-		596 1448 1503 4584 6988 7422 8588 10635 11594 13738 
-	}
-	history={
-		owner = RUS
+state = { 
+	id = 149 
+	name = "STATE_149" 
+	manpower = 29776 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = RUS 
+		
+		buildings = { infrastructure = 2 }
+		
 		add_core_of = RUS 
-		buildings = {
-			infrastructure = 3
-		}
 	}
-	buildings_max_level_factor=1.000
-	manpower = 29776
-	state_category = town
+	provinces = { 596 1448 1503 4584 6988 7422 8588 10635 11594 13738 }
 }
