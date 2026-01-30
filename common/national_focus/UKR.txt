@@ -1687,6 +1687,10 @@ focus_tree = {
                 ideology = conservatism_democracy
                 popularity = 0.05
             }
+			country_event = {
+				id = ukraine.56
+				hours = 6
+			}
 		}
 	}
 
@@ -2055,6 +2059,7 @@ focus_tree = {
 					id = ukraine.53
 					days = 7
 				}
+				remove_ideas = UKR_protests_in_the_east
 			}
 		}
 	}
