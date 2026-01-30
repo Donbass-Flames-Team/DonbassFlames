@@ -1,14 +1,16 @@
-state = {
-	id=514
-	name="STATE_514" # Весело - Вознесенка
-	provinces={
-		7711 8606 9561 9685 16315
+state = { 
+	id = 514 
+	name = "STATE_514" # Весело - Вознесенка
+	manpower = 500 
+	
+	state_category = rural 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = RUS 
+		
+		buildings = { infrastructure = 2 }
+		
+		add_core_of = RUS 
 	}
-	history= {
-		owner = RUS
-		add_core_of = RUS
-	}
-	buildings_max_level_factor=1.000
-	manpower=500
-	state_category = rural
+	provinces = { 7711 8606 9561 9685 16315 }
 }

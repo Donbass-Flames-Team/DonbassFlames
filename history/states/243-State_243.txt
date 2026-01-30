@@ -1,14 +1,16 @@
-state = {
-	id=243
-	name="STATE_243" # АПП «Меловое»
-	provinces={
-		9659 11000 14465 14719 14757
+state = { 
+	id = 243 
+	name = "STATE_243" # АПП «Меловое»
+	manpower = 500 
+	
+	state_category = rural 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = RUS 
+		
+		buildings = { infrastructure = 2 }
+		
+		add_core_of = RUS 
 	}
-	history= {
-		owner = RUS
-		add_core_of = RUS
-	}
-	buildings_max_level_factor=1.000
-	manpower=500
-	state_category = rural
+	provinces = { 9659 11000 14465 14719 14757 }
 }

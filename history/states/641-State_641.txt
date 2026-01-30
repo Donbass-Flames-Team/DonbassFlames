@@ -1,20 +1,18 @@
-state = {
-	id=641
-	name="STATE_641"
-    resources = {
-        oil = 1
-    }
-	provinces={
-		47 111 621 1847 2903 3154 3663 3737 3999 4057 6480 7143 8485 8638 17368 17396 17410 17421 17426 17443 17467 18208
+state = { 
+	id = 641 
+	name = "STATE_641" 
+	manpower = 1000 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	
+	resources = { oil = 1 } 
+	history = { 
+		owner = SER 
+		
+		buildings = { infrastructure = 2 }
+		
+		add_core_of = SER 
 	}
-	history={
-        owner = SER
-        add_core_of = SER 
-		buildings = {
-			infrastructure = 3
-		}
-    }
-	buildings_max_level_factor=1.000
-	manpower = 1000
-	state_category = town
+	provinces = { 47 111 621 1847 2903 3154 3663 3737 3999 4057 6480 7143 8485 8638 17368 17396 17410 17421 17426 17443 17467 18208 }
 }

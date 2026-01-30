@@ -1,20 +1,21 @@
-state = {
-	id=309
-	name="STATE_309"
-	provinces={
-		203 207 659 1478 1509 2053 2807 3038 4219 4613 5784 6061 6602 7477 8538 9856 10828 15068 15317 15354 15426 15474 
-	}
-	history={
-        owner = SLO
-        add_core_of = SLO 
-		buildings = {
-			infrastructure = 3
-			arms_factory = 3
-			industrial_complex = 6
-			synthetic_refinery = 1
+state = { 
+	id = 309 
+	name = "STATE_309" 
+	manpower = 660563 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = SLO 
+		
+		buildings = { 
+			infrastructure = 3 
+			arms_factory = 3 
+			industrial_complex = 6 
+			synthetic_refinery = 1 
 		}
+		
+		add_core_of = SLO 
 	}
-	buildings_max_level_factor=1.000
-	manpower = 660563
-	state_category = town
+	provinces = { 203 207 659 1478 1509 2053 2807 3038 4219 4613 5784 6061 6602 7477 8538 9856 10828 15068 15317 15354 15426 15474 }
 }

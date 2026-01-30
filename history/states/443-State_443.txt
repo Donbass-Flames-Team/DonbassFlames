@@ -1,20 +1,18 @@
-state = {
-	id=443
-	name="STATE_443"
-resources = {
-    steel = 2
-}
-	provinces={
-		2139 2166 4357 5891 7730 15879 16014 16089 
+state = { 
+	id = 443 
+	name = "STATE_443" 
+	manpower = 23100 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	
+	resources = { steel = 2 } 
+	history = { 
+		owner = TMR 
+		
+		buildings = { infrastructure = 3 }
+		
+		add_core_of = TMR 
 	}
-	history={
-        owner = TMR
-        add_core_of = TMR 
-		buildings = {
-			infrastructure = 3
-		}
-    }
-	buildings_max_level_factor=1.000
-	manpower = 23100
-	state_category = town
+	provinces = { 2139 2166 4357 5891 7730 15879 16014 16089 }
 }

@@ -1,18 +1,19 @@
-state = {
-	id=97
-	name="STATE_97"
-	provinces={
-		153 466 2261 2294 3632 7424 9267 9837 9877 10263 11721 13009 13034 13063 13124 
-	}
-	history={
-        owner = RUS
-        add_core_of = RUS 
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+state = { 
+	id = 97 
+	name = "STATE_97" 
+	manpower = 249329 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = RUS 
+		
+		buildings = { 
+			infrastructure = 3 
+			industrial_complex = 1 
 		}
-    }
-	buildings_max_level_factor=1.000
-    manpower = 249329
-    state_category = town
+		
+		add_core_of = RUS 
+	}
+	provinces = { 153 466 2261 2294 3632 7424 9267 9837 9877 10263 11721 13009 13034 13063 13124 }
 }

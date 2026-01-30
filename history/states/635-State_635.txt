@@ -1,19 +1,20 @@
-state = {
-	id=635
-	name="STATE_635"
-	provinces={
-		3865 
-	}
-	history={
-        owner = ROM
-        add_core_of = ROM 
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
-			synthetic_refinery = 3
+state = { 
+	id = 635 
+	name = "STATE_635" 
+	manpower = 180540 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = ROM 
+		
+		buildings = { 
+			infrastructure = 4 
+			industrial_complex = 2 
+			synthetic_refinery = 3 
 		}
-    }
-	buildings_max_level_factor=1.000
-	manpower = 180540
-	state_category = town
+		
+		add_core_of = ROM 
+	}
+	provinces = { 3865 }
 }

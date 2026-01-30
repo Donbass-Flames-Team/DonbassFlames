@@ -1,19 +1,20 @@
-state = {
-	id=379
-	name="STATE_379"
-	provinces={
-		231 415 630 651 1009 1332 1451 1965 2257 2428 2834 2994 3387 3507 3653 3712 3739 3807 5206 5537 7208 7341 7367 8707 10683 10699 15705 
-	}
-	history={
-        owner = HUN
-        add_core_of = HUN 
-		buildings = {
-			infrastructure = 3
-			arms_factory = 3
-			industrial_complex = 5
+state = { 
+	id = 379 
+	name = "STATE_379" 
+	manpower = 529381 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = HUN 
+		
+		buildings = { 
+			infrastructure = 2 
+			arms_factory = 3 
+			industrial_complex = 5 
 		}
-    }
-	buildings_max_level_factor=1.000
-	manpower = 529381
-	state_category = town
+		
+		add_core_of = HUN 
+	}
+	provinces = { 231 415 630 651 1009 1332 1451 1965 2257 2428 2834 2994 3387 3507 3653 3712 3739 3807 5206 5537 7208 7341 7367 8707 10683 10699 15705 }
 }

@@ -1,22 +1,24 @@
-state = {
-	id=637
-	name="STATE_637"
-	provinces={
-		2353 2482 2689 3792 5930 6511 7223 7423 7863 8677 9984 10238 10963 17329 17332 17338 17340 17341 17344 17351 17354 17358 17364 17369 17370 17372 17378 17380 17390 17397 17402 17403 17422 17442 
-	}
-    history= {
-		victory_points = { 17364 15 }
+state = { 
+	id = 637 
+	name = "STATE_637" 
+	manpower = 89396 
+	
+	state_category = town 
+	buildings_max_level_factor = 2 
+	history = { 
+		owner = CRI 
+		
 		victory_points = { 17329 7 }
 		victory_points = { 17341 3 }
-		owner = CRI
-		add_core_of = CRI
-		add_core_of = UKR
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+		victory_points = { 17364 15 }
+		
+		buildings = { 
+			infrastructure = 3 
+			industrial_complex = 1 
 		}
+		
+		add_core_of = CRI 
+		add_core_of = UKR 
 	}
-	buildings_max_level_factor=2.000
-    manpower=89396
-    state_category = town
+	provinces = { 2353 2482 2689 3792 5930 6511 7223 7423 7863 8677 9984 10238 10963 17329 17332 17338 17340 17341 17344 17351 17354 17358 17364 17369 17370 17372 17378 17380 17390 17397 17402 17403 17422 17442 }
 }

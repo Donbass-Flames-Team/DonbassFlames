@@ -1,14 +1,16 @@
-state = {
-	id=454
-	name="STATE_454" # АПП «Матвеев Курган»
-	provinces={
-		11217 15878
+state = { 
+	id = 454 
+	name = "STATE_454" # АПП «Матвеев Курган»
+	manpower = 500 
+	
+	state_category = rural 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = RUS 
+		
+		buildings = { infrastructure = 2 }
+		
+		add_core_of = RUS 
 	}
-	history= {
-		owner = RUS
-		add_core_of = RUS
-	}
-	buildings_max_level_factor=1.000
-	manpower=500
-	state_category = rural
+	provinces = { 11217 15878 }
 }

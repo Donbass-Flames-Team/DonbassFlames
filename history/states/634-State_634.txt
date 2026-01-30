@@ -1,24 +1,26 @@
-state = {
-	id=634
-	name="STATE_634"
-	provinces={
-		1587 6222 17304 17314 17324 18203
-	}
-    history= {
-		victory_points = { 17314 50 }
+state = { 
+	id = 634 
+	name = "STATE_634" 
+	manpower = 345932 
+	
+	state_category = town 
+	buildings_max_level_factor = 2 
+	history = { 
+		owner = CRI 
+		
 		victory_points = { 6222 5 }
-		victory_points = { 17324 5 }
 		victory_points = { 17304 5 }
-		owner = CRI
-		add_core_of = CRI
-		add_core_of = UKR
-		buildings = {
-			infrastructure = 4
-			industrial_complex = 3
-			arms_factory = 2
+		victory_points = { 17314 50 }
+		victory_points = { 17324 5 }
+		
+		buildings = { 
+			infrastructure = 4 
+			industrial_complex = 3 
+			arms_factory = 2 
 		}
+		
+		add_core_of = CRI 
+		add_core_of = UKR 
 	}
-	buildings_max_level_factor=2.000
-    manpower=345932
-    state_category = town
+	provinces = { 1587 6222 17304 17314 17324 18203 }
 }

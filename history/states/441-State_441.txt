@@ -1,19 +1,21 @@
-state = {
-	id=441
-	name="STATE_441"
-	provinces = {
-		8433 15772 18105
-	}
-	history= {
-		owner = UKR
-		add_core_of = UKR
-		buildings = {
-			infrastructure = 3
-			arms_factory = 0
-		}
+state = { 
+	id = 441 
+	name = "STATE_441" 
+	manpower = 19700 
+	
+	state_category = town 
+	buildings_max_level_factor = 2 
+	history = { 
+		owner = UKR 
+		
 		victory_points = { 15772 10 }
+		
+		buildings = { 
+			infrastructure = 4 
+			arms_factory = 0 
+		}
+		
+		add_core_of = UKR 
 	}
-	buildings_max_level_factor=2.000
-	manpower=19700
-	state_category=town
+	provinces = { 8433 15772 18105 }
 }

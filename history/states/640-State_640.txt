@@ -1,27 +1,29 @@
-state = {
-	id=640
-	name="STATE_640"
-	provinces={
-		152 4930 5908 6045 6122 6220 8725 9509 9586 9700 9971 17352 17359 17366 17376 17383 17384 17388 17405 17406 17408 17409 17411 17412 17413 17414 17415 17417 17419 17423 17425 17429 17431 17436 17437 17439 17440 17441 17444 17445 17452 18209
-	}
-    history= {
-		victory_points = { 17406 50 }
-		victory_points = { 8725 5 }
+state = { 
+	id = 640 
+	name = "STATE_640" 
+	manpower = 342580 
+	
+	state_category = city 
+	buildings_max_level_factor = 2 
+	history = { 
+		owner = UKR 
+		
 		victory_points = { 6122 5 }
-		victory_points = { 17415 5 }
+		victory_points = { 8725 5 }
 		victory_points = { 17359 5 }
 		victory_points = { 17366 2 }
-		owner = UKR
-		add_core_of = CRI
-		add_core_of = UKR
-		buildings = {
-			infrastructure = 4
-			industrial_complex = 3
-			arms_factory = 4
-			dockyard = 3
+		victory_points = { 17406 50 }
+		victory_points = { 17415 5 }
+		
+		buildings = { 
+			infrastructure = 4 
+			industrial_complex = 3 
+			arms_factory = 4 
+			dockyard = 3 
 		}
+		
+		add_core_of = CRI 
+		add_core_of = UKR 
 	}
-	buildings_max_level_factor=2.000
-    manpower= 342580
-    state_category = city
+	provinces = { 152 4930 5908 6045 6122 6220 8725 9509 9586 9700 9971 17352 17359 17366 17376 17383 17384 17388 17405 17406 17408 17409 17411 17412 17413 17414 17415 17417 17419 17423 17425 17429 17431 17436 17437 17439 17440 17441 17444 17445 17452 18209 }
 }

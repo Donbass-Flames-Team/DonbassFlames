@@ -1,26 +1,27 @@
-state = {
-	id=527
-	name="STATE_527"
-resources = {
-    steel = 8
-}
-	provinces = {
-		8962 16406 16422 16459 16493 18137 18244 18260 18325 18336
-	}
-	history= {
+state = { 
+	id = 527 
+	name = "STATE_527" 
+	manpower = 3000 
+	
+	state_category = rural 
+	buildings_max_level_factor = 2 
+	
+	resources = { steel = 8 } 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 16422 5 }
+		victory_points = { 16493 5 }
+		victory_points = { 18137 1 }
 		victory_points = { 18244 5 }
 		victory_points = { 18260 3 }
-		victory_points = { 18137 1 }
-		victory_points = { 16493 5 }
-		victory_points = { 16422 5 }
-		owner = UKR
-		add_core_of = UKR
-		buildings = {
-			infrastructure = 3
-			arms_factory = 0
+		
+		buildings = { 
+			infrastructure = 3 
+			arms_factory = 0 
 		}
+		
+		add_core_of = UKR 
 	}
-	buildings_max_level_factor=2.000
-	manpower=3000
-	state_category=rural
+	provinces = { 8962 16406 16422 16459 16493 18137 18244 18260 18325 18336 }
 }

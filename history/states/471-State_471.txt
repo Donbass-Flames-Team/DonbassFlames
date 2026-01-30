@@ -1,14 +1,16 @@
-state = {
-	id=471
-	name="STATE_471" # Ульяновское - Шрамко
-	provinces={
-		3703 6021 9204 16079 16099
+state = { 
+	id = 471 
+	name = "STATE_471" # Ульяновское - Шрамко
+	manpower = 500 
+	
+	state_category = rural 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = RUS 
+		
+		buildings = { infrastructure = 2 }
+		
+		add_core_of = RUS 
 	}
-	history= {
-		owner = RUS
-		add_core_of = RUS
-	}
-	buildings_max_level_factor=1.000
-	manpower=500
-	state_category = rural
+	provinces = { 3703 6021 9204 16079 16099 }
 }

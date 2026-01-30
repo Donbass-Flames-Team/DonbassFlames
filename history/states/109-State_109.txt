@@ -1,14 +1,16 @@
-state = {
-	id=109
-	name="STATE_109" # Журавка - Николаево-Дарьино
-	provinces={
-		2422
+state = { 
+	id = 109 
+	name = "STATE_109" # Журавка - Николаево-Дарьино
+	manpower = 500 
+	
+	state_category = rural 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = RUS 
+		
+		buildings = { infrastructure = 2 }
+		
+		add_core_of = RUS 
 	}
-	history= {
-		owner = RUS
-		add_core_of = RUS
-	}
-	buildings_max_level_factor=1.000
-	manpower=500
-	state_category = rural
+	provinces = { 2422 }
 }

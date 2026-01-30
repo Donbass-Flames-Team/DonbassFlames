@@ -1,17 +1,16 @@
-state = {
-	id=198
-	name="STATE_198"
-	provinces={
-		683 846 1114 2899 2912 4131 4658 5066 5247 5869 7997 8822 9578 9897 10361 10823 11498 14139 14151 14180 14202 14266 14306 
+state = { 
+	id = 198 
+	name = "STATE_198" 
+	manpower = 1000 
+	
+	state_category = town 
+	buildings_max_level_factor = 1 
+	history = { 
+		owner = RUS 
+		
+		buildings = { infrastructure = 3 }
+		
+		add_core_of = RUS 
 	}
-	history={
-        owner = RUS
-        add_core_of = RUS 
-		buildings = {
-			infrastructure = 3
-		}
-    }
-	buildings_max_level_factor=1.000
-	manpower = 1000
-	state_category = town
+	provinces = { 683 846 1114 2899 2912 4131 4658 5066 5247 5869 7997 8822 9578 9897 10361 10823 11498 14139 14151 14180 14202 14266 14306 }
 }

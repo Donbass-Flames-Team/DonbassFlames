@@ -1,18 +1,19 @@
-state = {
-	id=446
-	name="STATE_446"
-	provinces={
-		8870 15874 15946 15947 
-	}
-history= {
-		owner = UKR
-		add_core_of = UKR
-		buildings = {
-			infrastructure = 3
-			arms_factory = 0
+state = { 
+	id = 446 
+	name = "STATE_446" 
+	manpower = 15000 
+	
+	state_category = town 
+	buildings_max_level_factor = 2 
+	history = { 
+		owner = UKR 
+		
+		buildings = { 
+			infrastructure = 2 
+			arms_factory = 0 
 		}
+		
+		add_core_of = UKR 
 	}
-	buildings_max_level_factor=2.000
-    manpower=15000
-    state_category = town
+	provinces = { 8870 15874 15946 15947 }
 }
