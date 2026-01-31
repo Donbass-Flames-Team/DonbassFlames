@@ -1995,6 +1995,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
+			add_political_power = 25
+			custom_effect_tooltip = UKR_the_influence_of_oligarchs_will_increase_tt
 		}
 	}
 
@@ -2024,6 +2026,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 			add_political_power = 250
+			custom_effect_tooltip = UKR_the_influence_of_oligarchs_will_increase_tt
 		}
 	}
 
@@ -3887,6 +3890,60 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_to_variable = { UKR_AFU_army_attack_factor = 0.15 }
 		    custom_effect_tooltip = UKR_launch_counterattacks_tt
+			hidden_effect = {
+				526 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }
+				527 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }
+				518 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }
+				468 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }
+				511 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }
+				502 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }
+				653 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }
+				421 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }
+				395 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }		
+				573 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }
+				388 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }	
+				337 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }			
+				401 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }
+				412 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }			
+				399 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }	
+				328 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }	
+				333 = {
+			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		        }	
+				set_country_flag = UKR_counteroffensive_is_happening		
+			}
 		}
 	}
 
@@ -3915,6 +3972,7 @@ focus_tree = {
                 idea = UKR_defence_of_cities_idea 
                 days = 45
             } 
+			
 		}
 	}
 
@@ -4166,6 +4224,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_leave_the_peninsula"
+			unlock_decision_tooltip = UKR_cut_off_the_water_supply_to_crimea
 		}
 	}
 
@@ -4245,7 +4304,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_partial_mobilization"
-             
+            custom_effect_tooltip = UKR_started_partial_mobilization_tt
+			hidden_effect = {
+				
+			}
 		}
 	}
 }

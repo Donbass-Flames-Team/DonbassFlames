@@ -249,3 +249,19 @@ country_event = {
 		}
 	}
 }
+
+#Перекрытие подачи воды в Крым
+country_event = {
+	id = russia.12
+	title = russia.12.t
+	desc = russia.12.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.12.a
+		add_stability = -0.03
+		add_political_power = -35
+	}
+}

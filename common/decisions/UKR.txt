@@ -1,5 +1,34 @@
 UKR_separatism_decision = {
 
+	UKR_cut_off_the_water_supply_to_crimea = {
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+
+		}
+		visible = {
+			tag = UKR
+			has_completed_focus = UKR_leave_the_peninsula
+		}
+		icon = GFX_decision_coat_of_arms_donetsk_oblast
+		
+	    fire_only_once = yes
+		days_remove = 30
+		cost = 15
+		complete_effect = {
+            custom_effect_tooltip = UKR_cut_off_the_water_supply_to_crimea_tt
+			hidden_effect = {
+				RUS = {
+					country_event = russia.12
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 130
+		}
+	}
+
 	UKR_suppress_separatism_in_donetsk = {
 		allowed = {
 			original_tag = UKR

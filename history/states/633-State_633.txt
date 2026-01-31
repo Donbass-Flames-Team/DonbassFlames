@@ -5,10 +5,13 @@ state = {
 	
 	state_category = town 
 	buildings_max_level_factor = 1 
+	resources = { oil = 1 } 
 	history = { 
 		owner = RUS 
 		
-		buildings = { infrastructure = 2 }
+		buildings = {infrastructure = 2
+			synthetic_refinery = 1
+ }
 		
 		add_core_of = RUS 
 	}
