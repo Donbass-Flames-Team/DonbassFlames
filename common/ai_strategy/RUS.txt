@@ -1,0 +1,28 @@
+RUS_rush_in_crimea_2014 = {
+	allowed = {
+		original_tag = RUS
+	}
+
+	enable = {
+		has_country_flag = RUS_rush_in_crimea
+	}
+
+	abort = {
+		NOT = {
+			has_country_flag = RUS_rush_in_crimea
+		}
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = CRI
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = garrison
+		value = -500
+	}
+}

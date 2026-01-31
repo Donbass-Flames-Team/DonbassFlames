@@ -1,0 +1,79 @@
+UKR_ato_is_going = {
+	allowed = {
+		original_tag = UKR
+	}
+
+	enable = {
+		OR = {
+			has_war_with = DPR
+			has_war_with = LPR
+			has_war_with = KPR
+			has_war_with = OPR
+		}
+	}
+
+	abort = {
+		OR = {
+			NOT = {
+				has_war_with = DPR
+				has_war_with = LPR
+				has_war_with = KPR
+				has_war_with = OPR
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = garrison
+		value = -5000
+	}
+	
+	ai_strategy = {
+		type = front_unit_request
+		tag = DPR
+		value = 150
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = LPR
+		value = 100
+	}
+}
+
+UKR_counteroffensive = {
+	allowed = {
+		original_tag = UKR
+	}
+
+	enable = {
+		has_country_flag = UKR_counteroffensive_is_happening
+	}
+
+	abort = {
+		NOT = {
+			has_country_flag = UKR_counteroffensive_is_happening
+		}
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = DPR
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = LPR
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 5
+		id = 237
+	}
+}

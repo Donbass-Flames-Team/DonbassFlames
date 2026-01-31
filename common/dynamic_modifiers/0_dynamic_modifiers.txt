@@ -50,3 +50,16 @@ donetsk_airport_battle_idea = { #DYNAMIC MODIFIER ON STATE
 	army_org_regain = 0.35
 	supply_factor = 0.15
 }
+
+counter_offensive_ukraine_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_org_factor = 0.15
+	army_attack_factor = 0.125
+	army_org_regain = 0.075
+	army_speed_factor = 0.075
+	army_morale_factor = 0.05
+	supply_factor = 0.045
+}

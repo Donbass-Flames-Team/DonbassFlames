@@ -538,6 +538,7 @@ focus_tree = {
 			add_war_support = 0.025
 			country_event = russia.1
 			hidden_effect = {
+				set_country_flag = RUS_rush_in_crimea
 				637 = {
 				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
 			    }
@@ -629,6 +630,9 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+			hidden_effect = {
+				clr_country_flag = RUS_rush_in_crimea
+			}
 		}
 	}
 
@@ -717,6 +721,7 @@ focus_tree = {
 				add_compliance = 30
 			}
 			hidden_effect = {
+				clr_country_flag = RUS_rush_in_crimea
 				news_event = {
 					id = news_events.7
 					hours = 9
@@ -1014,6 +1019,32 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_russian_regulars_on_donbass
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = -2
+		y = 6
+
+		prerequisite = { focus = RUS_arms_supply }
+		relative_position_id = RUS_russian_spring_in_the_east
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = RUS_show_kyivs_war_crimes
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
@@ -1051,6 +1082,7 @@ focus_tree = {
 		y = 1
 
 		prerequisite = { focus = RUS_show_kyivs_war_crimes }
+		prerequisite = { focus = RUS_russian_regulars_on_donbass }
 		mutually_exclusive = { focus = RUS_victory_of_republics }
 		relative_position_id = RUS_show_kyivs_war_crimes
 		
