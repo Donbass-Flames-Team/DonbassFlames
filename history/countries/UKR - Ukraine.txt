@@ -9,6 +9,11 @@ DF_economy_setup = yes
 	}
 
 	country_event = {
+	    id = ukraine.57
+		days = 4
+	}
+
+	country_event = {
 	    id = Economic_events.1
 		days = 41
 	}

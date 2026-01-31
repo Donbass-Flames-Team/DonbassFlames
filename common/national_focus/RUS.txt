@@ -887,6 +887,7 @@ focus_tree = {
 		}
 
 		available = {
+			country_exists = DPR
 		}
 
 		cancel_if_invalid = yes
@@ -894,8 +895,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 15
 			add_stability = 0.025
+			DPR = {
+                country_event = DPR.10
+			}
 		}
 	}
 
@@ -1040,7 +1044,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			DPR = {
+				add_ideas = DPR_hidden_presence
+			}
+			LPR = {
+				add_ideas = DPR_hidden_presence
+			}
 		}
 	}
 
