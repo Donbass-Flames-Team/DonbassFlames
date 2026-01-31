@@ -1,4 +1,10 @@
 spriteTypes = {
+
+	spriteType = {
+		name = "GFX_UKR_parlamient_background"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_background.png"
+	}
+
 	spriteType = {
 		name = "GFX_UKR_parlamient_icon"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_icon.png"
@@ -15,8 +21,14 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_UKR_parlamient_background"
-		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_background.png"
+		name = "GFX_UKR_parlamient_parties"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_parties.png"
+		noOfFrames = 13
+	}
+
+	spriteType = {
+		name = "GFX_UKR_parlamient_button1"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_button1.png"
 	}
 
 	spriteType = {
@@ -30,36 +42,22 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_UKR_parlamient_parties"
-		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_parties.png"
-		noOfFrames = 13
-	}
-
-	buttonType = {
-		name = "GFX_UKR_parlamient_button1"
-		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_button1.png"
-		noOfFrames = 1
+		name = "GFX_separatismgui_closebutton_nw"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Buttons/separatismgui_closebutton_nw.png"
 	}
 
 	spriteType = {
-    	name = "GFX_separatismgui_closebutton_nw"
-    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Buttons/separatismgui_closebutton_nw.png"
+		name = "GFX_separatismgui_closebutton_w"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Buttons/separatismgui_closebutton_w.png"
 	}
 
 	spriteType = {
-    	name = "GFX_separatismgui_closebutton_w"
-    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Buttons/separatismgui_closebutton_w.png"
-	}
-
-	spriteType = {
-    	name = "UKR_parlamient_skipbuttonactiv"
-    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_skipbuttonactiv.png"
+		name = "GFX_UKR_parlamient_skipbuttonactiv"
+		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_skipbuttonactiv.png"
 	}
 
 	spriteType = {
 		name = "GFX_UKR_parlamient_skipbuttonnonactiv"
 		textureFile = "gfx/interface/scripted_guis/ukraine_gui/Ukraine_parlamient/UKR_parlamient_skipbuttonnonactiv.png"
-		noOfFrames = 1
 	}
 }
-
