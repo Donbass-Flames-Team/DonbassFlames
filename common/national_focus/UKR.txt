@@ -952,7 +952,8 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 			country_event = {
-
+                id = ukraine.59
+				hours = 6
 			}
 		}
 	}
@@ -1685,7 +1686,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		    add_stability = 0.025
+		    add_stability = 0.035
 			add_political_power = 15
 			add_popularity = {
                 ideology = conservatism_democracy
@@ -1719,6 +1720,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_stability = 0.05
+			add_war_support = 0.03
 		}
 	}
 
@@ -1742,7 +1744,15 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		    add_stability = 0.075
+		    add_stability = 0.15
+			add_popularity = {
+                ideology = conservatism_democracy
+                popularity = 0.03
+            }
+			add_popularity = {
+                ideology = social_democracy
+                popularity = 0.03
+            }
 		}
 	}
 

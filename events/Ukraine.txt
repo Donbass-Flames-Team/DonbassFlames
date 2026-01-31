@@ -1866,7 +1866,15 @@ country_event = {
 			country_event = {
 				id = ukraine.42
 				days = 13
-			}			
+			}		
+			country_event = {
+				id = ukraine.61
+				days = 9
+			}
+			country_event = {
+				id = ukraine.62
+				days = 35
+			}	
 		}
 	}
 
@@ -1900,7 +1908,7 @@ country_event = {
 	}
 }
 
-# Мирное наступление
+# Заявление СБУ
 country_event = {
 	id = ukraine.59
 	title = ukraine.59.t
@@ -1909,8 +1917,91 @@ country_event = {
 	
 	is_triggered_only = yes
 
+	immediate = {
+		country_event = {
+			id = ukraine.60
+			hours = 3
+		}
+	}
+
 	option = {
 		name = ukraine.59.a
 		add_political_power = -5				
 	}
 }
+
+# Растрелы на майдане
+country_event = {
+	id = ukraine.60
+	title = ukraine.60.t
+	desc = ukraine.60.d
+	picture = GFX_Report_event_formation_of_right_sector
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.60.a	
+		add_stability = -0.055	
+		203 = {
+			add_manpower = -53
+		}	
+		add_popularity = {
+			ideology = autoritarian_democracy
+			popularity = -0.075
+		}	
+	}
+}
+
+# Анти-майдановские акции в Донецке
+country_event = {
+	id = ukraine.61
+	title = ukraine.61.t
+	desc = ukraine.61.d
+	picture = GFX_Report_event_formation_of_right_sector
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.61.a	
+		add_political_power = 10	
+		add_popularity = {
+			ideology = autoritarian_democracy
+			popularity = 0.015
+		}	
+	}
+}
+
+# Факельное шествие в честь дня рождения бандера
+country_event = {
+	id = ukraine.62
+	title = ukraine.62.t
+	desc = ukraine.62.d
+	picture = GFX_Report_event_formation_of_right_sector
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.62.a		
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.015
+		}	
+	}
+}
+
+# Суд на Януковичем
+country_event = {
+	id = ukraine.63
+	title = ukraine.63.t
+	desc = ukraine.63.d
+	picture = GFX_Report_event_formation_of_right_sector
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.63.a		
+		add_stability = 0.075
+		add_political_power = 25	
+	}
+}
+
