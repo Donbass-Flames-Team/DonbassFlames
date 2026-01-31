@@ -1848,3 +1848,21 @@ country_event = {
 	}
 }
 
+# Формирование правого сектора
+country_event = {
+	id = ukraine.57
+	title = ukraine.57.t
+	desc = ukraine.57.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.57.a
+		add_political_power = -15
+		add_popularity = {
+            ideology = fascism
+            popularity = 0.03
+        }		
+	}
+}

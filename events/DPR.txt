@@ -159,3 +159,23 @@ country_event = {
 		}
 	}
 }
+
+#Гиркин в ДНР
+country_event = {
+	id = DPR.10
+	title = DPR.10.t
+	desc = DPR.10.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.10.a
+		add_war_support = 0.015
+		add_command_power = 10
+		custom_effect_tooltip = DPR_Strelkov_in_DPR_tooltip
+	    hidden_effect = {
+			set_global_flag = Girkin_in_DPR
+		}
+	}
+}

@@ -1119,6 +1119,30 @@ UKR_depreservation_decision = {
 }
 
 UKR_ATO_decision = {
+	UKR_defense_line_in_the_kramatorsk_slavyansk_agglomeration = {
+		icon = GFX_decision_generic_soldier
+		allowed = {
+			original_tag = UKR
+		}
+		
+		available = {
+			
+		}
+
+		visible = {
+			has_completed_focus = UKR_prepare_the_defense_of_cities
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 45
+		
+		
+		complete_effect = {
+
+		}
+	}
+
 	UKR_volunteer_help_decision = {
 		icon = GFX_decision_generic_soldier
 		allowed = {
