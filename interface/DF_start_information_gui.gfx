@@ -34,6 +34,11 @@ spriteTypes = {
 		name = "GFX_startgui_leader_frame"
 		texturefile = "gfx/interface/startgui/Startgui_leader_frame.dds"
 	}
+
+	spriteType = { 
+		name = "GFX_startgui_leftbutton"
+		texturefile = "gfx/interface/startgui/Startgui_leftbutton.dds"
+	}
     
 	# leaders
 	spriteType = { 

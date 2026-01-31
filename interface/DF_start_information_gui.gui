@@ -7,242 +7,130 @@ guiTypes = {
 		origo = center
 		moveable = no
 
-		iconType = {
-		    name = "Startgui_text"
-			spriteType = "GFX_Startgui_text_RUS"
-			position = { x = 300 y = 225 }
-			scale = 0.8
-		}
-
-		iconType = {
-		    name = "Startgui_logo"
-			spriteType = "GFX_logo_startgui"
-			position = { x = 455 y = 45 }
-			scale = 0.8
-		}
-		
 		background = {
 			name = "Background"
 			quadTextureSprite = "GFX_startgui_background"
+			position = { x = 49 y = 0 }
 		}
-		
-		iconType = {
-			name = "main_Background"
-			quadTextureSprite = "GFX_main_startgui_background"
-			position = { x = -1 y = -1 }
-			scale = 1.2
-		}
-		
-		buttonType = {
-			name = "close_startgui_button"
-			position = { x = 1260 y = 32 }
-			quadTextureSprite = "GFX_closebutton"
-			pdx_tooltip = "CLOSE"
-			clicksound = click_close
-			shortcut = "ESCAPE"
-		}
-		
-		buttonType = {
-			name = "information_country_startgui_button"
-			position = { x = 160 y = 700 }
-			quadTextureSprite = "GFX_startgui_button"
-			pdx_tooltip = "CLOSE"
-			clicksound = click_close
-			font = "hoi_36header"			
-			text = "COUNTRY INFO"
-		}
-		
-		buttonType = {
-			name = "play_startgui_button"
-			position = { x = 510 y = 700 }
-			quadTextureSprite = "GFX_startgui_button"
-			pdx_tooltip = "PLAY"
-			clicksound = click_close
-			font = "hoi_36header"			
-			text = "PLAY"
-		}
-				
-		buttonType = {
-			name = "information_mod_startgui_button"
-			position = { x = 860 y = 700 }
-			quadTextureSprite = "GFX_startgui_button"
-			pdx_tooltip = "CLOSE"
-			clicksound = click_close
-			font = "hoi_36header"			
-			text = "MOD INFO"
-		}
-	}
 
-	containerWindowType = {
-		name = "Start_gui_country_info"
-		position = { x = 0 y = 0 }
-		size = { width = 1300 height = 770 }
-		orientation = center
-		origo = center
-		moveable = no
-
-		iconType = {
-		    name = "startgui_country_name"
-			spriteType = "GFX_closebutton"
-			position = { x = 415 y = 105 }
-		}
-		
 		instantTextBoxType = {
-			name ="DF_modinfo_title"
-			position = { x = 350 y = 260 }
-			font = "hoi_24header"
-			text = "[COUNTRY_INFO_STARTGUI]"
+			name = "start_gui_title"
+			position = { x = 399 y = 10 }
+			font = "hoi_36header"
+			text = "start_gui_title_text"
+			maxWidth = 500
 			format = centre
-			maxWidth = 800
-		}
-
-		iconType = {
-			name = "country_background_startgui"
-			position = { x = 25 y = 25 }
-			spriteType = "GFX_closebutton"
 			alwaystransparent = yes
 		}
 
-		iconType = {
-		    name = "startgui_leader_frame"
-			spriteType = "GFX_startgui_leader_frame"
-			position = { x = 85 y = 215 }
-			scale = 0.79
-		}
-
-		iconType = {
-		    name = "startgui_leader"
-			spriteType = "GFX_closebutton"
-			position = { x = 110 y = 241 }
-			scale = 1.25
-		}
-
-		instantTextBoxType = {
-			name ="startgui_leader_name"
-			position = { x = -200 y = 530 }
-			font = "hoi_30header"
-			text = "[get_leader_name_startgui]"
-			format = centre
-			maxWidth = 800
-		}
-		
-		background = {
-			name = "Background"
-			quadTextureSprite = "GFX_startgui_background"
-		}
-		
-		buttonType = {
-			name = "close_startgui_button"
-			position = { x = 1260 y = 32 }
-			quadTextureSprite = "GFX_closebutton"
-			pdx_tooltip = "CLOSE"
-			clicksound = click_close
-			shortcut = "ESCAPE"
-		}
-		
 		buttonType = {
 			name = "information_country_startgui_button"
-			position = { x = 160 y = 700 }
-			quadTextureSprite = "GFX_startgui_button"
-			pdx_tooltip = "CLOSE"
-			clicksound = click_close
+			position = { x = 73 y = 69 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
 			font = "hoi_36header"			
-			text = "COUNTRY INFO"
+			text = "start_gui_country_info_text"
 		}
-		
+
 		buttonType = {
-			name = "play_startgui_button"
-			position = { x = 510 y = 700 }
-			quadTextureSprite = "GFX_startgui_button"
-			pdx_tooltip = "PLAY"
-			clicksound = click_close
+			name = "startgui_left_button_1"
+			position = { x = 73 y = 159 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
 			font = "hoi_36header"			
-			text = "PLAY"
+			text = "start_gui_country_paths"
 		}
-				
+
+		buttonType = {
+			name = "startgui_left_button_2"
+			position = { x = 73 y = 249 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_country_mechanics"
+		}
+
 		buttonType = {
 			name = "information_mod_startgui_button"
-			position = { x = 860 y = 700 }
-			quadTextureSprite = "GFX_startgui_button"
-			pdx_tooltip = "CLOSE"
-			clicksound = click_close
+			position = { x = 73 y = 339 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
 			font = "hoi_36header"			
-			text = "MOD INFO"
+			text = "start_gui_mod_info_text"
 		}
-	}
 
-	containerWindowType = {
-		name = "Start_gui_mod_info"
-		position = { x = 0 y = 0 }
-		size = { width = 1300 height = 770 }
-		orientation = center
-		origo = center
-		moveable = no
-		
+		buttonType = {
+			name = "startgui_left_button_3"
+			position = { x = 73 y = 429 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_whats_new"
+		}
+
 		instantTextBoxType = {
-			name ="DF_modinfo_developers"
-			position = { x = 300 y = 300 }
+			name = "mod_dev_status_title"
+			position = { x = 551 y = 180 }
 			font = "hoi_36header"
-			text = "DEVELOPERS"
-			format = centre
+			text = "mod_dev_status_title"
 			maxWidth = 700
+			format = centre
+			alwaystransparent = yes
 		}
 
-		iconType = {
-		    name = "UKR_logo_modinfo"
-			spriteType = "GFX_logo_startgui"
-			position = { x = 400 y = 25 }
+		instantTextBoxType = {
+			name = "mod_dev_status_desc"
+			position = { x = 651 y = 280 }
+			font = "hoi_18mbs"
+			text = "mod_dev_status_desc"
+			maxWidth = 500
+			format = centre
+			alwaystransparent = yes
 		}
-		
-		background = {
-			name = "Background"
-			quadTextureSprite = "GFX_startgui_background"
+
+		instantTextBoxType = {
+			name = "mod_dev_status_footer"
+			position = { x = 552 y = 430 } 
+			font = "hoi_36header"
+			text = "mod_dev_status_footer"
+			maxWidth = 700
+			format = centre
+			alwaystransparent = yes
 		}
-		
-		background = {
-			name = "mod_info_Background"
-			quadTextureSprite = "GFX_modinfo_background"
-			position = { x = 25 y = 20 }
-			scale = 0.98
+
+		instantTextBoxType = {
+			name = "start_gui_opt_text"
+			position = { x = 115 y = 500 }
+			font = "hoi_36header"
+			text = "start_gui_map_optimize"
+			maxWidth = 500
+			alwaystransparent = yes
 		}
-		
+
+		instantTextBoxType = {
+			name = "start_gui_opt_desc_text"
+			position = { x = 115 y = 540 }
+			font = "hoi_16mbs"
+			text = "start_gui_map_optimize_desc"
+			maxWidth = 400
+			alwaystransparent = yes
+		}
+
 		buttonType = {
-			name = "close_startgui_button"
-			position = { x = 1260 y = 32 }
-			quadTextureSprite = "GFX_closebutton"
-			pdx_tooltip = "CLOSE"
-			clicksound = click_close
-			shortcut = "ESCAPE"
+			name = "generic_checkbox"
+			position = { x = 71 y = 499 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			clicksound = click_checkbox
 		}
-		
-		buttonType = {
-			name = "information_country_startgui_button"
-			position = { x = 160 y = 700 }
-			quadTextureSprite = "GFX_startgui_button"
-			pdx_tooltip = "CLOSE"
-			clicksound = click_close
-			font = "hoi_36header"			
-			text = "COUNTRY INFO"
-		}
-		
+
 		buttonType = {
 			name = "play_startgui_button"
-			position = { x = 510 y = 700 }
+			position = { x = 427 y = 690 }
 			quadTextureSprite = "GFX_startgui_button"
-			pdx_tooltip = "PLAY"
-			clicksound = click_close
 			font = "hoi_36header"			
-			text = "PLAY"
+			text = "start_gui_play_text"
 		}
-				
+
 		buttonType = {
-			name = "information_mod_startgui_button"
-			position = { x = 860 y = 700 }
-			quadTextureSprite = "GFX_startgui_button"
-			pdx_tooltip = "CLOSE"
-			clicksound = click_close
-			font = "hoi_36header"			
-			text = "MOD INFO"
+			name = "close_startgui_button"
+			position = { x = 11260 y = 32 }
+			quadTextureSprite = "GFX_closebutton"
+			shortcut = "ESCAPE"
 		}
 	}
 }
