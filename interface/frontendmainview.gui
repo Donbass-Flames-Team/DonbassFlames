@@ -259,15 +259,6 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 		
-		iconType = {
-			name = "career_profile_button_star"
-			position = { x = -720 y = 50 }
-			spriteType = "GFX_icon_best_in_career"
-			centerposition = yes
-			orientation = upper_right
-			alwaysTransparent = yes
-		}
-		
 		buttonType = {
 			name = "friends_button"
 			position = { x = -33 y = 489 }

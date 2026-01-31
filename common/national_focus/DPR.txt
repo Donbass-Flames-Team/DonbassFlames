@@ -519,7 +519,9 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-            
+    		526 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = DPR days = 25 }
+		    }        
 		}
 	}
 

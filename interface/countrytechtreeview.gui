@@ -624,7 +624,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1918"
+						text = "1960"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -637,7 +637,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1934"
+						text = "1970"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -650,7 +650,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1936"
+						text = "1980"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -663,7 +663,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1939"
+						text = "1990"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -676,7 +676,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1941"
+						text = "2000"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -689,7 +689,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1943"
+						text = "2010"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -702,7 +702,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1945"
+						text = "2020"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -723,7 +723,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1934"
+						text = "1970"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -736,7 +736,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1936"
+						text = "1980"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -749,7 +749,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1939"
+						text = "1990"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -762,7 +762,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1941"
+						text = "2000"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -775,7 +775,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1943"
+						text = "2010"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -788,7 +788,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1945"
+						text = "2020"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -806,21 +806,8 @@ guiTypes = {
 				origo = center_up
 
 				instantTextBoxType = {
-					name = "armour_subtitle_heavy"
-					position = { x = 480 y = 55 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_HEAVY"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
 					name = "armour_subtitle_medium"
-					position = { x = 207 y = 335 }
+					position = { x = 557 y = -95 } 
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -833,23 +820,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_light"
-					position = { x = -84 y = 55  }
+					position = { x = -629 y = -95  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
 					text = "ARMOUR_TITLE_LIGHT"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
-				instantTextBoxType = {
-					name = "armour_subtitle_amphibious"
-					position = { x = -360 y = 335 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_AMPH"
 					maxWidth = 200
 					maxHeight = 62
 					format = center
