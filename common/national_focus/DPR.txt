@@ -13,7 +13,7 @@ focus_tree = {
 	focus = {
 		id = DPR_capture_administrations
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.5
+		cost = 0.2
 		x = 12
 		y = 0
 
@@ -28,13 +28,16 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.05
+			add_stability = 0.05
+			add_political_power = 35
+			add_command_power = 10
 		}
 	}
 
 	focus = {
 		id = DPR_formation_of_a_provisional_government
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.3
+		cost = 0.2
 		x = 0
 		y = 1
 
@@ -83,7 +86,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		prerequisite = {focus = DPR_capture_administrations}
+		prerequisite = {focus = DPR_formation_of_a_provisional_government}
 		relative_position_id = DPR_capture_administrations
 
 		cancel_if_invalid = yes
@@ -524,30 +527,6 @@ focus_tree = {
 		id = DPR_donetsk_castle
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 1
-		y = 1
-
-		prerequisite = {focus = DPR_defend_of_citites}
-		relative_position_id = DPR_defend_of_citites
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-			
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-        
-		}
-	}
-
-	focus = {
-		id = DPR_donetsk_castle
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
 		x = -1
 		y = 1
 
@@ -577,6 +556,7 @@ focus_tree = {
 						    type = bunker
 						    level = 3
 						    province = 10391
+							instant_build = yes
 					    }
 				    }
 			    }
@@ -591,6 +571,7 @@ focus_tree = {
 						    type = bunker
 						    level = 2
 						    province = 10450 
+							instant_build = yes
 					    }
 				    }
 			    }	
@@ -605,6 +586,7 @@ focus_tree = {
 						    type = bunker
 						    level = 2
 						    province = 15789  
+							instant_build = yes
 					    }
 				    }
 			    }
@@ -618,7 +600,8 @@ focus_tree = {
 					    add_building_construction = {
 						    type = bunker
 						    level = 2
-						    province = 15811   
+						    province = 15811  
+							instant_build = yes 
 					    }
 				    }
 			    }
@@ -632,7 +615,8 @@ focus_tree = {
 					    add_building_construction = {
 						    type = bunker
 						    level = 2
-						    province = 9377    
+						    province = 9377   
+							instant_build = yes 
 					    }
 				    }
 			    }		
@@ -646,7 +630,8 @@ focus_tree = {
 					    add_building_construction = {
 						    type = bunker
 						    level = 2
-						    province = 15719     
+						    province = 15719  
+							instant_build = yes   
 					    }
 				    }
 			    }			
@@ -660,7 +645,8 @@ focus_tree = {
 					    add_building_construction = {
 						    type = bunker
 						    level = 2
-						    province = 11928      
+						    province = 11928  
+							instant_build = yes    
 					    }
 				    }
 			    }	
@@ -674,7 +660,8 @@ focus_tree = {
 					    add_building_construction = {
 						    type = bunker
 						    level = 2
-						    province = 7500       
+						    province = 7500 
+							instant_build = yes      
 					    }
 				    }
 			    }
@@ -688,7 +675,8 @@ focus_tree = {
 					    add_building_construction = {
 						    type = bunker
 						    level = 2
-						    province = 7471       
+						    province = 7471   
+							instant_build = yes    
 					    }
 				    }
 			    }
@@ -702,7 +690,8 @@ focus_tree = {
 					    add_building_construction = {
 						    type = bunker
 						    level = 2
-						    province = 11018       
+						    province = 11018 
+							instant_build = yes      
 					    }
 				    }
 			    }
@@ -716,7 +705,8 @@ focus_tree = {
 					    add_building_construction = {
 						    type = bunker
 						    level = 2
-						    province = 15677       
+						    province = 15677
+							instant_build = yes       
 					    }
 				    }
 			    }
@@ -730,7 +720,8 @@ focus_tree = {
 					    add_building_construction = {
 						    type = bunker
 						    level = 2
-						    province = 8269       
+						    province = 8269  
+							instant_build = yes     
 					    }
 				    }
 			    }

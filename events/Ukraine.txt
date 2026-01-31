@@ -1493,7 +1493,7 @@ country_event = {
 	}
 }
 
-# Разрушение памятника ленину
+# Народное вече 8 декабря
 country_event = {
 	id = ukraine.42
 	title = ukraine.42.t
@@ -1857,6 +1857,19 @@ country_event = {
 	
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.58
+				days = 85
+			}
+			country_event = {
+				id = ukraine.42
+				days = 13
+			}			
+		}
+	}
+
 	option = {
 		name = ukraine.57.a
 		add_political_power = -5
@@ -1871,7 +1884,7 @@ country_event = {
 	}
 }
 
-# Формирование правого сектора
+# Мирное наступление
 country_event = {
 	id = ukraine.58
 	title = ukraine.58.t
@@ -1882,6 +1895,22 @@ country_event = {
 
 	option = {
 		name = ukraine.58.a
+		add_political_power = -10	
+		complete_national_focus = UKR_ato_in_kiyv			
+	}
+}
+
+# Мирное наступление
+country_event = {
+	id = ukraine.59
+	title = ukraine.59.t
+	desc = ukraine.59.d
+	picture = GFX_Report_event_formation_of_right_sector
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.59.a
 		add_political_power = -5				
 	}
 }
