@@ -112,11 +112,19 @@ DF_economy_setup = yes
 		        apc_chassis_3 = 1
 		        apc_chassis_4 = 1
 
-		        ifv_chassis = 1
-		        ifv_chassis_2 = 1
-		        ifv_chassis_3 = 1
-		        ifv_chassis_4 = 1
-				gwtank_chassis = 1		   
+		        ifv_1 = 1
+		        ifv_2 = 1
+		        ifv_3 = 1
+		        bmd_1 = 1
+				bmd_2 = 1
+				bmd_3 = 1
+				APC_1 = 1
+				APC_2 = 1
+				APC_3 = 1
+				modern_tank_1 = 1	
+				modern_tank_2 = 1
+				modern_tank_3 = 1		
+				modern_tank_4 = 1		   
 		    }
 			set_oob = "UKR_2013"
 	    }

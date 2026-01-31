@@ -446,40 +446,40 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
-	modern_tank_6 = { 
+	#modern_tank_6 = { 
+    #
+	#	enable_equipments = {
+	#		modern_tank_equipment_6
 
-		enable_equipments = {
-			modern_tank_equipment_6
-
-		}
-		enable_subunits = {
+	#	}
+	#	enable_subunits = {
 			
 
-		}
-		on_research_complete_limit = {
+	#	}
+	#	on_research_complete_limit = {
 			
-		}
+	#	}
 
-		research_cost = 2
-		start_year = 2015
-		folder = {
-			name = armour_folder
-			position = { x = -1 y = 10 }
-		}
+	#	research_cost = 2
+	#	start_year = 2015
+	#	folder = {
+	#		name = armour_folder
+	#		position = { x = -1 y = 10 }
+	#	}
 
-		ai_will_do = {
-			base = 1
-		}
+	#	ai_will_do = {
+	#		base = 1
+	#	}
 
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			cat_light_armor
-			mio_cat_tech_light_armor_and_modules
-		}
+	#	categories = {
+	#		armor
+	#		mio_cat_tech_all_armor_and_modules
+	#		cat_light_armor
+	#		mio_cat_tech_light_armor_and_modules
+	#	}
 
-		special_project_specialization = { specialization_land }
-	}
+	#	special_project_specialization = { specialization_land }
+	#}
 
 	APC_1 = { #Leichttraktor
 
@@ -678,41 +678,6 @@ technologies = {
 
 		special_project_specialization = { specialization_land }
 	}
-	
-	MRAP_1 = { #Leichttraktor
 
-		enable_equipments = {
-			modern_tank_equipment_1
-		}
-		enable_subunits = {
-			modern_armor
-		}
-		on_research_complete_limit = {
-			
-		}
-		on_research_complete = {
-			
-		}
-
-		research_cost = 2
-		start_year = 1980
-		folder = {
-			name = armour_folder
-			position = { x = 13 y = 0 }
-		}
-
-		ai_will_do = {
-			base = 1
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			cat_light_armor
-			mio_cat_tech_light_armor_and_modules
-		}
-
-		special_project_specialization = { specialization_land }
-	}
 	
 }
