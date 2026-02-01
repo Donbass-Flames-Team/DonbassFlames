@@ -485,6 +485,7 @@ focus_tree = {
 			597 = { transfer_state_to = RUS }
 			598 = { transfer_state_to = RUS }
 			591 = { transfer_state_to = RUS }
+			624 = { transfer_state_to = RUS }
 			hidden_effect = {
 				UKR = {
 			        country_event = ukraine.27
@@ -1248,6 +1249,7 @@ focus_tree = {
 		}
 
 		available = {
+			date > 2015.2.6
 		}
 
 		cancel_if_invalid = yes
@@ -1281,7 +1283,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 2015.2.6
+			
 		}
 
 		cancel_if_invalid = yes
