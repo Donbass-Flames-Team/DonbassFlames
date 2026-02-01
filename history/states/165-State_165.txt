@@ -9,11 +9,12 @@ state = {
 		owner = UKR 
 		victory_points = { 5741 15 }
 		
-		buildings = { 
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 0
 			infrastructure = 2 
-			industrial_complex = 1 
-			arms_factory = 0 
-		}
+
+}
 		
 		add_core_of = UKR 
 	}

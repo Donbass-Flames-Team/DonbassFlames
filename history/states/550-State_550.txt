@@ -11,11 +11,14 @@ state = {
 		victory_points = { 5597 15 }
 		victory_points = { 6509 100 }
 		
-		buildings = { 
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 0
 			infrastructure = 3 
-			industrial_complex = 1 
+
 			fuel_silo = 1 
-		}
+		
+}
 		
 		add_core_of = TMR 
 	}
