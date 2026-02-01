@@ -73,8 +73,16 @@ DF_economy_setup = yes
 		uniform_equipment = 1
 		uniform_equipment1 = 1
 		uniform_equipment2 = 1
+
+		train_equipment_1 = 1
 	}
 
+	add_equipment_to_stockpile = {
+		type = train_equipment_1
+		amount = 200
+		producer = UKR
+	}
+	
 	#if = {
 	#   limit = { has_dlc = "By Blood Alone" }
 	#	    set_technology = {
@@ -276,4 +284,5 @@ DF_economy_setup = yes
 
 	set_variable = { cash = 8 }
 	set_variable = { debt = -146.94 }
-}
+
+}     
