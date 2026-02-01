@@ -1919,7 +1919,7 @@ country_event = {
 			}
 			country_event = {
 				id = ukraine.62
-				days = 35
+				days = 37
 			}	
 		}
 	}
@@ -2097,12 +2097,35 @@ country_event = {
 	desc = ukraine.66.d
 	picture = GFX_Report_event_formation_of_right_sector
 	
-	is_triggered_only = yes
+	is_triggered_only = no
+
+	trigger = {
+		has_global_flag = Start_Of_ATO
+		NOT = {
+			has_country_flag = RocketAttackInZelenople
+		}
+		406 = {
+			is_controlled_by = UKR
+		}
+		date > 2014.5.15
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = RocketAttackInZelenople
+		    406 = {
+			    add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = LPR days = 55 }
+		    }	
+		}
+	}
 
 	option = {
 		name = ukraine.66.a		
 		add_war_support = -0.015
 		add_manpower = -36
+		406 = {
+			add_dynamic_modifier = { modifier = generic_retreat_from_region_idea scope = UKR days = 15 }
+		}
 	}
 }
 
