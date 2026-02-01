@@ -1836,6 +1836,16 @@ country_event = {
 		set_country_flag = UKR_donbas_war_resumes_spring_2015
 		mark_focus_tree_layout_dirty = yes
 		complete_national_focus = UKR_continuation_of_the_ato
+		hidden_effect = {
+			country_event = {
+				id = ukraine.67
+				days = 11
+			}
+			country_event = {
+				id = ukraine.68
+				days = 28
+			}
+		}
 	}
 }
 
@@ -2041,3 +2051,95 @@ country_event = {
 	}
 }
 
+# Женевские переговоры
+country_event = {
+	id = ukraine.64
+	title = ukraine.64.t
+	desc = ukraine.64.d
+	picture = GFX_Report_event_formation_of_right_sector
+	
+	is_triggered_only = yes
+
+	immediate = {
+		country_event = {
+			id = ukraine.65
+			days = 5
+		}
+	}
+
+	option = {
+		name = ukraine.64.a		
+		add_stability = 0.05
+		add_political_power = 15	
+	}
+}
+
+# Срыв Женевских соглашений
+country_event = {
+	id = ukraine.65
+	title = ukraine.65.t
+	desc = ukraine.65.d
+	picture = GFX_Report_event_formation_of_right_sector
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.65.a		
+		add_war_support = 0.035
+		add_manpower = -3
+	}
+}
+
+# Ракетный удар под Зеленопольем
+country_event = {
+	id = ukraine.66
+	title = ukraine.66.t
+	desc = ukraine.66.d
+	picture = GFX_Report_event_formation_of_right_sector
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.66.a		
+		add_war_support = -0.015
+		add_manpower = -36
+	}
+}
+
+# Обстрел микрорайона Восточный в Мариуполе
+country_event = {
+	id = ukraine.67
+	title = ukraine.67.t
+	desc = ukraine.67.d
+	picture = GFX_Report_event_formation_of_right_sector
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.67.a		
+		add_war_support = 0.015
+		add_stability = -0.01
+		526 = {
+            add_manpower = -43
+		}
+	}
+}
+
+# Обстрел местонахождения штаба АТО в Краматорске
+country_event = {
+	id = ukraine.68
+	title = ukraine.68.t
+	desc = ukraine.68.d
+	picture = GFX_Report_event_formation_of_right_sector
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.68.a		
+		add_command_power = -10
+		add_stability = -0.01
+		327 = {
+            add_manpower = -17
+		}
+	}
+}

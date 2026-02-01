@@ -1257,6 +1257,9 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+			UKR = {
+				country_event = russia.12
+			}
 		}
 	}
 
@@ -1275,6 +1278,7 @@ focus_tree = {
 		}
 
 		available = {
+			date > 2015.2.6
 		}
 
 		cancel_if_invalid = yes
