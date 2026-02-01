@@ -5,10 +5,9 @@ state = {
 	
 	state_category = town 
 	buildings_max_level_factor = 2 
-	history = { 
+	history = {
+		victory_points = { 12015 5 } 
 		owner = UKR 
-		
-		victory_points = { 7544 10 }
 		
 		buildings = {
 			industrial_complex = 0
