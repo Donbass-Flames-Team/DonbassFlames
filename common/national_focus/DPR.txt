@@ -574,9 +574,15 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-    		526 = {
-			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = DPR }
-		    }        
+    		432 = {
+			    add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
+		    }       
+			424 = {
+			    add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
+		    }  
+			408 = {
+			    add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
+		    }
 		}
 	}
 
@@ -806,7 +812,191 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-        
+			custom_effect_tooltip = DPR_bunkers_in_south_dpr
+        	hidden_effect = {
+				#Novoazovsky district
+                if = {
+				    limit = {
+					    DPR = {
+						    controls_province = 16471
+					    }
+				    }
+				    432 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 16471
+							instant_build = yes
+					    }
+				    }
+			    }
+                if = {
+				    limit = {
+					    DPR = {
+						    controls_province = 8203 
+					    }
+				    }
+				    432 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 8203 
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    DPR = {
+						    controls_province = 8533  
+					    }
+				    }
+				    432 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 8533  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    DPR = {
+						    controls_province = 18531   
+					    }
+				    }
+				    432 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 18531  
+							instant_build = yes 
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    DPR = {
+						    controls_province = 16330    
+					    }
+				    }
+				    432 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 16330   
+							instant_build = yes 
+					    }
+				    }
+			    }		
+				if = {
+				    limit = {
+					    DPR = {
+						    controls_province = 16480     
+					    }
+				    }
+				    432 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 16480  
+							instant_build = yes   
+					    }
+				    }
+			    }			
+				if = {
+				    limit = {
+					    DPR = {
+						    controls_province = 16461      
+					    }
+				    }
+				    432 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 1
+						    province = 16461  
+							instant_build = yes    
+					    }
+				    }
+			    }	
+				##Telmensky district
+				if = {
+				    limit = {
+					    DPR = {
+						    controls_province = 167       
+					    }
+				    }
+				    652 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 167 
+							instant_build = yes      
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    DPR = {
+						    controls_province = 11728       
+					    }
+				    }
+				    652 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 11728   
+							instant_build = yes    
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    DPR = {
+						    controls_province = 2665       
+					    }
+				    }
+				    652 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 2665 
+							instant_build = yes      
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    DPR = {
+						    controls_province = 17472       
+					    }
+				    }
+				    652 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 17472
+							instant_build = yes       
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    DPR = {
+						    controls_province = 5941       
+					    }
+				    }
+				    652 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 5941  
+							instant_build = yes     
+					    }
+				    }
+			    }
+			}        
 		}
 	}
 
