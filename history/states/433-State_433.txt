@@ -5,10 +5,9 @@ state = {
 	
 	state_category = rural 
 	buildings_max_level_factor = 2 
-	history = { 
+	history = {
+		victory_points = { 615 5 } 
 		owner = UKR 
-		
-		victory_points = { 3488 15 }
 		
 		buildings = {
 			industrial_complex = 0
