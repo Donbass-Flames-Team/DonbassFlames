@@ -11,11 +11,12 @@ state = {
 		victory_points = { 3671 10 }
 		victory_points = { 11334 5 }
 		
-		buildings = { 
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 0
 			infrastructure = 2 
-			industrial_complex = 1 
-			arms_factory = 0 
-		}
+
+}
 		
 		add_core_of = UKR 
 	}

@@ -10,12 +10,14 @@ state = {
 	history = { 
 		owner = POL 
 		
-		buildings = { 
+		buildings = {
+			industrial_complex = 12
+			arms_factory = 7
 			infrastructure = 2 
-			arms_factory = 7 
-			industrial_complex = 12 
+
 			synthetic_refinery = 1 
-		}
+		
+}
 		
 		add_core_of = POL 
 	}

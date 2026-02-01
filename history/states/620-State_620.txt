@@ -13,13 +13,15 @@ state = {
 	history = { 
 		owner = ROM 
 		
-		buildings = { 
+		buildings = {
+			industrial_complex = 8
+			arms_factory = 4
 			infrastructure = 2 
-			arms_factory = 5 
-			industrial_complex = 9 
+
 			synthetic_refinery = 1 
 			dockyard = 10 
-		}
+		
+}
 		
 		add_core_of = ROM 
 	}
