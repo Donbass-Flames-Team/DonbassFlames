@@ -281,15 +281,15 @@ country_event = {
 
 #Вторые Минские соглашения
 country_event = {
-	id = russia.12
-	title = russia.12.t
-	desc = russia.11.d
+	id = russia.13
+	title = russia.13.t
+	desc = russia.13.d
 	#picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = russia.12.a
+		name = russia.13.a
 		add_stability = 0.05
 		hidden_effect = {
 			DPR = {

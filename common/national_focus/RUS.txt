@@ -1258,7 +1258,10 @@ focus_tree = {
 			add_political_power = 50
 			add_stability = 0.025
 			UKR = {
-				country_event = russia.12
+				country_event = {
+					id = russia.13
+					hours = 8
+				}
 			}
 		}
 	}
