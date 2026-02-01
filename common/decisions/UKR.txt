@@ -17,6 +17,7 @@ UKR_separatism_decision = {
 		days_remove = 30
 		cost = 15
 		complete_effect = {
+			add_stability = 0.02
             custom_effect_tooltip = UKR_cut_off_the_water_supply_to_crimea_tt
 			hidden_effect = {
 				RUS = {
@@ -1249,6 +1250,14 @@ UKR_depreservation_decision = {
 				type = infantry_equipment_1 
 				amount = 9500 
 			}
+			add_equipment_to_stockpile = { 
+				type = bulletproof_vests_equipment_1
+				amount = 3500
+			} 		
+			add_equipment_to_stockpile = { 
+				type = uniform_equipment_1
+				amount = 4500
+			}
 		}
 		ai_will_do = {
 			factor = 75
@@ -1268,16 +1277,1021 @@ UKR_ATO_decision = {
 		}
 
 		visible = {
+			tag = UKR
 			has_completed_focus = UKR_prepare_the_defense_of_cities
 		}
 		
-		cost = 50
+		cost = 35
 		fire_only_once = yes
 		days_remove = 45
 		
 		
 		complete_effect = {
+			custom_effect_tooltip = UKR_bunkers_in_slavyansk_tt
+        	hidden_effect = {
+				# Slavyansk city
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 8800
+					    }
+				    }
+				    318 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 8800
+							instant_build = yes
+					    }
+				    }
+			    }
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18227 
+					    }
+				    }
+				    318 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 18227 
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18231  
+					    }
+				    }
+				    318 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 18231  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15057   
+					    }
+				    }
+				    318 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 15057  
+							instant_build = yes 
+					    }
+				    }
+			    }
+				# Kramatorsk City
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18293   
+					    }
+				    }
+				    327 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 18293  
+							instant_build = yes 
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18292   
+					    }
+				    }
+				    327 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 18292 
+							instant_build = yes 
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18291   
+					    }
+				    }
+				    327 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 18291 
+							instant_build = yes 
+					    }
+				    }
+			    }		
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18298   
+					    }
+				    }
+				    327 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 18298 
+							instant_build = yes 
+					    }
+				    }
+			    }			
+				# Slavyansk district
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18320   
+					    }
+				    }
+				    291 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 18320 
+							instant_build = yes 
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18319   
+					    }
+				    }
+				    291 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 18319 
+							instant_build = yes 
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15149   
+					    }
+				    }
+				    291 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 15149 
+							instant_build = yes 
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18301   
+					    }
+				    }
+				    291 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18301 
+							instant_build = yes 
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18300   
+					    }
+				    }
+				    291 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18300 
+							instant_build = yes 
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18423   
+					    }
+				    }
+				    291 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18423 
+							instant_build = yes 
+					    }
+				    }
+			    }				
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15165   
+					    }
+				    }
+				    291 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15165 
+							instant_build = yes 
+					    }
+				    }
+			    }				
+			}
+		}
+	}
 
+	UKR_defense_line_in_maryinka = {
+		icon = GFX_decision_generic_soldier
+		allowed = {
+			original_tag = UKR
+		}
+		
+		available = {
+			
+		}
+
+		visible = {
+			tag = UKR
+			has_completed_focus = UKR_prepare_the_defense_of_cities
+		}
+		
+		cost = 15
+		fire_only_once = yes
+		days_remove = 45
+		
+		
+		complete_effect = {
+			custom_effect_tooltip = UKR_bunkers_in_maryinka_tt
+        	hidden_effect = {
+				# Maryinka
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 3671
+					    }
+				    }
+				    421 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 3671
+							instant_build = yes
+					    }
+				    }
+			    }
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 11334 
+					    }
+				    }
+				    421 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 11334 
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15772  
+					    }
+				    }
+				    441 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15772  
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15833  
+					    }
+				    }
+				    421 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15833  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 126  
+					    }
+				    }
+				    421 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 126  
+							instant_build = yes
+					    }
+				    }
+			    }											
+			}
+		}
+	}
+
+	UKR_defense_line_in_avdiivka = {
+		icon = GFX_decision_generic_soldier
+		allowed = {
+			original_tag = UKR
+		}
+		
+		available = {
+			
+		}
+
+		visible = {
+			tag = UKR
+			has_completed_focus = UKR_prepare_the_defense_of_cities
+		}
+		
+		cost = 15
+		fire_only_once = yes
+		days_remove = 45
+		
+		
+		complete_effect = {
+			custom_effect_tooltip = UKR_bunkers_in_avdiivka_tt
+        	hidden_effect = {
+				# Rayon Pesky
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15733
+					    }
+				    }
+				    426 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15733
+							instant_build = yes
+					    }
+				    }
+			    }
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 6047 
+					    }
+				    }
+				    426 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 6047 
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 7542  
+					    }
+				    }
+				    426 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 7542  
+							instant_build = yes
+					    }
+				    }
+			    }	
+				# Avdiivka
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 6623  
+					    }
+				    }
+				    412 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 6623  
+							instant_build = yes
+					    }
+				    }
+			    }			
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15611  
+					    }
+				    }
+				    412 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15611  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18367  
+					    }
+				    }
+				    399 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18367  
+							instant_build = yes
+					    }
+				    }
+			    }			
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15558  
+					    }
+				    }
+				    399 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15558  
+							instant_build = yes
+					    }
+				    }
+			    }		
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 3148  
+					    }
+				    }
+				    399 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 3148  
+							instant_build = yes
+					    }
+				    }
+			    }							
+			}
+		}
+	}
+
+	UKR_defense_line_in_dzerzinsk = {
+		icon = GFX_decision_generic_soldier
+		allowed = {
+			original_tag = UKR
+		}
+		
+		available = {
+			
+		}
+
+		visible = {
+			tag = UKR
+			has_completed_focus = UKR_prepare_the_defense_of_cities
+		}
+		
+		cost = 15
+		fire_only_once = yes
+		days_remove = 45
+		
+		
+		complete_effect = {
+			custom_effect_tooltip = UKR_bunkers_in_dzerzinsk_tt
+        	hidden_effect = {
+				# Aleksandorpolsky district
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18363
+					    }
+				    }
+				    390 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18363
+							instant_build = yes
+					    }
+				    }
+			    }
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 5257 
+					    }
+				    }
+				    337 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 5257 
+							instant_build = yes
+					    }
+				    }
+			    }	
+				# Artemosvky district
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18275  
+					    }
+				    }
+				    328 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18275  
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18279  
+					    }
+				    }
+				    328 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18279  
+							instant_build = yes
+					    }
+				    }
+			    }			
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18443  
+					    }
+				    }
+				    328 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18443  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18442  
+					    }
+				    }
+				    328 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18442  
+							instant_build = yes
+					    }
+				    }
+			    }			
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18359  
+					    }
+				    }
+				    328 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18359  
+							instant_build = yes
+					    }
+				    }
+			    }		
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18360  
+					    }
+				    }
+				    328 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18360  
+							instant_build = yes
+					    }
+				    }
+			    }							
+			}
+		}
+	}
+
+	UKR_defense_line_in_zolotoi = {
+		icon = GFX_decision_generic_soldier
+		allowed = {
+			original_tag = UKR
+		}
+		
+		available = {
+			
+		}
+
+		visible = {
+			tag = UKR
+			has_completed_focus = UKR_prepare_the_defense_of_cities
+		}
+		
+		cost = 15
+		fire_only_once = yes
+		days_remove = 45
+		
+		
+		complete_effect = {
+			custom_effect_tooltip = UKR_bunkers_in_zolotoi_tt
+        	hidden_effect = {
+				# Zolotoe
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15102
+					    }
+				    }
+				    326 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15102
+							instant_build = yes
+					    }
+				    }
+			    }
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15116 
+					    }
+				    }
+				    326 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15116 
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15129
+					    }
+				    }
+				    326 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15129  
+							instant_build = yes
+					    }
+				    }
+			    }
+				# Popasnansky district	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 1080  
+					    }
+				    }
+				    333 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 1080  
+							instant_build = yes
+					    }
+				    }
+			    }			
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 4508  
+					    }
+				    }
+				    333 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 4508  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15323  
+					    }
+				    }
+				    333 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15323  
+							instant_build = yes
+					    }
+				    }
+			    }																													
+			}
+		}
+	}
+
+	UKR_defense_line_in_stanitsa_luhanskoy = {
+		icon = GFX_decision_generic_soldier
+		allowed = {
+			original_tag = UKR
+		}
+		
+		available = {
+			
+		}
+
+		visible = {
+			tag = UKR
+			has_completed_focus = UKR_prepare_the_defense_of_cities
+		}
+		
+		cost = 15
+		fire_only_once = yes
+		days_remove = 45
+		
+		
+		complete_effect = {
+			custom_effect_tooltip = UKR_bunkers_in_stanitsa_luhanskoy_tt
+        	hidden_effect = {
+				# Stanichno Luhanskoy district
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 11617
+					    }
+				    }
+				    288 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 11617
+							instant_build = yes
+					    }
+				    }
+			    }
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 9642 
+					    }
+				    }
+				    288 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 9642 
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 4149  
+					    }
+				    }
+				    288 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 4149  
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15131  
+					    }
+				    }
+				    288 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15131  
+							instant_build = yes
+					    }
+				    }
+			    }			
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 4623  
+					    }
+				    }
+				    288 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 4623  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15150  
+					    }
+				    }
+				    328 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15150  
+							instant_build = yes
+					    }
+				    }
+			    }			
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15079  
+					    }
+				    }
+				    328 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15079  
+							instant_build = yes
+					    }
+				    }
+			    }		
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 10214  
+					    }
+				    }
+				    328 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 10214  
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15109  
+					    }
+				    }
+				    328 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15109  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 7374  
+					    }
+				    }
+				    328 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 7374  
+							instant_build = yes
+					    }
+				    }
+			    }
+					if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15100  
+					    }
+				    }
+				    328 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 15100  
+							instant_build = yes
+					    }
+				    }
+			    }
+				# Novoaydarsky district
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 2019  
+					    }
+				    }
+				    285 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 2019  
+							instant_build = yes
+					    }
+				    }
+			    }		
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 9045  
+					    }
+				    }
+				    285 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 9045  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 8810  
+					    }
+				    }
+				    285 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 8810  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 15117  
+					    }
+				    }
+				    285 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15117  
+							instant_build = yes
+					    }
+				    }
+			    }																										
+			}
 		}
 	}
 
