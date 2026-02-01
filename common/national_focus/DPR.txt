@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = DPR_call_on_people_to_stand_up_for_the_republic
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.3
+		cost = 0.2
 		x = 0
 		y = 2
 
@@ -1003,7 +1003,7 @@ focus_tree = {
 	focus = {
 		id = DPR_free_the_entire_donetsk_oblast
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
+		cost = 3
 		x = 0
 		y = 2
 
@@ -1015,12 +1015,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-			
+			date > 2014.9.2
 		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-        
+             
 		}
 	}
 
