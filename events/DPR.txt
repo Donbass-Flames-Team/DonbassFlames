@@ -4,18 +4,20 @@
 
 add_namespace = DPR
 
-#
+# Россия вводит войска
 country_event = {
 	id = DPR.1
 	title = DPR.1.t
 	desc = DPR.1.d
-	#picture = GFX_report_event_royal_parade
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = DPR.1.a
-		
+		add_stability = 0.05
+		add_war_support = 0.05
+		load_oob = DPR_russian_regulars_in_illovaysk
 	}
 }
 
@@ -194,5 +196,36 @@ country_event = {
 		add_war_support = 0.015
 		add_command_power = 10
 		
+	}
+}
+
+#Прибытие ДШРГ русич
+country_event = {
+	id = DPR.12
+	title = DPR.12.t
+	desc = DPR.12.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.12.a
+		add_war_support = 0.015
+		add_manpower = 50
+	}
+}
+
+#Русские части входят в новоазовск
+country_event = {
+	id = DPR.13
+	title = DPR.13.t
+	desc = DPR.13.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.13.a
+		load_oob = DPR_regular_from_russia_novoazovsk
 	}
 }

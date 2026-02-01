@@ -2166,3 +2166,31 @@ country_event = {
 		}
 	}
 }
+
+# Полномассштабное пересечение границы с РФ
+country_event = {
+	id = ukraine.69
+	title = ukraine.69.t
+	desc = ukraine.69.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.69.a		
+	}
+}
+
+# Пересечение границы с рф в новоазовске
+country_event = {
+	id = ukraine.70
+	title = ukraine.70.t
+	desc = ukraine.70.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.70.a		
+	}
+}

@@ -939,6 +939,14 @@ focus_tree = {
 			LPR = {
 				country_event = russia.9
 			}
+			hidden_effect = {
+				DPR = {
+					country_event = {
+						id = DPR.12
+						days = 57
+					}
+				}
+			}
 		}
 	}
 
@@ -1026,7 +1034,7 @@ focus_tree = {
 	focus = {
 		id = RUS_russian_regulars_on_donbass
 		icon = GFX_goal_no_focus_RUS
-		cost = 3
+		cost = 2
 		x = -2
 		y = 6
 
@@ -1057,7 +1065,7 @@ focus_tree = {
 	focus = {
 		id = RUS_show_kyivs_war_crimes
 		icon = GFX_goal_no_focus_RUS
-		cost = 1
+		cost = 2
 		x = 0
 		y = 6
 
@@ -1085,13 +1093,70 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_open_invasion
+		icon = GFX_goal_no_focus_RUS
+		cost = 2
+		x = 0
+		y = 1
+
+		prerequisite = { focus = RUS_show_kyivs_war_crimes }
+		prerequisite = { focus = RUS_russian_regulars_on_donbass }
+		relative_position_id = RUS_show_kyivs_war_crimes
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			date > 2014.7.25
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 15
+			add_stability = 0.025
+			add_war_support = 0.03
+			DPR = {
+				country_event = {
+					id = DPR.1
+					days = 2
+				}
+			}
+			hidden_effect = {
+				UKR = {
+					country_event = {
+						id = ukraine.69
+						days = 2
+					}
+				}
+				DPR = {
+				    country_event = {
+					    id = DPR.13
+					    days = 14
+				    }
+			    }
+				UKR = {
+					country_event = {
+						id = ukraine.70
+						days = 14
+					}
+				}
+			
+			}
+		}
+	}
+
+	focus = {
 		id = RUS_the_war_has_stalled
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
 		x = -2
-		y = 1
+		y = 2
 
-		prerequisite = { focus = RUS_show_kyivs_war_crimes }
+		prerequisite = { focus = RUS_open_invasion }
 		prerequisite = { focus = RUS_russian_regulars_on_donbass }
 		mutually_exclusive = { focus = RUS_victory_of_republics }
 		relative_position_id = RUS_show_kyivs_war_crimes
@@ -1119,9 +1184,9 @@ focus_tree = {
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
 		x = 2
-		y = 1
+		y = 2
 
-		prerequisite = { focus = RUS_show_kyivs_war_crimes }
+		prerequisite = { focus = RUS_open_invasion }
 		mutually_exclusive = { focus = RUS_the_war_has_stalled }
 		relative_position_id = RUS_show_kyivs_war_crimes
 		
@@ -1228,9 +1293,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			DPR = {
-				country_event = DPR.1
-			}
+
 		}
 	}
 
