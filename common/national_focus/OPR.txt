@@ -1,17 +1,17 @@
 focus_tree = {
-	id = luhansk_people_republic
+	id = odessa_people_republic
 	country = {
 		factor = 0
 		modifier = {
 			add = 30
-			tag = LPR
+			tag = OPR
 		}
 	}
 	default = no
 	continuous_focus_position = { x = 2500 y = 500 }
 	
 	focus = {
-		id = LPR_arrise_donbass
+		id = OPR_arrise_novorossia
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.5
 		x = 12
@@ -32,15 +32,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = LPR_appeal_to_the_russian_spirit
+		id = OPR_appeal_to_the_russian_spirit
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 3
 		x = 0
 		y = 1
 
 		
-		prerequisite = {focus = LPR_arrise_donbass}
-		relative_position_id = LPR_arrise_donbass
+		prerequisite = {focus = OPR_arrise_novorossia}
+		relative_position_id = OPR_arrise_novorossia
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -54,7 +54,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_ideas = DPR_russian_spring_idea
 			hidden_effect = {
-				load_oob = LPR_millitia
+				load_oob = OPR_millitia
 			}
 		}
 	}

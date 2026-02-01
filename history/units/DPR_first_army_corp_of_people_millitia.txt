@@ -1,0 +1,87 @@
+units = {
+    division= {
+        name = "1-y Motosrelkovy batal'on 9-y otdel'noy motostrelkovoy brigady"
+        location = 7500
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.24
+        start_equipment_factor = 0.6
+		start_manpower_factor = 1
+    }
+}
+
+units = {
+    division= {
+        name = "2-y Motosrelkovy batal'on 9-y otdel'noy motostrelkovoy brigady"
+        location = 7500
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+}
+
+units = {
+    division= {
+        name = "3-y Motosrelkovy batal'on 9-y otdel'noy motostrelkovoy brigady"
+        location = 7500
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.19
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.6
+    }
+}
+
+units = {
+    division= {
+        name = "1-y Tankovy batal'on 9-y otdel'noy motostrelkovoy brigady"
+        location = 7500
+        division_template = "Tankovyy batal'on"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.28
+		start_manpower_factor = 0.7
+    }
+}
+
+units = {
+    division= {
+        name = "1-y Motosrelkovy batal'on 1-y otdel'noy motostrelkovoy brigady"
+        location = 7500
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 0.7
+		start_manpower_factor = 1
+    }
+}
+
+units = {
+    division= {
+        name = "2-y Motosrelkovy batal'on 1-y otdel'noy motostrelkovoy brigady"
+        location = 7500
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 0.8
+		start_manpower_factor = 0.5
+    }
+}
+
+units = {
+    division= {
+        name = "3-y Motosrelkovy batal'on 1-y otdel'noy motostrelkovoy brigady"
+        location = 7500
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.53
+        start_equipment_factor = 0.7
+		start_manpower_factor = 0.8
+    }
+}
+
+units = {
+    division= {
+        name = "1-y Tankovy batal'on 1-y otdel'noy motostrelkovoy brigady"
+        location = 7500
+        division_template = "Tankovyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 0.68
+		start_manpower_factor = 0.7
+    }
+}

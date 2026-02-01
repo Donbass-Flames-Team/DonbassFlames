@@ -301,7 +301,7 @@ focus_tree = {
 	focus = {
 		id = DPR_batallion_disel
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
+		cost = 0.5
 		x = -2
 		y = 2
 
@@ -329,7 +329,7 @@ focus_tree = {
 	focus = {
 		id = DPR_batallion_sparta
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
+		cost = 0.5
 		x = 0
 		y = 2
 
@@ -357,7 +357,7 @@ focus_tree = {
 	focus = {
 		id = DPR_batallion_somali
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
+		cost = 0.5
 		x = 2
 		y = 2
 
@@ -385,7 +385,7 @@ focus_tree = {
 	focus = {
 		id = DPR_batallion_oplot
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
+		cost = 0.5
 		x = -4
 		y = 2
 
@@ -406,6 +406,61 @@ focus_tree = {
 			custom_effect_tooltip = DPR_battalion_oplot_tt
 			hidden_effect = {
 				load_oob = DPR_oplot_batallion
+			}
+		}
+	}
+
+	focus = {
+		id = DPR_expansion_of_the_dpr_elite
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 3
+
+		prerequisite = {focus = DPR_batallion_sparta}
+		prerequisite = {focus = DPR_batallion_somali}
+		prerequisite = {focus = DPR_batallion_disel}
+		prerequisite = {focus = DPR_batallion_oplot}
+		relative_position_id = DPR_armed_forces_of_dpr
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+			hidden_effect = {
+				load_oob = DPR_expand_elite_of_dpr
+			}
+		}
+	}
+
+	focus = {
+		id = DPR_first_army_corp_of_dpr
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = {focus = DPR_expansion_of_the_dpr_elite}
+		relative_position_id = DPR_expansion_of_the_dpr_elite
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+			hidden_effect = {
+				load_oob = DPR_first_army_corp_of_people_millitia
 			}
 		}
 	}
@@ -520,7 +575,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
     		526 = {
-			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = DPR days = 25 }
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = DPR }
 		    }        
 		}
 	}

@@ -179,3 +179,20 @@ country_event = {
 		}
 	}
 }
+
+#Формирование 1-го армейского корпуса народной милиции днр
+country_event = {
+	id = DPR.11
+	title = DPR.11.t
+	desc = DPR.11.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.11.a
+		add_war_support = 0.015
+		add_command_power = 10
+		
+	}
+}
