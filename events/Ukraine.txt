@@ -1609,16 +1609,16 @@ country_event = {
             attacker = {
                 state = 432
                 num_provinces = 1
-                on_win = ukraine.46
-                on_lose = ukraine.47
+                on_win = DPR.2
+                on_lose = DPR.3
                 dig_in_factor = 0
                 terrain_factor = 0
             }	
             defender = {
                 state = 433
                 num_provinces = 1
-                on_win = DPR.2
-                on_lose = DPR.3
+                on_win = ukraine.46
+                on_lose = ukraine.47
             }
         }
 	}
