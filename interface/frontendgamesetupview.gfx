@@ -260,7 +260,23 @@ spriteTypes = {
 		name = "GFX_2019_date"
 		texturefile = "gfx/GFX_2019_date.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_2020_date"
+		texturefile = "gfx/GFX_2020_date.dds"
+	}
+	spriteType = {
+		name = "GFX_2022_date"
+		texturefile = "gfx/GFX_2022_date.dds"
+	}	
+	spriteType = {
+		name = "GFX_2023_date"
+		texturefile = "gfx/GFX_2023_date.dds"
+	}
+	spriteType = {
+		name = "GFX_2025_date"
+		texturefile = "gfx/GFX_2025_date.dds"
+	}
+
 	spriteType = {
 		name = "GFX_disconnected_button"
 		textureFile = "gfx/interface/save_game_disconnected.dds"

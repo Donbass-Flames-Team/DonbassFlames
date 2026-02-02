@@ -24,7 +24,7 @@ guiTypes = {
 		iconType = {
 			name = "icon"
 			spriteType = "GFX_select_date_1936"
-			position = { x = 27 y = 28 }
+			position = { x = 34 y = 29 }
 			alwaystransparent = yes
 		}
 	}
@@ -499,7 +499,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 390 y = 20 }
+			position = { x = 390 y = 10 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
@@ -533,7 +533,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "button_2015"
-			position = { x = 20 y = -422 }
+			position = { x = 28 y = -594 }
 			quadTextureSprite ="GFX_2015_date"
 			Orientation = "LOWER_LEFT"
 			clicksound = confirm_dog
@@ -542,16 +542,52 @@ guiTypes = {
 
 		ButtonType = {
 			name = "button_2019"
-			position = { x = 20 y = -245 }
+			position = { x = 290 y = -594 }
 			quadTextureSprite ="GFX_2019_date"
 			Orientation = "LOWER_LEFT"
 			clicksound = confirm_dog
 			oversound = ui_menu_over
 		}
 
+		ButtonType = {
+			name = "button_2020"
+			position = { x = 28 y = -416 }
+			quadTextureSprite ="GFX_2020_date"
+			Orientation = "LOWER_LEFT"
+			clicksound = confirm_dog
+			oversound = ui_menu_over
+		}	
+
+		ButtonType = {
+			name = "button_2022"
+			position = { x = 290 y = -416 }
+			quadTextureSprite ="GFX_2022_date"
+			Orientation = "LOWER_LEFT"
+			clicksound = confirm_dog
+			oversound = ui_menu_over
+		}	
+
+		ButtonType = {
+			name = "button_2023"
+			position = { x = 28 y = -238 }
+			quadTextureSprite ="GFX_2023_date"
+			Orientation = "LOWER_LEFT"
+			clicksound = confirm_dog
+			oversound = ui_menu_over
+		}		
+
+		ButtonType = {
+			name = "button_2025"
+			position = { x = 290 y = -238 }
+			quadTextureSprite ="GFX_2025_date"
+			Orientation = "LOWER_LEFT"
+			clicksound = confirm_dog
+			oversound = ui_menu_over
+		}	
+
 		instantTextBoxType = {
 			name = "bookmark_title"
-			position = { x = 755 y = 104 }
+			position = { x = 755 y = 75 }
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 170
@@ -562,7 +598,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "bookmark_desc"
 			position = { x = 585 y = 153 }
-			font = "hoi_30header"
+			font = "hoi_16mbs"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 490
 			maxHeight = 220
@@ -571,7 +607,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "back_button"
-			position = { x = 32 y = 773 }
+			position = { x = 563 y = 740 }
 			quadTextureSprite ="GFX_button_221x34"
 			buttonText = "BACK"
 			buttonFont = "hoi_18mbs"
@@ -582,7 +618,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "select_button"
-			position = { x = 863 y = 773 }
+			position = { x = 857 y = 740 }
 			quadTextureSprite ="GFX_button_221x34"
 			buttonText = "FE_SELECT_SCENARIO"
 			buttonFont = "hoi_18mbs"
