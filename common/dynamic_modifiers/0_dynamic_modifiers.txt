@@ -77,7 +77,7 @@ DPR_donetsk_castle_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
 	supply_factor = 0.15
 }
 
-DPR_attack_for_dpr_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+DPR_attack_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
 	enable = { always = yes }
 
 	icon = GFX_idea_UKR_ukraine_army

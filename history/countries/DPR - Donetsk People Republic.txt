@@ -25,7 +25,7 @@ recruit_character = zheka_vasilievich
 		mortar_weapons3 = 1
 
 		tech_support = 1
-
+        basic_train = 1 
 		toward_artilerry = 1
 		spau_artillery = 1
 		multiple_launch_rocket_system = 1
@@ -76,4 +76,10 @@ recruit_character = zheka_vasilievich
 	recruit_character = dmitry_trapeznikov
 	recruit_character = aleksandr_zakharchenko
 	recruit_character = igor_strelkov_girkin
+
+	add_equipment_to_stockpile = {
+		type = train_equipment_1
+		amount = 50
+		producer = DPR
+	}
 }

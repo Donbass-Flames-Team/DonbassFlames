@@ -1,0 +1,38 @@
+units = {
+    division= {
+        name = "1-y motostrelkovyy batal'on «Semenovskiy» 9-go otdel'nogo gvardeyskogo polka morskoy pekhoty"
+        location = 7500
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 0.8
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "2-y motostrelkovyy batal'on 9-go otdel'nogo gvardeyskogo polka morskoy pekhoty"
+        location = 7500
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }    
+
+    division= {
+        name = "1-y tankovy batal'on 9-go otdel'nogo gvardeyskogo polka morskoy pekhoty"
+        location = 7500
+        division_template = "Tankovyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 0.7
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y batal'on samokhidnoyi artyleriyi 9-go otdel'nogo gvardeyskogo polka morskoy pekhoty"
+        location = 7500
+        division_template = "Batalyon samokhidnoyi artyleriyi"
+        start_experience_factor = 0.4
+        start_equipment_factor = 0.7
+		start_manpower_factor = 1
+    }
+
+}
