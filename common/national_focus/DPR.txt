@@ -507,9 +507,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-			hidden_effect = {
-				load_oob = DPR_first_army_corp_of_people_millitia
-			}
+			
 		}
 	}
 
@@ -526,7 +524,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-			date > 2015.1.1
+			NOT = {
+				has_war_with = UKR
+			}
+			date > 2015.3.1
 		}
 
 		completion_reward = {
@@ -1172,7 +1173,42 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-             
+    		468 = {
+			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+		    }	
+    		421 = {
+			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+		    }	
+    		388 = {
+			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+		    }
+    		337 = {
+			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+		    }	
+    		359 = {
+			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+		    }		
+    		328 = {
+			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+		    }	
+    		312 = {
+			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+		    }		
+    		353 = {
+			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+		    }		
+    		652 = {
+			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
+		    }
+    		486 = {
+			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
+		    }		
+    		402 = {
+			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
+		    }
+    		381 = {
+			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
+		    }																								
 		}
 	}
 
