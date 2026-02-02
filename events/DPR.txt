@@ -229,3 +229,18 @@ country_event = {
 		load_oob = DPR_regular_from_russia_novoazovsk
 	}
 }
+
+#Расформирование Донецкого ополчение
+country_event = {
+	id = DPR.14
+	title = DPR.14.t
+	desc = DPR.14.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.14.a
+		load_oob = DPR_regular_from_russia_novoazovsk
+	}
+}
