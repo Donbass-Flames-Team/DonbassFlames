@@ -190,7 +190,111 @@ country_event = {
 		add_stability = 0.05
 		hidden_effect = {
 			DPR = {
-				if = { limit = { 518 = { is_controlled_by = DPR } } transfer_state = 518 }
+				if = { limit = { 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
+				if = { limit = { 502 = { is_controlled_by = DPR } } transfer_state = 502 }
+				if = { limit = { 489 = { is_controlled_by = DPR } } transfer_state = 489 }
+				if = { limit = { 653 = { is_controlled_by = DPR } } transfer_state = 653 transfer_state = 489 }
+				if = { limit = { 446 = { is_controlled_by = DPR } } transfer_state = 446 }
+				if = { limit = { 486 = { is_controlled_by = DPR } } transfer_state = 486 }
+				if = { limit = { 652 = { is_controlled_by = DPR } } transfer_state = 652 }
+				if = { limit = { 450 = { is_controlled_by = DPR } } transfer_state = 450 }
+				if = { limit = { 527 = { is_controlled_by = DPR } } transfer_state = 527 }
+				transfer_state = 444
+				transfer_state = 437
+				transfer_state = 448
+				transfer_state = 394
+				transfer_state = 424
+				transfer_state = 402
+				transfer_state = 435
+				transfer_state = 582
+				transfer_state = 438
+				transfer_state = 467
+				transfer_state = 398
+				transfer_state = 418
+				transfer_state = 430
+                transfer_state = 265
+				transfer_state = 452
+				transfer_state = 381
+				transfer_state = 397
+				transfer_state = 404
+				transfer_state = 408
+				transfer_state = 432
+			}
+			LPR = {
+				transfer_state = 387
+				transfer_state = 406
+				transfer_state = 351
+				transfer_state = 363
+				transfer_state = 384
+				transfer_state = 416
+				transfer_state = 413
+				transfer_state = 427
+				transfer_state = 346
+				transfer_state = 357
+				transfer_state = 340
+				transfer_state = 329
+				transfer_state = 362
+				transfer_state = 370
+				transfer_state = 366
+				transfer_state = 352
+				transfer_state = 335
+				transfer_state = 339
+				transfer_state = 343
+				transfer_state = 334
+				if = { limit = { 333 = { is_controlled_by = LPR } } transfer_state = 333 transfer_state = 344 }
+				if = { limit = { 326 = { is_controlled_by = LPR } } transfer_state = 326 }
+			}
+			UKR = {
+				if = { 
+					limit = { 433 = { is_controlled_by = UKR } } 
+				    country_event = {
+					    id = ukraine.45
+					    days = 5
+				    }
+			    }
+				transfer_state = 318
+				if = { limit = { 526 = { is_controlled_by = UKR } } transfer_state = 526 transfer_state = 650 }
+				if = { limit = { 650 = { is_fully_controlled_by = UKR } } transfer_state = 650 }
+				if = { limit = { 652 = { is_controlled_by = UKR } } transfer_state = 652 }
+			}
+			white_peace = DPR
+			white_peace = LPR
+			set_global_flag = second_phase_of_ato
+		}
+	}
+}
+
+#Перекрытие подачи воды в Крым
+country_event = {
+	id = russia.12
+	title = russia.12.t
+	desc = russia.12.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.12.a
+		add_stability = -0.03
+		add_political_power = -35
+	}
+}
+
+#Вторые Минские соглашения
+country_event = {
+	id = russia.13
+	title = russia.13.t
+	desc = russia.13.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.13.a
+		add_stability = 0.05
+hidden_effect = {
+			DPR = {
+				if = { limit = { 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
 				if = { limit = { 502 = { is_controlled_by = DPR } } transfer_state = 502 }
 				if = { limit = { 489 = { is_controlled_by = DPR } } transfer_state = 489 }
 				if = { limit = { 653 = { is_controlled_by = DPR } } transfer_state = 653 transfer_state = 489 }
@@ -259,106 +363,7 @@ country_event = {
 			}
 			white_peace = DPR
 			white_peace = LPR
-		}
-	}
-}
-
-#Перекрытие подачи воды в Крым
-country_event = {
-	id = russia.12
-	title = russia.12.t
-	desc = russia.12.d
-	#picture = GFX_report_event_royal_parade
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = russia.12.a
-		add_stability = -0.03
-		add_political_power = -35
-	}
-}
-
-#Вторые Минские соглашения
-country_event = {
-	id = russia.13
-	title = russia.13.t
-	desc = russia.13.d
-	#picture = GFX_report_event_royal_parade
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = russia.13.a
-		add_stability = 0.05
-		hidden_effect = {
-			DPR = {
-				if = { limit = { 518 = { is_controlled_by = DPR } } transfer_state = 518 }
-				if = { limit = { 502 = { is_controlled_by = DPR } } transfer_state = 502 }
-				if = { limit = { 489 = { is_controlled_by = DPR } } transfer_state = 489 }
-				if = { limit = { 653 = { is_controlled_by = DPR } } transfer_state = 653 transfer_state = 489 }
-				if = { limit = { 446 = { is_controlled_by = DPR } } transfer_state = 446 }
-				if = { limit = { 486 = { is_controlled_by = DPR } } transfer_state = 486 }
-				if = { limit = { 652 = { is_controlled_by = DPR } } transfer_state = 652 }
-				if = { limit = { 450 = { is_controlled_by = DPR } } transfer_state = 450 }
-				if = { limit = { 527 = { is_controlled_by = DPR } } transfer_state = 527 }
-				if = { limit = { 13 = { is_controlled_by = DPR } } transfer_state = 13 }
-				if = { limit = { 378 = { is_controlled_by = DPR } } transfer_state = 378 }
-				if = { limit = { 376 = { is_controlled_by = DPR } } transfer_state = 376 }	
-				if = { limit = { 651 = { is_controlled_by = DPR } } transfer_state = 651 }			
-				transfer_state = 444
-				transfer_state = 437
-				transfer_state = 448
-				transfer_state = 394
-				transfer_state = 424
-				transfer_state = 402
-				transfer_state = 435
-				transfer_state = 582
-				transfer_state = 438
-				transfer_state = 467
-				transfer_state = 398
-				transfer_state = 418
-				transfer_state = 430
-                transfer_state = 265
-				transfer_state = 452
-				transfer_state = 381
-				transfer_state = 397
-				transfer_state = 404
-				transfer_state = 408
-				transfer_state = 432
-			}
-			LPR = {
-				transfer_state = 387
-				transfer_state = 406
-				transfer_state = 351
-				transfer_state = 363
-				transfer_state = 384
-				transfer_state = 416
-				transfer_state = 413
-				transfer_state = 427
-				transfer_state = 346
-				transfer_state = 357
-				transfer_state = 340
-				transfer_state = 329
-				transfer_state = 362
-				transfer_state = 370
-				transfer_state = 366
-				transfer_state = 352
-				transfer_state = 335
-				transfer_state = 339
-				transfer_state = 343
-				transfer_state = 334
-				if = { limit = { 333 = { is_controlled_by = LPR } } transfer_state = 333 transfer_state = 344 }
-				if = { limit = { 326 = { is_controlled_by = LPR } } transfer_state = 326 }
-			}
-			UKR = {
-				transfer_state = 318
-				if = { limit = { 526 = { is_controlled_by = UKR } } transfer_state = 526 transfer_state = 486 }
-				if = { limit = { 650 = { is_fully_controlled_by = UKR } } transfer_state = 650 }
-				if = { limit = { 652 = { is_controlled_by = UKR } } transfer_state = 652 }
-			}
-			white_peace = DPR
-			white_peace = LPR
+			set_global_flag = second_phase_of_ato
 		}
 	}
 }

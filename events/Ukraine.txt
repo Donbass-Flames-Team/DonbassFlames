@@ -2194,3 +2194,17 @@ country_event = {
 		name = ukraine.70.a		
 	}
 }
+
+# Восстание в Харьковской области расширяется
+country_event = {
+	id = ukraine.71
+	title = ukraine.71.t
+	desc = ukraine.71.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.71.a		
+	}
+}
