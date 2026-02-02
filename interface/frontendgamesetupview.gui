@@ -10,7 +10,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "bookmark_entry"
 		position = { x= 0 y = 0 }
-		size = { width=232 height=211}
+		size = { width=20 height=20}
 		clipping = no
 		fade_time = 500
 		fade_type = linear
@@ -535,6 +535,15 @@ guiTypes = {
 			name = "button_2015"
 			position = { x = 28 y = -594 }
 			quadTextureSprite ="GFX_2015_date"
+			Orientation = "LOWER_LEFT"
+			clicksound = confirm_dog
+			oversound = ui_menu_over
+		}
+
+		ButtonType = {
+			name = "button_2014"
+			position = { x = 290 y = -772 }
+			quadTextureSprite ="GFX_2014_date"
 			Orientation = "LOWER_LEFT"
 			clicksound = confirm_dog
 			oversound = ui_menu_over
