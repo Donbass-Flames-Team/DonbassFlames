@@ -6,162 +6,18 @@ strategic_region = {
 		240 709 741 761 803 1308 1652 1879 2537 2972 3031 3114 3706 3769 3873 3991 4137 4484 4589 4890 5136 5278 5393 5430 5520 5893 6104 7117 7430 7448 7513 7947 8109 8459 8654 9035 9139 9431 9550 10070 10220 10411 10479 10712 10946 11003 11142 11382 11978 15318 15384 15419 15422 15428 15438 15443 15447 15448 15468 15496 15497 15526 15529 15547 15583 15602 15685 15703 15710 15845 15943 18080 
 	}
 
-	weather = {
-		period = {
-			between = { 0.0 30.0 }
-			temperature = { 12 30 }
-			no_phenomenon = 0.5
-			rain_light = 0.25
-			rain_heavy = 0.1
-			snow = 0
-			blizzard = 0
-			arctic_water = 0
-			mud = 1
-			sandstorm = 0
-			min_snow_level = 0
-		}
-		period = {
-			between = { 0.1 27.1 }
-			temperature = { 12 30 }
-			no_phenomenon = 0.5
-			rain_light = 0.25
-			rain_heavy = 0.1
-			snow = 0
-			blizzard = 0
-			arctic_water = 0
-			mud = 1
-			sandstorm = 0
-			min_snow_level = 0
-		}
-		period = {
-			between = { 0.2 30.2 }
-			temperature = { 12 30 }
-			no_phenomenon = 0.5
-			rain_light = 0.25
-			rain_heavy = 0.1
-			snow = 0
-			blizzard = 0
-			arctic_water = 0
-			mud = 1
-			sandstorm = 0
-			min_snow_level = 0
-		}
-		period = {
-			between = { 0.3 29.3 }
-			temperature = { 12 30 }
-			no_phenomenon = 0.5
-			rain_light = 0.25
-			rain_heavy = 0.1
-			snow = 0
-			blizzard = 0
-			arctic_water = 0
-			mud = 1
-			sandstorm = 0
-			min_snow_level = 0
-		}
-		period = {
-			between = { 0.4 30.4 }
-			temperature = { 12 30 }
-			no_phenomenon = 0.5
-			rain_light = 0.25
-			rain_heavy = 0.1
-			snow = 0
-			blizzard = 0
-			arctic_water = 0
-			mud = 1
-			sandstorm = 0
-			min_snow_level = 0
-		}
-		period = {
-			between = { 0.5 29.5 }
-			temperature = { 12 30 }
-			no_phenomenon = 0.5
-			rain_light = 0.25
-			rain_heavy = 0.1
-			snow = 0
-			blizzard = 0
-			arctic_water = 0
-			mud = 1
-			sandstorm = 0
-			min_snow_level = 0
-		}
-		period = {
-			between = { 0.6 30.6 }
-			temperature = { 12 30 }
-			no_phenomenon = 0.5
-			rain_light = 0.25
-			rain_heavy = 0.1
-			snow = 0
-			blizzard = 0
-			arctic_water = 0
-			mud = 1
-			sandstorm = 0
-			min_snow_level = 0
-		}
-		period = {
-			between = { 0.7 30.7 }
-			temperature = { 12 30 }
-			no_phenomenon = 0.5
-			rain_light = 0.25
-			rain_heavy = 0.1
-			snow = 0
-			blizzard = 0
-			arctic_water = 0
-			mud = 1
-			sandstorm = 0
-			min_snow_level = 0
-		}
-		period = {
-			between = { 0.8 29.8 }
-			temperature = { 12 30 }
-			no_phenomenon = 0.5
-			rain_light = 0.25
-			rain_heavy = 0.1
-			snow = 0
-			blizzard = 0
-			arctic_water = 0
-			mud = 1
-			sandstorm = 0
-			min_snow_level = 0
-		}
-		period = {
-			between = { 0.9 30.9 }
-			temperature = { 12 30 }
-			no_phenomenon = 0.5
-			rain_light = 0.25
-			rain_heavy = 0.1
-			snow = 0
-			blizzard = 0
-			arctic_water = 0
-			mud = 1
-			sandstorm = 0
-			min_snow_level = 0
-		}
-		period = {
-			between = { 0.10 29.10 }
-			temperature = { 12 30 }
-			no_phenomenon = 0.5
-			rain_light = 0.25
-			rain_heavy = 0.1
-			snow = 0
-			blizzard = 0
-			arctic_water = 0
-			mud = 1
-			sandstorm = 0
-			min_snow_level = 0
-		}
-		period = {
-			between = { 0.11 30.11 }
-			temperature = { 12 30 }
-			no_phenomenon = 0.5
-			rain_light = 0.25
-			rain_heavy = 0.1
-			snow = 0
-			blizzard = 0
-			arctic_water = 0
-			mud = 1
-			sandstorm = 0
-			min_snow_level = 0
-		}
+weather = {
+		period = { between = { 0.0 30.0 } temperature = { -25 -10 } no_phenomenon = 0.2 snow = 0.5 blizzard = 0.3 }
+		period = { between = { 0.1 27.1 } temperature = { -20 -5 } no_phenomenon = 0.3 snow = 0.5 blizzard = 0.2 }
+		period = { between = { 0.2 30.2 } temperature = { -10 5 } no_phenomenon = 0.3 snow = 0.4 mud = 0.3 }
+		period = { between = { 0.3 29.3 } temperature = { 0 12 } no_phenomenon = 0.4 rain_light = 0.4 mud = 0.2 }
+		period = { between = { 0.4 30.4 } temperature = { 10 18 } no_phenomenon = 0.6 rain_light = 0.4 }
+		period = { between = { 0.5 29.5 } temperature = { 15 24 } no_phenomenon = 0.6 rain_light = 0.4 }
+		period = { between = { 0.6 30.6 } temperature = { 15 25 } no_phenomenon = 0.7 rain_light = 0.3 }
+		period = { between = { 0.7 30.7 } temperature = { 15 25 } no_phenomenon = 0.7 rain_light = 0.3 }
+		period = { between = { 0.8 29.8 } temperature = { 10 20 } no_phenomenon = 0.5 rain_light = 0.5 }
+		period = { between = { 0.9 30.9 } temperature = { 0 10 } no_phenomenon = 0.4 snow = 0.2 mud = 0.4 }
+		period = { between = { 0.10 29.10 } temperature = { -10 2 } no_phenomenon = 0.3 snow = 0.5 }
+		period = { between = { 0.11 30.11 } temperature = { -20 -8 } no_phenomenon = 0.2 snow = 0.6 blizzard = 0.2 }
 	}
 }
