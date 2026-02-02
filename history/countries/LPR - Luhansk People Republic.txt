@@ -25,6 +25,7 @@ recruit_character = valeryy_bolotov
 		mortar_weapons1 = 1
 		mortar_weapons2 = 1
 		mortar_weapons3 = 1
+		basic_train = 1 
 
 		tech_support = 1
 
@@ -35,6 +36,12 @@ recruit_character = valeryy_bolotov
 		uniform_equipment1 = 1
 		uniform_equipment2 = 1
 	}
+
+	add_equipment_to_stockpile = {
+		type = train_equipment_1
+		amount = 36
+		producer = LPR
+	}	
 
 	add_ideas = {
 		service_by_requirement

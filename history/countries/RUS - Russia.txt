@@ -22,6 +22,8 @@
 		mortar_weapons2 = 1
 		mortar_weapons3 = 1
 
+		
+
 		tech_support = 1
 
 		toward_artilerry = 1
@@ -30,6 +32,7 @@
 		uniform_equipment = 1
 		uniform_equipment1 = 1
 		uniform_equipment2 = 1
+		basic_train = 1
 	}
 
 DF_economy_setup = yes
@@ -41,6 +44,12 @@ add_ideas = {
 	limited_exports
 	low_economic_mobilisation
 }
+
+	add_equipment_to_stockpile = {
+		type = train_equipment_1
+		amount = 600
+		producer = RUS
+	}
 
 create_faction = "CSTO"
 add_to_faction = BLR

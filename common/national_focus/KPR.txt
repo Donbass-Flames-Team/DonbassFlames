@@ -1,0 +1,211 @@
+focus_tree = {
+	id = kharkov_people_republic
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = KPR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2500 y = 500 }
+	
+	focus = {
+		id = KPR_arrise_novorossia
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.5
+		x = 12
+		y = 0
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
+			add_ideas = DPR_arrise_donbass_idea
+		}
+	}
+
+	focus = {
+		id = KPR_appeal_to_the_russian_spirit
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.5
+		x = 0
+		y = 1
+
+		
+		prerequisite = {focus = KPR_arrise_novorossia}
+		relative_position_id = KPR_arrise_novorossia
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
+			add_ideas = DPR_russian_spring_idea
+			hidden_effect = {
+				load_oob = KPR_millitia
+			}
+		}
+	}
+
+	focus = {
+		id = KPR_baricades_in_kharkov
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 2
+		y = 1
+
+		
+		prerequisite = {focus = KPR_arrise_novorossia}
+		relative_position_id = KPR_arrise_novorossia
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
+			custom_effect_tooltip = KPR_bunkers_in_kharkov
+        	hidden_effect = {
+				#Kharkov
+                if = {
+				    limit = {
+					    KPR = {
+						    controls_province = 14090
+					    }
+				    }
+				    203 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 14090
+							instant_build = yes
+					    }
+				    }
+			    }
+                if = {
+				    limit = {
+					    KPR = {
+						    controls_province = 14071
+					    }
+				    }
+				    203 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 14071
+							instant_build = yes
+					    }
+				    }
+			    }	
+                if = {
+				    limit = {
+					    KPR = {
+						    controls_province = 14119
+					    }
+				    }
+				    203 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 14119
+							instant_build = yes
+					    }
+				    }
+			    }		
+                if = {
+				    limit = {
+					    KPR = {
+						    controls_province = 10148
+					    }
+				    }
+				    203 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 10148
+							instant_build = yes
+					    }
+				    }
+			    }	
+                if = {
+				    limit = {
+					    KPR = {
+						    controls_province = 14138
+					    }
+				    }
+				    203 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 14138
+							instant_build = yes
+					    }
+				    }
+			    }				
+                if = {
+				    limit = {
+					    KPR = {
+						    controls_province = 14101
+					    }
+				    }
+				    212 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 4
+						    province = 14101
+							instant_build = yes
+					    }
+				    }
+			    }												
+			}
+		}
+	}
+
+	focus = {
+		id = KPR_expand_uprising
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 1
+		y = 2
+
+		
+		prerequisite = {focus = KPR_appeal_to_the_russian_spirit}
+		prerequisite = {focus = KPR_baricades_in_kharkov}
+		relative_position_id = KPR_arrise_novorossia
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
+			custom_effect_tooltip = KPR_expadned_uprising_tt
+			hidden_effect = {
+				load_oob = KPR_expanded_uprising
+				UKR = {
+					country_event = ukraine.71
+				}
+			}
+		}
+	}
+}

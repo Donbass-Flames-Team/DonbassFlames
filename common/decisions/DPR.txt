@@ -1,0 +1,28 @@
+DPR_armed_forces_of_dpr_category = {
+
+	DPR_form_calimus_brigada = {
+
+		icon = GFX_decision_generic_Guns_from_communists
+		
+		available = {
+		    tag = DPR
+		}
+	    
+		visible = {
+			tag = DPR
+			has_completed_focus = DPR_armed_forces_of_dpr		
+		}
+		
+		fire_only_once = yes
+
+		cost = 25
+
+		complete_effect = {
+			load_oob = DPR_calimus_brigada_2014
+		}
+
+		ai_will_do = {
+			factor = 50		
+		}
+	}
+}

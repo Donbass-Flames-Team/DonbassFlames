@@ -1,7 +1,7 @@
 state = { 
 	id = 110 
 	name = "STATE_110" 
-	manpower = 35883 
+	manpower =  2593151
 	
 	state_category = town 
 	buildings_max_level_factor = 1 
@@ -12,8 +12,8 @@ state = {
 		owner = RUS 
 		
 		buildings = {
-			industrial_complex = 0
-			arms_factory = 0
+			industrial_complex = 10
+			arms_factory = 12
 			infrastructure = 2 
 
 			synthetic_refinery = 3
