@@ -3747,6 +3747,8 @@ focus_tree = {
                 idea = UKR_organize_defence_idea 
                 days = 45
             }
+			add_to_variable = { UKR_AFU_army_defence_factor = 0.10 }
+		    custom_effect_tooltip = UKR_organize_defense_tt
 		}
 	}
 
@@ -3880,6 +3882,60 @@ focus_tree = {
 				type = annex_everything
 				target = DPR
 			}
+			declare_war_on = {
+				type = annex_everything
+				target = LPR
+			}	
+			if = {
+				limit = {
+					country_exists = KPR
+				}
+			    declare_war_on = {
+				    type = annex_everything
+				    target = KPR
+			    }				
+			}	
+			if = {
+				limit = {
+					country_exists = OPR
+				}
+			    declare_war_on = {
+				    type = annex_everything
+				    target = OPR
+			    }				
+			}	
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+						    DPR = { 
+							    NOT = {
+								    is_ai = yes
+							    }
+						    }
+						    KPR = { 
+							    NOT = {
+								    is_ai = yes
+							    }
+						    }	
+						    OPR = { 
+							    NOT = {
+								    is_ai = yes
+							    }
+						    }
+						    LPR = { 
+							    NOT = {
+								    is_ai = yes
+							    }
+						    }																				
+					    }
+						UKR = {
+							is_ai = yes
+						}
+					}
+                    load_oob = UKR_ATO_Buff
+				}
+			}				
 		}
 	}
 
@@ -3999,7 +4055,7 @@ focus_tree = {
 	focus = {
 		id = UKR_prepare_the_defense_of_cities
 		icon = GFX_focus_UKR_prepare_defense
-		cost = 2
+		cost = 0.5
 		x = -2
 		y = 4
 
@@ -4028,7 +4084,7 @@ focus_tree = {
 	focus = {
 		id = UKR_humanitarion_help_to_people
 		icon = GFX_focus_UKR_humanitarion_help_to_people
-		cost = 1
+		cost = 0.5
 		x = 0
 		y = 1
 
@@ -4079,6 +4135,16 @@ focus_tree = {
 		    add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
 		    custom_effect_tooltip = UKR_volunteer_battalions_tt
 			add_political_power = 10
+			hidden_effect = {
+				if = {
+					limit = {
+						UKR = {
+							is_ai = yes
+						}
+					}
+					add_political_power = 150
+				}
+			}
 		}
 	}
 

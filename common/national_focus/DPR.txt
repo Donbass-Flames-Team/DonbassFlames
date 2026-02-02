@@ -31,6 +31,9 @@ focus_tree = {
 			add_stability = 0.05
 			add_political_power = 35
 			add_command_power = 10
+			hidden_effect = {
+				set_country_flag = DPR_first_phase_of_ato
+			}
 		}
 	}
 
