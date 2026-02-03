@@ -10,7 +10,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "bookmark_entry"
 		position = { x= 1 y = 0 }
-		size = { width = 252 height = 174 }
+		size = { width = 52 height = 174 }
 		clipping = no
 		fade_time = 500
 		fade_type = linear
@@ -529,6 +529,17 @@ guiTypes = {
 				max_slots_horizontal = 2
 				format = "UPPER_LEFT"
 			}
+		}
+
+		instantTextBoxType = {
+			name = "bookmark_note_tittle"
+			position = { x = 755 y = 505 }
+			font = "hoi_36header"
+			text = "NOTES"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 170
+			maxHeight = 50
+			format = left
 		}
 
 		ButtonType = {
