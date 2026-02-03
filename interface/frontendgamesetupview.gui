@@ -608,7 +608,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "bookmark_desc"
-			position = { x = 585 y = 153 }
+			position = { x = 585 y = 121 }
 			font = "hoi_16mbs"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 475
@@ -618,7 +618,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "back_button"
-			position = { x = 563 y = 740 }
+			position = { x = 562 y = 740 }
 			quadTextureSprite ="GFX_button_221x34"
 			buttonText = "BACK"
 			buttonFont = "hoi_18mbs"
@@ -629,7 +629,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "select_button"
-			position = { x = 857 y = 740 }
+			position = { x = 859 y = 740 }
 			quadTextureSprite ="GFX_button_221x34"
 			buttonText = "FE_SELECT_SCENARIO"
 			buttonFont = "hoi_18mbs"
