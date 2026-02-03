@@ -16,6 +16,7 @@ ideas = {
 			modifier = {
 			    stability_factor = -0.15
 				political_power_gain = -0.05
+		        production_speed_buildings_factor = -0.15
 				consumer_goods_factor = 0.15
 			}
 		}
@@ -38,7 +39,7 @@ ideas = {
 			}
 		}
 
-		UKR_protests = {
+		RUS_active_propaganda_idea = {
             allowed = {
                 always = yes
             }
@@ -56,7 +57,7 @@ ideas = {
 			}
 		}
 
-		UKR_protests_in_the_east = {
+		RUS_corruption_and_oligarchy_idea = {
             allowed = {
                 always = yes
             }
@@ -69,30 +70,12 @@ ideas = {
 			
 			modifier = {
 			    stability_factor = -0.15
-				political_power_gain = -0.05
-				stability_weekly = -0.001
-			}
-		}
-
-		UKR_helpless_government = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
-
-			removal_cost = -1
-			
-			modifier = {
-			    stability_factor = -0.25
-				political_power_gain = -0.2
+				political_power_gain = 0.05
 				consumer_goods_factor = 0.25
 			}
 		}
-        
-		UKR_disorderly_government = {
+
+		RUS_fears_of_protests_idea = {
             allowed = {
                 always = yes
             }
@@ -104,12 +87,29 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			    stability_factor = -0.15
-				political_power_gain = -0.4
+			    stability_factor = -0.05
+				political_power_gain = -0.1
+			}
+		}
+        
+		RUS_oil_economy_idea = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.15
 			}
 		}
 
-		UKR_separatism = {
+		RUS_vertical_of_power_idea = {
             allowed = {
                 always = yes
             }
@@ -121,13 +121,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			    stability_factor = -0.15
-				political_power_gain = -0.05
-				war_support_factor = -0.15
+			    stability_factor = 0.15
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.075
 			}
 		}
 
-		UKR_ukraine_army = {
+		RUS_military_revival_idea = {
             allowed = {
                 always = yes
             }
@@ -139,98 +139,15 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			    army_attack_factor = -0.25
+			    army_attack_factor = 0.05
+				planning_speed = 0.1
 				army_speed_factor = -0.15
 				army_org_factor = -0.10
 				army_morale_factor = -0.15
-				breakthrough_factor = -0.25
+				breakthrough_factor = -0.15
 				initiative_factor = -0.075
-				planning_speed = -0.2
 				war_support_factor = -0.15
-			}
-		}
-
-		UKR_dependence_on_russia = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
-
-			removal_cost = -1
-			
-			modifier = {
-			    consumer_goods_factor = 0.25
-				political_power_gain = -0.1
-				stability_factor = -0.15
-				war_support_factor = -0.1
-			}
-		}
-
-		UKR_ukrainian_mic = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
-
-			removal_cost = -1
-			
-			modifier = {
-			    production_factory_max_efficiency_factor = -0.25
-				production_speed_arms_factory_factor = -0.45 
-			}
-		}
-
-		UKR_emergency_redeployment_of_troops_idea = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
-
-			removal_cost = -1
-			
-			modifier = {
-			    army_speed_factor = 0.35
-			}
-		}	
-		
-		UKR_organize_defence_idea = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
-
-			removal_cost = -1
-			
-			modifier = {
-			    army_defence_factor = 0.25
-			}
-		}
-
-		UKR_defence_of_cities_idea = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
-
-			removal_cost = -1
-			
-			modifier = {
-			    production_speed_bunker_factor = 0.25
+				recruitable_population_factor = -0.65
 			}
 		}
 	}

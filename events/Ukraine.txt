@@ -2069,7 +2069,7 @@ country_event = {
 
 	option = {
 		name = ukraine.64.a		
-		add_stability = 0.05
+		add_stability = 0.065
 		add_political_power = 15	
 	}
 }
@@ -2108,6 +2108,7 @@ country_event = {
 			is_controlled_by = UKR
 		}
 		date > 2014.5.15
+		tag = UKR
 	}
 
 	immediate = {

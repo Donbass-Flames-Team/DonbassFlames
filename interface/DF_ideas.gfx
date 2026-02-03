@@ -156,5 +156,36 @@ spriteTypes = {
         name = "GFX_idea_LPR_mercenaries_and_supporters"
         texturefile = "gfx/interface/ideas/LPR/LPR_mercenaries_and_supporters.dds"
     }
+    
 
+    # RUS Ideas
+    spriteType = {
+        name = "GFX_idea_RUS_active_propaganda_idea"
+        texturefile = "gfx/interface/ideas/RUS/RUS_active_propaganda.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_RUS_corruption_and_oligarchy_idea"
+        texturefile = "gfx/interface/ideas/RUS/RUS_corruption_and_oligarchy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_RUS_fears_of_protests_idea"
+        texturefile = "gfx/interface/ideas/RUS/RUS_fears_of_protests.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_RUS_oil_economy_idea"
+        texturefile = "gfx/interface/ideas/RUS/RUS_oil_economy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_RUS_vertical_of_power_idea"
+        texturefile = "gfx/interface/ideas/RUS/RUS_vertical_of_power.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_RUS_military_revival_idea"
+        texturefile = "gfx/interface/ideas/RUS/RUS_military_revival.dds"
+    }
 }

@@ -327,32 +327,35 @@ news_event = {
 
 	option = {
 		name = news_events.8.a
-		if = {
-			limit = {
-				original_tag = UKR
-			}
+		trigger = {
+			original_tag = UKR
 		}
 	}
 	
 	option = {
 		name = news_events.8.b
-		if = {
-			limit = {
-				original_tag = RUS
-				original_tag = BLR
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
 			}
 		}
 	}
 
 	option = {
 		name = news_events.8.c
-		if = {
-			limit = {
-				NOT = {
-					original_tag = UKR
-				    original_tag = RUS
-					original_tag = BLR
-				}
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
 			}
 		}
 	}
@@ -371,32 +374,35 @@ news_event = {
 
 	option = {
 		name = news_events.9.a
-		if = {
-			limit = {
-				original_tag = UKR
-			}
+		trigger = {
+			original_tag = UKR
 		}
 	}
 	
 	option = {
 		name = news_events.9.b
-		if = {
-			limit = {
-				original_tag = RUS
-				original_tag = BLR
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
 			}
 		}
 	}
 
 	option = {
 		name = news_events.9.c
-		if = {
-			limit = {
-				NOT = {
-					original_tag = UKR
-				    original_tag = RUS
-					original_tag = BLR
-				}
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
 			}
 		}
 	}
@@ -464,4 +470,25 @@ news_event = {
     is_triggered_only = yes
 
     option = { name = news_events.14.a }
+}
+
+# ЕС вводит санкции
+news_event = {
+    id = news_events.15
+    title = news_events.15.t
+    desc = news_events.15.d
+    picture = GFX_news_event_015
+    major = yes
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			RUS = {
+				add_ideas = RUS_western_sanctions
+			}
+		}
+	}
+
+    option = { name = news_events.15.a }
 }
