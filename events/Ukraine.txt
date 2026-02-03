@@ -851,6 +851,7 @@ country_event = {
 
 	option = {
 		name = ukraine.17.a
+		add_stability = 0.1
 		retire_country_leader = yes
         create_country_leader = {
 		    name = UKR_petro_poroshenko
@@ -873,7 +874,7 @@ country_event = {
 	id = ukraine.18
 	title = ukraine.18.t
 	desc = ukraine.18.d
-	#picture = GFX_report_event_royal_parade
+	picture = GFX_Report_event_pod_predlogom_elki_picture
 	
 	is_triggered_only = no
 	fire_only_once = yes
@@ -901,7 +902,7 @@ country_event = {
 	id = ukraine.19
 	title = ukraine.19.t
 	desc = ukraine.19.d
-	#picture = GFX_report_event_royal_parade
+	picture = GFX_Report_event_nationalists_are_raging_picture
 	
 	is_triggered_only = no
 	fire_only_once = yes
@@ -1259,7 +1260,7 @@ country_event = {
 	id = ukraine.32
 	title = ukraine.32.t
 	desc = ukraine.32.d
-	#picture = GFX_report_event_royal_parade
+	picture = GFX_Report_event_antimaidanovci_go_street_picture
 	
 	is_triggered_only = yes
 
@@ -1350,7 +1351,7 @@ country_event = {
 	id = ukraine.33
 	title = ukraine.33.t
 	desc  = ukraine.33.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_bus_volnovahovsky_picture
 
 	is_triggered_only = yes
 
@@ -1382,7 +1383,7 @@ country_event = {
 	id = ukraine.34
 	title = ukraine.34.t
 	desc  = ukraine.34.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_il76_crashed_in_luhansk_picture
 
 	is_triggered_only = yes
 
@@ -1426,7 +1427,7 @@ country_event = {
 	id = ukraine.36
 	title = ukraine.36.t
 	desc  = ukraine.36.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_malasian_boing_fell_down_picture
 
 	is_triggered_only = yes
 
@@ -1473,11 +1474,11 @@ country_event = {
 	option = {
 		name = ukraine.38.a
 		add_equipment_to_stockpile = { 
-			type = bulletproof_vests_equipment_4 
+			type = bulletproof_vests_equipment_3
 			amount = 3000 
 		}
 		add_equipment_to_stockpile = { 
-			type = uniform_equipment_4 
+			type = uniform_equipment_3
 			amount = 3600 
 		}		
 	}
@@ -1525,7 +1526,7 @@ country_event = {
 
 	option = {
 		name = ukraine.41.a
-		add_political_power = 15
+		add_political_power = 35
 	}
 }
 
@@ -1534,9 +1535,18 @@ country_event = {
 	id = ukraine.42
 	title = ukraine.42.t
 	desc  = ukraine.42.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_narodnoe_veche_picture
 
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+			    id = ukraine.73
+			    days = 7
+		    }
+		}
+	}
 
 	option = {
 		name = ukraine.42.a
@@ -1548,7 +1558,7 @@ country_event = {
 	id = ukraine.43
 	title = ukraine.43.t
 	desc  = ukraine.43.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_pod_predlogom_elki_picture
 
 	is_triggered_only = yes
 
@@ -1574,7 +1584,7 @@ country_event = {
 
 	option = {
 		name = ukraine.44.a
-		add_stability = 0.025
+		add_stability = 0.035
 		add_days_mission_timeout = {
 			mission = UKR_yanukovich_overthrow
 			days = 2
@@ -1587,7 +1597,7 @@ country_event = {
 	id = ukraine.45
 	title = ukraine.45.t
 	desc  = ukraine.45.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_donetsk_airport_battle_picture
 
 	is_triggered_only = yes
 
@@ -1629,7 +1639,7 @@ country_event = {
 	id = ukraine.46
 	title = ukraine.46.t
 	desc  = ukraine.46.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_donetsk_airport_battle_picture
 
 	is_triggered_only = yes
 
@@ -1637,7 +1647,7 @@ country_event = {
 		name = ukraine.46.a
         army_experience = 25
 		add_war_support = 0.05
-		add_stability = 0.025
+		add_stability = 0.045
 	}
 }
 
@@ -1646,7 +1656,7 @@ country_event = {
 	id = ukraine.47
 	title = ukraine.47.t
 	desc  = ukraine.47.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_donetsk_airport_battle_picture
 
 	is_triggered_only = yes
 
@@ -1704,7 +1714,7 @@ country_event = {
 	id = ukraine.50
 	title = ukraine.50.t
 	desc  = ukraine.50.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_battles_on_grushevsky_picture
 
 	is_triggered_only = yes
 
@@ -1761,7 +1771,7 @@ country_event = {
 	id = ukraine.52
 	title = ukraine.52.t
 	desc  = ukraine.52.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_donetsk_airport_battle_picture
 
 	is_triggered_only = yes
 
@@ -1812,12 +1822,13 @@ country_event = {
 	id = ukraine.53
 	title = ukraine.53.t
 	desc  = ukraine.53.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_recreation_of_ngu_picture
 
 	is_triggered_only = yes
 
 	option = {
 		name = ukraine.53.a		
+		army_experience = 10
 		add_war_support = 0.025
 	}
 }
@@ -1827,7 +1838,7 @@ country_event = {
 	id = ukraine.54
 	title = ukraine.54.t
 	desc  = ukraine.54.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_continuation_of_ato_2015_picture
 
 	is_triggered_only = yes
 
@@ -1854,7 +1865,7 @@ country_event = {
 	id = ukraine.55
 	title = ukraine.55.t
 	desc = ukraine.55.d
-	#picture = GFX_report_event_royal_parade
+	picture = Report_event_soglashenie_ob_uregulirovanie_picture
 	
 	is_triggered_only = yes
 
@@ -1879,7 +1890,7 @@ country_event = {
 	id = ukraine.56
 	title = ukraine.56.t
 	desc = ukraine.56.d
-	#picture = GFX_report_event_royal_parade
+	picture = GFX_Report_event_timoshenko_leave_jail_picture
 	
 	is_triggered_only = yes
 
@@ -1921,6 +1932,10 @@ country_event = {
 				id = ukraine.62
 				days = 37
 			}	
+			country_event = {
+				id = ukraine.72
+				days = 5
+			}
 		}
 	}
 
@@ -2103,6 +2118,7 @@ country_event = {
 		has_global_flag = Start_Of_ATO
 		NOT = {
 			has_country_flag = RocketAttackInZelenople
+			date > 2015.5.15
 		}
 		406 = {
 			is_controlled_by = UKR
@@ -2207,5 +2223,115 @@ country_event = {
 
 	option = {
 		name = ukraine.71.a		
+	}
+}
+
+# Саммит в Вильнюсе восточное партнерство
+country_event = {
+	id = ukraine.72
+	title = ukraine.72.t
+	desc = ukraine.72.d
+	picture = GFX_Report_event_vilnius_summit_picture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.72.a		
+		add_to_variable = {
+            var = UKR_radicalisation_of_proeuropeans_value
+            value = 1
+        }
+		add_to_variable = {
+            var = UKR_radicalisation_of_nationalists_value
+            value = 1
+        }
+		clamp_variable = {
+			var = UKR_radicalisation_of_proeuropeans_value
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = UKR_radicalisation_of_nationalists_value
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = UKR_add_radicalisation_of_maidan	
+	}
+}
+
+# Противостояние майдановцев и антимайдановцев
+country_event = {
+	id = ukraine.73
+	title = ukraine.73.t
+	desc = ukraine.73.d
+	picture = GFX_Report_event_antimaidanovci_go_street_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.74
+				days = 7
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.73.a		
+        add_stability = -0.02
+		add_to_variable = {
+            var = UKR_radicalisation_of_proeuropeans_value
+            value = 1
+        }
+		add_to_variable = {
+            var = UKR_radicalisation_of_nationalists_value
+            value = 1
+        }
+		clamp_variable = {
+			var = UKR_radicalisation_of_proeuropeans_value
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = UKR_radicalisation_of_nationalists_value
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = UKR_add_radicalisation_of_maidan	
+	}
+}
+
+# Создание объединения «Майдан»
+country_event = {
+	id = ukraine.74
+	title = ukraine.74.t
+	desc = ukraine.74.d
+	picture = GFX_Report_event_creation_of_maidan_movement_picture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.74.a		
+        add_political_power = -5
+		add_to_variable = {
+            var = UKR_radicalisation_of_proeuropeans_value
+            value = 1
+        }
+		add_to_variable = {
+            var = UKR_radicalisation_of_nationalists_value
+            value = 1
+        }
+		clamp_variable = {
+			var = UKR_radicalisation_of_proeuropeans_value
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = UKR_radicalisation_of_nationalists_value
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = UKR_add_radicalisation_of_maidan	
 	}
 }
