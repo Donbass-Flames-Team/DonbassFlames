@@ -103,3 +103,16 @@ generic_retreat_from_region_idea = { #DYNAMIC MODIFIER ON STATE
 	army_defence_factor = -0.15
 	army_morale_factor = -0.05
 }
+
+LPR_luhansk_castle_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_org_factor = 0.15
+	army_org_regain = 0.075
+	army_defence_factor = 0.15
+	army_speed_factor = 0.075
+	army_morale_factor = 0.05
+	supply_factor = 0.15
+}

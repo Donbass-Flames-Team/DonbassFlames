@@ -124,6 +124,112 @@ focus_tree = {
 	}
 
 	focus = {
+		id = LPR_luhansk_castle
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 2
+		x = 0
+		y = 1
+
+		
+		prerequisite = {focus = LPR_appeal_to_the_russian_spirit}
+		relative_position_id = LPR_appeal_to_the_russian_spirit
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_luhansk_castle"
+    		340 = {
+			    add_dynamic_modifier = { modifier = LPR_luhansk_castle_dynamic_idea scope = LPR }
+		    }
+			custom_effect_tooltip = LPR_bunkers_around_luhansk_tt
+        	hidden_effect = {
+                if = {
+				    limit = {
+					    LPR = {
+						    controls_province = 11062
+					    }
+				    }
+				    340 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 11062
+							instant_build = yes
+					    }
+				    }
+			    }
+                if = {
+				    limit = {
+					    LPR = {
+						    controls_province = 11604 
+					    }
+				    }
+				    340 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 4
+						    province = 11604 
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    LPR = {
+						    controls_province = 8516  
+					    }
+				    }
+				    340 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 8516  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    LPR = {
+						    controls_province = 15279   
+					    }
+				    }
+				    340 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15279  
+							instant_build = yes 
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    LPR = {
+						    controls_province = 15254   
+					    }
+				    }
+				    340 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 15254  
+							instant_build = yes 
+					    }
+				    }
+			    }				
+				
+			}			
+		}
+	}
+
+	focus = {
 		id = LPR_luhansk_armed_forces
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 2
