@@ -1,0 +1,507 @@
+focus_tree = {
+    id = TMR_2013_tree
+    country = {
+        factor = 0
+        modifier = { add = 10 tag = TMR }
+    }
+    default = no
+
+    focus = {
+        id = TMR_november_choice
+		icon = GFX_focus_UKR_hold_the_center_line
+        x = 8
+        y = 0
+        cost = 1
+        available = { date > 2013.11.20 }
+    }
+
+    focus = {
+        id = TMR_support_euromaidan
+        x = 5
+        y = 1
+        cost = 1
+        prerequisite = { focus = TMR_november_choice }
+        available = { always = no }
+        mutually_exclusive = { focus = TMR_support_yanukovych }
+        ai_will_do = { factor = 0 }
+    }
+
+    focus = {
+        id = TMR_eu_stub
+        x = 4
+        y = 2
+        cost = 1
+        prerequisite = { focus = TMR_support_euromaidan }
+        available = { always = no }
+        ai_will_do = { factor = 0 }
+    }
+
+    focus = {
+        id = TMR_support_yanukovych
+        x = 11
+        y = 1
+        cost = 2
+        prerequisite = { focus = TMR_november_choice }
+        mutually_exclusive = { focus = TMR_support_euromaidan }
+    }
+
+    focus = {
+        id = TMR_condemn_kyiv_protests
+        x = 11
+        y = 2
+        cost = 2
+        prerequisite = { focus = TMR_support_yanukovych }
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = TMR_gkchs_extra_session
+        x = 13
+        y = 3
+        cost = 2
+        prerequisite = { focus = TMR_condemn_kyiv_protests }
+        completion_reward = {
+            add_political_power = 15
+            set_economy_law = partial_mobilization
+            add_stability = -0.05
+            add_war_support = 0.02
+        }
+    }
+
+    focus = {
+        id = TMR_security_border_filtering
+        x = 13
+        y = 4
+        cost = 2
+        prerequisite = { focus = TMR_gkchs_extra_session }
+        completion_reward = {
+            add_stability = 0.02
+            add_war_support = 0.02
+        }
+    }
+
+    focus = {
+        id = TMR_coordination_with_russia
+        x = 9
+        y = 3
+        cost = 2
+        prerequisite = { focus = TMR_condemn_kyiv_protests }
+        completion_reward = {
+            add_political_power = 60
+            add_command_power = 10
+        }
+    }
+
+    focus = {
+        id = TMR_broadcasting_concept_2014
+        x = 6
+        y = 4
+        cost = 1
+        prerequisite = { focus = TMR_coordination_with_russia }
+        available = { date > 2014.02.11 }
+        completion_reward = {
+            add_political_power = 10
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = TMR_public_campaign_solidarity
+        x = 6
+        y = 5
+        cost = 1
+        prerequisite = { focus = TMR_broadcasting_concept_2014 }
+        available = { date > 2014.03.07 }
+        completion_reward = {
+            add_political_power = 10
+            add_war_support = 0.01
+        }
+    }
+
+    focus = {
+        id = TMR_request_russian_aid
+        x = 9
+        y = 4
+        cost = 1
+        prerequisite = { focus = TMR_coordination_with_russia }
+        available = { date > 2014.01.29 }
+        completion_reward = {
+            add_political_power = 20
+            add_stability = 0.01
+        }
+    }
+
+    focus = {
+        id = TMR_subsidies_and_credits
+        x = 8
+        y = 5
+        cost = 1
+        prerequisite = { focus = TMR_request_russian_aid }
+        completion_reward = {
+            add_political_power = 10
+            add_stability = 0.01
+        }
+    }
+
+    focus = {
+        id = TMR_energy_contracts
+        x = 10
+        y = 5
+        cost = 1
+        prerequisite = { focus = TMR_request_russian_aid }
+        completion_reward = { add_stability = 0.02 }
+    }
+
+    focus = {
+        id = TMR_depots_and_logistics
+        x = 9
+        y = 6
+        cost = 1
+        prerequisite = { focus = TMR_subsidies_and_credits focus = TMR_energy_contracts }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = basic_train amount = 2 }
+            add_fuel = 5000
+            add_equipment_to_stockpile = { type = motorized_equipment amount = 50 }
+        }
+    }
+
+    focus = {
+        id = TMR_emergency_budget
+        x = 7
+        y = 6
+        cost = 1
+        prerequisite = { focus = TMR_subsidies_and_credits }
+        completion_reward = { add_stability = 0.01 }
+    }
+
+    focus = {
+        id = TMR_support_crimea_operation
+        x = 11
+        y = 6
+        cost = 1
+        prerequisite = { focus = TMR_coordination_with_russia focus = TMR_security_border_filtering }
+        available = { RUS = { controls_state = 640 } }
+        completion_reward = {
+            add_political_power = 100
+            add_war_support = 0.05
+            add_opinion_modifier = { target = RUS modifier = TMR_opinion_pro_rus }
+            RUS = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_pro_rus } }
+        }
+    }
+
+    focus = {
+        id = TMR_conflict_escalation
+        x = 11
+        y = 7
+        cost = 1
+        prerequisite = { focus = TMR_support_crimea_operation }
+        available = { DPR = { controls_state = 432 } }
+        completion_reward = {
+            add_political_power = 15
+            add_war_support = 0.03
+        }
+    }
+
+    focus = {
+        id = TMR_integration_course_rf
+        x = 15
+        y = 7
+        cost = 1
+        prerequisite = { focus = TMR_support_crimea_operation }
+        completion_reward = {
+            add_political_power = 25
+            add_stability = 0.02
+
+            add_opinion_modifier = { target = RUS modifier = TMR_opinion_pro_rus }
+            add_opinion_modifier = { target = MOL modifier = TMR_opinion_anti_neighbors }
+            add_opinion_modifier = { target = UKR modifier = TMR_opinion_anti_neighbors }
+
+            RUS = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_pro_rus } }
+            MOL = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_anti_neighbors } }
+            UKR = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_anti_neighbors } }
+        }
+    }
+
+    focus = {
+        id = TMR_passportization
+        x = 15
+        y = 8
+        cost = 1
+        prerequisite = { focus = TMR_integration_course_rf }
+        available = { date > 2014.02.01 }
+        completion_reward = {
+            add_political_power = 10
+            add_stability = 0.01
+        }
+    }
+
+    focus = {
+        id = TMR_we_want_russia_too
+        x = 17
+        y = 8
+        cost = 1
+        prerequisite = { focus = TMR_integration_course_rf }
+        completion_reward = {
+            add_stability = 0.02
+
+            add_opinion_modifier = { target = RUS modifier = TMR_opinion_pro_rus }
+            add_opinion_modifier = { target = MOL modifier = TMR_opinion_anti_neighbors }
+            add_opinion_modifier = { target = UKR modifier = TMR_opinion_anti_neighbors }
+
+            RUS = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_pro_rus } }
+            MOL = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_anti_neighbors } }
+            UKR = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_anti_neighbors } }
+        }
+    }
+
+    focus = {
+        id = TMR_request_recognition
+        x = 13
+        y = 8
+        cost = 1
+        prerequisite = { focus = TMR_integration_course_rf }
+        completion_reward = {
+            add_political_power = 75
+
+            add_opinion_modifier = { target = RUS modifier = TMR_opinion_pro_rus }
+            add_opinion_modifier = { target = MOL modifier = TMR_opinion_anti_neighbors }
+            add_opinion_modifier = { target = UKR modifier = TMR_opinion_anti_neighbors }
+
+            RUS = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_pro_rus } }
+            MOL = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_anti_neighbors } }
+            UKR = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_anti_neighbors } }
+        }
+    }
+
+    focus = {
+        id = TMR_ogrw_training
+        x = 11
+        y = 8
+        cost = 1
+        prerequisite = { focus = TMR_conflict_escalation }
+        completion_reward = {
+            add_command_power = 15
+            add_war_support = 0.03
+        }
+    }
+
+    focus = {
+        id = TMR_second_direction_threat
+        x = 11
+        y = 9
+        cost = 1
+        prerequisite = { focus = TMR_ogrw_training }
+        completion_reward = {
+            add_war_support = 0.03
+            add_opinion_modifier = { target = UKR modifier = TMR_opinion_ukr_very_bad }
+            UKR = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_ukr_very_bad } }
+        }
+    }
+
+    focus = {
+        id = TMR_opr_success
+        x = 8
+        y = 10
+        cost = 1
+        prerequisite = { focus = TMR_second_direction_threat }
+        available = { OPR = { exists = yes } }
+        completion_reward = { add_political_power = 25 }
+    }
+
+    focus = {
+        id = TMR_opr_failure
+        x = 14
+        y = 10
+        cost = 1
+        prerequisite = { focus = TMR_second_direction_threat }
+        available = { NOT = { OPR = { exists = yes } } }
+        completion_reward = { add_political_power = 10 }
+    }
+
+    focus = {
+        id = TMR_smuggling_to_opr
+        x = 8
+        y = 11
+        cost = 1
+        prerequisite = { focus = TMR_opr_success }
+        available = { OPR = { exists = yes } }
+        completion_reward = {
+            OPR = { add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 } }
+        }
+    }
+
+    focus = {
+        id = TMR_tourists
+        x = 7
+        y = 12
+        cost = 1
+        prerequisite = { focus = TMR_smuggling_to_opr }
+        available = { OPR = { exists = yes } }
+        completion_reward = {
+            OPR = {
+                add_manpower = 500
+                add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+            }
+        }
+    }
+
+    focus = {
+        id = TMR_send_advisors
+        x = 9
+        y = 12
+        cost = 1
+        prerequisite = { focus = TMR_smuggling_to_opr }
+        available = { OPR = { exists = yes } }
+        completion_reward = {
+            add_political_power = -25
+            OPR = { add_command_power = 15 }
+        }
+    }
+
+    focus = {
+        id = TMR_humanitarian_corridor_opr
+        x = 6
+        y = 13
+        cost = 1
+        prerequisite = { focus = TMR_tourists }
+        available = { OPR = { exists = yes } }
+        completion_reward = {
+            OPR = { add_stability = 0.05 }
+        }
+    }
+
+    focus = {
+        id = TMR_fuel_and_supplies_opr
+        x = 8
+        y = 13
+        cost = 1
+        prerequisite = { focus = TMR_tourists }
+        available = { OPR = { exists = yes } }
+        completion_reward = {
+            add_political_power = 10
+            OPR = {
+                add_fuel = 1000
+                add_equipment_to_stockpile = { type = motorized_equipment amount = 10 }
+                add_equipment_to_stockpile = { type = basic_train amount = 1 }
+            }
+        }
+    }
+
+    focus = {
+        id = TMR_intelligence_liaison_opr
+        x = 10
+        y = 13
+        cost = 1
+        prerequisite = { focus = TMR_send_advisors }
+        available = { OPR = { exists = yes } }
+        completion_reward = { add_political_power = 15 }
+    }
+
+    focus = {
+        id = TMR_recognize_opr
+        x = 8
+        y = 14
+        cost = 1
+        prerequisite = {
+            focus = TMR_humanitarian_corridor_opr
+            focus = TMR_fuel_and_supplies_opr
+            focus = TMR_intelligence_liaison_opr
+        }
+        available = { OPR = { exists = yes } }
+        completion_reward = {
+            OPR = { add_stability = 0.05 }
+            add_political_power = -20
+            add_opinion_modifier = { target = OPR modifier = TMR_opinion_opr_recognized }
+            OPR = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_opr_recognized } }
+        }
+    }
+
+    focus = {
+        id = TMR_accept_refugees
+        x = 14
+        y = 11
+        cost = 1
+        prerequisite = { focus = TMR_opr_failure }
+        available = { NOT = { OPR = { exists = yes } } }
+        completion_reward = {
+            add_stability = -0.10
+            add_political_power = 25
+        }
+    }
+
+    focus = {
+        id = TMR_temporary_shelters
+        x = 13
+        y = 12
+        cost = 1
+        prerequisite = { focus = TMR_accept_refugees }
+        available = { NOT = { OPR = { exists = yes } } }
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = -50
+        }
+    }
+
+    focus = {
+        id = TMR_refugee_registration
+        x = 15
+        y = 12
+        cost = 1
+        prerequisite = { focus = TMR_accept_refugees }
+        available = { NOT = { OPR = { exists = yes } } }
+        completion_reward = {
+            add_political_power = -50
+            add_stability = 0.03
+            add_war_support = -0.03
+        }
+    }
+
+    focus = {
+        id = TMR_employment_program
+        x = 14
+        y = 13
+        cost = 1
+        prerequisite = { focus = TMR_temporary_shelters focus = TMR_refugee_registration }
+        available = { NOT = { OPR = { exists = yes } } }
+        completion_reward = { add_political_power = 10 }
+    }
+
+    focus = {
+        id = TMR_border_hardening
+        x = 16
+        y = 13
+        cost = 1
+        prerequisite = { focus = TMR_refugee_registration }
+        available = { NOT = { OPR = { exists = yes } } }
+        completion_reward = { }
+    }
+
+    focus = {
+        id = TMR_internal_stabilization
+        x = 14
+        y = 14
+        cost = 1
+        prerequisite = { focus = TMR_employment_program focus = TMR_border_hardening }
+        available = { NOT = { OPR = { exists = yes } } }
+        completion_reward = {
+            add_stability = 0.05
+            add_war_support = -0.02
+        }
+    }
+
+    focus = {
+        id = TMR_quiet_life_end
+        x = 14
+        y = 15
+        cost = 1
+        prerequisite = { focus = TMR_internal_stabilization }
+        available = { NOT = { OPR = { exists = yes } } }
+        completion_reward = {
+            add_stability = 0.03
+            add_political_power = 50
+        }
+    }
+}

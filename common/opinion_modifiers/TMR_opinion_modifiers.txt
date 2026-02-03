@@ -1,0 +1,20 @@
+opinion_modifiers = {
+
+  TMR_opinion_pro_rus = {
+    value = 35
+    trade = 0.10
+  }
+
+  TMR_opinion_anti_neighbors = {
+    value = -35
+  }
+
+  TMR_opinion_ukr_very_bad = {
+    value = -90
+    months = 12
+  }
+
+  TMR_opinion_opr_recognized = {
+    value = 50
+  }
+}
