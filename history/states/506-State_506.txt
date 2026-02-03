@@ -1,12 +1,14 @@
 state = { 
 	id = 506 
 	name = "STATE_506" 
-	manpower = 30658 
+	manpower = 34622
 	
 	state_category = town 
 	buildings_max_level_factor = 1 
 	history = { 
 		owner = TMR 
+		victory_points = { 6215 15 }
+		victory_points = { 5663 4 }
 		
 		buildings = {
 			industrial_complex = 0
