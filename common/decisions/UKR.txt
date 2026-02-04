@@ -116,7 +116,7 @@ UKR_separatism_decision = {
 		}
 		available = {
 			check_variable = {
-                var = KPR_separatism_value
+                var = HPR_separatism_value
                 value = 15
                 compare = greater_than_or_equals
 				tooltip = UKR_more_than_15_KPR
@@ -135,7 +135,7 @@ UKR_separatism_decision = {
 		cost = 75
 		complete_effect = {
 		    subtract_from_variable = {
-                var = KPR_separatism_value
+                var = HPR_separatism_value
                 value = 5
 				tooltip = UKR_minus_separatism
             } 
