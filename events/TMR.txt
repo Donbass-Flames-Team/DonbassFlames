@@ -1,0 +1,255 @@
+add_namespace = tmr
+
+country_event = {
+    id = 1
+    title = tmr.1.t
+    desc = tmr.1.d
+    picture = GFX_report_event_generic_diplomatic
+    is_triggered_only = yes
+
+    option = {
+        name = tmr.1.a
+        TMR = { country_event = { id = tmr.2 days = 1 } }
+    }
+
+    option = {
+        name = tmr.1.b
+        TMR = { country_event = { id = tmr.3 days = 1 } }
+    }
+}
+
+country_event = {
+    id = 2
+    title = tmr.2.t
+    desc = tmr.2.d
+    picture = GFX_report_event_generic_diplomatic
+    is_triggered_only = yes
+
+    option = {
+        name = tmr.2.a
+        clr_country_flag = TMR_kremlin_denied
+        clr_country_flag = TMR_kremlin_obey
+        clr_country_flag = TMR_kremlin_no_abandon
+        set_country_flag = TMR_kremlin_approved
+        set_country_flag = TMR_rus_support_ok
+
+
+complete_national_focus = TMR_kremlin_approval
+    }
+}
+
+country_event = {
+    id = 3
+    title = tmr.3.t
+    desc = tmr.3.d
+    picture = GFX_report_event_generic_diplomatic
+    is_triggered_only = yes
+
+    option = {
+        name = tmr.3.a
+        clr_country_flag = TMR_kremlin_approved
+        clr_country_flag = TMR_kremlin_no_abandon
+        set_country_flag = TMR_kremlin_denied
+        set_country_flag = TMR_kremlin_obey
+
+complete_national_focus = TMR_obey_kremlin
+    }
+
+    option = {
+        name = tmr.3.b
+        clr_country_flag = TMR_kremlin_approved
+        clr_country_flag = TMR_kremlin_obey
+        set_country_flag = TMR_kremlin_denied
+        set_country_flag = TMR_kremlin_no_abandon
+        set_country_flag = TMR_rus_support_denied_go_alone
+
+complete_national_focus = TMR_we_wont_abandon_ours
+    }
+}
+
+news_event = {
+    id = tmr.4
+    title = tmr.4.t
+    desc = tmr.4.d
+    picture = GFX_report_event_generic_war
+    major = yes
+    is_triggered_only = yes
+}
+
+news_event = {
+    id = tmr.5
+    title = tmr.5.t
+    desc = tmr.5.d
+    picture = GFX_report_event_generic_war
+    major = yes
+    is_triggered_only = yes
+}
+
+news_event = {
+    id = tmr.6
+    title = tmr.6.t
+    desc = tmr.6.d
+    picture = GFX_report_event_generic_war
+    major = yes
+    is_triggered_only = yes
+}
+
+news_event = {
+    id = tmr.7
+    title = tmr.7.t
+    desc = tmr.7.d
+    picture = GFX_report_event_generic_war
+    major = yes
+    is_triggered_only = yes
+}
+
+country_event = {
+    id = 8
+    title = tmr.8.t
+    desc = tmr.8.d
+    picture = GFX_report_event_generic_diplomatic
+    is_triggered_only = yes
+
+    option = {
+        name = tmr.8.a
+        set_country_flag = RUS_save_tmr
+        TMR = { set_country_flag = TMR_rus_emergency_help }
+        TMR = { load_oob = "TMR_ogrw_battalions" }
+        news_event = { id = tmr.5 hours = 1 }
+    }
+
+    option = {
+        name = tmr.8.b
+        set_country_flag = RUS_hold_kolbasna
+        if = {
+            limit = { CRT = { exists = yes } }
+            if = {
+            limit = { CRT = { exists = yes } }
+            CRT = { transfer_state = 443 }
+            CRT = { transfer_state = 415 }
+        }
+        if = {
+            limit = { NOT = { CRT = { exists = yes } } }
+            TMR = { transfer_state = 443 }
+            TMR = { transfer_state = 415 }
+        }
+        }
+        TMR = { set_country_flag = TMR_kolbasna_under_crt }
+        news_event = { id = tmr.6 hours = 1 }
+        UKR = { country_event = { id = tmr.9 days = 2 } }
+    }
+}
+
+country_event = {
+    id = 9
+    title = tmr.9.t
+    desc = tmr.9.d
+    picture = GFX_report_event_generic_war
+    is_triggered_only = yes
+
+    option = {
+        name = tmr.9.a
+        if = { limit = { CRT = { exists = yes } } declare_war_on = { target = CRT type = annex_everything } }
+        RUS = { country_event = { id = tmr.10 days = 1 } }
+    }
+
+    option = {
+        name = tmr.9.b
+        add_stability = -0.01
+        add_political_power = -25
+    }
+}
+
+country_event = {
+    id = 10
+    title = tmr.10.t
+    desc = tmr.10.d
+    picture = GFX_report_event_generic_war
+    is_triggered_only = yes
+
+    option = {
+        name = tmr.10.a
+        declare_war_on = { target = UKR type = annex_everything }
+    }
+
+    option = {
+        name = tmr.10.b
+        add_political_power = 25
+    }
+}
+
+country_event = {
+    id = 11
+    title = tmr.11.t
+    desc = tmr.11.d
+    picture = GFX_report_event_generic_war
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = TMR_kolbasna_event_fired
+        clr_country_flag = TMR_kolbasna_mined
+    }
+
+    hidden = yes
+
+    option = {
+        name = OK
+        clr_country_flag = TMR_kolbasna_mined
+        set_country_flag = TMR_kolbasna_detonated
+        news_event = { id = tmr.7 hours = 1 }
+    }
+}
+
+
+country_event = {
+    id = 12
+    title = tmr.12.t
+    desc = tmr.12.d
+    picture = GFX_report_event_generic_diplomatic
+    is_triggered_only = yes
+
+    immediate = {
+
+        set_country_flag = UKR_tmr_partition_decided
+    }
+
+
+    option = {
+        name = tmr.12.a
+        set_country_flag = UKR_tmr_partition_decided
+        add_political_power = 50
+    }
+
+    option = {
+        name = tmr.12.b
+        set_country_flag = UKR_tmr_partition_decided
+        if = { limit = { MOL = { exists = yes } }
+            MOL = { transfer_state = 415 }
+    MOL = { transfer_state = 443 }
+    MOL = { transfer_state = 506 }
+    MOL = { transfer_state = 519 }
+    MOL = { transfer_state = 550
+        }
+        }
+    }
+}
+
+country_event = {
+    id = 13
+    title = tmr.13.t
+    desc = tmr.13.d
+    picture = GFX_report_event_generic_military
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = UKR_kolbasna_captured_event
+    }
+
+    option = {
+        name = tmr.13.a
+        add_political_power = 25
+        add_war_support = 0.02
+    }
+}
+

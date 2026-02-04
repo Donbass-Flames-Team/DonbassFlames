@@ -1,0 +1,28 @@
+on_daily_country = {
+    effect = {
+        if = {
+            limit = {
+                tag = UKR
+                NOT = { has_country_flag = UKR_tmr_partition_decided }
+                NOT = { TMR = { exists = yes } }
+                controls_state = 415
+                controls_state = 443
+                controls_state = 506
+                controls_state = 519
+                controls_state = 550
+            }
+            set_country_flag = UKR_tmr_partition_decided
+            country_event = { id = tmr.12 days = 1 }
+        }
+
+        if = {
+            limit = {
+                tag = UKR
+                controls_state = 443
+                NOT = { has_country_flag = UKR_kolbasna_captured_event }
+                NOT = { TMR = { has_country_flag = TMR_kolbasna_mined } }
+            }
+            country_event = { id = tmr.13 days = 1 }
+        }
+    }
+}
