@@ -17,34 +17,37 @@ news_event = {
 	
 	option = {
 		name = news_events.1.a
-		if = {
-			limit = {
-				original_tag = UKR
-			}
+		trigger = {
+			original_tag = UKR
 		}
 	}
-
+	
 	option = {
 		name = news_events.1.b
-		if = {
-			limit = {
-				OR = {
-				    original_tag = RUS
-					original_tag = BLR
-				}
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
 
 	option = {
 		name = news_events.1.c
-		if = {
-			limit = {
-				NOT = {
-					original_tag = UKR
-				    original_tag = RUS
-					original_tag = BLR
-				}
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
@@ -63,32 +66,37 @@ news_event = {
 
 	option = {
 		name = news_events.2.a
-		if = {
-			limit = {
-				original_tag = UKR
-			}
+		trigger = {
+			original_tag = UKR
 		}
 	}
 	
 	option = {
 		name = news_events.2.b
-		if = {
-			limit = {
-				original_tag = RUS
-				original_tag = BLR
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
 
 	option = {
 		name = news_events.2.c
-		if = {
-			limit = {
-				NOT = {
-					original_tag = UKR
-				    original_tag = RUS
-					original_tag = BLR
-				}
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
@@ -107,32 +115,37 @@ news_event = {
 
 	option = {
 		name = news_events.3.a
-		if = {
-			limit = {
-				original_tag = UKR
-			}
+		trigger = {
+			original_tag = UKR
 		}
 	}
 	
 	option = {
 		name = news_events.3.b
-		if = {
-			limit = {
-				original_tag = RUS
-				original_tag = BLR
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
 
 	option = {
 		name = news_events.3.c
-		if = {
-			limit = {
-				NOT = {
-					original_tag = UKR
-				    original_tag = RUS
-					original_tag = BLR
-				}
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
@@ -151,32 +164,37 @@ news_event = {
 
 	option = {
 		name = news_events.4.a
-		if = {
-			limit = {
-				original_tag = UKR
-			}
+		trigger = {
+			original_tag = UKR
 		}
 	}
 	
 	option = {
 		name = news_events.4.b
-		if = {
-			limit = {
-				original_tag = RUS
-				original_tag = BLR
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
 
 	option = {
 		name = news_events.4.c
-		if = {
-			limit = {
-				NOT = {
-					original_tag = UKR
-				    original_tag = RUS
-					original_tag = BLR
-				}
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
@@ -195,32 +213,37 @@ news_event = {
 
 	option = {
 		name = news_events.5.a
-		if = {
-			limit = {
-				original_tag = UKR
-			}
+		trigger = {
+			original_tag = UKR
 		}
 	}
 	
 	option = {
 		name = news_events.5.b
-		if = {
-			limit = {
-				original_tag = RUS
-				original_tag = BLR
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
 
 	option = {
 		name = news_events.5.c
-		if = {
-			limit = {
-				NOT = {
-					original_tag = UKR
-				    original_tag = RUS
-					original_tag = BLR
-				}
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
@@ -239,32 +262,37 @@ news_event = {
 
 	option = {
 		name = news_events.6.a
-		if = {
-			limit = {
-				original_tag = UKR
-			}
+		trigger = {
+			original_tag = UKR
 		}
 	}
 	
 	option = {
 		name = news_events.6.b
-		if = {
-			limit = {
-				original_tag = RUS
-				original_tag = BLR
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
 
 	option = {
 		name = news_events.6.c
-		if = {
-			limit = {
-				NOT = {
-					original_tag = UKR
-				    original_tag = RUS
-					original_tag = BLR
-				}
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
@@ -283,32 +311,37 @@ news_event = {
 
 	option = {
 		name = news_events.7.a
-		if = {
-			limit = {
-				original_tag = UKR
-			}
+		trigger = {
+			original_tag = UKR
 		}
 	}
 	
 	option = {
 		name = news_events.7.b
-		if = {
-			limit = {
-				original_tag = RUS
-				original_tag = BLR
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
 
 	option = {
 		name = news_events.7.c
-		if = {
-			limit = {
-				NOT = {
-					original_tag = UKR
-				    original_tag = RUS
-					original_tag = BLR
-				}
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
@@ -342,6 +375,7 @@ news_event = {
 				original_tag = DPR
 				original_tag = LPR
 				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
@@ -356,6 +390,7 @@ news_event = {
 				original_tag = DPR
 				original_tag = LPR
 				original_tag = OPR
+				original_tag = TMR
 			}
 		}
 	}
