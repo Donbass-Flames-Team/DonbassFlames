@@ -60,13 +60,14 @@ focus_tree = {
         id = TMR_gkchs_extra_session
         x = 13
         y = 3
-        cost = 2
+        cost = 1
         prerequisite = { focus = TMR_condemn_kyiv_protests }
         completion_reward = {
             add_political_power = 15
             set_economy_law = partial_mobilization
             add_stability = -0.05
             add_war_support = 0.02
+            army_experience = 5
         }
     }
 
@@ -284,7 +285,7 @@ focus_tree = {
         completion_reward = {
             add_command_power = 15
             add_war_support = 0.03
-            army_experience = 35
+            army_experience = 80
         }
     }
 
@@ -333,6 +334,7 @@ completion_reward = {
         add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 }
         add_equipment_to_stockpile = { type = bulletproof_vests_equipment_1 amount = 350 }
         add_equipment_to_stockpile = { type = uniform_equipment_1 amount = 450 }
+        add_equipment_to_stockpile = { type = support_equipment amount = 150 }
     }
  }
 }
@@ -387,7 +389,6 @@ completion_reward = {
         prerequisite = { focus = TMR_tourists }
         available = { OPR = { exists = yes } }
         completion_reward = {
-            add_political_power = 10
             OPR = {
                 add_fuel = 2500
                 add_equipment_to_stockpile = { type = motorized_equipment amount = 100 }
@@ -396,15 +397,18 @@ completion_reward = {
         }
     }
 
-    focus = {
-        id = TMR_intelligence_liaison_opr
-        x = 10
-        y = 13
-        cost = 1
-        prerequisite = { focus = TMR_send_advisors }
-        available = { OPR = { exists = yes } }
-        completion_reward = { add_political_power = 15 }
+focus = {
+    id = TMR_intelligence_liaison_opr
+    x = 10
+    y = 13
+    cost = 1
+    prerequisite = { focus = TMR_send_advisors }
+    available = { OPR = { exists = yes } }
+
+    completion_reward = {
+        OPR = { add_political_power = 150 }
     }
+}
 
     focus = {
         id = TMR_recognize_opr
@@ -415,7 +419,7 @@ completion_reward = {
         available = { OPR = { exists = yes } }
         completion_reward = {
             OPR = { add_stability = 0.05 }
-            add_political_power = -20
+            add_political_power = -25
             add_opinion_modifier = { target = OPR modifier = TMR_opinion_opr_recognized }
             OPR = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_opr_recognized } }
         }
@@ -444,7 +448,8 @@ focus = {
         prerequisite = { focus = TMR_recognize_opr }
         mutually_exclusive = { focus = TMR_opr_expand_support }
         completion_reward = {
-            add_war_support = 0.03
+            add_stability = -0.10
+            add_war_support = 0.05
             add_opinion_modifier = { target = UKR modifier = TMR_opinion_ukr_very_bad }
             UKR = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_ukr_very_bad } }
         }
@@ -463,18 +468,35 @@ focus = {
     }
 }
 
-    focus = {
-        id = TMR_opr_support_pipeline
-        x = 5
-        y = 19
-        cost = 1
-        prerequisite = { focus = TMR_opr_expand_support focus = TMR_return_to_opr_support }
-        available = { OPR = { exists = yes } }
-        completion_reward = {
-            OPR = { add_fuel = 500 }
-            OPR = { add_equipment_to_stockpile = { type = infantry_equipment amount = 300 } }
+focus = {
+    id = TMR_opr_support_pipeline
+    x = 5
+    y = 19
+    cost = 1
+
+    prerequisite = {
+        focus = TMR_opr_expand_support
+        focus = TMR_return_to_opr_support
+    }
+
+    available = { OPR = { exists = yes } }
+
+    completion_reward = {
+        OPR = {
+            add_war_support = 0.10
+            add_stability = 0.10
+            add_political_power = 75
+            add_manpower = 300
+            add_command_power = 10
+            add_army_experience = 10
+            add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 300 }
+            add_equipment_to_stockpile = { type = support_equipment amount = 150 }
+            add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 60 }
+            add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 80 }
         }
     }
+}
+
 
 focus = {
     id = TMR_opr_training_camps
@@ -525,15 +547,20 @@ focus = {
         completion_reward = { add_war_support = 0.02 }
     }
 
-    focus = {
-        id = TMR_accept_refugees
-        x = 14
-        y = 11
-        cost = 1
-        prerequisite = { focus = TMR_opr_failure }
-        available = { NOT = { OPR = { exists = yes } } }
-        completion_reward = { add_stability = -0.10 add_political_power = 25 }
+focus = {
+    id = TMR_accept_refugees
+    x = 14
+    y = 11
+    cost = 1
+    prerequisite = { focus = TMR_opr_failure }
+    available = { NOT = { OPR = { exists = yes } } }
+
+    completion_reward = {
+        add_stability = -0.10
+        add_political_power = 25
+        add_manpower = 700
     }
+}
 
     focus = {
         id = TMR_temporary_shelters
@@ -545,15 +572,21 @@ focus = {
         completion_reward = { add_stability = 0.05 add_political_power = -50 }
     }
 
-    focus = {
-        id = TMR_refugee_registration
-        x = 15
-        y = 12
-        cost = 1
-        prerequisite = { focus = TMR_accept_refugees }
-        available = { NOT = { OPR = { exists = yes } } }
-        completion_reward = { add_political_power = -50 add_stability = 0.03 add_war_support = -0.03 }
+focus = {
+    id = TMR_refugee_registration
+    x = 15
+    y = 12
+    cost = 1
+    prerequisite = { focus = TMR_accept_refugees }
+    available = { NOT = { OPR = { exists = yes } } }
+
+    completion_reward = {
+        add_political_power = -50
+        add_stability = 0.03
+        add_war_support = -0.03
+        add_manpower = -75
     }
+}
 
     focus = {
         id = TMR_employment_program
@@ -617,8 +650,8 @@ focus = {
     }
 
     completion_reward = {
-        add_war_support = 0.03
-        add_stability = -0.05
+        add_war_support = 0.15
+        add_stability = -0.15
     }
 }
 
@@ -756,12 +789,12 @@ focus = {
 
     focus = {
         id = TMR_raise_folk_militias
-        x = 15
+        x = 14
         y = 20
         cost = 1
         prerequisite = { focus = TMR_local_support_only }
         available = { has_country_flag = TMR_rus_support_denied_go_alone }
-        completion_reward = { add_manpower = 3000 add_war_support = 0.02 }
+        completion_reward = { add_manpower = 5000 add_war_support = 0.02 }
     }
 
     focus = {
@@ -771,12 +804,12 @@ focus = {
         cost = 1
         prerequisite = { focus = TMR_raise_folk_militias }
         available = { has_country_flag = TMR_rus_support_denied_go_alone }
-        completion_reward = { add_equipment_to_stockpile = { type = infantry_equipment amount = 150 } add_political_power = 5 }
+        completion_reward = { add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 } add_political_power = 5 }
     }
 
     focus = {
         id = TMR_local_fuel_rationing
-        x = 15
+        x = 14
         y = 21
         cost = 1
         prerequisite = { focus = TMR_local_support_only }
