@@ -70,6 +70,16 @@ on_actions = {
 				set_global_flag = US_ELECTION_NEWS_2025_FIRED
 				news_event = { id = news_events.12 hours = 6 }
 			}
+			# 01.20.2025
+			if = {
+				limit = {
+					date = 2015.6.11
+					NOT = { has_global_flag = KHARKOV_STUDENTS_TOWN_ATTACKED }
+					tag = UKR
+				}
+				set_global_flag = KHARKOV_STUDENTS_TOWN_ATTACKED
+				country_event = { id = ukraine.75 }
+			}
         }
 	}
 }

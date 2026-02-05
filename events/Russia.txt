@@ -260,6 +260,10 @@ country_event = {
 			white_peace = DPR
 			white_peace = LPR
 			set_global_flag = second_phase_of_ato
+			news_event = {
+				id = news_events.16
+				hours = 6
+			}
 		}
 	}
 }
@@ -292,7 +296,7 @@ country_event = {
 	option = {
 		name = russia.13.a
 		add_stability = 0.05
-hidden_effect = {
+        hidden_effect = {
 			DPR = {
 				if = { limit = { 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
 				if = { limit = { 502 = { is_controlled_by = DPR } } transfer_state = 502 }
@@ -363,7 +367,15 @@ hidden_effect = {
 			}
 			white_peace = DPR
 			white_peace = LPR
-			set_global_flag = second_phase_of_ato
+			set_global_flag = Minsk2_is_signed
+			DPR = {
+				mark_focus_tree_layout_dirty = yes
+				complete_national_focus = DPR_second_minsk_agreement
+			}
+			news_event = {
+				id = news_events.17
+				hours = 6
+			}
 		}
 	}
 }

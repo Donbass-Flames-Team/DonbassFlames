@@ -1856,6 +1856,10 @@ country_event = {
 				id = ukraine.68
 				days = 28
 			}
+			news_event = {
+				id = news_events.18
+				hours = 6
+			}
 		}
 	}
 }
@@ -2333,5 +2337,24 @@ country_event = {
 			max = 100
 		}
 		custom_effect_tooltip = UKR_add_radicalisation_of_maidan	
+	}
+}
+
+# Нападение на студенческий городок в Харькове
+country_event = {
+	id = ukraine.75
+	title = ukraine.75.t
+	desc = ukraine.75.d
+	picture = GFX_Report_event_attack_to_students_town_picture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.75.a		
+        add_stability = -0.01
+		add_popularity = {
+            ideology = nationalism
+            popularity = 0.015
+        }
 	}
 }

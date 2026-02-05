@@ -1216,6 +1216,82 @@ focus_tree = {
 	}
 
 	focus = {
+		id = DPR_second_minsk_agreement
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 2
+		x = 0
+		y = 3
+
+		prerequisite = {focus = DPR_free_the_entire_donetsk_oblast}
+		relative_position_id = DPR_defend_of_citites
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		allow_branch = {
+			has_global_flag = Minsk2_is_signed
+		}
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_second_minsk_agreement"
+    		add_stability = 0.15																							
+		}
+	}
+
+	focus = {
+		id = DPR_offensives
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 2
+		x = 1
+		y = 4
+
+		prerequisite = {focus = DPR_second_minsk_agreement}
+		relative_position_id = DPR_defend_of_citites
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_second_minsk_agreement"
+    		add_stability = 0.15																							
+		}
+	}
+
+	focus = {
+		id = DPR_artillery_shelings
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 2
+		x = -1
+		y = 4
+
+		prerequisite = {focus = DPR_second_minsk_agreement}
+		relative_position_id = DPR_defend_of_citites
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_second_minsk_agreement"
+    		add_stability = 0.15																							
+		}
+	}
+
+	focus = {
 		id = DPR_nationalize_the_captured_factories
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
