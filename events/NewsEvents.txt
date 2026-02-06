@@ -527,3 +527,42 @@ news_event = {
 
     option = { name = news_events.15.a }
 }
+
+# Первые минские
+news_event = {
+    id = news_events.16
+    title = news_events.16.t
+    desc = news_events.16.d
+    picture = GFX_news_event_016
+    major = yes
+
+    is_triggered_only = yes
+
+    option = { name = news_events.16.a }
+}
+
+# Вторые минские
+news_event = {
+    id = news_events.17
+    title = news_events.17.t
+    desc = news_events.17.d
+    picture = GFX_news_event_017
+    major = yes
+
+    is_triggered_only = yes
+
+    option = { name = news_events.17.a }
+}
+
+# Возобновление боевых действий
+news_event = {
+    id = news_events.18
+    title = news_events.18.t
+    desc = news_events.18.d
+    picture = GFX_news_event_017
+    major = yes
+
+    is_triggered_only = yes
+
+    option = { name = news_events.18.a }
+}
