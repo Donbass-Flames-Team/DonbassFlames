@@ -1459,7 +1459,7 @@ country_event = {
 	id = ukraine.37
 	title = ukraine.37.t
 	desc  = ukraine.37.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_formation_of_right_sector
 
 	is_triggered_only = yes
 
@@ -1512,7 +1512,7 @@ country_event = {
 	id = ukraine.40
 	title = ukraine.40.t
 	desc  = ukraine.40.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_fsb_picture
 
 	is_triggered_only = yes
 
@@ -1527,7 +1527,7 @@ country_event = {
 	id = ukraine.41
 	title = ukraine.41.t
 	desc  = ukraine.41.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_fsb_picture
 
 	is_triggered_only = yes
 
@@ -2366,17 +2366,36 @@ country_event = {
 	}
 }
 
-# 
+# Oleg morgun arrested
 country_event = {
 	id = ukraine.76
 	title = ukraine.76.t
 	desc = ukraine.76.d
-	picture = GFX_Report_event_attack_to_students_town_picture
-	
-	is_triggered_only = yes
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
+
+	is_triggered_only = no
+
+	trigger = {
+		has_global_flag = Start_Of_ATO
+		NOT = {
+			has_country_flag = ARREST_OLEG_MORGUN
+			date > 2015.4.15
+		}
+		UKR = {
+			controls_province = 18215 
+		}
+		date > 2014.5.15
+		tag = UKR
+	}
+
+	immediate = {
+		hidden_effect = {
+		    set_country_flag = ARREST_OLEG_MORGUN
+		}
+	}
 
 	option = {
 		name = ukraine.76.a		
-        
+        add_stability = 0.025 
 	}
 }
