@@ -960,18 +960,24 @@ country_event = {
 	id = ukraine.21
 	title = ukraine.21.t
 	desc = ukraine.21.d
-	#picture = GFX_report_event_royal_parade
+	picture = GFX_Report_event_vybory_ukraine_picture
 	
 	is_triggered_only = yes
 
 	option = {
 		name = ukraine.21.a
-		set_country_flag = UKRPoroshenkoPresident2014_choosed			
+		set_country_flag = UKRPoroshenkoPresident2014_choosed		
+		activate_mission = 	UKR_elections_2014	
 	}
 
 	#option = {
-	#	name = ukraine.21.a
+	#	name = ukraine.21.b
 	#	set_country_flag = UKRTimoshenkoPresident2014_choosed			
+	#}
+
+	#option = {
+	#	name = ukraine.21.c
+	#	set_country_flag = UKROlegLyashkoPresident2014_choosed			
 	#}
 } 
 
@@ -1397,6 +1403,7 @@ country_event = {
 		name = ukraine.34.a
 		add_war_support = -0.015
 		add_political_power = -15
+		add_manpower = -39
 	}
 }
 
@@ -1452,7 +1459,7 @@ country_event = {
 	id = ukraine.37
 	title = ukraine.37.t
 	desc  = ukraine.37.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_formation_of_right_sector
 
 	is_triggered_only = yes
 
@@ -1505,7 +1512,7 @@ country_event = {
 	id = ukraine.40
 	title = ukraine.40.t
 	desc  = ukraine.40.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_fsb_picture
 
 	is_triggered_only = yes
 
@@ -1520,7 +1527,7 @@ country_event = {
 	id = ukraine.41
 	title = ukraine.41.t
 	desc  = ukraine.41.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_fsb_picture
 
 	is_triggered_only = yes
 
@@ -2356,5 +2363,39 @@ country_event = {
             ideology = nationalism
             popularity = 0.015
         }
+	}
+}
+
+# Oleg morgun arrested
+country_event = {
+	id = ukraine.76
+	title = ukraine.76.t
+	desc = ukraine.76.d
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
+
+	is_triggered_only = no
+
+	trigger = {
+		has_global_flag = Start_Of_ATO
+		NOT = {
+			has_country_flag = ARREST_OLEG_MORGUN
+			date > 2015.4.15
+		}
+		UKR = {
+			controls_province = 18215 
+		}
+		date > 2014.5.15
+		tag = UKR
+	}
+
+	immediate = {
+		hidden_effect = {
+		    set_country_flag = ARREST_OLEG_MORGUN
+		}
+	}
+
+	option = {
+		name = ukraine.76.a		
+        add_stability = 0.025 
 	}
 }
