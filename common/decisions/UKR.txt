@@ -5,7 +5,9 @@ UKR_separatism_decision = {
 			original_tag = UKR
 		}
 		available = {
-
+			NOT = {
+				country_exists = CRI
+			}
 		}
 		visible = {
 			tag = UKR

@@ -245,13 +245,6 @@ country_event = {
 				if = { limit = { 326 = { is_controlled_by = LPR } } transfer_state = 326 }
 			}
 			UKR = {
-				if = { 
-					limit = { 433 = { is_controlled_by = UKR } } 
-				    country_event = {
-					    id = ukraine.45
-					    days = 5
-				    }
-			    }
 				transfer_state = 318
 				if = { limit = { 526 = { is_controlled_by = UKR } } transfer_state = 526 transfer_state = 650 }
 				if = { limit = { 650 = { is_fully_controlled_by = UKR } } transfer_state = 650 }
@@ -259,6 +252,15 @@ country_event = {
 			}
 			white_peace = DPR
 			white_peace = LPR
+			UKR = {
+				if = { 
+					limit = { 433 = { is_controlled_by = UKR } } 
+				    country_event = {
+					    id = ukraine.45
+					    days = 5
+				    }
+			    }
+			}
 			set_global_flag = second_phase_of_ato
 			news_event = {
 				id = news_events.16
@@ -353,13 +355,6 @@ country_event = {
 				if = { limit = { 326 = { is_controlled_by = LPR } } transfer_state = 326 }
 			}
 			UKR = {
-				if = { 
-					limit = { 433 = { is_controlled_by = UKR } } 
-				    country_event = {
-					    id = ukraine.45
-					    days = 5
-				    }
-			    }
 				transfer_state = 318
 				if = { limit = { 526 = { is_controlled_by = UKR } } transfer_state = 526 transfer_state = 486 }
 				if = { limit = { 650 = { is_fully_controlled_by = UKR } } transfer_state = 650 }
