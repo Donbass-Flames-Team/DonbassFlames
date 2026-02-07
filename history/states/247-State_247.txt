@@ -5,23 +5,23 @@ state = {
 	
 	state_category = rural 
 	buildings_max_level_factor = 2 
-	history = {
+	history = { 
+		owner = UKR 
+		
 		victory_points = { 312 5 }
-		victory_points = { 14802 3 }
 		victory_points = { 14767 5 }
-		victory_points = { 18468 3 }
+		victory_points = { 14777 25 }
+		victory_points = { 14802 3 }
+		victory_points = { 18465 3 }
 		victory_points = { 18466 3 }
 		victory_points = { 18467 3 }
-		victory_points = { 18465 3 } 
-		owner = UKR 
-		victory_points = { 14777 25 }
+		victory_points = { 18468 3 }
 		
-		buildings = {
-			industrial_complex = 1
-			arms_factory = 0
+		buildings = { 
+			industrial_complex = 1 
+			arms_factory = 0 
 			infrastructure = 2 
-
-}
+		}
 		
 		add_core_of = UKR 
 	}

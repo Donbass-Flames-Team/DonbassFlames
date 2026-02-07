@@ -1,24 +1,24 @@
 state = { 
 	id = 110 
 	name = "STATE_110" 
-	manpower =  2593151
+	manpower = 2593151 
 	
 	state_category = town 
 	buildings_max_level_factor = 1 
-	resources = { oil = 48
-                     steel = 305
-  } 
+	
+	resources = { 
+		oil = 48 
+		steel = 305 
+	} 
 	history = { 
 		owner = RUS 
 		
-		buildings = {
-			industrial_complex = 10
-			arms_factory = 12
+		buildings = { 
+			industrial_complex = 10 
+			arms_factory = 12 
 			infrastructure = 2 
-
-			synthetic_refinery = 3
-		
-}
+			synthetic_refinery = 3 
+		}
 		
 		add_core_of = RUS 
 	}

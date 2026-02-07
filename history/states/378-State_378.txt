@@ -5,20 +5,22 @@ state = {
 	
 	state_category = city 
 	buildings_max_level_factor = 2 
+	
 	resources = { steel = 3 } 
 	history = { 
 		owner = UKR 
 		
 		victory_points = { 15459 20 }
 		
-		buildings = {
-			industrial_complex = 0
-			arms_factory = 0
+		buildings = { 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 3 
-
-}
+		}
 		
 		add_core_of = UKR 
 	}
-	provinces = { 15459 18248 18249 18250 18251 18252 18253 }
+	provinces = {
+		15459 18248 18249 18250 18251 18252 18253 18585 18586 18587
+	}
 }

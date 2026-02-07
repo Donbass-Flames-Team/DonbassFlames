@@ -7,17 +7,17 @@ state = {
 	buildings_max_level_factor = 2 
 	
 	resources = { steel = 3 } 
-	history = {
-		victory_points = { 3967 5 } 
+	history = { 
 		owner = UKR 
 		
+		victory_points = { 3967 5 }
 		victory_points = { 16273 3 }
 		
-		buildings = {
-			industrial_complex = 0
-			arms_factory = 0
+		buildings = { 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 2 
-}
+		}
 		
 		add_core_of = UKR 
 	}

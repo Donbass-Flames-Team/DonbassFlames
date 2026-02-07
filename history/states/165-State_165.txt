@@ -5,34 +5,34 @@ state = {
 	
 	state_category = rural 
 	buildings_max_level_factor = 2 
-	history = {
-		victory_points = { 11715 2 }
-		victory_points = { 11179 2 }
-		victory_points = { 13923 2 }
-		victory_points = { 13946 2 }
-		victory_points = { 13920 1 }
-		victory_points = { 8077 5 }
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 3768 5 }
 		victory_points = { 4458 3 }
-		victory_points = { 13858 3 }
+		victory_points = { 5435 5 }
+		victory_points = { 5741 15 }
+		victory_points = { 7712 5 }
+		victory_points = { 8077 5 }
+		victory_points = { 9410 5 }
 		victory_points = { 10590 5 }
 		victory_points = { 10603 3 }
-		victory_points = { 9410 5 }
-		victory_points = { 14012 3 }
-		victory_points = { 3768 5 }
-		victory_points = { 14044 5 }
-		victory_points = { 5435 5 }
-		victory_points = { 7712 5 }
+		victory_points = { 10732 5 }
+		victory_points = { 11179 2 }
 		victory_points = { 11545 15 }
-		victory_points = { 10732 5 } 
-		owner = UKR 
-		victory_points = { 5741 15 }
+		victory_points = { 11715 2 }
+		victory_points = { 13858 3 }
+		victory_points = { 13920 1 }
+		victory_points = { 13923 2 }
+		victory_points = { 13946 2 }
+		victory_points = { 14012 3 }
+		victory_points = { 14044 5 }
 		
-		buildings = {
-			industrial_complex = 1
-			arms_factory = 0
+		buildings = { 
+			industrial_complex = 1 
+			arms_factory = 0 
 			infrastructure = 2 
-
-}
+		}
 		
 		add_core_of = UKR 
 	}

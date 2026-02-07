@@ -5,16 +5,16 @@ state = {
 	
 	state_category = city 
 	buildings_max_level_factor = 2 
-	history = {
-		victory_points = { 10561 25 } 
+	history = { 
 		owner = UKR 
 		
-		buildings = {
-			industrial_complex = 2
-			arms_factory = 1
+		victory_points = { 10561 25 }
+		
+		buildings = { 
+			industrial_complex = 2 
+			arms_factory = 1 
 			infrastructure = 4 
-
-}
+		}
 		
 		add_core_of = UKR 
 	}

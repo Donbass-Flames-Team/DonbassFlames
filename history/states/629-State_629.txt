@@ -5,18 +5,19 @@ state = {
 	
 	state_category = town 
 	buildings_max_level_factor = 1 
+	
 	resources = { oil = 4 } 
 	history = { 
 		owner = RUS 
 		
-		buildings = {
- industrial_complex = 2
- arms_factory = 0
- infrastructure = 2 
-}
+		buildings = { 
+			industrial_complex = 2 
+			arms_factory = 0 
+			infrastructure = 2 
+		}
 		
 		add_core_of = RUS 
-		add_core_of = ADY
+		add_core_of = ADY 
 	}
 	provinces = { 745 1560 2881 3932 4082 4093 4242 4815 5411 6028 6173 6443 6500 7591 10928 17434 17453 18191 }
 }

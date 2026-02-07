@@ -6,18 +6,162 @@ strategic_region = {
 		8 18 43 50 246 260 355 373 453 458 482 493 511 515 549 612 871 880 908 909 1044 1069 1099 1120 1171 1218 1225 1227 1307 1515 1526 1584 1588 1595 1604 1655 1661 1703 1776 1830 1845 1863 1874 1908 1937 1945 1988 2035 2079 2103 2121 2194 2216 2290 2326 2425 2426 2469 2515 2565 2588 2695 2717 2787 2856 2857 2907 2960 2990 3014 3159 3184 3241 3429 3467 3487 3539 3552 3554 3594 3629 3686 3729 3782 3809 3972 4035 4277 4293 4339 4448 4455 4511 4524 4544 4595 4607 4627 4654 4734 4751 4771 4912 4952 5049 5083 5113 5180 5192 5195 5254 5282 5299 5423 5487 5493 5660 5709 5805 5922 6016 6039 6312 6481 6517 6564 6609 6673 6933 6934 6966 6980 7026 7029 7064 7088 7196 7212 7250 7288 7291 7366 7373 7378 7404 7420 7660 7663 7744 7876 7922 7968 8003 8102 8248 8288 8454 8505 8512 8524 8585 8623 8630 8634 8655 8668 8701 8801 8851 8862 8867 8893 8911 8970 9020 9034 9062 9196 9250 9343 9622 9694 9718 9763 9770 9829 9835 9951 9995 10022 10079 10231 10255 10305 10350 10366 10491 10599 10625 10670 10931 10944 11008 11017 11024 11033 11054 11130 11234 11392 11403 11440 11694 11726 11820 11861 11887 12014 12035 12150 12177 12189 12210 12214 12227 12264 12271 12281 12282 12290 12296 12297 12299 12300 12303 12304 12308 12315 12322 12323 12324 12329 12331 12336 12349 12351 12353 12354 12363 12371 12375 12378 12379 12383 12386 12392 12393 12396 12400 12402 12408 12409 12413 12414 12416 12419 12431 12432 12433 12437 12442 12450 12452 12453 12455 12456 12460 12463 12470 12489 12510 12523 12550 12576 
 	}
 
-weather = {
-		period = { between = { 0.0 30.0 } temperature = { -15 -5 } no_phenomenon = 0.3 snow = 0.5 blizzard = 0.2 } # Янв
-		period = { between = { 0.1 27.1 } temperature = { -10 2 } no_phenomenon = 0.4 snow = 0.4 blizzard = 0.2 } # Фев
-		period = { between = { 0.2 30.2 } temperature = { -2 10 } no_phenomenon = 0.2 rain_light = 0.3 mud = 0.5 } # Мар
-		period = { between = { 0.3 29.3 } temperature = { 8 18 } no_phenomenon = 0.5 rain_light = 0.5 } # Апр
-		period = { between = { 0.4 30.4 } temperature = { 15 22 } no_phenomenon = 0.7 rain_light = 0.3 } # Май
-		period = { between = { 0.5 29.5 } temperature = { 18 28 } no_phenomenon = 0.7 rain_light = 0.2 rain_heavy = 0.1 } # Июн
-		period = { between = { 0.6 30.6 } temperature = { 20 30 } no_phenomenon = 0.8 rain_light = 0.2 } # Июл
-		period = { between = { 0.7 30.7 } temperature = { 20 30 } no_phenomenon = 0.8 rain_light = 0.2 } # Авг
-		period = { between = { 0.8 29.8 } temperature = { 12 22 } no_phenomenon = 0.6 rain_light = 0.4 } # Сен
-		period = { between = { 0.9 30.9 } temperature = { 5 15 } no_phenomenon = 0.4 rain_light = 0.4 mud = 0.2 } # Окт
-		period = { between = { 0.10 29.10 } temperature = { 0 8 } no_phenomenon = 0.3 rain_light = 0.4 mud = 0.3 } # Ноя
-		period = { between = { 0.11 30.11 } temperature = { -8 2 } no_phenomenon = 0.4 snow = 0.5 blizzard = 0.1 } # Дек
+	weather = {
+		period = {
+			between = { 0.0 30.0 }
+			temperature = { -15 -5 }
+			no_phenomenon = 0.3
+			rain_light = 0
+			rain_heavy = 0
+			snow = 0.5
+			blizzard = 0.2
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.1 27.1 }
+			temperature = { -10 2 }
+			no_phenomenon = 0.4
+			rain_light = 0
+			rain_heavy = 0
+			snow = 0.4
+			blizzard = 0.2
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.2 30.2 }
+			temperature = { -2 10 }
+			no_phenomenon = 0.2
+			rain_light = 0.3
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0.5
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.3 29.3 }
+			temperature = { 8 18 }
+			no_phenomenon = 0.5
+			rain_light = 0.5
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.4 30.4 }
+			temperature = { 15 22 }
+			no_phenomenon = 0.7
+			rain_light = 0.3
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.5 29.5 }
+			temperature = { 18 28 }
+			no_phenomenon = 0.7
+			rain_light = 0.2
+			rain_heavy = 0.1
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.6 30.6 }
+			temperature = { 20 30 }
+			no_phenomenon = 0.8
+			rain_light = 0.2
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.7 30.7 }
+			temperature = { 20 30 }
+			no_phenomenon = 0.8
+			rain_light = 0.2
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.8 29.8 }
+			temperature = { 12 22 }
+			no_phenomenon = 0.6
+			rain_light = 0.4
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.9 30.9 }
+			temperature = { 5 15 }
+			no_phenomenon = 0.4
+			rain_light = 0.4
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0.2
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.10 29.10 }
+			temperature = { 0 8 }
+			no_phenomenon = 0.3
+			rain_light = 0.4
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0.3
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.11 30.11 }
+			temperature = { -8 2 }
+			no_phenomenon = 0.4
+			rain_light = 0
+			rain_heavy = 0
+			snow = 0.5
+			blizzard = 0.1
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
 	}
 }

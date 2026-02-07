@@ -10,13 +10,15 @@ state = {
 	history = { 
 		owner = UKR 
 		
-		buildings = {
-			industrial_complex = 0
-			arms_factory = 0
+		buildings = { 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 2 
-}
+		}
 		
 		add_core_of = UKR 
 	}
-	provinces = { 9248 9313 18089 18369 18370 18371 18372 18373 18399 }
+	provinces = {
+		9248 9313 18089 18369 18370 18371 18372 18373 18399 18584
+	}
 }

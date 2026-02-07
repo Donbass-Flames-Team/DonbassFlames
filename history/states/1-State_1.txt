@@ -1,31 +1,28 @@
-state = {
-	id = 1
-	name = "STATE_1"
-	manpower = 1
+state = { 
+	id = 1 
+	name = "STATE_1" 
+	manpower = 1 
 	
-	state_category = town
-	buildings_max_level_factor = 1
+	state_category = town 
+	buildings_max_level_factor = 1 
 	
-	resources = {
-		steel = 500
-		aluminium = 500
-		rubber = 1000
-		tungsten = 1000
-		chromium = 1000
-	}
-
-	history = {
-		owner = WAL
-		add_core_of = WAL
-		buildings = {
-			industrial_complex = 0
-			arms_factory = 0
-			infrastructure = 1
+	resources = { 
+		steel = 500 
+		aluminium = 500 
+		rubber = 1000 
+		tungsten = 1000 
+		chromium = 1000 
+	} 
+	history = { 
+		owner = WAL 
 		
-}
+		buildings = { 
+			industrial_complex = 0 
+			arms_factory = 0 
+			infrastructure = 1 
+		}
+		
+		add_core_of = WAL 
 	}
-
-	provinces = {
-		920 2049 3227 4144 4179 4278 4565 4956 5725 7251 7391 7415 7698 7767 8465 8704 8909 8934 8944 9568 9916 10080 10188 10668 10929 11237 11248 11274 11306 11587 12134 12265 12306 12380 12449 12469 12997 13196 13367 13584 13750 14097 14126 14599 14783 15274 15353 16026 16199 16456 17035 17205
-	}
+	provinces = { 920 2049 3227 4144 4179 4278 4565 4956 5725 7251 7391 7415 7698 7767 8465 8704 8909 8934 8944 9568 9916 10080 10188 10668 10929 11237 11248 11274 11306 11587 12134 12265 12306 12380 12449 12469 12997 13196 13367 13584 13750 14097 14126 14599 14783 15274 15353 16026 16199 16456 17035 17205 }
 }
