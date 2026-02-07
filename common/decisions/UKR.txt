@@ -2426,6 +2426,90 @@ UKR_ATO_decision = {
 	}
 }
 
+UKR_general_staff_decision = {
+
+	UKR_35_otdelna_bryhada_morskoi_pyhoti_decision = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+			date > 2018.3.2
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_western_instructors
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	UKR_44_otdelnaya_artilleriyskaya_brigada_decision = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+			date > 2014.1.9
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_general_staff
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	UKR_43_otdelnaya_artilleriyskaya_brigada_decision = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+			date > 2014.8.8
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_general_staff
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}	
+
+	UKR_40_otdelnaya_artilleriyskaya_brigada_decision = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+			date > 2014.8.8
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_general_staff
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+}
+
 UKR_ATO_volunteer_battalions_decision = {
 
 	UKR_volunteer_battalion_aidar = {

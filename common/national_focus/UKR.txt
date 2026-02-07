@@ -1656,7 +1656,7 @@ focus_tree = {
 		    add_stability = 0.025
 			add_political_power = 25
 			set_country_flag = Focuses_after_Ato
-            activate_mission = 	UKR_elections_2014
+			country_event = ukraine.21
 			hidden_effect = {
 				mark_focus_tree_layout_dirty = yes
 				set_country_flag = Elections2014InProgress
@@ -1721,6 +1721,18 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_stability = 0.05
 			add_war_support = 0.03
+			custom_effect_tooltip = increase_of_support_in_parlamient_tt
+			hidden_effect = {
+				add_to_variable = {
+                    var = UKR_parlamient_support
+                    value = 35
+                }
+				clamp_variable = {
+                    var = UKR_parlamient_support
+					min = 0
+                    max = 450
+                }
+			}
 		}
 	}
 
@@ -1744,7 +1756,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		    add_stability = 0.15
+		    add_stability = 0.25
 			add_popularity = {
                 ideology = conservatism_democracy
                 popularity = 0.03
@@ -3025,6 +3037,30 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			
+		}
+	}
+
+	focus = {
+		id = UKR_snap_parlamient_elections
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 3
+		y = 1
+
+		prerequisite = { focus = UKR_snap_presidential_elections }
+		relative_position_id = UKR_snap_presidential_elections
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			country_event = ukraine.25
 		}
 	}
@@ -3839,7 +3875,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-			unlock_decision_category_tooltip = UKR_cut_off_the_separatists_from_the_border
+			unlock_decision_tooltip = UKR_cut_off_the_separatists_from_the_border
+            unlock_decision_category_tooltip = UKR_general_staff_decision
 			army_experience = 20
 		}
 	}

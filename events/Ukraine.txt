@@ -960,18 +960,24 @@ country_event = {
 	id = ukraine.21
 	title = ukraine.21.t
 	desc = ukraine.21.d
-	#picture = GFX_report_event_royal_parade
+	picture = GFX_Report_event_vybory_ukraine_picture
 	
 	is_triggered_only = yes
 
 	option = {
 		name = ukraine.21.a
-		set_country_flag = UKRPoroshenkoPresident2014_choosed			
+		set_country_flag = UKRPoroshenkoPresident2014_choosed		
+		activate_mission = 	UKR_elections_2014	
 	}
 
 	#option = {
-	#	name = ukraine.21.a
+	#	name = ukraine.21.b
 	#	set_country_flag = UKRTimoshenkoPresident2014_choosed			
+	#}
+
+	#option = {
+	#	name = ukraine.21.c
+	#	set_country_flag = UKROlegLyashkoPresident2014_choosed			
 	#}
 } 
 
@@ -1397,6 +1403,7 @@ country_event = {
 		name = ukraine.34.a
 		add_war_support = -0.015
 		add_political_power = -15
+		add_manpower = -39
 	}
 }
 
@@ -2356,5 +2363,20 @@ country_event = {
             ideology = nationalism
             popularity = 0.015
         }
+	}
+}
+
+# 
+country_event = {
+	id = ukraine.76
+	title = ukraine.76.t
+	desc = ukraine.76.d
+	picture = GFX_Report_event_attack_to_students_town_picture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.76.a		
+        
 	}
 }
