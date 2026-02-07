@@ -6,18 +6,162 @@ strategic_region = {
 		89 221 325 347 581 601 838 840 841 855 866 1095 1160 1258 1356 1385 1394 1622 1753 1793 1973 1999 2032 2104 2141 2214 2305 2307 2341 2546 2563 2576 2597 2599 2694 2985 3007 3029 3071 3074 3178 3321 3390 3601 3611 3696 3713 3801 3835 3874 3899 3940 4192 4204 4224 4234 4540 4585 4674 4737 4936 5042 5060 5152 5326 5366 5529 5652 5681 5831 5900 5927 5952 5984 6026 6127 6142 6164 6307 6350 6368 6393 6504 6587 6600 6651 6735 6777 6789 6796 6858 6910 6917 6948 7044 7049 7055 7086 7098 7166 7186 7257 7346 7381 7458 7638 7649 7664 7667 7681 7760 7797 7815 7824 7873 7936 7984 8009 8020 8027 8045 8059 8125 8160 8205 8227 8254 8262 8354 8451 8479 8500 8526 8566 8590 8632 8659 8699 8757 8791 8832 8877 8913 9058 9093 9111 9122 9140 9162 9206 9212 9309 9326 9349 9386 9510 9525 9566 9573 9575 9639 9689 9698 9701 9707 9725 9741 9926 10047 10128 10190 10198 10221 10237 10285 10338 10348 10417 10435 10468 10522 10543 10573 10622 10657 10704 10792 10812 10824 10883 10903 10955 11028 11047 11074 11104 11153 11174 11187 11209 11216 11220 11291 11394 11411 11427 11429 11438 11506 11517 11544 11683 11713 11768 11774 11783 11800 11859 11903 11937 11969 11980 12000 12007 12091 15661 15687 15691 15692 15695 15711 15752 15783 15791 15799 15800 15824 15831 15835 15847 15861 15871 15880 15881 15893 15894 15914 15932 15950 15956 15957 15959 15981 15993 15994 16008 16009 16031 16058 16066 16067 16068 16084 16085 16143 16145 16148 16167 16169 16170 16171 16178 16192 16200 16205 16209 16224 16240 16247 16257 16282 16285 16290 16291 16294 16300 16307 16318 16334 16339 16340 16364 16365 16400 16401 16418 16426 16438 16445 16451 16463 16481 16491 16515 16517 16518 16534 16538 16539 16547 16558 16565 16568 16569 16575 16581 16584 16592 16605 16616 16625 16639 16642 16658 16693 16718 16746 16751 16755 16791 16802 16810 16833 18109 18113 18127 18132 
 	}
 
-weather = {
-		period = { between = { 0.0 30.0 } temperature = { -5 5 } no_phenomenon = 0.5 snow = 0.3 rain_light = 0.2 } # Янв
-		period = { between = { 0.1 27.1 } temperature = { -3 8 } no_phenomenon = 0.5 snow = 0.2 rain_light = 0.3 } # Фев
-		period = { between = { 0.2 30.2 } temperature = { 5 15 } no_phenomenon = 0.4 rain_light = 0.3 mud = 0.3 } # Мар
-		period = { between = { 0.3 29.3 } temperature = { 10 20 } no_phenomenon = 0.7 rain_light = 0.3 } # Апр
-		period = { between = { 0.4 30.4 } temperature = { 15 25 } no_phenomenon = 0.8 rain_light = 0.2 } # Май
-		period = { between = { 0.5 29.5 } temperature = { 20 30 } no_phenomenon = 0.9 rain_light = 0.1 } # Июн
-		period = { between = { 0.6 30.6 } temperature = { 25 35 } no_phenomenon = 0.9 rain_light = 0.1 } # Июл
-		period = { between = { 0.7 30.7 } temperature = { 25 35 } no_phenomenon = 0.9 rain_light = 0.1 } # Авг
-		period = { between = { 0.8 29.8 } temperature = { 18 28 } no_phenomenon = 0.8 rain_light = 0.2 } # Сен
-		period = { between = { 0.9 30.9 } temperature = { 10 20 } no_phenomenon = 0.6 rain_light = 0.4 } # Окт
-		period = { between = { 0.10 29.10 } temperature = { 5 12 } no_phenomenon = 0.4 rain_light = 0.4 mud = 0.2 } # Ноя
-		period = { between = { 0.11 30.11 } temperature = { -2 8 } no_phenomenon = 0.5 rain_light = 0.3 snow = 0.2 } # Дек
+	weather = {
+		period = {
+			between = { 0.0 30.0 }
+			temperature = { -5 5 }
+			no_phenomenon = 0.5
+			rain_light = 0.2
+			rain_heavy = 0
+			snow = 0.3
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.1 27.1 }
+			temperature = { -3 8 }
+			no_phenomenon = 0.5
+			rain_light = 0.3
+			rain_heavy = 0
+			snow = 0.2
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.2 30.2 }
+			temperature = { 5 15 }
+			no_phenomenon = 0.4
+			rain_light = 0.3
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0.3
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.3 29.3 }
+			temperature = { 10 20 }
+			no_phenomenon = 0.7
+			rain_light = 0.3
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.4 30.4 }
+			temperature = { 15 25 }
+			no_phenomenon = 0.8
+			rain_light = 0.2
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.5 29.5 }
+			temperature = { 20 30 }
+			no_phenomenon = 0.9
+			rain_light = 0.1
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.6 30.6 }
+			temperature = { 25 35 }
+			no_phenomenon = 0.9
+			rain_light = 0.1
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.7 30.7 }
+			temperature = { 25 35 }
+			no_phenomenon = 0.9
+			rain_light = 0.1
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.8 29.8 }
+			temperature = { 18 28 }
+			no_phenomenon = 0.8
+			rain_light = 0.2
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.9 30.9 }
+			temperature = { 10 20 }
+			no_phenomenon = 0.6
+			rain_light = 0.4
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.10 29.10 }
+			temperature = { 5 12 }
+			no_phenomenon = 0.4
+			rain_light = 0.4
+			rain_heavy = 0
+			snow = 0
+			blizzard = 0
+			arctic_water = 0
+			mud = 0.2
+			sandstorm = 0
+			min_snow_level = 0
+		}
+		period = {
+			between = { 0.11 30.11 }
+			temperature = { -2 8 }
+			no_phenomenon = 0.5
+			rain_light = 0.3
+			rain_heavy = 0
+			snow = 0.2
+			blizzard = 0
+			arctic_water = 0
+			mud = 0
+			sandstorm = 0
+			min_snow_level = 0
+		}
 	}
 }

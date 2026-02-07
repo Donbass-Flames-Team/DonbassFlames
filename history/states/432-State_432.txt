@@ -10,14 +10,15 @@ state = {
 		
 		victory_points = { 10298 50 }
 		
-		buildings = {
-			industrial_complex = 6
-			arms_factory = 4
+		buildings = { 
+			industrial_complex = 6 
+			arms_factory = 4 
 			infrastructure = 4 
-
-        }
+		}
 		
 		add_core_of = UKR 
 	}
-	provinces = { 7500 9377 10298 10391 10450 11928 15719 15766 15789 15811 18102 18106 }
+	provinces = {
+		7500 9377 10298 10391 10450 11928 15719 15766 15789 15811 18102 18106 18544 18545 18546 18547 18548 18558 18559 18560 18561 18562
+	}
 }

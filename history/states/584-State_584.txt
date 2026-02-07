@@ -7,20 +7,21 @@ state = {
 	buildings_max_level_factor = 1 
 	history = { 
 		owner = MOL 
-		victory_points = { 16965 15 }
-		victory_points = { 7459 7 }
-		victory_points = { 3682 10 }
-		victory_points = { 16947 5 }
-		victory_points = { 4248 20 }
 		
-		buildings = {
-			industrial_complex = 1
-			arms_factory = 0
+		victory_points = { 3682 10 }
+		victory_points = { 4248 20 }
+		victory_points = { 7459 7 }
+		victory_points = { 16947 5 }
+		victory_points = { 16965 15 }
+		
+		buildings = { 
+			industrial_complex = 1 
+			arms_factory = 0 
 			infrastructure = 2 
-}
+		}
 		
 		add_core_of = MOL 
-		add_core_of = GAG
+		add_core_of = GAG 
 	}
 	provinces = { 1668 3682 3877 4177 4248 5357 7459 9181 16879 16909 16947 16965 }
 }

@@ -5,27 +5,27 @@ state = {
 	
 	state_category = town 
 	buildings_max_level_factor = 2 
-	history = {
-		victory_points = { 11152 10 }
-		victory_points = { 10967 5 } 
+	history = { 
 		owner = UKR 
 		
 		victory_points = { 1093 10 }
 		victory_points = { 3572 10 }
 		victory_points = { 5286 15 }
 		victory_points = { 8075 2 }
+		victory_points = { 10967 5 }
+		victory_points = { 11152 10 }
 		victory_points = { 11612 2 }
 		victory_points = { 13096 2 }
 		victory_points = { 13233 2 }
 		victory_points = { 13468 5 }
 		victory_points = { 13488 4 }
 		
-		buildings = {
-			industrial_complex = 1
-			arms_factory = 0
+		buildings = { 
+			industrial_complex = 1 
+			arms_factory = 0 
 			infrastructure = 3 
 			5286 = { dam = 1 }
-}
+		}
 		
 		add_core_of = UKR 
 	}
