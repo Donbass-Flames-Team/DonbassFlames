@@ -567,6 +567,10 @@ focus_tree = {
 				634 = {
 				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
 			    }
+				news_event = {
+					id = news_events.15
+					days = 6
+				}
 			}
 		}
 	}
