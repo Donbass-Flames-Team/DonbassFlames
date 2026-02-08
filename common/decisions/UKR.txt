@@ -2416,18 +2416,50 @@ UKR_ATO_decision = {
 		visible = {
 			original_tag = UKR
 			has_completed_focus = UKR_launch_counterattacks
+			NOT = {
+				has_global_flag = Minsk2_is_signed
+			}
 		}
 		fire_only_once = yes
 		cost = 25
+		custom_cost_trigger = {
+            command_power > 14
+        }
+		custom_cost_text = decision_cost_CP_15
 		complete_effect = {
-			
+			291 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			318 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			327 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			337 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			359 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 291
+				state = 318
+				state = 327
+        		state = 337
+				state = 359
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
 
-	UKR_cut_off_the_separatists_from_the_border = {
+	UKR_counter_offensive_in_mariupol = {
 		icon = GFX_decision_UKR_batalion_aidar
 		allowed = {
 			original_tag = UKR
@@ -2435,11 +2467,212 @@ UKR_ATO_decision = {
 		visible = {
 			original_tag = UKR
 			has_completed_focus = UKR_launch_counterattacks
+			NOT = {
+				has_global_flag = Minsk2_is_signed
+			}
 		}
 		fire_only_once = yes
 		cost = 25
+		custom_cost_trigger = {
+            command_power > 14
+        }
+		custom_cost_text = decision_cost_CP_15
 		complete_effect = {
-			
+			486 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			652 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			518 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			502 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			527 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			653 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			526 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 486
+				state = 652
+				state = 518
+        		state = 502
+				state = 527
+				state = 653
+				state = 526
+				state = 650
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	UKR_counter_offensive_in_avdiivka = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_launch_counterattacks
+			NOT = {
+				has_global_flag = Minsk2_is_signed
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		custom_cost_trigger = {
+            command_power > 14
+        }
+		custom_cost_text = decision_cost_CP_15
+		complete_effect = {
+			426 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			412 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			401 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			399 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			390 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			391 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 426
+				state = 412
+				state = 401
+        		state = 399
+				state = 390
+				state = 391
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	UKR_counter_offensive_in_kurahovo = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_launch_counterattacks
+			NOT = {
+				has_global_flag = Minsk2_is_signed
+			}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+            command_power > 14
+        }
+		custom_cost_text = decision_cost_CP_15
+		complete_effect = {
+			421 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			441 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			446 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			468 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			264 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 421
+				state = 441
+				state = 446
+        		state = 468
+				state = 264
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	UKR_counter_offensive_in_severodonetsk_lisichansk = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_launch_counterattacks
+			NOT = {
+				has_global_flag = Minsk2_is_signed
+			}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+            command_power > 14
+        }
+		custom_cost_text = decision_cost_CP_15
+		complete_effect = {
+			304 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			307 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			297 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			269 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			285 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			259 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			305 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 304
+				state = 307
+				state = 297
+        		state = 269
+				state = 285
+				state = 259
+				state = 305
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
 		}
 		ai_will_do = {
 			factor = 100

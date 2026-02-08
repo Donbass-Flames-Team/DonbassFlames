@@ -4128,7 +4128,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-			country_event = uk
+			country_event = ukraine.85
 			add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
 		    custom_effect_tooltip = UKR_volunteer_battalions_tt
 		    add_political_power = 10
