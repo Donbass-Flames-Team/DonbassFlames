@@ -137,6 +137,10 @@ country_event = {
 				days = 6
 			}
 			country_event = {
+				id = ukraine.78
+				days = 7
+			}
+			country_event = {
 				id = ukraine.77
 				days = 21
 			}
@@ -991,6 +995,15 @@ country_event = {
 	picture = GFX_Report_event_yanukovich_v_donetske_picture
 	
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.81
+				days = 9
+			}
+		}
+	}
 
 	option = {
 		name = ukraine.22.a
@@ -2447,5 +2460,120 @@ country_event = {
 	option = {
 		name = ukraine.77.a		
         add_stability = -0.015 
+	}
+}
+
+# 2014 год 13 апреля мариуполь
+country_event = {
+	id = ukraine.78
+	title = ukraine.78.t
+	desc = ukraine.78.d
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.79
+				days = 11
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.78.a		
+        add_stability = -0.015 
+		add_political_power = -5
+	}
+}
+
+# 2014 год 24 апреля мариуполь
+country_event = {
+	id = ukraine.79
+	title = ukraine.79.t
+	desc = ukraine.79.d
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.80
+				days = 11
+			}
+		}		
+	}
+
+	option = {
+		name = ukraine.79.a		
+        add_stability = -0.015 
+		add_political_power = -5
+	}
+}
+
+# 2014 год 1 мая мариуполь
+country_event = {
+	id = ukraine.80
+	title = ukraine.80.t
+	desc = ukraine.80.d
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.80.a		
+        add_stability = -0.015 
+		add_political_power = -5
+	}
+}
+
+# События в Донецке с 1 марта по 6
+country_event = {
+	id = ukraine.81
+	title = ukraine.81.t
+	desc = ukraine.81.d
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.82
+				days = 7
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.81.a		
+        add_stability = -0.015 
+		add_political_power = -5
+	}
+}
+
+# События в Донецке 13 марта
+country_event = {
+	id = ukraine.82
+	title = ukraine.82.t
+	desc = ukraine.82.d
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.82.a		
+        add_stability = -0.015 
+		add_political_power = -5
 	}
 }

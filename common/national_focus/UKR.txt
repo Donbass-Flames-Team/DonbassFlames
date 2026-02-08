@@ -48,7 +48,7 @@ focus_tree = {
 	focus = {
 		id = UKR_yanukovychs_results
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.7
+		cost = 0.4
 		x = 12
 		y = 0
 
@@ -224,7 +224,7 @@ focus_tree = {
 	focus = {
 		id = UKR_dictatorship_takes_over
 		icon = GFX_focus_UKR_activation_of_security_forces
-		cost = 0.8
+		cost = 0.3
 		x = 6
 		y = 3
 		
@@ -613,7 +613,7 @@ focus_tree = {
 	focus = {
 		id = UKR_external_coordination
 		icon = GFX_goal_no_focus_UKR
-		cost = 0.5
+		cost = 0.3
 		x = -5
 		y = 1
 
@@ -679,7 +679,7 @@ focus_tree = {
 	focus = {
 		id = UKR_coordination_with_fsb
 		icon = GFX_goal_no_focus_UKR
-		cost = 0.3
+		cost = 0.2
 		x = 1
 		y = 1
 
@@ -4346,7 +4346,10 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_partial_mobilization"
             custom_effect_tooltip = UKR_started_partial_mobilization_tt
 			hidden_effect = {
-				
+				news_event = {
+					id = news_events.19
+					hours = 5
+				}
 			}
 		}
 	}

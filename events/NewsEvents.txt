@@ -48,6 +48,7 @@ news_event = {
 				original_tag = LPR
 				original_tag = OPR
 				original_tag = TMR
+				original_tag = UKR
 			}
 		}
 	}
@@ -97,6 +98,7 @@ news_event = {
 				original_tag = LPR
 				original_tag = OPR
 				original_tag = TMR
+				original_tag = UKR
 			}
 		}
 	}
@@ -146,6 +148,7 @@ news_event = {
 				original_tag = LPR
 				original_tag = OPR
 				original_tag = TMR
+				original_tag = UKR
 			}
 		}
 	}
@@ -195,6 +198,7 @@ news_event = {
 				original_tag = LPR
 				original_tag = OPR
 				original_tag = TMR
+				original_tag = UKR
 			}
 		}
 	}
@@ -244,6 +248,7 @@ news_event = {
 				original_tag = LPR
 				original_tag = OPR
 				original_tag = TMR
+				original_tag = UKR
 			}
 		}
 	}
@@ -293,6 +298,7 @@ news_event = {
 				original_tag = LPR
 				original_tag = OPR
 				original_tag = TMR
+				original_tag = UKR
 			}
 		}
 	}
@@ -342,6 +348,7 @@ news_event = {
 				original_tag = LPR
 				original_tag = OPR
 				original_tag = TMR
+				original_tag = UKR
 			}
 		}
 	}
@@ -391,6 +398,7 @@ news_event = {
 				original_tag = LPR
 				original_tag = OPR
 				original_tag = TMR
+				original_tag = UKR
 			}
 		}
 	}
@@ -438,6 +446,7 @@ news_event = {
 				original_tag = DPR
 				original_tag = LPR
 				original_tag = OPR
+				original_tag = UKR
 			}
 		}
 	}
@@ -565,4 +574,52 @@ news_event = {
     is_triggered_only = yes
 
     option = { name = news_events.18.a }
+}
+
+#Частичная мобилизация в Украине
+news_event = {
+	id = news_events.19
+	title = news_events.19.t
+	desc = news_events.19.d
+	picture = GFX_news_event_021
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.19.a
+		trigger = {
+			original_tag = UKR
+		}
+	}
+	
+	option = {
+		name = news_events.19.b
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.19.c
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = UKR
+			}
+		}
+	}
 }
