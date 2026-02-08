@@ -16,6 +16,16 @@ UKR_ukraine_army_idea = { #NATIONAL SPIRIT
 	
 }
 
+UKR_oligarchs_idea = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_oligarchs
+
+	political_power_gain  = UKR_Oligarchs_political_power_gain  #-0.45
+	consumer_goods_factor = UKR_Oligarchs_consumer_goods_factor  #-0.25
+	production_speed_buildings_factor = UKR_Oligarchs_production_speed_buildings_factor #-0.25
+}
+
 arisse_donbas_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
 	enable = { always = yes }
 

@@ -41,17 +41,10 @@ DF_economy_setup = yes
 	set_variable = { UKR_AFU_war_support_factor = -0.15 }
 	set_variable = { UKR_AFU_conscription = -0.02 } 
 
-	add_dynamic_modifier = { modifier = UKR_oligarchic_economy_idea }
-	set_variable = { UKR_AFU_army_org_factor = -0.55 }
-	set_variable = { UKR_AFU_army_org_regain = -0.25 }
-	set_variable = { UKR_AFU_army_morale_factor = -0.25 }
-    set_variable = { UKR_AFU_army_attack_factor = -0.45 }
-    set_variable = { UKR_AFU_army_defence_factor = -0.2 }
-	set_variable = { UKR_AFU_planning_speed = -0.20 }
-    set_variable = { UKR_AFU_army_speed_factor = -0.15 }
-	set_variable = { UKR_AFU_war_breakthrough_factor = -0.15 }
-	set_variable = { UKR_AFU_war_support_factor = -0.15 }
-	set_variable = { UKR_AFU_conscription = -0.02 } 
+	add_dynamic_modifier = { modifier = UKR_oligarchs_idea }
+	set_variable = { UKR_Oligarchs_political_power_gain = 0.15 }
+	set_variable = { UKR_Oligarchs_consumer_goods_factor = 0.20 }
+	set_variable = { UKR_Oligarchs_production_speed_buildings_factor = -0.075 }
 
 	add_dynamic_modifier = { modifier = GEN_inflation }
 	
