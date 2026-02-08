@@ -67,9 +67,9 @@ capital = 432
 	set_popularities = {
 		liberal_democracy = 1
 		conservatism_democracy = 5
-		nationalism = 50
+		nationalism = 30
 		communism = 25
-		autoritarian_democracy = 19
+		autoritarian_democracy = 39
 	}
 
 
@@ -78,4 +78,6 @@ capital = 432
 		amount = 5
 		producer = SDR
 	}
+
+	recruit_character = oleg_morgun
 }

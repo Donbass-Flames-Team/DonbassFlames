@@ -14,12 +14,20 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
-		DPR = {
-			country_event = {
-				id = DPR.15
-				hours = 6
-			}
+		hidden_effect = {
+			set_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
+		    DPR = {
+			    country_event = {
+				    id = DPR.15
+				    hours = 6
+			    }
+		    }
+		    UKR = {
+			    country_event = {
+				    id = ukraine.84
+				    hours = 7
+			    }
+		    }
 		}
 	}
 	
@@ -39,18 +47,20 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
-		DPR = {
-			country_event = {
-				id = DPR.16
-				hours = 6
-			}
-		}
-		UKR = {
-		    country_event = {
-				id = ukraine.83
-				hours = 6
-			}
+		hidden_effect = {
+			set_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
+		    DPR = {
+			    country_event = {
+				    id = DPR.16
+				    hours = 6
+			    }
+		    }
+		    UKR = {
+		        country_event = {
+				    id = ukraine.83
+				    hours = 6
+			    }
+		    }
 		}
 	}
 	

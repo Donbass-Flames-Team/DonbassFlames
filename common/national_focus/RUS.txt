@@ -738,7 +738,7 @@ focus_tree = {
 	focus = {
 		id = RUS_russian_spring_in_the_east
 		icon = GFX_goal_no_focus_RUS
-		cost = 1
+		cost = 0.5
 		x = 1
 		y = 2
 
@@ -765,7 +765,7 @@ focus_tree = {
 	focus = {
 		id = RUS_task_for_fsb
 		icon = GFX_goal_no_focus_RUS
-		cost = 1
+		cost = 0.5
 		x = -2
 		y = 1
 
@@ -792,7 +792,7 @@ focus_tree = {
 	focus = {
 		id = RUS_support_prorussians_protests
 		icon = GFX_goal_no_focus_RUS
-		cost = 1
+		cost = 0.5
 		x = 2
 		y = 1
 
@@ -818,7 +818,7 @@ focus_tree = {
 	focus = {
 		id = RUS_help_to_new_republics
 		icon = GFX_goal_no_focus_RUS
-		cost = 1
+		cost = 0.5
 		x = 0
 		y = 2
 
@@ -888,7 +888,7 @@ focus_tree = {
 		relative_position_id = RUS_russian_spring_in_the_east
 		
 		ai_will_do = {
-			factor = 1
+			factor = 15
 		}
 
 		available = {

@@ -2441,7 +2441,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 		    526 = { transfer_state_to = SDR }
-			650 = { transfer_state_to = DPR }
+			650 = { transfer_state_to = SDR }
 			SDR = {
 				add_state_core = 526
 				add_state_core = 650
@@ -2595,5 +2595,26 @@ country_event = {
 		name = ukraine.83.a		
         add_stability = 0.025 
 		add_political_power = 5
+	}
+}
+
+# Игорь стрелков покидает славянск
+country_event = {
+	id = ukraine.84
+	title = ukraine.84.t
+	desc = ukraine.84.d
+	picture = GFX_Report_event_girkin_killed_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.84.a		
+        add_stability = 0.045 
+		add_war_support = 0.015
+		add_political_power = 15
 	}
 }
