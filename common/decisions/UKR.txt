@@ -20,6 +20,7 @@ UKR_separatism_decision = {
 		cost = 15
 		complete_effect = {
 			add_stability = 0.02
+			add_war_support = 0.01
             custom_effect_tooltip = UKR_cut_off_the_water_supply_to_crimea_tt
 			hidden_effect = {
 				RUS = {
@@ -54,7 +55,7 @@ UKR_separatism_decision = {
 		
 	    fire_only_once = yes
 		days_re_enable = 60
-		cost = 75
+		cost = 35
 		complete_effect = {
 		    subtract_from_variable = {
                 var = DPR_separatism_value
@@ -94,7 +95,7 @@ UKR_separatism_decision = {
 		
 	    fire_only_once = yes
 		days_re_enable = 60
-		cost = 75
+		cost = 35
 		complete_effect = {
 		    subtract_from_variable = {
                 var = LPR_separatism_value
@@ -134,7 +135,7 @@ UKR_separatism_decision = {
 		
 	    fire_only_once = no
 		days_re_enable = 60
-		cost = 75
+		cost = 35
 		complete_effect = {
 		    subtract_from_variable = {
                 var = HPR_separatism_value
@@ -169,7 +170,7 @@ UKR_separatism_decision = {
 		
 	    fire_only_once = no
 		days_re_enable = 60
-		cost = 75
+		cost = 35
 		complete_effect = {
 			subtract_from_variable = {
                 var = OPR_separatism_value
@@ -1226,7 +1227,11 @@ UKR_depreservation_decision = {
 		complete_effect = {
 		    add_equipment_to_stockpile = { 
 				type = apc_chassis_1
-				amount = 250 
+				amount = 215 
+			}
+			add_equipment_to_stockpile = { 
+				type = apc_chassis_2
+				amount = 55 
 			}
 		}
 		ai_will_do = {
@@ -1249,7 +1254,7 @@ UKR_depreservation_decision = {
 		cost = 45
 		complete_effect = {
 		    add_equipment_to_stockpile = { 
-				type = infantry_equipment_1 
+				type = infantry_equipment_2
 				amount = 9500 
 			}
 			add_equipment_to_stockpile = { 
@@ -1259,6 +1264,10 @@ UKR_depreservation_decision = {
 			add_equipment_to_stockpile = { 
 				type = uniform_equipment_1
 				amount = 4500
+			}
+			add_equipment_to_stockpile = { 
+				type = support_equipment
+				amount = 3500 
 			}
 		}
 		ai_will_do = {
@@ -2295,6 +2304,277 @@ UKR_ATO_decision = {
 			    }																										
 			}
 		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 285
+				state = 328
+				state = 288
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+	}
+
+	UKR_defense_line_in_marupol = {
+		icon = GFX_decision_generic_soldier
+		allowed = {
+			original_tag = UKR
+		}
+		
+		available = {
+			
+		}
+
+		visible = {
+			tag = UKR
+			has_completed_focus = UKR_prepare_the_defense_of_cities
+		}
+		
+		cost = 15
+		fire_only_once = yes
+		days_remove = 45
+		
+		
+		complete_effect = {
+			custom_effect_tooltip = UKR_bunkers_in_mariupol_tt
+        	hidden_effect = {
+				# Mariupol
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18595
+					    }
+				    }
+				    526 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18595
+							instant_build = yes
+					    }
+				    }
+			    }
+                if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18215 
+					    }
+				    }
+				    526 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18215 
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 16477  
+					    }
+				    }
+				    526 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 16477  
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18216  
+					    }
+				    }
+				    526 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18216  
+							instant_build = yes
+					    }
+				    }
+			    }			
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 8904  
+					    }
+				    }
+				    526 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 8904  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18526  
+					    }
+				    }
+				    526 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18526  
+							instant_build = yes
+					    }
+				    }
+			    }			
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18218  
+					    }
+				    }
+				    526 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18218  
+							instant_build = yes
+					    }
+				    }
+			    }		
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18224  
+					    }
+				    }
+				    526 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18224  
+							instant_build = yes
+					    }
+				    }
+			    }	
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18219  
+					    }
+				    }
+				    526 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 1
+						    province = 18219  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18213  
+					    }
+				    }
+				    526 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18213  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18211  
+					    }
+				    }
+				    526 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 2
+						    province = 18211  
+							instant_build = yes
+					    }
+				    }
+			    }
+				# East region from mariupol
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18260  
+					    }
+				    }
+				    527 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18260  
+							instant_build = yes
+					    }
+				    }
+			    }		
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18244  
+					    }
+				    }
+				    285 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 18244  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 18137  
+					    }
+				    }
+				    285 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 8810  
+							instant_build = yes
+					    }
+				    }
+			    }
+				if = {
+				    limit = {
+					    UKR = {
+						    controls_province = 8962  
+					    }
+				    }
+				    285 = {
+					    add_building_construction = {
+						    type = bunker
+						    level = 3
+						    province = 8962  
+							instant_build = yes
+					    }
+				    }
+			    }																										
+			}
+		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 526
+				state = 285
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
 	}
 
 	UKR_volunteer_help_decision = {
@@ -2686,6 +2966,8 @@ UKR_general_staff_decision = {
 		icon = GFX_decision_UKR_batalion_aidar
 		allowed = {
 			original_tag = UKR
+		}
+		available = {
 			date > 2018.3.2
 		}
 		visible = {
@@ -2702,10 +2984,62 @@ UKR_general_staff_decision = {
 		}
 	}
 
+	UKR_53_otdelna_mechanizirovana_bryhada_decision = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2014.3.5
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_general_staff
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			custom_effect_tooltip = UKR_53_otdelna_mechanizirovana_bryhad_formed_tt
+			hidden_effect = {
+				load_oob = UKR_53_otdelnaya_mechanizirovanaya_brigada
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	UKR_54_otdelna_mechanizirovana_bryhada_decision = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2014.1.12
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_general_staff
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			custom_effect_tooltip = UKR_54_otdelna_mechanizirovana_bryhad_formed_tt
+			hidden_effect = {
+				load_oob = UKR_54_otdelnaya_mechanizirovanaya_brigada
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
 	UKR_44_otdelnaya_artilleriyskaya_brigada_decision = {
 		icon = GFX_decision_UKR_batalion_aidar
 		allowed = {
 			original_tag = UKR
+		}
+		available = {
 			date > 2014.1.9
 		}
 		visible = {
@@ -2715,7 +3049,7 @@ UKR_general_staff_decision = {
 		fire_only_once = yes
 		cost = 25
 		complete_effect = {
-			
+
 		}
 		ai_will_do = {
 			factor = 10
@@ -2726,6 +3060,8 @@ UKR_general_staff_decision = {
 		icon = GFX_decision_UKR_batalion_aidar
 		allowed = {
 			original_tag = UKR
+		}
+		available = {
 			date > 2014.8.8
 		}
 		visible = {
@@ -2735,7 +3071,10 @@ UKR_general_staff_decision = {
 		fire_only_once = yes
 		cost = 25
 		complete_effect = {
-			
+			custom_effect_tooltip = UKR_43_otdelnaya_artilleriyskaya_brigada_formed_tt
+			hidden_effect = {
+				load_oob = UKR_43_otdelnaya_artilleriyskaya_brigada
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -2746,6 +3085,8 @@ UKR_general_staff_decision = {
 		icon = GFX_decision_UKR_batalion_aidar
 		allowed = {
 			original_tag = UKR
+		}
+		available = {
 			date > 2014.8.8
 		}
 		visible = {
@@ -2755,7 +3096,10 @@ UKR_general_staff_decision = {
 		fire_only_once = yes
 		cost = 25
 		complete_effect = {
-			
+			custom_effect_tooltip = UKR_40_otdelnaya_artilleriyskaya_brigada_formed_tt
+			hidden_effect = {
+				load_oob = UKR_40_otdelnaya_artilleriyskaya_brigada
+			}
 		}
 		ai_will_do = {
 			factor = 10

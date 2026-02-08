@@ -3305,6 +3305,9 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_reform_of_the_sergeant_corps"
+			add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
+			add_to_variable = { UKR_AFU_army_org_factor = 0.015 }
+		    custom_effect_tooltip = UKR_reform_of_the_sergeant_corps_tt
 		}
 	}
 
@@ -3396,7 +3399,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		prerequisite = { focus = UKR_western_instructors }
+		prerequisite = { focus = UKR_reliance_on_centralized_command }
 		relative_position_id = UKR_military_reforms_afu
 
 
@@ -3481,6 +3484,11 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = modern_tank_5
+            }
 		}
 	}
 
