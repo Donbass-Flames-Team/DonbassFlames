@@ -1,8 +1,6 @@
 capital = 432
-recruit_character = zheka_vasilievich
 
 2013.11.21 = {
-	create_faction = "Novorossia"
 	set_technology = {
 		infantry_weapons = 1
 		infantry_weapons1 = 1
@@ -73,14 +71,22 @@ recruit_character = zheka_vasilievich
 		communism = 25
 		autoritarian_democracy = 19
 	}
+	
+    create_country_leader = {
+	    name = igor_strelkov_girkin
+	    desc = "STRELKOV_GIRKIN_DESC"
+	    picture = GFX_portrait_igor_strelkov_girkin
+	    expire = "2035.1.1"
+	    ideology = autoritarian_democracy
+	    traits = {
+			#
+	    }
+    }
 
-	recruit_character = dmitry_trapeznikov
-	recruit_character = aleksandr_zakharchenko
-	recruit_character = igor_strelkov_girkin
 
 	add_equipment_to_stockpile = {
 		type = train_equipment_1
-		amount = 34
-		producer = DPR
+		amount = 6
+		producer = NDR
 	}
 }

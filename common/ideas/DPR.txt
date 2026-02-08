@@ -189,6 +189,29 @@ ideas = {
 				ai_focus_aggressive_factor = 0.65
 			}
 		}
+
+		DPR_disorganized_uprising_idea = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_DPR_russian_spring
+			
+			modifier = {
+				army_morale_factor = -0.05
+				army_org_factor = -0.05
+				army_attack_factor = -0.10
+				breakthrough_factor = -0.15
+				army_speed_factor = -0.1
+				army_defence_factor = 0.035
+			}
+		}
 	}
 
 }

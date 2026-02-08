@@ -1,0 +1,38 @@
+focus_tree = {
+	id = south_donetsk_army_people_republic
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = SDR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2500 y = 500 }
+	
+	focus = {
+		id = SDR_capture_mvd
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.2
+		x = 12
+		y = 0
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+			add_war_support = 0.05
+			add_stability = 0.05
+			add_political_power = 35
+			add_command_power = 10
+		}
+	}
+
+
+}

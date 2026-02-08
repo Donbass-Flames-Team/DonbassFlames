@@ -43,8 +43,6 @@ country_event = {
 		hidden_effect = {
 			432 = { transfer_state_to = DPR }
 			424 = { transfer_state_to = DPR }
-			526 = { transfer_state_to = DPR }
-			650 = { transfer_state_to = DPR }
 			DPR = {
 				add_state_core = 432
 				add_state_core = 448
@@ -137,6 +135,10 @@ country_event = {
 			country_event = {
 				id = ukraine.26
 				days = 6
+			}
+			country_event = {
+				id = ukraine.77
+				days = 21
 			}
 		}
 	}
@@ -1066,13 +1068,24 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			318 = { transfer_state_to = DPR }
+			318 = { transfer_state_to = NDR }
 			DPR = {
 				declare_war_on = {
                     target = UKR
                     type = annex_everything
                 }
+				add_timed_idea = {
+					idea = DPR_disorganized_uprising_idea
+					days = 60
+				}
+			}
+			NDR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
 				load_oob = Donetsk_Slavyansk_Militia
+				add_state_core = 318
 			}
 			if = {
 				limit = { 
@@ -1115,6 +1128,9 @@ country_event = {
 			318 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 15 }
 			}	
+			318 = {
+				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = NDR days = 25 }
+			}
 			291 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 15 }
 			}
@@ -2397,5 +2413,39 @@ country_event = {
 	option = {
 		name = ukraine.76.a		
         add_stability = 0.025 
+	}
+}
+
+# Противостояние в Мариуполе
+country_event = {
+	id = ukraine.77
+	title = ukraine.77.t
+	desc = ukraine.77.d
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		    526 = { transfer_state_to = SDR }
+			650 = { transfer_state_to = DPR }
+			SDR = {
+				add_state_core = 526
+				add_state_core = 650
+				add_state_core = 527
+				add_state_core = 649
+			}
+			SDR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.77.a		
+        add_stability = -0.015 
 	}
 }
