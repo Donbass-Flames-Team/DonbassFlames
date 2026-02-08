@@ -1,0 +1,45 @@
+on_actions = {
+
+    on_weekly = {
+	    effect = {
+		    if = {
+			    limit = {
+				    has_global_flag = Start_Of_ATO
+				    tag = NDR
+				    date < 2014.6.25
+				    surrender_progress > 0.89
+					NOT = {
+						has_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
+					}
+			    }
+			    country_event = { id = NDR.1 }
+		    }
+			if = {
+			    limit = {
+				    has_global_flag = Start_Of_ATO
+				    tag = NDR
+					date > 2014.6.25
+				    date < 2014.7.4
+				    surrender_progress > 0.70
+					NOT = {
+						has_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
+					}
+			    }
+			    country_event = { id = NDR.2 }
+		    }
+			if = {
+			    limit = {
+				    has_global_flag = Start_Of_ATO
+				    tag = NDR
+					date > 2014.7.5
+				    surrender_progress > 0.30
+					NOT = {
+						has_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
+					}
+			    }
+			    country_event = { id = NDR.1 }
+		    }		    
+	    }
+	}
+}
+

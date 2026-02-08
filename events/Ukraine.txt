@@ -2577,3 +2577,23 @@ country_event = {
 		add_political_power = -5
 	}
 }
+
+# Игорь стрелков ликвидирован
+country_event = {
+	id = ukraine.83
+	title = ukraine.83.t
+	desc = ukraine.83.d
+	picture = GFX_Report_event_girkin_killed_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.83.a		
+        add_stability = 0.025 
+		add_political_power = 5
+	}
+}

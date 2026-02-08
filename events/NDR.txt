@@ -1,0 +1,61 @@
+﻿###########################
+# NDR Events
+###########################
+
+add_namespace = NDR
+
+# Колона Гиркина выезжает из Славянска в Донецк
+country_event = {
+	id = NDR.1
+	title = NDR.1.t
+	desc = NDR.1.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
+		DPR = {
+			country_event = {
+				id = DPR.15
+				hours = 6
+			}
+		}
+	}
+	
+	option = {
+		name = NDR.1.a
+		
+	}
+}
+
+# Гиркин Убит
+country_event = {
+	id = NDR.2
+	title = NDR.2.t
+	desc = NDR.2.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
+		DPR = {
+			country_event = {
+				id = DPR.16
+				hours = 6
+			}
+		}
+		UKR = {
+		    country_event = {
+				id = ukraine.83
+				hours = 6
+			}
+		}
+	}
+	
+	option = {
+		name = NDR.2.a
+		
+	}
+}

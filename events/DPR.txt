@@ -175,10 +175,6 @@ country_event = {
 		name = DPR.10.a
 		add_war_support = 0.015
 		add_command_power = 10
-		custom_effect_tooltip = DPR_Strelkov_in_DPR_tooltip
-	    hidden_effect = {
-			set_global_flag = Girkin_in_DPR
-		}
 	}
 }
 
@@ -241,6 +237,49 @@ country_event = {
 	
 	option = {
 		name = DPR.14.a
-		load_oob = DPR_regular_from_russia_novoazovsk
+		
+	}
+}
+
+
+#Колона Гиркина выехала из Славянска
+country_event = {
+	id = DPR.15
+	title = DPR.15.t
+	desc = DPR.15.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.15.a
+		annex_country = {
+            target = NDR
+            transfer_troops = yes
+        }
+		custom_effect_tooltip = DPR_Strelkov_in_DPR_tooltip
+	    hidden_effect = {
+			set_global_flag = Girkin_in_DPR
+		}
+		
+	}
+}
+
+#Гиркин убит
+country_event = {
+	id = DPR.16
+	title = DPR.16.t
+	desc = DPR.16.d
+	picture = GFX_Report_event_girkin_killed_picture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.16.a
+		annex_country = {
+            target = NDR
+            transfer_troops = yes
+        }
+		
 	}
 }

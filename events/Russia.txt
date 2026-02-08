@@ -190,8 +190,8 @@ country_event = {
 		add_stability = 0.05
 		hidden_effect = {
 			DPR = {
-				if = { limit = { 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
-				if = { limit = { 502 = { is_controlled_by = DPR } } transfer_state = 502 }
+				if = { limit = { 652 = { is_controlled_by = DPR } 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
+				if = { limit = { 502 = { is_controlled_by = DPR } 652 = { is_controlled_by = DPR } } transfer_state = 502 }
 				if = { limit = { 489 = { is_controlled_by = DPR } } transfer_state = 489 }
 				if = { limit = { 653 = { is_controlled_by = DPR } } transfer_state = 653 transfer_state = 489 }
 				if = { limit = { 446 = { is_controlled_by = DPR } } transfer_state = 446 }
@@ -300,8 +300,8 @@ country_event = {
 		add_stability = 0.05
         hidden_effect = {
 			DPR = {
-				if = { limit = { 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
-				if = { limit = { 502 = { is_controlled_by = DPR } } transfer_state = 502 }
+				if = { limit = { 652 = { is_controlled_by = DPR } 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
+				if = { limit = { 502 = { is_controlled_by = DPR } 652 = { is_controlled_by = DPR } } transfer_state = 502 }
 				if = { limit = { 489 = { is_controlled_by = DPR } } transfer_state = 489 }
 				if = { limit = { 653 = { is_controlled_by = DPR } } transfer_state = 653 transfer_state = 489 }
 				if = { limit = { 446 = { is_controlled_by = DPR } } transfer_state = 446 }
@@ -356,7 +356,7 @@ country_event = {
 			}
 			UKR = {
 				transfer_state = 318
-				if = { limit = { 526 = { is_controlled_by = UKR } } transfer_state = 526 transfer_state = 486 }
+				if = { limit = { 526 = { is_controlled_by = UKR } } transfer_state = 526 transfer_state = 650 }
 				if = { limit = { 650 = { is_fully_controlled_by = UKR } } transfer_state = 650 }
 				if = { limit = { 652 = { is_controlled_by = UKR } } transfer_state = 652 }
 			}
