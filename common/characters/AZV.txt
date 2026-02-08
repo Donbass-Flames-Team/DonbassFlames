@@ -1,0 +1,18 @@
+characters = {
+
+    andrey_belitsky = {
+        name = andrey_belitsky
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_Andrey_Belitsky"
+            }
+        }
+        country_leader = {
+            ideology = nationalism
+            traits = { }
+            expire = "2060.1.1"
+            id = -1
+        }
+    }
+
+}

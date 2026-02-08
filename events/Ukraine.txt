@@ -2618,3 +2618,33 @@ country_event = {
 		add_political_power = 15
 	}
 }
+
+# Азов
+country_event = {
+	id = ukraine.85
+	title = ukraine.85.t
+	desc = ukraine.85.d
+	picture = GFX_Report_event_recreation_of_ngu_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			AZV = {
+				transfer_state = 551
+				add_state_core = 551
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.85.a		
+	}
+
+	option = {
+		name = ukraine.85.b	
+		AZV = {
+			change_tag_from = root
+		}
+	}
+}
