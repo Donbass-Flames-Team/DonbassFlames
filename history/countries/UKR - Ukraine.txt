@@ -198,6 +198,11 @@ DF_economy_setup = yes
         value = 30
     }
 
+	set_variable = {
+        var = UKR_legitimacy_of_central_power_value
+        value = 85
+    }
+
 	# Separatism values in regions
 	set_variable = {
         var = Luhansk_prorussian_support_value

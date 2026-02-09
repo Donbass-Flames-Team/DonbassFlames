@@ -283,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = UKR_influence_through_the_media
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.5
 		x = 5
 		y = 1
 
@@ -308,6 +308,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
+			add_political_power = 35
 		}
 	}
 
@@ -459,6 +460,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
+			add_political_power = 35
 		}
 	}
 
@@ -489,6 +491,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
+			add_political_power = 35
 		}
 	}
 
@@ -519,6 +522,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
+			add_political_power = 35
 		}
 	}
 
@@ -548,6 +552,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
+			add_political_power = 35
 		}
 	}
 
@@ -577,6 +582,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
+			add_political_power = 35
 		}
 	}
 
@@ -868,7 +874,7 @@ focus_tree = {
 	focus = {
 		id = UKR_strengthening_control
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.5
 		x = -1
 		y = 5
 
@@ -897,7 +903,7 @@ focus_tree = {
 	focus = {
 		id = UKR_black_company
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.3
 		x = 1
 		y = 5
 
@@ -1464,7 +1470,7 @@ focus_tree = {
 	focus = {
 		id = UKR_negotiations_have_reached_an_impasse
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.5
 		x = 0
 		y = 3
 
@@ -1489,7 +1495,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
-				days = 5
+				days = 2
 			}
 			add_stability = 0.025
 		}
@@ -3614,7 +3620,7 @@ focus_tree = {
 	focus = {
 		id = UKR_organize_frontline
 		icon = GFX_focus_UKR_organize_frontline
-		cost = 2
+		cost = 1.5
 		x = 0
 		y = 2
 

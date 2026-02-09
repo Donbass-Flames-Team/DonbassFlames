@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "UKR_maidan_powers"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height = 202 }
+		size = { width = 100% height = 222 }
 
 		iconType = {
 			name = "UKR_maidanites"
@@ -60,6 +60,17 @@ guiTypes = {
 			format = center
 			maxHeight = 24
 			tooltip = "UKR_maidan_powers_prorussians_text_tt"
+		}
+
+		instantTextBoxType = {
+			name = "UKR_legitimacy_of_the_power_text"
+			position = { x = 140 y = 195 }
+			font = "hoi_16mbs"
+			text = "UKR_legitimacy_of_the_power_text"
+			format = center
+			maxHeight = 232
+			maxWidth = 252
+			tooltip = "UKR_legitimacy_of_the_power_text_tt"
 		}
 	}
 }

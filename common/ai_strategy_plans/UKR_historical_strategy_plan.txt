@@ -1,0 +1,71 @@
+UKR_historical_strategy_plan = {
+	name = "UKR historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = UKR
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+
+	ai_national_focuses = {
+		UKR_yanukovychs_results
+		UKR_situation_is_out_of_control
+		UKR_force_deal_with_protests
+        UKR_next_steps
+		UKR_dictatorship_takes_over
+		UKR_external_coordination
+		UKR_appeal_to_russia_for_support
+		UKR_coordination_with_fsb
+		UKR_under_the_pretext_of_a_christmas_tree
+		UKR_emergency_measures
+		UKR_researching_for_compromise
+		UKR_transition_to_forceful_measures
+		UKR_expansion_of_police_powers
+		UKR_strengthening_control
+		UKR_black_company
+		UKR_influence_through_the_media
+		UKR_start_company_of_antimaidan
+		UKR_negotiations_have_reached_an_impasse
+		UKR_escalation_of_confrontation
+		UKR_extreme_measures_of_suppression
+		UKR_use_of_special_means
+		#После свержения януковича
+		UKR_government_in_anarchy
+		UKR_preparation_for_elections
+		UKR_release_political_prisoners_from_prisons
+		UKR_coalition_in_parlamient
+		UKR_adoption_of_new_laws
+		UKR_unrest_in_the_east
+		UKR_highlighting_the_situation_in_the_media
+		UKR_leave_the_peninsula
+		UKR_pick_up_weapons_from_warehouses
+		UKR_partial_mobilization
+		UKR_forced_demobilization
+		UKR_support_of_the_volunteer_battalion
+		UKR_creation_of_tro
+		UKR_appeal_to_the_oligarchs
+		UKR_concessions_to_the_oligarchs
+		#Начало АТО
+		UKR_emergency_redeployment_of_troops
+		UKR_volunteer_battalions
+		UKR_volunteer_battalion_azov
+		UKR_organize_frontline
+		UKR_organize_defense
+		UKR_general_staff
+		UKR_prepare_the_defense_of_cities
+		UKR_launch_counterattacks
+		UKR_volunteer_battalions_of_mvd
+		UKR_humanitarion_help_to_people
+		UKR_decommissioning_of_stocks
+		UKR_volunteer_help
+	} 
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

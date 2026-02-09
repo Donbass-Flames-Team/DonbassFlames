@@ -81,6 +81,16 @@ UKR_radicalisation_of_nationalists_clamp_and_update_ui_effect = {
 		max = 100
 	}
 }
+
+## Legitimacy of central power
+
+UKR_legitimacy_of_central_power_value_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = UKR_legitimacy_of_central_power_value
+		min = 0
+		max = 100
+	}
+}
 ##############################
 
 ###################################
