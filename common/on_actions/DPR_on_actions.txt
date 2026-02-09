@@ -38,7 +38,24 @@ on_actions = {
 					}
 			    }
 			    country_event = { id = NDR.1 }
-		    }		    
+		    }	
+			if = {
+			    limit = {
+				    has_global_flag = Start_Of_ATO
+                    SDR = {
+						surrender_progress > 0.96
+					}
+					NOT = {
+						has_global_flag = ANNEX_MARIUPOL_REBELS
+					}
+			    }
+			    UKR = {
+					annex_country = {
+						target = NDR
+					}
+				}
+				set_global_flag = ANNEX_MARIUPOL_REBELS
+		    }	    
 	    }
 	}
 }

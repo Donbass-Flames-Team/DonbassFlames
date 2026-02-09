@@ -12,6 +12,10 @@ country_event = {
 	picture = GFX_Report_event_russian_go_thrgouh_border_picture
 	
 	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = DPR_forces_to_ilovaysk
+	}
 	
 	option = {
 		name = DPR.1.a

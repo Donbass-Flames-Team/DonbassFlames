@@ -1530,6 +1530,15 @@ UKR_ATO_decision = {
 			    }				
 			}
 		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 291
+				state = 327
+				state = 318
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
 	}
 
 	UKR_defense_line_in_maryinka = {
@@ -1632,6 +1641,14 @@ UKR_ATO_decision = {
 				    }
 			    }											
 			}
+		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 421
+				state = 441
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
 		}
 	}
 
@@ -1782,6 +1799,15 @@ UKR_ATO_decision = {
 			    }							
 			}
 		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 399
+				state = 412
+				state = 426
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
 	}
 
 	UKR_defense_line_in_dzerzinsk = {
@@ -1931,6 +1957,15 @@ UKR_ATO_decision = {
 			    }							
 			}
 		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 328
+				state = 337
+				state = 390
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
 	}
 
 	UKR_defense_line_in_zolotoi = {
@@ -2049,6 +2084,14 @@ UKR_ATO_decision = {
 				    }
 			    }																													
 			}
+		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 333
+				state = 326
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
 		}
 	}
 

@@ -189,6 +189,7 @@ country_event = {
 		name = russia.11.a
 		add_stability = 0.05
 		hidden_effect = {
+			set_global_flag = second_phase_of_ato
 			DPR = {
 				if = { limit = { 652 = { is_controlled_by = DPR } 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
 				if = { limit = { 502 = { is_controlled_by = DPR } 652 = { is_controlled_by = DPR } } transfer_state = 502 }
@@ -219,6 +220,7 @@ country_event = {
 				transfer_state = 404
 				transfer_state = 408
 				transfer_state = 432
+				clr_country_flag = DPR_forces_to_ilovaysk
 			}
 			LPR = {
 				transfer_state = 387
@@ -243,6 +245,7 @@ country_event = {
 				transfer_state = 334
 				if = { limit = { 333 = { is_controlled_by = LPR } } transfer_state = 333 transfer_state = 344 }
 				if = { limit = { 326 = { is_controlled_by = LPR } } transfer_state = 326 }
+				clr_country_flag = LPR_first_phase_of_ato
 			}
 			UKR = {
 				transfer_state = 318
@@ -261,7 +264,6 @@ country_event = {
 				    }
 			    }
 			}
-			set_global_flag = second_phase_of_ato
 			news_event = {
 				id = news_events.16
 				hours = 6

@@ -13,13 +13,11 @@ UKR_ato_is_going = {
 	}
 
 	abort = {
-		OR = {
-			NOT = {
-				has_war_with = DPR
-				has_war_with = LPR
-				has_war_with = KPR
-				has_war_with = OPR
-			}
+		NOT = {
+			has_war_with = DPR
+			has_war_with = LPR
+			has_war_with = KPR
+			has_war_with = OPR
 		}
 	}
 
@@ -63,7 +61,7 @@ UKR_second_phase_of_ato = {
 	ai_strategy = {
 		type = front_unit_request
 		tag = DPR
-		value = 150
+		value = 250
 	}
 	ai_strategy = {
 		type = front_unit_request
