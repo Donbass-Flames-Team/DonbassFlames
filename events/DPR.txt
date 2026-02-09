@@ -287,3 +287,21 @@ country_event = {
 		
 	}
 }
+
+#Миссия взять дебальцево
+country_event = {
+	id = DPR.17
+	title = DPR.17.t
+	desc = DPR.17.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DPR.17.a
+		activate_mission = DPR_capture_debaltsevo
+		hidden_effect = {
+			set_country_flag = Debaltsevo_battle
+		}
+	}
+}

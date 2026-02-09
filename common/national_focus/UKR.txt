@@ -3862,6 +3862,10 @@ focus_tree = {
 					}
                     load_oob = UKR_ATO_Buff
 				}
+				DPR = {
+					country_event = DPR.17
+					days = 3
+				}
 			}				
 		}
 	}
@@ -3890,9 +3894,9 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-			unlock_decision_tooltip = UKR_cut_off_the_separatists_from_the_border
             unlock_decision_category_tooltip = UKR_general_staff_decision
 			army_experience = 20
+			add_command_power = 10
 		}
 	}
 
@@ -3922,12 +3926,19 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			unlock_decision_category_tooltip = UKR_ATO_decision
 		    add_to_variable = { UKR_AFU_army_attack_factor = 0.15 }
 		    custom_effect_tooltip = UKR_launch_counterattacks_tt
 			hidden_effect = {
-				526 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }
+				if = {
+					limit = {
+					    UKR = {
+						    is_ai = yes
+					    }
+					}
+					526 = {
+			            add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		            }
 				527 = {
 			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
 		        }
@@ -3975,7 +3986,8 @@ focus_tree = {
 		        }	
 				333 = {
 			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }	
+		        }
+				}	
 				set_country_flag = UKR_counteroffensive_is_happening		
 			}
 		}

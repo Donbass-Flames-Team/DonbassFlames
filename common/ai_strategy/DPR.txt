@@ -88,6 +88,58 @@ DPR_hold_donetsk = {
 	}
 }
 
+DPR_debaltsevo_attack = {
+	allowed = {
+		original_tag = DPR
+	}
+
+	enable = {
+		has_country_flag = Debaltsevo_battle
+	}
+
+	abort = {
+		NOT = {
+			has_country_flag = Debaltsevo_battle
+		}
+	}
+	
+	ai_strategy = {
+		type = front_control
+		state = 13
+		ratio = 0.1
+		priority = 500
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		state = 378
+		ratio = 0.1
+		priority = 500
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		state = 376
+		ratio = 0.1
+		priority = 500
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}	
+
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 8
+		id = 432
+	}
+}
+
 DPR_russian_forces_ilovaysk = {
 	allowed = {
 		original_tag = DPR

@@ -26,3 +26,57 @@ DPR_armed_forces_of_dpr_category = {
 		}
 	}
 }
+
+DPR_war_for_independence_of_donbass = {
+	DPR_capture_debaltsevo = {
+
+		icon = GFX_decision_generic_soldier
+		is_good = yes
+		selectable_mission = no
+		fire_only_once = yes
+		days_mission_timeout = 25
+        
+		#Fail trigger
+		available = {
+			DPR = { 
+				controls_state = 13
+			    controls_state = 378
+				controls_state = 376
+			}
+		}
+
+		activation = {
+			always = no
+		}
+
+		complete_effect = {
+			add_stability = -0.025
+			add_war_support = -0.075
+			hidden_effect = {
+				clr_country_flag = Debaltsevo_battle
+			}
+		}
+
+		timeout_effect = {
+			add_stability = 0.06
+			add_war_support = 0.06
+			news_event = {
+				id = news_events.20
+				hours = 6
+			}
+			hidden_effect = {
+				clr_country_flag = Debaltsevo_battle
+			}
+	    }
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 13
+				state = 378
+				state = 376
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	}
+}

@@ -19,3 +19,20 @@ DPR_armed_forces_of_dpr_category = {
 		has_completed_focus = DPR_armed_forces_of_dpr
 	}
 }
+
+DPR_war_for_independence_of_donbass = {
+
+	priority = 85
+	
+	icon = GFX_decision_afu_icon
+	
+	allowed = {
+		original_tag = DPR 
+	}
+	#picture = GFX_decision_UKR_separatism
+
+	visible = {
+        tag = DPR
+		has_completed_focus = DPR_armed_forces_of_dpr
+	}
+}

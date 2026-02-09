@@ -190,6 +190,7 @@ country_event = {
 				add_state_core = 346
 				add_state_core = 334
 				add_state_core = 352
+				add_state_core = 384
 				set_country_flag = LPR_first_phase_of_ato
 			}
 			LPR = {
@@ -2648,4 +2649,21 @@ country_event = {
 			change_tag_from = root
 		}
 	}
+}
+
+# Блокпост 32
+country_event = {
+	id = ukraine.86
+	title = ukraine.86.t
+	desc = ukraine.86.d
+	picture = GFX_Report_event_recreation_of_ngu_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.86.a		
+		add_manpower = -16
+		add_command_power = -5
+	}
+
 }
