@@ -5,15 +5,21 @@ ideas = {
 		use_list_view = yes
 
 		disarmed_nation = {
-			cost = 150
+			cost = 300
 			removal_cost = -1
 			level = 7
 
-			available = {
-			}
-
 			modifier = {
-				conscription = 0.01
+				conscription = 0.001
+
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_speed_buildings_factor = 0.2
+
+				stability_factor = 0.02
+				war_support_factor = -0.12
+				political_power_factor = 0.02
+				training_time_factor = -0.05
 			}
 
 			cancel_if_invalid = no
@@ -24,12 +30,8 @@ ideas = {
 			removal_cost = -1
 			level = 6
 
-			available = {
-			}
-
 			ai_will_do = {
 				factor = 1
-
 				modifier = {
 					factor = 60
 					has_idea = disarmed_nation
@@ -37,7 +39,16 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.015
+				conscription = 0.005
+
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_speed_buildings_factor = 0.1
+
+				stability_factor = 0.03
+				war_support_factor = -0.02
+				training_time_factor = -0.05
+				political_power_factor = 0.01
 			}
 
 			default = yes
@@ -54,24 +65,24 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.025
+				conscription = 0.01
+
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = 0.05
+
+				# level 5: ще НЕ б'є по стабільності
+				stability_factor = 0.01
+				war_support_factor = 0.01
+				training_time_factor = 0.05
+				political_power_factor = -0.01
 			}
 
 			ai_will_do = {
 				factor = 1
-
-				modifier = {
-					factor = 0.5
-					manpower_per_military_factory > 5000
-				}
-				modifier = {
-					factor = 20
-					manpower_per_military_factory < 2000
-				}
-				modifier = {
-					factor = 0
-					NOT = { has_idea = volunteer_only }
-				}
+				modifier = { factor = 0.5 manpower_per_military_factory > 5000 }
+				modifier = { factor = 20 manpower_per_military_factory < 2000 }
+				modifier = { factor = 0 NOT = { has_idea = volunteer_only } }
 			}
 
 			cancel_if_invalid = no
@@ -93,31 +104,31 @@ ideas = {
 
 			ai_will_do = {
 				factor = 1
-
-				modifier = {
-					factor = 0.5
-					manpower_per_military_factory > 3000
-				}
-				modifier = {
-					factor = 20
-					manpower_per_military_factory < 800
-				}
-				modifier = {
-					factor = 0
-					NOT = { has_idea = limited_conscription }
-				}
+				modifier = { factor = 0.5 manpower_per_military_factory > 3000 }
+				modifier = { factor = 20 manpower_per_military_factory < 800 }
+				modifier = { factor = 0 NOT = { has_idea = limited_conscription } }
 			}
 
 			modifier = {
-				conscription = 0.05
-				training_time_factor = 0.1
+				conscription = 0.025
+
+				industrial_capacity_factory = -0.07
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05
+
+				training_time_factor = 0.12
+
+				# після level 5 — стабільність падає
+				stability_factor = -0.04
+				war_support_factor = -0.03
+				political_power_factor = -0.03
 			}
 
 			cancel_if_invalid = no
 		}
 
 		service_by_requirement = {
-			cost = 150
+			cost = 300
 			removal_cost = -1
 			level = 3
 
@@ -135,38 +146,31 @@ ideas = {
 
 			ai_will_do = {
 				factor = 1
-
-				modifier = {
-					factor = 20
-					manpower_per_military_factory < 700
-				}
-				modifier = {
-					factor = 0.5
-					manpower_per_military_factory > 1000
-				}
-				modifier = {
-					factor = 0
-					manpower_per_military_factory > 3000
-				}
-				modifier = {
-					factor = 0
-					NOT = { has_idea = extensive_conscription }
-				}
+				modifier = { factor = 20 manpower_per_military_factory < 700 }
+				modifier = { factor = 0.5 manpower_per_military_factory > 1000 }
+				modifier = { factor = 0 manpower_per_military_factory > 3000 }
+				modifier = { factor = 0 NOT = { has_idea = extensive_conscription } }
 			}
 
 			modifier = {
-				conscription = 0.1
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
-				production_speed_buildings_factor = -0.1
-				training_time_factor = 0.2
+				conscription = 0.05
+
+				industrial_capacity_factory = -0.12
+				industrial_capacity_dockyard = -0.12
+				production_speed_buildings_factor = -0.12
+
+				training_time_factor = 0.22
+
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				political_power_factor = -0.06
 			}
 
 			cancel_if_invalid = no
 		}
 
 		all_adults_serve = {
-			cost = 150
+			cost = 300
 			removal_cost = -1
 			level = 2
 
@@ -181,38 +185,31 @@ ideas = {
 
 			ai_will_do = {
 				factor = 1
-
-				modifier = {
-					factor = 20
-					manpower_per_military_factory < 600
-				}
-				modifier = {
-					factor = 0.5
-					manpower_per_military_factory > 1000
-				}
-				modifier = {
-					factor = 0
-					manpower_per_military_factory > 2800
-				}
-				modifier = {
-					factor = 0
-					NOT = { has_idea = service_by_requirement }
-				}
+				modifier = { factor = 20 manpower_per_military_factory < 600 }
+				modifier = { factor = 0.5 manpower_per_military_factory > 1000 }
+				modifier = { factor = 0 manpower_per_military_factory > 2800 }
+				modifier = { factor = 0 NOT = { has_idea = service_by_requirement } }
 			}
 
 			modifier = {
-				conscription = 0.2
-				industrial_capacity_factory = -0.3
-				industrial_capacity_dockyard = -0.3
-				production_speed_buildings_factor = -0.3
-				training_time_factor = 0.3
+				conscription = 0.1
+
+				industrial_capacity_factory = -0.30
+				industrial_capacity_dockyard = -0.30
+				production_speed_buildings_factor = -0.30
+
+				training_time_factor = 0.35
+
+				stability_factor = -0.18
+				war_support_factor = -0.18
+				political_power_factor = -0.10
 			}
 
 			cancel_if_invalid = no
 		}
 
 		scraping_the_barrel = {
-			cost = 150
+			cost = 300
 			removal_cost = -1
 			level = 1
 
@@ -227,31 +224,24 @@ ideas = {
 
 			ai_will_do = {
 				factor = 1
-
-				modifier = {
-					factor = 20
-					manpower_per_military_factory < 500
-				}
-				modifier = {
-					factor = 0.5
-					manpower_per_military_factory > 1000
-				}
-				modifier = {
-					factor = 0
-					manpower_per_military_factory > 5000
-				}
-				modifier = {
-					factor = 0
-					NOT = { has_idea = all_adults_serve }
-				}
+				modifier = { factor = 20 manpower_per_military_factory < 500 }
+				modifier = { factor = 0.5 manpower_per_military_factory > 1000 }
+				modifier = { factor = 0 manpower_per_military_factory > 5000 }
+				modifier = { factor = 0 NOT = { has_idea = all_adults_serve } }
 			}
 
 			modifier = {
-				conscription = 0.25
-				industrial_capacity_factory = -0.4
-				industrial_capacity_dockyard = -0.4
-				production_speed_buildings_factor = -0.4
-				training_time_factor = 0.5
+				conscription = 0.2
+
+				industrial_capacity_factory = -0.40
+				industrial_capacity_dockyard = -0.40
+				production_speed_buildings_factor = -0.40
+
+				training_time_factor = 0.55
+
+				stability_factor = -0.28
+				war_support_factor = -0.28
+				political_power_factor = -0.14
 			}
 
 			cancel_if_invalid = no

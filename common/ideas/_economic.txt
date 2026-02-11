@@ -10,12 +10,14 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value = 0.35
-				production_speed_industrial_complex_factor = -0.3
-				production_speed_arms_factory_factor = -0.3
-				conversion_cost_civ_to_mil_factor = 0.3
-				conversion_cost_mil_to_civ_factor = 0.3
-				max_fuel_factor = -0.25
-				fuel_gain_factor = -0.4
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_buildings_factor = 0.10
+				production_speed_arms_factory_factor = -0.25
+				conversion_cost_civ_to_mil_factor = 0.80
+				conversion_cost_mil_to_civ_factor = -0.25
+				fuel_gain_factor = -0.40
+				stability_factor = 0.20
+				war_support_factor = -0.05
 			}
 
 			default = yes
@@ -31,10 +33,14 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.3
-				production_speed_industrial_complex_factor = -0.1
-				production_speed_arms_factory_factor = -0.1
-				fuel_gain_factor = -0.25
+				consumer_goods_expected_value = 0.28
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				production_speed_arms_factory_factor = -0.10
+				conversion_cost_civ_to_mil_factor = 0.35
+				conversion_cost_mil_to_civ_factor = -0.10
+				fuel_gain_factor = -0.15
+				stability_factor = 0.10
 			}
 
 			cancel_if_invalid = no
@@ -57,11 +63,13 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.25
-				production_speed_arms_factory_factor = 0.1
-				conversion_cost_civ_to_mil_factor = -0.1
-				conversion_cost_mil_to_civ_factor = -0.1
-				fuel_gain_factor = -0.1
+				consumer_goods_expected_value = 0.24
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_buildings_factor = 0.02
+				production_speed_arms_factory_factor = 0.05
+				conversion_cost_civ_to_mil_factor = 0.10
+				conversion_cost_mil_to_civ_factor = 0.00
+				stability_factor = 0.02
 			}
 
 			cancel_if_invalid = no
@@ -97,10 +105,14 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.2
-				production_speed_arms_factory_factor = 0.2
-				conversion_cost_civ_to_mil_factor = -0.2
-				conversion_cost_mil_to_civ_factor = -0.2
+				consumer_goods_expected_value = 0.18
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_buildings_factor = -0.05
+				production_speed_arms_factory_factor = 0.20
+				conversion_cost_civ_to_mil_factor = -0.25
+				conversion_cost_mil_to_civ_factor = 0.25
+				stability_factor = -0.10
+				war_support_factor = 0.05
 			}
 
 			cancel_if_invalid = no
@@ -175,11 +187,14 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.15
-				conscription = -0.03
-				production_speed_arms_factory_factor = 0.3
-				conversion_cost_civ_to_mil_factor = -0.3
-				conversion_cost_mil_to_civ_factor = -0.3
+				consumer_goods_expected_value = 0.12
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_buildings_factor = -0.15
+				production_speed_arms_factory_factor = 0.35
+				conversion_cost_civ_to_mil_factor = -0.45
+				conversion_cost_mil_to_civ_factor = 0.45
+				stability_factor = -0.22
+				war_support_factor = 0.10
 			}
 
 			cancel_if_invalid = no
@@ -204,6 +219,8 @@ ideas = {
 			modifier = {
 				min_export = 0.25
 				consumer_goods_expected_value = 0.05
+				production_speed_buildings_factor = 0.02
+				research_speed_factor = 0.01
 				civilian_intel_to_others = 40.0
 				navy_intel_to_others = 40.0
 				agency_upgrade_time = 0.15
@@ -224,14 +241,15 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				min_export = 0.8
+				min_export = 0.80
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
-				research_speed_factor = 0.10
-				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 20.0
-				cic_construction_boost_factor = 0.05
+				research_speed_factor = 0.12
+				cic_construction_boost_factor = 0.08
+				civilian_intel_to_others = 70.0
+				navy_intel_to_others = 35.0
+				stability_factor = 0.05
 			}
 
 			cancel_if_invalid = no
@@ -249,14 +267,15 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				min_export = 0.5
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
-				production_speed_buildings_factor = 0.1
-				research_speed_factor = 0.05
-				civilian_intel_to_others = 20.0
-				navy_intel_to_others = 10.0
-				cic_construction_boost_factor = 0.1
+				min_export = 0.50
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.06
+				cic_construction_boost_factor = 0.05
+				civilian_intel_to_others = 35.0
+				navy_intel_to_others = 15.0
+				stability_factor = 0.02
 			}
 
 			default = yes
@@ -296,14 +315,14 @@ ideas = {
 
 			modifier = {
 				min_export = 0.25
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-				production_speed_buildings_factor = 0.05
-				research_speed_factor = 0.01
-				civilian_intel_to_others = 10.0
-				navy_intel_to_others = 5
+				industrial_capacity_factory = 0.04
+				industrial_capacity_dockyard = 0.04
+				production_speed_buildings_factor = 0.04
+				research_speed_factor = 0.02
+				cic_construction_boost = -0.02
+				civilian_intel_to_others = 15.0
+				navy_intel_to_others = 8.0
 				lend_lease_tension = 0.20
-				cic_construction_boost = -0.05
 			}
 
 			cancel_if_invalid = no
@@ -363,8 +382,15 @@ ideas = {
 
 			modifier = {
 				min_export = 0
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.10
+				research_speed_factor = -0.08
+				cic_construction_boost = -0.10
+				civilian_intel_to_others = 5.0
+				navy_intel_to_others = 2.0
 				lend_lease_tension = 0.40
-				cic_construction_boost = -0.1
+				stability_factor = -0.10
 			}
 
 			cancel_if_invalid = no
