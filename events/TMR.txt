@@ -1,7 +1,7 @@
 add_namespace = tmr
 
 country_event = {
-    id = 1
+    id = tmr.1
     title = tmr.1.t
     desc = tmr.1.d
     picture = GFX_report_event_generic_diplomatic
@@ -19,7 +19,7 @@ country_event = {
 }
 
 country_event = {
-    id = 2
+    id = tmr.2
     title = tmr.2.t
     desc = tmr.2.d
     picture = GFX_report_event_generic_diplomatic
@@ -39,7 +39,7 @@ complete_national_focus = TMR_kremlin_approval
 }
 
 country_event = {
-    id = 3
+    id = tmr.3
     title = tmr.3.t
     desc = tmr.3.d
     picture = GFX_report_event_generic_diplomatic
@@ -104,7 +104,7 @@ news_event = {
 }
 
 country_event = {
-    id = 8
+    id = tmr.8
     title = tmr.8.t
     desc = tmr.8.d
     picture = GFX_report_event_generic_diplomatic
@@ -141,7 +141,7 @@ country_event = {
 }
 
 country_event = {
-    id = 9
+    id = tmr.9
     title = tmr.9.t
     desc = tmr.9.d
     picture = GFX_report_event_generic_war
@@ -161,7 +161,7 @@ country_event = {
 }
 
 country_event = {
-    id = 10
+    id = tmr.10
     title = tmr.10.t
     desc = tmr.10.d
     picture = GFX_report_event_generic_war
@@ -202,7 +202,7 @@ country_event = {
 
 
 country_event = {
-    id = 12
+    id = tmr.12
     title = tmr.12.t
     desc = tmr.12.d
     picture = GFX_report_event_generic_diplomatic
@@ -235,7 +235,7 @@ country_event = {
 }
 
 country_event = {
-    id = 13
+    id = tmr.13
     title = tmr.13.t
     desc = tmr.13.d
     picture = GFX_report_event_generic_military
