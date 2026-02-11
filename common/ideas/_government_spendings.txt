@@ -5,13 +5,9 @@ ideas = {
 		use_list_view = yes
 
 		universal_health_care = {
-
 			cost = 150
 			removal_cost = -1
 			level = 4
-
-			available = {
-			}
 
 			modifier = {
 				stability_factor = 0.1
@@ -21,14 +17,11 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-		free_checkups = {
 
+		free_checkups = {
 			cost = 150
 			removal_cost = -1
 			level = 3
-
-			available = {
-			}
 
 			modifier = {
 				stability_factor = 0.05
@@ -38,14 +31,11 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-		free_emergencies_only = {
 
+		free_emergencies_only = {
 			cost = 150
 			removal_cost = -1
 			level = 2
-
-			available = {
-			}
 
 			modifier = {
 				monthly_population = 0.1
@@ -54,14 +44,11 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-		private_healthcare = {
 
+		private_healthcare = {
 			cost = 150
 			removal_cost = -1
 			level = 1
-
-			available = {
-			}
 
 			modifier = {
 				stability_factor = -0.03
@@ -77,13 +64,9 @@ ideas = {
 		use_list_view = yes
 
 		welfare_state = {
-
 			cost = 150
 			removal_cost = -1
 			level = 4
-
-			available = {
-			}
 
 			modifier = {
 				stability_factor = 0.1
@@ -93,14 +76,11 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-		old_age_benefits = {
 
+		old_age_benefits = {
 			cost = 150
 			removal_cost = -1
 			level = 3
-
-			available = {
-			}
 
 			modifier = {
 				stability_factor = 0.05
@@ -110,14 +90,11 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-		veteran_benefits = {
 
+		veteran_benefits = {
 			cost = 150
 			removal_cost = -1
 			level = 2
-
-			available = {
-			}
 
 			modifier = {
 				custom_modifier_tooltip = veteran_benefits_tt
@@ -125,14 +102,11 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-		no_social_security = {
 
+		no_social_security = {
 			cost = 150
 			removal_cost = -1
 			level = 1
-
-			available = {
-			}
 
 			modifier = {
 				stability_factor = -0.1
@@ -148,13 +122,9 @@ ideas = {
 		use_list_view = yes
 
 		free_universities = {
-
 			cost = 150
 			removal_cost = -1
 			level = 4
-
-			available = {
-			}
 
 			modifier = {
 				research_speed_factor = 0.25
@@ -165,14 +135,11 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-		free_high_schools = {
 
+		free_high_schools = {
 			cost = 150
 			removal_cost = -1
 			level = 3
-
-			available = {
-			}
 
 			modifier = {
 				research_speed_factor = 0.05
@@ -181,14 +148,11 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-		free_elementary_and_middle_schools = {
 
+		free_elementary_and_middle_schools = {
 			cost = 150
 			removal_cost = -1
 			level = 2
-
-			available = {
-			}
 
 			modifier = {
 				research_speed_factor = -0.1
@@ -198,14 +162,11 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-		private_education = {
 
+		private_education = {
 			cost = 150
 			removal_cost = -1
 			level = 1
-
-			available = {
-			}
 
 			modifier = {
 				research_speed_factor = -0.25
@@ -221,13 +182,9 @@ ideas = {
 		use_list_view = yes
 
 		police_state = {
-
 			cost = 150
 			removal_cost = -1
 			level = 4
-
-			available = {
-			}
 
 			modifier = {
 				political_power_factor = 0.05
@@ -237,14 +194,11 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-		militarized_police = {
 
+		militarized_police = {
 			cost = 150
 			removal_cost = -1
 			level = 3
-
-			available = {
-			}
 
 			modifier = {
 				stability_factor = 0.05
@@ -253,14 +207,11 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-		regular_policing = {
 
+		regular_policing = {
 			cost = 150
 			removal_cost = -1
 			level = 2
-
-			available = {
-			}
 
 			modifier = {
 				stability_factor = 0.025
@@ -269,14 +220,11 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-		fuck_tha_police = {
 
+		fuck_tha_police = {
 			cost = 150
 			removal_cost = -1
 			level = 1
-
-			available = {
-			}
 
 			modifier = {
 				stability_factor = -0.5
@@ -286,5 +234,4 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
-
 }
