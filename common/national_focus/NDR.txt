@@ -31,6 +31,19 @@ focus_tree = {
 			add_stability = 0.05
 			add_political_power = 35
 			add_command_power = 10
+			set_state_controller = 291
+			set_state_controller = 327
+			set_state_controller = 337
+			set_state_controller = 359
+			set_state_controller = 342 
+			set_state_controller = 347
+			hidden_effect = {
+				add_timed_idea = {
+					idea = NDR_hold_slavyansk_idea
+					days = 68
+				}
+				set_country_flag = DPR_first_phase_of_ato
+			}
 		}
 	}
 
@@ -54,7 +67,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-			
+			load_oob = NDR_slavyansk_millitia
 		}
 	}	
 

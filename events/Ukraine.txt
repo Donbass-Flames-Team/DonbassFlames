@@ -9,7 +9,7 @@ country_event = {
 	id = ukraine.1
 	title = ukraine.1.t
 	desc = ukraine.1.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_yanukovich_thinking_picture
 	
 	is_triggered_only = yes
 	
@@ -514,12 +514,12 @@ country_event = {
 	}
 }
 
-#yanukovych select path
+# Что дальше?
 country_event = {
 	id = ukraine.6
 	title = ukraine.6.t
 	desc = ukraine.6.d
-	#picture = GFX_report_event_royal_parade
+	picture = GFX_Report_event_yanukovich_thinking_picture
 	
 	is_triggered_only = yes
 
@@ -1100,7 +1100,7 @@ country_event = {
                     target = UKR
                     type = annex_everything
                 }
-				load_oob = Donetsk_Slavyansk_Militia
+				load_oob = NDR_Slavyansk_strelkov_otryad
 				add_state_core = 318
 			}
 			if = {
@@ -1182,6 +1182,12 @@ country_event = {
 				    id = DPR.9
 				    days = 3
 			    }
+			}
+			UKR = {
+				country_event = {
+					id = ukraine.87
+					days = 54
+				}
 			}
 		}
 	}
@@ -2665,6 +2671,24 @@ country_event = {
 		name = ukraine.86.a		
 		add_manpower = -16
 		add_command_power = -5
+	}
+
+}
+
+# Гибель Кульчицкого Сергея Петровича
+country_event = {
+	id = ukraine.87
+	title = ukraine.87.t
+	desc = ukraine.87.d
+	picture = GFX_Report_event_crashed_helicopter_near_slavyansk_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.87.a		
+		add_command_power = -8
+		add_manpower = -12
+		retire_character = sergey_kulchitsky
 	}
 
 }

@@ -3738,7 +3738,7 @@ focus_tree = {
 				has_global_flag = Minsk2_is_signed
 				date > 2015.9.10
 			}
-			tooltip = UKR_end_of_separatism_trigger_tt
+			custom_trigger_tooltip = UKR_end_of_separatism_trigger_tt
 			hidden_trigger = {
 				NOT = {
 				    country_exists = DPR
