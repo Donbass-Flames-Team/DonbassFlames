@@ -37,12 +37,20 @@ focus_tree = {
 			set_state_controller = 359
 			set_state_controller = 342 
 			set_state_controller = 347
+
+
 			hidden_effect = {
 				add_timed_idea = {
 					idea = NDR_hold_slavyansk_idea
 					days = 68
 				}
 				set_country_flag = DPR_first_phase_of_ato
+				    add_state_core = 291
+				    add_state_core = 327
+				    add_state_core = 337
+                    add_state_core = 359
+				    add_state_core = 342
+				    add_state_core = 347
 			}
 		}
 	}
