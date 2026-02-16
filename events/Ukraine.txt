@@ -172,6 +172,7 @@ country_event = {
 		hidden_effect = {
 			340 = { transfer_state_to = LPR }
 			LPR = {
+				add_state_core = 339
 				add_state_core = 340
 				add_state_core = 351
                 add_state_core = 363

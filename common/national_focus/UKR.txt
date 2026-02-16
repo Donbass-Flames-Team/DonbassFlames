@@ -684,7 +684,7 @@ focus_tree = {
 	focus = {
 		id = UKR_under_the_pretext_of_a_christmas_tree
 		icon = GFX_goal_no_focus_UKR
-		cost = 0.3
+		cost = 0.2
 		x = 0
 		y = 2
 
@@ -1488,7 +1488,16 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-            has_global_flag = Yanukovich_escaped
+			OR = {
+                has_global_flag = Yanukovich_escaped
+				check_variable = {
+                    var = UKR_legitimacy_of_central_power_value
+                    value = 15
+                    compare = less_than_or_equals
+				    tooltip = legitimacy_of_power_lesser_than_15_ukr_tt
+                }
+			}
+			date > 2014.01.01
 		}
 
 		offset = {
