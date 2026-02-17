@@ -1,0 +1,44 @@
+difficulty_settings = {
+    difficulty_setting = {
+        key = "custom_diff_strong_ukr"
+        modifier = diff_strong_ai_generic
+        countries = { UKR }
+        multiplier = 2.0
+    }
+    difficulty_setting = {
+        key = "custom_diff_strong_rus"
+        modifier = diff_strong_ai_generic
+        countries = { RUS }
+        multiplier = 2.0
+    }
+    difficulty_setting = {
+        key = "custom_diff_strong_dpr"
+        modifier = diff_strong_ai_generic
+        countries = { DPR }
+        multiplier = 2.0
+    }
+    difficulty_setting = {
+        key = "custom_diff_strong_lpr"
+        modifier = diff_strong_ai_generic
+        countries = { LPR }
+        multiplier = 2.0
+    }
+    difficulty_setting = {
+        key = "custom_diff_strong_opr"
+        modifier = diff_strong_ai_generic
+        countries = { OPR }
+        multiplier = 2.0
+    }
+    difficulty_setting = {
+        key = "custom_diff_strong_kpr"
+        modifier = diff_strong_ai_generic
+        countries = { KPR }
+        multiplier = 2.0
+    }
+    difficulty_setting = {
+        key = "custom_diff_strong_tmr"
+        modifier = diff_strong_ai_generic
+        countries = { TMR }
+        multiplier = 2.0
+    }
+}
