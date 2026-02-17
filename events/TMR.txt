@@ -32,9 +32,7 @@ country_event = {
         clr_country_flag = TMR_kremlin_no_abandon
         set_country_flag = TMR_kremlin_approved
         set_country_flag = TMR_rus_support_ok
-
-
-complete_national_focus = TMR_kremlin_approval
+        complete_national_focus = TMR_kremlin_approval
     }
 }
 
@@ -51,8 +49,7 @@ country_event = {
         clr_country_flag = TMR_kremlin_no_abandon
         set_country_flag = TMR_kremlin_denied
         set_country_flag = TMR_kremlin_obey
-
-complete_national_focus = TMR_obey_kremlin
+        complete_national_focus = TMR_obey_kremlin
     }
 
     option = {
@@ -62,8 +59,7 @@ complete_national_focus = TMR_obey_kremlin
         set_country_flag = TMR_kremlin_denied
         set_country_flag = TMR_kremlin_no_abandon
         set_country_flag = TMR_rus_support_denied_go_alone
-
-complete_national_focus = TMR_we_wont_abandon_ours
+        complete_national_focus = TMR_we_wont_abandon_ours
     }
 }
 
@@ -113,29 +109,28 @@ country_event = {
     option = {
         name = tmr.8.a
         set_country_flag = RUS_save_tmr
+
         TMR = { set_country_flag = TMR_rus_emergency_help }
         TMR = { load_oob = "TMR_ogrw_battalions" }
+
         news_event = { id = tmr.5 hours = 1 }
     }
 
     option = {
         name = tmr.8.b
         set_country_flag = RUS_hold_kolbasna
+
         if = {
-            limit = { CRT = { exists = yes } }
-            if = {
-            limit = { CRT = { exists = yes } }
-            CRT = { transfer_state = 443 }
-            CRT = { transfer_state = 415 }
+            limit = { CRT = { exists = no } }
+            CRT = {
+                transfer_state = 443
+                transfer_state = 415
+            }
         }
-        if = {
-            limit = { NOT = { CRT = { exists = yes } } }
-            TMR = { transfer_state = 443 }
-            TMR = { transfer_state = 415 }
-        }
-        }
+
         TMR = { set_country_flag = TMR_kolbasna_under_crt }
         news_event = { id = tmr.6 hours = 1 }
+
         UKR = { country_event = { id = tmr.9 days = 2 } }
     }
 }
@@ -149,7 +144,12 @@ country_event = {
 
     option = {
         name = tmr.9.a
-        if = { limit = { CRT = { exists = yes } } declare_war_on = { target = CRT type = annex_everything } }
+
+        if = {
+            limit = { CRT = { exists = yes } }
+            declare_war_on = { target = CRT type = annex_everything }
+        }
+
         RUS = { country_event = { id = tmr.10 days = 1 } }
     }
 
@@ -169,7 +169,15 @@ country_event = {
 
     option = {
         name = tmr.10.a
-        declare_war_on = { target = UKR type = annex_everything }
+
+        if = {
+            limit = {
+                UKR = { exists = yes }
+                NOT = { has_war_with = UKR }
+                NOT = { tag = UKR }
+            }
+            declare_war_on = { target = UKR type = annex_everything }
+        }
     }
 
     option = {
@@ -179,7 +187,7 @@ country_event = {
 }
 
 country_event = {
-    id = 11
+    id = tmr.11
     title = tmr.11.t
     desc = tmr.11.d
     picture = GFX_report_event_generic_war
@@ -190,8 +198,6 @@ country_event = {
         clr_country_flag = TMR_kolbasna_mined
     }
 
-    hidden = yes
-
     option = {
         name = OK
         clr_country_flag = TMR_kolbasna_mined
@@ -199,7 +205,6 @@ country_event = {
         news_event = { id = tmr.7 hours = 1 }
     }
 }
-
 
 country_event = {
     id = tmr.12
@@ -209,10 +214,8 @@ country_event = {
     is_triggered_only = yes
 
     immediate = {
-
         set_country_flag = UKR_tmr_partition_decided
     }
-
 
     option = {
         name = tmr.12.a
@@ -223,13 +226,16 @@ country_event = {
     option = {
         name = tmr.12.b
         set_country_flag = UKR_tmr_partition_decided
-        if = { limit = { MOL = { exists = yes } }
-            MOL = { transfer_state = 415 }
-    MOL = { transfer_state = 443 }
-    MOL = { transfer_state = 506 }
-    MOL = { transfer_state = 519 }
-    MOL = { transfer_state = 550
-        }
+
+        if = {
+            limit = { MOL = { exists = yes } }
+            MOL = {
+                transfer_state = 415
+                transfer_state = 443
+                transfer_state = 506
+                transfer_state = 519
+                transfer_state = 550
+            }
         }
     }
 }
@@ -239,7 +245,6 @@ country_event = {
     title = tmr.13.t
     desc = tmr.13.d
     picture = GFX_report_event_generic_military
-
     is_triggered_only = yes
 
     immediate = {
@@ -252,4 +257,3 @@ country_event = {
         add_war_support = 0.02
     }
 }
-
