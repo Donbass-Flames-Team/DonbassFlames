@@ -249,4 +249,21 @@ characters = {
 			legacy_id = 9
 		}
 	}
+	sergey_kulchitsky = {
+		name = sergey_kulchitsky
+		portraits = {
+			army = {
+				large = "GFX_portrait_sergei_kulchitsky"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 9
+		}
+	}
 }
