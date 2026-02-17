@@ -1,44 +1,74 @@
 difficulty_settings = {
     difficulty_setting = {
-        key = "custom_diff_strong_ukr"
+        key = "strong_ukr"
         modifier = diff_strong_ai_generic
-        countries = { UKR }
+        countries = { UKR AZV }
         multiplier = 2.0
     }
     difficulty_setting = {
-        key = "custom_diff_strong_rus"
+        key = "strong_rus"
         modifier = diff_strong_ai_generic
         countries = { RUS }
         multiplier = 2.0
     }
     difficulty_setting = {
-        key = "custom_diff_strong_dpr"
+        key = "strong_dpr"
         modifier = diff_strong_ai_generic
-        countries = { DPR }
+        countries = { DPR NDR SDR }
         multiplier = 2.0
     }
     difficulty_setting = {
-        key = "custom_diff_strong_lpr"
+        key = "strong_lpr"
         modifier = diff_strong_ai_generic
         countries = { LPR }
         multiplier = 2.0
     }
     difficulty_setting = {
-        key = "custom_diff_strong_opr"
+        key = "strong_opr"
         modifier = diff_strong_ai_generic
         countries = { OPR }
         multiplier = 2.0
     }
     difficulty_setting = {
-        key = "custom_diff_strong_kpr"
+        key = "strong_kpr"
         modifier = diff_strong_ai_generic
         countries = { KPR }
         multiplier = 2.0
     }
     difficulty_setting = {
-        key = "custom_diff_strong_tmr"
+        key = "strong_tmr"
         modifier = diff_strong_ai_generic
         countries = { TMR }
+        multiplier = 2.0
+    }
+    difficulty_setting = {
+        key = "strong_NTO"
+        modifier = diff_strong_ai_generic
+        countries = { POL ROM HUN SLO }
+        multiplier = 2.0
+    }
+    difficulty_setting = {
+        key = "strong_BLR"
+        modifier = diff_strong_ai_generic
+        countries = { BLR }
+        multiplier = 2.0
+    }
+    difficulty_setting = {
+        key = "strong_MOL"
+        modifier = diff_strong_ai_generic
+        countries = { MOL }
+        multiplier = 2.0
+    }
+    difficulty_setting = {
+        key = "strong_SER"
+        modifier = diff_strong_ai_generic
+        countries = { SER }
+        multiplier = 2.0
+    }
+    difficulty_setting = {
+        key = "strong_other"
+        modifier = diff_strong_ai_generic
+        countries = { ADY CRT GAG VOJ WAL ZPR }
         multiplier = 2.0
     }
 }
