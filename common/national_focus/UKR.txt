@@ -2070,6 +2070,7 @@ focus_tree = {
 				country_event = superevent.1
 				mark_focus_tree_layout_dirty = yes
 				set_global_flag = Start_Of_ATO
+				set_global_flag = Donbas_war_1_escalation
 				country_event = {
 					id = ukraine.53
 					days = 7
