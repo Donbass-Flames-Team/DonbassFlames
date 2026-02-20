@@ -1,0 +1,39 @@
+defined_text = {
+    name = DF_escalation_icon_1_image
+
+    text = {
+        trigger = {
+            NOT = {
+                has_global_flag = Donbas_war_1_escalation
+            }
+        }
+        localization_key = "GFX_escalation_one"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Donbas_war_1_escalation
+        }
+        localization_key = "GFX_escalation_one_active"
+    }
+}
+
+defined_text = {
+    name = DF_escalation_icon_2_image
+
+    text = {
+        trigger = {
+            NOT = {
+                has_global_flag = Donbas_war_2_escalation
+            }
+        }
+        localization_key = "GFX_escalation_one"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Donbas_war_2_escalation
+        }
+        localization_key = "GFX_escalation_one_active"
+    }
+}

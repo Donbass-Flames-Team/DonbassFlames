@@ -2147,10 +2147,15 @@ country_event = {
 	
 	is_triggered_only = yes
 
+	immediate = {
+		set_global_flag = Donbas_war_2_escalation
+	}
+
 	option = {
 		name = ukraine.65.a		
 		add_war_support = 0.035
 		add_manpower = -3
+		custom_effect_tooltip = Icercase_escalation_war_on_donbas_tt
 	}
 }
 

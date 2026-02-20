@@ -23,7 +23,12 @@ scripted_gui = {
         }
 		
 		properties = {
-			
+			DF_escalation_icon_1 = {
+				image = "[DF_escalation_icon_1_image]"
+			}
+            DF_escalation_icon_2 = {
+				image = "[DF_escalation_icon_2_image]"
+			}
 		}
     }
 }
