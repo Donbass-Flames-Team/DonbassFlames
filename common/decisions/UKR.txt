@@ -1080,7 +1080,7 @@ UKR_maidan_decision = {
 		visible = {
 			tag = UKR
 		}
-		icon = GFX_decision_UKR_maidan_mass_arests
+		icon = GFX_decision_UKR_maidan_zavoz
 		
 	    fire_only_once = no
 		days_re_enable = 60
@@ -1102,7 +1102,7 @@ UKR_maidan_decision = {
 	}
 
 	UKR_weekly_radicalisation_value = {
-		icon = GFX_decision_UKR_maidan_supress_the_protests
+		icon = GFX_decision_UKR_maidan_radicalisation
 		allowed = {
 			original_tag = UKR
 		}
