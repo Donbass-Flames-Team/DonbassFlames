@@ -28,6 +28,59 @@ DPR_armed_forces_of_dpr_category = {
 }
 
 DPR_war_for_independence_of_donbass = {
+
+	DPR_recruitment_in_horlivka = {
+
+		icon = GFX_decision_DPR_recruitment_militia
+		
+		available = {
+		    tag = DPR
+			controls_province = 12219
+		}
+	    
+		visible = {
+			tag = DPR
+		}
+		
+		fire_only_once = yes
+
+		cost = 15
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 100		
+		}
+	}
+
+	DPR_recruitment_in_horlivka = {
+
+		icon = GFX_decision_DPR_recruitment_militia
+		
+		available = {
+		    tag = DPR
+			controls_province = 12219
+		}
+	    
+		visible = {
+			tag = DPR
+		}
+		
+		fire_only_once = yes
+
+		cost = 15
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 100		
+		}
+	}
+
 	DPR_capture_debaltsevo = {
 
 		icon = GFX_decision_generic_soldier
@@ -80,3 +133,4 @@ DPR_war_for_independence_of_donbass = {
 		}
 	}
 }
+
