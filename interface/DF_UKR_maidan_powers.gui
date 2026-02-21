@@ -3,31 +3,31 @@ guiTypes = {
 	containerWindowType = {
 		name = "UKR_maidan_powers"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height = 222 }
+		size = { width = 100% height = 239 }
 
 		iconType = {
 			name = "UKR_maidanites"
 			spriteType = "GFX_maidanites_maidan_powers_gui"
-			position = { x = 0 y = -15 }
+			position = { x = -4 y = -18 }
 		}
 
 		buttonType = {
 			name = "UKR_maidanites_button"
-			position = { x = 174 y = 0 }
+			position = { x = 155 y = 16 }
 			spriteType = "GFX_maidanites_icon_maidan_powers_gui"
 			pdx_tooltip = "UKR_maidan_powers_maidanites_tt"
 		}
 
 		buttonType = {
 			name = "UKR_nationalists_button"
-			position = { x = 30 y = -10 }
+			position = { x = 2 y = 22 }
 			spriteType = "GFX_nationalists_icon_maidan_powers_gui"
 			pdx_tooltip = "UKR_maidan_powers_nationalists_tt"
 		}
 
 		buttonType = {
 			name = "UKR_prorussians_button"
-			position = { x = 340 y = 0 }
+			position = { x = 311 y = 6 }
 			quadTextureSprite = "GFX_prorussians_icon_maidan_powers_gui"
 			pdx_tooltip = "UKR_maidan_powers_prorussians_tt"
 		}
@@ -64,7 +64,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "UKR_legitimacy_of_the_power_text"
-			position = { x = 140 y = 195 }
+			position = { x = 120 y = 195 }
 			font = "hoi_16mbs"
 			text = "UKR_legitimacy_of_the_power_text"
 			format = center

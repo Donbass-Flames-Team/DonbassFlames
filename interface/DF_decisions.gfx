@@ -72,6 +72,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+        name = "GFX_decision_UKR_maidan_radicalisation"
+        texturefile = "gfx/interface/decisions/UKR/maidan/UKR_maidan_radicalisation.dds"
+    }
+
+    spriteType = {
+        name = "GFX_decision_UKR_maidan_zavoz"
+        texturefile = "gfx/interface/decisions/UKR/maidan/UKR_maidan_zavoz.dds"
+    }
+
+	spriteType = {
 		name = "GFX_decision_flag_of_dpr"
 		texturefile = "gfx/interface/decisions/UKR/flag_of_dpr.dds"
 	}
@@ -248,4 +258,7 @@ spriteTypes = {
 		name = "GFX_decision_UKR_batalion_vinitsa"
 		texturefile = "gfx/interface/decisions/UKR/volunteer_battalions/vinitsa.png"
 	}
+
+
+
 }
