@@ -451,44 +451,6 @@ news_event = {
 		}
 	}
 }
-# 2017 — Trump wins
-news_event = {
-    id = news_events.10
-    title = news_events.10.t
-    desc = news_events.10.d
-    picture = GFX_news_event_021
-    major = yes
-
-    is_triggered_only = yes
-
-    option = { name = news_events.10.a }
-}
-
-# 2021 — Biden wins
-news_event = {
-    id = news_events.11
-    title = news_events.11.t
-    desc = news_events.11.d
-    picture = GFX_news_event_021
-    major = yes
-
-    is_triggered_only = yes
-
-    option = { name = news_events.11.a }
-}
-
-# 2025 — Trump wins
-news_event = {
-    id = news_events.12
-    title = news_events.12.t
-    desc = news_events.12.d
-    picture = GFX_news_event_021
-    major = yes
-
-    is_triggered_only = yes
-
-    option = { name = news_events.12.a }
-}
 
 # TheDownedMalaysianBoing
 news_event = {
