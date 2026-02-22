@@ -29,13 +29,14 @@ DPR_armed_forces_of_dpr_category = {
 
 DPR_war_for_independence_of_donbass = {
 
-	DPR_recruitment_in_horlivka = {
+	DPR_recruitment_in_donetsk_and_makiivka = {
 
 		icon = GFX_decision_DPR_recruitment_militia
 		
 		available = {
 		    tag = DPR
-			controls_province = 12219
+			controls_province = 15707
+			controls_province = 10298
 		}
 	    
 		visible = {
@@ -47,12 +48,50 @@ DPR_war_for_independence_of_donbass = {
 		cost = 15
 
 		complete_effect = {
-			
+			load_oob = DPR_donetsk_and_makiivka
 		}
 
 		ai_will_do = {
 			factor = 100		
 		}
+
+		highlight_states = {
+            highlight_state_targets = { state = 424 }
+			highlight_state_targets = { state = 432 }
+            highlight_provinces = { 15707 }
+			highlight_provinces = { 10298 }
+        }
+	}
+
+	DPR_recruitment_in_enakievo = {
+
+		icon = GFX_decision_DPR_recruitment_militia
+		
+		available = {
+		    tag = DPR
+			controls_province = 18447
+		}
+	    
+		visible = {
+			tag = DPR
+		}
+		
+		fire_only_once = yes
+
+		cost = 15
+
+		complete_effect = {
+			load_oob = DPR_Enakievo
+		}
+
+		ai_will_do = {
+			factor = 100		
+		}
+
+		highlight_states = {
+            highlight_state_targets = { state = 398 }
+            highlight_provinces = { 18447 }
+        }
 	}
 
 	DPR_recruitment_in_horlivka = {
@@ -61,7 +100,7 @@ DPR_war_for_independence_of_donbass = {
 		
 		available = {
 		    tag = DPR
-			controls_province = 12219
+			controls_province = 10561
 		}
 	    
 		visible = {
@@ -73,12 +112,141 @@ DPR_war_for_independence_of_donbass = {
 		cost = 15
 
 		complete_effect = {
-			
+			load_oob = DPR_horlovka
 		}
 
 		ai_will_do = {
 			factor = 100		
 		}
+
+		highlight_states = {
+            highlight_state_targets = { state = 381 }
+            highlight_provinces = { 10561 }
+        }
+	}
+
+	DPR_recruitment_in_karzivsk = {
+
+		icon = GFX_decision_DPR_recruitment_militia
+		
+		available = {
+		    tag = DPR
+			controls_province = 15741
+		}
+	    
+		visible = {
+			tag = DPR
+		}
+		
+		fire_only_once = yes
+
+		cost = 15
+
+		complete_effect = {
+			load_oob = DPR_kharzivsk
+		}
+
+		ai_will_do = {
+			factor = 100		
+		}
+
+		highlight_states = {
+            highlight_state_targets = { state = 435 }
+            highlight_provinces = { 15741 }
+        }
+	}
+
+	DPR_recruitment_in_krasnoarmaysk = {
+
+		icon = GFX_decision_DPR_recruitment_militia
+		
+		available = {
+		    tag = DPR
+			controls_province = 18334
+		}
+	    
+		visible = {
+			tag = DPR
+		}
+		
+		fire_only_once = yes
+
+		cost = 15
+
+		complete_effect = {
+			load_oob = DPR_krasnoarmeysk
+		}
+
+		ai_will_do = {
+			factor = 100		
+		}
+
+		highlight_states = {
+            highlight_state_targets = { state = 395 }
+            highlight_provinces = { 18334 }
+        }
+	}
+
+	DPR_recruitment_in_kurahovo = {
+
+		icon = GFX_decision_DPR_recruitment_militia
+		
+		available = {
+		    tag = DPR
+			controls_province = 15772
+		}
+	    
+		visible = {
+			tag = DPR
+		}
+		
+		fire_only_once = yes
+
+		cost = 15
+
+		complete_effect = {
+			load_oob = DPR_kurahovo
+		}
+
+		ai_will_do = {
+			factor = 100		
+		}
+
+		highlight_states = {
+            highlight_state_targets = { state = 441 }
+            highlight_provinces = { 15772 }
+        }
+	}
+
+	DPR_recruitment_in_konstantinovka = {
+
+		icon = GFX_decision_DPR_recruitment_militia
+		
+		available = {
+		    tag = DPR
+			controls_province = 18331
+		}
+	    
+		visible = {
+			tag = DPR
+		}
+		
+		fire_only_once = yes
+
+		cost = 15
+
+		complete_effect = {
+			load_oob = DPR_konstantiovka_recruitment
+		}
+
+		ai_will_do = {
+			factor = 100		
+		}
+
+		highlight_states = {
+            highlight_state_targets = { state = 359 }
+            highlight_provinces = { 18331 }
+        }
 	}
 
 	DPR_capture_debaltsevo = {

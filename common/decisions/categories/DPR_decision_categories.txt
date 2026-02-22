@@ -34,4 +34,6 @@ DPR_war_for_independence_of_donbass = {
 	visible = {
         tag = DPR
 	}
+	scripted_gui = Escalation_on_Donbas
+	visible_when_empty = yes
 }
