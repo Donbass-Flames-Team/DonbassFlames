@@ -639,9 +639,13 @@ UKR_parlamient_decision = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 10	
-		}
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 10
+                date > 2014.1.6
+            }
+        }
 	}
 
 	UKR_talk_to_the_deputies = {
@@ -669,9 +673,13 @@ UKR_parlamient_decision = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 10	
-		}
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 10
+                date > 2014.1.6
+            }
+        }
 	}
 
 	UKR_arrange_a_feast_with_the_deputies = {
@@ -715,9 +723,13 @@ UKR_parlamient_decision = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 10	
-		}
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 10
+                date > 2014.1.6
+            }
+        }
 	}
 
 	UKR_speech_in_the_verkhovna_rada = {
@@ -756,9 +768,13 @@ UKR_parlamient_decision = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 10	
-		}
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 10
+                date > 2014.1.6
+            }
+        }
 	}
 
 }
@@ -1195,7 +1211,7 @@ UKR_depreservation_decision = {
 	    fire_only_once = no
 		days_re_enable = 60
 		days_remove = 45
-		cost = 65
+		cost = 55
 		complete_effect = {
 		    add_equipment_to_stockpile = { 
 				type = infantry_fighting_vehicle_0 
@@ -1223,7 +1239,7 @@ UKR_depreservation_decision = {
 	    fire_only_once = no
 		days_re_enable = 60
 		days_remove = 45
-		cost = 65
+		cost = 45
 		complete_effect = {
 		    add_equipment_to_stockpile = { 
 				type = apc_chassis_1
@@ -1251,7 +1267,7 @@ UKR_depreservation_decision = {
 	    fire_only_once = no
 		days_re_enable = 50
 		days_remove = 15
-		cost = 45
+		cost = 35
 		complete_effect = {
 		    add_equipment_to_stockpile = { 
 				type = infantry_equipment_2
@@ -1650,6 +1666,9 @@ UKR_ATO_decision = {
     		highlight_color_while_active = 3
     		highlight_color_before_active = 2
 		}
+        ai_will_do = {
+            base = 15
+        }
 	}
 
 	UKR_defense_line_in_avdiivka = {
@@ -3092,9 +3111,13 @@ UKR_general_staff_decision = {
 				load_oob = UKR_53_otdelnaya_mechanizirovanaya_brigada
 			}
 		}
-		ai_will_do = {
-			factor = 10
-		}
+        ai_will_do = {
+            base = 5
+            modifier = {
+                add = 15
+                date > 2014.3.5
+            }
+        }
 	}
 
 	UKR_54_otdelna_mechanizirovana_bryhada_decision = {
@@ -3117,9 +3140,13 @@ UKR_general_staff_decision = {
 				load_oob = UKR_54_otdelnaya_mechanizirovanaya_brigada
 			}
 		}
-		ai_will_do = {
-			factor = 10
-		}
+        ai_will_do = {
+            base = 5
+            modifier = {
+                add = 15
+                date > 2014.1.12
+            }
+        }
 	}
 
 	UKR_44_otdelnaya_artilleriyskaya_brigada_decision = {
