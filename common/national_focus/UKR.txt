@@ -133,65 +133,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_force_deal_with_protests
-		icon = GFX_focus_UKR_activation_of_security_forces
-		cost = 0.2
-		x = 2
-		y = 1
-		
-        prerequisite = { focus = UKR_yanukovychs_results }
-		relative_position_id = UKR_yanukovychs_results
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-
-		}
-
-		bypass = {
-			NOT = {
-				has_active_mission = UKR_yanukovich_overthrow
-			}
-		}
-
-		allow_branch = {
-			NOT = {
-			   has_completed_focus = UKR_unrest_in_the_east
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_force_deal_with_protests"
-			hidden_effect = {
-	    		add_to_variable = {
-                    var = UKR_radicalisation_of_proeuropeans_value
-                    value = 5
-                }
-			    add_to_variable = {
-                    var = UKR_radicalisation_of_nationalists_value
-                    value = 3
-                }
-			    clamp_variable = {
-				    var = UKR_radicalisation_of_proeuropeans_value
-				    min = 0
-				    max = 100
-			    }
-			    clamp_variable = {
-				    var = UKR_radicalisation_of_nationalists_value
-				    min = 0
-				    max = 100
-			    }			
-			}
-		}
-	}
-
-	focus = {
 		id = UKR_dictatorship_takes_over
 		icon = GFX_focus_UKR_activation_of_security_forces
 		cost = 0.2
-		x = 9
+		x = 8
 		y = 3
 		
         prerequisite = { focus = UKR_force_deal_with_protests }
@@ -1475,7 +1420,7 @@ focus_tree = {
 		id = UKR_arrest_yanukovich
 		icon = GFX_focus_UKR_arrest_yanukovich
 		cost = 0.4
-		x = 0
+		x = -1
 		y = 1
 
 		prerequisite = { focus = UKR_remain_neutral }
@@ -1758,7 +1703,7 @@ focus_tree = {
 		id = UKR_unrest_in_the_east
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 0.5
-		x = 12
+		x = 11
 		y = 7
 
 		prerequisite = { focus = UKR_release_political_prisoners_from_prisons }
