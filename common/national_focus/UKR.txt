@@ -191,7 +191,7 @@ focus_tree = {
 		id = UKR_dictatorship_takes_over
 		icon = GFX_focus_UKR_activation_of_security_forces
 		cost = 0.2
-		x = 8
+		x = 9
 		y = 3
 		
         prerequisite = { focus = UKR_force_deal_with_protests }
@@ -1579,7 +1579,7 @@ focus_tree = {
 		id = UKR_government_in_anarchy
 		icon = GFX_focus_UKR_government_in_anarchy
 		cost = 0.3
-		x = -1
+		x = 0
 		y = 1
 
 		prerequisite = { focus = UKR_arrest_yanukovich focus = UKR_yanukovich_escaped }
@@ -1758,7 +1758,7 @@ focus_tree = {
 		id = UKR_unrest_in_the_east
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 0.5
-		x = 11
+		x = 12
 		y = 7
 
 		prerequisite = { focus = UKR_release_political_prisoners_from_prisons }
