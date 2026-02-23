@@ -59,6 +59,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.05
 			add_stability = 0.05
+			add_political_power = 45
 			hidden_effect = {
 				if = {
 					limit = {
@@ -103,6 +104,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             add_ideas = DPR_russian_spring_idea
+			unlock_decision_category_tooltip = DPR_war_for_independence_of_donbass
 			hidden_effect = {
 			    load_oob = Donetsk_millitia	
 			}
@@ -156,7 +158,7 @@ focus_tree = {
 	focus = {
 		id = DPR_loot_the_offices_of_the_mvd_and_sbu
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.3
+		cost = 0.2
 		x = -1
 		y = 3
 
@@ -197,7 +199,7 @@ focus_tree = {
 	focus = {
 		id = DPR_create_a_people_militia_of_the_dpr
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.3
+		cost = 0.2
 		x = -1
 		y = 4
 
@@ -225,7 +227,7 @@ focus_tree = {
 	focus = {
 		id = DPR_create_roadblocks
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
+		cost = 0.5
 		x = -3
 		y = 5
 
@@ -242,6 +244,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+			add_stability = 0.05
             add_timed_idea = {
                 idea = DPR_roadblock_idea
 				days = 180

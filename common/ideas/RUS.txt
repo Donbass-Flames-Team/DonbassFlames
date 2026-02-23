@@ -35,6 +35,7 @@ ideas = {
 			modifier = {
 			    stability_factor = -0.25
 				political_power_gain = -0.075
+				 production_speed_buildings_factor = -0.20
 				consumer_goods_factor = 0.25
 			}
 		}
@@ -51,9 +52,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			    stability_factor = -0.25
-				political_power_gain = -0.1
-				stability_weekly = -0.005
+			    stability_factor = 0.25
+				war_support_factor = 0.15
+				political_power_gain = 0.1
+				autoritarian_democracy_drift = 0.02
 			}
 		}
 
@@ -106,6 +108,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.1
 				consumer_goods_factor = -0.15
+				min_export = 0.1
 				country_resource_oil = 750
 				country_resource_rubber = 50
 			}
