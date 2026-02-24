@@ -1493,7 +1493,7 @@ country_event = {
 	id = ukraine.37
 	title = ukraine.37.t
 	desc  = ukraine.37.d
-	picture = GFX_Report_event_formation_of_right_sector
+	picture = GFX_Report_event_right_corp_is_expanded_picture
 
 	is_triggered_only = yes
 
@@ -1508,7 +1508,7 @@ country_event = {
 	id = ukraine.38
 	title = ukraine.38.t
 	desc  = ukraine.38.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_help_from_france_and_usa_picture
 
 	is_triggered_only = yes
 
@@ -1792,7 +1792,7 @@ country_event = {
 	id = ukraine.51
 	title = ukraine.51.t
 	desc  = ukraine.51.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_resotre_of_order_in_kharkov_picture
 
 	is_triggered_only = yes
 
@@ -2003,7 +2003,7 @@ country_event = {
 	id = ukraine.58
 	title = ukraine.58.t
 	desc = ukraine.58.d
-	picture = GFX_Report_event_formation_of_right_sector
+	picture = GFX_Report_event_mirny_march_na_radu_picture
 	
 	is_triggered_only = yes
 
@@ -2019,7 +2019,7 @@ country_event = {
 	id = ukraine.59
 	title = ukraine.59.t
 	desc = ukraine.59.d
-	picture = GFX_Report_event_formation_of_right_sector
+	picture = GFX_Report_event_sbu_picture
 	
 	is_triggered_only = yes
 
@@ -2041,7 +2041,7 @@ country_event = {
 	id = ukraine.60
 	title = ukraine.60.t
 	desc = ukraine.60.d
-	picture = GFX_Report_event_formation_of_right_sector
+	picture = GFX_Report_event_kills_on_maidan_2014_picture
 	
 	is_triggered_only = yes
 
@@ -2116,7 +2116,7 @@ country_event = {
 	id = ukraine.64
 	title = ukraine.64.t
 	desc = ukraine.64.d
-	picture = GFX_Report_event_formation_of_right_sector
+	picture = GFX_Report_event_zhenevskie_solgasheniya_2014_picture
 	
 	is_triggered_only = yes
 
@@ -2139,7 +2139,7 @@ country_event = {
 	id = ukraine.65
 	title = ukraine.65.t
 	desc = ukraine.65.d
-	picture = GFX_Report_event_formation_of_right_sector
+	picture = GFX_Report_event_zhenevskie_solgasheniya_2014_picture
 	
 	is_triggered_only = yes
 
@@ -2160,7 +2160,7 @@ country_event = {
 	id = ukraine.66
 	title = ukraine.66.t
 	desc = ukraine.66.d
-	picture = GFX_Report_event_formation_of_right_sector
+	picture = GFX_Report_event_rocket_attack_in_zelenopolye_picture
 	
 	is_triggered_only = no
 
@@ -2220,7 +2220,7 @@ country_event = {
 	id = ukraine.68
 	title = ukraine.68.t
 	desc = ukraine.68.d
-	picture = GFX_Report_event_formation_of_right_sector
+	picture = GFX_Report_event_rocket_attack_in_headquarter_kramatorsk_2014_picture
 	
 	is_triggered_only = yes
 
@@ -2444,7 +2444,7 @@ country_event = {
 	id = ukraine.77
 	title = ukraine.77.t
 	desc = ukraine.77.d
-	picture = GFX_Report_event_oleg_morgun_arrested_picture
+	picture = GFX_Report_event_mariupol_3_may_2014_picture
 
 	is_triggered_only = yes
 
@@ -2503,7 +2503,7 @@ country_event = {
 	id = ukraine.79
 	title = ukraine.79.t
 	desc = ukraine.79.d
-	picture = GFX_Report_event_oleg_morgun_arrested_picture
+	picture = GFX_Report_event_mariupol_24_aprill_picture
 
 	is_triggered_only = yes
 
@@ -2511,7 +2511,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = ukraine.80
-				days = 7
+				days = 6
 			}
 		}		
 	}
@@ -2528,7 +2528,7 @@ country_event = {
 	id = ukraine.80
 	title = ukraine.80.t
 	desc = ukraine.80.d
-	picture = GFX_Report_event_oleg_morgun_arrested_picture
+	picture = GFX_Report_event_mariupol_1_may_2014_picture
 
 	is_triggered_only = yes
 
@@ -2553,7 +2553,7 @@ country_event = {
 	id = ukraine.81
 	title = ukraine.81.t
 	desc = ukraine.81.d
-	picture = GFX_Report_event_oleg_morgun_arrested_picture
+	picture = GFX_Report_event_donetsk_1_marth_2014_picture
 
 	is_triggered_only = yes
 
@@ -2578,7 +2578,7 @@ country_event = {
 	id = ukraine.82
 	title = ukraine.82.t
 	desc = ukraine.82.d
-	picture = GFX_Report_event_oleg_morgun_arrested_picture
+	picture = GFX_Report_event_donetsk_13_marth_2014_picture
 
 	is_triggered_only = yes
 
@@ -2590,6 +2590,7 @@ country_event = {
 		name = ukraine.82.a		
         add_stability = -0.015 
 		add_political_power = -5
+		add_manpower = -2
 	}
 }
 
@@ -2669,7 +2670,7 @@ country_event = {
 	id = ukraine.86
 	title = ukraine.86.t
 	desc = ukraine.86.d
-	picture = GFX_Report_event_recreation_of_ngu_picture
+	picture = GFX_Report_event_32_roadblock_picture
 
 	is_triggered_only = yes
 
