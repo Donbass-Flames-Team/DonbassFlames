@@ -2695,5 +2695,56 @@ country_event = {
 		add_manpower = -12
 		retire_character = sergey_kulchitsky
 	}
+}
 
+# Встреча порошенко и путина в минске 
+country_event = {
+	id = ukraine.88
+	title = ukraine.88.t
+	desc = ukraine.88.d
+	picture = GFX_Report_event_crashed_helicopter_near_slavyansk_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = news_events.21
+				hours = 4
+			}
+			country_event = {
+				id = ukraine.89
+				days = 6
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.88.a		
+		add_political_power = 15
+	}
+}
+
+# Телефонный разговор между порошенко и путином
+country_event = {
+	id = ukraine.89
+	title = ukraine.89.t
+	desc = ukraine.89.d
+	picture = GFX_Report_event_crashed_helicopter_near_slavyansk_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = russia.11
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.89.a		
+		add_political_power = 15
+	}
 }
