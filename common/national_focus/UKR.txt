@@ -2951,7 +2951,7 @@ focus_tree = {
 		id = UKR_snap_presidential_elections
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 40
+		x = 30
 		y = 0
 
 
@@ -3025,6 +3025,228 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_economic_reforms
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 2
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
+		relative_position_id = UKR_poroshenko_victory
+
+		available = {
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_anticorruption_reforms
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 5
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
+		relative_position_id = UKR_poroshenko_victory
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_form_nabu
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_anticorruption_reforms }
+		relative_position_id = UKR_anticorruption_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_form_nabu"
+		}
+	}
+
+	focus = {
+		id = UKR_form_sap
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 1
+		y = 2
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_form_nabu }
+		relative_position_id = UKR_anticorruption_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_form_sap"
+		}
+	}
+
+	focus = {
+		id = UKR_privatization_of_private_property
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 1
+		y = 3
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_form_sap }
+		relative_position_id = UKR_anticorruption_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_form_napk"
+		}
+	}
+
+	focus = {
+		id = UKR_form_napk
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -1
+		y = 2
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_form_nabu }
+		relative_position_id = UKR_anticorruption_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_form_napk"
+		}
+	}
+
+	focus = {
+		id = UKR_electronic_declaration_of_officials
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -1
+		y = 3
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_form_napk }
+		relative_position_id = UKR_anticorruption_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_form_napk"
+		}
+	}
+
+	focus = {
+		id = UKR_land_reforms
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 8
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
+		relative_position_id = UKR_poroshenko_victory
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_decomunization
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 11
+		y = 1
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
+		relative_position_id = UKR_poroshenko_victory
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			add_political_power = 25
+		}
+	}
+
+	focus = {
 		id = UKR_zelensky
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
@@ -3055,7 +3277,7 @@ focus_tree = {
 		id = UKR_timoshenko_victory
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 8
+		x = 13
 		y = 1
 
 
@@ -3082,7 +3304,7 @@ focus_tree = {
 		id = UKR_oleg_lyashko_victory
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 15
+		x = 17
 		y = 1
 
 
@@ -3109,7 +3331,7 @@ focus_tree = {
 		id = UKR_military_reforms_afu
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 3
-		x = 65
+		x = 60
 		y = 0
 
 

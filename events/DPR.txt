@@ -305,3 +305,30 @@ country_event = {
 		}
 	}
 }
+
+#Обстрел пляжа в Зугресе
+country_event = {
+	id = DPR.18
+	title = DPR.18.t
+	desc = DPR.18.d
+	picture = GFX_Report_event_sheling_beach_in_zugres_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = ukraine.90
+				days = 3
+			}
+			set_country_flag = DPR_beach_shelling_in_zugres
+		}
+	}
+	
+	option = {
+		name = DPR.18.a
+		add_war_support = 0.035
+		add_stability = -0.015
+		add_manpower = -19
+	}
+}
