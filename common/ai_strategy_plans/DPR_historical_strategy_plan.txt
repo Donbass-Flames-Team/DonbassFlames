@@ -1,0 +1,40 @@
+DPR_historical_strategy_plan = {
+	name = "DPR historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = DPR
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+
+	ai_national_focuses = {
+		DPR_capture_administrations
+		DPR_formation_of_a_provisional_government
+		DPR_call_on_people_to_stand_up_for_the_republic
+		DPR_humanitaran_help_from_russia
+		DPR_loot_the_offices_of_the_mvd_and_sbu
+		DPR_create_a_people_militia_of_the_dpr
+		DPR_arrise_donbass
+		DPR_create_roadblocks
+		DPR_armed_forces_of_dpr
+		DPR_batallion_somali
+		DPR_batallion_sparta
+		DPR_batallion_disel
+		DPR_batallion_oplot
+        DPR_defend_of_citites
+		DPR_donetsk_castle
+		DPR_secure_south
+		DPR_centralize_donetsk_groups
+		DPR_humanitaran_help_from_russia
+
+	} 
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
