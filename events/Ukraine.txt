@@ -1173,10 +1173,21 @@ country_event = {
 			381 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 45 }
 			}
-			DPR = {
-			    country_event = {
-				    id = DPR.9
-				    days = 3
+			if = {
+				limit = {
+					UKR = { 
+			            check_variable = {
+                            var = DPR_separatism_value
+                            value = 85
+                            compare = greater_than_or_equals
+                        }
+					}
+				}
+			    DPR = {
+			        country_event = {
+				        id = DPR.9
+				        days = 3
+			        }
 			    }
 			}
 			UKR = {
