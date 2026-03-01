@@ -2660,7 +2660,20 @@ country_event = {
 			AZV = {
 				transfer_state = 551
 				add_state_core = 551
+				puppet = {
+                    target = AZV
+                    end_wars = no
+                }
+			    set_politics = {
+		            ruling_party = nationalism
+		            last_election = "2010.02.07"
+		            election_frequency = 48
+		            elections_allowed = no
+	            }
 			}
+			set_popularities = {
+		        nationalism = 100
+	        }
 		}
 	}
 
