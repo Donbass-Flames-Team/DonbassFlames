@@ -318,8 +318,8 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			news_event = {
-				id = ukraine.90
-				days = 3
+				id = news_events.22
+				hours = 7
 			}
 			set_country_flag = DPR_beach_shelling_in_zugres
 		}
@@ -330,5 +330,32 @@ country_event = {
 		add_war_support = 0.035
 		add_stability = -0.015
 		add_manpower = -19
+	}
+}
+
+#Смерть захарченко
+country_event = {
+	id = DPR.19
+	title = DPR.19.t
+	desc = DPR.19.d
+	picture = GFX_Report_event_sheling_beach_in_zugres_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = news_events.23
+				hours = 7
+			}
+			set_global_flag = DPR_death_of_Zakharchenko
+		}
+	}
+	
+	option = {
+		name = DPR.19.a
+		add_stability = -0.045
+		add_political_power = -65
+        retire_character = aleksandr_zakharchenko
 	}
 }
