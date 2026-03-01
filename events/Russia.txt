@@ -324,8 +324,8 @@ country_event = {
 				if = { limit = { 527 = { is_controlled_by = DPR } } transfer_state = 527 }
 				if = { limit = { 433 = { is_controlled_by = DPR } } transfer_state = 433 }
 				if = { limit = { 381 = { is_controlled_by = DPR } } transfer_state = 381 }
-				if = { limit = { 378 = { is_controlled_by = DPR } } transfer_state = 378 }
 				if = { limit = { 13 = { is_controlled_by = DPR } } transfer_state = 13 }
+				if = { limit = { 378 = { is_controlled_by = DPR } } transfer_state = 378 transfer_state = 13 }
 				if = { limit = { 376 = { is_controlled_by = DPR } } transfer_state = 376 }
 				if = { limit = { 426 = { is_controlled_by = DPR } } transfer_state = 426 }
 				transfer_state = 444
