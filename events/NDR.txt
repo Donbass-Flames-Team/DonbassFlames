@@ -69,3 +69,29 @@ country_event = {
 		
 	}
 }
+
+# Обьединение с ДНР
+country_event = {
+	id = NDR.3
+	title = NDR.3.t
+	desc = NDR.3.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+	
+	option = {
+		name = NDR.3.a
+		DPR = {
+			annex_country = {
+				target = NDR
+				transfer_troops = yes
+			}
+		}
+	}
+}

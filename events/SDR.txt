@@ -1,0 +1,31 @@
+﻿###########################
+# NDR Events
+###########################
+
+add_namespace = SDR
+
+# Обьединение с ДНР
+country_event = {
+	id = SDR.1
+	title = SDR.1.t
+	desc = SDR.1.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+	
+	option = {
+		name = SDR.1.a
+		DPR = {
+			annex_country = {
+				target = SDR
+				transfer_troops = yes
+			}
+		}
+	}
+}

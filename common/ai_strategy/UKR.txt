@@ -33,6 +33,11 @@ UKR_ato_is_going = {
 	}
 	ai_strategy = {
 		type = front_unit_request
+		tag = NDR
+		value = 75
+	}
+	ai_strategy = {
+		type = front_unit_request
 		tag = LPR
 		value = 100
 	}
@@ -55,19 +60,23 @@ UKR_second_phase_of_ato = {
 
 	ai_strategy = {
 		type = garrison
-		value = -5000
-	}
-	
-	ai_strategy = {
-		type = front_unit_request
-		tag = DPR
-		value = 250
+		value = -200
 	}
 	ai_strategy = {
 		type = front_unit_request
-		tag = LPR
+		tag = RUS
+		value = -100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = DPR
 		value = 100
 	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = LPR
+		value = 100
+	}	
 }
 
 UKR_counteroffensive = {
