@@ -36,9 +36,6 @@ on_actions = {
 				    has_global_flag = Start_Of_ATO
 				    tag = UKR
 				    date = 2014.7.14
-					526 = {
-						is_controlled_by = UKR
-					}
 				    NOT = { has_country_flag = UKR_zasada_dnr_mariupol_2014 }
 			    }
 			    country_event = { id = ukraine.35 }
@@ -53,15 +50,6 @@ on_actions = {
 				set_global_flag = KHARKOV_STUDENTS_TOWN_ATTACKED
 				country_event = { id = ukraine.75 }
 			}
-			if = {
-			    limit = {
-				    has_global_flag = Start_Of_ATO
-				    tag = DPR
-				    date = 2014.8.11
-				    NOT = { has_country_flag = DPR_beach_shelling_in_zugres }
-			    }
-			    country_event = { id = DPR.18 }
-		    }
         }
 	}
 }

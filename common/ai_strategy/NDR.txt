@@ -17,7 +17,7 @@ NDR_first_phase_Of_ato = {
 		type = front_control
 		tag = UKR
 		ordertype = front
-		execution_type = careful
+		execution_type = rush
 		manual_attack = yes
 	}
 
@@ -43,10 +43,13 @@ NDR_hold_slavyansk = {
 	}
 	
 	ai_strategy = {
-		# Still need to defend at the maginot...
-		type = front_unit_request
-		state = 291  # Alsace-Lorraine
-		value = 30  # +30 %
+		type = front_control
+		state = 291
+		ratio = 0.1
+		priority = 500
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
 	}
 
 	ai_strategy = {
