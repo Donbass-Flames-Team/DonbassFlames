@@ -88,6 +88,60 @@ DPR_hold_donetsk = {
 	}
 }
 
+DPR_start_of_rebeltion = {
+	allowed = {
+		original_tag = DPR
+	}
+
+	enable = {
+		has_war_with = UKR
+		always = yes
+	}
+
+	abort = {
+		NOT = {
+			has_war_with = UKR
+		}
+		always = no
+	}
+
+    #Бот будет пытатся соединится с Краматорской группировкой
+
+	ai_strategy = {
+		type = front_control
+        priority = 500
+		state = 426
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+        priority = 500
+		state = 401
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+	ai_strategy = {
+		type = front_control
+        priority = 500
+		state = 408
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+	ai_strategy = {
+		type = front_control
+        priority = 500
+		state = 381
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+}
+
 DPR_debaltsevo_attack = {
 	allowed = {
 		original_tag = DPR
@@ -136,7 +190,19 @@ DPR_debaltsevo_attack = {
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
 		value = 8
-		id = 432
+		id = 13
+	}
+
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 8
+		id = 378
+	}
+
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 8
+		id = 376
 	}
 }
 

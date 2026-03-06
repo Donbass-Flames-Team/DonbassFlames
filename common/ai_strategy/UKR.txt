@@ -39,7 +39,31 @@ UKR_ato_is_going = {
 	ai_strategy = {
 		type = front_unit_request
 		tag = LPR
-		value = 100
+		value = 130
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = DPR
+		ordertype = front
+		execution_type = careful
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = LPR
+		ordertype = front
+		execution_type = careful
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = NDR
+		ordertype = front
+		execution_type = careful
+		manual_attack = yes
 	}
 }
 
