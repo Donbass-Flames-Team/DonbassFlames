@@ -590,6 +590,33 @@ UKR_separatism_decision = {
 
 UKR_parlamient_decision = {
 
+	UKR_parlamient_elections_2014 = {
+		icon = GFX_decision_UKR_maidan_end_of_regime
+		is_good = no
+		selectable_mission = no
+		fire_only_once = yes
+		days_mission_timeout = 63
+		available = {
+			tag = UKR
+			NOT = {
+				has_global_flag = UKRparlamientelections2014
+			}
+		}
+		activation = {
+			tag = UKR
+			has_global_flag = UKRparlamientelections2014
+		}
+		timeout_effect = {
+			hidden_effect = {
+				clr_global_flag = UKRparlamientelections2014
+				country_event = {
+					id = ukraine.93
+					days = 40
+				}
+			}
+	    }
+    }
+
 	UKR_buy_the_votes_of_deputies = {
 
 		icon = GFX_decision_UKR_icon_of_SBU

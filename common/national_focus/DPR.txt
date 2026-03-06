@@ -1153,6 +1153,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+			
 			add_stability = 0.075
 			add_command_power = 25
     		if = {

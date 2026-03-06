@@ -1066,6 +1066,9 @@ country_event = {
 
 	option = {
 		name = ukraine.25.a
+		set_global_flag = UKRparlamientelections2014
+		activate_mission = UKR_parlamient_elections_2014
+
 	}
 }
 
@@ -1246,6 +1249,10 @@ country_event = {
 		name = ukraine.28.a
 		country_event = {
             id = ukraine.29
+            days = 46
+        }
+		country_event = {
+            id = ukraine.90
             days = 46
         }
 	}
@@ -2775,3 +2782,114 @@ country_event = {
 	}
 }
 
+
+# Забастовка срочников нацгвардии в Киеве
+country_event = {
+	id = ukraine.90
+	title = ukraine.90.t
+	desc = ukraine.90.d
+	picture = GFX_Report_event_conscripts_national_guardia_rally_in_kiyv_2014
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.90.a	
+		add_stability = -0.015	
+		add_political_power = -15
+	}
+}
+
+# Первое правительство Яценюка
+country_event = {
+	id = ukraine.91
+	title = ukraine.91.t
+	desc = ukraine.91.d
+	picture = GFX_Report_event_formation_of_first_government_of_yacenuk
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.92
+				days = 147
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.91.a	
+		add_stability = 0.015	
+	}
+	
+}
+
+# Расспад коалиции в Верховной раде
+country_event = {
+	id = ukraine.92
+	title = ukraine.92.t
+	desc = ukraine.92.d
+	picture = GFX_Report_event_ukranian_parlamient_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.94
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.92.a	
+		add_stability = -0.035
+		add_political_power = -35
+	}
+	
+}
+
+# Второе правительство Яценюка
+country_event = {
+	id = ukraine.93
+	title = ukraine.93.t
+	desc = ukraine.93.d
+	picture = GFX_Report_event_formation_of_first_government_of_yacenuk
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.93.a	
+		add_stability = 0.015	
+	}
+	
+}
+
+# Роспуск парламента
+country_event = {
+	id = ukraine.94
+	title = ukraine.94.t
+	desc = ukraine.94.d
+	picture = Report_event_poroshenko_in_parlamient_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.94.a	
+		complete_national_focus = UKR_snap_parlamient_elections	
+	}
+	
+}
