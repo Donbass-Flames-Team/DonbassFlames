@@ -1,0 +1,58 @@
+
+objectTypes = {
+	
+	pdxmesh = {
+		name = "geo_motorized_frame_mesh"
+		file = "gfx/models/units/vehicles/geo_motorized_frame.mesh"
+		
+		animation = { id = "idle"			type = "motorized_frame_idle_animation" }
+		animation = { id = "move"			type = "motorized_frame_move_animation" }
+		animation = { id = "attack"			type = "geo_motorized_frame_attack_animation" }
+	}
+
+	pdxmesh = {
+		name = "geo_btr70_AZV_mesh"
+		file = "gfx/models/units/vehicles/geo_btr70_UKR.mesh"
+
+		animation = { id = "attack"			type = "geo_btr80_attack_animation" }		
+		animation = { id = "idle"			type = "geo_btr80_idle_animation" }
+		animation = { id = "move"			type = "geo_btr80_move_animation" }
+	}
+
+	pdxmesh = {
+		name = "geo_btr80_AZV_mesh"
+		file = "gfx/models/units/vehicles/geo_btr80_UKR.mesh"
+
+		animation = { id = "attack"			type = "geo_btr80_attack_animation" }		
+		animation = { id = "idle"			type = "geo_btr80_idle_animation" }
+		animation = { id = "move"			type = "geo_btr80_move_animation" }
+	}
+
+	pdxmesh = {
+		name = "geo_btr3_AZV_mesh"
+		file = "gfx/models/units/vehicles/geo_btr3_UKR.mesh"
+
+		animation = { id = "attack"			type = "geo_btr3_attack_animation" }		
+		animation = { id = "idle"			type = "geo_btr3_idle_animation" }
+		animation = { id = "move"			type = "geo_btr3_move_animation" }
+	}
+
+	pdxmesh = {
+		name = "geo_btr4_AZV_mesh"
+		file = "gfx/models/units/vehicles/geo_btr4_UKR.mesh"
+
+		animation = { id = "attack"			type = "geo_btr4_attack_animation" }		
+		animation = { id = "idle"			type = "geo_btr4_idle_animation" }
+		animation = { id = "move"			type = "geo_btr4_move_animation" }
+	}
+	
+	pdxmesh = {
+		name = "geo_btr4mv_AZV_mesh"
+		file = "gfx/models/units/vehicles/geo_btr4mv_UKR.mesh"
+
+		animation = { id = "attack"			type = "geo_btr4_attack_animation" }		
+		animation = { id = "idle"			type = "geo_btr4_idle_animation" }
+		animation = { id = "move"			type = "geo_btr4_move_animation" }
+	}
+	
+}
