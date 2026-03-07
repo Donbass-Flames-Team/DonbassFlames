@@ -26,16 +26,6 @@ UKR_oligarchs_idea = { #NATIONAL SPIRIT
 	production_speed_buildings_factor = UKR_Oligarchs_production_speed_buildings_factor #-0.25
 }
 
-UKR_ATO_idea = {
-	enable = { always = yes }
-
-	icon = GFX_idea_UKR_oligarchs
-
-	pocket_penalty  = UKR_ATO_pocket_penalty  #-0.45
-	experience_loss_factor = UKR_ATO_experience_loss_factor #-0.15
-	
-}
-
 arisse_donbas_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
 	enable = { always = yes }
 

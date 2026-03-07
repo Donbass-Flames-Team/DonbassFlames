@@ -11,7 +11,7 @@ country_event = {
 	desc = russia.1.d
 	#picture = GFX_report_event_royal_parade
 	
-	is_triggered_only = yes
+	is_triggered_only = no
 	
 	option = {
 		name = russia.1.a
@@ -195,7 +195,7 @@ country_event = {
 				if = { limit = { 502 = { is_controlled_by = DPR } 652 = { is_controlled_by = DPR } } transfer_state = 502 }
 				if = { limit = { 489 = { is_controlled_by = DPR } } transfer_state = 489 }
 				if = { limit = { 653 = { is_controlled_by = DPR } } transfer_state = 653 transfer_state = 489 }
-				if = { limit = { 446 = { is_controlled_by = DPR } 450 = { is_controlled_by = DPR } } transfer_state = 446 }
+				if = { limit = { 446 = { is_controlled_by = DPR } } transfer_state = 446 }
 				if = { limit = { 486 = { is_controlled_by = DPR } } transfer_state = 486 }
 				if = { limit = { 652 = { is_controlled_by = DPR } } transfer_state = 652 }
 				if = { limit = { 450 = { is_controlled_by = DPR } } transfer_state = 450 }

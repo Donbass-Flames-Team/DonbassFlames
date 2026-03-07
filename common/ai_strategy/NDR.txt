@@ -1,6 +1,6 @@
 NDR_first_phase_Of_ato = {
 	allowed = {
-		original_tag = NDR
+		original_tag = DPR
 	}
 
 	enable = {
@@ -29,7 +29,7 @@ NDR_first_phase_Of_ato = {
 
 NDR_hold_slavyansk = {
 	allowed = {
-		original_tag = NDR
+		original_tag = DPR
 	}
 
 	enable = {
@@ -43,7 +43,6 @@ NDR_hold_slavyansk = {
 	}
 	
 	ai_strategy = {
-<<<<<<< HEAD
 		type = front_control
 		state = 291
 		ratio = 0.1
@@ -51,17 +50,11 @@ NDR_hold_slavyansk = {
 		ordertype = front
 		execution_type = rush
 		manual_attack = yes
-=======
-		# Still need to defend at the maginot...
-		type = front_unit_request
-		state = 318  # Alsace-Lorraine
-		value = 30  # +30 %
->>>>>>> bdcc8eecc4c81cd3a3342259f6328b5a6d19961a
 	}
 
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
 		value = 8
-		id = 318
+		id = 432
 	}
 }

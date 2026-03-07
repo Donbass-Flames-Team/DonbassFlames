@@ -590,33 +590,6 @@ UKR_separatism_decision = {
 
 UKR_parlamient_decision = {
 
-	UKR_parlamient_elections_2014 = {
-		icon = GFX_decision_UKR_maidan_end_of_regime
-		is_good = no
-		selectable_mission = no
-		fire_only_once = yes
-		days_mission_timeout = 63
-		available = {
-			tag = UKR
-			NOT = {
-				has_global_flag = UKRparlamientelections2014
-			}
-		}
-		activation = {
-			tag = UKR
-			has_global_flag = UKRparlamientelections2014
-		}
-		timeout_effect = {
-			hidden_effect = {
-				clr_global_flag = UKRparlamientelections2014
-				country_event = {
-					id = ukraine.93
-					days = 40
-				}
-			}
-	    }
-    }
-
 	UKR_buy_the_votes_of_deputies = {
 
 		icon = GFX_decision_UKR_icon_of_SBU
@@ -2789,15 +2762,12 @@ UKR_ATO_decision = {
 				has_global_flag = Minsk2_is_signed
 			}
 		}
-		days_remove = 25
 		fire_only_once = yes
 		custom_cost_trigger = {
             command_power > 14
         }
 		custom_cost_text = decision_cost_CP_15
 		complete_effect = {
-			set_country_flag = UKR_counteroffensive_in_kramatorsk_slavyansk
-			activate_mission = UKR_counter_offensive_in_kramatorsk_mission
 			291 = {
 			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
 		    }
@@ -2826,53 +2796,9 @@ UKR_ATO_decision = {
     		highlight_color_before_active = 2
 		}
 		ai_will_do = {
-			factor = 150
-		} 
-	}
-
-    UKR_counter_offensive_in_kramatorsk_mission = {
-
-		icon = GFX_decision_generic_soldier
-		is_good = yes
-		selectable_mission = no
-		fire_only_once = yes
-		days_mission_timeout = 35
-        
-		#Fail trigger
-		available = {
-			UKR = { 
-				controls_state = 291
-			    controls_state = 318
-				controls_state = 327
-			}
-		}
-
-		activation = {
-			always = no
-		}
-
-		complete_effect = {
-			clr_country_flag = UKR_counteroffensive_in_kramatorsk_slavyansk
-			add_stability = -0.025
-			add_war_support = -0.025
-		}
-
-		timeout_effect = {
-			clr_country_flag = UKR_counteroffensive_in_kramatorsk_slavyansk
-			add_stability = 0.03
-			add_war_support = 0.03
-	    }
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 21
-				state = 20
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
+			factor = 100
 		}
 	}
-
 	UKR_counter_offensive_in_krasnoarmeysk = {
 		icon = GFX_decision_UKR_batalion_aidar
 		allowed = {
@@ -2915,7 +2841,7 @@ UKR_ATO_decision = {
     		highlight_color_before_active = 2
 		}
 		ai_will_do = {
-			factor = 75
+			factor = 100
 		}
 	}
 	UKR_counter_offensive_in_mariupol = {
