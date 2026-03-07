@@ -38,8 +38,21 @@ UKR_ato_is_going = {
 	}
 	ai_strategy = {
 		type = front_unit_request
+		tag = SDR
+		value = 45
+	}
+	ai_strategy = {
+		type = front_unit_request
 		tag = LPR
 		value = 130
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = SDR
+		ordertype = front
+		execution_type = careful
+		manual_attack = yes
 	}
 
 	ai_strategy = {
@@ -138,5 +151,57 @@ UKR_counteroffensive = {
 		type = theatre_distribution_demand_increase
 		value = 5
 		id = 237
+	}
+}
+
+UKR_counteroffensive_in_kramatorsk_slavyansk = {
+	allowed = {
+		original_tag = UKR
+	}
+
+	enable = {
+		has_country_flag = UKR_counteroffensive_in_kramatorsk_slavyansk
+	}
+
+	abort = {
+		NOT = {
+			has_country_flag = UKR_counteroffensive_in_kramatorsk_slavyansk
+		}
+	}
+	
+	ai_strategy = {
+		type = front_control
+		state = 291
+		ratio = 0.1
+		priority = 500
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		state = 318
+		ratio = 0.1
+		priority = 400
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		state = 327
+		ratio = 0.1
+		priority = 400
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 8
+		id = 291
 	}
 }

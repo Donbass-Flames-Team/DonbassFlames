@@ -23,7 +23,7 @@ LPR_first_phase_Of_ato = {
 
 	ai_strategy = {
 		type = garrison
-		value = -500
+		value = -3000
 	}
 }
 
@@ -56,31 +56,31 @@ LPR_second_phase_of_ato = {
 	}
 }
 
-LPR_hold_luhansk = {
-	allowed = {
-		original_tag = LPR
-	}
-
-	enable = {
-		has_country_flag = LPR_first_phase_of_ato
-	}
-
-	abort = {
-		NOT = {
-			has_country_flag = LPR_first_phase_of_ato
-		}
-	}
-	
-	ai_strategy = {
-		# Still need to defend at the maginot...
-		type = front_unit_request
-		state = 340  # Luhansk
-		value = 30  # +30 %
-	}
-
-	ai_strategy = {
-		type = theatre_distribution_demand_increase
-		value = 8
-		id = 340
-	}
-}
+#LPR_hold_luhansk = {
+#	allowed = {
+#		original_tag = LPR
+#	}
+#
+#	enable = {
+#		has_country_flag = LPR_first_phase_of_ato
+#	}
+#
+#	abort = {
+#		NOT = {
+#			has_country_flag = LPR_first_phase_of_ato
+#		}
+#	}
+#	
+#	ai_strategy = {
+#		# Still need to defend at the maginot...
+#		type = front_unit_request
+#		state = 340  # Luhansk
+#		value = 30  # +30 %
+#	}
+#
+#	ai_strategy = {
+#		type = theatre_distribution_demand_increase
+#		value = 8
+#		id = 340
+#	}
+#}
