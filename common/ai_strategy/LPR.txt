@@ -72,13 +72,10 @@ LPR_hold_luhansk = {
 	}
 	
 	ai_strategy = {
-		type = front_control
-		state = 340
-		ratio = 0.1
-		priority = 500
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
+		# Still need to defend at the maginot...
+		type = front_unit_request
+		state = 340  # Luhansk
+		value = 30  # +30 %
 	}
 
 	ai_strategy = {

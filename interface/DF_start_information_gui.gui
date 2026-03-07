@@ -32,14 +32,6 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "startgui_left_button_1"
-			position = { x = 73 y = 159 }
-			quadTextureSprite = "GFX_startgui_leftbutton"
-			font = "hoi_36header"			
-			text = "start_gui_country_paths"
-		}
-
-		buttonType = {
 			name = "startgui_left_button_2"
 			position = { x = 73 y = 249 }
 			quadTextureSprite = "GFX_startgui_leftbutton"
@@ -117,6 +109,47 @@ guiTypes = {
 			quadTextureSprite = "GFX_generic_checkbox"
 			clicksound = click_checkbox
 		}
+
+		buttonType = {
+			name = "play_startgui_button"
+			position = { x = 427 y = 690 }
+			quadTextureSprite = "GFX_startgui_button"
+			font = "hoi_36header"			
+			text = "start_gui_play_text"
+		}
+
+		buttonType = {
+			name = "close_startgui_button"
+			position = { x = 11260 y = 32 }
+			quadTextureSprite = "GFX_closebutton"
+			shortcut = "ESCAPE"
+		}
+	}
+
+	containerWindowType = {
+		name = "Start_gui_country_info"
+		position = { x = 0 y = 0 }
+		size = { width = 1300 height = 770 }
+		orientation = center
+		origo = center
+		moveable = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_startgui_background"
+			position = { x = 49 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name = "start_gui_title"
+			position = { x = 399 y = 10 }
+			font = "hoi_36header"
+			text = "start_gui_title_text"
+			maxWidth = 500
+			format = centre
+			alwaystransparent = yes
+		}
+
 
 		buttonType = {
 			name = "play_startgui_button"

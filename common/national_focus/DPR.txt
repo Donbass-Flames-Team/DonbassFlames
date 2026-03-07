@@ -256,7 +256,7 @@ focus_tree = {
 		id = DPR_armed_forces_of_dpr
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.5
-		x = -6
+		x = -7
 		y = 5
 
 		prerequisite = {focus = DPR_create_a_people_militia_of_the_dpr}
@@ -281,11 +281,11 @@ focus_tree = {
 		id = DPR_set_up_ambushes
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 1
+		x = 0
 		y = 1
 
-		prerequisite = {focus = DPR_armed_forces_of_dpr}
-		relative_position_id = DPR_armed_forces_of_dpr
+		prerequisite = {focus = DPR_create_roadblocks}
+		relative_position_id = DPR_create_roadblocks
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -298,31 +298,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             army_experience = 25
-		}
-	}
-
-	focus = {
-		id = DPR_creation_of_the_dpr_army_elite
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
-		x = -1
-		y = 1
-
-		prerequisite = {focus = DPR_armed_forces_of_dpr}
-		relative_position_id = DPR_armed_forces_of_dpr
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-			
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-            army_experience = 25
-
 		}
 	}
 
@@ -331,9 +306,9 @@ focus_tree = {
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.5
 		x = -2
-		y = 2
+		y = 1
 
-		prerequisite = {focus = DPR_creation_of_the_dpr_army_elite}
+		prerequisite = {focus = DPR_armed_forces_of_dpr}
 		relative_position_id = DPR_armed_forces_of_dpr
 
 		cancel_if_invalid = yes
@@ -359,9 +334,9 @@ focus_tree = {
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.5
 		x = 0
-		y = 2
+		y = 1
 
-		prerequisite = {focus = DPR_creation_of_the_dpr_army_elite}
+		prerequisite = {focus = DPR_armed_forces_of_dpr}
 		relative_position_id = DPR_armed_forces_of_dpr
 
 		cancel_if_invalid = yes
@@ -387,9 +362,9 @@ focus_tree = {
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.5
 		x = 2
-		y = 2
+		y = 1
 
-		prerequisite = {focus = DPR_creation_of_the_dpr_army_elite}
+		prerequisite = {focus = DPR_armed_forces_of_dpr}
 		relative_position_id = DPR_armed_forces_of_dpr
 
 		cancel_if_invalid = yes
@@ -415,9 +390,9 @@ focus_tree = {
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.5
 		x = -4
-		y = 2
+		y = 1
 
-		prerequisite = {focus = DPR_creation_of_the_dpr_army_elite}
+		prerequisite = {focus = DPR_armed_forces_of_dpr}
 		relative_position_id = DPR_armed_forces_of_dpr
 
 		cancel_if_invalid = yes
@@ -443,7 +418,7 @@ focus_tree = {
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
 		x = 0
-		y = 3
+		y = 2
 
 		prerequisite = {focus = DPR_batallion_sparta}
 		prerequisite = {focus = DPR_batallion_somali}
@@ -1159,13 +1134,50 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DPR_free_the_entire_donetsk_oblast
+		id = DPR_centralize_donetsk_groups
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 3
+		cost = 1
 		x = 0
 		y = 2
 
 		prerequisite = {focus = DPR_secure_south focus = DPR_donetsk_castle}
+		relative_position_id = DPR_defend_of_citites
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+			add_stability = 0.075
+			add_command_power = 25
+    		if = {
+				limit = {
+					country_exists = NDR
+				}
+				country_event = NDR.3
+			}	
+    		if = {
+				limit = {
+					country_exists = SDR
+				}
+				country_event = SDR.1
+			}			
+		}
+	}
+
+	focus = {
+		id = DPR_free_the_entire_donetsk_oblast
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 3
+		x = 0
+		y = 3
+
+		prerequisite = {focus = DPR_centralize_donetsk_groups}
 		relative_position_id = DPR_defend_of_citites
 
 		cancel_if_invalid = yes
@@ -1223,7 +1235,7 @@ focus_tree = {
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 2
 		x = 0
-		y = 3
+		y = 4
 
 		prerequisite = {focus = DPR_free_the_entire_donetsk_oblast}
 		relative_position_id = DPR_defend_of_citites
@@ -1251,7 +1263,7 @@ focus_tree = {
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 2
 		x = 1
-		y = 4
+		y = 5
 
 		prerequisite = {focus = DPR_second_minsk_agreement}
 		relative_position_id = DPR_defend_of_citites
@@ -1275,7 +1287,7 @@ focus_tree = {
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 2
 		x = -1
-		y = 4
+		y = 5
 
 		prerequisite = {focus = DPR_second_minsk_agreement}
 		relative_position_id = DPR_defend_of_citites
