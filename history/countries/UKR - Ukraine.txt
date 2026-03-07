@@ -274,7 +274,7 @@ DF_economy_setup = yes
 		volunteer_only
 		export_focus
 		civilian_economy
-    }
+}
 	
 	add_manpower = 60000
 	
@@ -291,7 +291,6 @@ DF_economy_setup = yes
 	recruit_character = yuri_allerov
 	recruit_character = sergey_naev
 	recruit_character = sergey_kulchitsky
-	recruit_character = yuri_sodol
 
 
 	set_variable = { cash = 8 }

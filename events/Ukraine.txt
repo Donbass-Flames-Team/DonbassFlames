@@ -140,6 +140,10 @@ country_event = {
 				id = ukraine.78
 				days = 7
 			}
+			country_event = {
+				id = ukraine.77
+				days = 21
+			}
 		}
 	}
 	
@@ -1173,21 +1177,10 @@ country_event = {
 			381 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 45 }
 			}
-			if = {
-				limit = {
-					UKR = { 
-			            check_variable = {
-                            var = DPR_separatism_value
-                            value = 85
-                            compare = greater_than_or_equals
-                        }
-					}
-				}
-			    DPR = {
-			        country_event = {
-				        id = DPR.9
-				        days = 3
-			        }
+			DPR = {
+			    country_event = {
+				    id = DPR.9
+				    days = 3
 			    }
 			}
 			UKR = {
@@ -1504,7 +1497,7 @@ country_event = {
 	id = ukraine.37
 	title = ukraine.37.t
 	desc  = ukraine.37.d
-	picture = GFX_Report_event_right_corp_is_expanded_picture
+	picture = GFX_Report_event_formation_of_right_sector
 
 	is_triggered_only = yes
 
@@ -1519,7 +1512,7 @@ country_event = {
 	id = ukraine.38
 	title = ukraine.38.t
 	desc  = ukraine.38.d
-	picture = GFX_Report_event_help_from_france_and_usa_picture
+	picture = [GetHitlerHandshakeEventPicture]
 
 	is_triggered_only = yes
 
@@ -1803,7 +1796,7 @@ country_event = {
 	id = ukraine.51
 	title = ukraine.51.t
 	desc  = ukraine.51.d
-	picture = GFX_Report_event_resotre_of_order_in_kharkov_picture
+	picture = [GetHitlerHandshakeEventPicture]
 
 	is_triggered_only = yes
 
@@ -1921,7 +1914,7 @@ country_event = {
 	id = ukraine.55
 	title = ukraine.55.t
 	desc = ukraine.55.d
-	picture = GFX_Report_event_soglashenie_ob_uregulirovanie_picture
+	picture = Report_event_soglashenie_ob_uregulirovanie_picture
 	
 	is_triggered_only = yes
 
@@ -2014,7 +2007,7 @@ country_event = {
 	id = ukraine.58
 	title = ukraine.58.t
 	desc = ukraine.58.d
-	picture = GFX_Report_event_mirny_march_na_radu_picture
+	picture = GFX_Report_event_formation_of_right_sector
 	
 	is_triggered_only = yes
 
@@ -2030,7 +2023,7 @@ country_event = {
 	id = ukraine.59
 	title = ukraine.59.t
 	desc = ukraine.59.d
-	picture = GFX_Report_event_sbu_picture
+	picture = GFX_Report_event_formation_of_right_sector
 	
 	is_triggered_only = yes
 
@@ -2052,7 +2045,7 @@ country_event = {
 	id = ukraine.60
 	title = ukraine.60.t
 	desc = ukraine.60.d
-	picture = GFX_Report_event_kills_on_maidan_2014_picture
+	picture = GFX_Report_event_formation_of_right_sector
 	
 	is_triggered_only = yes
 
@@ -2127,7 +2120,7 @@ country_event = {
 	id = ukraine.64
 	title = ukraine.64.t
 	desc = ukraine.64.d
-	picture = GFX_Report_event_zhenevskie_solgasheniya_2014_picture
+	picture = GFX_Report_event_formation_of_right_sector
 	
 	is_triggered_only = yes
 
@@ -2150,7 +2143,7 @@ country_event = {
 	id = ukraine.65
 	title = ukraine.65.t
 	desc = ukraine.65.d
-	picture = GFX_Report_event_zhenevskie_solgasheniya_2014_picture
+	picture = GFX_Report_event_formation_of_right_sector
 	
 	is_triggered_only = yes
 
@@ -2171,7 +2164,7 @@ country_event = {
 	id = ukraine.66
 	title = ukraine.66.t
 	desc = ukraine.66.d
-	picture = GFX_Report_event_rocket_attack_in_zelenopolye_picture
+	picture = GFX_Report_event_formation_of_right_sector
 	
 	is_triggered_only = no
 
@@ -2231,7 +2224,7 @@ country_event = {
 	id = ukraine.68
 	title = ukraine.68.t
 	desc = ukraine.68.d
-	picture = GFX_Report_event_rocket_attack_in_headquarter_kramatorsk_2014_picture
+	picture = GFX_Report_event_formation_of_right_sector
 	
 	is_triggered_only = yes
 
@@ -2455,7 +2448,7 @@ country_event = {
 	id = ukraine.77
 	title = ukraine.77.t
 	desc = ukraine.77.d
-	picture = GFX_Report_event_mariupol_3_may_2014_picture
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
 
 	is_triggered_only = yes
 
@@ -2489,7 +2482,7 @@ country_event = {
 	id = ukraine.78
 	title = ukraine.78.t
 	desc = ukraine.78.d
-	picture = GFX_Report_event_13_aprill_mariupol_rally_picture
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
 
 	is_triggered_only = yes
 
@@ -2514,7 +2507,7 @@ country_event = {
 	id = ukraine.79
 	title = ukraine.79.t
 	desc = ukraine.79.d
-	picture = GFX_Report_event_mariupol_24_aprill_picture
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
 
 	is_triggered_only = yes
 
@@ -2522,7 +2515,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = ukraine.80
-				days = 6
+				days = 11
 			}
 		}		
 	}
@@ -2539,17 +2532,12 @@ country_event = {
 	id = ukraine.80
 	title = ukraine.80.t
 	desc = ukraine.80.d
-	picture = GFX_Report_event_mariupol_1_may_2014_picture
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
 
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = {
-			country_event = {
-				id = ukraine.77
-				days = 3
-			}
-		}
+		
 	}
 
 	option = {
@@ -2564,7 +2552,7 @@ country_event = {
 	id = ukraine.81
 	title = ukraine.81.t
 	desc = ukraine.81.d
-	picture = GFX_Report_event_donetsk_1_marth_2014_picture
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
 
 	is_triggered_only = yes
 
@@ -2589,7 +2577,7 @@ country_event = {
 	id = ukraine.82
 	title = ukraine.82.t
 	desc = ukraine.82.d
-	picture = GFX_Report_event_donetsk_13_marth_2014_picture
+	picture = GFX_Report_event_oleg_morgun_arrested_picture
 
 	is_triggered_only = yes
 
@@ -2601,7 +2589,6 @@ country_event = {
 		name = ukraine.82.a		
         add_stability = -0.015 
 		add_political_power = -5
-		add_manpower = -2
 	}
 }
 
@@ -2630,7 +2617,7 @@ country_event = {
 	id = ukraine.84
 	title = ukraine.84.t
 	desc = ukraine.84.d
-	picture = GFX_Report_event_strelkov_event_2
+	picture = GFX_Report_event_girkin_killed_picture
 
 	is_triggered_only = yes
 
@@ -2660,20 +2647,7 @@ country_event = {
 			AZV = {
 				transfer_state = 551
 				add_state_core = 551
-				puppet = {
-                    target = AZV
-                    end_wars = no
-                }
-			    set_politics = {
-		            ruling_party = nationalism
-		            last_election = "2010.02.07"
-		            election_frequency = 48
-		            elections_allowed = no
-	            }
 			}
-			set_popularities = {
-		        nationalism = 100
-	        }
 		}
 	}
 
@@ -2694,7 +2668,7 @@ country_event = {
 	id = ukraine.86
 	title = ukraine.86.t
 	desc = ukraine.86.d
-	picture = GFX_Report_event_32_roadblock_picture
+	picture = GFX_Report_event_recreation_of_ngu_picture
 
 	is_triggered_only = yes
 
@@ -2721,57 +2695,5 @@ country_event = {
 		add_manpower = -12
 		retire_character = sergey_kulchitsky
 	}
+
 }
-
-# Встреча порошенко и путина в минске 
-country_event = {
-	id = ukraine.88
-	title = ukraine.88.t
-	desc = ukraine.88.d
-	picture = GFX_Report_event_meeting_poroshenko_and_putin_in_minsk
-
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			news_event = {
-				id = news_events.21
-				hours = 4
-			}
-			country_event = {
-				id = ukraine.89
-				days = 6
-			}
-		}
-	}
-
-	option = {
-		name = ukraine.88.a		
-		add_political_power = 15
-	}
-}
-
-# Телефонный разговор между порошенко и путином
-country_event = {
-	id = ukraine.89
-	title = ukraine.89.t
-	desc = ukraine.89.d
-	picture = GFX_Report_event_poroshenko_phone
-
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			country_event = {
-				id = russia.11
-				days = 2
-			}
-		}
-	}
-
-	option = {
-		name = ukraine.89.a		
-		add_political_power = 15
-	}
-}
-
