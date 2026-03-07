@@ -4,12 +4,16 @@ AZV_Counteroffensive_in_Mariupol = {
 	}
 
 	enable = {
-		has_war_with = SDR
+		OR = {
+		    has_war_with = SDR
+			has_war_with = DPR
+		}
 	}
 
 	abort = {
 		NOT = {
 			has_war_with = SDR
+			has_war_with = DPR
 		}
 	}
 
@@ -29,5 +33,10 @@ AZV_Counteroffensive_in_Mariupol = {
 		ordertype = front
 		execution_type = rush
 		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = garrison
+		value = -500
 	}
 }
