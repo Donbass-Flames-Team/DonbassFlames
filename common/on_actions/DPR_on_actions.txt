@@ -55,7 +55,41 @@ on_actions = {
 					}
 				}
 				set_global_flag = ANNEX_MARIUPOL_REBELS
-		    }	    
+		    }	 
+			if = {
+			    limit = {
+				    has_global_flag = Start_Of_ATO
+                    KPR = {
+						surrender_progress > 0.99
+					}
+					NOT = {
+						has_global_flag = ANNEX_KHARKOV_REBELS
+					}
+			    }
+			    UKR = {
+					annex_country = {
+						target = KPR
+					}
+				}
+				set_global_flag = ANNEX_KHARKOV_REBELS
+		    }   
+			if = {
+			    limit = {
+				    has_global_flag = Start_Of_ATO
+                    OPR = {
+						surrender_progress > 0.99
+					}
+					NOT = {
+						has_global_flag = ANNEX_ODESSA_REBELS
+					}
+			    }
+			    UKR = {
+					annex_country = {
+						target = OPR
+					}
+				}
+				set_global_flag = ANNEX_ODESSA_REBELS
+		    }
 	    }
 	}
 }

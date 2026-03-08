@@ -23,7 +23,7 @@ news_event = {
 	desc = world_events.2.d
 	picture = GFX_news_event_021
 	major = yes
-	is_triggered_only = no
+	is_triggered_only = yes
 	option = { name = world_events.2.a }
 }
 
@@ -243,7 +243,7 @@ news_event = {
 	desc = world_events.22.d
 	picture = GFX_news_event_021
 	major = yes
-	is_triggered_only = no
+	is_triggered_only = yes
 	option = { name = world_events.22.a }
 }
 

@@ -1148,11 +1148,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-			
+			date > 2014.6.6
 		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
+			
 			add_stability = 0.075
 			add_command_power = 25
     		if = {
