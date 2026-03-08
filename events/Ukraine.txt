@@ -850,13 +850,13 @@ country_event = {
 	id = ukraine.17
 	title = ukraine.17.t
 	desc = ukraine.17.d
-	picture = GFX_Report_event_vybory_ukraine_picture
+	picture = GFX_Report_event_peremoha_poroshenka_picture
 	
 	is_triggered_only = yes
 
 	option = {
 		name = ukraine.17.a
-		add_stability = 0.1
+		add_stability = 0.05
 		retire_country_leader = yes
         create_country_leader = {
 		    name = UKR_petro_poroshenko
@@ -2871,7 +2871,6 @@ country_event = {
 		name = ukraine.93.a	
 		add_stability = 0.015	
 	}
-	
 }
 
 # Роспуск парламента
@@ -2879,7 +2878,7 @@ country_event = {
 	id = ukraine.94
 	title = ukraine.94.t
 	desc = ukraine.94.d
-	picture = Report_event_poroshenko_in_parlamient_picture
+	picture = GFX_Report_event_poroshenko_in_parlamient_picture
 
 	is_triggered_only = yes
 
@@ -2891,5 +2890,30 @@ country_event = {
 		name = ukraine.94.a	
 		complete_national_focus = UKR_snap_parlamient_elections	
 	}
-	
+}
+
+# Переформирование батальонов ТРО в мотопехотные батальоны
+country_event = {
+	id = ukraine.95
+	title = ukraine.95.t
+	desc = ukraine.95.d
+	picture = GFX_Report_event_ukraine_motoinfantry_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.95.a	
+        custom_effect_tooltip = UKR_reformat_TRO_into_motorized_infantry_battalions_tt
+		hidden_effect = {
+			delete_units  = {
+				division_template = "Batal'on TRO"
+				disband = no
+			}
+            load_oob = UKR_reform_tro_to_moto_infantry
+		}
+	}
 }

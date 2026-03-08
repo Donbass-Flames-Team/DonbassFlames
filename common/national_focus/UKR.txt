@@ -1882,6 +1882,21 @@ focus_tree = {
                     days = 46
                 }
 				division_template = {
+	                name = "Dobrovol'che formuvannya"
+	                regiments = {
+                        territorial_defense_unit = { x = 0 y = 0 }
+		                territorial_defense_unit = { x = 0 y = 1 }
+		                territorial_defense_unit = { x = 0 y = 2 }
+                        territorial_defense_unit = { x = 1 y = 0 }
+	                }
+                    support = {
+                        engineer = { x = 0 y = 0 }
+		                recon = { x = 0 y = 1 }
+		                mortar = { x = 0 y = 2 }
+		                atgm_company = { x = 0 y = 3 }
+	                }
+                }
+				division_template = {
 	                name = "Batal'on TRO"
 	                regiments = {
                         territorial_defense_unit = { x = 0 y = 0 }
@@ -4342,6 +4357,34 @@ focus_tree = {
 					add_political_power = 55
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = UKR_reformat_TRO_into_motorized_infantry_battalions
+		icon = GFX_focus_UKR_volunteer_mvd_battalions
+		cost = 1
+		x = 4
+		y = 1
+
+		prerequisite = { focus = UKR_volunteer_battalions }
+		relative_position_id = UKR_volunteer_battalions
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            date > 2014.10.1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_reformat_TRO_into_motorized_infantry_battalions"
+		    country_event = ukraine.95
 		}
 	}
 
