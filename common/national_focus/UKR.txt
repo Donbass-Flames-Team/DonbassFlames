@@ -3613,16 +3613,15 @@ focus_tree = {
 		id = UKR_command_of_the_logistics_forces_afu
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 0
-		y = 5
+		x = 1
+		y = 6
 
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		prerequisite = { focus = UKR_reform_of_dshv }
-		prerequisite = { focus = UKR_reform_of_dshv focus = UKR_reform_of_the_sergeant_corps focus = UKR_strengthen_general_staff_planning }
+		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
 		relative_position_id = UKR_military_reforms_afu
 
 
@@ -3636,10 +3635,39 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_reform_of_tro
+		id = UKR_creation_of_a_reserve_corps
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
 		x = 0
+		y = 5
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_reform_of_dshv }
+		prerequisite = { focus = UKR_reform_of_dshv focus = UKR_reform_of_the_sergeant_corps focus = UKR_strengthen_general_staff_planning }
+
+		relative_position_id = UKR_military_reforms_afu
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_creation_of_a_reserve_corps"
+			unlock_decision_tooltip = UKR_5_okrema_tankova_bryhada_reserve_corps_decision
+			
+		}
+	}
+
+	focus = {
+		id = UKR_reform_of_tro
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -1
 		y = 6
 
 
@@ -3647,7 +3675,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		prerequisite = { focus = UKR_command_of_the_logistics_forces_afu }
+		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
 		relative_position_id = UKR_military_reforms_afu
 
 

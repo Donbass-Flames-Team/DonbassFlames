@@ -3158,7 +3158,10 @@ UKR_general_staff_decision = {
 		fire_only_once = yes
 		cost = 25
 		complete_effect = {
-			
+			custom_effect_tooltip = UKR_35_otdelnaya_brihada_morskoy_pikhoti_formed_tt
+			hidden_effect = {
+				load_oob = UKR_35_otdelnaya_brihada_morskoy_pikhoti
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3217,7 +3220,7 @@ UKR_general_staff_decision = {
         ai_will_do = {
             base = 5
             modifier = {
-                add = 15
+                add = 110
                 date > 2014.1.12
             }
         }
@@ -3238,10 +3241,46 @@ UKR_general_staff_decision = {
 		fire_only_once = yes
 		cost = 25
 		complete_effect = {
-
+			custom_effect_tooltip = UKR_44_otdelnaya_artilleriyskaya_brigada_formed_tt
+			hidden_effect = {
+				load_oob = UKR_44_otdelnaya_artilleriyskaya_brigada
+			}
 		}
 		ai_will_do = {
-			factor = 10
+            base = 5
+            modifier = {
+                add = 110
+                date > 2014.1.9
+            }
+		}
+	}
+
+	UKR_137_otdelnay_batalyon_morskoy_pikhoti_decision = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2015.1.9
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_general_staff
+		}
+		fire_only_once = yes
+		cost = 15
+		complete_effect = {
+			custom_effect_tooltip = UKR_137_otdelnay_batalyon_morskoy_pikhoti_formed_tt
+			hidden_effect = {
+				load_oob = UKR_137_otdelny_batalyon_morskoy_pikhoti
+			}
+		}
+		ai_will_do = {
+            base = 5
+            modifier = {
+                add = 110
+                date > 2015.1.9
+            }
 		}
 	}
 
@@ -3266,7 +3305,7 @@ UKR_general_staff_decision = {
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 110
 		}
 	}	
 
@@ -3291,10 +3330,119 @@ UKR_general_staff_decision = {
 			}
 		}
 		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	UKR_3_okrema_tankova_bryhada_reserve_corps_decision = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2017.3.2
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_creation_of_a_reserve_corps
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			custom_effect_tooltip = UKR_strengthen_reserve_corp_tt
+		}
+		ai_will_do = {
 			factor = 10
 		}
 	}
 
+	UKR_4_okrema_tankova_bryhada_reserve_corps_decision = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2017.3.2
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_creation_of_a_reserve_corps
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			custom_effect_tooltip = UKR_strengthen_reserve_corp_tt
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	UKR_63_okrema_mekhanizovana_bryhada_reserve_corps_decision = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2017.3.2
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_creation_of_a_reserve_corps
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			custom_effect_tooltip = UKR_strengthen_reserve_corp_tt
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	UKR_33_okrema_artileryska_bryhada_reserve_corps_decision = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2018.3.2
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_creation_of_a_reserve_corps
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			custom_effect_tooltip = UKR_strengthen_reserve_corp_tt
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}	
+
+	UKR_deploy_the_reserve_corps_decision = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			has_war_with_major = yes
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_creation_of_a_reserve_corps
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			custom_effect_tooltip = UKR_deploy_the_reserve_corps_tt
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
 }
 
 UKR_ATO_volunteer_battalions_decision = {

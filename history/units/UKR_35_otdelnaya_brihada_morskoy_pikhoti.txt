@@ -1,0 +1,36 @@
+units = {
+division= {
+        name = "1-y batalyon morskoyi pikhoty 35-yi okremoyi bryhady morskoyi pikhoty"
+        location = 14196
+        division_template = "Morska pikhota"
+        start_experience_factor = 0.25
+        start_equipment_factor = 0.7
+		start_manpower_factor = 1
+    }
+    division= {
+        name = "2-y batalyon morskoyi pikhoty 35-yi okremoyi bryhady morskoyi pikhoty"
+        location = 14196
+        division_template = "Morska pikhota"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y tankovyy batalyon 35-yi okremoyi bryhady morskoyi pikhoty"
+        location = 14196
+        division_template = "Tankovyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "1-y batalyon samokhidnoyi artyleriyi 35-yi okremoyi bryhady morskoyi pikhoty"
+        location = 14196
+        division_template = "Batalyon samokhidnoyi artyleriyi"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+}
