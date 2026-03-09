@@ -1,15 +1,12 @@
-state = { 
-	id = 389 
-	name = "STATE_389" # Донецк
-	manpower = 40000 
-	
+state = {
+	id = 389
+	name = "STATE_389"
+	manpower = 49504
 	state_category = city 
 	buildings_max_level_factor = 1 
 	history = { 
 		owner = RUS 
-		
 		victory_points = { 15437 30 }
-		
 		buildings = { 
 			industrial_complex = 0 
 			arms_factory = 0 
