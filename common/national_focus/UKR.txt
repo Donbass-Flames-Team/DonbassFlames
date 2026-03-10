@@ -3450,9 +3450,36 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_new_communication_systems
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 3
+		x = -4
+		y = 2
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_western_instructors }
+		relative_position_id = UKR_military_reforms_afu
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		    add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
+		    custom_effect_tooltip = UKR_realiance_on_decentralized_command_tt
+		}
+	}
+
+	focus = {
 		id = UKR_reliance_on_decentralized_command
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 5
 		x = -2
 		y = 2
 
@@ -3480,7 +3507,7 @@ focus_tree = {
 	focus = {
 		id = UKR_missionary_command
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 5
 		x = 0
 		y = 1
 
@@ -3533,32 +3560,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_creation_of_joint_headquarters
-		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
-		x = 0
-		y = 1
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		prerequisite = { focus = UKR_reform_of_dshv }
-		relative_position_id = UKR_reform_of_dshv
-
-
-		available = {
-            
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_creation_of_joint_headquarters"
-		}
-	}
-
-	focus = {
-		id = UKR_reform_of_dshv
+		id = UKR_deosovetization_of_army
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
 		x = 0
@@ -3583,9 +3585,113 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_reliance_on_centralized_command
+		id = UKR_reform_of_dshv
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
+		x = 0
+		y = 4
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_deosovetization_of_army }
+		relative_position_id = UKR_military_reforms_afu
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_command_of_the_logistics_forces_afu
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 1
+		y = 6
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
+		relative_position_id = UKR_military_reforms_afu
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_command_of_the_logistics_forces_afu"
+		}
+	}
+
+	focus = {
+		id = UKR_creation_of_a_reserve_corps
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 5
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_reform_of_dshv }
+		prerequisite = { focus = UKR_reform_of_dshv focus = UKR_reform_of_the_sergeant_corps focus = UKR_strengthen_general_staff_planning }
+
+		relative_position_id = UKR_military_reforms_afu
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_creation_of_a_reserve_corps"
+			unlock_decision_tooltip = UKR_5_okrema_tankova_bryhada_reserve_corps_decision
+			
+		}
+	}
+
+	focus = {
+		id = UKR_reform_of_tro
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -1
+		y = 6
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
+		relative_position_id = UKR_military_reforms_afu
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_reliance_on_centralized_command
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 5
 		x = 2
 		y = 2
 
@@ -3634,10 +3740,35 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_strengthen_general_staff_planning
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 2
+		y = 4
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_reliance_on_centralized_command }
+		relative_position_id = UKR_military_reforms_afu
+
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
 		id = UKR_ukranian_mic
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = -5
+		x = -6
 		y = 2
 
 
