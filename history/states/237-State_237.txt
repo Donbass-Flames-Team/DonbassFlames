@@ -6,7 +6,10 @@ state = {
 	state_category = rural 
 	buildings_max_level_factor = 2 
 	
-	resources = { oil = 3 } 
+	resources = {
+		oil = 3 
+		coal = 6 
+	} 
 	history = { 
 		owner = UKR 
 		
