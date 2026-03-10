@@ -539,6 +539,9 @@ focus_tree = {
 			add_war_support = 0.025
 			country_event = russia.1
 			hidden_effect = {
+				CRI = {
+					add_ideas = CRI_the_military_does_not_resist
+				}
 				set_country_flag = RUS_rush_in_crimea
 				637 = {
 				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }

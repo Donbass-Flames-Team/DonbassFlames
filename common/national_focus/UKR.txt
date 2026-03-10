@@ -2125,6 +2125,34 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_save_economy_during_war
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -7
+		y = 1
+		
+		prerequisite = { focus = UKR_battle_for_ukraine }
+		relative_position_id = UKR_battle_for_ukraine
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
 		id = UKR_supreme_commander_in_chiefs_headquarters
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
@@ -2208,7 +2236,7 @@ focus_tree = {
 		id = UKR_expand_sbu_alpha_to_division
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = -3
+		x = -4
 		y = 1
 		
 		prerequisite = { focus = UKR_ukrainian_special_services_during_wartime }
@@ -2475,10 +2503,118 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_mobilization
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = UKR_army_in_war_time }
+		relative_position_id = UKR_army_in_war_time
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_lower_the_age_for_conscription
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = UKR_mobilization }
+		relative_position_id = UKR_mobilization
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_offer_contracts_for_18_24_year_olds
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 2
+		y = 2
+		
+		prerequisite = { focus = UKR_lower_the_age_for_conscription }
+		relative_position_id = UKR_mobilization
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
+		id = UKR_offensive_guard
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = UKR_mobilization }
+		relative_position_id = UKR_army_in_war_time
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+		}
+	}
+
+	focus = {
 		id = UKR_army_production
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 7
+		x = 10
 		y = 1
 		
 		prerequisite = { focus = UKR_army_in_war_time }
@@ -4274,7 +4410,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_dig_in"
 			add_timed_idea = {
                 idea = UKR_defence_of_cities_idea 
                 days = 75

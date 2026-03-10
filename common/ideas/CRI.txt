@@ -1,0 +1,24 @@
+ideas = {
+
+	country = {
+		CRI_the_military_does_not_resist = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_DPR_hidden_presence
+			
+			modifier = {
+				army_defence_factor = 0.10
+				surrender_limit = -0.65
+			}
+		}
+	}
+
+}
