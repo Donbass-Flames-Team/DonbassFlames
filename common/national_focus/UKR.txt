@@ -4478,7 +4478,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
             unlock_decision_category_tooltip = UKR_general_staff_decision
-			custom_effect_tooltip = UKR_Volunteer_formations_spesial_forces_mvs_tt
+			custom_effect_tooltip = UKR_new_brigades_formation_tt
 			army_experience = 20
 			add_command_power = 10
 		}
@@ -4729,7 +4729,6 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
 			add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
-		    custom_effect_tooltip = UKR_new_brigades_formation_tt
 		    add_political_power = 25
 			hidden_effect = {
 				if = {

@@ -78,7 +78,7 @@ units = {
         name = "1-y batal'on Donetskogo opolcheniya"
         location = 7500
         division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
+        start_experience_factor = 0.1
         start_equipment_factor = 0.5
 		start_manpower_factor = 1
     }
@@ -86,7 +86,7 @@ units = {
         name = "2-y batal'on Donetskogo opolcheniya"
         location = 15766
         division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
+        start_experience_factor = 0.1
         start_equipment_factor = 0.5
 		start_manpower_factor = 1
     }
@@ -94,7 +94,7 @@ units = {
         name = "3-y batal'on Donetskogo opolcheniya"
         location = 9377
         division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
+        start_experience_factor = 0.1
         start_equipment_factor = 0.5
 		start_manpower_factor = 1
     }
@@ -102,7 +102,7 @@ units = {
         name = "4-y batal'on Donetskogo opolcheniya"
         location = 10391
         division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
+        start_experience_factor = 0.1
         start_equipment_factor = 0.5
 		start_manpower_factor = 1
     }
@@ -111,7 +111,7 @@ units = {
         name = "5-y batal'on Donetskogo opolcheniya"
         location = 10450
         division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
+        start_experience_factor = 0.1
         start_equipment_factor = 0.5
 		start_manpower_factor = 1
     }
@@ -120,7 +120,7 @@ units = {
         name = "5-y batal'on Donetskogo opolcheniya"
         location = 15811
         division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
+        start_experience_factor = 0.1
         start_equipment_factor = 0.5
 		start_manpower_factor = 1
     }
@@ -129,7 +129,7 @@ units = {
         name = "6-y batal'on Donetskogo opolcheniya"
         location = 18222
         division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
+        start_experience_factor = 0.1
         start_equipment_factor = 0.5
 		start_manpower_factor = 1
     }
@@ -138,7 +138,7 @@ units = {
         name = "7-oi batal'on Donetskogo opolcheniya"
         location = 18219
         division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
+        start_experience_factor = 0.1
         start_equipment_factor = 0.5
 		start_manpower_factor = 0.8
     }
@@ -147,7 +147,7 @@ units = {
         name = "8-oi batal'on Donetskogo opolcheniya"
         location = 16470
         division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
+        start_experience_factor = 0.1
         start_equipment_factor = 0.5
 		start_manpower_factor = 0.8
     }
@@ -156,7 +156,7 @@ units = {
         name = "9-ii batal'on Donetskogo opolcheniya"
         location = 18220
         division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
+        start_experience_factor = 0.1
         start_equipment_factor = 0.5
 		start_manpower_factor = 0.8
     }
@@ -165,7 +165,7 @@ units = {
         name = "10-y batal'on Donetskogo opolcheniya"
         location = 18220
         division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
+        start_experience_factor = 0.1
         start_equipment_factor = 0.5
 		start_manpower_factor = 0.8
     }
@@ -326,6 +326,6 @@ units = {
         division_template = "Donetsk Militia"
         start_experience_factor = 0.1
         start_equipment_factor = 0.4
-		start_manpower_factor = 0.25
+		start_manpower_factor = 0.15
     }
 }
