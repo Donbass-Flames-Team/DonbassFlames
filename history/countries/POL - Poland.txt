@@ -1,5 +1,10 @@
 ﻿capital = 48
 recruit_character = bronislaw_komorowski
+create_faction = "NATO"
+add_to_faction = SLO
+add_to_faction = HUN
+add_to_faction = ROM
+add_to_faction = LIT
 
 2013.11.21 = {
 	set_research_slots = 3
@@ -30,7 +35,6 @@ recruit_character = bronislaw_komorowski
 		POL_political_polarization
 		POL_EU_subsidies
 		POL_eastern_neighbor_concerns
-
 		volunteer_only
 		free_trade
 		civilian_economy
