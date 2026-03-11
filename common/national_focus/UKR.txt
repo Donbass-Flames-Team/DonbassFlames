@@ -3794,8 +3794,11 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_creation_of_a_reserve_corps"
-			unlock_decision_tooltip = UKR_5_okrema_tankova_bryhada_reserve_corps_decision
-			
+			unlock_decision_tooltip = UKR_3_okrema_tankova_bryhada_reserve_corps_decision
+			unlock_decision_tooltip = UKR_4_okrema_tankova_bryhada_reserve_corps_decision
+			unlock_decision_tooltip = UKR_63_okrema_mekhanizovana_bryhada_reserve_corps_decision
+			unlock_decision_tooltip = UKR_38_okrema_artileryska_bryhada_reserve_corps_decision
+			unlock_decision_tooltip = UKR_deploy_the_reserve_corps_decision
 		}
 	}
 
@@ -4475,6 +4478,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
             unlock_decision_category_tooltip = UKR_general_staff_decision
+			custom_effect_tooltip = UKR_Volunteer_formations_spesial_forces_mvs_tt
 			army_experience = 20
 			add_command_power = 10
 		}
@@ -4702,7 +4706,7 @@ focus_tree = {
 	focus = {
 		id = UKR_volunteer_battalions_of_mvd
 		icon = GFX_focus_UKR_volunteer_mvd_battalions
-		cost = 1
+		cost = 0.5
 		x = 2
 		y = 1
 
@@ -4725,7 +4729,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
 			add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
-		    custom_effect_tooltip = UKR_volunteer_battalions_tt
+		    custom_effect_tooltip = UKR_new_brigades_formation_tt
 		    add_political_power = 25
 			hidden_effect = {
 				if = {
