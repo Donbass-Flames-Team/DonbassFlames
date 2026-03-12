@@ -197,6 +197,24 @@ ideas = {
 			    production_speed_bunker_factor = 0.25
 			}
 		}
+
+		AI_buff_idea = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			modifier = {
+			    army_defence_factor = 0.15
+				supply_factor = 0.15
+				attrition = -0.10
+			}
+		}
 	}
 
 }
