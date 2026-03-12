@@ -152,6 +152,11 @@ country_event = {
 		DPR = {
 			change_tag_from = root
 		}
+		hidden_effect = {
+			UKR = {
+				add_ideas = AI_buff_idea
+			}
+		}
 	}
 }
 
@@ -268,6 +273,12 @@ country_event = {
 		name = ukraine.3.b
 		LPR = {
 			change_tag_from = root
+		}
+		hidden_effect = {
+			UKR = {
+				load_oob = UKR_ATO_Buff
+				add_ideas = AI_buff_idea
+			}
 		}
 	}
 }
@@ -393,6 +404,11 @@ country_event = {
 		name = ukraine.4.b
 		KPR = {
 			change_tag_from = root
+		}
+		hidden_effect = {
+			UKR = {
+				add_ideas = AI_buff_idea
+			}
 		}
 	}
 }

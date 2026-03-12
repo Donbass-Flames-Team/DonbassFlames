@@ -148,7 +148,16 @@ units = {
         location = 8540
         division_template = "Batal'on TRO"
         start_experience_factor = 0.05
-        start_equipment_factor = 0.5
+        start_equipment_factor = 0.9
+		start_manpower_factor = 0.9
+    }
+    
+    division= {
+        name = "Ukraniskoe podrazdilenie"
+        location = 8540
+        division_template = "Batal'on TRO"
+        start_experience_factor = 0.05
+        start_equipment_factor = 0.9
 		start_manpower_factor = 0.9
     }
 }
