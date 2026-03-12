@@ -3,17 +3,17 @@ guiTypes = {
 	containerWindowType = {
 		name = "Escalation_on_Donbas"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height = 302 }
+		size = { width = 100% height = 312 }
 
 		iconType = {
 		    name = "ATO_escalation_background"
 			spriteType = "GFX_ato_background_escalation"
-			position = { x = 5 y = -19 }
+			position = { x = 5 y = -18 }
 		}
 
 		instantTextBoxType = {
 			name = "DF_escalation_title"
-			position = { x = 8 y = 85 }
+			position = { x = 5 y = -15 }
 			font = "hoi_36header"
 			text = "DF_escalation_title_text"
 			maxWidth = 500
@@ -21,59 +21,79 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		instantTextBoxType = {
+			name = "DF_escalationUKR_title"
+			position = { x = -109 y = 260 }
+			font = "hoi_18mbs"
+			text = "DF_escalationUKR_title_text"
+			maxWidth = 500
+			format = centre
+			alwaystransparent = yes
+		}		
+
+		instantTextBoxType = {
+			name = "DF_escalationDPR_title"
+			position = { x = 129 y = 260 }
+			font = "hoi_18mbs"
+			text = "DF_escalationDPR_title_text"
+			maxWidth = 500
+			format = centre
+			alwaystransparent = yes
+		}				
+
 		iconType = {
 			name = "DF_escalation_icon_1"
 			spriteType = "GFX_escalation_one"
-			position = { x = 50 y = 18 }
+			position = { x = 52 y = 16 }
 			tooltip = "Escalation_on_donbas_1_tt"
 		}
 
 		iconType = {
 			name = "DF_escalation_icon_2"
 			spriteType = "GFX_escalation_two"
-			position = { x = 120 y = 18 }
+			position = { x = 121 y = 16 }
 			tooltip = "Escalation_on_donbas_2_tt"
 		}
 
 		iconType = {
 			name = "DF_escalation_icon_3"
 			spriteType = "GFX_escalation_three"
-			position = { x = 190 y = 18 }
+			position = { x = 192 y = 16 }
 			tooltip = "Escalation_on_donbas_3_tt"
 		}
 
 		iconType = {
 			name = "DF_escalation_icon_4"
 			spriteType = "GFX_escalation_four"
-			position = { x = 260 y = 18 }
+			position = { x = 262 y = 16 }
 			tooltip = "Escalation_on_donbas_4_tt"
 		}
 
 		iconType = {
 			name = "DF_escalation_icon_5"
 			spriteType = "GFX_escalation_five"
-			position = { x = 330 y = 18 }
+			position = { x = 332 y = 16 }
 			tooltip = "Escalation_on_donbas_5_tt"
 		}
 
 		iconType = {
 			name = "DF_escalation_icon_6"
 			spriteType = "GFX_escalation_six"
-			position = { x = 400 y = 18 }
+			position = { x = 402 y = 16 }
 			tooltip = "Escalation_on_donbas_6_tt"
 		}
 
 		buttonType = {
 			name = "DF_ukraine_army_icon"
 			spriteType = "GFX_escalation_ukraine_army_icon"
-			position = { x = 15 y = 120 }
+			position = { x = 34 y = 116 }
 			tooltip = "[get_escalation_ukranian_army_icon_tt]"
 		}
 
 		buttonType = {
 			name = "DF_people_republic_army_icon"
 			spriteType = "GFX_escalation_people_republic_army_icon"
-			position = { x = 255 y = 120 }
+			position = { x = 258 y = 112 }
 			tooltip = "[get_escalation_people_republic_army_icon_tt]"
 		}
 
