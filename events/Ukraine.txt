@@ -83,6 +83,10 @@ country_event = {
 				add_state_core = 452
 				add_state_core = 653
 				526 = { set_demilitarized_zone = no }
+				country_event = {
+					id = DPR.20
+					days = 5
+				}
 			}
 			DPR = {
 				load_oob = Donetsk_Uprising_Militia
@@ -267,6 +271,21 @@ country_event = {
 	
 	option = {
 		name = ukraine.3.a
+		hidden_effect = {
+			if = {
+				limit = {
+					DPR = { 
+					    is_ai = yes
+					}	
+					UKR = {
+						is_ai = no
+					}																			
+				}
+				DPR = {
+					load_oob = Donetsk_people_Millitia
+				}
+			}
+		}
 	}
 
 	option = {
@@ -1126,6 +1145,16 @@ country_event = {
 				}
 				complete_national_focus = UKR_start_of_ato
 			}
+			291 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 15 }
+			}
+			318 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 15 }
+			}
+			318 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 15 }
+			}
+
 			432 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 35 }
 			}	
@@ -2931,5 +2960,24 @@ country_event = {
 			}
             load_oob = UKR_reform_tro_to_moto_infantry
 		}
+	}
+}
+
+# Битва за Дебальцево
+country_event = {
+	id = ukraine.96
+	title = ukraine.96.t
+	desc = ukraine.96.d
+	picture = GFX_Report_event_debaltsevo_soldier_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.96.a	
+        activate_mission = UKR_hold_debaltsevo
 	}
 }

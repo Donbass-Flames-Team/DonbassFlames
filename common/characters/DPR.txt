@@ -12,6 +12,58 @@ characters = {
 		}
 	}
 
+    pavel_gubarev = {
+		name = pavel_gubarev
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pavel_gubarev"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+		}
+	}
+
+	andrey_purgin = {
+		name = andrey_purgin
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_andrey_purgin"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+		}
+	}
+
+	vladimir_makovich = {
+		name = vladimir_makovich
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_vladimir_makovich"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+		}
+	}
+
+	boris_litvinov = {
+		name = boris_litvinov
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_boris_litvinov"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+		}
+	}	
+
 	#Penis
 	denis_pushilin = {
 		name = denis_pushilin
@@ -37,7 +89,15 @@ characters = {
 			ideology = autoritarian_democracy
 			traits = { }
 		}
-	}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}	
 
 	zheka_vasilievich = {
 		name = zheka_vasilievich

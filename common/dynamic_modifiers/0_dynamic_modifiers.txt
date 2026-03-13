@@ -33,7 +33,15 @@ UKR_ATO_idea = {
 
 	pocket_penalty  = UKR_ATO_pocket_penalty  #-0.45
 	experience_loss_factor = UKR_ATO_experience_loss_factor #-0.15
-	
+}
+
+People_republic_ATO_idea = {
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_oligarchs
+
+	pocket_penalty  = People_republic_pocket_penalty  #-0.45
+	experience_loss_factor = People_republic_experience_loss_factor #-0.15
 }
 
 arisse_donbas_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
@@ -135,4 +143,16 @@ LPR_luhansk_castle_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
 	army_speed_factor = 0.075
 	army_morale_factor = 0.05
 	supply_factor = 0.15
+}
+
+prorussian_rallies_region_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_speed_factor = -0.95
+	army_org_factor = -0.35
+	army_attack_factor = -0.2
+	army_org_regain = -0.075
+	army_morale_factor = -0.05
 }

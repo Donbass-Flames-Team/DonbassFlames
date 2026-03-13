@@ -249,10 +249,12 @@ DPR_war_for_independence_of_donbass = {
         }
 	}
 
+
+
 	DPR_capture_debaltsevo = {
 
-		icon = GFX_decision_generic_soldier
-		is_good = yes
+		icon = GFX_decision_DPR_offensive_icon
+		is_good = no
 		selectable_mission = no
 		fire_only_once = yes
 		days_mission_timeout = 25
@@ -271,20 +273,21 @@ DPR_war_for_independence_of_donbass = {
 		}
 
 		complete_effect = {
-			add_stability = -0.025
-			add_war_support = -0.075
+			add_stability = 0.06
+			add_war_support = 0.06
+			army_experience = 30
+			news_event = {
+				id = news_events.20
+				hours = 6
+			}
 			hidden_effect = {
 				clr_country_flag = Debaltsevo_battle
 			}
 		}
 
 		timeout_effect = {
-			add_stability = 0.06
-			add_war_support = 0.06
-			news_event = {
-				id = news_events.20
-				hours = 6
-			}
+			add_stability = -0.03
+			add_war_support = -0.04
 			hidden_effect = {
 				clr_country_flag = Debaltsevo_battle
 			}

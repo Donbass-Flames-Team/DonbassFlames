@@ -62,6 +62,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decision_ukraine_start_offensive_icon"
+		texturefile = "gfx/interface/decisions/UKR/ukraine_start_offensive_icon.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decision_UKR_verkhovna_rada_icon"
 		texturefile = "gfx/interface/decisions/UKR/Verkhovna_rada_decision.dds"
 	}
@@ -120,6 +125,12 @@ spriteTypes = {
 		name = "GFX_decision_DPR_recruitment_militia"
 		texturefile = "gfx/interface/decisions/DPR/DPR_recruitment_militia.dds"
 	}
+
+	spriteType = {
+		name = "GFX_decision_DPR_offensive_icon"
+		texturefile = "gfx/interface/decisions/DPR/DPR_offensive_icon.dds"
+	}
+
 
 
 	spriteType = {
