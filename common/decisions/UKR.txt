@@ -836,11 +836,7 @@ UKR_elections_of_president = {
 		allowed = {
 			original_tag = UKR
 		}
-		available = {
-			NOT = {
-				date > 2014.4.10
-			}
-		}
+
 		visible = {
 			tag = UKR
 			has_country_flag = Elections2014InProgress

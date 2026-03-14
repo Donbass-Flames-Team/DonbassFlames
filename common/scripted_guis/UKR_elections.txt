@@ -54,6 +54,68 @@ scripted_gui = {
 			coat_krym_button_click = {
 				set_variable = { select_separatists_region = 5}
 			}
+			coat_cherkasy_button_click = {
+				set_variable = { select_separatists_region = 6}
+			}
+			coat_chernihiv_button_click = {
+				set_variable = { select_separatists_region = 7}
+			}			
+			coat_chernivtsi_button_click = {
+				set_variable = { select_separatists_region = 8}
+			}
+			coat_dnipro_button_click = {
+				set_variable = { select_separatists_region = 9}
+			}
+			coat_ivanofrankivsk_button_click = {
+				set_variable = { select_separatists_region = 10}
+			}
+			coat_khmelnytskyi_button_click = {
+				set_variable = { select_separatists_region = 11}
+			}
+			coat_kherson_button_click = {
+				set_variable = { select_separatists_region = 12}
+			}
+			coat_kyiv_button_click = {
+				set_variable = { select_separatists_region = 13}
+			}			
+			coat_kyrovohrad_button_click = {
+				set_variable = { select_separatists_region = 14}
+			}
+			coat_lviv_button_click = {
+				set_variable = { select_separatists_region = 15}
+			}
+			coat_mykolaiv_button_click = {
+				set_variable = { select_separatists_region = 16}
+			}
+			coat_poltava_button_click = {
+				set_variable = { select_separatists_region = 17}
+			}		
+			coat_sumy_button_click = {
+				set_variable = { select_separatists_region = 18}
+			}
+			coat_ternopil_button_click = {
+				set_variable = { select_separatists_region = 19}
+			}
+			coat_vinnytsia_button_click = {
+				set_variable = { select_separatists_region = 20}
+			}
+			coat_volyn_button_click = {
+				set_variable = { select_separatists_region = 21}
+			}
+			coat_zakarpattya_button_click = {
+				set_variable = { select_separatists_region = 22}
+			}
+			coat_zaporizhzhia_button_click = {
+				set_variable = { select_separatists_region = 23}
+			}
+			coat_zhytomyr_button_click = {
+				set_variable = { select_separatists_region = 24}
+			}
+			coat_rivne_button_click = {
+				set_variable = { select_separatists_region = 25}
+			}			
+
+
 			close_map_button_click = {
 				clear_variable = show_elections_in_ukraine_map
 		    }
@@ -130,8 +192,138 @@ scripted_gui = {
 					limit = { check_variable = {show_prorussian_actions_window = 1} } 
 				    clear_variable = show_prorussian_actions_window
 				}
-
 			}
+			elections_increase_button_click = {
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 1} 
+						
+				    }
+					
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 2} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+					set_country_flag = SeparatismGuiActionUsed
+					add_political_power = -15
+					subtract_from_variable = {
+		                var = Luhansk_proukranian_support_value
+		                value = 5
+	                }
+					add_to_variable = {
+		                var = Luhansk_prorussian_support_value
+		                value = 5
+	                }
+					clamp_variable = {
+		                var = Luhansk_proukranian_support_value
+		                min = 0
+		                max = 100
+	                }
+					clamp_variable = {
+		                var = Luhansk_prorussian_support_value
+		                min = 0
+		                max = 100
+	                }
+					country_event = {
+						id = separatism_gui.1
+						days = 14
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 3} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 4} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+				}
+				if = {
+					limit = { 
+						check_variable = {select_separatists_region = 5} 
+						has_political_power > 14
+						NOT = {
+							has_country_flag = SeparatismGuiActionUsed
+						}
+				    }
+				}
+				if = {
+					limit = {
+						check_variable = {select_separatists_region = 22} 
+						check_variable = {
+                            var = President_elections_stamina_value
+                            value = 1
+                            compare = greater_than_or_equals
+                        }
+					}
+					subtract_from_variable = {
+                        var = President_elections_stamina_value
+                        value = 1
+                    }
+					if = {
+						limit = {
+							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+						}
+				        subtract_from_variable = {
+                            var = Zakarpatska_oblast_timoshenko_support_value
+                            value = 1
+                        }
+						add_to_variable = {
+						    var = Zakarpatska_oblast_poroshenko_support_value
+                            value = 1
+						}
+						clamp_variable = {
+		                    var = Zakarpatska_oblast_poroshenko_support_value
+		                    min = 0
+		                    max = 6
+	                    }						
+						clamp_variable = {
+		                    var = Zakarpatska_oblast_timoshenko_support_value
+		                    min = 0
+		                    max = 6
+	                    }
+					}
+					if = {
+						limit = {
+							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
+						}
+						add_to_variable = {
+						    var = Zakarpatska_oblast_timoshenko_support_value
+                            value = 1
+						}
+				        subtract_from_variable = {
+                            var = Zakarpatska_oblast_poroshenko_support_value
+                            value = 1
+                        }
+						clamp_variable = {
+		                    var = Zakarpatska_oblast_poroshenko_support_value
+		                    min = 0
+		                    max = 6
+	                    }						
+						clamp_variable = {
+		                    var = Zakarpatska_oblast_timoshenko_support_value
+		                    min = 0
+		                    max = 6
+	                    }
+					}					
+				}
+			}
+
+			
 		}
 		
 		dynamic_lists = {
@@ -165,6 +357,12 @@ scripted_gui = {
 			}
 			crimea_icon = {
 				image = "[crimea_icon_glow]"
+			}
+			elections_luck_icon = {
+				image = "[elections_luck_icon_color]"
+			}	
+			elections_zakarpatie_icon = {
+				image = "[elections_zakarpatie_icon_color]"
 			}
 		}	
 	}

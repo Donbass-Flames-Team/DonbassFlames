@@ -1858,7 +1858,7 @@ country_event = {
 	id = ukraine.49
 	title = ukraine.49.t
 	desc  = ukraine.49.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_battle_on_rymarsky_picture
 
 	is_triggered_only = yes
 
@@ -2169,7 +2169,7 @@ country_event = {
 	option = {
 		name = ukraine.60.a	
 		add_stability = -0.055	
-		203 = {
+		154 = {
 			add_manpower = -53
 		}	
 		add_popularity = {
@@ -3068,7 +3068,7 @@ country_event = {
 	id = ukraine.98
 	title = ukraine.98.t
 	desc = ukraine.98.d
-	picture = GFX_Report_event_debaltsevo_soldier_picture
+	picture = GFX_Report_event_elections_2014_picture
 
 	is_triggered_only = yes
 
@@ -3130,12 +3130,12 @@ country_event = {
 	}
 }
 
-# Выбрать кандидата выборы 2013
+# Выбрать кандидата выборы 2014
 country_event = {
 	id = ukraine.99
 	title = ukraine.99.t
 	desc = ukraine.99.d
-	picture = GFX_Report_event_debaltsevo_soldier_picture
+	picture = GFX_Report_event_elections_2014_picture
 
 	is_triggered_only = yes
 

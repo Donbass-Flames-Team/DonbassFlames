@@ -583,6 +583,134 @@ defined_text = {
         }
         localization_key = "crimea_region_separatism_gui"
     }
+
+    text = {
+        trigger = {
+            check_variable = {select_separatists_region = 6}
+        }
+        localization_key = "crimea_region_separatism_gui"
+    }
+
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 6 }
+    }
+    localization_key = "cherkasy_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 7 }
+    }
+    localization_key = "chernihiv_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 8 }
+    }
+    localization_key = "chernivtsi_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 9 }
+    }
+    localization_key = "dnipro_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 10 }
+    }
+    localization_key = "ivanofrankivsk_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 11 }
+    }
+    localization_key = "khmelnytskyi_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 12 }
+    }
+    localization_key = "kherson_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 13 }
+    }
+    localization_key = "kyiv_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 14 }
+    }
+    localization_key = "kyrovohrad_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 15 }
+    }
+    localization_key = "lviv_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 16 }
+    }
+    localization_key = "mykolaiv_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 17 }
+    }
+    localization_key = "poltava_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 18 }
+    }
+    localization_key = "sumy_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 19 }
+    }
+    localization_key = "ternopil_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 20 }
+    }
+    localization_key = "vinnytsia_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 21 }
+    }
+    localization_key = "volyn_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 22 }
+    }
+    localization_key = "zakarpattya_region_separatism_gui"
+     }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 23 }
+    }
+    localization_key = "zaporizhzhia_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 24 }
+    }
+    localization_key = "zhytomyr_region_separatism_gui"
+    }
+    text = {
+    trigger = {
+        check_variable = { select_separatists_region = 25 }
+    }
+    localization_key = "rivne_region_separatism_gui"
+    }
 }
 
 defined_text = {
