@@ -447,3 +447,46 @@ President_elections_stamina_value_clamp_and_update_ui_effect = {
 		max = 10
 	}
 }
+
+poroshenko_final_results_check = {
+	set_variable = {
+		var = Poroshenko_final_results
+		value = 0
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+}

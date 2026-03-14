@@ -1445,39 +1445,27 @@ focus_tree = {
 			date > 2014.01.01
 		}
 
-		offset = {
-			x = 2
-			y = 0
-			trigger = {
-				has_completed_focus = UKR_yanukovich_escaped
-			}
-		}
+		#allow_branch = {
+		#	NOT = {
+		#	   has_completed_focus = UKR_dictatorship_takes_over
+		#	}
+		#}
 
 		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				has_completed_focus = UKR_arrest_yanukovich
-			}
-		}
-
-		offset = {
-			x = 2
+			x = 1
 			y = 0
 			trigger = {
 				has_completed_focus = UKR_unrest_in_the_east
 			}
 		}
 
-
-
-		
-
-		#allow_branch = {
-		#	NOT = {
-		#	   has_completed_focus = UKR_dictatorship_takes_over
-		#	}
-		#}
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_yanukovich_escaped
+			}
+		}	
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_arrest_yanukovich"
@@ -1493,7 +1481,7 @@ focus_tree = {
 		id = UKR_yanukovich_escaped
 		icon = GFX_focus_UKR_escaped_president
 		cost = 0.4
-		x = -3
+		x = -2
 		y = 1
 
 		prerequisite = { focus = UKR_remain_neutral }
@@ -1508,7 +1496,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = 2
+			x = 1
 			y = 0
 			trigger = {
 				has_completed_focus = UKR_unrest_in_the_east
@@ -1529,6 +1517,7 @@ focus_tree = {
 			RUS = {
 				set_country_flag = CoupInUkraine
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -1550,22 +1539,30 @@ focus_tree = {
             has_country_flag = UKR_Yanukovich_overthrown
 		}
 
+
 		offset = {
 			x = 1
 			y = 0
 			trigger = {
-				has_completed_focus = UKR_arrest_yanukovich
+				has_completed_focus = UKR_unrest_in_the_east
 			}
-		}
-
-
+		}	
+		
 		offset = {
 			x = -1
 			y = 0
 			trigger = {
 				has_completed_focus = UKR_unrest_in_the_east
 			}
-		}		
+		}
+
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_yanukovich_escaped
+			}
+		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
