@@ -14,7 +14,7 @@ guiTypes = {
 		buttonType = {
 			name = "UKR_elections_button"
 			spriteType = "GFX_ukraine_elections_btn"
-			position = { x = 95 y = 15 }
+			position = { x = 138 y = 25 }
 			shortcut = "shift+b"
 			buttonText = ""
 			buttonFont = "hoi_16mbs"
@@ -38,7 +38,7 @@ guiTypes = {
 
 		background = {
 			name = "Background"
-			quadTextureSprite = "GFX_ukraine_separatism_map"
+			quadTextureSprite = "GFX_ukraine_elections_big_background"
 			position = { x = 27 y = 27 }
 		}
 
@@ -58,6 +58,30 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
+			name = "UKR_stamina_elections_text"
+			maxWidth = 450
+			position = { x = 926 y = 248 }
+			font = "hoi_36header"
+			text = "UKR_stamina_elections_text"
+		}
+
+		instantTextBoxType = {
+			name = "UKR_favourite_candidate_elections_text"
+			maxWidth = 450
+			position = { x = 926 y = 178 }
+			font = "hoi_36header"
+			text = "UKR_favourite_candidate_elections"
+		}
+
+		instantTextBoxType = {
+			name = "UKR_election_population_text"
+			maxWidth = 450
+			position = { x = 926 y = 138 }
+			font = "hoi_36header"
+			text = "UKR_election_population_text"
+		}		
+
+		instantTextBoxType = {
 			name = "UKR_separatismgui_region_name"
 			maxWidth = 300
 			position = { x = 986 y = 118 }
@@ -65,44 +89,169 @@ guiTypes = {
 			text = "[get_region_name_separatism]"
 		}
 
+		buttonType = {
+			name = "elections_increase_button"
+			position = { x = 1015 y = 642 }
+			quadTextureSprite = "GFX_separatism_increase_button"
+			clicksound = click_close
+			font = "hoi_36header"			
+			text = "elections_increase_button_text"
+		}
+
 		instantTextBoxType = {
 			name = "UKR_separatismgui_name"
-			text = "UKR_separatismgui_name_text"
+			text = "UKR_elections_gui_text"
 			font = "hoi_36header"
 			maxWidth = 270
 			position = { x = 584 y = 35 }
 		}
 
 		## GLOW ICONS ##
-		iconType = {
-			name = "donetsk_icon"
-			position = { x = 670 y = 345 }
-			quadTextureSprite = "GFX_placeholder_nothing"
-		}
 
 		iconType = {
-			name = "luhansk_icon"
-			position = { x = 724 y = 288 }
-			quadTextureSprite = "GFX_placeholder_nothing"
-		}
-
-		iconType = {
-			name = "odessa_icon"
-			position = { x = 320 y = 408 }
-			quadTextureSprite = "GFX_placeholder_nothing"
-		}
-
-		iconType = {
-			name = "kharkov_icon"
-			position = { x = 600 y = 265 }
-			quadTextureSprite = "GFX_placeholder_nothing"
-		}
-
-		iconType = {
-			name = "crimea_icon"
+			name = "elections_luck_icon"
 			position = { x = 500 y = 531 }
 			quadTextureSprite = "GFX_placeholder_nothing"
 		}
+
+		iconType = {
+			name = "elections_lvov_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_ivano_frankivsk_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_ternopl_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_rivne_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}	
+		
+		iconType = {
+			name = "elections_khmelnitsky_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}	
+		
+		iconType = {
+			name = "elections_chernovtsy_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_zhitomir_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}	
+		
+		iconType = {
+			name = "elections_vinitsya_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_odessa_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}		
+
+		iconType = {
+			name = "elections_nikolayev_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_kirovgrad_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}	
+		
+		iconType = {
+			name = "elections_cherkasi_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}	
+		
+		iconType = {
+			name = "elections_kiyv_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}		
+
+		iconType = {
+			name = "elections_chernigiv_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_sumy_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_kherson_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_dnepropetrovsk_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_zaporzhie_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}	
+		
+		iconType = {
+			name = "elections_donetsk_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_lugansk_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_kharkov_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_poltava_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "elections_zakarpatie_icon"
+			position = { x = 70 y = 358 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
 		#################
 		
 		buttonType = {

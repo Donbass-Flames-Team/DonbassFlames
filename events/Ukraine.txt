@@ -1154,6 +1154,64 @@ country_event = {
 			318 = {
 				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 15 }
 			}
+			401 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			}
+			399 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			}
+			337 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			}
+			359 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			}
+			380 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			}
+			391 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			}
+			342 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			}
+			347 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			}
+			328 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			}
+			381 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			}		
+
+			if = {
+				limit = {
+					check_variable = {
+                        var = Donetsk_prorussian_support_value
+                        value = 80
+                        compare = greater_than_or_equals
+                    }
+				}
+				526 = {
+				    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			    }
+				533 = {
+				    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			    }	
+				511 = {
+				    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			    }	
+				468 = {
+				    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			    }
+				353 = {
+				    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			    }
+				421 = {
+				    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+			    }										
+			}	
 
 			432 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 35 }
@@ -1800,7 +1858,7 @@ country_event = {
 	id = ukraine.49
 	title = ukraine.49.t
 	desc  = ukraine.49.d
-	picture = [GetHitlerHandshakeEventPicture]
+	picture = GFX_Report_event_battle_on_rymarsky_picture
 
 	is_triggered_only = yes
 
@@ -2111,7 +2169,7 @@ country_event = {
 	option = {
 		name = ukraine.60.a	
 		add_stability = -0.055	
-		203 = {
+		154 = {
 			add_manpower = -53
 		}	
 		add_popularity = {
@@ -2979,5 +3037,132 @@ country_event = {
 	option = {
 		name = ukraine.96.a	
         activate_mission = UKR_hold_debaltsevo
+	}
+}
+
+# Дарт Алексеевич Вейдер хочет зарегестрироваться на выборы
+country_event = {
+	id = ukraine.97
+	title = ukraine.97.t
+	desc = ukraine.97.d
+	picture = GFX_Report_event_darth_aleeksevich_vader_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.97.a	
+	}
+
+	option = {
+		name = ukraine.97.b	
+		set_country_flag = Darth_aleeksevich_vader_on_2014_elections
+	}
+}
+
+# Выбрать кандидата выборы 2014
+country_event = {
+	id = ukraine.98
+	title = ukraine.98.t
+	desc = ukraine.98.d
+	picture = GFX_Report_event_elections_2014_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+    
+	# Порошенко
+	option = {
+		name = ukraine.98.a	
+		ai_chance = {
+			base = 2
+			modifier = {
+				is_historical_focus_on = yes
+				add = 100
+			}
+		}
+	}
+    
+	# Тимошенко
+	option = {
+		name = ukraine.98.b	
+		clr_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+        set_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
+		ai_chance = {
+			base = 2
+			modifier = {
+				is_historical_focus_on = no
+				add = 30
+			}
+		}
+	}
+
+	# Олег Ляшко
+	option = {
+		name = ukraine.98.c
+		clr_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+        set_country_flag = Oleg_Lyashko_on_2014_elections_favourite
+		ai_chance = {
+			base = 2
+			modifier = {
+				is_historical_focus_on = no
+				add = 30
+			}
+		}
+	}	
+
+	# Кандидаты дальше
+	option = {
+		name = ukraine.98.g
+		country_event = ukraine.99
+		ai_chance = {
+			base = 2
+			modifier = {
+				is_historical_focus_on = no
+				add = 30
+			}
+		}
+	}
+}
+
+# Выбрать кандидата выборы 2014
+country_event = {
+	id = ukraine.99
+	title = ukraine.99.t
+	desc = ukraine.99.d
+	picture = GFX_Report_event_elections_2014_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+    
+	# Дарт Алексеевич вейдер
+	option = {
+		name = ukraine.99.a	
+		trigger = {
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections
+		}
+		ai_chance = {
+			base = 2
+			modifier = {
+				is_historical_focus_on = no
+				add = 30
+			}
+		}
+		clr_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+        set_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
+	}	
+
+	# Кандидаты назад
+	option = {
+		name = ukraine.99.g
+		country_event = ukraine.98
 	}
 }

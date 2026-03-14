@@ -185,14 +185,23 @@ UKR_Crimea_proukranian_suppor_clamp_and_update_ui_effect = {
 ##############################
 ### Election gui mechanic ####
 ##############################
-# 1 unit per 500 thousand population
+# 1 unit per 200 thousand population
 
-# Zakarpatska Rus poroshenko support
-UKR_Zakarpatska_Rus_poroshenko_support_clamp_and_update_ui_effect = {
+# Zakarpatska poroshenko support
+UKR_Zakarpatska_oblast_poroshenko_support_clamp_and_update_ui_effect = {
 	clamp_variable = {
-		var = Zakarpatska_Rus_poroshenko_support_value
+		var = Zakarpatska_oblast_poroshenko_support_value
 		min = 0
-		max = 1
+		max = 6
+	}
+}
+
+# Zakarpatska timoshenko support
+UKR_Zakarpatska_oblast_timoshenko_support_clamp_and_update_ui_effect = {
+	clamp_variable = {
+		var = Zakarpatska_oblast_timoshenko_support_value
+		min = 0
+		max = 6
 	}
 }
 
@@ -430,11 +439,54 @@ UKR_Odesa_proukranian_suppor_clamp_and_update_ui_effect = {
 	}
 }
 
-# Poroshenko stamina
-Poroshenko_stamina_value_clamp_and_update_ui_effect = {
+# President elections stamina
+President_elections_stamina_value_clamp_and_update_ui_effect = {
 	clamp_variable = {
-		var = Poroshenko_stamina_value
+		var = President_elections_stamina_value
 		min = 0
 		max = 10
+	}
+}
+
+poroshenko_final_results_check = {
+	set_variable = {
+		var = Poroshenko_final_results
+		value = 0
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
+	}
+	add_to_variable = {
+		var = Poroshenko_final_results
+		value = President_elections_stamina_value
 	}
 }

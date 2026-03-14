@@ -21,6 +21,26 @@
  kharkiv_region_separatism_gui:0 "          Харьковская область"
  odesa_region_separatism_gui:0 "             Одесская область"
  crimea_region_separatism_gui:0 "Автономная Республика Крым"
+ cherkasy_region_separatism_gui:0 "Черкасская область"
+ chernihiv_region_separatism_gui:0 "Черниговская область"
+ chernivtsi_region_separatism_gui:0 "Черновицкая область"
+ dnipro_region_separatism_gui:0 "Днепропетровская область"
+ ivanofrankivsk_region_separatism_gui:0 "Ивано-Франковская область"
+ khmelnytskyi_region_separatism_gui:0 "Хмельницкая область"
+ kherson_region_separatism_gui:0 "Херсонская область"
+ kyiv_region_separatism_gui:0 "Киевская область"
+ kyrovohrad_region_separatism_gui:0 "Кировоградская область"
+ lviv_region_separatism_gui:0 "Львовская область"
+ mykolaiv_region_separatism_gui:0 "Николаевская область"
+ poltava_region_separatism_gui:0 "Полтавская область"
+ sumy_region_separatism_gui:0 "Сумская область"
+ ternopil_region_separatism_gui:0 "Тернопольская область"
+ vinnytsia_region_separatism_gui:0 "Винницкая область"
+ volyn_region_separatism_gui:0 "Волынская область"
+ zakarpattya_region_separatism_gui:0 "Закарпатская область"
+ zaporizhzhia_region_separatism_gui:0 "Запорожская область"
+ zhytomyr_region_separatism_gui:0 "Житомирская область"
+ rivne_region_separatism_gui:0 "Ровненская область"  
 
  Aleksandr_Zaharchenko_separatism_gui:0 "Александр Захарченко"
  Igor_Plotnitsky_separatism_gui:0 "    Игорь Плотницкий"
@@ -162,6 +182,19 @@
  DF_escalation_title_text: "Уровень эскалации"
  DF_escalationUKR_title_text: "Вооруженные Силы Украины"
  DF_escalationDPR_title_text: "Народная милиция"
+
+
+
+ #Выборы в президента
+ DF_Yulia_Timoshenko_on_elections_favourite: "Юлия Тимошенко"
+ DF_Petr_Poroshenko_on_elections_favourite: "Петр Порошенко"
+ DF_Oleg_Lyashko_on_elections_favourite: "Олег Ляшко"
+ DF_Darth_aleeksevich_vader_on_elections_favourite: "Дарт Алексеевич Вейдер"
+  
+ UKR_favourite_candidate_elections: "Текущий фаворитный кандидат: [get_favourite_leader_on_elections]"
+ UKR_stamina_elections_text: "Текущая стамина: §Y[?President_elections_stamina_value]§!"
+ elections_increase_button_text: "Провести кампанию"
+ UKR_election_population_text: "Поддержка Тимошенко:"
 
 
 

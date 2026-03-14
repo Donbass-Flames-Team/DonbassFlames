@@ -668,7 +668,32 @@ spriteTypes = {
 	spriteType = {
     	name = "GFX_ukraine_elections_btn"
     	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Ukraine_elections_btn.png"
+	}
+
+	spriteType = {
+    	name = "GFX_ukraine_elections_big_background"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Ukraine_elections_background.png"
+	}
+
+	spriteType = {
+    	name = "GFX_ukraine_elections_luck_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Regions/Red_Color/Luck_red.png"
 	}	
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_zakarpatie_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Zakarpatie_red.png"
+	}
+
+	spriteType = {
+    	name = "GFX_ukraine_elections_luck_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Regions/Blue_Color/Luck_blue.png"
+	}	
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_zakarpatie_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Zakarpatie_blue.png"
+	}
 
 }
 

@@ -33,7 +33,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = -1
+			x = 0
 			y = 0
 			trigger = {
 				has_completed_focus = UKR_unrest_in_the_east
@@ -72,7 +72,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = 1
+			x = 0
 			y = 0
 			trigger = {
 				has_completed_focus = UKR_unrest_in_the_east
@@ -115,7 +115,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = 1
+			x = 0
 			y = 0
 			trigger = {
 				has_completed_focus = UKR_unrest_in_the_east
@@ -1445,6 +1445,12 @@ focus_tree = {
 			date > 2014.01.01
 		}
 
+		#allow_branch = {
+		#	NOT = {
+		#	   has_completed_focus = UKR_dictatorship_takes_over
+		#	}
+		#}
+
 		offset = {
 			x = 1
 			y = 0
@@ -1454,18 +1460,12 @@ focus_tree = {
 		}
 
 		offset = {
-			x = -1
+			x = 1
 			y = 0
 			trigger = {
-				has_completed_focus = UKR_arrest_yanukovich
+				has_completed_focus = UKR_yanukovich_escaped
 			}
-		}
-
-		#allow_branch = {
-		#	NOT = {
-		#	   has_completed_focus = UKR_dictatorship_takes_over
-		#	}
-		#}
+		}	
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_arrest_yanukovich"
@@ -1517,6 +1517,7 @@ focus_tree = {
 			RUS = {
 				set_country_flag = CoupInUkraine
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -1538,11 +1539,28 @@ focus_tree = {
             has_country_flag = UKR_Yanukovich_overthrown
 		}
 
+
 		offset = {
 			x = 1
 			y = 0
 			trigger = {
-				has_completed_focus = UKR_arrest_yanukovich
+				has_completed_focus = UKR_unrest_in_the_east
+			}
+		}	
+		
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_unrest_in_the_east
+			}
+		}
+
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_yanukovich_escaped
 			}
 		}
 
@@ -1588,10 +1606,39 @@ focus_tree = {
 			set_country_flag = Focuses_after_Ato
 			country_event = ukraine.21
 			hidden_effect = {
+				set_country_flag = Petr_Poroshenko_on_2014_elections_favourite
 				mark_focus_tree_layout_dirty = yes
 				set_country_flag = Elections2014InProgress
 				complete_national_focus = UKR_snap_presidential_elections
 				set_global_flag = UKRelectionsofpresident2014
+				country_event = {
+					id = ukraine.97
+					days = 30
+				}
+
+				set_variable = {
+					var = President_elections_stamina_value
+					value = 10
+				}
+				clamp_variable = {
+		            var = President_elections_stamina_value
+		            min = 0
+		            max = 10
+	            }				
+
+				set_variable = {
+					var = Zakarpatska_oblast_timoshenko_support_value
+					value = 4
+				}
+				set_variable  = {
+					var = Zakarpatska_oblast_poroshenko_support_value
+					value = 2
+				}	
+				clamp_variable = {
+		            var = Zakarpatska_oblast_timoshenko_support_value
+		            min = 0
+		            max = 6
+	            }			
 			}
 		}
 	}

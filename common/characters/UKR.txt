@@ -29,6 +29,36 @@ characters = {
 		}
 	}
 
+	UKR_yulia_timoshenko = {
+		name = UKR_yulia_timoshenko
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_yulia_timoshenko"
+			}
+		}
+		country_leader={
+			ideology = social_democracy
+			traits = { }
+			expire="2060.1.1.1"
+			id=-1
+		}
+	}
+
+	UKR_darth_alekseevich_vader = {
+		name = UKR_darth_alekseevich_vader
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_darth_alekseeovich_vader"
+			}
+		}
+		country_leader={
+			ideology = conservatism
+			traits = { }
+			expire="2060.1.1.1"
+			id=-1
+		}
+	}
+
 	UKR_victor_yanukovich = {
 		name = victor_yanukovich
 		portraits = {
