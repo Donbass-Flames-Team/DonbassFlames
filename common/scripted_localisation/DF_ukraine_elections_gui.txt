@@ -1,0 +1,29 @@
+#Titles
+defined_text = {
+    name = get_favourite_leader_on_elections
+	
+    text = {
+        trigger = {
+            has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
+        }
+        localization_key = "DF_Yulia_Timoshenko_on_elections_favourite"
+    }
+    text = { 
+		trigger = {
+			has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+		}
+		localization_key = "DF_Petr_Poroshenko_on_elections_favourite"
+	}
+    text = { 
+		trigger = {
+			has_country_flag = Oleg_Lyashko_on_2014_elections_favourite
+		}
+		localization_key = "DF_Oleg_Lyashko_on_elections_favourite"
+	} 
+    text = { 
+		trigger = {
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
+		}
+		localization_key = "DF_Darth_aleeksevich_vader_on_elections_favourite"
+	} 
+}

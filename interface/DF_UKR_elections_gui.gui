@@ -14,7 +14,7 @@ guiTypes = {
 		buttonType = {
 			name = "UKR_elections_button"
 			spriteType = "GFX_ukraine_elections_btn"
-			position = { x = 95 y = 15 }
+			position = { x = 138 y = 25 }
 			shortcut = "shift+b"
 			buttonText = ""
 			buttonFont = "hoi_16mbs"
@@ -55,6 +55,22 @@ guiTypes = {
 			pdx_tooltip = "CLOSE"
 			clicksound = click_close
 			shortcut = "ESCAPE"
+		}
+
+		instantTextBoxType = {
+			name = "UKR_poroshenko_stamina_elections_text"
+			maxWidth = 300
+			position = { x = 926 y = 148 }
+			font = "hoi_36header"
+			text = "UKR_poroshenko_stamina_elections"
+		}
+
+		instantTextBoxType = {
+			name = "UKR_favourite_candidate_elections_text"
+			maxWidth = 300
+			position = { x = 926 y = 218 }
+			font = "hoi_36header"
+			text = "UKR_favourite_candidate_elections"
 		}
 
 		instantTextBoxType = {

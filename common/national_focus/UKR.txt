@@ -1446,10 +1446,10 @@ focus_tree = {
 		}
 
 		offset = {
-			x = 1
+			x = 2
 			y = 0
 			trigger = {
-				has_completed_focus = UKR_unrest_in_the_east
+				has_completed_focus = UKR_yanukovich_escaped
 			}
 		}
 
@@ -1460,6 +1460,18 @@ focus_tree = {
 				has_completed_focus = UKR_arrest_yanukovich
 			}
 		}
+
+		offset = {
+			x = 2
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_unrest_in_the_east
+			}
+		}
+
+
+
+		
 
 		#allow_branch = {
 		#	NOT = {
@@ -1481,7 +1493,7 @@ focus_tree = {
 		id = UKR_yanukovich_escaped
 		icon = GFX_focus_UKR_escaped_president
 		cost = 0.4
-		x = -2
+		x = -3
 		y = 1
 
 		prerequisite = { focus = UKR_remain_neutral }
@@ -1496,7 +1508,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = 1
+			x = 2
 			y = 0
 			trigger = {
 				has_completed_focus = UKR_unrest_in_the_east
@@ -1546,6 +1558,15 @@ focus_tree = {
 			}
 		}
 
+
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = UKR_unrest_in_the_east
+			}
+		}		
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			swap_ideas = {
@@ -1588,10 +1609,15 @@ focus_tree = {
 			set_country_flag = Focuses_after_Ato
 			country_event = ukraine.21
 			hidden_effect = {
+				set_country_flag = Petr_Poroshenko_on_2014_elections_favourite
 				mark_focus_tree_layout_dirty = yes
 				set_country_flag = Elections2014InProgress
 				complete_national_focus = UKR_snap_presidential_elections
 				set_global_flag = UKRelectionsofpresident2014
+				country_event = {
+					id = ukraine.97
+					days = 30
+				}
 			}
 		}
 	}
