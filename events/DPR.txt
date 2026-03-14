@@ -296,6 +296,15 @@ country_event = {
 	picture = GFX_Report_event_russian_go_thrgouh_border_picture
 	
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.96
+				houes = 5
+			}
+		}
+	}
 	
 	option = {
 		name = DPR.17.a
@@ -357,5 +366,222 @@ country_event = {
 		add_stability = -0.045
 		add_political_power = -65
         retire_character = aleksandr_zakharchenko
+	}
+}
+
+#Андрей Пургин становится лидером
+country_event = {
+	id = DPR.20
+	title = DPR.20.t
+	desc = DPR.20.d
+	picture = GFX_Report_event_sheling_beach_in_zugres_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = DPR.21
+				days = 32
+			}
+		}
+	}
+	
+	option = {
+		name = DPR.20.a
+		retire_country_leader = yes
+		add_country_leader_role = {
+            character = andrey_purgin
+            promote_leader = yes
+            country_leader = {
+                ideology = autoritarian_democracy
+                expire = "2045.1.1.1"
+            } 
+        }
+		hidden_effect = {
+		    promote_character = {
+                character = andrey_purgin
+                ideology = autoritarian_democracy
+            }
+		}
+	}
+}
+
+#Денис Пушилин
+country_event = {
+	id = DPR.21
+	title = DPR.21.t
+	desc = DPR.21.d
+	picture = GFX_Report_event_sheling_beach_in_zugres_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = DPR.22
+				days = 62
+			}
+		}
+	}
+	
+	option = {
+		name = DPR.21.a
+		retire_country_leader = yes
+		add_country_leader_role = {
+            character = denis_pushilin
+            promote_leader = yes
+            country_leader = {
+                ideology = autoritarian_democracy
+                expire = "2045.1.1.1"
+            } 
+        }
+		hidden_effect = {
+		    promote_character = {
+                character = denis_pushilin
+                ideology = autoritarian_democracy
+            }
+		}
+	}
+}
+
+#Владимир Макович
+country_event = {
+	id = DPR.22
+	title = DPR.22.t
+	desc = DPR.22.d
+	picture = GFX_Report_event_sheling_beach_in_zugres_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = DPR.23
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		name = DPR.22.a
+		retire_country_leader = yes
+		add_country_leader_role = {
+            character = vladimir_makovich
+            promote_leader = yes
+            country_leader = {
+                ideology = autoritarian_democracy
+                expire = "2045.1.1.1"
+            } 
+        }
+		hidden_effect = {
+		    promote_character = {
+                character = vladimir_makovich
+                ideology = autoritarian_democracy
+            }
+		}
+	}
+}
+
+#Борис Литвинов
+country_event = {
+	id = DPR.23
+	title = DPR.23.t
+	desc = DPR.23.d
+	picture = GFX_Report_event_sheling_beach_in_zugres_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = DPR.24
+				days = 115
+			}
+		}
+	}
+	
+	option = {
+		name = DPR.23.a
+		retire_country_leader = yes
+		add_country_leader_role = {
+            character = boris_litvinov
+            promote_leader = yes
+            country_leader = {
+                ideology = autoritarian_democracy
+                expire = "2045.1.1.1"
+            } 
+        }
+		hidden_effect = {
+		    promote_character = {
+                character = boris_litvinov
+                ideology = autoritarian_democracy
+            }
+		}
+	}
+}
+
+#Захарченко Лидер
+country_event = {
+	id = DPR.24
+	title = DPR.24.t
+	desc = DPR.24.d
+	picture = GFX_Report_event_sheling_beach_in_zugres_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.24.a
+		retire_country_leader = yes
+		add_country_leader_role = {
+            character = aleksandr_zakharchenko
+            promote_leader = yes
+            country_leader = {
+                ideology = autoritarian_democracy
+                expire = "2045.1.1.1"
+            } 
+        }
+		hidden_effect = {
+		    promote_character = {
+                character = aleksandr_zakharchenko
+                ideology = autoritarian_democracy
+            }
+		}
+	}
+}
+
+#Денис пушилин президент
+country_event = {
+	id = DPR.25
+	title = DPR.25.t
+	desc = DPR.25.d
+	picture = GFX_Report_event_sheling_beach_in_zugres_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.25.a
+		add_country_leader_role = {
+            character = denis_pushilin
+            promote_leader = yes
+            country_leader = {
+                ideology = autoritarian_democracy
+                expire = "2045.1.1.1"
+            } 
+        }
+		hidden_effect = {
+		    promote_character = {
+                character = denis_pushilin
+                ideology = autoritarian_democracy
+            }
+		}
 	}
 }
