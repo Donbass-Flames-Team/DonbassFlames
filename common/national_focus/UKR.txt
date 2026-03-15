@@ -1626,19 +1626,81 @@ focus_tree = {
 		            max = 10
 	            }				
 
-				set_variable = {
-					var = Zakarpatska_oblast_timoshenko_support_value
-					value = 4
-				}
-				set_variable  = {
-					var = Zakarpatska_oblast_poroshenko_support_value
-					value = 2
-				}	
-				clamp_variable = {
-		            var = Zakarpatska_oblast_timoshenko_support_value
-		            min = 0
-		            max = 6
-	            }			
+				set_variable = { var = Zakarpatska_oblast_timoshenko_support_value value = 4 }
+				set_variable  = { var = Zakarpatska_oblast_poroshenko_support_value value = 2 }	
+				clamp_variable = { var = Zakarpatska_oblast_timoshenko_support_value min = 0 max = 6 }
+				# Lvivska
+                set_variable = { var = Lvivska_oblast_timoshenko_support_value value = 6 }
+                set_variable = { var = Lvivska_oblast_poroshenko_support_value value = 7 }
+                # IvanoFrankivska
+                set_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value value = 3 }
+                set_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value value = 4 }
+                # Ternopilska
+                set_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 2 }
+                set_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 3 }
+                # Volynska
+                set_variable = { var = Volynska_oblast_timoshenko_support_value value = 2 }
+                set_variable = { var = Volynska_oblast_poroshenko_support_value value = 3 }
+                # Rivnenska
+                set_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 3 }
+                set_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 3 }
+                # Chernivetska
+                set_variable = { var = Chernivetska_oblast_timoshenko_support_value value = 2 }
+                set_variable = { var = Chernivetska_oblast_poroshenko_support_value value = 3 }
+                # Khmelnytska
+                set_variable = { var = Khmelnytska_oblast_timoshenko_support_value value = 3 }
+                set_variable = { var = Khmelnytska_oblast_poroshenko_support_value value = 4 }
+                # Vinnytska
+                set_variable = { var = Vinnytska_oblast_timoshenko_support_value value = 3 }
+                set_variable = { var = Vinnytska_oblast_poroshenko_support_value value = 5 }
+                # Zhytomyrska
+                set_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 2 }
+                set_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 4 }
+                # Kyivska oblast
+                set_variable = { var = Kyivska_oblast_timoshenko_support_value value = 3 }
+                set_variable = { var = Kyivska_oblast_poroshenko_support_value value = 6 }
+                # Kyiv city
+                set_variable = { var = Kyiv_city_timoshenko_support_value value = 4 }
+                set_variable = { var = Kyiv_city_poroshenko_support_value value = 8 }
+                # Cherkaska
+                set_variable = { var = Cherkaska_oblast_timoshenko_support_value value = 2 }
+                set_variable = { var = Cherkaska_oblast_poroshenko_support_value value = 4 }
+                # Poltavska
+                set_variable = { var = Poltavska_oblast_timoshenko_support_value value = 2 }
+                set_variable = { var = Poltavska_oblast_poroshenko_support_value value = 5 }
+                # Kirovohradska
+                set_variable = { var = Kirovohradska_oblast_timoshenko_support_value value = 2 }
+                set_variable = { var = Kirovohradska_oblast_poroshenko_support_value value = 3 }
+                # Chernihivska
+                set_variable = { var = Chernihivska_oblast_timoshenko_support_value value = 2 }
+                set_variable = { var = Chernihivska_oblast_poroshenko_support_value value = 3 }
+                # Sumska
+                set_variable = { var = Sumska_oblast_timoshenko_support_value value = 2 }
+                set_variable = { var = Sumska_oblast_poroshenko_support_value value = 4 }
+                # Kharkivska
+                set_variable = { var = Kharkivska_oblast_timoshenko_support_value value = 3 }
+                set_variable = { var = Kharkivska_oblast_poroshenko_support_value value = 7 }
+                # Dnipropetrovska
+                set_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value value = 4 }
+                set_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 10 }
+                # Zaporizka
+                set_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 2 }
+                set_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 5 }
+                # Mykolaivska
+                set_variable = { var = Mykolaivska_oblast_timoshenko_support_value value = 2 }
+                set_variable = { var = Mykolaivska_oblast_poroshenko_support_value value = 4 }
+                # Khersonska
+                set_variable = { var = Khersonska_oblast_timoshenko_support_value value = 2 }
+                set_variable = { var = Khersonska_oblast_poroshenko_support_value value = 3 }
+                # Odeska
+                set_variable = { var = Odeska_oblast_timoshenko_support_value value = 4 }
+                set_variable = { var = Odeska_oblast_poroshenko_support_value value = 6 }
+                # Donetska
+                set_variable = { var = Donetska_oblast_timoshenko_support_value value = 5 }
+                set_variable = { var = Donetska_oblast_poroshenko_support_value value = 7 }
+                # Luhanska
+                set_variable = { var = Luhanska_oblast_timoshenko_support_value value = 3 }
+                set_variable = { var = Luhanska_oblast_poroshenko_support_value value = 4 }			
 			}
 		}
 	}

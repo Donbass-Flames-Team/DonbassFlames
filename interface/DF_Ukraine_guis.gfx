@@ -675,25 +675,292 @@ spriteTypes = {
     	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Ukraine_elections_background.png"
 	}
 
+
+	## Luck
 	spriteType = {
     	name = "GFX_ukraine_elections_luck_region_red"
     	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Regions/Red_Color/Luck_red.png"
 	}	
-	
+
+	spriteType = {
+    	name = "GFX_ukraine_elections_luck_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Regions/Blue_Color/Luck_blue.png"
+	}	
+    
+	## Zakarpatie
 	spriteType = {
     	name = "GFX_ukraine_elections_zakarpatie_region_red"
     	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Zakarpatie_red.png"
 	}
 
 	spriteType = {
-    	name = "GFX_ukraine_elections_luck_region_blue"
-    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Regions/Blue_Color/Luck_blue.png"
-	}	
-	
-	spriteType = {
     	name = "GFX_ukraine_elections_zakarpatie_region_blue"
     	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Zakarpatie_blue.png"
 	}
+    
+	## Zaporozhie
+	spriteType = {
+    	name = "GFX_ukraine_elections_zaporizhzhia_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Zaporizhzhia_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_zaporizhzhia_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Zaporizhzhia_blue.png"
+	}	
+
+    ## Zhytomir
+	spriteType = {
+    	name = "GFX_ukraine_elections_zhytomyr_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Zhytomyr_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_zhytomyr_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Zhytomyr_blue.png"
+	}
+
+	## Vinitsa
+	spriteType = {
+    	name = "GFX_ukraine_elections_vinnitsa_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Vinnitsa_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_vinnytsia_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Vinnytsia_blue.png"
+	}	
+
+	## Ternopil
+	spriteType = {
+    	name = "GFX_ukraine_elections_ternopil_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Ternopil_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_ternopil_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Ternopil_blue.png"
+	}	
+
+    ## Sumy
+	spriteType = {
+    	name = "GFX_ukraine_elections_sumy_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Sumy_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_sumy_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Sumy_blue.png"
+	}
+
+    ## Rivne
+	spriteType = {
+    	name = "GFX_ukraine_elections_rivne_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Rivne_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_rivne_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Rivne_blue.png"
+	}	
+
+    ## Poltava
+	spriteType = {
+    	name = "GFX_ukraine_elections_poltava_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Poltava_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_poltava_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Poltava_blue.png"
+	}	
+
+    ## Odesa
+	spriteType = {
+    	name = "GFX_ukraine_elections_odesa_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Odesa_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_odesa_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Odesa_blue.png"
+	}	
+
+    ## Mykolaiv
+	spriteType = {
+    	name = "GFX_ukraine_elections_mykolaiv_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Mykolaiv_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_mykolaiv_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Mykolaiv_blue.png"
+	}	
+
+    ## Lvov
+	spriteType = {
+    	name = "GFX_ukraine_elections_lvov_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Lvov_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_lvov_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Lvov_blue.png"
+	}	
+
+    ## Luhansk
+	spriteType = {
+    	name = "GFX_ukraine_elections_luhansk_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Luhansk_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_luhansk_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Luhansk_blue.png"
+	}	
+
+    ## Luhansk
+	spriteType = {
+    	name = "GFX_ukraine_elections_luhansk_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Luhansk_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_luhansk_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Luhansk_blue.png"
+	}
+
+    ## Kyrovohrad
+	spriteType = {
+    	name = "GFX_ukraine_elections_kyrovohrad_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Kyrovohrad_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_kyrovohrad_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Kyrovohrad_blue.png"
+	}
+
+    ## Kiyv
+	spriteType = {
+    	name = "GFX_ukraine_elections_kiyv_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Kiyv_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_kiyv_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Kyiv_blue.png"
+	}	
+
+    ## Krym
+	spriteType = {
+    	name = "GFX_ukraine_elections_krym_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Krym_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_krym_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Krym_blue.png"
+	}	
+
+    ## Khmelnytskyi
+	spriteType = {
+    	name = "GFX_ukraine_elections_khmelnytskyi_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Khmelnytskyi_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_khmelnytskyi_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Khmelnytskyi_blue.png"
+	}
+
+    ## Kherson
+	spriteType = {
+    	name = "GFX_ukraine_elections_kherson_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Kherson_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_kherson_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Kherson_blue.png"
+	}	
+
+    ## Kharkiv
+	spriteType = {
+    	name = "GFX_ukraine_elections_kharkiv_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Kharkiv_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_kharkiv_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Kharkiv_blue.png"
+	}
+
+    ## IvanoFrankivsk
+	spriteType = {
+    	name = "GFX_ukraine_elections_ivano_frankivsk_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/IvanoFrankivsk_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_ivano_frankivsk_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/IvanoFrankivsk_blue.png"
+	}
+	
+    ## Donetsk
+	spriteType = {
+    	name = "GFX_ukraine_elections_donetsk_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Donetsk_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_donetsk_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Donetsk_blue.png"
+	}	
+
+    ## Dnipro
+	spriteType = {
+    	name = "GFX_ukraine_elections_dnipro_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Dnipro_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_dnipro_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Dnipro_blue.png"
+	}	
+
+    ## Chernivtsi
+	spriteType = {
+    	name = "GFX_ukraine_elections_chernivtsi_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Chernivtsi_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_chernivtsi_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Chernivtsi_blue.png"
+	}	
+
+    ## Chernihiv
+	spriteType = {
+    	name = "GFX_ukraine_elections_chernihiv_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Chernihiv_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_chernihiv_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Chernihiv_blue.png"
+	}	
+
+    ## Cherkasy
+	spriteType = {
+    	name = "GFX_ukraine_elections_cherkasy_region_red"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Cherkasy_red.png"
+	}
+	
+	spriteType = {
+    	name = "GFX_ukraine_elections_cherkasy_region_blue"
+    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Cherkasy_blue.png"
+	}	
 
 }
 
