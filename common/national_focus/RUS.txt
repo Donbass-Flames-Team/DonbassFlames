@@ -480,6 +480,11 @@ focus_tree = {
 
 		completion_reward = {
 			load_oob = "Crimean_green_people_RUS"
+			diplomatic_relation = {
+				country = UKR
+				relation = guarantee
+				active = no
+			}
 			640 = { transfer_state_to = RUS }
 			621 = { transfer_state_to = RUS }
 			597 = { transfer_state_to = RUS }
