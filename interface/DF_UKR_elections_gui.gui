@@ -84,7 +84,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "UKR_separatismgui_region_name"
 			maxWidth = 300
-			position = { x = 986 y = 118 }
+			position = { x = 986 y = 78 }
 			font = "hoi_36header"
 			text = "[get_region_name_separatism]"
 		}
@@ -146,7 +146,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "elections_chernovtsy_icon"
-			position = { x = 200 y = 531 }
+			position = { x = 185 y = 383 }
 			quadTextureSprite = "GFX_placeholder_nothing"
 		}
 
@@ -176,25 +176,25 @@ guiTypes = {
 
 		iconType = {
 			name = "elections_kirovgrad_icon"
-			position = { x = 500 y = 531 }
+			position = { x = 390 y = 351 }
 			quadTextureSprite = "GFX_placeholder_nothing"
 		}	
 		
 		iconType = {
 			name = "elections_cherkasi_icon"
-			position = { x = 500 y = 531 }
+			position = { x = 386 y = 283 }
 			quadTextureSprite = "GFX_placeholder_nothing"
 		}	
 		
 		iconType = {
 			name = "elections_kiyv_icon"
-			position = { x = 500 y = 531 }
+			position = { x = 368 y = 197 }
 			quadTextureSprite = "GFX_placeholder_nothing"
 		}		
 
 		iconType = {
 			name = "elections_chernigiv_icon"
-			position = { x = 500 y = 531 }
+			position = { x = 420 y = 141 }
 			quadTextureSprite = "GFX_placeholder_nothing"
 		}
 
@@ -224,13 +224,13 @@ guiTypes = {
 		
 		iconType = {
 			name = "elections_donetsk_icon"
-			position = { x = 500 y = 531 }
+			position = { x = 674 y = 343 }
 			quadTextureSprite = "GFX_placeholder_nothing"
 		}
 
 		iconType = {
 			name = "elections_lugansk_icon"
-			position = { x = 550 y = 531 }
+			position = { x = 729 y = 293 }
 			quadTextureSprite = "GFX_placeholder_nothing"
 		}
 
@@ -254,7 +254,7 @@ guiTypes = {
 
 		iconType = {
 			name = "elections_volyn_icon"
-			position = { x = 30 y = 357 }
+			position = { x = 133 y = 168 }
 			quadTextureSprite = "GFX_placeholder_nothing"
 		}
 
