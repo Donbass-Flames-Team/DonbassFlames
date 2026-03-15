@@ -160,3 +160,141 @@ defined_text = {
         localization_key = "GFX_ukraine_elections_kyiv_city_region_blue"
     }
 }
+
+defined_text = {
+    name = elections_lviv_icon_color
+    text = {
+        trigger = { check_variable = { var = Lvivska_oblast_timoshenko_support_value value = 7 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_lviv_region_red"
+    }
+    text = {
+        trigger = { check_variable = { var = Lvivska_oblast_poroshenko_support_value value = 7 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_lviv_region_blue"
+    }
+}
+
+defined_text = {
+    name = elections_poltava_icon_color
+    text = {
+        trigger = { check_variable = { var = Poltavska_oblast_timoshenko_support_value value = 4 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_poltava_region_red"
+    }
+    text = {
+        trigger = { check_variable = { var = Poltavska_oblast_poroshenko_support_value value = 4 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_poltava_region_blue"
+    }
+}
+
+defined_text = {
+    name = elections_sumy_icon_color
+    text = {
+        trigger = { check_variable = { var = Sumska_oblast_timoshenko_support_value value = 3 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_sumy_region_red"
+    }
+    text = {
+        trigger = { check_variable = { var = Sumska_oblast_poroshenko_support_value value = 3 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_sumy_region_blue"
+    }
+}
+
+defined_text = {
+    name = elections_kharkiv_icon_color
+    text = {
+        trigger = { check_variable = { var = Kharkivska_oblast_timoshenko_support_value value = 7 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_kharkiv_region_red"
+    }
+    text = {
+        trigger = { check_variable = { var = Kharkivska_oblast_poroshenko_support_value value = 7 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_kharkiv_region_blue"
+    }
+}
+
+defined_text = {
+    name = elections_dnipro_icon_color
+    text = {
+        trigger = { check_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value value = 8 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_dnipro_region_red"
+    }
+    text = {
+        trigger = { check_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 8 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_dnipro_region_blue"
+    }
+}
+
+defined_text = {
+    name = elections_zaporizhia_icon_color
+    text = {
+        trigger = { check_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 5 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_zaporizhzhi_region_red"
+    }
+    text = {
+        trigger = { check_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 5 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_zaporizhzhia_region_blue"
+    }
+}
+
+defined_text = {
+    name = elections_odessa_icon_color
+    text = {
+        trigger = { check_variable = { var = Odeska_oblast_timoshenko_support_value value = 6 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_odessa_region_red"
+    }
+    text = {
+        trigger = { check_variable = { var = Odeska_oblast_poroshenko_support_value value = 6 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_odessa_region_blue"
+    }
+}
+
+defined_text = {
+    name = elections_mykolaiv_icon_color
+    text = {
+        trigger = { check_variable = { var = Mykolaivska_oblast_timoshenko_support_value value = 3 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_mykolaiv_region_red"
+    }
+    text = {
+        trigger = { check_variable = { var = Mykolaivska_oblast_poroshenko_support_value value = 3 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_mykolaiv_region_blue"
+    }
+}
+
+defined_text = {
+    name = elections_kherson_icon_color
+    text = {
+        trigger = { check_variable = { var = Khersonska_oblast_timoshenko_support_value value = 3 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_kherson_region_red"
+    }
+    text = {
+        trigger = { check_variable = { var = Khersonska_oblast_poroshenko_support_value value = 3 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_kherson_region_blue"
+    }
+}
+
+defined_text = {
+    name = elections_donetsk_icon_color
+    text = {
+        trigger = { check_variable = { var = Donetska_oblast_timoshenko_support_value value = 11 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_donetsk_region_red"
+    }
+    text = {
+        trigger = { check_variable = {
+            var = Donetska_oblast_poroshenko_support_value
+            value = Donetska_oblast_timeshenko_support_value
+            compare = greater_than
+        }
+    }
+        localization_key = "GFX_ukraine_elections_donetsk_region_blue"
+    }
+}
+
+defined_text = {
+    name = elections_luhansk_icon_color
+    text = {
+        trigger = { check_variable = { var = Luhanska_oblast_timoshenko_support_value value = 6 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_luhansk_region_red"
+    }
+    text = {
+        trigger = { check_variable = { var = Luhanska_oblast_poroshenko_support_value value = 6 compare = greater_than_or_equals } }
+        localization_key = "GFX_ukraine_elections_luhansk_region_blue"
+    }
+}
+

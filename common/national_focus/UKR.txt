@@ -1695,9 +1695,11 @@ focus_tree = {
                 # Odeska
                 set_variable = { var = Odeska_oblast_timoshenko_support_value value = 4 }
                 set_variable = { var = Odeska_oblast_poroshenko_support_value value = 6 }
+				# MAX 22
                 # Donetska
                 set_variable = { var = Donetska_oblast_timoshenko_support_value value = 5 }
                 set_variable = { var = Donetska_oblast_poroshenko_support_value value = 7 }
+				# MAX 11
                 # Luhanska
                 set_variable = { var = Luhanska_oblast_timoshenko_support_value value = 3 }
                 set_variable = { var = Luhanska_oblast_poroshenko_support_value value = 4 }			
