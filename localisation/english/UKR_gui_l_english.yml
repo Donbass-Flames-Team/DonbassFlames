@@ -4,30 +4,43 @@
  HPR_separatism_value_text:0 "[?HPR_separatism_value]%"
  OPR_separatism_value_text:0 "[?OPR_separatism_value]%"
  ZKR_separatism_value_text:0 "[?ZKR_separatism_value]%"
-
  UKR_separatism_decision:0 "Regional Separatism"
- UKR_separatism_decision_desc:0 ""
-
  UKR_suppress_separatism_in_donetsk:0 "Suppress Separatist Sentiments in Donetsk"
  UKR_suppress_separatism_in_luhansk:0 "Suppress Separatist Sentiments in Luhansk"
  UKR_suppress_separatism_in_kharkov:0 "Suppress Separatist Sentiments in Kharkiv"
  UKR_suppress_separatism_in_odessa:0 "Suppress Separatist Sentiments in Odesa"
-
  UKR_add_separatism:0 "§RSeparatism level will increase§!"
  UKR_minus_separatism:0 "§CSeparatism level will decrease§!"
-
  UKR_more_than_15_OPR:0 "§RSeparatism level in Odesa is higher than 15§!"
  UKR_more_than_15_KPR:0 "§RSeparatism level in Kharkiv is higher than 15§!"
  UKR_more_than_15_DPR:0 "§RSeparatism level in Donetsk is higher than 15§!"
  UKR_more_than_15_LPR:0 "§RSeparatism level in Luhansk is higher than 15§!"
-
  UKR_separatismgui_name_text:0 "Regional Separatism"
-
  donetsk_region_separatism_gui:0 "             Donetsk Region"
  luhansk_region_separatism_gui:0 "            Luhansk Region"
  kharkiv_region_separatism_gui:0 "          Kharkiv Region"
  odesa_region_separatism_gui:0 "            Odesa Region"
  crimea_region_separatism_gui:0 "Autonomous Republic of Crimea"
+ cherkasy_region_separatism_gui:0 "           Cherkasy Oblast"
+ chernihiv_region_separatism_gui:0 "        Chernihiv Oblast"
+ chernivtsi_region_separatism_gui:0 "         Chernivtsi Oblast"
+ dnipro_region_separatism_gui:0 "    Dnipropetrovsk Oblast"
+ ivanofrankivsk_region_separatism_gui:0 "  Ivano-Frankivsk Oblast"
+ khmelnytskyi_region_separatism_gui:0 "        Khmelnytskyi Oblast"
+ kherson_region_separatism_gui:0 "          Kherson Oblast"
+ kyiv_region_separatism_gui:0 "            Kyiv Oblast"
+ kyrovohrad_region_separatism_gui:0 "      Kirovohrad Oblast"
+ lviv_region_separatism_gui:0 "          Lviv Oblast"
+ mykolaiv_region_separatism_gui:0 "        Mykolaiv Oblast"
+ poltava_region_separatism_gui:0 "           Poltava Oblast"
+ sumy_region_separatism_gui:0 "             Sumy Oblast"
+ ternopil_region_separatism_gui:0 "       Ternopil Oblast"
+ vinnytsia_region_separatism_gui:0 "          Vynnytskaya oblast"
+ volyn_region_separatism_gui:0 "         Volyn Oblast"
+ zakarpattya_region_separatism_gui:0 "         Zakarpattia Oblast"
+ zaporizhzhia_region_separatism_gui:0 "         Zaporizhzhia Oblast"
+ zhytomyr_region_separatism_gui:0 "        Zhytomyr Oblast"
+ rivne_region_separatism_gui:0 "         Rivne Oblast"  
 
  Aleksandr_Zaharchenko_separatism_gui:0 "Alexander Zaharchenko"
  Igor_Plotnitsky_separatism_gui:0 "     Igor Plotnitsky"
@@ -37,20 +50,21 @@
  Ihor_Palytsia_separatism_gui:0 "          Igor Palytsia"
 
 
+ region_Uprised_text:0 "§RVosstal§!"
+
+ SEPARATISM_GUI_HELP_BUTTON:0 "§YSpravochnyk for HUY separatyzma§!\n\n\nHUY separatyzma otobrazhaet uroven separatystskykh nastroenyy and hotovnost rehyonov k vosstanyyu. Chem vyshe etot pokazatel, tem bolshe podrazdelenyy, vooruzhenyya and terrytoryy poluchat separatysty in sluchae nachala vosstanyya.\n\nRehyonalnyy separatyzm otrazhaet nastroenye naselenyya, prozhyvayushcheho in vybrannykh rehyonakh.\n§RPry vysokom urovne prorossyyskykh nastroenyy separatysty poluchayut dopolnytelnye baffy, naselenye aktyvnee podderzhyvaet ykh and chashche prysoedynyaetsya k ykh ryadam.§!\n§5Pry vysokom urovne proukraynskykh nastroenyy deystvuet analohychnyy pryntsyp - uvelychyvaetsya kolychestvo baffov u VSU, a naselenye okazyvaet ym bolshuyu podderzhku.§!"
+
+ UKR_volunteer_help_decision:0 "Volonterskaya pomoshch"
 
  separatism_increase_button_text:0 "Increase Resistance"
  separatism_counteract_button_text:0 "Counteract"
-
  UKR_separatismgui_separatist_value_text:0 "                       §RSelect a region!§!                     §RSelect a region!§!"
-
  donetsk_region_separatists_value_gui:0 "Pro-Ukrainian population - §Y[?Donetsk_proukranian_support_value]%§!       Pro-Russian population - §R[?Donetsk_prorussian_support_value]%§!"
  luhansk_region_separatists_value_gui:0 "Pro-Ukrainian population - §Y[?Luhansk_proukranian_support_value]%§!       Pro-Russian population - §R[?Luhansk_prorussian_support_value]%§!"
  kharkiv_region_separatists_value_gui:0 "Pro-Ukrainian population - §Y[?Kharkiv_proukranian_support_value]%§!       Pro-Russian population - §R[?Kharkiv_prorussian_support_value]%§!"
  odesa_region_separatists_value_gui:0 "Pro-Ukrainian population - §Y[?Odesa_proukranian_support_value]%§!       Pro-Russian population - §R[?Odesa_prorussian_support_value]%§!"
  crimea_region_separatists_value_gui:0 "Pro-Ukrainian population - §Y[?Crimea_proukranian_support_value]%§!       Pro-Russian population - §R[?Crimea_prorussian_support_value]%§!"
-
  UKR_separatismgui_control_text:0 "Control"
-
  separatism_hold_proukranian_rally_button_text:0 "Pro-Ukrainian rally"
  separatism_proukranian_incerase_button_text:0 "Propaganda"
  separatism_deradicalize_people_button_text:0 "Deradicalization of people"
@@ -60,10 +74,13 @@
  separatism_radicalize_people_button_text:0 "Radicalization of people"
  separatism_prorussian_increase_button_text:0 "Propaganda"
 
- separatismgui_prorussian_rally_tt:0 ""
+ separatismgui_prorussian_rally_tt:0 " Provedenye mytynha in podderzhku sblyzhenyya with Rossyey. Massovoe meropryyatye dolzhno ukrepyt pozytsyy storonnykov Rossyy and oslabyt vlyyanye §Cproukraynskykh syl§!.\n \n §YDeystvye pry vybore:§!\n Uvelychytsya §Rprorossyyskoe naselenye§! on §G+5%§!\n Umenshytsya §Cloyalnost k Ukrayne§!\n §YStoymost prynyatyya decisions:§! £pol_power §Y25§!\n §YPerezaryadka:§! §Y14§! dn."
  separatism_prorussian_incerase_tt:0 "Pro-Russian propaganda"
  separatism_radicalize_people_tt:0 "Radicalization of people"
  arms_supplies_from_russia_tt:0 "Smuggling from Russia"
+
+
+
 
  separatism_hold_proukranian_rally_tt:0 "Pro-Ukrainian rally"
  separatism_proukranian_incerase_tt:0 "Pro-Ukrainian propaganda"
@@ -71,59 +88,41 @@
  fight_smuggling_from_russia_tt:0 "Fight against smuggling"
 
 
+ 
+
 
  UKR_weekly_separatism_value:0 "Rising Discontent"
  UKR_weekly_radicalisation_value:0 "Rising Radicalization"
  UKR_add_radicalisation_of_maidan:0 "§RRadicalization level will increase§!"
  UKR_minus_radicalisation_of_maidan:0 "§CRadicalization level will decrease§!"
 
+
+
+ 
+ UKR_parlamient_support:0 "Podderzhka in VR:§Y[?UKR_parlamient_support]/450§!"
+ increase_of_support_in_parlamient_tt:0 "§YUvelychytsya podderzhka in Verkhovna Rada§!"
+ UKR_buy_the_votes_of_deputies:0 "Kupyt holosa"
+ UKR_talk_to_the_deputies:0 "Pohovoryt with deputatamy"
+ UKR_arrange_a_feast_with_the_deputies:0 "Ustroyt zastole with deputatmy"
+ UKR_speech_in_the_verkhovna_rada:0 "Rech in Verkhovna Rada"
  UKR_parlamient_decision:0 "Verkhovna Rada"
  UKR_Turchinov_speaker_name:0 "           Speaker:\nOleksandr Turchynov"
  UKR_7_congress_of_rada_name:0 "7th Convocation of the Verkhovna Rada"
  UKR_8_congress_of_rada_name:0 "8th Convocation of the Verkhovna Rada"
  UKR_9_congress_of_rada_name:0 "9th Convocation of the Verkhovna Rada"
 
-  Main menu
- MENU_UPDATELOGO:0 "§ORelease Donbass Flames 0.1§!\n\n
-- Content for Ukraine, the Russian Federation, the Donetsk People’s Republic, the Luhansk People’s Republic, the Kharkiv People’s Republic, and the Odesa People’s Republic\n
-- A brand-new unique map of Ukraine\n
-- Unique “Regional Separatism” GUI for Ukraine\n
-- Unique radicalization mechanics for Euromaidan in Ukraine\n
-- Unique Verkhovna Rada GUI for Ukraine\n
-- National spirits for all countries\n
-- Updated minimalist game interface for a smoother mod experience\n
-- New scenario selection menu\n
-- Specially selected music for deeper immersion into the mod’s atmosphere\n\n
- §YStay tuned for updates§! on our §CDiscord server§! and §CTelegram channel!§"
-
- #Maidan powers
- UKR_maidan_decision:0 "Euromaidan"
- UKR_suppress_protests:0 "Suppress Protests"
- UKR_carry_out_mass_arrests:0 "Mass Arrests"
- UKR_yanukovich_overthrow:0 "Yanukovych Overthrow"
- UKR_maidan_powers_prorussians_tt:0 "Pro-Russian forces\n\nEffects: §gDaily support for Authoritarian Democracy +0.02"
- UKR_maidan_powers_nationalists_tt:0 "Nationalist forces\n\nEffects: §LDaily support for Nationalism +0.01"
- UKR_maidan_powers_maidanites_tt:0 "Pro-European forces\n\nEffects: §5Daily support for Democracy +0.03"
- UKR_maidan_powers_prorussians_text_tt:0 "Exceeding the radicalization threshold of 80% will lead to a sharp rise of separatist sentiments in southeastern Ukraine."
- UKR_maidan_powers_nationalists_text_tt:0 "Exceeding the radicalization threshold of 50% may cause an outbreak of violence, increased political pressure on moderate forces, and the radicalization of the overall political agenda."
- UKR_maidan_powers_maidanites_text_tt:0 "Exceeding the radicalization level of 60% will significantly accelerate the collapse of Yanukovych's regime."
- UKR_maidanites_radicalization:0 "Radicalization: §R[?UKR_radicalisation_of_proeuropeans_value]%§!"
- UKR_nationalists_radicalization:0 "Radicalization: §R[?UKR_radicalisation_of_nationalists_value]%§!"
- UKR_prorussians_radicalization:0 "Radicalization: §R[?UKR_radicalisation_of_prorussians_value]%§!"
- 
-
-
- ##Партии верховной рады
- UKR_party_1_of_7_congress:0 "Партия регионов:"
- UKR_party_2_of_7_congress:0 "ВО «Батькивщина»:"
- UKR_party_3_of_7_congress:0 "УДАР:"
- UKR_party_4_of_7_congress:0 "КПУ:"
- UKR_party_5_of_7_congress:0 "Свобода:"
- UKR_party_6_of_7_congress:0 "Единый Центр:"
- UKR_party_7_of_7_congress:0 "Народная партия:"
- UKR_party_8_of_7_congress:0 "Радикальная партия Олега Ляшко:"
- UKR_party_9_of_7_congress:0 "Союз:"
- UKR_party_10_of_7_congress:0 "Самовыдвиженцы:"
+ UKR_ATO_decision: "Antyterrorystycheskaya operation"
+ ## Parties of the Verkhovna Rada
+ UKR_party_1_of_7_congress:0 "Partyya rehyonov:"
+ UKR_party_2_of_7_congress:0 "VO «Batkyvshchyna»:"
+ UKR_party_3_of_7_congress:0 "UDAR:"
+ UKR_party_4_of_7_congress:0 "KPU:"
+ UKR_party_5_of_7_congress:0 "Svoboda:"
+ UKR_party_6_of_7_congress:0 "Unified Center:"
+ UKR_party_7_of_7_congress:0 "Narodnaya partyya:"
+ UKR_party_8_of_7_congress:0 "Radykalnaya partyya Oleha Lyashko:"
+ UKR_party_9_of_7_congress:0 "Soyuz:"
+ UKR_party_10_of_7_congress:0 "Samovydvyzhentsy:"
  UKR_party_1_of_8_congress: "" 
  UKR_party_2_of_8_congress: ""
  UKR_party_3_of_8_congress: ""
@@ -144,6 +143,71 @@
  UKR_party_8_of_9_congress: ""
  UKR_party_9_of_9_congress: ""
  UKR_party_10_of_9_congress: ""
+
+ # Maidan powers
+ UKR_maidan_decision:0 "Euromaidan"
+ UKR_suppress_protests:0 "Suppress Protests"
+ UKR_carry_out_mass_arrests:0 "Mass Arrests"
+ UKR_yanukovich_overthrow:0 "Yanukovych Overthrow"
+ UKR_maidan_powers_prorussians_tt:0 "Pro-Russian forces\n\nEffects: §gDaily support for Authoritarian Democracy +0.02"
+ UKR_maidan_powers_nationalists_tt:0 "Nationalist forces\n\nEffects: §LDaily support for Nationalism +0.01"
+ UKR_maidan_powers_maidanites_tt:0 "Pro-European forces\n\nEffects: §5Daily support for Democracy +0.03"
+ UKR_maidan_powers_prorussians_text_tt:0 "Exceeding the radicalization threshold of 80% will lead to a sharp rise of separatist sentiments in southeastern Ukraine."
+ UKR_maidan_powers_nationalists_text_tt:0 "Exceeding the radicalization threshold of 50% may cause an outbreak of violence, increased political pressure on moderate forces, and the radicalization of the overall political agenda."
+ UKR_maidan_powers_maidanites_text_tt:0 "Exceeding the radicalization level of 60% will significantly accelerate the collapse of Yanukovych's regime."
+ UKR_maidanites_radicalization:0 "Radicalization: §R[?UKR_radicalisation_of_proeuropeans_value]%§!"
+ UKR_nationalists_radicalization:0 "Radicalization: §R[?UKR_radicalisation_of_nationalists_value]%§!"
+ UKR_prorussians_radicalization:0 "Radicalization: §R[?UKR_radicalisation_of_prorussians_value]%§!"
+ UKR_legitimacy_of_the_power_text: "£GFX_political_power_texticon Legitimacy tsentralnoy power: §Y[?UKR_legitimacy_of_central_power_value]%§!"
+ UKR_legitimacy_of_the_power_text_tt: "£GFX_political_power_texticon Legitimacy tsentralnoy power"
+ legitimacy_of_power_lesser_than_15_ukr_tt: "£GFX_political_power_texticon Legitimacy tsentralnoy power menshe §Y15%§!"
+ Yanukovich_escaped: "Yanukovych sbezhal"
+
+ #Main menu
+ MENU_UPDATELOGO:0 "§OTekushchaya versyya: Alpha 0.0.1§!\n\n§HChTO PLANYRUETSYa On RELYZE 0.1:§!\n- §R[WIP]§! Kontent for Ukraine, Rossyyskoy Federatsyy, Donetskoy Narodnoy Respublyky, Luhanskoy Narodnoy Respublyky, Kharkovskoy Narodnoy Respublyky and Odesskoy Narodnoy Respublyky\n- §G[HOTOVO]§! Novaya unykalnaya karta vostochnoy Evropy\n- §G[HOTOVO]§! Unykalnaya GUI «Rehyonalnoho separatyzma» for Ukraine\n- §G[HOTOVO]§! Unykalnaya mekhanyka radykalyzatsyy Evromaydana for Ukraine\n- §Y[DEMO]§! Unykalnaya GUI Verkhovna Rada for Ukraine\n- §R[WIP]§! Natsyonalnye dukhy for vsekh stran\n- §G[HOTOVO]§! Obnovlennyy mynymalystychnyy ynterfeys yhry for bolee pryyatnoy yhry in mod\n- §G[HOTOVO]§! Novoe menyu vybora stsenaryev\n- §G[HOTOVO]§! Spetsyalno podobrannaya muzyka for bolee luchsheho pohruzhenyya in atmosferu moda\n- §R[WIP]§! Unykalnaya mekhanyka prezydentskykh elections for Ukraine\n- §R[WIP]§! Unykalnye vetky for prezydentov Ukraine\n- §R[WIP]§! Unykalnaya mekhanyka henshtaba for vsekh storon\n- §R[WIP]§! Unykalnaya mekhanyka artyleryyskykh udarov for vsekh storon\n- §G[HOTOVO]§! Decisions on sozdanye dobrovolcheskykh batalonov for zony ATO for Ukraine\n- §R[WIP]§! Portrety for vsekh pravyteley stran on karte on moment 21.11.2013\n- §R[WIP]§! Unykalnaya mekhanyka eskalatsyy\n\n§YSledyte for obnovlenyyamy moda§! on nashem §CDiscord-servere§! and §CTelegram-kanale!§!"
+
+
+ Escalation_on_donbas_1_tt: "Pervyy uroven Eskalatsyy\n\n§YEffekty:§!\n\nAtaka dyvyzyy: §R-35.00%§!\nSpeed dyvyzyy: §R-15.00%§!\nProryv dyvyzyy: §R-15.00%§!"
+ Escalation_on_donbas_2_tt: "Vtoroy uroven Eskalatsyy\n\n§YEffekty:§!\n\nAtaka dyvyzyy: §R-5.00%§!\nProryv dyvyzyy: §R-5.00%§!"
+ Escalation_on_donbas_3_tt: "Tretyy uroven Eskalatsyy\n\n§YEffekty:§!\n\nAtaka dyvyzyy: §R-5.00%§!\nProryv dyvyzyy: §R-5.00%§!"
+ Escalation_on_donbas_4_tt: "Chetvertyy uroven Eskalatsyy\n\n§YEffekty:§!\n\nAtaka dyvyzyy: §R-5.00%§!\nProryv dyvyzyy: §R-5.00%§!"
+ Escalation_on_donbas_5_tt: "Pyatyy uroven Eskalatsyy\n\n§YEffekty:§!\n\nAtaka dyvyzyy: §R-5.00%§!\nProryv dyvyzyy: §R-5.00%§!"
+ Escalation_on_donbas_6_tt: "Shestoy uroven Eskalatsyy\n\n§YEffekty:§!\n\n§RRossyya nachynaet krupnomasshtabnuyu voennuyu operatsyyu in Ukrayne§!"
+ Icercase_escalation_war_on_donbas_tt: "§RPovysytsya eskalatsyya§!"
+
+ DF_escalation_ukraine_army_icon_tt_1: "§YArmyya Ukraine§!n\n§YTekushchye effekty:§!\n\nAtaka dyvyzyy: §R-35.00%§!\nSpeed dyvyzyy: §R-15.00%§!\nProryv dyvyzyy: §R-15.00%§!"
+ DF_escalation_ukraine_army_icon_tt_2: "§YArmyya Ukraine§!\n\n§YTekushchye effekty:§!\n\nAtaka dyvyzyy: §R-5.00%§!\nProryv dyvyzyy: §R-5.00%§!"
+ DF_escalation_ukraine_army_icon_tt_3: "§YArmyya Ukraine§!n\n§YTekushchye effekty:§!\n\nAtaka dyvyzyy: §R-5.00%§!\nSpeed dyvyzyy: §R-5.00%§!\nProryv dyvyzyy: §R-5.00%§!"
+ DF_escalation_ukraine_army_icon_tt_4: "§YArmyya Ukraine§!\n\n§YTekushchye effekty:§!\n\nAtaka dyvyzyy: §R-5.00%§!\nProryv dyvyzyy: §R-5.00%§!"
+
+ DF_escalation_people_republic_army_icon_tt: "§YArmyya Narodnykh Respublyk§!"
+ DF_escalation_title_text: "Uroven eskalatsyy"
+ DF_escalationUKR_title_text: "Vooruzhennye Forces Ukraine"
+ DF_escalationDPR_title_text: "Narodnaya mylytsyya"
+
+
+
+ #Presidential elections
+ DF_Yulia_Timoshenko_on_elections_favourite: "Yulyya Tymoshenko"
+ DF_Petr_Poroshenko_on_elections_favourite: "Petr Poroshenko"
+ DF_Oleg_Lyashko_on_elections_favourite: "Oleh Lyashko"
+ DF_Darth_aleeksevich_vader_on_elections_favourite: "Yesrt Alekseevych Veyder"
+  
+ UKR_favourite_candidate_elections: "Tekushchyy favorytnyy kandydat: [get_favourite_leader_on_elections]"
+ UKR_stamina_elections_text: "Kolychestvo actions: §Y[?President_elections_stamina_value]§!"
+ elections_increase_button_text: "Provesty kampanyyu"
+ UKR_election_population_text: "Reytynhy kandydatov\n\nPodderzhka Poroshenko: §Y[?general_population_support_poroshenko_value] chelovek \n§!Podderzhka Tymoshenko: §Y[?general_population_support_timoshenko_value] chelovek§!"
+ UKR_elections_gui_text: "Prezydentskye elections"
+ UKR_elections_of_president: "Prezydentskye elections"
+
+
+
+
+
+
+
+
+
 
 
 
