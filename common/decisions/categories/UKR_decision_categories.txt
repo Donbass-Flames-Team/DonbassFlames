@@ -21,6 +21,26 @@ UKR_separatism_decision = {
 	visible_when_empty = yes
 }
 
+UKR_elections_of_president = {
+
+	priority = 95
+	
+	icon = GFX_decision_UKR_separatism
+	
+	allowed = {
+		original_tag = UKR 
+	}
+	#picture = GFX_decision_UKR_separatism
+
+	visible = {
+        tag = UKR
+		has_global_flag = UKRelectionsofpresident2014
+	}
+	scripted_gui = UKR_elections_gui
+	visible_when_empty = yes
+}
+
+
 UKR_parlamient_decision = {
 
 	priority = 85
@@ -126,26 +146,6 @@ UKR_ATO_volunteer_battalions_decision = {
 	visible = {
         tag = UKR
 	}
-}
-
-UKR_elections_of_president = {
-
-	priority = 85
-	
-	icon = GFX_decision_UKR_separatism
-	
-	allowed = {
-		original_tag = UKR 
-		has_global_flag = UKRelectionsofpresident2014
-	}
-	#picture = GFX_decision_UKR_separatism
-
-	visible = {
-        tag = UKR
-		has_global_flag = UKRelectionsofpresident2014
-	}
-	scripted_gui = UKR_elections_gui
-	visible_when_empty = yes
 }
 
 UKR_HUR_decision = {

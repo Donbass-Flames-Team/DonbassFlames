@@ -33,7 +33,7 @@ defined_text = {
     name = elections_volyn_icon_color
     text = {
         trigger = { check_variable = { var = Volynska_oblast_timoshenko_support_value value = Volynska_oblast_poroshenko_support_value compare = greater_than } }
-        localization_key = "GFX_ukraine_elections_cherkasy_region_red"
+        localization_key = "GFX_ukraine_elections_luck_region_red"
     }
     text = {
         trigger = { 
@@ -202,11 +202,15 @@ defined_text = {
 defined_text = {
     name = elections_kharkiv_icon_color
     text = {
-        trigger = { check_variable = { var = Kharkivska_oblast_timoshenko_support_value value = 7 compare = greater_than_or_equals } }
+        trigger = { 
+            check_variable = { var = Kharkivska_oblast_timoshenko_support_value value = Kharkivska_oblast_poroshenko_support_value compare = greater_than }
+        }
         localization_key = "GFX_ukraine_elections_kharkiv_region_red"
     }
     text = {
-        trigger = { check_variable = { var = Kharkivska_oblast_poroshenko_support_value value = 7 compare = greater_than_or_equals } }
+        trigger = { 
+            check_variable = { var = Kharkivska_oblast_poroshenko_support_value value = Kharkivska_oblast_timoshenko_support_value compare = greater_than }
+        }
         localization_key = "GFX_ukraine_elections_kharkiv_region_blue"
     }
 }
@@ -226,11 +230,15 @@ defined_text = {
 defined_text = {
     name = elections_zaporizhia_icon_color
     text = {
-        trigger = { check_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 5 compare = greater_than_or_equals } }
-        localization_key = "GFX_ukraine_elections_zaporizhzhi_region_red"
+        trigger = { 
+            check_variable = { var = Zaporizka_oblast_timoshenko_support_value value = Zaporizka_oblast_poroshenko_support_value compare = greater_than }
+        }
+        localization_key = "GFX_ukraine_elections_zaporizhzhia_region_red"
     }
     text = {
-        trigger = { check_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 5 compare = greater_than_or_equals } }
+        trigger = { 
+            check_variable = { var = Zaporizka_oblast_poroshenko_support_value value = Zaporizka_oblast_timoshenko_support_value compare = greater_than }
+        }
         localization_key = "GFX_ukraine_elections_zaporizhzhia_region_blue"
     }
 }
