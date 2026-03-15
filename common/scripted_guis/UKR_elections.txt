@@ -750,6 +750,10 @@ scripted_gui = {
 					if = {
 						limit = {
 							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+
+							NOT = {
+								check_variable = { var = Khersonska_oblast_poroshenko_support_value value = 5 compare = greater_than_or_equals }
+							}
 						}
 				        subtract_from_variable = { var = Khersonska_oblast_timoshenko_support_value value = 1 }
 						add_to_variable = { var = Khersonska_oblast_poroshenko_support_value value = 1 }
@@ -762,6 +766,10 @@ scripted_gui = {
 					if = {
 						limit = {
 							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
+
+							NOT = {
+								check_variable = { var = Khersonska_oblast_timoshenko_support_value value = 5 compare = greater_than_or_equals }
+							}							
 						}
 						add_to_variable = { var = Khersonska_oblast_timoshenko_support_value value = 1 }
 				        subtract_from_variable = { var = Khersonska_oblast_poroshenko_support_value value = 1 }
@@ -782,6 +790,7 @@ scripted_gui = {
 					if = {
 						limit = {
 							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+							NOT = { check_variable = { var = Khmelnytska_oblast_poroshenko_support_value value = 7 compare = greater_than_or_equals } }							
 						}
 				        subtract_from_variable = { var = Khmelnytska_oblast_timoshenko_support_value value = 1 }
 						add_to_variable = { var = Khmelnytska_oblast_poroshenko_support_value value = 1 }
@@ -794,6 +803,7 @@ scripted_gui = {
 					if = {
 						limit = {
 							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
+							NOT = { check_variable = { var = Timoshenko_general_support value = 7 compare = greater_than_or_equals } }
 						}
 						add_to_variable = { var = Khmelnytska_oblast_timoshenko_support_value value = 1 }
 				        subtract_from_variable = { var = Khmelnytska_oblast_poroshenko_support_value value = 1 }
@@ -814,6 +824,7 @@ scripted_gui = {
 					if = {
 						limit = {
 							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+							NOT = { check_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value value = 7 compare = greater_than_or_equals } }
 						}
 				        subtract_from_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value value = 1 }
 						add_to_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value value = 1 }
@@ -826,6 +837,7 @@ scripted_gui = {
 					if = {
 						limit = {
 							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
+							NOT = { check_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value value = 7 compare = greater_than_or_equals } }
 						}
 						add_to_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value value = 1 }
 				        subtract_from_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value value = 1 }
@@ -846,26 +858,42 @@ scripted_gui = {
 					if = {
 						limit = {
 							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+							NOT = { check_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 16 compare = greater_than_or_equals } }
 						}
-				        subtract_from_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value value = 1 }
-						add_to_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value min = 0 max = 16 }						
-						clamp_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value min = 0 max = 16 }
+						random_list = {
+							50 = {
+				                subtract_from_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value value = 1 }
+						        add_to_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 1 }
+						        clamp_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value min = 0 max = 16 }						
+						        clamp_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value min = 0 max = 16 }
 
-						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						add_to_variable = { var = Poroshenko_general_support value = 1 }						
+						        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						        add_to_variable = { var = Poroshenko_general_support value = 1 }
+							}
+							50 = {
+
+							}
+						}						
 					}
 					if = {
 						limit = {
 							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
+							NOT = { check_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value value = 16 compare = greater_than_or_equals } }
 						}
-						add_to_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value value = 1 }
-				        subtract_from_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value min = 0 max = 16 }						
-						clamp_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value min = 0 max = 16 }
+						random_list = {
+                            50 = {
+						        add_to_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value value = 1 }
+				                subtract_from_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 1 }
+						        clamp_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value min = 0 max = 16 }						
+						        clamp_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value min = 0 max = 16 }
 
-						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
+						        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						        add_to_variable = { var = Timoshenko_general_support value = 1 }
+							}
+							50 = {
+
+							}							
+						}						
 					}					
 				}
                 # Chernivtsi
@@ -1118,6 +1146,10 @@ scripted_gui = {
 					if = {
 						limit = {
 							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
+
+							NOT = {
+
+							}
 						}
 						add_to_variable = { var = Donetska_oblast_timoshenko_support_value value = 1 }
 				        subtract_from_variable = { var = Donetska_oblast_poroshenko_support_value value = 1 }
