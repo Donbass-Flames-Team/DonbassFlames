@@ -819,7 +819,7 @@ UKR_elections_of_president = {
 			tag = UKR
 			has_country_flag = Elections2014InProgress
 		}
-		icon = GFX_decision_coat_of_arms_donetsk_oblast
+		icon = GFX_decision_icon_of_Unknown_man
 		
 	    fire_only_once = yes
 		cost = 15
@@ -832,7 +832,7 @@ UKR_elections_of_president = {
 	}
 
 	UKR_elections_2014 = {
-		icon = GFX_decision_UKR_maidan_end_of_regime
+		icon = GFX_decision_icon_of_elections
 		is_good = no
 		selectable_mission = no
 		fire_only_once = yes
@@ -848,15 +848,16 @@ UKR_elections_of_president = {
 			has_global_flag = UKRelectionsofpresident2014
 		}
 		timeout_effect = {
-			country_event = ukraine.17
+			custom_effect_tooltip = UKR_elections_2014_tt
 			hidden_effect = {
 				clr_country_flag = Elections2014InProgress
+				country_event = ukraine_elections_gui.2
 			}
 	    }
     }
 
 	UKR_elections_2019 = {
-		icon = GFX_decision_UKR_maidan_end_of_regime
+		icon = GFX_decision_icon_of_elections
 		is_good = no
 		selectable_mission = no
 		fire_only_once = yes

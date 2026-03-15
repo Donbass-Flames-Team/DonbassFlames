@@ -1616,11 +1616,6 @@ focus_tree = {
 					days = 30
 				}
 
-				country_event = {
-					id = ukraine_elections_gui.1
-					hours = 6
-				}
-
 				set_variable = {
 					var = President_elections_stamina_value
 					value = 10

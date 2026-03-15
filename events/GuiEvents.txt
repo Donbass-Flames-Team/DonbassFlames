@@ -63,13 +63,40 @@ country_event = {
 		
 		if = {
 			limit = {
-				has_active_mission = UKR_elections_2014
+				has_country_flag = Elections2014InProgress
 			}
 			country_event = {
 				id = ukraine_elections_gui.1
 				days = 7
 			}
 		}
+
+	}
+}
+
+country_event = {
+	id = ukraine_elections_gui.2
+	title = sepukraine_elections_guiaratism_gui.2.t
+	desc = ukraine_elections_gui.2.d
+	picture = [GetHitlerHandshakeEventPicture]
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = ukraine_elections_gui.2.a
+		if = {
+			limit = {
+				check_variable = { var = Poroshenko_general_support value = Timoshenko_general_support compare = greater_than }
+			}
+			country_event = ukraine.17
+		}
+		if = {
+			limit = {
+				check_variable = { var = Timoshenko_general_support value = Poroshenko_general_support compare = greater_than }
+			}
+			country_event = ukraine.100
+		}		
 
 	}
 }

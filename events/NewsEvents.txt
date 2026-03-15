@@ -9,7 +9,7 @@ news_event = {
 	id = news_events.1
 	title = news_events.1.t
 	desc = news_events.1.d
-	picture = when
+	picture = GFX_news_event_yanukovich_pic
 	
 	major = yes
 	
@@ -409,7 +409,7 @@ news_event = {
 	id = news_events.9
 	title = news_events.9.t
 	desc = news_events.9.d
-	picture = GFX_news_event_021
+	picture = GFX_news_event_poroshenko_pic
 	
 	major = yes
 
@@ -764,6 +764,54 @@ news_event = {
 
 	option = {
 		name = news_events.23.c
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = UKR
+			}
+		}
+	}
+}
+
+#Победа Юлии Тимошенко 2014
+news_event = {
+	id = news_events.24
+	title = news_events.24.t
+	desc = news_events.24.d
+	picture = GFX_news_event_024
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.24.a
+		trigger = {
+			original_tag = UKR
+		}
+	}
+	
+	option = {
+		name = news_events.24.b
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.24.c
 		trigger = {
 			NOT = {
 			    original_tag = RUS

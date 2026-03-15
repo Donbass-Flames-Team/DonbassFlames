@@ -880,7 +880,7 @@ country_event = {
 	}
 }
 
-# Elections 2014 
+# Elections 2014 (poroshenko won)
 country_event = {
 	id = ukraine.17
 	title = ukraine.17.t
@@ -1005,9 +1005,14 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ukraine.21.a
-		set_country_flag = UKRPoroshenkoPresident2014_choosed		
+		name = ukraine.21.a		
 		activate_mission = 	UKR_elections_2014	
+		hidden_effect = {
+			country_event = {
+				id = ukraine_elections_gui.1
+				hours = 6
+			}
+		}
 	}
 
 	#option = {
@@ -3164,5 +3169,43 @@ country_event = {
 	option = {
 		name = ukraine.99.g
 		country_event = ukraine.98
+	}
+}
+
+# Победа Тимошенко (2014)
+country_event = {
+	id = ukraine.100
+	title = ukraine.100.t
+	desc = ukraine.100.d
+	picture = GFX_Report_event_yulia_timoshenko_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.100.a	
+		add_stability = 0.05
+		retire_country_leader = yes
+		add_country_leader_role = {
+            character = UKR_yulia_timoshenko
+            promote_leader = yes
+            country_leader = {
+                ideology = social_democracy
+                expire = "2045.1.1.1"
+            } 
+        }
+        set_politics = {
+            ruling_party = social_democracy
+            elections_allowed = no
+        }
+		hidden_effect = {
+			news_event = {
+                id = news_events.24
+				hours = 12
+            }
+		}
 	}
 }

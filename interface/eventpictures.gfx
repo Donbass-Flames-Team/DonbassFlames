@@ -1,6 +1,16 @@
 spriteTypes = {
 
 	### Events Pictures ###
+	spriteType = {
+		name = "GFX_news_event_poroshenko_pic"
+		texturefile = "gfx/event_pictures/news_events/Poroshenko.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_yanukovich_pic"
+		texturefile = "gfx/event_pictures/news_events/Yanukovich.png"
+	}
+
 
 	spriteType = {
 		name = "GFX_Report_event_formation_of_right_sector"
@@ -22,7 +32,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Report_event_debaltsevo_soldier_picture.png"
 	}
 
-
+	spriteType = {
+		name = "GFX_Report_event_yulia_timoshenko_picture"
+		texturefile = "gfx/event_pictures/Report_event_yulia_timoshenko_picture.png"
+	}
 
 	spriteType = {
 		name = "GFX_Report_event_azarov_picture"
