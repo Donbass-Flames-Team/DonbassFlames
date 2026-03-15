@@ -106,7 +106,10 @@ guiTypes = {
 			position = { x = 584 y = 35 }
 		}
 
-		## GLOW ICONS ##
+
+        #######################################
+		######### ELECTIONS REIGONS ###########
+		#######################################
 
 		iconType = {
 			name = "elections_luck_icon"
@@ -257,7 +260,157 @@ guiTypes = {
 			position = { x = 133 y = 168 }
 			quadTextureSprite = "GFX_placeholder_nothing"
 		}
+		## GLOW ICONS ##
+				
+		iconType = {
+			name = "donetsk_icon"
+			position = { x = 670 y = 345 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
 
+		iconType = {
+			name = "luhansk_icon"
+			position = { x = 724 y = 288 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "odessa_icon"
+			position = { x = 320 y = 408 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "kharkov_icon"
+			position = { x = 600 y = 265 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "crimea_icon"
+			position = { x = 500 y = 531 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+        iconType = {
+	        name = "mykolaiv_icon"
+			position = { x = 404 y = 410 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "kherson_icon"
+			position = { x = 458 y = 448 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "zaporizhzhia_icon"
+			position = { x = 569 y = 415 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "dnipro_icon"
+			position = { x = 522 y = 348 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "poltava_icon"
+			position = { x = 485 y = 260 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "sumy_icon"
+			position = { x = 520 y = 139 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "chernihiv_icon"
+			position = { x = 418 y = 135 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "kyiv_icon"
+			position = { x = 365 y = 190 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "zhytomyr_icon"
+			position = { x = 278 y = 185 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "rivnenska_icon"
+			position = { x = 193 y = 164 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "volyn_icon"
+			position = { x = 129 y = 165 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "lviv_icon"
+			position = { x = 87 y = 255 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "ternopil_icon"
+			position = { x = 175 y = 278 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "ivanofrankivsk_icon"
+			position = { x = 127 y = 327 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "chernivtsi_icon"
+			position = { x = 181 y = 380 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "khmelnytskyi_icon"
+			position = { x = 235 y = 259 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "vinnytsia_icon"
+			position = { x = 286 y = 303 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "cherkasy_icon"
+			position = { x = 381 y = 280 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "kirovohrad_icon"
+			position = { x = 388 y = 347 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}
+
+		iconType = {
+			name = "zakarpattya_icon"
+			position = { x = 65 y = 350 }
+			quadTextureSprite = "GFX_placeholder_nothing"
+		}		
 		#################
 		
 		buttonType = {

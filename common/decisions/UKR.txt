@@ -2896,6 +2896,118 @@ UKR_ATO_decision = {
 		}
 	}
 
+	UKR_counter_offensive_in_svatovo = {
+		icon = GFX_decision_ukraine_start_offensive_icon
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_launch_counterattacks
+			NOT = {
+				has_global_flag = Minsk2_is_signed
+			}
+		}
+		days_remove = 25
+		fire_only_once = yes
+		custom_cost_trigger = {
+            command_power > 14
+        }
+		custom_cost_text = decision_cost_CP_15
+		complete_effect = {
+			258 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			237 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			207 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			233 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			223 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			213 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+
+		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 258
+				state = 237
+				state = 207
+        		state = 233
+				state = 223
+				state = 213
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 150
+		} 
+	}
+
+	UKR_counter_offensive_in_donetsk = {
+		icon = GFX_decision_ukraine_start_offensive_icon
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			original_tag = UKR
+			has_completed_focus = UKR_launch_counterattacks
+			NOT = {
+				has_global_flag = Minsk2_is_signed
+			}
+		}
+		days_remove = 25
+		fire_only_once = yes
+		custom_cost_trigger = {
+            command_power > 14
+        }
+		custom_cost_text = decision_cost_CP_15
+		complete_effect = {
+			432 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			424 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			408 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			433 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			437 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+			435 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
+
+		}
+		highlight_states = {
+    		highlight_state_targets = {
+				state = 432
+				state = 424
+				state = 408
+        		state = 433
+				state = 437
+				state = 435
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 150
+		} 
+	}
+
 	UKR_counter_offensive_in_krasnoarmeysk = {
 		icon = GFX_decision_ukraine_start_offensive_icon
 		allowed = {
@@ -3097,6 +3209,7 @@ UKR_ATO_decision = {
 				state = 446
         		state = 468
 				state = 264
+				state = 465
     		}
     		highlight_color_while_active = 3
     		highlight_color_before_active = 2
@@ -3144,6 +3257,9 @@ UKR_ATO_decision = {
 			305 = {
 			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
 		    }
+			271 = {
+			    add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+		    }
 		}
 		highlight_states = {
     		highlight_state_targets = {
@@ -3154,6 +3270,7 @@ UKR_ATO_decision = {
 				state = 285
 				state = 259
 				state = 305
+				state = 271
     		}
     		highlight_color_while_active = 3
     		highlight_color_before_active = 2
