@@ -8,13 +8,13 @@ guiTypes = {
 		iconType = {
 		    name = "UKR_elections_background"
 			spriteType = "GFX_ukraine_background_elections"
-			position = { x = 7 y = -15 }
+			position = { x = -4 y = -18 }
 		}
 	   
 		buttonType = {
 			name = "UKR_elections_button"
 			spriteType = "GFX_ukraine_elections_btn"
-			position = { x = 138 y = 25 }
+			position = { x = 127 y = 20 }
 			shortcut = "shift+b"
 			buttonText = ""
 			buttonFont = "hoi_16mbs"
@@ -423,7 +423,7 @@ guiTypes = {
 		
 		buttonType = {
             name = "coat_zakarpattya_button"
-            position = { x = 103 y = 384 }
+            position = { x = 103 y = 382 }
             quadTextureSprite = "GFX_ukraine_zakarpattya_coat_of_arms"
             clicksound = click_close
 			oversound = ui_menu_over
