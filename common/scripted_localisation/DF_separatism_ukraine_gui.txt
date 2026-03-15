@@ -584,12 +584,6 @@ defined_text = {
         localization_key = "crimea_region_separatism_gui"
     }
 
-    text = {
-        trigger = {
-            check_variable = {select_separatists_region = 6}
-        }
-        localization_key = "crimea_region_separatism_gui"
-    }
 
     text = {
     trigger = {
