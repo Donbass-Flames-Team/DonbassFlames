@@ -285,6 +285,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Rivnenska_oblast_poroshenko_support_value min = 0 max = 6 }						
 						clamp_variable = { var = Rivnenska_oblast_timoshenko_support_value min = 0 max = 6 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}				
 				# Zhytomir
@@ -311,6 +314,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Zhytomyrska_oblast_poroshenko_support_value min = 0 max = 6 }						
 						clamp_variable = { var = Zhytomyrska_oblast_timoshenko_support_value min = 0 max = 6 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}				
 				# Zaporozhie
@@ -337,6 +343,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Zaporizka_oblast_poroshenko_support_value min = 0 max = 9 }						
 						clamp_variable = { var = Zaporizka_oblast_timoshenko_support_value min = 0 max = 9 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
 				# Zakarpatie
@@ -375,6 +384,9 @@ scripted_gui = {
 		                    min = 0
 		                    max = 6
 	                    }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -398,6 +410,9 @@ scripted_gui = {
 		                    min = 0
 		                    max = 6
 	                    }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
 				if = {
@@ -435,6 +450,9 @@ scripted_gui = {
 		                    min = 0
 		                    max = 5
 	                    }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -458,6 +476,9 @@ scripted_gui = {
 		                    min = 0
 		                    max = 5
 	                    }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
 				if = {
@@ -474,6 +495,9 @@ scripted_gui = {
 						add_to_variable = { var = Vinnytska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Vinnytska_oblast_poroshenko_support_value min = 0 max = 8 }						
 						clamp_variable = { var = Vinnytska_oblast_timoshenko_support_value min = 0 max = 8 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -483,6 +507,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Vinnytska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Vinnytska_oblast_poroshenko_support_value min = 0 max = 8 }						
 						clamp_variable = { var = Vinnytska_oblast_timoshenko_support_value min = 0 max = 8 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
 				if = {
@@ -499,6 +526,9 @@ scripted_gui = {
 						add_to_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Ternopilska_oblast_poroshenko_support_value min = 0 max = 8 }						
 						clamp_variable = { var = Ternopilska_oblast_timoshenko_support_value min = 0 max = 8 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -508,6 +538,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Ternopilska_oblast_poroshenko_support_value min = 0 max = 8 }						
 						clamp_variable = { var = Ternopilska_oblast_timoshenko_support_value min = 0 max = 8 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}	
 				if = {
@@ -524,6 +557,9 @@ scripted_gui = {
 						add_to_variable = { var = Sumska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Sumska_oblast_poroshenko_support_value min = 0 max = 6 }						
 						clamp_variable = { var = Sumska_oblast_timoshenko_support_value min = 0 max = 6 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -533,6 +569,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Sumska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Sumska_oblast_poroshenko_support_value min = 0 max = 6 }						
 						clamp_variable = { var = Sumska_oblast_timoshenko_support_value min = 0 max = 6 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}	
 				# Poltava
@@ -550,6 +589,9 @@ scripted_gui = {
 						add_to_variable = { var = Poltavska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Poltavska_oblast_poroshenko_support_value min = 0 max = 7 }						
 						clamp_variable = { var = Poltavska_oblast_timoshenko_support_value min = 0 max = 7 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -559,6 +601,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Poltavska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Poltavska_oblast_poroshenko_support_value min = 0 max = 7 }						
 						clamp_variable = { var = Poltavska_oblast_timoshenko_support_value min = 0 max = 7 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
 				# Mikolaev
@@ -576,6 +621,9 @@ scripted_gui = {
 						add_to_variable = { var = Mykolaivska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Mykolaivska_oblast_poroshenko_support_value min = 0 max = 6 }						
 						clamp_variable = { var = Mykolaivska_oblast_timoshenko_support_value min = 0 max = 6 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -585,6 +633,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Mykolaivska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Mykolaivska_oblast_poroshenko_support_value min = 0 max = 6 }						
 						clamp_variable = { var = Mykolaivska_oblast_timoshenko_support_value min = 0 max = 6 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
 				# Lviv
@@ -602,6 +653,9 @@ scripted_gui = {
 						add_to_variable = { var = Lvivska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Lvivska_oblast_poroshenko_support_value min = 0 max = 13 }						
 						clamp_variable = { var = Lvivska_oblast_timoshenko_support_value min = 0 max = 13 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }
 					}
 					if = {
 						limit = {
@@ -611,6 +665,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Lvivska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Lvivska_oblast_poroshenko_support_value min = 0 max = 13 }						
 						clamp_variable = { var = Lvivska_oblast_timoshenko_support_value min = 0 max = 13 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
 				# Kyrovhrad
@@ -628,6 +685,9 @@ scripted_gui = {
 						add_to_variable = { var = Kirovohradska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Kirovohradska_oblast_poroshenko_support_value min = 0 max = 5 }						
 						clamp_variable = { var = Kirovohradska_oblast_timoshenko_support_value min = 0 max = 5 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }
 					}
 					if = {
 						limit = {
@@ -637,6 +697,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Kirovohradska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Kirovohradska_oblast_poroshenko_support_value min = 0 max = 5 }						
 						clamp_variable = { var = Kirovohradska_oblast_timoshenko_support_value min = 0 max = 5 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
 				# Kiyv
@@ -649,20 +712,32 @@ scripted_gui = {
 					if = {
 						limit = {
 							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+							NOT = {
+								check_variable = { var = Kiyv_poroshenko_support_value value = 23 compare = greater_than_or_equals }
+							}
 						}
 				        subtract_from_variable = { var = Kiyv_timoshenko_support_value value = 1 }
 						add_to_variable = { var = Kiyv_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Kiyv_poroshenko_support_value min = 0 max = 23 }						
 						clamp_variable = { var = Kiyv_timoshenko_support_value min = 0 max = 23 }
+						
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }
 					}
 					if = {
 						limit = {
 							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
+							NOT = {
+								check_variable = { var = Kiyv_timoshenko_support_value value = 23 compare = greater_than_or_equals }
+							}
 						}
 						add_to_variable = { var = Kiyv_timoshenko_support_value value = 1 }
 				        subtract_from_variable = { var = Kiyv_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Kiyv_poroshenko_support_value min = 0 max = 23 }						
 						clamp_variable = { var = Kiyv_timoshenko_support_value min = 0 max = 23 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }
 					}					
 				}
 				# Kherson
@@ -680,6 +755,9 @@ scripted_gui = {
 						add_to_variable = { var = Khersonska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Khersonska_oblast_poroshenko_support_value min = 0 max = 5 }						
 						clamp_variable = { var = Khersonska_oblast_timoshenko_support_value min = 0 max = 5 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }
 					}
 					if = {
 						limit = {
@@ -689,6 +767,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Khersonska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Khersonska_oblast_poroshenko_support_value min = 0 max = 5 }						
 						clamp_variable = { var = Khersonska_oblast_timoshenko_support_value min = 0 max = 5 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }
 					}					
 				}
 				# Khmelnitsky
@@ -706,6 +787,9 @@ scripted_gui = {
 						add_to_variable = { var = Khmelnytska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Khmelnytska_oblast_poroshenko_support_value min = 0 max = 7 }						
 						clamp_variable = { var = Khmelnytska_oblast_timoshenko_support_value min = 0 max = 7 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -715,6 +799,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Khmelnytska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Khmelnytska_oblast_poroshenko_support_value min = 0 max = 7 }						
 						clamp_variable = { var = Khmelnytska_oblast_timoshenko_support_value min = 0 max = 7 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }
 					}					
 				}
 				# Ivano Frankivsk
@@ -732,6 +819,9 @@ scripted_gui = {
 						add_to_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value min = 0 max = 7 }						
 						clamp_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value min = 0 max = 7 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -741,6 +831,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value min = 0 max = 7 }						
 						clamp_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value min = 0 max = 7 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
                 # Dnipro
@@ -758,6 +851,9 @@ scripted_gui = {
 						add_to_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value min = 0 max = 16 }						
 						clamp_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value min = 0 max = 16 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -767,6 +863,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value min = 0 max = 16 }						
 						clamp_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value min = 0 max = 16 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
                 # Chernivtsi
@@ -784,6 +883,9 @@ scripted_gui = {
 						add_to_variable = { var = Chernivetska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Chernivetska_oblast_poroshenko_support_value min = 0 max = 5 }						
 						clamp_variable = { var = Chernivetska_oblast_timoshenko_support_value min = 0 max = 5 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -793,6 +895,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Chernivetska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Chernivetska_oblast_poroshenko_support_value min = 0 max = 5 }						
 						clamp_variable = { var = Chernivetska_oblast_timoshenko_support_value min = 0 max = 5 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}	
                 # Chernihiv
@@ -810,6 +915,9 @@ scripted_gui = {
 						add_to_variable = { var = Chernihivska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Chernihivska_oblast_poroshenko_support_value min = 0 max = 5 }						
 						clamp_variable = { var = Chernihivska_oblast_timoshenko_support_value min = 0 max = 5 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -819,6 +927,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Chernihivska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Chernihivska_oblast_poroshenko_support_value min = 0 max = 5 }						
 						clamp_variable = { var = Chernihivska_oblast_timoshenko_support_value min = 0 max = 5 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}	
                 # Cherkasy
@@ -836,6 +947,9 @@ scripted_gui = {
 						add_to_variable = { var = Cherkaska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Cherkaska_oblast_poroshenko_support_value min = 0 max = 6 }						
 						clamp_variable = { var = Cherkaska_oblast_timoshenko_support_value min = 0 max = 6 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -845,6 +959,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Cherkaska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Cherkaska_oblast_poroshenko_support_value min = 0 max = 6 }						
 						clamp_variable = { var = Cherkaska_oblast_timoshenko_support_value min = 0 max = 6 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
                 # Krym
@@ -865,6 +982,9 @@ scripted_gui = {
 						add_to_variable = { var = Krym_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Krym_poroshenko_support_value min = 0 max = 10 }						
 						clamp_variable = { var = Krym_timoshenko_support_value min = 0 max = 10 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -874,6 +994,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Krym_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Krym_poroshenko_support_value min = 0 max = 10 }						
 						clamp_variable = { var = Krym_timoshenko_support_value min = 0 max = 10 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}	
                 # Odesa
@@ -891,6 +1014,9 @@ scripted_gui = {
 						add_to_variable = { var = Odeska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Odeska_oblast_poroshenko_support_value min = 0 max = 12 }						
 						clamp_variable = { var = Odeska_oblast_timoshenko_support_value min = 0 max = 12 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -900,6 +1026,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Odeska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Odeska_oblast_poroshenko_support_value min = 0 max = 12 }						
 						clamp_variable = { var = Odeska_oblast_timoshenko_support_value min = 0 max = 12 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
                 # Kharkiv
@@ -918,6 +1047,9 @@ scripted_gui = {
 						add_to_variable = { var = Kharkivska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Kharkivska_oblast_poroshenko_support_value min = 0 max = 14 }						
 						clamp_variable = { var = Kharkivska_oblast_timoshenko_support_value min = 0 max = 14 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -927,6 +1059,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Kharkivska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Kharkivska_oblast_poroshenko_support_value min = 0 max = 14 }						
 						clamp_variable = { var = Kharkivska_oblast_timoshenko_support_value min = 0 max = 14 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
                 # Luhansk
@@ -944,6 +1079,9 @@ scripted_gui = {
 						add_to_variable = { var = Luhanska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Luhanska_oblast_poroshenko_support_value min = 0 max = 11 }						
 						clamp_variable = { var = Luhanska_oblast_timoshenko_support_value min = 0 max = 11 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -953,6 +1091,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Luhanska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Luhanska_oblast_poroshenko_support_value min = 0 max = 11 }						
 						clamp_variable = { var = Luhanska_oblast_timoshenko_support_value min = 0 max = 11 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}		
                 # Donetsk
@@ -970,6 +1111,9 @@ scripted_gui = {
 						add_to_variable = { var = Donetska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Donetska_oblast_poroshenko_support_value min = 0 max = 22 }						
 						clamp_variable = { var = Donetska_oblast_timoshenko_support_value min = 0 max = 22 }
+
+						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						add_to_variable = { var = Poroshenko_general_support value = 1 }						
 					}
 					if = {
 						limit = {
@@ -979,6 +1123,9 @@ scripted_gui = {
 				        subtract_from_variable = { var = Donetska_oblast_poroshenko_support_value value = 1 }
 						clamp_variable = { var = Donetska_oblast_poroshenko_support_value min = 0 max = 22 }						
 						clamp_variable = { var = Donetska_oblast_timoshenko_support_value min = 0 max = 22 }
+
+						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}						
 			}

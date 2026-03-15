@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = separatism_gui
+add_namespace = ukraine_elections_gui
 
 #ЧТОБЫ МОЖНО БЫЛО НАЖИМАТЬ НА КНОПКУ ОПЯТЬ В СЕПАРАТИЗМ ГУИ
 country_event = {
@@ -20,3 +21,55 @@ country_event = {
 	}
 }
 
+
+#Выборы гуи
+
+country_event = {
+	id = ukraine_elections_gui.1
+	title = sepukraine_elections_guiaratism_gui.1.t
+	desc = ukraine_elections_gui.1.d
+	picture = [GetHitlerHandshakeEventPicture]
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = ukraine_elections_gui.1.a
+		set_variable = {
+			var = President_elections_stamina_value
+			value = 10
+		}
+		set_variable = {
+			var = general_population_support_timoshenko_value
+			value = Timoshenko_general_support
+		}
+
+        multiply_variable = {
+            var = general_population_support_timoshenko_value
+            value = 200000
+            tooltip = multiply_var_by_100_tt
+        }	
+
+		set_variable = {
+			var = general_population_support_poroshenko_value
+			value = Poroshenko_general_support
+		}
+
+        multiply_variable = {
+            var = general_population_support_poroshenko_value
+            value = 200000
+            tooltip = multiply_var_by_100_tt
+        }		
+		
+		if = {
+			limit = {
+				has_active_mission = UKR_elections_2014
+			}
+			country_event = {
+				id = ukraine_elections_gui.1
+				days = 7
+			}
+		}
+
+	}
+}

@@ -1616,6 +1616,11 @@ focus_tree = {
 					days = 30
 				}
 
+				country_event = {
+					id = ukraine_elections_gui.1
+					hours = 6
+				}
+
 				set_variable = {
 					var = President_elections_stamina_value
 					value = 10
@@ -1659,12 +1664,6 @@ focus_tree = {
                 # Zhytomyrska
                 set_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 2 }
                 set_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 4 }
-                # Kyivska oblast
-                set_variable = { var = Kyivska_oblast_timoshenko_support_value value = 3 }
-                set_variable = { var = Kyivska_oblast_poroshenko_support_value value = 6 }
-                # Kyiv city
-                set_variable = { var = Kyiv_city_timoshenko_support_value value = 4 }
-                set_variable = { var = Kyiv_city_poroshenko_support_value value = 8 }
                 # Cherkaska
                 set_variable = { var = Cherkaska_oblast_timoshenko_support_value value = 2 }
                 set_variable = { var = Cherkaska_oblast_poroshenko_support_value value = 4 }
@@ -1705,7 +1704,10 @@ focus_tree = {
 				# MAX 11
                 # Luhanska
                 set_variable = { var = Luhanska_oblast_timoshenko_support_value value = 3 }
-                set_variable = { var = Luhanska_oblast_poroshenko_support_value value = 4 }			
+                set_variable = { var = Luhanska_oblast_poroshenko_support_value value = 4 }	
+					
+				set_variable = { var = Poroshenko_general_support value = 122 }	
+				set_variable = { var = Timoshenko_general_support value = 70 }
 			}
 		}
 	}
