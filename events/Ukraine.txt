@@ -3114,6 +3114,7 @@ country_event = {
 		name = ukraine.98.b	
 		clr_country_flag = Petr_Poroshenko_on_2014_elections_favourite
         set_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
+		custom_effect_tooltip = NOT_A_WORKING_WAY_tt
 		ai_chance = {
 			base = 2
 			modifier = {
@@ -3128,6 +3129,7 @@ country_event = {
 		name = ukraine.98.c
 		clr_country_flag = Petr_Poroshenko_on_2014_elections_favourite
         set_country_flag = Oleg_Lyashko_on_2014_elections_favourite
+		custom_effect_tooltip = NOT_A_WORKING_WAY_tt
 		ai_chance = {
 			base = 2
 			modifier = {
@@ -3179,6 +3181,7 @@ country_event = {
 		}
 		clr_country_flag = Petr_Poroshenko_on_2014_elections_favourite
         set_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
+		custom_effect_tooltip = NOT_A_WORKING_WAY_tt
 	}	
 
 	# Кандидаты назад
@@ -3223,5 +3226,62 @@ country_event = {
 				hours = 12
             }
 		}
+	}
+}
+
+# Митинг 24 ноября 2013 года
+country_event = {
+	id = ukraine.101
+	title = ukraine.101.t
+	desc = ukraine.101.d
+	picture = GFX_Report_event_promaidan_rally_24_november_2013_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.101.a	
+		add_stability = -0.01
+	}
+}
+
+# Амнистиция Евромайдановцев 19-23 декабря
+country_event = {
+	id = ukraine.102
+	title = ukraine.102.t
+	desc = ukraine.102.d
+	picture = GFX_Report_event_ukranian_parlamient_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.102.a	
+		add_stability = 0.025
+	}
+}
+
+# Принятие диктаторских законов
+country_event = {
+	id = ukraine.103
+	title = ukraine.103.t
+	desc = ukraine.103.d
+	picture = GFX_Report_event_ukranian_parlamient_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.103.a	
+		add_political_power = 25
 	}
 }
