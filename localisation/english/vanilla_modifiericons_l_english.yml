@@ -1,13 +1,13 @@
-﻿﻿l_english:
+﻿l_english:
 
 #aat_tooltips_l_braz_por
- DEN_military_advisors_cost_big_tt: "£army_advisor_cost_texticon  Cost of all military advisors: §G−15%§!" #Weird indentetion in order to show of the leader traits tt properly
+ DEN_military_advisors_cost_big_tt: "  - £army_advisor_cost_texticon  All Military Advisors Cost: §G-15%§!" #Weird indentetion in order to show of the leader traits tt properly
  DEN_military_advisors_cost_small_tt: "  - £army_advisor_cost_texticon  All Military Advisors Cost: §G-10%§!"
 
-#abilities_l_russian
+#abilities_l_english
  ABILITY_TOOLTIP_COST:0 "£command_power_texticon  Command Power Cost: $VALUE|H$"
 
-#combat_l_russian
+#combat_l_english
  CURR_COMB_STR:0 "£strenght_texticon  Strength: $VALUE|0%Y$"
  BM_ATTACK_VALUE:0 "£attack_texticon  Attack: $VALUE|+=%$"
  BM_DEFEND_VALUE:0 "£defence_texticon  Defense: $VALUE|+=%$"
@@ -18,7 +18,7 @@
  POSITIONING_VALUE:0 "£ships_contact_texticon  Positioning: $NUM|+%$"
  BM_ENEMY_AIR_SUPERIORITY_COUNTER:0 "£enemy_air_superiority_texticon  Enemy air superiority reduction"
 
-#core_l_russian
+#core_l_english
  NAVAL_COMBAT_SHIP_STRENGTH:0 "£strenght_texticon  Strength: $STR|%Y$"
  NAVAL_COMBAT_SHIP_ORGANIZATION_FACTOR:0 " - £organization_texticon  Organization: $ORG|%Y$"
  UNIT_ORG:0 "£organization_texticon  Organization: $VALUE|H$"
@@ -31,15 +31,15 @@
  STR_DAMAGE_MULTIPLIER:0 "£strenght_texticon  Strength damage taken"
  WAR_SUPPORT_REDUCTION_ON_DAMAGE:0 "£war_support_modifiericons_texticon  War Support reduction on damaged"
  
-#country_l_russian
+#country_l_english
  MANPOWER:0 "£manpower_texticon  Manpower"
  
-#designer_l_russian
+#designer_l_english
  DESIGNER_COMBATWIDTH:0 "£combat_width_texticon  Combat width: "
  DESIGNER_MANPOWER:0 "£manpower_texticon  Manpower: "
  DESIGNER_TRAINING_TIME:0 "£training_speed_texticon  Training time: "
  
-#effects_l_russian
+#effects_l_english
  EFFECT_ADD_NATIONAL_UNITY:0 "£national_unity_texticon  Gain Base National Unity: $VAL|+=%$."
  EFFECT_SET_NATIONAL_UNITY:0 "£national_unity_texticon  Set Base National Unity: $VAL|%$."
  EFFECT_ADD_STABILITY:0 "£stability_texticon  Gain Base Stability: $VAL|+=%$."
@@ -51,12 +51,8 @@
  EFFECT_ADD_AIR_EXPERIENCE:0 "£air_experience  Air Experience: $VAL|=+0$."
  POLITICS_SET_POLITICAL_POWER:0 "£political_power_texticon  Sets Political Power to $VAL|0Y$."
  POLITICS_ADD_POLITICAL_POWER:0 "£political_power_texticon  Political Power: $VAL|=+0$."
- EFFECT_SET_FUEL:0 "£fuel_texticon  Ustanovyt zapas horyucheho in obeme $VAL|0Y$."
- POLITICS_ADD_FUEL:0 "£fuel_texticon  Horyuchee: $VAL|=+0$."
  EFFECT_ADD_RESEARCH_SLOT:0 "£research_icon  Gain $COUNT|G$ Research Slot."
  EFFECT_REMOVE_RESEARCH_SLOT:0 "£research_icon  Lose $COUNT|R$ Research Slot."
- EFFECT_ADD_THREAT:0 "£world_tension_texticon  World Tension is increased by $THREAT|1R$."
- EFFECT_REMOVE_THREAT:0 "£world_tension_texticon  World Tension is decreased by $THREAT|1G$."
  EFFECT_SET_RESEARCH_SLOTS:0 "£research_icon  Set number of Research Slots to $COUNT|H$."
  EFFECT_SET_FUEL_RATIO:0 "£fuel_texticon  Set fuel ratio to $VAL|%.0H$."
  EFFECT_GIVE_TECHNOLOGY:0 "£tech_mod  Add technology: $NAME|Y$."
@@ -84,11 +80,13 @@
  EFFECT_ADD_DOCTRINE_COST_REDUCTION:0 "£neutral_doctrine_cost_texticon  $USES$$REDUCTION|G%.0$ Cost reduction for: $LIST|Y$."
  EFFECT_MANPOWER_ADD_COUNTRY:0 "£manpower_texticon  Manpower: $VAL|+=0$."
  EFFECT_MANPOWER_ADD_STATE:1 "£population_texticon  Local Population: $VAL|+=0$."
- 
-#focus_l_russian
+ EFFECT_ADD_THREAT:0 "£world_tension_texticon  World Tension is increased by $THREAT|1R$."
+ EFFECT_REMOVE_THREAT:0 "£world_tension_texticon  World Tension is decreased by $THREAT|1G$."
+
+#focus_l_english
  anschluss_mefo_bills_double_reduction:0 "Modify §YMEFO Bills§! by $MODIFIER_POLITICAL_POWER_GAIN$: §G+0.10§!\n"
  
-#ideas_l_russian
+#ideas_l_english
  modifier_tactic_elastic_defense_preferred_weight_factor:1 "£tactics_texticon  Additional §YElastic Defense§! Tactic Chance if it is Preferred tactic"
  modifier_tactic_overwhelming_fire_preferred_weight_factor:1 "£tactics_texticon  Additional §YOverwhelming Fire§! Tactic Chance if it is Preferred tactic"
  modifier_tactic_seize_bridge_preferred_weight_factor:1 "£tactics_texticon  Additional §YSeize Bridge§! Tactic Chance if it is Preferred tactic"
@@ -100,7 +98,7 @@
  modifier_tactic_planned_attack_preferred_weight_factor:1 "£tactics_texticon  Additional §YWell Planned Attack§! Tactic Chance if it is Preferred tactic"
  modifier_tactic_relentless_assault_preferred_weight_factor:1 "£tactics_texticon  Additional §YRelentless Assault§! Tactic Chance if it is Preferred tactic"
 
-#modifiers_l_russian
+#modifiers_l_english
  MODIFIER_TECH_PREFIX:0 "£tech_mod  "
  MODIFIER_POLITICS_PREFIX:0 "£pol_idea  "
  MODIFIER_DECISION_PREFIX:1 "£decision_icon_small  "
@@ -108,8 +106,6 @@
  MOD_DAYS:0 "Day(s)"
  MOD_HOUR:0 "Hour(s)"
  MOD_DAILY:0 "daily"
- decryption_tech_research:2 "£research_speed_decryption_texticon  Decryption Research Speed"
- encryption_tech_research:2 "£research_speed_encryption_texticon  Encryption Research Speed"
  MODIFIER_GLOBAL_BUILDING_SLOTS_FACTOR:0 "£civ_factory  Max Factories in a State"
  MODIFIER_GLOBAL_BUILDING_SLOTS:0 "£civ_factory  Max Factories in a State"
  MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR:0 "£civ_factory  Max Factories in State"
@@ -557,7 +553,6 @@
  MODIFIER_NAVAL_INVASION_DEFENSE:0 "£defence_texticon  Invasion Defense"
  MODIFIER_NAVAL_INVASION_PENALTY:0 "£naval_invasion_texticon  Invasion Penalty"
  MODIFIER_OCCUPATION_COST:0 "£occupation_costs  Occupation Cost"
- MODIFIER_ENEMY_PORT_SUPERIORITY_LIMIT:0 "£port_strike_texticon  Lymyt vrazheskoho prevoskhodstva pry udare po portu:"
  MODIFIER_MINIMUM_TRAINING_LEVEL:0 "£training_texticon  Minimum training level"
  MODIFIER_AUTONOMY_MANPOWER_SHARE:0 "£manpower_cost_texticon  Subject manpower requirement"
  MODIFIER_TRADE_TO_OVERLORD_FACTOR:0 "£trade_texticon  Extra trade to overlord"
@@ -768,6 +763,11 @@
  MODIFIER_EXILED_MAPOWER_GAIN_FACTOR:0 "£manpower_exiles_texticon  Daily Exile Manpower"
  MODIFIER_RESISTANCE_TICK_IN_STATES_CONTROLLED_BY_ENEMY:1 "£political_violence_gain_texticon  Resistance Growth in Owned States"
  MODIFIER_NAVAL_ENEMY_FLEET_SIZE_RATIO_PENALTY_FACTOR:0 "£fleet_texticon  Enemy fleet size penalty"
+ MODIFIER_NAVAL_TORPEDO_DAMAGE_REDUCTION_FACTOR:0 "£torpedo_texticon  Enemy Torpedo damage reduction"
+ MODIFIER_NAVAL_TORPEDO_ENEMY_CRITICAL_CHANCE_FACTOR:0 "£torpedo_texticon  Enemy Torpedo critical chance"
+ MODIFIER_NAVAL_LIGHT_GUN_HIT_CHANCE_FACTOR:0 "£naval_battery_texticon  Light Gun hit chance"
+ MODIFIER_NAVAL_HEAVY_GUN_HIT_CHANCE_FACTOR:0 "£naval_battery2_texticon  Heavy Gun hit chance"
+ MODIFIER_CARRIER_SORTIE_HOURS_DELAY:0 "£carrier_texticon  Carrier Air Wing sortie delay (hours)"
  MODIFIER_NAVAL_HAS_POTF_IN_COMBAT_ATTACK:0 "£attack_texticon  Attack when in combat alongside the §YPride of the Fleet§!"
  MODIFIER_NAVAL_HAS_POTF_IN_COMBAT_DEFENSE:0 "£defence_texticon  Defense when in combat alongside the §YPride of the Fleet§!"
  modifier_production_cost_max_ship_hull_cruiser:0 "£navprod_cost  Cruiser Max Cost"
@@ -856,6 +856,8 @@
  country_resource_cost_tungsten:1 "Tungsten Consumption"
  country_resource_cost_steel:0 "Steel Consumption"
  country_resource_cost_chromium:1 "Chromium Consumption"
+ decryption_tech_research:2 "£research_speed_decryption_texticon  Decryption Research Speed"
+ encryption_tech_research:2 "£research_speed_encryption_texticon  Encryption Research Speed"
  
  FACTORED_BY:0 "Factored By $VALUE|+%$"
  DECRYPTION_TOTAL_BASE:0 "Total Base Value: $VALUE|+.0$"
@@ -923,6 +925,7 @@
  MODIFIER_ENEMY_OPERATIVE_INTEL_EXTRACTION_RATE:0 "£operatives_extract_intel_texticon  Enemy operative intel extraction rate"
  MODIFIER_STATE_RESOURCES_FACTOR:0 "£resources_texticon  Local Available Resources"
  MODIFIER_STATE_PRODUCTION_SPEED_BUILDINGS_FACTOR:0 "£construction_speed_texticon  Local Construction Speed"
+ modifier_state_production_speed_infrastructure_factor:0 "£construction_speed_infrastructure_texticon  §Y$infrastructure$§! construction speed"
  modifier_state_production_speed_bunker_factor:1 "£construction_speed_landfort_texticon  §Y$bunker$§! construction speed"
  modifier_state_production_speed_coastal_bunker_factor:1 "£construction_speed_coastfort_texticon  §Y$coastal_bunker$§! construction speed"
  modifier_state_production_speed_industrial_complex_factor:0 "£construction_speed_civfactory_texticon  §Y$industrial_complex$§! construction speed"
@@ -1443,29 +1446,6 @@
  cat_fleet_in_being_cost_factor:0 "£navy_doctrine_cost_texticon  Fleet in Being Doctrine Cost"
  cat_trade_interdiction_cost_factor:0 "£navy_doctrine_cost_texticon  Trade Interdiction Doctrine Cost"
  cat_base_strike_cost_factor:0 "£navy_doctrine_cost_texticon  Base Strike Doctrine Cost"
- modifier_army_sub_unit_cavalry_speed_factor:0 "£speed_cavalry_texticon  Cavalry Speed"
- MODIFIER_CHOOSE_PREFERRED_TACTIC_COST:0 "£tactics_cost_texticon  Preferred Tactics Selection Cost"
- MODIFIER_RAILWAY_GUN_BOMBARDMENT_FACTOR:0 "£railway_gun_texticon  Railway Gun Bombardment"
- MODIFIER_UNIT_LEADER_AS_ADVISOR_CP_COST_FACTOR:0 "£leader_promotion_cost_texticon  Commander as Advisor Cost"
- MODIFIER_INITIATIVE_FACTOR:0 "£initiative_texticon  Initiative"
- MODIFIER_NAVAL_INVASION_PLANNING_SPEED:0 "£naval_invasion_texticon  Naval Invasion Planning"
- NAVAL_INVASION_PLANNING_BONUS_MALUS:0 "£naval_invasion_texticon  Base Naval Invasion Malus: $VALUE|R0$§R%§!"
- MODIFIER_TERRAIN_TRAIT_XP_GAIN_FACTOR:0 "£experience_neutral_texticon  Terrain traits XP Gain"
- modifier_experience_gain_motorized_combat_factor:0 "£experience_neutral_combat_texticon  Motorised experence gain from combat"
- modifier_experience_gain_mechanized_combat_factor:0 "£experience_neutral_combat_texticon  Mechanised experence gain from combat"
- modifier_experience_gain_infantry_combat_factor:0 "£experience_neutral_combat_texticon  Infantry experence gain from combat"
- modifier_experience_gain_artillery_combat_factor:0 "£experience_neutral_combat_texticon  Artillery experence gain from combat"
- modifier_production_cost_supply_node_factor:0 "£under_construction_texticon  §YSupply Hub§! construction cost"
- MODIFIER_SUPPLY_PENALTY_ON_CORE:0 "£supply_consumption_core_texticon  Supply Combat Penalties on Core Territory"
- supply_combat_penalties_on_core_factor:0 "£supply_consumption_core_texticon  Supply Combat Penalties on Core Territory"
- coordination_bonus:0 "£coordination_texticon  Coordination"
- MODIFIER_COORDINATION_BONUS:0 "£coordination_texticon  Coordination"
- MODIFIER_NAVAL_TORPEDO_DAMAGE_REDUCTION_FACTOR:0 "£torpedo_texticon  Enemy Torpedo damage reduction"
- MODIFIER_NAVAL_TORPEDO_ENEMY_CRITICAL_CHANCE_FACTOR:0 "£torpedo_texticon  Enemy Torpedo critical chance"
- MODIFIER_NAVAL_LIGHT_GUN_HIT_CHANCE_FACTOR:0 "£naval_battery_texticon  Light Gun hit chance"
- MODIFIER_NAVAL_HEAVY_GUN_HIT_CHANCE_FACTOR:0 "£naval_battery2_texticon  Heavy Gun hit chance"
- MODIFIER_CARRIER_SORTIE_HOURS_DELAY:0 "£carrier_texticon  Carrier Air Wing sortie delay (hours)"
- modifier_state_production_speed_infrastructure_factor:0 "£construction_speed_infrastructure_texticon  §Y$infrastructure$§! construction speed"
  modifier_army_sub_unit_cavalry_attack_factor:0 "£attack_cavalry_texticon  Cavalry Attack"
  modifier_army_sub_unit_cavalry_defence_factor:0 "£defence_cavalry_texticon  Cavalry Defence"
  modifier_army_sub_unit_cavalry_speed_factor:0 "£speed_cavalry_texticon  Cavalry Speed"
@@ -1512,6 +1492,23 @@
  modifier_army_sub_unit_military_police_defence_factor:0 "£defence_mp_texticon  Military Police Defense"
  modifier_army_sub_unit_military_police_speed_factor:0 "£speed_mp_texticon  Military Police Speed"
  modifier_army_sub_unit_military_police_max_org_factor:0 "£organisation_mp_texticon  Military Police Organization"
+ MODIFIER_CHOOSE_PREFERRED_TACTIC_COST:0 "£tactics_cost_texticon  Preferred Tactics Selection Cost"
+ MODIFIER_RAILWAY_GUN_BOMBARDMENT_FACTOR:0 "£railway_gun_texticon  Railway Gun Bombardment"
+ MODIFIER_UNIT_LEADER_AS_ADVISOR_CP_COST_FACTOR:0 "£leader_promotion_cost_texticon  Commander as Advisor Cost"
+ MODIFIER_INITIATIVE_FACTOR:0 "£initiative_texticon  Initiative"
+ MODIFIER_NAVAL_INVASION_PLANNING_SPEED:0 "£naval_invasion_texticon  Naval Invasion Planning"
+ NAVAL_INVASION_PLANNING_BONUS_MALUS:0 "£naval_invasion_texticon  Base Naval Invasion Malus: $VALUE|R0$§R%§!"
+ MODIFIER_TERRAIN_TRAIT_XP_GAIN_FACTOR:0 "£experience_neutral_texticon  Terrain traits XP Gain"
+ modifier_experience_gain_motorized_combat_factor:0 "£experience_neutral_combat_texticon  Motorised experence gain from combat"
+ modifier_experience_gain_mechanized_combat_factor:0 "£experience_neutral_combat_texticon  Mechanised experence gain from combat"
+ modifier_experience_gain_infantry_combat_factor:0 "£experience_neutral_combat_texticon  Infantry experence gain from combat"
+ modifier_experience_gain_artillery_combat_factor:0 "£experience_neutral_combat_texticon  Artillery experence gain from combat"
+ modifier_production_cost_supply_node_factor:0 "£under_construction_texticon  §YSupply Hub§! construction cost"
+ MODIFIER_SUPPLY_PENALTY_ON_CORE:0 "£supply_consumption_core_texticon  Supply Combat Penalties on Core Territory"
+ supply_combat_penalties_on_core_factor:0 "£supply_consumption_core_texticon  Supply Combat Penalties on Core Territory"
+ coordination_bonus:0 "£coordination_texticon  Coordination"
+ MODIFIER_COORDINATION_BONUS:0 "£coordination_texticon  Coordination"
+ MODIFIER_EQUIPMENT_CONVERSION_IC_COST_FACTOR:0 "£equipment_conversion_texticon  Equipment Conversion Cost"
  MODIFIER_embargo_threshold_factor:0 "£world_tension_embargo_texticon  Embargo Tension Limit"
  MODIFIER_embargo_cost_factor:0 "£embargo_cost_texticon  Embargo Cost Modifier"
  embargo_threshold_factor:0 "£world_tension_embargo_texticon  Embargo Tension Limit"
@@ -1529,28 +1526,8 @@
  MODIFIER_GRANT_MEDAL_COST_FACTOR:0 "£medal_texticon  Grant Medal Cost"
  MODIFIER_FIELD_OFFICER_PROMOTION_PENALTY:0 "£army_leader_cost_texticon  Field Officer Division Penalty"
  MODIFIER_FEMALE_DIVISIONAL_COMMANDER_CHANCE:0 "£officer_texticon  Female Divisional Commander Chance"
-
-# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
- modifier_unit_fighter_design_cost_factor:0 "£air_design_cost_texticon  Stoymost proekta ystrebytelya"
- modifier_unit_scout_plane_design_cost_factor:0 "£air_design_cost_texticon  Stoymost proekta samoleta-razvedchyka"
- modifier_unit_cv_fighter_design_cost_factor:0 "£air_design_cost_texticon  Stoymost proekta ystrebytelya"
- modifier_unit_heavy_fighter_design_cost_factor:0 "£air_design_cost_texticon  Stoymost proekta tyazheloho ystrebytelya"
- modifier_unit_jet_fighter_design_cost_factor:0 "£air_design_cost_texticon  Stoymost proekta ystrebytelya"
- modifier_unit_cas_design_cost_factor:0 "£air_design_cost_texticon  Stoymost proekta shturmovyka"
- modifier_unit_cv_cas_design_cost_factor:0 "£air_design_cost_texticon  Stoymost proekta shturmovyka (avyanosets)"
- modifier_unit_nav_bomber_design_cost_factor:0 "£air_design_cost_texticon  Stoymost proekta morskoho bombardyrovshchyka"
- modifier_unit_cv_nav_bomber_design_cost_factor:0 "£air_design_cost_texticon  Stoymost proekta morskoho bombardyrovshchyka (avyanosets)"
- modifier_unit_tac_bomber_design_cost_factor:0 "£air_design_cost_texticon  Stoymost proekta taktycheskoho bombardyrovshchyka"
- modifier_unit_jet_tac_bomber_design_cost_factor:0 "£air_design_cost_texticon  Stoymost proekta reaktyvnoho taktycheskoho bombardyrovshchyka"
- modifier_unit_strat_bomber_design_cost_factor:0 "£air_design_cost_texticon  Stoymost proekta stratehycheskoho bombardyrovshchyka"
- modifier_unit_jet_strat_bomber_design_cost_factor:0 "£air_design_cost_texticon  Stoymost proekta reaktyvnoho stratehycheskoho bombardyrovshchyka"
- modifier_unit_submarine_design_cost_factor:0 "£navy_design_cost_texticon  Stoymost proekta podvodnoy lodky"
- MODIFIER_POSITIONING_NO_SCREENS:0 "£ships_contact_texticon  Bonus k razmeshchenyyu pry otsutstvyy okhranenyya"
- MODIFIER_EQUIPMENT_CONVERSION_IC_COST_FACTOR:0 "£equipment_conversion_texticon  Equipment Conversion Cost"
  
- MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE: "£civ_factory_consumer_texticon  Expected number of factories put on Consumer Goods"
  excavation_tech_research: "£research_speed_electronics_texticon  Excavation Technology Research Speed"
- MODIFIER_LEND_LEASE_TENSION_LIMIT_WITH_OVERLORD: "Uroven napryazhennosty for lend-lyza, sozdavaemyy maryonetkoy"
  tank_manufacturer_cost_factor_MIO: "£mio_tank_cost_texticon  Tank §YMilitary Industrial Organization§! cost"
  naval_manufacturer_cost_factor_MIO: "£mio_naval_cost_texticon  Naval §YMilitary Industrial Organization§! cost"
  aircraft_manufacturer_cost_factor_MIO: "£mio_air_cost_texticon  Aircraft §YMilitary Industrial Organization§! cost"
@@ -1571,32 +1548,35 @@
  MODIFIER_PARATROOPERS_SPECIAL_FORCES_CONTRIBUTION_FACTOR: "£paratroop_contribution_texticon  Paratrooper Special Forces Cap Contribution"
  MODIFIER_MARINES_SPECIAL_FORCES_CONTRIBUTION_FACTOR: "£marines_contribution_texticon  Marine Special Forces Cap Contribution"
  MODIFIER_MOUNTAINEERS_SPECIAL_FORCES_CONTRIBUTION_FACTOR: "£mountaineers_contribution_texticon  Mountaineer Special Forces Cap Contribution"
+ modifier_unit_mountaineers_ski_design_cost_factor: "£ski_troops_texticon  Ski Troops Design Cost"
+ modifier_unit_rangers_support_design_cost_factor: "£rangers_texticon  Rangers Design Cost"
  MODIFIER_BRIGADE_SIZE: "£motorised_rocket_brigade_texticon  Brigade Size"
  MODIFIER_MIO_RESEARCH_BONUS: "£research2_texticon  Military Industrial Organization Research Bonus"
  MODIFIER_MIO_RESEARCH_BONUS_MIO_CONTEXT: "£research2_texticon  Research Bonus"
+ MODIFIER_MIO_DESIGN_TEAM_ASSIGN_COST: "£design_team_texticon  Design Team Assign Cost"
+ MODIFIER_MIO_DESIGN_TEAM_CHANGE_COST: "£design_team_texticon  Design Team Change Cost"
  MODIFIER_MIO_INDUSTRIAL_MANUFACTURER_ASSIGN_COST: "£industrial_manufacturer_texticon  Industrial Manufacturer Assign Cost"
  MODIFIER_MIO_TASK_CAPACITY: "£mio_capacity_texticon  Task Capacity"
  MODIFIER_MIO_FUNDS_SIZE_UP_REQUIREMENT: "£funds_texticon  Requirement for Size Up"
+ MODIFIER_MIO_FUNDS_GAIN: "£funds_texticon  Funds Gain"
  MODIFIER_MIO_POLICY_COST_FACTOR: "£mio_policy_texticon  Policy Cost"
  MODIFIER_MIO_POLICY_COOLDOWN_FACTOR: "£mio_policy_texticon  Policy Cooldown"
  MODIFIER_CIC_CONSTRUCTION_BOOST: "£construction_speed_texticon  Base construction line speed boost"
  MODIFIER_CIC_CONSTRUCTION_BOOST_FACTOR: "£construction_speed_texticon  Construction line speed boost multiplier"
  MODIFIER_LAND_BUNKER_EFFECTIVENESS_FACTOR: "£fort_texticon  $bunker$ effectiveness"
  MODIFIER_COASTAL_BUNKER_EFFECTIVENESS_FACTOR: "£fort_texticon  $coastal_bunker$ effectiveness"
+
  army_spirit_category_type_cost_factor: "£army_spirit_texticon  Army Command Spirit Cost"
  air_spirit_category_type_cost_factor: "£air_spirit_texticon  Air Force Command Spirit Cost"
  navy_spirit_category_type_cost_factor: "£navy_spirit_texticon  Navy Command Spirit Cost"
+
  large_plane_airframe_design_cost_factor: "£air_design_cost_texticon  Large Plane Design Cost"
- modifier_army_sub_unit_category_special_forces_max_org_factor: "£organisation_specops_texticon  Special Forces Organization"
+ MODIFIER_SPECIAL_FORCES_CAP_FLAT: "£specops_cap_texticon  Special Forces Cap"
  
  naval_armor_research:0 "£research_speed_naval_armor_texticon  Naval Armor Schemes Research Speed"
  naval_artillery_research:0 "£research_speed_naval_artillery_texticon  Naval Artillery Research Speed"
  construction_tech_research: "£research_speed_construction_texticon  Construction Technology Research Speed"
  MODIFIER_PRODUCTION_SPEED_FACILITY_FACTOR: "£construction_speed_facility_texticon  Facility construction speed"
- modifier_production_speed_nuclear_facility_factor: "Speed stroytelstva §Yyadernoho obekta§!"
- modifier_production_speed_air_facility_factor: "Speed stroytelstva §Yavyatsyonnoho obekta§!"
- modifier_production_speed_naval_facility_factor: "Speed stroytelstva §Ymorskoho obekta§!"
- modifier_production_speed_land_facility_factor: "Speed stroytelstva §Ynazemnoho obekta§!"
  MODIFIERS_EXILE_MANPOWER_FACTOR: "£manpower_exiles_texticon  Exile Manpower to Host"
  MODIFIER_RIVER_CROSSING_PENALTY_FACTOR_AGAINST_A_COUNTRY: "£attacker_speed_texticon  River crossing speed penalty against country"
  state_resources_oil_factor: "£oil_texticon  Local Available £resources_strip|1 Oil"
@@ -1610,153 +1590,99 @@
  modifier_state_naval_base_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level"
  modifier_state_bunker_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level"
  modifier_state_coastal_bunker_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level"
- modifier_supply_node_max_level_terrain_limit: "$modifier_state_supply_node_max_level_terrain_limit$"
- modifier_rail_way_max_level_terrain_limit: "$modifier_state_rail_way_max_level_terrain_limit$"
- modifier_naval_base_max_level_terrain_limit: "$modifier_state_naval_base_max_level_terrain_limit$"
- modifier_bunker_max_level_terrain_limit: "$modifier_state_bunker_max_level_terrain_limit$"
- modifier_coastal_bunker_max_level_terrain_limit: "$modifier_state_coastal_bunker_max_level_terrain_limit$"
+
  modifier_state_supply_node_ocean_max_level_terrain_limit: "£supply_hub_texticon  Maximum $supply_node$ level in §Y$ocean$§!"
  modifier_state_rail_way_ocean_max_level_terrain_limit: "£railways_texticon  Maximum $rail_way$ level in §Y$ocean$§!"
  modifier_state_naval_base_ocean_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level in §Y$ocean$§!"
  modifier_state_bunker_ocean_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level in §Y$ocean$§!"
  modifier_state_coastal_bunker_ocean_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level in §Y$ocean$§!"
- modifier_supply_node_ocean_max_level_terrain_limit: "$modifier_state_supply_node_ocean_max_level_terrain_limit$"
- modifier_rail_way_ocean_max_level_terrain_limit: "$modifier_state_rail_way_ocean_max_level_terrain_limit$"
- modifier_naval_base_ocean_max_level_terrain_limit: "$modifier_state_naval_base_ocean_max_level_terrain_limit$"
- modifier_bunker_ocean_max_level_terrain_limit: "$modifier_state_bunker_ocean_max_level_terrain_limit$"
- modifier_coastal_bunker_ocean_max_level_terrain_limit: "$modifier_state_coastal_bunker_ocean_max_level_terrain_limit$"
+
  modifier_state_supply_node_lakes_max_level_terrain_limit: "£supply_hub_texticon  Maximum $supply_node$ level in §Y$lakes$§!"
  modifier_state_rail_way_lakes_max_level_terrain_limit: "£railways_texticon  Maximum $rail_way$ level in §Y$lakes$§!"
  modifier_state_naval_base_lakes_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level in §Y$lakes$§!"
  modifier_state_bunker_lakes_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level in §Y$lakes$§!"
  modifier_state_coastal_bunker_lakes_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level in §Y$lakes$§!"
- modifier_supply_node_lakes_max_level_terrain_limit: "$modifier_state_supply_node_lakes_max_level_terrain_limit$"
- modifier_rail_way_lakes_max_level_terrain_limit: "$modifier_state_rail_way_lakes_max_level_terrain_limit$"
- modifier_naval_base_lakes_max_level_terrain_limit: "$modifier_state_naval_base_lakes_max_level_terrain_limit$"
- modifier_bunker_lakes_max_level_terrain_limit: "$modifier_state_bunker_lakes_max_level_terrain_limit$"
- modifier_coastal_bunker_lakes_max_level_terrain_limit: "$modifier_state_coastal_bunker_lakes_max_level_terrain_limit$"
+
  modifier_state_supply_node_forest_max_level_terrain_limit: "£supply_hub_texticon  Maximum $supply_node$ level in §Y$forest$§!"
  modifier_state_rail_way_forest_max_level_terrain_limit: "£railways_texticon  Maximum $rail_way$ level in §Y$forest$§!"
  modifier_state_naval_base_forest_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level in §Y$forest$§!"
  modifier_state_bunker_forest_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level in §Y$forest$§!"
  modifier_state_coastal_bunker_forest_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level in §Y$forest$§!"
- modifier_supply_node_forest_max_level_terrain_limit: "$modifier_state_supply_node_forest_max_level_terrain_limit$"
- modifier_rail_way_forest_max_level_terrain_limit: "$modifier_state_rail_way_forest_max_level_terrain_limit$"
- modifier_naval_base_forest_max_level_terrain_limit: "$modifier_state_naval_base_forest_max_level_terrain_limit$"
- modifier_bunker_forest_max_level_terrain_limit: "$modifier_state_bunker_forest_max_level_terrain_limit$"
- modifier_coastal_bunker_forest_max_level_terrain_limit: "$modifier_state_coastal_bunker_forest_max_level_terrain_limit$"
+
  modifier_state_supply_node_hills_max_level_terrain_limit: "£supply_hub_texticon  Maximum $supply_node$ level in §Y$hills$§!"
  modifier_state_rail_way_hills_max_level_terrain_limit: "£railways_texticon  Maximum $rail_way$ level in §Y$hills$§!"
  modifier_state_naval_base_hills_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level in §Y$hills$§!"
  modifier_state_bunker_hills_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level in §Y$hills$§!"
  modifier_state_coastal_bunker_hills_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level in §Y$hills$§!"
- modifier_supply_node_hills_max_level_terrain_limit: "$modifier_state_supply_node_hills_max_level_terrain_limit$"
- modifier_rail_way_hills_max_level_terrain_limit: "$modifier_state_rail_way_hills_max_level_terrain_limit$"
- modifier_naval_base_hills_max_level_terrain_limit: "$modifier_state_naval_base_hills_max_level_terrain_limit$"
- modifier_bunker_hills_max_level_terrain_limit: "$modifier_state_bunker_hills_max_level_terrain_limit$"
- modifier_coastal_bunker_hills_max_level_terrain_limit: "$modifier_state_coastal_bunker_hills_max_level_terrain_limit$"
+
  modifier_state_supply_node_mountain_max_level_terrain_limit: "£supply_hub_texticon  Maximum $supply_node$ level in §Y$mountain$§!"
  modifier_state_rail_way_mountain_max_level_terrain_limit: "£railways_texticon  Maximum $rail_way$ level in §Y$mountain$§!"
  modifier_state_naval_base_mountain_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level in §Y$mountain$§!"
  modifier_state_bunker_mountain_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level in §Y$mountain$§!"
  modifier_state_coastal_bunker_mountain_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level in §Y$mountain$§!"
- modifier_supply_node_mountain_max_level_terrain_limit: "$modifier_state_supply_node_mountain_max_level_terrain_limit$"
- modifier_rail_way_mountain_max_level_terrain_limit: "$modifier_state_rail_way_mountain_max_level_terrain_limit$"
- modifier_naval_base_mountain_max_level_terrain_limit: "$modifier_state_naval_base_mountain_max_level_terrain_limit$"
- modifier_bunker_mountain_max_level_terrain_limit: "$modifier_state_bunker_mountain_max_level_terrain_limit$"
- modifier_coastal_bunker_mountain_max_level_terrain_limit: "$modifier_state_coastal_bunker_mountain_max_level_terrain_limit$"
+
  modifier_state_supply_node_plains_max_level_terrain_limit: "£supply_hub_texticon  Maximum $supply_node$ level in §Y$plains$§!"
  modifier_state_rail_way_plains_max_level_terrain_limit: "£railways_texticon  Maximum $rail_way$ level in §Y$plains$§!"
  modifier_state_naval_base_plains_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level in §Y$plains$§!"
  modifier_state_bunker_plains_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level in §Y$plains$§!"
  modifier_state_coastal_bunker_plains_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level in §Y$plains$§!"
- modifier_supply_node_plains_max_level_terrain_limit: "$modifier_state_supply_node_plains_max_level_terrain_limit$"
- modifier_rail_way_plains_max_level_terrain_limit: "$modifier_state_rail_way_plains_max_level_terrain_limit$"
- modifier_naval_base_plains_max_level_terrain_limit: "$modifier_state_naval_base_plains_max_level_terrain_limit$"
- modifier_bunker_plains_max_level_terrain_limit: "$modifier_state_bunker_plains_max_level_terrain_limit$"
- modifier_coastal_bunker_plains_max_level_terrain_limit: "$modifier_state_coastal_bunker_plains_max_level_terrain_limit$"
+
  modifier_state_supply_node_urban_max_level_terrain_limit: "£supply_hub_texticon  Maximum $supply_node$ level in §Y$urban$§!"
  modifier_state_rail_way_urban_max_level_terrain_limit: "£railways_texticon  Maximum $rail_way$ level in §Y$urban$§!"
  modifier_state_naval_base_urban_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level in §Y$urban$§!"
  modifier_state_bunker_urban_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level in §Y$urban$§!"
  modifier_state_coastal_bunker_urban_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level in §Y$urban$§!"
- modifier_supply_node_urban_max_level_terrain_limit: "$modifier_state_supply_node_urban_max_level_terrain_limit$"
- modifier_rail_way_urban_max_level_terrain_limit: "$modifier_state_rail_way_urban_max_level_terrain_limit$"
- modifier_naval_base_urban_max_level_terrain_limit: "$modifier_state_naval_base_urban_max_level_terrain_limit$"
- modifier_bunker_urban_max_level_terrain_limit: "$modifier_state_bunker_urban_max_level_terrain_limit$"
- modifier_coastal_bunker_urban_max_level_terrain_limit: "$modifier_state_coastal_bunker_urban_max_level_terrain_limit$"
+
  modifier_state_supply_node_jungle_max_level_terrain_limit: "£supply_hub_texticon  Maximum $supply_node$ level in §Y$jungle$§!"
  modifier_state_rail_way_jungle_max_level_terrain_limit: "£railways_texticon  Maximum $rail_way$ level in §Y$jungle$§!"
  modifier_state_naval_base_jungle_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level in §Y$jungle$§!"
  modifier_state_bunker_jungle_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level in §Y$jungle$§!"
  modifier_state_coastal_bunker_jungle_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level in §Y$jungle$§!"
- modifier_supply_node_jungle_max_level_terrain_limit: "$modifier_state_supply_node_jungle_max_level_terrain_limit$"
- modifier_rail_way_jungle_max_level_terrain_limit: "$modifier_state_rail_way_jungle_max_level_terrain_limit$"
- modifier_naval_base_jungle_max_level_terrain_limit: "$modifier_state_naval_base_jungle_max_level_terrain_limit$"
- modifier_bunker_jungle_max_level_terrain_limit: "$modifier_state_bunker_jungle_max_level_terrain_limit$"
- modifier_coastal_bunker_jungle_max_level_terrain_limit: "$modifier_state_coastal_bunker_jungle_max_level_terrain_limit$"
+
  modifier_state_supply_node_marsh_max_level_terrain_limit: "£supply_hub_texticon  Maximum $supply_node$ level in §Y$marsh$§!"
  modifier_state_rail_way_marsh_max_level_terrain_limit: "£railways_texticon  Maximum $rail_way$ level in §Y$marsh$§!"
  modifier_state_naval_base_marsh_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level in §Y$marsh$§!"
  modifier_state_bunker_marsh_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level in §Y$marsh$§!"
  modifier_state_coastal_bunker_marsh_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level in §Y$marsh$§!"
- modifier_supply_node_marsh_max_level_terrain_limit: "$modifier_state_supply_node_marsh_max_level_terrain_limit$"
- modifier_rail_way_marsh_max_level_terrain_limit: "$modifier_state_rail_way_marsh_max_level_terrain_limit$"
- modifier_naval_base_marsh_max_level_terrain_limit: "$modifier_state_naval_base_marsh_max_level_terrain_limit$"
- modifier_bunker_marsh_max_level_terrain_limit: "$modifier_state_bunker_marsh_max_level_terrain_limit$"
- modifier_coastal_bunker_marsh_max_level_terrain_limit: "$modifier_state_coastal_bunker_marsh_max_level_terrain_limit$"
+
  modifier_state_supply_node_desert_max_level_terrain_limit: "£supply_hub_texticon  Maximum $supply_node$ level in §Y$desert$§!"
  modifier_state_rail_way_desert_max_level_terrain_limit: "£railways_texticon  Maximum $rail_way$ level in §Y$desert$§!"
  modifier_state_naval_base_desert_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level in §Y$desert$§!"
  modifier_state_bunker_desert_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level in §Y$desert$§!"
  modifier_state_coastal_bunker_desert_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level in §Y$desert$§!"
- modifier_supply_node_desert_max_level_terrain_limit: "$modifier_state_supply_node_desert_max_level_terrain_limit$"
- modifier_rail_way_desert_max_level_terrain_limit: "$modifier_state_rail_way_desert_max_level_terrain_limit$"
- modifier_naval_base_desert_max_level_terrain_limit: "$modifier_state_naval_base_desert_max_level_terrain_limit$"
- modifier_bunker_desert_max_level_terrain_limit: "$modifier_state_bunker_desert_max_level_terrain_limit$"
- modifier_coastal_bunker_desert_max_level_terrain_limit: "$modifier_state_coastal_bunker_desert_max_level_terrain_limit$"
+
  modifier_state_supply_node_water_fjords_max_level_terrain_limit: "£supply_hub_texticon  Maximum $supply_node$ level in §Y$water_fjords$§!"
  modifier_state_rail_way_water_fjords_max_level_terrain_limit: "£railways_texticon  Maximum $rail_way$ level in §Y$water_fjords$§!"
  modifier_state_naval_base_water_fjords_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level in §Y$water_fjords$§!"
  modifier_state_bunker_water_fjords_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level in §Y$water_fjords$§!"
  modifier_state_coastal_bunker_water_fjords_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level in §Y$water_fjords$§!"
- modifier_supply_node_water_fjords_max_level_terrain_limit: "$modifier_state_supply_node_water_fjords_max_level_terrain_limit$"
- modifier_rail_way_water_fjords_max_level_terrain_limit: "$modifier_state_rail_way_water_fjords_max_level_terrain_limit$"
- modifier_naval_base_water_fjords_max_level_terrain_limit: "$modifier_state_naval_base_water_fjords_max_level_terrain_limit$"
- modifier_bunker_water_fjords_max_level_terrain_limit: "$modifier_state_bunker_water_fjords_max_level_terrain_limit$"
- modifier_coastal_bunker_water_fjords_max_level_terrain_limit: "$modifier_state_coastal_bunker_water_fjords_max_level_terrain_limit$"
  modifier_state_supply_node_water_shallow_sea_max_level_terrain_limit: "£supply_hub_texticon  Maximum $supply_node$ level in §Y$water_shallow_sea$§!"
  modifier_state_rail_way_water_shallow_sea_max_level_terrain_limit: "£railways_texticon  Maximum $rail_way$ level in §Y$water_shallow_sea$§!"
  modifier_state_naval_base_water_shallow_sea_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level in §Y$water_shallow_sea$§!"
  modifier_state_bunker_water_shallow_sea_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level in §Y$water_shallow_sea$§!"
  modifier_state_coastal_bunker_water_shallow_sea_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level in §Y$water_shallow_sea$§!"
- modifier_supply_node_water_shallow_sea_max_level_terrain_limit: "$modifier_state_supply_node_water_shallow_sea_max_level_terrain_limit$"
- modifier_rail_way_water_shallow_sea_max_level_terrain_limit: "$modifier_state_rail_way_water_shallow_sea_max_level_terrain_limit$"
- modifier_naval_base_water_shallow_sea_max_level_terrain_limit: "$modifier_state_naval_base_water_shallow_sea_max_level_terrain_limit$"
- modifier_bunker_water_shallow_sea_max_level_terrain_limit: "$modifier_state_bunker_water_shallow_sea_max_level_terrain_limit$"
- modifier_coastal_bunker_water_shallow_sea_max_level_terrain_limit: "$modifier_state_coastal_bunker_water_shallow_sea_max_level_terrain_limit$"
+
  modifier_state_supply_node_water_deep_ocean_max_level_terrain_limit: "£supply_hub_texticon  Maximum $supply_node$ level in §Y$water_deep_ocean$§!"
  modifier_state_rail_way_water_deep_ocean_max_level_terrain_limit: "£railways_texticon  Maximum $rail_way$ level in §Y$water_deep_ocean$§!"
  modifier_state_naval_base_water_deep_ocean_max_level_terrain_limit: "£naval_base_texticon  Maximum $naval_base$ level in §Y$water_deep_ocean$§!"
  modifier_state_bunker_water_deep_ocean_max_level_terrain_limit: "£fort_texticon  Maximum $bunker$ level in §Y$water_deep_ocean$§!"
  modifier_state_coastal_bunker_water_deep_ocean_max_level_terrain_limit: "£coastal_fort_texticon  Maximum $coastal_bunker$ level in §Y$water_deep_ocean$§!"
- modifier_supply_node_water_deep_ocean_max_level_terrain_limit: "$modifier_state_supply_node_water_deep_ocean_max_level_terrain_limit$"
- modifier_rail_way_water_deep_ocean_max_level_terrain_limit: "$modifier_state_rail_way_water_deep_ocean_max_level_terrain_limit$"
- modifier_naval_base_water_deep_ocean_max_level_terrain_limit: "$modifier_state_naval_base_water_deep_ocean_max_level_terrain_limit$"
- modifier_bunker_water_deep_ocean_max_level_terrain_limit: "$modifier_state_bunker_water_deep_ocean_max_level_terrain_limit$"
- modifier_coastal_bunker_water_deep_ocean_max_level_terrain_limit: "$modifier_state_coastal_bunker_water_deep_ocean_max_level_terrain_limit$"
  MODIFIER_STATE_PRODUCTION_SPEED_FACILITY_FACTOR: "£construction_speed_facility_texticon  Local construction speed of facility"
  MODIFIER_FEMALE_SCIENTIST_CHANCE: "£scientist_texticon  Added Female Scientist Chance: $VALUE$"
  MODIFIER_AIR_TRAINING_XP_GAIN_FACTOR: "£experience_neutral_training_texticon  Air Wing Training Experience Gain"
  MODIFIER_RESOURCE_TRADE_COST_BONUS_PER_FACTORY: "£trade_texticon  Trade extra resource per factory"
  MODIFIER_SPECIAL_PROJECT_SPEED_FACTOR: "£special_project_texticon  Special Project Speed"
  MODIFIER_SPECIAL_PROJECT_FACILITY_SUPPLY_CONSUMPTION_FACTOR: "£facility_texticon  Facility Supply Consumption: $FACTOR$"
+
  MODIFIER_SCIENTIST_XP_GAIN_FACTOR: "£scientist_exp_texticon  Scientist XP Gain"
+ 
  MODIFIER_SCIENTIST_RESEARCH_BONUS_FACTOR: "£research_bonus_texticon  Research bonus"
  MODIFIER_SCIENTIST_BREAKTHROUGH_BONUS_FACTOR: "£special_project_breakthrough_texticon  Breakthrough bonus"
+
  MODIFIER_UNDERWAY_REPLENISHMENT_RANGE: "£underway_replenishment_texticon  Underway Replenishment Range"
  MODIFIER_UNDERWAY_REPLENISHMENT_CONVOY_COST: "£underway_replenishment_texticon  Underway Replenishment Convoy Usage"
- #MODIFIERS SP
+
+ # MODIFIERS SP
  sp_air_helicopter_speed_factor: "£special_project_helicopter_texticon  Helicopter Research Speed"
  sp_air_intercontinental_bomber_speed_factor: "£special_project_intercontinental_bomber_texticon  Intercontinental Bomber Research Speed"
  sp_air_mothership_aircraft_speed_factor: "£special_project_mothership_texticon  Mothership Aircraft Research Speed"
@@ -1803,8 +1729,8 @@
  sp_land_stronghold_network_speed_factor: "£special_project_stronghold_texticon  Stronghold Network Research Speed"
  sp_land_flamethrower_tank_speed_factor: "£special_project_flametank_texticon  Flamethrower Tank Research Speed"
  sp_land_military_engineering_vehicles_speed_factor: "£special_project_engineering_vehicle_texticon  Military Engineering Vehicles Research Speed"
- #TOOLTIPS SP
- #SPECIAL PROJECT TRAIT MODIFIERS #
+
+ # TOOLTIPS SP
  specialization_air_speed_factor: "£spec_air_texticon  $specialization_air$ Special Projects Speed"
  specialization_land_speed_factor: "£spec_land_texticon  $specialization_land$ Special Projects Speed"
  specialization_naval_speed_factor: "£spec_naval_texticon  $specialization_naval$ Special Projects Speed"
@@ -1826,15 +1752,15 @@
  MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE: "£civ_factory_consumer_texticon  Expected number of factories put on Consumer Goods"
 
  
- #plane_designer_l_russian
+#plane_designer_l_english
  small_plane_cas_airframe_design_cost_factor:0 "£air_design_cost_texticon  Small CAS Airframe Design Cost"
  cv_small_plane_cas_airframe_design_cost_factor:0 "£air_design_cost_texticon  Small CAS Carrier Airframe Design Cost"
  medium_plane_airframe_design_cost_factor:0 "£air_design_cost_texticon  Medium Airframe Design Cost"
 
-#politics_l_russian
+#politics_l_english
  POLITICS_IDEOLOGY_POPULARITY_CHANGE:0 "£boost_popularity_texticon  Change in popularity of $IDEOLOGY$: $VALUE|+2%$"
  
-#production_l_russian
+#production_l_english
  BONUS_PRODUCTION_COST_FACTOR: "£mio_production_cost_texticon  Production output cost"
  BONUS_PRODUCTION_CAPACITY_FACTOR: "£mio_production_capacity_texticon  Production output"
  BONUS_PRODUCTION_EFFICIENCY_CAP_FACTOR: "£mio_efficiency_cap_texticon  Production efficiency cap"
@@ -1843,12 +1769,12 @@
  BONUS_PRODUCTION_RESOURCE_PENALTY_FACTOR: "£sabotaged_resource_texticon  Production resource penalty"
  BONUS_PRODUCTION_CONVERSION_SPEED_FACTOR: "£mio_conversion_speed_texticon  Production conversion speed"
  
-#research_l_russian
+#research_l_english
  air_equipment_research:2 "£research_speed_texticon  Air Research Speed"
  support_tech_research:1 "£research_speed_texticon  Support Unit Research Speed"
  synth_resources_research:2 "£research_speed_texticon  Synthetic Resources Research Speed"
  
-#resistance_and_occupation_l_russian
+#resistance_and_occupation_l_english
  RESISTANCE_TARGET_VALUE:0 "£political_violence_texticon  Resistance Target: $VALUE|H%0$"
  RESISTANCE_TARGET_VALUE_CAPPED:0 "£political_violence_texticon  Resistance Target: $VALUE|H%0$ (Capped from $VALUE_NON_CAPPED|H%0$)"
  RESISTANCE_DECAY_VALUE:0 "£political_violence_loss_texticon  Resistance Decay: §G$VALUE|3$%§!"
@@ -1869,8 +1795,8 @@
  RESISTANCE_CHANCE_FOR_ACTIVITY:0 "£political_violence_texticon  Chance for resistance activity: $CHANCE|%.1H$"
  RESISTANCE_CHANCE_FOR_GARRISON_PENETRATE:0 "£political_violence_texticon  Chance for resistance to penetrate garrisons: $CHANCE|%.0H$"
  STABILITY_RESISTANCE_PENALTY:0 "£political_violence_texticon  Resistance Target in Occupied Territories: $PENALTY|%%.0R$"
-
-#stats_l_russian
+ 
+#stats_l_english
  STAT_COMMON_MAX_ORG:0 "£organization_texticon  Organization: "
  STAT_ARMY_DEFAULT_MORALE:0 "£army_morale_texticon  Recovery Rate: "
  STAT_ARMY_COMBAT_WIDTH:0 "£combat_width_texticon  Combat width: "
@@ -1915,6 +1841,7 @@
  STAT_AIR_NAVAL_STRIKE_AGILITY:0 "£attacker_speed_texticon  Naval Agility: "
  STAT_AIR_GROUND_ATTACK:0 "£cas_texticon  Ground Attack: "
  STAT_COMMON_MAX_STRENGTH:0 "£strenght_texticon  HP: "
+ STAT_COMMON_BUILD_COST_IC:0 "£production_cost  Production Cost: "
  STAT_COMMON_MAXIMUM_SPEED:0 "£attacker_speed_texticon  Speed: "
  STAT_NAVY_MAXIMUM_SPEED:0 "£attacker_speed_texticon  Speed: "
  STAT_NAVY_RANGE:0 "£naval_range_texticon  Max Range: "
@@ -1967,13 +1894,13 @@
  STAT_STRATEGIC_ATTACK: "£strat_bombing_texticon  Strategic Bombing"
  STAT_NAVY_WEATHER_PENALTY: "£weather_texticon  Weather Penalty: "
 
-#terrain_l_russian
+#terrain_l_english
  MOVEMENT_COST:0 "£movement_texticon  Movement cost within this terrain type x$VALUE|H$"
  TERRAIN_COMBAT_WIDTH_COMB:0 "£combat_width_texticon  Combat width: $VALUE|0Y$ (Additional attacks: $ADD|0Y$)"
  TERRAIN_COMBAT_WIDTH:0 "£combat_width_texticon  Combat width: $VALUE|0Y$"
  TERRAIN_ADDITIONAL_WIDTH:0 "£combat_width_texticon  Combat width per additional direction: $VALUE|=0Y$"
 
-#traits_l_russian
+#traits_l_english
  il_duce_laws_cost_tt:0 "  - £economy_laws_cost_texticon  Economy, Trade and Conscription Laws Cost: §G-15%§!"
  SKILL_ATTACK:0 "£attack_texticon  §HAttack§!"
  SKILL_DEFENSE:0 "£defence_texticon  §HDefense§!"
@@ -1991,7 +1918,7 @@
  trait_bonus_coordination:0 "£coordination_texticon  Coordination: $VAL|+=0$"
  expert_improviser_movement_bonus_on_land:0 "£movement_texticon  Movement Bonus On Land: §G+10.0%§!"
  
-#unit_l_russian
+#unit_l_english
  ATTRITION:0 "£attrition_texticon  Attrition:"
  MODIFIER_NAVAL_INVASION_CAPACITY:0 "£naval_invasion_texticon  Naval Invasion Capacity"
  CURRENT_ORGANIZATION:0 "£organization_texticon  Organization: $CUR|0Y$/$MAX|0Y$"
