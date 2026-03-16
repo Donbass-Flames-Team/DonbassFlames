@@ -779,11 +779,13 @@ spriteTypes = {
 	spriteType = {
     	name = "GFX_timoshenko_texticon"
     	textureFile = "gfx/texticons/timoshenko_texticon.dds"
+		legacy_lazy_load = no
 	}
 
 	spriteType = {
     	name = "GFX_poroshenko_texticon"
     	textureFile = "gfx/texticons/poroshenko_texticon.dds"
+		legacy_lazy_load = no
 	}
 
 	spriteType = {
