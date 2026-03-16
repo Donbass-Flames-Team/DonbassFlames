@@ -66,6 +66,14 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
+			name = "UKR_voter_turnout_elections_text"
+			maxWidth = 450
+			position = { x = 926 y = 288 }
+			font = "hoi_36header"
+			text = "UKR_voter_turnout_elections_text"
+		}
+
+		instantTextBoxType = {
 			name = "UKR_favourite_candidate_elections_text"
 			maxWidth = 450
 			position = { x = 926 y = 178 }
@@ -81,13 +89,13 @@ guiTypes = {
 			text = "UKR_election_population_text"
 		}	
 		
-		instantTextBoxType = {
-			name = "UKR_local_population_text"
-			maxWidth = 450
-			position = { x = 926 y = 452 }
-			font = "hoi_24header"
-			text = "UKR_local_population_text"
-		}
+		#instantTextBoxType = {
+		#	name = "UKR_local_population_text"
+		#	maxWidth = 450
+		#	position = { x = 926 y = 492 }
+		#	font = "hoi_24header"
+		#	text = "UKR_local_population_text"
+		#}
 
 		instantTextBoxType = {
 			name = "UKR_separatismgui_region_name"

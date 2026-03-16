@@ -789,6 +789,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+    	name = "GFX_lyashko_texticon"
+    	textureFile = "gfx/texticons/lyashko_texticon.dds"
+		legacy_lazy_load = no
+	}	
+
+	spriteType = {
     	name = "GFX_ukraine_elections_btn"
     	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Ukraine_elections_btn.png"
 	}

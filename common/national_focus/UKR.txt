@@ -1617,6 +1617,11 @@ focus_tree = {
 				}
 
 				set_variable = {
+					var = Voter_turnout_ukraine_elections
+					value = 60
+				}
+
+				set_variable = {
 					var = President_elections_stamina_value
 					value = 10
 				}
@@ -2157,7 +2162,11 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_war_support = 0.05
 			hidden_effect = {
-				country_event = superevent.1
+				news_event = news_events.25			
+				country_event = { 
+					id = superevent.1
+					hours = 6
+				}
 				mark_focus_tree_layout_dirty = yes
 				set_global_flag = Start_Of_ATO
 				set_global_flag = Donbas_war_1_escalation

@@ -59,7 +59,7 @@ news_event = {
 	id = news_events.2
 	title = news_events.2.t
 	desc = news_events.2.d
-	picture = GFX_news_event_021
+	picture = GFX_news_event_dpr_creation
 	
 	major = yes
 
@@ -109,7 +109,7 @@ news_event = {
 	id = news_events.3
 	title = news_events.3.t
 	desc = news_events.3.d
-	picture = GFX_news_event_021
+	picture = GFX_news_event_lpr_creation
 	
 	major = yes
 
@@ -159,7 +159,7 @@ news_event = {
 	id = news_events.4
 	title = news_events.4.t
 	desc = news_events.4.d
-	picture = GFX_news_event_021
+	picture = GFX_news_event_kpr_creation
 	
 	major = yes
 
@@ -209,7 +209,7 @@ news_event = {
 	id = news_events.5
 	title = news_events.5.t
 	desc = news_events.5.d
-	picture = GFX_news_event_021
+	picture = GFX_news_event_OPR_creation
 	
 	major = yes
 
@@ -259,7 +259,7 @@ news_event = {
 	id = news_events.6
 	title = news_events.6.t
 	desc = news_events.6.d
-	picture = GFX_news_event_021
+	picture = GFX_news_event_unknown_soldiers_in_crimea
 	
 	major = yes
 
@@ -309,7 +309,7 @@ news_event = {
 	id = news_events.7
 	title = news_events.7.t
 	desc = news_events.7.d
-	picture = GFX_news_event_021
+	picture = GFX_news_event_annexation_crym_pic
 	
 	major = yes
 
@@ -359,7 +359,7 @@ news_event = {
 	id = news_events.8
 	title = news_events.8.t
 	desc = news_events.8.d
-	picture = GFX_news_event_021
+	picture = GFX_news_event_referendum_in_crimea
 	
 	major = yes
 
@@ -457,7 +457,7 @@ news_event = {
     id = news_events.13
     title = news_events.13.t
     desc = news_events.13.d
-    picture = GFX_news_event_021
+    picture = GFX_news_event_malaysian_boing_down
     major = yes
 
     is_triggered_only = yes
@@ -470,7 +470,7 @@ news_event = {
     id = news_events.14
     title = news_events.14.t
     desc = news_events.14.d
-    picture = GFX_news_event_021
+    picture = GFX_news_event_vonovakha_bus_was_under_attack_2015
     major = yes
 
     is_triggered_only = yes
@@ -483,7 +483,7 @@ news_event = {
     id = news_events.15
     title = news_events.15.t
     desc = news_events.15.d
-    picture = GFX_news_event_015
+    picture = GFX_news_event_eu_sanctions3
     major = yes
 
     is_triggered_only = yes
@@ -504,7 +504,7 @@ news_event = {
     id = news_events.16
     title = news_events.16.t
     desc = news_events.16.d
-    picture = GFX_news_event_016
+    picture = GFX_news_event_first_minsk_signed
     major = yes
 
     is_triggered_only = yes
@@ -517,7 +517,7 @@ news_event = {
     id = news_events.17
     title = news_events.17.t
     desc = news_events.17.d
-    picture = GFX_news_event_017
+    picture = GFX_news_event_second_minsk
     major = yes
 
     is_triggered_only = yes
@@ -530,7 +530,7 @@ news_event = {
     id = news_events.18
     title = news_events.18.t
     desc = news_events.18.d
-    picture = GFX_news_event_017
+    picture = GFX_news_event_continuation_ato
     major = yes
 
     is_triggered_only = yes
@@ -543,7 +543,7 @@ news_event = {
 	id = news_events.19
 	title = news_events.19.t
 	desc = news_events.19.d
-	picture = GFX_news_event_021
+	picture = GFX_news_event_partial_mobilization_in_ukraine
 	
 	major = yes
 
@@ -591,7 +591,7 @@ news_event = {
 	id = news_events.20
 	title = news_events.20.t
 	desc = news_events.20.d
-	picture = GFX_news_event_021
+	picture = GFX_news_event_dpr_captured_debaltsevo
 	
 	major = yes
 
@@ -639,7 +639,7 @@ news_event = {
 	id = news_events.21
 	title = news_events.21.t
 	desc = news_events.21.d
-	picture = GFX_news_event_021
+	picture = GFX_news_event_meeting_in_minsk_2014
 	
 	major = yes
 
@@ -687,7 +687,7 @@ news_event = {
 	id = news_events.22
 	title = news_events.22.t
 	desc = news_events.22.d
-	picture = GFX_news_event_022
+	picture = GFX_news_event_beach_in_zugres
 	
 	major = yes
 
@@ -735,7 +735,7 @@ news_event = {
 	id = news_events.23
 	title = news_events.23.t
 	desc = news_events.23.d
-	picture = GFX_news_event_023
+	picture = GFX_news_event_zakharchenko_dead
 	
 	major = yes
 
@@ -783,7 +783,7 @@ news_event = {
 	id = news_events.24
 	title = news_events.24.t
 	desc = news_events.24.d
-	picture = GFX_news_event_024
+	picture = GFX_news_event_timoshenko_won
 	
 	major = yes
 
@@ -812,6 +812,54 @@ news_event = {
 
 	option = {
 		name = news_events.24.c
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = UKR
+			}
+		}
+	}
+}
+
+#Начало АТО
+news_event = {
+	id = news_events.25
+	title = news_events.25.t
+	desc = news_events.25.d
+	picture = GFX_news_event_start_of_ato
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.25.a
+		trigger = {
+			original_tag = UKR
+		}
+	}
+	
+	option = {
+		name = news_events.25.b
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.25.c
 		trigger = {
 			NOT = {
 			    original_tag = RUS

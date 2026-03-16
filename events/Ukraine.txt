@@ -41,6 +41,10 @@ country_event = {
 
 	immediate = { 
 		hidden_effect = {
+			news_event = {
+				id = news_events.2
+				hours = 6
+			}
 			432 = { transfer_state_to = DPR }
 			424 = { transfer_state_to = DPR }
 			DPR = {
@@ -175,6 +179,10 @@ country_event = {
 
 	immediate = { 
 		hidden_effect = {
+			news_event = {
+				id = news_events.3
+				hours = 6
+			}
 			340 = { transfer_state_to = LPR }
 			LPR = {
 				add_state_core = 339
@@ -318,6 +326,10 @@ country_event = {
 				add_state_core = 212
 				add_state_core = 203
 			}
+			news_event = {
+				id = news_events.4
+				hours = 6
+			}
 		if = {
 			limit = {
 				UKR = {
@@ -450,6 +462,10 @@ country_event = {
 				add_state_core = 549
 				add_state_core = 499
 				add_state_core = 477
+			}
+			news_event = {
+				id = news_events.5
+				hours = 6
 			}
 			if = {
 			    limit = {
