@@ -345,14 +345,14 @@ UKR_separatism_decision = {
 		fire_only_once = yes
 		available = {
 			NOT = { 
-				has_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
+				has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
 			}
 		}
 		activation = {
-			has_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
+			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
 		}
 		visible = {
-			has_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
+			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
 			original_tag = UKR
 		}
 		timeout_effect = {
