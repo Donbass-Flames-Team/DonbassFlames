@@ -133,13 +133,13 @@ characters = {
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
+			visible = {
+				has_country_flag = Zeka_became_general
+			}
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
 			traits = { }
-			visible = {
-				has_country_flag = Zeka_became_general
-			}
 		}
 	}
 
