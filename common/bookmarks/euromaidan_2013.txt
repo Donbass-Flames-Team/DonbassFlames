@@ -4,10 +4,10 @@ bookmarks = {
 		desc = "EUROMAIDAN_DESC"
 		date = 2013.11.21.6
 		picture = "GFX_2013_date"
-		#default_country = "UKR"
+		#default_country = UKR
 		default = yes
 
-		"UKR"={
+		UKR = {
 			history = "UKR_EC_DESC"
 			ideology = autoritarian_democracy
 			ideas = {
@@ -18,10 +18,10 @@ bookmarks = {
 			focuses = {
 				UKR_yanukovychs_results
 				UKR_next_steps
-			}	
+			}
 		}
 
-		"RUS"={
+		RUS = {
 			history = "RUS_EC_DESC"
 			ideology = autoritarian_democracy
 			ideas = {
@@ -30,14 +30,14 @@ bookmarks = {
 				RUS_fears_of_protests_idea
 			}
 			focuses = {
-				RUS_putins_russia
-				RUS_troops_in_sevastopol_port
-			}	
+				#RUS_putins_russia
+				#RUS_troops_in_sevastopol_port
+			}
 		}
 
 		#Minor countries
 
-		"POL"={
+		POL = {
 			history = "POL_EC_DESC"
 			ideology = liberal_democracy
 			minor = yes
@@ -47,55 +47,55 @@ bookmarks = {
 				POL_political_polarization
 			}
 			focuses = {
-			}	
+			}
 		}
-		"LIT"={
+		LIT = {
 			history = "LIT_EC_DESC"
 			ideology = liberal_democracy
 			minor = yes
 			ideas = {
 			}
 			focuses = {
-			}	
+			}
 		}
-		"ROM"={
+		ROM = {
 			history = "ROM_EC_DESC"
 			ideology = liberal_democracy
 			minor = yes
 			ideas = {
 			}
 			focuses = {
-			}	
+			}
 		}
-		"MOL"={
+		MOL = {
 			history = "MOL_EC_DESC"
 			ideology = liberal_democracy
 			minor = yes
 			ideas = {
 			}
 			focuses = {
-			}	
+			}
 		}
-		"CRI"={
+		CRI = {
 			history = "CRI_EC_DESC"
 			ideology = liberal_democracy
 			minor = yes
 			ideas = {
 			}
 			focuses = {
-			}	
+			}
 		}
 
-		"HUN"={
+		HUN = {
 			history = "HUN_EC_DESC"
 			ideology = liberal_democracy
 			minor = yes
 			ideas = {
 			}
 			focuses = {
-			}	
+			}
 		}
-		"BLR"={
+		BLR = {
 			history = "BLR_EC_DESC"
 			ideology = autoritarian_democracy
 			minor = yes
@@ -105,16 +105,20 @@ bookmarks = {
 				BEL_weak_economy
 			}
 			focuses = {
-			}	
+			}
 		}
-		"TMR"={
+		TMR = {
 			history = "TMR_EC_DESC"
 			ideology = communism
 			minor = yes
 			ideas = {
 			}
 			focuses = {
-			}	
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345
 		}
 	}
 }

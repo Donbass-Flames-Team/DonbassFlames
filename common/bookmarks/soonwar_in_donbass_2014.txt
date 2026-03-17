@@ -4,121 +4,123 @@ bookmarks = {
 		desc = "SOONDONBASS_WAR_DESC"
 		date = 2014.1.1.12
 		picture = "GFX_2014_date"
-		default_country = "UKR"
+		#default_country = UKR
 		default = yes
-		
-		"UKR"={
-			history = "UKR_DW_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}	
-		}
-		"RUS"={
-			history = "RUS_DW_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
 
-			}	
+		UKR = {
+			history = "UKR_DW_DESC"
+			ideology = autoritarian_democracy
+			ideas = {
+			}
+			focuses = {
+			}
 		}
-		"DPR"={
+
+		RUS = {
+			history = "RUS_DW_DESC"
+			ideology = autoritarian_democracy
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		DPR = {
 			history = "DPR_DW_DESC"
-			ideology = neutrality
+			ideology = autoritarian_democracy
 			ideas = {
 			}
 			focuses = {
-			}	
+			}
 		}
-		"LPR"={
+
+		LPR = {
 			history = "LPR_DW_DESC"
-			ideology = neutrality
+			ideology = autoritarian_democracy
 			ideas = {
 			}
 			focuses = {
-			}	
+			}
 		}
 
 		#Minor countries
-        "POL"={
-			history = "POL_EC_DESC"
-			ideology = neutrality
+
+		POL = {
+			history = "POL_DW_DESC"
+			ideology = liberal_democracy
 			minor = yes
 			ideas = {
-				POL_catholic_nation
-				POL_fast_es_eco
-				POL_political_polarization
 			}
 			focuses = {
-			}	
+			}
 		}
-		"LIT"={
+		LIT = {
 			history = "LIT_DW_DESC"
-			ideology = neutrality
+			ideology = liberal_democracy
 			minor = yes
 			ideas = {
 			}
 			focuses = {
-			}	
+			}
 		}
-		"ROM"={
+		ROM = {
 			history = "ROM_DW_DESC"
-			ideology = neutrality
+			ideology = liberal_democracy
 			minor = yes
 			ideas = {
 			}
 			focuses = {
-			}	
+			}
 		}
-		"MOL"={
+		MOL = {
 			history = "MOL_DW_DESC"
-			ideology = neutrality
+			ideology = liberal_democracy
 			minor = yes
 			ideas = {
 			}
 			focuses = {
-			}	
+			}
 		}
-		"HUN"={
+		CRI = {
+			history = "CRI_DW_DESC"
+			ideology = liberal_democracy
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		HUN = {
 			history = "HUN_DW_DESC"
-			ideology = neutrality
+			ideology = liberal_democracy
 			minor = yes
 			ideas = {
 			}
 			focuses = {
-			}	
-		}
-		"SER"={
-			history = "SER_DW_DESC"
-			ideology = neutrality
-			minor = yes
-			ideas = {
 			}
-			focuses = {
-			}	
 		}
-		"BLR"={
+		BLR = {
 			history = "BLR_DW_DESC"
-			ideology = neutrality
+			ideology = autoritarian_democracy
 			minor = yes
 			ideas = {
-				BEL_autocratic_rule
-				BEL_dependence_on_russia
-				BEL_weak_economy
 			}
 			focuses = {
-			}	
+			}
 		}
-		"TMR"={
+		TMR = {
 			history = "TMR_DW_DESC"
-			ideology = neutrality
+			ideology = communism
 			minor = yes
 			ideas = {
 			}
 			focuses = {
-			}	
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345
 		}
 	}
 }
