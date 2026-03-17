@@ -1,158 +1,178 @@
-UKR_ukraine_army_idea = { #NATIONAL SPIRIT
-	enable = { always = yes }
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#       attacker_modifier = no  # if yes this modifier will also be read in combat for 
+#                               # people engaging in the combat even if not in the state
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states, unit leaders or special projects
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
 
-	icon = GFX_idea_UKR_ukraine_army
-
-	army_org_factor = UKR_AFU_army_org_factor #-0.45
-	army_attack_factor = UKR_AFU_army_attack_factor #-0.25
-	army_defence_factor = UKR_AFU_army_defence_factor #-0.25
-	army_org_regain = UKR_AFU_army_org_regain #-0.25
-	army_morale_factor = UKR_AFU_army_morale_factor #-0.25
-	army_speed_factor = UKR_AFU_army_speed_factor #-0.15
-	planning_speed = UKR_AFU_planning_speed #-0.1
-	breakthrough_factor = UKR_AFU_war_breakthrough_factor #-0.15
-	war_support_factor = UKR_AFU_war_support_factor #-0.15
-	conscription = UKR_AFU_conscription #-0.02
+sabotaged_resources = {
+	remove_trigger = { 
+		ROOT = {
+			has_resistance = no
+		}
+	}
 	
+	icon = GFX_modifiers_sabotaged_resource
+	
+	temporary_state_resource_oil = sabotaged_oil
+	temporary_state_resource_aluminium = sabotaged_aluminium
+	temporary_state_resource_rubber = sabotaged_rubber
+	temporary_state_resource_tungsten = sabotaged_tungsten
+	temporary_state_resource_steel = sabotaged_steel
+	temporary_state_resource_chromium = sabotaged_chromium
+	temporary_state_resource_coal = sabotaged_coal
 }
 
-UKR_oligarchs_idea = { #NATIONAL SPIRIT
+autonomous_state = {
 	enable = { always = yes }
 
-	icon = GFX_idea_UKR_oligarchs
-
-	political_power_gain  = UKR_Oligarchs_political_power_gain  #-0.45
-	consumer_goods_factor = UKR_Oligarchs_consumer_goods_factor  #-0.25
-	production_speed_buildings_factor = UKR_Oligarchs_production_speed_buildings_factor #-0.25
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.5
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+	remove_trigger = {
+		OWNER = { 
+			OR = {
+				original_tag = CAT 
+				original_tag = GLC 
+				original_tag = BAS 
+			}
+		}
+	}
 }
 
-UKR_ATO_idea = {
+semi_autonomous_state = {
 	enable = { always = yes }
 
-	icon = GFX_idea_UKR_oligarchs
-
-	pocket_penalty  = UKR_ATO_pocket_penalty  #-0.45
-	experience_loss_factor = UKR_ATO_experience_loss_factor #-0.15
+	icon = GFX_modifiers_sabotaged_resource
+	
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+	remove_trigger = {
+		OWNER = { 
+			OR = {
+				original_tag = CAT 
+				original_tag = GLC 
+				original_tag = BAS 
+			}
+		}
+	}
 }
 
-People_republic_ATO_idea = {
+dense_rural_infrastructure = { #State Modifier
 	enable = { always = yes }
+	remove_trigger = {
+		ROOT = {
+			infrastructure > 4
+		}
+	}
 
-	icon = GFX_idea_UKR_oligarchs
-
-	pocket_penalty  = People_republic_pocket_penalty  #-0.45
-	experience_loss_factor = People_republic_experience_loss_factor #-0.15
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	local_non_core_supply_impact_factor = 0.4
 }
 
-arisse_donbas_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+international_city = {
 	enable = { always = yes }
 
-	icon = GFX_idea_UKR_ukraine_army
-
-	army_org_factor = 0.10
-	army_attack_factor = 0.075
-	army_defence_factor = 0.15
-	army_org_regain = 0.075
-	army_morale_factor = 0.05
-	army_speed_factor = 0.15
-	supply_factor = 0.075
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -1
+	recruitable_population_factor = -1
+	local_factories = -1
+	disable_strategic_redeployment = 1
 }
 
-crimean_spring_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+international_city_2 = {
 	enable = { always = yes }
 
-	icon = GFX_idea_UKR_ukraine_army
-
-	army_speed_factor = 0.65
-	army_org_regain = 0.35
-	supply_factor = 0.15
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.75
+	recruitable_population_factor = -0.75
+	local_factories = -0.75
+	resistance_growth = 1.2
+	disable_strategic_redeployment = 1
 }
 
-donetsk_airport_battle_idea = { #DYNAMIC MODIFIER ON STATE
+international_city_3 = {
 	enable = { always = yes }
 
-	icon = GFX_idea_UKR_ukraine_army
-
-	army_morale_factor = 0.15
-	army_defence_factor = 0.15
-	army_org_regain = 0.35
-	supply_factor = 0.15
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.5
+	recruitable_population_factor = -0.5
+	local_factories = -0.5
+	resistance_growth = 0.6
+	compliance_gain = 0.1
+	disable_strategic_redeployment = 1
 }
 
-counter_offensive_ukraine_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+international_city_4 = {
 	enable = { always = yes }
 
-	icon = GFX_idea_UKR_ukraine_army
-
-	army_org_factor = 0.15
-	army_attack_factor = 0.125
-	army_org_regain = 0.075
-	army_speed_factor = 0.075
-	army_morale_factor = 0.05
-	supply_factor = 0.045
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.25
+	recruitable_population_factor = -0.25
+	local_factories = -0.25
+	resistance_growth = 0.2
+	compliance_gain = 0.4
+	disable_strategic_redeployment = 1
 }
 
-DPR_donetsk_castle_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+unity_propaganda = {
 	enable = { always = yes }
 
-	icon = GFX_idea_UKR_ukraine_army
-
-	army_org_factor = 0.15
-	army_org_regain = 0.075
-	army_defence_factor = 0.15
-	army_speed_factor = 0.075
-	army_morale_factor = 0.05
-	supply_factor = 0.15
+	icon = GFX_modifiers_sabotaged_resource
+	
+	compliance_gain = 0.7
 }
 
-DPR_attack_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+military_appeasement = {
 	enable = { always = yes }
 
-	icon = GFX_idea_UKR_ukraine_army
-
-	army_org_factor = 0.15
-	army_attack_factor = 0.2
-	army_org_regain = 0.075
-	army_defence_factor = 0.15
-	army_speed_factor = 0.075
-	army_morale_factor = 0.05
-	supply_factor = 0.15
+	icon = GFX_modifiers_sabotaged_resource
+	
+	resistance_growth = -0.5
 }
 
-generic_retreat_from_region_idea = { #DYNAMIC MODIFIER ON STATE
-	enable = { always = yes }
+unplanned_offensive = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
 
-	icon = GFX_idea_UKR_ukraine_army
-
-	army_speed_factor = 0.075
-	army_org_factor = -0.35
-	army_attack_factor = -0.2
-	army_org_regain = -0.075
-	army_defence_factor = -0.15
-	army_morale_factor = -0.05
+	air_cas_present_factor = -0.75
+	army_attack_factor = -0.9
+	army_speed_factor = -0.75
+	ground_attack_factor = -0.75
+	local_org_regain = -0.5
 }
 
-LPR_luhansk_castle_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
-	enable = { always = yes }
-
-	icon = GFX_idea_UKR_ukraine_army
-
-	army_org_factor = 0.15
-	army_org_regain = 0.075
-	army_defence_factor = 0.15
-	army_speed_factor = 0.075
-	army_morale_factor = 0.05
-	supply_factor = 0.15
-}
-
-prorussian_rallies_region_idea = { #DYNAMIC MODIFIER ON STATE
-	enable = { always = yes }
-
-	icon = GFX_idea_UKR_ukraine_army
-
-	army_speed_factor = -0.95
-	army_org_factor = -0.35
-	army_attack_factor = -0.2
-	army_org_regain = -0.075
-	army_morale_factor = -0.05
+malaria = {
+	icon = GFX_modifiers_SOV_defend_moscow
+	
 }
