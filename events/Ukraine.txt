@@ -3403,7 +3403,7 @@ country_event = {
 	id = ukraine.108
 	title = ukraine.108.t
 	desc = ukraine.108.d
-	picture = GFX_Report_event_threat_of_default_picture
+	picture = GFX_Report_event_debaltsevo_soldier_picture
 
 	is_triggered_only = yes
 
@@ -3416,6 +3416,9 @@ country_event = {
 		add_political_power = -10
 		white_peace = DPR
 		white_peace = LPR
+		white_peace = SDR
+		white_peace = NDR
+		white_peace = KPR
 		hidden_effect = {
 			news_event = {
 				id = news_events.26
