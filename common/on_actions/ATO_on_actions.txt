@@ -1,54 +1,54 @@
 on_actions = {
 
-    on_weekly = {
-	    effect = {
-		    if = {
-			    limit = {
-				    has_global_flag = Start_Of_ATO
-				    tag = UKR
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = Start_Of_ATO
+					tag = UKR
 					date > 2014.4.4
-				    surrender_progress > 0.29
+					surrender_progress > 0.29
 					NOT = {
 						526 = {
-							is_controlled_by UKR
+							is_controlled_by = UKR
 						}
 						264 = {
-							is_controlled_by UKR
+							is_controlled_by = UKR
 						}
 						441 = {
-							is_controlled_by UKR
+							is_controlled_by = UKR
 						}
 						353 = {
-							is_controlled_by UKR
+							is_controlled_by = UKR
 						}
 						327 = {
-							is_controlled_by UKR
+							is_controlled_by = UKR
 						}
 						359 = {
-							is_controlled_by UKR
+							is_controlled_by = UKR
 						}	
 						342 = {
-							is_controlled_by UKR
+							is_controlled_by = UKR
 						}	
 						307 = {
-							is_controlled_by UKR
+							is_controlled_by = UKR
 						}	
 						304 = {
-							is_controlled_by UKR
+							is_controlled_by = UKR
 						}
 						297 = {
-							is_controlled_by UKR
+							is_controlled_by = UKR
 						}
 						271 = {
-							is_controlled_by UKR
+							is_controlled_by = UKR
 						}	
 						has_global_flag = People_republic_victory																																
 					}
-			    }
-			    country_event = { id = ukraine.108 }
+				}
+				country_event = { id = ukraine.108 }
 				set_global_flag = People_republic_victory
-		    }
-	    }
+			}
+		}
 	}
 }
 

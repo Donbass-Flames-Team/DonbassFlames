@@ -6,8 +6,6 @@ on_actions = {
 			###################
 			DF_economy_setup = yes
 			set_global_flag = add_remove_cash_flag
-
-
 		}
 	}
 	on_weekly = {
@@ -28,9 +26,9 @@ on_actions = {
 					has_idea = civilian_economy
 				}
 				add_to_variable = {
-				    var = inflation
-				    value = 0.03
-			    }
+					var = inflation
+					value = 0.03
+				}
 				#add_to_variable = { GEN_inflation_political_power_gain = -0.025 }
 				add_to_variable = { GEN_inflation_consumer_goods_factor = 0.01 }
 			}
@@ -41,9 +39,9 @@ on_actions = {
 					has_idea = low_economic_mobilisation
 				}
 				add_to_variable = {
-				    var = inflation
-				    value = 0.06
-			    }
+					var = inflation
+					value = 0.06
+				}
 				#add_to_variable = { GEN_inflation_political_power_gain = -0.03 }
 				add_to_variable = { GEN_inflation_consumer_goods_factor = 0.02 }
 			}
@@ -54,9 +52,9 @@ on_actions = {
 					has_idea = partial_economic_mobilisation
 				}
 				add_to_variable = {
-				    var = inflation
-				    value = 0.09
-			    }
+					var = inflation
+					value = 0.09
+				}
 			}
 		}
 		effect = {
@@ -65,9 +63,9 @@ on_actions = {
 					has_idea = war_economy
 				}
 				add_to_variable = {
-				    var = inflation
-				    value = 0.12
-			    }
+					var = inflation
+					value = 0.12
+				}
 				#add_to_variable = { GEN_inflation_political_power_gain = -0.09 }
 				add_to_variable = { GEN_inflation_consumer_goods_factor = 0.01 }
 			}
@@ -78,9 +76,9 @@ on_actions = {
 					has_idea = UKR_helpless_government
 				}
 				add_to_variable = {
-				    var = inflation
-				    value = 0.08
-			    }
+					var = inflation
+					value = 0.08
+				}
 				#add_to_variable = { GEN_inflation_political_power_gain = -0.07 } 
 				add_to_variable = { GEN_inflation_consumer_goods_factor = 0.01 }
 			}
@@ -91,9 +89,9 @@ on_actions = {
 					has_idea = UKR_disorderly_government
 				}
 				add_to_variable = {
-				    var = inflation
-				    value = 0.05
-			    }
+					var = inflation
+					value = 0.05
+				}
 				#add_to_variable = { GEN_inflation_political_power_gain = -0.04 }
 				add_to_variable = { GEN_inflation_consumer_goods_factor = 0.01 }
 			}
@@ -104,9 +102,9 @@ on_actions = {
 					has_war = yes
 				}
 				add_to_variable = {
-				    var = inflation
-				    value = 0.04
-			    }
+					var = inflation
+					value = 0.04
+				}
 				#add_to_variable = { GEN_inflation_political_power_gain = -0.03 }
 				add_to_variable = { GEN_inflation_consumer_goods_factor = 0.02 }
 			}
@@ -117,9 +115,9 @@ on_actions = {
 					has_idea = RUS_western_sanctions
 				}
 				add_to_variable = {
-				    var = inflation
-				    value = 0.04
-			    }
+					var = inflation
+					value = 0.04
+				}
 				#add_to_variable = { GEN_inflation_political_power_gain = -0.03 }
 				add_to_variable = { GEN_inflation_consumer_goods_factor = 0.01 }
 			}
@@ -130,9 +128,9 @@ on_actions = {
 					has_idea = RUS_western_sanctions_2
 				}
 				add_to_variable = {
-				    var = inflation
-				    value = 0.07
-			    }
+					var = inflation
+					value = 0.07
+				}
 				#add_to_variable = { GEN_inflation_political_power_gain = -0.06 }
 				add_to_variable = { GEN_inflation_consumer_goods_factor = 0.02 }
 			}
@@ -146,50 +144,49 @@ on_actions = {
 			###################
 			#### INFLATION ####
 			###################
-			add_to_variable = { var = year_inflation value = var:temp_inflation }   
+			add_to_variable = { var = year_inflation value = var:temp_inflation }
 			clear_variable = temp_inflation
 			set_variable = {
 				var = inflation
 				value = 0
 			}
-			set_variable = { GEN_inflation_political_power_gain = 0.0 }		
-			set_variable = { GEN_inflation_consumer_goods_factor = 0.0 }		
+			set_variable = { GEN_inflation_political_power_gain = 0.0 }
+			set_variable = { GEN_inflation_consumer_goods_factor = 0.0 }
 		}
 	}
 	on_weekly = {
 		effect = {
-		    if = {
-			limit = {
-				check_variable = {
-					var = cash
-					value = 0
-					compare = less_than
+			if = {
+				limit = {
+					check_variable = {
+						var = cash
+						value = 0
+						compare = less_than
+					}
 				}
-			}
-			set_temp_variable = { temp_debt = var:cash }       
-			multiply_variable = { var = temp_debt value = -1 } 
-			add_to_variable = { var = debt value = var:temp_debt } 
-			set_variable = { var = cash value = 1 }    
-			clear_variable = temp_debt     
-	        }	
+				set_temp_variable = { temp_debt = var:cash }
+				multiply_variable = { var = temp_debt value = -1 }
+				add_to_variable = { var = debt value = var:temp_debt }
+				set_variable = { var = cash value = 1 }
+				clear_variable = temp_debt
+			}	
 		}	
 	}
 	on_monthly = {
 		effect = {
-	        set_variable = {
-		        var = gdp_per_population
-		        value = var:gdp
-	        }
-	        divide_variable = {
-		        var = gdp_per_population
-	 	        value = ROOT.max_manpower_k
-	        }
-	        multiply_variable = {
-		        var = gdp_per_population
-		        value = 992.382
-	        }        
-	    }	
+			set_variable = {
+				var = gdp_per_population
+				value = var:gdp
+			}
+			divide_variable = {
+				var = gdp_per_population
+	 			value = ROOT.max_manpower_k
+			}
+			multiply_variable = {
+				var = gdp_per_population
+				value = 992.382
+			}		
+		}	
 	}
 
-	
 }
