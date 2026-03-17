@@ -18,12 +18,13 @@ recruit_character = viktor_orban
 		tech_support = 1
 		tech_engineers = 1
 		tech_recon = 1
-		toward_artilerry = 1
-		mass_assault = 1
+		toward_artilery = 1
 		fuel_silos = 1
 		synth_oil_experiments = 1
 		basic_train = 1
 	}
+
+	set_grand_doctrine = mass_assault
 
 	set_politics = {
 		ruling_party = liberal_democracy
