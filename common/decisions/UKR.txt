@@ -345,14 +345,14 @@ UKR_separatism_decision = {
 		fire_only_once = yes
 		available = {
 			NOT = { 
-				has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+				has_global_flag = UKR_yanukovich_after_overthrow_lpr_uprising
 			}
 		}
 		activation = {
-			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+			has_global_flag = UKR_yanukovich_after_overthrow_lpr_uprising
 		}
 		visible = {
-			has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+			has_global_flag = UKR_yanukovich_after_overthrow_lpr_uprising
 			original_tag = UKR
 		}
 		timeout_effect = {
@@ -361,9 +361,9 @@ UKR_separatism_decision = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+						has_global_flag = UKR_yanukovich_after_overthrow_lpr_uprising
 					}
-					clr_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+					clr_global_flag = UKR_yanukovich_after_overthrow_lpr_uprising
 				}
 				country_event = ukraine.3
 				set_country_flag = UKR_luhansk_uprised
