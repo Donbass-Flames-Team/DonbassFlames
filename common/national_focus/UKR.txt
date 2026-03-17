@@ -4450,6 +4450,10 @@ focus_tree = {
 					id = news_events.27
 					hours = 6
 				}
+				country_event = {
+					id = superevent.3
+					hours = 12
+				}
 				set_global_flag = Ukraine_victory_in_ATO
 				RUS = {
 					complete_national_focus = RUS_defeat_of_the_republics

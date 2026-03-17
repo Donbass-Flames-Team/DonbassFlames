@@ -12,6 +12,12 @@ scripted_gui = {
 			superevents_start_of_ato_visible = {
 				has_global_flag = Start_of_ATO_SP
 			}
+			superevents_separatist_victory_visible = {
+				has_global_flag = separatist_victory_SP
+			}
+			superevents_ukraine_victory_against_separatists_visible = {
+				has_global_flag = ukraine_victory_against_separatists_SP
+			}
 		}
 		
 		############
@@ -23,11 +29,20 @@ scripted_gui = {
 				clr_global_flag = Visbile_sp_events
 				
 				if = {
-					limit = {
-						has_global_flag = Start_of_ATO_SP
-					}
+					limit = { has_global_flag = Start_of_ATO_SP }
 					clr_global_flag = Start_of_ATO_SP
-				}		
+				}	
+				if = {
+					limit = { has_global_flag = separatist_victory_SP }
+					clr_global_flag = separatist_victory_SP
+				}
+				if = {
+					limit = { has_global_flag = ukraine_victory_against_separatists_SP }
+					clr_global_flag = ukraine_victory_against_separatists_SP
+				}				
+				
+				
+
 			}
 		}
 	}

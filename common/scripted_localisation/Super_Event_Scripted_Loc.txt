@@ -10,15 +10,15 @@ defined_text = {
     }
      text = { 
 		trigger = {
-			has_global_flag = SOV_end_of_ussr_supervent_flag
+			has_global_flag = separatist_victory_SP
 		}
-		localization_key = "sp_event_SOV_End_Of_The_Ussr_title"
+		localization_key = "sp_event_separatist_victory_title"
 	}
     text = { 
 		trigger = {
-			has_global_flag = RAS_black_october_supervent_flag
+			has_global_flag = ukraine_victory_against_separatists_SP
 		}
-		localization_key = "sp_event_RAS_Black_October_title"
+		localization_key = "sp_event_ukraine_victory_against_separatists_title"
 	} 
     text = { 
 		trigger = {
@@ -40,15 +40,15 @@ defined_text = {
 	}
     text = { 
 		trigger = {
-			has_global_flag = SOV_end_of_ussr_supervent_flag
+			has_global_flag = separatist_victory_SP
 		}
-		localization_key = "sp_event_SOV_End_Of_The_Ussr_quote"
+		localization_key = "sp_event_separatist_victory_quote"
 	}
     text = { 
 		trigger = {
-			has_global_flag = RAS_black_october_supervent_flag
+			has_global_flag = ukraine_victory_against_separatists_SP
 		}
-		localization_key = "sp_event_RAS_Black_October_quote"
+		localization_key = "sp_event_ukraine_victory_against_separatists_quote"
 	}
     text = { 
 		trigger = {
@@ -69,15 +69,15 @@ defined_text = {
 	}
     text = { 
 		trigger = {
-			has_global_flag = SOV_end_of_ussr_supervent_flag
+			has_global_flag = separatist_victory_SP
 		}
-		localization_key = "sp_event_SOV_End_Of_The_Ussr_remark"
+		localization_key = "sp_event_separatist_victory_remark"
 	}
     text = { 
 		trigger = {
-			has_global_flag = RAS_black_october_supervent_flag
+			has_global_flag = ukraine_victory_against_separatists_SP
 		}
-		localization_key = "sp_event_RAS_Black_October_remark"
+		localization_key = "sp_event_ukraine_victory_against_separatists_remark"
 	}
     text = { 
 		trigger = {

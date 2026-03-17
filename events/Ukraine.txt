@@ -3417,11 +3417,15 @@ country_event = {
 		white_peace = DPR
 		white_peace = LPR
 		hidden_effect = {
+			news_event = {
+				id = news_events.26
+				hours = 3
+			}
+			country_event = {
+				id = superevent.2
+				hours = 12
+			}
 			LPR = {
-				news_event = {
-					id = news_events.26
-					hours = 6
-				}
 				transfer_state = 406
 				transfer_state = 351
 				transfer_state = 387
