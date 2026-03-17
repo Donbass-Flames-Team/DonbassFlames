@@ -599,8 +599,11 @@ focus = {
         x = 12
         y = 16
         cost = 1
-        prerequisite = { focus = TMR_opr_open_confrontation }
-        prerequisite = { focus = TMR_war_choice_after_failure }
+prerequisite = {
+    OR = {
+        focus = TMR_opr_open_confrontation
+        focus = TMR_war_choice_after_failure
+    }
         available = {
             NOT = { has_country_flag = TMR_kremlin_approved }
             NOT = { has_country_flag = TMR_kremlin_denied }
