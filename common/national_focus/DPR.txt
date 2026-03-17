@@ -249,6 +249,12 @@ focus_tree = {
                 idea = DPR_roadblock_idea
 				days = 180
             }
+			hidden_effect = {
+				country_event = {
+					id = DPR.26
+					days = 15
+				}
+			}
 		}
 	}
 

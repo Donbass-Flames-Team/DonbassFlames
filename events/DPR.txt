@@ -585,3 +585,91 @@ country_event = {
 		}
 	}
 }
+
+#Жека Васильич
+country_event = {
+	id = DPR.26
+	title = DPR.26.t
+	desc = DPR.26.d
+	picture = GFX_Report_event_vaislyev_2_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.26.a
+	}
+	option = {
+		name = DPR.26.b
+
+	}	
+}
+
+#Жека Васильич
+country_event = {
+	id = DPR.26
+	title = DPR.26.t
+	desc = DPR.26.d
+	picture = GFX_Report_event_vaislyev_2_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.26.a
+	}
+	option = {
+		name = DPR.26.b
+		custom_effect_tooltip = Zeka_became_general_tt
+		set_country_flag = Zeka_became_general
+        hidden_effect = {
+			country_event = {
+				id = DPR.27
+				days = 15
+			}
+		}
+	}	
+}
+
+#Жека продвигается оп служе
+country_event = {
+	id = DPR.27
+	title = DPR.27.t
+	desc = DPR.27.d
+	picture = GFX_Report_event_vaislyev_earn_money_picture_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.27.a
+	}
+	option = {
+		name = DPR.27.b
+		retire_country_leader = yes
+		add_country_leader_role = {
+            character = zheka_vasilievich
+            promote_leader = yes
+            country_leader = {
+                ideology = autoritarian_democracy
+                expire = "2045.1.1.1"
+            } 
+        }
+		hidden_effect = {
+		    promote_character = {
+                character = zheka_vasilievich
+                ideology = autoritarian_democracy
+            }
+		}
+        
+	}	
+}

@@ -38,6 +38,25 @@ characters = {
 		}
 	}
 
+	arsen_motorola = {
+		name = arsen_motorola
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_arsen_motorola"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+
+
 	vladimir_makovich = {
 		name = vladimir_makovich
 		portraits = {
@@ -114,6 +133,13 @@ characters = {
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+			visible = {
+				has_country_flag = Zeka_became_general
+			}
 		}
 	}
 
