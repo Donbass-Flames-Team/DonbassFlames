@@ -950,6 +950,13 @@ country_event = {
 			mission = UKR_yanukovich_overthrow
 			days = -15
 		}
+		custom_effect_tooltip = UKR_minus_legitimacy_of_the_power_text_tt
+		hidden_effect = {
+            subtract_from_variable = {
+				var = UKR_legitimacy_of_central_power_value
+				value = 2
+			}
+		}
 	}
 }
 
@@ -993,6 +1000,13 @@ country_event = {
 		name = ukraine.19.a
 		add_stability = -0.025
 		custom_effect_tooltip = UKR_add_radicalisation_of_maidan  
+		custom_effect_tooltip = UKR_minus_legitimacy_of_the_power_text_tt
+		hidden_effect = {
+            subtract_from_variable = {
+				var = UKR_legitimacy_of_central_power_value
+				value = 2
+			}
+		}
 	}
 }
 
@@ -1011,7 +1025,7 @@ country_event = {
 	}
 }
 
-# Choose candidate to president 2014
+# Elections soon
 country_event = {
 	id = ukraine.21
 	title = ukraine.21.t
@@ -1030,16 +1044,6 @@ country_event = {
 			}
 		}
 	}
-
-	#option = {
-	#	name = ukraine.21.b
-	#	set_country_flag = UKRTimoshenkoPresident2014_choosed			
-	#}
-
-	#option = {
-	#	name = ukraine.21.c
-	#	set_country_flag = UKROlegLyashkoPresident2014_choosed			
-	#}
 } 
 
 # Yanukovich in donetsk
@@ -1733,6 +1737,13 @@ country_event = {
 
 	option = {
 		name = ukraine.42.a
+		custom_effect_tooltip = UKR_minus_legitimacy_of_the_power_text_tt
+		hidden_effect = {
+            subtract_from_variable = {
+				var = UKR_legitimacy_of_central_power_value
+				value = 2
+			}
+		}
 	}
 }
 
@@ -1771,6 +1782,14 @@ country_event = {
 		add_days_mission_timeout = {
 			mission = UKR_yanukovich_overthrow
 			days = 2
+		}
+		add_political_power = -25
+		custom_effect_tooltip = UKR_minus_legitimacy_of_the_power_text_tt
+		hidden_effect = {
+            subtract_from_variable = {
+				var = UKR_legitimacy_of_central_power_value
+				value = 2
+			}
 		}
 	}
 }
@@ -2599,6 +2618,7 @@ country_event = {
 				add_state_core = 650
 				add_state_core = 527
 				add_state_core = 649
+				add_ideas = SDR_weak_organization
 			}
 			SDR = {
 				declare_war_on = {
@@ -3245,6 +3265,13 @@ country_event = {
 	option = {
 		name = ukraine.101.a	
 		add_stability = -0.01
+		custom_effect_tooltip = UKR_minus_legitimacy_of_the_power_text_tt
+		hidden_effect = {
+            subtract_from_variable = {
+				var = UKR_legitimacy_of_central_power_value
+				value = 2
+			}
+		}
 	}
 }
 
@@ -3263,7 +3290,14 @@ country_event = {
 
 	option = {
 		name = ukraine.102.a	
-		add_stability = 0.025
+		add_stability = 0.035
+		custom_effect_tooltip = UKR_minus_legitimacy_of_the_power_text_tt
+		hidden_effect = {
+            subtract_from_variable = {
+				var = UKR_legitimacy_of_central_power_value
+				value = 3
+			}
+		}
 	}
 }
 
@@ -3283,6 +3317,7 @@ country_event = {
 	option = {
 		name = ukraine.103.a	
 		add_political_power = 25
+		custom_effect_tooltip = UKR_plus_legitimacy_of_the_power_text_tt
 	}
 }
 
@@ -3303,5 +3338,62 @@ country_event = {
 		name = ukraine.104.a
 		add_stability = -0.01	
 		add_political_power = -5
+	}
+}
+
+# Расформирование Беркута
+country_event = {
+	id = ukraine.105
+	title = ukraine.105.t
+	desc = ukraine.105.d
+	picture = GFX_Report_event_berkut_pic_picture_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.105.a
+		add_stability = 0.01	
+	}
+}
+
+# Повышение налогов
+country_event = {
+	id = ukraine.106
+	title = ukraine.106.t
+	desc = ukraine.106.d
+	picture = GFX_Report_event_ukranian_parlamient_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.106.a
+		add_stability = -0.045
+	}
+}
+
+# Угроза дефолта
+country_event = {
+	id = ukraine.107
+	title = ukraine.107.t
+	desc = ukraine.107.d
+	picture = GFX_Report_event_threat_of_default_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.107.a
+		add_political_power = -10
 	}
 }

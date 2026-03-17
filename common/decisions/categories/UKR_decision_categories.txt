@@ -59,6 +59,23 @@ UKR_parlamient_decision = {
 	visible_when_empty = yes
 }
 
+UKR_decisions_of_the_transitional_government = {
+
+	priority = 84
+	
+	icon = GFX_decision_UKR_verkhovna_rada_icon
+	has_completed_focus = UKR_adoption_of_new_laws
+	
+	allowed = {
+		original_tag = UKR 
+	}
+	#picture = GFX_decision_UKR_separatism
+
+	visible = {
+        tag = UKR
+	}
+}
+
 UKR_maidan_decision = {
 
 	priority = 105

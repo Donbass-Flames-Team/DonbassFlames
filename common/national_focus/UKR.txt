@@ -1196,7 +1196,7 @@ focus_tree = {
 			}
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
-				days = 5
+				days = 4
 			}
 			add_stability = 0.025
 		}
@@ -1585,6 +1585,12 @@ focus_tree = {
 	        	picture = gfx/leaders/UKR/Turchinov.dds
 		        traits = {}
 	        }
+			hidden_effect = {
+				country_event = {
+					id = ukraine.107
+					days = 1
+				}
+			}
 		}
 	}
 
@@ -1593,9 +1599,9 @@ focus_tree = {
 		icon = GFX_focus_UKR_government_in_anarchy
 		cost = 0.3
 		x = -1
-		y = 1
+		y = 2
 
-		prerequisite = { focus = UKR_government_in_anarchy }
+		prerequisite = { focus = UKR_release_political_prisoners_from_prisons }
 		relative_position_id = UKR_government_in_anarchy
 
 		cancel_if_invalid = yes
@@ -1724,9 +1730,9 @@ focus_tree = {
 		icon = GFX_focus_UKR_government_in_anarchy
 		cost = 0.2
 		x = -1
-		y = 2
+		y = 1
 
-		prerequisite = { focus = UKR_preparation_for_elections }
+		prerequisite = { focus = UKR_government_in_anarchy }
 		relative_position_id = UKR_government_in_anarchy
 
 		cancel_if_invalid = yes
@@ -1813,7 +1819,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		    add_stability = 0.25
+		    unlock_decision_category_tooltip = UKR_decisions_of_the_transitional_government
 			add_popularity = {
                 ideology = conservatism_democracy
                 popularity = 0.03
@@ -1833,7 +1839,7 @@ focus_tree = {
 		x = 11
 		y = 7
 
-		prerequisite = { focus = UKR_release_political_prisoners_from_prisons }
+		prerequisite = { focus = UKR_preparation_for_elections }
 		prerequisite = { focus = UKR_adoption_of_new_laws }
 
 		cancel_if_invalid = yes
@@ -2132,6 +2138,9 @@ focus_tree = {
 		bypass = {
 			has_global_flag = Start_Of_ATO
 		}
+		bypass_effect = {
+			country_event = ukraine.106
+		}
 
 		available = {
 
@@ -2139,6 +2148,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
+			country_event = ukraine.106
 			add_political_power = 250
 			custom_effect_tooltip = UKR_the_influence_of_oligarchs_will_increase_tt
 		}
@@ -3387,6 +3397,33 @@ focus_tree = {
 		available_if_capitulated = no
 
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
+		relative_position_id = UKR_poroshenko_victory
+
+		available = {
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_increase_millitary_spends
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 2
+		y = 2
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		prerequisite = { focus = UKR_economic_reforms }
 		relative_position_id = UKR_poroshenko_victory
 
 		available = {

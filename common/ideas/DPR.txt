@@ -235,6 +235,28 @@ ideas = {
                 army_speed_factor = -0.35
 			}
 		}
+
+		SDR_weak_organization = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_DPR_russian_spring
+			
+			modifier = {
+				army_attack_factor = -0.55
+				army_speed_factor = -0.35
+				army_defence_factor = -0.15
+				army_org_factor = -0.15
+				breakthrough_factor = -0.15
+			}
+		}
 	}
 
 }
