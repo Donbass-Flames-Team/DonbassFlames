@@ -706,7 +706,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
-			add_stability = -0.025
+			country_event = ukraine.104
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
 				days = 1

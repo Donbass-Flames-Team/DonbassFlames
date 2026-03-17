@@ -3285,3 +3285,23 @@ country_event = {
 		add_political_power = 25
 	}
 }
+
+# Попытка разгона майдана 11 декабря 2013
+country_event = {
+	id = ukraine.104
+	title = ukraine.104.t
+	desc = ukraine.104.d
+	picture = GFX_Report_event_maidan_11_december_2013_rally_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.104.a
+		add_stability = -0.01	
+		add_political_power = -5
+	}
+}
