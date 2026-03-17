@@ -112,7 +112,12 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = "GFX_idea_DPR_russian_spring"
+        name = "GFX_idea_DPR_russian_spring_idea"
+        texturefile = "gfx/interface/ideas/DPR/DPR_russian_spring.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_DPR_arrise_donbass_idea"
         texturefile = "gfx/interface/ideas/DPR/DPR_russian_spring.dds"
     }
 
@@ -132,7 +137,7 @@ spriteTypes = {
     }
 
     DPR_roadblock_idea = {
-        name = "GFX_idea_DPR_roadblocks"
+        name = "GFX_idea_DPR_roadblock_idea"
         texturefile = "gfx/interface/ideas/DPR/DPR_roadblocks.dds"
     }
 
