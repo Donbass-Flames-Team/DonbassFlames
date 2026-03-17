@@ -586,27 +586,6 @@ country_event = {
 	}
 }
 
-#Жека Васильич
-country_event = {
-	id = DPR.26
-	title = DPR.26.t
-	desc = DPR.26.d
-	picture = GFX_Report_event_vaislyev_2_picture
-	
-	is_triggered_only = yes
-
-	immediate = {
-		
-	}
-	
-	option = {
-		name = DPR.26.a
-	}
-	option = {
-		name = DPR.26.b
-
-	}	
-}
 
 #Жека Васильич
 country_event = {
@@ -626,18 +605,11 @@ country_event = {
 	}
 	option = {
 		name = DPR.26.b
-		custom_effect_tooltip = Zeka_became_general_tt
-		set_country_flag = Zeka_became_general
-        hidden_effect = {
-			country_event = {
-				id = DPR.27
-				days = 15
-			}
-		}
+		country_event = DPR.28
 	}	
 }
 
-#Жека продвигается оп служе
+#Жека продвигается оп службе
 country_event = {
 	id = DPR.27
 	title = DPR.27.t
@@ -671,5 +643,36 @@ country_event = {
             }
 		}
         
+	}	
+}
+
+#Интервью с жекой
+country_event = {
+	id = DPR.28
+	title = DPR.28.t
+	desc = DPR.28.d
+	picture = GFX_Report_event_vaislyev_is_scared_picture_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.28.a
+	}
+	option = {
+		name = DPR.28.b
+		custom_effect_tooltip = Zeka_became_general_tt
+		set_country_flag = Zeka_became_general
+        add_command_power = -30
+		add_political_power = -90
+		hidden_effect = {
+			country_event = {
+				id = DPR.27
+				days = 26
+			}
+		}
 	}	
 }
