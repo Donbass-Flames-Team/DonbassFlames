@@ -522,6 +522,12 @@ guiTypes = {
 			centerposition = yes
 			Orientation = CENTER
 		}
+
+		iconType = {
+		    name = "overlay"
+		    position = { x = -9 y = -28 }
+		    alwaystransparent = yes
+		}
 		
 		iconType = {
 			name = "historical"
@@ -763,8 +769,9 @@ guiTypes = {
 			borderSize = {x = 5 y = 0}
 			text = "Description"
 			maxWidth = 485
-			maxHeight = 70
+			maxHeight = 112
 			format = center
+			scrollbarType = standardtext_slider
 		}
 
 		iconType = {
@@ -929,8 +936,9 @@ guiTypes = {
 			borderSize = {x = 5 y = 0}
 			text = "Description"
 			maxWidth = 485
-			maxHeight = 70
+			maxHeight = 112
 			format = center
+			scrollbarType = standardtext_slider
 		}
 
 		iconType = {
