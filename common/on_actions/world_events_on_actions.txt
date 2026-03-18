@@ -2,231 +2,240 @@ on_actions = {
     on_weekly = {
         effect = {
 
-            # scotland (2014-09-18)
             if = {
-                limit = { date > 2014.9.18  NOT = { has_global_flag = we_scotref } }
-                set_global_flag = we_scotref
-                news_event = { id = world_events.1 hours = 6 }
-            }
+                limit = {
+                    has_game_rule = {
+                        rule = world_events_toggle
+                        option = WORLD_EVENTS_ON
+                    }
+                }
 
-            # ebola (2014-08-08)
-            if = {
-                limit = { date > 2014.8.8  NOT = { has_global_flag = we_ebola } }
-                set_global_flag = we_ebola
-                news_event = { id = world_events.2 hours = 6 }
-            }
+                # scotland (2014-09-18)
+                if = {
+                    limit = { date > 2014.9.18  NOT = { has_global_flag = we_scotref } }
+                    set_global_flag = we_scotref
+                    news_event = { id = world_events.1 hours = 6 }
+                }
 
-            # isil rise(2014-06-29)
-            if = {
-                limit = { date > 2014.6.29  NOT = { has_global_flag = we_isil } }
-                set_global_flag = we_isil
-                news_event = { id = world_events.3 hours = 6 }
-            }
+                # ebola (2014-08-08)
+                if = {
+                    limit = { date > 2014.8.8  NOT = { has_global_flag = we_ebola } }
+                    set_global_flag = we_ebola
+                    news_event = { id = world_events.2 hours = 6 }
+                }
 
-            # paris (2015-11-13)
-            if = {
-                limit = { date > 2015.11.13  NOT = { has_global_flag = we_paris15 } }
-                set_global_flag = we_paris15
-                news_event = { id = world_events.4 hours = 6 }
-            }
+                # isil rise(2014-06-29)
+                if = {
+                    limit = { date > 2014.6.29  NOT = { has_global_flag = we_isil } }
+                    set_global_flag = we_isil
+                    news_event = { id = world_events.3 hours = 6 }
+                }
 
-            # paris (2015-12-12)
-            if = {
-                limit = { date > 2015.12.12  NOT = { has_global_flag = we_cop21 } }
-                set_global_flag = we_cop21
-                news_event = { id = world_events.5 hours = 6 }
-            }
+                # paris (2015-11-13)
+                if = {
+                    limit = { date > 2015.11.13  NOT = { has_global_flag = we_paris15 } }
+                    set_global_flag = we_paris15
+                    news_event = { id = world_events.4 hours = 6 }
+                }
 
-            # europe migrant(2015-09-01)
-            if = {
-                limit = { date > 2015.9.1  NOT = { has_global_flag = we_migr } }
-                set_global_flag = we_migr
-                news_event = { id = world_events.6 hours = 6 }
-            }
+                # paris (2015-12-12)
+                if = {
+                    limit = { date > 2015.12.12  NOT = { has_global_flag = we_cop21 } }
+                    set_global_flag = we_cop21
+                    news_event = { id = world_events.5 hours = 6 }
+                }
 
-            # brexit (2016-06-23)
-            if = {
-                limit = { date > 2016.6.23  NOT = { has_global_flag = we_brexit } }
-                set_global_flag = we_brexit
-                news_event = { id = world_events.7 hours = 6 }
-            }
+                # europe migrant(2015-09-01)
+                if = {
+                    limit = { date > 2015.9.1  NOT = { has_global_flag = we_migr } }
+                    set_global_flag = we_migr
+                    news_event = { id = world_events.6 hours = 6 }
+                }
 
-            # turkey (2016-07-15)
-            if = {
-                limit = { date > 2016.7.15  NOT = { has_global_flag = we_trcoup } }
-                set_global_flag = we_trcoup
-                news_event = { id = world_events.8 hours = 6 }
-            }
+                # brexit (2016-06-23)
+                if = {
+                    limit = { date > 2016.6.23  NOT = { has_global_flag = we_brexit } }
+                    set_global_flag = we_brexit
+                    news_event = { id = world_events.7 hours = 6 }
+                }
 
-            # aleppo(2016-12-22)
-            if = {
-                limit = { date > 2016.12.22  NOT = { has_global_flag = we_aleppo } }
-                set_global_flag = we_aleppo
-                news_event = { id = world_events.9 hours = 6 }
-            }
+                # turkey (2016-07-15)
+                if = {
+                    limit = { date > 2016.7.15  NOT = { has_global_flag = we_trcoup } }
+                    set_global_flag = we_trcoup
+                    news_event = { id = world_events.8 hours = 6 }
+                }
 
-            # north korea (2017-09-03)
-            if = {
-                limit = { date > 2017.9.3  NOT = { has_global_flag = we_nk17 } }
-                set_global_flag = we_nk17
-                news_event = { id = world_events.10 hours = 6 }
-            }
+                # aleppo(2016-12-22)
+                if = {
+                    limit = { date > 2016.12.22  NOT = { has_global_flag = we_aleppo } }
+                    set_global_flag = we_aleppo
+                    news_event = { id = world_events.9 hours = 6 }
+                }
 
-            # spain(2017-10-01)
-            if = {
-                limit = { date > 2017.10.1  NOT = { has_global_flag = we_spain17 } }
-                set_global_flag = we_spain17
-                news_event = { id = world_events.11 hours = 6 }
-            }
+                # north korea (2017-09-03)
+                if = {
+                    limit = { date > 2017.9.3  NOT = { has_global_flag = we_nk17 } }
+                    set_global_flag = we_nk17
+                    news_event = { id = world_events.10 hours = 6 }
+                }
 
-            # yellow vests (2018-11-17)
-            if = {
-                limit = { date > 2018.11.17  NOT = { has_global_flag = we_gilets } }
-                set_global_flag = we_gilets
-                news_event = { id = world_events.12 hours = 6 }
-            }
+                # spain(2017-10-01)
+                if = {
+                    limit = { date > 2017.10.1  NOT = { has_global_flag = we_spain17 } }
+                    set_global_flag = we_spain17
+                    news_event = { id = world_events.11 hours = 6 }
+                }
 
-            # fifa russia(2018-06-14)
-            if = {
-                limit = { date > 2018.6.14  NOT = { has_global_flag = we_wc18 } }
-                set_global_flag = we_wc18
-                news_event = { id = world_events.13 hours = 6 }
-            }
+                # yellow vests (2018-11-17)
+                if = {
+                    limit = { date > 2018.11.17  NOT = { has_global_flag = we_gilets } }
+                    set_global_flag = we_gilets
+                    news_event = { id = world_events.12 hours = 6 }
+                }
 
-            # covid 1(2019-12-31)
-            if = {
-                limit = { date > 2019.12.31  NOT = { has_global_flag = we_covid0 } }
-                set_global_flag = we_covid0
-                news_event = { id = world_events.14 hours = 6 }
-            }
+                # fifa russia(2018-06-14)
+                if = {
+                    limit = { date > 2018.6.14  NOT = { has_global_flag = we_wc18 } }
+                    set_global_flag = we_wc18
+                    news_event = { id = world_events.13 hours = 6 }
+                }
 
-            # covid 2(2020-03-11)
-            if = {
-                limit = { date > 2020.3.11  NOT = { has_global_flag = we_covid } }
-                set_global_flag = we_covid
-                news_event = { id = world_events.15 hours = 6 }
-            }
+                # covid 1(2019-12-31)
+                if = {
+                    limit = { date > 2019.12.31  NOT = { has_global_flag = we_covid0 } }
+                    set_global_flag = we_covid0
+                    news_event = { id = world_events.14 hours = 6 }
+                }
 
-            # black lives matter (2020-05-26)
-            if = {
-                limit = { date > 2020.5.26  NOT = { has_global_flag = we_blm } }
-                set_global_flag = we_blm
-                news_event = { id = world_events.16 hours = 6 }
-            }
+                # covid 2(2020-03-11)
+                if = {
+                    limit = { date > 2020.3.11  NOT = { has_global_flag = we_covid } }
+                    set_global_flag = we_covid
+                    news_event = { id = world_events.15 hours = 6 }
+                }
 
-            # beirut (2020-08-04)
-            if = {
-                limit = { date > 2020.8.4  NOT = { has_global_flag = we_beirut } }
-                set_global_flag = we_beirut
-                news_event = { id = world_events.17 hours = 6 }
-            }
+                # black lives matter (2020-05-26)
+                if = {
+                    limit = { date > 2020.5.26  NOT = { has_global_flag = we_blm } }
+                    set_global_flag = we_blm
+                    news_event = { id = world_events.16 hours = 6 }
+                }
 
-            # nagorno-karabakh (2020-09-27)
-            if = {
-                limit = { date > 2020.9.27  NOT = { has_global_flag = we_karabakh } }
-                set_global_flag = we_karabakh
-                news_event = { id = world_events.18 hours = 6 }
-            }
+                # beirut (2020-08-04)
+                if = {
+                    limit = { date > 2020.8.4  NOT = { has_global_flag = we_beirut } }
+                    set_global_flag = we_beirut
+                    news_event = { id = world_events.17 hours = 6 }
+                }
 
-            # covid 3(2020-12-08)
-            if = {
-                limit = { date > 2020.12.8  NOT = { has_global_flag = we_vacc } }
-                set_global_flag = we_vacc
-                news_event = { id = world_events.19 hours = 6 }
-            }
+                # nagorno-karabakh (2020-09-27)
+                if = {
+                    limit = { date > 2020.9.27  NOT = { has_global_flag = we_karabakh } }
+                    set_global_flag = we_karabakh
+                    news_event = { id = world_events.18 hours = 6 }
+                }
 
-            # australia (2020-01-01)
-            if = {
-                limit = { date > 2020.1.1  NOT = { has_global_flag = we_ausfire } }
-                set_global_flag = we_ausfire
-                news_event = { id = world_events.20 hours = 6 }
-            }
+                # covid 3(2020-12-08)
+                if = {
+                    limit = { date > 2020.12.8  NOT = { has_global_flag = we_vacc } }
+                    set_global_flag = we_vacc
+                    news_event = { id = world_events.19 hours = 6 }
+                }
 
-            # capitol (2021-01-06)
-            if = {
-                limit = { date > 2021.1.6  NOT = { has_global_flag = we_capitol } }
-                set_global_flag = we_capitol
-                news_event = { id = world_events.21 hours = 6 }
-            }
+                # australia (2020-01-01)
+                if = {
+                    limit = { date > 2020.1.1  NOT = { has_global_flag = we_ausfire } }
+                    set_global_flag = we_ausfire
+                    news_event = { id = world_events.20 hours = 6 }
+                }
 
-            # afghanistan (2021-08-15)
-            if = {
-                limit = { date > 2021.8.15  NOT = { has_global_flag = we_afghan } }
-                set_global_flag = we_afghan
-                news_event = { id = world_events.22 hours = 6 }
-            }
+                # capitol (2021-01-06)
+                if = {
+                    limit = { date > 2021.1.6  NOT = { has_global_flag = we_capitol } }
+                    set_global_flag = we_capitol
+                    news_event = { id = world_events.21 hours = 6 }
+                }
 
-            # covid 4(2021-07-01)
-            if = {
-                limit = { date > 2021.7.1  NOT = { has_global_flag = we_covid21 } }
-                set_global_flag = we_covid21
-                news_event = { id = world_events.23 hours = 6 }
-            }
+                # afghanistan (2021-08-15)
+                if = {
+                    limit = { date > 2021.8.15  NOT = { has_global_flag = we_afghan } }
+                    set_global_flag = we_afghan
+                    news_event = { id = world_events.22 hours = 6 }
+                }
 
-            # suez canal (2021-03-29)
-            if = {
-                limit = { date > 2021.3.29  NOT = { has_global_flag = we_suez } }
-                set_global_flag = we_suez
-                news_event = { id = world_events.24 hours = 6 }
-            }
+                # covid 4(2021-07-01)
+                if = {
+                    limit = { date > 2021.7.1  NOT = { has_global_flag = we_covid21 } }
+                    set_global_flag = we_covid21
+                    news_event = { id = world_events.23 hours = 6 }
+                }
 
-            # pegasus (2021-07-18)
-            if = {
-                limit = { date > 2021.7.18  NOT = { has_global_flag = we_pegasus } }
-                set_global_flag = we_pegasus
-                news_event = { id = world_events.25 hours = 6 }
-            }
+                # suez canal (2021-03-29)
+                if = {
+                    limit = { date > 2021.3.29  NOT = { has_global_flag = we_suez } }
+                    set_global_flag = we_suez
+                    news_event = { id = world_events.24 hours = 6 }
+                }
 
-            # elizabeth (2022-09-08)
-            if = {
-                limit = { date > 2022.9.8  NOT = { has_global_flag = we_qe2 } }
-                set_global_flag = we_qe2
-                news_event = { id = world_events.26 hours = 6 }
-            }
+                # pegasus (2021-07-18)
+                if = {
+                    limit = { date > 2021.7.18  NOT = { has_global_flag = we_pegasus } }
+                    set_global_flag = we_pegasus
+                    news_event = { id = world_events.25 hours = 6 }
+                }
 
-            # fifa qatar (2022-11-20)
-            if = {
-                limit = { date > 2022.11.20  NOT = { has_global_flag = we_wc22 } }
-                set_global_flag = we_wc22
-                news_event = { id = world_events.27 hours = 6 }
-            }
+                # elizabeth (2022-09-08)
+                if = {
+                    limit = { date > 2022.9.8  NOT = { has_global_flag = we_qe2 } }
+                    set_global_flag = we_qe2
+                    news_event = { id = world_events.26 hours = 6 }
+                }
 
-            # israel–hamas (2023-10-07)
-            if = {
-                limit = { date > 2023.10.7  NOT = { has_global_flag = we_gaza } }
-                set_global_flag = we_gaza
-                news_event = { id = world_events.28 hours = 6 }
-            }
+                # fifa qatar (2022-11-20)
+                if = {
+                    limit = { date > 2022.11.20  NOT = { has_global_flag = we_wc22 } }
+                    set_global_flag = we_wc22
+                    news_event = { id = world_events.27 hours = 6 }
+                }
 
-            # turkey-syria (2023-02-06)
-            if = {
-                limit = { date > 2023.2.6  NOT = { has_global_flag = we_eq23 } }
-                set_global_flag = we_eq23
-                news_event = { id = world_events.29 hours = 6 }
-            }
+                # israel–hamas (2023-10-07)
+                if = {
+                    limit = { date > 2023.10.7  NOT = { has_global_flag = we_gaza } }
+                    set_global_flag = we_gaza
+                    news_event = { id = world_events.28 hours = 6 }
+                }
 
-            # AI (2023-03-14)
-            if = {
-                limit = { date > 2023.3.14  NOT = { has_global_flag = we_genai } }
-                set_global_flag = we_genai
-                news_event = { id = world_events.30 hours = 6 }
-            }
+                # turkey-syria (2023-02-06)
+                if = {
+                    limit = { date > 2023.2.6  NOT = { has_global_flag = we_eq23 } }
+                    set_global_flag = we_eq23
+                    news_event = { id = world_events.29 hours = 6 }
+                }
 
-            # usa elections
-            if = {
-                limit = { date > 2017.1.20  NOT = { has_global_flag = we_us17 } }
-                set_global_flag = we_us17
-                news_event = { id = world_events.31 hours = 6 }
-            }
-            if = {
-                limit = { date > 2021.1.20  NOT = { has_global_flag = we_us21 } }
-                set_global_flag = we_us21
-                news_event = { id = world_events.32 hours = 6 }
-            }
-            if = {
-                limit = { date > 2025.1.20  NOT = { has_global_flag = we_us25 } }
-                set_global_flag = we_us25
-                news_event = { id = world_events.33 hours = 6 }
+                # AI (2023-03-14)
+                if = {
+                    limit = { date > 2023.3.14  NOT = { has_global_flag = we_genai } }
+                    set_global_flag = we_genai
+                    news_event = { id = world_events.30 hours = 6 }
+                }
+
+                # usa elections
+                if = {
+                    limit = { date > 2017.1.20  NOT = { has_global_flag = we_us17 } }
+                    set_global_flag = we_us17
+                    news_event = { id = world_events.31 hours = 6 }
+                }
+                if = {
+                    limit = { date > 2021.1.20  NOT = { has_global_flag = we_us21 } }
+                    set_global_flag = we_us21
+                    news_event = { id = world_events.32 hours = 6 }
+                }
+                if = {
+                    limit = { date > 2025.1.20  NOT = { has_global_flag = we_us25 } }
+                    set_global_flag = we_us25
+                    news_event = { id = world_events.33 hours = 6 }
+                }
             }
         }
     }
