@@ -414,3 +414,27 @@ country_event = {
 		}
 	}
 }
+
+#Победа народных республик
+country_event = {
+	id = russia.14
+	title = russia.14.t
+	desc = russia.14.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = RUS_People_republic_victory
+		}
+	}
+	
+	option = {
+		name = russia.14.a
+		add_political_power = 30
+		add_stability = 0.1
+		add_war_support = 0.05
+		complete_national_focus = RUS_victory_of_republics
+	}
+}
