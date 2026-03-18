@@ -1,4 +1,14 @@
 on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				country_event = {
+					id = Economic_events.2
+					days = 1
+				}
+			}
+		}
+	}
 	on_monthly = {
 		effect = {
 			###################

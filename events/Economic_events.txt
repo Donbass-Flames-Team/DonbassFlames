@@ -3,6 +3,7 @@
 ################
 
 add_namespace = Economic_events
+
 #Reset Year inflation
 country_event = {
 	id = Economic_events.1
@@ -33,10 +34,20 @@ country_event = {
 				value = 0
 			}
 		}
-        country_event = {
+		country_event = {
 			id = Economic_events.1
 			days = 365
 		}
 		
+	}
+}
+
+# Setup Economy Day 2
+country_event = {
+	id = Economic_events.2
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		DF_economy_setup = yes
 	}
 }
