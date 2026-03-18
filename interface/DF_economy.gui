@@ -138,7 +138,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "income_total_value"
-			position = { x = 280 y = 110 }
+			position = { x = 200 y = 110 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 45
@@ -162,7 +162,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "income_civ_value"
-			position = { x = 280 y = 150 }
+			position = { x = 200 y = 150 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 45
@@ -186,7 +186,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "income_mil_value"
-			position = { x = 280 y = 190 }
+			position = { x = 200 y = 190 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 45
@@ -210,7 +210,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "income_doc_value"
-			position = { x = 280 y = 230 }
+			position = { x = 200 y = 230 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 45
@@ -318,11 +318,11 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "education_expense_value"
-			position = { x = 555 y = 230 }
+			position = { x = 525 y = 230 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 45
-			maxHeight = 24
+			maxWidth = 300
+			maxHeight = 0
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "[?education_expense]"
@@ -350,6 +350,18 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "[?policing_expense]"
+		}
+
+		instantTextBoxType = {
+			name = "army_expense"
+			position = { x = 320 y = 300 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "army_expense"
 		}
 
 		iconType = {
@@ -410,6 +422,27 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "inflation_value"
+		}
+
+		instantTextBoxType = {
+			name = "debt_value"
+			position = { x = 320 y = 405 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 95
+			maxHeight = 24
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "debt_value"
+		}
+
+		buttonType = {
+			name = "central_bank_button"
+			spriteType = "GFX_cash_smol"
+			position = { x = 280 y = 410 }
+			clicksound = click_close
+			tooltip = cental_bank_tt
+			pdx_tooltip_delayed = cental_bank_tt2
 		}
 	}
 

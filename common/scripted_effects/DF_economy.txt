@@ -21,7 +21,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = mil_factories_income
-			value = 0.3
+			value = 0.035
 		}
 		if = {
 			limit = {
@@ -65,7 +65,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = civ_factories_income
-			value = 0.4
+			value = 0.045
 		}
 		if = {
 			limit = {
@@ -130,9 +130,13 @@ DF_economy_setup = {
 		}
 		divide_variable = {
 			var = healthcare_expense_show
-			value = 494
+			value = 10000
 		}
 		round_variable = healthcare_expense_show
+		multiply_variable = {
+			var = healthcare_expense_show
+			value = 2.3
+		}
 
 		set_variable = {
 			var = healthcare_expense_universal_health_care
@@ -226,9 +230,14 @@ DF_economy_setup = {
 		}
 		divide_variable = {
 			var = social_security_expense_show
-			value = 435
+			value = 5000
 		}
 		round_variable = social_security_expense_show
+
+		multiply_variable = {
+			var = social_security_expense_show
+			value = 2.5
+		}
 
 		set_variable = {
 			var = social_security_expense_welfare_state
@@ -297,7 +306,7 @@ DF_economy_setup = {
 				}
 			}
 		}
-		round_variable = social_security_expense
+		#round_variable = social_security_expense
 		if = {
 			limit = {
 				has_global_flag = add_remove_cash_flag
@@ -322,9 +331,13 @@ DF_economy_setup = {
 		}
 		divide_variable = {
 			var = education_expense_show
-			value = 890
-		}
+			value = 12000
+		}        		
 		round_variable = education_expense_show
+		multiply_variable = {
+			var = education_expense_show
+			value = 0.82
+		} 
 
 		set_variable = {
 			var = education_expense_free_universities
@@ -393,7 +406,7 @@ DF_economy_setup = {
 				}
 			}
 		}
-		round_variable = education_expense
+		#round_variable = education_expense
 		if = {
 			limit = {
 				has_global_flag = add_remove_cash_flag
@@ -408,6 +421,34 @@ DF_economy_setup = {
 			value = var:education_expense
 		}
 
+        #######################
+		###   ARMY SPENDS   ###
+		#######################
+
+		set_variable = {
+			var = army_spend_expense_show
+			value = ROOT.deployed_army_manpower_k
+		}
+		divide_variable = {
+			var = army_spend_expense_show
+			value = 4.5		
+		}
+
+	    multiply_variable = {
+		    var = army_spend_expense_show
+		    value = 10
+	    }
+	    round_variable = army_spend_expense_show
+	    divide_variable = {
+		    var = army_spend_expense_show
+		    value = 10
+	    }
+
+		add_to_variable = {
+			var = expense
+			value = var:army_spend_expense_show
+		}
+
 		################
 		### POLICING ###
 		################
@@ -418,9 +459,17 @@ DF_economy_setup = {
 		}
 		divide_variable = {
 			var = policing_expense_show
-			value = 700
+			value = 10000
 		}
-		round_variable = policing_expense_show
+	    multiply_variable = {
+		    var = policing
+		    value = 10
+	    }
+	    round_variable = policing
+	    divide_variable = {
+		    var = policing
+		    value = 10
+	    }
 
 		set_variable = {
 			var = policing_expense_police_state
@@ -489,7 +538,6 @@ DF_economy_setup = {
 				}
 			}
 		}
-		round_variable = policing_expense
 		if = {
 			limit = {
 				has_global_flag = add_remove_cash_flag
@@ -514,6 +562,7 @@ DF_economy_setup = {
 		var = cash
 		value = 10
 	}
+
 
 	###########
 	### GDP ###
@@ -573,7 +622,7 @@ DF_economy_setup = {
 	}
 	multiply_variable = {
 		var = gdp_per_population
-		value = 992.382
+		value = 1000000
 	}
 
 	###################
