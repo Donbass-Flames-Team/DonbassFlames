@@ -1912,9 +1912,9 @@ focus_tree = {
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 0.3
 		x = 0
-		y = 2
+		y = 3
 
-		prerequisite = { focus = UKR_army_review }
+		prerequisite = { focus = UKR_form_national_guardia }
 		relative_position_id = UKR_unrest_in_the_east
 
 		ai_will_do = {
@@ -1925,7 +1925,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-			bypass = {
+		bypass = {
 			has_global_flag = Start_Of_ATO
 		}
 
@@ -1939,6 +1939,38 @@ focus_tree = {
 			add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
 		    custom_effect_tooltip = UKR_support_of_the_volunteer_battalion_tt
 			custom_effect_tooltip = UKR_support_of_the_volunteers_tt
+		}
+	}
+
+	focus = {
+		id = UKR_form_national_guardia
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 0.3
+		x = 0
+		y = 2
+
+		prerequisite = { focus = UKR_army_review }
+		relative_position_id = UKR_unrest_in_the_east
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		bypass = {
+			has_global_flag = Start_Of_ATO
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
+		    country_event = ukraine.53
 		}
 	}
 
@@ -2159,7 +2191,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 0.5
 		x = 0
-		y = 2
+		y = 1
 
 		prerequisite = { focus = UKR_support_of_the_volunteer_battalion }
 		prerequisite = { focus = UKR_concessions_to_the_oligarchs }
@@ -2187,10 +2219,6 @@ focus_tree = {
 				mark_focus_tree_layout_dirty = yes
 				set_global_flag = Start_Of_ATO
 				set_global_flag = Donbas_war_1_escalation
-				country_event = {
-					id = ukraine.53
-					days = 7
-				}
 				country_event = {
 					id = ukraine.64
 					days = 3

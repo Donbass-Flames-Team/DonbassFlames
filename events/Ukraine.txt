@@ -3622,3 +3622,40 @@ country_event = {
 		add_stability = 0.01
 	}
 }
+
+# Игорь Коломойский дает 10к долларов за сепара
+country_event = {
+	id = ukraine.110
+	title = ukraine.110.t
+	desc = ukraine.110.d
+	picture = GFX_Report_event_threat_of_default_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.110.a
+		add_stability = 0.01
+		ai_chance = {
+			base = 2
+			modifier = {
+				is_historical_focus_on = yes
+				add = 100
+			}
+		}
+	}
+	option = {
+		name = ukraine.110.b
+		add_political_power = -30
+	}	
+	option = {
+		name = ukraine.110.c
+		add_political_power = -85
+		hidden_effect = {
+
+		}
+	}	
+}

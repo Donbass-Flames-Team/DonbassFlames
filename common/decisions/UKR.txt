@@ -829,7 +829,7 @@ UKR_decisions_of_the_transitional_government = {
 			factor = 135
 		}
 	}
-	UKR_disband_the_berkut_2014 = {
+	UKR_replace_governors = {
 		allowed = {
 			original_tag = UKR
 		}
@@ -845,10 +845,63 @@ UKR_decisions_of_the_transitional_government = {
 	    fire_only_once = yes
 		cost = 5
 		complete_effect = {
-			country_event = ukraine.105
+			subtract_from_variable = {
+                var = DPR_separatism_value
+                value = 5
+				tooltip = UKR_minus_separatism
+            } 
+			subtract_from_variable = {
+                var = HPR_separatism_value
+                value = 5
+            }	
+			subtract_from_variable = {
+                var = OPR_separatism_value
+                value = 5
+            }
+			subtract_from_variable = {
+                var = LPR_separatism_value
+                value = 5
+            }								
+			clamp_variable = {
+		        var = DPR_separatism_value
+		        min = 0
+		        max = 100
+	        }
+			hidden_effect = {
+				country_event = {
+					id = ukraine.110
+					days = 26
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 135
+		}
+	}
+	UKR_will_request_additional_powers = {
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			tag = UKR
+		}
+		visible = {
+			tag = UKR
+			has_completed_focus = UKR_adoption_of_new_laws
+			NOT = {
+			    has_completed_focus = UKR_preparation_for_elections
+			}
+		}
+		icon = GFX_decision_icon_of_Unknown_man
+		
+	    fire_only_once = yes
+		cost = 5
+		complete_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+
 		}
 	}
 }
