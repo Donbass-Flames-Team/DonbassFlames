@@ -345,14 +345,14 @@ UKR_separatism_decision = {
 		fire_only_once = yes
 		available = {
 			NOT = { 
-				has_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
+				has_global_flag = UKR_yanukovich_after_overthrow_lpr_uprising
 			}
 		}
 		activation = {
-			has_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
+			has_global_flag = UKR_yanukovich_after_overthrow_lpr_uprising
 		}
 		visible = {
-			has_global_flag = UKR_yanukovich_after_overthrow_opr_uprising
+			has_global_flag = UKR_yanukovich_after_overthrow_lpr_uprising
 			original_tag = UKR
 		}
 		timeout_effect = {
@@ -361,9 +361,9 @@ UKR_separatism_decision = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+						has_global_flag = UKR_yanukovich_after_overthrow_lpr_uprising
 					}
-					clr_global_flag = UKR_Yanukovich_After_Overthrow_Crisis_LPR
+					clr_global_flag = UKR_yanukovich_after_overthrow_lpr_uprising
 				}
 				country_event = ukraine.3
 				set_country_flag = UKR_luhansk_uprised
@@ -807,7 +807,29 @@ UKR_parlamient_decision = {
 }
 
 UKR_decisions_of_the_transitional_government = {
-	UKR_chose_candidate_elections_2014 = {
+	UKR_disband_the_berkut_2014 = {
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			tag = UKR
+		}
+		visible = {
+			tag = UKR
+			has_completed_focus = UKR_adoption_of_new_laws
+		}
+		icon = GFX_decision_icon_of_Unknown_man
+		
+	    fire_only_once = yes
+		cost = 5
+		complete_effect = {
+			country_event = ukraine.105
+		}
+		ai_will_do = {
+			factor = 135
+		}
+	}
+	UKR_disband_the_berkut_2014 = {
 		allowed = {
 			original_tag = UKR
 		}

@@ -1,50 +1,47 @@
 capital = 550
 
-2013.11.21 = {
-	add_ideas = {
-		limited_conscription
-		closed_economy
-		civilian_economy
-	}
-
-
-	set_technology = {
-		infantry_weapons = 1
-
-		atgm_weapons = 1
-		atgm_weapons1 = 1
-		atgl_weapons = 1
-		atgl_weapons_1 = 1
-		atgl_weapons_2 = 1
-		atgl_weapons_3 = 1
-		atgl_weapons_4 = 1
-		manpads_weapons = 1
-		manpads_weapons2 = 1
-		manpads_weapons3 = 1
-		mortar_weapons = 1
-		mortar_weapons1 = 1
-		mortar_weapons2 = 1
-		mortar_weapons3 = 1
-
-		tech_support = 1
-
-		toward_artilerry = 1
-		spau_artillery = 1
-		multiple_launch_rocket_system = 1
-	}
-
-	set_politics = {
-		ruling_party = autoritarian_democracy
-		last_election = "2011.12.30"
-		election_frequency = 48
-		elections_allowed = no
-	}
-
-	set_popularities = {
-		communism = 14
-		autoritarian_democracy = 77
-		liberal_democracy = 9
-	}
-
-	recruit_character = TMR_shevchyk
+add_ideas = {
+	limited_conscription
+	closed_economy
+	civilian_economy
 }
+
+set_technology = {
+	infantry_weapons = 1
+
+	atgm_weapons = 1
+	atgm_weapons1 = 1
+	atgl_weapons = 1
+	atgl_weapons_1 = 1
+	atgl_weapons_2 = 1
+	atgl_weapons_3 = 1
+	atgl_weapons_4 = 1
+	manpads_weapons = 1
+	manpads_weapons2 = 1
+	manpads_weapons3 = 1
+	mortar_weapons = 1
+	mortar_weapons1 = 1
+	mortar_weapons2 = 1
+	mortar_weapons3 = 1
+
+	tech_support = 1
+
+	toward_artilery = 1
+	spau_artillery = 1
+	multiple_launch_rocket_system = 1
+}
+
+set_politics = {
+	ruling_party = autoritarian_democracy
+	last_election = "2011.12.30"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 14
+	autoritarian_democracy = 77
+	liberal_democracy = 9
+}
+
+recruit_character = TMR_yevgeny_shevchuk

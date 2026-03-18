@@ -1,0 +1,158 @@
+UKR_ukraine_army_idea = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_org_factor = UKR_AFU_army_org_factor #-0.45
+	army_attack_factor = UKR_AFU_army_attack_factor #-0.25
+	army_defence_factor = UKR_AFU_army_defence_factor #-0.25
+	army_org_regain = UKR_AFU_army_org_regain #-0.25
+	army_morale_factor = UKR_AFU_army_morale_factor #-0.25
+	army_speed_factor = UKR_AFU_army_speed_factor #-0.15
+	planning_speed = UKR_AFU_planning_speed #-0.1
+	breakthrough_factor = UKR_AFU_war_breakthrough_factor #-0.15
+	war_support_factor = UKR_AFU_war_support_factor #-0.15
+	conscription = UKR_AFU_conscription #-0.02
+	
+}
+
+UKR_oligarchs_idea = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_oligarchs
+
+	political_power_gain  = UKR_Oligarchs_political_power_gain  #-0.45
+	consumer_goods_factor = UKR_Oligarchs_consumer_goods_factor  #-0.25
+	production_speed_buildings_factor = UKR_Oligarchs_production_speed_buildings_factor #-0.25
+}
+
+UKR_ATO_idea = {
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_oligarchs
+
+	pocket_penalty  = UKR_ATO_pocket_penalty  #-0.45
+	experience_loss_factor = UKR_ATO_experience_loss_factor #-0.15
+}
+
+People_republic_ATO_idea = {
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_oligarchs
+
+	pocket_penalty  = People_republic_pocket_penalty  #-0.45
+	experience_loss_factor = People_republic_experience_loss_factor #-0.15
+}
+
+arisse_donbas_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_org_factor = 0.10
+	army_attack_factor = 0.075
+	army_defence_factor = 0.15
+	army_org_regain = 0.075
+	army_morale_factor = 0.05
+	army_speed_factor = 0.15
+	supply_factor = 0.075
+}
+
+crimean_spring_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_speed_factor = 0.65
+	army_org_regain = 0.35
+	supply_factor = 0.15
+}
+
+donetsk_airport_battle_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_morale_factor = 0.15
+	army_defence_factor = 0.15
+	army_org_regain = 0.35
+	supply_factor = 0.15
+}
+
+counter_offensive_ukraine_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_org_factor = 0.15
+	army_attack_factor = 0.125
+	army_org_regain = 0.075
+	army_speed_factor = 0.075
+	army_morale_factor = 0.05
+	supply_factor = 0.045
+}
+
+DPR_donetsk_castle_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_org_factor = 0.15
+	army_org_regain = 0.075
+	army_defence_factor = 0.15
+	army_speed_factor = 0.075
+	army_morale_factor = 0.05
+	supply_factor = 0.15
+}
+
+DPR_attack_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_org_factor = 0.15
+	army_attack_factor = 0.2
+	army_org_regain = 0.075
+	army_defence_factor = 0.15
+	army_speed_factor = 0.075
+	army_morale_factor = 0.05
+	supply_factor = 0.15
+}
+
+generic_retreat_from_region_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_speed_factor = 0.075
+	army_org_factor = -0.35
+	army_attack_factor = -0.2
+	army_org_regain = -0.075
+	army_defence_factor = -0.15
+	army_morale_factor = -0.05
+}
+
+LPR_luhansk_castle_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_org_factor = 0.15
+	army_org_regain = 0.075
+	army_defence_factor = 0.15
+	army_speed_factor = 0.075
+	army_morale_factor = 0.05
+	supply_factor = 0.15
+}
+
+prorussian_rallies_region_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_speed_factor = -0.95
+	army_org_factor = -0.35
+	army_attack_factor = -0.2
+	army_org_regain = -0.075
+	army_morale_factor = -0.05
+}

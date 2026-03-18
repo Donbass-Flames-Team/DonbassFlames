@@ -18,6 +18,21 @@ guiTypes = {
 			position = { x = 1 y = 40 }
 			alwaystransparent = yes
 		}
+
+		iconType = {
+			name = "superevents_separatist_victory"
+			quadTextureSprite ="GFX_Super_Event_separatist_victory"
+			position = { x = 1 y = 40 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "superevents_ukraine_victory_against_separatists"
+			quadTextureSprite ="GFX_Super_Event_ukraine_victory_against_separatists"
+			position = { x = 1 y = 40 }
+			alwaystransparent = yes
+		}
+		
 		
 		buttonType ={
 			name ="sp_event_close_button"

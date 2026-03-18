@@ -1,96 +1,96 @@
 on_actions = {
 
-    on_weekly = {
-	    effect = {
-		    if = {
-			    limit = {
-				    has_global_flag = Start_Of_ATO
-				    tag = NDR
-				    date < 2014.6.25
-				    surrender_progress > 0.89
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = Start_Of_ATO
+					tag = NDR
+					date < 2014.6.25
+					surrender_progress > 0.89
 					NOT = {
 						has_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
 					}
-			    }
-			    country_event = { id = NDR.1 }
-		    }
+				}
+				country_event = { id = NDR.1 }
+			}
 			if = {
-			    limit = {
-				    has_global_flag = Start_Of_ATO
-				    tag = NDR
+				limit = {
+					has_global_flag = Start_Of_ATO
+					tag = NDR
 					date > 2014.6.25
-				    date < 2014.7.4
-				    surrender_progress > 0.70
+					date < 2014.7.4
+					surrender_progress > 0.70
 					NOT = {
 						has_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
 					}
-			    }
-			    country_event = { id = NDR.2 }
-		    }
+				}
+				country_event = { id = NDR.2 }
+			}
 			if = {
-			    limit = {
-				    has_global_flag = Start_Of_ATO
-				    tag = NDR
+				limit = {
+					has_global_flag = Start_Of_ATO
+					tag = NDR
 					date > 2014.7.5
-				    surrender_progress > 0.30
+					surrender_progress > 0.30
 					NOT = {
 						has_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
 					}
-			    }
-			    country_event = { id = NDR.1 }
-		    }	
+				}
+				country_event = { id = NDR.1 }
+			}	
 			if = {
-			    limit = {
-				    has_global_flag = Start_Of_ATO
-                    SDR = {
+				limit = {
+					has_global_flag = Start_Of_ATO
+					SDR = {
 						surrender_progress > 0.96
 					}
 					NOT = {
 						has_global_flag = ANNEX_MARIUPOL_REBELS
 					}
-			    }
-			    UKR = {
+				}
+				UKR = {
 					annex_country = {
 						target = SDR
 					}
 				}
 				set_global_flag = ANNEX_MARIUPOL_REBELS
-		    }	 
+			}	 
 			if = {
-			    limit = {
-				    has_global_flag = Start_Of_ATO
-                    KPR = {
+				limit = {
+					has_global_flag = Start_Of_ATO
+					KPR = {
 						surrender_progress > 0.99
 					}
 					NOT = {
 						has_global_flag = ANNEX_KHARKOV_REBELS
 					}
-			    }
-			    UKR = {
+				}
+				UKR = {
 					annex_country = {
 						target = KPR
 					}
 				}
 				set_global_flag = ANNEX_KHARKOV_REBELS
-		    }   
+			}   
 			if = {
-			    limit = {
-				    has_global_flag = Start_Of_ATO
-                    OPR = {
+				limit = {
+					has_global_flag = Start_Of_ATO
+					OPR = {
 						surrender_progress > 0.99
 					}
 					NOT = {
 						has_global_flag = ANNEX_ODESSA_REBELS
 					}
-			    }
-			    UKR = {
+				}
+				UKR = {
 					annex_country = {
 						target = OPR
 					}
 				}
 				set_global_flag = ANNEX_ODESSA_REBELS
-		    }
-	    }
+			}
+		}
 	}
 }
 

@@ -4401,7 +4401,7 @@ focus_tree = {
 	focus = {
 		id = UKR_end_of_separatism
 		icon = GFX_focus_UKR_victory_over_separatism
-		cost = 1
+		cost = 0.5
 		x = 0
 		y = 6
 
@@ -4427,15 +4427,17 @@ focus_tree = {
 				has_global_flag = Minsk2_is_signed
 				date > 2015.9.10
 			}
-			custom_trigger_tooltip = UKR_end_of_separatism_trigger_tt
-			hidden_trigger = {
+			custom_trigger_tooltip = {
+                tooltip = UKR_end_of_separatism_trigger_tt		
 				NOT = {
 				    country_exists = DPR
 					country_exists = KPR
 					country_exists = LPR
 					country_exists = OPR
+					country_exists = NDR
+					country_exists = SDR
 			    }
-			}
+            }
 		}
 
 		completion_reward = {
@@ -4443,6 +4445,20 @@ focus_tree = {
 			add_political_power = 75
 			add_stability = 0.05
 			add_war_support = 0.05
+			hidden_effect = {
+				news_event = {
+					id = news_events.27
+					hours = 6
+				}
+				country_event = {
+					id = superevent.3
+					hours = 12
+				}
+				set_global_flag = Ukraine_victory_in_ATO
+				RUS = {
+					complete_national_focus = RUS_defeat_of_the_republics
+				}
+			}
 		}
 	}
 

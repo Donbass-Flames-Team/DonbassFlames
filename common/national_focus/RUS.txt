@@ -1037,6 +1037,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		bypass = {
+			has_global_flag = Ukraine_victory_in_ATO
+		}
+
 		completion_reward = {
 			add_political_power = 50
 			unlock_decision_tooltip = RUS_send_additional_equipment
@@ -1063,6 +1067,10 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
+		bypass = {
+			has_global_flag = Ukraine_victory_in_ATO
+		}
 
 		completion_reward = {
 			DPR = {
@@ -1123,6 +1131,10 @@ focus_tree = {
 			date > 2014.7.25
 		}
 
+		bypass = {
+			has_global_flag = Ukraine_victory_in_ATO
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1173,6 +1185,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_open_invasion }
 		prerequisite = { focus = RUS_russian_regulars_on_donbass }
 		mutually_exclusive = { focus = RUS_victory_of_republics }
+		mutually_exclusive = { focus = RUS_defeat_of_the_republics }
 		relative_position_id = RUS_show_kyivs_war_crimes
 		
 		ai_will_do = {
@@ -1197,11 +1210,42 @@ focus_tree = {
 		id = RUS_victory_of_republics
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
+		x = 0
+		y = 2
+
+		prerequisite = { focus = RUS_open_invasion }
+		mutually_exclusive = { focus = RUS_the_war_has_stalled }
+		mutually_exclusive = { focus = RUS_defeat_of_the_republics }
+		relative_position_id = RUS_show_kyivs_war_crimes
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			always = no
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_defeat_of_the_republics
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
 		x = 2
 		y = 2
 
 		prerequisite = { focus = RUS_open_invasion }
 		mutually_exclusive = { focus = RUS_the_war_has_stalled }
+		mutually_exclusive = { focus = RUS_victory_of_republics }
 		relative_position_id = RUS_show_kyivs_war_crimes
 		
 		ai_will_do = {

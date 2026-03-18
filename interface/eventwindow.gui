@@ -60,7 +60,7 @@ guiTypes = {
 			moveable = yes
 			clipping = no
 			Orientation = UPPER_LEFT
-			
+
 			background = {
 				name = "Background"	
 				quadTextureSprite ="GFX_event_report_tileable_midsection"
@@ -103,6 +103,13 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes				
 			}
+
+			#iconType = {
+			#	name ="event_pic_clip"
+			#	spriteType = "GFX_event_pic_clip"
+			#	position = { x = -3 y = 35 }
+			#	Orientation = "UPPER_LEFT"
+			#}
 
 
 			gridBoxType = {

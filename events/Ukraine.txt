@@ -3397,3 +3397,205 @@ country_event = {
 		add_political_power = -10
 	}
 }
+
+# Поражение ВСУ
+country_event = {
+	id = ukraine.108
+	title = ukraine.108.t
+	desc = ukraine.108.d
+	picture = GFX_Report_event_debaltsevo_soldier_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.108.a
+		add_political_power = -10
+		white_peace = DPR
+		white_peace = LPR
+		white_peace = SDR
+		white_peace = NDR
+		white_peace = KPR
+		hidden_effect = {
+			news_event = {
+				id = news_events.26
+				hours = 3
+			}
+			country_event = {
+				id = superevent.2
+				hours = 12
+			}
+			LPR = {
+				transfer_state = 406
+				transfer_state = 351
+				transfer_state = 387
+				transfer_state = 413
+				transfer_state = 416
+				transfer_state = 427
+				transfer_state = 363
+				transfer_state = 362
+				transfer_state = 366
+				transfer_state = 352
+				transfer_state = 357
+				transfer_state = 346
+				transfer_state = 333
+				transfer_state = 344
+				transfer_state = 320
+				transfer_state = 370
+				transfer_state = 384
+				transfer_state = 335
+				transfer_state = 288
+				transfer_state = 339
+				transfer_state = 329
+				transfer_state = 343
+				transfer_state = 334
+				transfer_state = 326
+				transfer_state = 285
+				transfer_state = 10
+				transfer_state = 305
+				transfer_state = 304
+				transfer_state = 307
+				transfer_state = 311
+				transfer_state = 263
+				transfer_state = 245
+				transfer_state = 235
+				transfer_state = 259
+				transfer_state = 271
+				transfer_state = 225
+				transfer_state = 223
+				transfer_state = 207
+				transfer_state = 237	
+				transfer_state = 308
+				transfer_state = 303
+				transfer_state = 269
+				transfer_state = 297
+				transfer_state = 272
+				transfer_state = 246
+				transfer_state = 258			
+			}
+			DPR = {
+				transfer_state = 468
+				transfer_state = 421
+				transfer_state = 441
+				transfer_state = 264
+				transfer_state = 465
+				transfer_state = 463
+				transfer_state = 429
+				transfer_state = 388
+				transfer_state = 395
+				transfer_state = 511
+				transfer_state = 573
+				transfer_state = 446
+				transfer_state = 353
+				transfer_state = 489
+				transfer_state = 448
+				transfer_state = 467
+				transfer_state = 450
+				transfer_state = 452
+				transfer_state = 401
+				transfer_state = 426
+				transfer_state = 433
+				transfer_state = 408
+				transfer_state = 399
+				transfer_state = 412
+				transfer_state = 444
+				transfer_state = 437
+				transfer_state = 435
+				transfer_state = 402
+				transfer_state = 438
+				transfer_state = 430
+				transfer_state = 418
+				transfer_state = 582
+				transfer_state = 265
+				transfer_state = 381
+				transfer_state = 404
+				transfer_state = 397
+				transfer_state = 398
+				transfer_state = 394
+				transfer_state = 13
+				transfer_state = 378
+				transfer_state = 376
+				transfer_state = 651
+				transfer_state = 390
+				transfer_state = 391
+				transfer_state = 380
+				transfer_state = 337
+				transfer_state = 359
+				transfer_state = 342
+				transfer_state = 328
+				transfer_state = 347
+			}
+			if = {
+				limit = {
+					country_exists = SDR
+				}
+				SDR = {
+					transfer_state = 527
+					transfer_state = 533
+					transfer_state = 649
+					transfer_state = 551
+					transfer_state = 511
+					transfer_state = 518
+					transfer_state = 486
+					transfer_state = 652
+					transfer_state = 653
+					transfer_state = 502
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = SDR
+					}
+				}
+				DPR = {
+					transfer_state = 527
+					transfer_state = 533
+					transfer_state = 649
+					transfer_state = 551
+					transfer_state = 511
+					transfer_state = 518
+					transfer_state = 486
+					transfer_state = 652
+					transfer_state = 653
+					transfer_state = 502
+				}
+			}
+			if = {
+				limit = {
+					country_exists = NDR
+				}
+				NDR = {
+					transfer_state = 291
+					transfer_state = 327
+					transfer_state = 277
+					transfer_state = 312
+					transfer_state = 300
+					transfer_state = 317
+					transfer_state = 324
+					transfer_state = 295
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = NDR
+					}
+				}
+				DPR = {
+					transfer_state = 291
+					transfer_state = 327
+					transfer_state = 277
+					transfer_state = 312
+					transfer_state = 300
+					transfer_state = 317
+					transfer_state = 324
+					transfer_state = 295
+				}
+			}						
+		}
+	}
+}

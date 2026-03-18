@@ -27,3 +27,54 @@ country_event = {
 		play_song = "nexus_ukraina-15_9650"
 	}
 }
+
+#Separatist victory
+country_event = {
+	id = superevent.2
+	title = superevent.2.t
+	desc = superevent.2.d
+	#picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = superevent.2.a
+		
+        set_global_flag = separatist_victory_SP
+		set_global_flag = Visbile_sp_events
+		play_song = "nexus_chorus-40_9190"
+	}
+}
+
+#Ukraine victory
+country_event = {
+	id = superevent.3
+	title = superevent.3.t
+	desc = superevent.3.d
+	#picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = superevent.3.a
+		
+        set_global_flag = ukraine_victory_against_separatists_SP
+		set_global_flag = Visbile_sp_events
+		play_song = "nexus_ukraina-02_3461"
+	}
+}
+

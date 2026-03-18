@@ -1,5 +1,4 @@
 capital = 432
-recruit_character = zheka_vasilievich
 
 2013.11.21 = {
 	create_faction = "Novorossia"
@@ -27,7 +26,7 @@ recruit_character = zheka_vasilievich
 
 		tech_support = 1
         basic_train = 1 
-		toward_artilerry = 1
+		toward_artilery = 1
 		spau_artillery = 1
 		multiple_launch_rocket_system = 1
 		uniform_equipment = 1
@@ -57,6 +56,7 @@ recruit_character = zheka_vasilievich
 		service_by_requirement
 		closed_economy
 		war_economy
+		DPR_power_of_bandits
     }
 
 	set_politics = {
@@ -82,6 +82,8 @@ recruit_character = zheka_vasilievich
 	recruit_character = boris_litvinov
 	recruit_character = aleksandr_zakharchenko
 	recruit_character = igor_strelkov_girkin
+	recruit_character = arsen_motorola
+	recruit_character = zheka_vasilievich
 
 	add_equipment_to_stockpile = {
 		type = train_equipment_1

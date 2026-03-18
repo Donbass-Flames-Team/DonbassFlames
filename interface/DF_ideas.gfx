@@ -108,11 +108,16 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_idea_DPR_power_of_bandits"
-        texturefile = "gfx/interface/ideas/DPR/DPR_power_of_bandits.dds"
+        texturefile = "gfx/interface/ideas/DPR/DPR_criminality.dds"
     }
 
     spriteType = {
-        name = "GFX_idea_DPR_russian_spring"
+        name = "GFX_idea_DPR_russian_spring_idea"
+        texturefile = "gfx/interface/ideas/DPR/DPR_russian_spring.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_DPR_arrise_donbass_idea"
         texturefile = "gfx/interface/ideas/DPR/DPR_russian_spring.dds"
     }
 
@@ -129,6 +134,11 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_DPR_hidden_presence"
         texturefile = "gfx/interface/ideas/DPR/DPR_hidden_presence.dds"
+    }
+
+    DPR_roadblock_idea = {
+        name = "GFX_idea_DPR_roadblock_idea"
+        texturefile = "gfx/interface/ideas/DPR/DPR_roadblocks.dds"
     }
 
     # LPR Ideas
