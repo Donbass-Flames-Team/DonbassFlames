@@ -3420,6 +3420,7 @@ country_event = {
 		white_peace = NDR
 		white_peace = KPR
 		hidden_effect = {
+			set_global_flag = ATO_Separatists_victory
 			news_event = {
 				id = news_events.26
 				hours = 3
@@ -3562,6 +3563,8 @@ country_event = {
 					transfer_state = 652
 					transfer_state = 653
 					transfer_state = 502
+					transfer_state = 526
+					transfer_state = 650
 				}
 			}
 			if = {
@@ -3594,8 +3597,28 @@ country_event = {
 					transfer_state = 317
 					transfer_state = 324
 					transfer_state = 295
+					transfer_state = 318
 				}
 			}						
 		}
+	}
+}
+
+# Фонд Рината Ахметова
+country_event = {
+	id = ukraine.109
+	title = ukraine.109.t
+	desc = ukraine.109.d
+	picture = GFX_Report_event_threat_of_default_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.109.a
+		add_stability = 0.01
 	}
 }

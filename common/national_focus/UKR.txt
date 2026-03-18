@@ -4299,6 +4299,10 @@ focus_tree = {
 			factor = 35
 		}
 
+		bypass = {
+			has_global_flag = ATO_Separatists_victory
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -4326,6 +4330,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 35
+		}
+
+		bypass = {
+			has_global_flag = ATO_Separatists_victory
 		}
 
 		cancel_if_invalid = yes
@@ -4366,6 +4374,13 @@ focus_tree = {
 
 		}
 
+		bypass = {
+			has_global_flag = ATO_Separatists_victory
+		}
+		bypass_effect = {
+			unlock_decision_category_tooltip = UKR_depreservation_decision
+		}
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    unlock_decision_category_tooltip = UKR_depreservation_decision
@@ -4391,10 +4406,20 @@ focus_tree = {
 
 		}
 
+		bypass = {
+			has_global_flag = ATO_Separatists_victory
+		}
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_war_support = 0.05
 			activate_mission = UKR_volunteer_help_decision
+			hidden_effect = {
+				country_event = {
+					id = ukraine.109
+					days = 16
+				}
+			}
 		}
 	}
 
@@ -4674,6 +4699,10 @@ focus_tree = {
 
 		}
 
+		bypass = {
+			has_global_flag = ATO_Separatists_victory
+		}
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
             unlock_decision_category_tooltip = UKR_general_staff_decision
@@ -4705,6 +4734,10 @@ focus_tree = {
             NOT = {
 				has_country_flag = Elections2014InProgress
 			}
+		}
+
+		bypass = {
+			has_global_flag = ATO_Separatists_victory
 		}
 
 		completion_reward = {
@@ -4827,6 +4860,10 @@ focus_tree = {
 
 		}
 
+		bypass = {
+			has_global_flag = ATO_Separatists_victory
+		}
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_timed_idea = {
@@ -4856,10 +4893,17 @@ focus_tree = {
 
 		}
 
+		bypass = {
+			has_global_flag = ATO_Separatists_victory
+		}
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_stability = 0.05
 			add_political_power = 35
+			hidden_effect = {
+
+			}
 		}
 	}
 
