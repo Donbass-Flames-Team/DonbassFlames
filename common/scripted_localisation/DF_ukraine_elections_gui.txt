@@ -380,3 +380,40 @@ defined_text = {
         localization_key = "GFX_ukraine_elections_cherkasy_region_blue"
     }
 }
+
+
+#Winner on elections 
+defined_text = {
+    name = get_winner_on_elections_portrait
+	
+    text = {
+        trigger = {
+            has_country_flag = UKR_elections_results_poroshenko_winner_gui
+        }
+        localization_key = "GFX_portrait_petro_poroshenko"
+    }
+    text = { 
+		trigger = {
+			has_country_flag = UKR_elections_results_timoshenko_winner_gui
+		}
+		localization_key = "GFX_portrait_yulia_timoshenko"
+	} 
+}
+
+#Winner on elections 
+defined_text = {
+    name = get_winner_on_elections_popularity
+	
+    text = {
+        trigger = {
+            has_country_flag = UKR_elections_results_poroshenko_winner_gui
+        }
+        localization_key = "GFX_portrait_petro_poroshenko"
+    }
+    text = { 
+		trigger = {
+			has_country_flag = UKR_elections_results_timoshenko_winner_gui
+		}
+		localization_key = "GFX_portrait_yulia_timoshenko"
+	} 
+}

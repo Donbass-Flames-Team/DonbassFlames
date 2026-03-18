@@ -107,17 +107,20 @@ country_event = {
 	hidden = yes
 	
 	option = {
+		set_global_flag = UKR_elections_results_2014
 		name = ukraine_elections_gui.2.a
 		if = {
 			limit = {
 				check_variable = { var = Poroshenko_general_support value = Timoshenko_general_support compare = greater_than }
 			}
+			set_country_flag = UKR_elections_results_poroshenko_winner_gui
 			country_event = ukraine.17
 		}
 		if = {
 			limit = {
 				check_variable = { var = Timoshenko_general_support value = Poroshenko_general_support compare = greater_than }
 			}
+			set_country_flag = UKR_elections_results_timoshenko_winner_gui
 			country_event = ukraine.100
 		}		
 

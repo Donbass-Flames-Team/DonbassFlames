@@ -1498,4 +1498,30 @@ scripted_gui = {
 			
 		}	
 	}
+
+    UKR_elections_results = {
+		context_type = player_context
+		window_name = "UKR_elections_results"
+
+		visible = {
+			tag = UKR
+			has_global_flag = UKR_elections_results_2014
+		}
+		
+		effects = {		
+			close_map_button_click = {
+				clr_global_flag = UKR_elections_results_2014
+		    }		
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+	    properties = {
+			winner_on_elections_icon = {
+				image = "[get_winner_on_elections_portrait]"
+			}
+		}	
+	}
 }

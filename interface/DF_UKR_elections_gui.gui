@@ -627,4 +627,84 @@ guiTypes = {
 			oversound = ui_menu_over
         }
 	}
+
+    containerWindowType = {
+		name = "UKR_elections_results"
+		position = { x = -70 y = -10 }
+		size = { width = 536 height = 695 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = no
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_ukraine_elections_results_background"
+			position = { x = 27 y = 27 }
+		}
+
+		buttonType = {
+			name = "close_map_button"
+			position = { x = 524 y = 34 }
+			quadTextureSprite = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+
+		instantTextBoxType = {
+			name = "UKR_elections_results_text"
+			maxWidth = 450
+			position = { x = 200 y = 78 }
+			font = "hoi_36header"
+			text = "UKR_elections_results_text"
+		}
+
+		
+		iconType = {
+			name = "winner_on_elections_icon"
+			position = { x = 222 y = 191 }
+			quadTextureSprite = "GFX_separatismgui_ukraine_noleader"
+		}
+
+		instantTextBoxType = {
+			name = "UKR_winner_results_text"
+			maxWidth = 450
+			position = { x = 222 y = 250 }
+			font = "hoi_36header"
+			text = "UKR_winner_results_text"
+		}
+
+
+		iconType = {
+			name = "second_on_elections_icon"
+			position = { x = 96 y = 481 }
+			quadTextureSprite = "GFX_separatismgui_ukraine_noleader"
+			scale = 0.6
+		}		
+
+		iconType = {
+			name = "third_on_elections_icon"
+			position = { x = 196 y = 481 }
+			quadTextureSprite = "GFX_separatismgui_ukraine_noleader"
+			scale = 0.6
+		}
+
+		iconType = {
+			name = "fourth_on_elections_icon"
+			position = { x = 296 y = 481 }
+			quadTextureSprite = "GFX_separatismgui_ukraine_noleader"
+			scale = 0.6
+		}
+
+		iconType = {
+			name = "fifth_on_elections_icon"
+			position = { x = 396 y = 481 }
+			quadTextureSprite = "GFX_separatismgui_ukraine_noleader"
+			scale = 0.6
+		}
+	}
 }
