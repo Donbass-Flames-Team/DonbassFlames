@@ -21,7 +21,7 @@ world_events_toggle = {
 	}
 }
 
-wal_expansion_mode = {
+wal = {
 	name = "WAL_ANNEX"
 	group = "RULE_MOD_SETTINGS"
 
@@ -36,6 +36,25 @@ wal_expansion_mode = {
 		name = "WAL_ANNEX_ON"
 		text = "WAL_ANNEX_ON"
 		desc = "WAL_ANNEX_ON_DESC"
+		allow_achievements = yes
+	}
+}
+
+sep = {
+	name = "EU_SEP"
+	group = "RULE_MOD_SETTINGS"
+
+	default = {
+		name = "SEP_NOPE"
+		text = "SEP_NOPE"
+		desc = "SEP_NOPE_DESC"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = "SEP_FREE"
+		text = "SEP_FREE"
+		desc = "SEP_FREE_DESC"
 		allow_achievements = yes
 	}
 }

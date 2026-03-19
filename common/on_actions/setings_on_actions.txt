@@ -1,22 +1,14 @@
 on_actions = {
 	on_startup = {
 		effect = {
+
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = wal_expansion_mode
+						rule = wal
 						option = WAL_ANNEX_ON
 					}
 				}
-
-				WAL = { change_tag_from = LIT }
-				WAL = { change_tag_from = SLO }
-				WAL = { change_tag_from = HUN }
-				WAL = { change_tag_from = ROM }
-				WAL = { change_tag_from = POL }
-				WAL = { change_tag_from = SER }
-				WAL = { change_tag_from = BLR }
-				WAL = { change_tag_from = MOL }
 
 				WAL = {
 					annex_country = { target = LIT }
@@ -27,6 +19,7 @@ on_actions = {
 					annex_country = { target = SER }
 					annex_country = { target = BLR }
 					annex_country = { target = MOL }
+
 					every_owned_state = {
 						add_core_of = WAL
 					}
@@ -34,6 +27,23 @@ on_actions = {
 
 				set_global_flag = WAL_annex
 			}
+
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = sep
+						option = SEP_FREE
+					}
+				}
+				MOL = { release = GAG }
+				CRI = { release = CRT }
+				SER = { release = VOJ }
+				RUS = { release = ADY }
+				RUS = { release = CRT }
+				UKR = { release = CRT }
+				set_global_flag = EU_SEP_FREE
+			}
+
 		}
 	}
 }
