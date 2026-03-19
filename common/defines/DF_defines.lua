@@ -33,6 +33,8 @@ NDefines.NMilitary.WAR_SCORE_LEND_LEASE_GIVEN_FUEL_FACTOR = 0.001  			-- war sco
 NDefines.NMilitary.WAR_SCORE_LEND_LEASE_RECEIVED_IC_FACTOR = 0.001  			-- war score deducted for every IC of lend lease received from allies
 NDefines.NMilitary.WAR_SCORE_LEND_LEASE_RECEIVED_FUEL_FACTOR = 0.001 		-- war score deducted for every 100 units of fuel lend lease received from allies
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 35			-- how many divisions a corps commander is limited to. 0 = inf < 0 = blocked
+NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.07		-- how much org is lost every hour while moving an army.
+NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.5		-- speed impact at 0 org.
 NDefines.NMilitary.INFRA_ORG_IMPACT = 0.5				-- scale factor of infra on org regain.
 NDefines.NMilitary.COMBAT_MOVEMENT_SPEED = 0.33	               -- vanila 0.33 speed reduction base modifier in combat
 NDefines.NMilitary.SUPPLY_USE_FACTOR_MOVING = 1.5                -- Deprecated/Unused
