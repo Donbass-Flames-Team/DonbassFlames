@@ -364,6 +364,18 @@ guiTypes = {
 			text = "army_expense"
 		}
 
+		instantTextBoxType = {
+			name = "people_taxes"
+			position = { x = 15 y = 270 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "people_taxes"
+		}
+
 		iconType = {
 			name = "economy_divider"
 			spriteType = "GFX_divider"
