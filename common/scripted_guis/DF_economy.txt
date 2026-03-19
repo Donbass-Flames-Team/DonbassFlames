@@ -29,18 +29,6 @@ scripted_gui = {
 						set_global_flag = economy_tab_on
 					}
 				}
-				if = {
-					limit = {
-						has_global_flag = economy_decisions_tab_on
-					}
-					clr_global_flag = economy_decisions_tab_on
-				}
-				if = {
-					limit = {
-						has_global_flag = cental_bank_tab_on
-					}
-					clr_global_flag = cental_bank_tab_on
-				}
 			}
 			debt_button_click = {
 				if = {
@@ -51,18 +39,6 @@ scripted_gui = {
 					else = {
 						set_global_flag = economy_tab_on
 					}
-				}
-				if = {
-					limit = {
-						has_global_flag = economy_decisions_tab_on
-					}
-					clr_global_flag = economy_decisions_tab_on
-				}
-				if = {
-					limit = {
-						has_global_flag = cental_bank_tab_on
-					}
-					clr_global_flag = cental_bank_tab_on
 				}
 			}
 		}
