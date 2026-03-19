@@ -146,5 +146,23 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = cash
+						value = 0
+						compare = less_than
+					}
+				}
+				set_temp_variable = { temp_debt = var:cash }
+				multiply_variable = { var = temp_debt value = -1 }
+				add_to_variable = { var = debt value = var:temp_debt }
+				set_variable = { var = cash value = 1 }
+				clear_variable = temp_debt
+			}	
+		}	
+	}
 
 }

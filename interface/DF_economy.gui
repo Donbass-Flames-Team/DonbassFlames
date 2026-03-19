@@ -138,7 +138,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "income_total_value"
-			position = { x = 270 y = 110 }
+			position = { x = 200 y = 110 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 45
@@ -162,7 +162,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "income_civ_value"
-			position = { x = 270 y = 150 }
+			position = { x = 200 y = 150 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 45
@@ -186,7 +186,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "income_mil_value"
-			position = { x = 270 y = 190 }
+			position = { x = 200 y = 190 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 45
@@ -210,7 +210,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "income_doc_value"
-			position = { x = 270 y = 230 }
+			position = { x = 200 y = 230 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 45
@@ -221,20 +221,8 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name = "people_taxes"
-			position = { x = 15 y = 270 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 300
-			maxHeight = 64
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "people_taxes"
-		}
-
-		instantTextBoxType = {
 			name = "people_taxes_value"
-			position = { x = 270 y = 270 }
+			position = { x = 280 y = 270 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 45
@@ -258,7 +246,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "expense_total_value"
-			position = { x = 545 y = 110 }
+			position = { x = 555 y = 110 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 45
@@ -282,7 +270,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "healthcare_expense_value"
-			position = { x = 545 y = 150 }
+			position = { x = 555 y = 150 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 45
@@ -306,7 +294,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "social_security_expense_value"
-			position = { x = 545 y = 190 }
+			position = { x = 555 y = 190 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 45
@@ -330,11 +318,11 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "education_expense_value"
-			position = { x = 545 y = 230 }
+			position = { x = 525 y = 230 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 45
-			maxHeight = 24
+			maxWidth = 300
+			maxHeight = 0
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "[?education_expense]"
@@ -354,7 +342,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "policing_expense_value"
-			position = { x = 545 y = 270 }
+			position = { x = 555 y = 270 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 45
@@ -366,7 +354,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "army_expense"
-			position = { x = 320 y = 310 }
+			position = { x = 320 y = 300 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
@@ -376,28 +364,16 @@ guiTypes = {
 			text = "army_expense"
 		}
 
-		instantTextBoxType = {
-			name = "army_expense_value"
-			position = { x = 545 y = 310 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 45
-			maxHeight = 24
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "[?army_expense]"
-		}
-
 		iconType = {
 			name = "economy_divider"
 			spriteType = "GFX_divider"
-			position = { x = 15 y = 350 }
+			position = { x = 15 y = 320 }
 		}
 
 		iconType = {
 			name = "economy_divider_2"
 			spriteType = "GFX_divider"
-			position = { x = 80 y = 350 }
+			position = { x = 80 y = 320 }
 		}
 
 		instantTextBoxType = {
@@ -426,7 +402,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "year_inflation_value"
-			position = { x = 30 y = 410 }
+			position = { x = 30 y = 370 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 270
@@ -438,7 +414,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "inflation_value"
-			position = { x = 30 y = 440 }
+			position = { x = 30 y = 410 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 270
@@ -446,6 +422,27 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "inflation_value"
+		}
+
+		instantTextBoxType = {
+			name = "debt_value"
+			position = { x = 320 y = 405 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 95
+			maxHeight = 24
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "debt_value"
+		}
+
+		buttonType = {
+			name = "central_bank_button"
+			spriteType = "GFX_cash_smol"
+			position = { x = 280 y = 410 }
+			clicksound = click_close
+			tooltip = cental_bank_tt
+			pdx_tooltip_delayed = cental_bank_tt2
 		}
 	}
 
