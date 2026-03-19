@@ -35,53 +35,93 @@ country_event = {
 	
 	option = {
 		name = ukraine_elections_gui.1.a
+
+		### Voter turnout
 		set_variable = {
 			var = Voter_turnout_procent_ukraine_elections
 			value = Voter_turnout_ukraine_elections
 		}
-
 		divide_variable = {
             var = Voter_turnout_procent_ukraine_elections
             value = 100
         }
 
+		### General population on elections
+		set_variable = {
+			var = General_population_on_elections
+			value = 192
+		}
+        multiply_variable = {
+            var = General_population_on_elections
+            value = 125000
+        }	
+		multiply_variable = {
+            var = General_population_on_elections
+            value = Voter_turnout_procent_ukraine_elections
+        }	
+		
+
+		### Stamine
 		set_variable = {
 			var = President_elections_stamina_value
 			value = 10
 		}
+		### General popultaion of candidates
 		set_variable = {
 			var = general_population_support_timoshenko_value
 			value = Timoshenko_general_support
 		}
-
         multiply_variable = {
             var = general_population_support_timoshenko_value
-            value = 150000
+            value = 125000
             tooltip = multiply_var_by_100_tt
         }	
-
 		multiply_variable = {
             var = general_population_support_timoshenko_value
             value = Voter_turnout_procent_ukraine_elections
-            tooltip = multiply_var_by_100_tt
         }
-
 		set_variable = {
 			var = general_population_support_poroshenko_value
 			value = Poroshenko_general_support
 		}
-
         multiply_variable = {
             var = general_population_support_poroshenko_value
-            value = 150000
+            value = 125000
             tooltip = multiply_var_by_100_tt
         }	
-
 		multiply_variable = {
             var = general_population_support_poroshenko_value
             value = Voter_turnout_procent_ukraine_elections
             tooltip = multiply_var_by_100_tt
         }		
+		### Timoshenko precentage support on elections
+        set_variable = {
+			var = Timoshenko_percentage_result_on_elections
+			value = general_population_support_timoshenko_value
+		}
+		divide_variable = {
+			var = Timoshenko_percentage_result_on_elections
+			value = General_population_on_elections 
+		}
+		multiply_variable = {
+			var = Timoshenko_percentage_result_on_elections
+			value = 100		
+		}
+		round_variable = Timoshenko_percentage_result_on_elections
+		### Poroshenko precentage support on elections
+        set_variable = {
+			var = Poroshenko_percentage_result_on_elections
+			value = general_population_support_poroshenko_value
+		}
+		divide_variable = {
+			var = Poroshenko_percentage_result_on_elections
+			value = General_population_on_elections 
+		}
+		multiply_variable = {
+			var = Poroshenko_percentage_result_on_elections
+			value = 100		
+		}
+		round_variable = Poroshenko_percentage_result_on_elections
 		
 		
 		if = {
