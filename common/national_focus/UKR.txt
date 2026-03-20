@@ -2299,26 +2299,27 @@ focus_tree = {
 				}
 				hidden_effect = {
 		            add_dynamic_modifier = { modifier = UKR_ATO_idea }
-	                set_variable = { UKR_ATO_pocket_penalty = -0.35 }
+	                set_variable = { UKR_ATO_pocket_penalty = -0.30 }
 	                set_variable = { UKR_ATO_experience_loss_factor = -0.30 }
+					set_variable = { UKR_ATO_casualty_trickleback = 0.25}
 					NDR = {
 						add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                    set_variable = { People_republic_pocket_penalty = -0.35 }
+	                    set_variable = { People_republic_pocket_penalty = -0.30 }
 	                    set_variable = { People_republic_experience_loss_factor = -0.20 }
 					}
 					DPR = {
 						add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                    set_variable = { People_republic_pocket_penalty = -0.35 }
+	                    set_variable = { People_republic_pocket_penalty = -0.30 }
 	                    set_variable = { People_republic_experience_loss_factor = -0.20 }
 					}	
 					LPR = {
 						add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                    set_variable = { People_republic_pocket_penalty = -0.35 }
+	                    set_variable = { People_republic_pocket_penalty = -0.30 }
 	                    set_variable = { People_republic_experience_loss_factor = -0.20 }
 					}	
 					SDR = {
 						add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                    set_variable = { People_republic_pocket_penalty = -0.35 }
+	                    set_variable = { People_republic_pocket_penalty = -0.30 }
 	                    set_variable = { People_republic_experience_loss_factor = -0.20 }
 					}								
 		        }

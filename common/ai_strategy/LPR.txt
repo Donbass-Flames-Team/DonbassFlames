@@ -1,60 +1,60 @@
-LPR_first_phase_Of_ato = {
-	allowed = {
-		original_tag = LPR
-	}
+#LPR_first_phase_Of_ato = {
+#	allowed = {
+#		original_tag = LPR
+#	}
+#
+#	enable = {
+#		has_country_flag = LPR_first_phase_of_ato
+#	}
+#
+#	abort = {
+#		NOT = {
+#			has_country_flag = LPR_first_phase_of_ato
+#		}
+#	}
+#	
+#	ai_strategy = {
+#		type = front_control
+#		tag = UKR
+#		ordertype = front
+#		execution_type = rush
+#		manual_attack = yes
+#	}
+#
+#	ai_strategy = {
+#		type = garrison
+#		value = -3000
+#	}
+#}
 
-	enable = {
-		has_country_flag = LPR_first_phase_of_ato
-	}
-
-	abort = {
-		NOT = {
-			has_country_flag = LPR_first_phase_of_ato
-		}
-	}
-	
-	ai_strategy = {
-		type = front_control
-		tag = UKR
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
-	}
-
-	ai_strategy = {
-		type = garrison
-		value = -3000
-	}
-}
-
-LPR_second_phase_of_ato = {
-	allowed = {
-		original_tag = LPR
-	}
-
-	enable = {
-		has_global_flag = second_phase_of_ato
-	}
-
-	abort = {
-		NOT = {
-			has_global_flag = second_phase_of_ato
-		}
-	}
-	
-	ai_strategy = {
-		type = front_control
-		tag = UKR
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
-	}
-
-	ai_strategy = {
-		type = garrison
-		value = -500
-	}
-}
+#LPR_second_phase_of_ato = {
+#	allowed = {
+#		original_tag = LPR
+#	}
+#
+#	enable = {
+#		has_global_flag = second_phase_of_ato
+#	}
+#
+#	abort = {
+#		NOT = {
+#			has_global_flag = second_phase_of_ato
+#		}
+#	}
+#	
+#	ai_strategy = {
+#		type = front_control
+#		tag = UKR
+#		ordertype = front
+#		execution_type = rush
+#		manual_attack = yes
+#	}
+#
+#	ai_strategy = {
+#		type = garrison
+#		value = -500
+#	}
+#}
 
 #LPR_hold_luhansk = {
 #	allowed = {
