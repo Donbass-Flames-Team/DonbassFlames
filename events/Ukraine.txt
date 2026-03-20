@@ -3609,7 +3609,7 @@ country_event = {
 	id = ukraine.109
 	title = ukraine.109.t
 	desc = ukraine.109.d
-	picture = GFX_Report_event_threat_of_default_picture
+	picture = GFX_Report_event_rinat_ahmetov_fond_picture
 
 	is_triggered_only = yes
 
@@ -3620,6 +3620,7 @@ country_event = {
 	option = {
 		name = ukraine.109.a
 		add_stability = 0.01
+		add_political_power = 5
 	}
 }
 
@@ -3628,7 +3629,7 @@ country_event = {
 	id = ukraine.110
 	title = ukraine.110.t
 	desc = ukraine.110.d
-	picture = GFX_Report_event_threat_of_default_picture
+	picture = GFX_Report_event_1000_dollars_for_moskaley_picture
 
 	is_triggered_only = yes
 
@@ -3665,7 +3666,7 @@ country_event = {
 	id = ukraine.111
 	title = ukraine.111.t
 	desc = ukraine.111.d
-	picture = GFX_Report_event_yulia_timoshenko_picture
+	picture = GFX_Report_event_oleg_lyashko_picture
 
 	is_triggered_only = yes
 

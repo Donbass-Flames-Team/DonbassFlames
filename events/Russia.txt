@@ -246,12 +246,13 @@ country_event = {
 				transfer_state = 370
 				transfer_state = 366
 				transfer_state = 352
-				transfer_state = 335
 				transfer_state = 339
 				transfer_state = 343
 				transfer_state = 334
 				if = { limit = { 333 = { is_controlled_by = LPR } } transfer_state = 333 transfer_state = 344 }
 				if = { limit = { 326 = { is_controlled_by = LPR } } transfer_state = 326 }
+				if = { limit = { 335 = { is_controlled_by = LPR } } transfer_state = 335 }
+				if = { limit = { 288 = { is_controlled_by = LPR } 335 = { is_controlled_by = LPR } } transfer_state = 288 }
 				clr_country_flag = LPR_first_phase_of_ato
 			}
 			UKR = {
@@ -262,6 +263,7 @@ country_event = {
 				if = { limit = { 291 = { is_controlled_by = UKR } } transfer_state = 291 transfer_state = 327 transfer_state = 318 }
 				if = { limit = { 337 = { is_controlled_by = UKR } } transfer_state = 337 transfer_state = 359 }
 				if = { limit = { 381 = { is_controlled_by = UKR } } transfer_state = 381 }
+				if = { limit = { 288 = { is_controlled_by = UKR } 335 = { is_controlled_by = UKR } } transfer_state = 335 }
 			}
 			white_peace = DPR
 			white_peace = LPR
@@ -370,13 +372,13 @@ country_event = {
 				transfer_state = 370
 				transfer_state = 366
 				transfer_state = 352
-				transfer_state = 335
 				transfer_state = 339
 				if = { limit = { 346 = { is_controlled_by = LPR } } transfer_state = 346 }
 				if = { limit = { 343 = { is_controlled_by = LPR } } transfer_state = 343 }
 				if = { limit = { 334 = { is_controlled_by = LPR } } transfer_state = 334 }
 				if = { limit = { 333 = { is_controlled_by = LPR } } transfer_state = 333 transfer_state = 344 }
 				if = { limit = { 326 = { is_controlled_by = LPR } } transfer_state = 326 }
+				if = { limit = { 335 = { is_controlled_by = LPR } } transfer_state = 335 }
 			}
 			UKR = {
 				transfer_state = 318
@@ -399,6 +401,7 @@ country_event = {
 				if = { limit = { 334 = { is_controlled_by = UKR } } transfer_state = 334 }
 				if = { limit = { 346 = { is_controlled_by = UKR } } transfer_state = 346 }
 				if = { limit = { 329 = { is_controlled_by = UKR } } transfer_state = 329 }
+				if = { limit = { 335 = { is_controlled_by = UKR } } transfer_state = 335 }
 			}
 			white_peace = DPR
 			white_peace = LPR
