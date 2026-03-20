@@ -4657,40 +4657,6 @@ focus_tree = {
 		x = 0
 		y = 7
 
-		prerequisite = { focus = UKR_launch_counterattacks }
-		prerequisite = { focus = UKR_volunteer_help }
-		prerequisite = { focus = UKR_decommissioning_of_stocks }
-		relative_position_id = UKR_start_of_ato
-
-		allow_branch = {
-			has_country_flag = UKR_donbas_war_resumes_spring_2015
-		}
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-            
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-			add_timed_idea = {
-                idea = UKR_defence_of_cities_idea 
-                days = 75
-            }				
-		}
-	}
-
-	focus = {
-		id = UKR_dig_in
-		icon = GFX_focus_UKR_victory_over_separatism
-		cost = 1
-		x = 0
-		y = 7
-
 		prerequisite = { focus = UKR_continuation_of_the_ato }
 		relative_position_id = UKR_start_of_ato
 
