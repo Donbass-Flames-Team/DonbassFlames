@@ -1,4 +1,3 @@
-
 DF_economy_setup = {
 	set_variable = {
 		var = income
@@ -21,7 +20,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = mil_factories_income
-			value = 0.035
+			value = 0.0292
 		}
 		if = {
 			limit = {
@@ -43,7 +42,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = doc_factories_income
-			value = 0.3
+			value = 0.025
 		}
 		if = {
 			limit = {
@@ -65,7 +64,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = civ_factories_income
-			value = 0.045
+			value = 0.0375
 		}
 		if = {
 			limit = {
@@ -144,7 +143,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = healthcare_expense_universal_health_care
-			value = 0.9
+			value = 0.075
 		}
 
 		set_variable = {
@@ -153,7 +152,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = healthcare_expense_free_checkups
-			value = 0.6
+			value = 0.05
 		}
 
 		set_variable = {
@@ -162,7 +161,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = healthcare_expense_free_emergencies_only
-			value = 0.3
+			value = 0.025
 		}
 
 		set_variable = {
@@ -175,7 +174,7 @@ DF_economy_setup = {
 			}
 			multiply_variable = {
 				var = healthcare_expense
-				value = 0.9
+				value = 0.075
 			}
 			else_if = {
 				limit = {
@@ -183,7 +182,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = healthcare_expense
-					value = 0.6
+					value = 0.05
 				}
 			}
 			else_if = {
@@ -192,7 +191,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = healthcare_expense
-					value = 0.3
+					value = 0.025
 				}
 			}
 			else_if = {
@@ -245,7 +244,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = social_security_expense_welfare_state
-			value = 1.6
+			value = 0.1333
 		}
 
 		set_variable = {
@@ -254,7 +253,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = social_security_expense_old_age_benefits
-			value = 0.9
+			value = 0.075
 		}
 
 		set_variable = {
@@ -263,7 +262,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = social_security_expense_veteran_benefits
-			value = 0.6
+			value = 0.05
 		}
 
 		set_variable = {
@@ -276,7 +275,7 @@ DF_economy_setup = {
 			}
 			multiply_variable = {
 				var = social_security_expense
-				value = 1.6
+				value = 0.1333
 			}
 			else_if = {
 				limit = {
@@ -284,7 +283,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = social_security_expense
-					value = 0.9
+					value = 0.075
 				}
 			}
 			else_if = {
@@ -293,7 +292,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = social_security_expense
-					value = 0.6
+					value = 0.05
 				}
 			}
 			else_if = {
@@ -345,7 +344,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = education_expense_free_universities
-			value = 0.8
+			value = 0.0667
 		}
 
 		set_variable = {
@@ -354,7 +353,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = education_expense_free_high_schools
-			value = 0.7
+			value = 0.0583
 		}
 
 		set_variable = {
@@ -363,7 +362,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = education_expense_free_elementary_and_middle_schools
-			value = 0.5
+			value = 0.0417
 		}
 
 		set_variable = {
@@ -376,7 +375,7 @@ DF_economy_setup = {
 			}
 			multiply_variable = {
 				var = education_expense
-				value = 0.8
+				value = 0.0667
 			}
 			else_if = {
 				limit = {
@@ -384,7 +383,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = education_expense
-					value = 0.7
+					value = 0.0583
 				}
 			}
 			else_if = {
@@ -393,7 +392,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = education_expense
-					value = 0.5
+					value = 0.0417
 				}
 			}
 			else_if = {
@@ -477,7 +476,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = policing_expense_police_state
-			value = 1.1
+			value = 0.0917
 		}
 
 		set_variable = {
@@ -486,7 +485,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = policing_expense_militarized_police
-			value = 0.8
+			value = 0.0667
 		}
 
 		set_variable = {
@@ -495,7 +494,7 @@ DF_economy_setup = {
 		}
 		multiply_variable = {
 			var = policing_expense_regular_policing
-			value = 0.6
+			value = 0.05
 		}
 
 		set_variable = {
@@ -508,7 +507,7 @@ DF_economy_setup = {
 			}
 			multiply_variable = {
 				var = policing_expense
-				value = 1.1
+				value = 0.0917
 			}
 			else_if = {
 				limit = {
@@ -516,7 +515,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = policing_expense
-					value = 0.8
+					value = 0.0667
 				}
 			}
 			else_if = {
@@ -525,7 +524,7 @@ DF_economy_setup = {
 				}
 				multiply_variable = {
 					var = policing_expense
-					value = 0.6
+					value = 0.05
 				}
 			}
 			else_if = {
@@ -563,6 +562,101 @@ DF_economy_setup = {
 		value = 10
 	}
 
+	############
+	### ARMY ###
+	############
+
+	set_variable = {
+		var = army_expense_show
+		value = ROOT.deployed_army_manpower_k
+	}
+	divide_variable = {
+		var = army_expense_show
+		value = 7.5
+	}
+	round_variable = army_expense_show
+
+	set_variable = {
+		var = army_expense_free_universities
+		value = var:army_expense_show
+	}
+	multiply_variable = {
+		var = army_expense_free_universities
+		value = 0.0667
+	}
+
+	set_variable = {
+		var = army_expense_free_high_schools
+		value = var:army_expense_show
+	}
+	multiply_variable = {
+		var = army_expense_free_high_schools
+		value = 0.0583
+	}
+
+	set_variable = {
+		var = army_expense_free_elementary_and_middle_schools
+		value = var:army_expense_show
+	}
+	multiply_variable = {
+		var = army_expense_free_elementary_and_middle_schools
+		value = 0.0417
+	}
+
+	set_variable = {
+		var = army_expense
+		value = var:army_expense_show
+	}
+	#if = {
+	#	limit = {
+	#		has_idea = free_universities
+	#	}
+	#	multiply_variable = {
+	#		var = army_expense
+	#		value = 0.53
+	#	}
+	#	else_if = {
+	#		limit = {
+	#			has_idea = free_high_schools
+	#		}
+	#		multiply_variable = {
+	#			var = army_expense
+	#			value = 1.1
+	#		}
+	#	}
+	#	else_if = {
+	#		limit = {
+	#			has_idea = free_elementary_and_middle_schools
+	#		}
+	#		multiply_variable = {
+	#			var = army_expense
+	#			value = 0.5
+	#		}
+	#	}
+	#	else_if = {
+	#		limit = {
+	#			has_idea = private_army
+	#		}
+	#		multiply_variable = {
+	#			var = army_expense
+	#			value = 0
+	#		}
+	#	}
+	#}
+	round_variable = army_expense
+	if = {
+		limit = {
+			has_global_flag = add_remove_cash_flag
+		}
+		subtract_from_variable = {
+			var = cash
+			value = var:army_expense
+		}
+	}
+	add_to_variable = {
+		var = expense
+		value = var:army_expense
+	}
 
 	###########
 	### GDP ###
