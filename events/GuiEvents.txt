@@ -67,6 +67,7 @@ country_event = {
 			value = 10
 		}
 		### General popultaion of candidates
+		# Timoshenko
 		set_variable = {
 			var = general_population_support_timoshenko_value
 			value = Timoshenko_general_support
@@ -80,6 +81,7 @@ country_event = {
             var = general_population_support_timoshenko_value
             value = Voter_turnout_procent_ukraine_elections
         }
+		# Poroshenko
 		set_variable = {
 			var = general_population_support_poroshenko_value
 			value = Poroshenko_general_support
@@ -93,7 +95,21 @@ country_event = {
             var = general_population_support_poroshenko_value
             value = Voter_turnout_procent_ukraine_elections
             tooltip = multiply_var_by_100_tt
-        }		
+        }	
+		# Lyashko
+		set_variable = {
+			var = general_population_support_lyashko_value
+			value = Lyashko_general_support 
+		}
+        multiply_variable = {
+            var = general_population_support_lyashko_value
+            value = 125000
+            tooltip = multiply_var_by_100_tt
+        }	
+		multiply_variable = {
+            var = general_population_support_lyashko_value
+            value = Voter_turnout_procent_ukraine_elections
+        }	
 		### Timoshenko precentage support on elections
         set_variable = {
 			var = Timoshenko_percentage_result_on_elections
@@ -122,7 +138,20 @@ country_event = {
 			value = 100		
 		}
 		round_variable = Poroshenko_percentage_result_on_elections
-		
+		### Lyashko precentage support on elections
+        set_variable = {
+			var = Lyashko_percentage_result_on_elections
+			value = general_population_support_lyashko_value
+		}
+		divide_variable = {
+			var = Lyashko_percentage_result_on_elections
+			value = General_population_on_elections 
+		}
+		multiply_variable = {
+			var = Lyashko_percentage_result_on_elections
+			value = 100		
+		}
+		round_variable = Lyashko_percentage_result_on_elections		
 		
 		if = {
 			limit = {
@@ -152,6 +181,7 @@ country_event = {
 		if = {
 			limit = {
 				check_variable = { var = Poroshenko_general_support value = Timoshenko_general_support compare = greater_than }
+				check_variable = { var = Poroshenko_general_support value = Lyashko_general_support compare = greater_than }
 			}
 			set_country_flag = UKR_elections_results_poroshenko_winner_gui
 			country_event = ukraine.17
@@ -159,9 +189,18 @@ country_event = {
 		if = {
 			limit = {
 				check_variable = { var = Timoshenko_general_support value = Poroshenko_general_support compare = greater_than }
+				check_variable = { var = Timoshenko_general_support value = Lyashko_general_support compare = greater_than }
 			}
 			set_country_flag = UKR_elections_results_timoshenko_winner_gui
 			country_event = ukraine.100
+		}
+		if = {
+			limit = {
+				check_variable = { var = Lyashko_general_support value = Poroshenko_general_support compare = greater_than }
+				check_variable = { var = Lyashko_general_support value = Timoshenko_general_support compare = greater_than }
+			}
+			set_country_flag = UKR_elections_results_lyashko_winner_gui
+			country_event = ukraine.111
 		}		
 
 	}
