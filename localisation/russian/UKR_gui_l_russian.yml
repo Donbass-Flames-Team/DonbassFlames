@@ -198,11 +198,12 @@
  UKR_favourite_candidate_elections: "Текущий фаворитный кандидат: [get_favourite_leader_on_elections]"
  UKR_stamina_elections_text: "Количество действий: §Y[?President_elections_stamina_value]§!"
  elections_increase_button_text: "Провести кампанию"
- UKR_election_population_text: "Общий рейтинг кандидатов:\n\n£poroshenko_texticon£ Поддержка Порошенко: §Y[?general_population_support_poroshenko_value] человек\n\n§!£timoshenko_texticon£ Поддержка Тимошенко: §Y[?general_population_support_timoshenko_value] человек§!§!\n\n§!£lyashko_texticon£ Поддержка Ляшко: §Y2530324 человек§!"
+ UKR_election_population_text: "Общий рейтинг кандидатов:\n\n£poroshenko_texticon£ Поддержка Порошенко: §Y[?general_population_support_poroshenko_value]§! или §Y[?Poroshenko_percentage_result_on_elections]%§! населения\n\n£timoshenko_texticon£ Поддержка Тимошенко: §Y[?general_population_support_timoshenko_value]§! или §Y[?Timoshenko_percentage_result_on_elections]%§! населения\n\n£lyashko_texticon£ Поддержка Ляшко: §Y2530324 §!человек"
  UKR_elections_gui_text: "Президентские выборы"
  UKR_elections_of_president: "Президентские выборы"
  UKR_voter_turnout_elections_text: "Явка избирателей: §Y[?Voter_turnout_ukraine_elections]%§!"
  NOT_A_WORKING_WAY_tt:0 "§RВ ДАННЫЙ МОМЕНТ НЕИГРАБЕЛЬНЫЙ ПУТЬ§!"
+
  
  UKR_elections_results_text: "Результаты выборов"
  UKR_winner_results_text: "[get_winner_on_elections_popularity]"
