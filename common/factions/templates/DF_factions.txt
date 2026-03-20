@@ -1,77 +1,78 @@
-# CSTO
-faction_template_csto = {
-	name = "faction_csto"
-	manifest = faction_manifest_security_through_expansion
-
-	goals = {
-
-		# Short Term
-		faction_goal_growing_the_faction
-
-		# Medium term goals
-		faction_goal_a_military_base
-
-		# Long Term
-		faction_goal_resource_control
-
-	}
-
-	default_rules = {
-		joining_rule_neighbors_only
-		change_leader_rule_never
-	}
-
-	icon = GFX_faction_logo_csto
-}
-
-# NATO
-faction_template_nato = {
-	name = "faction_nato"
-	manifest = faction_manifest_defense_of_democracy
-
-	goals = {
-
-		# Short Term
-		faction_goal_growing_the_faction
-
-		# Medium term goals
-		faction_goal_a_military_base
-
-		# Long Term
-		faction_goal_rule_the_waves
-
-	}
-
-	default_rules = {
-		joining_rule_has_no_war
-		change_leader_rule_manpower
-	}
-
-	icon = GFX_faction_logo_nato
-}
-
-# Novorossiya
-faction_template_novorossiya = {
-	name = "faction_novorossiya"
-	manifest = faction_manifest_strength_in_unity
-
-	goals = {
-
-		# Short Term
-		faction_goal_an_infantry_army
-
-		# Medium term goals
-		faction_goal_a_military_base
-
-		# Long Term
-		faction_goal_rule_the_waves
-
-	}
-
-	default_rules = {
-		joining_rule_neighbors_only
-		change_leader_rule_industry
-	}
-
-	icon = GFX_faction_logo_novorossiya
-}
+## CSTO
+#faction_template_csto = {
+#	name = "faction_csto"
+#	manifest = faction_manifest_security_through_expansion
+#
+#	goals = {
+#
+#		# Short Term
+#		faction_goal_growing_the_faction
+#
+#		# Medium term goals
+#		faction_goal_a_military_base
+#
+#		# Long Term
+#		faction_goal_resource_control
+#
+#	}
+#
+#	default_rules = {
+#		joining_rule_neighbors_only
+#		change_leader_rule_never
+#	}
+#
+#	icon = GFX_faction_logo_csto
+#}
+#
+## NATO
+#faction_template_nato = {
+#	name = "faction_nato"
+#	manifest = faction_manifest_defense_of_democracy
+#
+#	goals = {
+#
+#		# Short Term
+#		faction_goal_growing_the_faction
+#
+#		# Medium term goals
+#		faction_goal_a_military_base
+#
+#		# Long Term
+#		faction_goal_rule_the_waves
+#
+#	}
+#
+#	default_rules = {
+#		joining_rule_has_no_war
+#		change_leader_rule_manpower
+#	}
+#
+#	icon = GFX_faction_logo_nato
+#}
+#
+## Novorossiya
+#faction_template_novorossiya = {
+#	name = "faction_novorossiya"
+#	manifest = faction_manifest_strength_in_unity
+#
+#	goals = {
+#
+#		# Short Term
+#		faction_goal_an_infantry_army
+#
+#		# Medium term goals
+#		faction_goal_a_military_base
+#
+#		# Long Term
+#		faction_goal_rule_the_waves
+#
+#	}
+#
+#	default_rules = {
+#		joining_rule_neighbors_only
+#		change_leader_rule_industry
+#	}
+#
+#	icon = GFX_faction_logo_novorossiya
+#}
+#

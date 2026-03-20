@@ -1,6 +1,11 @@
 capital = 432
 
-create_faction_from_template = faction_template_novorossiya
+#create_faction_from_template = faction_template_novorossiya #TMP TODO: Crash To Desktop
+create_faction_from_template = {
+	template = faction_template_generic
+	name = faction_novorossiya
+	icon = GFX_faction_logo_novorossiya
+}
 
 2013.11.21 = {
 	set_technology = {
