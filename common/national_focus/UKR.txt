@@ -3090,34 +3090,6 @@ focus_tree = {
 		id = UKR_units_of_sbs
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 1
-		y = 1
-		
-		prerequisite = { focus = UKR_create_sbs }
-		relative_position_id = UKR_create_sbs
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-            
-		}
-
-		allow_branch = {
-			has_country_flag = Russo_Ukranian_War
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		}
-	}
-
-	focus = {
-		id = UKR_units_of_sbs
-		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
 		x = -1
 		y = 1
 		
@@ -3142,33 +3114,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = UKR_units_of_sbs
-		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
-		x = -1
-		y = 1
-		
-		prerequisite = { focus = UKR_create_sbs }
-		relative_position_id = UKR_create_sbs
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-            
-		}
-
-		allow_branch = {
-			has_country_flag = Russo_Ukranian_War
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		}
-	}
 
 	focus = {
 		id = UKR_sbs_recruiting_centers

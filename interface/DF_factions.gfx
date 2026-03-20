@@ -1,0 +1,43 @@
+spriteTypes = {
+
+	#########################
+	##### Faction Logos #####
+	#########################
+
+	spriteType = {
+		name = "GFX_faction_logo_csto"
+		texturefile = "gfx/interface/factions/faction_logos/faction_icon_csto.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_faction_logo_nato"
+		texturefile = "gfx/interface/factions/faction_logos/faction_icon_nato.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_faction_logo_novorossiya"
+		texturefile = "gfx/interface/factions/faction_logos/faction_icon_novorossiya.dds"
+		noOfFrames = 2
+	}
+
+	###################################
+	##### Miniature Faction Logos #####
+	###################################
+
+	spriteType = {
+		name = "GFX_faction_logo_csto_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_icon_csto_miniature.dds"
+	}
+
+	spriteType = {
+		name = "GFX_faction_logo_nato_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_icon_nato_miniature.dds"
+	}
+
+	spriteType = {
+		name = "GFX_faction_logo_novorossiya_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_icon_novorossiya_miniature.dds"
+	}
+}

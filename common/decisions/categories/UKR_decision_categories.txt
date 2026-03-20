@@ -10,13 +10,10 @@ UKR_separatism_decision = {
 	icon = GFX_decision_UKR_separatism_icon
 	
 	allowed = {
-		original_tag = UKR 
+		original_tag = UKR
 	}
 	#picture = GFX_decision_UKR_separatism
 
-	visible = {
-        tag = UKR
-	}
 	scripted_gui = UKR_separatism
 	visible_when_empty = yes
 }
@@ -28,12 +25,11 @@ UKR_elections_of_president = {
 	icon = GFX_decision_UKR_separatism
 	
 	allowed = {
-		original_tag = UKR 
+		original_tag = UKR
 	}
 	#picture = GFX_decision_UKR_separatism
 
 	visible = {
-        tag = UKR
 		has_global_flag = UKRelectionsofpresident2014
 	}
 	scripted_gui = UKR_elections_gui
@@ -48,13 +44,10 @@ UKR_parlamient_decision = {
 	icon = GFX_decision_UKR_verkhovna_rada_icon
 	
 	allowed = {
-		original_tag = UKR 
+		original_tag = UKR
 	}
 	#picture = GFX_decision_UKR_separatism
 
-	visible = {
-        tag = UKR
-	}
 	scripted_gui = UKR_parlamient_ui_window
 	visible_when_empty = yes
 }
@@ -67,13 +60,9 @@ UKR_decisions_of_the_transitional_government = {
 	has_completed_focus = UKR_adoption_of_new_laws
 	
 	allowed = {
-		original_tag = UKR 
+		original_tag = UKR
 	}
 	#picture = GFX_decision_UKR_separatism
-
-	visible = {
-        tag = UKR
-	}
 }
 
 UKR_maidan_decision = {
@@ -83,13 +72,11 @@ UKR_maidan_decision = {
 	icon = GFX_decision_UKR_icon_of_maidan_category
 	
 	allowed = {
-		original_tag = UKR 
-		has_country_flag = UKRBeforeOverthrowOfYanukovych
+		original_tag = UKR
 	}
 	#picture = GFX_decision_UKR_separatism
 
 	visible = {
-        tag = UKR
 		has_country_flag = UKRBeforeOverthrowOfYanukovych
 	}
 	scripted_gui = UKR_maidan_powers
@@ -103,13 +90,10 @@ UKR_general_staff_decision = {
 	icon = GFX_decision_afu_icon
 	
 	allowed = {
-		original_tag = UKR 
+		original_tag = UKR
 	}
 	#picture = GFX_decision_UKR_separatism
 
-	visible = {
-        tag = UKR
-	}
 	visible_when_empty = yes
 }
 
@@ -120,12 +104,11 @@ UKR_depreservation_decision = {
 	icon = GFX_decision_afu_icon
 	
 	allowed = {
-		original_tag = UKR 
+		original_tag = UKR
 	}
 	#picture = GFX_decision_UKR_separatism
 
 	visible = {
-        tag = UKR
 		has_completed_focus = UKR_decommissioning_of_stocks
 	}
 }
@@ -137,12 +120,11 @@ UKR_ATO_decision = {
 	icon = GFX_decision_UKR_icon_of_ATO
 	
 	allowed = {
-		original_tag = UKR 
+		original_tag = UKR
 	}
 	#picture = GFX_decision_UKR_separatism
 
 	visible = {
-        tag = UKR
 		has_completed_focus = UKR_start_of_ato
 	}
 	scripted_gui = Escalation_on_Donbas
@@ -156,13 +138,9 @@ UKR_ATO_volunteer_battalions_decision = {
 	icon = GFX_decision_afu_icon
 	
 	allowed = {
-		original_tag = UKR 
+		original_tag = UKR
 	}
 	picture = GFX_UKR_volunteer_battalions_image
-
-	visible = {
-        tag = UKR
-	}
 }
 
 UKR_HUR_decision = {
@@ -172,13 +150,11 @@ UKR_HUR_decision = {
 	icon = GFX_decision_UKR_separatism
 	
 	allowed = {
-		original_tag = UKR 
-		has_country_flag = UKR_expand_hur
+		original_tag = UKR
 	}
 	#picture = GFX_decision_UKR_separatism
 
 	visible = {
-        tag = UKR
 		has_country_flag = UKR_expand_hur
 	}
 	visible_when_empty = yes
@@ -191,13 +167,11 @@ UKR_russian_ukranian_war_escalation_decision = {
 	icon = GFX_decision_UKR_separatism
 	
 	allowed = {
-		original_tag = UKR 
-		has_global_flag = Russo_Ukranian_war
+		original_tag = UKR
 	}
 	#picture = GFX_decision_UKR_separatism
 
 	visible = {
-        tag = UKR
 		has_global_flag = Russo_Ukranian_war
 	}
 	scripted_gui = SMO_escalation
@@ -211,13 +185,11 @@ UKR_national_powers_decision = {
 	icon = GFX_decision_UKR_separatism
 	
 	allowed = {
-		original_tag = UKR 
-		has_country_flag = national_powers_gui
+		original_tag = UKR
 	}
 	#picture = GFX_decision_UKR_separatism
 
 	visible = {
-        tag = UKR
 		has_country_flag = national_powers_gui
 	}
 	visible_when_empty = yes
@@ -230,13 +202,11 @@ UKR_western_help_decision = {
 	icon = GFX_decision_UKR_separatism
 	
 	allowed = {
-		original_tag = UKR 
-		has_country_flag = western_help
+		original_tag = UKR
 	}
 	#picture = GFX_decision_UKR_separatism
 
 	visible = {
-        tag = UKR
 		has_country_flag = western_help
 	}
 	visible_when_empty = yes
