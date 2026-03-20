@@ -43,7 +43,22 @@ characters = {
 			id=-1
 		}
 	}
-
+	
+	UKR_oleg_lyashko = {
+		name = UKR_oleg_lyashko
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_oleg_lyashko"
+			}
+		}
+		country_leader={
+			ideology = populism
+			traits = { }
+			expire="2060.1.1.1"
+			id=-1
+		}
+	}
+	
 	UKR_darth_alekseevich_vader = {
 		name = UKR_darth_alekseevich_vader
 		portraits = {

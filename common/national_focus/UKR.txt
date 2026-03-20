@@ -1761,8 +1761,8 @@ focus_tree = {
                 set_variable = { var = Luhanska_oblast_poroshenko_support_value value = 4 }	
 				set_variable = { var = Luhanska_oblast_lyashko_support_value value = 0 }
 					
-				set_variable = { var = Poroshenko_general_support value = 122 }	
-				set_variable = { var = Timoshenko_general_support value = 70 }
+				set_variable = { var = Poroshenko_general_support value = 120 }	
+				set_variable = { var = Timoshenko_general_support value = 65 }
 				set_variable = { var = Lyashko_general_support value = 7 }
 			}
 		}
@@ -2299,26 +2299,27 @@ focus_tree = {
 				}
 				hidden_effect = {
 		            add_dynamic_modifier = { modifier = UKR_ATO_idea }
-	                set_variable = { UKR_ATO_pocket_penalty = -0.35 }
+	                set_variable = { UKR_ATO_pocket_penalty = -0.30 }
 	                set_variable = { UKR_ATO_experience_loss_factor = -0.30 }
+					set_variable = { UKR_ATO_casualty_trickleback = 0.25}
 					NDR = {
 						add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                    set_variable = { People_republic_pocket_penalty = -0.35 }
+	                    set_variable = { People_republic_pocket_penalty = -0.30 }
 	                    set_variable = { People_republic_experience_loss_factor = -0.20 }
 					}
 					DPR = {
 						add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                    set_variable = { People_republic_pocket_penalty = -0.35 }
+	                    set_variable = { People_republic_pocket_penalty = -0.30 }
 	                    set_variable = { People_republic_experience_loss_factor = -0.20 }
 					}	
 					LPR = {
 						add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                    set_variable = { People_republic_pocket_penalty = -0.35 }
+	                    set_variable = { People_republic_pocket_penalty = -0.30 }
 	                    set_variable = { People_republic_experience_loss_factor = -0.20 }
 					}	
 					SDR = {
 						add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                    set_variable = { People_republic_pocket_penalty = -0.35 }
+	                    set_variable = { People_republic_pocket_penalty = -0.30 }
 	                    set_variable = { People_republic_experience_loss_factor = -0.20 }
 					}								
 		        }
@@ -3089,34 +3090,6 @@ focus_tree = {
 		id = UKR_units_of_sbs
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 1
-		y = 1
-		
-		prerequisite = { focus = UKR_create_sbs }
-		relative_position_id = UKR_create_sbs
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-            
-		}
-
-		allow_branch = {
-			has_country_flag = Russo_Ukranian_War
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		}
-	}
-
-	focus = {
-		id = UKR_units_of_sbs
-		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
 		x = -1
 		y = 1
 		
@@ -3141,33 +3114,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = UKR_units_of_sbs
-		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
-		x = -1
-		y = 1
-		
-		prerequisite = { focus = UKR_create_sbs }
-		relative_position_id = UKR_create_sbs
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-            
-		}
-
-		allow_branch = {
-			has_country_flag = Russo_Ukranian_War
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-		}
-	}
 
 	focus = {
 		id = UKR_sbs_recruiting_centers
@@ -4647,40 +4593,6 @@ focus_tree = {
 					days = 3
 				}
 			}				
-		}
-	}
-
-	focus = {
-		id = UKR_dig_in
-		icon = GFX_focus_UKR_victory_over_separatism
-		cost = 1
-		x = 0
-		y = 7
-
-		prerequisite = { focus = UKR_launch_counterattacks }
-		prerequisite = { focus = UKR_volunteer_help }
-		prerequisite = { focus = UKR_decommissioning_of_stocks }
-		relative_position_id = UKR_start_of_ato
-
-		allow_branch = {
-			has_country_flag = UKR_donbas_war_resumes_spring_2015
-		}
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-            
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
-			add_timed_idea = {
-                idea = UKR_defence_of_cities_idea 
-                days = 75
-            }				
 		}
 	}
 

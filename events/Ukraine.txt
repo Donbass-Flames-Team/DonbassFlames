@@ -3609,7 +3609,7 @@ country_event = {
 	id = ukraine.109
 	title = ukraine.109.t
 	desc = ukraine.109.d
-	picture = GFX_Report_event_threat_of_default_picture
+	picture = GFX_Report_event_rinat_ahmetov_fond_picture
 
 	is_triggered_only = yes
 
@@ -3620,6 +3620,7 @@ country_event = {
 	option = {
 		name = ukraine.109.a
 		add_stability = 0.01
+		add_political_power = 5
 	}
 }
 
@@ -3628,7 +3629,7 @@ country_event = {
 	id = ukraine.110
 	title = ukraine.110.t
 	desc = ukraine.110.d
-	picture = GFX_Report_event_threat_of_default_picture
+	picture = GFX_Report_event_1000_dollars_for_moskaley_picture
 
 	is_triggered_only = yes
 
@@ -3658,4 +3659,42 @@ country_event = {
 
 		}
 	}	
+}
+
+# Победа Ляшко (2014)
+country_event = {
+	id = ukraine.111
+	title = ukraine.111.t
+	desc = ukraine.111.d
+	picture = GFX_Report_event_oleg_lyashko_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.111.a	
+		add_stability = 0.05
+		retire_country_leader = yes
+		add_country_leader_role = {
+            character = UKR_oleg_lyashko
+            promote_leader = yes
+            country_leader = {
+                ideology = populism
+                expire = "2045.1.1.1"
+            } 
+        }
+        set_politics = {
+            ruling_party = autoritarian_democracy
+            elections_allowed = no
+		}
+		hidden_effect = {
+			news_event = {
+                id = news_events.28
+				hours = 12
+            }
+		}
+	}
 }

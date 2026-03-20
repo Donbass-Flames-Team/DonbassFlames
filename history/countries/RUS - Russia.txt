@@ -51,13 +51,13 @@ add_ideas = {
 	RUS_active_propaganda_idea
 }
 
-	add_equipment_to_stockpile = {
-		type = train_equipment_1
-		amount = 600
-		producer = RUS
-	}
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 600
+	producer = RUS
+}
 
-create_faction = "CSTO"
+create_faction_from_template = faction_template_csto
 add_to_faction = BLR
 recruit_character = vladimir_putin
 

@@ -11,7 +11,11 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
         sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3}     
 	}
 
     is_locked = yes
@@ -30,7 +34,11 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
         sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
 	}
 
     is_locked = yes
@@ -49,7 +57,11 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        manpads_platoon = { x = 1 y = 0}
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
 	}
 
     is_locked = yes
@@ -68,8 +80,11 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        manpads_platoon = { x = 1 y = 0}
-        sniper_company = { x = 1 y = 1 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
 	}
 
     is_locked = yes
@@ -88,7 +103,11 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
         sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
 	}
 
     is_locked = yes
@@ -104,14 +123,15 @@ division_template = {
 		marine = { x = 1 y = 1 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		logistics_company = { x = 0 y = 1}
-		signal_company = { x = 0 y = 2}
-		field_hospital = { x = 0 y = 3}
-		mortar = { x = 1 y = 0 }
-		recon = { x = 1 y = 1 }
-        sniper_company = { x = 1 y = 2 }
-        atgm_company = { x = 1 y = 3 }
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
 	}
 
 	is_locked = yes
@@ -128,13 +148,15 @@ division_template = {
 		paratrooper = { x = 1 y = 1 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		logistics_company = { x = 0 y = 1}
-		signal_company = { x = 0 y = 2}
-		field_hospital = { x = 0 y = 3}
-		mortar = { x = 1 y = 0 }
-		recon = { x = 1 y = 1 }
-        sniper_company = { x = 1 y = 2 }
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
 	}
 
 	is_locked = yes
