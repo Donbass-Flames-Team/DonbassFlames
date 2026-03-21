@@ -1034,6 +1034,9 @@ UKR_maidan_decision = {
 					set_country_flag = UKR_separatist_cells_in_odessa
 					set_country_flag = UKR_separatist_cells_in_kharkov
 			    }
+				10 = { set_demilitarized_zone = yes }
+				596 = { set_demilitarized_zone = yes }
+				585 = { set_demilitarized_zone = yes }
 				388 = { set_demilitarized_zone = yes }
 				441 = { set_demilitarized_zone = yes }
 				465 = { set_demilitarized_zone = yes }
