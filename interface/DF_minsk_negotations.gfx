@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Minsk_negotations_progress_bar_background"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile = "gfx/interface/scripted_guis/minks_negotations/Minsk_negotations_progress_bar.dds"
+		size = { x = 400 y = 50 }
+		effectFile = "gfx/FX/progress.lua" 
+	}	
+
+	#spriteType = {
+	#	name = "GFX_Minsk_negotations_progress_bar"
+	#	textureFile = "gfx/interface/scripted_guis/ukraine_gui/minks_negotations/Minsk_negotations_progress_bar.dds"
+	#}
+
+}
+

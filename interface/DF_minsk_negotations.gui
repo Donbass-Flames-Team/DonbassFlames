@@ -1,0 +1,20 @@
+guiTypes = {
+	containerWindowType = {
+		name = "Minsk_negotations_gui"
+		size = { width = 142 height = 220 }
+		position = { x = 0 y = 0 }
+
+		
+		iconType = {
+		    name = "Minsk_negotations_background"
+			spriteType = "GFX_ukraine_background_separatism"
+			position = { x = 5 y = -19 }
+		}
+
+		iconType = {
+			name = "Minsk_negotations_progress_bar_background"
+			spriteType = "GFX_Minsk_negotations_progress_bar_background"
+			position = { x = 50 y = 85 }
+		}
+    }
+}
