@@ -4,6 +4,24 @@ guiTypes = {
 		size = { width = 142 height = 220 }
 		position = { x = 0 y = 0 }
 
+		instantTextBoxType = {
+			name = "Minsk_negotations_progress_text"
+			position = { x = 145 y = 95 }
+			font = "hoi_24header"
+			text = "Minsk_negotations_progress_text"
+			format = center
+			maxHeight = 24
+		}
+
+		instantTextBoxType = {
+			name = "Minsk_negotations_current_negotiations_text"
+			position = { x = 5 y = 25 }
+			font = "hoi_24header"
+			text = "Minsk_negotations_current_negotiations_text"
+			format = center
+			maxHeight = 36
+		}
+
 		
 		iconType = {
 		    name = "Minsk_negotations_background"
@@ -14,7 +32,7 @@ guiTypes = {
 		iconType = {
 			name = "Minsk_negotations_progress_bar_background"
 			spriteType = "GFX_Minsk_negotations_progress_bar_background"
-			position = { x = 50 y = 85 }
+			position = { x = 50 y = 135 }
 		}
     }
 }

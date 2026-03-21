@@ -1,9 +1,10 @@
 spriteTypes = {
-	spriteType = {
+	progressbartype  = {
 		name = "GFX_Minsk_negotations_progress_bar_background"
 		color = { 0.0 0.0 0.0 }
 		colortwo = { 0.0 0.0 0.0 }
-		textureFile = "gfx/interface/scripted_guis/minks_negotations/Minsk_negotations_progress_bar.dds"
+		textureFile1 = "gfx/interface/scripted_guis/minks_negotations/Minsk_negotations_progress_bar.dds"
+		textureFile2 = "gfx/interface/scripted_guis/minks_negotations/Minsk_negotations_progress_bar_background.dds"
 		size = { x = 400 y = 50 }
 		effectFile = "gfx/FX/progress.lua" 
 	}	
