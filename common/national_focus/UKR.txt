@@ -1481,6 +1481,12 @@ focus_tree = {
 			RUS = {
 				set_country_flag = CoupInUkraine
 			}
+			hidden_effect = {
+				country_event = {
+					id = superevent.4
+					hours = 12
+				}
+			}
 		}
 	}
 
@@ -1525,6 +1531,12 @@ focus_tree = {
 				set_country_flag = CoupInUkraine
 			}
 			mark_focus_tree_layout_dirty = yes
+			hidden_effect = {
+				country_event = {
+					id = superevent.4
+					hours = 12
+				}
+			}
 		}
 	}
 
