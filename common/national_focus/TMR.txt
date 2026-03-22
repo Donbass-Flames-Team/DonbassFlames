@@ -7,18 +7,10 @@
     default = no
 
     focus = {
-        id = TMR_november_choice
-        x = 8
-        y = 0
-        cost = 1
-    }
-
-    focus = {
         id = TMR_support_euromaidan
         x = 5
         y = 1
         cost = 1
-        prerequisite = { focus = TMR_november_choice }
         available = { always = no }
         mutually_exclusive = { focus = TMR_support_yanukovych }
         ai_will_do = { factor = 0 }
@@ -39,14 +31,14 @@
         x = 11
         y = 1
         cost = 2
-        prerequisite = { focus = TMR_november_choice }
         mutually_exclusive = { focus = TMR_support_euromaidan }
     }
 
     focus = {
         id = TMR_condemn_kyiv_protests
-        x = 11
-        y = 2
+        x = 0
+        y = 1
+relative_position_id = TMR_support_yanukovych
         cost = 2
         prerequisite = { focus = TMR_support_yanukovych }
         completion_reward = {
@@ -231,10 +223,9 @@
         id = TMR_ogrw_training
         x = 11
         y = 8
-        cost = 1
+        cost = 2
         prerequisite = { focus = TMR_conflict_escalation }
         completion_reward = {
-            add_command_power = 15
             add_war_support = 0.03
             army_experience = 80
         }
@@ -496,9 +487,9 @@ focus = {
     available = { NOT = { OPR = { exists = yes } } }
 
     completion_reward = {
-        add_stability = -0.10
-        add_political_power = 25
-        add_manpower = 700
+		550 = {
+			add_manpower = 750
+		}	
     }
 }
 
@@ -521,10 +512,7 @@ focus = {
     available = { NOT = { OPR = { exists = yes } } }
 
     completion_reward = {
-        add_political_power = -50
         add_stability = 0.03
-        add_war_support = -0.03
-        add_manpower = -75
     }
 }
 
