@@ -9,12 +9,20 @@ state = {
 	resources = { oil = 36 } 
 	history = { 
 		owner = RUS 
+		victory_points = { 17346 25 }
+		victory_points = { 3517 25 }
 		
 		buildings = { 
 			industrial_complex = 15
 			arms_factory = 10
 			infrastructure = 3 
 			synthetic_refinery = 3 
+			17346 = {
+				naval_base = 3
+			}
+			3517 = {
+				naval_base = 4
+			}
 		}
 		
 		add_core_of = RUS 

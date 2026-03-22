@@ -8,13 +8,19 @@ state = {
 	history = { 
 		owner = RUS 
 		
-		victory_points = { 2862 30 }
+		victory_points = { 2862 35 }
 		
 		buildings = { 
 			industrial_complex = 3
 			arms_factory = 3
 			infrastructure = 4 
 			dockyard = 3
+			1838 = {
+				naval_base = 2
+			}
+			16403 = {
+				naval_base = 3
+			}
 		}
 		
 		add_core_of = RUS 

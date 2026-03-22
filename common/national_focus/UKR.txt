@@ -4066,10 +4066,10 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_reliance_on_centralized_command }
 		relative_position_id = UKR_military_reforms_afu
-
-
+		ai_will_do = {
+			factor = 100
+		}
 		available = {
-            
 		}
 
 		completion_reward = {
@@ -4380,15 +4380,14 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_prepare_the_defense_of_cities }
 		relative_position_id = UKR_prepare_the_defense_of_cities
-
-
+		ai_will_do = {
+			factor = 100
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		available = {
-
-		}
+		available = {}
 
 		bypass = {
 			has_global_flag = ATO_Separatists_victory
@@ -4412,8 +4411,9 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_humanitarion_help_to_people }
 		relative_position_id = UKR_humanitarion_help_to_people
-
-
+		ai_will_do = {
+			factor = 100
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -4450,6 +4450,9 @@ focus_tree = {
 		prerequisite = { focus = UKR_volunteer_help }
 		prerequisite = { focus = UKR_decommissioning_of_stocks }
 		relative_position_id = UKR_start_of_ato
+		ai_will_do = {
+			factor = 200
+		}
 
 		allow_branch = {
 			NOT = { 
@@ -4703,11 +4706,9 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_general_staff }
 		relative_position_id = UKR_general_staff
-
 		ai_will_do = {
-			factor = 25
+			factor = 100
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -4832,8 +4833,9 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_organize_defense }
 		relative_position_id = UKR_start_of_ato
-
-
+		ai_will_do = {
+			factor = 100
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -4865,8 +4867,9 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_organize_defense }
 		relative_position_id = UKR_organize_defense
-
-
+		ai_will_do = {
+			factor = 100
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
