@@ -1,30 +1,32 @@
 state = { 
-	id = 486 
-	name = "STATE_486" 
-	manpower = 28055 
-	
-	state_category = large_island 
-	buildings_max_level_factor = 2 
-	
-	resources = {
-		steel = 7 
-		coal = 11 
-	} 
-	history = { 
-		owner = UKR 
-		
-		victory_points = { 10105 3 }
-		victory_points = { 16399 5 }
-		victory_points = { 16461 5 }
-		victory_points = { 16471 3 }
-		victory_points = { 16480 10 }
-		victory_points = { 16488 5 }
-		
-		arms_factory = 0
-		industrial_complex = 0
-		buildings = { infrastructure = 2 }
-		
-		add_core_of = UKR 
-	}
-	provinces = { 5065 6983 7587 8203 8533 9232 9890 9957 10105 16309 16330 16341 16353 16399 16429 16461 16466 16471 16480 16488 18314 18531 18854 18855 18856 18857 18858 18859 18860 18861 18863 18867 18868 18983 18984 18985 18986 18987 }
+    id = 486 
+    name = "STATE_486" 
+    manpower = 28055 
+    
+    state_category = large_island 
+    buildings_max_level_factor = 2 
+    
+    resources = {
+        steel = 7 
+        coal = 11 
+    } 
+    history = { 
+        owner = UKR 
+        
+        victory_points = { 10105 3 }
+        victory_points = { 16399 5 }
+        victory_points = { 16461 5 }
+        victory_points = { 16471 3 }
+        victory_points = { 16480 10 }
+        victory_points = { 16488 5 }
+        
+        buildings = { 
+            infrastructure = 2 
+            arms_factory = 0
+            industrial_complex = 0
+        }
+        
+        add_core_of = UKR 
+    }
+    provinces = { 5065 6983 7587 8203 8533 9232 9890 9957 10105 16309 16330 16341 16353 16399 16429 16461 16466 16471 16480 16488 18314 18531 18854 18855 18856 18857 18858 18859 18860 18861 18863 18867 18868 18983 18984 18985 18986 18987 }
 }
