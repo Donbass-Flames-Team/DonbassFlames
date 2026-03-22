@@ -187,8 +187,10 @@ country_event = {
 	
 	option = {
 		name = russia.11.a
+		custom_effect_tooltip = Minsk_1_will_be_signed_tt
 		add_stability = 0.05
 		hidden_effect = {
+			set_global_flag = Minsk1_is_signed
 			set_global_flag = second_phase_of_ato
 			DPR = {
 				if = { limit = { 652 = { is_controlled_by = DPR } 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
@@ -316,6 +318,7 @@ country_event = {
 	option = {
 		name = russia.13.a
 		add_stability = 0.05
+		custom_effect_tooltip = Minsk_2_will_be_signed_tt
         hidden_effect = {
 			DPR = {
 				if = { limit = { 652 = { is_controlled_by = DPR } 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }

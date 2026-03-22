@@ -1197,7 +1197,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
+			NOT = {
 				has_global_flag = Ukraine_victory_in_ATO
 				has_country_flag = RUS_People_republic_victory
 			}
@@ -1231,7 +1231,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = no
+			has_country_flag = RUS_People_republic_victory
 		}
 
 		cancel_if_invalid = yes
@@ -1261,7 +1261,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = no
+			has_global_flag = Ukraine_victory_in_ATO
 		}
 
 		cancel_if_invalid = yes
