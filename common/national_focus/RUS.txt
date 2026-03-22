@@ -1156,6 +1156,10 @@ focus_tree = {
 			custom_effect_tooltip = Icercase_escalation_war_on_donbas_tt
 			hidden_effect = {
 				set_global_flag = Donbas_war_4_escalation
+				if = {
+					limit = { NOT = { has_global_flag = Donbas_war_3_escalation } }
+					set_global_flag = Donbas_war_3_escalation
+				}
 				UKR = {
 					country_event = {
 						id = ukraine.69
