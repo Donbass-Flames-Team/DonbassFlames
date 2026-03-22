@@ -39,160 +39,34 @@ scripted_gui = {
 		}
 		
 		effects = {
-			coat_donetsk_button_click = {
-				set_variable = { select_separatists_region = 1}
-			}
-			coat_luhansk_button_click = {
-				set_variable = { select_separatists_region = 2}
-			}
-			coat_kharkiv_button_click = {
-				set_variable = { select_separatists_region = 3}
-			}
-			coat_odesa_button_click = {
-				set_variable = { select_separatists_region = 4}
-			}
-			coat_krym_button_click = {
-				set_variable = { select_separatists_region = 5}
-			}
-			coat_cherkasy_button_click = {
-				set_variable = { select_separatists_region = 6}
-			}
-			coat_chernihiv_button_click = {
-				set_variable = { select_separatists_region = 7}
-			}			
-			coat_chernivtsi_button_click = {
-				set_variable = { select_separatists_region = 8}
-			}
-			coat_dnipro_button_click = {
-				set_variable = { select_separatists_region = 9}
-			}
-			coat_ivanofrankivsk_button_click = {
-				set_variable = { select_separatists_region = 10}
-			}
-			coat_khmelnytskyi_button_click = {
-				set_variable = { select_separatists_region = 11}
-			}
-			coat_kherson_button_click = {
-				set_variable = { select_separatists_region = 12}
-			}
-			coat_kyiv_button_click = {
-				set_variable = { select_separatists_region = 13}
-			}			
-			coat_kyrovohrad_button_click = {
-				set_variable = { select_separatists_region = 14}
-			}
-			coat_lviv_button_click = {
-				set_variable = { select_separatists_region = 15}
-			}
-			coat_mykolaiv_button_click = {
-				set_variable = { select_separatists_region = 16}
-			}
-			coat_poltava_button_click = {
-				set_variable = { select_separatists_region = 17}
-			}		
-			coat_sumy_button_click = {
-				set_variable = { select_separatists_region = 18}
-			}
-			coat_ternopil_button_click = {
-				set_variable = { select_separatists_region = 19}
-			}
-			coat_vinnytsia_button_click = {
-				set_variable = { select_separatists_region = 20}
-			}
-			coat_volyn_button_click = {
-				set_variable = { select_separatists_region = 21}
-			}
-			coat_zakarpattya_button_click = {
-				set_variable = { select_separatists_region = 22}
-			}
-			coat_zaporizhzhia_button_click = {
-				set_variable = { select_separatists_region = 23}
-			}
-			coat_zhytomyr_button_click = {
-				set_variable = { select_separatists_region = 24}
-			}
-			coat_rivne_button_click = {
-				set_variable = { select_separatists_region = 25}
-			}			
+			coat_donetsk_button_click = { set_variable = { select_separatists_region = 1} }
+			coat_luhansk_button_click = { set_variable = { select_separatists_region = 2} }
+			coat_kharkiv_button_click = { set_variable = { select_separatists_region = 3} }
+			coat_odesa_button_click = { set_variable = { select_separatists_region = 4} }
+			coat_krym_button_click = { set_variable = { select_separatists_region = 5} }
+			coat_cherkasy_button_click = { set_variable = { select_separatists_region = 6} }
+			coat_chernihiv_button_click = { set_variable = { select_separatists_region = 7} }			
+			coat_chernivtsi_button_click = { set_variable = { select_separatists_region = 8} }
+			coat_dnipro_button_click = { set_variable = { select_separatists_region = 9} }
+			coat_ivanofrankivsk_button_click = { set_variable = { select_separatists_region = 10} }
+			coat_khmelnytskyi_button_click = { set_variable = { select_separatists_region = 11} }
+			coat_kherson_button_click = { set_variable = { select_separatists_region = 12} }
+			coat_kyiv_button_click = { set_variable = { select_separatists_region = 13} }			
+			coat_kyrovohrad_button_click = { set_variable = { select_separatists_region = 14} }
+			coat_lviv_button_click = { set_variable = { select_separatists_region = 15} }
+			coat_mykolaiv_button_click = { set_variable = { select_separatists_region = 16} }
+			coat_poltava_button_click = { set_variable = { select_separatists_region = 17} }		
+			coat_sumy_button_click = { set_variable = { select_separatists_region = 18} }
+			coat_ternopil_button_click = { set_variable = { select_separatists_region = 19} }
+			coat_vinnytsia_button_click = { set_variable = { select_separatists_region = 20} }
+			coat_volyn_button_click = { set_variable = { select_separatists_region = 21} }
+			coat_zakarpattya_button_click = { set_variable = { select_separatists_region = 22} }
+			coat_zaporizhzhia_button_click = { set_variable = { select_separatists_region = 23} }
+			coat_zhytomyr_button_click = { set_variable = { select_separatists_region = 24} }
+			coat_rivne_button_click = { set_variable = { select_separatists_region = 25} }			
 
 
-			close_map_button_click = {
-				clear_variable = show_elections_in_ukraine_map
-		    }
-			separatism_increase_button_click = {
-				if = {
-					limit = { check_variable = {select_separatists_region = 1} }
-					set_variable = { show_prorussian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 2} }
-					set_variable = { show_prorussian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 3} }
-					set_variable = { show_prorussian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 4} }
-					set_variable = { show_prorussian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 5} }
-					set_variable = { show_prorussian_actions_window = 1 }	
-				}
-			}
-			separatism_counteract_button_click = {
-				if = {
-					limit = { check_variable = {select_separatists_region = 1} }
-					set_variable = { show_proukranian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 2} }
-					set_variable = { show_proukranian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 3} }
-					set_variable = { show_proukranian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 4} }
-					set_variable = { show_proukranian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 5} }
-					set_variable = { show_proukranian_actions_window = 1 }	
-				}
-			}
-			separatismgui_closebutton_nw_click = {
-				if = {
-					limit = { check_variable = {select_separatists_region = 1} }
-					clear_variable = select_separatists_region
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 2} }
-					clear_variable = select_separatists_region
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 3} }
-					clear_variable = select_separatists_region
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 4} }
-					clear_variable = select_separatists_region
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 5} }
-					clear_variable = select_separatists_region
-				}				
-				if = {
-					limit = { check_variable = {show_proukranian_actions_window = 1} } 
-				    clear_variable = show_proukranian_actions_window
-				}
-				if = {
-					limit = { check_variable = {show_prorussian_actions_window = 1} } 
-				    clear_variable = show_prorussian_actions_window
-				}
-			}
+			close_map_button_click = { clear_variable = show_elections_in_ukraine_map  }
 			elections_increase_button_click = {
 				# Rivne
 				if = {
@@ -723,53 +597,131 @@ scripted_gui = {
 						add_to_variable = { var = Timoshenko_general_support value = 1 }						
 					}					
 				}
+				# Ternopil
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 19} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
+                    # Poroshenko
 					if = {
 						limit = {
 							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-							NOT = { check_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 7 compare = greater_than_or_equals } }
 						}
-						random_list = {
-							50 = {
-                                subtract_from_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
-						        add_to_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Ternopilska_oblast_poroshenko_support_value min = 0 max = 8 }						
-						        clamp_variable = { var = Ternopilska_oblast_timoshenko_support_value min = 0 max = 8 }
-
-						        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						        add_to_variable = { var = Poroshenko_general_support value = 1 }
+                        if = { limit = { check_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 compare = greater_than } 
+						NOT = { check_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 compare = greater_than } } } 
+					        subtract_from_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
+							subtract_from_variable = { var = Lyashko_general_support value = 1 }
+							add_to_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
+							add_to_variable = { var = Poroshenko_general_support value = 1 }
+					    }
+						if = { limit = { check_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 compare = greater_than } 
+					    NOT = { check_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 compare = greater_than } }} 
+					        subtract_from_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
+							subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+						    add_to_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
+							add_to_variable = { var = Poroshenko_general_support value = 1 }
+					    }						
+						if = { limit = { check_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 compare = greater_than } check_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 compare = greater_than } } 
+					        random_list = {
+								50 = {
+                                    subtract_from_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
+							        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+									add_to_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
+									add_to_variable = { var = Poroshenko_general_support value = 1 }
+								}
+								50 = {
+                                    subtract_from_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
+							        subtract_from_variable = { var = Lyashko_general_support value = 1 }
+									add_to_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
+									add_to_variable = { var = Poroshenko_general_support value = 1 }
+								}
 							}
-
-							30 = {
-
-							}
-						}						
+					    }
 					}
+					# Timoshenko
 					if = {
 						limit = {
 							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
 						}
-						random_list = {
-							50 = {
-                              	add_to_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
-				                subtract_from_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Ternopilska_oblast_poroshenko_support_value min = 0 max = 8 }						
-						        clamp_variable = { var = Ternopilska_oblast_timoshenko_support_value min = 0 max = 8 }
-
-						        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						        add_to_variable = { var = Timoshenko_general_support value = 1 }
+						if = { limit = { check_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
+					        subtract_from_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
+							subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+							add_to_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
+					    }
+						if = { limit = { check_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 compare = greater_than } } 
+					        subtract_from_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
+							subtract_from_variable = { var = Lyashko_general_support value = 1 }
+							add_to_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
+					    }						
+						if = { limit = { check_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 compare = greater_than } check_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
+					        random_list = {
+								50 = {
+                                    subtract_from_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
+							        subtract_from_variable = { var = Lyashko_general_support value = 1 }
+									add_to_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
+								}
+								50 = {
+                                    subtract_from_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
+							        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+									add_to_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
+								}
 							}
-							30 = {
+					    }
 
+						add_to_variable = { var = Timoshenko_general_support value = 1 }						
+					}
+					# Lyashko
+					if = {
+						limit = {
+							has_country_flag = Oleg_Lyashko_on_2014_elections_favourite
+						}
+						if = { limit = { check_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 compare = greater_than } 
+						NOT = { check_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 compare = greater_than } } } 
+						    random_list = {
+								30 = {
+                                    subtract_from_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
+							        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+							        add_to_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
+							        add_to_variable = { var = Lyashko_general_support value = 1 }
+								}
+								50 = {
+
+								}
 							}
-						}						
-					}					
+					    }
+						if = { limit = { check_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 compare = greater_than } 
+					    NOT = { check_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 compare = greater_than } }} 
+					        subtract_from_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
+							subtract_from_variable = { var = Lyashko_general_support value = 1 }
+						    add_to_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
+							add_to_variable = { var = Lyashko_general_support value = 1 }
+					    }						
+						if = { limit = { check_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 compare = greater_than } check_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
+					        random_list = {
+								30 = {
+                                    subtract_from_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
+							        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+									add_to_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
+									add_to_variable = { var = Lyashko_general_support value = 1 }
+								}
+								20 = {
+                                    subtract_from_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
+							        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+									add_to_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
+									add_to_variable = { var = Lyashko_general_support value = 1 }
+								}
+								50 = {
+
+								}
+							}
+					    }				
+					}	
+					clamp_variable = { var = Ternopilska_oblast_poroshenko_support_value min = 0 max = 8 }						
+					clamp_variable = { var = Ternopilska_oblast_timoshenko_support_value min = 0 max = 8 }			
 				}	
+				# Sumska oblast
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 18} 
