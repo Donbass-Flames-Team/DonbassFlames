@@ -286,15 +286,15 @@ focus = {
         cost = 1
         prerequisite = { focus = TMR_opr_success }
         available = { OPR = { exists = yes } }
-completion_reward = {
-    OPR = {
-        add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 }
-        add_equipment_to_stockpile = { type = bulletproof_vests_equipment_1 amount = 350 }
-        add_equipment_to_stockpile = { type = uniform_equipment_1 amount = 450 }
-        add_equipment_to_stockpile = { type = support_equipment amount = 150 }
+        completion_reward = {
+        OPR = {
+            add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 }
+            add_equipment_to_stockpile = { type = bulletproof_vests_equipment_1 amount = 350 }
+            add_equipment_to_stockpile = { type = uniform_equipment_1 amount = 450 }
+            add_equipment_to_stockpile = { type = support_equipment amount = 150 }
+        }
+        }
     }
- }
-}
 
 
     focus = {
@@ -467,7 +467,7 @@ focus = {
         OPR = {
             add_manpower = 300
             add_war_support = 0.05
-        add_command_power = 5
+            add_command_power = 5
             army_experience = 25
         }
     }
@@ -493,7 +493,7 @@ focus = {
         completion_reward = { OPR = { add_equipment_to_stockpile = { type = motorized_equipment amount = 100 } } }
     }
 
-focus = {
+    focus = {
     id = TMR_accept_refugees
     x = 14
     y = 11
@@ -506,7 +506,7 @@ focus = {
 			add_manpower = 750
 		}	
     }
-}
+    }
 
     focus = {
         id = TMR_temporary_shelters
@@ -699,8 +699,11 @@ focus = {
         cost = 1
         prerequisite = { focus = TMR_kolbasna_unseal_depots }
         available = { has_country_flag = TMR_rus_support_ok }
+
         completion_reward = {
-            set_country_flag = TMR_kolbasna_mined add_command_power = 15 }
+        set_country_flag = TMR_kolbasna_mined 
+        add_command_power = 15 
+        }
     }
 
     focus = {
@@ -710,11 +713,14 @@ focus = {
         cost = 1
         prerequisite = { focus = TMR_rus_support_package }
         available = { has_country_flag = TMR_rus_support_ok }
-        completion_reward = {
 
-            news_event = { id = tmr.5 hours = 1 } add_command_power = 10 add_war_support = 0.02
+        completion_reward = {
+            news_event = { id = tmr.5 hours = 1 }
             load_oob = "TMR_ogrw_battalions"
-        } add_command_power = 10 add_war_support = 0.02 }
+            add_command_power = 10 
+            add_war_support = 0.02 
+        }
+    }
 
     focus = {
         id = TMR_rus_recon_support
@@ -732,7 +738,19 @@ focus = {
         cost = 1
         prerequisite = { focus = TMR_local_support_only }
         available = { has_country_flag = TMR_rus_support_denied_go_alone }
-        completion_reward = { add_manpower = 5000 add_war_support = 0.02 }
+        completion_reward = { 
+            add_manpower = 500 
+            add_war_support = 0.02 
+            add_stability = -0.125
+            custom_effect_tooltip = TMR_mobilization_tt
+            hidden_effect = {
+                load_oob = TMR_mobilization
+                news_event = {
+                    id = news_events.30
+                    hours = 6
+                }
+            }  
+        }
     }
 
     focus = {
@@ -764,30 +782,23 @@ focus = {
     }
 
     focus = {
-        id = TMR_border_deployments
+    id = TMR_start_operation
         x = 12
         y = 22
         cost = 1
         prerequisite = { focus = TMR_operational_planning }
-        completion_reward = { add_war_support = 0.03 add_stability = -0.01 }
-    }
+        completion_reward = {
+            unlock_decision_tooltip = TMR_dig_in_tiraspol
+            unlock_decision_tooltip = TMR_return_OPR
+            declare_war_on = { target = UKR type = annex_everything }
+            news_event = { id = tmr.4 hours = 1 }
 
-    focus = {
-    id = TMR_start_operation
-    x = 12
-    y = 22
-    cost = 1
-    prerequisite = { focus = TMR_border_deployments }
-    completion_reward = {
-        declare_war_on = { target = UKR type = annex_everything }
-        news_event = { id = tmr.4 hours = 1 }
-
-        if = {
-            limit = { has_country_flag = TMR_rus_support_denied_go_alone }
-            RUS = { country_event = { id = tmr.8 days = 1 } }
+            if = {
+                limit = { has_country_flag = TMR_rus_support_denied_go_alone }
+                RUS = { country_event = { id = tmr.8 days = 1 } }
+            }
         }
     }
-}
 
     focus = {
         id = TMR_seize_border_posts
@@ -806,13 +817,26 @@ focus = {
     }
 
     focus = {
-    id = TMR_war_economy_rails
-    x = 15
-    y = 23
-    cost = 1
-    prerequisite = { focus = TMR_border_deployments }
-    completion_reward = {
-        set_economy_law = war_economy
+        id = TMR_war_economy_rails
+        x = 15
+        y = 23
+        cost = 1
+        prerequisite = { focus = TMR_start_operation }
+        completion_reward = {
+            set_economy_law = war_economy
+        }
     }
-}
+
+    focus = {
+        id = TMR_secure_west
+        x = 12
+        y = 24
+        cost = 1
+        prerequisite = { focus = TMR_war_economy_rails }
+        prerequisite = { focus = TMR_seize_border_posts }
+
+        completion_reward = {
+           declare_war_on = { target = MOL type = annex_everything }
+        }
+    }
 }

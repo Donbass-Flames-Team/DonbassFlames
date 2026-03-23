@@ -1037,3 +1037,19 @@ news_event = {
 		name = news_events.29.a
 	}
 }
+
+# Мобилизация в ТМР
+news_event = {
+	id = news_events.30
+	title = news_events.30.t
+	desc = news_events.30.d
+	picture = GFX_news_event_mobilization_in_tmr
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.30.a
+	}
+}

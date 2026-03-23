@@ -1,0 +1,20 @@
+################
+##### DPR ######
+################
+# made in kaja
+
+TMR_operation_in_ukraine = {
+
+	priority = 85
+	
+	icon = GFX_decision_afu_icon
+	
+	allowed = {
+		original_tag = TMR
+	}
+	#picture = GFX_decision_UKR_separatism
+
+	visible = {
+        tag = TMR
+	}
+}
