@@ -616,7 +616,7 @@ focus_tree = {
 	focus = {
 		id = RUS_referendum_in_crimea
 		icon = GFX_goal_no_focus_RUS
-		cost = 1
+		cost = 0.5
 		x = -1
 		y = 3
 
@@ -671,7 +671,7 @@ focus_tree = {
 	focus = {
 		id = RUS_return_to_home_port
 		icon = GFX_goal_no_focus_RUS
-		cost = 1
+		cost = 0.5
 		x = 0
 		y = 1
 
@@ -790,7 +790,7 @@ focus_tree = {
 	focus = {
 		id = RUS_help_to_new_republics
 		icon = GFX_goal_no_focus_RUS
-		cost = 0.5
+		cost = 0.3
 		x = 0
 		y = 2
 
