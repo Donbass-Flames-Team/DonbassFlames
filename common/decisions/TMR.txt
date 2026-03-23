@@ -115,5 +115,43 @@ TMR_operation_in_ukraine = {
 			factor = 150		
 		}
 	}
+
+	TMR_end_operation = {
+
+		icon = GFX_decision_generic_Guns_from_communists
+		
+		available = {
+		    tag = TMR
+			NOT = {
+				surrender_progress > 0.99
+			}
+		}
+	    
+		visible = {
+			tag = TMR
+			has_completed_focus = TMR_opr_failure
+			has_completed_focus = TMR_start_operation		
+		}
+		
+		fire_only_once = yes
+
+		cost = 10
+
+		complete_effect = {
+			custom_effect_tooltip = TMR_end_operation_tt
+			hidden_effect = {
+				UKR = {
+					annex_country = {
+						target = OPR
+					}
+				}
+				white_peace = UKR			
+			}
+		}
+
+		ai_will_do = {
+			factor = -100		
+		}
+	}
 }
 
