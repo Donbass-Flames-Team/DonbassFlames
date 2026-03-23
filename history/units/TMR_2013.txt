@@ -1,0 +1,244 @@
+division_template = {
+	name = "Spetsnaz"
+	regiments = {
+        special_forces_infantry = { x = 0 y = 0 }
+		special_forces_infantry = { x = 0 y = 1 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Tankovyy batal'on"
+	regiments = {
+        modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+        ifv_unit = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Batalyon samokhidnoyi artyleriyi"
+	regiments = {
+        sau_artillery = { x = 0 y = 0 }
+		sau_artillery = { x = 0 y = 1 }
+		sau_artillery = { x = 0 y = 2 }
+        sau_artillery = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Motosrelkovy batal'on"
+	regiments = {
+        ifv_unit = { x = 0 y = 0 }
+		apc_unit = { x = 0 y = 1 }
+		apc_unit = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
+units = {
+    division= { 
+        name = "1-y motostrelkovyy batal'on 1-y otdel'noy gvardeyskoy motostrelkovoy brigady" 
+        location = 6509
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.6 
+        start_equipment_factor = 0.3 
+        start_manpower_factor = 0.1
+    }
+
+    division= {
+        name = "2-y motostrelkovyy batal'on 1-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 6509
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.4 
+        start_manpower_factor = 0.1 
+    }
+
+    division= {
+        name = "3-y motostrelkovyy batal'on 1-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 6509
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.2 
+        start_manpower_factor = 0.1 
+    } 
+    
+    division= {
+        name = "1-y tankovyy batal'on 1-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 5597
+        division_template = "Tankovyy batal'on"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.1 
+    }
+
+    division= { 
+        name = "1-y motostrelkovyy batal'on 2-y otdel'noy motostrelkovoy brigady" 
+        location = 5597
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.6 
+        start_equipment_factor = 0.3 
+        start_manpower_factor = 0.1
+    }
+
+    division= {
+        name = "2-y motostrelkovyy batal'on 2-y otdel'noy motostrelkovoy brigady"
+        location = 5597
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.4 
+        start_manpower_factor = 0.1 
+    }
+
+    division= {
+        name = "3-y motostrelkovyy batal'on 2-y otdel'noy motostrelkovoy brigady"
+        location = 5597
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.2 
+        start_manpower_factor = 0.1 
+    }
+
+    division= { 
+        name = "1-y motostrelkovyy batal'on 3-y otdel'noy motostrelkovoy brigady" 
+        location = 4357
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.6 
+        start_equipment_factor = 0.3 
+        start_manpower_factor = 0.1
+    }
+
+    division= {
+        name = "2-y motostrelkovyy batal'on 3-y otdel'noy motostrelkovoy brigady"
+        location = 4357
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.4 
+        start_manpower_factor = 0.1 
+    }
+
+    division= {
+        name = "3-y motostrelkovyy batal'on 3-y otdel'noy motostrelkovoy brigady"
+        location = 4357
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.2 
+        start_manpower_factor = 0.1 
+    }
+
+    division= { 
+        name = "1-y motostrelkovyy batal'on 4-y otdel'noy motostrelkovoy brigady" 
+        location = 6215
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.6 
+        start_equipment_factor = 0.3 
+        start_manpower_factor = 0.1
+    }
+
+    division= {
+        name = "2-y motostrelkovyy batal'on 4-y otdel'noy motostrelkovoy brigady"
+        location = 6215
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.4 
+        start_manpower_factor = 0.1 
+    }
+
+    division= {
+        name = "3-y motostrelkovyy batal'on 4-y otdel'noy motostrelkovoy brigady"
+        location = 6215
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.2 
+        start_manpower_factor = 0.1 
+    }
+
+    division= { 
+        name = "1-y batal'on Tsentra spetsial'nykh operatsiy «Vostok»" 
+        location = 6509
+        division_template = "Spetsnaz"
+        start_experience_factor = 0.6 
+        start_equipment_factor = 0.3 
+        start_manpower_factor = 0.1
+    }
+
+    division= { 
+        name = "1-y batal'on otdel'nogo artilleriyskogo polka" 
+        location = 6509
+        division_template = "Batalyon samokhidnoyi artyleriyi"
+        start_experience_factor = 0.6 
+        start_equipment_factor = 0.4
+        start_manpower_factor = 0.1
+    }
+
+    division= { 
+        name = "2-y batal'on otdel'nogo artilleriyskogo polka" 
+        location = 6509
+        division_template = "Batalyon samokhidnoyi artyleriyi"
+        start_experience_factor = 0.6 
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.1
+    }
+
+    division= { 
+        name = "3-y batal'on otdel'nogo artilleriyskogo polka" 
+        location = 6509
+        division_template = "Batalyon samokhidnoyi artyleriyi"
+        start_experience_factor = 0.6 
+        start_equipment_factor = 0.2
+        start_manpower_factor = 0.1
+    }
+}

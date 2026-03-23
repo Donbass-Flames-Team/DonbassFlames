@@ -219,14 +219,11 @@ country_event = {
 
     option = {
         name = tmr.12.a
-        set_country_flag = UKR_tmr_partition_decided
         add_political_power = 50
     }
 
     option = {
         name = tmr.12.b
-        set_country_flag = UKR_tmr_partition_decided
-
         if = {
             limit = { MOL = { exists = yes } }
             MOL = {
