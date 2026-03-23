@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 3000 y = 1350 }
+	continuous_focus_position = { x = 4000 y = 1350 }
 
 	focus = {
 		id = RUS_sochi_olympics
@@ -22,12 +22,6 @@ focus_tree = {
 		}
 
 		available = {
-		}
-
-		allow_branch = {
-			NOT = {
-			    has_completed_focus = RUS_coup_in_ukraine
-			}
 		}
 
 		cancel_if_invalid = yes
@@ -133,12 +127,6 @@ focus_tree = {
 		}
 
 		available = {
-		}
-
-		allow_branch = {
-			NOT = {
-			    has_completed_focus = RUS_coup_in_ukraine
-			}
 		}
 
 		cancel_if_invalid = yes
@@ -412,22 +400,8 @@ focus_tree = {
 		id = RUS_coup_in_ukraine
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 15
-		y = 6
-
-		allow_branch = {
-			NOT = {
-			    has_completed_focus = RUS_the_war_has_stalled
-			}
-		}
-
-		offset = {
-			x = 0
-			y = -6
-			trigger = {
-				has_completed_focus = RUS_coup_in_ukraine
-			}
-		}
+		x = 24
+		y = 0
 		
 		ai_will_do = {
 			factor = 15
@@ -461,17 +435,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		allow_branch = {
-			NOT = {
-			    has_completed_focus = RUS_the_war_has_stalled
-			}
-		}
-
 		available = {
-		}
-
-		allow_branch = {
-			has_completed_focus = RUS_coup_in_ukraine
 		}
 
 		cancel_if_invalid = yes
@@ -1279,10 +1243,61 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_introduction_of_anti_sanctions
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 47
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = RUS_support_the_import_substitution_policy
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 2
+		y = 1
+
+		prerequisite = { focus = RUS_introduction_of_anti_sanctions }
+		relative_position_id = RUS_introduction_of_anti_sanctions
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = RUS_minsk_protocols
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 15
+		x = 37
 		y = 0
 		
 		ai_will_do = {
@@ -1298,10 +1313,6 @@ focus_tree = {
 
 		available = {
 			date > 2014.8.15
-		}
-
-		allow_branch = {
-			has_completed_focus = RUS_the_war_has_stalled
 		}
 
 		cancel_if_invalid = yes
@@ -1356,46 +1367,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_introduce_troops_into_the_conflict_zone
-		icon = GFX_goal_no_focus_RUS
-		cost = 5
-		x = 0
-		y = 2
-
-		prerequisite = { focus = RUS_ukraine_is_violating_protocols }
-		relative_position_id = RUS_minsk_protocols
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-			OR = {
-				has_global_flag = Ukraine_victory_in_ATO
-				has_country_flag = RUS_People_republic_victory
-			}
-		}
-
-		available = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
 		id = RUS_sign_minsk_two
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
 		x = 0
-		y = 3
+		y = 2
 
-		prerequisite = { focus = RUS_introduce_troops_into_the_conflict_zone }
+		prerequisite = { focus = RUS_ukraine_is_violating_protocols }
 		relative_position_id = RUS_minsk_protocols
 		
 		ai_will_do = {
@@ -1434,7 +1412,7 @@ focus_tree = {
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
 		x = 0
-		y = 4
+		y = 3
 
 		prerequisite = { focus = RUS_sign_minsk_two }
 		relative_position_id = RUS_minsk_protocols
@@ -1511,6 +1489,61 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_support_etatism
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = -2
+		y = 1
+
+		prerequisite = { focus = RUS_domestic_policy }
+		relative_position_id = RUS_domestic_policy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_yarovaya_package
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = 0
+		y = 2
+
+		prerequisite = { focus = RUS_law_on_undesirable_organizations }
+		prerequisite = { focus = RUS_support_etatism }
+		prerequisite = { focus = RUS_propaganda_of_traditional_values }
+		relative_position_id = RUS_domestic_policy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
 		id = RUS_law_on_undesirable_organizations
 		icon = GFX_goal_no_focus_RUS
 		cost = 3
@@ -1565,10 +1598,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_continue_gerasimov_doctrine
+		id = RUS_development_of_amred_forces
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = -5
+		x = -4
 		y = 1
 
 		prerequisite = { focus = RUS_shaky_peace_in_donbass }
@@ -1590,4 +1623,83 @@ focus_tree = {
 			add_stability = 0.025
 		}
 	}
+
+	focus = {
+		id = RUS_establish_aerospace_forces
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = -3
+		y = 1
+
+		prerequisite = { focus = RUS_development_of_amred_forces }
+		relative_position_id = RUS_development_of_amred_forces
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = RUS_increase_contracts_in_army
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = RUS_development_of_amred_forces }
+		relative_position_id = RUS_development_of_amred_forces
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = RUS_modernization_of_tanks
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = RUS_increase_contracts_in_army }
+		relative_position_id = RUS_increase_contracts_in_army
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	
 }	

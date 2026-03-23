@@ -492,6 +492,10 @@ news_event = {
 		hidden_effect = {
 			RUS = {
 				add_ideas = RUS_western_sanctions
+				country_event = {
+					id = russia.15
+					days = 30
+				}
 			}
 		}
 	}
@@ -1015,5 +1019,21 @@ news_event = {
 				original_tag = UKR
 			}
 		}
+	}
+}
+
+# Олимпийские игры 2014
+news_event = {
+	id = news_events.29
+	title = news_events.29.t
+	desc = news_events.29.d
+	picture = GFX_news_event_Sochi_olympic_games_2014
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.29.a
 	}
 }
