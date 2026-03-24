@@ -1254,7 +1254,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			date > 2015.1.1
 		}
 
 		cancel_if_invalid = yes
@@ -1313,6 +1313,7 @@ focus_tree = {
 
 		available = {
 			date > 2014.8.15
+			has_completed_focus = RUS_the_war_has_stalled
 		}
 
 		cancel_if_invalid = yes
@@ -1441,7 +1442,7 @@ focus_tree = {
 		x = 5
 		y = 1
 
-		prerequisite = { focus = RUS_shaky_peace_in_donbass }
+		prerequisite = { focus = RUS_shaky_peace_in_donbass focus = RUS_lasting_peace_in_donbass }
 		relative_position_id = RUS_shaky_peace_in_donbass
 		
 		ai_will_do = {
