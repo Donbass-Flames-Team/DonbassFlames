@@ -3,16 +3,15 @@ DPR_armed_forces_of_dpr_category = {
 	DPR_form_calimus_brigada = {
 
 		icon = GFX_decision_generic_Guns_from_communists
-		
-		available = {
-		    tag = DPR
+
+		allowed = {
+			original_tag = DPR
 		}
-	    
+
 		visible = {
-			tag = DPR
-			has_completed_focus = DPR_armed_forces_of_dpr		
+			has_completed_focus = DPR_armed_forces_of_dpr
 		}
-		
+
 		fire_only_once = yes
 
 		cost = 25
@@ -22,7 +21,7 @@ DPR_armed_forces_of_dpr_category = {
 		}
 
 		ai_will_do = {
-			factor = 50		
+			factor = 50
 		}
 	}
 }
@@ -32,17 +31,16 @@ DPR_war_for_independence_of_donbass = {
 	DPR_recruitment_in_donetsk_and_makiivka = {
 
 		icon = GFX_decision_DPR_recruitment_militia
-		
+
+		allowed = {
+			original_tag = DPR
+		}
+
 		available = {
-		    tag = DPR
 			controls_province = 15707
 			controls_province = 10298
 		}
-	    
-		visible = {
-			tag = DPR
-		}
-		
+
 		fire_only_once = yes
 
 		cost = 15
@@ -52,30 +50,33 @@ DPR_war_for_independence_of_donbass = {
 		}
 
 		ai_will_do = {
-			factor = 100		
+			factor = 100
 		}
 
 		highlight_states = {
-            highlight_state_targets = { state = 424 }
-			highlight_state_targets = { state = 432 }
-            highlight_provinces = { 15707 }
-			highlight_provinces = { 10298 }
-        }
+			highlight_state_targets = {
+				state = 424
+				state = 432
+			}
+			highlight_provinces = {
+				15707
+				10298
+			}
+		}
 	}
 
 	DPR_recruitment_in_enakievo = {
 
 		icon = GFX_decision_DPR_recruitment_militia
-		
+
+		allowed = {
+			original_tag = DPR
+		}
+
 		available = {
-		    tag = DPR
 			controls_province = 18447
 		}
-	    
-		visible = {
-			tag = DPR
-		}
-		
+
 		fire_only_once = yes
 
 		cost = 15
@@ -85,28 +86,31 @@ DPR_war_for_independence_of_donbass = {
 		}
 
 		ai_will_do = {
-			factor = 100		
+			factor = 100
 		}
 
 		highlight_states = {
-            highlight_state_targets = { state = 398 }
-            highlight_provinces = { 18447 }
-        }
+			highlight_state_targets = {
+				state = 398
+			}
+			highlight_provinces = {
+				18447
+			}
+		}
 	}
 
 	DPR_recruitment_in_horlivka = {
 
 		icon = GFX_decision_DPR_recruitment_militia
-		
+
+		allowed = {
+			original_tag = DPR
+		}
+
 		available = {
-		    tag = DPR
 			controls_province = 10561
 		}
-	    
-		visible = {
-			tag = DPR
-		}
-		
+
 		fire_only_once = yes
 
 		cost = 15
@@ -116,28 +120,31 @@ DPR_war_for_independence_of_donbass = {
 		}
 
 		ai_will_do = {
-			factor = 100		
+			factor = 100
 		}
 
 		highlight_states = {
-            highlight_state_targets = { state = 381 }
-            highlight_provinces = { 10561 }
-        }
+			highlight_state_targets = {
+				state = 381
+			}
+			highlight_provinces = {
+				10561
+			}
+		}
 	}
 
 	DPR_recruitment_in_karzivsk = {
 
 		icon = GFX_decision_DPR_recruitment_militia
-		
+
+		allowed = {
+			original_tag = DPR
+		}
+
 		available = {
-		    tag = DPR
 			controls_province = 15741
 		}
-	    
-		visible = {
-			tag = DPR
-		}
-		
+
 		fire_only_once = yes
 
 		cost = 15
@@ -147,28 +154,31 @@ DPR_war_for_independence_of_donbass = {
 		}
 
 		ai_will_do = {
-			factor = 100		
+			factor = 100
 		}
 
 		highlight_states = {
-            highlight_state_targets = { state = 435 }
-            highlight_provinces = { 15741 }
-        }
+			highlight_state_targets = {
+				state = 435
+			}
+			highlight_provinces = {
+				15741
+			}
+		}
 	}
 
 	DPR_recruitment_in_krasnoarmaysk = {
 
 		icon = GFX_decision_DPR_recruitment_militia
-		
+
+		allowed = {
+			original_tag = DPR
+		}
+
 		available = {
-		    tag = DPR
 			controls_province = 18334
 		}
-	    
-		visible = {
-			tag = DPR
-		}
-		
+
 		fire_only_once = yes
 
 		cost = 15
@@ -178,28 +188,31 @@ DPR_war_for_independence_of_donbass = {
 		}
 
 		ai_will_do = {
-			factor = 100		
+			factor = 100
 		}
 
 		highlight_states = {
-            highlight_state_targets = { state = 395 }
-            highlight_provinces = { 18334 }
-        }
+			highlight_state_targets = {
+				state = 395
+			}
+			highlight_provinces = {
+				18334
+			}
+		}
 	}
 
 	DPR_recruitment_in_kurahovo = {
 
 		icon = GFX_decision_DPR_recruitment_militia
-		
+
+		allowed = {
+			original_tag = DPR
+		}
+
 		available = {
-		    tag = DPR
 			controls_province = 15772
 		}
-	    
-		visible = {
-			tag = DPR
-		}
-		
+
 		fire_only_once = yes
 
 		cost = 15
@@ -209,28 +222,31 @@ DPR_war_for_independence_of_donbass = {
 		}
 
 		ai_will_do = {
-			factor = 100		
+			factor = 100
 		}
 
 		highlight_states = {
-            highlight_state_targets = { state = 441 }
-            highlight_provinces = { 15772 }
-        }
+			highlight_state_targets = {
+				state = 441
+			}
+			highlight_provinces = {
+				15772
+			}
+		}
 	}
 
 	DPR_recruitment_in_konstantinovka = {
 
 		icon = GFX_decision_DPR_recruitment_militia
-		
+
+		allowed = {
+			original_tag = DPR
+		}
+
 		available = {
-		    tag = DPR
 			controls_province = 18331
 		}
-	    
-		visible = {
-			tag = DPR
-		}
-		
+
 		fire_only_once = yes
 
 		cost = 15
@@ -240,16 +256,18 @@ DPR_war_for_independence_of_donbass = {
 		}
 
 		ai_will_do = {
-			factor = 100		
+			factor = 100
 		}
 
 		highlight_states = {
-            highlight_state_targets = { state = 359 }
-            highlight_provinces = { 18331 }
-        }
+			highlight_state_targets = {
+				state = 359
+			}
+			highlight_provinces = {
+				18331
+			}
+		}
 	}
-
-
 
 	DPR_capture_debaltsevo = {
 
@@ -258,14 +276,16 @@ DPR_war_for_independence_of_donbass = {
 		selectable_mission = no
 		fire_only_once = yes
 		days_mission_timeout = 25
-        
+
+		allowed = {
+			original_tag = DPR
+		}
+
 		#Fail trigger
 		available = {
-			DPR = { 
-				controls_state = 13
-			    controls_state = 378
-				controls_state = 376
-			}
+			controls_state = 13
+			controls_state = 378
+			controls_state = 376
 		}
 
 		activation = {
@@ -291,7 +311,7 @@ DPR_war_for_independence_of_donbass = {
 			hidden_effect = {
 				clr_country_flag = Debaltsevo_battle
 			}
-	    }
+		}
 
 		highlight_states = {
 			highlight_state_targets = {
@@ -304,4 +324,3 @@ DPR_war_for_independence_of_donbass = {
 		}
 	}
 }
-

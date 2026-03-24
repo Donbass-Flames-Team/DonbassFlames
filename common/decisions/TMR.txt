@@ -3,61 +3,63 @@ TMR_operation_in_ukraine = {
 	TMR_return_OPR = {
 
 		icon = GFX_decision_generic_Guns_from_communists
-		
+
+		allowed = {
+			original_tag = TMR
+		}
+
 		available = {
-		    tag = TMR
-			572 = {
-				is_controlled_by = TMR
-			}
+			controls_state = 572
 		}
-	    
+
 		visible = {
-			tag = TMR
 			has_completed_focus = TMR_opr_failure
-			has_completed_focus = TMR_start_operation		
+			has_completed_focus = TMR_start_operation
 		}
-		
+
 		fire_only_once = yes
 
 		cost = 10
 
 		complete_effect = {
-			572 = { transfer_state_to = OPR }
+			OPR = {
+				transfer_state = 572
+			}
 			hidden_effect = {
 				puppet = {
-                    target = OPR
-                    end_wars = no
-                }
+					target = OPR
+					end_wars = no
+				}
 				OPR = {
 					declare_war_on = {
 						target = UKR
 						type = independence_wargoal
 					}
-				}			
+				}
 			}
 		}
 
 		ai_will_do = {
-			factor = 150		
+			factor = 150
 		}
 	}
 
 	TMR_dig_in_tiraspol = {
 
 		icon = GFX_decision_generic_Guns_from_communists
-		
+
+		allowed = {
+			original_tag = TMR
+		}
+
 		available = {
-		    tag = TMR
-			550 = {
-				is_controlled_by = TMR
-			}
+			controls_state = 550
 		}
-	    
+
 		visible = {
-			tag = TMR
-			has_completed_focus = TMR_start_operation		
+			has_completed_focus = TMR_start_operation
 		}
-		
+
 		fire_only_once = yes
 
 		cost = 10
@@ -66,9 +68,7 @@ TMR_operation_in_ukraine = {
 			custom_effect_tooltip = TMR_dig_in_tiraspol_tt
 			if = {
 				limit = {
-					TMR = {
-						controls_province = 6509
-					}
+					controls_province = 6509
 				}
 				550 = {
 					add_building_construction = {
@@ -81,9 +81,7 @@ TMR_operation_in_ukraine = {
 			}
 			if = {
 				limit = {
-					TMR = {
-						controls_province = 16602
-					}
+					controls_province = 16602
 				}
 				550 = {
 					add_building_construction = {
@@ -96,9 +94,7 @@ TMR_operation_in_ukraine = {
 			}
 			if = {
 				limit = {
-					TMR = {
-						controls_province = 8876
-					}
+					controls_province = 8876
 				}
 				550 = {
 					add_building_construction = {
@@ -108,31 +104,33 @@ TMR_operation_in_ukraine = {
 						instant_build = yes
 					}
 				}
-			}						
+			}
 		}
 
 		ai_will_do = {
-			factor = 150		
+			factor = 150
 		}
 	}
 
 	TMR_end_operation = {
 
 		icon = GFX_decision_generic_Guns_from_communists
-		
+
+		allowed = {
+			original_tag = TMR
+		}
+
 		available = {
-		    tag = TMR
 			NOT = {
 				surrender_progress > 0.99
 			}
 		}
-	    
+
 		visible = {
-			tag = TMR
 			has_completed_focus = TMR_opr_failure
-			has_completed_focus = TMR_start_operation		
+			has_completed_focus = TMR_start_operation
 		}
-		
+
 		fire_only_once = yes
 
 		cost = 10
@@ -145,13 +143,12 @@ TMR_operation_in_ukraine = {
 						target = OPR
 					}
 				}
-				white_peace = UKR			
+				white_peace = UKR
 			}
 		}
 
 		ai_will_do = {
-			factor = -100		
+			factor = -100
 		}
 	}
 }
-
