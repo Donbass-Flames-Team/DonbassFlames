@@ -67,6 +67,7 @@ add_to_faction = BLR
 recruit_character = vladimir_putin
 
 2013.11.21 = {
+	set_oob = "RUS_2013"
 	set_variable = {
 		var = RUS_influence_in_ukraine
 		value = 75

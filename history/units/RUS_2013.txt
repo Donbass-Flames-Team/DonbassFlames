@@ -1,0 +1,1076 @@
+division_template = {
+	name = "Pekhotyy batal'on"
+	regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3}     
+	}
+}
+
+division_template = {
+	name = "Mekhanizirovannyy batal'on"
+	regiments = {
+        ifv_unit = { x = 0 y = 0 }
+		ifv_unit = { x = 0 y = 1 }
+		apc_unit = { x = 0 y = 2 }
+        apc_unit = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3}     
+	}
+}
+
+division_template = {
+	name = "Morskaya pekhota"
+	regiments = {
+        marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+}
+
+division_template = {
+	name = "Tankovyy batal'on"
+	regiments = {
+        modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+        ifv_unit = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+}
+
+division_template = {
+	name = "Sily Spetsial'nykh Operatsiy"
+	regiments = {
+		special_forces_infantry = { x = 0 y = 0 }
+		special_forces_infantry = { x = 0 y = 1 }
+		special_forces_infantry = { x = 0 y = 2 }
+		special_forces_infantry = { x = 0 y = 3 }
+		special_forces_infantry = { x = 0 y = 4 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+}
+
+division_template = {
+	name = "Voyenno vozdushnyye voyska"
+	regiments = {
+        paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+	is_locked = yes
+}
+
+units = {
+
+    division = {
+        name = "1-y batal'on SSO 45-y otdel'noy gvardeyskoy brigady spetsial'nogo naznacheniya"
+        location = 5403
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 0.8
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y batal'on SSO 45-y otdel'noy gvardeyskoy brigady spetsial'nogo naznacheniya"
+        location = 5403
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 0.8
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "143-y polk spetsial'nykh operatsiy"
+        location = 5403
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "7-y polk spetsial'nykh operatsiy Rosich"
+        location = 5403
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "23-y polk spetsial'nykh operatsiy Obereg"
+        location = 5403
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "28-y polk spetsial'nykh operatsiy Ratnik"
+        location = 16710
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "33-y polk spetsial'nykh operatsiy Peresvet"
+        location = 16710
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "polk spetsial'nykh operatsiy Avangard"
+        location = 16710
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "polk spetsial'nykh operatsiy Grom"
+        location = 16710
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "polk spetsial'nykh operatsiy SOBR"
+        location = 16710
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "28-y polk spetsial'nykh operatsiy Viyaz"
+        location = 4546
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y polk spetsial'nykh operatsiy"
+        location = 4546
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "4-y polk spetsial'nykh operatsiy"
+        location = 4546
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "5-y polk spetsial'nykh operatsiy"
+        location = 2922
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y polk spetsial'nykh operatsiy General'nogo shtaba"
+        location = 2922
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y polk spetsial'nykh operatsiy General'nogo shtaba"
+        location = 2922
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "10-y polk spetsial'nykh operatsiy General'nogo shtaba"
+        location = 2922
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "1-y mekhanizirovannyy batal'on 138-y motorizovannoy brigady"
+        location = 10250
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y mekhanizirovannyy batal'on 138-y motorizovannoy brigady"
+        location = 10250
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y pekhotnyy batal'on 138-y motorizovannoy brigady"
+        location = 10250
+        division_template = "Pekhotyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y mekhanizirovannyy batal'on 138-y motorizovannoy brigady"
+        location = 10250
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y mekhanizirovannyy batal'on 138-y motorizovannoy brigady"
+        location = 10250
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y mekhanizirovannyy batal'on 25-y motorizovannoy brigady"
+        location = 10250
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y pekhotnyy batal'on 25-y motorizovannoy brigady"
+        location = 10250
+        division_template = "Pekhotyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y tankovyy batal'on 25-y motorizovannoy brigady"
+        location = 10250
+        division_template = "Tankovyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y pekhotnyy batal'on 205-y motostrelkovoy brigady"
+        location = 8252
+        division_template = "Pekhotyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y mekhanizirovannyy batal'on 205-y motostrelkovoy brigady"
+        location = 8252
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y pekhotnyy batal'on 205-y motostrelkovoy brigady"
+        location = 8252
+        division_template = "Pekhotyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "4-y tankovyy batal'on 205-y motostrelkovoy brigady"
+        location = 8252
+        division_template = "Tankovyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y pekhotnyy batal'on 34-y motostrelkovoy brigady"
+        location = 10362
+        division_template = "Pekhotyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y mekhanizirovannyy batal'on 34-y motostrelkovoy brigady"
+        location = 10362
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y pekhotnyy batal'on 34-y motostrelkovoy brigady"
+        location = 10362
+        division_template = "Pekhotyy batal'on"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y mekhanizirovannyy batal'on 136-y gvardeyskoy motostrelkovoy brigady"
+        location = 1398
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y mekhanizirovannyy batal'on 136-y gvardeyskoy motostrelkovoy brigady"
+        location = 1398
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y mekhanizirovannyy batal'on 136-y gvardeyskoy motostrelkovoy brigady"
+        location = 1398
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y pekhotnyy batal'on 136-y gvardeyskoy motostrelkovoy brigady"
+        location = 1398
+        division_template = "Pekhotyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y batal'on SSO 100-y otdel'noy gvardeyskoy brigady razvedki"
+        location = 1398
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y batal'on SSO 100-y otdel'noy gvardeyskoy brigady razvedki"
+        location = 1398
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y pekhotnyy batal'on 15-ya otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 4961
+        division_template = "Pekhotyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y mekhanizirovannyy batal'on 15-ya otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 4961
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y mekhanizirovannyy batal'on 15-ya otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 4961
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y tankovyy batal'on 15-ya otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 4961
+        division_template = "Tankovyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y mekhanizirovannyy batal'on 35-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 4284
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y mekhanizirovannyy batal'on 35-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 4284
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y mekhanizirovannyy batal'on 35-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 4284
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y mekhanizirovannyy batal'on 74-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 3050
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y mekhanizirovannyy batal'on 74-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 3050
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y tankovyy batal'on 74-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 3050
+        division_template = "Tankovyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y pekhotnyy batal'on 36-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 3050
+        division_template = "Pekhotyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y Mekhanizirovannyy batal'on 36-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 3050
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y Mekhanizirovannyy batal'on 36-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 3050
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y pekhotnyy batal'on 38-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 12220
+        division_template = "Pekhotyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y pekhotnyy batal'on 38-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 12220
+        division_template = "Pekhotyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y Mekhanizirovannyy batal'on 38-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 12220
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y Mekhanizirovannyy batal'on 38-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 12220
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y tankovyy batal'on 38-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 12220
+        division_template = "Tankovyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y pekhotnyy batal'on 64-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 12148
+        division_template = "Pekhotyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y mekhanizirovannyy batal'on 64-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 12148
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y mekhanizirovannyy batal'on 64-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 12148
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y mekhanizirovannyy batal'on 64-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 12148
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "4-y mekhanizirovannyy batal'on 64-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 12148
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y tankovyy batal'on 5-y otdel'noy gvardeyskoy tankovoy brigady"
+        location = 17346
+        division_template = "Tankovyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y tankovyy batal'on 5-y otdel'noy gvardeyskoy tankovoy brigady"
+        location = 17346
+        division_template = "Tankovyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y tankovyy batal'on 5-y otdel'noy gvardeyskoy tankovoy brigady"
+        location = 17346
+        division_template = "Tankovyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y mekhanizirovannyy batal'on 5-y otdel'noy gvardeyskoy tankovoy brigady"
+        location = 17346
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y mekhanizirovannyy batal'on 5-y otdel'noy gvardeyskoy tankovoy brigady"
+        location = 17346
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y Mekhanizirovannyy batal'on 37-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 17346
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y Mekhanizirovannyy batal'on 37-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 17346
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y Mekhanizirovannyy batal'on 37-y otdel'noy gvardeyskoy motostrelkovoy brigady"
+        location = 17346
+        division_template = "Mekhanizirovannyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "30-ya rota SSO 36-y gvardeyskoy obshchevoyskovoy armii"
+        location = 17357
+        division_template = "Sily Spetsial'nykh Operatsiy"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    #####################
+    ## VDV and marines ##
+    #####################
+    division = {
+        name = "1-y desantno-shturmovoy batal'on 11-y otdel'noy gvardeyskoy desantno-shturmovoy brigady"
+        location = 334
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y desantno-shturmovoy batal'on 11-y otdel'noy gvardeyskoy desantno-shturmovoy brigady"
+        location = 334
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y desantno-shturmovoy batal'on 11-y otdel'noy gvardeyskoy desantno-shturmovoy brigady"
+        location = 17279
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y desantno-shturmovoy batal'on  83-y otdel'noy gvardeyskoy desantno-shturmovoy brigady"
+        location = 17279
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y desantno-shturmovoy batal'on 83-y otdel'noy gvardeyskoy desantno-shturmovoy brigady"
+        location = 17279
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y desantno-shturmovoy batal'on 56-y gvardeyskoy vozdushno-desantnoy brigady"
+        location = 17279
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y desantno-shturmovoy batal'on 56-y gvardeyskoy vozdushno-desantnoy brigady"
+        location = 17279
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }  
+
+    division = {
+        name = "1-y desantno-shturmovoy batal'on 108-go gvardeyskogo desantno-shturmovogo polka"
+        location = 6065
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y desantno-shturmovoy batal'on 108-go gvardeyskogo desantno-shturmovogo polka"
+        location = 6065
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }   
+    division = {
+        name = "3-y desantno-shturmovoy batal'on 108-go gvardeyskogo desantno-shturmovogo polka"
+        location = 6065
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "1-y desantno-shturmovoy batal'on 247-go gvardeyskogo vozdushno-desantnogo polka"
+        location = 6497
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y desantno-shturmovoy batal'on 247-go gvardeyskogo vozdushno-desantnogo polka"
+        location = 6497
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y parashyutno-desantnyy batal'on 247-go gvardeyskogo vozdushno-desantnogo polka"
+        location = 6497
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "1-y desantno-shturmovoy batal'on 104-go gvardeyskogo desantno-shturmovogo polka"
+        location = 6497
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y desantno-shturmovoy batal'on 104-go gvardeyskogo desantno-shturmovogo polka"
+        location = 6497
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.4
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y desantno-shturmovoy batal'on 331-go gvardeyskogo parashyutno-desantnogo polka"
+        location = 3374
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y desantno-shturmovoy batal'on 331-go gvardeyskogo parashyutno-desantnogo polka"
+        location = 3374
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y desantno-shturmovoy batal'on 331-go gvardeyskogo parashyutno-desantnogo polka"
+        location = 3374
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "1-y desantno-shturmovoy batal'on 234-go gvardeyskogo desantno-shturmovogo polka"
+        location = 3429
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y desantno-shturmovoy batal'on 234-go gvardeyskogo desantno-shturmovogo polka"
+        location = 3429
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }  
+    division = {
+        name = "1-y parashyutno-desantnyy batal'on 234-go gvardeyskogo desantno-shturmovogo polka"
+        location = 3429
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }      
+    division = {
+        name = "1-y desantno-shturmovoy batal'on 217-go gvardeyskogo parashyutno-desantnogo polka"
+        location = 11234
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y desantno-shturmovoy batal'on 217-go gvardeyskogo parashyutno-desantnogo polka"
+        location = 11234
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y desantno-shturmovoy batal'on 217-go gvardeyskogo parashyutno-desantnogo polka"
+        location = 11234
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }  
+      
+    division = {
+        name = "1-y desantno-shturmovoy batal'on 51-go gvardeyskogo parashyutno-desantnogo polka"
+        location = 11234
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "2-y desantno-shturmovoy batal'on 51-go gvardeyskogo parashyutno-desantnogo polka"
+        location = 11234
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "3-y desantno-shturmovoy batal'on 51-go gvardeyskogo parashyutno-desantnogo polka"
+        location = 11234
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }   
+
+    division = {
+        name = "877-y otdel'nyy batal'on morskoy pekhoty"
+        location = 10591
+        division_template = "Morskaya pekhota"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "884-y otdel'nyy batal'on morskoy pekhotyn"
+        location = 10591
+        division_template = "Morskaya pekhota"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "724-y otdel'nyy razvedyvatel'nyy batal'on"
+        location = 10591
+        division_template = "Morskaya pekhota"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    } 
+
+    division = {
+        name = "879-y otdel'nyy desantno-shturmovoy batal'on"
+        location = 10054
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    
+    division = {
+        name = "382-y otdel'nyy batal'on morskoy pekhoty"
+        location = 10054
+        division_template = "Morskaya pekhota"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+
+    division = {
+        name = "874-y otdel'nyy batal'on morskoy pekhoty"
+        location = 10054
+        division_template = "Morskaya pekhota"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "876-y otdel'nyy desantno-shturmovoy batal'on"
+        location = 10054
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+
+    division = {
+        name = "59-y otdel'nyy batal'on morskoy pekhoty"
+        location = 3169
+        division_template = "Morskaya pekhota"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "47-y otdel'nyy desantno-shturmovoy batal'on"
+        location = 3169
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "1-y razvedyvatel'nyy batal'on 155-y otdel'noy gvardeyskoy brigady morskoy pekhoty"
+        location = 3169
+        division_template = "Morskaya pekhota"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "1-y tankovyy batal'on 155-y otdel'noy gvardeyskoy brigady morskoy pekhoty"
+        location = 3169
+        division_template = "Tankovyy batal'on"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+
+
+    division = {
+        name = "1-y otdel'nyy batal'on morskoy pekhoty 40-y otdel'noy gvardeyskoy brigady morskoy pekhoty"
+        location = 6388
+        division_template = "Morskaya pekhota"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "1-y otdel'nyy desantno-shturmovoy batal'on 40-y otdel'noy gvardeyskoy brigady morskoy pekhoty"
+        location = 6388
+        division_template = "Voyenno vozdushnyye voyska"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+
+    division = {
+        name = "1-y razvedyvatel'nyy batal'on 40-y otdel'noy gvardeyskoy brigady morskoy pekhoty"
+        location = 6388
+        division_template = "Morskaya pekhota"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }    
+
+    division = {
+        name = "1-y batal'on morskoy pekhoty 177-go otdel'nogo gvardeyskogo polka morskoy pekhoty"
+        location = 6388
+        division_template = "Morskaya pekhota"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "2-y batal'on morskoy pekhoty 177-go otdel'nogo gvardeyskogo polka morskoy pekhoty"
+        location = 6388
+        division_template = "Morskaya pekhota"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+    division = {
+        name = "3-y batal'on morskoy pekhoty 177-go otdel'nogo gvardeyskogo polka morskoy pekhoty"
+        location = 6388
+        division_template = "Morskaya pekhota"
+        start_experience_factor = 0.6
+        start_equipment_factor = 1
+		start_manpower_factor = 1
+    }
+}
