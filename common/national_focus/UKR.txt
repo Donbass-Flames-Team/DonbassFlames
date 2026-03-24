@@ -4523,8 +4523,7 @@ focus_tree = {
                     load_oob = UKR_ATO_Buff
 				}
 				DPR = {
-					country_event = DPR.17
-					days = 3
+					country_event = { id = DPR.17 days = 3 }
 				}
 			}				
 		}
