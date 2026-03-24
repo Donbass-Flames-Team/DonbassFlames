@@ -23,7 +23,6 @@ focus_tree = {
 		available = { }
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_ideas = DPR_arrise_donbass_idea
 		}
 	}
@@ -44,7 +43,6 @@ focus_tree = {
 		available = { }
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_ideas = DPR_russian_spring_idea
 			hidden_effect = {
 				load_oob = OPR_millitia

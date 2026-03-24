@@ -26,7 +26,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_ideas = DPR_arrise_donbass_idea
 		}
 	}
@@ -51,7 +50,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_ideas = DPR_russian_spring_idea
 			hidden_effect = {
 				load_oob = KPR_millitia
@@ -79,7 +77,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			custom_effect_tooltip = KPR_bunkers_in_kharkov
         	hidden_effect = {
 				#Kharkov
@@ -198,7 +195,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			custom_effect_tooltip = KPR_expadned_uprising_tt
 			hidden_effect = {
 				load_oob = KPR_expanded_uprising

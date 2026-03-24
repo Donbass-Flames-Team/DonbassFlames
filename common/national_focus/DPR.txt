@@ -26,7 +26,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.05
 			add_stability = 0.05
 			add_political_power = 35
@@ -56,7 +55,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.05
 			add_stability = 0.05
 			add_political_power = 45
@@ -102,7 +100,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             add_ideas = DPR_russian_spring_idea
 			unlock_decision_category_tooltip = DPR_war_for_independence_of_donbass
 			hidden_effect = {
@@ -130,7 +127,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             add_stability = 0.05
 			add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
@@ -178,7 +174,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.03
 			add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
@@ -219,7 +214,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             load_oob = Donetsk_people_Millitia
 		}
 	}
@@ -243,7 +237,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_stability = 0.05
             add_timed_idea = {
                 idea = DPR_roadblock_idea
@@ -277,7 +270,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             army_experience = 25
 			unlock_decision_category_tooltip = DPR_armed_forces_of_dpr
 		}
@@ -302,7 +294,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             army_experience = 25
 		}
 	}
@@ -326,7 +317,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             country_event = DPR.6
 			custom_effect_tooltip = DPR_battalion_diesel_tt
 			hidden_effect = {
@@ -354,7 +344,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             country_event = DPR.7
 			custom_effect_tooltip = DPR_battalion_sparta_tt
 			hidden_effect = {
@@ -393,7 +382,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             country_event = DPR.8
 			custom_effect_tooltip = DPR_battalion_somali_tt
 			hidden_effect = {
@@ -421,7 +409,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			country_event = DPR.5
 			custom_effect_tooltip = DPR_battalion_oplot_tt
 			hidden_effect = {
@@ -452,7 +439,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			hidden_effect = {
 				load_oob = DPR_expand_elite_of_dpr
 			}
@@ -478,7 +464,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			hidden_effect = {
 				load_oob = DPR_first_army_corp_of_people_millitia
 			}
@@ -504,7 +489,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			
 		}
 	}
@@ -529,7 +513,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			army_experience = 35
 		}
 	}
@@ -554,7 +537,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			army_experience = 35
 		}
 	}
@@ -579,7 +561,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			army_experience = 35
 		}
 	}
@@ -604,7 +585,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			army_experience = 35
 			load_oob = DPR_marines_of_dpr
 		}
@@ -629,7 +609,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 
 		}
 	}
@@ -653,7 +632,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.03
 			add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
@@ -693,7 +671,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             add_war_support = 0.05
 			add_ideas = DPR_arrise_donbass_idea
 		}
@@ -718,7 +695,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
     		432 = {
 			    add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
 		    }       
@@ -961,7 +937,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			custom_effect_tooltip = DPR_bunkers_in_south_dpr
         	hidden_effect = {
 				#Novoazovsky district
@@ -1169,7 +1144,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			
 			add_stability = 0.075
 			add_command_power = 25
@@ -1208,7 +1182,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
     		468 = {
 			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
 		    }	
@@ -1343,7 +1316,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 
 		}
 	}
@@ -1367,7 +1339,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 
 		}
 	}
@@ -1391,7 +1362,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 
 		}
 	}
@@ -1415,7 +1385,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 
 		}
 	}

@@ -26,7 +26,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.05
 			add_stability = 0.05
 			add_political_power = 35
@@ -54,7 +53,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_war_support = 0.03
 			add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
@@ -90,7 +88,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_ideas = DPR_arrise_donbass_idea
 		}
 	}
@@ -115,7 +112,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_ideas = DPR_russian_spring_idea
 			hidden_effect = {
 				load_oob = LPR_millitia
@@ -249,7 +245,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_ideas = DPR_russian_spring_idea
 			hidden_effect = {
 				load_oob = LPR_millitia
