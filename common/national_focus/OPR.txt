@@ -16,10 +16,6 @@ focus_tree = {
 		x = 12
 		y = 0
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = { }
 
 		completion_reward = {
@@ -35,10 +31,6 @@ focus_tree = {
 
 		prerequisite = { focus = OPR_arrise_novorossia }
 		relative_position_id = OPR_arrise_novorossia
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		available = { }
 
@@ -56,10 +48,6 @@ focus_tree = {
 		x = 12
 		y = 5
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = { }
 		completion_reward = { }
 	}
@@ -73,10 +61,6 @@ focus_tree = {
 		prerequisite = { focus = OPR_zachvat_flota }
 		relative_position_id = OPR_zachvat_flota
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = { }
 		completion_reward = { 626 = { transfer_state_to = OPR } }
 	}
@@ -89,10 +73,6 @@ focus_tree = {
 
 		prerequisite = { focus = OPR_zachvat_octrova }
 		relative_position_id = OPR_zachvat_flota
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		available = { }
 		completion_reward = {
@@ -108,10 +88,6 @@ focus_tree = {
 		prerequisite = { focus = OPR_zachvat_flota }
 		relative_position_id = OPR_zachvat_flota
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = { }
 		completion_reward = { }
 	}
@@ -123,10 +99,6 @@ focus_tree = {
 
 		prerequisite = { focus = OPR_piratu }
 		relative_position_id = OPR_zachvat_flota
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		available = { }
 		completion_reward = { }

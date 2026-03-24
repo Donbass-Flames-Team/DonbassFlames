@@ -17,10 +17,6 @@ focus_tree = {
 		x = 12
 		y = 0
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
@@ -58,10 +54,6 @@ focus_tree = {
 
 		prerequisite = { focus = NDR_capture_mvd }
 		relative_position_id = NDR_capture_mvd
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		available = {
 			
