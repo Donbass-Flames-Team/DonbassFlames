@@ -2,7 +2,7 @@ set_oob = "TMR_2013"
 capital = 550
 
 add_ideas = {
-	limited_conscription
+	extensive_conscription
 	closed_economy
 	civilian_economy
 }
@@ -90,6 +90,11 @@ set_popularities = {
 	communism = 14
 	autoritarian_democracy = 77
 	liberal_democracy = 9
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 4
+	producer = RUS
 }
 
 recruit_character = TMR_yevgeny_shevchuk
