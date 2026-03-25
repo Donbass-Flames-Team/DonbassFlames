@@ -4,6 +4,7 @@ focus_tree = {
         factor = 0
         modifier = { add = 10 tag = TMR }
     }
+    continuous_focus_position = { x = 3200 y = 2500 }
     default = no
 
     focus = {
@@ -682,8 +683,8 @@ focus = {
         available = { has_country_flag = TMR_rus_support_ok }
 
         completion_reward = {
-        set_country_flag = TMR_kolbasna_mined 
-        add_command_power = 15 
+            set_country_flag = TMR_kolbasna_mined 
+            add_command_power = 15 
         }
     }
 
@@ -692,7 +693,7 @@ focus = {
         x = 8
         y = 21
         cost = 1
-        prerequisite = { focus = TMR_rus_support_package }
+        prerequisite = { focus = TMR_kolbasna_unseal_depots }
         available = { has_country_flag = TMR_rus_support_ok }
 
         completion_reward = {
@@ -800,14 +801,35 @@ focus = {
 
     focus = {
         id = TMR_secure_west
-        x = 12
-        y = 24
-        cost = 1
-        prerequisite = { focus = TMR_war_economy_rails }
-        prerequisite = { focus = TMR_seize_border_posts }
+        x = 0
+        y = 1
+        cost = 5
+        prerequisite = { focus = TMR_integration_of_new_lands }
+        relative_position_id = TMR_integration_of_new_lands
 
         completion_reward = {
            declare_war_on = { target = MOL type = annex_everything }
         }
     }
+
+    focus = {
+        id = TMR_integration_of_new_lands
+        x = 0
+        y = 2
+        cost = 1
+
+        available = {
+            NOT = {
+                has_war_with = UKR
+            }
+        }
+
+        prerequisite = { focus = TMR_war_economy_rails }
+        prerequisite = { focus = TMR_seize_border_posts }
+        relative_position_id = TMR_start_operation
+
+        completion_reward = {
+            country_event = tmr.14
+        }
+    }    
 }

@@ -3701,7 +3701,17 @@ focus_tree = {
 		relative_position_id = UKR_continuation_of_the_ato
 
 		available = {
-
+			custom_trigger_tooltip = {
+                tooltip = UKR_end_of_separatism_trigger_tt		
+				NOT = {
+				    country_exists = DPR
+					country_exists = KPR
+					country_exists = LPR
+					country_exists = OPR
+					country_exists = NDR
+					country_exists = SDR
+			    }
+            }
 		}
 
 		completion_reward = {
