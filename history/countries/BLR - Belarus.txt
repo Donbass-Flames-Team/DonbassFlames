@@ -1,5 +1,6 @@
 capital = 16
-oob = "BLR_1936"
+
+recruit_character = BLR_aleksandr_lukashenko
 
 2013.11.21 = {
 	set_research_slots = 3
@@ -34,7 +35,6 @@ oob = "BLR_1936"
 		limited_conscription
 		limited_exports
 		low_economic_mobilisation
-}
+	}
 
-	recruit_character = aleksandr_lukashenko
 }
