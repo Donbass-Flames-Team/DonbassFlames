@@ -74,6 +74,10 @@ focus_tree = {
 		offset = {
 			x = 2
 			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
 				OR = {
 					has_completed_focus = UKR_yanukovich_escaped
 					has_completed_focus = UKR_arrest_yanukovich
@@ -110,15 +114,34 @@ focus_tree = {
 		x = 8
 		y = 2
 
+		offset = {
+			x = -8
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = UKR_dictatorship_takes_over
+			}
+		}
+
         prerequisite = { focus = UKR_force_deal_with_protests }
 		prerequisite = { focus = UKR_next_steps }
 		relative_position_id = UKR_next_steps
 		mutually_exclusive = { focus = UKR_arrest_yanukovich focus = UKR_yanukovich_escaped }
 
 		allow_branch = {
-			NOT = {
-				has_completed_focus = UKR_arrest_yanukovich
-				has_completed_focus = UKR_yanukovich_escaped
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+				}
 			}
 		}
 
@@ -1200,6 +1223,20 @@ focus_tree = {
 		relative_position_id = UKR_remain_neutral
 		mutually_exclusive = { focus = UKR_yanukovich_escaped focus = UKR_dictatorship_takes_over }
 
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = UKR_dictatorship_takes_over
+				}
+			}
+		}
+
 		available = {
 			OR = {
                 has_global_flag = Yanukovich_escaped
@@ -1223,6 +1260,14 @@ focus_tree = {
 					id = superevent.4
 					hours = 12
 				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
 				mark_focus_tree_layout_dirty = yes
 			}
 		}
@@ -1239,6 +1284,20 @@ focus_tree = {
 		relative_position_id = UKR_remain_neutral
 		mutually_exclusive = { focus = UKR_arrest_yanukovich focus = UKR_dictatorship_takes_over }
 
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = UKR_dictatorship_takes_over
+				}
+			}
+		}
+
 		available = {
 			has_global_flag = Yanukovich_escaped
 		}
@@ -1252,6 +1311,14 @@ focus_tree = {
 				country_event = {
 					id = superevent.4
 					hours = 12
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
 				}
 				mark_focus_tree_layout_dirty = yes
 			}
@@ -1267,8 +1334,6 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_arrest_yanukovich focus = UKR_yanukovich_escaped }
 		relative_position_id = UKR_arrest_yanukovich
-
-		
 
 		available = {
             has_country_flag = UKR_Yanukovich_overthrown
@@ -1587,7 +1652,15 @@ focus_tree = {
 			hidden_effect = {
 				country_event = ukraine.20
 			}
-			mark_focus_tree_layout_dirty = yes
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 
@@ -1603,7 +1676,15 @@ focus_tree = {
 		relative_position_id = UKR_unrest_in_the_east
 
 		allow_branch = {
-			has_completed_focus = UKR_unrest_in_the_east
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				has_completed_focus = UKR_unrest_in_the_east
+			}
 		}
 
 		available = {
@@ -1949,7 +2030,15 @@ focus_tree = {
 				}
 				set_variable = { var = CONST_MINSK_NEGOTATIONS_PROGRESS_SCALE value = 50 }								
 			}
-			mark_focus_tree_layout_dirty = yes
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 
@@ -1965,7 +2054,15 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			has_country_flag = Russo_Ukranian_War
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				has_country_flag = Russo_Ukranian_War
+			}
 		}
 
 		completion_reward = {
@@ -2662,7 +2759,15 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			has_country_flag = Focuses_after_Ato
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				has_country_flag = Focuses_after_Ato
+			}
 		}
 
 		completion_reward = {
@@ -3001,7 +3106,15 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			has_country_flag = Focuses_after_Ato
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				has_country_flag = Focuses_after_Ato
+			}
 		}
 
 		completion_reward = {
@@ -3368,7 +3481,15 @@ focus_tree = {
 		relative_position_id = UKR_start_of_ato
 
 		allow_branch = {
-			has_completed_focus = UKR_start_of_ato
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				has_completed_focus = UKR_start_of_ato
+			}
 		}
 
 		ai_will_do = {
@@ -3545,21 +3666,30 @@ focus_tree = {
 		id = UKR_end_of_separatism
 		icon = GFX_focus_UKR_victory_over_separatism
 		cost = 0.5
-		x = 2
+		x = 1
 		y = 1
 
 		prerequisite = { focus = UKR_launch_counterattacks }
 		prerequisite = { focus = UKR_volunteer_help }
 		prerequisite = { focus = UKR_decommissioning_of_stocks }
+		mutually_exclusive = { focus = UKR_continuation_of_the_ato }
 		relative_position_id = UKR_decommissioning_of_stocks
 		ai_will_do = {
 			factor = 200
 		}
 
 		allow_branch = {
-			has_completed_focus = UKR_start_of_ato
-			NOT = {
-				has_country_flag = UKR_donbas_war_resumes_spring_2015
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				has_completed_focus = UKR_start_of_ato
+				NOT = {
+					has_country_flag = UKR_donbas_war_resumes_spring_2015
+				}
 			}
 		}
 
@@ -3606,7 +3736,7 @@ focus_tree = {
 		id = UKR_continuation_of_the_ato
 		icon = GFX_focus_UKR_victory_over_separatism
 		cost = 1
-		x = -2
+		x = -1
 		y = 1
 
 		prerequisite = { focus = UKR_launch_counterattacks }
@@ -3616,8 +3746,16 @@ focus_tree = {
 		relative_position_id = UKR_launch_counterattacks
 
 		allow_branch = {
-			has_completed_focus = UKR_start_of_ato
-			has_country_flag = UKR_donbas_war_resumes_spring_2015
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				has_completed_focus = UKR_start_of_ato
+				has_country_flag = UKR_donbas_war_resumes_spring_2015
+			}
 		}
 
 		available = {
@@ -3746,7 +3884,7 @@ focus_tree = {
 		id = UKR_donbass_restoration_programs
 		icon = GFX_focus_UKR_victory_over_separatism
 		cost = 1
-		x = -1
+		x = -2
 		y = 1
 
 		prerequisite = { focus = UKR_dig_in focus = UKR_end_of_separatism_2 }
@@ -3765,7 +3903,7 @@ focus_tree = {
 		id = UKR_joint_forces_operation
 		icon = GFX_focus_UKR_victory_over_separatism
 		cost = 1
-		x = 1
+		x = 0
 		y = 1
 
 		prerequisite = { focus = UKR_dig_in }
@@ -4136,7 +4274,15 @@ focus_tree = {
 		prerequisite = { focus = UKR_unrest_in_the_east }
 
 		allow_branch = {
-			has_completed_focus = UKR_unrest_in_the_east
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				has_completed_focus = UKR_unrest_in_the_east
+			}
 		}
 
 		available = {
