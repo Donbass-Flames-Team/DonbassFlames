@@ -1292,6 +1292,10 @@ focus_tree = {
 					id = ukraine.107
 					days = 1
 				}
+				country_event = {
+					id = ukraine.112
+					days = 14
+				}
 			}
 		}
 	}
@@ -1741,9 +1745,14 @@ focus_tree = {
 	                }
                     support = {
                         engineer = { x = 0 y = 0 }
-		                recon = { x = 0 y = 1 }
-		                mortar = { x = 0 y = 2 }
-		                atgm_company = { x = 0 y = 3 }
+                        recon = { x = 0 y = 1 }
+                        mortar = { x = 0 y = 2 }
+				        atgm_company = { x = 0 y = 3 }
+        		        field_hospital = { x = 0 y = 4} 
+        		        sniper_company = { x = 1 y = 0 }
+        		        manpads_platoon = { x = 1 y = 1}
+  				        logistics_company = { x = 1 y = 2}
+				        signal_company = { x = 1 y = 3} 
 	                }
                 }
 				division_template = {
@@ -1756,9 +1765,14 @@ focus_tree = {
 	                }
                     support = {
                         engineer = { x = 0 y = 0 }
-		                recon = { x = 0 y = 1 }
-		                mortar = { x = 0 y = 2 }
-		                atgm_company = { x = 0 y = 3 }
+                        recon = { x = 0 y = 1 }
+                        mortar = { x = 0 y = 2 }
+				        atgm_company = { x = 0 y = 3 }
+        		        field_hospital = { x = 0 y = 4} 
+        		        sniper_company = { x = 1 y = 0 }
+        		        manpads_platoon = { x = 1 y = 1}
+  				        logistics_company = { x = 1 y = 2}
+				        signal_company = { x = 1 y = 3} 
 	                }
                 }
 			}
@@ -1927,25 +1941,30 @@ focus_tree = {
 	            set_variable = { UKR_ATO_pocket_penalty = -0.30 }
 	            set_variable = { UKR_ATO_experience_loss_factor = -0.30 }
 				set_variable = { UKR_ATO_casualty_trickleback = 0.25}
+				set_variable = { UKR_ATO_army_speed_factor = -0.20 }
 				NDR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_army_speed_factor = -0.35 }
 				}
 				DPR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_army_speed_factor = -0.35 }
 				}	
 				LPR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_army_speed_factor = -0.35 }
 				}	
 				SDR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_army_speed_factor = -0.35 }
 				}
 				set_variable = { var = CONST_MINSK_NEGOTATIONS_PROGRESS_SCALE value = 50 }								
 			}
