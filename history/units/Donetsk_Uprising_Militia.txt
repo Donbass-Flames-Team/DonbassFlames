@@ -11,8 +11,9 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        manpads_platoon = { x = 1 y = 0}
+        signal_company = { x = 1 y = 0}
         sniper_company = { x = 1 y = 1 }
+        field_hospital = { x = 1 y = 2 }
 	}
 }
 
@@ -29,7 +30,11 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
         sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
 	}
 
     is_locked = yes
@@ -48,7 +53,11 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        manpads_platoon = { x = 1 y = 0}
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
 	}
 
     is_locked = yes
@@ -67,7 +76,57 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
         sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Pekhotnyy batal'on"
+	regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		apc_unit = { x = 0 y = 2 }
+        apc_unit = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Spetsnaz"
+	regiments = {
+        special_forces_infantry = { x = 0 y = 0 }
+		special_forces_infantry = { x = 0 y = 1 }
+		special_forces_infantry = { x = 0 y = 2 }
+        special_forces_infantry = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
 	}
 
     is_locked = yes

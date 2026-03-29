@@ -17,16 +17,11 @@ focus_tree = {
 		x = 12
 		y = 0
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.05
 			add_stability = 0.05
 			add_political_power = 35
@@ -45,16 +40,11 @@ focus_tree = {
 		prerequisite = {focus = LPR_capture_administrations}
 		relative_position_id = LPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_war_support = 0.03
 			add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
@@ -81,16 +71,11 @@ focus_tree = {
 		prerequisite = {focus = LPR_loot_the_offices_of_the_mvd_and_sbu}
 		relative_position_id = LPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_ideas = DPR_arrise_donbass_idea
 		}
 	}
@@ -106,16 +91,11 @@ focus_tree = {
 		prerequisite = {focus = LPR_arrise_donbass}
 		relative_position_id = LPR_arrise_donbass
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_ideas = DPR_russian_spring_idea
 			hidden_effect = {
 				load_oob = LPR_millitia
@@ -134,16 +114,11 @@ focus_tree = {
 		prerequisite = {focus = LPR_appeal_to_the_russian_spirit}
 		relative_position_id = LPR_appeal_to_the_russian_spirit
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_luhansk_castle"
     		340 = {
 			    add_dynamic_modifier = { modifier = LPR_luhansk_castle_dynamic_idea scope = LPR }
 		    }
@@ -240,16 +215,11 @@ focus_tree = {
 		prerequisite = {focus = LPR_appeal_to_the_russian_spirit}
 		relative_position_id = LPR_appeal_to_the_russian_spirit
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_ideas = DPR_russian_spring_idea
 			hidden_effect = {
 				load_oob = LPR_millitia

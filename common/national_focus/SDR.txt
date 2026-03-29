@@ -17,16 +17,11 @@ focus_tree = {
 		x = 12
 		y = 0
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.05
 			add_stability = 0.05
 			add_political_power = 35

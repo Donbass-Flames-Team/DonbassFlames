@@ -306,4 +306,8 @@ DF_economy_setup = yes
 	set_variable = { cash = 8 }
 	set_variable = { debt = -146.94 }
 
-}     
+}   
+
+2022.2.28 = {
+	set_global_flag = Russo_Ukranian_War
+}

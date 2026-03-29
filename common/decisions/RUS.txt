@@ -6,80 +6,77 @@ RUS_influence_in_ukraine_decision = {
 	RUS_send_additional_equipment = {
 
 		icon = GFX_decision_generic_Guns_from_communists
-		
-		available = {
-		    tag = RAS
+
+		allowed = {
+			original_tag = RUS
 		}
-	    
+
 		visible = {
-			tag = RAS
-			has_completed_focus = RUS_arms_supply		
+			has_completed_focus = RUS_arms_supply
 		}
-		
+
 		fire_only_once = yes
 
 		cost = 35
 
 		complete_effect = {
-            DPR = {
+			DPR = {
 
 			}
 		}
 
 		ai_will_do = {
-			factor = 50		
+			factor = 50
 		}
-	}	
+	}
 
 	RUS_send_additional_machinery_supply = {
 
 		icon = GFX_decision_generic_Guns_from_communists
-		
-		available = {
-		    tag = RAS
+
+		allowed = {
+			original_tag = RUS
 		}
-	    
+
 		visible = {
-			tag = RAS
-			has_completed_focus = RUS_arms_supply		
+			has_completed_focus = RUS_arms_supply
 		}
-		
+
 		fire_only_once = yes
 
 		cost = 35
 
 		complete_effect = {
-			
+
 		}
 
 		ai_will_do = {
-			factor = 30		
+			factor = 30
 		}
 	}
 
 	RUS_send_additional_ammunition = {
 
 		icon = GFX_decision_generic_Guns_from_communists
-		
-		available = {
-		    tag = RAS
+
+		allowed = {
+			original_tag = RUS
 		}
-	    
+
 		visible = {
-			tag = RAS
-			has_completed_focus = RUS_arms_supply		
+			has_completed_focus = RUS_arms_supply
 		}
-		
+
 		fire_only_once = yes
 
 		cost = 35
 
 		complete_effect = {
-			
+
 		}
 
 		ai_will_do = {
-			factor = 50		
+			factor = 50
 		}
 	}
 }

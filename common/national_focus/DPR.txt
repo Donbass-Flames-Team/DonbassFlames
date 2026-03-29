@@ -17,16 +17,11 @@ focus_tree = {
 		x = 12
 		y = 0
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.05
 			add_stability = 0.05
 			add_political_power = 35
@@ -47,16 +42,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_capture_administrations}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.05
 			add_stability = 0.05
 			add_political_power = 45
@@ -93,16 +83,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_formation_of_a_provisional_government}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             add_ideas = DPR_russian_spring_idea
 			unlock_decision_category_tooltip = DPR_war_for_independence_of_donbass
 			hidden_effect = {
@@ -121,16 +106,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             add_stability = 0.05
 			add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
@@ -165,10 +145,6 @@ focus_tree = {
 		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		ai_will_do = {
 			factor = 5
 		}
@@ -178,7 +154,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.03
 			add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
@@ -206,10 +181,6 @@ focus_tree = {
 		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		ai_will_do = {
 			factor = 5
 		}
@@ -219,7 +190,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             load_oob = Donetsk_people_Millitia
 		}
 	}
@@ -234,16 +204,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_create_a_people_militia_of_the_dpr}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_stability = 0.05
             add_timed_idea = {
                 idea = DPR_roadblock_idea
@@ -268,16 +233,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_create_a_people_militia_of_the_dpr}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             army_experience = 25
 			unlock_decision_category_tooltip = DPR_armed_forces_of_dpr
 		}
@@ -293,16 +253,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_create_roadblocks}
 		relative_position_id = DPR_create_roadblocks
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             army_experience = 25
 		}
 	}
@@ -317,16 +272,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_armed_forces_of_dpr}
 		relative_position_id = DPR_armed_forces_of_dpr
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             country_event = DPR.6
 			custom_effect_tooltip = DPR_battalion_diesel_tt
 			hidden_effect = {
@@ -345,16 +295,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_armed_forces_of_dpr}
 		relative_position_id = DPR_armed_forces_of_dpr
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             country_event = DPR.7
 			custom_effect_tooltip = DPR_battalion_sparta_tt
 			hidden_effect = {
@@ -384,16 +329,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_armed_forces_of_dpr}
 		relative_position_id = DPR_armed_forces_of_dpr
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             country_event = DPR.8
 			custom_effect_tooltip = DPR_battalion_somali_tt
 			hidden_effect = {
@@ -412,16 +352,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_armed_forces_of_dpr}
 		relative_position_id = DPR_armed_forces_of_dpr
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			country_event = DPR.5
 			custom_effect_tooltip = DPR_battalion_oplot_tt
 			hidden_effect = {
@@ -443,16 +378,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_batallion_oplot}
 		relative_position_id = DPR_armed_forces_of_dpr
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			date > 2014.8.1
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			hidden_effect = {
 				load_oob = DPR_expand_elite_of_dpr
 			}
@@ -469,16 +399,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_expansion_of_the_dpr_elite}
 		relative_position_id = DPR_expansion_of_the_dpr_elite
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			date > 2014.10.2
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			hidden_effect = {
 				load_oob = DPR_first_army_corp_of_people_millitia
 			}
@@ -495,17 +420,12 @@ focus_tree = {
 		prerequisite = {focus = DPR_first_army_corp_of_dpr}
 		relative_position_id = DPR_expansion_of_the_dpr_elite
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			date > 2015.1.1
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
-			
+			load_oob = DPR_republican_guardia
 		}
 	}
 
@@ -516,11 +436,6 @@ focus_tree = {
 		x = 26
 		y = 0
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			NOT = {
 				has_war_with = UKR
@@ -529,7 +444,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			army_experience = 35
 		}
 	}
@@ -544,17 +458,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_reforms_of_dpr_amy}
 		relative_position_id = DPR_reforms_of_dpr_amy
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			date > 2015.1.1
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			army_experience = 35
 		}
 	}
@@ -569,17 +477,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_reforms_of_dpr_amy}
 		relative_position_id = DPR_reforms_of_dpr_amy
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			date > 2015.1.1
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			army_experience = 35
 		}
 	}
@@ -594,17 +496,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_reforms_of_dpr_amy}
 		relative_position_id = DPR_reforms_of_dpr_amy
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			date > 2015.1.1
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			army_experience = 35
 			load_oob = DPR_marines_of_dpr
 		}
@@ -620,16 +516,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 
 		}
 	}
@@ -644,16 +535,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_set_up_production}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			add_war_support = 0.03
 			add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
@@ -680,10 +566,6 @@ focus_tree = {
 		prerequisite = {focus = DPR_create_a_people_militia_of_the_dpr}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		ai_will_do = {
 			factor = 5
 		}
@@ -693,7 +575,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
             add_war_support = 0.05
 			add_ideas = DPR_arrise_donbass_idea
 		}
@@ -709,16 +590,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_arrise_donbass}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
     		432 = {
 			    add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
 		    }       
@@ -741,16 +617,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_defend_of_citites}
 		relative_position_id = DPR_defend_of_citites
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_donetsk_castle"
 			custom_effect_tooltip = DPR_bunkers_around_donetsk
         	hidden_effect = {
                 if = {
@@ -947,10 +818,6 @@ focus_tree = {
 		prerequisite = {focus = DPR_defend_of_citites}
 		relative_position_id = DPR_defend_of_citites
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			652 = {
 				is_fully_controlled_by = DPR
@@ -961,7 +828,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			custom_effect_tooltip = DPR_bunkers_in_south_dpr
         	hidden_effect = {
 				#Novoazovsky district
@@ -1160,16 +1026,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_secure_south focus = DPR_donetsk_castle}
 		relative_position_id = DPR_defend_of_citites
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			date > 2014.6.6
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 			
 			add_stability = 0.075
 			add_command_power = 25
@@ -1198,17 +1059,12 @@ focus_tree = {
 		prerequisite = {focus = DPR_centralize_donetsk_groups}
 		relative_position_id = DPR_defend_of_citites
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			date > 2014.10.2
 			has_war_with = UKR
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
     		468 = {
 			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
 		    }	
@@ -1258,10 +1114,6 @@ focus_tree = {
 		prerequisite = {focus = DPR_free_the_entire_donetsk_oblast}
 		relative_position_id = DPR_defend_of_citites
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		allow_branch = {
 			has_global_flag = Minsk2_is_signed
 		}
@@ -1271,7 +1123,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_second_minsk_agreement"
     		add_stability = 0.15																							
 		}
 	}
@@ -1286,16 +1137,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_second_minsk_agreement}
 		relative_position_id = DPR_defend_of_citites
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_second_minsk_agreement"
     		add_stability = 0.15																							
 		}
 	}
@@ -1310,16 +1156,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_second_minsk_agreement}
 		relative_position_id = DPR_defend_of_citites
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_second_minsk_agreement"
     		add_stability = 0.15																							
 		}
 	}
@@ -1334,16 +1175,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_set_up_production}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 
 		}
 	}
@@ -1358,16 +1194,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_nationalize_the_captured_factories}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 
 		}
 	}
@@ -1382,16 +1213,11 @@ focus_tree = {
 		prerequisite = {focus = DPR_nationalize_the_captured_factories}
 		relative_position_id = DPR_capture_administrations
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 
 		}
 	}
@@ -1403,10 +1229,6 @@ focus_tree = {
 		x = 19
 		y = 0
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			NOT = {
 				has_war_with = UKR
@@ -1415,7 +1237,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus DPR_capture_administrations"
 
 		}
 	}

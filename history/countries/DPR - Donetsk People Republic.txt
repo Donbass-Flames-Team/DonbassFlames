@@ -1,5 +1,16 @@
 capital = 432
 
+recruit_character = pavel_gubarev
+recruit_character = andrey_purgin
+recruit_character = dmitry_trapeznikov
+recruit_character = denis_pushilin
+recruit_character = vladimir_makovich
+recruit_character = boris_litvinov
+recruit_character = aleksandr_zakharchenko
+recruit_character = igor_strelkov_girkin
+recruit_character = arsen_motorola
+recruit_character = zheka_vasilievich
+
 #create_faction_from_template = faction_template_novorossiya #TMP TODO: Crash To Desktop
 create_faction_from_template = {
 	template = faction_template_generic
@@ -79,17 +90,6 @@ create_faction_from_template = {
 		communism = 25
 		autoritarian_democracy = 19
 	}
-
-    recruit_character = pavel_gubarev
-	recruit_character = andrey_purgin
-	recruit_character = dmitry_trapeznikov
-	recruit_character = denis_pushilin
-	recruit_character = vladimir_makovich
-	recruit_character = boris_litvinov
-	recruit_character = aleksandr_zakharchenko
-	recruit_character = igor_strelkov_girkin
-	recruit_character = arsen_motorola
-	recruit_character = zheka_vasilievich
 
 	add_equipment_to_stockpile = {
 		type = train_equipment_1

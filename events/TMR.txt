@@ -254,3 +254,82 @@ country_event = {
         add_war_support = 0.02
     }
 }
+
+# Судьба новых земель
+country_event = {
+    id = tmr.14
+    title = tmr.14.t
+    desc = tmr.14.d
+    picture = GFX_report_event_generic_military
+    is_triggered_only = yes
+
+    option = {
+        name = tmr.14.a
+        add_political_power = 15
+        set_cosmetic_tag = TMR_Odessa_confederation
+    }
+
+    option = {
+        name = tmr.14.b
+        OPR = {
+			transfer_state = 904
+			transfer_state = 499
+			transfer_state = 559
+			transfer_state = 549
+			transfer_state = 477
+			transfer_state = 572
+			transfer_state = 583
+            transfer_state = 596
+            transfer_state = 581
+            transfer_state = 606
+            transfer_state = 618
+            transfer_state = 622
+            transfer_state = 585
+            transfer_state = 567
+            transfer_state = 409
+		}
+		hidden_effect = {
+			puppet = {
+				target = OPR
+				end_wars = no
+			}
+		}
+    }    
+}
+
+# Победа
+country_event = {
+    id = tmr.15
+    title = tmr.15.t
+    desc = tmr.15.d
+    picture = GFX_report_event_generic_military
+    is_triggered_only = yes
+
+    option = {
+        name = tmr.15.a
+        
+        add_stability = 0.05
+        add_political_power = 15
+        hidden_effect = {
+            set_global_flag = TMR_victory_in_odessa
+            white_peace = UKR
+            TMR = {
+			transfer_state = 904
+			transfer_state = 499
+			transfer_state = 559
+			transfer_state = 549
+			transfer_state = 477
+			transfer_state = 572
+			transfer_state = 583
+            transfer_state = 596
+            transfer_state = 581
+            transfer_state = 606
+            transfer_state = 618
+            transfer_state = 622
+            transfer_state = 585
+            transfer_state = 567
+            transfer_state = 409
+            }
+        }
+    }
+}

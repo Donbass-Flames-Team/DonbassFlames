@@ -14,12 +14,8 @@ focus_tree = {
 		id = UKR_yanukovychs_results
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.4
-		x = 12
+		x = 8
 		y = 0
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 		cancelable = no
 
 		available = {
@@ -32,16 +28,7 @@ focus_tree = {
 			}
 		}
 
-		offset = {
-			x = 0
-			y = 0
-			trigger = {
-				has_completed_focus = UKR_unrest_in_the_east
-			}
-		}
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
 			add_stability = -0.05
 		}
 	}
@@ -57,10 +44,6 @@ focus_tree = {
 		prerequisite = { focus = UKR_situation_is_out_of_control }
 		relative_position_id = UKR_yanukovychs_results
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
@@ -71,16 +54,7 @@ focus_tree = {
 			}
 		}
 
-		offset = {
-			x = 0
-			y = 0
-			trigger = {
-				has_completed_focus = UKR_unrest_in_the_east
-			}
-		}
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
 		    add_political_power = 25
 			country_event = ukraine.6
 			add_days_mission_timeout = {
@@ -94,15 +68,21 @@ focus_tree = {
 		id = UKR_remain_neutral
 		icon = GFX_focus_UKR_hold_the_center_line
 		cost = 0.8
-		x = 0
-		y = 2
+		x = -2
+		y = 1
+
+		offset = {
+			x = 2
+			trigger = {
+				OR = {
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
 		
         prerequisite = { focus = UKR_next_steps }
-		relative_position_id = UKR_yanukovychs_results
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		relative_position_id = UKR_next_steps
 
 		available = {
 
@@ -114,17 +94,8 @@ focus_tree = {
 			}
 		}
 
-		offset = {
-			x = 0
-			y = 0
-			trigger = {
-				has_completed_focus = UKR_unrest_in_the_east
-			}
-		}
-
 		completion_reward = {
 			add_political_power = 25
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
 				days = 7
@@ -137,42 +108,21 @@ focus_tree = {
 		icon = GFX_focus_UKR_activation_of_security_forces
 		cost = 0.2
 		x = 8
-		y = 3
-		
+		y = 2
+
         prerequisite = { focus = UKR_force_deal_with_protests }
 		prerequisite = { focus = UKR_next_steps }
-		relative_position_id = UKR_yanukovychs_results
-		mutually_exclusive = { focus = UKR_arrest_yanukovich }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-            NOT = {
-				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
-				}
-			}
-		}
+		relative_position_id = UKR_next_steps
+		mutually_exclusive = { focus = UKR_arrest_yanukovich focus = UKR_yanukovich_escaped }
 
 		allow_branch = {
 			NOT = {
-			   has_completed_focus = UKR_unrest_in_the_east
+				has_completed_focus = UKR_arrest_yanukovich
+				has_completed_focus = UKR_yanukovich_escaped
 			}
 		}
 
-		#offset = {
-		#	x = -2
-		#	y = 0
-		#	trigger = {
-		#		has_completed_focus = UKR_dictatorship_takes_over
-		#	}
-		#}
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovychs_results"
 		    add_stability = -0.05
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
@@ -187,7 +137,15 @@ focus_tree = {
                 value = 2
             }
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
-			mark_focus_tree_layout_dirty = yes
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 
@@ -201,7 +159,6 @@ focus_tree = {
 		prerequisite = { focus = UKR_dictatorship_takes_over }
 		relative_position_id = UKR_dictatorship_takes_over
 
-
 		available = {
             NOT = {
 				OR = {
@@ -212,12 +169,7 @@ focus_tree = {
 			has_completed_focus = UKR_emergency_measures
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 			add_political_power = 35
 		}
@@ -244,12 +196,7 @@ focus_tree = {
 			always = no
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -264,7 +211,6 @@ focus_tree = {
 		prerequisite = { focus = UKR_prevent_civil_war }
 		relative_position_id = UKR_influence_through_the_media
 
-
 		available = {
             NOT = {
 				OR = {
@@ -274,12 +220,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -294,7 +235,6 @@ focus_tree = {
 		prerequisite = { focus = UKR_restoring_the_image_in_the_west }
 		relative_position_id = UKR_influence_through_the_media
 
-
 		available = {
             NOT = {
 				OR = {
@@ -304,12 +244,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -324,7 +259,6 @@ focus_tree = {
 		prerequisite = { focus = UKR_declaration_of_a_political_thaw }
 		relative_position_id = UKR_influence_through_the_media
 
-
 		available = {
             NOT = {
 				OR = {
@@ -334,12 +268,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -364,12 +293,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 			add_political_power = 35
 		}
@@ -385,7 +309,6 @@ focus_tree = {
 		prerequisite = { focus = UKR_start_company_of_antimaidan }
 		relative_position_id = UKR_start_company_of_antimaidan
 
-
 		available = {
             NOT = {
 				OR = {
@@ -395,12 +318,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 			add_political_power = 35
 		}
@@ -416,7 +334,6 @@ focus_tree = {
 		prerequisite = { focus = UKR_mobilization_of_titushek }
 		relative_position_id = UKR_start_company_of_antimaidan
 
-
 		available = {
             NOT = {
 				OR = {
@@ -426,12 +343,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 			add_political_power = 35
 		}
@@ -456,12 +368,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 			add_political_power = 35
 		}
@@ -486,12 +393,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 			add_political_power = 35
 		}
@@ -517,12 +419,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -546,12 +443,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
@@ -579,12 +471,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
@@ -612,12 +499,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
@@ -646,12 +528,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			country_event = {
 				id = ukraine.43
 				hours = 3
@@ -700,12 +577,7 @@ focus_tree = {
 			has_completed_focus = UKR_emergency_measures
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			country_event = ukraine.104
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
@@ -755,12 +627,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			country_event = ukraine.103
 			add_to_variable = {
                 var = UKR_radicalisation_of_proeuropeans_value
@@ -809,12 +676,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -838,12 +700,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -869,12 +726,7 @@ focus_tree = {
 			always = no
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 			country_event = {
                 id = ukraine.59
@@ -893,7 +745,6 @@ focus_tree = {
 		prerequisite = { focus = UKR_dictatorship_takes_over }
 		relative_position_id = UKR_dictatorship_takes_over
 
-
 		available = {
             NOT = {
 				OR = {
@@ -904,12 +755,7 @@ focus_tree = {
 			has_completed_focus = UKR_under_the_pretext_of_a_christmas_tree
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}	
@@ -933,12 +779,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.05
 			country_event = {
 				id = ukraine.102
@@ -968,12 +809,7 @@ focus_tree = {
 			always = no
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
 				days = 5
@@ -1002,12 +838,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -1031,12 +862,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -1060,12 +886,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -1091,12 +912,7 @@ focus_tree = {
 			always = no
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -1120,12 +936,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -1150,12 +961,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
 				days = 5
@@ -1184,12 +990,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			country_event = {
 				id = ukraine.44
 				hours = 6
@@ -1223,12 +1024,7 @@ focus_tree = {
 			has_completed_focus = UKR_declaration_of_a_political_thaw
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
 				days = 5
@@ -1257,12 +1053,7 @@ focus_tree = {
 			always = no
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -1288,12 +1079,7 @@ focus_tree = {
 			always = no
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -1319,12 +1105,7 @@ focus_tree = {
 			always = no
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -1349,12 +1130,7 @@ focus_tree = {
 			always = no
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -1379,12 +1155,7 @@ focus_tree = {
 			always = no
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_stability = 0.025
 		}
 	}
@@ -1409,12 +1180,7 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_Information_campaign_against_Maidan"
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
 				days = 2
@@ -1427,17 +1193,12 @@ focus_tree = {
 		id = UKR_arrest_yanukovich
 		icon = GFX_focus_UKR_arrest_yanukovich
 		cost = 0.4
-		x = -1
+		x = 1
 		y = 1
 
 		prerequisite = { focus = UKR_remain_neutral }
 		relative_position_id = UKR_remain_neutral
-		mutually_exclusive = { focus = UKR_dictatorship_takes_over }
-		mutually_exclusive = { focus = UKR_yanukovich_escaped }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		mutually_exclusive = { focus = UKR_yanukovich_escaped focus = UKR_dictatorship_takes_over }
 
 		available = {
 			OR = {
@@ -1449,33 +1210,9 @@ focus_tree = {
 				    tooltip = legitimacy_of_power_lesser_than_15_ukr_tt
                 }
 			}
-			date > 2014.01.01
-		}
-
-		#allow_branch = {
-		#	NOT = {
-		#	   has_completed_focus = UKR_dictatorship_takes_over
-		#	}
-		#}
-
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_completed_focus = UKR_unrest_in_the_east
-			}
-		}
-
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_completed_focus = UKR_yanukovich_escaped
-			}
 		}	
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_arrest_yanukovich"
 			add_stability = 0.025
 			add_political_power = 25
 			RUS = {
@@ -1486,6 +1223,7 @@ focus_tree = {
 					id = superevent.4
 					hours = 12
 				}
+				mark_focus_tree_layout_dirty = yes
 			}
 		}
 	}
@@ -1494,48 +1232,28 @@ focus_tree = {
 		id = UKR_yanukovich_escaped
 		icon = GFX_focus_UKR_escaped_president
 		cost = 0.4
-		x = -2
+		x = -1
 		y = 1
 
 		prerequisite = { focus = UKR_remain_neutral }
 		relative_position_id = UKR_remain_neutral
-		mutually_exclusive = { focus = UKR_arrest_yanukovich }
+		mutually_exclusive = { focus = UKR_arrest_yanukovich focus = UKR_dictatorship_takes_over }
 
 		available = {
-            NOT = {
-				has_completed_focus = UKR_dictatorship_takes_over
-			}
 			has_global_flag = Yanukovich_escaped
 		}
 
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_completed_focus = UKR_unrest_in_the_east
-			}
-		}
-
-		allow_branch = {
-			has_country_flag = Yanukovich_escaped
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_yanukovich_escaped"
             add_political_power = -15
 			RUS = {
 				set_country_flag = CoupInUkraine
 			}
-			mark_focus_tree_layout_dirty = yes
 			hidden_effect = {
 				country_event = {
 					id = superevent.4
 					hours = 12
 				}
+				mark_focus_tree_layout_dirty = yes
 			}
 		}
 	}
@@ -1544,47 +1262,19 @@ focus_tree = {
 		id = UKR_government_in_anarchy
 		icon = GFX_focus_UKR_government_in_anarchy
 		cost = 0.3
-		x = 0
+		x = -1
 		y = 1
 
 		prerequisite = { focus = UKR_arrest_yanukovich focus = UKR_yanukovich_escaped }
 		relative_position_id = UKR_arrest_yanukovich
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		
 
 		available = {
             has_country_flag = UKR_Yanukovich_overthrown
 		}
 
-
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_completed_focus = UKR_unrest_in_the_east
-			}
-		}	
-		
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				has_completed_focus = UKR_unrest_in_the_east
-			}
-		}
-
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				has_completed_focus = UKR_yanukovich_escaped
-			}
-		}
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			swap_ideas = {
                 remove_idea = UKR_helpless_government
                 add_idea = UKR_disorderly_government
@@ -1602,6 +1292,10 @@ focus_tree = {
 					id = ukraine.107
 					days = 1
 				}
+				country_event = {
+					id = ukraine.112
+					days = 14
+				}
 			}
 		}
 	}
@@ -1616,16 +1310,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_release_political_prisoners_from_prisons }
 		relative_position_id = UKR_government_in_anarchy
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_stability = 0.025
 			add_political_power = 25
 			set_country_flag = Focuses_after_Ato
@@ -1790,16 +1479,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_government_in_anarchy }
 		relative_position_id = UKR_government_in_anarchy
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_stability = 0.035
 			add_political_power = 15
 			add_popularity = {
@@ -1823,16 +1507,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_government_in_anarchy }
 		relative_position_id = UKR_government_in_anarchy
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			country_event = {
 				id = ukraine.91
 				hour = 3
@@ -1864,16 +1543,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_coalition_in_parlamient }
 		relative_position_id = UKR_government_in_anarchy
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    unlock_decision_category_tooltip = UKR_decisions_of_the_transitional_government
 			add_popularity = {
                 ideology = conservatism_democracy
@@ -1891,30 +1565,18 @@ focus_tree = {
 		id = UKR_unrest_in_the_east
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 0.5
-		x = 11
-		y = 7
+		x = 1
+		y = 1
+		relative_position_id = UKR_preparation_for_elections
 
 		prerequisite = { focus = UKR_preparation_for_elections }
 		prerequisite = { focus = UKR_adoption_of_new_laws }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		available = {
 
 		}
 
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_completed_focus = UKR_unrest_in_the_east
-			}
-		}
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 			add_political_power = 50
 			swap_ideas = {
                 remove_idea = UKR_protests
@@ -1928,8 +1590,8 @@ focus_tree = {
 			unlock_decision_tooltip = UKR_raise_the_sbu
 			hidden_effect = {
 				country_event = ukraine.20
-				mark_focus_tree_layout_dirty = yes
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -1948,16 +1610,11 @@ focus_tree = {
 			has_completed_focus = UKR_unrest_in_the_east
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 		    army_experience = 35
 		}
 	}
@@ -1976,10 +1633,6 @@ focus_tree = {
 			factor = 25
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		bypass = {
 			has_global_flag = Start_Of_ATO
 		}
@@ -1989,7 +1642,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 		    add_manpower = 6500
 			add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
 		    custom_effect_tooltip = UKR_support_of_the_volunteer_battalion_tt
@@ -2011,10 +1663,6 @@ focus_tree = {
 			factor = 25
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		bypass = {
 			has_global_flag = Start_Of_ATO
 		}
@@ -2024,7 +1672,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 		    country_event = ukraine.53
 		}
 	}
@@ -2043,10 +1690,6 @@ focus_tree = {
 			factor = 25
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		bypass = {
 			has_global_flag = Start_Of_ATO
 		}
@@ -2061,7 +1704,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 		    add_to_variable = { UKR_AFU_army_org_factor = 0.075 }
 			add_to_variable = { UKR_AFU_army_morale_factor = 0.15 }
 		    custom_effect_tooltip = UKR_forced_demobilization_tt
@@ -2081,10 +1723,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		bypass = {
 			has_global_flag = Start_Of_ATO
@@ -2107,9 +1745,14 @@ focus_tree = {
 	                }
                     support = {
                         engineer = { x = 0 y = 0 }
-		                recon = { x = 0 y = 1 }
-		                mortar = { x = 0 y = 2 }
-		                atgm_company = { x = 0 y = 3 }
+                        recon = { x = 0 y = 1 }
+                        mortar = { x = 0 y = 2 }
+				        atgm_company = { x = 0 y = 3 }
+        		        field_hospital = { x = 0 y = 4} 
+        		        sniper_company = { x = 1 y = 0 }
+        		        manpads_platoon = { x = 1 y = 1}
+  				        logistics_company = { x = 1 y = 2}
+				        signal_company = { x = 1 y = 3} 
 	                }
                 }
 				division_template = {
@@ -2122,9 +1765,14 @@ focus_tree = {
 	                }
                     support = {
                         engineer = { x = 0 y = 0 }
-		                recon = { x = 0 y = 1 }
-		                mortar = { x = 0 y = 2 }
-		                atgm_company = { x = 0 y = 3 }
+                        recon = { x = 0 y = 1 }
+                        mortar = { x = 0 y = 2 }
+				        atgm_company = { x = 0 y = 3 }
+        		        field_hospital = { x = 0 y = 4} 
+        		        sniper_company = { x = 1 y = 0 }
+        		        manpads_platoon = { x = 1 y = 1}
+  				        logistics_company = { x = 1 y = 2}
+				        signal_company = { x = 1 y = 3} 
 	                }
                 }
 			}
@@ -2135,7 +1783,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 			add_to_variable = { UKR_AFU_army_org_factor = 0.15 }
 		    custom_effect_tooltip = UKR_creation_of_tro_tt
 			hidden_effect = {
@@ -2187,11 +1834,6 @@ focus_tree = {
 		prerequisite = { focus = UKR_army_review }
 		relative_position_id = UKR_unrest_in_the_east
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		bypass = {
 			has_global_flag = Start_Of_ATO
 		}
@@ -2201,7 +1843,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 			add_political_power = 25
 			custom_effect_tooltip = UKR_the_influence_of_oligarchs_will_increase_tt
 		}
@@ -2217,11 +1858,6 @@ focus_tree = {
 		prerequisite = { focus = UKR_appeal_to_the_oligarchs }
 		relative_position_id = UKR_unrest_in_the_east
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		bypass = {
 			has_global_flag = Start_Of_ATO
 		}
@@ -2234,7 +1870,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_the_east"
 			country_event = ukraine.106
 			add_political_power = 250
 			custom_effect_tooltip = UKR_the_influence_of_oligarchs_will_increase_tt
@@ -2253,17 +1888,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_creation_of_tro }
 		relative_position_id = UKR_support_of_the_volunteer_battalion
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
             always = no
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_war_support = 0.05
 			hidden_effect = {
 				news_event = news_events.25			
@@ -2271,7 +1900,6 @@ focus_tree = {
 					id = superevent.1
 					hours = 6
 				}
-				mark_focus_tree_layout_dirty = yes
 				set_global_flag = Start_Of_ATO
 				set_global_flag = Donbas_war_1_escalation
 				country_event = {
@@ -2313,28 +1941,34 @@ focus_tree = {
 	            set_variable = { UKR_ATO_pocket_penalty = -0.30 }
 	            set_variable = { UKR_ATO_experience_loss_factor = -0.30 }
 				set_variable = { UKR_ATO_casualty_trickleback = 0.25}
+				set_variable = { UKR_ATO_army_speed_factor = -0.20 }
 				NDR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_army_speed_factor = -0.35 }
 				}
 				DPR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_army_speed_factor = -0.35 }
 				}	
 				LPR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_army_speed_factor = -0.35 }
 				}	
 				SDR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_army_speed_factor = -0.35 }
 				}
-				set_variable = { var = CONST_MINSK_NEGOTATIONS_PROGRESS_SCALE 	value = 50 }								
+				set_variable = { var = CONST_MINSK_NEGOTATIONS_PROGRESS_SCALE value = 50 }								
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -2343,15 +1977,10 @@ focus_tree = {
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
 		x = 30
-		y = 10
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		y = 13
 
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		allow_branch = {
@@ -2359,7 +1988,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2373,21 +2001,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_battle_for_ukraine }
 		relative_position_id = UKR_battle_for_ukraine
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
-		}
-
-		allow_branch = {
 			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2401,21 +2019,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_battle_for_ukraine }
 		relative_position_id = UKR_battle_for_ukraine
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
-		}
-
-		allow_branch = {
 			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2429,21 +2037,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_battle_for_ukraine }
 		relative_position_id = UKR_battle_for_ukraine
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
-		}
-
-		allow_branch = {
 			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2457,17 +2055,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_battle_for_ukraine }
 		relative_position_id = UKR_battle_for_ukraine
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2481,17 +2073,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_ukrainian_special_services_during_wartime }
 		relative_position_id = UKR_ukrainian_special_services_during_wartime
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2505,17 +2091,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_ukrainian_special_services_during_wartime }
 		relative_position_id = UKR_ukrainian_special_services_during_wartime
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2529,17 +2109,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_operations_on_russian_terrotory }
 		relative_position_id = UKR_operations_on_russian_terrotory
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2553,17 +2127,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_operations_on_russian_terrotory }
 		relative_position_id = UKR_operations_on_russian_terrotory
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2577,17 +2145,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_creation_of_rdk }
 		relative_position_id = UKR_operations_on_russian_terrotory
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2601,17 +2163,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_operations_on_russian_terrotory }
 		relative_position_id = UKR_operations_on_russian_terrotory
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2625,17 +2181,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_ukrainian_special_services_during_wartime }
 		relative_position_id = UKR_ukrainian_special_services_during_wartime
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2649,17 +2199,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_contact_the_resistance }
 		relative_position_id = UKR_ukrainian_special_services_during_wartime
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2673,17 +2217,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_contact_the_resistance }
 		relative_position_id = UKR_ukrainian_special_services_during_wartime
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2697,17 +2235,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_contact_the_resistance }
 		relative_position_id = UKR_ukrainian_special_services_during_wartime
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2723,21 +2255,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_battle_for_ukraine }
 		relative_position_id = UKR_battle_for_ukraine
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
-		}
-
-		allow_branch = {
 			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2751,21 +2273,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_army_in_war_time }
 		relative_position_id = UKR_army_in_war_time
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
-		}
-
-		allow_branch = {
 			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2779,21 +2291,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_mobilization }
 		relative_position_id = UKR_mobilization
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
-		}
-
-		allow_branch = {
 			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2807,17 +2309,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_lower_the_age_for_conscription }
 		relative_position_id = UKR_mobilization
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2831,21 +2327,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_mobilization }
 		relative_position_id = UKR_army_in_war_time
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
-		}
-
-		allow_branch = {
 			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2859,21 +2345,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_army_in_war_time }
 		relative_position_id = UKR_army_in_war_time
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
-		}
-
-		allow_branch = {
 			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2887,17 +2363,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_army_production }
 		relative_position_id = UKR_army_production
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2911,17 +2381,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_army_production }
 		relative_position_id = UKR_army_production
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2935,17 +2399,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_army_production }
 		relative_position_id = UKR_army_production
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2959,17 +2417,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_army_production }
 		relative_position_id = UKR_army_production
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -2983,17 +2435,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_army_production }
 		relative_position_id = UKR_army_production
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3007,17 +2453,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_bohdana }
 		relative_position_id = UKR_bohdana
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3031,17 +2471,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_army_in_war_time }
 		relative_position_id = UKR_army_in_war_time
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3055,17 +2489,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_reshuffles_in_the_army }
 		relative_position_id = UKR_reshuffles_in_the_army
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3079,21 +2507,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_army_in_war_time }
 		relative_position_id = UKR_army_in_war_time
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
-		}
-
-		allow_branch = {
 			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3107,21 +2525,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_create_sbs }
 		relative_position_id = UKR_create_sbs
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
-		}
-
-		allow_branch = {
 			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3136,21 +2544,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_create_sbs }
 		relative_position_id = UKR_create_sbs
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
-		}
-
-		allow_branch = {
 			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3164,13 +2562,8 @@ focus_tree = {
 		prerequisite = { focus = UKR_create_sbs }
 		relative_position_id = UKR_create_sbs
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		allow_branch = {
@@ -3178,7 +2571,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3192,13 +2584,8 @@ focus_tree = {
 		prerequisite = { focus = UKR_creation_of_ebali_system }
 		relative_position_id = UKR_create_sbs
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		allow_branch = {
@@ -3206,7 +2593,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3220,17 +2606,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_creation_of_ebali_system }
 		relative_position_id = UKR_create_sbs
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3245,17 +2625,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_increase_funding_army_plus }
 		relative_position_id = UKR_create_sbs
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3269,17 +2643,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_wall_of_drones }
 		relative_position_id = UKR_create_sbs
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3293,17 +2661,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_wall_of_drones }
 		relative_position_id = UKR_create_sbs
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Russo_Ukranian_War
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3311,16 +2673,11 @@ focus_tree = {
 		id = UKR_snap_presidential_elections
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 30
+		x = 35
 		y = 0
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+			has_country_flag = Focuses_after_Ato
 		}
 
 		allow_branch = {
@@ -3328,7 +2685,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			
 		}
 	}
@@ -3343,16 +2699,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_snap_presidential_elections }
 		relative_position_id = UKR_snap_presidential_elections
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
             always = no
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			country_event = ukraine.25
 		}
 	}
@@ -3364,11 +2715,6 @@ focus_tree = {
 		x = -2
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_snap_presidential_elections }
 		relative_position_id = UKR_snap_presidential_elections
 
@@ -3379,7 +2725,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_political_power = 25
 		}
 	}
@@ -3392,11 +2737,6 @@ focus_tree = {
 		x = -1
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_poroshenko_victory }
 		relative_position_id = UKR_poroshenko_victory
 
@@ -3407,7 +2747,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_political_power = 25
 		}
 	}	
@@ -3419,11 +2758,6 @@ focus_tree = {
 		x = 2
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
 		relative_position_id = UKR_poroshenko_victory
 
@@ -3434,7 +2768,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_political_power = 25
 		}
 	}
@@ -3446,11 +2779,6 @@ focus_tree = {
 		x = 2
 		y = 2
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_economic_reforms }
 		relative_position_id = UKR_poroshenko_victory
 
@@ -3461,7 +2789,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_political_power = 25
 		}
 	}
@@ -3473,11 +2800,6 @@ focus_tree = {
 		x = 5
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
 		relative_position_id = UKR_poroshenko_victory
 
@@ -3486,7 +2808,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_political_power = 25
 		}
 	}
@@ -3498,11 +2819,6 @@ focus_tree = {
 		x = 0
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_anticorruption_reforms }
 		relative_position_id = UKR_anticorruption_reforms
 
@@ -3511,7 +2827,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_form_nabu"
 		}
 	}
 
@@ -3522,11 +2837,6 @@ focus_tree = {
 		x = 1
 		y = 2
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_form_nabu }
 		relative_position_id = UKR_anticorruption_reforms
 
@@ -3535,7 +2845,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_form_sap"
 		}
 	}
 
@@ -3546,11 +2855,6 @@ focus_tree = {
 		x = 1
 		y = 3
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_form_sap }
 		relative_position_id = UKR_anticorruption_reforms
 
@@ -3559,7 +2863,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_form_napk"
 		}
 	}
 
@@ -3570,11 +2873,6 @@ focus_tree = {
 		x = -1
 		y = 2
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_form_nabu }
 		relative_position_id = UKR_anticorruption_reforms
 
@@ -3583,7 +2881,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_form_napk"
 		}
 	}
 
@@ -3594,11 +2891,6 @@ focus_tree = {
 		x = -1
 		y = 3
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_form_napk }
 		relative_position_id = UKR_anticorruption_reforms
 
@@ -3607,7 +2899,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_form_napk"
 		}
 	}
 
@@ -3618,11 +2909,6 @@ focus_tree = {
 		x = 8
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
 		relative_position_id = UKR_poroshenko_victory
 
@@ -3631,7 +2917,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_political_power = 25
 		}
 	}
@@ -3643,11 +2928,6 @@ focus_tree = {
 		x = 11
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
 		relative_position_id = UKR_poroshenko_victory
 
@@ -3656,7 +2936,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_political_power = 25
 		}
 	}
@@ -3667,10 +2946,6 @@ focus_tree = {
 		cost = 1
 		x = -9
 		y = 1
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		prerequisite = { focus = UKR_snap_presidential_elections }
 		relative_position_id = UKR_snap_presidential_elections
@@ -3684,7 +2959,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3695,11 +2969,6 @@ focus_tree = {
 		x = 13
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_snap_presidential_elections }
 		relative_position_id = UKR_snap_presidential_elections
 
@@ -3711,7 +2980,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3722,11 +2990,6 @@ focus_tree = {
 		x = 17
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_snap_presidential_elections }
 		relative_position_id = UKR_snap_presidential_elections
 
@@ -3738,7 +3001,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3746,16 +3008,12 @@ focus_tree = {
 		id = UKR_military_reforms_afu
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 3
-		x = 60
+		x = 70
 		y = 0
 
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
 		available = {
+			has_country_flag = Focuses_after_Ato
             NOT = {
 				has_country_flag = Elections2014InProgress
 			}
@@ -3766,7 +3024,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    army_experience = 35
 		}
 	}
@@ -3778,21 +3035,14 @@ focus_tree = {
 		x = 0
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_military_reforms_afu }
 		relative_position_id = UKR_military_reforms_afu
-
 
 		available = {
             has_completed_focus = UKR_turn_to_the_west_for_help
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3803,21 +3053,14 @@ focus_tree = {
 		x = -4
 		y = 2
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_western_instructors }
 		relative_position_id = UKR_military_reforms_afu
 
-
 		available = {
-            
+
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
 		    custom_effect_tooltip = UKR_realiance_on_decentralized_command_tt
 		}
@@ -3830,22 +3073,15 @@ focus_tree = {
 		x = -2
 		y = 2
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_western_instructors }
 		relative_position_id = UKR_military_reforms_afu
 		mutually_exclusive = { focus = UKR_reliance_on_centralized_command }
 
-
 		available = {
-            
+
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
 		    custom_effect_tooltip = UKR_realiance_on_decentralized_command_tt
 		}
@@ -3858,21 +3094,14 @@ focus_tree = {
 		x = 0
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_reliance_on_decentralized_command }
 		relative_position_id = UKR_reliance_on_decentralized_command
 
-
 		available = {
-            
+
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
 		    custom_effect_tooltip = UKR_missionary_command_tt
 		}
@@ -3885,21 +3114,14 @@ focus_tree = {
 		x = 0
 		y = 2
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_missionary_command }
 		relative_position_id = UKR_reliance_on_decentralized_command
 
-
 		available = {
-            
+
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_reform_of_the_sergeant_corps"
 			add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
 			add_to_variable = { UKR_AFU_army_org_factor = 0.015 }
 		    custom_effect_tooltip = UKR_reform_of_the_sergeant_corps_tt
@@ -3913,21 +3135,14 @@ focus_tree = {
 		x = 0
 		y = 3
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_reliance_on_decentralized_command focus = UKR_reliance_on_centralized_command}
 		relative_position_id = UKR_military_reforms_afu
 
-
 		available = {
-            
+
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3938,21 +3153,14 @@ focus_tree = {
 		x = 0
 		y = 4
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_deosovetization_of_army }
 		relative_position_id = UKR_military_reforms_afu
 
-
 		available = {
-            
+
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -3963,21 +3171,14 @@ focus_tree = {
 		x = 1
 		y = 6
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
 		relative_position_id = UKR_military_reforms_afu
 
-
 		available = {
-            
+
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_command_of_the_logistics_forces_afu"
 		}
 	}
 
@@ -3988,23 +3189,16 @@ focus_tree = {
 		x = 0
 		y = 5
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_reform_of_dshv }
 		prerequisite = { focus = UKR_reform_of_dshv focus = UKR_reform_of_the_sergeant_corps focus = UKR_strengthen_general_staff_planning }
 
 		relative_position_id = UKR_military_reforms_afu
 
-
 		available = {
-            
+
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_creation_of_a_reserve_corps"
 			unlock_decision_tooltip = UKR_3_okrema_tankova_bryhada_reserve_corps_decision
 			unlock_decision_tooltip = UKR_4_okrema_tankova_bryhada_reserve_corps_decision
 			unlock_decision_tooltip = UKR_63_okrema_mekhanizovana_bryhada_reserve_corps_decision
@@ -4020,21 +3214,14 @@ focus_tree = {
 		x = -1
 		y = 6
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
 		relative_position_id = UKR_military_reforms_afu
 
-
 		available = {
-            
+
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -4045,22 +3232,15 @@ focus_tree = {
 		x = 2
 		y = 2
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_western_instructors }
 		relative_position_id = UKR_military_reforms_afu
 		mutually_exclusive = { focus = UKR_reliance_on_decentralized_command }
 
-
 		available = {
-            
+
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -4071,11 +3251,6 @@ focus_tree = {
 		x = 2
 		y = 3
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_reliance_on_centralized_command }
 		relative_position_id = UKR_military_reforms_afu
 		ai_will_do = {
@@ -4085,7 +3260,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -4096,21 +3270,14 @@ focus_tree = {
 		x = 2
 		y = 4
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_reliance_on_centralized_command }
 		relative_position_id = UKR_military_reforms_afu
 
-
 		available = {
-            
+
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -4121,21 +3288,14 @@ focus_tree = {
 		x = -6
 		y = 2
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_western_instructors }
 		relative_position_id = UKR_military_reforms_afu
-
 
 		available = {
            
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -4146,21 +3306,14 @@ focus_tree = {
 		x = 0
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_ukranian_mic }
 		relative_position_id = UKR_ukranian_mic
-
 
 		available = {
            
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -4171,21 +3324,14 @@ focus_tree = {
 		x = -2
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_ukranian_mic }
 		relative_position_id = UKR_ukranian_mic
-
 
 		available = {
            
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_tech_bonus = {
                 bonus = 0.5
                 uses = 1
@@ -4201,21 +3347,14 @@ focus_tree = {
 		x = 6
 		y = 2
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_western_instructors }
 		relative_position_id = UKR_military_reforms_afu
-
 
 		available = {
            
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -4226,21 +3365,14 @@ focus_tree = {
 		x = 0
 		y = 1
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		prerequisite = { focus = UKR_creation_of_sso }
 		relative_position_id = UKR_creation_of_sso
-
 
 		available = {
            
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		}
 	}
 
@@ -4262,16 +3394,11 @@ focus_tree = {
 			factor = 25
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_timed_idea = {
                 idea = UKR_emergency_redeployment_of_troops_idea 
                 days = 15
@@ -4289,11 +3416,6 @@ focus_tree = {
 		prerequisite = { focus = UKR_emergency_redeployment_of_troops }
 		relative_position_id = UKR_emergency_redeployment_of_troops
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
             NOT = {
 				has_country_flag = Elections2014InProgress
@@ -4301,7 +3423,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
             add_stability = 0.025
 			custom_effect_tooltip = UKR_western_help_2014_tt
 			hidden_effect = {
@@ -4331,16 +3452,11 @@ focus_tree = {
 			has_global_flag = ATO_Separatists_victory
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_to_variable = { UKR_AFU_army_org_factor = 0.15 }
 		    custom_effect_tooltip = UKR_organize_frontline_tt
 		}
@@ -4364,16 +3480,11 @@ focus_tree = {
 			has_global_flag = ATO_Separatists_victory
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_timed_idea = {
                 idea = UKR_organize_defence_idea 
                 days = 45
@@ -4409,7 +3520,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    unlock_decision_category_tooltip = UKR_depreservation_decision
 		}
 	}
@@ -4439,7 +3549,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_war_support = 0.05
 			activate_mission = UKR_volunteer_help_decision
 			hidden_effect = {
@@ -4455,28 +3564,23 @@ focus_tree = {
 		id = UKR_end_of_separatism
 		icon = GFX_focus_UKR_victory_over_separatism
 		cost = 0.5
-		x = 0
-		y = 6
+		x = 2
+		y = 1
 
 		prerequisite = { focus = UKR_launch_counterattacks }
 		prerequisite = { focus = UKR_volunteer_help }
 		prerequisite = { focus = UKR_decommissioning_of_stocks }
-		relative_position_id = UKR_start_of_ato
+		relative_position_id = UKR_decommissioning_of_stocks
 		ai_will_do = {
 			factor = 200
 		}
 
 		allow_branch = {
-			NOT = { 
+			has_completed_focus = UKR_start_of_ato
+			NOT = {
 				has_country_flag = UKR_donbas_war_resumes_spring_2015
 			}
-			has_completed_focus = UKR_start_of_ato
 		}
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		available = {
             NOT = {
@@ -4497,7 +3601,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			add_political_power = 75
 			add_stability = 0.05
 			add_war_support = 0.05
@@ -4522,29 +3625,25 @@ focus_tree = {
 		id = UKR_continuation_of_the_ato
 		icon = GFX_focus_UKR_victory_over_separatism
 		cost = 1
-		x = 0
-		y = 6
+		x = -2
+		y = 1
 
 		prerequisite = { focus = UKR_launch_counterattacks }
 		prerequisite = { focus = UKR_volunteer_help }
 		prerequisite = { focus = UKR_decommissioning_of_stocks }
-		relative_position_id = UKR_start_of_ato
+		mutually_exclusive = { focus = UKR_end_of_separatism }
+		relative_position_id = UKR_launch_counterattacks
 
 		allow_branch = {
+			has_completed_focus = UKR_start_of_ato
 			has_country_flag = UKR_donbas_war_resumes_spring_2015
 		}
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
-            
+
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			declare_war_on = {
 				type = annex_everything
 				target = DPR
@@ -4603,10 +3702,39 @@ focus_tree = {
                     load_oob = UKR_ATO_Buff
 				}
 				DPR = {
-					country_event = DPR.17
-					days = 3
+					country_event = { id = DPR.17 days = 3 }
 				}
 			}				
+		}
+	}
+
+	focus = {
+		id = UKR_end_of_separatism_2
+		icon = GFX_focus_UKR_victory_over_separatism
+		cost = 1
+		x = -1
+		y = 1
+
+		prerequisite = { focus = UKR_continuation_of_the_ato }
+		mutually_exclusive = { focus = UKR_dig_in }
+		relative_position_id = UKR_continuation_of_the_ato
+
+		available = {
+			custom_trigger_tooltip = {
+                tooltip = UKR_end_of_separatism_trigger_tt		
+				NOT = {
+				    country_exists = DPR
+					country_exists = KPR
+					country_exists = LPR
+					country_exists = OPR
+					country_exists = NDR
+					country_exists = SDR
+			    }
+            }
+		}
+
+		completion_reward = {
+							
 		}
 	}
 
@@ -4614,27 +3742,18 @@ focus_tree = {
 		id = UKR_dig_in
 		icon = GFX_focus_UKR_victory_over_separatism
 		cost = 1
-		x = 0
-		y = 7
+		x = 1
+		y = 1
 
 		prerequisite = { focus = UKR_continuation_of_the_ato }
-		relative_position_id = UKR_start_of_ato
-
-		allow_branch = {
-			has_country_flag = UKR_donbas_war_resumes_spring_2015
-		}
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		mutually_exclusive = { focus = UKR_end_of_separatism_2 }
+		relative_position_id = UKR_continuation_of_the_ato
 
 		available = {
-            
+
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_dig_in"
 			add_timed_idea = {
                 idea = UKR_defence_of_cities_idea 
                 days = 75
@@ -4643,30 +3762,39 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_joint_forces_operation
+		id = UKR_donbass_restoration_programs
 		icon = GFX_focus_UKR_victory_over_separatism
 		cost = 1
-		x = 0
-		y = 8
+		x = -1
+		y = 1
 
-		prerequisite = { focus = UKR_dig_in }
-		relative_position_id = UKR_start_of_ato
-
-		allow_branch = {
-			has_country_flag = UKR_donbas_war_resumes_spring_2015
-		}
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		prerequisite = { focus = UKR_dig_in focus = UKR_end_of_separatism_2 }
+		relative_position_id = UKR_dig_in
 
 		available = {
-            date > 2018.1.1
+			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
+							
+		}
+	}
+
+	focus = {
+		id = UKR_joint_forces_operation
+		icon = GFX_focus_UKR_victory_over_separatism
+		cost = 1
+		x = 1
+		y = 1
+
+		prerequisite = { focus = UKR_dig_in }
+		relative_position_id = UKR_dig_in
+
+		available = {
+			date > 2018.1.1
+		}
+
+		completion_reward = {
 			add_timed_idea = {
                 idea = UKR_defence_of_cities_idea 
                 days = 75
@@ -4688,10 +3816,6 @@ focus_tree = {
 			factor = 20
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
@@ -4701,7 +3825,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
             unlock_decision_category_tooltip = UKR_general_staff_decision
 			custom_effect_tooltip = UKR_new_brigades_formation_tt
 			army_experience = 20
@@ -4736,7 +3859,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			unlock_decision_category_tooltip = UKR_ATO_decision
 		    add_to_variable = { UKR_AFU_army_attack_factor = 0.15 }
 		    custom_effect_tooltip = UKR_launch_counterattacks_tt
@@ -4861,7 +3983,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_timed_idea = {
                 idea = UKR_defence_of_cities_idea 
                 days = 45
@@ -4895,7 +4016,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    add_stability = 0.05
 			add_political_power = 35
 			hidden_effect = {
@@ -4918,16 +4038,11 @@ focus_tree = {
 			factor = 15
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
 		    add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
 		    custom_effect_tooltip = UKR_volunteer_battalions_tt
@@ -4949,7 +4064,7 @@ focus_tree = {
 		id = UKR_volunteer_battalions_of_mvd
 		icon = GFX_focus_UKR_volunteer_mvd_battalions
 		cost = 0.5
-		x = 2
+		x = 0
 		y = 1
 
 		prerequisite = { focus = UKR_volunteer_battalions }
@@ -4959,16 +4074,11 @@ focus_tree = {
 			factor = 25
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 		    unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
 			add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
 		    add_political_power = 25
@@ -4989,7 +4099,7 @@ focus_tree = {
 		id = UKR_reformat_TRO_into_motorized_infantry_battalions
 		icon = GFX_focus_UKR_reformation_of_tro_to_motoinfanry
 		cost = 1
-		x = 4
+		x = 2
 		y = 1
 
 		prerequisite = { focus = UKR_volunteer_battalions }
@@ -4999,16 +4109,11 @@ focus_tree = {
 			factor = 25
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
             date > 2014.10.1
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_reformat_TRO_into_motorized_infantry_battalions"
 		    country_event = ukraine.95
 		}
 	}
@@ -5017,7 +4122,7 @@ focus_tree = {
 		id = UKR_volunteer_battalion_azov
 		icon = GFX_focus_UKR_volunteer_azov_battalions
 		cost = 0.3
-		x = 0
+		x = -2
 		y = 1
 
 		prerequisite = { focus = UKR_volunteer_battalions }
@@ -5027,16 +4132,11 @@ focus_tree = {
 			factor = 25
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_government_in_anarchy"
 			country_event = ukraine.85
 			add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
 		    custom_effect_tooltip = UKR_volunteer_battalions_tt
@@ -5048,13 +4148,11 @@ focus_tree = {
 		id = UKR_unrest_in_crimea
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 0.5
-		x = 5
-		y = 7
+		x = -5
+		y = 1
+		relative_position_id = UKR_unrest_in_the_east
 
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		prerequisite = { focus = UKR_unrest_in_the_east }
 
 		allow_branch = {
 			has_completed_focus = UKR_unrest_in_the_east
@@ -5065,7 +4163,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_unrest_in_crimea"
 		}
 	}
 
@@ -5083,16 +4180,11 @@ focus_tree = {
 			factor = 25
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_highlighting_the_situation_in_the_media"
 		    add_political_power = 25
 		}
 	}
@@ -5108,16 +4200,11 @@ focus_tree = {
 		mutually_exclusive = { focus = UKR_leave_the_peninsula }
 		relative_position_id = UKR_unrest_in_crimea
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			has_country_flag = innextupdate
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_no_step_back_from_crimea"
 		}
 	}
 
@@ -5131,16 +4218,11 @@ focus_tree = {
 		prerequisite = { focus = UKR_no_step_back_from_crimea }
 		relative_position_id = UKR_unrest_in_crimea
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_organize_defence_in_crimea"
 		}
 	}
 
@@ -5159,10 +4241,6 @@ focus_tree = {
 			factor = 25
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		bypass = {
 			has_global_flag = Start_Of_ATO
 		}
@@ -5172,7 +4250,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_leave_the_peninsula"
 			unlock_decision_tooltip = UKR_cut_off_the_water_supply_to_crimea
 		}
 	}
@@ -5191,10 +4268,6 @@ focus_tree = {
 			factor = 25
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		bypass = {
 			has_global_flag = Start_Of_ATO
 		}
@@ -5204,7 +4277,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_pick_up_weapons_from_warehouses"
 		    add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
 				amount = 7500 
@@ -5234,10 +4306,6 @@ focus_tree = {
 			factor = 25
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		bypass = {
 			has_global_flag = Start_Of_ATO
 		}
@@ -5250,9 +4318,7 @@ focus_tree = {
 		}
 
 
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus UKR_partial_mobilization"
             custom_effect_tooltip = UKR_started_partial_mobilization_tt
 			hidden_effect = {
 				news_event = {

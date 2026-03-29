@@ -12,7 +12,6 @@ UKR_separatism_decision = {
 	allowed = {
 		original_tag = UKR
 	}
-	#picture = GFX_decision_UKR_separatism
 
 	scripted_gui = UKR_separatism
 	visible_when_empty = yes
@@ -27,7 +26,6 @@ UKR_elections_of_president = {
 	allowed = {
 		original_tag = UKR
 	}
-	#picture = GFX_decision_UKR_separatism
 
 	visible = {
 		has_global_flag = UKRelectionsofpresident2014
@@ -46,7 +44,6 @@ UKR_parlamient_decision = {
 	allowed = {
 		original_tag = UKR
 	}
-	#picture = GFX_decision_UKR_separatism
 
 	scripted_gui = UKR_parlamient_ui_window
 	visible_when_empty = yes
@@ -57,12 +54,14 @@ UKR_decisions_of_the_transitional_government = {
 	priority = 86
 	
 	icon = GFX_decision_UKR_verkhovna_rada_icon
-	has_completed_focus = UKR_adoption_of_new_laws
 	
 	allowed = {
 		original_tag = UKR
 	}
-	#picture = GFX_decision_UKR_separatism
+
+	visible = {
+		has_completed_focus = UKR_adoption_of_new_laws
+	}
 }
 
 UKR_maidan_decision = {
@@ -74,7 +73,6 @@ UKR_maidan_decision = {
 	allowed = {
 		original_tag = UKR
 	}
-	#picture = GFX_decision_UKR_separatism
 
 	visible = {
 		has_country_flag = UKRBeforeOverthrowOfYanukovych
@@ -92,7 +90,6 @@ UKR_general_staff_decision = {
 	allowed = {
 		original_tag = UKR
 	}
-	#picture = GFX_decision_UKR_separatism
 
 	visible_when_empty = yes
 }
@@ -106,7 +103,6 @@ UKR_depreservation_decision = {
 	allowed = {
 		original_tag = UKR
 	}
-	#picture = GFX_decision_UKR_separatism
 
 	visible = {
 		has_completed_focus = UKR_decommissioning_of_stocks
@@ -122,7 +118,6 @@ UKR_ATO_decision = {
 	allowed = {
 		original_tag = UKR
 	}
-	#picture = GFX_decision_UKR_separatism
 
 	visible = {
 		has_completed_focus = UKR_start_of_ato
@@ -152,7 +147,6 @@ UKR_HUR_decision = {
 	allowed = {
 		original_tag = UKR
 	}
-	#picture = GFX_decision_UKR_separatism
 
 	visible = {
 		has_country_flag = UKR_expand_hur
@@ -169,7 +163,6 @@ UKR_russian_ukranian_war_escalation_decision = {
 	allowed = {
 		original_tag = UKR
 	}
-	#picture = GFX_decision_UKR_separatism
 
 	visible = {
 		has_global_flag = Russo_Ukranian_war
@@ -187,7 +180,6 @@ UKR_national_powers_decision = {
 	allowed = {
 		original_tag = UKR
 	}
-	#picture = GFX_decision_UKR_separatism
 
 	visible = {
 		has_country_flag = national_powers_gui
@@ -204,7 +196,6 @@ UKR_western_help_decision = {
 	allowed = {
 		original_tag = UKR
 	}
-	#picture = GFX_decision_UKR_separatism
 
 	visible = {
 		has_country_flag = western_help
