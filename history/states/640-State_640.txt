@@ -20,18 +20,13 @@ state = {
 			arms_factory = 1
 			infrastructure = 4 
 			dockyard = 3 
-			9700 = {
-				naval_base = 5
-			}
-			17406 = {
-				naval_base = 10
-			}
-			6122 = {
-				naval_base = 2
-			}
-			17415 = {
-				naval_base = 4
-			}
+			9700 = { naval_base = 5 bunker = 5 }
+			17406 = { naval_base = 10 bunker = 4 }
+			6122 = { naval_base = 2 bunker = 6 }
+			17415 = { naval_base = 4 bunker = 5 }
+			8725 = { bunker = 3 }
+			17409 = { bunker = 4 }
+			17413 = { bunker = 1 }
 		}
 		
 		add_core_of = CRI 
