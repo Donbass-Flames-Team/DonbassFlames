@@ -25,7 +25,7 @@ focus_tree = {
 
 	focus = {
 		id = OPR_appeal_to_the_russian_spirit
-		cost = 3
+		cost = 1
 		x = 0
 		y = 1
 
@@ -45,11 +45,18 @@ focus_tree = {
 	focus = {
 		id = OPR_zachvat_flota
 		cost = 1
-		x = 12
-		y = 5
+		x = 0
+		y = 5 
+		prerequisite = { focus = OPR_appeal_to_the_russian_spirit }
+		relative_position_id = OPR_arrise_novorossia
 
 		available = { }
-		completion_reward = { }
+		completion_reward = { add_equipment_to_stockpile = {
+	type = convoy_1
+	amount = 20
+	producer = ROOT
+}
+ }
 	}
 
 	focus = {
