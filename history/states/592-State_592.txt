@@ -1,17 +1,19 @@
 state = { 
-	id = 592 
-	name = "STATE_592" 
-	manpower = 572 
-	
-	state_category = town 
-	history = { 
-		owner = UKR 
-		
-		arms_factory = 0
-		industrial_complex = 0
-		buildings = { infrastructure = 1 }
-		
-		add_core_of = UKR 
-	}
-	provinces = { 16934 }
+    id = 592 
+    name = "STATE_592" 
+    manpower = 572 
+    
+    state_category = tiny_island 
+    history = { 
+        owner = UKR 
+        
+        buildings = { 
+            infrastructure = 1 
+            arms_factory = 0
+            industrial_complex = 0
+        }
+        
+        add_core_of = UKR 
+    }
+    provinces = { 16934 }
 }

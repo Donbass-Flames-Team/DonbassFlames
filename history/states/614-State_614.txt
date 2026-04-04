@@ -1,42 +1,48 @@
 state = { 
-	id = 614 
-	name = "STATE_614" 
-	manpower = 138716 
-	
-	state_category = town 
-	buildings_max_level_factor = 2 
-	
-	resources = { oil = 1 } 
-	history = { 
-		owner = CRI 
-		
-		victory_points = { 224 3 }
-		victory_points = { 1392 2 }
-		victory_points = { 1974 3 }
-		victory_points = { 2949 5 }
-		victory_points = { 8217 2 }
-		victory_points = { 8728 2 }
-		victory_points = { 9855 4 }
-		victory_points = { 10330 5 }
-		victory_points = { 10765 10 }
-		victory_points = { 17077 2 }
-		victory_points = { 17092 3 }
-		victory_points = { 17119 10 }
-		victory_points = { 17156 2 }
-		victory_points = { 17165 2 }
-		victory_points = { 17232 5 }
-		victory_points = { 17259 2 }
-		victory_points = { 17271 15 }
-		
-		arms_factory = 0
-		buildings = { 
-			industrial_complex = 1
-			infrastructure = 2 
-			dockyard = 1 
-		}
-		
-		add_core_of = CRI 
-		add_core_of = UKR 
-	}
-	provinces = { 224 578 1142 1392 1974 2831 2949 3496 4388 5291 5516 5767 5814 6069 6428 6552 7059 7828 8144 8217 8706 8728 8811 8821 8940 9327 9824 9830 9855 10036 10122 10267 10330 10354 10364 10382 10698 10765 10885 10910 11045 11085 11266 11445 11578 17057 17077 17084 17092 17093 17095 17107 17110 17112 17119 17120 17126 17129 17130 17133 17141 17144 17154 17156 17163 17165 17167 17170 17174 17177 17178 17187 17192 17195 17197 17202 17211 17217 17226 17228 17232 17243 17246 17251 17259 17271 17272 17283 17986 18185 18192 18196 }
+    id = 614 
+    name = "STATE_614" 
+    manpower = 138716 
+    
+    state_category = town 
+    buildings_max_level_factor = 2 
+    
+    resources = { oil = 1 } 
+    history = { 
+        owner = CRI 
+        
+        victory_points = { 224 3 }
+        victory_points = { 1392 2 }
+        victory_points = { 1974 3 }
+        victory_points = { 2949 5 }
+        victory_points = { 8217 2 }
+        victory_points = { 8728 2 }
+        victory_points = { 9855 4 }
+        victory_points = { 10330 5 }
+        victory_points = { 10765 10 }
+        victory_points = { 17077 2 }
+        victory_points = { 17092 3 }
+        victory_points = { 17119 10 }
+        victory_points = { 17156 2 }
+        victory_points = { 17165 2 }
+        victory_points = { 17232 5 }
+        victory_points = { 17259 2 }
+        victory_points = { 17271 15 }
+        
+        buildings = { 
+            arms_factory = 0
+            industrial_complex = 1
+            infrastructure = 2 
+            dockyard = 1 
+            17170 = {
+                naval_base = 2
+            }
+            10765 = {
+                naval_base = 3
+            }
+        }
+        
+        add_core_of = CRI 
+        add_core_of = UKR 
+    }
+    provinces = { 224 578 1142 1392 1974 2831 2949 3496 4388 5291 5516 5767 5814 6069 6428 6552 7059 7828 8144 8217 8706 8728 8811 8821 8940 9327 9824 9830 9855 10036 10122 10267 10330 10354 10364 10382 10698 10765 10885 10910 11045 11085 11266 11445 11578 17057 17077 17084 17092 17093 17095 17107 17110 17112 17119 17120 17126 17129 17130 17133 17141 17144 17154 17156 17163 17165 17167 17170 17174 17177 17178 17187 17192 17195 17197 17202 17211 17217 17226 17228 17232 17243 17246 17251 17259 17271 17272 17283 17986 18185 18192 18196 }
 }

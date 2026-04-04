@@ -1,17 +1,19 @@
-division= { 
-    name = "82-y otdel’nyy gvardeiskiy motostrelkovyy batal’on" 
-    location = 6509
-    division_template = "Russian Motosrelkovy batal'on"
-    start_experience_factor = 1 
-    start_equipment_factor = 1 
-    start_manpower_factor = 1 
-}
+units = {
+    division= { 
+        name = "82-y otdel'nyy gvardeiskiy motostrelkovyy batal'on" 
+        location = 6509
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.6 
+        start_equipment_factor = 1 
+        start_manpower_factor = 1 
+    }
 
-division= {
-    name = "113-y otdel’nyy gvardeiskiy motostrelkovyy batal’on"
-    location = 6509
-    division_template = "Russian Motosrelkovy batal'on"
-    start_experience_factor = 1 
-    start_equipment_factor = 1 
-    start_manpower_factor = 1 
+    division= {
+        name = "113-y otdel'nyy gvardeiskiy motostrelkovyy batal'on"
+        location = 6509
+        division_template = "Motosrelkovy batal'on"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1 
+        start_manpower_factor = 1 
+    }
 }

@@ -4,21 +4,14 @@ focus_tree = {
         factor = 0
         modifier = { add = 10 tag = TMR }
     }
+    continuous_focus_position = { x = 3200 y = 2500 }
     default = no
-
-    focus = {
-        id = TMR_november_choice
-        x = 8
-        y = 0
-        cost = 1
-    }
 
     focus = {
         id = TMR_support_euromaidan
         x = 5
         y = 1
         cost = 1
-        prerequisite = { focus = TMR_november_choice }
         available = { always = no }
         mutually_exclusive = { focus = TMR_support_yanukovych }
         ai_will_do = { factor = 0 }
@@ -34,230 +27,234 @@ focus_tree = {
         ai_will_do = { factor = 0 }
     }
 
-    focus = {
-        id = TMR_support_yanukovych
-        x = 11
-        y = 1
-        cost = 2
-        prerequisite = { focus = TMR_november_choice }
-        mutually_exclusive = { focus = TMR_support_euromaidan }
+focus = {
+    id = TMR_support_yanukovych
+    x = 11
+    y = 1
+    cost = 2
+    mutually_exclusive = { focus = TMR_support_euromaidan }
+}
+
+focus = {
+    id = TMR_condemn_kyiv_protests
+    x = 0
+    y = 1
+    relative_position_id = TMR_support_yanukovych
+    cost = 2
+    prerequisite = { focus = TMR_support_yanukovych }
+    completion_reward = {
+        add_political_power = 50
+        add_stability = 0.02
     }
+}
 
-    focus = {
-        id = TMR_condemn_kyiv_protests
-        x = 11
-        y = 2
-        cost = 2
-        prerequisite = { focus = TMR_support_yanukovych }
-        completion_reward = {
-            add_political_power = 50
-            add_stability = 0.02
-        }
+focus = {
+    id = TMR_gkchs_extra_session
+    x = 2
+    y = 2
+    relative_position_id = TMR_support_yanukovych
+    cost = 2
+    prerequisite = { focus = TMR_condemn_kyiv_protests }
+    completion_reward = {
+        add_political_power = 15
+        set_economy_law = partial_mobilization
+        add_stability = -0.05
+        add_war_support = 0.02
+        army_experience = 5
     }
+}
 
-    focus = {
-        id = TMR_gkchs_extra_session
-        x = 13
-        y = 3
-        cost = 1
-        prerequisite = { focus = TMR_condemn_kyiv_protests }
-        completion_reward = {
-            add_political_power = 15
-            set_economy_law = partial_mobilization
-            add_stability = -0.05
-            add_war_support = 0.02
-            army_experience = 5
-        }
+focus = {
+    id = TMR_security_border_filtering
+    x = 2
+    y = 3
+    relative_position_id = TMR_support_yanukovych
+    cost = 2
+    prerequisite = { focus = TMR_gkchs_extra_session }
+    completion_reward = {
+        add_stability = 0.02
+        add_war_support = 0.02
     }
+}
 
-    focus = {
-        id = TMR_security_border_filtering
-        x = 13
-        y = 4
-        cost = 2
-        prerequisite = { focus = TMR_gkchs_extra_session }
-        completion_reward = {
-            add_stability = 0.02
-            add_war_support = 0.02
-        }
+focus = {
+    id = TMR_coordination_with_russia
+    x = -2
+    y = 2
+    relative_position_id = TMR_support_yanukovych
+    cost = 2
+    prerequisite = { focus = TMR_condemn_kyiv_protests }
+    completion_reward = {
+        add_political_power = 60
+        add_command_power = 10
     }
+}
 
-    focus = {
-        id = TMR_coordination_with_russia
-        x = 9
-        y = 3
-        cost = 2
-        prerequisite = { focus = TMR_condemn_kyiv_protests }
-        completion_reward = {
-            add_political_power = 60
-            add_command_power = 10
-        }
+focus = {
+    id = TMR_request_russian_aid
+    x = -2
+    y = 3
+    relative_position_id = TMR_support_yanukovych
+    cost = 2
+    prerequisite = { focus = TMR_coordination_with_russia }
+    completion_reward = {
+        add_stability = 0.03
     }
+}
 
-    focus = {
-        id = TMR_public_campaign_solidarity
-        x = 7
-        y = 4
-        cost = 1
-        prerequisite = { focus = TMR_coordination_with_russia }
-        completion_reward = {
-            add_war_support = 0.05
-        }
+focus = {
+    id = TMR_subsidies_and_credits
+    x = -3
+    y = 4
+    relative_position_id = TMR_support_yanukovych
+    cost = 2
+    prerequisite = { focus = TMR_request_russian_aid }
+    completion_reward = {
+        add_political_power = 10
+        add_stability = 0.01
     }
+}
 
-    focus = {
-        id = TMR_request_russian_aid
-        x = 9
-        y = 4
-        cost = 1
-        prerequisite = { focus = TMR_coordination_with_russia }
-        completion_reward = {
-            add_stability = 0.03
-        }
+focus = {
+    id = TMR_energy_contracts
+    x = -1
+    y = 4
+    relative_position_id = TMR_support_yanukovych
+    cost = 2
+    prerequisite = { focus = TMR_request_russian_aid }
+    completion_reward = { add_stability = 0.02 }
+}
+
+focus = {
+    id = TMR_depots_and_logistics
+    x = -2
+    y = 5
+    relative_position_id = TMR_support_yanukovych
+    cost = 2
+    prerequisite = { focus = TMR_subsidies_and_credits focus = TMR_energy_contracts }
+    completion_reward = {
+        add_equipment_to_stockpile = { type = basic_train amount = 2 }
+        add_fuel = 5000
+        add_equipment_to_stockpile = { type = motorized_equipment amount = 50 }
     }
+}
 
-    focus = {
-        id = TMR_subsidies_and_credits
-        x = 8
-        y = 5
-        cost = 1
-        prerequisite = { focus = TMR_request_russian_aid }
-        completion_reward = {
-            add_political_power = 10
-            add_stability = 0.01
-        }
+focus = {
+    id = TMR_support_crimea_operation
+    x = 0
+    y = 5
+    relative_position_id = TMR_support_yanukovych
+    cost = 1
+    prerequisite = { focus = TMR_coordination_with_russia focus = TMR_security_border_filtering }
+    available = { RUS = { controls_state = 640 } }
+    completion_reward = {
+        add_political_power = 100
+        add_war_support = 0.05
+        add_opinion_modifier = { target = RUS modifier = opinion_15 }
+        RUS = { add_opinion_modifier = { target = TMR modifier = opinion_15 } }
+        add_opinion_modifier = { target = UKR modifier = opinion_anti_15 }
+        UKR = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 } }
     }
+}
 
-    focus = {
-        id = TMR_energy_contracts
-        x = 10
-        y = 5
-        cost = 1
-        prerequisite = { focus = TMR_request_russian_aid }
-        completion_reward = { add_stability = 0.02 }
+focus = {
+    id = TMR_conflict_escalation
+    x = 0
+    y = 6
+    relative_position_id = TMR_support_yanukovych
+    cost = 1
+    prerequisite = { focus = TMR_support_crimea_operation }
+    available = { DPR = { controls_state = 432 } }
+    completion_reward = {
+        add_war_support = 0.05
     }
+}
 
-    focus = {
-        id = TMR_depots_and_logistics
-        x = 9
-        y = 6
-        cost = 1
-        prerequisite = { focus = TMR_subsidies_and_credits focus = TMR_energy_contracts }
-        completion_reward = {
-            add_equipment_to_stockpile = { type = basic_train amount = 2 }
-            add_fuel = 5000
-            add_equipment_to_stockpile = { type = motorized_equipment amount = 50 }
-        }
+focus = {
+    id = TMR_integration_course_rf
+    x = 3
+    y = 6
+    relative_position_id = TMR_support_yanukovych
+    cost = 1
+    prerequisite = { focus = TMR_support_crimea_operation }
+    completion_reward = {
+        add_political_power = 25
+        add_stability = 0.02
+
+        add_opinion_modifier = { target = RUS modifier = opinion_15 }
+        add_opinion_modifier = { target = MOL modifier = opinion_anti_15 }
+        add_opinion_modifier = { target = UKR modifier = opinion_anti_15 }
+
+        RUS = { add_opinion_modifier = { target = TMR modifier = opinion_15 } }
+        MOL = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 } }
+        UKR = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 } }
     }
+}
 
-    focus = {
-        id = TMR_support_crimea_operation
-        x = 11
-        y = 6
-        cost = 1
-        prerequisite = { focus = TMR_coordination_with_russia focus = TMR_security_border_filtering }
-        available = { RUS = { controls_state = 640 } }
-        completion_reward = {
-            add_political_power = 100
-            add_war_support = 0.05
-            add_opinion_modifier = { target = RUS modifier = TMR_opinion_pro_rus }
-            RUS = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_pro_rus } }
-        }
+focus = {
+    id = TMR_passportization
+    x = 4
+    y = 7
+    relative_position_id = TMR_support_yanukovych
+    cost = 1
+    prerequisite = { focus = TMR_integration_course_rf }
+    completion_reward = {
+        add_stability = 0.05
     }
+}
 
-    focus = {
-        id = TMR_conflict_escalation
-        x = 11
-        y = 7
-        cost = 1
-        prerequisite = { focus = TMR_support_crimea_operation }
-        available = { DPR = { controls_state = 432 } }
-        completion_reward = {
-            add_war_support = 0.05
-        }
+focus = {
+    id = TMR_request_recognition
+    x = 2
+    y = 7
+    relative_position_id = TMR_support_yanukovych
+    cost = 1
+    prerequisite = { focus = TMR_integration_course_rf }
+    completion_reward = {
+        add_political_power = 75
+
+        add_opinion_modifier = { target = RUS modifier = opinion_15 }
+        add_opinion_modifier = { target = MOL modifier = opinion_anti_15 }
+        add_opinion_modifier = { target = UKR modifier = opinion_anti_15 }
+
+        RUS = { add_opinion_modifier = { target = TMR modifier = opinion_15 } }
+        MOL = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 } }
+        UKR = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 } }
     }
+}
 
-    focus = {
-        id = TMR_integration_course_rf
-        x = 14
-        y = 7
-        cost = 1
-        prerequisite = { focus = TMR_support_crimea_operation }
-        completion_reward = {
-            add_political_power = 25
-            add_stability = 0.02
-
-            add_opinion_modifier = { target = RUS modifier = TMR_opinion_pro_rus }
-            add_opinion_modifier = { target = MOL modifier = TMR_opinion_anti_neighbors }
-            add_opinion_modifier = { target = UKR modifier = TMR_opinion_anti_neighbors }
-
-            RUS = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_pro_rus } }
-            MOL = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_anti_neighbors } }
-            UKR = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_anti_neighbors } }
-        }
+focus = {
+    id = TMR_ogrw_training
+    x = 0
+    y = 7
+    relative_position_id = TMR_support_yanukovych
+    cost = 1
+    prerequisite = { focus = TMR_conflict_escalation }
+    completion_reward = {
+        add_war_support = 0.03
+        army_experience = 80
     }
+}
 
-    focus = {
-        id = TMR_passportization
-        x = 15
-        y = 8
-        cost = 1
-        prerequisite = { focus = TMR_integration_course_rf }
-        completion_reward = {
-            add_stability = 0.05
-        }
+focus = {
+    id = TMR_second_direction_threat
+    x = 0
+    y = 8
+    relative_position_id = TMR_support_yanukovych
+    cost = 1
+    prerequisite = { focus = TMR_ogrw_training }
+    completion_reward = {
+        add_war_support = 0.03
+        add_opinion_modifier = { target = UKR modifier = threat_of_war }
+        UKR = { add_opinion_modifier = { target = TMR modifier = threat_of_war } }
     }
-
-    focus = {
-        id = TMR_request_recognition
-        x = 13
-        y = 8
-        cost = 1
-        prerequisite = { focus = TMR_integration_course_rf }
-        completion_reward = {
-            add_political_power = 75
-
-            add_opinion_modifier = { target = RUS modifier = TMR_opinion_pro_rus }
-            add_opinion_modifier = { target = MOL modifier = TMR_opinion_anti_neighbors }
-            add_opinion_modifier = { target = UKR modifier = TMR_opinion_anti_neighbors }
-
-            RUS = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_pro_rus } }
-            MOL = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_anti_neighbors } }
-            UKR = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_anti_neighbors } }
-        }
-    }
-
-    focus = {
-        id = TMR_ogrw_training
-        x = 11
-        y = 8
-        cost = 1
-        prerequisite = { focus = TMR_conflict_escalation }
-        completion_reward = {
-            add_command_power = 15
-            add_war_support = 0.03
-            army_experience = 80
-        }
-    }
-
-    focus = {
-        id = TMR_second_direction_threat
-        x = 11
-        y = 9
-        cost = 1
-        prerequisite = { focus = TMR_ogrw_training }
-        completion_reward = {
-            add_war_support = 0.03
-            add_opinion_modifier = { target = UKR modifier = TMR_opinion_ukr_very_bad }
-            UKR = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_ukr_very_bad } }
-        }
-    }
+}
 
     focus = {
         id = TMR_opr_success
         x = 8
         y = 10
-        cost = 1
+        cost = 0
         prerequisite = { focus = TMR_second_direction_threat }
         available = { OPR = { exists = yes } }
         completion_reward = { add_political_power = 25 }
@@ -267,7 +264,7 @@ focus_tree = {
         id = TMR_opr_failure
         x = 14
         y = 10
-        cost = 1
+        cost = 0
         prerequisite = { focus = TMR_second_direction_threat }
         available = { NOT = { OPR = { exists = yes } } }
         completion_reward = { add_political_power = 10 }
@@ -280,15 +277,15 @@ focus_tree = {
         cost = 1
         prerequisite = { focus = TMR_opr_success }
         available = { OPR = { exists = yes } }
-completion_reward = {
-    OPR = {
-        add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 }
-        add_equipment_to_stockpile = { type = bulletproof_vests_equipment_1 amount = 350 }
-        add_equipment_to_stockpile = { type = uniform_equipment_1 amount = 450 }
-        add_equipment_to_stockpile = { type = support_equipment amount = 150 }
+        completion_reward = {
+        OPR = {
+            add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 }
+            add_equipment_to_stockpile = { type = bulletproof_vests_equipment_1 amount = 350 }
+            add_equipment_to_stockpile = { type = uniform_equipment_1 amount = 450 }
+            add_equipment_to_stockpile = { type = support_equipment amount = 150 }
+        }
+        }
     }
- }
-}
 
 
     focus = {
@@ -371,8 +368,8 @@ focus = {
         completion_reward = {
             OPR = { add_stability = 0.05 }
             add_political_power = -25
-            add_opinion_modifier = { target = OPR modifier = TMR_opinion_opr_recognized }
-            OPR = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_opr_recognized } }
+            add_opinion_modifier = { target = OPR modifier = opinion_50 }
+            OPR = { add_opinion_modifier = { target = TMR modifier = opinion_50 } }
         }
     }
 
@@ -401,8 +398,8 @@ focus = {
         completion_reward = {
             add_stability = -0.10
             add_war_support = 0.05
-            add_opinion_modifier = { target = UKR modifier = TMR_opinion_ukr_very_bad }
-            UKR = { add_opinion_modifier = { target = TMR modifier = TMR_opinion_ukr_very_bad } }
+            add_opinion_modifier = { target = UKR modifier = threat_of_war }
+            UKR = { add_opinion_modifier = { target = TMR modifier = threat_of_war } }
         }
     }
 
@@ -461,7 +458,7 @@ focus = {
         OPR = {
             add_manpower = 300
             add_war_support = 0.05
-        add_command_power = 5
+            add_command_power = 5
             army_experience = 25
         }
     }
@@ -487,7 +484,7 @@ focus = {
         completion_reward = { OPR = { add_equipment_to_stockpile = { type = motorized_equipment amount = 100 } } }
     }
 
-focus = {
+    focus = {
     id = TMR_accept_refugees
     x = 14
     y = 11
@@ -496,11 +493,11 @@ focus = {
     available = { NOT = { OPR = { exists = yes } } }
 
     completion_reward = {
-        add_stability = -0.10
-        add_political_power = 25
-        add_manpower = 700
+		550 = {
+			add_manpower = 750
+		}	
     }
-}
+    }
 
     focus = {
         id = TMR_temporary_shelters
@@ -521,10 +518,7 @@ focus = {
     available = { NOT = { OPR = { exists = yes } } }
 
     completion_reward = {
-        add_political_power = -50
         add_stability = 0.03
-        add_war_support = -0.03
-        add_manpower = -75
     }
 }
 
@@ -598,7 +592,7 @@ focus = {
         id = TMR_call_kremlin
         x = 12
         y = 16
-        cost = 1
+        cost = 0
        prerequisite = { focus = TMR_opr_open_confrontation focus = TMR_war_choice_after_failure }
         available = {
             NOT = { has_country_flag = TMR_kremlin_approved }
@@ -611,7 +605,7 @@ focus = {
         id = TMR_kremlin_approval
         x = 10
         y = 17
-        cost = 1
+        cost = 0
         prerequisite = { focus = TMR_call_kremlin }
         available = { has_country_flag = TMR_kremlin_approved }
         }
@@ -620,7 +614,7 @@ focus = {
         id = TMR_obey_kremlin
         x = 7
         y = 17
-        cost = 1
+        cost = 0
         prerequisite = { focus = TMR_call_kremlin }
         available = { has_country_flag = TMR_kremlin_obey }
     }
@@ -635,20 +629,11 @@ focus = {
         }
 
     focus = {
-        id = TMR_prepare_operation_common
-        x = 12
-        y = 18
-        cost = 1
-        prerequisite = { focus = TMR_kremlin_approval focus = TMR_we_wont_abandon_ours }
-        completion_reward = { add_war_support = 0.03 add_command_power = 5 }
-    }
-
-    focus = {
         id = TMR_rus_support_package
         x = 10
         y = 19
         cost = 1
-        prerequisite = { focus = TMR_prepare_operation_common }
+        prerequisite = { focus = TMR_kremlin_approval }
         available = { has_country_flag = TMR_rus_support_ok }
         mutually_exclusive = { focus = TMR_local_support_only }
         completion_reward = {
@@ -665,7 +650,7 @@ focus = {
         x = 14
         y = 19
         cost = 1
-        prerequisite = { focus = TMR_prepare_operation_common }
+        prerequisite = { focus = TMR_we_wont_abandon_ours }
         available = { has_country_flag = TMR_rus_support_denied_go_alone }
         mutually_exclusive = { focus = TMR_rus_support_package }
         completion_reward = {
@@ -679,7 +664,7 @@ focus = {
 
     focus = {
         id = TMR_kolbasna_unseal_depots
-        x = 8
+        x = 10
         y = 20
         cost = 1
         prerequisite = { focus = TMR_rus_support_package }
@@ -691,35 +676,32 @@ focus = {
 
     focus = {
         id = TMR_kolbasna_mine_depots
+        x = 10
+        y = 21
+        cost = 1
+        prerequisite = { focus = TMR_kolbasna_unseal_depots }
+        available = { has_country_flag = TMR_rus_support_ok }
+
+        completion_reward = {
+            set_country_flag = TMR_kolbasna_mined 
+            add_command_power = 15 
+        }
+    }
+
+    focus = {
+        id = TMR_raise_ogrw_readiness
         x = 8
         y = 21
         cost = 1
         prerequisite = { focus = TMR_kolbasna_unseal_depots }
         available = { has_country_flag = TMR_rus_support_ok }
-        completion_reward = {
-            set_country_flag = TMR_kolbasna_mined add_command_power = 15 }
-    }
 
-    focus = {
-        id = TMR_raise_ogrw_readiness
-        x = 10
-        y = 21
-        cost = 1
-        prerequisite = { focus = TMR_rus_support_package }
-        available = { has_country_flag = TMR_rus_support_ok }
         completion_reward = {
-
-            news_event = { id = tmr.5 hours = 1 } add_command_power = 10 add_war_support = 0.02
+            news_event = { id = tmr.5 hours = 1 }
             load_oob = "TMR_ogrw_battalions"
-        } add_command_power = 10 add_war_support = 0.02 }
-
-    focus = {
-        id = TMR_rus_recon_support
-        x = 10
-        y = 20
-        cost = 1
-        prerequisite = { focus = TMR_rus_support_package }
-        available = { has_country_flag = TMR_rus_support_ok }
+            add_command_power = 10 
+            add_war_support = 0.02 
+        }
     }
 
     focus = {
@@ -729,7 +711,18 @@ focus = {
         cost = 1
         prerequisite = { focus = TMR_local_support_only }
         available = { has_country_flag = TMR_rus_support_denied_go_alone }
-        completion_reward = { add_manpower = 5000 add_war_support = 0.02 }
+        completion_reward = { 
+            add_manpower = 500 
+            add_stability = -0.125
+            custom_effect_tooltip = TMR_mobilization_tt
+            hidden_effect = {
+                load_oob = TMR_mobilization
+                news_event = {
+                    id = news_events.30
+                    hours = 6
+                }
+            }  
+        }
     }
 
     focus = {
@@ -761,30 +754,23 @@ focus = {
     }
 
     focus = {
-        id = TMR_border_deployments
+    id = TMR_start_operation
         x = 12
         y = 22
         cost = 1
         prerequisite = { focus = TMR_operational_planning }
-        completion_reward = { add_war_support = 0.03 add_stability = -0.01 }
-    }
+        completion_reward = {
+            unlock_decision_tooltip = TMR_dig_in_tiraspol
+            unlock_decision_tooltip = TMR_return_OPR
+            declare_war_on = { target = UKR type = annex_everything }
+            news_event = { id = tmr.4 hours = 1 }
 
-    focus = {
-    id = TMR_start_operation
-    x = 12
-    y = 22
-    cost = 1
-    prerequisite = { focus = TMR_border_deployments }
-    completion_reward = {
-        declare_war_on = { target = UKR type = annex_everything }
-        news_event = { id = tmr.4 hours = 1 }
-
-        if = {
-            limit = { has_country_flag = TMR_rus_support_denied_go_alone }
-            RUS = { country_event = { id = tmr.8 days = 1 } }
+            if = {
+                limit = { has_country_flag = TMR_rus_support_denied_go_alone }
+                RUS = { country_event = { id = tmr.8 days = 1 } }
+            }
         }
     }
-}
 
     focus = {
         id = TMR_seize_border_posts
@@ -803,13 +789,47 @@ focus = {
     }
 
     focus = {
-    id = TMR_war_economy_rails
-    x = 15
-    y = 23
-    cost = 1
-    prerequisite = { focus = TMR_border_deployments }
-    completion_reward = {
-        set_economy_law = war_economy
+        id = TMR_war_economy_rails
+        x = 15
+        y = 23
+        cost = 1
+        prerequisite = { focus = TMR_start_operation }
+        completion_reward = {
+            set_economy_law = war_economy
+        }
     }
-}
+
+    focus = {
+        id = TMR_secure_west
+        x = 0
+        y = 1
+        cost = 5
+        prerequisite = { focus = TMR_integration_of_new_lands }
+        relative_position_id = TMR_integration_of_new_lands
+
+        completion_reward = {
+           declare_war_on = { target = MOL type = annex_everything }
+        }
+    }
+
+    focus = {
+        id = TMR_integration_of_new_lands
+        x = 0
+        y = 2
+        cost = 1
+
+        available = {
+            NOT = {
+                has_war_with = UKR
+            }
+        }
+
+        prerequisite = { focus = TMR_war_economy_rails }
+        prerequisite = { focus = TMR_seize_border_posts }
+        relative_position_id = TMR_start_operation
+
+        completion_reward = {
+            country_event = tmr.14
+        }
+    }    
 }

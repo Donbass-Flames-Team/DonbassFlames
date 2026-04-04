@@ -12,6 +12,14 @@ guiTypes = {
 		click_to_front = no
 		clipping = no
 
+		
+		iconType = {
+			name = "superevents_yanukovich_overthrow"
+			quadTextureSprite ="GFX_Super_Event_yanukovich_overthrow"
+			position = { x = 1 y = 40 }
+			alwaystransparent = yes
+		}
+
 		iconType = {
 			name = "superevents_start_of_ato"
 			quadTextureSprite ="GFX_start_of_ato"

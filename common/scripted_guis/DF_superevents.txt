@@ -17,6 +17,9 @@ scripted_gui = {
 			}
 			superevents_ukraine_victory_against_separatists_visible = {
 				has_global_flag = ukraine_victory_against_separatists_SP
+			}	
+			superevents_yanukovich_overthrow_visible = {
+                has_global_flag = yanukovich_overthrow_SP
 			}
 		}
 		
@@ -39,7 +42,12 @@ scripted_gui = {
 				if = {
 					limit = { has_global_flag = ukraine_victory_against_separatists_SP }
 					clr_global_flag = ukraine_victory_against_separatists_SP
+				}		
+				if = {
+					limit = { has_global_flag = yanukovich_overthrow_SP }
+					clr_global_flag = yanukovich_overthrow_SP
 				}				
+			
 				
 				
 

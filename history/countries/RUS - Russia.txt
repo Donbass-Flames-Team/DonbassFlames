@@ -57,11 +57,17 @@ add_equipment_to_stockpile = {
 	producer = RUS
 }
 
-create_faction_from_template = faction_template_csto
+#create_faction_from_template = faction_template_csto #TMP TODO: Crash To Desktop
+create_faction_from_template = {
+	template = faction_template_generic_dominance
+	name = faction_csto
+	icon = GFX_faction_logo_csto
+}
 add_to_faction = BLR
 recruit_character = vladimir_putin
 
 2013.11.21 = {
+	set_oob = "RUS_2013"
 	set_variable = {
 		var = RUS_influence_in_ukraine
 		value = 75

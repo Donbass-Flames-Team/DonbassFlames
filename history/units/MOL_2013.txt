@@ -1,0 +1,202 @@
+division_template = {
+	name = "Forțele speciale"
+	regiments = {
+        special_forces_infantry = { x = 0 y = 0 }
+		special_forces_infantry = { x = 0 y = 1 }
+        special_forces_infantry = { x = 0 y = 2 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Batalion de tancuri"
+	regiments = {
+        modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+        ifv_unit = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Batalion de artilerie autopropulsată"
+	regiments = {
+        sau_artillery = { x = 0 y = 0 }
+		sau_artillery = { x = 0 y = 1 }
+		sau_artillery = { x = 0 y = 2 }
+        sau_artillery = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Batalion de puști motorizat"
+	regiments = {
+        ifv_unit = { x = 0 y = 0 }
+		apc_unit = { x = 0 y = 1 }
+		apc_unit = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
+units = {
+    division= { 
+        name = "Batalionul 1 al Brigăzii 1 Pușcași Motorizați" 
+        location = 11171
+        division_template = "Batalion de puști motorizat"
+        start_experience_factor = 0.6 
+        start_equipment_factor = 0.3 
+        start_manpower_factor = 0.1
+    }
+
+    division= {
+        name = "Batalionul 2 al Brigăzii 1 Pușcași Motorizați"
+        location = 11171
+        division_template = "Batalion de puști motorizat"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.4 
+        start_manpower_factor = 0.1 
+    }
+
+    division= {
+        name = "Batalionul 3 al Brigăzii 1 Pușcași Motorizați"
+        location = 11171
+        division_template = "Batalion de puști motorizat"
+        start_experience_factor = 0.6
+        start_equipment_factor = 0.4 
+        start_manpower_factor = 0.1 
+    } 
+
+    division= {
+        name = "Divizia de artilerie a primei brigăzi de pușcași motorizați"
+        location = 11171
+        division_template = "Batalion de artilerie autopropulsată"
+        start_experience_factor = 0.4
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.1 
+    }  
+    
+    division= { 
+        name = "Batalionul 1 al Brigăzii 2 Pușcași Motorizați" 
+        location = 11171
+        division_template = "Batalion de puști motorizat"
+        start_experience_factor = 0.6 
+        start_equipment_factor = 0.3 
+        start_manpower_factor = 0.1
+    }
+
+    division= {
+        name = "Batalionul 2 al Brigăzii 2 Pușcași Motorizați"
+        location = 11171
+        division_template = "Batalion de puști motorizat"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.4 
+        start_manpower_factor = 0.1 
+    }
+
+    division= {
+        name = "Divizia de artilerie a brigăzii a 2-a de pușcași motorizați"
+        location = 11171
+        division_template = "Batalion de artilerie autopropulsată"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.1 
+    }
+
+    division= { 
+        name = "Batalionul 1 al Brigăzii 3 Pușcași Motorizați" 
+        location = 11171
+        division_template = "Batalion de puști motorizat"
+        start_experience_factor = 0.6 
+        start_equipment_factor = 0.3 
+        start_manpower_factor = 0.1
+    }
+
+    division= {
+        name = "Batalionul 2 al Brigăzii 3 Pușcași Motorizați"
+        location = 11171
+        division_template = "Batalion de puști motorizat"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.4 
+        start_manpower_factor = 0.1 
+    }
+
+    division= {
+        name = "Divizia de artilerie a brigăzii a 3-a de pușcași motorizați"
+        location = 11171
+        division_template = "Batalion de artilerie autopropulsată"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.1 
+    }
+
+    division= {
+        name = "Batalionul 22 de menținere a păcii"
+        location = 11171
+        division_template = "Batalion de puști motorizat"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.4 
+        start_manpower_factor = 0.1 
+    }
+
+    division= {
+        name = "Batalionul Forțelor Speciale „Flash”"
+        location = 11171
+        division_template = "Forțele speciale"
+        start_experience_factor = 0.4
+        start_equipment_factor = 0.8
+        start_manpower_factor = 0.1 
+    }
+
+
+}

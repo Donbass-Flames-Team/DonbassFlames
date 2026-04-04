@@ -3,10 +3,11 @@ state = {
 	name = "STATE_631" 
 	manpower = 427676 
 	
-	state_category = town 
+	state_category = city 
 	buildings_max_level_factor = 1 
 	history = { 
 		owner = RUS 
+		victory_points = { 6065 40 }
 		
 		buildings = { 
 			industrial_complex = 5

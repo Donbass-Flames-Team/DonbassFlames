@@ -8,6 +8,8 @@ on_actions = {
 				    tag = UKR
 				    date = 2015.1.13
 				    NOT = { has_country_flag = UKR_volnovakha_bus_attack_fired }
+					NOT = { has_global_flag = Ukraine_victory_in_ATO }
+					NOT = { has_global_flag = ATO_Separatists_victory}
 			    }
 			    country_event = { id = ukraine.33 }
 		    }
@@ -17,6 +19,8 @@ on_actions = {
 				    tag = UKR
 				    date = 2014.7.17
 				    NOT = { has_global_flag = TheDownedMalaysianBoing }
+					NOT = { has_global_flag = Ukraine_victory_in_ATO }
+					NOT = { has_global_flag = ATO_Separatists_victory}
 			    }
 			    country_event = { id = ukraine.36 }
 		    }
@@ -28,6 +32,8 @@ on_actions = {
 				    tag = UKR
 				    date = 2014.6.14
 				    NOT = { has_country_flag = UKR_The_downed_Il_76_near_Luhansk }
+					NOT = { has_global_flag = Ukraine_victory_in_ATO }
+					NOT = { has_global_flag = ATO_Separatists_victory}
 			    }
 			    country_event = { id = ukraine.34 }
 		    }
@@ -40,6 +46,8 @@ on_actions = {
 						is_controlled_by = UKR
 					}
 				    NOT = { has_country_flag = UKR_zasada_dnr_mariupol_2014 }
+					NOT = { has_global_flag = Ukraine_victory_in_ATO }
+					NOT = { has_global_flag = ATO_Separatists_victory}
 			    }
 			    country_event = { id = ukraine.35 }
 		    }
@@ -59,6 +67,8 @@ on_actions = {
 				    tag = DPR
 				    date = 2014.8.11
 				    NOT = { has_country_flag = DPR_beach_shelling_in_zugres }
+					NOT = { has_global_flag = Ukraine_victory_in_ATO }
+					NOT = { has_global_flag = ATO_Separatists_victory}
 			    }
 			    country_event = { id = DPR.18 }
 		    }

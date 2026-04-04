@@ -3429,6 +3429,12 @@ country_event = {
 				id = superevent.2
 				hours = 12
 			}
+			RUS = {
+				country_event = {
+					id = russia.14
+					hours = 1
+				}
+			}
 			LPR = {
 				transfer_state = 406
 				transfer_state = 351
@@ -3695,6 +3701,41 @@ country_event = {
                 id = news_events.28
 				hours = 12
             }
+		}
+	}
+}
+
+# Чеченские добровольцы
+country_event = {
+	id = ukraine.112
+	title = ukraine.112.t
+	desc  = ukraine.112.d
+	picture = GFX_Report_event_right_corp_is_expanded_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.112.a
+		hidden_effect = {
+			division_template = {
+	            name = "Dobrovol'che formuvannya"
+	            regiments = {
+                    infantry = { x = 0 y = 0 }
+		            infantry = { x = 0 y = 1 }
+	            }
+                support = {
+                    engineer = { x = 0 y = 0 }
+                    recon = { x = 0 y = 1 }
+                    mortar = { x = 0 y = 2 }
+				    atgm_company = { x = 0 y = 3 }
+        		    field_hospital = { x = 0 y = 4} 
+        		    sniper_company = { x = 1 y = 0 }
+        		    manpads_platoon = { x = 1 y = 1}
+  				    logistics_company = { x = 1 y = 2}
+				    signal_company = { x = 1 y = 3} 
+	            }
+            }
+			load_oob = UKR_Chechen_batalion
 		}
 	}
 }

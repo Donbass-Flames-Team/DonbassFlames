@@ -10,7 +10,7 @@ news_event = {
 	id = world_events.1
 	title = world_events.1.t
 	desc = world_events.1.d
-	picture = GFX_news_event_021
+	picture = GFX_scotland
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.1.a }
@@ -21,7 +21,7 @@ news_event = {
 	id = world_events.2
 	title = world_events.2.t
 	desc = world_events.2.d
-	picture = GFX_news_event_021
+	picture = GFX_ebola
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.2.a }
@@ -32,7 +32,7 @@ news_event = {
 	id = world_events.3
 	title = world_events.3.t
 	desc = world_events.3.d
-	picture = GFX_news_event_021
+	picture = GFX_isil
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.3.a }
@@ -43,18 +43,18 @@ news_event = {
 	id = world_events.4
 	title = world_events.4.t
 	desc = world_events.4.d
-	picture = GFX_news_event_021
+	picture = GFX_paris
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.4.a }
 }
 
-# paris (2015-12-12)
+# COP21 (2015-12-12)
 news_event = {
 	id = world_events.5
 	title = world_events.5.t
 	desc = world_events.5.d
-	picture = GFX_news_event_021
+	picture = GFX_COP21
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.5.a }
@@ -65,7 +65,7 @@ news_event = {
 	id = world_events.6
 	title = world_events.6.t
 	desc = world_events.6.d
-	picture = GFX_news_event_021
+	picture = GFX_migrant
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.6.a }
@@ -76,7 +76,7 @@ news_event = {
 	id = world_events.7
 	title = world_events.7.t
 	desc = world_events.7.d
-	picture = GFX_news_event_021
+	picture = GFX_brexit
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.7.a }
@@ -87,7 +87,7 @@ news_event = {
 	id = world_events.8
 	title = world_events.8.t
 	desc = world_events.8.d
-	picture = GFX_news_event_021
+	picture = GFX_turkey
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.8.a }
@@ -98,7 +98,7 @@ news_event = {
 	id = world_events.9
 	title = world_events.9.t
 	desc = world_events.9.d
-	picture = GFX_news_event_021
+	picture = GFX_aleppo
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.9.a }
@@ -109,7 +109,7 @@ news_event = {
 	id = world_events.10
 	title = world_events.10.t
 	desc = world_events.10.d
-	picture = GFX_news_event_021
+	picture = GFX_korea
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.10.a }
@@ -120,7 +120,7 @@ news_event = {
 	id = world_events.11
 	title = world_events.11.t
 	desc = world_events.11.d
-	picture = GFX_news_event_021
+	picture = GFX_spain
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.11.a }
@@ -131,7 +131,7 @@ news_event = {
 	id = world_events.12
 	title = world_events.12.t
 	desc = world_events.12.d
-	picture = GFX_news_event_021
+	picture = GFX_vests
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.12.a }
@@ -142,7 +142,7 @@ news_event = {
 	id = world_events.13
 	title = world_events.13.t
 	desc = world_events.13.d
-	picture = GFX_news_event_021
+	picture = GFX_fifa
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.13.a }
@@ -153,7 +153,7 @@ news_event = {
 	id = world_events.14
 	title = world_events.14.t
 	desc = world_events.14.d
-	picture = GFX_news_event_021
+	picture = GFX_covid1
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.14.a }
@@ -164,7 +164,7 @@ news_event = {
 	id = world_events.15
 	title = world_events.15.t
 	desc = world_events.15.d
-	picture = GFX_news_event_021
+	picture = GFX_covid2
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.15.a }
@@ -175,7 +175,7 @@ news_event = {
 	id = world_events.16
 	title = world_events.16.t
 	desc = world_events.16.d
-	picture = GFX_news_event_021
+	picture = GFX_BLM
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.16.a }
@@ -186,7 +186,7 @@ news_event = {
 	id = world_events.17
 	title = world_events.17.t
 	desc = world_events.17.d
-	picture = GFX_news_event_021
+	picture = GFX_beirut
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.17.a }
@@ -197,7 +197,7 @@ news_event = {
 	id = world_events.18
 	title = world_events.18.t
 	desc = world_events.18.d
-	picture = GFX_news_event_021
+	picture = GFX_NK
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.18.a }
@@ -208,7 +208,7 @@ news_event = {
 	id = world_events.19
 	title = world_events.19.t
 	desc = world_events.19.d
-	picture = GFX_news_event_021
+	picture = GFX_covid3
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.19.a }
@@ -219,7 +219,7 @@ news_event = {
 	id = world_events.20
 	title = world_events.20.t
 	desc = world_events.20.d
-	picture = GFX_news_event_021
+	picture = GFX_australia
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.20.a }
@@ -230,7 +230,7 @@ news_event = {
 	id = world_events.21
 	title = world_events.21.t
 	desc = world_events.21.d
-	picture = GFX_news_event_021
+	picture = GFX_capitol
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.21.a }
@@ -241,7 +241,7 @@ news_event = {
 	id = world_events.22
 	title = world_events.22.t
 	desc = world_events.22.d
-	picture = GFX_news_event_021
+	picture = GFX_afghanistan
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.22.a }
@@ -252,7 +252,7 @@ news_event = {
 	id = world_events.23
 	title = world_events.23.t
 	desc = world_events.23.d
-	picture = GFX_news_event_021
+	picture = GFX_covid4
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.23.a }
@@ -263,7 +263,7 @@ news_event = {
 	id = world_events.24
 	title = world_events.24.t
 	desc = world_events.24.d
-	picture = GFX_news_event_021
+	picture = GFX_suez
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.24.a }
@@ -274,7 +274,7 @@ news_event = {
 	id = world_events.25
 	title = world_events.25.t
 	desc = world_events.25.d
-	picture = GFX_news_event_021
+	picture = GFX_pegasus
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.25.a }
@@ -285,7 +285,7 @@ news_event = {
 	id = world_events.26
 	title = world_events.26.t
 	desc = world_events.26.d
-	picture = GFX_news_event_021
+	picture = GFX_elizabeth
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.26.a }
@@ -296,7 +296,7 @@ news_event = {
 	id = world_events.27
 	title = world_events.27.t
 	desc = world_events.27.d
-	picture = GFX_news_event_021
+	picture = GFX_fifa_qatar
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.27.a }
@@ -307,7 +307,7 @@ news_event = {
 	id = world_events.28
 	title = world_events.28.t
 	desc = world_events.28.d
-	picture = GFX_news_event_021
+	picture = GFX_israel_hamas
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.28.a }
@@ -318,7 +318,7 @@ news_event = {
 	id = world_events.29
 	title = world_events.29.t
 	desc = world_events.29.d
-	picture = GFX_news_event_021
+	picture = GFX_turkey_syria
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.29.a }
@@ -329,7 +329,7 @@ news_event = {
 	id = world_events.30
 	title = world_events.30.t
 	desc = world_events.30.d
-	picture = GFX_news_event_021
+	picture = GFX_AI
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.30.a }
@@ -340,7 +340,7 @@ news_event = {
 	id = world_events.31
 	title = world_events.31.t
 	desc = world_events.31.d
-	picture = GFX_news_event_021
+	picture = GFX_usa1
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.31.a }
@@ -351,7 +351,7 @@ news_event = {
 	id = world_events.32
 	title = world_events.32.t
 	desc = world_events.32.d
-	picture = GFX_news_event_021
+	picture = GFX_usa2
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.32.a }
@@ -362,7 +362,7 @@ news_event = {
 	id = world_events.33
 	title = world_events.33.t
 	desc = world_events.33.d
-	picture = GFX_news_event_021
+	picture = GFX_usa3
 	major = yes
 	is_triggered_only = yes
 	option = { name = world_events.33.a }

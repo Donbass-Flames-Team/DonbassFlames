@@ -22,9 +22,9 @@ defined_text = {
 	} 
     text = { 
 		trigger = {
-			has_global_flag = RAS_First_Chechen_War_supervent_flag
+			has_global_flag = yanukovich_overthrow_SP
 		}
-		localization_key = "sp_event_RAS_First_Chechen_War_title"
+		localization_key = "sp_event_yanukovich_overthrow_title"
 	} 
 }
 
@@ -52,9 +52,9 @@ defined_text = {
 	}
     text = { 
 		trigger = {
-			has_global_flag = RAS_First_Chechen_War_supervent_flag
+			has_global_flag = yanukovich_overthrow_SP
 		}
-		localization_key = "sp_event_RAS_First_Chechen_War_quote"
+		localization_key = "sp_event_yanukovich_overthrow_quote"
 	}
 }
 
@@ -81,8 +81,8 @@ defined_text = {
 	}
     text = { 
 		trigger = {
-			has_global_flag = RAS_First_Chechen_War_supervent_flag
+			has_global_flag = yanukovich_overthrow_SP
 		}
-		localization_key = "sp_event_RAS_First_Chechen_War_remark"
+		localization_key = "sp_event_yanukovich_overthrow_remark"
 	} 
 }

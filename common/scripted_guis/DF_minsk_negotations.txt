@@ -1,0 +1,22 @@
+scripted_gui = {
+    Minsk_negotations_gui = {
+		context_type = decision_category
+		window_name = "Minsk_negotations_gui"
+		visible = { 
+			is_ai = no
+			OR = {
+				tag = UKR
+				tag = DPR
+				tag = LPR
+				tag = RUS
+				tag = KPR
+			}
+		}
+
+		properties = {
+			Minsk_negotations_progress_bar_background = {
+				frame = CONST_MINSK_NEGOTATIONS_PROGRESS_SCALE # you can set a temp var in the triggers section and then use it here if you want the frame to not be 1:1 with the var
+			}
+		}
+	}
+}

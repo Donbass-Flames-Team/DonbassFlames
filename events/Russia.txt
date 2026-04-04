@@ -187,8 +187,10 @@ country_event = {
 	
 	option = {
 		name = russia.11.a
+		custom_effect_tooltip = Minsk_1_will_be_signed_tt
 		add_stability = 0.05
 		hidden_effect = {
+			set_global_flag = Minsk1_is_signed
 			set_global_flag = second_phase_of_ato
 			DPR = {
 				if = { limit = { 652 = { is_controlled_by = DPR } 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
@@ -316,6 +318,7 @@ country_event = {
 	option = {
 		name = russia.13.a
 		add_stability = 0.05
+		custom_effect_tooltip = Minsk_2_will_be_signed_tt
         hidden_effect = {
 			DPR = {
 				if = { limit = { 652 = { is_controlled_by = DPR } 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
@@ -439,5 +442,36 @@ country_event = {
 		add_stability = 0.1
 		add_war_support = 0.05
 		complete_national_focus = RUS_victory_of_republics
+	}
+}
+
+#Россию выгнали из G8
+country_event = {
+	id = russia.15
+	title = russia.15.t
+	desc = russia.15.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.15.a
+		add_political_power = -55
+	}
+}
+
+#Убийство Немцова
+country_event = {
+	id = russia.16
+	title = russia.16.t
+	desc = russia.16.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.16.a
+		add_political_power = 15
+		add_stability = -0.03
 	}
 }

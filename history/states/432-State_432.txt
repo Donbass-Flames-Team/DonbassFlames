@@ -1,9 +1,9 @@
 state = { 
 	id = 432 
 	name = "STATE_432" 
-	manpower = 950000 
+	manpower = 953217 
 	
-	state_category = city 
+	state_category = metropolis 
 	buildings_max_level_factor = 2 
 	resources = {
 		coal = 33 
@@ -12,6 +12,14 @@ state = {
 		owner = UKR 
 		
 		victory_points = { 10298 50 }
+		victory_points = { 15719 5 }
+		victory_points = { 18560 5 }
+		victory_points = { 9377 5 }
+		victory_points = { 15766 5 }
+		victory_points = { 7500 3 }
+		victory_points = { 10391 5 }
+		victory_points = { 15789 5 }
+		victory_points = { 18561 5 }
 		
 		buildings = { 
 			industrial_complex = 8

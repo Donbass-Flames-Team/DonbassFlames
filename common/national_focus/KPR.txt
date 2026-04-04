@@ -17,16 +17,11 @@ focus_tree = {
 		x = 12
 		y = 0
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_ideas = DPR_arrise_donbass_idea
 		}
 	}
@@ -42,16 +37,11 @@ focus_tree = {
 		prerequisite = {focus = KPR_arrise_novorossia}
 		relative_position_id = KPR_arrise_novorossia
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			add_ideas = DPR_russian_spring_idea
 			hidden_effect = {
 				load_oob = KPR_millitia
@@ -70,16 +60,11 @@ focus_tree = {
 		prerequisite = {focus = KPR_arrise_novorossia}
 		relative_position_id = KPR_arrise_novorossia
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			custom_effect_tooltip = KPR_bunkers_in_kharkov
         	hidden_effect = {
 				#Kharkov
@@ -189,16 +174,11 @@ focus_tree = {
 		prerequisite = {focus = KPR_baricades_in_kharkov}
 		relative_position_id = KPR_arrise_novorossia
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		available = {
 			
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_arrise_donbass"
 			custom_effect_tooltip = KPR_expadned_uprising_tt
 			hidden_effect = {
 				load_oob = KPR_expanded_uprising

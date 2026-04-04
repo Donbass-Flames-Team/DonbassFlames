@@ -3,7 +3,7 @@ state = {
 	name = "STATE_469" 
 	manpower = 1649776 
 	
-	state_category = town 
+	state_category = megalopolis 
 	buildings_max_level_factor = 1 
 	history = { 
 		owner = RUS 
@@ -11,7 +11,8 @@ state = {
 		buildings = { 
 			industrial_complex = 13
 			arms_factory = 8
-			infrastructure = 2 
+			infrastructure = 3
+			dockyard = 2
 		}
 		
 		add_core_of = RUS 

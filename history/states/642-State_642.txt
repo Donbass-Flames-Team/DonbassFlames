@@ -3,18 +3,21 @@ state = {
 	name = "STATE_642" 
 	manpower = 251013 
 	
-	state_category = town 
+	state_category = large_town 
 	buildings_max_level_factor = 1 
 	history = { 
 		owner = RUS 
 		
-		victory_points = { 2631 30 }
+		victory_points = { 2631 35 }
 		
 		buildings = { 
 			industrial_complex = 5
 			arms_factory = 3
 			infrastructure = 4 
-			dockyard = 6 
+			dockyard = 10
+			2631 = {
+				naval_base = 10
+			}
 		}
 		
 		add_core_of = RUS 

@@ -1,9 +1,9 @@
 state = { 
 	id = 526 
 	name = "STATE_526" 
-	manpower = 490000 
+	manpower = 463268 
 	
-	state_category = town 
+	state_category = city 
 	buildings_max_level_factor = 2 
 	
 	resources = {
@@ -13,35 +13,37 @@ state = {
 	history = { 
 		owner = UKR 
 		
-		victory_points = { 5816 3 }
-		victory_points = { 5830 3 }
-		victory_points = { 8904 1 }
-		victory_points = { 16477 1 }
-		victory_points = { 16477 1 }
-		victory_points = { 16487 25 }
-		victory_points = { 16487 30 }
-		victory_points = { 18211 3 }
-		victory_points = { 18212 1 }
-		victory_points = { 18213 1 }
-		victory_points = { 18215 3 }
-		victory_points = { 18216 1 }
-		victory_points = { 18218 3 }
-		victory_points = { 18219 3 }
-		victory_points = { 18220 1 }
+		victory_points = { 5816 5 }
+		victory_points = { 5830 5 }
+		victory_points = { 8904 2 }
+		victory_points = { 16477 2 }
+		victory_points = { 16477 2 }
+		victory_points = { 16487 35 }
+		victory_points = { 18211 5 }
+		victory_points = { 18212 2 }
+		victory_points = { 18213 2 }
+		victory_points = { 18215 5 }
+		victory_points = { 18216 2 }
+		victory_points = { 18218 5 }
+		victory_points = { 18219 5 }
+		victory_points = { 18220 2 }
 		victory_points = { 18221 3 }
 		victory_points = { 18221 3 }
 		victory_points = { 18222 3 }
 		victory_points = { 18224 3 }
-		victory_points = { 18524 1 }
+		victory_points = { 18524 2 }
 		victory_points = { 18525 3 }
-		victory_points = { 18526 1 }
-		victory_points = { 18527 1 }
+		victory_points = { 18526 2 }
+		victory_points = { 18527 2 }
 		
 		buildings = { 
 			industrial_complex = 4
 			arms_factory = 2
 			infrastructure = 4 
 			dockyard = 2 
+			5830 = {
+				naval_base = 5
+			}
 		}
 		
 		add_core_of = UKR 

@@ -3,7 +3,7 @@ state = {
 	name = "STATE_370" 
 	manpower = 111360 
 	
-	state_category = city 
+	state_category = town 
 	buildings_max_level_factor = 2 
 	
 	resources = {
@@ -14,6 +14,7 @@ state = {
 		owner = UKR 
 		
 		victory_points = { 15332 25 }
+		victory_points = { 15369 15 }
 		
 		buildings = { 
 			industrial_complex = 1

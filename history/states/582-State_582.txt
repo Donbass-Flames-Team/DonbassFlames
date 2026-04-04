@@ -1,9 +1,9 @@
 state = { 
 	id = 582 
 	name = "STATE_582" 
-	manpower = 48003 
+	manpower = 52896 
 	
-	state_category = town 
+	state_category = rural 
 	buildings_max_level_factor = 2 
 	resources = {
 		coal = 12 
@@ -14,7 +14,7 @@ state = {
 		victory_points = { 18455 10 }
 		
 		buildings = { 
-			industrial_complex = 0
+			industrial_complex = 1
 			arms_factory = 0
 			infrastructure = 4 
 		}

@@ -1,7 +1,7 @@
 state = { 
 	id = 421 
 	name = "STATE_421" 
-	manpower = 78000 
+	manpower = 54485 
 	
 	state_category = rural 
 	buildings_max_level_factor = 2 
@@ -11,8 +11,10 @@ state = {
 	history = { 
 		owner = UKR 
 		
-		victory_points = { 15946 10 }
-		victory_points = { 11334 5 }
+		victory_points = { 15946 15 }
+		victory_points = { 18655 15 }
+		victory_points = { 564 3 }
+		victory_points = { 18649 10 }
 		
 		buildings = { 
 			industrial_complex = 1

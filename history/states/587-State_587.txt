@@ -3,7 +3,7 @@ state = {
 	name = "STATE_587" 
 	manpower = 23788 
 	
-	state_category = town 
+	state_category = small_island 
 	buildings_max_level_factor = 2 
 	history = { 
 		owner = UKR 
@@ -17,6 +17,9 @@ state = {
 			industrial_complex = 0
 			arms_factory = 0
 			infrastructure = 2 
+			16939 = {
+				naval_base = 1
+			}
 		}
 		
 		add_core_of = UKR 

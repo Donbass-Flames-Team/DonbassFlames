@@ -1,9 +1,9 @@
 state = { 
 	id = 394 
 	name = "STATE_394" 
-	manpower = 7600 
+	manpower = 30899 
 	
-	state_category = town 
+	state_category = small_island 
 	buildings_max_level_factor = 2 
 	
 	resources = {
@@ -11,7 +11,10 @@ state = {
 		coal = 21 
 	} 
 	history = { 
-		owner = UKR 
+		owner = UKR
+		victory_points = { 9313 10 }
+		victory_points = { 18584 3 }
+		victory_points = { 18399 10 }
 		
 		buildings = { 
 			industrial_complex = 0

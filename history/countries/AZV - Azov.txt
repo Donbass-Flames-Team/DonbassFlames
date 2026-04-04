@@ -1,5 +1,7 @@
 capital = 551
 
+recruit_character = AZV_andriy_biletsky
+
 2013.11.21 = {
 	set_technology = {
 		infantry_weapons = 1
@@ -67,8 +69,6 @@ capital = 551
 	set_popularities = {
 		nationalism = 100
 	}
-
-	recruit_character = andrey_belitsky
 
 	add_equipment_to_stockpile = {
 		type = train_equipment_1

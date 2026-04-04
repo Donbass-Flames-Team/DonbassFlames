@@ -1,17 +1,19 @@
 state = { 
 	id = 328 
 	name = "STATE_328" 
-	manpower = 105000 
+	manpower = 20781 
 	
-	state_category = rural 
+	state_category = small_island 
 	buildings_max_level_factor = 2 
 	history = { 
 		owner = UKR 
 		
 		victory_points = { 18440 10 }
-		
+		victory_points = { 18442 3 }
+		victory_points = { 15322 2 } 
+		victory_points = { 18301 2 }		
 		buildings = { 
-			industrial_complex = 1
+			industrial_complex = 0
 			arms_factory = 0
 			infrastructure = 3 
 		}
