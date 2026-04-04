@@ -1,7 +1,7 @@
 state = { 
 	id = 629 
 	name = "STATE_629" 
-	manpower = 222559 
+	manpower = 497985
 	
 	state_category = large_town 
 	buildings_max_level_factor = 1 
@@ -11,13 +11,13 @@ state = {
 		owner = RUS 
 		
 		buildings = { 
-			industrial_complex = 2
-			arms_factory = 1
+			industrial_complex = 2 
+			arms_factory = 1 
 			infrastructure = 2 
 		}
 		
 		add_core_of = RUS 
 		add_core_of = ADY 
 	}
-	provinces = { 745 1560 2881 3932 4082 4093 4242 4815 5411 6028 6173 6443 6500 7591 10928 17434 17453 18191 }
+	provinces = { 745 1560 1619 1848 2881 3243 3932 4082 4093 4242 4815 5411 6028 6173 6443 6500 7591 8407 10928 17299 17315 17434 17453 17990 18191 18201 }
 }
