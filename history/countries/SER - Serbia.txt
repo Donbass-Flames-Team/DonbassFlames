@@ -1,9 +1,29 @@
 capital = 636
 
 2013.11.21 = {
-	add_ideas = {
-		volunteer_only
-		export_focus
-		civilian_economy
-	}
+
+    set_research_slots = 3
+
+    set_politics = {
+        ruling_party = conservatism_democracy 
+        last_election = "2012.05.20"
+        election_frequency = 60
+        elections_allowed = yes
+    }
+
+    set_popularities = {
+        liberal_democracy = 10
+        conservatism_democracy = 42
+        social_democracy = 15
+        nationalism = 25
+        communism = 3
+        autoritarian_democracy = 5
+    }
+
+    add_ideas = {
+        volunteer_only
+        export_focus
+        civilian_economy
+    }
 }
+

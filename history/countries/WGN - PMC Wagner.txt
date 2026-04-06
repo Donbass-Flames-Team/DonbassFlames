@@ -1,9 +1,28 @@
 capital = 633
 
 2013.11.21 = {
-	add_ideas = {
-		volunteer_only
-		free_trade
-		civilian_economy
-	}
+    set_research_slots = 3
+
+    set_politics = {
+        ruling_party = nationalism
+        last_election = "2013.11.21"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        nationalism = 60
+        autoritarian_democracy = 35
+        communism = 5
+        liberal_democracy = 0
+        conservatism_democracy = 0
+        social_democracy = 0
+    }
+
+    add_ideas = {
+        extensive_conscription
+        war_economy
+        limited_exports
+    }
+
 }

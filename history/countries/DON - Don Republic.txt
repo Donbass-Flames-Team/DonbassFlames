@@ -1,9 +1,27 @@
 capital = 1
 
 2013.11.21 = {
-	add_ideas = {
-		service_by_requirement
-		closed_economy
-		war_economy
-	}
+    set_research_slots = 2
+
+    set_politics = {
+        ruling_party = conservatism_democracy
+        last_election = "2013.11.21"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        conservatism_democracy = 50
+        nationalism = 30
+        autoritarian_democracy = 15
+        communism = 5
+        liberal_democracy = 0
+        social_democracy = 0
+    }
+
+    add_ideas = {
+        service_by_requirement
+        closed_economy
+        war_economy
+    }
 }
