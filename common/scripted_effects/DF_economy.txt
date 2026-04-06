@@ -654,7 +654,7 @@ DF_economy_setup = {
 	}
 	multiply_variable = {
 		var = mil_factories_gdp
-		value = 0.5
+		value = 0.2
 	}
 	add_to_variable = {
 		var = gdp
@@ -666,7 +666,7 @@ DF_economy_setup = {
 	}
 	multiply_variable = {
 		var = doc_factories_gdp
-		value = 1
+		value = 0.5
 	}
 	add_to_variable = {
 		var = gdp
@@ -678,7 +678,7 @@ DF_economy_setup = {
 	}
 	multiply_variable = {
 		var = civ_factories_gdp
-		value = 1.85
+		value = 0.4
 	}
 	add_to_variable = {
 		var = gdp
