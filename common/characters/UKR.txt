@@ -23,7 +23,7 @@ characters = {
 		}
 		country_leader={
 			ideology = conservatism
-			traits = { }
+			traits = { df_russophobe df_oligarch }
 			expire="2060.1.1.1"
 			id=-1
 		}
@@ -83,7 +83,7 @@ characters = {
 		}
 		country_leader={
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = { df_russophile df_authoritarian_tendencies }
 			expire="2060.1.1.1"
 			id=-1
 		}
