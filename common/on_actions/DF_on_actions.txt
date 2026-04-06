@@ -191,7 +191,18 @@ on_actions = {
 						target = RUS
 						modifier = kharkov_accords
 					}
-					else = {
+					RUS = {
+						diplomatic_relation = {
+							country = UKR
+							relation = docking_rights
+						}
+					}
+					else_if = {
+						limit = {
+							RUS = {
+								has_completed_focus = RUS_terminate_kharkov_accords
+							}
+						}
 						remove_opinion_modifier = {
 							target = RUS
 							modifier = kharkiv_pact
@@ -200,6 +211,11 @@ on_actions = {
 							remove_opinion_modifier = {
 								target = UKR
 								modifier = kharkov_accords
+							}
+							diplomatic_relation = {
+								country = UKR
+								relation = docking_rights
+								active = no
 							}
 						}
 					}
