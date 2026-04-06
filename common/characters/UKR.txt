@@ -1,4 +1,20 @@
 characters = {
+
+	UKR_victor_yanukovich = {
+		name = victor_yanukovich
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_victor_yanukovich"
+			}
+		}
+		country_leader={
+			ideology = autoritarian_democracy
+			traits = { df_russophile df_authoritarian_tendencies }
+			expire="2060.1.1.1"
+			id=-1
+		}
+	}
+
 	volodymir_zelenskyy = {
 		name = volodymir_zelenskyy
 		portraits = {
@@ -23,7 +39,7 @@ characters = {
 		}
 		country_leader={
 			ideology = conservatism
-			traits = { }
+			traits = { df_russophobe df_oligarch }
 			expire="2060.1.1.1"
 			id=-1
 		}
@@ -68,21 +84,6 @@ characters = {
 		}
 		country_leader={
 			ideology = conservatism
-			traits = { }
-			expire="2060.1.1.1"
-			id=-1
-		}
-	}
-
-	UKR_victor_yanukovich = {
-		name = victor_yanukovich
-		portraits = {
-			civilian = {
-				large = "GFX_portrait_victor_yanukovich"
-			}
-		}
-		country_leader={
-			ideology = autoritarian_democracy
 			traits = { }
 			expire="2060.1.1.1"
 			id=-1

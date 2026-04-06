@@ -19,6 +19,14 @@ DF_economy_setup = {
 			var = mil_factories_income
 			value = ROOT.num_of_military_factories
 		}
+		set_variable = {
+			var = agro_complex_income
+			value = ROOT.num_of_agro_industrial_complex
+		}	
+		multiply_variable = {
+			var = agro_complex_income
+			value = 0.010
+		}			
 		multiply_variable = {
 			var = mil_factories_income
 			value = 0.035
@@ -646,7 +654,7 @@ DF_economy_setup = {
 	}
 	multiply_variable = {
 		var = mil_factories_gdp
-		value = 0.5
+		value = 0.2
 	}
 	add_to_variable = {
 		var = gdp
@@ -658,7 +666,7 @@ DF_economy_setup = {
 	}
 	multiply_variable = {
 		var = doc_factories_gdp
-		value = 1
+		value = 0.5
 	}
 	add_to_variable = {
 		var = gdp
@@ -670,12 +678,25 @@ DF_economy_setup = {
 	}
 	multiply_variable = {
 		var = civ_factories_gdp
-		value = 1.85
+		value = 0.4
 	}
 	add_to_variable = {
 		var = gdp
 		value = var:civ_factories_gdp
 	}
+	set_variable = {
+		var = agro_complex_gdp
+		value = ROOT.num_of_agro_industrial_complex
+	}
+	multiply_variable = {
+		var = agro_complex_gdp
+		value = 0.1
+	}
+	add_to_variable = {
+		var = gdp
+		value = var:agro_complex_gdp
+	}
+	
 
 	######################
 	### GDP Per Capita ###

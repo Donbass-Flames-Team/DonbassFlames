@@ -343,7 +343,7 @@ focus_tree = {
 	focus = {
 		id = RUS_coup_in_ukraine
 		icon = GFX_goal_no_focus_RUS
-		cost = 1
+		cost = 0.5
 		x = 24
 		y = 0
 		
@@ -422,7 +422,7 @@ focus_tree = {
 	focus = {
 		id = RUS_support_independent_crimea
 		icon = GFX_goal_no_focus_RUS
-		cost = 0.5
+		cost = 0.2
 		x = 0
 		y = 2
 
@@ -480,15 +480,54 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_terminate_kharkov_accords
+		icon = GFX_goal_no_focus_RUS
+		cost = 0.2
+		x = 0
+		y = 1
+
+		prerequisite = { focus = RUS_support_independent_crimea }
+		relative_position_id = RUS_support_independent_crimea
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			UKR = {
+				remove_opinion_modifier = {
+					target = RUS
+					modifier = kharkiv_pact
+				}
+			}
+			remove_opinion_modifier = {
+				target = UKR
+				modifier = kharkov_accords
+			}
+			diplomatic_relation = {
+				country = UKR
+				relation = docking_rights
+				active = no
+			}
+			hidden_effect = {
+				news_event = { id = news_events.31 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
 		id = RUS_status_quo_on_the_peninsula
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
 		x = 1
-		y = 3
+		y = 1
 
-		prerequisite = { focus = RUS_support_independent_crimea }
+		prerequisite = { focus = RUS_terminate_kharkov_accords }
 		mutually_exclusive = { focus = RUS_referendum_in_crimea }
-		relative_position_id = RUS_coup_in_ukraine
+		relative_position_id = RUS_terminate_kharkov_accords
 		
 		ai_will_do = {
 			factor = 1
@@ -542,11 +581,11 @@ focus_tree = {
 		icon = GFX_goal_no_focus_RUS
 		cost = 0.5
 		x = -1
-		y = 3
+		y = 1
 
-		prerequisite = { focus = RUS_support_independent_crimea }
+		prerequisite = { focus = RUS_terminate_kharkov_accords }
 		mutually_exclusive = { focus = RUS_status_quo_on_the_peninsula }
-		relative_position_id = RUS_coup_in_ukraine
+		relative_position_id = RUS_terminate_kharkov_accords
 		
 		ai_will_do = {
 			factor = 1

@@ -908,17 +908,10 @@ country_event = {
 	option = {
 		name = ukraine.17.a
 		add_stability = 0.05
-		retire_country_leader = yes
-        create_country_leader = {
-		    name = UKR_petro_poroshenko
-		    #desc = victor_yanukovich_desc
-		    ideology = conservatism
-		    picture = gfx/leaders/UKR/Petro_Poroshenko.dds
-		    traits = {}
-	    }
+		promote_character = UKR_petro_poroshenko
 		hidden_effect = {
 			news_event = {
-                id = news_events.9
+				id = news_events.9
 				hours = 12
             }
 		}				
@@ -3718,7 +3711,7 @@ country_event = {
 		name = ukraine.112.a
 		hidden_effect = {
 			division_template = {
-	            name = "Dobrovol'che formuvannya"
+	            name = "Chechenskie dobrovolcy"
 	            regiments = {
                     infantry = { x = 0 y = 0 }
 		            infantry = { x = 0 y = 1 }

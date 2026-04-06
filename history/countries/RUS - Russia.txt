@@ -66,6 +66,15 @@ create_faction_from_template = {
 add_to_faction = BLR
 recruit_character = vladimir_putin
 
+add_opinion_modifier = {
+	target = UKR
+	modifier = kharkov_accords
+}
+diplomatic_relation = {
+	country = RUS
+	relation = docking_rights
+}
+
 2013.11.21 = {
 	set_oob = "RUS_2013"
 	set_variable = {
@@ -98,4 +107,16 @@ recruit_character = vladimir_putin
 	}
 	set_variable = { cash = 1 }
 	give_guarantee = UKR
+}
+
+2014.3.31 = {
+	remove_opinion_modifier = {
+		target = UKR
+		modifier = kharkov_accords
+	}
+	diplomatic_relation = {
+		country = RUS
+		relation = docking_rights
+		active = no
+	}
 }

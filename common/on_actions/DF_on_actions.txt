@@ -164,5 +164,64 @@ on_actions = {
 			}	
 		}	
 	}
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = UKR
+				}
+				if = {
+					limit = {
+						has_country_leader = {
+							character = UKR_victor_yanukovich
+							ruling_only = yes
+						}
+						RUS = {
+							has_country_leader = {
+								character = vladimir_putin
+								ruling_only = yes
+							}
+						}
+					}
+					add_opinion_modifier = {
+						target = RUS
+						modifier = kharkiv_pact
+					}
+					reverse_add_opinion_modifier = {
+						target = RUS
+						modifier = kharkov_accords
+					}
+					RUS = {
+						diplomatic_relation = {
+							country = UKR
+							relation = docking_rights
+						}
+					}
+					else_if = {
+						limit = {
+							RUS = {
+								has_completed_focus = RUS_terminate_kharkov_accords
+							}
+						}
+						remove_opinion_modifier = {
+							target = RUS
+							modifier = kharkiv_pact
+						}
+						RUS = {
+							remove_opinion_modifier = {
+								target = UKR
+								modifier = kharkov_accords
+							}
+							diplomatic_relation = {
+								country = UKR
+								relation = docking_rights
+								active = no
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 
 }
