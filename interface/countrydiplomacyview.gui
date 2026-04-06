@@ -414,7 +414,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "spirit_title"
-					position = { x = 2 y = - }
+					position = { x = 2 y = -2 }
 					font = "hoi_18mbs"
 					borderSize = {x = 0 y = 0}
 					text = "FE_COUNTRY_SPIRIT"
@@ -716,7 +716,7 @@ guiTypes = {
 			iconType ={
 				name ="diplomacy_bottom"
 				spriteType = "GFX_main_screens_bottom"
-				position = { x = 3 y = -55 }
+				position = { x = 3 y = -59 }
 				Orientation = "LOWER_LEFT"
 			}
 
@@ -746,7 +746,7 @@ guiTypes = {
 		iconType ={
 			name ="production_header_bg"
 			spriteType = "GFX_header_bg"
-			position = { x= 5 y = 07 }
+			position = { x= 4 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -909,7 +909,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "close_button"
-			position = { x = -43 y = 9 }
+			position = { x = -44 y = 7 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "hoi_16mbs"
 			shortcut = "ESCAPE"

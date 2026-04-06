@@ -153,25 +153,32 @@ guiTypes = {
 	}
 
 	### country entry
-	containerWindowType = {
-		name = "country_entry_medium"
 
+containerWindowType = {
+	name = "country_entry_medium"
 
-		iconType = {
-			name = "country_flag"
-			quadTextureSprite ="GFX_shield_medium"
-			position = { x = 26 y = 22 }
-			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
-		}
-
-		buttonType = {
-			name = "country"
-			quadTextureSprite = "GFX_country_selection_minor_entry"
-			position = { x=0 y =0 }
-			clicksound = click_checkbox
-		}
+	iconType = {
+		name = "country_shine"
+		quadTextureSprite = "GFX_country_selection_minor_entry"
+		position = { x = 0 y = 0 }
+		alwaystransparent = yes
 	}
+
+	iconType = {
+		name = "country_flag"
+		quadTextureSprite ="GFX_shield_medium"
+		position = { x = 26 y = 22 }
+		Orientation = "UPPER_LEFT"
+		alwaystransparent = yes
+	}
+
+	buttonType = {
+		name = "country"
+		quadTextureSprite = "GFX_country_selection_minor_entry"
+		position = { x=0 y =0 }
+		clicksound = click_checkbox
+	}
+}
 
 	### country entry
 	containerWindowType = {

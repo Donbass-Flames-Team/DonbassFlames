@@ -260,13 +260,13 @@ DF_economy_setup = yes
 	}
 	
 	set_popularities = {
-		liberal_democracy = 18
-		conservatism_democracy = 34
-		social_democracy = 3
-		nationalism = 15
-		communism = 9
-		autoritarian_democracy = 21
-	}
+        conservatism_democracy = 32
+        autoritarian_democracy = 24
+        liberal_democracy = 20
+        nationalism = 16
+        communism = 7
+        social_democracy = 1
+    }
 
 	recruit_character = UKR_victor_yanukovich
 

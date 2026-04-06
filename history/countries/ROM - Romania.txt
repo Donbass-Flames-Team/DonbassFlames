@@ -1,9 +1,27 @@
 capital = 645
 
 2013.11.21 = {
-	add_ideas = {
-		volunteer_only
-		free_trade
-		civilian_economy
-	}
+    set_research_slots = 3
+
+    set_politics = {
+        ruling_party = social_democracy
+        last_election = "2012.12.09"
+        election_frequency = 60
+        elections_allowed = yes
+    }
+
+    set_popularities = {
+        social_democracy = 38
+        liberal_democracy = 20
+        conservatism_democracy = 16
+        autoritarian_democracy = 14
+        nationalism = 11
+        communism = 1
+    }
+
+    add_ideas = {
+        volunteer_only
+        free_trade
+        civilian_economy
+    }
 }

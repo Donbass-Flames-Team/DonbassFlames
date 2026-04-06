@@ -1137,6 +1137,29 @@ focus_tree = {
 		}
 	}
 
+focus = {
+	id = RUS_PMC
+	icon = GFX_goal_no_focus_RUS
+	cost = 1
+	x = -2
+	y = 1
+
+	prerequisite = { focus = RUS_introduction_of_anti_sanctions }
+	relative_position_id = RUS_introduction_of_anti_sanctions
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	completion_reward = {
+		633 = { transfer_state_to = WGN }
+		633 = { add_core_of = WGN }
+	}
+}
+
 	focus = {
 		id = RUS_minsk_protocols
 		icon = GFX_goal_no_focus_RUS

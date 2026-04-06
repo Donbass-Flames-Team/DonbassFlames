@@ -29,17 +29,17 @@
 
 	set_politics = {
 		ruling_party = autoritarian_democracy
-		last_election = "2014.1.1"
-		election_frequency = 48
-		elections_allowed = no
+		last_election = "2010.10.31"
+		election_frequency = 60
+		elections_allowed = yes
 	}
 
 	set_popularities = {
-		liberal_democracy = 18
-		conservatism_democracy = 34
-		social_democracy = 3
-		nationalism = 15
-		communism = 9
-		autoritarian_democracy = 21
+		liberal_democracy = 12
+		conservatism_democracy = 10
+		social_democracy = 2
+		nationalism = 11
+		communism = 18
+		autoritarian_democracy = 47
 	}
 }

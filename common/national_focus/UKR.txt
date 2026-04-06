@@ -14,7 +14,7 @@ focus_tree = {
 		id = UKR_yanukovychs_results
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.4
-		x = 8
+		x = 11
 		y = 0
 		cancelable = no
 
@@ -68,15 +68,17 @@ focus_tree = {
 		id = UKR_remain_neutral
 		icon = GFX_focus_UKR_hold_the_center_line
 		cost = 0.8
-		x = -2
+		x = -5
 		y = 1
 
 		offset = {
 			x = 2
 			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
+				NOT = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = SHOW
+					}
 				}
 				OR = {
 					has_completed_focus = UKR_yanukovich_escaped
@@ -111,15 +113,17 @@ focus_tree = {
 		id = UKR_dictatorship_takes_over
 		icon = GFX_focus_UKR_activation_of_security_forces
 		cost = 0.2
-		x = 8
+		x = 5
 		y = 2
 
 		offset = {
 			x = -8
 			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
+				NOT = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = SHOW
+					}
 				}
 				has_completed_focus = UKR_dictatorship_takes_over
 			}
@@ -133,9 +137,11 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				NOT = {
@@ -162,9 +168,11 @@ focus_tree = {
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				mark_focus_tree_layout_dirty = yes
@@ -1226,9 +1234,11 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				NOT = {
@@ -1263,9 +1273,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				mark_focus_tree_layout_dirty = yes
@@ -1287,9 +1299,11 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				NOT = {
@@ -1315,9 +1329,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				mark_focus_tree_layout_dirty = yes
@@ -1658,9 +1674,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				mark_focus_tree_layout_dirty = yes
@@ -1682,9 +1700,11 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				has_completed_focus = UKR_unrest_in_the_east
@@ -2051,9 +2071,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				mark_focus_tree_layout_dirty = yes
@@ -2076,9 +2098,11 @@ focus_tree = {
 			is_debug = yes #TODO: Remove after adding the war
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				has_country_flag = Russo_Ukranian_War
@@ -2771,7 +2795,7 @@ focus_tree = {
 		id = UKR_snap_presidential_elections
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 35
+		x = 38
 		y = 0
 
 		available = {
@@ -2781,9 +2805,11 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				has_country_flag = Focuses_after_Ato
@@ -3128,9 +3154,11 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				has_country_flag = Focuses_after_Ato
@@ -3503,9 +3531,11 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				has_completed_focus = UKR_start_of_ato
@@ -3701,9 +3731,11 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				has_completed_focus = UKR_start_of_ato
@@ -3768,9 +3800,11 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				has_completed_focus = UKR_start_of_ato
@@ -4296,9 +4330,11 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
 					}
 				}
 				has_completed_focus = UKR_unrest_in_the_east

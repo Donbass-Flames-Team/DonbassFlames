@@ -1,1 +1,27 @@
 capital = 451
+
+2013.11.21 = {
+    set_research_slots = 2
+
+    set_politics = {
+        ruling_party = autoritarian_democracy
+        last_election = "2013.11.21"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        autoritarian_democracy = 55
+        communism = 25
+        nationalism = 10
+        liberal_democracy = 10
+        conservatism_democracy = 0
+        social_democracy = 0
+    }
+
+    add_ideas = {
+        volunteer_only
+        export_focus
+        civilian_economy
+    }
+}
