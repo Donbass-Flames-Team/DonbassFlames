@@ -301,6 +301,11 @@ DF_economy_setup = yes
 		export_focus
 		civilian_economy
     }
+
+	add_opinion_modifier = {
+		target = RUS
+		modifier = kharkiv_pact
+	}
 	
 	add_manpower = 60000
 
