@@ -1,20 +1,18 @@
 state = { 
 	id = 633 
 	name = "STATE_633" 
-	manpower = 1000
+	manpower = 100
 	
-	state_category = large_town 
+	state_category = small_island 
 	buildings_max_level_factor = 1 
 	
 	resources = { oil = 2 } 
 	history = { 
 		owner = WGN 
+		victory_points = { 19112 10 }
 		
 		buildings = { 
-			industrial_complex = 2 
-			arms_factory = 1 
 			infrastructure = 2 
-			synthetic_refinery = 1 
 		}
 		
 		add_core_of = RUS 
