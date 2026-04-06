@@ -269,21 +269,12 @@ DF_economy_setup = yes
     }
 
 	recruit_character = UKR_victor_yanukovich
+	recruit_character = volodymir_zelenskyy
+	recruit_character = UKR_petro_poroshenko
+	recruit_character = UKR_yulia_timoshenko
+	recruit_character = UKR_oleg_lyashko
+	recruit_character = UKR_darth_alekseevich_vader
 
-	add_ideas = {
-		UKR_protests
-		UKR_helpless_government
-		UKR_separatism
-		UKR_dependence_on_russia
-		UKR_ukrainian_mic
-
-		volunteer_only
-		export_focus
-		civilian_economy
-    }
-	
-	add_manpower = 60000
-	
 	recruit_character = victor_muzhenko
 	recruit_character = stepan_poltorak
 	recruit_character = mikhail_koval
@@ -298,14 +289,28 @@ DF_economy_setup = yes
 	recruit_character = sergey_naev
 	recruit_character = sergey_kulchitsky
 	recruit_character = yuri_sodol
-	recruit_character = UKR_yulia_timoshenko
-	recruit_character = UKR_oleg_lyashko
-	recruit_character = UKR_darth_alekseevich_vader
 
+	add_ideas = {
+		UKR_protests
+		UKR_helpless_government
+		UKR_separatism
+		UKR_dependence_on_russia
+		UKR_ukrainian_mic
+
+		volunteer_only
+		export_focus
+		civilian_economy
+    }
+
+	add_opinion_modifier = {
+		target = RUS
+		modifier = kharkiv_pact
+	}
+	
+	add_manpower = 60000
 
 	set_variable = { cash = 8 }
 	set_variable = { debt = -146.94 }
-
 }   
 
 2022.2.28 = {
