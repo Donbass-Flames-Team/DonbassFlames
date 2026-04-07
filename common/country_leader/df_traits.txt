@@ -53,5 +53,17 @@ leader_traits = {
 			factor = 1
 		}
 	}
-    
+
+	df_yanukovich_desc = {
+		random = no
+		sprite = 13
+
+		political_power_factor = 0.05
+		consumer_goods_factor = 0.05
+		production_speed_buildings_factor = 0.03
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
