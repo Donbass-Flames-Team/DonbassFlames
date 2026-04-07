@@ -18,6 +18,23 @@ focus_tree = {
 		y = 0
 		cancelable = no
 
+		offset = {
+			x = -5
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = SHOW
+					}
+				}
+				OR = {
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_dictatorship_takes_over
+				}
+			}
+		}
+
 		available = {
 
 		}
@@ -72,7 +89,7 @@ focus_tree = {
 		y = 1
 
 		offset = {
-			x = 2
+			x = 5
 			trigger = {
 				NOT = {
 					has_game_rule = {
@@ -84,6 +101,18 @@ focus_tree = {
 					has_completed_focus = UKR_yanukovich_escaped
 					has_completed_focus = UKR_arrest_yanukovich
 				}
+			}
+		}
+		offset = {
+			x = 3
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = SHOW
+					}
+				}
+				has_completed_focus = UKR_dictatorship_takes_over
 			}
 		}
 		
@@ -117,7 +146,7 @@ focus_tree = {
 		y = 2
 
 		offset = {
-			x = -8
+			x = -5
 			trigger = {
 				NOT = {
 					has_game_rule = {
@@ -3538,6 +3567,7 @@ focus_tree = {
 						}
 					}
 				}
+				has_completed_focus = UKR_unrest_in_the_east # Must be here as focus below is autocompleted
 				has_completed_focus = UKR_start_of_ato
 			}
 		}
