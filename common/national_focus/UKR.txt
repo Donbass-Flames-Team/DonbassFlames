@@ -113,8 +113,24 @@ focus_tree = {
 					}
 				}
 				has_completed_focus = UKR_dictatorship_takes_over
+			    NOT = {
+					has_country_flag = Tree_post_yanukovich_hidden
+				}
 			}
 		}
+		offset = {
+			x = -3
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = SHOW
+					}
+				}
+				has_country_flag = Tree_post_yanukovich_hidden
+			}
+		}
+		
 		
         prerequisite = { focus = UKR_next_steps }
 		relative_position_id = UKR_next_steps
@@ -131,10 +147,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 25
-			add_days_mission_timeout = {
-				mission = UKR_yanukovich_overthrow
-				days = 7
-			}
+			#add_days_mission_timeout = {
+			#	mission = UKR_yanukovich_overthrow
+			#	days = 7
+			#}
 		}
 	}
 
@@ -204,6 +220,7 @@ focus_tree = {
 						}
 					}
 				}
+				set_country_flag = Tree_post_yanukovich_hidden
 				mark_focus_tree_layout_dirty = yes
 			}
 		}
@@ -1271,7 +1288,7 @@ focus_tree = {
 					}
 				}
 				NOT = {
-					has_completed_focus = UKR_dictatorship_takes_over
+					has_country_flag = Tree_post_yanukovich_hidden
 				}
 			}
 		}
@@ -1336,7 +1353,7 @@ focus_tree = {
 					}
 				}
 				NOT = {
-					has_completed_focus = UKR_dictatorship_takes_over
+					has_country_flag = Tree_post_yanukovich_hidden
 				}
 			}
 		}
