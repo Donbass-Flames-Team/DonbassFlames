@@ -22,7 +22,7 @@ buildings = {
 	network_infrastructure = {
 		base_cost = 1500
 		per_level_extra_cost = 1500
-		icon_frame = 3
+		icon_frame = 35
 		infrastructure = yes
 		value = 2
 		show_modifier = yes
@@ -33,6 +33,22 @@ buildings = {
 		state_modifiers = {
 			state_production_speed_buildings_factor = 0.025
 			local_building_slots_factor = 0.01
+		}		
+	}
+
+	social_infrastructure = {
+		base_cost = 3500
+		per_level_extra_cost = 1500
+		icon_frame = 33
+		infrastructure = yes
+		value = 2
+		show_modifier = yes
+		infrastructure_construction_effect = yes
+		level_cap = {
+			state_max = 5
+		}
+		state_modifiers = {
+			monthly_population = 0.08
 		}		
 	}
 
@@ -68,7 +84,7 @@ buildings = {
 	agro_industrial_complex = {
 		show_on_map = 6
 		base_cost = 4000
-		icon_frame = 1
+		icon_frame = 32
 		value = 6
 		infrastructure_construction_effect = yes
 		level_cap = {
@@ -77,6 +93,53 @@ buildings = {
 		}
 	}
 
+	offices_building = {
+		show_on_map = 6
+		base_cost = 4000
+		icon_frame = 34
+		value = 6
+		infrastructure_construction_effect = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 20
+		}
+	}
+
+	chemical_plant = {
+		show_on_map = 6
+		base_cost = 5500
+		icon_frame = 36
+		value = 6
+		infrastructure_construction_effect = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 5
+		}
+	}
+
+	steel_mill = {
+		show_on_map = 6
+		base_cost = 5500
+		icon_frame = 37
+		value = 6
+		infrastructure_construction_effect = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 5
+		}
+	}	
+
+	ammunition_plant = {
+		show_on_map = 6
+		base_cost = 5500
+		icon_frame = 38
+		value = 6
+		infrastructure_construction_effect = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 8
+		}
+	}	
 
 	air_base = {
 		show_on_map = 1
