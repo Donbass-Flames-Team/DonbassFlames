@@ -185,6 +185,7 @@ country_event = {
 				hours = 6
 			}
 			340 = { transfer_state_to = LPR }
+            416 = { transfer_state_to = SKR }
 			LPR = {
 				add_state_core = 339
 				add_state_core = 340
@@ -214,6 +215,16 @@ country_event = {
                     type = annex_everything
                 }
 				load_oob = Luhansk_Uprising_Militia
+			}
+			SKR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				load_oob = SKR_uprising_millitia
+				add_state_core = 416
+				add_state_core = 387
+				add_state_core = 413
 			}
 		if = {
 			limit = {
