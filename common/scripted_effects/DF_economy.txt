@@ -696,11 +696,15 @@ DF_economy_setup = {
 	###########
 	### GDP ###
 	###########
-	set_variable = {
-		var = gdp
-		value = 0
-	}
+	# Reset GDP Calc
+	set_variable = { gdp = 0 }
+	set_variable = { mil_factories_gdp = 0 }
+	set_variable = { doc_factories_gdp = 0 }
+	set_variable = { civ_factories_gdp = 0 }
+	set_variable = { agro_complex_gdp = 0 }
+	set_variable = { office_gdp = 0 }
 
+	# New GDP Calc
 	set_variable = {
 		var = mil_factories_gdp
 		value = ROOT.num_of_military_factories
@@ -761,7 +765,6 @@ DF_economy_setup = {
 		var = gdp
 		value = var:office_gdp
 	}
-	
 
 	######################
 	### GDP Per Capita ###
