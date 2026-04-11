@@ -1,3 +1,20 @@
+DF_buildings_setup = {
+	set_variable { num_of_agro_industrial_complex = 0 }
+	set_variable { num_of_offices_building = 0 }
+
+	set_variable { num_of_available_agro_industrial_complex = 0 }
+	set_variable { num_of_available_offices_building = 0 }
+
+	every_state = {
+		# Total Custom Buildings Amount
+		add_to_variable = { PREV.num_of_agro_industrial_complex = building_level@agro_industrial_complex }
+		add_to_variable = { PREV.num_of_offices_building = building_level@offices_building }
+
+		# Available Custom Buildings Amount
+		add_to_variable = { PREV.num_of_available_agro_industrial_complex = non_damaged_building_level@agro_industrial_complex }
+		add_to_variable = { PREV.num_of_available_offices_building = non_damaged_building_level@offices_building }
+	}
+}
 
 DF_economy_setup = {
 	set_variable = {
@@ -19,14 +36,6 @@ DF_economy_setup = {
 			var = mil_factories_income
 			value = ROOT.num_of_military_factories
 		}
-		set_variable = {
-			var = agro_complex_income
-			value = ROOT.num_of_agro_industrial_complex
-		}	
-		multiply_variable = {
-			var = agro_complex_income
-			value = 0.010
-		}			
 		multiply_variable = {
 			var = mil_factories_income
 			value = 0.035
@@ -87,6 +96,50 @@ DF_economy_setup = {
 		add_to_variable = {
 			var = income
 			value = var:civ_factories_income
+		}
+
+		set_variable = {
+			var = agro_income
+			value = ROOT.num_of_agro_industrial_complex
+		}
+		multiply_variable = {
+			var = agro_income
+			value = 0.01
+		}
+		if = {
+			limit = {
+				has_global_flag = add_remove_cash_flag
+			}
+			add_to_variable = {
+				var = cash
+				value = var:agro_income
+			}
+		}
+		add_to_variable = {
+			var = income
+			value = var:agro_income
+		}
+
+		set_variable = {
+			var = office_income
+			value = ROOT.num_of_offices_building
+		}
+		multiply_variable = {
+			var = office_income
+			value = 0.05
+		}
+		if = {
+			limit = {
+				has_global_flag = add_remove_cash_flag
+			}
+			add_to_variable = {
+				var = cash
+				value = var:office_income
+			}
+		}
+		add_to_variable = {
+			var = income
+			value = var:office_income
 		}
 	}
 	#############

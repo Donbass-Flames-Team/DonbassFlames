@@ -9,6 +9,14 @@ on_actions = {
 			}
 		}
 	}
+	on_daily = {
+		effect = {
+			###############################
+			#### CUSTOM BUILDING UTILS ####
+			###############################
+			DF_buildings_setup = yes
+		}
+	}
 	on_monthly = {
 		effect = {
 			###################
