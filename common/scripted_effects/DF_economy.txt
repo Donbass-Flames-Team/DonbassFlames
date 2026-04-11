@@ -696,6 +696,18 @@ DF_economy_setup = {
 		var = gdp
 		value = var:agro_complex_gdp
 	}
+	set_variable = {
+		var = office_gdp
+		value = ROOT.num_of_offices_building
+	}
+	multiply_variable = {
+		var = office_gdp
+		value = 0.5
+	}
+	add_to_variable = {
+		var = gdp
+		value = var:office_gdp
+	}
 	
 
 	######################
