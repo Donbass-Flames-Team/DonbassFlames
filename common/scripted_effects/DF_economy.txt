@@ -1,9 +1,9 @@
 DF_buildings_setup = {
-	set_variable { num_of_agro_industrial_complex = 0 }
-	set_variable { num_of_offices_building = 0 }
+	set_variable = { num_of_agro_industrial_complex = 0 }
+	set_variable = { num_of_offices_building = 0 }
 
-	set_variable { num_of_available_agro_industrial_complex = 0 }
-	set_variable { num_of_available_offices_building = 0 }
+	set_variable = { num_of_available_agro_industrial_complex = 0 }
+	set_variable = { num_of_available_offices_building = 0 }
 
 	every_controlled_state = {
 		# Total Custom Buildings Amount
@@ -17,6 +17,8 @@ DF_buildings_setup = {
 }
 
 DF_economy_setup = {
+	DF_buildings_setup = yes
+
 	set_variable = {
 		var = income
 		value = 0
@@ -482,101 +484,101 @@ DF_economy_setup = {
 			value = education_expense
 		}
 
-    ############
-	### ARMY ###
-	############
+		############
+		### ARMY ###
+		############
 
-	set_variable = {
-		var = army_expense_show
-		value = ROOT.deployed_army_manpower_k
-	}
-	divide_variable = {
-		var = army_expense_show
-		value = 7.5
-	}
-	round_variable = army_expense_show
-
-	set_variable = {
-		var = army_expense_free_universities
-		value = army_expense_show
-	}
-	multiply_variable = {
-		var = army_expense_free_universities
-		value = 0.8
-	}
-
-	set_variable = {
-		var = army_expense_free_high_schools
-		value = army_expense_show
-	}
-	multiply_variable = {
-		var = army_expense_free_high_schools
-		value = 0.7
-	}
-
-	set_variable = {
-		var = army_expense_free_elementary_and_middle_schools
-		value = army_expense_show
-	}
-	multiply_variable = {
-		var = army_expense_free_elementary_and_middle_schools
-		value = 0.5
-	}
-
-	set_variable = {
-		var = army_expense
-		value = army_expense_show
-	}
-	#if = {
-	#	limit = {
-	#		has_idea = free_universities
-	#	}
-	#	multiply_variable = {
-	#		var = army_expense
-	#		value = 0.53
-	#	}
-	#	else_if = {
-	#		limit = {
-	#			has_idea = free_high_schools
-	#		}
-	#		multiply_variable = {
-	#			var = army_expense
-	#			value = 1.1
-	#		}
-	#	}
-	#	else_if = {
-	#		limit = {
-	#			has_idea = free_elementary_and_middle_schools
-	#		}
-	#		multiply_variable = {
-	#			var = army_expense
-	#			value = 0.5
-	#		}
-	#	}
-	#	else_if = {
-	#		limit = {
-	#			has_idea = private_army
-	#		}
-	#		multiply_variable = {
-	#			var = army_expense
-	#			value = 0
-	#		}
-	#	}
-	#}
-	round_variable = army_expense
-	if = {
-		limit = {
-			has_global_flag = add_remove_cash_flag
+		set_variable = {
+			var = army_expense_show
+			value = ROOT.deployed_army_manpower_k
 		}
-		subtract_from_variable = {
-			var = cash
+		divide_variable = {
+			var = army_expense_show
+			value = 7.5
+		}
+		round_variable = army_expense_show
+
+		set_variable = {
+			var = army_expense_free_universities
+			value = army_expense_show
+		}
+		multiply_variable = {
+			var = army_expense_free_universities
+			value = 0.8
+		}
+
+		set_variable = {
+			var = army_expense_free_high_schools
+			value = army_expense_show
+		}
+		multiply_variable = {
+			var = army_expense_free_high_schools
+			value = 0.7
+		}
+
+		set_variable = {
+			var = army_expense_free_elementary_and_middle_schools
+			value = army_expense_show
+		}
+		multiply_variable = {
+			var = army_expense_free_elementary_and_middle_schools
+			value = 0.5
+		}
+
+		set_variable = {
+			var = army_expense
+			value = army_expense_show
+		}
+		#if = {
+		#	limit = {
+		#		has_idea = free_universities
+		#	}
+		#	multiply_variable = {
+		#		var = army_expense
+		#		value = 0.53
+		#	}
+		#	else_if = {
+		#		limit = {
+		#			has_idea = free_high_schools
+		#		}
+		#		multiply_variable = {
+		#			var = army_expense
+		#			value = 1.1
+		#		}
+		#	}
+		#	else_if = {
+		#		limit = {
+		#			has_idea = free_elementary_and_middle_schools
+		#		}
+		#		multiply_variable = {
+		#			var = army_expense
+		#			value = 0.5
+		#		}
+		#	}
+		#	else_if = {
+		#		limit = {
+		#			has_idea = private_army
+		#		}
+		#		multiply_variable = {
+		#			var = army_expense
+		#			value = 0
+		#		}
+		#	}
+		#}
+		round_variable = army_expense
+		if = {
+			limit = {
+				has_global_flag = add_remove_cash_flag
+			}
+			subtract_from_variable = {
+				var = cash
+				value = army_expense
+			}
+		}
+		add_to_variable = {
+			var = expense
 			value = army_expense
 		}
-	}
-	add_to_variable = {
-		var = expense
-		value = army_expense
-	}
 
 		################
 		### POLICING ###
@@ -591,12 +593,12 @@ DF_economy_setup = {
 			value = 10000
 		}
 	    multiply_variable = {
-		    var = policing
+		    var = policing_expense_show
 		    value = 10
 	    }
-	    round_variable = policing
+	    round_variable = policing_expense_show
 	    divide_variable = {
-		    var = policing
+		    var = policing_expense_show
 		    value = 10
 	    }
 
@@ -747,7 +749,7 @@ DF_economy_setup = {
 	}
 	multiply_variable = {
 		var = agro_complex_gdp
-		value = 0.1
+		value = 0.15
 	}
 	add_to_variable = {
 		var = gdp
