@@ -9,6 +9,14 @@ on_actions = {
 			}
 		}
 	}
+	on_daily = {
+		effect = {
+			###############################
+			#### CUSTOM BUILDING UTILS ####
+			###############################
+			DF_buildings_setup = yes
+		}
+	}
 	on_monthly = {
 		effect = {
 			###################
@@ -143,6 +151,83 @@ on_actions = {
 				}
 				#add_to_variable = { GEN_inflation_political_power_gain = -0.06 }
 				add_to_variable = { GEN_inflation_consumer_goods_factor = 0.02 }
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = cash
+						value = 0
+						compare = less_than
+					}
+				}
+				set_temp_variable = { temp_debt = var:cash }
+				multiply_variable = { var = temp_debt value = -1 }
+				add_to_variable = { var = debt value = var:temp_debt }
+				set_variable = { var = cash value = 1 }
+				clear_variable = temp_debt
+			}	
+		}	
+	}
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = UKR
+				}
+				if = {
+					limit = {
+						has_country_leader = {
+							character = UKR_victor_yanukovich
+							ruling_only = yes
+						}
+						RUS = {
+							has_country_leader = {
+								character = vladimir_putin
+								ruling_only = yes
+							}
+						}
+					}
+					add_opinion_modifier = {
+						target = RUS
+						modifier = kharkiv_pact
+					}
+					reverse_add_opinion_modifier = {
+						target = RUS
+						modifier = kharkov_accords
+					}
+					RUS = {
+						diplomatic_relation = {
+							country = UKR
+							relation = docking_rights
+						}
+					}
+					else_if = {
+						limit = {
+							RUS = {
+								has_completed_focus = RUS_terminate_kharkov_accords
+							}
+						}
+						remove_opinion_modifier = {
+							target = RUS
+							modifier = kharkiv_pact
+						}
+						RUS = {
+							remove_opinion_modifier = {
+								target = UKR
+								modifier = kharkov_accords
+							}
+							diplomatic_relation = {
+								country = UKR
+								relation = docking_rights
+								active = no
+							}
+						}
+					}
+				}
 			}
 		}
 	}

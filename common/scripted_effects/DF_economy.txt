@@ -1,3 +1,21 @@
+DF_buildings_setup = {
+	set_variable { num_of_agro_industrial_complex = 0 }
+	set_variable { num_of_offices_building = 0 }
+
+	set_variable { num_of_available_agro_industrial_complex = 0 }
+	set_variable { num_of_available_offices_building = 0 }
+
+	every_state = {
+		# Total Custom Buildings Amount
+		add_to_variable = { PREV.num_of_agro_industrial_complex = building_level@agro_industrial_complex }
+		add_to_variable = { PREV.num_of_offices_building = building_level@offices_building }
+
+		# Available Custom Buildings Amount
+		add_to_variable = { PREV.num_of_available_agro_industrial_complex = non_damaged_building_level@agro_industrial_complex }
+		add_to_variable = { PREV.num_of_available_offices_building = non_damaged_building_level@offices_building }
+	}
+}
+
 DF_economy_setup = {
 	set_variable = {
 		var = income
@@ -78,6 +96,50 @@ DF_economy_setup = {
 		add_to_variable = {
 			var = income
 			value = var:civ_factories_income
+		}
+
+		set_variable = {
+			var = agro_income
+			value = ROOT.num_of_agro_industrial_complex
+		}
+		multiply_variable = {
+			var = agro_income
+			value = 0.01
+		}
+		if = {
+			limit = {
+				has_global_flag = add_remove_cash_flag
+			}
+			add_to_variable = {
+				var = cash
+				value = var:agro_income
+			}
+		}
+		add_to_variable = {
+			var = income
+			value = var:agro_income
+		}
+
+		set_variable = {
+			var = office_income
+			value = ROOT.num_of_offices_building
+		}
+		multiply_variable = {
+			var = office_income
+			value = 0.05
+		}
+		if = {
+			limit = {
+				has_global_flag = add_remove_cash_flag
+			}
+			add_to_variable = {
+				var = cash
+				value = var:office_income
+			}
+		}
+		add_to_variable = {
+			var = income
+			value = var:office_income
 		}
 	}
 	#############
@@ -709,18 +771,22 @@ DF_economy_setup = {
 	###########
 	### GDP ###
 	###########
-	set_variable = {
-		var = gdp
-		value = 0
-	}
+	# Reset GDP Calc
+	set_variable = { gdp = 0 }
+	set_variable = { mil_factories_gdp = 0 }
+	set_variable = { doc_factories_gdp = 0 }
+	set_variable = { civ_factories_gdp = 0 }
+	set_variable = { agro_complex_gdp = 0 }
+	set_variable = { office_gdp = 0 }
 
+	# New GDP Calc
 	set_variable = {
 		var = mil_factories_gdp
 		value = ROOT.num_of_military_factories
 	}
 	multiply_variable = {
 		var = mil_factories_gdp
-		value = 0.5
+		value = 0.2
 	}
 	add_to_variable = {
 		var = gdp
@@ -732,7 +798,7 @@ DF_economy_setup = {
 	}
 	multiply_variable = {
 		var = doc_factories_gdp
-		value = 1
+		value = 0.5
 	}
 	add_to_variable = {
 		var = gdp
@@ -744,11 +810,35 @@ DF_economy_setup = {
 	}
 	multiply_variable = {
 		var = civ_factories_gdp
-		value = 1.85
+		value = 0.4
 	}
 	add_to_variable = {
 		var = gdp
 		value = var:civ_factories_gdp
+	}
+	set_variable = {
+		var = agro_complex_gdp
+		value = ROOT.num_of_agro_industrial_complex
+	}
+	multiply_variable = {
+		var = agro_complex_gdp
+		value = 0.1
+	}
+	add_to_variable = {
+		var = gdp
+		value = var:agro_complex_gdp
+	}
+	set_variable = {
+		var = office_gdp
+		value = ROOT.num_of_offices_building
+	}
+	multiply_variable = {
+		var = office_gdp
+		value = 0.5
+	}
+	add_to_variable = {
+		var = gdp
+		value = var:office_gdp
 	}
 
 	######################

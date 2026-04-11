@@ -1053,3 +1053,19 @@ news_event = {
 		name = news_events.30.a
 	}
 }
+
+# Khrakov Accords Terminated
+news_event = {
+	id = news_events.31
+	title = news_events.31.t
+	desc = news_events.31.d
+	picture = GFX_news_event_kharkov_accords_terminated
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.31.a
+	}
+}

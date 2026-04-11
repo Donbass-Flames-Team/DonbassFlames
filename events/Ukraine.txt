@@ -22,6 +22,7 @@ country_event = {
 			}			
 			mark_focus_tree_layout_dirty = yes
 			set_global_flag = Yanukovich_escaped
+			clr_country_flag = Tree_post_yanukovich_hidden
 		}
 		country_event = {
 			id = ukraine.22
@@ -184,6 +185,7 @@ country_event = {
 				hours = 6
 			}
 			340 = { transfer_state_to = LPR }
+            416 = { transfer_state_to = SKR }
 			LPR = {
 				add_state_core = 339
 				add_state_core = 340
@@ -213,6 +215,16 @@ country_event = {
                     type = annex_everything
                 }
 				load_oob = Luhansk_Uprising_Militia
+			}
+			SKR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				load_oob = SKR_uprising_millitia
+				add_state_core = 416
+				add_state_core = 387
+				add_state_core = 413
 			}
 		if = {
 			limit = {
@@ -908,17 +920,10 @@ country_event = {
 	option = {
 		name = ukraine.17.a
 		add_stability = 0.05
-		retire_country_leader = yes
-        create_country_leader = {
-		    name = UKR_petro_poroshenko
-		    #desc = victor_yanukovich_desc
-		    ideology = conservatism
-		    picture = gfx/leaders/UKR/Petro_Poroshenko.dds
-		    traits = {}
-	    }
+		promote_character = UKR_petro_poroshenko
 		hidden_effect = {
 			news_event = {
-                id = news_events.9
+				id = news_events.9
 				hours = 12
             }
 		}				
@@ -3718,7 +3723,7 @@ country_event = {
 		name = ukraine.112.a
 		hidden_effect = {
 			division_template = {
-	            name = "Dobrovol'che formuvannya"
+	            name = "Chechenskie dobrovolcy"
 	            regiments = {
                     infantry = { x = 0 y = 0 }
 		            infantry = { x = 0 y = 1 }
