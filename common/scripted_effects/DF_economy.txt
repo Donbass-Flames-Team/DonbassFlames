@@ -5,7 +5,7 @@ DF_buildings_setup = {
 	set_variable { num_of_available_agro_industrial_complex = 0 }
 	set_variable { num_of_available_offices_building = 0 }
 
-	every_state = {
+	every_controlled_state = {
 		# Total Custom Buildings Amount
 		add_to_variable = { PREV.num_of_agro_industrial_complex = building_level@agro_industrial_complex }
 		add_to_variable = { PREV.num_of_offices_building = building_level@offices_building }
