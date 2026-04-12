@@ -107,7 +107,7 @@ focus_tree = {
 		relative_position_id = DPR_capture_administrations
 
 		available = {
-			
+			has_completed_focus = DPR_arrise_donbass
 		}
 
 		completion_reward = {
@@ -579,6 +579,88 @@ focus_tree = {
 			add_ideas = DPR_arrise_donbass_idea
 		}
 	}
+
+	focus = {
+		id = DPR_hold_referendum_on_independence
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.3
+		x = 3
+		y = 6
+
+		prerequisite = {focus = DPR_arrise_donbass}
+		relative_position_id = DPR_capture_administrations
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			
+		}
+
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = DPR_cooperation_with_lpr
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.5
+		x = 3
+		y = 7
+
+		prerequisite = {focus = DPR_hold_referendum_on_independence}
+		relative_position_id = DPR_capture_administrations
+
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DPR_novorossiya_project
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.5
+		x = 0
+		y = 1
+
+		prerequisite = {focus = DPR_cooperation_with_lpr}
+		relative_position_id = DPR_cooperation_with_lpr
+
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DPR_united_parliament
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.5
+		x = 0
+		y = 2
+
+		prerequisite = {focus = DPR_novorossiya_project}
+		relative_position_id = DPR_cooperation_with_lpr
+
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+
 
 	focus = {
 		id = DPR_defend_of_citites
@@ -1169,11 +1251,11 @@ focus_tree = {
 		id = DPR_nationalize_the_captured_factories
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 3
-		y = 4
+		x = 0
+		y = 1
 
-		prerequisite = {focus = DPR_set_up_production}
-		relative_position_id = DPR_capture_administrations
+		prerequisite = {focus = DPR_peace_on_donbass}
+		relative_position_id = DPR_peace_on_donbass
 
 		available = {
 			
@@ -1188,11 +1270,11 @@ focus_tree = {
 		id = DPR_restore_production
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 3
-		y = 5
+		x = -1
+		y = 2 
 
 		prerequisite = {focus = DPR_nationalize_the_captured_factories}
-		relative_position_id = DPR_capture_administrations
+		relative_position_id = DPR_peace_on_donbass
 
 		available = {
 			
@@ -1207,11 +1289,11 @@ focus_tree = {
 		id = DPR_the_mining_issue
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 6
-		y = 5
+		x = 1
+		y = 2
 
 		prerequisite = {focus = DPR_nationalize_the_captured_factories}
-		relative_position_id = DPR_capture_administrations
+		relative_position_id = DPR_peace_on_donbass
 
 		available = {
 			

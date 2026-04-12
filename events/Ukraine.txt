@@ -3744,3 +3744,18 @@ country_event = {
 		}
 	}
 }
+
+# Обращение Турчинова
+country_event = {
+	id = ukraine.113
+	title = ukraine.113.t
+	desc  = ukraine.113.d
+	picture = GFX_Report_event_Turchinov_appeal_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.113.a
+		add_war_support = 0.01
+	}
+}
