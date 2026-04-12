@@ -3603,6 +3603,20 @@ focus_tree = {
                 idea = UKR_emergency_redeployment_of_troops_idea 
                 days = 15
             }
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+						    DPR = {  is_ai = no }
+						    KPR = {  is_ai = no }	
+						    OPR = {  is_ai = no }
+						    LPR = {  is_ai = no }
+					    }
+						UKR = { is_ai = yes }
+					}
+                    load_oob = UKR_ATO_Buff
+				}
+			}
 		}
 	}
 
@@ -3764,7 +3778,7 @@ focus_tree = {
 		id = UKR_end_of_separatism
 		icon = GFX_focus_UKR_victory_over_separatism
 		cost = 0.5
-		x = 1
+		x = 2
 		y = 1
 
 		prerequisite = { focus = UKR_launch_counterattacks }
@@ -3836,7 +3850,7 @@ focus_tree = {
 		id = UKR_continuation_of_the_ato
 		icon = GFX_focus_UKR_victory_over_separatism
 		cost = 1
-		x = -1
+		x = -2
 		y = 1
 
 		prerequisite = { focus = UKR_launch_counterattacks }
@@ -4148,25 +4162,17 @@ focus_tree = {
 					limit = {
 						OR = {
 						    DPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+								is_ai = no
 						    }
 						    KPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+								is_ai = no
 						    }	
 						    OPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+								is_ai = no
 						    }
 						    LPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
-						    }																				
+								is_ai = no
+						    }
 					    }
 						UKR = {
 							is_ai = yes
