@@ -676,3 +676,22 @@ country_event = {
 		}
 	}	
 }
+
+#Гиркин становится военным комендантом доецка
+country_event = {
+	id = DPR.29
+	title = DPR.29.t
+	desc = DPR.29.d
+	picture = GFX_Report_event_strelkov_event_2
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.29.a
+		
+	}	
+}

@@ -1101,7 +1101,7 @@ focus_tree = {
 	focus = {
 		id = DPR_centralize_donetsk_groups
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
+		cost = 0.5
 		x = 0
 		y = 2
 
@@ -1109,7 +1109,7 @@ focus_tree = {
 		relative_position_id = DPR_defend_of_citites
 
 		available = {
-			date > 2014.6.6
+			date > 2014.7.1
 		}
 
 		completion_reward = {

@@ -3424,6 +3424,18 @@ country_event = {
 		white_peace = SDR
 		white_peace = NDR
 		white_peace = KPR
+		if = {
+			limit = { country_exists = ZPR }
+			white_peace = ZPR
+		}
+		if = {
+			limit = { country_exists = HPR }
+			white_peace = HPR
+		}	
+		if = {
+			limit = { country_exists = OPR }
+			white_peace = OPR
+		}			
 		hidden_effect = {
 			set_global_flag = ATO_Separatists_victory
 			news_event = {
@@ -3487,6 +3499,16 @@ country_event = {
 				transfer_state = 272
 				transfer_state = 246
 				transfer_state = 258			
+			}
+			if = {
+				limit = {
+					country_exists = SKR
+				}
+				SKR = {
+					transfer_state = 387
+					transfer_state = 416
+					transfer_state = 413
+				}
 			}
 			DPR = {
 				transfer_state = 468
@@ -3610,7 +3632,146 @@ country_event = {
 					transfer_state = 295
 					transfer_state = 318
 				}
-			}						
+			}
+			if = {
+				limit = {
+					country_exists = OPR
+				}
+				OPR = {
+					transfer_state = 618
+					transfer_state = 622
+					transfer_state = 606
+					transfer_state = 581
+					transfer_state = 583
+					transfer_state = 626
+					transfer_state = 596
+					transfer_state = 585
+					transfer_state = 567
+					transfer_state = 572
+					transfer_state = 549
+					transfer_state = 499
+					transfer_state = 477
+					transfer_state = 409
+				}
+			}
+			if = {
+				limit = {
+					country_exists = HPR
+				}
+				HPR = {
+					transfer_state = 548
+					transfer_state = 534
+					transfer_state = 510
+					transfer_state = 503
+					transfer_state = 490
+					transfer_state = 561
+					transfer_state = 565
+					transfer_state = 559
+					transfer_state = 552
+					transfer_state = 564
+					transfer_state = 578
+					transfer_state = 576
+					transfer_state = 575
+					transfer_state = 588
+					transfer_state = 587
+					transfer_state = 577
+					transfer_state = 568
+					transfer_state = 597
+					transfer_state = 598
+					transfer_state = 615
+					transfer_state = 574
+					transfer_state = 555
+					transfer_state = 540	
+					transfer_state = 523	
+					transfer_state = 512
+					transfer_state = 544			
+				}
+			}
+			if = {
+				limit = {
+					country_exists = ZPR
+				}
+				ZPR = {
+					transfer_state = 449
+					transfer_state = 423
+					transfer_state = 420
+					transfer_state = 431
+
+					transfer_state = 485
+					transfer_state = 459
+
+					transfer_state = 476
+					transfer_state = 462
+					transfer_state = 497
+					transfer_state = 508
+					transfer_state = 501
+					transfer_state = 495
+					transfer_state = 520
+					transfer_state = 537
+					transfer_state = 557
+					transfer_state = 539
+					transfer_state = 515
+					transfer_state = 592
+					transfer_state = 545
+					transfer_state = 553
+					transfer_state = 541
+					transfer_state = 532
+					transfer_state = 562	
+					transfer_state = 566	
+					transfer_state = 504
+					transfer_state = 484
+					transfer_state = 481
+					transfer_state = 466
+					transfer_state = 478
+					transfer_state = 516
+					transfer_state = 521
+					transfer_state = 509
+					transfer_state = 505
+					transfer_state = 530
+					transfer_state = 500
+					transfer_state = 513
+					transfer_state = 457		
+				}
+			}
+			if = {
+				limit = {
+					country_exists = KPR
+				}
+				KPR = {
+					transfer_state = 167
+					transfer_state = 182
+					transfer_state = 221
+					transfer_state = 213
+					transfer_state = 234
+					transfer_state = 655
+					transfer_state = 247
+					transfer_state = 276
+					transfer_state = 298
+					transfer_state = 275
+					transfer_state = 270
+					transfer_state = 266
+					transfer_state = 238
+					transfer_state = 251
+					transfer_state = 211
+					transfer_state = 226
+					transfer_state = 248
+					transfer_state = 230
+					transfer_state = 208
+					transfer_state = 173
+					transfer_state = 203
+					transfer_state = 212
+					transfer_state = 184
+					transfer_state = 193
+					transfer_state = 244
+					transfer_state = 227
+					transfer_state = 236
+					transfer_state = 199
+					transfer_state = 181
+					transfer_state = 210
+					transfer_state = 165
+                    transfer_state = 219
+				}
+			}																					
 		}
 	}
 }
@@ -3757,5 +3918,76 @@ country_event = {
 	option = {
 		name = ukraine.113.a
 		add_war_support = 0.01
+	}
+}
+
+# Потеря контроля над югом
+country_event = {
+	id = ukraine.114
+	title = ukraine.114.t
+	desc  = ukraine.114.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			451 = { transfer_state_to = ZPR }
+			461 = { transfer_state_to = ZPR }
+			ZPR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				load_oob = ZPR_uprising_millitia
+			}
+			570 = { transfer_state_to = HPR }
+			565 = { transfer_state_to = HPR }
+			HPR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				load_oob = HPR_uprising_millitia
+			}
+			country_event = {
+				id = ukraine.115
+				days = 5
+			}			
+		}
+	}
+
+	option = {
+		name = ukraine.114.a
+		add_war_support = -0.01
+	}
+}
+
+# Восстание в днепре
+country_event = {
+	id = ukraine.115
+	title = ukraine.115.t
+	desc  = ukraine.115.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			372 = { transfer_state_to = DRR }
+			365 = { transfer_state_to = DRR }
+			DRR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				load_oob = DRR_uprising_millitia
+			}		
+		}
+	}
+
+	option = {
+		name = ukraine.115.a
+		add_war_support = -0.01
 	}
 }
