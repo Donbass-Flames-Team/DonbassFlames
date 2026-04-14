@@ -1,7 +1,5 @@
 capital = 633
 
-recruit_character = WGN_dmitry_utkin
-
 2013.11.21 = {
     set_research_slots = 3
 
@@ -11,6 +9,8 @@ recruit_character = WGN_dmitry_utkin
         election_frequency = 48
         elections_allowed = no
     }
+
+    recruit_character = WGN_dmitry_utkin
 
     set_popularities = {
         nationalism = 60
@@ -26,5 +26,4 @@ recruit_character = WGN_dmitry_utkin
         war_economy
         limited_exports
     }
-
 }

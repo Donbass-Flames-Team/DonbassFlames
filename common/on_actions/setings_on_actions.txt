@@ -44,6 +44,23 @@ on_actions = {
 				set_global_flag = EU_SEP_FREE
 			}
 
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = streamer_mode
+						option = STREAMER_ON
+					}
+				}
+
+				WGN_dmitry_utkin = {
+					set_portraits = {
+						civilian = {
+							large = "GFX_portrait_WGN_dmitry_utkin_streamer"
+						}
+					}
+				}
+			}
+
 		}
 	}
 }

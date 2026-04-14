@@ -1,17 +1,22 @@
 characters = {
 
-	WGN_dmitry_utkin = {
-		name = WGN_dmitry_utkin
-		portraits = {
-			civilian = {
-				large = "GFX_portrait_WGN_dmitry_utkin"
-			}
+WGN_dmitry_utkin = {
+    name = WGN_dmitry_utkin
+
+    character_flags = { utkin_character }
+
+    portraits = {
+        civilian = {
+            large = "GFX_portrait_WGN_dmitry_utkin"
+        }
+    }
+
+		country_leader = {
+			ideology = nationalism
+			expire = "2023.7.23.1"
+			id = -1
 		}
-		country_leader={
-			ideology = nazism # Should be replaced - currently Utkin's personal ideology
-			expire="2023.7.23.1"
-			id=-1
-		}
+
 		field_marshal = {
 			traits = { politically_connected }
 			skill = 1
@@ -21,5 +26,4 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-
 }

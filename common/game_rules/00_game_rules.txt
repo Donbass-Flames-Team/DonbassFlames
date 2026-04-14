@@ -40,6 +40,25 @@ wal = {
 	}
 }
 
+Streamer_mode = {
+	name = "STREAMER_MODE"
+	group = "RULE_MOD_SETTINGS"
+
+	default = {
+		name = "STREAMER_OFF"
+		text = "STREAMER_OFF"
+		desc = "STREAMER_OFF_DESC"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = "STREAMER_ON"
+		text = "STREAMER_ON"
+		desc = "STREAMER_ON_DESC"
+		allow_achievements = yes
+	}
+}
+
 sep = {
 	name = "EU_SEP"
 	group = "RULE_MOD_SETTINGS"
