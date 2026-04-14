@@ -1,4 +1,6 @@
 ﻿capital = 517
+set_variable = { cash = 1 }
+set_variable = { debt = -37 }
 set_convoys = 1074
 	set_technology = {
 		infantry_weapons = 1
@@ -105,7 +107,7 @@ diplomatic_relation = {
 		socialism = 11
 		autoritarian_democracy = 54
 	}
-	set_variable = { cash = 1 }
+	
 	give_guarantee = UKR
 }
 

@@ -35,12 +35,14 @@ on_actions = {
 						option = SEP_FREE
 					}
 				}
+
 				MOL = { release = GAG }
 				CRI = { release = CRT }
 				SER = { release = VOJ }
 				RUS = { release = ADY }
 				RUS = { release = CRT }
 				UKR = { release = CRT }
+
 				set_global_flag = EU_SEP_FREE
 			}
 
@@ -51,7 +53,7 @@ on_actions = {
 						option = STREAMER_ON
 					}
 				}
-                
+				set_global_flag = streamer_mode_enabled         
 				set_portraits = {
 					character = WGN_dmitry_utkin
 					civilian = { large = "GFX_portrait_WGN_dmitry_utkin_streamer" }
