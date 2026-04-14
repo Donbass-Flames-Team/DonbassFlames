@@ -51,13 +51,10 @@ on_actions = {
 						option = STREAMER_ON
 					}
 				}
-
-				WGN_dmitry_utkin = {
-					set_portraits = {
-						civilian = {
-							large = "GFX_portrait_WGN_dmitry_utkin_streamer"
-						}
-					}
+                
+				set_portraits = {
+					character = WGN_dmitry_utkin
+					civilian = { large = "GFX_portrait_WGN_dmitry_utkin_streamer" }
 				}
 			}
 
