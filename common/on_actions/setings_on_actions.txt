@@ -53,8 +53,11 @@ on_actions = {
 						option = STREAMER_ON
 					}
 				}
-
-				set_global_flag = streamer_mode_enabled
+				set_global_flag = streamer_mode_enabled         
+				set_portraits = {
+					character = WGN_dmitry_utkin
+					civilian = { large = "GFX_portrait_WGN_dmitry_utkin_streamer" }
+				}
 			}
 
 		}
