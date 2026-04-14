@@ -1,0 +1,82 @@
+division_template = {
+	name = "Battalyon Narodnogo Opolcheniya"
+	regiments = {
+        militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        manpads_platoon = { x = 1 y = 0}
+        sniper_company = { x = 1 y = 1 }
+	}
+    is_locked = yes
+}
+
+division_template = {
+	name = "Narodnoe Opolchenie"
+	regiments = {
+        militia = { x = 0 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        manpads_platoon = { x = 1 y = 0}
+        sniper_company = { x = 1 y = 1 }
+	}
+    is_locked = yes
+}
+
+units = {
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 16584
+        division_template = "Battalyon Narodnogo Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 16517
+        division_template = "Battalyon Narodnogo Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    } 
+
+    division= {
+        name = "Narodnoe opolchenie"
+        location = 10522
+        division_template = "Narodnoe Opolchenie"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+    
+    division= {
+        name = "Narodnoe opolchenie"
+        location = 10522
+        division_template = "Narodnoe Opolchenie"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+    
+    division= {
+        name = "Narodnoe opolchenie"
+        location = 9689
+        division_template = "Narodnoe Opolchenie"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+    
+    
+}

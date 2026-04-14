@@ -64,6 +64,26 @@ on_actions = {
 				set_global_flag = South_uprisings_ato_during
 			}
 		}
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = Start_Of_ATO
+					tag = UKR
+					date > 2014.4.4
+					UKR = {
+						NOT = {
+							controls_state = 596
+							controls_state = 585
+						}
+					}
+					NOT = {
+						has_global_flag = Bessarabska_people_republic_uprising_ato_during
+					}
+				}
+				country_event = { id = ukraine.117 }
+				set_global_flag = Bessarabska_people_republic_uprising_ato_during
+			}
+		}
 	}
 }
 

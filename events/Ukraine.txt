@@ -3455,9 +3455,6 @@ country_event = {
 			LPR = {
 				transfer_state = 406
 				transfer_state = 351
-				transfer_state = 387
-				transfer_state = 413
-				transfer_state = 416
 				transfer_state = 427
 				transfer_state = 363
 				transfer_state = 362
@@ -3508,6 +3505,13 @@ country_event = {
 					transfer_state = 387
 					transfer_state = 416
 					transfer_state = 413
+				}
+				else = {
+				    LPR = {
+					    transfer_state = 387
+					    transfer_state = 416
+					    transfer_state = 413
+				    }					
 				}
 			}
 			DPR = {
@@ -3634,15 +3638,32 @@ country_event = {
 				}
 			}
 			if = {
+				limit = { 
+				    country_exists = BPR
+				}
+				BPR = {
+					transfer_state = 606
+					transfer_state = 618
+					transfer_state = 622
+					transfer_state = 581
+					transfer_state = 583
+				}
+			}
+			if = {
+				limit = { NOT = { country_exists = BPR } }
+				OPR = {
+					transfer_state = 606
+					transfer_state = 618
+					transfer_state = 622
+					transfer_state = 581
+					transfer_state = 583
+				}
+			}			
+			if = {
 				limit = {
 					country_exists = OPR
 				}
 				OPR = {
-					transfer_state = 618
-					transfer_state = 622
-					transfer_state = 606
-					transfer_state = 581
-					transfer_state = 583
 					transfer_state = 626
 					transfer_state = 596
 					transfer_state = 585
@@ -3734,9 +3755,7 @@ country_event = {
 				}
 			}
 			if = {
-				limit = {
-					country_exists = KPR
-				}
+				limit = { country_exists = KPR }
 				KPR = {
 					transfer_state = 167
 					transfer_state = 182
@@ -3770,8 +3789,83 @@ country_event = {
 					transfer_state = 210
 					transfer_state = 165
                     transfer_state = 219
+					transfer_state = 260
 				}
-			}																					
+			}	
+			if = {
+				limit = { country_exists = NPR }
+				NPR = {
+					transfer_state = 492
+					transfer_state = 571
+					transfer_state = 536
+					transfer_state = 439
+					transfer_state = 422
+					transfer_state = 482
+					transfer_state = 407
+					transfer_state = 428
+				}
+			}
+			if = {
+				limit = { 
+				    country_exists = DRR
+					NOT = {
+						country_exists = DRP
+					} 
+				}
+				DRR = {
+					transfer_state = 345
+					transfer_state = 302
+					transfer_state = 368
+					transfer_state = 354
+					transfer_state = 393
+					transfer_state = 281
+					transfer_state = 367
+					transfer_state = 371
+					transfer_state = 336
+
+					transfer_state = 374
+                    transfer_state = 440
+					transfer_state = 475
+					transfer_state = 480
+					transfer_state = 396
+					transfer_state = 411
+					transfer_state = 319
+					transfer_state = 372
+					transfer_state = 365
+					transfer_state = 350
+
+				}
+			}
+			if = {
+				limit = { 
+				    country_exists = DRR
+					country_exists = DRP
+				}
+				DRR = {
+					transfer_state = 345
+					transfer_state = 302
+					transfer_state = 368
+					transfer_state = 354
+					transfer_state = 393
+					transfer_state = 281
+					transfer_state = 367
+					transfer_state = 371
+					transfer_state = 336
+				}
+                DRP = {
+					transfer_state = 374
+                    transfer_state = 440
+					transfer_state = 475
+					transfer_state = 480
+					transfer_state = 396
+					transfer_state = 411
+					transfer_state = 319
+					transfer_state = 372
+					transfer_state = 365
+					transfer_state = 350
+
+				}
+			}																													
 		}
 	}
 }
@@ -3822,13 +3916,13 @@ country_event = {
 	}
 	option = {
 		name = ukraine.110.b
-		add_political_power = -30
+		add_political_power = -20
 	}	
 	option = {
 		name = ukraine.110.c
-		add_political_power = -85
+		add_political_power = -55
 		hidden_effect = {
-
+            set_country_flag = Kolomysky_has_more_powers
 		}
 	}	
 }
@@ -3974,14 +4068,19 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			372 = { transfer_state_to = DRR }
-			365 = { transfer_state_to = DRR }
+			336 = { transfer_state_to = DRR }
+			358 = { transfer_state_to = DRR }
+			287 = { transfer_state_to = DRR }
+			DRP = {
+				add_state_core = 336
+				add_state_core = 358
+			}
 			DRR = {
-				declare_war_on = {
-                    target = UKR
-                    type = annex_everything
-                }
 				load_oob = DRR_uprising_millitia
+			}
+			country_event = { 
+				id = ukraine.116
+				days = 1
 			}		
 		}
 	}
@@ -3989,5 +4088,114 @@ country_event = {
 	option = {
 		name = ukraine.115.a
 		add_war_support = -0.01
+	}
+}
+
+# Коломойский берет контроль над Днепром
+country_event = {
+	id = ukraine.116
+	title = ukraine.116.t
+	desc  = ukraine.116.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			372 = { transfer_state_to = DRP }
+			365 = { transfer_state_to = DRP }
+			350 = { transfer_state_to = DRP }
+
+			DRP = {
+				add_state_core = 372
+				add_state_core = 365
+				add_state_core = 336
+				add_state_core = 358				
+			}
+			DRP = {
+				declare_war_on = {
+                    target = DRR
+                    type = annex_everything
+                }
+			}		
+		}
+	}
+
+	option = {
+		name = ukraine.116.a
+	}
+
+	option = {
+		name = ukraine.116.b
+		DRR = {
+			change_tag_from = root
+		}
+	}
+
+}
+
+# Восстание Бессарабской Народной Республики
+country_event = {
+	id = ukraine.117
+	title = ukraine.117.t
+	desc  = ukraine.117.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			622 = { transfer_state_to = BPR }
+			618 = { transfer_state_to = BPR }
+			BPR = {
+				add_state_core = 622
+				add_state_core = 618
+				add_state_core = 606
+			}
+			BPR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				load_oob = BPR_uprising_millitia
+			}		
+		}
+	}
+
+	option = {
+		name = ukraine.117.a
+	}
+}
+
+# Восстание Николаеве
+country_event = {
+	id = ukraine.118
+	title = ukraine.118.t
+	desc  = ukraine.118.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			547 = { transfer_state_to = NPR }
+			546 = { transfer_state_to = NPR }
+			NPR = {
+				add_state_core = 547
+				add_state_core = 546
+				add_state_core = 492
+			}
+			NPR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				load_oob = NPR_uprising_millitia
+			}		
+		}
+	}
+
+	option = {
+		name = ukraine.118.a
 	}
 }
