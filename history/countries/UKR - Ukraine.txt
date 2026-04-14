@@ -1,4 +1,6 @@
 capital = 154
+set_variable = { cash = 1 }
+set_variable = { debt = -257 }
 DF_economy_setup = yes
 set_convoys = 417
 
@@ -46,7 +48,6 @@ set_convoys = 417
     set_variable = { UKR_AFU_army_speed_factor = -0.15 }
 	set_variable = { UKR_AFU_war_breakthrough_factor = -0.15 }
 	set_variable = { UKR_AFU_war_support_factor = -0.15 }
-	set_variable = { UKR_AFU_conscription = -0.02 } 
 
 	add_dynamic_modifier = { modifier = UKR_oligarchs_idea }
 	set_variable = { UKR_Oligarchs_political_power_gain = 0.15 }
@@ -307,11 +308,8 @@ set_convoys = 417
 		target = RUS
 		modifier = kharkiv_pact
 	}
-
-	add_manpower = 60000
-
-	set_variable = { cash = 8 }
-	set_variable = { debt = -146.94 }
+	
+	
 }
 
 2014.3.31 = {
