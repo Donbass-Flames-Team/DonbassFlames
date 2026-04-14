@@ -1194,8 +1194,31 @@ focus = {
 	}
 
 	completion_reward = {
+		release = WGN
 		633 = { transfer_state_to = WGN }
 		633 = { add_core_of = WGN }
+
+		WGN = {
+			recruit_character = WGN_dmitry_utkin
+		}
+
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = streamer_mode
+					option = STREAMER_ON
+				}
+			}
+
+			WGN = {
+				set_portraits = {
+					character = WGN_dmitry_utkin
+					civilian = {
+						large = "GFX_portrait_WGN_dmitry_utkin_streamer"
+					}
+				}
+			}
+		}
 	}
 }
 

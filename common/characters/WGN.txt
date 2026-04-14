@@ -1,15 +1,13 @@
 characters = {
 
-WGN_dmitry_utkin = {
-    name = WGN_dmitry_utkin
+	WGN_dmitry_utkin = {
+		name = WGN_dmitry_utkin
 
-    character_flags = { utkin_character }
-
-    portraits = {
-        civilian = {
-            large = "GFX_portrait_WGN_dmitry_utkin"
-        }
-    }
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_WGN_dmitry_utkin"
+			}
+		}
 
 		country_leader = {
 			ideology = nationalism
