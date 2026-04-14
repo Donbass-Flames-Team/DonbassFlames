@@ -3533,7 +3533,6 @@ country_event = {
 				transfer_state = 429
 				transfer_state = 511
 				transfer_state = 446
-				transfer_state = 353
 				transfer_state = 489
 				transfer_state = 448
 				transfer_state = 467
@@ -3566,11 +3565,6 @@ country_event = {
 				transfer_state = 390
 				transfer_state = 391
 				transfer_state = 380
-				transfer_state = 337
-				transfer_state = 359
-				transfer_state = 342
-				transfer_state = 328
-				transfer_state = 347
 			}
 			if = {
 				limit = {
@@ -3623,6 +3617,15 @@ country_event = {
 					transfer_state = 317
 					transfer_state = 324
 					transfer_state = 295
+					transfer_state = 388
+					transfer_state = 395
+					transfer_state = 573
+					transfer_state = 353
+					transfer_state = 337
+					transfer_state = 359
+					transfer_state = 342
+					transfer_state = 347
+				transfer_state = 328					
 				}
 			}
 			if = {
@@ -3641,6 +3644,14 @@ country_event = {
 					transfer_state = 324
 					transfer_state = 295
 					transfer_state = 318
+					transfer_state = 388
+					transfer_state = 395
+					transfer_state = 353
+					transfer_state = 337
+					transfer_state = 359
+					transfer_state = 342
+					transfer_state = 347
+				    transfer_state = 328					
 				}
 			}
 			if = {
@@ -3716,7 +3727,10 @@ country_event = {
 			}
 			if = {
 				limit = {
-					country_exists = ZPR
+					OR = {
+					    country_exists = ZPR
+						country_exists = DRR
+					}
 				}
 				ZPR = {
 					transfer_state = 449
@@ -4123,6 +4137,7 @@ country_event = {
                     target = DRR
                     type = annex_everything
                 }
+				load_oob = DRP_millitia
 			}		
 		}
 	}

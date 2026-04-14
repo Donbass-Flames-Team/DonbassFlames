@@ -1,0 +1,29 @@
+units = {
+    division= {
+        name = "Pidrozdily narodnoho opolchennya"
+        location = 11230
+        division_template = "Zahony narodnoho opolchennya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "Pidrozdily narodnoho opolchennya"
+        location = 15298
+        division_template = "Zahony narodnoho opolchennya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    } 
+
+    division= {
+        name = "Pidrozdily narodnoho opolchennya"
+        location = 1658
+        division_template = "Zahony narodnoho opolchennya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }  
+    
+}

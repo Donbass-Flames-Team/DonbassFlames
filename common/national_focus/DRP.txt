@@ -1,0 +1,117 @@
+focus_tree = {
+	id = dneprovskaya_administracia
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = DRP
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2500 y = 500 }
+	
+	focus = {
+		id = DRP_introduce_martial_law
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.2
+		x = 12
+		y = 0
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = DRP_mobilization_of_mvd
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.2
+
+		prerequisite = {
+			focus =  DRP_introduce_martial_law
+		}
+		relative_position_id = DRP_introduce_martial_law
+		x = 0
+		y = 1
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			load_oob = DRP_MVS_mobilization
+		}
+	}
+	
+	focus = {
+		id = DRP_mobilization_of_activists
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.2
+
+		prerequisite = {
+			focus =  DRP_mobilization_of_mvd
+		}
+		relative_position_id = DRP_introduce_martial_law
+		x = 1
+		y = 2
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			load_oob = DRP_activists_mobilization
+		}
+	}
+	
+	focus = {
+		id = DRP_barricades
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.2
+
+		prerequisite = {
+			focus =  DRP_mobilization_of_mvd
+		}
+		relative_position_id = DRP_introduce_martial_law
+		x = -1
+		y = 2
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = DRP_expand_the_company_10000
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.2
+
+		prerequisite = { focus =  DRP_barricades }
+		prerequisite = { focus =  DRP_mobilization_of_activists }
+		relative_position_id = DRP_introduce_martial_law
+		x = 0
+		y = 3
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.1
+			add_political_power = -30
+		}
+	}
+
+
+}

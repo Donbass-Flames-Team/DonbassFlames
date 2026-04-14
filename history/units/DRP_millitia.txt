@@ -1,0 +1,80 @@
+division_template = {
+	name = "Zahony narodnoho opolchennya"
+	regiments = {
+        militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        manpads_platoon = { x = 1 y = 0}
+        sniper_company = { x = 1 y = 1 }
+	}
+    is_locked = yes
+}
+
+division_template = {
+	name = "MVS"
+	regiments = {
+        militia = { x = 0 y = 0 }
+        militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		sniper_company = { x = 0 y = 2 }
+	}
+    is_locked = yes
+}
+
+units = {
+    division= {
+        name = "Pidrozdily MVS"
+        location = 15321
+        division_template = "MVS"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "Pidrozdily MVS"
+        location = 15299
+        division_template = "MVS"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    } 
+
+    division= {
+        name = "Pidrozdily MVS"
+        location = 15342
+        division_template = "MVS"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+    
+    division= {
+        name = "Pidrozdily MVS"
+        location = 1658
+        division_template = "MVS"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.8
+    } 
+    
+    division= {
+        name = "Pidrozdily MVS"
+        location = 15298
+        division_template = "MVS"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.8
+    }    
+    
+}
