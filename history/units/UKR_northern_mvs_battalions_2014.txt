@@ -1,0 +1,39 @@
+units = {
+    division= {
+        name = "Batalyon politsiyi «Poltava»"
+        location = 14464
+        division_template = "Dobrovol'che formuvannya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "Rota patrulnoyi sluzhby politsiyi osoblyvoho pryznachennya «Chernihiv»"
+        location = 12890
+        division_template = "Rota politsiyi"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    } 
+    
+    division= {
+        name = "Rota patrulnoyi sluzhby politsiyi osoblyvoho pryznachennya «Sumy»"
+        location = 13395
+        division_template = "Rota politsiyi"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }  
+
+    division= {
+        name = "Rota militsiyi «Kremenchuk»"
+        location = 14895
+        division_template = "Rota politsiyi"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }    
+    
+    
+}

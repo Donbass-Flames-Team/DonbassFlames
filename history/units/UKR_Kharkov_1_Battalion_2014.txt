@@ -7,4 +7,23 @@ units = {
         start_equipment_factor = 0.5
 		start_manpower_factor = 1
     }
+
+    division= {
+        name = "Operatyvna rota militsiyi osoblyvoho pryznachennya «Kharkiv-2»"
+        location = 8540
+        division_template = "Rota politsiyi"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "Batalyon politsiyi «Slobozhanshchyna»"
+        location = 8540
+        division_template = "Dobrovol'che formuvannya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
 }
