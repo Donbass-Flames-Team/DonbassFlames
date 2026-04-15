@@ -1,0 +1,39 @@
+units = {
+    division= {
+        name = "Batalyon politsiyi osoblyvoho pryznachennya «Vinnytsya»"
+        location = 3756
+        division_template = "Dobrovol'che formuvannya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "Rota politsiyi osoblyvoho pryznachennya «Ivano-Frankivsk»"
+        location = 11708
+        division_template = "Rota politsiyi"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    } 
+    
+    division= {
+        name = "Rota patrulnoyi sluzhby politsiyi osoblyvoho pryznachennya «Ternopil»"
+        location = 14504
+        division_template = "Rota politsiyi"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }  
+
+    division= {
+        name = "Batalyon patrulnoyi sluzhby politsiyi osoblyvoho pryznachennya «Lviv»"
+        location = 10998
+        division_template = "Dobrovol'che formuvannya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }    
+    
+    
+}

@@ -3669,7 +3669,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 15
 		complete_effect = {
 			custom_effect_tooltip = UKR_Artemivsk_Battalion_formed_tt
 			hidden_effect = {
@@ -3690,7 +3690,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 15
 		complete_effect = {
 			custom_effect_tooltip = UKR_Dnipro_Battalion_formed_tt
 			hidden_effect = {
@@ -3711,7 +3711,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 15
 		complete_effect = {
 			custom_effect_tooltip = UKR_Dnipro2_Battalion_formed_tt
 			hidden_effect = {
@@ -3732,7 +3732,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 15
 		complete_effect = {
 			custom_effect_tooltip = UKR_Dnipropetrovsk_Battalion_formed_tt
 			hidden_effect = {
@@ -3753,7 +3753,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions_of_mvd
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 15
 		complete_effect = {
 			custom_effect_tooltip = UKR_Donbas_Battalion_formed_tt
 			hidden_effect = {
@@ -3764,6 +3764,69 @@ UKR_ATO_volunteer_battalions_decision = {
 			factor = 100
 		}
 	}
+
+	UKR_volunteer_battalion_mvd_western_units = {
+		icon = GFX_decision_UKR_batalion_donbass
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			has_completed_focus = UKR_volunteer_battalions_of_mvd
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			custom_effect_tooltip = UKR_western_mvd_units_formed_tt
+			hidden_effect = {
+				load_oob = "UKR_western_mvs_battalions_2014"
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	UKR_volunteer_battalion_mvd_southern_units = {
+		icon = GFX_decision_UKR_batalion_donbass
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			has_completed_focus = UKR_volunteer_battalions_of_mvd
+		}
+		fire_only_once = yes
+		cost = 35
+		complete_effect = {
+			custom_effect_tooltip = UKR_southern_mvd_units_formed_tt
+			hidden_effect = {
+				load_oob = "UKR_southern_mvs_battalions_2014"
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}	
+
+	UKR_volunteer_battalion_mvd_bohdan = {
+		icon = GFX_decision_UKR_batalion_donbass
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			has_completed_focus = UKR_volunteer_battalions_of_mvd
+		}
+		fire_only_once = yes
+		cost = 15
+		complete_effect = {
+			custom_effect_tooltip = UKR_battalion_mvd_bohdan_formed_tt
+			hidden_effect = {
+				load_oob = "UKR_bohdan_Battalion_2014"
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}	
 
 	UKR_volunteer_battalion_goldgates = {
 		icon = GFX_decision_UKR_batalion_goldgates

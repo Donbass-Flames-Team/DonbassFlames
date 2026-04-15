@@ -4290,7 +4290,7 @@ focus_tree = {
 	focus = {
 		id = UKR_volunteer_battalions_of_mvd
 		icon = GFX_focus_UKR_volunteer_mvd_battalions
-		cost = 0.5
+		cost = 0.2
 		x = 0
 		y = 1
 
@@ -4310,6 +4310,23 @@ focus_tree = {
 			add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
 		    add_political_power = 25
 			hidden_effect = {
+				division_template = {
+	                name = "Rota politsiyi"
+	                regiments = {
+                        territorial_defense_unit = { x = 0 y = 0 }
+		                territorial_defense_unit = { x = 0 y = 1 }
+	                }
+                    support = {
+                        engineer = { x = 0 y = 0 }
+                        recon = { x = 0 y = 1 }
+                        mortar = { x = 0 y = 2 }
+				        atgm_company = { x = 0 y = 3 }
+        		        field_hospital = { x = 0 y = 4} 
+        		        sniper_company = { x = 1 y = 0 }
+        		        signal_company = { x = 1 y = 1}
+  				        logistics_company = { x = 1 y = 2}
+	                }
+                }
 				if = {
 					limit = {
 						UKR = {

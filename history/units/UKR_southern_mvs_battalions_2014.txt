@@ -1,0 +1,39 @@
+units = {
+    division= {
+        name = "Batalyon politsiyi «Mykolayiv»"
+        location = 16584
+        division_template = "Dobrovol'che formuvannya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "Rota politsiyi «Kherson»"
+        location = 18306
+        division_template = "Rota politsiyi"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    } 
+    
+    division= {
+        name = "Rota militsiyi «Tornado»"
+        location = 11314
+        division_template = "Rota politsiyi"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }  
+
+    division= {
+        name = "Batalyon politsiyi osoblyvoho pryznachennya «Skif»"
+        location = 11510
+        division_template = "Dobrovol'che formuvannya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }    
+    
+    
+}
