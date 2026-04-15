@@ -91,12 +91,57 @@ division_template = {
 }
 
 division_template = {
-	name = "SSO «Alpha»"
+	name = "SBU «Alpha»"
 	regiments = {
         special_forces_infantry = { x = 0 y = 0 }
 		special_forces_infantry = { x = 0 y = 1 }
 		special_forces_infantry = { x = 0 y = 2 }
         special_forces_infantry = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "SSO"
+	regiments = {
+        special_forces_infantry = { x = 0 y = 0 }
+		special_forces_infantry = { x = 0 y = 1 }
+		special_forces_infantry = { x = 0 y = 2 }
+        special_forces_infantry = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Batalyon hur"
+	regiments = {
+        special_forces_infantry = { x = 0 y = 0 }
+		special_forces_infantry = { x = 0 y = 1 }
+		special_forces_infantry = { x = 0 y = 2 }
 	}
     support = {
         engineer = { x = 0 y = 0 }
@@ -717,6 +762,117 @@ units = {
 		start_equipment_factor = 0.65
 		start_manpower_factor = 0.7
 	}
+    #Okremyy tsentr spetsialʹnykh operatsiy «Voskhod»
+    division= {
+		name = "1-y zagin SSO 3-ho okremoho polku spetsialnoho pryznachennya"
+		location = 13924
+		division_template = "SSO"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "2-y zagin SSO 3-ho okremoho polku spetsialnoho pryznachennya"
+		location = 13924
+		division_template = "SSO"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "3-y zagin SSO 3-ho okremoho polku spetsialnoho pryznachennya"
+		location = 13924
+		division_template = "SSO"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	} 
+    #Okremyy tsentr spetsialʹnykh operatsiy «Zakhid»
+    division= {
+		name = "1-y zagin SSO 8-ho okremoho polku spetsialnoho pryznachennya"
+		location = 13924
+		division_template = "SSO"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "2-y zagin SSO 8-ho okremoho polku spetsialnoho pryznachennya"
+		location = 13924
+		division_template = "SSO"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "3-y zagin SSO 8-ho okremoho polku spetsialnoho pryznachennya"
+		location = 13924
+		division_template = "SSO"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}   
+
+    division= {
+		name = "10-y okremyy zagin spetsialnogo pryznachena imeni general-mayora Maxima Shapovala"
+		location = 16584
+		division_template = "Batalyon hur"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}    
+
+    ## Tsentr spetsialʹnoho pryznachennya "Omeha" Natsionalʹnoyi hvardiyi Ukrayiny
+    division= {
+		name = "1-y zagin Tsentra spetsialnoho pryznachennya «Omeha» Natsionalnoyi hvardiyi Ukrayiny"
+		location = 1565
+		division_template = "SSO"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "2-y zagin Tsentra spetsialnoho pryznachennya «Omeha» Natsionalnoyi hvardiyi Ukrayiny"
+		location = 14119
+		division_template = "SSO"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "3-y zagin Tsentra spetsialnoho pryznachennya «Omeha» Natsionalnoyi hvardiyi Ukrayiny"
+		location = 11059
+		division_template = "SSO"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}   
+
+    division= {
+		name = "4-y zagin Tsentra spetsialnoho pryznachennya «Omeha» Natsionalnoyi hvardiyi Ukrayiny"
+		location = 10998
+		division_template = "SSO"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}
+
+    division= {
+		name = "5-y zagin Tsentra spetsialnoho pryznachennya «Omeha» Natsionalnoyi hvardiyi Ukrayiny"
+		location = 15143
+		division_template = "SSO"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.7
+	}    
+    
+    
 }
 
 
