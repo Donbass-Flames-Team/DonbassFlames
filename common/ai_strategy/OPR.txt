@@ -1,0 +1,28 @@
+OPR_uprising_push = {
+	allowed = {
+		original_tag = OPR
+	}
+
+	enable = {
+		has_war_with = UKR
+	}
+
+	abort = {
+		NOT = {
+			has_war_with = UKR
+		}
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = UKR
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = garrison
+		value = -500
+	}
+}
