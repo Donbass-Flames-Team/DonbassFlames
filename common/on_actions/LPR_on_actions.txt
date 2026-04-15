@@ -1,0 +1,21 @@
+on_actions = {
+
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = Start_Of_ATO
+					tag = LPR
+					SLR = {
+						surrender_progress > 0.95
+					}
+					NOT = {
+						has_global_flag = Mozgovoy_evacuated_to_alcheevsk
+					}
+				}
+				country_event = { id = SKR.1 }
+			}
+		}
+	}
+}
+

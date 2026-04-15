@@ -1,0 +1,70 @@
+capital = 340
+set_variable = { cash = 1 }
+set_variable = { debt = -1 }
+
+
+2013.11.21 = {
+	recruit_character = aleksey_mozgovoi
+	
+	set_technology = {
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		infantry_weapons3 = 1
+		infantry_weapons4 = 1
+
+		atgm_weapons = 1
+		atgm_weapons1 = 1
+		atgl_weapons = 1
+		atgl_weapons_1 = 1
+		atgl_weapons_2 = 1
+		atgl_weapons_3 = 1
+		atgl_weapons_4 = 1
+		manpads_weapons = 1
+		manpads_weapons2 = 1
+		manpads_weapons3 = 1
+		mortar_weapons = 1
+		mortar_weapons1 = 1
+		mortar_weapons2 = 1
+		mortar_weapons3 = 1
+		basic_train = 1 
+
+		tech_support = 1
+
+		toward_artilery = 1
+		spau_artillery = 1
+		multiple_launch_rocket_system = 1
+		uniform_equipment = 1
+		uniform_equipment1 = 1
+		uniform_equipment2 = 1
+	}
+
+	add_equipment_to_stockpile = {
+		type = train_equipment_1
+		amount = 1
+		producer = SLR
+	}	
+
+	add_ideas = {
+		service_by_requirement
+		closed_economy
+		war_economy
+    }
+
+	set_politics = {
+		ruling_party = autoritarian_democracy
+		last_election = "2014.02.07"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+        communism = 42
+        nationalism = 32
+        autoritarian_democracy = 18
+        conservatism_democracy = 6
+        liberal_democracy = 2
+        social_democracy = 0
+    }
+
+}

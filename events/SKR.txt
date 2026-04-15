@@ -1,0 +1,34 @@
+﻿###########################
+# NDR Events
+###########################
+
+add_namespace = SKR
+
+# отступление мозгового из северодонецка
+country_event = {
+	id = SKR.1
+	title = SKR.1.t
+	desc = SKR.1.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Mozgovoy_evacuated_to_alcheevsk
+			SLR = {
+				teleport_armies = {
+                    limit = {
+                        has_global_flag = Mozgovoy_evacuated_to_alcheevsk
+                    }
+                    to_state = 370
+                }
+			}
+		}
+	}
+	
+	option = {
+		name = SKR.1.a
+		
+	}
+}

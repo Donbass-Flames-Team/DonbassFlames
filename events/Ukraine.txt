@@ -235,6 +235,18 @@ country_event = {
 				add_state_core = 387
 				add_state_core = 413
 			}
+			304 = { transfer_state_to = SLR }
+			SLR = {
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				load_oob = SLR_Uprising_Militia
+				add_state_core = 304
+				add_state_core = 307
+				add_state_core = 297
+				add_state_core = 305
+			}			
 		if = {
 			limit = {
 				check_variable = {
