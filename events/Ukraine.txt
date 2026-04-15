@@ -3456,7 +3456,15 @@ country_event = {
 		if = {
 			limit = { country_exists = OPR }
 			white_peace = OPR
-		}			
+		}
+		if = {
+			limit = { country_exists = SKR }
+			white_peace = SKR
+		}
+		if = {
+			limit = { country_exists = BPR }
+			white_peace = BPR
+		}					
 		hidden_effect = {
 			set_global_flag = ATO_Separatists_victory
 			news_event = {
@@ -4078,8 +4086,14 @@ country_event = {
 			}
 			country_event = {
 				id = ukraine.115
-				days = 5
+				days = 3
+				random_days = 6
 			}			
+			country_event = {
+				id = ukraine.117
+				days = 4
+				random_days = 8
+			}
 		}
 	}
 

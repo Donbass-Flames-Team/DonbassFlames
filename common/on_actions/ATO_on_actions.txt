@@ -7,7 +7,7 @@ on_actions = {
 					has_global_flag = Start_Of_ATO
 					tag = UKR
 					date > 2014.4.4
-					surrender_progress > 0.22
+					surrender_progress > 0.25
 					NOT = {
 						526 = {
 							is_controlled_by = UKR
@@ -55,7 +55,7 @@ on_actions = {
 					has_global_flag = Start_Of_ATO
 					tag = UKR
 					date > 2014.4.4
-					surrender_progress > 0.15
+					surrender_progress > 0.18
 					NOT = {
 						has_global_flag = South_uprisings_ato_during
 					}
