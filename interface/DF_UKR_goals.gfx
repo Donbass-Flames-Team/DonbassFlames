@@ -154,5 +154,35 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/UKR/UKR_partial_mobilization.dds"
     }
 
+    #########################
+    ### KOLOMOYSKY DNEPR ####
+    #########################
+
+
+    spriteType = {
+        name = "GFX_focus_DRP_barricades"
+        texturefile = "gfx/interface/goals/DRP/DRP_barricades.png"
+    }
+
+    spriteType = {
+        name = "GFX_focus_DRP_expand_the_company_10000"
+        texturefile = "gfx/interface/goals/DRP/DRP_expand_the_company_10000.png"
+    }
+
+    spriteType = {
+        name = "GFX_focus_DRP_introduce_martial_law"
+        texturefile = "gfx/interface/goals/DRP/DRP_introduce_martial_law.jpg"
+    }
+
+    spriteType = {
+        name = "GFX_focus_DRP_mobilization_of_activists"
+        texturefile = "gfx/interface/goals/DRP/DRP_mobilization_of_activists.png"
+    }
+
+    spriteType = {
+        name = "GFX_focus_DRP_mobilization_of_mvd"
+        texturefile = "gfx/interface/goals/DRP/DRP_mobilization_of_mvd.png"
+    }    
+
 
 }

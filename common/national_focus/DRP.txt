@@ -12,7 +12,7 @@ focus_tree = {
 	
 	focus = {
 		id = DRP_introduce_martial_law
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DRP_introduce_martial_law
 		cost = 0.2
 		x = 12
 		y = 0
@@ -29,7 +29,7 @@ focus_tree = {
 
 	focus = {
 		id = DRP_mobilization_of_mvd
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DRP_mobilization_of_mvd
 		cost = 0.2
 
 		prerequisite = {
@@ -50,7 +50,7 @@ focus_tree = {
 	
 	focus = {
 		id = DRP_mobilization_of_activists
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DRP_mobilization_of_activists
 		cost = 0.2
 
 		prerequisite = {
@@ -72,7 +72,7 @@ focus_tree = {
 	
 	focus = {
 		id = DRP_barricades
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DRP_barricades
 		cost = 0.2
 
 		prerequisite = {
@@ -93,7 +93,7 @@ focus_tree = {
 	
 	focus = {
 		id = DRP_expand_the_company_10000
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DRP_expand_the_company_10000
 		cost = 0.2
 
 		prerequisite = { focus =  DRP_barricades }

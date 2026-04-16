@@ -17,11 +17,30 @@ characters = {
 
 		field_marshal = {
 			traits = { politically_connected }
-			skill = 1
+			skill = 2
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
 		}
 	}
+
+    DRP_viktor_babenko = {
+        name = DRP_viktor_babenko
+
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_viktor_babenko"
+            }
+        }
+
+		corps_commander = {
+			traits = { politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}	
 }
