@@ -325,6 +325,36 @@ UKR_separatism_decision = {
 		}
 	}
 
+	UKR_zakarpatie_uprising = {
+		icon = GFX_decision_flag_of_zkr
+		is_good = no
+		days_mission_timeout = 25
+		selectable_mission = no
+		fire_only_once = yes
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			NOT = { 
+				has_global_flag = UKR_zakarpatie_rallies
+			}
+		}
+		activation = {
+			has_global_flag = UKR_zakarpatie_rallies
+		}
+		visible = {
+			has_global_flag = UKR_zakarpatie_rallies
+		}
+		timeout_effect = {
+			custom_effect_tooltip = zkr_uprising_tt
+            clr_global_flag = UKR_zakarpatie_rallies
+			hidden_effect = {
+				country_event = ukraine.120
+				set_country_flag = UKR_zakarpatie_uprised
+			}
+		}
+	}
+
 	UKR_luhansk_uprising = {
 		icon = GFX_decision_flag_of_lpr
 		is_good = no

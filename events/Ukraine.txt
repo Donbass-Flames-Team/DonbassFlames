@@ -4090,7 +4090,7 @@ country_event = {
 				random_days = 6
 			}			
 			country_event = {
-				id = ukraine.117
+				id = ukraine.118
 				days = 4
 				random_days = 8
 			}
@@ -4246,3 +4246,95 @@ country_event = {
 		name = ukraine.118.a
 	}
 }
+
+# Волнение в Закарпатье
+country_event = {
+	id = ukraine.119
+	title = ukraine.119.t
+	desc  = ukraine.119.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = ukraine.119.a
+        activate_mission = UKR_zakarpatie_uprising
+		set_global_flag = UKR_zakarpatie_rallies
+	}
+}
+
+# Закарапатье отсоединяется
+country_event = {
+	id = ukraine.120
+	title = ukraine.120.t
+	desc  = ukraine.120.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			ZKR = {
+				add_state_core = 331
+			}
+			331 = { transfer_state_to = ZKR }
+			361 = { transfer_state_to = ZKR }
+			385 = { transfer_state_to = ZKR }
+			382 = { transfer_state_to = ZKR }
+			315 = { transfer_state_to = ZKR }
+			289 = { transfer_state_to = ZKR }
+			375 = { transfer_state_to = ZKR }
+		}
+	}
+
+	option = {
+		name = ukraine.120.a
+        
+	}
+
+	option = {
+		name = ukraine.120.b
+        
+	}
+	
+	option = {
+		name = ukraine.120.c
+		ZKR = {
+			change_tag_from = ROOT
+		}
+	}	
+}
+
+# Рост праврадикальных идей
+country_event = {
+	id = ukraine.121
+	title = ukraine.121.t
+	desc  = ukraine.121.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = ukraine.121.a
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.065
+        }
+		add_popularity = {
+            ideology = nationalism
+            popularity = 0.085
+        }
+		add_political_power = -15
+		add_stability = -0.01
+	}
+	
+}
+
+

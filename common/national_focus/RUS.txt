@@ -1176,7 +1176,7 @@ focus_tree = {
 		}
 	}
 
-focus = {
+    focus = {
 	id = RUS_PMC
 	icon = GFX_goal_no_focus_RUS
 	cost = 1
@@ -1194,46 +1194,27 @@ focus = {
 	}
 
 	completion_reward = {
-		release = WGN
 		633 = { transfer_state_to = WGN }
 		633 = { add_core_of = WGN }
-		WGN = {
-			recruit_character = WGN_dmitry_utkin
-		}
 
-		if = {
-			limit = {
-				has_game_rule = {
-					rule = streamer_mode
-					option = STREAMER_ON
-				}
-			}
-
-			WGN = {
-				set_portraits = {
-					character = WGN_dmitry_utkin
-					civilian = {
-						large = "GFX_portrait_WGN_dmitry_utkin_streamer"
-					}
-				}
-		hidden_effect = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = streamer_mode
-						option = STREAMER_ON
-					}
-				}
-                WGN = {
-				set_portraits = {
-					character = WGN_dmitry_utkin
-					civilian = { large = "gfx/leaders/WGN/WGN_dmitry_utkin_streamer.dds" }
-				}
+		    hidden_effect = {
+			    if = {
+				    limit = {
+					    has_game_rule = {
+						    rule = streamer_mode
+						    option = STREAMER_ON
+					    }
+				    }
+                    WGN = {
+				    set_portraits = {
+					    character = WGN_dmitry_utkin
+					    civilian = { large = "gfx/leaders/WGN/WGN_dmitry_utkin_streamer.dds" }
+				    }
 			    } 
-			}
-		}
-	}
-}
+			    }
+		    }
+	    }
+    }
 
 	focus = {
 		id = RUS_minsk_protocols
