@@ -11,7 +11,7 @@ focus_tree = {
 	continuous_focus_position = { x = 2500 y = 500 }
 	
 	focus = {
-		id = DRP_introduce_martial_law
+		id = MLR_rise_up_ukraine
 		icon = GFX_focus_DRP_introduce_martial_law
 		cost = 0.2
 		x = 12
@@ -28,14 +28,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DRP_mobilization_of_mvd
+		id = MLR_russian_help
 		icon = GFX_focus_DRP_mobilization_of_mvd
 		cost = 0.2
 
 		prerequisite = {
-			focus =  DRP_introduce_martial_law
+			focus =  MLR_rise_up_ukraine
 		}
-		relative_position_id = DRP_introduce_martial_law
+		relative_position_id = MLR_rise_up_ukraine
 		x = 0
 		y = 1
 
@@ -44,19 +44,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			load_oob = DRP_MVS_mobilization
+			#load_oob = 
 		}
 	}
 	
 	focus = {
-		id = DRP_mobilization_of_activists
+		id = MLR_ukranian_liberation_army
 		icon = GFX_focus_DRP_mobilization_of_activists
 		cost = 0.2
 
 		prerequisite = {
-			focus =  DRP_mobilization_of_mvd
+			focus =  MLR_rise_up_ukraine
 		}
-		relative_position_id = DRP_introduce_martial_law
+		relative_position_id = MLR_rise_up_ukraine
 		x = 1
 		y = 2
 
@@ -66,19 +66,19 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.05
-			load_oob = DRP_activists_mobilization
+			#load_oob = 
 		}
 	}
 	
 	focus = {
-		id = DRP_barricades
+		id = MLR_strengthen_cities
 		icon = GFX_focus_DRP_barricades
 		cost = 0.2
 
 		prerequisite = {
-			focus =  DRP_mobilization_of_mvd
+			focus =  MLR_rise_up_ukraine
 		}
-		relative_position_id = DRP_introduce_martial_law
+		relative_position_id = MLR_rise_up_ukraine
 		x = -1
 		y = 2
 
@@ -92,13 +92,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = DRP_expand_the_company_10000
+		id = MLR_we_crush_the_banderites
 		icon = GFX_focus_DRP_expand_the_company_10000
 		cost = 0.2
 
-		prerequisite = { focus =  DRP_barricades }
-		prerequisite = { focus =  DRP_mobilization_of_activists }
-		relative_position_id = DRP_introduce_martial_law
+		prerequisite = { focus =  MLR_strengthen_cities }
+		prerequisite = { focus =  MLR_ukranian_liberation_army }
+		relative_position_id = MLR_rise_up_ukraine
 		x = 0
 		y = 3
 
@@ -107,32 +107,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_war_support = 0.05
+			add_war_support = 0.075
 			add_stability = 0.1
 			add_political_power = -30
 		}
 	}
-
-	focus = {
-		id = DRP_liberate_the_dnieper_from_the_separatists
-		icon = GFX_focus_DRP_expand_the_company_10000
-		cost = 0.2
-
-		prerequisite = { focus =  DRP_expand_the_company_10000 }
-		relative_position_id = DRP_introduce_martial_law
-		x = 0
-		y = 4
-
-		available = {
-			
-		}
-
-		completion_reward = {
-			add_war_support = 0.05
-			add_stability = 0.1
-			add_political_power = -30
-		}
-	}	
 
 
 }

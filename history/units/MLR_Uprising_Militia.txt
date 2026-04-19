@@ -288,6 +288,14 @@ units = {
         start_experience_factor = 0.1
         start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }       
+    }  
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 10563
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }     
     
 }
