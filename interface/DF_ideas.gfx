@@ -18,7 +18,22 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_UKR_separatism"
         texturefile = "gfx/interface/ideas/UKR/UKR_separatism_idea.dds"
-    }        
+    }  
+
+    spriteType = {
+        name = "GFX_idea_UKR_disorderly_government"
+        texturefile = "gfx/interface/ideas/UKR/UKR_disorganized_government.dds"
+    } 
+    
+    spriteType = {
+        name = "GFX_idea_UKR_emergency_redeployment_of_troops_idea"
+        texturefile = "gfx/interface/ideas/UKR/UKR_emergency_troop_transfer.dds"
+    } 
+    
+    spriteType = {
+        name = "GFX_idea_UKR_organize_defence_idea"
+        texturefile = "gfx/interface/ideas/UKR/UKR_organize_defense.dds"
+    }    
 
     spriteType = {
         name = "GFX_idea_UKR_ukraine_army"

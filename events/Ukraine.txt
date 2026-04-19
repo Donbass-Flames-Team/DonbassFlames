@@ -3481,6 +3481,23 @@ country_event = {
 					hours = 1
 				}
 			}
+			UKR = {
+				country_event = {
+					id = ukraine.119
+				    days = 10
+				    random_days = 25
+				}
+				country_event = {
+					id = ukraine.121
+				    days = 7
+				    random_days = 16
+				}		
+				country_event = {
+					id = ukraine.124
+					days = 11
+					random_days = 15
+				}		
+			}
 			LPR = {
 				transfer_state = 406
 				transfer_state = 351
@@ -4280,6 +4297,12 @@ country_event = {
         hidden_effect = {
 			ZKR = {
 				add_state_core = 331
+				add_state_core = 361
+				add_state_core = 385
+				add_state_core = 382
+				add_state_core = 315
+				add_state_core = 289
+				add_state_core = 375
 			}
 			331 = { transfer_state_to = ZKR }
 			361 = { transfer_state_to = ZKR }
@@ -4298,7 +4321,10 @@ country_event = {
 
 	option = {
 		name = ukraine.120.b
-        
+        declare_war_on = {
+            target = ZKR
+            type = annex_everything
+        }
 	}
 	
 	option = {
@@ -4334,7 +4360,220 @@ country_event = {
 		add_political_power = -15
 		add_stability = -0.01
 	}
-	
 }
 
+# Формирование вооруженных националистических группировок
+country_event = {
+	id = ukraine.122
+	title = ukraine.122.t
+	desc  = ukraine.122.d
+	picture = GFX_Report_event_32_roadblock_picture
 
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.123
+				days = 5
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.122.a
+		add_popularity = {
+            ideology = fascism
+            popularity = 0.035
+        }
+		add_stability = -0.05
+	}
+}
+
+# Восстание на западе
+country_event = {
+	id = ukraine.123
+	title = ukraine.123.t
+	desc  = ukraine.123.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			USR = {
+				transfer_state = 220
+				transfer_state = 224
+				transfer_state = 322
+				transfer_state = 150
+				transfer_state = 306
+				transfer_state = 249
+				transfer_state = 183
+				transfer_state = 119
+				transfer_state = 70
+				transfer_state = 189
+				transfer_state = 196
+
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.123.a
+		add_popularity = {
+            ideology = fascism
+            popularity = 0.035
+        }
+		add_stability = -0.05
+	}
+}
+
+# Усиление пророссийских протестов на востоке
+country_event = {
+	id = ukraine.124
+	title = ukraine.124.t
+	desc  = ukraine.124.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.125
+				days = 8
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.124.a
+		add_stability = -0.03
+	}
+}
+
+# Восстание на востоке малороссии
+country_event = {
+	id = ukraine.125
+	title = ukraine.125.t
+	desc  = ukraine.125.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			MLR = {
+				transfer_state = 279
+				transfer_state = 355
+				transfer_state = 293
+				transfer_state = 239
+				transfer_state = 179
+				transfer_state = 142
+				transfer_state = 214
+				transfer_state = 231
+				transfer_state = 293
+
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				load_oob = MLR_Uprising_Militia
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.125.a
+		add_stability = -0.03
+	}
+}
+
+# Верховная рада захватывает власть
+country_event = {
+	id = ukraine.126
+	title = ukraine.126.t
+	desc  = ukraine.126.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.127
+				hours = 8
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.126.a
+		add_stability = -0.03
+		add_political_power = 15
+	}
+}
+
+# Оппозиция бежит на Волынь и формирует отдельную республику
+country_event = {
+	id = ukraine.127
+	title = ukraine.127.t
+	desc  = ukraine.127.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			FUR = {
+				set_state_controller  = 75
+				set_state_controller = 67
+				set_state_controller = 148
+				set_state_controller = 113
+			}			
+		}
+	}
+
+	option = {
+		name = ukraine.127.a
+		add_stability = -0.03
+		add_political_power = 15
+	}
+}
+
+# Восстание военных
+country_event = {
+	id = ukraine.128
+	title = ukraine.128.t
+	desc  = ukraine.128.d
+	picture = GFX_Report_event_32_roadblock_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			UWC = {
+				transfer_state = 241
+				transfer_state = 314
+				transfer_state = 286
+				transfer_state = 316
+				transfer_state = 274
+
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+			}			
+		}
+	}
+
+	option = {
+		name = ukraine.128.a
+		add_stability = -0.03
+		add_political_power = 15
+	}
+}

@@ -1,0 +1,140 @@
+capital = 154
+set_variable = { cash = 1 }
+set_variable = { debt = 1 }
+DF_economy_setup = yes
+
+2013.11.21 = {
+	set_research_slots = 3
+
+	add_dynamic_modifier = { modifier = UKR_ukraine_army_idea }
+	set_variable = { UKR_AFU_army_org_factor = -0.55 }
+	set_variable = { UKR_AFU_army_org_regain = -0.25 }
+	set_variable = { UKR_AFU_army_morale_factor = -0.25 }
+    set_variable = { UKR_AFU_army_attack_factor = -0.45 }
+    set_variable = { UKR_AFU_army_defence_factor = -0.2 }
+	set_variable = { UKR_AFU_planning_speed = -0.20 }
+    set_variable = { UKR_AFU_army_speed_factor = -0.15 }
+	set_variable = { UKR_AFU_war_breakthrough_factor = -0.15 }
+	set_variable = { UKR_AFU_war_support_factor = -0.15 }
+
+
+	add_dynamic_modifier = { modifier = GEN_inflation }
+	
+	set_technology = {
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		infantry_weapons3 = 1
+		infantry_weapons4 = 1
+
+		atgm_weapons = 1
+		atgm_weapons1 = 1
+		atgl_weapons = 1
+		atgl_weapons_1 = 1
+		atgl_weapons_2 = 1
+		atgl_weapons_3 = 1
+		atgl_weapons_4 = 1
+		manpads_weapons = 1
+		manpads_weapons2 = 1
+		manpads_weapons3 = 1
+		mortar_weapons = 1
+		mortar_weapons1 = 1
+		mortar_weapons2 = 1
+		mortar_weapons3 = 1
+
+		tech_support = 1
+
+		toward_artilery = 1
+		spau_artillery = 1
+		multiple_launch_rocket_system = 1
+		uniform_equipment = 1
+		uniform_equipment1 = 1
+		uniform_equipment2 = 1
+
+		basic_train = 1
+	}
+
+	add_equipment_to_stockpile = {
+		type = train_equipment_1
+		amount = 10
+		producer = USR
+	}
+	
+	#if = {
+	#   limit = { has_dlc = "By Blood Alone" }
+	#	    set_technology = {
+	#		    aa_lmg = 1
+	#		    engines_1 = 1
+	#		    aircraft_construction = 1
+	#		    iw_small_airframe = 1
+	#	    }
+	#   else = {
+	#	    set_technology = {
+	#		    early_fighter = 1
+	#	    }
+	#    }
+    #}
+
+	if = {
+	    limit = { has_dlc = "No Step Back" }
+		    set_technology = {
+ 		        apc_chassis = 1
+		        apc_chassis_2 = 1
+		        apc_chassis_3 = 1
+		        apc_chassis_4 = 1
+
+		        ifv_chassis = 1
+		        ifv_chassis_2 = 1
+		        ifv_chassis_3 = 1
+		        ifv_chassis_4 = 1
+				gwtank_chassis = 1
+		    }
+	    else = {
+		    set_technology = {
+	 		    apc_chassis = 1
+		        apc_chassis_2 = 1
+		        apc_chassis_3 = 1
+		        apc_chassis_4 = 1
+
+		        ifv_1 = 1
+		        ifv_2 = 1
+		        ifv_3 = 1
+		        bmd_1 = 1
+				bmd_2 = 1
+				bmd_3 = 1
+				APC_1 = 1
+				APC_2 = 1
+				APC_3 = 1
+				modern_tank_1 = 1	
+				modern_tank_2 = 1
+				modern_tank_3 = 1		
+				modern_tank_4 = 1		   
+		    }
+	    }
+    }
+	
+	set_politics = {
+		ruling_party = autoritarian_democracy
+		last_election = "2010.02.07"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+        conservatism_democracy = 12
+        autoritarian_democracy = 14
+        liberal_democracy = 10
+        nationalism = 56
+        communism = 7
+        social_democracy = 1
+    }
+
+	add_ideas = {
+		UKR_helpless_government
+		UKR_ukrainian_mic
+
+		volunteer_only
+		export_focus
+		civilian_economy
+    }
+}

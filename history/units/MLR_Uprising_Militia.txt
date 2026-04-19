@@ -1,0 +1,293 @@
+division_template = {
+	name = "Narodnoe Opolcheniya"
+	regiments = {
+        militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+        militia = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        manpads_platoon = { x = 1 y = 0}
+        sniper_company = { x = 1 y = 1 }
+	}
+    is_locked = yes
+}
+
+units = {
+    division= {
+        name = "1-y batal'on narodnogo opolcheniya"
+        location = 14895
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "2-y batal'on narodnogo opolcheniya"
+        location = 14522
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.05
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "3-y batal'on narodnogo opolcheniya"
+        location = 14464
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "4-y batal'on narodnogo opolcheniya"
+        location = 14153
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+
+    division= {
+        name = "5-y batal'on narodnogo opolcheniya"
+        location = 14134
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.4
+    }
+
+    division= {
+        name = "6-y batal'on narodnogo opolcheniya"
+        location = 9618
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.05
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.9
+    }
+
+    division= {
+        name = "7-y batal'on narodnogo opolcheniya"
+        location = 13801
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.05
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.9
+    }
+
+    division= {
+        name = "8-y batal'on narodnogo opolcheniya"
+        location = 10994
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.05
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+
+    division= {
+        name = "9-y batal'on narodnogo opolcheniya"
+        location = 10886
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.05
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+
+    division= {
+        name = "10-y batal'on narodnogo opolcheniya"
+        location = 13926
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+
+    division= {
+        name = "11-y batal'on narodnogo opolcheniya"
+        location = 14069
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+
+    division= {
+        name = "12-y batal'on narodnogo opolcheniya"
+        location = 11771
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+
+    division= {
+        name = "13-y batal'on narodnogo opolcheniya"
+        location = 7831
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+
+    division= {
+        name = "14-y batal'on narodnogo opolcheniya"
+        location = 4039
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+
+    division= {
+        name = "15-y batal'on narodnogo opolcheniya"
+        location = 14461
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+
+    division= {
+        name = "16-y batal'on narodnogo opolcheniya"
+        location = 4884
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 15591
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 15662
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }  
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 5684
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }   
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 8842
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 15559
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    } 
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 15559
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 15559
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 14652
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }   
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 6814
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    } 
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 7640
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    } 
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 11041
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    } 
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 15261
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    } 
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 15261
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 15261
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }                
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 1361
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    } 
+    division= {
+        name = "Batal'on narodnogo opolcheniya"
+        location = 10563
+        division_template = "Narodnoe Opolcheniya"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+    }       
+    
+}
