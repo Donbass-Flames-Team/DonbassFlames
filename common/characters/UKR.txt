@@ -8,6 +8,7 @@ characters = {
 			}
 		}
 		country_leader={
+			desc = "UKR_victor_yanukovich_desc"
 			ideology = autoritarian_democracy
 			traits = { df_russophile df_authoritarian_tendencies df_yanukovich }
 			expire="2060.1.1.1"
@@ -40,6 +41,22 @@ characters = {
 		country_leader={
 			ideology = conservatism
 			traits = { df_russophobe df_oligarch }
+			expire="2060.1.1.1"
+			id=-1
+		}
+	}
+
+	UKR_alexander_tyrchinov = {
+		name = alexander_tyrchinov
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Turchinov"
+			}
+		}
+		country_leader={
+			desc = "UKR_alexander_tyrchinov_desc"
+			ideology = conservatism
+			traits = { }
 			expire="2060.1.1.1"
 			id=-1
 		}
