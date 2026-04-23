@@ -1407,13 +1407,7 @@ focus_tree = {
                 add_idea = UKR_disorderly_government
             }
 			retire_country_leader = yes
-	        create_country_leader = {
-		        name = alexander_tyrchinov
-		        #desc = victor_yanukovich_desc
-		        ideology = conservatism
-	        	picture = gfx/leaders/UKR/Turchinov.dds
-		        traits = {}
-	        }
+			promote_character = UKR_alexander_tyrchinov
 			hidden_effect = {
 				country_event = {
 					id = ukraine.107
