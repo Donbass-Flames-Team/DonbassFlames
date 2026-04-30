@@ -1,7 +1,3 @@
-#
-# List of options showing in the Game Rules screen
-#
-
 world_events_toggle = {
 	name = "WORLD_EVENTS_TOGGLE"
 	group = "RULE_MOD_SETTINGS"
@@ -37,6 +33,12 @@ wal = {
 		text = "WAL_ANNEX_ON"
 		desc = "WAL_ANNEX_ON_DESC"
 		allow_achievements = yes
+	}
+	option = {
+		name = "WALL_ANNEX_ON"
+		text = "WALL_ANNEX_ON"
+		desc = "WALL_ANNEX_ON_DESC"
+		allow_achievements = no
 	}
 }
 

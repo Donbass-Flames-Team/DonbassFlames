@@ -19,6 +19,7 @@ on_actions = {
 					annex_country = { target = SER }
 					annex_country = { target = BLR }
 					annex_country = { target = MOL }
+					annex_country = { target = NAT }
 
 					every_owned_state = {
 						add_core_of = WAL
@@ -26,6 +27,34 @@ on_actions = {
 				}
 
 				set_global_flag = WAL_annex
+			}
+
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = wal
+						option = WALL_ANNEX_ON
+					}
+				}
+
+				WAL = {
+					annex_country = { target = LIT }
+					annex_country = { target = SLO }
+					annex_country = { target = HUN }
+					annex_country = { target = ROM }
+					annex_country = { target = POL }
+					annex_country = { target = SER }
+					annex_country = { target = BLR }
+					annex_country = { target = MOL }
+					annex_country = { target = NAT }
+					annex_country = { target = TMR }
+
+					every_owned_state = {
+						add_core_of = WAL
+					}
+				}
+
+				set_global_flag = WALL_annex
 			}
 
 			if = {
