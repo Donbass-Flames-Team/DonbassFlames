@@ -6,7 +6,10 @@ state = {
 	state_category = small_island 
 	buildings_max_level_factor = 2 
 	history = { 
-		owner = UKR 
+		owner = UKR
+
+		victory_points = { 18800 5 }
+		victory_points = { 7307 3 }
 		
 		buildings = { 
 			industrial_complex = 0
