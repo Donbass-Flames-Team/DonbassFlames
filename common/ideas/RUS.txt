@@ -106,11 +106,12 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = 0.1
-				consumer_goods_factor = -0.15
-				min_export = 0.1
-				country_resource_oil = 750
-				country_resource_rubber = 50
+			    stability_factor = -0.1
+				consumer_goods_factor = -0.10
+				min_export = 0.15
+				country_resource_oil = 1000
+				country_resource_rubber = 75
+				country_resource_coal = 300
 			}
 		}
 
