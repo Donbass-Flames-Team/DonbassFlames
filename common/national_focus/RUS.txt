@@ -592,8 +592,8 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				country_exists = CRI
+			CRI = {
+				is_puppet_of = RUS
 			}
 		}
 
