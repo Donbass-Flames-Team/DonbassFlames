@@ -21,7 +21,7 @@ buildings = {
 
 	network_infrastructure = {
 		base_cost = 1500
-		per_level_extra_cost = 1500
+		per_level_extra_cost = 1000
 		icon_frame = 35
 		infrastructure = yes
 		value = 2
@@ -32,13 +32,13 @@ buildings = {
 		}
 		state_modifiers = {
 			state_production_speed_buildings_factor = 0.025
-			local_building_slots_factor = 0.01
+			local_building_slots_factor = 0.05
 		}		
 	}
 
 	social_infrastructure = {
-		base_cost = 3500
-		per_level_extra_cost = 1500
+		base_cost = 3000
+		per_level_extra_cost = 500
 		icon_frame = 33
 		infrastructure = yes
 		value = 2
