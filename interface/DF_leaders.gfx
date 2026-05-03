@@ -301,8 +301,16 @@ spriteTypes = {
 
 	# Poland Leaders
 	spriteType = {
-		name = "GFX_portrait_bronislaw_komorowski"
-		texturefile = "gfx/leaders/POL/bronislaw_komorowski.dds"
+		name = "GFX_portrait_POL_bronislaw_komorowski"
+		texturefile = "gfx/leaders/POL/POL_bronislaw_komorowski.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_andrzej_duda"
+		texturefile = "gfx/leaders/POL/POL_andrzej_duda.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_karol_nawrocki"
+		texturefile = "gfx/leaders/POL/POL_karol_nawrocki.dds"
 	}
 
 	# Lithuania Leaders
