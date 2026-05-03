@@ -1,10 +1,14 @@
 spriteTypes = {
 
-	# SDR Leaders
+	# SKR Leaders
 	spriteType = {
 		name = "GFX_portrait_nikolay_kozycin"
 		texturefile = "gfx/leaders/SKR/Nikolay_Kozycin.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_vyacheslav_pitko"
+		texturefile = "gfx/leaders/SKR/Vyacheslav_Pitko.dds"
+	}	
 
 	# NPR Leaders
 	spriteType = {
@@ -290,11 +294,23 @@ spriteTypes = {
 		name = "GFX_portrait_HUN_viktor_orban"
 		texturefile = "gfx/leaders/HUN/HUN_viktor_orban.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_HUN_peter_magyar"
+		texturefile = "gfx/leaders/HUN/HUN_peter_magyar.dds"
+	}
 
 	# Poland Leaders
 	spriteType = {
-		name = "GFX_portrait_bronislaw_komorowski"
-		texturefile = "gfx/leaders/POL/bronislaw_komorowski.dds"
+		name = "GFX_portrait_POL_bronislaw_komorowski"
+		texturefile = "gfx/leaders/POL/POL_bronislaw_komorowski.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_andrzej_duda"
+		texturefile = "gfx/leaders/POL/POL_andrzej_duda.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_karol_nawrocki"
+		texturefile = "gfx/leaders/POL/POL_karol_nawrocki.dds"
 	}
 
 	# Lithuania Leaders
@@ -325,6 +341,20 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_TMR_yevgeny_shevchuk"
 		texturefile = "gfx/leaders/TMR/TMR_yevgeny_shevchuk.dds"
+	}
+
+	# MOL Leaders
+	spriteType = {
+		name = "GFX_portrait_MOL_nicolae_timofti"
+		texturefile = "gfx/leaders/MOL/MOL_nicolae_timofti.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_MOL_igor_dodon"
+		texturefile = "gfx/leaders/MOL/MOL_igor_dodon.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_MOL_maia_sandu"
+		texturefile = "gfx/leaders/MOL/MOL_maia_sandu.dds"
 	}
 
 }

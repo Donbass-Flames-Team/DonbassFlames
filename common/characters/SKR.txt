@@ -10,6 +10,35 @@ characters = {
 			ideology = autoritarian_democracy
 			traits = { }
 		}
+
+		field_marshal = {
+			traits = { }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+    vyacheslav_pitko = {
+		name = vyacheslav_pitko
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_vyacheslav_pitko"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+		}
+		corps_commander = {
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
 	}
 
 

@@ -1,18 +1,47 @@
 characters = {
 
-    bronislaw_komorowski = {
-        name = bronislaw_komorowski
-        portraits = {
-            civilian = {
-                large = "GFX_portrait_bronislaw_komorowski"
-            }
-        }
-        country_leader = {
-            ideology = liberalism
-            traits = { }
-            expire = "2020.12.31"
-            id = -1
-        }
-    }
+	POL_bronislaw_komorowski = {
+		name = POL_bronislaw_komorowski
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_POL_bronislaw_komorowski"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { }
+			expire = "2020.12.31"
+			id = -1
+		}
+	}
+
+	POL_andrzej_duda = {
+		name = POL_andrzej_duda
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_POL_andrzej_duda"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { }
+			expire = "2025.8.6"
+			id = -1
+		}
+	}
+
+	POL_karol_nawrocki = {
+		name = POL_karol_nawrocki
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_POL_karol_nawrocki"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { }
+			id = -1
+		}
+	}
 
 }
