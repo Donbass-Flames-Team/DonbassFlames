@@ -2,9 +2,8 @@ capital = 479
 set_variable = { cash = 1 }
 set_variable = { debt = -135 }
 
-
-
 recruit_character = HUN_viktor_orban
+recruit_character = HUN_peter_magyar
 
 2013.11.21 = {
 	set_research_slots = 3
@@ -32,18 +31,18 @@ recruit_character = HUN_viktor_orban
 	set_grand_doctrine = mass_assault
 
 	set_politics = {
-    	ruling_party = conservatism_democracy
-    	last_election = "2010.04.11"
-    	election_frequency = 48
-    	elections_allowed = yes
-}
+		ruling_party = autoritarian_democracy
+		last_election = "2010.04.11"
+		election_frequency = 48
+		elections_allowed = yes
+	}
 
 	set_popularities = {
 		liberal_democracy = 6
-		conservatism_democracy = 48
+		conservatism_democracy = 8
 		social_democracy = 16
 		nationalism = 21
 		communism = 1
-		autoritarian_democracy = 8
+		autoritarian_democracy = 48
 	}
 }
