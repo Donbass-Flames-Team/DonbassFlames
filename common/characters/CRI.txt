@@ -1,0 +1,17 @@
+characters = {
+
+	CRI_sergey_aksyonov = {
+		name = CRI_sergey_aksyonov
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_CRI_sergey_aksyonov"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+			expire = "2030.12.31"
+		}
+	}
+
+}
