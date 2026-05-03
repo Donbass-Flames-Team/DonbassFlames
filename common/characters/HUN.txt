@@ -1,17 +1,31 @@
 characters = {
 
-    HUN_viktor_orban = {
-        name = HUN_viktor_orban
-        portraits = {
-            civilian = {
-                large = "GFX_portrait_HUN_viktor_orban"
-            }
-        }
-        country_leader = {
-            ideology = conservatism_democracy
-            traits = { }
-            expire = "2030.12.31"
-        }
-    }
+	HUN_viktor_orban = {
+		name = HUN_viktor_orban
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_HUN_viktor_orban"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+			expire = "2030.12.31"
+		}
+	}
+
+	HUN_peter_magyar = {
+		name = HUN_peter_magyar
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_HUN_peter_magyar"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { }
+			expire = "2030.12.31"
+		}
+	}
 
 }
