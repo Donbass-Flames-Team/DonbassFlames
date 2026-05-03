@@ -201,7 +201,40 @@ country_event = {
 				if = { limit = { 486 = { is_controlled_by = DPR } } transfer_state = 486 }
 				if = { limit = { 652 = { is_controlled_by = DPR } } transfer_state = 652 }
 				if = { limit = { 450 = { is_controlled_by = DPR } } transfer_state = 450 }
-				if = { limit = { 527 = { is_controlled_by = DPR } } transfer_state = 527 }
+				if = { 
+				    limit = { 
+					    OR = {
+						    527 = { s_controlled_by_DPR_or_ally = yes } 
+					    } 
+				    } 
+				    transfer_state = 527 
+			    }
+				if = { 
+				    limit = { 
+					    OR = {
+						    649 = { s_controlled_by_DPR_or_ally = yes } 
+					    } 
+				    } 
+				    transfer_state = 649 
+			    }							
+				if = { 
+				    limit = { 
+					    OR = {
+						    421 = { s_controlled_by_DPR_or_ally = yes } 
+					    } 
+				    } 
+				    transfer_state = 421 
+					transfer_state = 465 
+			    }
+				if = { 
+				    limit = { 
+					    OR = {
+						    468 = { s_controlled_by_DPR_or_ally = yes } 
+					    } 
+				    } 
+				    transfer_state = 468 
+					transfer_state = 264
+			    }				
 				if = { limit = { 433 = { is_controlled_by = DPR } } transfer_state = 433 }
 			    if = { limit = { 381 = { is_controlled_by = DPR } } transfer_state = 381 }
 				if = { limit = { 426 = { is_controlled_by = DPR } } transfer_state = 426 }
@@ -255,7 +288,14 @@ country_event = {
 				if = { limit = { 326 = { is_controlled_by = LPR } } transfer_state = 326 }
 				if = { limit = { 335 = { is_controlled_by = LPR } } transfer_state = 335 }
 				if = { limit = { 288 = { is_controlled_by = LPR } 335 = { is_controlled_by = LPR } } transfer_state = 288 }
+				if = { limit = { 285 = { is_controlled_by = LPR } } transfer_state = 285 }
+				if = { limit = { 10 = { is_controlled_by = LPR } } transfer_state = 10 }
 				clr_country_flag = LPR_first_phase_of_ato
+			}
+			SKR = {
+				transfer_state = 387
+				transfer_state = 416
+				transfer_state = 413
 			}
 			UKR = {
 				transfer_state = 318
@@ -329,7 +369,6 @@ country_event = {
 				if = { limit = { 486 = { is_controlled_by = DPR } } transfer_state = 486 }
 				if = { limit = { 652 = { is_controlled_by = DPR } } transfer_state = 652 }
 				if = { limit = { 450 = { is_controlled_by = DPR } } transfer_state = 450 }
-				if = { limit = { 527 = { is_controlled_by = DPR } } transfer_state = 527 }
 				if = { limit = { 433 = { is_controlled_by = DPR } } transfer_state = 433 }
 				if = { limit = { 381 = { is_controlled_by = DPR } } transfer_state = 381 }
 				if = { limit = { 13 = { is_controlled_by = DPR } } transfer_state = 13 }
@@ -339,6 +378,40 @@ country_event = {
 				if = { limit = { 399 = { is_controlled_by = DPR } } transfer_state = 399 }
 				if = { limit = { 390 = { is_controlled_by = DPR } } transfer_state = 390 }
 				if = { limit = { 391 = { is_controlled_by = DPR } } transfer_state = 391 }
+				if = { 
+				    limit = { 
+					    OR = {
+						    527 = { s_controlled_by_DPR_or_ally = yes } 
+					    } 
+				    } 
+				    transfer_state = 527 
+			    }
+				if = { 
+				    limit = { 
+					    OR = {
+						    649 = { s_controlled_by_DPR_or_ally = yes } 
+					    } 
+				    } 
+				    transfer_state = 649 
+			    }							
+				if = { 
+				    limit = { 
+					    OR = {
+						    421 = { s_controlled_by_DPR_or_ally = yes } 
+					    } 
+				    } 
+				    transfer_state = 421 
+					transfer_state = 465 
+			    }
+				if = { 
+				    limit = { 
+					    OR = {
+						    468 = { s_controlled_by_DPR_or_ally = yes } 
+					    } 
+				    } 
+				    transfer_state = 468 
+					transfer_state = 264 
+			    }
 				transfer_state = 444
 				transfer_state = 437
 				transfer_state = 448
@@ -383,6 +456,11 @@ country_event = {
 				if = { limit = { 326 = { is_controlled_by = LPR } } transfer_state = 326 }
 				if = { limit = { 335 = { is_controlled_by = LPR } } transfer_state = 335 }
 			}
+			SKR = {
+				transfer_state = 387
+				transfer_state = 416
+				transfer_state = 413
+			}
 			UKR = {
 				transfer_state = 318
 				if = { limit = { 526 = { is_controlled_by = UKR } } transfer_state = 526 transfer_state = 650 }
@@ -405,6 +483,12 @@ country_event = {
 				if = { limit = { 346 = { is_controlled_by = UKR } } transfer_state = 346 }
 				if = { limit = { 329 = { is_controlled_by = UKR } } transfer_state = 329 }
 				if = { limit = { 335 = { is_controlled_by = UKR } } transfer_state = 335 }
+
+                # Если днр захватил и украина отвоевала
+				if = { limit = { 527 = { is_controlled_by = UKR } } transfer_state = 527 }
+				if = { limit = { 649 = { is_controlled_by = UKR } } transfer_state = 649 }
+				if = { limit = { 421 = { is_controlled_by = UKR } } transfer_state = 421 transfer_state = 465 }
+				if = { limit = { 468 = { is_controlled_by = UKR } } transfer_state = 468 }			
 			}
 			white_peace = DPR
 			white_peace = LPR
