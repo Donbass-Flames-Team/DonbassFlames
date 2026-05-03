@@ -1,0 +1,11 @@
+state_categories={
+	naval = {
+		local_building_slots = 2
+	    buildings_max_level = {
+        	naval_base = 10
+        	air_base = 0
+    	}
+		color = { 40 40 40 }
+
+	}
+}
