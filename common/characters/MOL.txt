@@ -1,0 +1,42 @@
+characters = {
+
+	MOL_nicolae_timofti = {
+		name = MOL_nicolae_timofti
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_MOL_nicolae_timofti"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { }
+		}
+	}
+
+	MOL_igor_dodon = {
+		name = MOL_igor_dodon
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_MOL_igor_dodon"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { }
+		}
+	}
+
+	MOL_maia_sandu = {
+		name = MOL_maia_sandu
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_MOL_maia_sandu"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { }
+		}
+	}
+
+}
