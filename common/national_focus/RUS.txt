@@ -1111,7 +1111,7 @@ focus_tree = {
 		id = RUS_defeat_of_the_republics
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 2
+		x = 3
 		y = 2
 
 		prerequisite = { focus = RUS_open_invasion }
@@ -1479,6 +1479,51 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_increase_unrest_in_ukraine
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 4
+		y = 1
+
+		prerequisite = { focus = RUS_victory_of_republics  focus = RUS_defeat_of_the_republics }
+		relative_position_id = RUS_the_war_has_stalled
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = RUS_support_the_ukrainian_democratic_republic
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 3
+		y = 2
+
+		prerequisite = { focus = RUS_increase_unrest_in_ukraine }
+		prerequisite = { focus = RUS_cooperation_with_people_republics }
+		relative_position_id = RUS_the_war_has_stalled
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			
 		}
 	}
 
