@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 4000 y = 1350 }
+	continuous_focus_position = { x = 8000 y = 1350 }
 
 	focus = {
 		id = RUS_sochi_olympics
@@ -1134,6 +1134,26 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_russia_of_putin
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 35
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			date > 2014.7.7
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = RUS_introduction_of_anti_sanctions
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
@@ -1206,11 +1226,11 @@ focus_tree = {
 					    }
 				    }
                     WGN = {
-				    set_portraits = {
-					    character = WGN_dmitry_utkin
-					    civilian = { large = "gfx/leaders/WGN/WGN_dmitry_utkin_streamer.dds" }
-				    }
-			    } 
+				        set_portraits = {
+					        character = WGN_dmitry_utkin
+					        civilian = { large = "gfx/leaders/WGN/WGN_dmitry_utkin_streamer.dds" }
+				        }
+			        } 
 			    }
 		    }
 	    }
@@ -1220,8 +1240,12 @@ focus_tree = {
 		id = RUS_minsk_protocols
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 37
-		y = 0
+
+		prerequisite = { focus = RUS_the_war_has_stalled }
+		relative_position_id = RUS_the_war_has_stalled
+
+		x = -1
+		y = 1
 		
 		ai_will_do = {
 			factor = 1
@@ -1320,37 +1344,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_shaky_peace_in_donbass
-		icon = GFX_goal_no_focus_RUS
-		cost = 1
-		x = 0
-		y = 3
-
-		prerequisite = { focus = RUS_sign_minsk_two }
-		relative_position_id = RUS_minsk_protocols
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			
-		}
-
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-
-	focus = {
 		id = RUS_domestic_policy
 		icon = GFX_goal_no_focus_RUS
 		cost = 5
-		x = 5
+		x = 0
 		y = 1
 
-		prerequisite = { focus = RUS_shaky_peace_in_donbass focus = RUS_lasting_peace_in_donbass }
-		relative_position_id = RUS_shaky_peace_in_donbass
+		prerequisite = { focus = RUS_russia_of_putin  }
+		relative_position_id = RUS_russia_of_putin
 		
 		ai_will_do = {
 			factor = 1
@@ -1462,11 +1463,11 @@ focus_tree = {
 		id = RUS_cooperation_with_people_republics
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 0
+		x = 1
 		y = 1
 
-		prerequisite = { focus = RUS_shaky_peace_in_donbass }
-		relative_position_id = RUS_shaky_peace_in_donbass
+		prerequisite = { focus = RUS_the_war_has_stalled focus = RUS_victory_of_republics }
+		relative_position_id = RUS_the_war_has_stalled
 		
 		ai_will_do = {
 			factor = 1
@@ -1485,17 +1486,16 @@ focus_tree = {
 		id = RUS_development_of_amred_forces
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = -4
-		y = 1
+		x = 35
+		y = 10
 
-		prerequisite = { focus = RUS_shaky_peace_in_donbass }
-		relative_position_id = RUS_shaky_peace_in_donbass
 		
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
+			date > 2014.9.1
 		}
 
 		completion_reward = {
