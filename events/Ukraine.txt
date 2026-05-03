@@ -3464,7 +3464,15 @@ country_event = {
 		if = {
 			limit = { country_exists = BPR }
 			white_peace = BPR
-		}					
+		}	
+		if = {
+			limit = { country_exists = NPR }
+			white_peace = NPR
+		}		
+		if = {
+			limit = { country_exists = BPR }
+			white_peace = BPR
+		}						
 		hidden_effect = {
 			set_global_flag = ATO_Separatists_victory
 			news_event = {
@@ -4574,6 +4582,28 @@ country_event = {
 
 	option = {
 		name = ukraine.128.a
+		add_stability = -0.03
+		add_political_power = 15
+	}
+}
+
+# Гунтер и западные специалисты
+country_event = {
+	id = ukraine.129
+	title = ukraine.129.t
+	desc  = ukraine.129.d
+	picture = GFX_Report_event_gunter_smile_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+						
+		}
+	}
+
+	option = {
+		name = ukraine.129.a
 		add_stability = -0.03
 		add_political_power = 15
 	}

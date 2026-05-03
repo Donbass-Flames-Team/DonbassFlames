@@ -1,0 +1,178 @@
+focus_tree = {
+	id = SKR
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = SKR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2500 y = 500 }
+
+	focus = {
+		id = SKR_expand_kazak_squads
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 2
+		x = 12
+		y = 0
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			random_owned_state = {
+		        create_unit = {
+			        division = "name = \"Battalyon Kazackogo Opolcheniya\" division_template = \"Battalyon Kazackogo Opolcheniya\" start_experience_factor = 0.35"
+			        owner = SKR
+			        count = 3
+		        }
+	        }
+		}
+	}
+
+	focus = {
+		id = SKR_collect_tribute_from_local_residents
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 2
+		prerequisite = { focus = SKR_expand_kazak_squads }
+		relative_position_id = SKR_expand_kazak_squads
+
+		x = 2
+		y = 1
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_political_power = 15
+			add_stability = -0.15
+			hidden_effect = {
+				country_event = {
+					id = SKR.3
+					days = 5
+					random_days = 10
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SKR_spirit_of_the_cossacks
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 2
+		prerequisite = { focus = SKR_expand_kazak_squads }
+		relative_position_id = SKR_expand_kazak_squads
+
+		x = -2
+		y = 1
+
+		available = {
+			
+		}
+
+		completion_reward = {
+		    army_experience = 25
+		}
+	}
+
+	focus = {
+		id = SKR_catch_spies
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 2
+		prerequisite = { focus = SKR_spirit_of_the_cossacks }
+		prerequisite = { focus = SKR_collect_tribute_from_local_residents }
+
+		relative_position_id = SKR_expand_kazak_squads
+
+		x = 0
+		y = 2
+
+		available = {
+			
+		}
+
+		completion_reward = {
+		    add_war_support = 0.05
+			hidden_effect = {
+				country_event = {
+					id = SKR.2
+					days = 15
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SKR_fight_against_ukrainian_supporters
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 2
+		prerequisite = { focus = SKR_catch_spies }
+
+		relative_position_id = SKR_expand_kazak_squads
+
+		x = 0
+		y = 3
+
+		available = {
+			
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = SKR_traitors_in_luhansk
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 2
+		prerequisite = { focus = SKR_fight_against_ukrainian_supporters }
+
+		relative_position_id = SKR_expand_kazak_squads
+
+		available = {
+			date > 2014.11.1
+		}
+
+		x = 0
+		y = 4
+
+		available = {
+			
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = SKR_start_acting
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 2
+		prerequisite = { focus = SKR_traitors_in_luhansk }
+		relative_position_id = SKR_traitors_in_luhansk
+
+		available = {
+			
+		}
+
+		x = 0
+		y = 1
+
+		available = {
+			
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+}

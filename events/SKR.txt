@@ -32,3 +32,42 @@ country_event = {
 		
 	}
 }
+
+# Захват в плен миссии ОБСЕ
+country_event = {
+	id = SKR.2
+	title = SKR.2.t
+	desc = SKR.2.d
+	picture = GFX_Report_event_skr_kazaki_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = SKR.2.a
+		add_political_power = 25
+	}
+}
+
+# Массовое мародерство
+country_event = {
+	id = SKR.3
+	title = SKR.3.t
+	desc = SKR.3.d
+	picture = GFX_Report_event_skr_kazaki_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = SKR.3.a
+		add_stability = -0.15
+		add_political_power = -25
+	}
+}

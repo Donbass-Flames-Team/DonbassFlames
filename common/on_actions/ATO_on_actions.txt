@@ -7,7 +7,7 @@ on_actions = {
 					has_global_flag = Start_Of_ATO
 					tag = UKR
 					date > 2014.4.4
-					surrender_progress > 0.25
+					surrender_progress > 0.31
 					OR = {
 					    NOT = {
 						    526 = {
@@ -60,7 +60,7 @@ on_actions = {
 					has_global_flag = Start_Of_ATO
 					tag = UKR
 					date > 2014.4.4
-					surrender_progress > 0.18
+					surrender_progress > 0.24
 					NOT = {
 						has_global_flag = South_uprisings_ato_during
 					}
