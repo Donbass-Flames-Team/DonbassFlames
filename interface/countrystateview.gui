@@ -60,8 +60,7 @@ guiTypes = {
 				size = { width = 480 height = 105 }
 				format = "UPPER_LEFT"
 				slotsize = { width = 60 height = 52 }
-				max_slots_horizontal = 5
-				max_slots_vertical = 1
+				max_slots_horizontal = 9
 			}
 			
 			instantTextboxType = {
@@ -104,9 +103,9 @@ guiTypes = {
 				position = { x = 150 y = 170 }
 				size = { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
-				slotsize = { width = 61 height = 50 }
-				max_slots_horizontal = 5
-				max_slots_vertical = 5
+				slotsize = { width = 60 height = 40 }
+				max_slots_horizontal = 7
+				max_slots_vertical = 6
 			}
 
 			iconType ={
