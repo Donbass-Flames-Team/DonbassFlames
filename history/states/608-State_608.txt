@@ -11,8 +11,10 @@ state = {
 		owner = ROM 
 		
 		buildings = { 
-			industrial_complex = 16
-			arms_factory = 8
+			social_infrastructure = 3
+			network_infrastructure = 3
+			industrial_complex = 26
+			arms_factory = 13
 			infrastructure = 3 
 			synthetic_refinery = 1 
 		}

@@ -13,6 +13,8 @@ state = {
 		arms_factory = 0
 		industrial_complex = 0
 		buildings = { 
+			social_infrastructure = 1
+			network_infrastructure = 1
 			infrastructure = 2 
 		}
 		
