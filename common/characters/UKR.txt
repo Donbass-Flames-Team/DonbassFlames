@@ -16,6 +16,42 @@ characters = {
 		}
 	}
 
+
+	UKR_mykhaylo_dobkin = {
+		name = mykhaylo_dobkin
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_UKR_mykhaylo_dobkin"
+			}
+		}
+		country_leader={
+			desc = "UKR_mykhaylo_dobkin_desc"
+			ideology = autoritarian_democracy
+			traits = { df_russophile }
+			expire="2060.1.1.1"
+			id=-1
+		}
+	}
+
+
+	UKR_victor_medvechuk = {
+		name = victor_medvechuk
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_UKR_victor_medvechuk"
+			}
+		}
+		country_leader={
+			desc = "UKR_victor_medvechuk_desc"
+			ideology = autoritarian_democracy
+			traits = { df_russophile }
+			expire="2060.1.1.1"
+			id=-1
+		}
+	}
+
+
+
 	volodymir_zelenskyy = {
 		name = volodymir_zelenskyy
 		portraits = {

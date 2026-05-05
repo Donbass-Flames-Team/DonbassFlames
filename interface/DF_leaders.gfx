@@ -183,11 +183,33 @@ spriteTypes = {
 		texturefile = "gfx/leaders/RUS/Alexander_Lapin.dds"
 	}
 
-	# Ukraine Leaders
+	################### MALOROSSIA ####################
+	###################################################
+
+	spriteType = {
+		name = "GFX_portrait_MLR_victor_medvechuk"
+		texturefile = "gfx/leaders/MLR/MLR_victor_medvechuk.dds"
+	}
+
+
+	#################### Ukraine ######################
+	###################################################
+
+
 	spriteType = {
 		name = "GFX_portrait_volodymir_zelenskyy"
 		texturefile = "gfx/leaders/UKR/Volodimir_Zelensky.dds"
 	}
+
+	spriteType = {
+		name = "GFX_portrait_UKR_victor_medvechuk"
+		texturefile = "gfx/leaders/UKR/UKR_victor_medvechuk.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_portrait_UKR_mykhaylo_dobkin"
+		texturefile = "gfx/leaders/UKR/mihail_dobkin.dds"
+	}	
 
 	spriteType = {
 		name = "GFX_portrait_igor_kolomoysky"

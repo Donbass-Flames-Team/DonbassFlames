@@ -66,918 +66,150 @@ scripted_gui = {
 
 			close_map_button_click = { clear_variable = show_elections_in_ukraine_map  }
 			elections_increase_button_click = {
-				# Rivne
+				#############################################################
+				######################### Rivne #############################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 25} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						}
-                        if = { limit = { check_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 compare = greater_than } 
-						NOT = { check_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 compare = greater_than } } } 
-					        subtract_from_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 }
-							subtract_from_variable = { var = Lyashko_general_support value = 1 }
-							add_to_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 }
-							add_to_variable = { var = Poroshenko_general_support value = 1 }
-					    }
-						if = { limit = { check_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 compare = greater_than } 
-					    NOT = { check_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 compare = greater_than } }} 
-					        subtract_from_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 }
-							subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						    add_to_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 }
-							add_to_variable = { var = Poroshenko_general_support value = 1 }
-					    }						
-						if = { limit = { check_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 compare = greater_than } check_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 compare = greater_than } } 
-					        random_list = {
-								50 = {
-                                    subtract_from_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-									add_to_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 }
-									add_to_variable = { var = Poroshenko_general_support value = 1 }
-								}
-								50 = {
-                                    subtract_from_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 }
-							        subtract_from_variable = { var = Lyashko_general_support value = 1 }
-									add_to_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 }
-									add_to_variable = { var = Poroshenko_general_support value = 1 }
-								}
-							}
-					    }
-
-						clamp_variable = { var = Rivnenska_oblast_poroshenko_support_value min = 0 max = 6 }						
-						clamp_variable = { var = Rivnenska_oblast_timoshenko_support_value min = 0 max = 6 }
-						clamp_variable = { var = Rivnenska_oblast_lyashko_support_value min = 0 max = 6 }
-					}
-					# Timoshenko
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-						}
-						if = { limit = { check_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
-					        subtract_from_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 }
-							subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-							add_to_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 }
-					    }
-						if = { limit = { check_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 compare = greater_than } } 
-					        subtract_from_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 }
-							subtract_from_variable = { var = Lyashko_general_support value = 1 }
-							add_to_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 }
-					    }						
-						if = { limit = { check_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 compare = greater_than } check_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
-					        random_list = {
-								50 = {
-                                    subtract_from_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 }
-							        subtract_from_variable = { var = Lyashko_general_support value = 1 }
-									add_to_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 }
-								}
-								50 = {
-                                    subtract_from_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-									add_to_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 }
-								}
-							}
-					    }
-
-						clamp_variable = { var = Rivnenska_oblast_poroshenko_support_value min = 0 max = 6 }						
-						clamp_variable = { var = Rivnenska_oblast_timoshenko_support_value min = 0 max = 6 }
-						clamp_variable = { var = Rivnenska_oblast_lyashko_support_value min = 0 max = 6 }
-
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
-					}	
-					# Lyashko
-					if = {
-						limit = {
-							has_country_flag = Oleg_Lyashko_on_2014_elections_favourite
-						}
-						if = { limit = { check_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 compare = greater_than } 
-						NOT = { check_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 compare = greater_than } } } 
-					        subtract_from_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 }
-							subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-							add_to_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 }
-							add_to_variable = { var = Lyashko_general_support value = 1 }
-					    }
-						if = { limit = { check_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 compare = greater_than } 
-					    NOT = { check_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 compare = greater_than } }} 
-					        subtract_from_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 }
-							subtract_from_variable = { var = Lyashko_general_support value = 1 }
-						    add_to_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 }
-							add_to_variable = { var = Lyashko_general_support value = 1 }
-					    }						
-						if = { limit = { check_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 compare = greater_than } check_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
-					        random_list = {
-								50 = {
-                                    subtract_from_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-									add_to_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 }
-									add_to_variable = { var = Lyashko_general_support value = 1 }
-								}
-								50 = {
-                                    subtract_from_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-									add_to_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 }
-									add_to_variable = { var = Lyashko_general_support value = 1 }
-								}
-							}
-					    }
-
-						clamp_variable = { var = Rivnenska_oblast_poroshenko_support_value min = 0 max = 6 }						
-						clamp_variable = { var = Rivnenska_oblast_timoshenko_support_value min = 0 max = 6 }
-						clamp_variable = { var = Rivnenska_oblast_lyashko_support_value min = 0 max = 6 }
-						
-					}									
+					
+					Rivnenska_elections_campaign_effect = yes
 				}				
-				# Zhytomir
+				#############################################################
+				####################### Zhytomir ############################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 24} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					# Poroshenko
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						}
-                        if = { limit = { check_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 compare = greater_than } 
-						NOT = { check_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 compare = greater_than } } } 
-					        subtract_from_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 }
-							subtract_from_variable = { var = Lyashko_general_support value = 1 }
-							add_to_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
-							add_to_variable = { var = Poroshenko_general_support value = 1 }
-					    }
-						if = { limit = { check_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 compare = greater_than } 
-					    NOT = { check_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 compare = greater_than } }} 
-					        subtract_from_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 }
-							subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						    add_to_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
-							add_to_variable = { var = Poroshenko_general_support value = 1 }
-					    }						
-						if = { limit = { check_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 compare = greater_than } check_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 compare = greater_than } } 
-					        random_list = {
-								50 = {
-                                    subtract_from_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-									add_to_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
-									add_to_variable = { var = Poroshenko_general_support value = 1 }
-								}
-								50 = {
-                                    subtract_from_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 }
-							        subtract_from_variable = { var = Lyashko_general_support value = 1 }
-									add_to_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
-									add_to_variable = { var = Poroshenko_general_support value = 1 }
-								}
-							}
-					    }
-					}
-					# Timoshenko
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-						}
-						if = { limit = { check_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
-					        subtract_from_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
-							subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-							add_to_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 }
-					    }
-						if = { limit = { check_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 compare = greater_than } } 
-					        subtract_from_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 }
-							subtract_from_variable = { var = Lyashko_general_support value = 1 }
-							add_to_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 }
-					    }						
-						if = { limit = { check_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 compare = greater_than } check_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
-					        random_list = {
-								50 = {
-                                    subtract_from_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 }
-							        subtract_from_variable = { var = Lyashko_general_support value = 1 }
-									add_to_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 }
-								}
-								50 = {
-                                    subtract_from_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-									add_to_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 }
-								}
-							}
-					    }
 
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
-					}
-					# Lyashko
-					if = {
-						limit = {
-							has_country_flag = Oleg_Lyashko_on_2014_elections_favourite
-						}
-						if = { limit = { check_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 compare = greater_than } 
-						NOT = { check_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 compare = greater_than } } } 
-					        subtract_from_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
-							subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-							add_to_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 }
-							add_to_variable = { var = Lyashko_general_support value = 1 }
-					    }
-						if = { limit = { check_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 compare = greater_than } 
-					    NOT = { check_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 compare = greater_than } }} 
-					        subtract_from_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 }
-							subtract_from_variable = { var = Lyashko_general_support value = 1 }
-						    add_to_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 }
-							add_to_variable = { var = Lyashko_general_support value = 1 }
-					    }						
-						if = { limit = { check_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 compare = greater_than } check_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
-					        random_list = {
-								50 = {
-                                    subtract_from_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-									add_to_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 }
-									add_to_variable = { var = Lyashko_general_support value = 1 }
-								}
-								50 = {
-                                    subtract_from_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-									add_to_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 }
-									add_to_variable = { var = Lyashko_general_support value = 1 }
-								}
-							}
-					    }				
-					}					
-					clamp_variable = { var = Zhytomyrska_oblast_poroshenko_support_value min = 0 max = 6 }						
-					clamp_variable = { var = Zhytomyrska_oblast_timoshenko_support_value min = 0 max = 6 }
-					clamp_variable = { var = Zhytomyrska_oblast_lyashko_support_value min = 0 max = 6 }					
+					Zhytomir_elections_campaign_effect = yes					
 				}				
-				# Zaporozhie
+				#############################################################
+				##################### Zaporozhie ############################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 23} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					# Poroshenko
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						}
-                        if = { limit = { check_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 compare = greater_than } 
-						NOT = { check_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 compare = greater_than } } } 
-					        subtract_from_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 }
-							subtract_from_variable = { var = Lyashko_general_support value = 1 }
-							add_to_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 }
-							add_to_variable = { var = Poroshenko_general_support value = 1 }
-					    }
-						if = { limit = { check_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 compare = greater_than } 
-					    NOT = { check_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 compare = greater_than } }} 
-					        subtract_from_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 }
-							subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						    add_to_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 }
-							add_to_variable = { var = Poroshenko_general_support value = 1 }
-					    }						
-						if = { limit = { check_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 compare = greater_than } check_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 compare = greater_than } } 
-					        random_list = {
-								50 = {
-                                    subtract_from_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-									add_to_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 }
-									add_to_variable = { var = Poroshenko_general_support value = 1 }
-								}
-								50 = {
-                                    subtract_from_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 }
-							        subtract_from_variable = { var = Lyashko_general_support value = 1 }
-									add_to_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 }
-									add_to_variable = { var = Poroshenko_general_support value = 1 }
-								}
-							}
-					    }
-					}
-					# Timoshenko
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-						}
-						if = { limit = { check_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
-					        subtract_from_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 }
-							subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-							add_to_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 }
-					    }
-						if = { limit = { check_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 compare = greater_than } } 
-					        subtract_from_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 }
-							subtract_from_variable = { var = Lyashko_general_support value = 1 }
-							add_to_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 }
-					    }						
-						if = { limit = { check_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 compare = greater_than } check_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
-					        random_list = {
-								50 = {
-                                    subtract_from_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 }
-							        subtract_from_variable = { var = Lyashko_general_support value = 1 }
-									add_to_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 }
-								}
-								50 = {
-                                    subtract_from_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-									add_to_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 }
-								}
-							}
-					    }
-
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
-					}
-					# Lyashko
-					if = {
-						limit = {
-							has_country_flag = Oleg_Lyashko_on_2014_elections_favourite
-						}
-						if = { limit = { check_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 compare = greater_than } 
-						NOT = { check_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 compare = greater_than } } } 
-						    random_list = {
-								30 = {
-                                    subtract_from_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-							        add_to_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 }
-							        add_to_variable = { var = Lyashko_general_support value = 1 }
-								}
-								50 = {
-
-								}
-							}
-					    }
-						if = { limit = { check_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 compare = greater_than } 
-					    NOT = { check_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 compare = greater_than } }} 
-					        subtract_from_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 }
-							subtract_from_variable = { var = Lyashko_general_support value = 1 }
-						    add_to_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 }
-							add_to_variable = { var = Lyashko_general_support value = 1 }
-					    }						
-						if = { limit = { check_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 compare = greater_than } check_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
-					        random_list = {
-								30 = {
-                                    subtract_from_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-									add_to_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 }
-									add_to_variable = { var = Lyashko_general_support value = 1 }
-								}
-								20 = {
-                                    subtract_from_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-									add_to_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 }
-									add_to_variable = { var = Lyashko_general_support value = 1 }
-								}
-								50 = {
-
-								}
-							}
-					    }				
-					}					
-
-					clamp_variable = { var = Zaporizka_oblast_poroshenko_support_value min = 0 max = 9 }						
-					clamp_variable = { var = Zaporizka_oblast_timoshenko_support_value min = 0 max = 9 }
-					clamp_variable = { var = Zaporizka_oblast_lyashko_support_value min = 0 max = 9 }									
+					
+					Zaporizka_oblast_elections_campaign_effect = yes
 				}
-				# Zakarpatie
+				#############################################################
+				##################### Zakarpatie ############################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 22} 
-						check_variable = {
-                            var = President_elections_stamina_value
-                            value = 1
-                            compare = greater_than_or_equals
-                        }
+						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
-					subtract_from_variable = {
-                        var = President_elections_stamina_value
-                        value = 1
-                    }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						}
-				        subtract_from_variable = {
-                            var = Zakarpatska_oblast_timoshenko_support_value
-                            value = 1
-                        }
-						add_to_variable = {
-						    var = Zakarpatska_oblast_poroshenko_support_value
-                            value = 1
-						}
-						clamp_variable = {
-		                    var = Zakarpatska_oblast_poroshenko_support_value
-		                    min = 0
-		                    max = 6
-	                    }						
-						clamp_variable = {
-		                    var = Zakarpatska_oblast_timoshenko_support_value
-		                    min = 0
-		                    max = 6
-	                    }
-
-						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						add_to_variable = { var = Poroshenko_general_support value = 1 }						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-						}
-						add_to_variable = {
-						    var = Zakarpatska_oblast_timoshenko_support_value
-                            value = 1
-						}
-				        subtract_from_variable = {
-                            var = Zakarpatska_oblast_poroshenko_support_value
-                            value = 1
-                        }
-						clamp_variable = {
-		                    var = Zakarpatska_oblast_poroshenko_support_value
-		                    min = 0
-		                    max = 6
-	                    }						
-						clamp_variable = {
-		                    var = Zakarpatska_oblast_timoshenko_support_value
-		                    min = 0
-		                    max = 6
-	                    }
-
-						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
-					}					
+					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
+					
+					Zakarpatie_elections_campaign_effect = yes	
 				}
+				#############################################################
+				################## VOLYNSKA OBLAST ##########################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 21} 
-						check_variable = {
-                            var = President_elections_stamina_value
-                            value = 1
-                            compare = greater_than_or_equals
-                        }
+						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
-					subtract_from_variable = {
-                        var = President_elections_stamina_value
-                        value = 1
-                    }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						}
-				        subtract_from_variable = {
-                            var = Volynska_oblast_timoshenko_support_value
-                            value = 1
-                        }
-						add_to_variable = {
-						    var = Volynska_oblast_poroshenko_support_value
-                            value = 1
-						}
-						clamp_variable = {
-		                    var = Volynska_oblast_poroshenko_support_value
-		                    min = 0
-		                    max = 5
-	                    }						
-						clamp_variable = {
-		                    var = Volynska_oblast_timoshenko_support_value
-		                    min = 0
-		                    max = 5
-	                    }
-
-						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						add_to_variable = { var = Poroshenko_general_support value = 1 }						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-						}
-						add_to_variable = {
-						    var = Volynska_oblast_timoshenko_support_value
-                            value = 1
-						}
-				        subtract_from_variable = {
-                            var = Volynska_oblast_poroshenko_support_value
-                            value = 1
-                        }
-						clamp_variable = {
-		                    var = Volynska_oblast_poroshenko_support_value
-		                    min = 0
-		                    max = 5
-	                    }						
-						clamp_variable = {
-		                    var = Volynska_oblast_timoshenko_support_value
-		                    min = 0
-		                    max = 5
-	                    }
-
-						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
-					}					
+					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
+					
+                    Volynska_oblast_elections_campaign_effect = yes					
 				}
+				#############################################################
+				################## Vinnytska OBLAST #########################
+				#############################################################				
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 20} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						}
-				        subtract_from_variable = { var = Vinnytska_oblast_timoshenko_support_value value = 1 }
-						add_to_variable = { var = Vinnytska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Vinnytska_oblast_poroshenko_support_value min = 0 max = 8 }						
-						clamp_variable = { var = Vinnytska_oblast_timoshenko_support_value min = 0 max = 8 }
-
-						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						add_to_variable = { var = Poroshenko_general_support value = 1 }						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-						}
-						add_to_variable = { var = Vinnytska_oblast_timoshenko_support_value value = 1 }
-				        subtract_from_variable = { var = Vinnytska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Vinnytska_oblast_poroshenko_support_value min = 0 max = 8 }						
-						clamp_variable = { var = Vinnytska_oblast_timoshenko_support_value min = 0 max = 8 }
-
-						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
-					}					
+					
+					Vinnytska_oblast_elections_campaign_effect = yes		
 				}
-				# Ternopil
+				#############################################################
+				################## Ternopilska OBLAST #######################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 19} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-                    # Poroshenko
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						}
-                        if = { limit = { check_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 compare = greater_than } 
-						NOT = { check_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 compare = greater_than } } } 
-					        subtract_from_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
-							subtract_from_variable = { var = Lyashko_general_support value = 1 }
-							add_to_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
-							add_to_variable = { var = Poroshenko_general_support value = 1 }
-					    }
-						if = { limit = { check_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 compare = greater_than } 
-					    NOT = { check_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 compare = greater_than } }} 
-					        subtract_from_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
-							subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						    add_to_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
-							add_to_variable = { var = Poroshenko_general_support value = 1 }
-					    }						
-						if = { limit = { check_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 compare = greater_than } check_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 compare = greater_than } } 
-					        random_list = {
-								50 = {
-                                    subtract_from_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-									add_to_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
-									add_to_variable = { var = Poroshenko_general_support value = 1 }
-								}
-								50 = {
-                                    subtract_from_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
-							        subtract_from_variable = { var = Lyashko_general_support value = 1 }
-									add_to_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
-									add_to_variable = { var = Poroshenko_general_support value = 1 }
-								}
-							}
-					    }
-					}
-					# Timoshenko
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-						}
-						if = { limit = { check_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
-					        subtract_from_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
-							subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-							add_to_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
-					    }
-						if = { limit = { check_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 compare = greater_than } } 
-					        subtract_from_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
-							subtract_from_variable = { var = Lyashko_general_support value = 1 }
-							add_to_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
-					    }						
-						if = { limit = { check_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 compare = greater_than } check_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
-					        random_list = {
-								50 = {
-                                    subtract_from_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
-							        subtract_from_variable = { var = Lyashko_general_support value = 1 }
-									add_to_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
-								}
-								50 = {
-                                    subtract_from_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-									add_to_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
-								}
-							}
-					    }
-
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
-					}
-					# Lyashko
-					if = {
-						limit = {
-							has_country_flag = Oleg_Lyashko_on_2014_elections_favourite
-						}
-						if = { limit = { check_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 compare = greater_than } 
-						NOT = { check_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 compare = greater_than } } } 
-						    random_list = {
-								30 = {
-                                    subtract_from_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-							        add_to_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
-							        add_to_variable = { var = Lyashko_general_support value = 1 }
-								}
-								50 = {
-
-								}
-							}
-					    }
-						if = { limit = { check_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 compare = greater_than } 
-					    NOT = { check_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 compare = greater_than } }} 
-					        subtract_from_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
-							subtract_from_variable = { var = Lyashko_general_support value = 1 }
-						    add_to_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
-							add_to_variable = { var = Lyashko_general_support value = 1 }
-					    }						
-						if = { limit = { check_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 compare = greater_than } check_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 compare = greater_than } } 
-					        random_list = {
-								30 = {
-                                    subtract_from_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-									add_to_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
-									add_to_variable = { var = Lyashko_general_support value = 1 }
-								}
-								20 = {
-                                    subtract_from_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
-							        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-									add_to_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
-									add_to_variable = { var = Lyashko_general_support value = 1 }
-								}
-								50 = {
-
-								}
-							}
-					    }				
-					}	
-					clamp_variable = { var = Ternopilska_oblast_poroshenko_support_value min = 0 max = 8 }						
-					clamp_variable = { var = Ternopilska_oblast_timoshenko_support_value min = 0 max = 8 }			
+                   
+					Ternopilska_oblast_elections_campaign_effect = yes
 				}	
-				# Sumska oblast
+				#############################################################
+				##################### Sumska OBLAST #########################
+				#############################################################
 				if = {
-					limit = {
-						check_variable = {select_separatists_region = 18} 
-						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
+					limit = { check_variable = {select_separatists_region = 18}  
+					check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						    NOT = {
-								check_variable = { var = Sumska_oblast_poroshenko_support_value value = 5 compare = greater_than_or_equals }
-							}
-						}
-						random_list = {
-							50 = {
-                                subtract_from_variable = { var = Sumska_oblast_timoshenko_support_value value = 1 }
-						        add_to_variable = { var = Sumska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Sumska_oblast_poroshenko_support_value min = 0 max = 6 }						
-						        clamp_variable = { var = Sumska_oblast_timoshenko_support_value min = 0 max = 6 }
-
-						        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						        add_to_variable = { var = Poroshenko_general_support value = 1 }
-							}
-							30 = {
-
-							}
-						}						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-							NOT = {
-								check_variable = { var = Sumska_oblast_timoshenko_support_value value = 5 compare = greater_than_or_equals }
-							}
-						}
-						random_list = {
-							50 = {
-                                add_to_variable = { var = Sumska_oblast_timoshenko_support_value value = 1 }
-				                subtract_from_variable = { var = Sumska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Sumska_oblast_poroshenko_support_value min = 0 max = 6 }						
-						        clamp_variable = { var = Sumska_oblast_timoshenko_support_value min = 0 max = 6 }
-
-						        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						        add_to_variable = { var = Timoshenko_general_support value = 1 }
-							}
-							30 = {
-
-							}
-						}						
-					}					
+					
+					Sumska_oblast_elections_campaign_effect = yes
 				}	
-				# Poltava
+				#############################################################
+				##################### Poltavska OBLAST ######################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 17} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-							NOT = {
-								check_variable = { var = Poltavska_oblast_poroshenko_support_value value = 5 compare = greater_than_or_equals }
-							}
-						}
-						random_list = {
-							50 = {
-                                subtract_from_variable = { var = Poltavska_oblast_timoshenko_support_value value = 1 }
-						        add_to_variable = { var = Poltavska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Poltavska_oblast_poroshenko_support_value min = 0 max = 7 }						
-						        clamp_variable = { var = Poltavska_oblast_timoshenko_support_value min = 0 max = 7 }
-
-						        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						        add_to_variable = { var = Poroshenko_general_support value = 1 }
-							}
-							30 = {
-
-							}
-						}						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-							NOT = {
-								check_variable = { var = Poltavska_oblast_timoshenko_support_value value = 5 compare = greater_than_or_equals }
-							}
-						}
-						random_list = {
-							50 = {
-						        add_to_variable = { var = Poltavska_oblast_timoshenko_support_value value = 1 }
-				                subtract_from_variable = { var = Poltavska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Poltavska_oblast_poroshenko_support_value min = 0 max = 7 }						
-						        clamp_variable = { var = Poltavska_oblast_timoshenko_support_value min = 0 max = 7 }
-
-						        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						        add_to_variable = { var = Timoshenko_general_support value = 1 }
-							}
-							30 = {
-
-							}
-						}						
-					}					
+					
+					Poltavska_oblast_elections_campaign_effect = yes
 				}
-				# Mikolaev
+				#############################################################
+				################### Mykolaivska OBLAST ######################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 16} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-							NOT = {
-								check_variable = { var = Mykolaivska_oblast_poroshenko_support_value value = 4 compare = greater_than_or_equals }
-							}
-						}
-						random_list = {
-							50 = {
-                                subtract_from_variable = { var = Mykolaivska_oblast_timoshenko_support_value value = 1 }
-						        add_to_variable = { var = Mykolaivska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Mykolaivska_oblast_poroshenko_support_value min = 0 max = 6 }						
-						        clamp_variable = { var = Mykolaivska_oblast_timoshenko_support_value min = 0 max = 6 }
 
-						        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						        add_to_variable = { var = Poroshenko_general_support value = 1 }
-							}
-							30 = {
-
-							}
-						}						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-							NOT = {
-								check_variable = { var = Mykolaivska_oblast_timoshenko_support_value value = 4 compare = greater_than_or_equals }
-							}
-						}
-						random_list = {
-							50 = {
-                                add_to_variable = { var = Mykolaivska_oblast_timoshenko_support_value value = 1 }
-				                subtract_from_variable = { var = Mykolaivska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Mykolaivska_oblast_poroshenko_support_value min = 0 max = 6 }						
-						        clamp_variable = { var = Mykolaivska_oblast_timoshenko_support_value min = 0 max = 6 }
-
-						        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						        add_to_variable = { var = Timoshenko_general_support value = 1 }
-							}
-							30 = {
-
-							}
-						}						
-					}					
+					Mykolaivska_oblast_elections_campaign_effect = yes					
 				}
-				# Lviv
+				#############################################################
+				##################### Lvivska OBLAST ########################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 15} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-					        NOT = {
-								check_variable = { var = Lvivska_oblast_poroshenko_support_value value = 11 compare = greater_than_or_equals }
-							}
-						}
-						random_list = {
-							50 = {
-                                subtract_from_variable = { var = Lvivska_oblast_timoshenko_support_value value = 1 }
-						        add_to_variable = { var = Lvivska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Lvivska_oblast_poroshenko_support_value min = 0 max = 13 }						
-						        clamp_variable = { var = Lvivska_oblast_timoshenko_support_value min = 0 max = 13 }
- 
-						        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						        add_to_variable = { var = Poroshenko_general_support value = 1 }
-							}
-							30 = {
 
-							}
-						}
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-							NOT = {
-								check_variable = { var = Lvivska_oblast_timoshenko_support_value value = 11 compare = greater_than_or_equals }
-							}
-						}
-						random_list = {
-							50 = {
-                                add_to_variable = { var = Lvivska_oblast_timoshenko_support_value value = 1 }
-				                subtract_from_variable = { var = Lvivska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Lvivska_oblast_poroshenko_support_value min = 0 max = 13 }						
-						        clamp_variable = { var = Lvivska_oblast_timoshenko_support_value min = 0 max = 13 }
 
-						        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						        add_to_variable = { var = Timoshenko_general_support value = 1 }
-							}
-							30 = {
-
-							}
-						}						
-					}					
+					Lvivska_oblast_elections_campaign_effect = yes					
 				}
-				# Kyrovhrad
+				#############################################################
+				################## Kirovohradska OBLAST #####################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 14} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						    NOT = {
-								check_variable = { var = Kirovohradska_oblast_poroshenko_support_value value = 5 compare = greater_than_or_equals }
-							}
-						}
-						random_list = {
-							50 = {
-                                subtract_from_variable = { var = Kirovohradska_oblast_timoshenko_support_value value = 1 }
-						        add_to_variable = { var = Kirovohradska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Kirovohradska_oblast_poroshenko_support_value min = 0 max = 5 }						
-						        clamp_variable = { var = Kirovohradska_oblast_timoshenko_support_value min = 0 max = 5 }
 
-						        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						        add_to_variable = { var = Poroshenko_general_support value = 1 }
-							}
-							30 = {
 
-							}
-						}
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-					        NOT = {
-								check_variable = { var = Kirovohradska_oblast_timoshenko_support_value value = 5 compare = greater_than_or_equals }
-							}
-						}
-						random_list = {
-							50 = {
-                               	add_to_variable = { var = Kirovohradska_oblast_timoshenko_support_value value = 1 }
-				                subtract_from_variable = { var = Kirovohradska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Kirovohradska_oblast_poroshenko_support_value min = 0 max = 5 }						
-						        clamp_variable = { var = Kirovohradska_oblast_timoshenko_support_value min = 0 max = 5 }
-
-						        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						        add_to_variable = { var = Timoshenko_general_support value = 1 }
-							}
-							30 = {
-
-							}
-						}						
-					}					
+					Kirovohradska_oblast_elections_campaign_effect = yes	
 				}
 				# Kiyv
 				if = {
@@ -1032,259 +264,95 @@ scripted_gui = {
 						}
 					}					
 				}
-				# Kherson
+				#############################################################
+				#################### Khersonska OBLAST ######################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 12} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-
-							NOT = {
-								check_variable = { var = Khersonska_oblast_poroshenko_support_value value = 5 compare = greater_than_or_equals }
-							}
-						}
-				        subtract_from_variable = { var = Khersonska_oblast_timoshenko_support_value value = 1 }
-						add_to_variable = { var = Khersonska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Khersonska_oblast_poroshenko_support_value min = 0 max = 5 }						
-						clamp_variable = { var = Khersonska_oblast_timoshenko_support_value min = 0 max = 5 }
-
-						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						add_to_variable = { var = Poroshenko_general_support value = 1 }
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-
-							NOT = {
-								check_variable = { var = Khersonska_oblast_timoshenko_support_value value = 5 compare = greater_than_or_equals }
-							}							
-						}
-						add_to_variable = { var = Khersonska_oblast_timoshenko_support_value value = 1 }
-				        subtract_from_variable = { var = Khersonska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Khersonska_oblast_poroshenko_support_value min = 0 max = 5 }						
-						clamp_variable = { var = Khersonska_oblast_timoshenko_support_value min = 0 max = 5 }
-
-						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						add_to_variable = { var = Timoshenko_general_support value = 1 }
-					}					
+					
+					
+					Khersonska_oblast_elections_campaign_effect = yes
 				}
-				# Khmelnitsky
+				#############################################################
+				#################### Khmelnytska OBLAST #####################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 11} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-							NOT = { check_variable = { var = Khmelnytska_oblast_poroshenko_support_value value = 7 compare = greater_than_or_equals } }							
-						}
-				        subtract_from_variable = { var = Khmelnytska_oblast_timoshenko_support_value value = 1 }
-						add_to_variable = { var = Khmelnytska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Khmelnytska_oblast_poroshenko_support_value min = 0 max = 7 }						
-						clamp_variable = { var = Khmelnytska_oblast_timoshenko_support_value min = 0 max = 7 }
-
-						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						add_to_variable = { var = Poroshenko_general_support value = 1 }						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-							NOT = { check_variable = { var = Timoshenko_general_support value = 7 compare = greater_than_or_equals } }
-						}
-						add_to_variable = { var = Khmelnytska_oblast_timoshenko_support_value value = 1 }
-				        subtract_from_variable = { var = Khmelnytska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Khmelnytska_oblast_poroshenko_support_value min = 0 max = 7 }						
-						clamp_variable = { var = Khmelnytska_oblast_timoshenko_support_value min = 0 max = 7 }
-
-						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						add_to_variable = { var = Timoshenko_general_support value = 1 }
-					}					
+					
+					Khmelnytska_oblast_elections_campaign_effect = yes
 				}
-				# Ivano Frankivsk
+				#############################################################
+				################## IvanoFrankivska OBLAST ###################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 10} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-							NOT = { check_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value value = 7 compare = greater_than_or_equals } }
-						}
-				        subtract_from_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value value = 1 }
-						add_to_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value min = 0 max = 7 }						
-						clamp_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value min = 0 max = 7 }
-
-						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						add_to_variable = { var = Poroshenko_general_support value = 1 }						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-							NOT = { check_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value value = 7 compare = greater_than_or_equals } }
-						}
-						add_to_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value value = 1 }
-				        subtract_from_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value min = 0 max = 7 }						
-						clamp_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value min = 0 max = 7 }
-
-						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
-					}					
+					
+					IvanoFrankivska_oblast_elections_campaign_effect = yes
 				}
-                # Dnipro
+				#############################################################
+				################## Dnipropetrovska OBLAST ###################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 9} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-							NOT = { check_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 16 compare = greater_than_or_equals } }
-						}
-						random_list = {
-							50 = {
-				                subtract_from_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value value = 1 }
-						        add_to_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value min = 0 max = 16 }						
-						        clamp_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value min = 0 max = 16 }
-
-						        subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						        add_to_variable = { var = Poroshenko_general_support value = 1 }
-							}
-							50 = {
-
-							}
-						}						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-							NOT = { check_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value value = 16 compare = greater_than_or_equals } }
-						}
-						random_list = {
-                            50 = {
-						        add_to_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value value = 1 }
-				                subtract_from_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 1 }
-						        clamp_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value min = 0 max = 16 }						
-						        clamp_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value min = 0 max = 16 }
-
-						        subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						        add_to_variable = { var = Timoshenko_general_support value = 1 }
-							}
-							50 = {
-
-							}							
-						}						
-					}					
+				    
+					Dnipropetrovska_oblast_elections_campaign_effect = yes
 				}
-                # Chernivtsi
+				#############################################################
+				#################### Chernivetska OBLAST ####################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 8} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						}
-				        subtract_from_variable = { var = Chernivetska_oblast_timoshenko_support_value value = 1 }
-						add_to_variable = { var = Chernivetska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Chernivetska_oblast_poroshenko_support_value min = 0 max = 5 }						
-						clamp_variable = { var = Chernivetska_oblast_timoshenko_support_value min = 0 max = 5 }
-
-						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						add_to_variable = { var = Poroshenko_general_support value = 1 }						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-						}
-						add_to_variable = { var = Chernivetska_oblast_timoshenko_support_value value = 1 }
-				        subtract_from_variable = { var = Chernivetska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Chernivetska_oblast_poroshenko_support_value min = 0 max = 5 }						
-						clamp_variable = { var = Chernivetska_oblast_timoshenko_support_value min = 0 max = 5 }
-
-						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
-					}					
+					
+					
+					Chernivetska_oblast_elections_campaign_effect = yes
 				}	
-                # Chernihiv
+				#############################################################
+				#################### Chernihivska OBLAST ####################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 7} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						}
-				        subtract_from_variable = { var = Chernihivska_oblast_timoshenko_support_value value = 1 }
-						add_to_variable = { var = Chernihivska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Chernihivska_oblast_poroshenko_support_value min = 0 max = 5 }						
-						clamp_variable = { var = Chernihivska_oblast_timoshenko_support_value min = 0 max = 5 }
-
-						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						add_to_variable = { var = Poroshenko_general_support value = 1 }						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-						}
-						add_to_variable = { var = Chernihivska_oblast_timoshenko_support_value value = 1 }
-				        subtract_from_variable = { var = Chernihivska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Chernihivska_oblast_poroshenko_support_value min = 0 max = 5 }						
-						clamp_variable = { var = Chernihivska_oblast_timoshenko_support_value min = 0 max = 5 }
-
-						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
-					}					
+					
+					Chernihivska_oblast_elections_campaign_effect = yes
 				}	
-                # Cherkasy
+				#############################################################
+				##################### Cherkaska OBLAST ######################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 6} 
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						}
-				        subtract_from_variable = { var = Cherkaska_oblast_timoshenko_support_value value = 1 }
-						add_to_variable = { var = Cherkaska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Cherkaska_oblast_poroshenko_support_value min = 0 max = 6 }						
-						clamp_variable = { var = Cherkaska_oblast_timoshenko_support_value min = 0 max = 6 }
-
-						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						add_to_variable = { var = Poroshenko_general_support value = 1 }						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-						}
-						add_to_variable = { var = Cherkaska_oblast_timoshenko_support_value value = 1 }
-				        subtract_from_variable = { var = Cherkaska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Cherkaska_oblast_poroshenko_support_value min = 0 max = 6 }						
-						clamp_variable = { var = Cherkaska_oblast_timoshenko_support_value min = 0 max = 6 }
-
-						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
-					}					
+					
+					Cherkaska_oblast_elections_campaign_effect = yes
 				}
-                # Krym
+				#############################################################
+				########################### Krym ############################
+				#############################################################
 				if = {
 					limit = {
 						check_variable = {select_separatists_region = 5} 
@@ -1294,30 +362,8 @@ scripted_gui = {
 						}
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						}
-				        subtract_from_variable = { var = Krym_timoshenko_support_value value = 1 }
-						add_to_variable = { var = Krym_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Krym_poroshenko_support_value min = 0 max = 10 }						
-						clamp_variable = { var = Krym_timoshenko_support_value min = 0 max = 10 }
-
-						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						add_to_variable = { var = Poroshenko_general_support value = 1 }						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-						}
-						add_to_variable = { var = Krym_timoshenko_support_value value = 1 }
-				        subtract_from_variable = { var = Krym_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Krym_poroshenko_support_value min = 0 max = 10 }						
-						clamp_variable = { var = Krym_timoshenko_support_value min = 0 max = 10 }
-
-						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
-					}					
+					
+					Krym_elections_campaign_effect = yes
 				}	
                 # Odesa
 				if = {
@@ -1326,30 +372,8 @@ scripted_gui = {
 						check_variable = { var = President_elections_stamina_value value = 1 compare = greater_than_or_equals }
 					}
 					subtract_from_variable = { var = President_elections_stamina_value value = 1 }
-					if = {
-						limit = {
-							has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-						}
-				        subtract_from_variable = { var = Odeska_oblast_timoshenko_support_value value = 1 }
-						add_to_variable = { var = Odeska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Odeska_oblast_poroshenko_support_value min = 0 max = 12 }						
-						clamp_variable = { var = Odeska_oblast_timoshenko_support_value min = 0 max = 12 }
-
-						subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-						add_to_variable = { var = Poroshenko_general_support value = 1 }						
-					}
-					if = {
-						limit = {
-							has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-						}
-						add_to_variable = { var = Odeska_oblast_timoshenko_support_value value = 1 }
-				        subtract_from_variable = { var = Odeska_oblast_poroshenko_support_value value = 1 }
-						clamp_variable = { var = Odeska_oblast_poroshenko_support_value min = 0 max = 12 }						
-						clamp_variable = { var = Odeska_oblast_timoshenko_support_value min = 0 max = 12 }
-
-						subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-						add_to_variable = { var = Timoshenko_general_support value = 1 }						
-					}					
+					
+					Odeska_oblast_elections_campaign_effect = yes
 				}
                 # Kharkiv
 				if = {
