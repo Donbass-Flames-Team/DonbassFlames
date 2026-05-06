@@ -4604,7 +4604,91 @@ country_event = {
 
 	option = {
 		name = ukraine.129.a
-		add_stability = -0.03
+		add_stability = 0.02
 		add_political_power = 15
+	}
+}
+
+# Дарт Алексеевич Вейдер выиграл на выборах
+country_event = {
+	id = ukraine.130
+	title = ukraine.130.t
+	desc  = ukraine.130.d
+	picture = GFX_Report_event_gunter_smile_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+						
+		}
+	}
+
+	option = {
+		name = ukraine.130.a
+		add_stability = 0.02
+		hidden_effect = {
+			retire_country_leader = yes
+		    add_country_leader_role = {
+                character = UKR_darth_alekseevich_vader
+                promote_leader = yes
+                country_leader = {
+                    ideology = liberalism
+                    expire = "2045.1.1.1"
+                } 
+            }
+            set_politics = {
+                ruling_party = liberalism
+                elections_allowed = no
+            }
+		    hidden_effect = {
+			    news_event = {
+                    id = news_events.32
+				    hours = 12
+                }
+		    }
+		}
+	}
+}
+
+# Михаил Добкин выиграл на выборах
+country_event = {
+	id = ukraine.131
+	title = ukraine.131.t
+	desc  = ukraine.131.d
+	picture = GFX_Report_event_gunter_smile_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+						
+		}
+	}
+
+	option = {
+		name = ukraine.131.a
+		add_stability = 0.02
+		hidden_effect = {
+			retire_country_leader = yes
+		    add_country_leader_role = {
+                character = UKR_darth_alekseevich_vader
+                promote_leader = yes
+                country_leader = {
+                    ideology = liberalism
+                    expire = "2045.1.1.1"
+                } 
+            }
+            set_politics = {
+                ruling_party = liberalism
+                elections_allowed = no
+            }
+		    hidden_effect = {
+			    news_event = {
+                    id = news_events.33
+				    hours = 12
+                }
+		    }
+		}
 	}
 }

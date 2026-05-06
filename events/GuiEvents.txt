@@ -182,6 +182,8 @@ country_event = {
 			limit = {
 				check_variable = { var = Poroshenko_general_support value = Timoshenko_general_support compare = greater_than }
 				check_variable = { var = Poroshenko_general_support value = Lyashko_general_support compare = greater_than }
+				check_variable = { var = Poroshenko_general_support value = Darth_Alekseevich_Vader_general_support compare = greater_than }
+				check_variable = { var = Poroshenko_general_support value = Dobkin_general_support compare = greater_than }
 			}
 			set_country_flag = UKR_elections_results_poroshenko_winner_gui
 			country_event = ukraine.17
@@ -190,6 +192,8 @@ country_event = {
 			limit = {
 				check_variable = { var = Timoshenko_general_support value = Poroshenko_general_support compare = greater_than }
 				check_variable = { var = Timoshenko_general_support value = Lyashko_general_support compare = greater_than }
+				check_variable = { var = Timoshenko_general_support value = Darth_Alekseevich_Vader_general_support compare = greater_than }
+				check_variable = { var = Timoshenko_general_support value = Dobkin_general_support compare = greater_than }
 			}
 			set_country_flag = UKR_elections_results_timoshenko_winner_gui
 			country_event = ukraine.100
@@ -198,10 +202,31 @@ country_event = {
 			limit = {
 				check_variable = { var = Lyashko_general_support value = Poroshenko_general_support compare = greater_than }
 				check_variable = { var = Lyashko_general_support value = Timoshenko_general_support compare = greater_than }
+				check_variable = { var = Lyashko_general_support value = Darth_Alekseevich_Vader_general_support compare = greater_than }
+				check_variable = { var = Lyashko_general_support value = Dobkin_general_support compare = greater_than }
 			}
 			set_country_flag = UKR_elections_results_lyashko_winner_gui
 			country_event = ukraine.111
+		}
+		if = {
+			limit = {
+				check_variable = { var = Darth_Alekseevich_Vader_general_support value = Poroshenko_general_support compare = greater_than }
+				check_variable = { var = Darth_Alekseevich_Vader_general_support value = Timoshenko_general_support compare = greater_than }
+				check_variable = { var = Darth_Alekseevich_Vader_general_support value = Lyashko_general_support compare = greater_than }
+				check_variable = { var = Darth_Alekseevich_Vader_general_support value = Dobkin_general_support compare = greater_than }
+			}
+			set_country_flag = UKR_elections_results_darth_alekseevich_vader_winner_gui
+			country_event = ukraine.130
 		}		
-
+		if = {
+			limit = {
+				check_variable = { var = Dobkin_general_support value = Poroshenko_general_support compare = greater_than }
+				check_variable = { var = Dobkin_general_support value = Timoshenko_general_support compare = greater_than }
+				check_variable = { var = Dobkin_general_support value = Lyashko_general_support compare = greater_than }
+				check_variable = { var = Dobkin_general_support value = Darth_Alekseevich_Vader_general_support compare = greater_than }
+			}
+			set_country_flag = UKR_elections_results_darth_alekseevich_vader_winner_gui
+			country_event = ukraine.130
+		}
 	}
 }

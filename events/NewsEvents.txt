@@ -1069,3 +1069,35 @@ news_event = {
 		name = news_events.31.a
 	}
 }
+
+# Дарт Алексеевич Вейдер Победил на выборах
+news_event = {
+	id = news_events.32
+	title = news_events.32.t
+	desc = news_events.32.d
+	picture = GFX_news_event_kharkov_accords_terminated
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.32.a
+	}
+}
+
+# Михаил Добкин Победил
+news_event = {
+	id = news_events.33
+	title = news_events.33.t
+	desc = news_events.33.d
+	picture = GFX_news_event_kharkov_accords_terminated
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.33.a
+	}
+}
