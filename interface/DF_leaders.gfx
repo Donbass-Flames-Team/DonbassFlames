@@ -392,6 +392,10 @@ spriteTypes = {
 		name = "GFX_portrait_TMR_yevgeny_shevchuk"
 		texturefile = "gfx/leaders/TMR/TMR_yevgeny_shevchuk.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_TMR_vadim_krasnoselsky"
+		texturefile = "gfx/leaders/TMR/TMR_vadim_krasnoselsky.dds"
+	}
 
 	# MOL Leaders
 	spriteType = {
@@ -407,7 +411,17 @@ spriteTypes = {
 		texturefile = "gfx/leaders/MOL/MOL_maia_sandu.dds"
 	}
 
-	# MOL Leaders
+	# ROM Leaders
+	spriteType = {
+		name = "GFX_portrait_ROM_traian_basescu"
+		texturefile = "gfx/leaders/ROM/ROM_traian_basescu.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ROM_klaus_iohannis"
+		texturefile = "gfx/leaders/ROM/ROM_klaus_iohannis.dds"
+	}
+
+	# SER Leaders
 	spriteType = {
 		name = "GFX_portrait_SER_tomislav_nikolic"
 		texturefile = "gfx/leaders/SER/SER_tomislav_nikolic.dds"

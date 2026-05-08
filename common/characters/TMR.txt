@@ -15,4 +15,19 @@ characters = {
 		}
 	}
 
+	TMR_vadim_krasnoselsky = {
+		name = TMR_vadim_krasnoselsky
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_TMR_vadim_krasnoselsky"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+			expire = "2060.1.1"
+			id = -1
+		}
+	}
+
 }
