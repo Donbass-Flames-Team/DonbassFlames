@@ -327,6 +327,24 @@ spriteTypes = {
 		texturefile = "gfx/leaders/HUN/HUN_peter_magyar.dds"
 	}
 
+	# SLO Leaders
+	spriteType = {
+		name = "GFX_portrait_SLO_ivan_gasparovic"
+		texturefile = "gfx/leaders/SLO/SLO_ivan_gasparovic.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SLO_andrej_kiska"
+		texturefile = "gfx/leaders/SLO/SLO_andrej_kiska.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SLO_zuzana_caputova"
+		texturefile = "gfx/leaders/SLO/SLO_zuzana_caputova.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SLO_peter_pellegrini"
+		texturefile = "gfx/leaders/SLO/SLO_peter_pellegrini.dds"
+	}
+
 	# Poland Leaders
 	spriteType = {
 		name = "GFX_portrait_POL_bronislaw_komorowski"
@@ -343,8 +361,12 @@ spriteTypes = {
 
 	# Lithuania Leaders
 	spriteType = {
-		name = "GFX_portrait_dalia_grybauskaite"
-		texturefile = "gfx/leaders/LIT/Dalia_Grybauskaite.dds"
+		name = "GFX_portrait_LIT_dalia_grybauskaite"
+		texturefile = "gfx/leaders/LIT/LIT_dalia_grybauskaite.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LIT_gitanas_nauseda"
+		texturefile = "gfx/leaders/LIT/LIT_gitanas_nauseda.dds"
 	}
 
 	# KPR Leaders

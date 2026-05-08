@@ -1,0 +1,63 @@
+characters = {
+
+	SLO_ivan_gasparovic = {
+		name = SLO_ivan_gasparovic
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SLO_ivan_gasparovic"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { }
+			expire = "2060.1.1"
+			id = -1
+		}
+	}
+
+	SLO_andrej_kiska = {
+		name = SLO_andrej_kiska
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SLO_andrej_kiska"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { }
+			expire = "2060.1.1"
+			id = -1
+		}
+	}
+
+	SLO_zuzana_caputova = {
+		name = SLO_zuzana_caputova
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SLO_zuzana_caputova"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { }
+			expire = "2060.1.1"
+			id = -1
+		}
+	}
+
+	SLO_peter_pellegrini = {
+		name = SLO_peter_pellegrini
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SLO_peter_pellegrini"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			traits = { }
+			expire = "2060.1.1"
+			id = -1
+		}
+	}
+
+}

@@ -1,18 +1,33 @@
 characters = {
 
-    dalia_grybauskaite = {
-        name = dalia_grybauskaite
-        portraits = {
-            civilian = {
-                large = "GFX_portrait_dalia_grybauskaite"
-            }
-        }
-        country_leader = {
-            ideology = liberalism
-            traits = { }
-            expire = "2019.7.12"
-            id = -1
-        }
-    }
+	LIT_dalia_grybauskaite = {
+		name = LIT_dalia_grybauskaite
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_LIT_dalia_grybauskaite"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { }
+			expire = "2019.7.12"
+			id = -1
+		}
+	}
+
+	LIT_gitanas_nauseda = {
+		name = LIT_gitanas_nauseda
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_LIT_gitanas_nauseda"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			traits = { }
+			expire = "2019.7.12"
+			id = -1
+		}
+	}
 
 }
