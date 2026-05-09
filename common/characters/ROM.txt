@@ -1,0 +1,33 @@
+characters = {
+
+	ROM_traian_basescu = {
+		name = ROM_traian_basescu
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ROM_traian_basescu"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { }
+			expire = "2014.12.21"
+			id = -1
+		}
+	}
+
+	ROM_klaus_iohannis = {
+		name = ROM_klaus_iohannis
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ROM_klaus_iohannis"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { }
+			expire = "2025.2.12"
+			id = -1
+		}
+	}
+
+}

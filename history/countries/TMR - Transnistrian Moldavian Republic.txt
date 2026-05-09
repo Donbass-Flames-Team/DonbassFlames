@@ -44,30 +44,30 @@ set_technology = {
 }
 
 	if = {
-	    limit = { has_dlc = "No Step Back" }
-		    set_technology = {
- 		        apc_chassis = 1
-		        apc_chassis_2 = 1
-		        apc_chassis_3 = 1
-		        apc_chassis_4 = 1
+		limit = { has_dlc = "No Step Back" }
+			set_technology = {
+ 				apc_chassis = 1
+				apc_chassis_2 = 1
+				apc_chassis_3 = 1
+				apc_chassis_4 = 1
 
-		        ifv_chassis = 1
-		        ifv_chassis_2 = 1
-		        ifv_chassis_3 = 1
-		        ifv_chassis_4 = 1
+				ifv_chassis = 1
+				ifv_chassis_2 = 1
+				ifv_chassis_3 = 1
+				ifv_chassis_4 = 1
 				gwtank_chassis = 1
-		    }
-	    else = {
-		    set_technology = {
-	 		    apc_chassis = 1
-		        apc_chassis_2 = 1
-		        apc_chassis_3 = 1
-		        apc_chassis_4 = 1
+			}
+		else = {
+			set_technology = {
+	 			apc_chassis = 1
+				apc_chassis_2 = 1
+				apc_chassis_3 = 1
+				apc_chassis_4 = 1
 
-		        ifv_1 = 1
-		        ifv_2 = 1
-		        ifv_3 = 1
-		        bmd_1 = 1
+				ifv_1 = 1
+				ifv_2 = 1
+				ifv_3 = 1
+				bmd_1 = 1
 				bmd_2 = 1
 				bmd_3 = 1
 				APC_1 = 1
@@ -77,24 +77,24 @@ set_technology = {
 				modern_tank_2 = 1
 				modern_tank_3 = 1		
 				modern_tank_4 = 1		   
-		    }
-	    }
-    }
+			}
+		}
+	}
 
 set_politics = {
-    ruling_party = autoritarian_democracy
-    last_election = "2011.12.30"
-    election_frequency = 60
-    elections_allowed = yes
-    }
+	ruling_party = autoritarian_democracy
+	last_election = "2011.12.30"
+	election_frequency = 60
+	elections_allowed = yes
+	}
 
 set_popularities = {
-    autoritarian_democracy = 52
-    conservatism_democracy = 25
-    communism = 15
-    liberal_democracy = 5
-    nationalism = 3
-    social_democracy = 0
+	autoritarian_democracy = 52
+	conservatism_democracy = 25
+	communism = 15
+	liberal_democracy = 5
+	nationalism = 3
+	social_democracy = 0
 }
 add_equipment_to_stockpile = {
 	type = train_equipment_1
@@ -103,3 +103,4 @@ add_equipment_to_stockpile = {
 }
 
 recruit_character = TMR_yevgeny_shevchuk
+recruit_character = TMR_vadim_krasnoselsky

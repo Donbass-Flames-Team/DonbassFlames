@@ -1,0 +1,33 @@
+characters = {
+
+	SER_tomislav_nikolic = {
+		name = SER_tomislav_nikolic
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SER_tomislav_nikolic"
+			}
+		}
+		country_leader = {
+			ideology = nationalism
+			traits = { }
+			expire = "2060.1.1"
+			id = -1
+		}
+	}
+
+	SER_aleksandar_vucic = {
+		name = SER_aleksandar_vucic
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SER_aleksandar_vucic"
+			}
+		}
+		country_leader = {
+			ideology = nationalism
+			traits = { }
+			expire = "2060.1.1"
+			id = -1
+		}
+	}
+
+}

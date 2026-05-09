@@ -1,18 +1,33 @@
 characters = {
 
-    TMR_yevgeny_shevchuk = {
-        name = TMR_yevgeny_shevchuk
-        portraits = {
-            civilian = {
-                large = "GFX_portrait_TMR_yevgeny_shevchuk"
-            }
-        }
-        country_leader = {
-            ideology = autoritarian_democracy
-            traits = { }
-            expire = "2060.1.1"
-            id = -1
-        }
-    }
+	TMR_yevgeny_shevchuk = {
+		name = TMR_yevgeny_shevchuk
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_TMR_yevgeny_shevchuk"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+			expire = "2060.1.1"
+			id = -1
+		}
+	}
+
+	TMR_vadim_krasnoselsky = {
+		name = TMR_vadim_krasnoselsky
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_TMR_vadim_krasnoselsky"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+			expire = "2060.1.1"
+			id = -1
+		}
+	}
 
 }
