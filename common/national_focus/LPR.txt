@@ -1,5 +1,6 @@
 focus_tree = {
 	id = luhansk_people_republic
+
 	country = {
 		factor = 0
 		modifier = {
@@ -7,42 +8,37 @@ focus_tree = {
 			tag = LPR
 		}
 	}
-	default = no
+
 	continuous_focus_position = { x = 2500 y = 500 }
 
 	focus = {
-		id = LPR_capture_administrations
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.2
+		id = LPR_capture_SBU
+		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 12
 		y = 0
-
-		available = {
-			
-		}
+		cost = 0
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			add_war_support = 0.05
-			add_stability = 0.05
-			add_political_power = 35
-			add_command_power = 10
+						add_stability = 0.05
+						add_political_power = 35
+						add_command_power = 10
+		}
+
+		ai_will_do = {
+			base = 1
 		}
 	}
 
 	focus = {
-		id = LPR_loot_the_offices_of_the_mvd_and_sbu
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.3
-		x = 0
+		id = LPR_create_coordination_center
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 10
 		y = 1
-
-		
-		prerequisite = {focus = LPR_capture_administrations}
-		relative_position_id = LPR_capture_administrations
-
-		available = {
-			
-		}
+		cost = 4
+		prerequisite = { focus = LPR_capture_SBU }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			add_war_support = 0.03
@@ -59,171 +55,314 @@ focus_tree = {
 				amount = 2500
 			}
 		}
-	}
-	
-	focus = {
-		id = LPR_arrise_donbass
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.5
-		x = 0
-		y = 2
 
-		prerequisite = {focus = LPR_loot_the_offices_of_the_mvd_and_sbu}
-		relative_position_id = LPR_capture_administrations
-
-		available = {
-			
-		}
-
-		completion_reward = {
-			add_ideas = DPR_arrise_donbass_idea
+		ai_will_do = {
+			base = 1
 		}
 	}
 
 	focus = {
-		id = LPR_appeal_to_the_russian_spirit
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 2
-		x = 0
+		id = LPR_distribute_weapons
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 14
 		y = 1
-
-		
-		prerequisite = {focus = LPR_arrise_donbass}
-		relative_position_id = LPR_arrise_donbass
-
-		available = {
-			
-		}
+		cost = 4
+		prerequisite = { focus = LPR_capture_SBU }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_ideas = DPR_russian_spring_idea
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_distribute_weapons"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 850
+			}
+			add_equipment_to_stockpile = {
+				type = bulletproof_vests_equipment_1
+				amount = 1200
+			}
+			add_equipment_to_stockpile = {
+				type = uniform_equipment_1 
+				amount = 1500
+			}
+			add_equipment_to_stockpile = {
+				type = manpads_weapons
+				amount = 300
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_set_checkpoints
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 15
+		y = 2
+		cost = 2
+		prerequisite = { focus = LPR_distribute_weapons }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
 			hidden_effect = {
 				load_oob = LPR_millitia
 			}
+			add_timed_idea = {
+				idea = LPR_set_checkpoints
+				days = 135
+			}
+			add_timed_idea = {
+				idea = DPR_russian_spring_idea
+				days = 40
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_peoples_druzhina
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 14
+		y = 3
+		cost = 2
+		prerequisite = { focus = LPR_set_checkpoints }
+		prerequisite = { focus = LPR_vehicle_confiscation }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_peoples_druzhina"
+			add_manpower = 4000
+			add_stability = 0.02
+			add_war_support = 0.05
+			add_timed_idea = {
+				idea = LPR_cooperative_attack_of_druzhina
+				days = 50
+			}
+		}
+
+		ai_will_do = {
+			base = 1
 		}
 	}
 
 	focus = {
 		id = LPR_luhansk_castle
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 9
+		y = 2
 		cost = 2
-		x = 0
-		y = 1
-
-		
-		prerequisite = {focus = LPR_appeal_to_the_russian_spirit}
-		relative_position_id = LPR_appeal_to_the_russian_spirit
-
-		available = {
-			
-		}
+		prerequisite = { focus = LPR_create_coordination_center }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-    		340 = {
-			    add_dynamic_modifier = { modifier = LPR_luhansk_castle_dynamic_idea scope = LPR }
-		    }
-			custom_effect_tooltip = LPR_bunkers_around_luhansk_tt
-        	hidden_effect = {
-                if = {
-				    limit = {
-					    LPR = {
-						    controls_province = 11062
+			340 = {
+						    add_dynamic_modifier = { modifier = LPR_luhansk_castle_dynamic_idea scope = LPR }
 					    }
-				    }
-				    340 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 3
-						    province = 11062
-							instant_build = yes
-					    }
-				    }
-			    }
-                if = {
-				    limit = {
-					    LPR = {
-						    controls_province = 11604 
-					    }
-				    }
-				    340 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 4
-						    province = 11604 
-							instant_build = yes
-					    }
-				    }
-			    }	
-				if = {
-				    limit = {
-					    LPR = {
-						    controls_province = 8516  
-					    }
-				    }
-				    340 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 8516  
-							instant_build = yes
-					    }
-				    }
-			    }
-				if = {
-				    limit = {
-					    LPR = {
-						    controls_province = 15279   
-					    }
-				    }
-				    340 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 3
-						    province = 15279  
-							instant_build = yes 
-					    }
-				    }
-			    }
-				if = {
-				    limit = {
-					    LPR = {
-						    controls_province = 15254   
-					    }
-				    }
-				    340 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 3
-						    province = 15254  
-							instant_build = yes 
-					    }
-				    }
-			    }				
-				
-			}			
+						custom_effect_tooltip = LPR_bunkers_around_luhansk_tt
+			        	hidden_effect = {
+			                if = {
+							    limit = {
+								    LPR = {
+									    controls_province = 11062
+								    }
+							    }
+							    340 = {
+								    add_building_construction = {
+									    type = bunker
+									    level = 3
+									    province = 11062
+										instant_build = yes
+								    }
+							    }
+						    }
+			                if = {
+							    limit = {
+								    LPR = {
+									    controls_province = 11604 
+								    }
+							    }
+							    340 = {
+								    add_building_construction = {
+									    type = bunker
+									    level = 4
+									    province = 11604 
+										instant_build = yes
+								    }
+							    }
+						    }	
+							if = {
+							    limit = {
+								    LPR = {
+									    controls_province = 8516  
+								    }
+							    }
+							    340 = {
+								    add_building_construction = {
+									    type = bunker
+									    level = 2
+									    province = 8516  
+										instant_build = yes
+								    }
+							    }
+						    }
+							if = {
+							    limit = {
+								    LPR = {
+									    controls_province = 15279   
+								    }
+							    }
+							    340 = {
+								    add_building_construction = {
+									    type = bunker
+									    level = 3
+									    province = 15279  
+										instant_build = yes 
+								    }
+							    }
+						    }
+							if = {
+							    limit = {
+								    LPR = {
+									    controls_province = 15254   
+								    }
+							    }
+							    340 = {
+								    add_building_construction = {
+									    type = bunker
+									    level = 3
+									    province = 15254  
+										instant_build = yes 
+								    }
+							    }
+						    }				
+							
+						}
+		}
+
+		ai_will_do = {
+			base = 1
 		}
 	}
 
 	focus = {
-		id = LPR_luhansk_armed_forces
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		id = LPR_vehicle_confiscation
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 13
+		y = 2
 		cost = 2
-		x = -4
-		y = 1
-
-		
-		prerequisite = {focus = LPR_appeal_to_the_russian_spirit}
-		relative_position_id = LPR_appeal_to_the_russian_spirit
-
-		available = {
-			
-		}
+		prerequisite = { focus = LPR_distribute_weapons }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_ideas = DPR_russian_spring_idea
-			hidden_effect = {
-				load_oob = LPR_millitia
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_vehicle_confiscation"
+			add_equipment_to_stockpile = {
+				type = infantry_fighting_vehicle_1
+				amount = 90
+			}
+			add_equipment_to_stockpile = {
+				type = apc_chassis_1
+				amount = 40
 			}
 		}
+
+		ai_will_do = {
+			base = 1
+		}
 	}
+
+	focus = {
+		id = LPR_act_on_sovereignty
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 11
+		y = 2
+		cost = 1
+		prerequisite = { focus = LPR_create_coordination_center }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_act_on_sovereignty"
+			add_state_core = 340
+			add_stability = 0.05
+			add_political_power = 40
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_resource_mobilization
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 10
+		y = 3
+		cost = 4
+		prerequisite = { focus = LPR_act_on_sovereignty }
+		prerequisite = { focus = LPR_luhansk_castle }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_resource_mobilization"
+			add_manpower = 2000
+			add_equipment_to_stockpile = {
+				type = uniform_equipment_1
+				amount = 2500
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1500
+			}
+			add_equipment_to_stockpile = {
+				type = bulletproof_vests_equipment_1
+				amount = 800
+			}
+			add_equipment_to_stockpile = {
+				type = manpads_weapons
+				amount = 200
+			}
+			add_equipment_to_stockpile = {
+				type = atgm_weapons
+				amount = 60
+			}
+			add_equipment_to_stockpile = {
+				type = mortar_weapons_1
+				amount = 200
+			}
+			add_equipment_to_stockpile = {
+				type = atgl_weapons
+				amount = 50
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_republic_of_bolotov
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 12
+		y = 4
+		cost = 10
+		prerequisite = { focus = LPR_peoples_druzhina }
+		prerequisite = { focus = LPR_resource_mobilization }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_republic_of_bolotov"
+			add_ideas = LPR_republic_of_bolotov
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
 }
