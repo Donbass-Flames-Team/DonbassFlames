@@ -36,7 +36,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 10
 		y = 1
-		cost = 4
+		cost = 0.5
 		prerequisite = { focus = LPR_capture_SBU }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -66,7 +66,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 14
 		y = 1
-		cost = 4
+		cost = 0.5
 		prerequisite = { focus = LPR_capture_SBU }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -100,7 +100,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 15
 		y = 2
-		cost = 2
+		cost = 0.3
 		prerequisite = { focus = LPR_distribute_weapons }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -128,7 +128,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 14
 		y = 3
-		cost = 2
+		cost = 0.3
 		prerequisite = { focus = LPR_set_checkpoints }
 		prerequisite = { focus = LPR_vehicle_confiscation }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -154,7 +154,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 9
 		y = 2
-		cost = 2
+		cost = 0.3
 		prerequisite = { focus = LPR_create_coordination_center }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -253,7 +253,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 13
 		y = 2
-		cost = 2
+		cost = 0.3
 		prerequisite = { focus = LPR_distribute_weapons }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -279,7 +279,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 11
 		y = 2
-		cost = 1
+		cost = 0.2
 		prerequisite = { focus = LPR_create_coordination_center }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -300,7 +300,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 10
 		y = 3
-		cost = 4
+		cost = 0.5
 		prerequisite = { focus = LPR_act_on_sovereignty }
 		prerequisite = { focus = LPR_luhansk_castle }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -336,6 +336,8 @@ focus_tree = {
 				type = atgl_weapons
 				amount = 50
 			}
+			load_oob = "LPR_millitia"
+			load_oob = "LPR_millitia"
 		}
 
 		ai_will_do = {
@@ -348,7 +350,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 12
 		y = 4
-		cost = 10
+		cost = 0.5
 		prerequisite = { focus = LPR_peoples_druzhina }
 		prerequisite = { focus = LPR_resource_mobilization }
 		search_filters = { FOCUS_FILTER_POLITICAL }
