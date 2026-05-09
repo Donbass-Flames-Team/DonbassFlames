@@ -89,13 +89,13 @@ guiTypes = {
 			text = "UKR_election_population_text"
 		}	
 		
-		#instantTextBoxType = {
-		#	name = "UKR_local_population_text"
-		#	maxWidth = 450
-		#	position = { x = 926 y = 492 }
-		#	font = "hoi_24header"
-		#	text = "UKR_local_population_text"
-		#}
+		instantTextBoxType = {
+			name = "UKR_local_population_text"
+			maxWidth = 450
+			position = { x = 926 y = 492 }
+			font = "hoi_24header"
+			text = "UKR_local_population_text"
+		}
 
 		instantTextBoxType = {
 			name = "UKR_separatismgui_region_name"
