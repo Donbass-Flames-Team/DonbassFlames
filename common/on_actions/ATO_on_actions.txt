@@ -63,6 +63,7 @@ on_actions = {
 					surrender_progress > 0.24
 					NOT = {
 						has_global_flag = South_uprisings_ato_during
+						has_global_flag = ATO_Separatists_victory
 					}
 				}
 				country_event = { id = ukraine.114 }
@@ -83,6 +84,7 @@ on_actions = {
 					}
 					NOT = {
 						has_global_flag = Bessarabska_people_republic_uprising_ato_during
+						has_global_flag = ATO_Separatists_victory
 					}
 				}
 				country_event = { id = ukraine.117 }

@@ -3509,22 +3509,29 @@ country_event = {
 					hours = 1
 				}
 			}
-			UKR = {
-				country_event = {
-					id = ukraine.119
-				    days = 10
-				    random_days = 25
+			if = {
+				limit = { 
+					country_exists = ZPR
+					country_exists = DPR
+					country_exists = LPR
+					country_exists = OPR
+					country_exists = KPR
+					OR = {
+						country_exists = HPR
+						country_exists = NPR
+					}
 				}
-				country_event = {
-					id = ukraine.121
-				    days = 7
-				    random_days = 16
-				}		
-				country_event = {
-					id = ukraine.124
-					days = 11
-					random_days = 15
-				}		
+				set_global_flag = Novorossia_won
+			}
+			if = {
+				limit = { has_global_flag = Novorossia_won }
+				UKR = {
+				    country_event = {
+					    id = ukraine.119
+				        days = 10
+				        random_days = 25
+				    }		
+			    }
 			}
 			LPR = {
 				transfer_state = 406
@@ -3760,7 +3767,14 @@ country_event = {
 			}
 			if = {
 				limit = {
-					country_exists = HPR
+					OR = {
+						country_exists = HPR
+						AND = {
+							country_exists = NPR
+							country_exists = ZPR
+						}
+						
+					}
 				}
 				HPR = {
 					transfer_state = 548
@@ -3799,6 +3813,10 @@ country_event = {
 					}
 				}
 				ZPR = {
+					transfer_state = 451
+					transfer_state = 457
+					transfer_state = 449
+
 					transfer_state = 449
 					transfer_state = 423
 					transfer_state = 420
@@ -4303,7 +4321,18 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-
+        hidden_effect = {
+			country_event = {
+				id = ukraine.121
+				days = 7
+				random_days = 16
+			}		
+			country_event = {
+				id = ukraine.124
+				days = 11
+				random_days = 15
+			}
+		}
 	}
 
 	option = {
@@ -4568,7 +4597,7 @@ country_event = {
 				traits = {}
 			}
 			country_event = {
-				id = ukraine.127
+				id = ukraine.133
 				hours = 8
 			}
 		}
@@ -4788,5 +4817,30 @@ country_event = {
 	option = {
 		name = ukraine.132.g
 		country_event = ukraine.99
+	}
+}
+
+# Введение законов военного времени
+country_event = {
+	id = ukraine.133
+	title = ukraine.133.t
+	desc  = ukraine.133.d
+	picture = GFX_Report_event_gunter_smile_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.127
+				days = 1
+			}			
+		}
+	}
+
+	option = {
+		name = ukraine.133.a
+		add_political_power = 50
+		add_stability = -0.05
 	}
 }
