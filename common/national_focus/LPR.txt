@@ -54,6 +54,8 @@ focus_tree = {
 				type = uniform_equipment_1 
 				amount = 2500
 			}
+			add_political_power = 30
+			add_stability = 0.05
 		}
 
 		ai_will_do = {
@@ -325,18 +327,17 @@ focus_tree = {
 				amount = 200
 			}
 			add_equipment_to_stockpile = {
-				type = atgm_weapons
+				type = atgm_weapons1
 				amount = 60
 			}
 			add_equipment_to_stockpile = {
-				type = mortar_weapons_1
+				type = mortar_weapons1
 				amount = 200
 			}
 			add_equipment_to_stockpile = {
-				type = atgl_weapons
+				type = atgl_weapons_1
 				amount = 50
 			}
-			load_oob = "LPR_millitia"
 			load_oob = "LPR_millitia"
 		}
 
@@ -360,6 +361,151 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_republic_of_bolotov"
 			add_ideas = LPR_republic_of_bolotov
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_Introduction_of_a_state_emergency
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 10
+		y = 5
+		cost = 0.3
+		prerequisite = { focus = LPR_republic_of_bolotov }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_Introduction_of_a_state_emergency"
+			add_ideas = LPR_introduction_of_a_state_of_emergency
+			add_political_power = 20
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_preparing_for_may_11
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 12
+		y = 5
+		cost = 0.7
+		prerequisite = { focus = LPR_republic_of_bolotov }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_preparing_for_may_11"
+			add_political_power = 50
+			add_stability = 0.1
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_full_mobilization
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 10
+		y = 6
+		cost = 0.5
+		prerequisite = { focus = LPR_Introduction_of_a_state_emergency }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_full_mobilization"
+			add_timed_idea = {
+				idea = LPR_mobilization_shock
+				days = 40
+			}
+			add_political_power = 15
+			load_oob = "LPR_millitia"
+			load_oob = "LPR_millitia"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_negotiations_with_mozgovoy
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 14
+		y = 5
+		cost = 0.3
+		prerequisite = { focus = LPR_republic_of_bolotov }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			has_political_power > 29
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_negotiations_with_mozgovoy"
+			annex_country = {
+				target = SLR
+				transfer_troops = yes
+			}
+			add_political_power = -30
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_peoples_court_of_novorossiya
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 14
+		y = 6
+		cost = 0.5
+		prerequisite = { focus = LPR_negotiations_with_mozgovoy }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			has_political_power > 49
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_peoples_court_of_novorossiya"
+			add_political_power = -50
+			add_ideas = LPR_harsh_courts
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_referendum
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 12
+		y = 7
+		cost = 0
+		prerequisite = { focus = LPR_full_mobilization }
+		prerequisite = { focus = LPR_preparing_for_may_11 }
+		prerequisite = { focus = LPR_peoples_court_of_novorossiya }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_referendum"
+						add_stability = 0.15
+						add_political_power = 120
+						add_popularity = {
+			                ideology = autoritarian_democracy
+			                popularity = 0.05
+						add_ideas = LPR_peoples_mandate
+					}
+			
+					ai_will_do = {
+						base = 1
+					}
 		}
 
 		ai_will_do = {
