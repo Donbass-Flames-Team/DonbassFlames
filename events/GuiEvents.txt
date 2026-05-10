@@ -49,7 +49,7 @@ country_event = {
 		### General population on elections
 		set_variable = {
 			var = General_population_on_elections
-			value = 192
+			value = 195
 		}
         multiply_variable = {
             var = General_population_on_elections
@@ -110,7 +110,39 @@ country_event = {
             var = general_population_support_lyashko_value
             value = Voter_turnout_procent_ukraine_elections
         }	
-		### Timoshenko precentage support on elections
+		# Mihail Dobkin
+		set_variable = {
+			var = general_population_support_dobkin_value
+			value = Dobkin_general_support 
+		}
+        multiply_variable = {
+            var = general_population_support_dobkin_value
+            value = 125000
+            tooltip = multiply_var_by_100_tt
+        }	
+		multiply_variable = {
+            var = general_population_support_dobkin_value
+            value = Voter_turnout_procent_ukraine_elections
+        }
+		# Darth Alekseevich Vader
+		set_variable = {
+			var = general_population_support_darth_alekseevich_value
+			value = Darth_Alekseevich_Vader_general_support 
+		}
+        multiply_variable = {
+            var = general_population_support_darth_alekseevich_value
+            value = 125000
+            tooltip = multiply_var_by_100_tt
+        }	
+		multiply_variable = {
+            var = general_population_support_darth_alekseevich_value
+            value = Voter_turnout_procent_ukraine_elections
+        }		
+		##################################################
+		##################################################
+		### Timoshenko precentage support on elections ###
+		##################################################
+		##################################################
         set_variable = {
 			var = Timoshenko_percentage_result_on_elections
 			value = general_population_support_timoshenko_value
@@ -152,7 +184,36 @@ country_event = {
 			value = 100		
 		}
 		round_variable = Lyashko_percentage_result_on_elections		
-		
+		### Dobkin precentage support on elections
+        set_variable = {
+			var = Dobkin_percentage_result_on_elections
+			value = general_population_support_dobkin_value
+		}
+		divide_variable = {
+			var = Dobkin_percentage_result_on_elections
+			value = General_population_on_elections 
+		}
+		multiply_variable = {
+			var = Dobkin_percentage_result_on_elections
+			value = 100		
+		}
+		round_variable = Dobkin_percentage_result_on_elections
+		### Darth Alekseevich Vader precentage support on elections
+        set_variable = {
+			var = Darth_alekseevich_percentage_result_on_elections
+			value = general_population_support_darth_alekseevich_value
+		}
+		divide_variable = {
+			var = Darth_alekseevich_percentage_result_on_elections
+			value = General_population_on_elections 
+		}
+		multiply_variable = {
+			var = Darth_alekseevich_percentage_result_on_elections
+			value = 100		
+		}
+		round_variable = Darth_alekseevich_percentage_result_on_elections
+
+
 		if = {
 			limit = {
 				has_country_flag = Elections2014InProgress

@@ -3237,6 +3237,19 @@ country_event = {
 		custom_effect_tooltip = NOT_A_WORKING_WAY_tt
 	}	
 
+	option = {
+		name = ukraine.99.c
+		clr_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+        set_country_flag = Svoboda_on_2014_elections_favourite
+		custom_effect_tooltip = NOT_A_WORKING_WAY_tt
+	}
+    
+	# Дальше кандидаты
+	option = {
+		name = ukraine.99.h
+		country_event = ukraine.132
+	}
+
 	# Кандидаты назад
 	option = {
 		name = ukraine.99.g
@@ -4739,5 +4752,41 @@ country_event = {
                 }
 		    }
 		}
+	}
+}
+
+# Кандидаты дальше (ukraine.99)
+country_event = {
+	id = ukraine.132
+	title = ukraine.132.t
+	desc  = ukraine.132.d
+	picture = GFX_Report_event_gunter_smile_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+						
+		}
+	}
+
+	option = {
+		name = ukraine.132.a
+		clr_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+        set_country_flag = Petr_Simonenko_on_2014_elections_favourite
+		custom_effect_tooltip = NOT_A_WORKING_WAY_tt
+	}
+
+	option = {
+		name = ukraine.132.BAH_autonomy_collaboration_government_DEF
+		clr_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+        set_country_flag = Pravy_Sektor_on_2014_elections_favourite
+		custom_effect_tooltip = NOT_A_WORKING_WAY_tt
+	}
+
+	# Кандидаты назад
+	option = {
+		name = ukraine.132.g
+		country_event = ukraine.99
 	}
 }

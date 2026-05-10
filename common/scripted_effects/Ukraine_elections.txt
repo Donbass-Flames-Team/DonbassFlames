@@ -6,28 +6,28 @@ Zhytomir_elections_campaign_effect = {
 	}
 	random_list = {
 	    Zhytomyrska_oblast_timoshenko_support_value = {
-	    subtract_from_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 }
+	        subtract_from_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 }
 		    subtract_from_variable = { var = Timoshenko_general_support value = 1 }
 		    add_to_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
 		    add_to_variable = { var = Poroshenko_general_support value = 1 }
 	    }
 	    Zhytomyrska_oblast_lyashko_support_value = {
-	    subtract_from_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 }
+	        subtract_from_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 }
 		    subtract_from_variable = { var = Lyashko_general_support value = 1 }
 		    add_to_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
 		    add_to_variable = { var = Poroshenko_general_support value = 1 }
 	    }
 	    Zhytomyrska_oblast_dobkin_support_value = {
-	    subtract_from_variable = { var = Zhytomyrska_oblast_dobkin_support_value value = 1 }
+	         subtract_from_variable = { var = Zhytomyrska_oblast_dobkin_support_value value = 1 }
 		    subtract_from_variable = { var = Dobkin_general_support value = 1 }
 		    add_to_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
 		    add_to_variable = { var = Poroshenko_general_support value = 1 }
 	    } 
  	    Zhytomyrska_oblast_darth_alekseevich_vader_support_value = {
-		subtract_from_variable = { var = Zhytomyrska_oblast_darth_alekseevich_vader_support_value value = 1 }
-		subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-		add_to_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
-		add_to_variable = { var = Poroshenko_general_support value = 1 }
+		    subtract_from_variable = { var = Zhytomyrska_oblast_darth_alekseevich_vader_support_value value = 1 }
+		    subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
+		    add_to_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
+		    add_to_variable = { var = Poroshenko_general_support value = 1 }
 	    }		      
 	}
     }
@@ -130,7 +130,7 @@ Zhytomir_elections_campaign_effect = {
     # Darth Vader Alekseevich
     if = {
 	limit = {
-	    has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+	    has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 	}
 	random_list = {
 	    Zhytomyrska_oblast_poroshenko_support_value = {
@@ -302,7 +302,7 @@ Zakarpatie_elections_campaign_effect = {
     # Darth Vader Alekseevich
     if = {
 	limit = {
-	    has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+	    has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 	}
 	random_list = {
 	    Zakarpatska_oblast_poroshenko_support_value = {
@@ -472,7 +472,7 @@ Volynska_oblast_elections_campaign_effect = {
     # Darth Vader Alekseevich
     if = {
 	limit = {
-	    has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+	    has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 	}
 	random_list = {
 	    Volynska_oblast_poroshenko_support_value = {
@@ -642,7 +642,7 @@ Ternopilska_oblast_elections_campaign_effect = {
     # Darth Vader Alekseevich
     if = {
 	limit = {
-	    has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+	    has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 	}
 	random_list = {
 	    Ternopilska_oblast_poroshenko_support_value = {
@@ -807,7 +807,7 @@ Vinnytska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Vinnytska_oblast_poroshenko_support_value = {
@@ -969,7 +969,7 @@ Sumska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Sumska_oblast_poroshenko_support_value = {
@@ -1131,7 +1131,7 @@ Poltavska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Poltavska_oblast_poroshenko_support_value = {
@@ -1293,7 +1293,7 @@ Mykolaivska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Mykolaivska_oblast_poroshenko_support_value = {
@@ -1455,7 +1455,7 @@ Lvivska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Lvivska_oblast_poroshenko_support_value = {
@@ -1617,7 +1617,7 @@ Kirovohradska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Kirovohradska_oblast_poroshenko_support_value = {
@@ -1779,7 +1779,7 @@ Khersonska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Khersonska_oblast_poroshenko_support_value = {
@@ -1941,7 +1941,7 @@ Khmelnytska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Khmelnytska_oblast_poroshenko_support_value = {
@@ -2103,7 +2103,7 @@ IvanoFrankivska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			IvanoFrankivska_oblast_poroshenko_support_value = {
@@ -2265,7 +2265,7 @@ Dnipropetrovska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Dnipropetrovska_oblast_poroshenko_support_value = {
@@ -2427,7 +2427,7 @@ Chernivetska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Chernivetska_oblast_poroshenko_support_value = {
@@ -2589,7 +2589,7 @@ Chernihivska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Chernihivska_oblast_poroshenko_support_value = {
@@ -2751,7 +2751,7 @@ Cherkaska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Cherkaska_oblast_poroshenko_support_value = {
@@ -2782,167 +2782,167 @@ Cherkaska_oblast_elections_campaign_effect = {
 	}
 }
 
-#Krym_elections_campaign_effect = {
-#	if = {
-#		limit = {
-#			has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
-#		}
-#		random_list = {
-#			Krym_timoshenko_support_value = {
-#				subtract_from_variable = { var = Krym_timoshenko_support_value value = 1 }
-#				subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-#				add_to_variable = { var = Krym_poroshenko_support_value value = 1 }
-#				add_to_variable = { var = Poroshenko_general_support value = 1 }
-#			}
-#			Krym_lyashko_support_value = {
-#				subtract_from_variable = { var = Krym_lyashko_support_value value = 1 }
-#				subtract_from_variable = { var = Lyashko_general_support value = 1 }
-#				add_to_variable = { var = Krym_poroshenko_support_value value = 1 }
-#				add_to_variable = { var = Poroshenko_general_support value = 1 }
-#			}
-#			Krym_dobkin_support_value = {
-#				subtract_from_variable = { var = Krym_dobkin_support_value value = 1 }
-#				subtract_from_variable = { var = Dobkin_general_support value = 1 }
-#				add_to_variable = { var = Krym_poroshenko_support_value value = 1 }
-#				add_to_variable = { var = Poroshenko_general_support value = 1 }
-#			} 
-#			Krym_darth_alekseevich_vader_support_value = {
-#				subtract_from_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
-#				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-#				add_to_variable = { var = Krym_poroshenko_support_value value = 1 }
-#				add_to_variable = { var = Poroshenko_general_support value = 1 }
-#			}
-#		}
-#	}
+Krym_elections_campaign_effect = {
+	if = {
+		limit = {
+			has_country_flag = Petr_Poroshenko_on_2014_elections_favourite
+		}
+		random_list = {
+			Krym_timoshenko_support_value = {
+				subtract_from_variable = { var = Krym_timoshenko_support_value value = 1 }
+				subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+				add_to_variable = { var = Krym_poroshenko_support_value value = 1 }
+				add_to_variable = { var = Poroshenko_general_support value = 1 }
+			}
+			Krym_lyashko_support_value = {
+				subtract_from_variable = { var = Krym_lyashko_support_value value = 1 }
+				subtract_from_variable = { var = Lyashko_general_support value = 1 }
+				add_to_variable = { var = Krym_poroshenko_support_value value = 1 }
+				add_to_variable = { var = Poroshenko_general_support value = 1 }
+			}
+			Krym_dobkin_support_value = {
+				subtract_from_variable = { var = Krym_dobkin_support_value value = 1 }
+				subtract_from_variable = { var = Dobkin_general_support value = 1 }
+				add_to_variable = { var = Krym_poroshenko_support_value value = 1 }
+				add_to_variable = { var = Poroshenko_general_support value = 1 }
+			} 
+			Krym_darth_alekseevich_vader_support_value = {
+				subtract_from_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
+				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
+				add_to_variable = { var = Krym_poroshenko_support_value value = 1 }
+				add_to_variable = { var = Poroshenko_general_support value = 1 }
+			}
+		}
+	}
 #	# Timoshenko
-#	if = {
-#		limit = {
-#			has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
-#		}
-#		random_list = {
-#			Krym_poroshenko_support_value = {
-#				subtract_from_variable = { var = Krym_poroshenko_support_value value = 1 }
-#				subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-#				add_to_variable = { var = Krym_timoshenko_support_value value = 1 }
-#				add_to_variable = { var = Timoshenko_general_support value = 1 }
-#			}
-#			Krym_lyashko_support_value = {
-#				subtract_from_variable = { var = Krym_lyashko_support_value value = 1 }
-#				subtract_from_variable = { var = Lyashko_general_support value = 1 }
-#				add_to_variable = { var = Krym_timoshenko_support_value value = 1 }
-#				add_to_variable = { var = Timoshenko_general_support value = 1 }
-#			}
-#			Krym_dobkin_support_value = {
-#				subtract_from_variable = { var = Krym_dobkin_support_value value = 1 }
-#				subtract_from_variable = { var = Dobkin_general_support value = 1 }
-#				add_to_variable = { var = Krym_timoshenko_support_value value = 1 }
-#				add_to_variable = { var = Timoshenko_general_support value = 1 }
-#			}  
-#			Krym_darth_alekseevich_vader_support_value = {
-#				subtract_from_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
-#				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-#				add_to_variable = { var = Krym_timoshenko_support_value value = 1 }
-#				add_to_variable = { var = Timoshenko_general_support value = 1 }
-#			}
-#		}
-#	}
+	if = {
+		limit = {
+			has_country_flag = Yulia_Timoshenko_on_2014_elections_favourite
+		}
+		random_list = {
+			Krym_poroshenko_support_value = {
+				subtract_from_variable = { var = Krym_poroshenko_support_value value = 1 }
+				subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+				add_to_variable = { var = Krym_timoshenko_support_value value = 1 }
+				add_to_variable = { var = Timoshenko_general_support value = 1 }
+			}
+			Krym_lyashko_support_value = {
+				subtract_from_variable = { var = Krym_lyashko_support_value value = 1 }
+				subtract_from_variable = { var = Lyashko_general_support value = 1 }
+				add_to_variable = { var = Krym_timoshenko_support_value value = 1 }
+				add_to_variable = { var = Timoshenko_general_support value = 1 }
+			}
+			Krym_dobkin_support_value = {
+				subtract_from_variable = { var = Krym_dobkin_support_value value = 1 }
+				subtract_from_variable = { var = Dobkin_general_support value = 1 }
+				add_to_variable = { var = Krym_timoshenko_support_value value = 1 }
+				add_to_variable = { var = Timoshenko_general_support value = 1 }
+			}  
+			Krym_darth_alekseevich_vader_support_value = {
+				subtract_from_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
+				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
+				add_to_variable = { var = Krym_timoshenko_support_value value = 1 }
+				add_to_variable = { var = Timoshenko_general_support value = 1 }
+			}
+		}
+	}
 #	# Lyashko
-#	if = {
-#		limit = {
-#			has_country_flag = Oleg_Lyashko_on_2014_elections_favourite
-#		}
-#		random_list = {
-#			Krym_poroshenko_support_value = {
-#				subtract_from_variable = { var = Krym_poroshenko_support_value value = 1 }
-#				subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-#				add_to_variable = { var = Krym_lyashko_support_value value = 1 }
-#				add_to_variable = { var = Lyashko_general_support value = 1 }
-#			}
-#			Krym_timoshenko_support_value = {
-#				subtract_from_variable = { var = Krym_timoshenko_support_value value = 1 }
-#				subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-#				add_to_variable = { var = Krym_lyashko_support_value value = 1 }
-#				add_to_variable = { var = Lyashko_general_support value = 1 }
-#			}
-#			Krym_dobkin_support_value = {
-#				subtract_from_variable = { var = Krym_dobkin_support_value value = 1 }
-#				subtract_from_variable = { var = Dobkin_general_support value = 1 }
-#				add_to_variable = { var = Krym_lyashko_support_value value = 1 }
-#				add_to_variable = { var = Lyashko_general_support value = 1 }
-#			} 
-#			Krym_darth_alekseevich_vader_support_value = {
-#				subtract_from_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
-#				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-#				add_to_variable = { var = Krym_lyashko_support_value value = 1 }
-#				add_to_variable = { var = Lyashko_general_support value = 1 }
-#			}
-#		}
-#	}
+	if = {
+		limit = {
+			has_country_flag = Oleg_Lyashko_on_2014_elections_favourite
+		}
+		random_list = {
+			Krym_poroshenko_support_value = {
+				subtract_from_variable = { var = Krym_poroshenko_support_value value = 1 }
+				subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+				add_to_variable = { var = Krym_lyashko_support_value value = 1 }
+				add_to_variable = { var = Lyashko_general_support value = 1 }
+			}
+			Krym_timoshenko_support_value = {
+				subtract_from_variable = { var = Krym_timoshenko_support_value value = 1 }
+				subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+				add_to_variable = { var = Krym_lyashko_support_value value = 1 }
+				add_to_variable = { var = Lyashko_general_support value = 1 }
+			}
+			Krym_dobkin_support_value = {
+				subtract_from_variable = { var = Krym_dobkin_support_value value = 1 }
+				subtract_from_variable = { var = Dobkin_general_support value = 1 }
+				add_to_variable = { var = Krym_lyashko_support_value value = 1 }
+				add_to_variable = { var = Lyashko_general_support value = 1 }
+			} 
+			Krym_darth_alekseevich_vader_support_value = {
+				subtract_from_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
+				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
+				add_to_variable = { var = Krym_lyashko_support_value value = 1 }
+				add_to_variable = { var = Lyashko_general_support value = 1 }
+			}
+		}
+	}
 #	# Dobkin
-#	if = {
-#		limit = {
-#			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
-#		}
-#		random_list = {
-#			Krym_poroshenko_support_value = {
-#				subtract_from_variable = { var = Krym_poroshenko_support_value value = 1 }
-#				subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-#				add_to_variable = { var = Krym_dobkin_support_value value = 1 }
-#				add_to_variable = { var = Dobkin_general_support value = 1 }
-#			}
-#			Krym_timoshenko_support_value = {
-#				subtract_from_variable = { var = Krym_timoshenko_support_value value = 1 }
-#				subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-#				add_to_variable = { var = Krym_dobkin_support_value value = 1 }
-#				add_to_variable = { var = Dobkin_general_support value = 1 }
-#			}
-#			Krym_lyashko_support_value = {
-#				subtract_from_variable = { var = Krym_lyashko_support_value value = 1 }
-#				subtract_from_variable = { var = Lyashko_general_support value = 1 }
-#				add_to_variable = { var = Krym_dobkin_support_value value = 1 }
-#				add_to_variable = { var = Dobkin_general_support value = 1 }
-#			} 
-#			Krym_darth_alekseevich_vader_support_value = {
-#				subtract_from_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
-#				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-#				add_to_variable = { var = Krym_dobkin_support_value value = 1 }
-#				add_to_variable = { var = Dobkin_general_support value = 1 }
-#			}
-#		}
-#	}
-#	# Darth Vader Alekseevich
-#	if = {
-#		limit = {
-#			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
-#		}
-#		random_list = {
-#			Krym_poroshenko_support_value = {
-#				subtract_from_variable = { var = Krym_poroshenko_support_value value = 1 }
-#				subtract_from_variable = { var = Poroshenko_general_support value = 1 }
-#				add_to_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
-#				add_to_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-#			}
-#			Krym_timoshenko_support_value = {
-#				subtract_from_variable = { var = Krym_timoshenko_support_value value = 1 }
-#				subtract_from_variable = { var = Timoshenko_general_support value = 1 }
-#				add_to_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
-#				add_to_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-#			}
-#			Krym_lyashko_support_value = {
-#				subtract_from_variable = { var = Krym_lyashko_support_value value = 1 }
-#				subtract_from_variable = { var = Lyashko_general_support value = 1 }
-#				add_to_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
-#				add_to_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-#			}
-#			Krym_dobkin_support_value = {
-#				subtract_from_variable = { var = Krym_dobkin_support_value value = 1 }
-#				subtract_from_variable = { var = Dobkin_general_support value = 1 }
-#				add_to_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
-#				add_to_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-#			}
-#		}
-#	}
-#}
+	if = {
+		limit = {
+			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+		}
+		random_list = {
+			Krym_poroshenko_support_value = {
+				subtract_from_variable = { var = Krym_poroshenko_support_value value = 1 }
+				subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+				add_to_variable = { var = Krym_dobkin_support_value value = 1 }
+				add_to_variable = { var = Dobkin_general_support value = 1 }
+			}
+			Krym_timoshenko_support_value = {
+				subtract_from_variable = { var = Krym_timoshenko_support_value value = 1 }
+				subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+				add_to_variable = { var = Krym_dobkin_support_value value = 1 }
+				add_to_variable = { var = Dobkin_general_support value = 1 }
+			}
+			Krym_lyashko_support_value = {
+				subtract_from_variable = { var = Krym_lyashko_support_value value = 1 }
+				subtract_from_variable = { var = Lyashko_general_support value = 1 }
+				add_to_variable = { var = Krym_dobkin_support_value value = 1 }
+				add_to_variable = { var = Dobkin_general_support value = 1 }
+			} 
+			Krym_darth_alekseevich_vader_support_value = {
+				subtract_from_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
+				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
+				add_to_variable = { var = Krym_dobkin_support_value value = 1 }
+				add_to_variable = { var = Dobkin_general_support value = 1 }
+			}
+		}
+	}
+	# Darth Vader Alekseevich
+	if = {
+		limit = {
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
+		}
+		random_list = {
+			Krym_poroshenko_support_value = {
+				subtract_from_variable = { var = Krym_poroshenko_support_value value = 1 }
+				subtract_from_variable = { var = Poroshenko_general_support value = 1 }
+				add_to_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
+				add_to_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
+			}
+			Krym_timoshenko_support_value = {
+				subtract_from_variable = { var = Krym_timoshenko_support_value value = 1 }
+				subtract_from_variable = { var = Timoshenko_general_support value = 1 }
+				add_to_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
+				add_to_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
+			}
+			Krym_lyashko_support_value = {
+				subtract_from_variable = { var = Krym_lyashko_support_value value = 1 }
+				subtract_from_variable = { var = Lyashko_general_support value = 1 }
+				add_to_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
+				add_to_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
+			}
+			Krym_dobkin_support_value = {
+				subtract_from_variable = { var = Krym_dobkin_support_value value = 1 }
+				subtract_from_variable = { var = Dobkin_general_support value = 1 }
+				add_to_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
+				add_to_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
+			}
+		}
+	}
+}
 
 Odeska_oblast_elections_campaign_effect = {
 	if = {
@@ -3075,7 +3075,7 @@ Odeska_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Odeska_oblast_poroshenko_support_value = {
@@ -3237,7 +3237,7 @@ Rivnenska_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Rivnenska_oblast_poroshenko_support_value = {
@@ -3400,7 +3400,7 @@ Zaporizka_oblast_elections_campaign_effect = {
 	# Darth Vader Alekseevich
 	if = {
 		limit = {
-			has_country_flag = Mihail_dobkin_on_2014_elections_favourite
+			has_country_flag = Darth_aleeksevich_vader_on_2014_elections_favourite
 		}
 		random_list = {
 			Zaporizka_oblast_poroshenko_support_value = {
