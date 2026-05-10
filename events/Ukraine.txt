@@ -4016,6 +4016,10 @@ country_event = {
 	option = {
 		name = ukraine.111.a	
 		add_stability = 0.05
+		set_politics = {
+            ruling_party = autoritarian_democracy
+            elections_allowed = no
+		}
 		retire_country_leader = yes
 		add_country_leader_role = {
             character = UKR_oleg_lyashko
@@ -4025,10 +4029,6 @@ country_event = {
                 expire = "2045.1.1.1"
             } 
         }
-        set_politics = {
-            ruling_party = autoritarian_democracy
-            elections_allowed = no
-		}
 		hidden_effect = {
 			news_event = {
                 id = news_events.28
@@ -4361,6 +4361,33 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.122
+				days = 8
+				random_days = 5
+			}
+			262 = { set_demilitarized_zone = yes }
+			341 = { set_demilitarized_zone = yes }
+			386 = { set_demilitarized_zone = yes }
+			282 = { set_demilitarized_zone = yes }
+			349 = { set_demilitarized_zone = yes }
+			218 = { set_demilitarized_zone = yes }
+			255 = { set_demilitarized_zone = yes }
+			153 = { set_demilitarized_zone = yes }
+			190 = { set_demilitarized_zone = yes }
+			143 = { set_demilitarized_zone = yes }
+			111 = { set_demilitarized_zone = yes }
+			66 = { set_demilitarized_zone = yes }
+			383 = { set_demilitarized_zone = yes }
+			400 = { set_demilitarized_zone = yes }
+			377 = { set_demilitarized_zone = yes }
+			332 = { set_demilitarized_zone = yes }
+			242 = { set_demilitarized_zone = yes }
+			278 = { set_demilitarized_zone = yes }
+			267 = { set_demilitarized_zone = yes }
+			250 = { set_demilitarized_zone = yes }
+		}
 	}
 
 	option = {
@@ -4429,11 +4456,6 @@ country_event = {
 				transfer_state = 70
 				transfer_state = 189
 				transfer_state = 196
-
-				declare_war_on = {
-                    target = UKR
-                    type = annex_everything
-                }
 			}
 		}
 	}
@@ -4494,10 +4516,10 @@ country_event = {
 				transfer_state = 231
 				transfer_state = 293
 
-				declare_war_on = {
-                    target = UKR
-                    type = annex_everything
-                }
+				#declare_war_on = {
+                #    target = UKR
+                #    type = annex_everything
+                #}
 				load_oob = MLR_Uprising_Militia
 			}
 		}
@@ -4520,6 +4542,18 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+			set_politics = {
+				ruling_party = autoritarian_democracy
+				elections_allowed = no
+			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = verkhovna_rada_of_ukraine
+				desc = verkhovna_rada_of_ukraine_desc
+				ideology = autoritarian_democracy
+				picture = gfx/leaders/UKR/UKR_anarchy.dds
+				traits = {}
+			}
 			country_event = {
 				id = ukraine.127
 				hours = 8
@@ -4550,14 +4584,17 @@ country_event = {
 				set_state_controller = 67
 				set_state_controller = 148
 				set_state_controller = 113
-			}			
+			}		
+			country_event = {
+				id = ukraine.128
+				days = 7
+			}	
 		}
 	}
 
 	option = {
 		name = ukraine.127.a
-		add_stability = -0.03
-		add_political_power = 15
+		add_political_power = -5
 	}
 }
 
@@ -4578,7 +4615,8 @@ country_event = {
 				transfer_state = 286
 				transfer_state = 316
 				transfer_state = 274
-
+				transfer_state = 292
+                load_oob = UWC_Uprising_army
 				declare_war_on = {
                     target = UKR
                     type = annex_everything
@@ -4590,7 +4628,7 @@ country_event = {
 	option = {
 		name = ukraine.128.a
 		add_stability = -0.03
-		add_political_power = 15
+		add_political_power = -15
 	}
 }
 
@@ -4613,6 +4651,10 @@ country_event = {
 		name = ukraine.129.a
 		add_stability = 0.02
 		add_political_power = 15
+		add_popularity = {
+            ideology = social_democracy
+            popularity = 0.01
+        }
 	}
 }
 
@@ -4679,15 +4721,15 @@ country_event = {
 		hidden_effect = {
 			retire_country_leader = yes
 		    add_country_leader_role = {
-                character = UKR_darth_alekseevich_vader
+                character = UKR_mykhaylo_dobkin
                 promote_leader = yes
                 country_leader = {
-                    ideology = liberalism
+                    ideology = autoritarian_democracy
                     expire = "2045.1.1.1"
                 } 
             }
             set_politics = {
-                ruling_party = liberalism
+                ruling_party = autoritarian_democracy
                 elections_allowed = no
             }
 		    hidden_effect = {
