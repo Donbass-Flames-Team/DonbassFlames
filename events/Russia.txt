@@ -575,11 +575,16 @@ country_event = {
 			idea = RUS_victory_day_preparations
 			days = 30
 		}
+				ai_chance = {
+			factor = 100
+		}
 	}
 
 	option = {
 		name = russia.17.b
-		set_country_flag = RUS_simple_parade
+				ai_chance = {
+			factor = 0
+		}
 	}
 }
 
