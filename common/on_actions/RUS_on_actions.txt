@@ -12,20 +12,70 @@ on_actions = {
 					}
 					NOT = {
 						has_global_flag = Crimea_russian_puppet_2014
-					}																																
+					}
 				}
+
 				RUS = {
-				    puppet = {
-                        target = CRI
-                        end_wars = yes
-                    }
-			    }
+					puppet = {
+						target = CRI
+						end_wars = yes
+					}
+				}
+
 				CRI = {
 					drop_cosmetic_tag = yes
 				}
+
 				set_global_flag = Crimea_russian_puppet_2014
+			}
+			if = {
+				limit = {
+					date > 2015.4.8
+					date < 2015.4.10
+					NOT = {
+						has_global_flag = RUS_victory_day_2015_preparation
+					}
+					RUS = {
+						exists = yes
+					}
+				}
+
+				set_global_flag = RUS_victory_day_2015_preparation
+
+				RUS = {
+					country_event = {
+						id = russia.17
+						hours = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					date > 2015.5.8
+					date < 2015.5.10
+					has_global_flag = RUS_victory_day_2015_preparation
+					NOT = {
+						has_global_flag = RUS_victory_day_2015_parade
+					}
+					RUS = {
+						has_country_flag = RUS_parade
+					}
+				}
+
+				set_global_flag = RUS_victory_day_2015_parade
+
+				news_event = {
+					id = russia.18
+					hours = 1
+				}
+
+				RUS = {
+					country_event = {
+						id = russia.19
+						hours = 6
+					}
+				}
 			}
 		}
 	}
 }
-

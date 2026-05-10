@@ -559,3 +559,58 @@ country_event = {
 		add_stability = -0.03
 	}
 }
+#Подготовка парада 2015
+country_event = {
+	id = russia.17
+	title = russia.17.t
+	desc = russia.17.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.17.a
+		set_country_flag = RUS_parade
+		add_timed_idea = {
+			idea = RUS_victory_day_preparations
+			days = 30
+		}
+	}
+
+	option = {
+		name = russia.17.b
+		set_country_flag = RUS_simple_parade
+	}
+}
+
+#Парад
+news_event = {
+	id = russia.18
+	title = russia.18.t
+	desc = russia.18.d
+	picture = GFX_parad
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = russia.18.a
+	}
+}
+
+#Браво парад
+country_event = {
+	id = russia.19
+	title = russia.19.t
+	desc = russia.19.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.19.a
+		add_war_support = 0.05
+		army_experience = 25
+		clr_country_flag = RUS_parade
+	}
+}

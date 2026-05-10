@@ -156,6 +156,13 @@ ideas = {
 				recruitable_population_factor = -0.65
 			}
 		}
+				RUS_victory_day_preparations = {
+			picture = generic_production_bonus
+
+			modifier = {
+				industrial_capacity_factory = -0.10
+			}
+		}
 	}
 
 }
