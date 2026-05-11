@@ -2943,7 +2943,7 @@ focus_tree = {
 		id = UKR_snap_presidential_elections
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 38
+		x = 39
 		y = 0
 
 		available = {
@@ -3041,15 +3041,50 @@ focus_tree = {
 		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
 
 		available = {
-            NOT = {
-				has_country_flag = Elections2014InProgress
-			}
 		}
 
 		completion_reward = {
 			add_political_power = 25
 		}
 	}
+
+	focus = {
+		id = UKR_healthcare_reform
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 2
+		x = -2
+		y = 1
+
+		prerequisite = { focus = UKR_ministry_of_information_policy_of_ukraine }
+		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UKR_education_reform
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 2
+		x = -1
+		y = 2
+
+		prerequisite = { focus = UKR_healthcare_reform }
+		prerequisite = { focus = UKR_police_reform }
+		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
 
 	focus = {
 		id = UKR_economic_reforms
@@ -3246,7 +3281,7 @@ focus_tree = {
 		id = UKR_land_reforms
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 9
+		x = 10
 		y = 1
 
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
@@ -3262,10 +3297,106 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_decentralization
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_land_reforms }
+		relative_position_id = UKR_land_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_introduction_of_the_otg
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -1
+		y = 2
+
+		prerequisite = { focus = UKR_decentralization }
+		relative_position_id = UKR_land_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_law_on_voluntary_association_of_ter_communities
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 1
+		y = 2
+
+		prerequisite = { focus = UKR_decentralization }
+		relative_position_id = UKR_land_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_financial_reform
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 3
+
+		prerequisite = { focus = UKR_introduction_of_the_otg }
+		prerequisite = { focus = UKR_law_on_voluntary_association_of_ter_communities }
+		relative_position_id = UKR_land_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_introduction_of_the_institution_of_elders
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 4
+
+		prerequisite = { focus = UKR_financial_reform }
+		relative_position_id = UKR_land_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = {
 		id = UKR_decomunization
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 12
+		x = 14
 		y = 1
 
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
@@ -3303,7 +3434,7 @@ focus_tree = {
 		id = UKR_zelensky
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = -9
+		x = -11
 		y = 1
 
 		prerequisite = { focus = UKR_snap_presidential_elections }
