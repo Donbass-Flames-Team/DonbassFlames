@@ -267,91 +267,97 @@ restore_ruling_party = {
 }
 
 increase_state_category = {
-	if = {
-		limit = {
-			has_state_category = tiny_island
-		}
-		set_state_category = small_island
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 1
-		}
-	}
 
-	if = {
-		limit = {
-			OR = {
-				has_state_category = wasteland
-				has_state_category = enclave
-			}
-		}
-		set_state_category = pastoral
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 1
-		}
-	}
-	else_if = {
-		limit = {
-			has_state_category = pastoral
-		}
-		set_state_category = rural
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 1
-		}
-	}
-	else_if = {
-		limit = {
-			has_state_category = rural
-		}
-		set_state_category = town
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 2
-		}
-	}
-	else_if = {
-		limit = {
-			has_state_category = town
-		}
-		set_state_category = large_town
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 1
-		}
-	}
-	else_if = {
-		limit = {
-			has_state_category = large_town
-		}
-		set_state_category = city
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 1
-		}
-	}
-	else_if = {
-		limit = {
-			has_state_category = city
-		}
-		set_state_category = large_city
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 2
-		}
-	}
-	else_if = {
-		limit = {
-			has_state_category = large_city
-		}
-		set_state_category = metropolis
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 2
-		}
-	}
-	else_if = {
-		limit = {
-			has_state_category = metropolis
-		} 
-		set_state_category = megalopolis
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 2
-		}
-	}
+    if = {
+        limit = { has_state_category = slot_0 }
+        set_state_category = slot_1
+        add_extra_state_shared_building_slots = 1
+    }
+    else_if = {
+        limit = { has_state_category = slot_1 }
+        set_state_category = slot_2
+        add_extra_state_shared_building_slots = 1
+    }
+    else_if = {
+        limit = { has_state_category = slot_2 }
+        set_state_category = slot_3
+        add_extra_state_shared_building_slots = 1
+    }
+    else_if = {
+        limit = { has_state_category = slot_3 }
+        set_state_category = slot_4
+        add_extra_state_shared_building_slots = 1
+    }
+    else_if = {
+        limit = { has_state_category = slot_4 }
+        set_state_category = slot_7
+        add_extra_state_shared_building_slots = 3
+    }
+    else_if = {
+        limit = { has_state_category = slot_7 }
+        set_state_category = slot_10
+        add_extra_state_shared_building_slots = 3
+    }
+    else_if = {
+        limit = { has_state_category = slot_10 }
+        set_state_category = slot_13
+        add_extra_state_shared_building_slots = 3
+    }
+    else_if = {
+        limit = { has_state_category = slot_13 }
+        set_state_category = slot_16
+        add_extra_state_shared_building_slots = 3
+    }
+    else_if = {
+        limit = { has_state_category = slot_16 }
+        set_state_category = slot_19
+        add_extra_state_shared_building_slots = 3
+    }
+    else_if = {
+        limit = { has_state_category = slot_19 }
+        set_state_category = slot_22
+        add_extra_state_shared_building_slots = 3
+    }
+    else_if = {
+        limit = { has_state_category = slot_22 }
+        set_state_category = slot_25
+        add_extra_state_shared_building_slots = 3
+    }
+    else_if = {
+        limit = { has_state_category = slot_25 }
+        set_state_category = slot_28
+        add_extra_state_shared_building_slots = 3
+    }
+    else_if = {
+        limit = { has_state_category = slot_28 }
+        set_state_category = slot_31
+        add_extra_state_shared_building_slots = 3
+    }
+    else_if = {
+        limit = { has_state_category = slot_31 }
+        set_state_category = slot_34
+        add_extra_state_shared_building_slots = 3
+    }
+    else_if = {
+        limit = { has_state_category = slot_34 }
+        set_state_category = slot_37
+        add_extra_state_shared_building_slots = 3
+    }
+    else_if = {
+        limit = { has_state_category = slot_37 }
+        set_state_category = slot_40
+        add_extra_state_shared_building_slots = 3
+    }
+    else_if = {
+        limit = { has_state_category = slot_40 }
+        set_state_category = slot_43
+        add_extra_state_shared_building_slots = 3
+    }
+    else_if = {
+        limit = { has_state_category = slot_43 }
+        set_state_category = slot_46
+        add_extra_state_shared_building_slots = 3
+    }
 }
 
 add_potential_special_forces_tree = {
