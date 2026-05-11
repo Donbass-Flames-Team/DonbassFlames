@@ -3392,43 +3392,79 @@ focus_tree = {
 		}
 	}	
 
-	focus = {
-		id = UKR_decomunization
-		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
-		x = 14
-		y = 1
+focus = {
+    id = UKR_decomunization
+    icon = GFX_focus_UKR_start_of_ato
+    x = 16
+    y = 1
+    cost = 10
+ 
+   prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
+  relative_position_id = UKR_poroshenko_victory
+}
 
-		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
-		relative_position_id = UKR_poroshenko_victory
+focus = {
+    id = UKR_rename_streets
+    icon = GFX_focus_UKR_start_of_ato
+    prerequisite = { focus = UKR_decomunization }
+    relative_position_id = UKR_decomunization
+    x = -3
+    y = 2
+    cost = 10
+}
 
-		available = {
+focus = {
+    id = UKR_memory_institute
+    icon = GFX_focus_UKR_start_of_ato
+    prerequisite = { focus = UKR_decomunization }
+    relative_position_id = UKR_decomunization
+    x = 0
+    y = 1
+    cost = 10
+}
 
-		}
+focus = {
+    id = UKR_remove_monuments
+    icon = GFX_focus_UKR_start_of_ato
+    prerequisite = { focus = UKR_decomunization }
+    relative_position_id = UKR_decomunization
+    x = 3
+    y = 2
+    cost = 10
+}
 
-		completion_reward = {
-			add_political_power = 25
-		}
-	}
+focus = {
+    id = UKR_open_soviet_archives
+    icon = GFX_focus_UKR_start_of_ato
+    prerequisite = { focus = UKR_memory_institute }
+    relative_position_id = UKR_decomunization
+    x = -1
+    y = 2
+    cost = 10
+}
 
-	focus = {
-		id = UKR_renaming_of_settlements
-		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
-		x = 0
-		y = 1
+focus = {
+    id = UKR_history_education_reform
+    icon = GFX_focus_UKR_start_of_ato
+    prerequisite = { focus = UKR_memory_institute }
+    relative_position_id = UKR_decomunization
+    x = 1
+    y = 2
+    cost = 10
+}
 
-		prerequisite = { focus = UKR_decomunization }
-		relative_position_id = UKR_decomunization
+focus = {
+    id = UKR_dissolve_cpu
+    icon = GFX_focus_UKR_start_of_ato
 
-		available = {
+    prerequisite = { focus = UKR_rename_streets focus = UKR_remove_monuments focus = UKR_open_soviet_archives focus = UKR_history_education_reform }
 
-		}
-
-		completion_reward = {
-			add_political_power = 25
-		}
-	}
+    relative_position_id = UKR_decomunization
+    x = 0
+    y = 3
+    cost = 10
+}
+	
 
 	focus = {
 		id = UKR_zelensky
