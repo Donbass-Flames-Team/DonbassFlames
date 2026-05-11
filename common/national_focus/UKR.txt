@@ -3325,7 +3325,7 @@ focus_tree = {
 		id = UKR_create_the_office_of_the_president
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = -1
+		x = 0
 		y = 1
 
 		prerequisite = { focus = UKR_zelensky }
@@ -3343,14 +3343,96 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_increase_minimal_salary
+		id = UKR_call_early_parliamentary_elections
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 2
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_create_the_office_of_the_president }
+		relative_position_id = UKR_create_the_office_of_the_president
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_new_information_policy
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 2
+		x = 3
+		y = 2
+
+		prerequisite = { focus = UKR_call_early_parliamentary_elections }
+		relative_position_id = UKR_create_the_office_of_the_president
+
+		available = {
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_indigenous_peoples_act
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
 		x = -1
-		y = 2
+		y = 1
 
-		prerequisite = { focus = UKR_zelensky }
-		relative_position_id = UKR_zelensky
+		prerequisite = { focus = UKR_new_information_policy }
+		relative_position_id = UKR_new_information_policy
+
+		available = {
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_create_russian_channels
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 2
+		x = 1
+		y = 1
+
+		prerequisite = { focus = UKR_new_information_policy }
+		relative_position_id = UKR_new_information_policy
+
+		available = {
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_increase_minimal_salary
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 2
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_call_early_parliamentary_elections }
+		relative_position_id = UKR_call_early_parliamentary_elections
 
 		available = {
             NOT = {
@@ -3367,11 +3449,11 @@ focus_tree = {
 		id = UKR_land_market
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = 1
-		y = 1
+		x = -2
+		y = 2
 
-		prerequisite = { focus = UKR_zelensky }
-		relative_position_id = UKR_zelensky
+		prerequisite = { focus = UKR_call_early_parliamentary_elections }
+		relative_position_id = UKR_create_the_office_of_the_president
 
 		available = {
             NOT = {
@@ -3385,13 +3467,80 @@ focus_tree = {
 	}	
 
 	focus = {
+		id = UKR_business_recovery_program
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 2
+		x = -1
+		y = 3
+
+		prerequisite = { focus = UKR_land_market }
+		prerequisite = { focus = UKR_increase_minimal_salary }
+		relative_position_id = UKR_create_the_office_of_the_president
+
+		available = {
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_infrastructure_projects
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 2
+		x = 1
+		y = 4
+
+		prerequisite = { focus = UKR_business_recovery_program }
+		prerequisite = { focus = UKR_question_of_legalization_of_casino }
+		prerequisite = { focus = UKR_indigenous_peoples_act }
+		prerequisite = { focus = UKR_create_russian_channels }		
+		relative_position_id = UKR_create_the_office_of_the_president
+
+		available = {
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UKR_anti_oligarchy_law
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 2
+		x = 1
+		y = 5
+
+		prerequisite = { focus = UKR_infrastructure_projects }
+		relative_position_id = UKR_create_the_office_of_the_president
+
+		available = {
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = UKR_question_of_legalization_of_casino
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = -2
-		y = 1
+		x = -3
+		y = 3
 
-		prerequisite = { focus = UKR_create_the_office_of_the_president }
+		prerequisite = { focus = UKR_land_market }
 		relative_position_id = UKR_create_the_office_of_the_president
 
 		available = {
