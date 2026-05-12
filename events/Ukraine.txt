@@ -2058,6 +2058,8 @@ country_event = {
 		name = ukraine.53.a		
 		army_experience = 10
 		add_war_support = 0.025
+	    custom_effect_tooltip = UKR_form_national_guardia_tt
+		add_to_variable = { UKR_AFU_army_org_factor = 0.025 }
 	}
 }
 
@@ -2332,6 +2334,48 @@ country_event = {
 
 	immediate = {
 		set_global_flag = Donbas_war_2_escalation
+		hidden_effect = {
+			UKR = {
+                set_variable = { UKR_ATO_pocket_penalty = -0.30 }
+	            set_variable = { UKR_ATO_experience_loss_factor = -0.25 }
+			    set_variable = { UKR_ATO_casualty_trickleback = 0.25}
+			    set_variable = { UKR_ATO_army_speed_factor = -0.25 }
+			}
+			NDR = {
+	            set_variable = { People_republic_pocket_penalty = -0.30 }
+	            set_variable = { People_republic_experience_loss_factor = -0.15 }
+				set_variable = { People_republic_army_speed_factor = -0.25 }
+			}
+			DPR = {
+	            set_variable = { People_republic_pocket_penalty = -0.30 }
+	            set_variable = { People_republic_experience_loss_factor = -0.15 }
+				set_variable = { People_republic_army_speed_factor = -0.25 }
+			}	
+			LPR = {
+				add_dynamic_modifier = { modifier = People_republic_ATO_idea }
+	            set_variable = { People_republic_pocket_penalty = -0.30 }
+	            set_variable = { People_republic_experience_loss_factor = -0.15 }
+				set_variable = { People_republic_army_speed_factor = -0.25 }
+			}
+			SKR = {
+				add_dynamic_modifier = { modifier = People_republic_ATO_idea }
+	            set_variable = { People_republic_pocket_penalty = -0.30 }
+	            set_variable = { People_republic_experience_loss_factor = -0.15 }
+				set_variable = { People_republic_army_speed_factor = -0.25 }
+			}
+			SLR = {
+				add_dynamic_modifier = { modifier = People_republic_ATO_idea }
+	            set_variable = { People_republic_pocket_penalty = -0.30 }
+	            set_variable = { People_republic_experience_loss_factor = -0.15 }
+				set_variable = { People_republic_army_speed_factor = -0.25 }
+			}							
+			SDR = {
+				add_dynamic_modifier = { modifier = People_republic_ATO_idea }
+	            set_variable = { People_republic_pocket_penalty = -0.30 }
+	            set_variable = { People_republic_experience_loss_factor = -0.15 }
+				set_variable = { People_republic_army_speed_factor = -0.25 }
+			}
+		}
 	}
 
 	option = {
