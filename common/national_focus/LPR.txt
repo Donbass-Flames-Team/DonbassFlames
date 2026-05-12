@@ -112,11 +112,11 @@ focus_tree = {
 			}
 			add_timed_idea = {
 				idea = LPR_set_checkpoints
-				days = 135
+				days = 150
 			}
 			add_timed_idea = {
 				idea = DPR_russian_spring_idea
-				days = 40
+				days = 50
 			}
 		}
 
@@ -327,16 +327,16 @@ focus_tree = {
 				amount = 200
 			}
 			add_equipment_to_stockpile = {
-				type = atgm_weapons1
+				type = atgm_weapons
 				amount = 60
 			}
 			add_equipment_to_stockpile = {
-				type = mortar_weapons1
+				type = mortar_equipment
 				amount = 200
 			}
 			add_equipment_to_stockpile = {
-				type = atgl_weapons_1
-				amount = 50
+				type = grenade_launcher_equipment_1
+				amount = 400
 			}
 			load_oob = "LPR_millitia"
 		}
@@ -432,6 +432,38 @@ focus_tree = {
 						add_political_power = 15
 						load_oob = "LPR_millitia"
 						load_oob = "LPR_millitia"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 3000
+			}
+			add_equipment_to_stockpile = {
+				type = bbm_chassis_0
+				amount = 1200
+			}
+			add_equipment_to_stockpile = {
+				type = mortar_equipment
+				amount = 180
+			}
+			add_equipment_to_stockpile = {
+				type = atgm_equipment
+				amount = 80
+			}
+			add_equipment_to_stockpile = {
+				type = grenade_launcher_equipment_1
+				amount = 600
+			}
+			add_equipment_to_stockpile = {
+				type = uniform_equpment_1
+				amount = 6000
+			}
+			add_equipment_to_stockpile = {
+				type = bulletproof_vests_equipment_1
+				amount = 4000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 2000
+			}
 		}
 
 		ai_will_do = {
@@ -502,6 +534,9 @@ focus_tree = {
 		prerequisite = { focus = LPR_full_mobilization }
 		prerequisite = { focus = LPR_peoples_court_of_novorossiya }
 		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			always = no
+		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_referendum"
