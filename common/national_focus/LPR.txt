@@ -21,9 +21,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.05
-						add_stability = 0.05
-						add_political_power = 35
-						add_command_power = 10
+			add_stability = 0.05
+			add_political_power = 35
+			add_command_power = 10
+			add_equipment_to_stockpile = { 
+				type = uniform_equipment_1 
+				amount = 1500
+			}
 		}
 
 		ai_will_do = {
@@ -162,8 +166,8 @@ focus_tree = {
 
 		completion_reward = {
 			340 = {
-						    add_dynamic_modifier = { modifier = LPR_luhansk_castle_dynamic_idea scope = LPR }
-					    }
+			add_dynamic_modifier = { modifier = LPR_luhansk_castle_dynamic_idea scope = LPR }
+			    }
 						custom_effect_tooltip = LPR_bunkers_around_luhansk_tt
 			        	hidden_effect = {
 			                if = {
@@ -399,14 +403,14 @@ focus_tree = {
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 12
 		y = 5
-		cost = 0.7
+		cost = 0.3
 		prerequisite = { focus = LPR_republic_of_bolotov }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_preparing_for_may_11"
-						add_political_power = 50
-						add_stability = 0.1
+			add_political_power = 50
+			add_stability = 0.1
 		}
 
 		ai_will_do = {
@@ -425,13 +429,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_full_mobilization"
-						add_timed_idea = {
-							idea = LPR_mobilization_shock
-							days = 40
-						}
-						add_political_power = 15
-						load_oob = "LPR_millitia"
-						load_oob = "LPR_millitia"
+			add_timed_idea = {
+				idea = LPR_mobilization_shock
+				days = 40
+			}
+			add_political_power = 15
+			load_oob = "LPR_millitia"
+			load_oob = "LPR_millitia"
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
 				amount = 3000
@@ -511,12 +515,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_peoples_court_of_novorossiya"
-						add_political_power = -50
-						add_ideas = LPR_harsh_courts
-			                        set_country_flag = 
-						country_event = {
-							id = LPR.4
-						}
+			add_political_power = -50
+			add_ideas = LPR_harsh_courts
+			# set_country_flag =  
+			country_event = {
+				id = LPR.4
+				hours = 1
+			}
 		}
 
 		ai_will_do = {
@@ -528,11 +533,8 @@ focus_tree = {
 		id = LPR_referendum
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 12
-		y = 7
+		y = 6
 		cost = 0
-		prerequisite = { focus = LPR_preparing_for_may_11 }
-		prerequisite = { focus = LPR_full_mobilization }
-		prerequisite = { focus = LPR_peoples_court_of_novorossiya }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available = {
 			always = no
