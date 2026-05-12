@@ -146,6 +146,35 @@ guiTypes = {
 			position = { x = 49 y = 0 }
 		}
 
+		iconType = {
+			name = "startgui_leader"
+			position = { x = 989 y = 77 }
+			quadTextureSprite = "GFX_pol_leader_frame"
+		}
+
+		iconType = {
+			name = "leader_frametton"
+			position = { x = 983 y = 71 }
+			quadTextureSprite = "GFX_pol_leader_frame"
+		}	
+
+		iconType = {
+			name = "startgui_country_name"
+			position = { x = 583 y = 101 }
+			quadTextureSprite = "GFX_pol_leader_frame"
+			scale = 0.65
+		}
+
+		instantTextBoxType = {
+			name = "start_gui_leader_name"
+			position = { x = 819 y = 295 }
+			font = "hoi_30header"
+			text = "[get_leader_name_startgui]"
+			maxWidth = 500
+			format = centre
+			alwaystransparent = yes
+		}
+
 		instantTextBoxType = {
 			name = "start_gui_title"
 			position = { x = 399 y = 10 }
@@ -153,17 +182,15 @@ guiTypes = {
 			text = "start_gui_title_text"
 			maxWidth = 500
 			format = centre
-			alwaystransparent = yes
 		}
 		
 		instantTextBoxType = {
 			name = "country_info_text"
 			position = { x = 562 y = 370 }
 			font = "hoi_30header"
-			text = "country_info_startgui_ukr"
+			text = "[COUNTRY_INFO_STARTGUI]"
 			maxWidth = 675
 			format = centre
-			alwaystransparent = yes
 		}
 
 		buttonType = {
