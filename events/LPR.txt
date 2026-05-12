@@ -30,3 +30,51 @@ country_event = {
         }
 	}
 }
+
+#Республика Болотова
+country_event = {
+	id = LPR.2
+	title = LPR.2.t
+	desc = LPR.2.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.2.a
+		add_war_support = 0.05
+                add_stability = 0.1
+		add_political_power = 30
+	}
+}
+
+#Введение чрезвычайного положения
+country_event = {
+	id = LPR.3
+	title = LPR.3.t
+	desc = LPR.3.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.3.a
+                add_stability = -0.02
+	}
+}
+
+#Народные суды Новороссии
+country_event = {
+	id = LPR.4
+	title = LPR.4.t
+	desc = LPR.4.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.4.a
+                add_support_war = 0.03
+                add_political_power = 10
+	}
+}

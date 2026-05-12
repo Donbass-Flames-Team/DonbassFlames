@@ -361,6 +361,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_republic_of_bolotov"
 			add_ideas = LPR_republic_of_bolotov
+			country_event = {
+				id = LPR.2
+			}
 		}
 
 		ai_will_do = {
@@ -381,6 +384,9 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_Introduction_of_a_state_emergency"
 			add_ideas = LPR_introduction_of_a_state_of_emergency
 			add_political_power = 20
+			country_event = {
+				id = LPR.3
+			}
 		}
 
 		ai_will_do = {
@@ -399,8 +405,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_preparing_for_may_11"
-			add_political_power = 50
-			add_stability = 0.1
+						add_political_power = 50
+						add_stability = 0.1
 		}
 
 		ai_will_do = {
@@ -419,13 +425,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_full_mobilization"
-			add_timed_idea = {
-				idea = LPR_mobilization_shock
-				days = 40
-			}
-			add_political_power = 15
-			load_oob = "LPR_millitia"
-			load_oob = "LPR_millitia"
+						add_timed_idea = {
+							idea = LPR_mobilization_shock
+							days = 40
+						}
+						add_political_power = 15
+						load_oob = "LPR_millitia"
+						load_oob = "LPR_millitia"
 		}
 
 		ai_will_do = {
@@ -473,8 +479,12 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_peoples_court_of_novorossiya"
-			add_political_power = -50
-			add_ideas = LPR_harsh_courts
+						add_political_power = -50
+						add_ideas = LPR_harsh_courts
+			                        set_country_flag = 
+						country_event = {
+							id = LPR.4
+						}
 		}
 
 		ai_will_do = {
@@ -488,24 +498,13 @@ focus_tree = {
 		x = 12
 		y = 7
 		cost = 0
-		prerequisite = { focus = LPR_full_mobilization }
 		prerequisite = { focus = LPR_preparing_for_may_11 }
+		prerequisite = { focus = LPR_full_mobilization }
 		prerequisite = { focus = LPR_peoples_court_of_novorossiya }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_referendum"
-						add_stability = 0.15
-						add_political_power = 120
-						add_popularity = {
-			                ideology = autoritarian_democracy
-			                popularity = 0.05
-						add_ideas = LPR_peoples_mandate
-					}
-			
-					ai_will_do = {
-						base = 1
-					}
 		}
 
 		ai_will_do = {
