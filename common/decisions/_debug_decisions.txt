@@ -91,8 +91,33 @@ debug_decisions = {
 		complete_effect = {
 			add_days_mission_timeout = {
                 mission = UKR_yanukovich_overthrow
-                days = -60
+                days = -80
             }
+	    }
+    }
+
+	show_start_gui_debug = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			add_to_variable = {
+				var = show_startgui
+				value = -1
+			}
 	    }
     }
 

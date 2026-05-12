@@ -32,8 +32,8 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "startgui_left_button_2"
-			position = { x = 73 y = 249 }
+			name = "information_country_mechanics_startgui_button"
+			position = { x = 73 y = 159 }
 			quadTextureSprite = "GFX_startgui_leftbutton"
 			font = "hoi_36header"			
 			text = "start_gui_country_mechanics"
@@ -41,20 +41,22 @@ guiTypes = {
 
 		buttonType = {
 			name = "information_mod_startgui_button"
-			position = { x = 73 y = 339 }
+			position = { x = 73 y = 249 }
 			quadTextureSprite = "GFX_startgui_leftbutton"
 			font = "hoi_36header"			
 			text = "start_gui_mod_info_text"
 		}
 
 		buttonType = {
-			name = "startgui_left_button_3"
-			position = { x = 73 y = 429 }
+			name = "information_whats_new_startgui_button"
+			position = { x = 73 y = 341 }
 			quadTextureSprite = "GFX_startgui_leftbutton"
 			font = "hoi_36header"			
 			text = "start_gui_whats_new"
 		}
-
+		############################################
+        ################# ПИСАНИНА #################
+		############################################
 		instantTextBoxType = {
 			name = "mod_dev_status_title"
 			position = { x = 551 y = 180 }
@@ -102,6 +104,9 @@ guiTypes = {
 			maxWidth = 400
 			alwaystransparent = yes
 		}
+		############################################
+        ############### ОПТИМИЗАЦИЯ ################
+		############################################
 
 		buttonType = {
 			name = "generic_checkbox"
@@ -126,6 +131,7 @@ guiTypes = {
 		}
 	}
 
+	# Country info container
 	containerWindowType = {
 		name = "Start_gui_country_info"
 		position = { x = 0 y = 0 }
@@ -138,6 +144,341 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite = "GFX_startgui_background"
 			position = { x = 49 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name = "start_gui_title"
+			position = { x = 399 y = 10 }
+			font = "hoi_36header"
+			text = "start_gui_title_text"
+			maxWidth = 500
+			format = centre
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "country_info_text"
+			position = { x = 562 y = 370 }
+			font = "hoi_30header"
+			text = "country_info_startgui_ukr"
+			maxWidth = 675
+			format = centre
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "information_country_startgui_button"
+			position = { x = 73 y = 69 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_country_info_text"
+		}
+
+		buttonType = {
+			name = "information_country_mechanics_startgui_button"
+			position = { x = 73 y = 159 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_country_mechanics"
+		}
+
+		buttonType = {
+			name = "information_mod_startgui_button"
+			position = { x = 73 y = 249 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_mod_info_text"
+		}
+
+		buttonType = {
+			name = "information_whats_new_startgui_button"
+			position = { x = 73 y = 341 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_whats_new"
+		}
+
+
+		buttonType = {
+			name = "play_startgui_button"
+			position = { x = 427 y = 690 }
+			quadTextureSprite = "GFX_startgui_button"
+			font = "hoi_36header"			
+			text = "start_gui_play_text"
+		}
+
+		buttonType = {
+			name = "close_startgui_button"
+			position = { x = 11260 y = 32 }
+			quadTextureSprite = "GFX_closebutton"
+			shortcut = "ESCAPE"
+		}
+	}
+
+	# Mod info container
+	containerWindowType = {
+		name = "Start_gui_mod_info"
+		position = { x = 0 y = 0 }
+		size = { width = 1300 height = 770 }
+		orientation = center
+		origo = center
+		moveable = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_startgui_background"
+			position = { x = 49 y = 0 }
+		}
+
+		buttonType = {
+			name = "information_country_startgui_button"
+			position = { x = 73 y = 69 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_country_info_text"
+		}
+
+		buttonType = {
+			name = "information_country_mechanics_startgui_button"
+			position = { x = 73 y = 159 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_country_mechanics"
+		}
+
+		buttonType = {
+			name = "information_mod_startgui_button"
+			position = { x = 73 y = 249 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_mod_info_text"
+		}
+
+		buttonType = {
+			name = "information_whats_new_startgui_button"
+			position = { x = 73 y = 341 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_whats_new"
+		}
+
+		instantTextBoxType = {
+			name = "mod_dev_title"
+			position = { x = 562 y = 150 }
+			font = "hoi_36header"
+			text = "start_gui_dev_text"
+			maxWidth = 700
+			format = centre
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "mod_dev_text"
+			position = { x = 562 y = 250 }
+			font = "hoi_36header"
+			text = "DEVELOPERS"
+			maxWidth = 700
+			format = centre
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "start_gui_title"
+			position = { x = 399 y = 10 }
+			font = "hoi_36header"
+			text = "start_gui_title_text"
+			maxWidth = 500
+			format = centre
+			alwaystransparent = yes
+		}
+
+
+		buttonType = {
+			name = "play_startgui_button"
+			position = { x = 427 y = 690 }
+			quadTextureSprite = "GFX_startgui_button"
+			font = "hoi_36header"			
+			text = "start_gui_play_text"
+		}
+
+		buttonType = {
+			name = "close_startgui_button"
+			position = { x = 11260 y = 32 }
+			quadTextureSprite = "GFX_closebutton"
+			shortcut = "ESCAPE"
+		}
+	}
+	###################################################
+    ###################################################
+	##############  Whats new container  ##############
+	###################################################
+	###################################################
+	containerWindowType = {
+		name = "Start_gui_whats_new"
+		position = { x = 0 y = 0 }
+		size = { width = 1300 height = 770 }
+		orientation = center
+		origo = center
+		moveable = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_startgui_background"
+			position = { x = 49 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name = "patch_notes_text"
+			position = { x = 562 y = 125 }
+			font = "hoi_36header"
+			text = "patch_notes_text"
+			maxWidth = 645
+			maxHeight = 500
+			format = centre
+			alwaystransparent = yes
+			scrollbarType = standardtext_slider
+		}
+
+		buttonType = {
+			name = "information_country_startgui_button"
+			position = { x = 73 y = 69 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_country_info_text"
+		}
+
+		buttonType = {
+			name = "information_country_mechanics_startgui_button"
+			position = { x = 73 y = 159 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_country_mechanics"
+		}
+
+		buttonType = {
+			name = "information_mod_startgui_button"
+			position = { x = 73 y = 249 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_mod_info_text"
+		}
+
+		buttonType = {
+			name = "information_whats_new_startgui_button"
+			position = { x = 73 y = 341 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_whats_new"
+		}
+
+		instantTextBoxType = {
+			name = "start_gui_title"
+			position = { x = 399 y = 10 }
+			font = "hoi_36header"
+			text = "start_gui_title_text"
+			maxWidth = 500
+			format = centre
+			alwaystransparent = yes
+		}
+
+
+		buttonType = {
+			name = "play_startgui_button"
+			position = { x = 427 y = 690 }
+			quadTextureSprite = "GFX_startgui_button"
+			font = "hoi_36header"			
+			text = "start_gui_play_text"
+		}
+
+		buttonType = {
+			name = "close_startgui_button"
+			position = { x = 11260 y = 32 }
+			quadTextureSprite = "GFX_closebutton"
+			shortcut = "ESCAPE"
+		}
+	}
+
+	# Start_gui_country_mechanics
+	containerWindowType = {
+		name = "Start_gui_country_mechanics"
+		position = { x = 0 y = 0 }
+		size = { width = 1300 height = 770 }
+		orientation = center
+		origo = center
+		moveable = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_startgui_background"
+			position = { x = 49 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name = "mechanic_1_text"
+			position = { x = 562 y = 125 }
+			font = "hoi_36header"
+			text = "1"
+			maxWidth = 645
+			maxHeight = 500
+			format = centre
+			alwaystransparent = yes
+			scrollbarType = standardtext_slider
+		}
+
+		instantTextBoxType = {
+			name = "mechanic_2_text"
+			position = { x = 562 y = 175 }
+			font = "hoi_36header"
+			text = "2"
+			maxWidth = 645
+			maxHeight = 500
+			format = centre
+			alwaystransparent = yes
+			scrollbarType = standardtext_slider
+		}
+
+		instantTextBoxType = {
+			name = "mechanic_3_text"
+			position = { x = 562 y = 225 }
+			font = "hoi_36header"
+			text = "3"
+			maxWidth = 645
+			maxHeight = 500
+			format = centre
+			alwaystransparent = yes
+			scrollbarType = standardtext_slider
+		}		
+
+		buttonType = {
+			name = "information_country_startgui_button"
+			position = { x = 73 y = 69 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_country_info_text"
+		}
+
+		buttonType = {
+			name = "information_country_mechanics_startgui_button"
+			position = { x = 73 y = 159 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_country_mechanics"
+		}
+
+		buttonType = {
+			name = "information_mod_startgui_button"
+			position = { x = 73 y = 249 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_mod_info_text"
+		}
+
+		buttonType = {
+			name = "information_whats_new_startgui_button"
+			position = { x = 73 y = 341 }
+			quadTextureSprite = "GFX_startgui_leftbutton"
+			font = "hoi_36header"			
+			text = "start_gui_whats_new"
 		}
 
 		instantTextBoxType = {

@@ -7,39 +7,35 @@ scripted_gui = {
 		dirty = show_startgui
 
 		visible = {
+			has_country_flag = open_start_gui
 		    NOT = {
-                check_variable = {
-                    var = show_startgui
-                    value = 1
-                    compare = greater_than_or_equals
-                }
 				has_country_flag = open_country_info
 				has_country_flag = open_information_mod
+				has_country_flag = open_start_gui_whats_new
+				has_country_flag = open_country_mechanics_info				
 			}
 		}
 		
 		effects = {
 			close_startgui_button_click = {
-				set_variable = {
-                    var = show_startgui
-                    value = 1
-                }
+				clr_country_flag = open_start_gui
 		    }
-
 			play_startgui_button_click = {
-				set_variable = {
-                    var = show_startgui
-                    value = 1
-                }
+				clr_country_flag = open_start_gui
 		    }
 
 			information_country_startgui_button_click = {
 				set_country_flag = open_country_info
 		    }
-
 			information_mod_startgui_button_click = {
 				set_country_flag = open_information_mod
 			}
+			information_country_mechanics_startgui_button_click = {
+				set_country_flag = open_country_mechanics_info
+			}
+			information_whats_new_startgui_button_click = {
+				set_country_flag = open_start_gui_whats_new
+			}			
 		}
 		
 		dynamic_lists = {
@@ -60,33 +56,30 @@ scripted_gui = {
 
 		visible = {
 		    NOT = {
-                check_variable = {
-                    var = show_startgui
-                    value = 1
-                    compare = greater_than_or_equals
-                }
 				has_country_flag = open_information_mod
 			}
+			has_country_flag = open_start_gui
             has_country_flag = open_country_info
 		}
 		
 		effects = {
 			close_startgui_button_click = {
-				set_variable = {
-                    var = show_startgui
-                    value = 1
-                }
+				clr_country_flag = open_start_gui
 		    }
-
 			play_startgui_button_click = {
-				set_variable = {
-                    var = show_startgui
-                    value = 1
-                }
+				clr_country_flag = open_start_gui
 		    }
 
 			information_mod_startgui_button_click = {
 				set_country_flag = open_information_mod
+				clr_country_flag = open_country_info
+			}
+			information_whats_new_startgui_button_click = {
+				set_country_flag = open_start_gui_whats_new
+				clr_country_flag = open_country_info
+			}
+			information_country_mechanics_startgui_button_click = {
+				set_country_flag = open_country_mechanics_info
 				clr_country_flag = open_country_info
 			}
 		}
@@ -108,6 +101,54 @@ scripted_gui = {
 		}
 	}
 
+	Start_gui_country_mechanics = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "Start_gui_country_mechanics"
+		parent_window_name = Start_gui
+		dirty = show_startgui
+
+		visible = {
+		    NOT = {
+                
+			}
+			has_country_flag = open_start_gui
+            has_country_flag = open_country_mechanics_info
+		}
+		
+		effects = {
+			
+			close_startgui_button_click = {
+				clr_country_flag = open_start_gui
+		    }
+
+			play_startgui_button_click = {
+				clr_country_flag = open_start_gui
+		    }
+
+			information_country_startgui_button_click = {
+				set_country_flag = open_country_info
+				clr_country_flag = open_country_mechanics_info
+		    }
+			information_mod_startgui_button_click = {
+				set_country_flag = open_information_mod
+				clr_country_flag = open_country_mechanics_info
+			}
+			information_whats_new_startgui_button_click = {
+				set_country_flag = open_start_gui_whats_new
+				clr_country_flag = open_country_mechanics_info
+			}
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+		properties = {
+
+		}
+	}
+
 	Start_gui_mod_info = {
 		context_type = player_context
 		parent_window_token = top_bar
@@ -117,34 +158,82 @@ scripted_gui = {
 
 		visible = {
 		    NOT = {
-                check_variable = {
-                    var = show_startgui
-                    value = 1
-                    compare = greater_than_or_equals
-                }
+                
 			}
+			has_country_flag = open_start_gui
             has_country_flag = open_information_mod
 		}
 		
 		effects = {
 			
 			close_startgui_button_click = {
-				set_variable = {
-                    var = show_startgui
-                    value = 1
-                }
+				clr_country_flag = open_start_gui
 		    }
 
 			play_startgui_button_click = {
-				set_variable = {
-                    var = show_startgui
-                    value = 1
-                }
+				clr_country_flag = open_start_gui
 		    }
+
 
 			information_country_startgui_button_click = {
 				set_country_flag = open_country_info
 				clr_country_flag = open_information_mod
+		    }
+			information_country_mechanics_startgui_button_click = {
+				set_country_flag = open_country_mechanics_info
+				clr_country_flag = open_information_mod
+			}
+			information_whats_new_startgui_button_click = {
+				set_country_flag = open_start_gui_whats_new
+				clr_country_flag = open_information_mod
+			}	
+
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+		properties = {
+
+		}
+	}
+
+	Start_gui_whats_new = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "Start_gui_whats_new"
+		parent_window_name = Start_gui
+		dirty = show_startgui
+
+		visible = {
+		    NOT = {
+                
+			}
+			has_country_flag = open_start_gui
+            has_country_flag = open_start_gui_whats_new
+		}
+		
+		effects = {
+			
+			close_startgui_button_click = {
+				clr_country_flag = open_start_gui
+		    }
+			play_startgui_button_click = {
+				clr_country_flag = open_start_gui
+		    }
+
+			information_country_startgui_button_click = {
+				set_country_flag = open_country_info
+				clr_country_flag = open_start_gui_whats_new
+		    }
+			information_mod_startgui_button_click = {
+				set_country_flag = open_information_mod
+				clr_country_flag = open_start_gui_whats_new
+			}
+			information_country_mechanics_startgui_button_click = {
+				set_country_flag = open_country_mechanics_info
+				clr_country_flag = open_start_gui_whats_new
 			}
 		}
 		
