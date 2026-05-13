@@ -1,0 +1,39 @@
+city_control_state_154_changed = {
+    if = {
+        limit = {
+            NOT = { has_global_flag = kyiv_RUS }
+
+            OR = {
+                RUS = { controls_state = 154 }
+                DPR = { controls_state = 154 }
+                LPR = { controls_state = 154 }
+            }
+        }
+
+        set_global_flag = kyiv_RUS
+
+        ROOT = {
+            news_event = {
+                id = city.1
+                hours = 1
+            }
+        }
+    }
+
+    if = {
+        limit = {
+            has_global_flag = kyiv_RUS
+            NOT = { has_global_flag = kyiv_UKR }
+            UKR = { controls_state = 154 }
+        }
+
+        set_global_flag = kyiv_UKR
+
+        UKR = {
+            news_event = {
+                id = city.101
+                hours = 1
+            }
+        }
+    }
+}

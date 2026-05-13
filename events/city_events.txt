@@ -1,0 +1,79 @@
+add_namespace = city
+
+news_event = {
+    id = city.1
+    title = city.1.t
+    desc = city.1.d
+    picture = GFX_news_event_RUS_kyiv
+    major = yes
+    is_triggered_only = yes
+
+    option = {
+        name = city.1.ukr
+        trigger = { tag = UKR }
+    }
+
+    option = {
+        name = city.1.rus
+        trigger = {
+            OR = {
+                tag = RUS
+                tag = DPR
+                tag = LPR
+            }
+        }
+    }
+
+    option = {
+        name = city.1.world
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = UKR
+                    tag = RUS
+                    tag = DPR
+                    tag = LPR
+                }
+            }
+        }
+    }
+}
+
+news_event = {
+    id = city.101
+    title = city.101.t
+    desc = city.101.d
+    picture = GFX_news_event_UKR_kyiv
+    major = yes
+    is_triggered_only = yes
+
+    option = {
+        name = city.101.ukr
+        trigger = { tag = UKR }
+    }
+
+    option = {
+        name = city.101.rus
+        trigger = {
+            OR = {
+                tag = RUS
+                tag = DPR
+                tag = LPR
+            }
+        }
+    }
+
+    option = {
+        name = city.101.world
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = UKR
+                    tag = RUS
+                    tag = DPR
+                    tag = LPR
+                }
+            }
+        }
+    }
+}

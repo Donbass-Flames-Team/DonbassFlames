@@ -3,11 +3,12 @@ on_actions = {
         effect = {
             if = {
                 limit = {
+                    FROM.FROM = { state = 154 }
                     NOT = { has_global_flag = kyiv_RUS }
                     OR = {
-                        RUS = { controls_state = 154 }
-                        DPR = { controls_state = 154 }
-                        LPR = { controls_state = 154 }
+                        tag = RUS
+                        tag = DPR
+                        tag = LPR
                     }
                 }
                 set_global_flag = kyiv_RUS
@@ -18,9 +19,10 @@ on_actions = {
             }
             if = {
                 limit = {
+                    FROM.FROM = { state = 154 }
                     has_global_flag = kyiv_RUS
                     NOT = { has_global_flag = kyiv_UKR }
-                    UKR = { controls_state = 154 }
+                    tag = UKR
                 }
                 set_global_flag = kyiv_UKR
                 news_event = {
