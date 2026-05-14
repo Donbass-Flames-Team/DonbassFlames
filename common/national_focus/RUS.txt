@@ -1074,7 +1074,12 @@ focus_tree = {
 			}
 			ZPR = { exists = no }
 			HPR = { exists = no }	
-			NPR = { exists = no }		
+			NPR = { exists = no }	
+			NOT = {
+			    DPR = {
+				    surrender_progress > 0.5
+			    }	
+		    }
 		}
 
 		completion_reward = {
@@ -1128,6 +1133,9 @@ focus_tree = {
 
 		available = {
 			has_global_flag = Ukraine_victory_in_ATO
+			DPR = { exists = no }
+			LPR = { exists = no }	
+			KPR = { exists = no }
 		}
 
 		completion_reward = {
@@ -1148,7 +1156,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 2014.7.7
+			date > 2015.2.1
 		}
 
 		completion_reward = {
@@ -1543,7 +1551,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 2014.9.1
+			date > 2015.2.1
 		}
 
 		completion_reward = {
