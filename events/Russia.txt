@@ -243,8 +243,9 @@ country_event = {
 		name = russia.13.a
 		add_stability = 0.05
 		custom_effect_tooltip = Minsk_2_will_be_signed_tt
-		second_minsk_effect = yes
         hidden_effect = {
+			set_global_flag = Minsk2_is_signed
+			second_minsk_effect = yes
 			DPR = {
 				mark_focus_tree_layout_dirty = yes
 				complete_national_focus = DPR_second_minsk_agreement
@@ -327,14 +328,14 @@ country_event = {
 			idea = RUS_victory_day_preparations
 			days = 30
 		}
-				ai_chance = {
+		ai_chance = {
 			factor = 100
 		}
 	}
 
 	option = {
 		name = russia.17.b
-				ai_chance = {
+		ai_chance = {
 			factor = 0
 		}
 	}

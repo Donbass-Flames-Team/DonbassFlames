@@ -1,0 +1,32 @@
+defined_text = {
+    name = minsk_current_negotations
+
+    text = {
+        trigger = {
+            NOT = {
+                OR = {
+                    has_global_flag = Minsk2_is_signed
+                    has_global_flag = Minsk1_is_signed
+                }
+            }
+        }
+        localization_key = "no_minsk_is_signed"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Minsk1_is_signed
+            NOT = {
+                has_global_flag = Minsk2_is_signed
+            }
+        }
+        localization_key = "minsk_1_is_signed"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Minsk2_is_signed
+        }
+        localization_key = "minsk_2_is_signed"
+    }
+}

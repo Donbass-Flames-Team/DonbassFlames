@@ -5,6 +5,10 @@ on_actions = {
 		    if = {
 			    limit = {
 				    has_global_flag = Start_Of_ATO
+					NOT = {
+						has_global_flag = Ukraine_victory_in_ATO
+						has_global_flag = People_republic_victory
+					}
 				    tag = UKR
 				    date = 2015.1.13
 				    NOT = { has_country_flag = UKR_volnovakha_bus_attack_fired }
@@ -16,6 +20,10 @@ on_actions = {
 		    if = {
 			    limit = {
 				    has_global_flag = Start_Of_ATO
+					NOT = {
+						has_global_flag = Ukraine_victory_in_ATO
+						has_global_flag = People_republic_victory
+					}
 				    tag = UKR
 				    date = 2014.7.17
 				    NOT = { has_global_flag = TheDownedMalaysianBoing }
@@ -29,6 +37,10 @@ on_actions = {
 		    if = {
 			    limit = {
 				    has_global_flag = Start_Of_ATO
+					NOT = {
+						has_global_flag = Ukraine_victory_in_ATO
+						has_global_flag = People_republic_victory
+					}
 				    tag = UKR
 				    date = 2014.6.14
 				    NOT = { has_country_flag = UKR_The_downed_Il_76_near_Luhansk }
@@ -40,10 +52,14 @@ on_actions = {
 			if = {
 			    limit = {
 				    has_global_flag = Start_Of_ATO
+					NOT = {
+						has_global_flag = Ukraine_victory_in_ATO
+						has_global_flag = People_republic_victory
+					}
 				    tag = UKR
 				    date = 2014.7.14
-					526 = {
-						is_controlled_by = UKR
+					DPR = {
+						controls_province = 3869
 					}
 				    NOT = { has_country_flag = UKR_zasada_dnr_mariupol_2014 }
 					NOT = { has_global_flag = Ukraine_victory_in_ATO }
@@ -57,6 +73,9 @@ on_actions = {
 					date = 2015.6.11
 					NOT = { has_global_flag = KHARKOV_STUDENTS_TOWN_ATTACKED }
 					tag = UKR
+					203 = {
+						is_controlled_by = UKR
+					}
 				}
 				set_global_flag = KHARKOV_STUDENTS_TOWN_ATTACKED
 				country_event = { id = ukraine.75 }
@@ -66,9 +85,11 @@ on_actions = {
 				    has_global_flag = Start_Of_ATO
 				    tag = DPR
 				    date = 2014.8.11
+
 				    NOT = { has_country_flag = DPR_beach_shelling_in_zugres }
 					NOT = { has_global_flag = Ukraine_victory_in_ATO }
 					NOT = { has_global_flag = ATO_Separatists_victory}
+
 			    }
 			    country_event = { id = DPR.18 }
 		    }

@@ -205,11 +205,15 @@
  NOT_A_WORKING_WAY_tt:0 "§RВ ДАННЫЙ МОМЕНТ НЕИГРАБЕЛЬНЫЙ ПУТЬ§!"
 
  
- UKR_elections_results_text: "Результаты выборов"
- UKR_winner_results_text: "[get_winner_on_elections_popularity]"
+ UKR_elections_results_text:0 "Результаты выборов"
+ UKR_winner_results_text:0 "[get_winner_on_elections_popularity]"
 
- Minsk_negotations_progress_text: "Прогресс переговоров:"
- Minsk_negotations_current_negotiations_text: "Текущие переговоры:"
+ Minsk_negotations_progress_text:0 "Прогресс переговоров:"
+ Minsk_negotations_current_negotiations_text:0 "Текущие переговоры: [minsk_current_negotations]"
+ no_minsk_is_signed:0 "§YНикакой§!"
+ minsk_1_is_signed:0 "§YМинск 1§!"
+ minsk_2_is_signed:0 "§YМинск 2§!"
+ 
  UKR_local_population_text: "Статистика региона:\n\nПоддержка Порошенко: §Y[?Zhytomyrska_oblast_poroshenko_support_value]§!\nПоддержка Тимошенко: §Y[?Zhytomyrska_oblast_timoshenko_support_value]§!\nПоддержка Ляшко: §Y[?Zhytomyrska_oblast_lyashko_support_value]§!\nПоддержка Добкина: §Y[?Zhytomyrska_oblast_dobkin_support_value]§!\nПоддержка Дарта Алексеевича: §Y[?Zhytomyrska_oblast_darth_alekseevich_vader_support_value]§!"
 
 

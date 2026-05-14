@@ -5,12 +5,16 @@
 
 Minsk_Negotations_decision = {
 
-	priority = 95
+	priority = 94
 	
 	icon = SOV_propaganda
 	
 	allowed = {
 		original_tag = UKR 
+	}
+
+	visible = {
+		has_global_flag = Start_Of_ATO
 	}
 
 	scripted_gui = Minsk_negotations_gui
