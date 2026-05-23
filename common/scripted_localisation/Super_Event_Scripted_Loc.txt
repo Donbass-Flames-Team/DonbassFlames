@@ -26,6 +26,13 @@ defined_text = {
 		}
 		localization_key = "sp_event_yanukovich_overthrow_title"
 	} 
+    text = { 
+		trigger = {
+			has_global_flag = special_military_operation_SP
+		}
+		localization_key = "sp_event_special_military_operation_title"
+	}
+
 }
 
 #Quotes
@@ -56,6 +63,12 @@ defined_text = {
 		}
 		localization_key = "sp_event_yanukovich_overthrow_quote"
 	}
+    text = { 
+		trigger = {
+			has_global_flag = special_military_operation_SP
+		}
+		localization_key = "sp_event_special_military_operation_quote"
+	}
 }
 
 #Remarks
@@ -85,4 +98,10 @@ defined_text = {
 		}
 		localization_key = "sp_event_yanukovich_overthrow_remark"
 	} 
+    text = { 
+		trigger = {
+			has_global_flag = special_military_operation_SP
+		}
+		localization_key = "sp_event_special_military_operation_remark"
+	}
 }
