@@ -1101,3 +1101,99 @@ news_event = {
 		name = news_events.33.a
 	}
 }
+
+# Признание ЛДНР
+news_event = {
+	id = news_events.34
+	title = news_events.34.t
+	desc = news_events.34.d
+	picture = GFX_news_event_kharkov_accords_terminated
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.34.a
+		trigger = {
+			original_tag = UKR
+		}
+	}
+	
+	option = {
+		name = news_events.34.b
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.34.c
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = UKR
+			}
+		}
+	}
+}
+
+# Вторжение в Украину (СВО) специальная военная операция
+news_event = {
+	id = news_events.35
+	title = news_events.35.t
+	desc = news_events.35.d
+	picture = GFX_news_event_kharkov_accords_terminated
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.35.a
+		trigger = {
+			original_tag = UKR
+		}
+	}
+	
+	option = {
+		name = news_events.35.b
+		trigger = {
+			OR = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+			}
+		}
+	}
+
+	option = {
+		name = news_events.35.c
+		trigger = {
+			NOT = {
+			    original_tag = RUS
+			    original_tag = BLR
+				original_tag = KPR
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = OPR
+				original_tag = UKR
+			}
+		}
+	}
+}
