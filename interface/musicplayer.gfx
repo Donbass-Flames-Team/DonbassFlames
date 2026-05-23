@@ -1,11 +1,10 @@
 spriteTypes = {
 
-	
 	spriteType = {
 		name = "GFX_musicplayer_entry_bg"
 		textureFile = "gfx/interface/topbar/musicplayer/music_player_entry_bg.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_musicplayer_bottom_bar"
 		texturefile = "gfx//interface//topbar//musicplayer//musicplayer_bottom_bar.dds"
@@ -25,7 +24,7 @@ spriteTypes = {
 		name = "GFX_selected_song"
 		texturefile = "gfx//interface//topbar//musicplayer//selected_song.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_disabled_song"
 		texturefile = "gfx//interface//topbar//musicplayer//disabled_song.dds"
@@ -62,12 +61,12 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		noOfFrames = 3			
 	}
-	
+
 	spriteType = {
 		name = "GFX_musicplayer_bar"
 		texturefile = "gfx//interface//topbar//musicplayer//musicplayer_bar.dds"
 	}	
-	
+
 	spriteType = {
 		name = "GFX_musicplayer_header_bg"
 		texturefile = "gfx//interface//topbar//musicplayer//musicplayer_header_bg.dds"
@@ -82,7 +81,7 @@ spriteTypes = {
 		size = { x = 75 y = 16 }
 		effectFile = "gfx/FX/progress.lua"
 	}
-	
+
 	spriteType = {
 		name = "GFX_base_game_album_art"
 		texturefile = "gfx//interface//topbar//musicplayer//base_game_album_art.dds"
@@ -93,5 +92,29 @@ spriteTypes = {
 		name = "GFX_classic_album_art"
 		texturefile = "gfx//interface//topbar//musicplayer//classic_album_art.dds"
 		noOfFrames = 2
-	}
+}
+
+    spriteType = {
+        name = "GFX_radio_station_cover_NATOradio"
+        textureFile = "gfx/interface/topbar/musicplayer/radio_NATO.dds"
+        noOfFrames = 2
+    }
+
+    spriteType = {
+        name = "GFX_radio_station_cover_ukraine_radio"
+        textureFile = "gfx/interface/topbar/musicplayer/radio_ukraine.dds"
+        noOfFrames = 2
+    }
+
+    spriteType = {
+        name = "GFX_radio_station_cover_Russia_radio"
+        textureFile = "gfx/interface/topbar/musicplayer/radio_russia.dds"
+        noOfFrames = 2
+    }
+
+    spriteType = {
+        name = "GFX_radio_station_cover_hyperborea"
+        textureFile = "gfx/interface/topbar/musicplayer/radio_hyperborea.dds"
+        noOfFrames = 2
+    }
 }
