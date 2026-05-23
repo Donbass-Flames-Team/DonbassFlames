@@ -1494,6 +1494,84 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_recognize_peoples_passports
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 1
+		y = 4
+
+		prerequisite = { focus = RUS_cooperation_with_people_republics }
+		prerequisite = { focus = RUS_sign_minsk_two }
+		relative_position_id = RUS_the_war_has_stalled
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_distribute_russian_passports
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 1
+		y = 5
+
+		prerequisite = { focus = RUS_cooperation_with_people_republics }
+		prerequisite = { focus = RUS_sign_minsk_two }
+		relative_position_id = RUS_the_war_has_stalled
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_full_control_over_donbass
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = 1
+		y = 6
+
+		prerequisite = { focus = RUS_cooperation_with_people_republics }
+		prerequisite = { focus = RUS_sign_minsk_two }
+		relative_position_id = RUS_the_war_has_stalled
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			puppet = {
+                target = DPR
+                end_wars = no
+            }
+			puppet = {
+                target = LPR
+                end_wars = no
+            }			
+		}
+	}
+
+	focus = {
 		id = RUS_increase_unrest_in_ukraine
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
@@ -1623,6 +1701,107 @@ focus_tree = {
 
 		completion_reward = {
 
+		}
+	}
+
+	focus = {
+		id = RUS_prepare_for_special_millitary_operation
+		icon = GFX_goal_no_focus_RUS
+		cost = 6
+		x = 35
+		y = 15
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			date > 2022.1.1
+			has_completed_focus = RUS_full_control_over_donbass
+		}
+
+		completion_reward = {
+            custom_effect_tooltip = SMO_preparation_gui_tt
+
+			hidden_effect = {
+				set_country_flag = SMO_preparation_gui_activated
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_recognize_luhansk_and_donetsk
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = RUS_prepare_for_special_millitary_operation }
+		relative_position_id = RUS_prepare_for_special_millitary_operation
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 35
+            add_stability = 0.04
+			add_war_support = 0.025
+			hidden_effect = {
+				news_event = {
+					id = news_events.34
+					hours = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_destroy_the_kiyv_junta
+		icon = GFX_goal_no_focus_RUS
+		cost = 0.5
+		x = 0
+		y = 2
+
+		prerequisite = { focus = RUS_recognize_luhansk_and_donetsk }
+		relative_position_id = RUS_prepare_for_special_millitary_operation
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = RUS_SMO_start_tt
+			add_war_support = 0.05
+            hidden_effect = {
+				set_global_flag = Russo_Ukranian_war
+				news_event = {
+					id = news_events.35
+					hours = 3
+				}
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				DPR = {
+				    declare_war_on = {
+                        target = UKR
+                        type = annex_everything
+                    }					
+				}
+				LPR = {
+				    declare_war_on = {
+                        target = UKR
+                        type = annex_everything
+                    }					
+				}				
+			}
 		}
 	}
 	
