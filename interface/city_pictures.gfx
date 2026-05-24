@@ -1,103 +1,153 @@
 spriteTypes = {
 
     spriteType = {
-        name = "GFX_news_event_lysychansk_RUS"
+        name = "GFX_lysychansk_RUS"
         texturefile = "gfx/event_pictures/news_events/lysychansk_RUS.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_lysychansk_UKR"
+        name = "GFX_lysychansk_UKR"
         texturefile = "gfx/event_pictures/news_events/lysychansk_UKR.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_severodonetsk_RUS"
+        name = "GFX_severodonetsk_RUS"
         texturefile = "gfx/event_pictures/news_events/severodonetsk_RUS.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_severodonetsk_UKR"
+        name = "GFX_severodonetsk_UKR"
         texturefile = "gfx/event_pictures/news_events/severodonetsk_UKR.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_alchevsk_RUS"
+        name = "GFX_alchevsk_RUS"
         texturefile = "gfx/event_pictures/news_events/alchevsk_RUS.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_alchevsk_UKR"
+        name = "GFX_alchevsk_UKR"
         texturefile = "gfx/event_pictures/news_events/alchevsk_UKR.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_bakhmut_RUS"
+        name = "GFX_bakhmut_RUS"
         texturefile = "gfx/event_pictures/news_events/bakhmut_RUS.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_bakhmut_UKR"
+        name = "GFX_bakhmut_UKR"
         texturefile = "gfx/event_pictures/news_events/bakhmut_UKR.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_konstantinovka_RUS"
+        name = "GFX_konstantinovka_RUS"
         texturefile = "gfx/event_pictures/news_events/konstantinovka_RUS.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_konstantinovka_UKR"
+        name = "GFX_konstantinovka_UKR"
         texturefile = "gfx/event_pictures/news_events/konstantinovka_UKR.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_yenakiyevo_RUS"
+        name = "GFX_yenakiyevo_RUS"
         texturefile = "gfx/event_pictures/news_events/yenakiyevo_RUS.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_yenakiyevo_UKR"
+        name = "GFX_yenakiyevo_UKR"
         texturefile = "gfx/event_pictures/news_events/yenakiyevo_UKR.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_slavyansk_RUS"
+        name = "GFX_slavyansk_RUS"
         texturefile = "gfx/event_pictures/news_events/slavyansk_RUS.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_slavyansk_UKR"
+        name = "GFX_slavyansk_UKR"
         texturefile = "gfx/event_pictures/news_events/slavyansk_UKR.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_kramatorsk_RUS"
+        name = "GFX_kramatorsk_RUS"
         texturefile = "gfx/event_pictures/news_events/kramatorsk_RUS.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_kramatorsk_UKR"
+        name = "GFX_kramatorsk_UKR"
         texturefile = "gfx/event_pictures/news_events/kramatorsk_UKR.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_horlivka_RUS"
+        name = "GFX_horlivka_RUS"
         texturefile = "gfx/event_pictures/news_events/horlivka_RUS.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_horlivka_UKR"
+        name = "GFX_horlivka_UKR"
         texturefile = "gfx/event_pictures/news_events/horlivka_UKR.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_mariupol_RUS"
+        name = "GFX_mariupol_RUS"
         texturefile = "gfx/event_pictures/news_events/mariupol_RUS.png"
     }
 
     spriteType = {
-        name = "GFX_news_event_mariupol_UKR"
+        name = "GFX_mariupol_UKR"
         texturefile = "gfx/event_pictures/news_events/mariupol_UKR.png"
+    }
+
+	    spriteType = {
+        name = "GFX_lysychansk_NR"
+        texturefile = "gfx/event_pictures/news_events/lysychansk_NR.png"
+    }
+
+    spriteType = {
+        name = "GFX_severodonetsk_NR"
+        texturefile = "gfx/event_pictures/news_events/severodonetsk_NR.png"
+    }
+
+    spriteType = {
+        name = "GFX_alchevsk_NR"
+        texturefile = "gfx/event_pictures/news_events/alchevsk_NR.png"
+    }
+
+    spriteType = {
+        name = "GFX_bakhmut_NR"
+        texturefile = "gfx/event_pictures/news_events/bakhmut_NR.png"
+    }
+
+    spriteType = {
+        name = "GFX_konstantinovka_NR"
+        texturefile = "gfx/event_pictures/news_events/konstantinovka_NR.png"
+    }
+
+    spriteType = {
+        name = "GFX_yenakiyevo_NR"
+        texturefile = "gfx/event_pictures/news_events/yenakiyevo_NR.png"
+    }
+
+    spriteType = {
+        name = "GFX_slavyansk_NR"
+        texturefile = "gfx/event_pictures/news_events/slavyansk_NR.png"
+    }
+
+    spriteType = {
+        name = "GFX_kramatorsk_NR"
+        texturefile = "gfx/event_pictures/news_events/kramatorsk_NR.png"
+    }
+
+    spriteType = {
+        name = "GFX_horlivka_NR"
+        texturefile = "gfx/event_pictures/news_events/horlivka_NR.png"
+    }
+
+    spriteType = {
+        name = "GFX_mariupol_NR"
+        texturefile = "gfx/event_pictures/news_events/mariupol_NR.png"
     }
 
 }
