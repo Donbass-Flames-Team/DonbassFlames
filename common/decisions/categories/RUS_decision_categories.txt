@@ -27,3 +27,18 @@ RUS_stability_of_regime_decision = {
 	scripted_gui = RUS_stability_of_regime
 	visible_when_empty = yes
 }
+
+
+RUS_general_staff = {
+
+	priority = 95
+	
+	icon = SOV_propaganda
+	
+	allowed = {
+		original_tag = RUS 
+	}
+
+	scripted_gui = RUS_general_staff
+	visible_when_empty = yes
+}
