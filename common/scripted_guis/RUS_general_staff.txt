@@ -73,6 +73,122 @@ scripted_gui = {
 			close_button_click = {
                 clr_country_flag = show_rus_general_staff_preparation_for_operation
 			}
+			Large_scale_invasion_click = {
+				set_country_flag = SMO_Plan_is_selected
+                set_country_flag = SMO_Plan_operation_mangust_selected
+
+			}
+			Across_the_entire_border_invasion_click = {
+				set_country_flag = SMO_Plan_is_selected
+				set_country_flag = SMO_Plan_Across_the_entire_border_invasion_selected
+			}
+			from_border_to_border_click = {
+				set_country_flag = SMO_Plan_is_selected
+				set_country_flag = SMO_Plan_from_border_to_border_selected
+			}		
+			liberation_of_Novorossiya_click = {
+				set_country_flag = SMO_Plan_is_selected
+				set_country_flag = SMO_Plan_liberation_of_Novorossiya_selected
+			}
+			offensive_on_Donbass_click = {
+				set_country_flag = SMO_Plan_is_selected
+				set_country_flag = SMO_Plan_offensive_on_donbass_selected
+			}	
+			offensive_on_Dnieper_click = {
+				set_country_flag = SMO_Plan_is_selected
+				set_country_flag = SMO_Plan_offensive_on_dnieper_selected
+			}	
+			Kyiv_offensive_operation_click = {
+				set_country_flag = SMO_Plan_is_selected
+				set_country_flag = SMO_Plan_Kyiv_offensive_operation_selected
+			}	
+			Volyn_Galician_barrier_click = {
+				set_country_flag = SMO_Plan_is_selected
+				set_country_flag = SMO_Plan_Volyn_Galician_barrier_selected
+			}																		
+			##################
+			#### Landings ####
+			##################
+			airborne_assault_hostomel_button_click = {
+                if = {
+					limit = { 
+						NOT = { has_country_flag = Hostomel_airborne_assault_prepared }
+						command_power > 9
+			        }
+					set_country_flag = Hostomel_airborne_assault_prepared
+				    add_command_power = -10
+				}
+			}
+			airborne_assault_borispol_button_click = {
+				if = {
+					limit = { 
+						NOT = { has_country_flag = Borispol_airborne_assault_prepared }
+						command_power > 14
+			        }
+					set_country_flag = Borispol_airborne_assault_prepared
+				    add_command_power = -15
+				}
+			}		
+			airborne_assault_zhitomir_button_click = {
+				if = {
+					limit = { 
+						NOT = { has_country_flag = Zhitomir_airborne_assault_prepared }
+						command_power > 14
+			        }
+					set_country_flag = Zhitomir_airborne_assault_prepared
+				    add_command_power = -15
+				}
+			}
+			airborne_assault_kharkov_button_click = {
+				if = {
+					limit = { 
+						NOT = { has_country_flag = Kharkov_airborne_assault_prepared }
+						command_power > 14
+			        }
+					set_country_flag = Kharkov_airborne_assault_prepared
+				    add_command_power = -15
+				}
+			}		
+			airborne_assault_zaporozhye_button_click = {
+				if = {
+					limit = { 
+						NOT = { has_country_flag = Zaporozhye_airborne_assault_prepared }
+						command_power > 14
+			        }
+					set_country_flag = Zaporozhye_airborne_assault_prepared
+				    add_command_power = -15
+				}
+			}
+			seaborne_landing_berdyansk_button_click = {
+				if = {
+					limit = { 
+						NOT = { has_country_flag = Berdyansk_seaborne_landing_prepared }
+						command_power > 9
+			        }
+					set_country_flag = Berdyansk_seaborne_landing_prepared
+				    add_command_power = -10
+				}
+			}
+			seaborne_landing_odesa_button_click = {
+				if = {
+					limit = { 
+						NOT = { has_country_flag = Odesa_seaborne_landing_prepared }
+						command_power > 19
+			        }
+					set_country_flag = Odesa_seaborne_landing_prepared
+				    add_command_power = -20
+				}
+			}	
+			seaborne_landing_izmail_button_click = {
+				if = {
+					limit = { 
+						NOT = { has_country_flag = Izmail_seaborne_landing_prepared }
+						command_power > 19
+			        }
+					set_country_flag = Izmail_seaborne_landing_prepared
+				    add_command_power = -20
+				}
+			}																
 		}
 
         triggers = {
@@ -80,7 +196,16 @@ scripted_gui = {
         }
 		
 		properties = {
-			
+			airborne_assault_hostomel_button = { image = "[airborne_assault_hostomel_button_image]" }
+			airborne_assault_borispol_button = { image = "[airborne_assault_borispol_button_image]" }
+			airborne_assault_zhitomir_button = { image = "[airborne_assault_zhitomir_button_image]" }
+			airborne_assault_kharkov_button = { image = "[airborne_assault_kharkov_button_image]" }
+			airborne_assault_zaporozhye_button = { image = "[airborne_assault_zaporozhye_button_image]" }
+            seaborne_landing_berdyansk_button = { image = "[seaborne_landing_berdyansk_button_image]" }
+			seaborne_landing_odesa_button = { image = "[seaborne_landing_odesa_button_image]" }
+			seaborne_landing_izmail_button = { image = "[seaborne_landing_izmail_button_image]" }
+            smo_plan_border_glow = { image = "[smo_plan_border_glow_image]" }
+
 		}
     }
 

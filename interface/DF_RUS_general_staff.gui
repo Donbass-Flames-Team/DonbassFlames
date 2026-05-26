@@ -48,7 +48,7 @@ guiTypes = {
 		}	
 		
 		buttonType = {
-			name = "RUS_general_staff_open offensive campaigns"
+			name = "RUS_general_staff_open_offensive_campaigns"
 			spriteType = "GFX_Russian_General_Staff_icon"
 			position = { x = 355 y = 475 }
 			shortcut = "shift+m"
@@ -101,70 +101,78 @@ guiTypes = {
         #}
 
 		iconType = {
-            name = "largescale_invasion_border_glow_icon"
-            position = { x = 335 y = 101 }
+            name = "smo_plan_border_glow"
+            position = { x = 5 y = 46 }
             quadTextureSprite = "GFX_largescale_invasion_border_glow_icon"
         }		
 
 		buttonType = {
 			name = "airborne_assault_hostomel_button"
-			position = { x = 355 y = 173 }
+			position = { x = 415 y = 243 }
 			quadTextureSprite = "GFX_russian_vdv_landing_force_icon"
+			pdx_tooltip = "airborne_assault_hostomel_button_tt"
 		}
 
 		buttonType = {
-			name = "airborne_assault_belaya_tserkov_button"
-			position = { x = 425 y = 223 }
+			name = "airborne_assault_borispol_button"
+			position = { x = 475 y = 273 }
 			quadTextureSprite = "GFX_russian_vdv_landing_force_icon"
+			pdx_tooltip = "airborne_assault_borispol_button_tt"
 		}	
 
 		buttonType = {
 			name = "airborne_assault_zhitomir_button"
-			position = { x = 281 y = 213 }
+			position = { x = 351 y = 265 }
 			quadTextureSprite = "GFX_russian_vdv_landing_force_icon"
+			pdx_tooltip = "airborne_assault_zhitomir_button_tt"
 		}	
 		
 		buttonType = {
 			name = "airborne_assault_kharkov_button"
-			position = { x = 615 y = 253 }
+			position = { x = 685 y = 303 }
 			quadTextureSprite = "GFX_russian_vdv_landing_force_icon"
+			pdx_tooltip = "airborne_assault_kharkov_button_tt"
 		}	
 		
 		buttonType = {
 			name = "airborne_assault_zaporozhye_button"
-			position = { x = 565 y = 393 }
+			position = { x = 661 y = 437 }
 			quadTextureSprite = "GFX_russian_vdv_landing_force_icon"
+			pdx_tooltip = "airborne_assault_zaporozhye_button_tt"
 		}	
 
 		buttonType = {
 			name = "seaborne_landing_berdyansk_button"
-			position = { x = 595 y = 453 }
+			position = { x = 685 y = 493 }
 			quadTextureSprite = "GFX_russian_landing_force_by_ships_icon"
+			pdx_tooltip = "seaborne_landing_berdyansk_button_tt"
 		}
 
 		buttonType = {
 			name = "seaborne_landing_kherson_button"
-			position = { x = 465 y = 443 }
+			position = { x = 545 y = 491 }
 			quadTextureSprite = "GFX_russian_landing_force_by_ships_icon"
 		}	
 		
 		buttonType = {
 			name = "seaborne_landing_odesa_button"
-			position = { x = 375 y = 453 }
+			position = { x = 445 y = 500 }
 			quadTextureSprite = "GFX_russian_landing_force_by_ships_icon"
+			pdx_tooltip = "seaborne_landing_odesa_button_tt"
 		}	
 
 		buttonType = {
 			name = "seaborne_landing_izmail_button"
-			position = { x = 335 y = 513 }
+			position = { x = 415 y = 553 }
 			quadTextureSprite = "GFX_russian_landing_force_by_ships_icon"
+			pdx_tooltip = "seaborne_landing_izmail_button_tt"
 		}	
 
 		instantTextBoxType = {
 			name = "RUS_SMO_plans_title"
 			text = "RUS_SMO_plans_title"
 			font = "hoi_36header"
-			maxWidth = 470
+			maxWidth = 570
 			position = { x = 434 y = 9 }
 		}	
 		
@@ -173,57 +181,83 @@ guiTypes = {
 			text = "RUS_SMO_plans_gui_text"
 			font = "hoi_36header"
 			maxWidth = 470
-			position = { x = 924 y = 85 }
+			position = { x = 1124 y = 105 }
 		}		
 		
 		buttonType = {
 			name = "Large_scale_invasion"
-			position = { x = 920 y = 145 }
+			position = { x = 1120 y = 145 }
 			quadTextureSprite = "GFX_button_394_47_icon"
 			clicksound = click_close
-		    font = "hoi_24header"			
+		    font = "hoi_36header"			
 			text = "RUS_SMO_Large_scale_invasion_text"
         }
 
 		buttonType = {
 			name = "Across_the_entire_border_invasion"
-			position = { x = 920 y = 225 }
+			position = { x = 1120 y = 195 }
 			quadTextureSprite = "GFX_button_394_47_icon"
 			clicksound = click_close
-		    font = "hoi_24header"			
+		    font = "hoi_36header"			
 			text = "RUS_SMO_Across_the_entire_border_text"
         }
 
 		buttonType = {
 			name = "from_border_to_border"
-			position = { x = 920 y = 305 }
+			position = { x = 1120 y = 245 }
 			quadTextureSprite = "GFX_button_394_47_icon"
 			clicksound = click_close
-		    font = "hoi_24header"
+		    font = "hoi_36header"
 			text = "RUS_SMO_from_border_to_border_text"
         }
 		
 		buttonType = {
 			name = "liberation_of_Novorossiya"
-			position = { x = 920 y = 385 }
+			position = { x = 1120 y = 295 }
 			quadTextureSprite = "GFX_button_394_47_icon"
 			clicksound = click_close
-		    font = "hoi_24header"
+		    font = "hoi_36header"
 			text = "RUS_SMO_liberation_of_Novorossiya_text"
         }	
 		
 		buttonType = {
 			name = "offensive_on_Donbass"
-			position = { x = 920 y = 465 }
+			position = { x = 1120 y = 345 }
 			quadTextureSprite = "GFX_button_394_47_icon"
 			clicksound = click_close
-		    font = "hoi_24header"			
+		    font = "hoi_36header"			
 			text = "RUS_SMO_offensive_on_Donbass_text"
+        }	
+		
+		buttonType = {
+			name = "offensive_on_Dnieper"
+			position = { x = 1120 y = 395 }
+			quadTextureSprite = "GFX_button_394_47_icon"
+			clicksound = click_close
+		    font = "hoi_36header"		
+			text = "RUS_SMO_offensive_on_Dnieper_text"
         }		
+		buttonType = {
+			name = "Kyiv_offensive_operation"
+			position = { x = 1120 y = 445 }
+			quadTextureSprite = "GFX_button_394_47_icon"
+			clicksound = click_close
+		    font = "hoi_36header"			
+			text = "RUS_SMO_Kyiv_offensive_operation_text"
+        }		
+		buttonType = {
+			name = "Volyn_Galician_barrier"
+			position = { x = 1120 y = 495 }
+			quadTextureSprite = "GFX_button_394_47_icon"
+			clicksound = click_close
+		    font = "hoi_36header"			
+			text = "RUS_SMO_Volyn_Galician_barrier_text"
+        }
+
 
 		buttonType = {
 			name = "close_button"
-			position = { x = 1339 y = 7 }
+			position = { x = 1539 y = 7 }
 			quadTextureSprite = "GFX_closebutton"
 			pdx_tooltip = "CLOSE"
 			clicksound = click_close

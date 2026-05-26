@@ -20,15 +20,25 @@ spriteTypes = {
 		texturefile = "gfx/interface/scripted_guis/general_staff/Settings_button.png"
 	}
 
+
 	spriteType = {
 		name = "GFX_russian_vdv_landing_force_icon"
 		texturefile = "gfx/interface/scripted_guis/general_staff/russian_vdv_landing_force_icon.png"
 	}
-	
 	spriteType = {
 		name = "GFX_russian_landing_force_by_ships_icon"
 		texturefile = "gfx/interface/scripted_guis/general_staff/russian_landing_force_by_ships.png"
 	}
+
+	spriteType = {
+		name = "GFX_russian_vdv_landing_force_done_icon"
+		texturefile = "gfx/interface/scripted_guis/general_staff/russian_vdv_landing_force_done_icon.png"
+	}
+	spriteType = {
+		name = "GFX_russian_landing_force_by_ships_done_icon"
+		texturefile = "gfx/interface/scripted_guis/general_staff/russian_landing_force_by_ships_done.png"
+	}
+
 
 	spriteType = {
 		name = "GFX_button_394_47_icon"
@@ -55,9 +65,25 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_offensive_in_novorossia_border_glow_icon"
 		texturefile = "gfx/interface/scripted_guis/general_staff/offensive_in_novorossia_border_glow.png"
-	}	
+	}
 	spriteType = {
-		name = "GFX_across_the_entire_border_border_glow_glow_icon"
+		name = "GFX_offensive_on_dnieper_border_glow_icon"
+		texturefile = "gfx/interface/scripted_guis/general_staff/offensive_on_dnieper_border_glow.png"
+	}		
+	spriteType = {
+		name = "GFX_across_the_entire_border_border_glow_icon"
 		texturefile = "gfx/interface/scripted_guis/general_staff/across_the_entire_border_border_glow.png"
 	}
+	spriteType = {
+		name = "GFX_concentrated_attack_on_kyiv_border_glow"
+		texturefile = "gfx/interface/scripted_guis/general_staff/concentrated_attack_on_kyiv_border_glow.png"
+	}
+	spriteType = {
+		name = "GFX_Volyn_Galician_barrier_border_glow"
+		texturefile = "gfx/interface/scripted_guis/general_staff/Volyn_Galician_barrier_border_glow.png"
+	}
+
+	
+
+	
 }
