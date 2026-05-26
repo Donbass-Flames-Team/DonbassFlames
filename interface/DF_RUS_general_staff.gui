@@ -18,6 +18,227 @@ guiTypes = {
     }
 
 	containerWindowType = {
+		name = "RUS_general_staff_selection_gui"
+		position = { x = 0 y = -10 }
+		size = { width = 843 height = 695 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = no
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+
+		buttonType = {
+			name = "RUS_general_staff_open_map"
+			spriteType = "GFX_Russian_General_Staff_icon"
+			position = { x = 125 y = 125 }
+			shortcut = "shift+m"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+
+		buttonType = {
+			name = "RUS_general_staff_open_preparation_for_smo"
+			spriteType = "GFX_Russian_General_Staff_icon"
+			position = { x = 555 y = 125 }
+			shortcut = "shift+m"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}	
+		
+		buttonType = {
+			name = "RUS_general_staff_open offensive campaigns"
+			spriteType = "GFX_Russian_General_Staff_icon"
+			position = { x = 355 y = 475 }
+			shortcut = "shift+m"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}	
+
+		buttonType = {
+			name = "RUS_general_staff_settings"
+			spriteType = "GFX_General_staff_Settings_button"
+			position = { x = 735 y = 55 }
+			shortcut = "shift+m"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}		
+
+		buttonType = {
+			name = "close_button"
+			position = { x = 795 y = 9 }
+			quadTextureSprite = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_General_staff_russian_selection_gui"
+			position = { x = 0 y = 0 }
+		}
+
+	}
+
+	containerWindowType = {
+		name = "RUS_general_staff_preparation_for_operation_gui"
+		position = { x = 0 y = -10 }
+		size = { width = 1378 height = 695 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = no
+		fade_type = linear
+		click_to_front = no
+		clipping = no	
+		
+		#iconType = {
+        #    name = "separatism_gui_background"
+        #    position = { x = 345 y = 131 }
+        #    quadTextureSprite = "GFX_largescale_invasion_plan_icon"
+        #}
+
+		iconType = {
+            name = "largescale_invasion_border_glow_icon"
+            position = { x = 335 y = 101 }
+            quadTextureSprite = "GFX_largescale_invasion_border_glow_icon"
+        }		
+
+		buttonType = {
+			name = "airborne_assault_hostomel_button"
+			position = { x = 355 y = 173 }
+			quadTextureSprite = "GFX_russian_vdv_landing_force_icon"
+		}
+
+		buttonType = {
+			name = "airborne_assault_belaya_tserkov_button"
+			position = { x = 425 y = 223 }
+			quadTextureSprite = "GFX_russian_vdv_landing_force_icon"
+		}	
+
+		buttonType = {
+			name = "airborne_assault_zhitomir_button"
+			position = { x = 281 y = 213 }
+			quadTextureSprite = "GFX_russian_vdv_landing_force_icon"
+		}	
+		
+		buttonType = {
+			name = "airborne_assault_kharkov_button"
+			position = { x = 615 y = 253 }
+			quadTextureSprite = "GFX_russian_vdv_landing_force_icon"
+		}	
+		
+		buttonType = {
+			name = "airborne_assault_zaporozhye_button"
+			position = { x = 565 y = 393 }
+			quadTextureSprite = "GFX_russian_vdv_landing_force_icon"
+		}	
+
+		buttonType = {
+			name = "seaborne_landing_berdyansk_button"
+			position = { x = 595 y = 453 }
+			quadTextureSprite = "GFX_russian_landing_force_by_ships_icon"
+		}
+
+		buttonType = {
+			name = "seaborne_landing_kherson_button"
+			position = { x = 465 y = 443 }
+			quadTextureSprite = "GFX_russian_landing_force_by_ships_icon"
+		}	
+		
+		buttonType = {
+			name = "seaborne_landing_odesa_button"
+			position = { x = 375 y = 453 }
+			quadTextureSprite = "GFX_russian_landing_force_by_ships_icon"
+		}	
+
+		buttonType = {
+			name = "seaborne_landing_izmail_button"
+			position = { x = 335 y = 513 }
+			quadTextureSprite = "GFX_russian_landing_force_by_ships_icon"
+		}	
+
+		instantTextBoxType = {
+			name = "RUS_SMO_plans_title"
+			text = "RUS_SMO_plans_title"
+			font = "hoi_36header"
+			maxWidth = 470
+			position = { x = 434 y = 9 }
+		}	
+		
+		instantTextBoxType = {
+			name = "RUS_SMO_plans_gui_text"
+			text = "RUS_SMO_plans_gui_text"
+			font = "hoi_36header"
+			maxWidth = 470
+			position = { x = 924 y = 85 }
+		}		
+		
+		buttonType = {
+			name = "Large_scale_invasion"
+			position = { x = 920 y = 145 }
+			quadTextureSprite = "GFX_button_394_47_icon"
+			clicksound = click_close
+		    font = "hoi_24header"			
+			text = "RUS_SMO_Large_scale_invasion_text"
+        }
+
+		buttonType = {
+			name = "Across_the_entire_border_invasion"
+			position = { x = 920 y = 225 }
+			quadTextureSprite = "GFX_button_394_47_icon"
+			clicksound = click_close
+		    font = "hoi_24header"			
+			text = "RUS_SMO_Across_the_entire_border_text"
+        }
+
+		buttonType = {
+			name = "from_border_to_border"
+			position = { x = 920 y = 305 }
+			quadTextureSprite = "GFX_button_394_47_icon"
+			clicksound = click_close
+		    font = "hoi_24header"
+			text = "RUS_SMO_from_border_to_border_text"
+        }
+		
+		buttonType = {
+			name = "liberation_of_Novorossiya"
+			position = { x = 920 y = 385 }
+			quadTextureSprite = "GFX_button_394_47_icon"
+			clicksound = click_close
+		    font = "hoi_24header"
+			text = "RUS_SMO_liberation_of_Novorossiya_text"
+        }	
+		
+		buttonType = {
+			name = "offensive_on_Donbass"
+			position = { x = 920 y = 465 }
+			quadTextureSprite = "GFX_button_394_47_icon"
+			clicksound = click_close
+		    font = "hoi_24header"			
+			text = "RUS_SMO_offensive_on_Donbass_text"
+        }		
+
+		buttonType = {
+			name = "close_button"
+			position = { x = 1339 y = 7 }
+			quadTextureSprite = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_General_Staff_Map"
+			position = { x = 0 y = 0 }
+		}
+
+	}
+
+	containerWindowType = {
 		name = "RUS_general_staff_map"
 		position = { x = 0 y = -10 }
 		size = { width = 1378 height = 695 }

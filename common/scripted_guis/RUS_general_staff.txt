@@ -10,11 +10,7 @@ scripted_gui = {
  
 		effects = {
 			RUS_general_staff_button_click = {
-				if = {
-					limit = { has_variable = show_russian_general_staff_map }
-					clear_variable = show_russian_general_staff_map
-				}
-				else = { set_variable = { show_russian_general_staff_map = 1 } }
+				set_country_flag = show_rus_general_staff_selection_gui
 			}
 		}
 
@@ -27,16 +23,82 @@ scripted_gui = {
 		}
     }
 
+	RUS_general_staff_selection_gui = {
+       context_type = player_context
+	   window_name = "RUS_general_staff_selection_gui"
+ 
+        visible = {
+            tag = RUS
+			has_country_flag = show_rus_general_staff_selection_gui
+        }
+ 
+		effects = {
+			RUS_general_staff_open_map_click = {
+				set_country_flag = show_rus_general_staff_map
+				clr_country_flag = show_rus_general_staff_selection_gui
+			}
+
+			RUS_general_staff_open_preparation_for_smo_click = {
+                set_country_flag = show_rus_general_staff_preparation_for_operation
+				clr_country_flag = show_rus_general_staff_selection_gui
+			}
+
+			
+
+			close_button_click = {
+                clr_country_flag = show_rus_general_staff_selection_gui
+			}
+		}
+
+        triggers = {
+
+        }
+		
+		properties = {
+			
+		}
+    }
+
+	RUS_general_staff_preparation_for_operation_gui = {
+       context_type = player_context
+	   window_name = "RUS_general_staff_preparation_for_operation_gui"
+ 
+        visible = {
+            tag = RUS
+			has_country_flag = show_rus_general_staff_preparation_for_operation
+        }
+ 
+		effects = {
+
+			close_button_click = {
+                clr_country_flag = show_rus_general_staff_preparation_for_operation
+			}
+		}
+
+        triggers = {
+
+        }
+		
+		properties = {
+			
+		}
+    }
+
+
     RUS_general_staff_map = {
 		context_type = player_context
 		window_name = "RUS_general_staff_map"
 
 		visible = {
 			tag = RUS
-			check_variable = { show_russian_general_staff_map > 0 }
+			has_country_flag = show_rus_general_staff_map
 		}
 		
 		effects = {
+			close_map_button_click = {
+                clr_country_flag = show_rus_general_staff_map
+			}
+
 			coat_donetsk_button_click = {
 				set_variable = { select_separatists_region = 1}
 			}

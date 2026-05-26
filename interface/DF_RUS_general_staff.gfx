@@ -9,6 +9,55 @@ spriteTypes = {
 		name = "GFX_General_Staff_Map"
 		texturefile = "gfx/interface/scripted_guis/general_staff/General_Staff_Map.png"
 	}
-	
 
+	spriteType = {
+		name = "GFX_General_staff_russian_selection_gui"
+		texturefile = "gfx/interface/scripted_guis/general_staff/General_staff_russian_selection_gui.png"
+	}
+
+	spriteType = {
+		name = "GFX_General_staff_Settings_button"
+		texturefile = "gfx/interface/scripted_guis/general_staff/Settings_button.png"
+	}
+
+	spriteType = {
+		name = "GFX_russian_vdv_landing_force_icon"
+		texturefile = "gfx/interface/scripted_guis/general_staff/russian_vdv_landing_force_icon.png"
+	}
+	
+	spriteType = {
+		name = "GFX_russian_landing_force_by_ships_icon"
+		texturefile = "gfx/interface/scripted_guis/general_staff/russian_landing_force_by_ships.png"
+	}
+
+	spriteType = {
+		name = "GFX_button_394_47_icon"
+		texturefile = "gfx/interface/scripted_guis/general_staff/button_394_47.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_largescale_invasion_plan_icon"
+		texturefile = "gfx/interface/scripted_guis/general_staff/largescale_invasion_plan.png"
+	}	
+
+	spriteType = {
+		name = "GFX_largescale_invasion_border_glow_icon"
+		texturefile = "gfx/interface/scripted_guis/general_staff/largescale_invasion_border_glow.png"
+	}
+	spriteType = {
+		name = "GFX_from_border_to_border_border_glow_icon"
+		texturefile = "gfx/interface/scripted_guis/general_staff/from_border_to_border_border_glow.png"
+	}
+	spriteType = {
+		name = "GFX_offensive_in_donbass_border_glow_icon"
+		texturefile = "gfx/interface/scripted_guis/general_staff/offensive_in_donbass_border_glow.png"
+	}
+	spriteType = {
+		name = "GFX_offensive_in_novorossia_border_glow_icon"
+		texturefile = "gfx/interface/scripted_guis/general_staff/offensive_in_novorossia_border_glow.png"
+	}	
+	spriteType = {
+		name = "GFX_across_the_entire_border_border_glow_glow_icon"
+		texturefile = "gfx/interface/scripted_guis/general_staff/across_the_entire_border_border_glow.png"
+	}
 }
