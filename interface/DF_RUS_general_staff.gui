@@ -100,6 +100,13 @@ guiTypes = {
         #    quadTextureSprite = "GFX_largescale_invasion_plan_icon"
         #}
 
+		buttonType = {
+            name = "back_button"
+            position = { x = 1545 y = 55 }
+            quadTextureSprite = "GFX_separatismgui_nextbutton_nw"
+            clicksound = click_close
+        }
+
 		iconType = {
             name = "smo_plan_border_glow"
             position = { x = 5 y = 46 }

@@ -73,38 +73,65 @@ scripted_gui = {
 			close_button_click = {
                 clr_country_flag = show_rus_general_staff_preparation_for_operation
 			}
+			back_button_click = {
+				clr_country_flag = show_rus_general_staff_preparation_for_operation
+				set_country_flag = show_rus_general_staff_selection_gui
+			}
 			Large_scale_invasion_click = {
-				set_country_flag = SMO_Plan_is_selected
-                set_country_flag = SMO_Plan_operation_mangust_selected
-
+				if = {
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+					set_country_flag = SMO_Plan_is_selected
+                    set_country_flag = SMO_Plan_operation_mangust_selected
+				}
 			}
 			Across_the_entire_border_invasion_click = {
-				set_country_flag = SMO_Plan_is_selected
-				set_country_flag = SMO_Plan_Across_the_entire_border_invasion_selected
+				if = {
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+				    set_country_flag = SMO_Plan_is_selected
+				    set_country_flag = SMO_Plan_Across_the_entire_border_invasion_selected
+				}
 			}
 			from_border_to_border_click = {
-				set_country_flag = SMO_Plan_is_selected
-				set_country_flag = SMO_Plan_from_border_to_border_selected
+				if = {
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+				    set_country_flag = SMO_Plan_is_selected
+				    set_country_flag = SMO_Plan_from_border_to_border_selected
+				}
 			}		
 			liberation_of_Novorossiya_click = {
-				set_country_flag = SMO_Plan_is_selected
-				set_country_flag = SMO_Plan_liberation_of_Novorossiya_selected
+				if = {
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+				    set_country_flag = SMO_Plan_is_selected
+				    set_country_flag = SMO_Plan_liberation_of_Novorossiya_selected
+				}
 			}
 			offensive_on_Donbass_click = {
-				set_country_flag = SMO_Plan_is_selected
-				set_country_flag = SMO_Plan_offensive_on_donbass_selected
+				if = {
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+					set_country_flag = SMO_Plan_is_selected
+				    set_country_flag = SMO_Plan_offensive_on_donbass_selected
+				}
 			}	
 			offensive_on_Dnieper_click = {
-				set_country_flag = SMO_Plan_is_selected
-				set_country_flag = SMO_Plan_offensive_on_dnieper_selected
+				if = {
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+				    set_country_flag = SMO_Plan_is_selected
+				    set_country_flag = SMO_Plan_offensive_on_dnieper_selected
+				}
 			}	
 			Kyiv_offensive_operation_click = {
-				set_country_flag = SMO_Plan_is_selected
-				set_country_flag = SMO_Plan_Kyiv_offensive_operation_selected
+				if = {
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+				    set_country_flag = SMO_Plan_is_selected
+				    set_country_flag = SMO_Plan_Kyiv_offensive_operation_selected
+				}
 			}	
 			Volyn_Galician_barrier_click = {
-				set_country_flag = SMO_Plan_is_selected
-				set_country_flag = SMO_Plan_Volyn_Galician_barrier_selected
+				if = {
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+				    set_country_flag = SMO_Plan_is_selected
+				    set_country_flag = SMO_Plan_Volyn_Galician_barrier_selected
+				}
 			}																		
 			##################
 			#### Landings ####
