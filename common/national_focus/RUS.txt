@@ -1786,6 +1786,10 @@ focus_tree = {
 					id = news_events.35
 					hours = 3
 				}
+				country_event = {
+					id = superevent.5
+					hours = 6
+				}				
 				declare_war_on = {
                     target = UKR
                     type = annex_everything
@@ -1801,7 +1805,64 @@ focus_tree = {
                         target = UKR
                         type = annex_everything
                     }					
+				}	
+				if = {
+					limit = { has_country_flag = Berdyansk_seaborne_landing_prepared }
+					country_event = {
+						id = russia.20
+						days = 2
+					}
 				}				
+				if = {
+					limit = { has_country_flag = Kharkov_airborne_assault_prepared }
+					country_event = {
+						id = russia.21
+						hours = 5
+					}
+				}				
+				if = {
+					limit = { has_country_flag = Hostomel_airborne_assault_prepared }
+					country_event = {
+						id = russia.22
+						hours = 5
+					}
+				}			
+				if = {
+					limit = { has_country_flag = Borispol_airborne_assault_prepared }
+					country_event = {
+						id = russia.23
+						hours = 15
+					}
+				}
+				if = {
+					limit = { has_country_flag = Zaporozhye_airborne_assault_prepared }
+					country_event = {
+						id = russia.24
+						hours = 24
+					}
+				}
+				if = {
+					limit = { has_country_flag = Zhitomir_airborne_assault_prepared }
+					country_event = {
+						id = russia.25
+						hours = 29
+					}
+				}	
+				if = {
+					limit = { has_country_flag = Izmail_seaborne_landing_prepared }
+					country_event = {
+						id = russia.26
+						days = 3
+					}
+				}
+				if = {
+					limit = { has_country_flag = Odesa_seaborne_landing_prepared }
+					country_event = {
+						id = russia.27
+						days = 4
+					}
+				}								
+
 			}
 		}
 	}

@@ -372,3 +372,124 @@ country_event = {
 		clr_country_flag = RUS_parade
 	}
 }
+
+
+#Морской десант в бердянске
+country_event = {
+	id = russia.20
+	title = russia.20.t
+	desc = russia.20.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.20.a
+		
+	}
+}
+
+#Вдв в Харькове
+country_event = {
+	id = russia.21
+	title = russia.21.t
+	desc = russia.21.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.21.a
+		
+	}
+}
+
+#Вдв в Гостомеле
+country_event = {
+	id = russia.22
+	title = russia.22.t
+	desc = russia.22.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.22.a
+		
+	}
+}
+
+#Вдв в Борисполе
+country_event = {
+	id = russia.23
+	title = russia.23.t
+	desc = russia.23.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.23.a
+		
+	}
+}
+
+#Вдв в Запорожье
+country_event = {
+	id = russia.24
+	title = russia.24.t
+	desc = russia.24.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.24.a
+		
+	}
+}
+
+#Вдв в Житомире
+country_event = {
+	id = russia.25
+	title = russia.25.t
+	desc = russia.25.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.25.a
+		
+	}
+}
+
+#Морской десант в Измалие
+country_event = {
+	id = russia.26
+	title = russia.26.t
+	desc = russia.26.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.26.a
+		
+	}
+}
+
+#Морской десант в Одессе
+country_event = {
+	id = russia.27
+	title = russia.27.t
+	desc = russia.27.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.27.a
+		
+	}
+}
