@@ -1208,25 +1208,25 @@ focus_tree = {
 	}
 
     focus = {
-	id = RUS_PMC
-	icon = GFX_goal_no_focus_RUS
-	cost = 1
-	x = -2
-	y = 1
+	    id = RUS_PMC
+	    icon = GFX_goal_no_focus_RUS
+	    cost = 1
+	    x = -2
+	    y = 1
 
-	prerequisite = { focus = RUS_introduction_of_anti_sanctions }
-	relative_position_id = RUS_introduction_of_anti_sanctions
+	    prerequisite = { focus = RUS_introduction_of_anti_sanctions }
+	    relative_position_id = RUS_introduction_of_anti_sanctions
 	
-	ai_will_do = {
-		factor = 1
-	}
+	    ai_will_do = {
+		    factor = 1
+	    }
 
-	available = {
-	}
+	    available = {
+	    }
 
-	completion_reward = {
-		633 = { transfer_state_to = WGN }
-		633 = { add_core_of = WGN }
+	    completion_reward = {
+		    633 = { transfer_state_to = WGN }
+		    633 = { add_core_of = WGN }
 
 		    hidden_effect = {
 			    if = {
@@ -1244,6 +1244,50 @@ focus_tree = {
 			        } 
 			    }
 		    }
+	    }
+    }
+
+    focus = {
+	    id = RUS_pmc_redut
+	    icon = GFX_goal_no_focus_RUS
+	    cost = 1
+	    x = -2
+	    y = 2
+
+	    prerequisite = { focus = RUS_PMC }
+	    relative_position_id = RUS_introduction_of_anti_sanctions
+	
+	    ai_will_do = {
+		    factor = 1
+	    }
+
+	    available = {
+	    }
+
+	    completion_reward = {
+		    
+	    }
+    }	
+
+    focus = {
+	    id = RUS_influence_in_africa
+	    icon = GFX_goal_no_focus_RUS
+	    cost = 1
+	    x = -4
+	    y = 2
+
+	    prerequisite = { focus = RUS_PMC }
+	    relative_position_id = RUS_introduction_of_anti_sanctions
+	
+	    ai_will_do = {
+		    factor = 1
+	    }
+
+	    available = {
+	    }
+
+	    completion_reward = {
+		    
 	    }
     }
 
@@ -1524,8 +1568,7 @@ focus_tree = {
 		x = 1
 		y = 5
 
-		prerequisite = { focus = RUS_cooperation_with_people_republics }
-		prerequisite = { focus = RUS_sign_minsk_two }
+		prerequisite = { focus = RUS_recognize_peoples_passports }
 		relative_position_id = RUS_the_war_has_stalled
 		
 		ai_will_do = {
@@ -1548,8 +1591,7 @@ focus_tree = {
 		x = 1
 		y = 6
 
-		prerequisite = { focus = RUS_cooperation_with_people_republics }
-		prerequisite = { focus = RUS_sign_minsk_two }
+		prerequisite = { focus = RUS_distribute_russian_passports }
 		relative_position_id = RUS_the_war_has_stalled
 		
 		ai_will_do = {
@@ -1782,6 +1824,10 @@ focus_tree = {
 			add_war_support = 0.05
             hidden_effect = {
 				set_global_flag = Russo_Ukranian_war
+				UKR = {
+					complete_national_focus = UKR_battle_for_ukraine
+					mark_focus_tree_layout_dirty = yes
+				}
 				news_event = {
 					id = news_events.35
 					hours = 3
@@ -1864,6 +1910,81 @@ focus_tree = {
 				}								
 
 			}
+		}
+	}
+
+	focus = {
+		id = RUS_company_contracts
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 3
+		y = 3
+
+		prerequisite = { focus = RUS_destroy_the_kiyv_junta }
+		relative_position_id = RUS_prepare_for_special_millitary_operation
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			has_completed_focus = RUS_destroy_the_kiyv_junta
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = intensify_propaganda 
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = -1
+		y = 3
+
+		prerequisite = { focus = RUS_destroy_the_kiyv_junta }
+		relative_position_id = RUS_prepare_for_special_millitary_operation
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			has_completed_focus = RUS_destroy_the_kiyv_junta
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = RUS_laws_on_fakes
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = intensify_propaganda }
+		relative_position_id = intensify_propaganda
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+
 		}
 	}
 	

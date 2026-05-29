@@ -559,7 +559,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_coordination_with_fsb
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_cooperation_with_russian_specialops
 		cost = 0.2
 		x = 1
 		y = 1
@@ -2255,7 +2255,6 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			is_debug = yes #TODO: Remove after adding the war
 			if = {
 				limit = {
 					NOT = {

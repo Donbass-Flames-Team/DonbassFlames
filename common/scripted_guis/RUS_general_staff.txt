@@ -251,99 +251,32 @@ scripted_gui = {
                 clr_country_flag = show_rus_general_staff_map
 			}
 
-			coat_donetsk_button_click = {
-				set_variable = { select_separatists_region = 1}
-			}
-			coat_luhansk_button_click = {
-				set_variable = { select_separatists_region = 2}
-			}
-			coat_kharkiv_button_click = {
-				set_variable = { select_separatists_region = 3}
-			}
-			coat_odesa_button_click = {
-				set_variable = { select_separatists_region = 4}
-			}
-			coat_krym_button_click = {
-				set_variable = { select_separatists_region = 5}
-			}
-			close_map_button_click = {
-				clear_variable = show_ukraine_general_staff_map
-		    }
-			separatism_increase_button_click = {
-				if = {
-					limit = { check_variable = {select_separatists_region = 1} }
-					set_variable = { show_prorussian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 2} }
-					set_variable = { show_prorussian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 3} }
-					set_variable = { show_prorussian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 4} }
-					set_variable = { show_prorussian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 5} }
-					set_variable = { show_prorussian_actions_window = 1 }	
-				}
-			}
-			separatism_counteract_button_click = {
-				if = {
-					limit = { check_variable = {select_separatists_region = 1} }
-					set_variable = { show_proukranian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 2} }
-					set_variable = { show_proukranian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 3} }
-					set_variable = { show_proukranian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 4} }
-					set_variable = { show_proukranian_actions_window = 1 }	
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 5} }
-					set_variable = { show_proukranian_actions_window = 1 }	
-				}
-			}
-			separatismgui_closebutton_nw_click = {
-				if = {
-					limit = { check_variable = {select_separatists_region = 1} }
-					clear_variable = select_separatists_region
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 2} }
-					clear_variable = select_separatists_region
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 3} }
-					clear_variable = select_separatists_region
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 4} }
-					clear_variable = select_separatists_region
-				}
-				if = {
-					limit = { check_variable = {select_separatists_region = 5} }
-					clear_variable = select_separatists_region
-				}				
-				if = {
-					limit = { check_variable = {show_proukranian_actions_window = 1} } 
-				    clear_variable = show_proukranian_actions_window
-				}
-				if = {
-					limit = { check_variable = {show_prorussian_actions_window = 1} } 
-				    clear_variable = show_prorussian_actions_window
-				}
-
-			}
+			### Coats of arms of Regions
+			coat_donetsk_button_click = { set_variable = { select_separatists_region = 1} }
+			coat_luhansk_button_click = { set_variable = { select_separatists_region = 2} }
+			coat_kharkiv_button_click = { set_variable = { select_separatists_region = 3} }
+			coat_odesa_button_click = { set_variable = { select_separatists_region = 4} }
+			coat_krym_button_click = { set_variable = { select_separatists_region = 5} }
+			coat_cherkasy_button_click = { set_variable = { select_separatists_region = 6} }
+			coat_chernihiv_button_click = { set_variable = { select_separatists_region = 7} }			
+			coat_chernivtsi_button_click = { set_variable = { select_separatists_region = 8} }
+			coat_dnipro_button_click = { set_variable = { select_separatists_region = 9} }
+			coat_ivanofrankivsk_button_click = { set_variable = { select_separatists_region = 10} }
+			coat_khmelnytskyi_button_click = { set_variable = { select_separatists_region = 11} }
+			coat_kherson_button_click = { set_variable = { select_separatists_region = 12} }
+			coat_kyiv_button_click = { set_variable = { select_separatists_region = 13} }			
+			coat_kyrovohrad_button_click = { set_variable = { select_separatists_region = 14} }
+			coat_lviv_button_click = { set_variable = { select_separatists_region = 15} }
+			coat_mykolaiv_button_click = { set_variable = { select_separatists_region = 16} }
+			coat_poltava_button_click = { set_variable = { select_separatists_region = 17} }		
+			coat_sumy_button_click = { set_variable = { select_separatists_region = 18} }
+			coat_ternopil_button_click = { set_variable = { select_separatists_region = 19} }
+			coat_vinnytsia_button_click = { set_variable = { select_separatists_region = 20} }
+			coat_volyn_button_click = { set_variable = { select_separatists_region = 21} }
+			coat_zakarpattya_button_click = { set_variable = { select_separatists_region = 22} }
+			coat_zaporizhzhia_button_click = { set_variable = { select_separatists_region = 23} }
+			coat_zhytomyr_button_click = { set_variable = { select_separatists_region = 24} }
+			coat_rivne_button_click = { set_variable = { select_separatists_region = 25} }	
 		}
 		
 		dynamic_lists = {
@@ -380,4 +313,230 @@ scripted_gui = {
 			}
 		}	
 	}
+
+    RUS_general_staff_donetsk_region_map = {
+		context_type = player_context
+		window_name = "RUS_general_staff_donetsk_region_map"
+
+		visible = {
+			tag = RUS
+			has_country_flag = show_rus_general_staff_donetsk_region_map
+		}
+		
+		effects = {
+			close_map_button_click = {
+                clr_country_flag = show_rus_general_staff_donetsk_region_map
+			}
+				
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+	    properties = {
+			
+		}	
+	}
+
+    RUS_general_staff_luhansk_region_map = {
+		context_type = player_context
+		window_name = "RUS_general_staff_luhansk_region_map"
+
+		visible = {
+			tag = RUS
+			has_country_flag = show_rus_general_staff_luhansk_region_map
+		}
+		
+		effects = {
+			close_map_button_click = {
+                clr_country_flag = show_rus_general_staff_luhansk_region_map
+			}
+				
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+	    properties = {
+			
+		}	
+	}
+
+    RUS_general_staff_dnepr_region_map = {
+		context_type = player_context
+		window_name = "RUS_general_staff_dnepr_region_map"
+
+		visible = {
+			tag = RUS
+			has_country_flag = show_rus_general_staff_dnepr_region_map
+		}
+		
+		effects = {
+			close_map_button_click = {
+                clr_country_flag = show_rus_general_staff_dnepr_region_map
+			}
+				
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+	    properties = {
+			
+		}	
+	}
+
+    RUS_general_staff_zaporozhie_region_map = {
+		context_type = player_context
+		window_name = "RUS_general_staff_zaporozhie_region_map"
+
+		visible = {
+			tag = RUS
+			has_country_flag = show_rus_general_staff_zaporozhie_region_map
+		}
+		
+		effects = {
+			close_map_button_click = {
+                clr_country_flag = show_rus_general_staff_zaporozhie_region_map
+			}
+				
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+	    properties = {
+			
+		}	
+	}
+
+    RUS_general_staff_kharkov_region_map = {
+		context_type = player_context
+		window_name = "RUS_general_staff_kharkov_region_map"
+
+		visible = {
+			tag = RUS
+			has_country_flag = show_rus_general_staff_kharkov_region_map
+		}
+		
+		effects = {
+			close_map_button_click = {
+                clr_country_flag = show_rus_general_staff_kharkov_region_map
+			}
+				
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+	    properties = {
+			
+		}	
+	}
+
+    RUS_general_staff_kherson_region_map = {
+		context_type = player_context
+		window_name = "RUS_general_staff_kherson_region_map"
+
+		visible = {
+			tag = RUS
+			has_country_flag = show_rus_general_staff_kherson_region_map
+		}
+		
+		effects = {
+			close_map_button_click = {
+                clr_country_flag = show_rus_general_staff_kherson_region_map
+			}
+				
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+	    properties = {
+			
+		}	
+	}
+
+    RUS_general_staff_nikolayev_region_map = {
+		context_type = player_context
+		window_name = "RUS_general_staff_nikolayev_region_map"
+
+		visible = {
+			tag = RUS
+			has_country_flag = show_rus_general_staff_nikolayev_region_map
+		}
+		
+		effects = {
+			close_map_button_click = {
+                clr_country_flag = show_rus_general_staff_nikolayev_region_map
+			}
+				
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+	    properties = {
+			
+		}	
+	}
+
+    RUS_general_staff_odessa_region_map = {
+		context_type = player_context
+		window_name = "RUS_general_staff_odessa_region_map"
+
+		visible = {
+			tag = RUS
+			has_country_flag = show_rus_general_staff_region_map
+		}
+		
+		effects = {
+			close_map_button_click = {
+                clr_country_flag = show_rus_general_staff_region_map
+			}
+				
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+	    properties = {
+			
+		}	
+	}
+	
+    RUS_general_staff_kiyv_region_map = {
+		context_type = player_context
+		window_name = "RUS_general_staff_kiyv_region_map"
+
+		visible = {
+			tag = RUS
+			has_country_flag = show_rus_general_staff_kiyv_region_map
+		}
+		
+		effects = {
+			close_map_button_click = {
+                clr_country_flag = show_rus_general_staff_kiyv_region_map
+			}
+				
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+	    properties = {
+			
+		}	
+	}	
+
 }
