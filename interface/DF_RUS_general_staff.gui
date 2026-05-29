@@ -195,7 +195,7 @@ guiTypes = {
 			name = "Large_scale_invasion"
 			position = { x = 1120 y = 145 }
 			quadTextureSprite = "GFX_button_394_47_icon"
-			clicksound = click_close
+			clicksound = DF_custom_click
 		    font = "hoi_36header"			
 			text = "RUS_SMO_Large_scale_invasion_text"
         }
@@ -204,7 +204,7 @@ guiTypes = {
 			name = "Across_the_entire_border_invasion"
 			position = { x = 1120 y = 195 }
 			quadTextureSprite = "GFX_button_394_47_icon"
-			clicksound = click_close
+			clicksound = DF_custom_click
 		    font = "hoi_36header"			
 			text = "RUS_SMO_Across_the_entire_border_text"
         }
@@ -213,7 +213,7 @@ guiTypes = {
 			name = "from_border_to_border"
 			position = { x = 1120 y = 245 }
 			quadTextureSprite = "GFX_button_394_47_icon"
-			clicksound = click_close
+			clicksound = DF_custom_click
 		    font = "hoi_36header"
 			text = "RUS_SMO_from_border_to_border_text"
         }
@@ -222,7 +222,7 @@ guiTypes = {
 			name = "liberation_of_Novorossiya"
 			position = { x = 1120 y = 295 }
 			quadTextureSprite = "GFX_button_394_47_icon"
-			clicksound = click_close
+			clicksound = DF_custom_click
 		    font = "hoi_36header"
 			text = "RUS_SMO_liberation_of_Novorossiya_text"
         }	
@@ -231,7 +231,7 @@ guiTypes = {
 			name = "offensive_on_Donbass"
 			position = { x = 1120 y = 345 }
 			quadTextureSprite = "GFX_button_394_47_icon"
-			clicksound = click_close
+			clicksound = DF_custom_click
 		    font = "hoi_36header"			
 			text = "RUS_SMO_offensive_on_Donbass_text"
         }	
@@ -240,7 +240,7 @@ guiTypes = {
 			name = "offensive_on_Dnieper"
 			position = { x = 1120 y = 395 }
 			quadTextureSprite = "GFX_button_394_47_icon"
-			clicksound = click_close
+			clicksound = DF_custom_click
 		    font = "hoi_36header"		
 			text = "RUS_SMO_offensive_on_Dnieper_text"
         }		
@@ -248,7 +248,7 @@ guiTypes = {
 			name = "Kyiv_offensive_operation"
 			position = { x = 1120 y = 445 }
 			quadTextureSprite = "GFX_button_394_47_icon"
-			clicksound = click_close
+			clicksound = DF_custom_click
 		    font = "hoi_36header"			
 			text = "RUS_SMO_Kyiv_offensive_operation_text"
         }		
@@ -256,7 +256,7 @@ guiTypes = {
 			name = "Volyn_Galician_barrier"
 			position = { x = 1120 y = 495 }
 			quadTextureSprite = "GFX_button_394_47_icon"
-			clicksound = click_close
+			clicksound = DF_custom_click
 		    font = "hoi_36header"			
 			text = "RUS_SMO_Volyn_Galician_barrier_text"
         }

@@ -4,3 +4,22 @@ sound = {
 	always_load = no
 	volume = 5
 }
+
+sound = {
+	name = "DF_custom_click_001"
+	file = "menu/DF_custom_click.wav"
+	always_load = no
+	volume = 5
+}
+
+soundeffect = {
+    name = "DF_custom_click"
+    sounds = {
+		sound = DF_custom_click_001
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.80
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
