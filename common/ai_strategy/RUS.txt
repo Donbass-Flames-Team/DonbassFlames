@@ -26,3 +26,49 @@ RUS_rush_in_crimea_2014 = {
 		value = -500
 	}
 }
+
+RUS_support_dpr_and_lpr = {
+	allowed = {
+		original_tag = RUS
+	}
+
+	enable = {
+		OR = {
+			country_exists = DPR
+			country_exists = LPR
+		}
+	}
+
+	abort = {
+		NOT = {
+			country_exists = DPR
+			country_exists = LPR
+		}
+	}
+	
+    ai_strategy = {
+        type = support
+        id = DPR
+        value = 175
+    }
+	ai_strategy = {
+        type = support
+        id = LPR
+        value = 100
+    }
+	ai_strategy = {
+		type = befriend
+		id = DPR
+		value = 250
+	}	
+	ai_strategy = {
+		type = befriend
+		id = LPR
+		value = 250
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = DPR
+		value = 450
+	}
+}

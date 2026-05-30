@@ -92,6 +92,16 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = minsk_negotations_historical_borders
+						option = minsk_negotations_historical_borders_on
+					}
+				}
+				set_global_flag = minsk_negotations_historical_borders_on
+			}
+
 		}
 	}
 }

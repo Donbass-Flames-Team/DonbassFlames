@@ -43,10 +43,9 @@ NDR_hold_slavyansk = {
 	}
 	
 	ai_strategy = {
-		# Still need to defend at the maginot...
 		type = front_unit_request
-		state = 318  # Alsace-Lorraine
-		value = 30  # +30 %
+		state = 318  # SLAVYANSK AND KRAMATORSK
+		value = 80  
 	}
 
 	ai_strategy = {

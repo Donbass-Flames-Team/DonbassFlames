@@ -205,3 +205,53 @@ UKR_counteroffensive_in_kramatorsk_slavyansk = {
 		id = 291
 	}
 }
+
+UKR_template_design = {
+	allowed = { 
+		original_tag = UKR 
+	}
+	enable = { 
+		tag = UKR
+	} 
+	abort = { 
+		NOT = {
+		    tag = UKR
+	    } 
+    }
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 45
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = modern_armor
+		value = 30
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = artillery
+		value = 5
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+}
