@@ -72,19 +72,9 @@ DPR_hold_donetsk = {
 	}
 	
 	ai_strategy = {
-		type = front_control
+		type = front_unit_request
 		state = 432
-		ratio = 0.1
-		priority = 500
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
-	}
-
-	ai_strategy = {
-		type = theatre_distribution_demand_increase
-		value = 8
-		id = 432
+		value = 50
 	}
 }
 
@@ -102,43 +92,26 @@ DPR_start_of_rebeltion = {
 		NOT = {
 			has_war_with = UKR
 		}
+		NOT = {
+			country_exists = NDR
+		}
 		always = no
 	}
 
-    #Бот будет пытатся соединится с Гиркином
+    #Бот будет пытаться соединится с Гиркином
 
 	ai_strategy = {
 		type = front_control
-        priority = 500
-		state = 426
+        priority = 550
 		ordertype = front
 		execution_type = rush
 		manual_attack = yes
-	}
-
-	ai_strategy = {
-		type = front_control
-        priority = 500
-		state = 401
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
-	}
-	ai_strategy = {
-		type = front_control
-        priority = 500
-		state = 408
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
-	}
-	ai_strategy = {
-		type = front_control
-        priority = 500
-		state = 381
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
+		state_trigger = {
+			426
+			401
+			48
+			381
+		}
 	}
 }
 

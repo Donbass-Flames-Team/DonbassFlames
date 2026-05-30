@@ -80,6 +80,25 @@ sep = {
 	}
 }
 
+minsk_negotations_historical_borders = {
+	name = "minsk_negotations_historical_borders"
+	group = "RULE_MOD_SETTINGS"
+
+	default = {
+		name = "minsk_negotations_historical_borders_off"
+		text = "minsk_negotations_historical_borders_off"
+		desc = "minsk_negotations_historical_borders_off_desc"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = "minsk_negotations_historical_borders_on"
+		text = "minsk_negotations_historical_borders_on"
+		desc = "minsk_negotations_historical_borders_on_desc"
+		allow_achievements = yes
+	}
+}
+
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
