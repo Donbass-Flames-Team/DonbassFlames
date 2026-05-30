@@ -4888,3 +4888,30 @@ country_event = {
 		add_stability = -0.05
 	}
 }
+
+
+# Уничтожение колонны гражданских (Когда Волноваха не срабатывает в 2015)
+country_event = {
+	id = ukraine.134
+	title = ukraine.134.t
+	desc  = ukraine.134.d
+	picture = GFX_Report_event_civilian_vehicle_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+			    id = ukraine.54
+			    days = 2
+		    }
+			set_country_flag = UKR_civilian_vehicle_attacked_2015_fired
+		}
+	}
+
+	option = {
+		name = ukraine.134.a
+		add_war_support = 0.03
+		add_stability = -0.01
+	}
+}

@@ -8,15 +8,37 @@ on_actions = {
 					NOT = {
 						has_global_flag = Ukraine_victory_in_ATO
 						has_global_flag = People_republic_victory
+						has_global_flag = ATO_Separatists_victory
+                        has_country_flag =  UKR_volnovakha_bus_attack_fired
+
+						date > 2015.1.17
 					}
 				    tag = UKR
 				    date = 2015.1.13
-				    NOT = { has_country_flag = UKR_volnovakha_bus_attack_fired }
-					NOT = { has_global_flag = Ukraine_victory_in_ATO }
-					NOT = { has_global_flag = ATO_Separatists_victory}
+					513 = {
+						is_controlled_by = UKR
+					}
 			    }
 			    country_event = { id = ukraine.33 }
 		    }
+		    if = {
+			    limit = {
+				    has_global_flag = Start_Of_ATO
+					NOT = {
+						has_global_flag = Ukraine_victory_in_ATO
+						has_global_flag = People_republic_victory
+						has_global_flag = ATO_Separatists_victory
+                        has_country_flag =  UKR_civilian_vehicle_attacked_2015_fired
+					    513 = {
+						    is_controlled_by = UKR
+					    }
+						date > 2015.1.17
+					}
+				    tag = UKR
+				    date = 2015.1.13
+			    }
+			    country_event = { id = ukraine.134 }
+		    }			
 		    if = {
 			    limit = {
 				    has_global_flag = Start_Of_ATO
