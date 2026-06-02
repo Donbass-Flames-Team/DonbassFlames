@@ -13,7 +13,18 @@ on_actions = {
                         NOT = { has_global_flag = lysychansk_RUS }
                         OR = {
                             tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
                             tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                         }
                     }
                     set_global_flag = lysychansk_NR
@@ -30,8 +41,19 @@ on_actions = {
                         NOT = { has_global_flag = lysychansk_NR }
                         NOT = {
                             OR = {
-                                tag = DPR
-                                tag = LPR
+                            tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
+                            tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                             }
                         }
                         OR = {
@@ -78,7 +100,18 @@ on_actions = {
                         NOT = { has_global_flag = severodonetsk_RUS }
                         OR = {
                             tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
                             tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                         }
                     }
                     set_global_flag = severodonetsk_NR
@@ -95,8 +128,19 @@ on_actions = {
                         NOT = { has_global_flag = severodonetsk_NR }
                         NOT = {
                             OR = {
-                                tag = DPR
-                                tag = LPR
+                            tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
+                            tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                             }
                         }
                         OR = {
@@ -143,7 +187,18 @@ on_actions = {
                         NOT = { has_global_flag = alchevsk_RUS }
                         OR = {
                             tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
                             tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                         }
                     }
                     set_global_flag = alchevsk_NR
@@ -160,8 +215,19 @@ on_actions = {
                         NOT = { has_global_flag = alchevsk_NR }
                         NOT = {
                             OR = {
-                                tag = DPR
-                                tag = LPR
+                            tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
+                            tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                             }
                         }
                         OR = {
@@ -208,7 +274,18 @@ on_actions = {
                         NOT = { has_global_flag = bakhmut_RUS }
                         OR = {
                             tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
                             tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                         }
                     }
                     set_global_flag = bakhmut_NR
@@ -225,8 +302,19 @@ on_actions = {
                         NOT = { has_global_flag = bakhmut_NR }
                         NOT = {
                             OR = {
-                                tag = DPR
-                                tag = LPR
+                            tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
+                            tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                             }
                         }
                         OR = {
@@ -273,7 +361,18 @@ on_actions = {
                         NOT = { has_global_flag = konstantinovka_RUS }
                         OR = {
                             tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
                             tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                         }
                     }
                     set_global_flag = konstantinovka_NR
@@ -290,8 +389,19 @@ on_actions = {
                         NOT = { has_global_flag = konstantinovka_NR }
                         NOT = {
                             OR = {
-                                tag = DPR
-                                tag = LPR
+                            tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
+                            tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                             }
                         }
                         OR = {
@@ -338,7 +448,18 @@ on_actions = {
                         NOT = { has_global_flag = yenakiyevo_RUS }
                         OR = {
                             tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
                             tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                         }
                     }
                     set_global_flag = yenakiyevo_NR
@@ -355,8 +476,19 @@ on_actions = {
                         NOT = { has_global_flag = yenakiyevo_NR }
                         NOT = {
                             OR = {
-                                tag = DPR
-                                tag = LPR
+                            tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
+                            tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                             }
                         }
                         OR = {
@@ -403,7 +535,18 @@ on_actions = {
                         NOT = { has_global_flag = slavyansk_RUS }
                         OR = {
                             tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
                             tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                         }
                     }
                     set_global_flag = slavyansk_NR
@@ -420,8 +563,19 @@ on_actions = {
                         NOT = { has_global_flag = slavyansk_NR }
                         NOT = {
                             OR = {
-                                tag = DPR
-                                tag = LPR
+                            tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
+                            tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                             }
                         }
                         OR = {
@@ -468,7 +622,18 @@ on_actions = {
                         NOT = { has_global_flag = kramatorsk_RUS }
                         OR = {
                             tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
                             tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                         }
                     }
                     set_global_flag = kramatorsk_NR
@@ -485,8 +650,19 @@ on_actions = {
                         NOT = { has_global_flag = kramatorsk_NR }
                         NOT = {
                             OR = {
-                                tag = DPR
-                                tag = LPR
+                            tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
+                            tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                             }
                         }
                         OR = {
@@ -533,7 +709,18 @@ on_actions = {
                         NOT = { has_global_flag = horlivka_RUS }
                         OR = {
                             tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
                             tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                         }
                     }
                     set_global_flag = horlivka_NR
@@ -550,8 +737,19 @@ on_actions = {
                         NOT = { has_global_flag = horlivka_NR }
                         NOT = {
                             OR = {
-                                tag = DPR
-                                tag = LPR
+                            tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
+                            tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                             }
                         }
                         OR = {
@@ -598,7 +796,18 @@ on_actions = {
                         NOT = { has_global_flag = mariupol_RUS }
                         OR = {
                             tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
                             tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                         }
                     }
                     set_global_flag = mariupol_NR
@@ -615,8 +824,19 @@ on_actions = {
                         NOT = { has_global_flag = mariupol_NR }
                         NOT = {
                             OR = {
-                                tag = DPR
-                                tag = LPR
+                            tag = DPR
+							tag = DRR
+                            tag = HPR
+                            tag = KPR
+                            tag = LPR
+                            tag = MLR
+                            tag = NDR
+                            tag = NPR
+                            tag = OPR
+                            tag = SDR
+                            tag = SKR
+                            tag = SLR
+                            tag = ZPR
                             }
                         }
                         OR = {
