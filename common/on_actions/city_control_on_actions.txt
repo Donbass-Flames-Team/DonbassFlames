@@ -1,4 +1,12 @@
 on_actions = {
+    on_startup = {
+        effect = {
+            set_global_flag = slavyansk_nr
+            set_global_flag = lysychansk_nr
+            set_global_flag = severodonetsk_nr
+            set_global_flag = kramatorsk_nr
+        }
+    }
     on_state_control_changed = {
         effect = {
             if = {
