@@ -24,166 +24,141 @@ categories =  {
 		is_water = yes
 		sound_type = sea
 	}
-	
 	forest = {
 		color = { 89 199 85 }
-		movement_cost = 1.5
-		#combat_width = -0.20
-		combat_width = 60
-		combat_support_width = 30
-		ai_terrain_importance_factor = 5.0
-		match_value = 5
+		movement_cost = 1.65
+		combat_width = 55
+		combat_support_width = 25
+		ai_terrain_importance_factor = 6.0
+		match_value = 6
 		sound_type = forest
 
 		units = {
-			attack = -0.15
-			#movement = -0.2
+			attack = -0.25
+			movement = -0.25
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.1
-		
-		supply_flow_penalty_factor = 0.08
-		
-		truck_attrition_factor = 0.2
+		enemy_army_bonus_air_superiority_factor = -0.25
+		supply_flow_penalty_factor = 0.12
+		truck_attrition_factor = 0.5
 	}
-
 	hills = {
 		color = { 248 255 153 }
-		movement_cost = 1.5
-		#combat_width = -0.33
-		combat_width = 70
-		combat_support_width = 35
-		ai_terrain_importance_factor = 3.0
-		match_value = 2
+		movement_cost = 1.6
+		combat_width = 60
+		combat_support_width = 30
+		ai_terrain_importance_factor = 4.0
+		match_value = 3
 		sound_type = desert
 
 		units = {
-			attack = -0.25
-			#movement = -0.2
+			attack = -0.30
+			movement = -0.20
 		}
-		enemy_army_bonus_air_superiority_factor = -0.05
-		
-		supply_flow_penalty_factor = 0.1
-		
-		truck_attrition_factor = 0.2
+
+		enemy_army_bonus_air_superiority_factor = -0.10
+		supply_flow_penalty_factor = 0.12
+		truck_attrition_factor = 0.4
 	}
-	
 	mountain = {
 		color = { 157 192 208 }
-		movement_cost = 2.0
-		attrition = 0.3
-		#combat_width = -0.66
-		combat_width = 50
-		combat_support_width = 25
+		movement_cost = 2.3
+		attrition = 0.35
+		combat_width = 40
+		combat_support_width = 20
 		ai_terrain_importance_factor = 10.0
 		match_value = 10
 		sound_type = desert
 
 		units = {
-			attack = -0.5
-			#movement = -0.4
+			attack = -0.60
+			movement = -0.45
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.10
-		
-		supply_flow_penalty_factor = 0.12
-		
-		truck_attrition_factor = 1.0
+		enemy_army_bonus_air_superiority_factor = -0.15
+		supply_flow_penalty_factor = 0.18
+		truck_attrition_factor = 1.2
 	}
-	
 	plains = {
 		color = { 165 222 64 }
 		movement_cost = 1.0
 		ai_terrain_importance_factor = 0.1
-		combat_width = 70
-		combat_support_width = 35
+		combat_width = 80
+		combat_support_width = 40
 		match_value = 0.5
 		sound_type = plains
 	}
-	
 	urban = {
 		color = { 120 120 120 }
-		movement_cost = 1.2
-		ai_terrain_importance_factor = 4.0
-		combat_width = 80
-		combat_support_width = 40
-		match_value = 4
+		movement_cost = 1.8
+		ai_terrain_importance_factor = 7.0
+		combat_width = 45
+		combat_support_width = 20
+		match_value = 8
 		sound_type = plains
 
 		units = {
-			attack = -0.3
-			#movement = -0.2
+			attack = -0.45
+			movement = -0.35
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.50
-				
-		supply_flow_penalty_factor = -0.2
+		enemy_army_bonus_air_superiority_factor = -0.60
+		supply_flow_penalty_factor = 0.05
+		truck_attrition_factor = 0.6
 	}
-	
 	jungle = {
 		color = { 127 191 0 }
-		movement_cost = 1.5
-		attrition = 0.2
-		# combat_width = -0.25
-		combat_width = 60
-		combat_support_width = 30
+		movement_cost = 1.8
+		attrition = 0.25
+		combat_width = 45
+		combat_support_width = 20
 
 		ai_terrain_importance_factor = 6.0
 		match_value = 6
 		sound_type = forest
 
 		units = {
-			attack = -0.3
-			#movement = -0.3
+			attack = -0.35
+			movement = -0.35
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.25
-		
+		enemy_army_bonus_air_superiority_factor = -0.30
 		sickness_chance = 1.0
-		
-		supply_flow_penalty_factor = 0.16
-		
-		truck_attrition_factor = 3.0
+		supply_flow_penalty_factor = 0.18
+		truck_attrition_factor = 3.5
 	}	
-	
 	marsh = {
 		color = { 76 96 35 }
-		movement_cost = 2.0
-		attrition = 0.35
-		# combat_width = -0.25
-		combat_width = 50
-		combat_support_width = 25
-		ai_terrain_importance_factor = 8.0
-		match_value = 8
+		movement_cost = 2.4
+		attrition = 0.45
+		combat_width = 40
+		combat_support_width = 20
+		ai_terrain_importance_factor = 9.0
+		match_value = 9
 		sound_type = forest
 
 		units = {
-			attack = -0.4
-			#movement = -0.4
+			attack = -0.50
+			movement = -0.50
 		}
 		
 		sickness_chance = 1.0
-		
-		supply_flow_penalty_factor = 0.16
-		
-		truck_attrition_factor = 4.0
+		supply_flow_penalty_factor = 0.22
+		truck_attrition_factor = 5.0
 	}
-	
 	desert = {
 		color = { 255 127 0 }
-		movement_cost = 1.05
-		attrition = 0.15
-		combat_width = 70
+		movement_cost = 1.15
+		attrition = 0.20
+		combat_width = 75
 		combat_support_width = 35
 		ai_terrain_importance_factor = 8.0
 		match_value = 8
 		sound_type = desert
 		
 		sickness_chance = 1.0
-		
-		supply_flow_penalty_factor = 0.14
-		
-		truck_attrition_factor = 0.5
+		supply_flow_penalty_factor = 0.18
+		truck_attrition_factor = 0.8
 	}
 	
 	water_fjords = {
@@ -288,7 +263,7 @@ terrain = {
 	terrain_0					= { type = plains			color = { 	0	 } texture = 1 }
 	terrain_1					= { type = forest			color = { 	1	 } texture = 4 } 
 	desert_mountain				= { type = hills			color = { 	2	 } texture = 3 }
-	desert						= { type = desert			color = { 	3	 } texture = 9 }
+	desert_3					= { type = desert			color = { 	3	 } texture = 9 }
 		
 	terrain_4					= { type = forest			color = { 	4	 } texture = 5 }
 	terrain_5					= { type = plains	 		color = { 	5	 } texture = 0 }
@@ -298,8 +273,8 @@ terrain = {
 	terrain_9					= { type = marsh			color = { 	9	 } texture = 6 }
 	terrain_10					= { type = mountain   		color = { 	10	 } texture = 13 }
 			
-	desert						= { type = mountain			color = { 	11	 } texture = 11 }
-	desert						= { type = desert			color = { 	12	 } texture = 8 }
+	desert_mountain_11		= { type = mountain			color = { 	11	 } texture = 11 }
+	desert_12					= { type = desert			color = { 	12	 } texture = 8 }
 		
 	forest_13					= { type = urban			color = { 	13	 } texture = 10 spawn_city = yes }
 	forest_14					= { type = lakes			color = { 	14	 } texture = 255 }
@@ -314,7 +289,7 @@ terrain = {
 	jungle_18					= { type = jungle			color = { 	21	 } texture = 4 }
 	jungle_blend_18				= { type = jungle			color = { 	22	 } texture = 5 }
 	
-	jungle_blend_18				= { type = mountain			color = { 	27	 } texture = 7 }
+	mountain_jungle_27		= { type = mountain			color = { 	27	 } texture = 7 }
 	desert_mountain_tops		= { type = mountain			color = { 	31	 } texture = 15 }
 	
 }
