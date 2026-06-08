@@ -1399,15 +1399,10 @@ focus_tree = {
 
 		available = {
             has_country_flag = UKR_Yanukovich_overthrown
+			always = no
 		}
 
 		completion_reward = {
-			swap_ideas = {
-                remove_idea = UKR_helpless_government
-                add_idea = UKR_disorderly_government
-            }
-			retire_country_leader = yes
-			promote_character = UKR_alexander_tyrchinov
 			hidden_effect = {
 				country_event = {
 					id = ukraine.107
@@ -1815,7 +1810,6 @@ focus_tree = {
                 popularity = 0.025
             }
 			add_stability = -0.025
-			unlock_decision_tooltip = UKR_raise_the_sbu
 			hidden_effect = {
 				country_event = ukraine.20
 			}

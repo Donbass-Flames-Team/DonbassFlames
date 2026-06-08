@@ -1047,7 +1047,8 @@ country_event = {
 
 	option = {
 		name = ukraine.20.a
-		complete_national_focus = UKR_unrest_in_crimea				
+		complete_national_focus = UKR_unrest_in_crimea	
+		unlock_decision_tooltip = UKR_raise_the_sbu			
 	}
 }
 
@@ -1102,6 +1103,12 @@ country_event = {
                 complete_national_focus = UKR_arrest_yanukovich
             }
 		}
+		hidden_effect = {
+            country_event = {
+				id = ukraine.135
+				hours = 6
+			}
+		}
 	}
 
 	option = {
@@ -1109,6 +1116,12 @@ country_event = {
 		set_country_flag = Yanukovich_escaped
 		mark_focus_tree_layout_dirty = yes
 		complete_national_focus = UKR_yanukovich_escaped
+		hidden_effect = {
+            country_event = {
+				id = ukraine.135
+				hours = 6
+			}
+		}
 	}
 } 
 
@@ -4913,5 +4926,30 @@ country_event = {
 		name = ukraine.134.a
 		add_war_support = 0.03
 		add_stability = -0.01
+	}
+}
+
+# Турчинов становится временным исполняющим обязанности президента
+country_event = {
+	id = ukraine.135
+	title = ukraine.135.t
+	desc  = ukraine.135.d
+	picture = GFX_Report_event_Alesander_Turchinov_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.135.a
+		swap_ideas = {
+            remove_idea = UKR_helpless_government
+            add_idea = UKR_disorderly_government
+        }
+		retire_country_leader = yes
+		promote_character = UKR_alexander_tyrchinov
+		complete_national_focus = UKR_government_in_anarchy
 	}
 }
