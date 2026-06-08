@@ -156,13 +156,58 @@ ideas = {
 				recruitable_population_factor = -0.65
 			}
 		}
+
 				RUS_victory_day_preparations = {
 			picture = generic_production_bonus
 
 			modifier = {
 				industrial_capacity_factory = -0.10
-			}
 		}
-	}
 
+                RUS_state_media_monopoly_spirit_idea = {
+                       picture = generic_production_bonus
+                       allowed_civil_war = { always = yes }
+                       cost = 0
+                       removal_cost = -1
+            
+                       allowed = {
+                               original_tag = RUS
+                       }            
+                       modifier = {
+                               drift_defence_factor = 0.05
+                               stability_factor = 0.05
+                               research_speed_factor = -0.03
+                       }
+                       ai_will_do = { factor = 1 }
+                }
+
+		RUS_traditional_values_spirit_idea = {
+			picture = generic_production_bonus
+			allowed_civil_war = { always = yes }
+			cost = 0
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			modifier = {
+                                stability_factor = 0.03
+			}
+			ai_will_do = { factor = 1 }
+		}
+	
+                RUS_traditional_values_spirit_upgraded_idea = {
+			picture = generic_production_bonus
+			allowed_civil_war = { always = yes }
+			cost = 0
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			modifier = {
+				drift_defence_factor = 0.05
+                                stability_factor = 0.05
+			}
+			ai_will_do = { factor = 1 }
+                }
+        }
 }
