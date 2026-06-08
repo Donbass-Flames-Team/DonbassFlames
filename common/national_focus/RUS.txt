@@ -1446,37 +1446,37 @@ focus_tree = {
 	}
 
 
-# Пожалуйста, кто то исправьте идею, я уже мучаюсь около 2 часов 😭
-        focus = {
-	        id = RUS_family_values_protection
-	        icon = GFX_goal_no_focus_RUS
-	        x = 1
-	        y = 1
-	        relative_position_id = RUS_propaganda_of_traditional_values
-	        cost = 2
-	        prerequisite = { focus = RUS_propaganda_of_traditional_values }
+    focus = {
+	    id = RUS_family_values_protection
+	    icon = GFX_goal_no_focus_RUS
+	    x = 1
+	    y = 1
+	    relative_position_id = RUS_propaganda_of_traditional_values
+	    cost = 2
+	    prerequisite = { focus = RUS_propaganda_of_traditional_values }
 	
-	        completion_reward = {
-                    add_ideas = RUS_traditional_values_spirit_idea
-                }
+	    completion_reward = {
+            add_ideas = RUS_traditional_values_spirit_idea
+        }
 	}
 
 
-# Пожалуйста, кто то исправьте идею, я уже мучаюсь около 2 часов 😭
-        focus = {
-	        id = RUS_cultural_sovereignty
-	        icon = GFX_goal_no_focus_RUS
-	        x = 0
-	        y = 1
-	        relative_position_id = RUS_family_values_protection
-	        cost = 2
-	        prerequisite = { focus = RUS_family_values_protection }
+    focus = {
+	    id = RUS_cultural_sovereignty
+	    icon = GFX_goal_no_focus_RUS
+	    x = 0
+	    y = 1
+	    relative_position_id = RUS_family_values_protection
+	    cost = 2
+	    prerequisite = { focus = RUS_family_values_protection }
 	
-	        completion_reward = {
-                    remove_ideas = RUS_traditional_values_spirit_idea
-                        add_ideas = RUS_traditional_values_spirit_upgraded_idea
-                        add_political_power = 50
-                }
+	    completion_reward = {
+			swap_ideas = {
+                remove_idea = RUS_traditional_values_spirit_idea
+                add_idea = RUS_traditional_values_spirit_upgraded_idea
+            }
+            add_political_power = 50
+        }
 	}
 
 	focus = {
