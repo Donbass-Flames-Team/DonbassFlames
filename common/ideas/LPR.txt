@@ -266,3 +266,107 @@ ideas = {
                                   enemy_partisan_effect = -0.15
 			}
 		}
+
+		LPR_improvement_of_working_conditions = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+                            political_power_factor = -0.05
+                                  consumer_goods_factor = 0.03
+                                  industrial_capacity_factory = 0.1
+                                  production_factory_max_efficiency_factor = 0.1
+                                  production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		LPR_Stabilization_of_pension_payments = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+                            political_power_factor = -0.05
+                                  consumer_goods_factor = 0.05
+                                  stability_weekly = 0.002
+                                  war_support_weekly = 0.001
+			}
+		}
+
+		LPR_ruined_factories = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+                            consumer_goods_factor = 0.2
+                                  stability_factor = -0.15
+                                  industrial_capacity_factory = -0.15
+                                  production_factory_max_efficiency_factor = -0.05  
+			}
+		}
+
+		LPR_partially_destroyed_factories = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+                            consumer_goods_factor = 0.1
+                                  stability_factor = -0.075
+                                  industrial_capacity_factory = -0.075
+                                  production_factory_max_efficiency_factor = -0.025    
+			}
+		}
+
+		LPR_agrarian_reform = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+                            consumer_goods_factor = -0.05
+                                  political_power_gain = 0.05 
+			}
+		}

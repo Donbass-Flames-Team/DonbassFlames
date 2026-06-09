@@ -111,3 +111,33 @@ country_event = {
         add_ideas = LPR_peoples_mandate
     } 
 }
+
+#Социальная ситуация в стране, для фокуса ивент
+country_event = {
+	id = LPR.6
+	title = LPR.6.t
+	desc = LPR.6.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.6.a
+                add_political_power = -5
+	}
+}
+
+#коллапс экономики, для фокуса ивент
+country_event = {
+	id = LPR.7
+	title = LPR.7.t
+	desc = LPR.7.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.7.a
+                add_political_power = -5
+	}
+}

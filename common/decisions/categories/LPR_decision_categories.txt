@@ -1,0 +1,14 @@
+LPR_politicy_category = {
+
+	priority = 85
+	
+	icon = GFX_decision_icon_of_elections
+	
+	allowed = {
+		original_tag = LPR
+	}
+
+	visible = {
+		has_completed_focus = LPR_republic_of_bolotov
+	}
+}
