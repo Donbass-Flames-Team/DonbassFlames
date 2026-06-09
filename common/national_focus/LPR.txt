@@ -556,7 +556,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 12
 		y = 7
-		cost = 10
+		cost = 1
 		prerequisite = { focus = LPR_referendum }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
@@ -625,7 +625,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 2
 		y = 11
-		cost = 10
+		cost = 2
 		prerequisite = { focus = LPR_provide_assistance_to_those_in_need }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
