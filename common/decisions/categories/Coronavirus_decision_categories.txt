@@ -1,0 +1,22 @@
+####################
+###### Corona ######
+####################
+# made in kaja
+
+Coronavirus_decision = {
+
+	priority = 97
+	
+	icon = GFX_decision_UKR_separatism_icon
+	
+	allowed = {
+		has_country_flag = Coronavirus_pandemic
+	}
+
+	visible = {
+        has_country_flag = Coronavirus_pandemic
+	}
+
+	visible_when_empty = yes
+}
+
