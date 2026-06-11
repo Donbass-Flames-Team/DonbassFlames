@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = ukraine
+add_namespace = ukr_elections_2019
 
 #overthrow of yanukovych
 country_event = {
@@ -4951,5 +4952,44 @@ country_event = {
 		retire_country_leader = yes
 		promote_character = UKR_alexander_tyrchinov
 		complete_national_focus = UKR_government_in_anarchy
+	}
+}
+
+# Турчинов становится временным исполняющим обязанности президента
+country_event = {
+	id = ukraine.136
+	title = ukraine.136.t
+	desc  = ukraine.136.d
+	picture = GFX_Report_event_Alesander_Turchinov_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.136.a
+		add_political_power = 5
+		add_stability = 0.01
+	}
+}
+
+# Выборы 2019 скоро
+country_event = {
+	id = ukr_elections_2019.1
+	title = ukr_elections_2019.1.t
+	desc  = ukr_elections_2019.1.d
+	picture = GFX_Report_event_vybory_ukraine_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukr_elections_2019.1.a
+		activate_mission = UKR_elections_2019
 	}
 }

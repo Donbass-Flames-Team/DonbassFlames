@@ -1418,7 +1418,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_preparation_for_elections
-		icon = GFX_focus_UKR_government_in_anarchy
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = -1
 		y = 2
@@ -1694,7 +1694,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_release_political_prisoners_from_prisons
-		icon = GFX_focus_UKR_government_in_anarchy
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.2
 		x = -1
 		y = 1
@@ -1722,7 +1722,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_coalition_in_parlamient
-		icon = GFX_focus_UKR_government_in_anarchy
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = 1
 		y = 1
@@ -1758,7 +1758,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_adoption_of_new_laws
-		icon = GFX_focus_UKR_government_in_anarchy
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.2
 		x = 1
 		y = 2
@@ -1786,7 +1786,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_unrest_in_the_east
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.5
 		x = 1
 		y = 1
@@ -1829,7 +1829,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_army_review
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = 0
 		y = 1
@@ -1863,7 +1863,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_support_of_the_volunteer_battalion
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = 0
 		y = 3
@@ -1893,7 +1893,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_form_national_guardia
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = 0
 		y = 2
@@ -1920,7 +1920,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_forced_demobilization
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = 2
 		y = 2
@@ -2068,7 +2068,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_appeal_to_the_oligarchs
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.5
 		x = -2
 		y = 2
@@ -3109,7 +3109,7 @@ focus_tree = {
 	focus = {
 		id = UKR_independent_church
 		icon = GFX_focus_UKR_police_reform
-		cost = 2
+		cost = 5
 		x = 2
 		y = 1
 
@@ -3127,7 +3127,7 @@ focus_tree = {
 	focus = {
 		id = UKR_police_reform
 		icon = GFX_focus_UKR_police_reform
-		cost = 2
+		cost = 3
 		x = 0
 		y = 1
 
@@ -3145,7 +3145,7 @@ focus_tree = {
 	focus = {
 		id = UKR_healthcare_reform
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 2
+		cost = 3
 		x = -2
 		y = 1
 
@@ -3163,7 +3163,7 @@ focus_tree = {
 	focus = {
 		id = UKR_education_reform
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 2
+		cost = 3
 		x = -1
 		y = 2
 
@@ -3205,7 +3205,7 @@ focus_tree = {
 	focus = {
 		id = UKR_strengthening_banking_system
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 2
 		x = 1
 		y = 1
 
@@ -3224,7 +3224,7 @@ focus_tree = {
 	focus = {
 		id = UKR_cleaning_up_banking_system
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 2
 		x = 0
 		y = 2
 
@@ -3243,7 +3243,7 @@ focus_tree = {
 	focus = {
 		id = UKR_nationalize_privatbank
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 2
 		x = 2
 		y = 2
 
@@ -3262,7 +3262,7 @@ focus_tree = {
 	focus = {
 		id = UKR_increase_millitary_spends
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 1.5
 		x = -1
 		y = 1
 
@@ -3283,7 +3283,7 @@ focus_tree = {
 	focus = {
 		id = UKR_credits_from_imf
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 1.5
 		x = -3
 		y = 1
 
@@ -3304,7 +3304,7 @@ focus_tree = {
 	focus = {
 		id = UKR_measures_to_reduce_deficit
 		icon = GFX_focus_UKR_petr_poroshenko
-		cost = 1
+		cost = 1.5
 		x = 1
 		y = 1
 
@@ -3495,7 +3495,7 @@ focus_tree = {
 	focus = {
 		id = UKR_land_reforms
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 2
 		x = 10
 		y = 1
 
@@ -3514,7 +3514,7 @@ focus_tree = {
 	focus = {
 		id = UKR_decentralization
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 2
 		x = 0
 		y = 1
 
@@ -3533,7 +3533,7 @@ focus_tree = {
 	focus = {
 		id = UKR_introduction_of_the_otg
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 2
 		x = -1
 		y = 2
 
@@ -3552,7 +3552,7 @@ focus_tree = {
 	focus = {
 		id = UKR_law_on_voluntary_association_of_ter_communities
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
+		cost = 2
 		x = 1
 		y = 2
 
@@ -3697,25 +3697,33 @@ focus = {
   relative_position_id = UKR_poroshenko_victory
 }
 
-focus = {
-    id = UKR_rename_streets
-    icon = GFX_focus_UKR_start_of_ato
-    prerequisite = { focus = UKR_decomunization }
-    relative_position_id = UKR_decomunization
-    x = -3
-    y = 2
-    cost = 10
-}
+    focus = {
+        id = UKR_rename_streets
+        icon = GFX_focus_UKR_start_of_ato
+        prerequisite = { focus = UKR_decomunization }
+        relative_position_id = UKR_decomunization
+        x = -3
+        y = 2
+        cost = 10
 
-focus = {
-    id = UKR_memory_institute
-    icon = GFX_focus_UKR_start_of_ato
-    prerequisite = { focus = UKR_decomunization }
-    relative_position_id = UKR_decomunization
-    x = 0
-    y = 1
-    cost = 10
-}
+		completion_reward = {
+			add_political_power = 15
+			add_popularity = {
+                ideology = communism
+                popularity = -0.025
+            }
+		}
+    }
+
+    focus = {
+        id = UKR_memory_institute
+        icon = GFX_focus_UKR_start_of_ato
+        prerequisite = { focus = UKR_decomunization }
+        relative_position_id = UKR_decomunization
+        x = 0
+        y = 1
+        cost = 10
+    }
 
 focus = {
     id = UKR_remove_monuments
@@ -3747,17 +3755,24 @@ focus = {
     cost = 10
 }
 
-focus = {
-    id = UKR_dissolve_cpu
-    icon = GFX_focus_UKR_start_of_ato
+    focus = {
+        id = UKR_dissolve_cpu
+        icon = GFX_focus_UKR_start_of_ato
+		cost = 10
+        x = 0
+        y = 3
+        
+        prerequisite = { focus = UKR_rename_streets focus = UKR_remove_monuments focus = UKR_open_soviet_archives focus = UKR_history_education_reform }
+        relative_position_id = UKR_decomunization
 
-    prerequisite = { focus = UKR_rename_streets focus = UKR_remove_monuments focus = UKR_open_soviet_archives focus = UKR_history_education_reform }
-
-    relative_position_id = UKR_decomunization
-    x = 0
-    y = 3
-    cost = 10
-}
+		completion_reward = {
+			add_political_power = -25
+			add_popularity = {
+                ideology = communism
+                popularity = -0.035
+            }
+		}
+    }
 	
 
 	focus = {
@@ -4514,7 +4529,7 @@ focus = {
 
 	focus = {
 		id = UKR_information_war
-		icon = GFX_focus_UKR_turn_to_the_west_for_help
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = -3
 		y = 1
@@ -4523,9 +4538,7 @@ focus = {
 		relative_position_id = UKR_emergency_redeployment_of_troops
 
 		available = {
-            NOT = {
-				has_country_flag = Elections2014InProgress
-			}
+
 		}
 
 		completion_reward = {
@@ -4563,7 +4576,7 @@ focus = {
 
 	focus = {
 		id = UKR_ban_russian_social_networks
-		icon = GFX_focus_UKR_turn_to_the_west_for_help
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = -2
 		y = 1
@@ -4933,7 +4946,7 @@ focus = {
 	focus = {
 		id = UKR_donbass_restoration_programs
 		icon = GFX_focus_UKR_victory_over_separatism
-		cost = 1
+		cost = 4
 		x = -2
 		y = 1
 
@@ -5324,7 +5337,7 @@ focus = {
 
 	focus = {
 		id = UKR_unrest_in_crimea
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.5
 		x = -5
 		y = 1
@@ -5356,7 +5369,7 @@ focus = {
 
 	focus = {
 		id = UKR_highlighting_the_situation_in_the_media
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = 0
 		y = 1
@@ -5464,6 +5477,10 @@ focus = {
 		completion_reward = {
 			unlock_decision_tooltip = UKR_cut_off_the_water_supply_to_crimea
 		    mark_focus_tree_layout_dirty = yes
+			country_event = {
+				id = ukraine.136
+				days = 6
+			}
 		}
 	}
 
