@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 7500 y = 500 }
+	continuous_focus_position = { x = 7500 y = 750 }
 	
 	focus = {
 		id = UKR_yanukovychs_results
@@ -2945,6 +2945,77 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_new_foreign_policy
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 20
+		y = 0
+
+		available = {
+		    NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+		}
+
+		allow_branch = {
+			if = {
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
+					}
+				}
+				has_country_flag = Focuses_after_Ato
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UKR_sign_the_association_agreement_with_eu
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_new_foreign_policy }
+		relative_position_id = UKR_new_foreign_policy
+
+		available = {
+            always = no
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = UKR_visa_free_travel_with_the_eu
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 2
+
+		prerequisite = { focus = UKR_new_foreign_policy }
+		relative_position_id = UKR_new_foreign_policy
+
+		available = {
+            always = no
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
 		id = UKR_snap_presidential_elections
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
@@ -3036,6 +3107,24 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_independent_church
+		icon = GFX_focus_UKR_police_reform
+		cost = 2
+		x = 2
+		y = 1
+
+		prerequisite = { focus = UKR_ministry_of_information_policy_of_ukraine }
+		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
 		id = UKR_police_reform
 		icon = GFX_focus_UKR_police_reform
 		cost = 2
@@ -3096,7 +3185,7 @@ focus_tree = {
 		id = UKR_economic_reforms
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 3
+		x = 5
 		y = 1
 
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
@@ -3240,7 +3329,7 @@ focus_tree = {
 		id = UKR_anticorruption_reforms
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 4
-		x = 13
+		x = 15
 		y = 1
 
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
@@ -3407,7 +3496,7 @@ focus_tree = {
 		id = UKR_land_reforms
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 8
+		x = 10
 		y = 1
 
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
@@ -3522,7 +3611,7 @@ focus_tree = {
 		id = UKR_deoligarhization
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 17
+		x = 19
 		y = 1
 
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
@@ -3600,7 +3689,7 @@ focus_tree = {
 focus = {
     id = UKR_decomunization
     icon = GFX_focus_UKR_start_of_ato
-    x = 22
+    x = 24
     y = 1
     cost = 10
  
@@ -3972,7 +4061,7 @@ focus = {
 		id = UKR_military_reforms_afu
 		icon = GFX_focus_UKR_afu_reforms
 		cost = 3
-		x = 71
+		x = 72
 		y = 0
 
 
@@ -5289,8 +5378,32 @@ focus = {
 	}
 
 	focus = {
+		id = UKR_organize_crimean_platform
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -3
+		y = 2
+
+		prerequisite = { focus = UKR_highlighting_the_situation_in_the_media }
+		relative_position_id = UKR_unrest_in_crimea
+
+		allow_branch = {
+			has_completed_focus = UKR_leave_the_peninsula
+		}
+
+		available = {
+			date > 2020.1.1
+		}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
 		id = UKR_no_step_back_from_crimea
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = -1
 		y = 2
@@ -5309,7 +5422,7 @@ focus = {
 
 	focus = {
 		id = UKR_organize_defence_in_crimea
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = -1
 		y = 3
@@ -5327,7 +5440,7 @@ focus = {
 
 	focus = {
 		id = UKR_leave_the_peninsula
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.2
 		x = 1
 		y = 2
@@ -5350,12 +5463,13 @@ focus = {
 
 		completion_reward = {
 			unlock_decision_tooltip = UKR_cut_off_the_water_supply_to_crimea
+		    mark_focus_tree_layout_dirty = yes
 		}
 	}
 
 	focus = {
 		id = UKR_pick_up_weapons_from_warehouses
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.2
 		x = 1
 		y = 3
