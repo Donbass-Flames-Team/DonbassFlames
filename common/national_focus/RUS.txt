@@ -1169,7 +1169,7 @@ focus_tree = {
 		id = RUS_introduction_of_anti_sanctions
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 47
+		x = 48
 		y = 0
 		
 		ai_will_do = {
@@ -1579,6 +1579,52 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_investments_in_crimea
+		icon = GFX_goal_no_focus_RUS
+		cost = 5
+		x = 5
+		y = 1
+
+		prerequisite = { focus = RUS_domestic_policy }
+		relative_position_id = RUS_domestic_policy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+	
+	focus = {
+		id = RUS_construction_of_the_crimean_bridge
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = 5
+		y = 2
+
+		prerequisite = { focus = RUS_domestic_policy }
+		relative_position_id = RUS_domestic_policy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+
+	focus = {
 		id = RUS_cooperation_with_people_republics
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
@@ -1811,12 +1857,47 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_ultimatum_to_the_west
+		icon = GFX_goal_no_focus_RUS
+		cost = 5
+		x = 35
+		y = 14
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			date > 2021.11.11
+			has_completed_focus = RUS_full_control_over_donbass
+		}
+
+		completion_reward = {
+            news_event = {
+				id = news_events.36
+				hours = 3
+			}
+			hidden_effect = {
+				UKR = {
+					country_event = {
+						id = ukr_nato_cooperation.1
+						days = 10
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = RUS_prepare_for_special_millitary_operation
 		icon = GFX_goal_no_focus_RUS
 		cost = 6
-		x = 35
-		y = 15
-		
+		x = 0
+		y = 1
+
+		prerequisite = { focus = RUS_ultimatum_to_the_west }
+		relative_position_id = RUS_ultimatum_to_the_west
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1892,13 +1973,14 @@ focus_tree = {
 					complete_national_focus = UKR_battle_for_ukraine
 					mark_focus_tree_layout_dirty = yes
 				}
+				mark_focus_tree_layout_dirty = yes
 				news_event = {
 					id = news_events.35
 					hours = 3
 				}
 				country_event = {
 					id = superevent.5
-					hours = 6
+					hours = 5
 				}				
 				declare_war_on = {
                     target = UKR
@@ -2004,7 +2086,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = intensify_propaganda 
+		id = RUS_intensify_propaganda 
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
 		x = -1
@@ -2037,8 +2119,8 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		prerequisite = { focus = intensify_propaganda }
-		relative_position_id = intensify_propaganda
+		prerequisite = { focus = RUS_intensify_propaganda }
+		relative_position_id = RUS_intensify_propaganda
 		
 		ai_will_do = {
 			factor = 1

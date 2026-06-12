@@ -7,6 +7,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_news_event_Putin_angry_pic"
+		texturefile = "gfx/event_pictures/news_events/Putin_angry.png"
+	}
+
+	spriteType = {
 		name = "GFX_news_event_yanukovich_pic"
 		texturefile = "gfx/event_pictures/news_events/Yanukovich.png"
 	}
@@ -209,6 +214,12 @@ spriteTypes = {
 		name = "GFX_Report_event_Alesander_Turchinov_picture"
 		texturefile = "gfx/event_pictures/Report_event_Alesander_Turchinov_picture.png"
 	}
+
+	spriteType = {
+		name = "GFX_Report_event_coronavirus_picture"
+		texturefile = "gfx/event_pictures/Report_event_coronavirus_picture.png"
+	}
+
 	
 	spriteType = {
 		name = "GFX_Report_event_promaidan_rally_24_november_2013_picture"

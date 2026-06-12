@@ -493,3 +493,30 @@ country_event = {
 		
 	}
 }
+
+#Украинские войска оказывают сопротивление в Крыму
+country_event = {
+	id = russia.28
+	title = russia.28.t
+	desc = russia.28.d
+	#picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.28.a
+		add_war_support = 0.02
+		declare_war_on = {
+            target = UKR
+            type = annex_everything
+        }
+	}
+
+	option = {
+		name = russia.28.b
+		add_political_power = -95
+		add_war_support = -0.05
+		add_stability = -0.12
+		white_peace = CRI
+	}	
+}
