@@ -2638,7 +2638,7 @@ focus_tree = {
 		id = UKR_army_in_war_time
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 24
+		x = 25
 		y = 1
 		
 		prerequisite = { focus = UKR_battle_for_ukraine }
@@ -2975,6 +2975,24 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
+	focus = {
+		id = UKR_mass_recruitment_of_foreigners
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -3
+		y = 2
+		
+		prerequisite = { focus = UKR_resolve_management_issues }
+		relative_position_id = UKR_reshuffles_in_the_army
+
+		available = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+		}
+	}	
 
 	focus = {
 		id = UKR_create_sbs
