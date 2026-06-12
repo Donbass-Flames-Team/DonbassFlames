@@ -4,6 +4,7 @@
 
 add_namespace = ukraine
 add_namespace = ukr_elections_2019
+add_namespace = ukr_nato_cooperation
 
 #overthrow of yanukovych
 country_event = {
@@ -2855,8 +2856,9 @@ country_event = {
 
 	option = {
 		name = ukraine.83.a		
-        add_stability = 0.025 
-		add_political_power = 5
+        add_stability = 0.035 
+        add_war_support = 0.045
+		add_political_power = 25
 	}
 }
 
@@ -2875,7 +2877,7 @@ country_event = {
 
 	option = {
 		name = ukraine.84.a		
-        add_stability = 0.045 
+        add_stability = 0.015 
 		add_war_support = 0.015
 		add_political_power = 15
 	}
@@ -3006,7 +3008,7 @@ country_event = {
 
 	option = {
 		name = ukraine.89.a		
-		add_political_power = 15
+		add_political_power = 5
 	}
 }
 
@@ -4955,7 +4957,7 @@ country_event = {
 	}
 }
 
-# Турчинов становится временным исполняющим обязанности президента
+# Закон
 country_event = {
 	id = ukraine.136
 	title = ukraine.136.t
@@ -4991,5 +4993,26 @@ country_event = {
 	option = {
 		name = ukr_elections_2019.1.a
 		activate_mission = UKR_elections_2019
+	}
+}
+
+# НАТО предупреждает о скором вторжении
+country_event = {
+	id = ukr_nato_cooperation.1
+	title = ukr_nato_cooperation.1.t
+	desc  = ukr_nato_cooperation.1.d
+	picture = GFX_Report_event_help_from_france_and_usa_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukr_nato_cooperation.1.a
+		custom_effect_tooltip = UKR_open_new_focuses_for_preparation_for_invasion_tt
+	    set_country_flag = NATO_announced_preparations_for_war
+		mark_focus_tree_layout_dirty = yes
 	}
 }

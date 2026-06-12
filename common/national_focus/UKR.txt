@@ -2238,12 +2238,126 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_preparing_for_the_inevitable
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 3
+		x = 30
+		y = 10
+
+		available = {
+			
+		}
+
+		allow_branch = {
+			has_country_flag = NATO_announced_preparations_for_war
+		}
+
+		completion_reward = {
+			add_political_power = 25
+			add_war_support = 0.02
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = UKR_training_of_reservists
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_preparing_for_the_inevitable }
+		relative_position_id = UKR_preparing_for_the_inevitable
+
+		available = {
+			
+		}
+
+		allow_branch = {
+			has_country_flag = NATO_announced_preparations_for_war
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = UKR_preparation_of_citizens
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 5
+		x = -2
+		y = 1
+
+		prerequisite = { focus = UKR_preparing_for_the_inevitable }
+		relative_position_id = UKR_preparing_for_the_inevitable
+
+		available = {
+			
+		}
+
+		allow_branch = {
+			has_country_flag = NATO_announced_preparations_for_war
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = UKR_preparation_of_fortifications
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 5
+		x = 2
+		y = 1
+
+		prerequisite = { focus = UKR_preparing_for_the_inevitable }
+		relative_position_id = UKR_preparing_for_the_inevitable
+
+		available = {
+			
+		}
+
+		allow_branch = {
+			has_country_flag = NATO_announced_preparations_for_war
+		}
+
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = UKR_introduce_a_state_of_emergency
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 5
+		x = 0
+		y = 2
+
+		prerequisite = { focus = UKR_preparing_for_the_inevitable }
+		prerequisite = { focus = UKR_preparation_of_citizens }
+		prerequisite = { focus = UKR_preparation_of_fortifications }
+		relative_position_id = UKR_preparing_for_the_inevitable
+
+		available = {
+			
+		}
+
+		allow_branch = {
+			has_country_flag = NATO_announced_preparations_for_war
+		}
+
+		completion_reward = {
+		}
+	}	
+
+	focus = {
 		id = UKR_battle_for_ukraine
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
 		x = 30
 		y = 13
 
+
+		prerequisite = { focus = UKR_introduce_a_state_of_emergency }
 		available = {
 			has_country_flag = Russo_Ukranian_War
 		}
@@ -2300,7 +2414,7 @@ focus_tree = {
 
 		completion_reward = {
 		}
-	}
+	}	
 
 	focus = {
 		id = UKR_ban_opzh
@@ -2557,6 +2671,24 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_start_busification
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 2
+		y = 2
+		
+		prerequisite = { focus = UKR_mobilization }
+		relative_position_id = UKR_army_in_war_time
+
+		available = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = UKR_lower_the_age_for_conscription
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
@@ -2611,10 +2743,46 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_create_brave1
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 7
+		y = 1
+		
+		prerequisite = { focus = UKR_army_in_war_time }
+		relative_position_id = UKR_army_in_war_time
+
+		available = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = UKR_cooperation_with_palantir
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 7
+		y = 2
+		
+		prerequisite = { focus = UKR_create_brave1 }
+		relative_position_id = UKR_army_in_war_time
+
+		available = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+		}
+	}	
+
+	focus = {
 		id = UKR_army_production
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 10
+		x = 13
 		y = 1
 		
 		prerequisite = { focus = UKR_army_in_war_time }
@@ -2762,6 +2930,42 @@ focus_tree = {
 		y = 1
 		
 		prerequisite = { focus = UKR_reshuffles_in_the_army }
+		relative_position_id = UKR_reshuffles_in_the_army
+
+		available = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = UKR_solve_issue_with_TCK
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = UKR_resolve_management_issues }
+		relative_position_id = UKR_reshuffles_in_the_army
+
+		available = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = UKR_increase_military_salaries
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = UKR_resolve_management_issues }
 		relative_position_id = UKR_reshuffles_in_the_army
 
 		available = {
@@ -3123,6 +3327,26 @@ focus_tree = {
 			add_political_power = 25
 		}
 	}
+
+	focus = {
+		id = UKR_army_language_faith
+		icon = GFX_focus_UKR_police_reform
+		cost = 5
+		x = 1
+		y = 3
+
+		prerequisite = { focus = UKR_education_reform }
+		prerequisite = { focus = UKR_independent_church }
+		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
+
+		available = {
+			has_country_flag = Poroshenko_won_elections_2019
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}	
 
 	focus = {
 		id = UKR_police_reform
@@ -5417,7 +5641,7 @@ focus = {
 	focus = {
 		id = UKR_no_step_back_from_crimea
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.2
 		x = -1
 		y = 2
 
@@ -5425,18 +5649,31 @@ focus = {
 		mutually_exclusive = { focus = UKR_leave_the_peninsula }
 		relative_position_id = UKR_unrest_in_crimea
 
+		ai_will_do = {
+			factor = -5
+		}
+
 		available = {
-			has_country_flag = innextupdate
+			
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = UKR_no_step_back_from_crimea_tt
+			add_manpower = 25000
+			add_war_support = 0.05
+			RUS = {
+				country_event = {
+					id = russia.28
+					hours = 2
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = UKR_organize_defence_in_crimea
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.2
 		x = -1
 		y = 3
 
@@ -5448,6 +5685,7 @@ focus = {
 		}
 
 		completion_reward = {
+			 mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -5535,7 +5773,12 @@ focus = {
 	    ai_will_do = {
 			factor = 25
 		}
-
+		allow_branch = {
+			NOT = {
+				has_completed_focus = UKR_organize_defence_in_crimea
+			}
+			has_completed_focus = UKR_unrest_in_the_east
+		}
 		bypass = {
 			has_global_flag = Start_Of_ATO
 		}
@@ -5558,4 +5801,43 @@ focus = {
 			}
 		}
 	}
+
+	focus = {
+		id = UKR_full_mobilization
+		icon = GFX_focus_UKR_partial_mobilization
+		cost = 0.2
+		x = 0
+		y = 4
+
+		prerequisite = { focus = UKR_organize_defence_in_crimea focus = UKR_pick_up_weapons_from_warehouses }
+		relative_position_id = UKR_unrest_in_crimea
+
+	    ai_will_do = {
+			factor = 25
+		}
+
+		allow_branch = {
+			has_completed_focus = UKR_organize_defence_in_crimea
+		}
+
+		bypass_effect = {
+			
+		}
+
+		available = {
+
+		}
+
+
+		completion_reward = {
+            custom_effect_tooltip = UKR_started_partial_mobilization_tt
+			add_manpower = 25000
+			hidden_effect = {
+				news_event = {
+					id = news_events.19
+					hours = 5
+				}
+			}
+		}
+	}	
 }
