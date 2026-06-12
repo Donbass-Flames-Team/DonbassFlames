@@ -1,0 +1,16 @@
+on_actions = {
+
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					tag = UKR
+					date > 2018.12.30
+					date < 2019.1.1
+				}
+				country_event = { id = ukr_elections_2019.1 }
+			}
+		}
+	}
+}
+

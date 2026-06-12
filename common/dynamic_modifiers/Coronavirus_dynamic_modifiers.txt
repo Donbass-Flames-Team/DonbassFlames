@@ -1,0 +1,12 @@
+Coronavirus_idea = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_oligarchs
+
+	political_power_gain  = Coronavirus_idea_political_power_gain  #-0.45
+	consumer_goods_factor = Coronavirus_idea_consumer_goods_factor  #-0.25
+	production_speed_buildings_factor = Coronavirus_idea_production_speed_buildings_factor #-0.25
+	monthly_population = Coronavirus_idea_monthly_population
+	stability_factor = Coronavirus_idea_stability_factor
+	party_popularity_stability_factor = Coronavirus_idea_party_popularity_stability_factor
+}

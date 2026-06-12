@@ -156,6 +156,22 @@ news_event = {
 	picture = GFX_covid1
 	major = yes
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			RUS = {
+				country_event = {
+					id = Coronavirus.1
+					days = 31
+				}
+			}
+			UKR = {
+				country_event = {
+					id = Coronavirus.1
+					days = 63
+				}				
+			}
+	    }
+	}
 	option = { name = world_events.14.a }
 }
 

@@ -1,28 +1,54 @@
-LPR_cancel_state_of_emergency = {
 
-	icon = generic_political_resolution
+LPR_politicy_category = {
 
-	allowed = {
-		always = yes
+    LPR_cancel_state_of_emergency = {
+
+	    icon = generic_political_resolution
+
+	    allowed = {
+		    always = yes
+	    }
+
+	    visible = {
+		    has_idea = LPR_introduction_of_a_state_of_emergency
+	    }
+
+	    available = {
+		    political_power > 100
+	    }
+
+	    click_effect = {
+		    add_political_power = -150
+		    remove_ideas = LPR_introduction_of_a_state_of_emergency
+		    add_stability = 0.05 
+	    }
+
+	    fire_only_once = yes
+
+	    ai_will_do = {
+		    factor = 1
+	    }
+    }
+
+	LPR_referendum = {
+		icon = GFX_decision_icon_of_elections
+		is_good = no
+		selectable_mission = no
+		fire_only_once = yes
+		days_mission_timeout = 14
+		available = {
+			NOT = {
+				
+			}
+		}
+		activation = {
+			tag = LPR
+			
+		}
+		timeout_effect = {
+
+		}
 	}
 
-	visible = {
-		has_idea = LPR_introduction_of_a_state_of_emergency
-	}
-
-	available = {
-		political_power > 100
-	}
-
-	click_effect = {
-		add_political_power = -150
-		remove_ideas = LPR_introduction_of_a_state_of_emergency
-		add_stability = 0.05 
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 1
-	}
 }
+
