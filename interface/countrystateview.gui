@@ -45,11 +45,11 @@ guiTypes = {
 						
 			instantTextboxType = {
 				name = "state_name"
-				position = { x = 1 y = 9 }
+				position = { x = 1 y = 9 } #df
 				textureFile = ""
 				font = "hoi_36header"
 				text = "STATE_NAME_TEST"
-				maxWidth = 430
+				maxWidth = 430 #df
 				maxHeight = 30
 				format = center
 			}
@@ -60,7 +60,7 @@ guiTypes = {
 				size = { width = 480 height = 105 }
 				format = "UPPER_LEFT"
 				slotsize = { width = 60 height = 52 }
-				max_slots_horizontal = 9
+				max_slots_horizontal = 9 #df
 			}
 			
 			instantTextboxType = {
@@ -103,9 +103,9 @@ guiTypes = {
 				position = { x = 150 y = 170 }
 				size = { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
-				slotsize = { width = 60 height = 40 }
-				max_slots_horizontal = 7
-				max_slots_vertical = 6
+				slotsize = { width = 60 height = 40 } #df
+				max_slots_horizontal = 7 #df
+				max_slots_vertical = 6 #df
 			}
 
 			iconType ={
@@ -190,8 +190,8 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "state_resources"
-				position = { x= 26 y=301}
-				size = { width=135 height=99 }
+				position = { x= 26 y=301} #df
+				size = { width=135 height=99 } #df
 				
 				
 				background = {
@@ -201,26 +201,25 @@ guiTypes = {
 			
 				gridBoxType = {
 					name = "state_resources_entries"
-					position = { x = -42 y = -2 }
-					size = { width = 132 height = 60 }
+					position = { x = -42 y = -2 } #df
+					size = { width = 132 height = 60 } #df
 					format = "UPPER_LEFT"
-					slotsize = { width = 50 height = 31 }
+					slotsize = { width = 50 height = 31 } #df
 					max_slots_horizontal = 2
-					max_slots_vertical = 3
-					
+					max_slots_vertical = 3 #df
 				}
 			}
 			
 			iconType ={
 				name ="population_icon"
 				spriteType = "GFX_population_icon"
-				position = { x = 20 y = 159 }
+				position = { x = 20 y = 159 } #df
 				Orientation = "UPPER_LEFT"
 			}
 			
 			instantTextboxType = {
 				name = "manpower"
-				position = { x = 60 y = 169 }
+				position = { x = 60 y = 169 } #df
 				textureFile = ""
 				font = "hoi_18mbs"
 				maxWidth = 80
@@ -230,7 +229,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "resistance_container"
-				position = { x = 20 y = 196}	
+				position = { x = 20 y = 196}	#df
 				size = { width = 519 height = 100 }
 				
 				iconType ={
@@ -247,17 +246,17 @@ guiTypes = {
 				iconType ={
 					name ="state_compliance_icon"
 					spriteType = "GFX_compliance_icon"
-					position = { x = 0 y = 37 }
+					position = { x = 0 y = 37 } #df
 				}
 				
 				positionType = {
 					name = "compliance_status_pos"
-					position = { x = 36 y = 38 }
+					position = { x = 36 y = 38 } #df
 				}
 				
 				containerWindowType = {
 					name = "law_and_template_container"
-					position = { x = 0 y = 0}	
+					position = { x = 0 y = 0}	#df
 					size = { width = 0 height = 0 }
 
 					buttonType = {
@@ -381,7 +380,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "state_modifiers"
 				text = "STATE_MODIFIERS"
-				position = { x = 3 y= -83 }
+				position = { x = 3 y= -83 } #df
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 30
@@ -455,7 +454,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close_button"
-			position = { x = -11 y = 12 }
+			position = { x = -11 y = 12 } #df
 			quadTextureSprite ="GFX_closebutton_small"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -466,7 +465,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "scorched_earth_state_button"
-			position = { x = -17 y = 417 }
+			position = { x = -17 y = 417 } #df
 			quadTextureSprite ="GFX_scorched_earth_state"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
