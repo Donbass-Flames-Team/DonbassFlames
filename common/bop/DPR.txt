@@ -1,11 +1,11 @@
-LPR_centralization_bop = {
+DPR_centralization_bop = {
 	initial_value = 1
-	left_side = LPR_cossack_autonomy 
-	right_side = LPR_vertical_power
-	decision_category = LPR_centralization_power_balance_decisions
+	left_side = DPR_ideological_radicals
+	right_side = DPR_bandits
+	decision_category = DPR_centralization_power_balance_decisions
 
 	range = { #Balanced Range, neither Councils nor Cantons
-		id = LPR_centralization_bop_balanced 
+		id = DPR_centralization_bop_balanced 
 		min = -0.05
 		max = 0.05
 		modifier = {
@@ -15,11 +15,11 @@ LPR_centralization_bop = {
 	}
 
 	side = {
-		id = LPR_cossack_autonomy_bop_fully
+		id = DPR_ideological_radicals_bop
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		
 		range = {
-			id = LPR_cossack_autonomy_bop_small_power
+			id = DPR_ideological_radicals_bop_small_power
 			min = 0.05
 			max = 0.35
 			modifier = {
@@ -34,7 +34,7 @@ LPR_centralization_bop = {
 		}
 
 		range = {
-			id = LPR_cossack_autonomy_bop_medium_power
+			id = DPR_ideological_radicals_bop_medium_power
 			min = 0.35
 			max = 0.85
 			modifier = {
@@ -49,7 +49,7 @@ LPR_centralization_bop = {
 		}		
 
 		range = {
-			id = LPR_cossack_autonomy_bop_strong_power
+			id = DPR_ideological_radicals_bop_strong_power
 			min = 0.85
 			max = 1
 			modifier = {
@@ -65,11 +65,11 @@ LPR_centralization_bop = {
 	}
 
 	side = {
-		id = LPR_vertical_power_bop
+		id = DPR_bandits_bop
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		
 		range = {
-			id = LPR_vertical_power_bop_small_power
+			id = DPR_bandits_bop_small_power
 			min = -0.05
 			max = -0.35
 			modifier = {
@@ -84,7 +84,7 @@ LPR_centralization_bop = {
 		}
 
 		range = {
-			id = LPR_vertical_power_bop_medium_power
+			id = DPR_bandits_bop_medium_power
 			min = -0.35
 			max = -0.85
 			modifier = {
@@ -99,7 +99,7 @@ LPR_centralization_bop = {
 		}		
 
 		range = {
-			id = LPR_vertical_power_bop_strong_power
+			id = LDPR_bandits_bop_strong_power
 			min = -0.85
 			max = -1
 			modifier = {

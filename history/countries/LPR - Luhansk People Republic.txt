@@ -41,7 +41,9 @@ recruit_character = valeryy_bolotov
 
 	set_power_balance = {
         id = LPR_centralization_bop
-        set_default = yes
+        left_side = LPR_cossack_autonomy_bop_fully
+        right_side = LPR_vertical_power_bop
+        set_value = 0.1
     }
 
 	add_equipment_to_stockpile = {
