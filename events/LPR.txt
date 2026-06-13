@@ -141,3 +141,33 @@ country_event = {
                 add_political_power = -5
 	}
 }
+
+#проблемы с энергетикой/ее зависимость, ивент
+country_event = {
+	id = LPR.8
+	title = LPR.8.t
+	desc = LPR.8.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.8.a
+                add_political_power = -5
+	}
+}
+
+#Проблемы с социалкой/здравоохранением,ивент
+country_event = {
+	id = LPR.9
+	title = LPR.9.t
+	desc = LPR.9.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.9.a
+                add_political_power = -5
+	}
+}

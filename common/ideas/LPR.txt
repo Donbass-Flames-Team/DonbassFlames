@@ -180,7 +180,7 @@ ideas = {
 			
 			modifier = {
                             autoritarian_democracy_drift = 0.02
-                                  stability_factor = 0.10
+                                  stability_factor = 0.05
                                   political_power_factor = 0.15
 			}
 		}
@@ -200,7 +200,7 @@ ideas = {
 			
 			modifier = {
                             industrial_capacity_factory = -0.05
-                                  stability_factor = -0.10
+                                  stability_factor = -0.1
                                   political_power_factor = 0.1
 			}
 		}
@@ -368,5 +368,164 @@ ideas = {
 			modifier = {
                             consumer_goods_factor = -0.05
                                   political_power_gain = 0.05 
+			}
+		}
+
+		LPR_dependent_electric_power = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+                            consumer_goods_factor = 0.3
+                                  political_power_gain = -0.2
+                                  stability_factor = -0.2
+			}
+		}
+
+		LPR_dependent_electric_power_1 = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+                            consumer_goods_factor = 0.25
+                                  political_power_gain = -0.16
+                                  stability_factor = -0.16
+			}
+		}
+
+		LPR_dependent_electric_power_2 = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+                            consumer_goods_factor = 0.2
+                                  political_power_gain = -0.12
+                                  stability_factor = -0.12
+			}
+		}
+
+		LPR_dependent_electric_power_3 = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+                            consumer_goods_factor = 0.15
+                                  political_power_gain = -0.08
+                                  stability_factor = -0.08
+			}
+		}
+
+		LPR_dependent_electric_power_4 = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+                            consumer_goods_factor = 0.1
+                                  political_power_gain = -0.04
+                                  stability_factor = -0.04
+			}
+		}
+
+		LPR_support_for_displaced_persons = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+                            consumer_goods_factor = 0.05
+                                  political_power_gain = -0.02
+                                  stability_weekly = 0.002
+			}
+		}
+
+		LPR_rapid_response_units = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+                            consumer_goods_factor = 0.02
+                                  stability_factor = 0.05
+			}
+		}
+
+		LPR_aid_from_russia = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			picture = GFX_idea_LPR_eastern_intervention
+			
+			modifier = {
+                            political_power_factor = 0.1
+                                  war_support_weekly = 0.003
+                                  monthly_population = 0.35
 			}
 		}
