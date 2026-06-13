@@ -110,11 +110,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year2"
-					position = { x = 130 y = 50 }
+					position = { x = 140 y = 50 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1918"
+					text = "1960"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -123,11 +123,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year3"
-					position = { x = 270 y = 50 }
+					position = { x = 350 y = 50 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1936"
+					text = "1970"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -136,10 +136,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year5"
-					position = { x = 410 y = 50 }
+					position = { x = 560 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1938"
+					text = "1980"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -148,10 +148,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year6"
-					position = { x = 550 y = 50 }
+					position = { x = 770 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1939"
+					text = "1990"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -160,10 +160,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year7"
-					position = { x = 690 y = 50 }
+					position = { x = 980 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1940"
+					text = "2000"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -172,10 +172,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year8"
-					position = { x = 830 y = 50 }
+					position = { x = 1190 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1941"
+					text = "2010"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -184,10 +184,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year9"
-					position = { x = 970 y = 50 }
+					position = { x = 1400 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1942"
+					text = "2015"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -196,10 +196,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year10"
-					position = { x = 1110 y = 50 }
+					position = { x = 1610 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1943"
+					text = "2020"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -208,10 +208,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "infantry_year11"
-					position = { x = 1250 y = 50 }
+					position = { x = 1820 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1944"
+					text = "2025"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -219,10 +219,10 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "infantry_year12"
-					position = { x = 1390 y = 50 }
+					position = { x = 2030 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1945"
+					text = "2030"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -230,10 +230,10 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "infantry_year13"
-					position = { x = 1530 y = 50 }
+					position = { x = 2240 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1946"
+					text = "2035"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -262,85 +262,84 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "infantry_weapons_tree"
-				position = { x = 140 y = 225 }
+				position = { x = 210 y = 225 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "uniform_equipment_tree"
-				position = { x = 140 y = 585 }
+				position = { x = 210 y = 585 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "atgl_weapons_tree"
-				position = { x = 140 y = 445 }
+				position = { x = 210 y = 445 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "atgm_weapons_tree"
-				position = { x = 140 y = 725 }
+				position = { x = 210 y = 725 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "manpads_weapons_tree"
-				position = { x = 140 y = 1000 }
+				position = { x = 210 y = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "mortar_weapons_tree"
-				position = { x = 140 y = 860 }
+				position = { x = 210 y = 860 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "civil_drones_tree"
-				position = { x = 140 y = 1195 }
+				position = { x = 210 y = 1195 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "tech_trucks_tree"
-				position = { x = 140 y = 1200 }
+				position = { x = 210 y = 1200 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "marines_tree"
-				position = { x = 140 y = 825 }
+				position = { x = 210 y = 825 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "tech_mountaineers_tree"
-				position = { x = 140 y = 930 }
+				position = { x = 210 y = 930 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "paratroopers_tree"
-				position = { x = 140 y = 1035 }
+				position = { x = 210 y = 1035 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
-
 			gridboxtype = {
 				name = "tech_special_forces_tree"
-				position = { x = 140 y = 1140 }
+				position = { x = 210 y = 1140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
