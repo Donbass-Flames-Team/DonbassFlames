@@ -573,6 +573,30 @@ focus_tree = {
 			base = 1
 		}
 	}
+	
+	focus = {
+		id = LPR_social_tension
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 3
+		y = 8
+		cost = 0
+		prerequisite = { focus = LPR_start_solving_the_republics_problems }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_social_tension"
+			country_event = {
+				id = LPR.6
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
 
 	focus = {
 		id = LPR_social_tension

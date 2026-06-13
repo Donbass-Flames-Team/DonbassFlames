@@ -43,7 +43,7 @@ country_event = {
 	option = {
 		name = LPR.2.a
 		add_war_support = 0.05
-                add_stability = 0.1
+        add_stability = 0.1
 		add_political_power = 30
 	}
 }
@@ -59,7 +59,7 @@ country_event = {
 	
 	option = {
 		name = LPR.3.a
-                add_stability = -0.02
+        add_stability = -0.02
 	}
 }
 
@@ -74,8 +74,8 @@ country_event = {
 	
 	option = {
 		name = LPR.4.a
-                add_support_war = 0.03
-                add_political_power = 10
+        add_support_war = 0.03
+        add_political_power = 10
 	}
 }
 
@@ -105,7 +105,7 @@ country_event = {
         add_political_power = 120
 
         add_popularity = {
-            ideology = autoritarian_democracy # Проверьте написание: в английском обычно authoritaran (с буквой 'h')
+            ideology = autoritarian_democracy
             popularity = 0.15
         } 
         add_ideas = LPR_peoples_mandate
@@ -123,7 +123,7 @@ country_event = {
 	
 	option = {
 		name = LPR.6.a
-                add_political_power = -5
+        add_political_power = -5
 	}
 }
 
@@ -138,7 +138,7 @@ country_event = {
 	
 	option = {
 		name = LPR.7.a
-                add_political_power = -5
+        add_political_power = -5
 	}
 }
 
@@ -153,7 +153,7 @@ country_event = {
 	
 	option = {
 		name = LPR.8.a
-                add_political_power = -5
+        add_political_power = -5
 	}
 }
 
@@ -168,6 +168,67 @@ country_event = {
 	
 	option = {
 		name = LPR.9.a
-                add_political_power = -5
+        add_political_power = -5
+	}
+}
+
+#Укранафта перестает поставлять газ в лнр
+country_event = {
+	id = LPR.10
+	title = LPR.10.t
+	desc = LPR.10.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.10.a
+        add_political_power = -5
+	}
+}
+
+#США вводят санкции на нас (16 июля 2014)
+country_event = {
+	id = LPR.11
+	title = LPR.11.t
+	desc = LPR.11.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.11.a
+        add_political_power = -5
+	}
+}
+
+#Южная Оссетия признает ЛНР (27 июня 2014)
+country_event = {
+	id = LPR.12
+	title = LPR.12.t
+	desc = LPR.12.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.12.a
+        add_stability = 0.02
+		add_political_power = 25
+	}
+}
+
+#учредительное собрание общественной организации «Луганский экономический союз» (7 октября 2014 года)
+country_event = {
+	id = LPR.13
+	title = LPR.13.t
+	desc = LPR.13.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.13.a
+		add_political_power = 4
 	}
 }
