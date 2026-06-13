@@ -21,7 +21,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.05
-			add_stability = 0.05
+			add_stability = 0.025
 			add_political_power = 35
 			add_command_power = 10
 			add_equipment_to_stockpile = { 
@@ -292,7 +292,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_act_on_sovereignty"
 			add_state_core = 340
-			add_stability = 0.05
+			add_stability = 0.025
 			add_political_power = 40
 		}
 
@@ -518,6 +518,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_peoples_court_of_novorossiya"
 			add_political_power = -50
 			add_ideas = LPR_harsh_courts
+                        add_stability = -0.05
 			
 			country_event = {
 				id = LPR.4
@@ -566,6 +567,30 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_start_solving_the_republics_problems"
 			add_political_power = -20
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+	focus = {
+		id = LPR_social_tension
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 3
+		y = 8
+		cost = 0
+		prerequisite = { focus = LPR_start_solving_the_republics_problems }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_social_tension"
+			country_event = {
+				id = LPR.6
+			}
 		}
 
 		ai_will_do = {
@@ -922,6 +947,381 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_get_enterprises_back_online"
 			remove_ideas = LPR_partially_destroyed_factories
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_restoring_other_tec
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 36
+		y = 11
+		cost = 8
+		prerequisite = { focus = LPR_start_restoring_power_supply }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_restoring_other_tec"
+			add_stability = 0.025
+			add_political_power = -15
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_shattered_electric_power
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 34
+		y = 8
+		cost = 0
+		prerequisite = { focus = LPR_start_solving_the_republics_problems }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_shattered_electric_power"
+			country_event = {
+				id = LPR.8
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_start_restoring_power_supply
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 34
+		y = 10
+		cost = 5
+		prerequisite = { focus = LPR_shattered_electric_power }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_start_restoring_power_supply"
+			swap_ideas = {
+				remove_idea = LPR_partially_destroyed_factories
+				add_idea = LPR_partially_destroyed_factories_1
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_restore_luhansk_tec
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 34
+		y = 11
+		cost = 4
+		prerequisite = { focus = LPR_start_restoring_power_supply }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_restore_luhansk_tec"
+			swap_ideas = {
+				remove_idea = LPR_partially_destroyed_factories_1
+				add_idea = LPR_partially_destroyed_factories_2
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_connect_to_shchastynska_tec
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 34
+		y = 12
+		cost = 4
+		prerequisite = { focus = LPR_restore_luhansk_tec }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_connect_to_shchastynska_tec"
+			swap_ideas = {
+				remove_idea = LPR_partially_destroyed_factories_2
+				add_idea = LPR_partially_destroyed_factories_3
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_energy_independence_from_ukr
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 34
+		y = 13
+		cost = 10
+		prerequisite = { focus = LPR_connect_to_shchastynska_tec }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_energy_independence_from_ukr"
+			remove_ideas = LPR_partially_destroyed_factories_3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_humanitarian_catastrophe
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 28
+		y = 8
+		cost = 0
+		prerequisite = { focus = LPR_start_solving_the_republics_problems }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_humanitarian_catastrophe"
+			country_event = {
+				id = LPR.9
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_rapid_response_units
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 31
+		y = 9
+		cost = 2
+		prerequisite = { focus = LPR_shattered_electric_power }
+		prerequisite = { focus = LPR_humanitarian_catastrophe }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_rapid_response_units"
+			add_ideas = LPR_rapid_response_units
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_restoration_of_social_infrastructure
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 30
+		y = 10
+		cost = 10
+		prerequisite = { focus = LPR_humanitarian_catastrophe }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_restoration_of_social_infrastructure"
+			add_ideas = veteran_benefits
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_supplying_social_facilities
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 29
+		y = 11
+		cost = 10
+		prerequisite = { focus = LPR_restoration_of_social_infrastructure }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_supplying_social_facilities"
+			add_ideas = old_age_benefits
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_support_for_displaced_persons
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 31
+		y = 11
+		cost = 10
+		prerequisite = { focus = LPR_restoration_of_social_infrastructure }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_support_for_displaced_persons"
+			add_timed_idea = {
+				idea = LPR_support_for_displaced_persons
+				days = 120
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_humanitarian_aid
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 26
+		y = 10
+		cost = 10
+		prerequisite = { focus = LPR_humanitarian_catastrophe }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_humanitarian_aid"
+			add_political_power = -20
+			add_stability = 0.05
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_engaging_international_aid
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 27
+		y = 11
+		cost = 10
+		prerequisite = { focus = LPR_humanitarian_aid }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_engaging_international_aid"
+			add_ideas = free_emergencies_only
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_aid_from_russia
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 25
+		y = 11
+		cost = 10
+		prerequisite = { focus = LPR_humanitarian_aid }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_aid_from_russia"
+			add_timed_idea = {
+				idea = LPR_aid_from_russia
+				days = 80
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_accept_aid_from_private_funds
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 28
+		y = 12
+		cost = 10
+		prerequisite = { focus = LPR_engaging_international_aid }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_accept_aid_from_private_funds"
+			add_stability = 0.025
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_fair_aid_distribution
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 26
+		y = 13
+		cost = 10
+		prerequisite = { focus = LPR_engaging_international_aid }
+		prerequisite = { focus = LPR_aid_from_russia }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_fair_aid_distribution"
+			add_ideas = free_checkups
 		}
 
 		ai_will_do = {
