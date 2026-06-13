@@ -101,6 +101,7 @@ country_event = {
     option = {
         name = LPR.5.a
         add_stability = 0.15
+		mark_focus_tree_layout_dirty = yes
         complete_national_focus = LPR_referendum
         add_political_power = 120
 
