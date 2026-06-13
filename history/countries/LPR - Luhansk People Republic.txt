@@ -39,6 +39,11 @@ recruit_character = valeryy_bolotov
 		uniform_equipment2 = 1
 	}
 
+	set_power_balance = {
+        id = LPR_centralization_bop
+        set_default = yes
+    }
+
 	add_equipment_to_stockpile = {
 		type = train_equipment_1
 		amount = 36
