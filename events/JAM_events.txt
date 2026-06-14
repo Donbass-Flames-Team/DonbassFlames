@@ -1,0 +1,17 @@
+﻿add_namespace = JAM_ev
+
+country_event = {
+    id = JAM_ev.1
+    
+    hidden = yes
+    is_triggered_only = yes
+    
+    immediate = {
+        if = {
+            limit = {
+                JAM_st_should_run_daily = yes
+            }
+            JAM_se_country_daily = yes
+        }
+    }
+}

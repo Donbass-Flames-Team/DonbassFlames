@@ -1,0 +1,238 @@
+﻿l_russian:
+    JAM_txt_BLANK: ""
+    JAM_txt_JAM_feature: "§gThis is a feature of §3James's Ammunition Mod§!.§!"
+    
+    # Modifiers
+    JAM_dyn_mod_army_ammo_shortage: "Army Ammunition Shortage"
+    JAM_dyn_mod_navy_ammo_shortage: "Navy Ammunition Shortage"
+    JAM_dyn_mod_air_ammo_shortage:  "Air Ammunition Shortage"
+    
+    JAM_om_sent_ammo: "Received Ammunition"
+    
+    # Game Rules
+    JAM_inf_ammo_tech_mult:      "§YJAM§! | Tech Raises Infantry Ammo Needs"
+    JAM_army_ammo_sup_fire_mult: "§YJAM§! | Ammo Needs from Army Doctrine"
+    JAM_plr_ammo_gain_difficulty_mult: "§YJAM§! | Player Production Multiplier"
+    JAM_ai_ammo_gain_difficulty_mult:  "§YJAM§! | AI Production Multiplier"
+    
+    JAM_gr_yes_inf_ammo_tech_mult_name: "Enabled"
+    JAM_gr_yes_inf_ammo_tech_mult_desc: "The base ammunition consumption of §YInfantry§!, §YCavalry§!, §YMotorized§!, and §YMechanized§! battalions will §Oincrease§! when unlocking certain $CAREER_PROFILE_MILITARY_PRODUCTION_OTHER_LABEL$ technologies."
+    JAM_gr_no_inf_ammo_tech_mult_name:  "Disabled"
+    JAM_gr_no_inf_ammo_tech_mult_desc:  "The base ammunition consumption of §YInfantry§!, §YCavalry§!, §YMotorized§!, and §YMechanized§! battalions will §Oremain constant§! throughout the game."
+    
+    JAM_gr_yes_army_ammo_sup_fire_mult_name: "$JAM_gr_yes_inf_ammo_tech_mult_name$"
+    JAM_gr_yes_army_ammo_sup_fire_mult_desc: "The base ammunition consumption of §7Army§! battalions will be §Oincreased§! for any countries using the §O$superior_firepower$§! Army Doctrine."
+    
+    JAM_gr_no_army_ammo_sup_fire_mult_name: "$JAM_gr_no_inf_ammo_tech_mult_name$"
+    JAM_gr_no_army_ammo_sup_fire_mult_desc: "The base ammunition consumption of §7Army§! battalions will be §Oequal§! for all countries regardless of their Army Doctrine."
+    
+    JAM_gr_plr_ammo_gain_difficulty_mult_very_easy_name: "§G+20%§!"
+    JAM_gr_plr_ammo_gain_difficulty_mult_easy_name:      "§G+10%§!"
+    JAM_gr_plr_ammo_gain_difficulty_mult_normal_name:    "No Change"
+    JAM_gr_plr_ammo_gain_difficulty_mult_hard_name:      "§R-10%§!"
+    JAM_gr_plr_ammo_gain_difficulty_mult_very_hard_name: "§R-20%§!"
+    
+    JAM_gr_ai_ammo_gain_difficulty_mult_very_easy_name: "$JAM_gr_plr_ammo_gain_difficulty_mult_very_easy_name$"
+    JAM_gr_ai_ammo_gain_difficulty_mult_easy_name:      "$JAM_gr_plr_ammo_gain_difficulty_mult_easy_name$"
+    JAM_gr_ai_ammo_gain_difficulty_mult_normal_name:    "$JAM_gr_plr_ammo_gain_difficulty_mult_normal_name$"
+    JAM_gr_ai_ammo_gain_difficulty_mult_hard_name:      "$JAM_gr_plr_ammo_gain_difficulty_mult_hard_name$"
+    JAM_gr_ai_ammo_gain_difficulty_mult_very_hard_name: "$JAM_gr_plr_ammo_gain_difficulty_mult_very_hard_name$"
+    
+    JAM_txt_plr_ammo_gain_difficulty_common: "§YAll Human-Controlled Countries§!:\n   "
+    
+    JAM_gr_plr_ammo_gain_difficulty_mult_very_easy_desc: "$JAM_txt_plr_ammo_gain_difficulty_common$§G+20%§! Ammo Production"
+    JAM_gr_plr_ammo_gain_difficulty_mult_easy_desc:      "$JAM_txt_plr_ammo_gain_difficulty_common$§G+10%§! Ammo Production"
+    JAM_gr_plr_ammo_gain_difficulty_mult_normal_desc:    "Ammunition Production remains unchanged."
+    JAM_gr_plr_ammo_gain_difficulty_mult_hard_desc:      "$JAM_txt_plr_ammo_gain_difficulty_common$§R-10%§! Ammo Production"
+    JAM_gr_plr_ammo_gain_difficulty_mult_very_hard_desc: "$JAM_txt_plr_ammo_gain_difficulty_common$§R-20%§! Ammo Production"
+    
+    JAM_txt_ai_ammo_gain_difficulty_common: "§YAll AI-Controlled Countries§!:\n   "
+    
+    JAM_gr_ai_ammo_gain_difficulty_mult_very_easy_desc: "$JAM_txt_ai_ammo_gain_difficulty_common$§G+20%§! Ammo Production"
+    JAM_gr_ai_ammo_gain_difficulty_mult_easy_desc:      "$JAM_txt_ai_ammo_gain_difficulty_common$§G+10%§! Ammo Production"
+    JAM_gr_ai_ammo_gain_difficulty_mult_normal_desc:    "$JAM_gr_plr_ammo_gain_difficulty_mult_normal_desc$"
+    JAM_gr_ai_ammo_gain_difficulty_mult_hard_desc:      "$JAM_txt_ai_ammo_gain_difficulty_common$§R-10%§! Ammo Production"
+    JAM_gr_ai_ammo_gain_difficulty_mult_very_hard_desc: "$JAM_txt_ai_ammo_gain_difficulty_common$§R-20%§! Ammo Production"
+    
+    # Topbar
+    JAM_txt_ammo_status: "[JAM_sl_ammo_status]"
+    
+    JAM_txt_full:       "§GFull§!"
+    JAM_txt_p_gt_5_yrs: "§G>5.0 y§!"
+    JAM_txt_p_years:    "§G[?JAM_ammo_years_remaining|1] y§!"
+    JAM_txt_p_days:     "§G[?JAM_ammo_days_remaining|0] d§!"
+    JAM_txt_n_days:     "§R[?JAM_ammo_days_remaining|0] d§!"
+    JAM_txt_n_years:    "§R[?JAM_ammo_years_remaining|1] y§!"
+    JAM_txt_n_gt_5_yrs: "§R>5.0 y§!"
+    JAM_txt_empty:      "§REmpty§!"
+    
+    # Diplo actions
+    JAM_SEND_AMMO_TITLE: "Send Ammunition"
+    JAM_SEND_AMMO_ACTION_DESC: "We can support other countries who are at war by sending them ammunition."
+    
+    JAM_sda_send_ammo_send_desc:    "We will send §Y250K§! units of §YAmmunition§! to §Y[THIS.GetNameDef]§! assist them in their war effort."
+    JAM_sda_send_ammo_receive_desc: "[ROOT.GetNameDefCap] wants to provide us with §Y250K§! units of §YAmmunition§!."
+    
+    JAM_sda_send_ammo_accept_title: "Send Ammunition Accepted"
+    JAM_sda_send_ammo_accept_desc:  "\n§Y[THIS.GetNameDefCap]§! has §Gaccepted§! our ammunition.\n\nOur material support will help their efforts."
+    
+    JAM_sda_send_ammo_reject_title: "Send Ammunition Refused"
+    JAM_sda_send_ammo_reject_desc:  "\n§Y[THIS.GetNameDefCap]§! has §Rrefused§! our ammunition!\n\nThey will not have our material support."
+    
+    JAM_sda_send_ammo_tt_has_enough: "Has more than §Y250K§! units of Ammunition"
+    
+    JAM_sda_send_ammo_base: "The help is welcome"
+    JAM_sda_send_ammo_full: "[JAM_sl_sda_send_ammo_full]"
+    
+    JAM_sda_send_ammo_full_p: "Has space for additional ammunition"
+    JAM_sda_send_ammo_full_n: "Has no extra ammunition storage space"
+    
+    # Decisions
+    JAM_dccat_ammo_priorities: "Ammunition Prioritization"
+    
+    JAM_dc_show_ammo_decisions: "Show Ammunition Prioritization Decisions"
+    JAM_dc_hide_ammo_decisions: "Hide Ammunition Prioritization Decisions"
+    
+    JAM_txt_high_prio: "§GHigh§!"
+    JAM_txt_med_prio:  "§YMedium§!"
+    JAM_txt_low_prio:  "§RLow§!"
+    
+    JAM_txt_army_colored: "§7Army§!"
+    JAM_txt_navy_colored: "§4Navy§!"
+    JAM_txt_air_colored:  "§9Air§!"
+    
+    JAM_dc_set_army_ammo_high: "$JAM_txt_army_colored$ §g— §! $JAM_txt_high_prio$ Ammo Priority"
+    JAM_dc_set_army_ammo_med:  "$JAM_txt_army_colored$ §g— §! $JAM_txt_med_prio$ Ammo Priority"
+    JAM_dc_set_army_ammo_low:  "$JAM_txt_army_colored$ §g— §! $JAM_txt_low_prio$ Ammo Priority"
+    
+    JAM_dc_set_navy_ammo_high: "$JAM_txt_navy_colored$ §g— §! $JAM_txt_high_prio$ Ammo Priority"
+    JAM_dc_set_navy_ammo_med:  "$JAM_txt_navy_colored$ §g— §! $JAM_txt_med_prio$ Ammo Priority"
+    JAM_dc_set_navy_ammo_low:  "$JAM_txt_navy_colored$ §g— §! $JAM_txt_low_prio$ Ammo Priority"
+    
+    JAM_dc_set_air_ammo_high: "$JAM_txt_air_colored$ §g— §! $JAM_txt_high_prio$ Ammo Priority"
+    JAM_dc_set_air_ammo_med:  "$JAM_txt_air_colored$ §g— §! $JAM_txt_med_prio$ Ammo Priority"
+    JAM_dc_set_air_ammo_low:  "$JAM_txt_air_colored$ §g— §! $JAM_txt_low_prio$ Ammo Priority"
+    
+    JAM_dccat_army_header: "$JAM_txt_army_colored$ §g— §! [JAM_sl_army_priority]"
+    JAM_dccat_navy_header: "$JAM_txt_navy_colored$ §g— §! [JAM_sl_navy_priority]"
+    JAM_dccat_air_header:  "$JAM_txt_air_colored$ §g— §! [JAM_sl_air_priority]"
+    
+    JAM_dccat_ammo_priorities_desc: "$JAM_dccat_army_header$\n$JAM_tt_army_demand_now$\n$JAM_tt_army_demand_bkdn$\n$JAM_tt_army_demand_max$\n\n$JAM_dccat_navy_header$\n$JAM_tt_navy_demand_now$\n$JAM_tt_navy_demand_max$\n\n$JAM_dccat_air_header$\n$JAM_tt_air_demand_now$\n$JAM_tt_air_demand_max$"
+    
+    # Ammo Tooltip
+    JAM_tt_header: "§HAmmunition§!"
+    
+    JAM_tt_current_ammo:   "Current Ammunition: §Y[JAM_sl_ammo_stockpile]§!"
+    JAM_tt_gain_breakdown: "Daily Gain: §Y[JAM_sl_ammo_produced]§!\n  From £mil_factory  $arms_factory_plural$: §Y[JAM_sl_ammo_gain_busy]§!"
+    JAM_tt_capacity:       "Ammunition Capacity: §Y[JAM_sl_ammo_capacity]§!"
+    
+    JAM_tt_demand_now: "Current Daily Consumption: §Y[JAM_sl_total_ammo_demand_now]§!"
+    JAM_tt_demand_max: "Maximum Daily Consumption: §Y[JAM_sl_total_ammo_demand_max]§!"
+    
+    JAM_tt_army_header:      "§HArmy§!"
+    JAM_tt_army_demand_now:  "  Current consumption: §Y[JAM_sl_army_ammo_demand_now]§!/day [JAM_sl_army_shortage_text]"
+    JAM_tt_army_demand_bkdn: "[JAM_sl_tt_leaderless]    Consumption by defending units: §Y[JAM_sl_army_ammo_demand_defending]§!/day\n    Consumption by attacking units: §Y[JAM_sl_army_ammo_demand_attacking]§!/day"
+    JAM_tt_army_demand_max:  "  Maximum consumption: §Y[JAM_sl_army_ammo_demand_max]§!/day"
+    JAM_tt_leaderless_txt:   "    Consumption by §Rleaderless§! units: §Y[JAM_sl_army_ammo_demand_leaderless]§!/day\n"
+    
+    JAM_tt_navy_header:     "§HNavy§!"
+    JAM_tt_navy_demand_now: "  Current consumption: §Y[JAM_sl_navy_ammo_demand_now]§!/day [JAM_sl_navy_shortage_text]"
+    JAM_tt_navy_demand_max: "  Maximum consumption: §Y[JAM_sl_navy_ammo_demand_max]§!/day"
+    
+    JAM_tt_air_header:     "§HAir§!"
+    JAM_tt_air_demand_now: "  Current consumption: §Y[JAM_sl_air_ammo_demand_now]§!/day [JAM_sl_air_shortage_text]"
+    JAM_tt_air_demand_max: "  Maximum consumption: §Y[JAM_sl_air_ammo_demand_max]§!/day"
+    
+    JAM_tt_army_shortage_received: "§R(received: [JAM_sl_army_received]/day)§!"
+    JAM_tt_navy_shortage_received: "§R(received: [JAM_sl_navy_received]/day)§!"
+    JAM_tt_air_shortage_received:  "§R(received: [JAM_sl_air_received]/day)§!"
+    
+    JAM_tt_stockpile_cap:  "§HAmmunition Stockpile Capacity: [JAM_sl_ammo_capacity]§!"
+    JAM_tt_stockpile_base: "Base: §Y250.0K§!" # Keep up to date with @JAM_base_ammo_capacity in JAM_calculations.txt
+    JAM_tt_stockpile_infr: "In states: §Y[JAM_sl_ammo_cap_infra]§!"
+    
+    JAM_tt_time_full:       "§GStockpile is full.§!"
+    JAM_tt_time_p_gt_5_yrs: "§G>5.0 years§!"
+    JAM_tt_time_p_years:    "§G[?JAM_ammo_years_remaining|1] years§!"
+    JAM_tt_time_p_months:   "§G[?JAM_ammo_months_remaining|1] months§!"
+    JAM_tt_time_p_days:     "§G[?JAM_ammo_days_remaining|0] days§!"
+    JAM_tt_time_n_days:     "§R[?JAM_ammo_days_remaining|0] days§!"
+    JAM_tt_time_n_months:   "§R[?JAM_ammo_months_remaining|1] months§!"
+    JAM_tt_time_n_years:    "§R[?JAM_ammo_years_remaining|1] years§!"
+    JAM_tt_time_n_gt_5_yrs: "§R>5.0 years§!"
+    JAM_tt_time_empty:      "§RStockpile is empty.§!"
+    
+    JAM_tt_time_inc: "With current production rates, you will fill your ammunition capacity in [JAM_sl_time_remaining_duration]"
+    JAM_tt_time_dec: "With current consumption rates, you will be out of ammunition in [JAM_sl_time_remaining_duration]"
+    
+    JAM_tt_army_penalty_warning: "\n  §RA shortage of ammunition is impacting the army's combat performance by [?JAM_army_penalty|%1+]§!"
+    JAM_tt_navy_penalty_warning: "\n  §RA shortage of ammunition is impacting the navy's combat performance by [?JAM_navy_penalty|%1+]§!"
+    JAM_tt_air_penalty_warning:  "\n  §RA shortage of ammunition is impacting the air forces' combat performance by [?JAM_air_penalty|%1+]§!"
+    
+    JAM_tt_ammo_stats:     "[JAM_sl_tt_stats_bypass]"
+    JAM_tt_ammo_stats_raw: "$JAM_tt_header$\n\n$JAM_tt_current_ammo$\n$JAM_tt_gain_breakdown$\n$JAM_tt_capacity$\n\n$JAM_tt_demand_now$\n$JAM_tt_demand_max$\n\n$JAM_tt_army_header$\n$JAM_tt_army_demand_now$\n$JAM_tt_army_demand_bkdn$\n$JAM_tt_army_demand_max$[JAM_sl_army_penalty_text]\n\n$JAM_tt_air_header$\n$JAM_tt_air_demand_now$\n$JAM_tt_air_demand_max$[JAM_sl_air_penalty_text]\n\n$JAM_tt_navy_header$\n$JAM_tt_navy_demand_now$\n$JAM_tt_navy_demand_max$[JAM_sl_navy_penalty_text]\n\n$JAM_tt_stockpile_cap$\n$JAM_tt_stockpile_base$\n$JAM_tt_stockpile_infr$\n\n[JAM_sl_time_remaining_body]"
+    
+    JAM_tt_ammo_desc:     "[JAM_sl_tt_desc_bypass]"
+    JAM_tt_ammo_desc_raw: "§YAmmunition§! is produced by your country's $arms_factory_plural$. All §Yundamaged§! $arms_factory_plural$ contribute to the production of §YAmmunition§!, but ones that are not assigned to a production line will produce extra. The amount of §YAmmunition§! produced per factory can be increased by increasing §Y$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$§! in your country, typically through §Y$industry$ research§!.\n\nEach country has a maximum capacity for §YAmmunition§! which can be increased by upgrading §Y$infrastructure$§! in the states it owns or controls.\n\n§YAmmunition§! is used by the army when in combat. Attacking will consume extra §YAmmunition§!. Army units without a $rank3$ will passively lose §YAmmunition§!.\n\nDuring times of war, §YAmmunition§! is also consumed by deployed air wings and naval units that are not docked.\n\n$JAM_txt_JAM_feature$"
+    
+    # Numbers
+    # I miss Vic3 loc functions :(
+    JAM_txt_ammo_produced_K: "[?JAM_ammo_produced|1]K"
+    JAM_txt_ammo_produced_M: "[?JAM_ammo_produced_M|1]M"
+    
+    JAM_txt_ammo_stockpile_K: "[?JAM_ammo_stockpile|1]K"
+    JAM_txt_ammo_stockpile_M: "[?JAM_ammo_stockpile_M|1]M"
+    
+    JAM_txt_ammo_gain_busy_K: "[?JAM_ammo_gain_busy|1]K"
+    JAM_txt_ammo_gain_busy_M: "[?JAM_ammo_gain_busy_M|1]M"
+    
+    JAM_txt_ammo_gain_idle_K: "[?JAM_ammo_gain_idle|1]K"
+    JAM_txt_ammo_gain_idle_M: "[?JAM_ammo_gain_idle_M|1]M"
+    
+    JAM_txt_ammo_capacity_K: "[?JAM_ammo_capacity|1]K"
+    JAM_txt_ammo_capacity_M: "[?JAM_ammo_capacity_M|1]M"
+    
+    JAM_txt_total_ammo_demand_now_K: "[?JAM_total_ammo_demand_now|1]K"
+    JAM_txt_total_ammo_demand_now_M: "[?JAM_total_ammo_demand_now_M|1]M"
+    
+    JAM_txt_total_ammo_demand_max_K: "[?JAM_total_ammo_demand_max|1]K"
+    JAM_txt_total_ammo_demand_max_M: "[?JAM_total_ammo_demand_max_M|1]M"
+    
+    JAM_txt_army_ammo_demand_now_K: "[?JAM_army_ammo_demand_now|1]K"
+    JAM_txt_army_ammo_demand_now_M: "[?JAM_army_ammo_demand_now_M|1]M"
+    
+    JAM_txt_army_ammo_demand_max_K: "[?JAM_army_ammo_demand_max|1]K"
+    JAM_txt_army_ammo_demand_max_M: "[?JAM_army_ammo_demand_max_M|1]M"
+    
+    JAM_txt_army_ammo_demand_leaderless_K: "[?JAM_army_ammo_demand_leaderless|1]K"
+    JAM_txt_army_ammo_demand_leaderless_M: "[?JAM_army_ammo_demand_leaderless_M|1]M"
+    
+    JAM_txt_army_ammo_demand_defending_K: "[?JAM_army_ammo_demand_defending|1]K"
+    JAM_txt_army_ammo_demand_defending_M: "[?JAM_army_ammo_demand_defending_M|1]M"
+    
+    JAM_txt_army_ammo_demand_attacking_K: "[?JAM_army_ammo_demand_attacking|1]K"
+    JAM_txt_army_ammo_demand_attacking_M: "[?JAM_army_ammo_demand_attacking_M|1]M"
+    
+    JAM_txt_navy_ammo_demand_now_K: "[?JAM_navy_ammo_demand_now|1]K"
+    JAM_txt_navy_ammo_demand_now_M: "[?JAM_navy_ammo_demand_now_M|1]M"
+    
+    JAM_txt_navy_ammo_demand_max_K: "[?JAM_navy_ammo_demand_max|1]K"
+    JAM_txt_navy_ammo_demand_max_M: "[?JAM_navy_ammo_demand_max_M|1]M"
+    
+    JAM_txt_air_ammo_demand_now_K: "[?JAM_air_ammo_demand_now|1]K"
+    JAM_txt_air_ammo_demand_now_M: "[?JAM_air_ammo_demand_now_M|1]M"
+    
+    JAM_txt_air_ammo_demand_max_K: "[?JAM_air_ammo_demand_max|1]K"
+    JAM_txt_air_ammo_demand_max_M: "[?JAM_air_ammo_demand_max_M|1]M"
+    
+    JAM_txt_ammo_cap_infra_K: "[?JAM_ammo_cap_infra|1]K"
+    JAM_txt_ammo_cap_infra_M: "[?JAM_ammo_cap_infra_M|1]M"
+    
+    JAM_txt_army_received_K: "[?JAM_army_received|1]K"
+    JAM_txt_army_received_M: "[?JAM_army_received_M|1]M"
+    
+    JAM_txt_navy_received_K: "[?JAM_navy_received|1]K"
+    JAM_txt_navy_received_M: "[?JAM_navy_received_M|1]M"
+    
+    JAM_txt_air_received_K: "[?JAM_air_received|1]K"
+    JAM_txt_air_received_M: "[?JAM_air_received_M|1]M"

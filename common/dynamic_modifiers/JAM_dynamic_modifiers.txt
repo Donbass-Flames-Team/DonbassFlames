@@ -1,0 +1,47 @@
+JAM_dyn_mod_army_ammo_shortage = {
+    icon = GFX_JAM_ammo_shortage_army
+    
+    enable = {
+        always = yes
+    }
+    
+    army_attack_factor  = JAM_army_penalty
+	army_defence_factor	= JAM_army_penalty
+	ai_focus_aggressive_factor = JAM_army_penalty
+}
+
+JAM_dyn_mod_navy_ammo_shortage = {
+    icon = GFX_JAM_ammo_shortage_navy
+    
+    enable = {
+        always = yes
+    }
+    
+    navy_screen_attack_factor        = JAM_navy_penalty
+    navy_screen_defence_factor       = JAM_navy_penalty
+    navy_anti_air_attack_factor      = JAM_navy_penalty
+    navy_submarine_attack_factor     = JAM_navy_penalty
+    navy_submarine_defence_factor    = JAM_navy_penalty
+    navy_capital_ship_attack_factor  = JAM_navy_penalty
+    navy_capital_ship_defence_factor = JAM_navy_penalty
+}
+
+JAM_dyn_mod_air_ammo_shortage = {
+    icon = GFX_JAM_ammo_shortage_air
+    
+    enable = {
+        always = yes
+    }
+    
+    air_attack_factor                   = JAM_air_penalty
+    air_defence_factor                  = JAM_air_penalty
+    air_nav_efficiency                  = JAM_air_penalty
+    air_cas_efficiency                  = JAM_air_penalty
+    air_escort_efficiency               = JAM_air_penalty
+    air_bombing_targetting              = JAM_air_penalty
+    air_intercept_efficiency            = JAM_air_penalty
+    air_superiority_efficiency          = JAM_air_penalty
+    air_power_projection_factor         = JAM_air_penalty
+    army_bonus_air_superiority_factor   = JAM_air_penalty
+    air_strategic_bomber_bombing_factor = JAM_air_penalty
+}

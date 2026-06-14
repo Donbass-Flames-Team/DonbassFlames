@@ -1,0 +1,19 @@
+d_ammo = {
+    set_temp_variable = {
+        ammo = args^0
+    }
+    divide_temp_variable = {
+        ammo = 1000
+    }
+    add_to_variable = {
+        JAM_ammo_stockpile = ammo
+    }
+    clamp_variable = {
+        var = JAM_ammo_stockpile
+        min = 0
+    }
+    
+    JAM_se_country_refresh = yes
+    
+    log = "Added [?args^0] ammunition to the stockpile - new total is [JAM_sl_ammo_stockpile]"
+}

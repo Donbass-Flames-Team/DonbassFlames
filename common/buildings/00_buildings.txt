@@ -142,20 +142,22 @@ buildings = {
 		}
 
 		show_modifier = yes
-		daily_ammunition_gain = 500
 	}	
 
-	ammunition_silo = {
+	ammunition_depot = {
 		show_on_map = 6
 		base_cost = 5800
 		icon_frame = 38
 		#max_level = 1
 		shares_slots = yes
-		value = 5
+		value = 6
+		level_cap = {
+			shares_slots = yes
+			state_max = 8
+		}
 		infrastructure_construction_effect = yes
 		
 		show_modifier = yes
-		ammunition_capacity_k = 100
 	}
 
 	air_base = {

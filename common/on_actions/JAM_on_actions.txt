@@ -1,0 +1,198 @@
+on_actions = {
+    # Initialize
+    on_startup = {
+        effect = {
+            every_country = {
+                JAM_se_init_vars = yes
+                JAM_se_init_onstart_ammo = yes
+                
+                if = {
+                    limit = {
+                        JAM_st_should_run_daily = yes
+                    }
+                    country_event = {
+                        id   = JAM_ev.1
+                        days = 1
+                    }
+                    country_event = {
+                        id   = JAM_ev.1
+                        days = 2
+                    }
+                    country_event = {
+                        id   = JAM_ev.1
+                        days = 3
+                    }
+                    country_event = {
+                        id   = JAM_ev.1
+                        days = 4
+                    }
+                    country_event = {
+                        id   = JAM_ev.1
+                        days = 5
+                    }
+                    country_event = {
+                        id   = JAM_ev.1
+                        days = 6
+                    }
+                }
+            }
+        }
+    }
+    
+    # Mid-game initializations
+    on_liberate = {
+        effect = {
+            ROOT = {
+                JAM_se_init_vars = yes
+                JAM_se_init_midgame_ammo = yes
+            }
+        }
+    }
+    on_release_as_free = {
+        effect = {
+            ROOT = {
+                JAM_se_init_vars = yes
+                JAM_se_init_midgame_ammo = yes
+            }
+        }
+    }
+    on_release_as_puppet = {
+        effect = {
+            ROOT = {
+                JAM_se_init_vars = yes
+                JAM_se_init_midgame_ammo = yes
+            }
+        }
+    }
+    
+    # Capitulations
+    on_capitulation = {
+        effect = {
+            set_temp_variable = { ammo_transferred = 0 }
+            ROOT = {
+                set_temp_variable      = { ammo_transferred   = JAM_ammo_stockpile }
+                multiply_temp_variable = { ammo_transferred   = 0.5 }
+                subtract_from_variable = { JAM_ammo_stockpile = ammo_transferred }
+            }
+            FROM = {
+                add_to_variable = { JAM_ammo_stockpile = ammo_transferred }
+                clamp_variable  = {
+                    var = JAM_ammo_stockpile
+                    max = JAM_ammo_capacity
+                }
+                JAM_se_country_refresh = yes
+            }
+        }
+    }
+    
+    # Annexations
+    on_subject_annexed = {
+        effect = {
+            set_temp_variable = { ammo_transferred = 0 }
+            ROOT = {
+                set_temp_variable = { ammo_transferred = JAM_ammo_stockpile }
+            }
+            FROM = {
+                add_to_variable = { JAM_ammo_stockpile = ammo_transferred }
+                clamp_variable  = {
+                    var = JAM_ammo_stockpile
+                    max = JAM_ammo_capacity
+                }
+                JAM_se_country_refresh = yes
+            }
+        }
+    }
+    
+    # Civil wars
+    on_declare_war = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = { civilwar_target = ROOT }
+                    ROOT = { civilwar_target = FROM }
+                }
+                
+                if = {
+                    limit = {
+                        FROM = {
+                            NOT = {
+                                has_variable = JAM_army_priority
+                            }
+                        }
+                    }
+                    FROM = {
+                        save_event_target_as = dest
+                        JAM_se_init_vars     = yes
+                    }
+                    ROOT = {
+                        save_event_target_as = src
+                    }
+                }
+                else = {
+                    FROM = {
+                        save_event_target_as = src
+                    }
+                    ROOT = {
+                        save_event_target_as = dest
+                        JAM_se_init_vars     = yes
+                    }
+                }
+                
+                JAM_se_civil_war_ammo_split = yes
+            }
+        }
+    }
+    
+    # Normal running
+	on_weekly = {
+		effect = {
+            # Failsafe for mid-game country creations
+            if = {
+                limit = {
+                    NOT = {
+                        has_variable = JAM_army_priority
+                    }
+                }
+                JAM_se_init_vars = yes
+                JAM_se_init_midgame_ammo = yes
+            }
+            
+            # Fire weekly for AI minors for performance savings
+			if = {
+                limit = {
+                    JAM_st_should_run_daily = no
+                }
+                JAM_se_country_weekly = yes
+            }
+            
+            # Fire daily for players and AI majors
+            else = {
+                JAM_se_country_daily = yes
+                country_event = {
+                    id   = JAM_ev.1
+                    days = 1
+                }
+                country_event = {
+                    id   = JAM_ev.1
+                    days = 2
+                }
+                country_event = {
+                    id   = JAM_ev.1
+                    days = 3
+                }
+                country_event = {
+                    id   = JAM_ev.1
+                    days = 4
+                }
+                country_event = {
+                    id   = JAM_ev.1
+                    days = 5
+                }
+                country_event = {
+                    id   = JAM_ev.1
+                    days = 6
+                }
+            }
+		}
+	}
+}

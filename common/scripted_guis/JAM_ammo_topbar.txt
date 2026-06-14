@@ -1,0 +1,24 @@
+scripted_gui = {
+
+	JAM_ammunition = {
+		context_type = player_context
+
+		window_name = "JAM_ammunition_topbar"
+
+
+		triggers = {
+			
+		}
+
+		properties = {
+			JAM_ammo_ratio_bar = {
+				frame = JAM_topbar_ratio
+			}
+
+			JAM_ammo_icon = {
+				frame = JAM_topbar_icon_index
+			}
+        }
+
+	}
+}
