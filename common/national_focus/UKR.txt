@@ -8,30 +8,19 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 7500 y = 750 }
+	continuous_focus_position = { x = 8350 y = 3250 }
 	
 	focus = {
 		id = UKR_yanukovychs_results
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.4
-		x = 11
+		x = 51
 		y = 0
 		cancelable = no
 
-		offset = {
-			x = -5
-			trigger = {
-				NOT = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = SHOW
-					}
-				}
-				OR = {
-					has_completed_focus = UKR_yanukovich_escaped
-					has_completed_focus = UKR_arrest_yanukovich
-					has_completed_focus = UKR_dictatorship_takes_over
-				}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = UKR_the_end_of_the_yanukovych_regime
 			}
 		}
 
@@ -82,25 +71,30 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_remain_neutral
+		id = UKR_the_end_of_the_yanukovych_regime
 		icon = GFX_focus_UKR_hold_the_center_line
 		cost = 0.8
-		x = -5
-		y = 1
+		x = 8
+		y = 0
 
-		offset = {
-			x = 5
-			trigger = {
-				NOT = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = SHOW
-					}
-				}
-				OR = {
-					has_completed_focus = UKR_yanukovich_escaped
-					has_completed_focus = UKR_arrest_yanukovich
-				}
+		#offset = {
+		#	x = 5
+		#	trigger = {
+		#		NOT = {
+		#			has_game_rule = {
+		#				rule = obsolete_focus_branches_visibility
+		#				option = SHOW
+		#			}
+		#		}
+		#		OR = {
+		#			has_completed_focus = UKR_yanukovich_escaped
+		#			has_completed_focus = UKR_arrest_yanukovich
+		#		}
+		#	}
+		#}
+		allow_branch = {
+			NOT = {
+				has_country_flag = Tree_post_yanukovich_hidden
 			}
 		}
 		offset = {
@@ -132,8 +126,7 @@ focus_tree = {
 		}
 		
 		
-        prerequisite = { focus = UKR_next_steps }
-		relative_position_id = UKR_next_steps
+
 
 		available = {
 
@@ -158,43 +151,12 @@ focus_tree = {
 		id = UKR_dictatorship_takes_over
 		icon = GFX_focus_UKR_activation_of_security_forces
 		cost = 0.2
-		x = 5
+		x = 0
 		y = 2
-
-		offset = {
-			x = -5
-			trigger = {
-				NOT = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = SHOW
-					}
-				}
-				has_completed_focus = UKR_dictatorship_takes_over
-			}
-		}
 
         prerequisite = { focus = UKR_force_deal_with_protests }
 		prerequisite = { focus = UKR_next_steps }
 		relative_position_id = UKR_next_steps
-		mutually_exclusive = { focus = UKR_arrest_yanukovich focus = UKR_yanukovich_escaped }
-
-		allow_branch = {
-			if = {
-				limit = {
-					NOT = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = SHOW
-						}
-					}
-				}
-				NOT = {
-					has_completed_focus = UKR_arrest_yanukovich
-					has_completed_focus = UKR_yanukovich_escaped
-				}
-			}
-		}
 
 		completion_reward = {
 		    add_stability = -0.05
@@ -1273,24 +1235,12 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		prerequisite = { focus = UKR_remain_neutral }
-		relative_position_id = UKR_remain_neutral
-		mutually_exclusive = { focus = UKR_yanukovich_escaped focus = UKR_dictatorship_takes_over }
+		prerequisite = { focus = UKR_the_end_of_the_yanukovych_regime }
+		relative_position_id = UKR_the_end_of_the_yanukovych_regime
+		mutually_exclusive = { focus = UKR_yanukovich_escaped }
 
 		allow_branch = {
-			if = {
-				limit = {
-					NOT = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = SHOW
-						}
-					}
-				}
-				NOT = {
-					has_country_flag = Tree_post_yanukovich_hidden
-				}
-			}
+
 		}
 
 		available = {
@@ -1338,24 +1288,12 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		prerequisite = { focus = UKR_remain_neutral }
-		relative_position_id = UKR_remain_neutral
-		mutually_exclusive = { focus = UKR_arrest_yanukovich focus = UKR_dictatorship_takes_over }
+		prerequisite = { focus = UKR_the_end_of_the_yanukovych_regime }
+		relative_position_id = UKR_the_end_of_the_yanukovych_regime
+		mutually_exclusive = { focus = UKR_arrest_yanukovich  }
 
 		allow_branch = {
-			if = {
-				limit = {
-					NOT = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = SHOW
-						}
-					}
-				}
-				NOT = {
-					has_country_flag = Tree_post_yanukovich_hidden
-				}
-			}
+
 		}
 
 		available = {
