@@ -148,11 +148,8 @@ buildings = {
 		show_on_map = 6
 		base_cost = 5800
 		icon_frame = 38
-		#max_level = 1
-		shares_slots = yes
 		value = 6
 		level_cap = {
-			shares_slots = yes
 			state_max = 8
 		}
 		infrastructure_construction_effect = yes
