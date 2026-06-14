@@ -22,6 +22,8 @@ sub_units = {
 			category_army
 		}
 
+		regimental = yes
+
 
 		combat_width = 0
 
@@ -59,6 +61,8 @@ sub_units = {
 		type = {
 			support
 		}
+
+		regimental = yes
 		
 		group = support
 		
@@ -127,6 +131,8 @@ sub_units = {
 			infantry
 			support
 		}
+
+		regimental = no
 		
 		categories = {
 			category_support_battalions
@@ -175,6 +181,7 @@ sub_units = {
 			category_army
 		}
 
+        regimental = no
 	
 		combat_width = 0
 	
@@ -236,7 +243,8 @@ sub_units = {
 			category_support_battalions
 			category_army
 		}
-
+        #divisional = no
+        regimental = no
 
 		combat_width = 0
 
@@ -249,6 +257,52 @@ sub_units = {
 		}
 
 		manpower = 15
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.2
+		hard_attack = 12
+		training_time = 120
+		weight = 0.1
+
+		can_be_parachuted = yes
+		
+		supply_consumption = 0.08
+	}
+
+	atgm_detachment = {
+		abbreviation = "ATGMD"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+		
+		group = support
+		
+		type = {
+			infantry
+			support
+		}
+		
+		categories = {
+			category_support_battalions
+			category_regimental_support_battalions
+			category_army
+		}
+        divisional = no
+        regimental = yes
+
+		combat_width = 0
+
+		need = {
+			bulletproof_vests_equipment = 8
+			uniform_equipment = 8
+			infantry_equipment = 3
+			atgm_equipment = 2
+		}
+
+		manpower = 6
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 0.2
@@ -284,7 +338,7 @@ sub_units = {
 			category_army
 		}
 
-	
+	    regimental = no
 		combat_width = 0
 	
 		#Size Definitions
@@ -382,7 +436,7 @@ sub_units = {
 			category_recon
 		}
 
-	
+	    regimental = no
 		combat_width = 0
 	
 		#Size Definitions
@@ -472,8 +526,8 @@ sub_units = {
 			category_support_battalions
 			category_army
 		}
-
-	
+ 
+	    regimental = no
 		combat_width = 0
 	
 		#Size Definitions
@@ -529,7 +583,7 @@ sub_units = {
 			category_army
 		}
 
-	
+	    regimental = no
 		combat_width = 0
 	
 		#Size Definitions
@@ -558,6 +612,5 @@ sub_units = {
 			support_equipment = 20
 			bbm_chassis  = 10
 		}
-
 	}
 }

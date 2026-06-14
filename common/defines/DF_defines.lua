@@ -78,3 +78,5 @@ NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5
 
 NDefines.NMilitary.ATTRITION_WHILE_MOVING_FACTOR = 1				-- Attrition multiplier while a unit is moving
 NDefines.NMilitary.ATTRITION_WHILE_MOVING_FACTOR = 0.2				-- attrition multiplier while moving & doing missions
+
+NDefines.REGIMENTAL_SUPPORT_REQUIRED_BATTALIONS = { 1 }

@@ -1,124 +1,138 @@
 technologies = {
-
-    transport = {
+	mtg_transport = { 
 
 		transport_capacity = -0.33
-		naval_invasion_capacity = 10
-		
-		path = {
-			leads_to_tech = landing_craft 
-			research_cost_coeff = 1
+		naval_invasion_prep_days = -10
+		naval_invasion_division_cap = 2 
+		naval_invasion_plan_cap = 1
+
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_naval_support_ships	
+			}
 		}
+
+		path = {
+			leads_to_tech = mtg_landing_craft
+			research_cost_coeff = 1
+		}	
 
 		path = {
 			leads_to_tech = sp_multi_product_supply_ships
 			research_cost_coeff = 1
-		}
+		}	
+
 		research_cost = 1.5
 		start_year = 1922
-		
+
 		folder = {
-			name = naval_folder
+			name = mtgnavalsupportfolder
 			position = { x = 0 y = 1 }
 		}
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 0.5
-				NOT = { has_war = yes }
+				has_war = no
 			}
-			
+
 			modifier = {
 				factor = 2
 				tag = USA
 			}
-			
 			modifier = {
+				has_war_with = JAP
 				factor = 2
+			}
+
+			modifier = {
+				factor = 3
 				tag = JAP
 			}
-			
+
 			modifier = {
 				factor = 2
 				tag = ENG
 			}
 		}
-		
+
 		categories = {
 			naval_equipment
 			tp_tech
 		}
 		special_project_specialization = { specialization_naval }
 	}
-	
-	landing_craft = {
 
-		invasion_preparation = -0.25
+	mtg_landing_craft = {
+
+		#invasion_preparation = -0.25
 		amphibious_invasion_defence = 0.15
-		naval_invasion_capacity = 20
+		naval_invasion_prep_days = -10
+		naval_invasion_division_cap = 4 
+		naval_invasion_plan_cap = 3	
+		#naval_invasion_capacity = 20
 
 		path = {
-			leads_to_tech = tank_landing_craft 
+			leads_to_tech = mtg_tank_landing_craft
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = sp_improved_support_ship
 			research_cost_coeff = 1
 		}
 
 		enable_equipments = {
 			floating_harbor_equipment_1
 		}
-
 		force_use_small_tech_layout = yes
 		show_equipment_icon = yes
-		
+
 		research_cost = 2
 		start_year = 1940
-		
+
 		folder = {
-			name = naval_folder
+			name = mtgnavalsupportfolder
 			position = { x = 0 y = 13 }
 		}
-		
+
 		ai_will_do = {
 			factor = 2
-			
+
 			modifier = {
 				factor = 0.5
-				NOT = { has_war = yes }
+				has_war = no
 			}
-			
+
 			modifier = {
 				factor = 2
 				tag = USA
 			}
-			
 			modifier = {
+				has_war_with = JAP
 				factor = 2
-				tag = JAP
 			}
-
 			modifier = {
 				factor = 50
 				tag = JAP
 				OR = {
 					has_war_with = USA
-					CHI = {  
-						OR = { 
-							has_capitulated = yes 
+					CHI = {
+						OR = {
+							has_capitulated = yes
 							exists = no
 		                    is_subject_of = JAP
 						}
 					}
 				}
 			}
-			
+
 			modifier = {
-				factor = 5
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				has_war_with = GER
+				factor = 2
+				tag = ENG
 			}
 
 			modifier = {
@@ -131,60 +145,61 @@ technologies = {
 				GER = { has_war_with = SOV }
 			}
 		}
-		
+
 		categories = {
 			naval_equipment
 			tp_tech
 		}
 		special_project_specialization = { specialization_naval }
 	}
-	
-	tank_landing_craft = {
+
+	mtg_tank_landing_craft = {
 
 		amphibious_invasion = 0.25
 		amphibious_invasion_defence = 0.5
-		naval_invasion_capacity = 100
+		naval_invasion_prep_days = -10
+		naval_invasion_division_cap = 5 
+		naval_invasion_plan_cap = 4			
+		#naval_invasion_capacity = 100
 
 		research_cost = 2
 		start_year = 1944
 		folder = {
-			name = naval_folder
+			name = mtgnavalsupportfolder
 			position = { x = 0 y = 19 }
 		}
-		
+
 		ai_will_do = {
 			factor = 2
-			
+
 			modifier = {
 				factor = 0.5
-				NOT = { has_war = yes }
+				has_war = no
 			}
-			
+
 			modifier = {
-				factor = 2
+				factor = 20
 				tag = USA
 			}
-			
 			modifier = {
 				factor = 2
+				has_war_with = JAP
+			}
+			modifier = {
+				factor = 3
 				tag = JAP
 			}
-			
+
 			modifier = {
 				factor = 2
 				tag = ENG
 			}
 		}
-		
+
 		categories = {
 			naval_equipment
 			tp_tech
 		}
 		special_project_specialization = { specialization_naval }
 	}
-	
-
-	
-
-	
 }
