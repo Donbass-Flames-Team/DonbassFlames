@@ -4983,6 +4983,67 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_expand_ammunition_plants
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 5
+		x = -1
+		y = 2
+
+		prerequisite = { focus = UKR_investments_in_armored_vehicles }
+        prerequisite = { focus = UKR_new_infantry_equipment }
+		relative_position_id = UKR_ukranian_mic
+
+		available = {
+           
+		}
+
+		completion_reward = {
+			71 = {	
+				add_building_construction = {
+					type = ammunition_plant
+					level = 2
+					instant_build = yes
+				}	
+				add_extra_state_shared_building_slots = 2
+			}
+			203 = {	
+				add_building_construction = {
+					type = ammunition_plant
+					level = 1
+					instant_build = yes
+				}	
+				add_extra_state_shared_building_slots = 1
+			}						
+		}
+	}	
+
+	focus = {
+		id = UKR_expand_millitary_factories
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 8
+		x = -1
+		y = 3
+
+		prerequisite = { focus = UKR_expand_ammunition_plants }
+		relative_position_id = UKR_ukranian_mic
+
+		available = {
+           
+		}
+
+		completion_reward = {
+			154 = {	
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}	
+				add_extra_state_shared_building_slots = 2
+			}			
+		}
+	}	
+
+	focus = {
 		id = UKR_creation_of_sso
 		icon = GFX_focus_UKR_creation_of_sso
 		cost = 1
