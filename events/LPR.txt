@@ -233,3 +233,18 @@ country_event = {
 		add_political_power = 4
 	}
 }
+
+# Пропаганда сми, ивент для фокуса
+country_event = {
+	id = LPR.14
+	title = LPR.14.t
+	desc = LPR.14.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.14.a
+		add_political_power = -5
+	}
+}
