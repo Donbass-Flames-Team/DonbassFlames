@@ -456,6 +456,123 @@ guiTypes = {
 			tooltip = cental_bank_tt
 			pdx_tooltip_delayed = cental_bank_tt2
 		}
+        ##########################################################
+		##########################################################
+		##########################################################
+		instantTextBoxType = {
+			name = "TAXES"
+			position = { x = 665 y = 30 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "Taxes"
+		}
+
+		buttonType = {
+			name = "increase_income_tax"
+			spriteType = "GFX_cash_smol"
+			position = { x = 655 y = 70 }
+			clicksound = click_close
+			#tooltip = cental_bank_tt
+			#pdx_tooltip_delayed = cental_bank_tt2
+		}
+
+		instantTextBoxType = {
+			name = "income_tax_precentage"
+			position = { x = 680 y = 67 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "income_tax_precentage"
+		}
+
+		buttonType = {
+			name = "decrease_income_tax"
+			spriteType = "GFX_cash_smol"
+			position = { x = 695 y = 70 }
+			clicksound = click_close
+			#tooltip = cental_bank_tt
+			#pdx_tooltip_delayed = cental_bank_tt2
+		}
+        ##########################################################
+		buttonType = {
+			name = "increase_corporate_tax"
+			spriteType = "GFX_cash_smol"
+			position = { x = 655 y = 120 }
+			clicksound = click_close
+			#tooltip = cental_bank_tt
+			#pdx_tooltip_delayed = cental_bank_tt2
+		}
+
+		instantTextBoxType = {
+			name = "corporate_tax_precentage"
+			position = { x = 680 y = 117 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "1"
+		}
+
+		buttonType = {
+			name = "decrease_corporate_tax"
+			spriteType = "GFX_cash_smol"
+			position = { x = 695 y = 120 }
+			clicksound = click_close
+			#tooltip = cental_bank_tt
+			#pdx_tooltip_delayed = cental_bank_tt2
+		}
+        ##########################################################
+		buttonType = {
+			name = "increase_sales_taxes"
+			spriteType = "GFX_cash_smol"
+			position = { x = 655 y = 160 }
+			clicksound = click_close
+			#tooltip = cental_bank_tt
+			#pdx_tooltip_delayed = cental_bank_tt2
+		}
+
+		instantTextBoxType = {
+			name = "sales_taxes_precentage"
+			position = { x = 680 y = 159 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "1"
+		}
+
+		buttonType = {
+			name = "decrease_sales_taxes"
+			spriteType = "GFX_cash_smol"
+			position = { x = 695 y = 160 }
+			clicksound = click_close
+			#tooltip = cental_bank_tt
+			#pdx_tooltip_delayed = cental_bank_tt2
+		}
+
+
+		instantTextBoxType = {
+			name = "percentage_shadow_economy"
+			position = { x = 680 y = 209 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "percentage_shadow_economy"
+		}
 	}
 
 }

@@ -147,36 +147,9 @@ DF_economy_setup = {
 			var = income
 			value = office_income
 		}
-	}
-	#############
-	### taxes ###
-	#############
-	set_variable = {
-		var = people_taxes
-		value = 0
-	}
-	#divide_variable = {
-	#	var = people_taxes
-	#	value = 700
-	#}
-	#multiply_variable = {
-	#	var = people_taxes
-	#	value = 1.7
-	#}
-	#add_to_variable = {
-	#	var = cash
-	#	value = people_taxes
-	#}
-	#add_to_variable = {
-	#	var = income
-	#	value = people_taxes
-	#}
-	#round_variable = people_taxes
+	}	
 
-	set_variable = {
-		var = corporate_taxes
-		value = 0
-	} 
+
 	
 
 	if = {
@@ -813,6 +786,61 @@ DF_economy_setup = {
 	set_variable = {
 		var = ROOT.inflation
 		value = ROOT.inflation
+	}
+
+	#############
+	### taxes ###
+	#############
+	set_variable = {
+		var = percentage_shadow_economy
+		value = 0
+	}
+
+	set_variable = {
+		var = income_tax_rate
+		value = 0
+	}
+
+	set_variable = {
+		var = income_tax_calculation
+		value = ROOT.max_manpower_k
+	}
+	multiply_variable = {
+		var = income_tax_calculation
+		value = gdp_per_population		
+	}
+	divide_variable = {
+		var = income_tax_calculation
+		value = 100000
+	}		
+	multiply_variable = {
+        var = income_tax_calculation
+        value = ROOT.percentage_shadow_economy 
+    }
+	divide_variable = {
+        var = income_tax_calculation
+        value = 100
+    } 
+	multiply_variable = {
+		var = income_tax_calculation
+		value = ROOT.income_tax_rate		
+	}
+    divide_variable = {
+        var = income_tax_calculation
+        value = 100
+    }
+    set_variable = {
+        var = income_tax_result
+        value = income_tax_calculation
+    }
+
+	set_variable = {
+		var = corporate_tax_rate
+		value = 0
+	} 
+	set_variable = {
+		var = sales_tax_rate
+		value = 0
 	}
 
 }
