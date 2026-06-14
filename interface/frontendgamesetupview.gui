@@ -9,8 +9,8 @@ guiTypes = {
 	### bookmark entry
 	containerWindowType = {
 		name = "bookmark_entry"
-		position = { x= 1 y = 0 }
-		size = { width = 52 height = 174 }
+		position = { x= 0 y = 0 }
+		size = { width = 52 height = 174 } #df
 		clipping = no
 		fade_time = 500
 		fade_type = linear
@@ -18,14 +18,13 @@ guiTypes = {
 		background = {
 			name = "background"
 			quadTextureSprite = "GFX_bookmark_entry_bg"
-			hitbox_type = "poly"
 			clicksound = click_checkbox
 		}
 
 		iconType = {
 			name = "icon"
-			spriteType = "GFX_select_date_1936"
-			position = { x = 33 y = 29 }
+			spriteType = "GFX_2013_date" #df
+			position = { x = 33 y = 29 } #df
 			alwaystransparent = yes
 		}
 	}
