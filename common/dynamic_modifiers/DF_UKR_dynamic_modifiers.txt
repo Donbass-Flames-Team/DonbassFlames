@@ -26,6 +26,29 @@ UKR_oligarchs_idea = { #NATIONAL SPIRIT
 	production_speed_buildings_factor = UKR_Oligarchs_production_speed_buildings_factor #-0.25
 }
 
+UKR_ukrainian_economy_idea = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_oligarchs
+
+	consumer_goods_factor = UKR_ukrainian_economy_consumer_goods_factor  #-0.25
+	production_speed_buildings_factor = UKR_ukrainian_economy_production_speed_buildings_factor #-0.25
+	industrial_capacity_factory  = UKR_ukrainian_economy_industrial_capacity_factory #-0.25
+	production_oil_factor  = UKR_ukrainian_economy_production_oil_factor #-0.15
+	industry_free_repair_factor = UKR_ukrainian_economy_industry_free_repair_factor #-0.15
+}
+
+UKR_electronic_country_idea = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_electronic_country
+
+	consumer_goods_factor = UKR_electronic_country_consumer_goods_factor  #-0.25
+	production_speed_buildings_factor = UKR_electronic_country_production_speed_buildings_factor #-0.25
+    political_power_gain  = UKR_electronic_country_political_power_gain
+	stability_factor   = UKR_electronic_country_stability_factor 
+}
+
 UKR_ATO_idea = {
 	enable = { always = yes }
 
@@ -47,6 +70,7 @@ People_republic_ATO_idea = {
 	casualty_trickleback =  People_republic_casualty_trickleback #-0.15
 	army_speed_factor = People_republic_army_speed_factor #-0.15
 }
+
 
 arisse_donbas_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
 	enable = { always = yes }

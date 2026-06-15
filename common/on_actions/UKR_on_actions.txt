@@ -11,6 +11,19 @@ on_actions = {
 				country_event = { id = ukr_elections_2019.1 }
 			}
 		}
+		effect = {
+			if = {
+				limit = {
+					tag = UKR
+					date > 2014.10.15
+					NOT = {
+						has_country_flag = Shatersk_disbanded
+					}
+				}
+				set_country_flag = Shatersk_disbanded
+				country_event = { id = ukraine.137 }
+			}
+		}		
 	}
 }
 

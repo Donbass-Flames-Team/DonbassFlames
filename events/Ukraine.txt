@@ -160,6 +160,18 @@ country_event = {
 				id = ukraine.78
 				days = 7
 			}
+			432 = {
+			    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 55 }
+		    }
+			424 = {
+			    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 55 }
+		    }
+			426 = {
+			    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 35 }
+		    }	
+			421 = {
+			    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 35 }
+		    }								
 		}
 	}
 	
@@ -4975,6 +4987,27 @@ country_event = {
 		name = ukraine.136.a
 		add_political_power = 5
 		add_stability = 0.01
+	}
+}
+
+# Расформирование батальона милиции «Шахтёрск»
+country_event = {
+	id = ukraine.137
+	title = ukraine.137.t
+	desc  = ukraine.137.d
+	picture = GFX_Report_event_dobrobati_ukraine_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.137.a
+		add_political_power = -15
+		add_stability = -0.02
+		add_war_support = -0.015
 	}
 }
 

@@ -198,6 +198,24 @@ ideas = {
 			}
 		}
 
+		UKR_the_breadbasket_of_europe_idea = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = 0.05
+				political_power_gain = 0.035			
+			    consumer_goods_factor = -0.075
+			}
+		}		
+
 		AI_buff_idea = {
             allowed = {
                 always = yes
