@@ -26,9 +26,11 @@
  cental_bank_tt:0 "Центральный банк"
  cental_bank_tt2:0 "Управляет денежной массой и инфляцией в вашей стране."
 
- people_taxes:0 "Налог:  §Y[?income_tax_result]§!"
+ people_taxes:0 "Налог:  §Y[?income_tax]§!"
  income_tax_precentage:0 "[?income_tax_rate]"
- percentage_shadow_economy: "[?percentage_shadow_economy]"
+ precentage_shadow_economy: "Теневая экономика: [?precentage_shadow_economy]"
+ corporation_taxes:0 "Корпоративные налоги:  §Y[?corporation_tax]§!"
+ sales_taxes:0 "НДС:  §Y[?office_gdp]§!"
 
  healthcare:0 "Закон о здравоохранении"
  universal_health_care:0 "Всеобщее здравоохранение"

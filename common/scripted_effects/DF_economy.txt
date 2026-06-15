@@ -31,6 +31,10 @@ DF_economy_setup = {
 		var = expense
 		value = 0
 	}
+	set_variable = {
+		var = corporation_tax
+		value = 0
+	}
 	if = {
 		limit = {
 			#check_variable = { #This prevents the integer limit being beaten
@@ -56,7 +60,7 @@ DF_economy_setup = {
 			}
 		}
 		add_to_variable = {
-			var = income
+			var = corporation_tax
 			value = mil_factories_income
 		}
 
@@ -78,7 +82,7 @@ DF_economy_setup = {
 			}
 		}
 		add_to_variable = {
-			var = income
+			var = corporation_tax
 			value = doc_factories_income
 		}
 
@@ -100,7 +104,7 @@ DF_economy_setup = {
 			}
 		}
 		add_to_variable = {
-			var = income
+			var = corporation_tax
 			value = civ_factories_income
 		}
 
@@ -122,7 +126,7 @@ DF_economy_setup = {
 			}
 		}
 		add_to_variable = {
-			var = income
+			var = corporation_tax
 			value = agro_income
 		}
 
@@ -144,7 +148,7 @@ DF_economy_setup = {
 			}
 		}
 		add_to_variable = {
-			var = income
+			var = corporation_tax
 			value = office_income
 		}
 	}	
@@ -791,56 +795,64 @@ DF_economy_setup = {
 	#############
 	### taxes ###
 	#############
+	#set_variable = {
+	#	var = percentage_shadow_economy
+	#	value = 0
+	#}
+	#set_variable = {
+	#	var = income_tax_rate
+	#	value = 0
+	#}
+
+    # Population Total
 	set_variable = {
-		var = percentage_shadow_economy
-		value = 0
+		var = population_total
+		value = max_manpower
 	}
+	round_variable = population_total
+
+	set_variable = { population_total_m = population_total }
+	multiply_variable = { population_total_m = 0.000001 }
+	clamp_variable = { var = population_total_m min = 0.0001 }
 
 	set_variable = {
-		var = income_tax_rate
-		value = 0
-	}
-
-	set_variable = {
-		var = income_tax_calculation
-		value = ROOT.max_manpower_k
+		var = income_tax
+		value = ROOT.population_total_m
 	}
 	multiply_variable = {
-		var = income_tax_calculation
+		var = income_tax
 		value = gdp_per_population		
-	}
-	divide_variable = {
-		var = income_tax_calculation
-		value = 100000
 	}		
 	multiply_variable = {
-        var = income_tax_calculation
+        var = income_tax
         value = ROOT.percentage_shadow_economy 
     }
-	divide_variable = {
-        var = income_tax_calculation
-        value = 100
-    } 
 	multiply_variable = {
-		var = income_tax_calculation
+		var = income_tax
 		value = ROOT.income_tax_rate		
 	}
     divide_variable = {
-        var = income_tax_calculation
-        value = 100
-    }
-    set_variable = {
-        var = income_tax_result
-        value = income_tax_calculation
+        var = income_tax
+        value = 1000000000
     }
 
-	set_variable = {
-		var = corporate_tax_rate
-		value = 0
-	} 
-	set_variable = {
-		var = sales_tax_rate
-		value = 0
-	}
+	# Income Tax Modifier
+	set_temp_variable = { income_tax_multiplier_modifier = 1 }
+	add_to_temp_variable = {income_tax_multiplier_modifier = modifier@income_tax_multiplier_modifier }
+
+
+	divide_variable = {
+        var = corporation_tax
+        value = 10
+    }
+
+	#set_variable = {
+	#	var = corporate_tax_rate
+	#	value = 0
+	#} 
+	#set_variable = {
+	#	var = sales_tax_rate
+	#	value = 0
+	#}
 
 }
