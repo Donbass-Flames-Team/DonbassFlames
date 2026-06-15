@@ -10,8 +10,11 @@ set_variable = { ammunition_variable = 1000 }
 
 	set_variable = { cash = 1 }
     set_variable = { debt = -257 }
-    set_variable = { percentage_shadow_economy = 35 }
+    set_variable = { precentage_shadow_economy = 35 }
     set_variable = { income_tax_rate = 17 }
+    set_variable = { corporate_tax_rate = 18 }
+    set_variable = { sales_tax_rate = 20 }
+
 
 	country_event = {
 	    id = ukraine.101
@@ -59,6 +62,14 @@ set_variable = { ammunition_variable = 1000 }
 	set_variable = { UKR_Oligarchs_political_power_gain = 0.15 }
 	set_variable = { UKR_Oligarchs_consumer_goods_factor = 0.20 }
 	set_variable = { UKR_Oligarchs_production_speed_buildings_factor = -0.075 }
+
+	add_dynamic_modifier = { modifier = UKR_ukrainian_economy_idea }
+	set_variable = { UKR_ukrainian_economy_consumer_goods_factor = 0.15 }
+	set_variable = { UKR_ukrainian_economy_industrial_capacity_factory = -0.15 }	
+	set_variable = { UKR_ukrainian_economy_production_speed_buildings_factor = -0.075 }
+    set_variable = { UKR_ukrainian_economy_production_oil_factor = -0.25 }
+	set_variable = { UKR_ukrainian_economy_industry_free_repair_factor = -0.35 }
+
 
 	add_dynamic_modifier = { modifier = GEN_inflation }
 	

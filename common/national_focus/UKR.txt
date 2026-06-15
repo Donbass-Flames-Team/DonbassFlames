@@ -1632,7 +1632,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_release_political_prisoners_from_prisons
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_release_political_prisoners_from_prisons
 		cost = 0.2
 		x = -1
 		y = 1
@@ -3106,9 +3106,9 @@ focus_tree = {
 
 	focus = {
 		id = UKR_new_foreign_policy
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 20
+		x = 19
 		y = 0
 
 		available = {
@@ -3138,9 +3138,9 @@ focus_tree = {
 
 	focus = {
 		id = UKR_stop_cooperation_with_russia
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 4
+		x = 5
 		y = 1
 
 		prerequisite = { focus = UKR_new_foreign_policy }
@@ -3157,7 +3157,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_break_the_friendship_treaty_with_russia
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 1
@@ -3196,7 +3196,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_integration_with_nato
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = -2
 		y = 1
@@ -3215,7 +3215,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_cooperation_with_turkey
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = -2
 		y = 1
@@ -3235,7 +3235,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_millitary_exercises_with_nato
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 1
@@ -3244,7 +3244,7 @@ focus_tree = {
 		relative_position_id = UKR_integration_with_nato
 
 		available = {
-            always = no
+            has_completed_focus = UKR_western_instructors
 		}
 
 		completion_reward = {
@@ -3254,7 +3254,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_join_to_the_nato
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = -1
 		y = 2
@@ -3275,7 +3275,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_trade_with_the_eu
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 2
 		y = 2
@@ -3293,8 +3293,27 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_the_breadbasket_of_europe
+		icon = GFX_goal_no_focus_UKR
+		cost = 5
+		x = 3
+		y = 3
+
+		prerequisite = { focus = UKR_trade_with_the_eu }
+		relative_position_id = UKR_new_foreign_policy
+
+		available = {
+            
+		}
+
+		completion_reward = {
+            add_ideas = UKR_the_breadbasket_of_europe_idea
+		}
+	}
+
+	focus = {
 		id = UKR_macro_financial_assistance_from_the_eu
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = -1
 		y = 3
@@ -3313,7 +3332,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_lublin_triangle
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 1
 		y = 3
@@ -3333,7 +3352,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_associated_trio
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 4
@@ -3353,7 +3372,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_join_to_the_eu
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 5
@@ -3386,7 +3405,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_sign_the_association_agreement_with_eu
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 1
@@ -3405,7 +3424,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_visa_free_travel_with_the_eu
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 2
@@ -4088,7 +4107,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			custom_effect_tooltip = UKR_the_influence_of_oligarchs_will_reduce_tt
 		}
 	}
 
@@ -4108,7 +4127,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			custom_effect_tooltip = UKR_the_influence_of_oligarchs_will_reduce_tt
 		}
 	}
 
@@ -4129,7 +4148,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			custom_effect_tooltip = UKR_the_influence_of_oligarchs_will_reduce_tt
 		}
 	}
 
@@ -4301,6 +4320,48 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_create_digital_country
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 2
+		x = -5
+		y = 2
+
+		prerequisite = { focus = UKR_call_early_parliamentary_elections }
+		relative_position_id = UKR_create_the_office_of_the_president
+
+		available = {
+           
+		}
+
+		completion_reward = {
+			add_dynamic_modifier = { modifier = UKR_electronic_country_idea }
+	        set_variable = { UKR_electronic_country_consumer_goods_factor = -0.035 }
+	        set_variable = { UKR_electronic_country_political_power_gain = 0.075 }
+			set_variable = { UKR_electronic_country_stability_factor = 0.05 }
+            set_variable = { UKR_electronic_country_production_speed_buildings_factor = 0.035 }
+		}
+	}
+
+	focus = {
+		id = UKR_electronic_education
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 2
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_create_digital_country }
+		relative_position_id = UKR_create_digital_country
+
+		available = {
+           
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
 		id = UKR_call_early_parliamentary_elections
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
@@ -4426,7 +4487,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_business_recovery_program
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_focus_UKR_business_recovery_program
 		cost = 2
 		x = -1
 		y = 3

@@ -126,7 +126,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "income_total"
-			position = { x = 15 y = 110 }
+			position = { x = 35 y = 110 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
@@ -137,99 +137,69 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name = "income_total_value"
-			position = { x = 200 y = 110 }
+			name = "corporation_taxes"
+			position = { x = 35 y = 155 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 45
-			maxHeight = 24
+			maxWidth = 242
+			fixedsize = yes
+			maxHeight = 1
 			format = left
 			Orientation = "UPPER_LEFT"
-			text = "[?income]"
+			text = "corporation_taxes"
+		}
+
+
+		instantTextBoxType = {
+			name = "people_taxes"
+			position = { x = 35 y = 185 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 112
+			fixedsize = yes
+			maxHeight = 1
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "people_taxes"
 		}
 
 		instantTextBoxType = {
-			name = "income_civ"
-			position = { x = 15 y = 150 }
+			name = "sales_taxes"
+			position = { x = 35 y = 217 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 300
-			maxHeight = 64
+			maxWidth = 112
+			fixedsize = yes
+			maxHeight = 1
 			format = left
 			Orientation = "UPPER_LEFT"
-			text = "income_civ"
-		}
+			text = "sales_taxes"
+		}		
 
 		instantTextBoxType = {
-			name = "income_civ_value"
-			position = { x = 200 y = 150 }
+			name = "resources_income"
+			position = { x = 35 y = 250 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 45
-			maxHeight = 24
+			maxWidth = 112
+			fixedsize = yes
+			maxHeight = 1
 			format = left
 			Orientation = "UPPER_LEFT"
-			text = "[?civ_factories_income]"
-		}
+			text = "resources_taxes"
+		}		
 
 		instantTextBoxType = {
-			name = "income_mil"
-			position = { x = 15 y = 190 }
+			name = "other_income"
+			position = { x = 35 y = 285 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 300
-			maxHeight = 64
+			maxWidth = 112
+			fixedsize = yes
+			maxHeight = 1
 			format = left
 			Orientation = "UPPER_LEFT"
-			text = "income_mil"
-		}
-
-		instantTextBoxType = {
-			name = "income_mil_value"
-			position = { x = 200 y = 190 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 45
-			maxHeight = 24
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "[?mil_factories_income]"
-		}
-
-		instantTextBoxType = {
-			name = "income_doc"
-			position = { x = 15 y = 230 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 300
-			maxHeight = 64
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "income_doc"
-		}
-
-		instantTextBoxType = {
-			name = "income_doc_value"
-			position = { x = 200 y = 230 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 45
-			maxHeight = 24
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "[?doc_factories_income]"
-		}
-
-		instantTextBoxType = {
-			name = "people_taxes_value"
-			position = { x = 280 y = 270 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 45
-			maxHeight = 24
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "[?people_taxes]"
+			text = "other_income"
 		}
 
 		instantTextBoxType = {
@@ -240,20 +210,9 @@ guiTypes = {
 			maxWidth = 300
 			maxHeight = 64
 			format = left
+			fixedsize = yes
 			Orientation = "UPPER_LEFT"
 			text = "expense_total"
-		}
-
-		instantTextBoxType = {
-			name = "expense_total_value"
-			position = { x = 555 y = 110 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 45
-			maxHeight = 24
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "[?expense]"
 		}
 
 		instantTextBoxType = {
@@ -263,21 +222,10 @@ guiTypes = {
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
 			maxHeight = 64
+			fixedsize = yes
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "healthcare_expense"
-		}
-
-		instantTextBoxType = {
-			name = "healthcare_expense_value"
-			position = { x = 555 y = 150 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 45
-			maxHeight = 24
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "[?healthcare_expense]"
 		}
 
 		instantTextBoxType = {
@@ -287,21 +235,10 @@ guiTypes = {
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
 			maxHeight = 64
+			fixedsize = yes
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "social_security_expense"
-		}
-
-		instantTextBoxType = {
-			name = "social_security_expense_value"
-			position = { x = 555 y = 190 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 45
-			maxHeight = 24
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "[?social_security_expense]"
 		}
 
 		instantTextBoxType = {
@@ -311,21 +248,10 @@ guiTypes = {
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
 			maxHeight = 64
+			fixedsize = yes
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "education_expense"
-		}
-
-		instantTextBoxType = {
-			name = "education_expense_value"
-			position = { x = 525 y = 230 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 300
-			maxHeight = 0
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "[?education_expense]"
 		}
 
 		instantTextBoxType = {
@@ -335,21 +261,10 @@ guiTypes = {
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
 			maxHeight = 64
+			fixedsize = yes
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "policing_expense"
-		}
-
-		instantTextBoxType = {
-			name = "policing_expense_value"
-			position = { x = 555 y = 270 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 45
-			maxHeight = 24
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "[?policing_expense]"
 		}
 
 		instantTextBoxType = {
@@ -359,21 +274,10 @@ guiTypes = {
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
 			maxHeight = 64
+			fixedsize = yes
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "army_expense"
-		}
-
-		instantTextBoxType = {
-			name = "people_taxes"
-			position = { x = 15 y = 270 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 300
-			maxHeight = 64
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "people_taxes"
 		}
 
 		iconType = {
@@ -571,7 +475,7 @@ guiTypes = {
 			maxHeight = 64
 			format = left
 			Orientation = "UPPER_LEFT"
-			text = "percentage_shadow_economy"
+			text = "precentage_shadow_economy"
 		}
 	}
 
