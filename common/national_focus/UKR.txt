@@ -5228,6 +5228,29 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_mlrs_vilkha
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -4
+		y = 1
+
+		prerequisite = { focus = UKR_ukranian_mic }
+		relative_position_id = UKR_ukranian_mic
+
+		available = {
+           
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = modern_tank_5
+            }
+		}
+	}
+
+	focus = {
 		id = UKR_investments_in_armored_vehicles
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1

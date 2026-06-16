@@ -210,7 +210,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "countrydivisiondesignerview"
 		position = { x=0 y=0}	
-		size = { width = 1275 height = 720 }
+		size = { width = 1299 height = 728 }
 		moveable = yes
 		fade_time = 500
 		fade_type = linear
@@ -346,13 +346,13 @@ guiTypes = {
 
 		iconType = {
 			name = "select_model"
-			position = { x=1010 y=366 }	
+			position = { x=1040 y=368 }	
 			quadTextureSprite = "GFX_3d_view_placeholder"
 		}		
 		
 		buttonType = {
 			name = "toggle_model_selector_button"
-			position = { x=1008 y=363 }
+			position = { x=1038 y=365 }
 			size = { x = 249 y = 249 }
 			quadTextureSprite ="GFX_division_3d_bg"	
 			pdx_tooltip = "TOGGLE_MODEL_SELECTOR"
@@ -470,7 +470,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "combat_width_view"
-			position = { x = 290 y = 230 }
+			position = { x = 290 y = 240 }
 
 			instantTextboxType = {
 				position = { x = 0 y = 10 }
@@ -485,7 +485,7 @@ guiTypes = {
 				
 		instantTextboxType = {
 			name = "division_composition_label"
-			position = { x = 60 y = 160 }
+			position = { x = 60 y = 168 }
 			font = "hoi_18mbs"
 			text = "DESIGNER_DIVISIONAL_COMPOSITION"
 			maxWidth = 200
@@ -618,7 +618,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "base_stats"
-				position = { x = 72 y = 55 }
+				position = { x = 84 y = 64 }
 				size = { width = 172 height = 244 }
 				clipping = yes
 				
@@ -641,7 +641,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 					name = "base_stats_label"
-					position = { x = 78 y = 32 }
+					position = { x = 87 y = 32 }
 					font = "hoi4_typewriter22"
 					text = "DESIGNER_BASE_STATS_LABEL"
 					maxWidth = 175
@@ -652,7 +652,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "combat_stats"
-				position = { x = 249 y = 55 }
+				position = { x = 255 y = 62 }
 				size = { width = 172 height = 244 }
 				clipping = yes
 				
@@ -675,7 +675,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 					name = "combat_stats_label"
-					position = { x = 257 y = 32 }
+					position = { x = 265 y = 32 }
 					font = "hoi4_typewriter22"
 					text = "DESIGNER_COMBAT_STATS_LABEL"
 					maxWidth = 165
@@ -686,7 +686,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "equipment_stats"
-				position = { x = 415 y = 55 }
+				position = { x = 435 y = 62 }
 				size = { width = 198 height = 244 }
 				clipping = yes
 				scroll_wheel_factor = 20
@@ -712,7 +712,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "equipment_stats_label"
-				position = { x = 462 y = 32 }
+				position = { x = 482 y = 35 }
 				font = "hoi4_typewriter22"
 				text = "DESIGNER_EQUIPMENT_STATS_LABEL"
 				maxWidth = 165
@@ -723,7 +723,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "adjuster_stats"
-				position = { x = 84 y = 353 }
+				position = { x = 109 y = 365 }
 				size = { width = 262 height = 236 }
 				scroll_wheel_factor = 62
 				smooth_scrolling = yes
@@ -992,7 +992,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "production_resources"
-			position = { x= 548 y= -92 }
+			position = { x= 608 y= -95 }
 			font = "hoi_18mbs"
 			maxWidth = 380
 			maxHeight = 25
@@ -1342,7 +1342,7 @@ guiTypes = {
 			iconType = {
 				name = "composition_icon"
 				spriteType = "GFX_army_composition_icon"
-				position = { x = 30 y = 159 }
+				position = { x = 30 y = 166 }
 			}
 
 			buttonType = {
