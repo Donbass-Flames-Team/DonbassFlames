@@ -1051,44 +1051,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = RUS_the_war_has_stalled
-		icon = GFX_goal_no_focus_RUS
-		cost = 1
-		x = -2
-		y = 2
-
-		prerequisite = { focus = RUS_open_invasion }
-		prerequisite = { focus = RUS_russian_regulars_on_donbass }
-		mutually_exclusive = { focus = RUS_victory_of_republics }
-		mutually_exclusive = { focus = RUS_defeat_of_the_republics }
-		relative_position_id = RUS_show_kyivs_war_crimes
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			NOT = {
-				has_global_flag = Ukraine_victory_in_ATO
-				has_country_flag = RUS_People_republic_victory
-			}
-			ZPR = { exists = no }
-			HPR = { exists = no }	
-			NPR = { exists = no }	
-			NOT = {
-			    DPR = {
-				    surrender_progress > 0.5
-			    }	
-		    }
-		}
-
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
-			mark_focus_tree_layout_dirty = yes
-		}
-	}
 
 	focus = {
 		id = RUS_victory_of_republics
@@ -1098,7 +1060,7 @@ focus_tree = {
 		y = 2
 
 		prerequisite = { focus = RUS_open_invasion }
-		mutually_exclusive = { focus = RUS_the_war_has_stalled }
+		mutually_exclusive = { focus = RUS_minsk_protocols }
 		mutually_exclusive = { focus = RUS_defeat_of_the_republics }
 		relative_position_id = RUS_show_kyivs_war_crimes
 		
@@ -1124,7 +1086,7 @@ focus_tree = {
 		y = 2
 
 		prerequisite = { focus = RUS_open_invasion }
-		mutually_exclusive = { focus = RUS_the_war_has_stalled }
+		mutually_exclusive = { focus = RUS_minsk_protocols }
 		mutually_exclusive = { focus = RUS_victory_of_republics }
 		relative_position_id = RUS_show_kyivs_war_crimes
 		
@@ -1297,10 +1259,12 @@ focus_tree = {
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
 
-		prerequisite = { focus = RUS_the_war_has_stalled }
-		relative_position_id = RUS_the_war_has_stalled
+		prerequisite = { focus = RUS_open_invasion }
+		mutually_exclusive = { focus = RUS_victory_of_republics }
+		mutually_exclusive = { focus = RUS_defeat_of_the_republics }
+		relative_position_id = RUS_open_invasion
 
-		x = -1
+		x = -3
 		y = 1
 		
 		ai_will_do = {
@@ -1316,7 +1280,19 @@ focus_tree = {
 
 		available = {
 			date > 2014.8.15
-			has_completed_focus = RUS_the_war_has_stalled
+			NOT = {
+				has_global_flag = Ukraine_victory_in_ATO
+				has_country_flag = RUS_People_republic_victory
+			}
+			ZPR = { exists = no }
+			HPR = { exists = no }	
+			NPR = { exists = no }	
+			NOT = {
+			    DPR = {
+				    surrender_progress > 0.5
+			    }	
+		    }
+			
 		}
 
 		completion_reward = {
@@ -1628,11 +1604,11 @@ focus_tree = {
 		id = RUS_cooperation_with_people_republics
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 1
+		x = -1
 		y = 1
 
-		prerequisite = { focus = RUS_the_war_has_stalled focus = RUS_victory_of_republics }
-		relative_position_id = RUS_the_war_has_stalled
+		prerequisite = { focus = RUS_minsk_protocols focus = RUS_victory_of_republics }
+		relative_position_id = RUS_victory_of_republics
 		
 		ai_will_do = {
 			factor = 1
@@ -1651,12 +1627,12 @@ focus_tree = {
 		id = RUS_recognize_peoples_passports
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 1
-		y = 4
+		x = 0
+		y = 2
 
 		prerequisite = { focus = RUS_cooperation_with_people_republics }
 		prerequisite = { focus = RUS_sign_minsk_two }
-		relative_position_id = RUS_the_war_has_stalled
+		relative_position_id = RUS_cooperation_with_people_republics
 		
 		ai_will_do = {
 			factor = 1
@@ -1675,11 +1651,11 @@ focus_tree = {
 		id = RUS_distribute_russian_passports
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 1
-		y = 5
+		x = 0
+		y = 3
 
 		prerequisite = { focus = RUS_recognize_peoples_passports }
-		relative_position_id = RUS_the_war_has_stalled
+		relative_position_id = RUS_cooperation_with_people_republics
 		
 		ai_will_do = {
 			factor = 1
@@ -1698,11 +1674,11 @@ focus_tree = {
 		id = RUS_full_control_over_donbass
 		icon = GFX_goal_no_focus_RUS
 		cost = 3
-		x = 1
-		y = 6
+		x = 0
+		y = 4 
 
 		prerequisite = { focus = RUS_distribute_russian_passports }
-		relative_position_id = RUS_the_war_has_stalled
+		relative_position_id = RUS_cooperation_with_people_republics
 		
 		ai_will_do = {
 			factor = 1
@@ -1727,11 +1703,11 @@ focus_tree = {
 		id = RUS_increase_unrest_in_ukraine
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 4
+		x = -1
 		y = 1
 
 		prerequisite = { focus = RUS_victory_of_republics  focus = RUS_defeat_of_the_republics }
-		relative_position_id = RUS_the_war_has_stalled
+		relative_position_id = RUS_defeat_of_the_republics
 		
 		ai_will_do = {
 			factor = 1
@@ -1749,12 +1725,12 @@ focus_tree = {
 		id = RUS_support_the_ukrainian_democratic_republic
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 3
+		x = -2
 		y = 2
 
 		prerequisite = { focus = RUS_increase_unrest_in_ukraine }
 		prerequisite = { focus = RUS_cooperation_with_people_republics }
-		relative_position_id = RUS_the_war_has_stalled
+		relative_position_id = RUS_defeat_of_the_republics
 		
 		ai_will_do = {
 			factor = 1

@@ -5039,6 +5039,76 @@ country_event = {
 	}
 }
 
+# Конфликт вокруг «Укртранснафты»
+country_event = {
+	id = ukraine.139
+	title = ukraine.139.t
+	desc  = ukraine.139.d
+	picture = GFX_Report_event_conflict_around_ukrnafta_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.139.a
+		add_political_power = -25
+		add_stability = -0.01
+		hidden_effect = {
+			country_event = {
+				id = ukraine.140
+				days = 4
+			}
+		}
+	}
+}
+
+# Конфликт вокруг «Укртранснафты»
+country_event = {
+	id = ukraine.140
+	title = ukraine.140.t
+	desc  = ukraine.140.d
+	picture = GFX_Report_event_kolomoysky_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.140.a
+		add_political_power = -5
+		hidden_effect = {
+			country_event = {
+				id = ukraine.141
+				days = 1
+			}
+		}
+	}
+}
+
+# Увольнение Коломойского
+country_event = {
+	id = ukraine.141
+	title = ukraine.141.t
+	desc  = ukraine.141.d
+	picture = GFX_Report_event_kolomoysky_2_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.141.a
+		add_political_power = -5
+	}
+}
+
 # Выборы 2019 скоро
 country_event = {
 	id = ukr_elections_2019.1

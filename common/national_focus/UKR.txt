@@ -3249,6 +3249,25 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_energy_independence_from_the_russia
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 2
+		y = 1
+
+		prerequisite = { focus = UKR_stop_cooperation_with_russia }
+		relative_position_id = UKR_stop_cooperation_with_russia
+
+		available = {
+            
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
 		id = UKR_break_the_friendship_treaty_with_russia
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
@@ -3357,7 +3376,7 @@ focus_tree = {
 		relative_position_id = UKR_integration_with_nato
 
 		available = {
-            has_completed_focus = UKR_modern_army
+            has_completed_focus = UKR_nato_standard_army
 			date > 2020.1.1
 		}
 
@@ -4311,6 +4330,12 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = UKR_the_influence_of_oligarchs_will_reduce_tt
+			hidden_effect = {
+				country_event = {
+					id = ukraine.139
+					hours = 2
+				}
+			}
 		}
 	}
 
@@ -5037,10 +5062,28 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_increase_the_number_of_contract_soldiers
+		icon = GFX_focus_UKR_logistic_reforms
+		cost = 5
+		x = 2
+		y = 6
+
+		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
+		relative_position_id = UKR_military_reforms_afu
+
+		available = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = UKR_command_of_the_logistics_forces_afu
 		icon = GFX_focus_UKR_logistic_reforms
 		cost = 5
-		x = 1
+		x = 0
 		y = 6
 
 		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
@@ -5058,7 +5101,7 @@ focus_tree = {
 		id = UKR_reform_of_tro
 		icon = GFX_focus_UKR_tro_reforms
 		cost = 5
-		x = -1
+		x = -2
 		y = 6
 
 		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
@@ -5073,7 +5116,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_modern_army
+		id = UKR_nato_standard_army
 		icon = GFX_focus_UKR_tro_reforms
 		cost = 5
 		x = 0
@@ -5081,6 +5124,7 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_reform_of_tro }
 		prerequisite = { focus = UKR_command_of_the_logistics_forces_afu }
+		prerequisite = { focus = UKR_increase_the_number_of_contract_soldiers }
 		relative_position_id = UKR_military_reforms_afu
 
 		available = {
