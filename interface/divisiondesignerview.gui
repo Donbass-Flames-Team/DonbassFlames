@@ -346,13 +346,13 @@ guiTypes = {
 
 		iconType = {
 			name = "select_model"
-			position = { x=1040 y=368 }	
+			position = { x=1039 y=375 }	
 			quadTextureSprite = "GFX_3d_view_placeholder"
 		}		
 		
 		buttonType = {
 			name = "toggle_model_selector_button"
-			position = { x=1038 y=365 }
+			position = { x=1035 y=371 }
 			size = { x = 249 y = 249 }
 			quadTextureSprite ="GFX_division_3d_bg"	
 			pdx_tooltip = "TOGGLE_MODEL_SELECTOR"
@@ -363,7 +363,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "hardness_stat"
 			size = { width = 100 height = 24 }
-			position = { x=86 y=192 }
+			position = { x=86 y=199 }
 
 			background = {
 				name = "hardness_stat_bg"
@@ -390,7 +390,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "org_stat"
 			size = { width = 80 height = 24 }
-			position = { x=216 y=192 }
+			position = { x=216 y=199 }
 
 			background = {
 				name = "org_stat_bg"
@@ -417,7 +417,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "strength_stat"
 			size = { width = 80 height = 24 }
-			position = { x=326 y=192 }
+			position = { x=326 y=199 }
 
 			background = {
 				name = "strength_stat_bg"
@@ -444,7 +444,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "speed_stat"
 			size = { width = 115 height = 24 }
-			position = { x=436 y=192 }
+			position = { x=436 y=199 }
 
 			background = {
 				name = "speed_stat_bg"
@@ -470,7 +470,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "combat_width_view"
-			position = { x = 290 y = 240 }
+			position = { x = 290 y = 238 }
 
 			instantTextboxType = {
 				position = { x = 0 y = 10 }
@@ -485,7 +485,7 @@ guiTypes = {
 				
 		instantTextboxType = {
 			name = "division_composition_label"
-			position = { x = 60 y = 168 }
+			position = { x = 60 y = 167 }
 			font = "hoi_18mbs"
 			text = "DESIGNER_DIVISIONAL_COMPOSITION"
 			maxWidth = 200
@@ -494,7 +494,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "division_title"
-			position = { x = 400 y = 4 }
+			position = { x = 440 y = 12 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
@@ -510,7 +510,7 @@ guiTypes = {
 			iconType = {
 				name = "division_template_icon"
 				spriteType = "GFX_division_template_icon"
-				position = { x = 135 y = 57 }
+				position = { x = 135 y = 64 }
 			}
 
 			iconType = {
@@ -539,7 +539,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "regimental_support_header_label"
-				position = { x = 165 y = 400 }
+				position = { x = 165 y = 410 }
 				font = "hoi_16mbs"
 				text = "REGIMENTAL_SUPPORT_HEADER"
 				maxWidth = 250
@@ -641,7 +641,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 					name = "base_stats_label"
-					position = { x = 87 y = 32 }
+					position = { x = 91 y = 40 }
 					font = "hoi4_typewriter22"
 					text = "DESIGNER_BASE_STATS_LABEL"
 					maxWidth = 175
@@ -675,7 +675,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 					name = "combat_stats_label"
-					position = { x = 265 y = 32 }
+					position = { x = 269 y = 40 }
 					font = "hoi4_typewriter22"
 					text = "DESIGNER_COMBAT_STATS_LABEL"
 					maxWidth = 165
@@ -712,7 +712,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "equipment_stats_label"
-				position = { x = 482 y = 35 }
+				position = { x = 476 y = 40 }
 				font = "hoi4_typewriter22"
 				text = "DESIGNER_EQUIPMENT_STATS_LABEL"
 				maxWidth = 165
@@ -723,7 +723,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "adjuster_stats"
-				position = { x = 109 y = 365 }
+				position = { x = 108 y = 364 }
 				size = { width = 262 height = 236 }
 				scroll_wheel_factor = 62
 				smooth_scrolling = yes
@@ -872,7 +872,7 @@ guiTypes = {
 				background = {
 					name = "name_bg"
 					quadTextureSprite = "GFX_generic_background"
-					position = { x = 15 y = 0 }
+					position = { x = 15 y = 6 }
 					alwaystransparent = yes
 				}
 
@@ -881,12 +881,12 @@ guiTypes = {
 			iconType = {
 				name = "division_nametag_icon"
 				spriteType = "GFX_division_nametag_icon"
-				position = { x = -15 y = 2 }
+				position = { x = -15 y = 8 }
 			}
 
 			instantTextboxType = {
 				name = "name"
-				position = { x = 25 y = 5 }
+				position = { x = 25 y = 11 }
 				font = "hoi_18mbs"
 				text = "COMBAT_HEADER"
 				maxWidth = 185
@@ -981,7 +981,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close_button"
-			position = { x = -35 y = 6 }
+			position = { x = -43 y = 10 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -992,7 +992,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "production_resources"
-			position = { x= 608 y= -95 }
+			position = { x= 609 y= -92 }
 			font = "hoi_18mbs"
 			maxWidth = 380
 			maxHeight = 25
@@ -1347,7 +1347,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "division_equipment_btn"
-				position = { x = 511 y = 52 }
+				position = { x = 511 y = 62 }
 				quadTextureSprite = "GFX_button_123x34_alt"
 				buttonText = "DIVISION_EQUIPMENT"
 				buttonFont = "hoi_16mbs"
@@ -1383,26 +1383,26 @@ guiTypes = {
 			iconType = {
 				name = "division_priority_bg"
 				spriteType = "GFX_division_priority_bg"
-				position = { x = 508 y = 107 }
+				position = { x = 508 y = 115 }
 			}
 
 			buttonType = {
 				name = "priority_button_1"
-				position = { x = 517 y = 110 }
+				position = { x = 517 y = 117 }
 				quadTextureSprite = "GFX_div_priority_strip"
 				clicksound = click_default
 			}
 
 			buttonType = {
 				name = "priority_button_2"
-				position = { x = 553 y = 110 }
+				position = { x = 553 y = 117 }
 				quadTextureSprite = "GFX_div_priority_strip"
 				clicksound = click_default
 			}
 
 			buttonType = {
 				name = "priority_button_3"
-				position = { x = 589 y = 109 }
+				position = { x = 589 y = 117 }
 				quadTextureSprite = "GFX_div_priority_strip"
 				clicksound = click_default
 			}
@@ -1434,13 +1434,13 @@ guiTypes = {
 			iconType = {
 				name = "can_paradrop_icon"
 				spriteType = "GFX_can_paradrop_icon_small"
-				position = { x = 427 y = 60 }
+				position = { x = 427 y = 68 }
 			}
 
 			iconType = {
 				name = "special_forces_icon"
 				spriteType = "GFX_special_forces_icon"
-				position = { x = 452 y = 60 }
+				position = { x = 452 y = 68 }
 			}
 
 			dropDownBoxType = {
@@ -1736,7 +1736,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "designer_division_regiment_slot_entry"
-		position = { x=0 y=0}	
+		position = { x=0 y=13}	
 		size = { width=76 height=53 }
 		clipping = no
 
@@ -1793,7 +1793,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "designer_division_support_slot_entry"
-		position = { x=0 y=0}	
+		position = { x=0 y=12}	
 		size = { width=64 height=53 }
 		clipping = no
 		
@@ -2012,7 +2012,7 @@ guiTypes = {
 	
 		instantTextboxType = {
 			name = "count"
-			position = { x = 78 y = 5 }
+			position = { x = 78 y = 4 }
 			textureFile = ""
 			font = "hoi4_typewriter16_inverted"
 			borderSize = { x = 0 y = 0 }
@@ -2024,7 +2024,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "label"
-			position = { x = 0 y = 5 }
+			position = { x = 2 y = 4 }
 			textureFile = ""
 			font = "hoi4_typewriter16_inverted"
 			borderSize = { x = 0 y = 0 }
