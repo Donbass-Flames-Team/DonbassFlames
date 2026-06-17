@@ -1532,6 +1532,28 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_the_sovereign_internet_act
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = 0
+		y = 3
+
+		prerequisite = { focus = RUS_yarovaya_package }
+		relative_position_id = RUS_domestic_policy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
 		id = RUS_law_on_undesirable_organizations
 		icon = GFX_goal_no_focus_RUS
 		cost = 3
@@ -1584,7 +1606,7 @@ focus_tree = {
 		x = 5
 		y = 2
 
-		prerequisite = { focus = RUS_domestic_policy }
+		prerequisite = { focus = RUS_investments_in_crimea }
 		relative_position_id = RUS_domestic_policy
 		
 		ai_will_do = {
@@ -1787,6 +1809,50 @@ focus_tree = {
 
 		}
 	}
+
+	focus = {
+		id = RUS_aircraft_modernization
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = -1
+		y = 1
+
+		prerequisite = { focus = RUS_establish_aerospace_forces }
+		relative_position_id = RUS_establish_aerospace_forces
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = RUS_new_types_of_missiles
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 1
+		y = 1
+
+		prerequisite = { focus = RUS_establish_aerospace_forces }
+		relative_position_id = RUS_establish_aerospace_forces
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}	
 
 	focus = {
 		id = RUS_increase_contracts_in_army

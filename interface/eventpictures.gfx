@@ -133,8 +133,20 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_events/kharkov_accords_terminated.dds"
 	}
 
+	spriteType = {
+		name = "GFX_news_event_eu_association_with_ukraine"
+		texturefile = "gfx/event_pictures/news_events/eu_association_with_ukraine.png"
+	}	
 
-	
+	spriteType = {
+		name = "GFX_news_event_lublin_triangle"
+		texturefile = "gfx/event_pictures/news_events/lublin_triangle.png"
+	}	
+
+	spriteType = {
+		name = "GFX_news_event_associated_trio"
+		texturefile = "gfx/event_pictures/news_events/associated_trio.png"
+	}	
 
 	spriteType = {
 		name = "GFX_Report_event_threat_of_default_picture"
