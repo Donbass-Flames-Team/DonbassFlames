@@ -1440,7 +1440,7 @@ focus_tree = {
     focus = {
 	    id = RUS_cultural_sovereignty
 	    icon = GFX_goal_no_focus_RUS
-	    x = 0
+	    x = 1
 	    y = 1
 	    relative_position_id = RUS_family_values_protection
 	    cost = 2
@@ -1453,6 +1453,44 @@ focus_tree = {
             }
             add_political_power = 50
         }
+	}
+
+    focus = {
+	    id = RUS_yunarmy
+	    icon = GFX_goal_no_focus_RUS
+	    x = -1
+	    y = 1
+	    relative_position_id = RUS_family_values_protection
+	    cost = 2
+	    prerequisite = { focus = RUS_family_values_protection }
+	
+	    completion_reward = {
+            
+        }
+	}
+
+
+	focus = {
+		id = RUS_create_EAEU
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = -5
+		y = 1
+
+		prerequisite = { focus = RUS_domestic_policy }
+		relative_position_id = RUS_domestic_policy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
 	}
 
 	focus = {
@@ -1496,7 +1534,7 @@ focus_tree = {
     focus = {
 	    id = RUS_state_media_monopoly
 	    icon = GFX_goal_no_focus_RUS
-	    x = 0
+	    x = -1
 	    y = 1
 	    relative_position_id = RUS_nationalization_of_elites
 	    cost = 3
@@ -1504,6 +1542,20 @@ focus_tree = {
 	
 	    completion_reward = {
 		    add_ideas = RUS_state_media_monopoly_spirit_idea
+		}
+	}
+
+    focus = {
+	    id = RUS_rosgvardia
+	    icon = GFX_goal_no_focus_RUS
+	    x = 1
+	    y = 1
+	    relative_position_id = RUS_nationalization_of_elites
+	    cost = 3
+	    prerequisite = { focus = RUS_nationalization_of_elites }
+	
+	    completion_reward = {
+		    
 		}
 	}
 
@@ -1529,10 +1581,10 @@ focus_tree = {
 		completion_reward = {
 
 		}
-	}
+	}	
 
 	focus = {
-		id = RUS_the_sovereign_internet_act
+		id = RUS_expand_the_law_on_foreign_agents
 		icon = GFX_goal_no_focus_RUS
 		cost = 3
 		x = 0
@@ -1551,7 +1603,7 @@ focus_tree = {
 		completion_reward = {
 
 		}
-	}	
+	}
 
 	focus = {
 		id = RUS_law_on_undesirable_organizations
@@ -1620,7 +1672,115 @@ focus_tree = {
 			
 		}
 	}
-	
+
+	focus = {
+		id = RUS_elections_2019
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = 35
+		y = 6
+
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = {
+		id = RUS_national_projects
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = 0
+		y = 1
+
+		prerequisite = { focus = RUS_elections_2019 }
+		relative_position_id = RUS_elections_2019
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = RUS_the_sovereign_internet_act
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = -1
+		y = 2
+
+		prerequisite = { focus = RUS_national_projects }
+		relative_position_id = RUS_elections_2019
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = RUS_raise_the_retirement_age
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = 1
+		y = 2
+
+	    prerequisite = { focus = RUS_national_projects }
+		relative_position_id = RUS_elections_2019
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = RUS_constitutional_amendments
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = 0
+		y = 3
+
+	    prerequisite = { focus = RUS_the_sovereign_internet_act }
+		prerequisite = { focus = RUS_raise_the_retirement_age }
+		relative_position_id = RUS_elections_2019
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}	
 
 	focus = {
 		id = RUS_cooperation_with_people_republics
@@ -1785,6 +1945,28 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_establish_bars
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 3
+		y = 1
+
+		prerequisite = { focus = RUS_development_of_amred_forces }
+		relative_position_id = RUS_development_of_amred_forces
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+
 		}
 	}
 
