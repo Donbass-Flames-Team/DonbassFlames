@@ -952,6 +952,15 @@ country_event = {
 	picture = GFX_Report_event_peremoha_poroshenka_picture
 	
 	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.138
+				days = 13
+			}
+		}
+	}
 
 	option = {
 		name = ukraine.17.a
@@ -5008,6 +5017,95 @@ country_event = {
 		add_political_power = -15
 		add_stability = -0.02
 		add_war_support = -0.015
+	}
+}
+
+# Инаугурация Порошенко
+country_event = {
+	id = ukraine.138
+	title = ukraine.138.t
+	desc  = ukraine.138.d
+	picture = GFX_Report_event_poroshenko_inauguration_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.138.a
+		add_political_power = 15
+	}
+}
+
+# Конфликт вокруг «Укртранснафты»
+country_event = {
+	id = ukraine.139
+	title = ukraine.139.t
+	desc  = ukraine.139.d
+	picture = GFX_Report_event_conflict_around_ukrnafta_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.139.a
+		add_political_power = -25
+		add_stability = -0.01
+		hidden_effect = {
+			country_event = {
+				id = ukraine.140
+				days = 4
+			}
+		}
+	}
+}
+
+# Конфликт вокруг «Укртранснафты»
+country_event = {
+	id = ukraine.140
+	title = ukraine.140.t
+	desc  = ukraine.140.d
+	picture = GFX_Report_event_kolomoysky_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.140.a
+		add_political_power = -5
+		hidden_effect = {
+			country_event = {
+				id = ukraine.141
+				days = 1
+			}
+		}
+	}
+}
+
+# Увольнение Коломойского
+country_event = {
+	id = ukraine.141
+	title = ukraine.141.t
+	desc  = ukraine.141.d
+	picture = GFX_Report_event_kolomoysky_2_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.141.a
+		add_political_power = -5
 	}
 }
 

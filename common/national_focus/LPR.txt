@@ -782,7 +782,7 @@ focus_tree = {
 			has_country_flag = LPR_referendum_passed
 		}
 		available = {
-			data > 2015.3.1
+			has_war = no
 		}
 
 		completion_reward = {

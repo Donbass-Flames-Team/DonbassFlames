@@ -2355,6 +2355,60 @@ focus_tree = {
 	}	
 
 	focus = {
+		id = UKR_reshuffles_in_the_general_staff
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = UKR_battle_for_ukraine }
+		relative_position_id = UKR_battle_for_ukraine
+
+		available = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = UKR_organize_the_corps_system
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -3
+		y = 2
+		
+		prerequisite = { focus = UKR_reshuffles_in_the_general_staff }
+		relative_position_id = UKR_battle_for_ukraine
+
+		available = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = UKR_create_assault_troops
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -3
+		y = 3
+		
+		prerequisite = { focus = UKR_organize_the_corps_system }
+		relative_position_id = UKR_battle_for_ukraine
+
+		available = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+		}
+	}	
+
+	focus = {
 		id = UKR_ban_opzh
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
@@ -2479,6 +2533,24 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
+	focus = {
+		id = UKR_break_through_the_border
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -4
+		y = 3
+		
+		prerequisite = { focus = UKR_creation_of_lsr }
+		relative_position_id = UKR_operations_on_russian_terrotory
+
+		available = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+		}
+	}	
 
 	focus = {
 		id = UKR_organize_destroying_of_our_enemies
@@ -2648,10 +2720,12 @@ focus_tree = {
 		id = UKR_offer_contracts_for_18_24_year_olds
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 2
+		x = 0
 		y = 2
 		
 		prerequisite = { focus = UKR_lower_the_age_for_conscription }
+        prerequisite = { focus = UKR_start_busification }
+		prerequisite = { focus = UKR_offensive_guard }
 		relative_position_id = UKR_mobilization
 
 		available = {
@@ -2751,6 +2825,24 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
+	focus = {
+		id = UKR_ukrainian_KAB
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = UKR_production_of_rockets }
+		relative_position_id = UKR_production_of_rockets
+
+		available = {
+			has_country_flag = Russo_Ukranian_War
+		}
+
+		completion_reward = {
+		}
+	}	
 
 	focus = {
 		id = UKR_production_of_shells
@@ -3021,6 +3113,7 @@ focus_tree = {
 
 		available = {
 			has_country_flag = Russo_Ukranian_War
+			has_completed_focus = UKR_create_brave1
 		}
 
 		allow_branch = {
@@ -3108,7 +3201,7 @@ focus_tree = {
 		id = UKR_new_foreign_policy
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 19
+		x = 16
 		y = 0
 
 		available = {
@@ -3132,7 +3225,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_stability = 0.035
+			add_political_power = 25
 		}
 	}
 
@@ -3145,6 +3239,25 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_new_foreign_policy }
 		relative_position_id = UKR_new_foreign_policy
+
+		available = {
+            
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = UKR_energy_independence_from_the_russia
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 2
+		y = 1
+
+		prerequisite = { focus = UKR_stop_cooperation_with_russia }
+		relative_position_id = UKR_stop_cooperation_with_russia
 
 		available = {
             
@@ -3248,7 +3361,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+            army_experience = 35
 		}
 	}	
 
@@ -3264,7 +3377,7 @@ focus_tree = {
 		relative_position_id = UKR_integration_with_nato
 
 		available = {
-            has_completed_focus = UKR_modern_army
+            has_completed_focus = UKR_nato_standard_army
 			date > 2020.1.1
 		}
 
@@ -3346,7 +3459,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_political_power = 25
+            hidden_effect = {
+				news_event = news_events.38
+				hours = 3
+			}
 		}
 	}
 
@@ -3366,7 +3483,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 25
             set_country_flag = UKR_associated_trio_flag
+			hidden_effect = {
+				news_event = news_events.39
+				hours = 3
+			}
 		}
 	}	
 
@@ -3418,7 +3540,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_political_power = 25
+            hidden_effect = {
+				news_event = {
+					id = news_events.37
+					hours = 3
+				}
+			}
 		}
 	}
 
@@ -3537,7 +3665,61 @@ focus_tree = {
 		id = UKR_independent_church
 		icon = GFX_focus_UKR_police_reform
 		cost = 5
+		x = 4
+		y = 1
+
+		prerequisite = { focus = UKR_ministry_of_information_policy_of_ukraine }
+		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_take_tomos
+		icon = GFX_focus_UKR_police_reform
+		cost = 5
 		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_independent_church }
+		relative_position_id = UKR_independent_church
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}	
+
+	focus = {
+		id = UKR_anti_raider_law
+		icon = GFX_focus_UKR_police_reform
+		cost = 5
+		x = 0
+		y = 3
+
+		prerequisite = { focus = UKR_groysman_govenrement }
+		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_support_ukranian_language
+		icon = GFX_focus_UKR_police_reform
+		cost = 5
+		x = 2
 		y = 3
 
 		prerequisite = { focus = UKR_groysman_govenrement }
@@ -3558,7 +3740,6 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		prerequisite = { focus = UKR_education_reform }
 		prerequisite = { focus = UKR_police_reform }
         prerequisite = { focus = UKR_healthcare_reform }
 		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
@@ -3579,7 +3760,9 @@ focus_tree = {
 		x = 0
 		y = 4
 
-		prerequisite = { focus = UKR_groysman_govenrement }
+		prerequisite = { focus = UKR_education_reform }
+		prerequisite = { focus = UKR_support_ukranian_language }
+		prerequisite = { focus = UKR_anti_raider_law }
 		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
 
 		available = {
@@ -3610,6 +3793,24 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_form_kord
+		icon = GFX_focus_UKR_police_reform
+		cost = 3
+		x = 2
+		y = 2
+
+		prerequisite = { focus = UKR_police_reform }
+		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}	
+
+	focus = {
 		id = UKR_healthcare_reform
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 3
@@ -3631,10 +3832,10 @@ focus_tree = {
 		id = UKR_education_reform
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 3
-		x = 0
-		y = 1
+		x = -2
+		y = 3
 
-		prerequisite = { focus = UKR_ministry_of_information_policy_of_ukraine }
+		prerequisite = { focus = UKR_groysman_govenrement }
 		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
 
 		available = {
@@ -3651,7 +3852,7 @@ focus_tree = {
 		id = UKR_economic_reforms
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 7
+		x = 9
 		y = 1
 
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
@@ -3795,7 +3996,7 @@ focus_tree = {
 		id = UKR_anticorruption_reforms
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 4
-		x = 17
+		x = 20
 		y = 1
 
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
@@ -3807,6 +4008,24 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_lustration_law
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 5
+		x = -2
+		y = 1
+
+		prerequisite = { focus = UKR_anticorruption_reforms }
+		relative_position_id = UKR_anticorruption_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
 		}
 	}
 
@@ -3956,13 +4175,32 @@ focus_tree = {
 
 		completion_reward = {
 		}
+	}
+	
+	focus = {
+		id = UKR_land_market
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 5
+		x = -3
+		y = 5
+
+		prerequisite = { focus = UKR_introduction_of_the_institution_of_elders }
+		prerequisite = { focus = UKR_country_without_corruption }
+		relative_position_id = UKR_anticorruption_reforms
+
+		available = {
+
+		}
+
+		completion_reward = {
+		}
 	}	
 
 	focus = {
 		id = UKR_land_reforms
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = 12
+		x = 14
 		y = 1
 
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
@@ -4077,7 +4315,7 @@ focus_tree = {
 		id = UKR_deoligarhization
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 21
+		x = 24
 		y = 1
 
 		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
@@ -4108,6 +4346,12 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = UKR_the_influence_of_oligarchs_will_reduce_tt
+			hidden_effect = {
+				country_event = {
+					id = ukraine.139
+					hours = 2
+				}
+			}
 		}
 	}
 
@@ -4156,7 +4400,7 @@ focus_tree = {
         id = UKR_decomunization
         icon = GFX_focus_UKR_start_of_ato
 		cost = 10
-        x = 26
+        x = 29
         y = 1
  
         prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
@@ -4280,7 +4524,7 @@ focus_tree = {
 		id = UKR_zelensky
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = -12
+		x = -13
 		y = 1
 
 		prerequisite = { focus = UKR_snap_presidential_elections }
@@ -4302,7 +4546,28 @@ focus_tree = {
 		id = UKR_create_the_office_of_the_president
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = 0
+		x = 1
+		y = 1
+
+		prerequisite = { focus = UKR_zelensky }
+		relative_position_id = UKR_zelensky
+
+		available = {
+            NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = UKR_start_personnel_purges
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -1
 		y = 1
 
 		prerequisite = { focus = UKR_zelensky }
@@ -4323,7 +4588,7 @@ focus_tree = {
 		id = UKR_create_digital_country
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = -5
+		x = -6
 		y = 2
 
 		prerequisite = { focus = UKR_call_early_parliamentary_elections }
@@ -4364,11 +4629,12 @@ focus_tree = {
 	focus = {
 		id = UKR_call_early_parliamentary_elections
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 2
-		x = 0
+		cost = 1
+		x = -1
 		y = 1
 
 		prerequisite = { focus = UKR_create_the_office_of_the_president }
+        prerequisite = { focus = UKR_start_personnel_purges }
 		relative_position_id = UKR_create_the_office_of_the_president
 
 		available = {
@@ -4384,7 +4650,7 @@ focus_tree = {
 		id = UKR_new_information_policy
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = 3
+		x = 1
 		y = 2
 
 		prerequisite = { focus = UKR_call_early_parliamentary_elections }
@@ -4465,10 +4731,10 @@ focus_tree = {
 	}	
 
 	focus = {
-		id = UKR_land_market
+		id = UKR_expand_privatization
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = -2
+		x = -3
 		y = 2
 
 		prerequisite = { focus = UKR_call_early_parliamentary_elections }
@@ -4489,12 +4755,12 @@ focus_tree = {
 		id = UKR_business_recovery_program
 		icon = GFX_focus_UKR_business_recovery_program
 		cost = 2
-		x = -1
-		y = 3
+		x = 1
+		y = 1
 
-		prerequisite = { focus = UKR_land_market }
+		prerequisite = { focus = UKR_expand_privatization }
 		prerequisite = { focus = UKR_increase_minimal_salary }
-		relative_position_id = UKR_create_the_office_of_the_president
+		relative_position_id = UKR_expand_privatization
 
 		available = {
             NOT = {
@@ -4508,10 +4774,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_infrastructure_projects
+		id = UKR_start_large_construction
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = 1
+		x = -1
 		y = 4
 
 		prerequisite = { focus = UKR_business_recovery_program }
@@ -4535,10 +4801,10 @@ focus_tree = {
 		id = UKR_anti_oligarchy_law
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = 1
+		x = -1
 		y = 5
 
-		prerequisite = { focus = UKR_infrastructure_projects }
+		prerequisite = { focus = UKR_start_large_construction }
 		relative_position_id = UKR_create_the_office_of_the_president
 
 		available = {
@@ -4556,11 +4822,11 @@ focus_tree = {
 		id = UKR_question_of_legalization_of_casino
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = -3
-		y = 3
+		x = -1
+		y = 1
 
-		prerequisite = { focus = UKR_land_market }
-		relative_position_id = UKR_create_the_office_of_the_president
+		prerequisite = { focus = UKR_expand_privatization }
+		relative_position_id = UKR_expand_privatization
 
 		available = {
             NOT = {
@@ -4619,7 +4885,7 @@ focus_tree = {
 		id = UKR_military_reforms_afu
 		icon = GFX_focus_UKR_afu_reforms
 		cost = 3
-		x = 72
+		x = 77
 		y = 0
 
 
@@ -4812,10 +5078,28 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_increase_the_number_of_contract_soldiers
+		icon = GFX_focus_UKR_logistic_reforms
+		cost = 5
+		x = 2
+		y = 6
+
+		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
+		relative_position_id = UKR_military_reforms_afu
+
+		available = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = UKR_command_of_the_logistics_forces_afu
 		icon = GFX_focus_UKR_logistic_reforms
 		cost = 5
-		x = 1
+		x = 0
 		y = 6
 
 		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
@@ -4833,7 +5117,7 @@ focus_tree = {
 		id = UKR_reform_of_tro
 		icon = GFX_focus_UKR_tro_reforms
 		cost = 5
-		x = -1
+		x = -2
 		y = 6
 
 		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
@@ -4848,7 +5132,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_modern_army
+		id = UKR_nato_standard_army
 		icon = GFX_focus_UKR_tro_reforms
 		cost = 5
 		x = 0
@@ -4856,6 +5140,7 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_reform_of_tro }
 		prerequisite = { focus = UKR_command_of_the_logistics_forces_afu }
+		prerequisite = { focus = UKR_increase_the_number_of_contract_soldiers }
 		relative_position_id = UKR_military_reforms_afu
 
 		available = {
@@ -4955,6 +5240,29 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = UKR_mlrs_vilkha
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = -4
+		y = 1
+
+		prerequisite = { focus = UKR_ukranian_mic }
+		relative_position_id = UKR_ukranian_mic
+
+		available = {
+           
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = modern_tank_5
+            }
 		}
 	}
 
@@ -6209,6 +6517,73 @@ focus_tree = {
             custom_effect_tooltip = UKR_started_partial_mobilization_tt
 			add_manpower = 25000
 			hidden_effect = {
+				division_template = {
+	                name = "Pikhotnyy batal'yon"
+	                regiments = {
+                        territorial_defense_unit = { x = 0 y = 0 }
+		                territorial_defense_unit = { x = 0 y = 1 }
+		                territorial_defense_unit = { x = 0 y = 2 }
+                        territorial_defense_unit = { x = 1 y = 0 }
+	                }
+                    support = {
+                        engineer = { x = 0 y = 0 }
+                        recon = { x = 0 y = 1 }
+                        mortar = { x = 0 y = 2 }
+				        atgm_company = { x = 0 y = 3 }
+        		        field_hospital = { x = 0 y = 4} 
+        		        sniper_company = { x = 1 y = 0 }
+        		        manpads_platoon = { x = 1 y = 1}
+  				        logistics_company = { x = 1 y = 2}
+				        signal_company = { x = 1 y = 3} 
+	                }
+                }
+				random_owned_controlled_state = {
+					create_unit = {
+				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 4
+			        }
+					create_unit = {
+				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 2
+			        }		
+					create_unit = {
+				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 2
+			        }
+					create_unit = {
+				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 1
+			        }	
+					create_unit = {
+				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 1
+			        }
+					create_unit = {
+				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 1
+			        }	
+					create_unit = {
+				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 1
+			        }
+					create_unit = {
+				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 1
+			        }
+					create_unit = {
+				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 5
+			        }																																				
+				}
 				news_event = {
 					id = news_events.19
 					hours = 5
