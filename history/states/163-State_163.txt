@@ -1,6 +1,6 @@
 state = { 
 	id = 163 
-	name = "STATE_163" # Александровка - Безимено
+	name = "STATE_163"
 	manpower = 500 
 	
 	state_category = slot_0 
@@ -8,6 +8,7 @@ state = {
 	history = { 
 		owner = RUS 
 		
+		victory_points = { 5018 2 }
 		buildings = { 
 			social_infrastructure = 1
 			network_infrastructure = 1

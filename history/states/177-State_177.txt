@@ -1,6 +1,6 @@
 state = { 
 	id = 177 
-	name = "STATE_177" # Плетеневка - Шебекино
+	name = "STATE_177"
 	manpower = 500 
 	
 	state_category = slot_0 
@@ -8,6 +8,7 @@ state = {
 	history = { 
 		owner = RUS 
 		
+		victory_points = { 13851 5 }
 		buildings = { 
 			social_infrastructure = 1
 			network_infrastructure = 1

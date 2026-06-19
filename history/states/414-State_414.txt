@@ -1,6 +1,6 @@
 state = { 
 	id = 414 
-	name = "STATE_414" # АПП «Новошахтинск»
+	name = "STATE_414"
 	manpower = 500 
 	
 	state_category = slot_0 
@@ -8,6 +8,7 @@ state = {
 	history = { 
 		owner = RUS 
 		
+		victory_points = { 15730 2 }
 		buildings = { 
 			social_infrastructure = 0
 			network_infrastructure = 0

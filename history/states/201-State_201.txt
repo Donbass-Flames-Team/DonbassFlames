@@ -1,6 +1,6 @@
 state = { 
 	id = 201 
-	name = "STATE_201" # Сиротино - Клименки
+	name = "STATE_201"
 	manpower = 500 
 	
 	state_category = slot_0 
@@ -8,6 +8,7 @@ state = {
 	history = { 
 		owner = RUS 
 		
+		victory_points = { 14115 2 }
 		buildings = { 
 			social_infrastructure = 1
 			network_infrastructure = 1
