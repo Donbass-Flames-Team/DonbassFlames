@@ -136,6 +136,10 @@ focus_tree = {
 		available = {
 		}
 
+		bypass = {
+			has_completed_focus = RUS_coup_in_ukraine
+		}
+
 		completion_reward = {
 			add_political_power = 35
 			add_stability = 0.025
@@ -157,6 +161,10 @@ focus_tree = {
 		}
 
 		available = {
+		}
+
+		bypass = {
+			has_completed_focus = RUS_coup_in_ukraine
 		}
 
 		completion_reward = {
@@ -205,6 +213,10 @@ focus_tree = {
 		available = {
 		}
 
+		bypass = {
+			has_completed_focus = RUS_coup_in_ukraine
+		}
+
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
@@ -226,6 +238,10 @@ focus_tree = {
 		}
 
 		available = {
+		}
+
+		bypass = {
+			has_completed_focus = RUS_coup_in_ukraine
 		}
 
 		completion_reward = {
@@ -250,6 +266,10 @@ focus_tree = {
 		}
 
 		available = {
+		}
+
+		bypass = {
+			has_completed_focus = RUS_coup_in_ukraine
 		}
 
 		completion_reward = {
@@ -280,6 +300,10 @@ focus_tree = {
 		available = {
 		}
 
+		bypass = {
+			has_completed_focus = RUS_coup_in_ukraine
+		}
+
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
@@ -307,6 +331,10 @@ focus_tree = {
 		available = {
 		}
 
+		bypass = {
+			has_completed_focus = RUS_coup_in_ukraine
+		}
+
 		completion_reward = {
 			add_political_power = 25
 			custom_effect_tooltip = ukraine_increase_prorussian_moods_tt
@@ -332,6 +360,10 @@ focus_tree = {
 		}
 
 		available = {
+		}
+
+		bypass = {
+			has_completed_focus = RUS_coup_in_ukraine
 		}
 
 		completion_reward = {
@@ -1271,13 +1303,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		bypass = {
-			OR = {
-				has_global_flag = Ukraine_victory_in_ATO
-				has_country_flag = RUS_People_republic_victory
-			}
-		}
-
 		available = {
 			date > 2014.8.15
 			NOT = {
@@ -1321,13 +1346,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		bypass = {
-			OR = {
-				has_global_flag = Ukraine_victory_in_ATO
-				has_country_flag = RUS_People_republic_victory
-			}
-		}
-
 		available = {
 		}
 
@@ -1350,13 +1368,6 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
-		}
-
-		bypass = {
-			OR = {
-				has_global_flag = Ukraine_victory_in_ATO
-				has_country_flag = RUS_People_republic_victory
-			}
 		}
 
 		available = {
@@ -1674,7 +1685,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_elections_2019
+		id = RUS_elections_2018
 		icon = GFX_goal_no_focus_RUS
 		cost = 3
 		x = 35
@@ -1700,8 +1711,8 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		prerequisite = { focus = RUS_elections_2019 }
-		relative_position_id = RUS_elections_2019
+		prerequisite = { focus = RUS_elections_2018 }
+		relative_position_id = RUS_elections_2018
 		
 		ai_will_do = {
 			factor = 1
@@ -1723,7 +1734,7 @@ focus_tree = {
 		y = 2
 
 		prerequisite = { focus = RUS_national_projects }
-		relative_position_id = RUS_elections_2019
+		relative_position_id = RUS_elections_2018
 		
 		ai_will_do = {
 			factor = 1
@@ -1745,7 +1756,7 @@ focus_tree = {
 		y = 2
 
 	    prerequisite = { focus = RUS_national_projects }
-		relative_position_id = RUS_elections_2019
+		relative_position_id = RUS_elections_2018
 		
 		ai_will_do = {
 			factor = 1
@@ -1768,7 +1779,7 @@ focus_tree = {
 
 	    prerequisite = { focus = RUS_the_sovereign_internet_act }
 		prerequisite = { focus = RUS_raise_the_retirement_age }
-		relative_position_id = RUS_elections_2019
+		relative_position_id = RUS_elections_2018
 		
 		ai_will_do = {
 			factor = 1
@@ -2094,6 +2105,7 @@ focus_tree = {
 		available = {
 			date > 2021.11.11
 			has_completed_focus = RUS_full_control_over_donbass
+			has_completed_focus = RUS_constitutional_amendments
 		}
 
 		completion_reward = {
