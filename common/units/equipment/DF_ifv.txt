@@ -41,8 +41,8 @@ equipments = {
 		year = 1960
 
 		archetype = infantry_fighting_vehicle
-		active = no
-		priority = 05
+		active = yes
+		priority = 5
 		visual_level = 0
 	}
 
@@ -55,7 +55,7 @@ equipments = {
 		visual_level = 1
 
 		maximum_speed = 10
-		reliability = 1.2
+		reliability = 1.0
 		hardness = 0.95
 		armor_value = 35
 		supply_consumption = 0.1
@@ -77,7 +77,6 @@ equipments = {
 		}
 
 		manpower = 3
-
 		build_cost_ic = 2.5
 	}
 
@@ -87,10 +86,10 @@ equipments = {
 		archetype = infantry_fighting_vehicle
 		parent = infantry_fighting_vehicle_1
 		priority = 10
-		visual_level = 1
+		visual_level = 2
 
 		maximum_speed = 12
-		reliability = 1.2
+		reliability = 1.0
 		hardness = 0.95
 		armor_value = 45
 		supply_consumption = 0.1
@@ -112,7 +111,6 @@ equipments = {
 		}
 
 		manpower = 3
-
 		build_cost_ic = 2.5
 	}
 
@@ -122,10 +120,10 @@ equipments = {
 		archetype = infantry_fighting_vehicle
 		parent = infantry_fighting_vehicle_2
 		priority = 10
-		visual_level = 1
+		visual_level = 3
 
 		maximum_speed = 12
-		reliability = 1.2
+		reliability = 1.0
 		hardness = 0.95
 		armor_value = 60
 		supply_consumption = 0.1
@@ -147,7 +145,6 @@ equipments = {
 		}
 
 		manpower = 3
-
 		build_cost_ic = 2.5
 	}
 }
