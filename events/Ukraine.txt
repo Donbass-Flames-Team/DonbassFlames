@@ -5109,6 +5109,28 @@ country_event = {
 	}
 }
 
+# Днепр вступает в состав Украины
+country_event = {
+	id = ukraine.142
+	title = ukraine.142.t
+	desc  = ukraine.142.d
+	picture = GFX_Report_event_kolomoysky_2_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = ukraine.142.a
+		annex_country = {
+            target = DRP
+            transfer_troops = no
+        }
+	}
+}
+
 # Выборы 2019 скоро
 country_event = {
 	id = ukr_elections_2019.1

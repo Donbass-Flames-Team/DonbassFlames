@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 2500 y = 500 }
+	continuous_focus_position = { x = 4500 y = 500 }
 	
 	focus = {
 		id = DRP_introduce_martial_law
@@ -45,6 +45,9 @@ focus_tree = {
 
 		completion_reward = {
 			load_oob = DRP_MVS_mobilization
+			add_to_variable = {
+				JAM_ammo_stockpile = 35000
+			}
 		}
 	}
 	
@@ -67,6 +70,49 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			load_oob = DRP_activists_mobilization
+		}
+	}
+
+	focus = {
+		id = DRP_forge_of_the_volunteers_batalions
+		icon = GFX_focus_DRP_mobilization_of_activists
+		cost = 0.2
+
+		prerequisite = {
+			focus =  DRP_mobilization_of_mvd
+		}
+		relative_position_id = DRP_introduce_martial_law
+		x = 3
+		y = 2
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_ideas = DRP_forge_of_the_dobrobats
+		}
+	}
+
+	focus = {
+		id = DRP_radical_pragmatism
+		icon = GFX_focus_DRP_barricades
+		cost = 0.2
+
+		prerequisite = {
+			focus =  DRP_mobilization_of_mvd
+		}
+		relative_position_id = DRP_introduce_martial_law
+		x = -3
+		y = 2
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_ideas = DRP_radical_pragmatism_idea
 		}
 	}
 	
@@ -110,6 +156,7 @@ focus_tree = {
 			add_war_support = 0.05
 			add_stability = 0.1
 			add_political_power = -30
+			add_ideas = DRP_promotion_10000_for_a_muscovite
 		}
 	}
 
@@ -134,5 +181,194 @@ focus_tree = {
 		}
 	}	
 
+	focus = {
+		id = DRP_future_of_dnieper
+		icon = GFX_focus_DRP_expand_the_company_10000
+		cost = 0.2
+
+		prerequisite = { focus =  DRP_liberate_the_dnieper_from_the_separatists }
+		relative_position_id = DRP_introduce_martial_law
+		x = 0
+		y = 5
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			country_event = Dnieper_kolomoysky.1
+		}
+	}	
+
+	focus = {
+		id = DRP_organize_forces_of_self_defence
+		icon = GFX_focus_DRP_expand_the_company_10000
+		cost = 0.2
+
+
+		x = 30
+		y = 0
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = DRP_organize_forces_of_self_defence
+		icon = GFX_focus_DRP_expand_the_company_10000
+		cost = 0.2
+
+
+		x = 30
+		y = 0
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = DRP_services_of_defense_of_dnieper
+		icon = GFX_focus_DRP_expand_the_company_10000
+		cost = 0.2
+
+		prerequisite = { focus =  DRP_organize_forces_of_self_defence }
+		relative_position_id = DRP_organize_forces_of_self_defence
+		x = 2
+		y = 1
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = DRP_expand_the_tro
+		icon = GFX_focus_DRP_expand_the_company_10000
+		cost = 0.2
+
+		prerequisite = { focus =  DRP_organize_forces_of_self_defence }
+		relative_position_id = DRP_organize_forces_of_self_defence
+		x = 0
+		y = 1
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = {
+		id = DRP_purchase_of_ammunition
+		icon = GFX_focus_DRP_expand_the_company_10000
+		cost = 0.2
+
+		prerequisite = { focus =  DRP_organize_forces_of_self_defence }
+		relative_position_id = DRP_organize_forces_of_self_defence
+		x = -2
+		y = 1
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = DRP_restoration_of_life
+		icon = GFX_focus_DRP_expand_the_company_10000
+		cost = 0.2
+
+		prerequisite = { focus =  DRP_restoration_of_life }
+		relative_position_id = DRP_restoration_of_life
+		x = 20
+		y = 0
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = DRP_the_question_of_the_name_dnepropetrovsk
+		icon = GFX_focus_DRP_expand_the_company_10000
+		cost = 0.2
+
+		prerequisite = { focus =  DRP_restoration_of_life }
+		relative_position_id = DRP_restoration_of_life
+		x = 2
+		y = 1
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = {
+		id = DRP_business_development
+		icon = GFX_focus_DRP_expand_the_company_10000
+		cost = 0.2
+
+		prerequisite = { focus =  DRP_restoration_of_life }
+		relative_position_id = DRP_restoration_of_life
+		x = -2
+		y = 1
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = {
+		id = DRP_dnipro_offices
+		icon = GFX_focus_DRP_expand_the_company_10000
+		cost = 0.2
+
+		prerequisite = { focus =  DRP_restoration_of_life }
+		relative_position_id = DRP_restoration_of_life
+		x = -2
+		y = 2
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+	
 
 }

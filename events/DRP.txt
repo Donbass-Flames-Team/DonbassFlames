@@ -1,0 +1,66 @@
+﻿###########################
+# Dnieper_kolomoysky Events
+###########################
+
+add_namespace = Dnieper_kolomoysky
+
+# Будущее днепра
+country_event = {
+	id = Dnieper_kolomoysky.1
+	title = Dnieper_kolomoysky.1.t
+	desc = Dnieper_kolomoysky.1.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = DPR_forces_to_ilovaysk
+	}
+	
+	option = {
+		name = Dnieper_kolomoysky.1.a
+		UKR = {
+			country_event = {
+				id = ukraine.142
+				hours = 3
+			}
+		}
+	}
+
+	# независимый днепр
+	option = {
+		name = Dnieper_kolomoysky.1.b
+		set_country_flag = Dnieper_independent
+	}	
+}
+
+
+# Переименовка днепра
+country_event = {
+	id = Dnieper_kolomoysky.2
+	title = Dnieper_kolomoysky.2.t
+	desc = Dnieper_kolomoysky.2.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = DPR_forces_to_ilovaysk
+	}
+	# днепропетровск
+	option = {
+		name = Dnieper_kolomoysky.2.a
+	
+	}
+
+	# днепр
+	option = {
+		name = Dnieper_kolomoysky.2.b
+		
+	}
+	# днепроколомойск
+	option = {
+		name = Dnieper_kolomoysky.2.b
+		
+	}		
+}
