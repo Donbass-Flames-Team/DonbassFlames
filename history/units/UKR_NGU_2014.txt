@@ -1,0 +1,175 @@
+division_template = {
+	name = "Natsionalna hvardiya Ukrayiny"
+	regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		territorial_defense_unit = { x = 2 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3}     
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Batalyon operatyvnoho pryznachennya NHU"
+	regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		territorial_defense_unit = { x = 2 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3}     
+	}
+
+    is_locked = yes
+}
+
+units = {
+
+    #################################################################
+    ####### Zakhidne operatyvno-terytorialʹne ob'yednannya NHU ######
+    #################################################################
+
+    division= {
+        name = "1-y striletskyy batalyon 2-yi okremoyi bryhady NHU"  # ВЧ львов
+        location = 5634
+        division_template = "Natsionalna hvardiya Ukrayinyn"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }
+
+    division= {
+        name = "2-y striletskyy batalyon 2-yi okremoyi bryhady NHU" # ВЧ тернополь
+        location = 5634
+        division_template = "Natsionalna hvardiya Ukrayinyn"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }    
+
+    division= {
+        name = "5-y striletskyy batalyon 2-yi okremoyi bryhady NHU" # ВЧ дрогобич
+        location = 5634
+        division_template = "Natsionalna hvardiya Ukrayinyn"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }    
+
+    division= {
+        name = "1-y striletskyy batalyon 36-ho okremoho polka NHU"  # ВЧ хмельницкий
+        location = 5634
+        division_template = "Natsionalna hvardiya Ukrayinyn"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.2
+		start_manpower_factor = 0.4
+    }
+
+    division= {
+        name = "2-y striletskyy batalyon 36-ho okremoho polka NHU" # ВЧ каменец подольский
+        location = 5634
+        division_template = "Natsionalna hvardiya Ukrayinyn"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.2
+		start_manpower_factor = 0.4
+    } 
+
+    division= {
+        name = "1-y striletskyy batalyon 40-ho polku NHU"  # ВЧ винница
+        location = 5634
+        division_template = "Natsionalna hvardiya Ukrayinyn"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.2
+		start_manpower_factor = 0.4
+    }
+
+    division= {
+        name = "1-y patrulnyy batalyon 40-ho okremoho polku NHU" # ВЧ винница
+        location = 5634
+        division_template = "Natsionalna hvardiya Ukrayinyn"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.2
+		start_manpower_factor = 0.4
+    } 
+    
+    division= {
+        name = "1-y patrulnyy batalyon 45-ho polku operatyvnoho pryznachennya" # ВЧ Львив
+        location = 5634
+        division_template = "Natsionalna hvardiya Ukrayinyn"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.2
+		start_manpower_factor = 0.4
+    }
+    
+    division= {
+        name = "2-y patrulnyy batalyon 45-ho polku operatyvnoho pryznachennya" # ВЧ Львов
+        location = 5634
+        division_template = "Natsionalna hvardiya Ukrayinyn"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.2
+		start_manpower_factor = 0.4
+    }
+
+    division= {
+        name = "1-y patrulnyy batalyon 50-ho polku operatyvnoho pryznachennya" # ВЧ Львов
+        location = 5634
+        division_template = "Natsionalna hvardiya Ukrayinyn"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.2
+		start_manpower_factor = 0.4
+    }  
+    
+    division= {
+        name = "15-y okremyy batalyon NHU" # ВЧ Ивано Франковск
+        location = 5634
+        division_template = "Natsionalna hvardiya Ukrayinyn"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.2
+		start_manpower_factor = 0.4
+    } 
+    
+    division= {
+        name = "32-y okremyy batalyon NHU" # ВЧ Ивано Франковск
+        location = 5634
+        division_template = "Natsionalna hvardiya Ukrayinyn"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.2
+		start_manpower_factor = 0.4
+    }    
+
+    
+    division= {
+        name = "8-y polk operatyvnoho pryznachennya «Yahuar»"
+        location = 5634
+        division_template = "Batalyon operatyvnoho pryznachennya NHU"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    } 
+    
+    
+
+    
+}
+
+
+
