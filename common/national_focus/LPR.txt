@@ -48,7 +48,7 @@ focus_tree = {
 			add_war_support = 0.03
 			add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
-				amount = 3500 
+				amount = 2500
 			}
 			add_equipment_to_stockpile = { 
 				type = bulletproof_vests_equipment_1
@@ -56,7 +56,7 @@ focus_tree = {
 			} 		
 			add_equipment_to_stockpile = { 
 				type = uniform_equipment_1 
-				amount = 2500
+				amount = 2000
 			}
 			add_political_power = 30
 			add_stability = 0.05
@@ -80,7 +80,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_distribute_weapons"
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
-				amount = 850
+				amount = 650
 			}
 			add_equipment_to_stockpile = {
 				type = bulletproof_vests_equipment_1
@@ -88,7 +88,7 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = uniform_equipment_1 
-				amount = 1500
+				amount = 1200
 			}
 			add_equipment_to_stockpile = {
 				type = manpads_weapons
@@ -146,7 +146,7 @@ focus_tree = {
 			add_war_support = 0.05
 			add_timed_idea = {
 				idea = LPR_cooperative_attack_of_druzhina
-				days = 50
+				days = 35
 			}
 		}
 
@@ -343,11 +343,11 @@ focus_tree = {
 			add_manpower = 2000
 			add_equipment_to_stockpile = {
 				type = uniform_equipment_1
-				amount = 2500
+				amount = 2250
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
-				amount = 1500
+				amount = 1300
 			}
 			add_equipment_to_stockpile = {
 				type = bulletproof_vests_equipment_1
@@ -462,7 +462,6 @@ focus_tree = {
 				days = 40
 			}
 			add_political_power = 15
-			load_oob = "LPR_millitia"
 			load_oob = "LPR_millitia"
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
