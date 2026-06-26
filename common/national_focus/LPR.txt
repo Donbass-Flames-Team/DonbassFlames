@@ -369,6 +369,9 @@ focus_tree = {
 				type = grenade_launcher_equipment_1
 				amount = 400
 			}
+			add_to_variable = {
+				JAM_ammo_stockpile = 500
+			}
 			load_oob = "LPR_millitia"
 		}
 
