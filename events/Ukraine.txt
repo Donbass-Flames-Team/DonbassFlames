@@ -2097,6 +2097,7 @@ country_event = {
 		add_war_support = 0.025
 	    custom_effect_tooltip = UKR_form_national_guardia_tt
 		add_to_variable = { UKR_AFU_army_org_factor = 0.015 }
+		load_oob = UKR_NGU_2014
 	}
 }
 

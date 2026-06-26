@@ -131,7 +131,10 @@ focus_tree = {
 			add_equipment_to_stockpile = { 
 				type = modern_tank_equipment_1 
 				amount = 30
-			}						
+			}	
+			add_to_variable = {
+				JAM_ammo_stockpile = 45000
+			}
 		}
 	}
 
@@ -167,6 +170,9 @@ focus_tree = {
 				type = uniform_equipment_1 
 				amount = 2500
 			}	
+			add_to_variable = {
+				JAM_ammo_stockpile = 35000
+			}
 
 		}
 	}
@@ -552,6 +558,9 @@ focus_tree = {
 			add_equipment_to_stockpile = { 
 				type = uniform_equipment_1 
 				amount = 2500
+			}
+			add_to_variable = {
+				JAM_ammo_stockpile = 35000
 			}
 		}
 	}

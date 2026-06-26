@@ -3377,6 +3377,90 @@ UKR_ATO_decision = {
 
 UKR_general_staff_decision = {
 
+	UKR_3_bryhada_operatyvnoho_pryznachennya_nhu_decision = {
+		icon = GFX_decision_UKR_35_bryhada_icon
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2014.3.2
+		}
+		visible = {
+			has_completed_focus = UKR_form_national_guardia
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			#custom_effect_tooltip = UKR_35_otdelnaya_brihada_morskoy_pikhoti_formed_tt
+			hidden_effect = {
+				create_unit = {
+				    division = "name = \"1-y batalyon operatyvnoho pryznachennya 3-yi bryhady operatyvnoho pryznachennya NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+				    owner = UKR
+				    count = 3
+			    }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	UKR_4_striletskyy_batalyon_27_okrema_bryhada_nhu_decision = {
+		icon = GFX_decision_UKR_35_bryhada_icon
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2017.3.2
+		}
+		visible = {
+			has_completed_focus = UKR_form_national_guardia
+		}
+		fire_only_once = yes
+		cost = 15
+		complete_effect = {
+			#custom_effect_tooltip = UKR_35_otdelnaya_brihada_morskoy_pikhoti_formed_tt
+			hidden_effect = {
+				create_unit = {
+				    division = "name = \"4-y striletskyy batalyon 27-yi okremoyi bryhady NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+				    owner = UKR
+				    count = 1
+			    }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	UKR_18_batalyon_hromadskoho_poryadku_decision = {
+		icon = GFX_decision_UKR_35_bryhada_icon
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2018.3.2
+		}
+		visible = {
+			has_completed_focus = UKR_form_national_guardia
+		}
+		fire_only_once = yes
+		cost = 15
+		complete_effect = {
+			#custom_effect_tooltip = UKR_35_otdelnaya_brihada_morskoy_pikhoti_formed_tt
+			hidden_effect = {
+				create_unit = {
+				    division = "name = \"18-y okremyy batalyon NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+				    owner = UKR
+				    count = 1
+			    }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}	
+
 	UKR_35_otdelna_bryhada_morskoi_pyhoti_decision = {
 		icon = GFX_decision_UKR_35_bryhada_icon
 		allowed = {
