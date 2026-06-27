@@ -784,8 +784,9 @@ DF_economy_setup = {
 	set_variable = {
 		GEN_inflation_political_power_gain = 0.0
 	}
-	set_variable = {
-		GEN_inflation_consumer_goods_factor = 0.0
+	divide_variable = {
+		var = GEN_inflation_consumer_goods_factor
+		value = 2
 	}
 	set_variable = {
 		var = ROOT.inflation
@@ -1024,10 +1025,146 @@ DF_economy_setup = {
 
 }
 
-
-DF_gdp_monthly_growth = {
-	set_variable = {
-		var = gdp_last_month
-		value = gdp
+###########################
+#### INFLATION CALC########
+###########################
+DF_key_rate_calc = {
+	set_temp_variable = { temp_inflation = var:inflation } 
+	add_to_variable = {
+		var = weekly_inflation
+		value = 0.02
+	}	
+	if = {
+		limit = {
+			has_idea = civilian_economy
+		}
+		add_to_variable = {
+			var = weekly_inflation
+			value = 0.03
+		}
 	}
+	if = {
+		limit = {
+			has_idea = low_economic_mobilisation
+		}
+		add_to_variable = {
+			var = weekly_inflation
+			value = 0.06
+		}
+	}
+	if = {
+		limit = {
+			has_idea = partial_economic_mobilisation
+		}
+		add_to_variable = {
+		    var = weekly_inflation
+		    value = 0.09
+		}
+	}
+	if = {
+		limit = {
+			has_idea = war_economy
+		}
+		add_to_variable = {
+			var = weekly_inflation
+			value = 0.12
+		}
+	}
+	if = {
+		limit = {
+			has_idea = UKR_helpless_government
+		}
+		add_to_variable = {
+			var = weekly_inflation
+			value = 0.02
+		}
+	}
+	if = {
+		limit = {
+			has_idea = UKR_disorderly_government
+		}
+		add_to_variable = {
+			var = weekly_inflation
+			value = 0.05
+		}
+	}
+	if = {
+		limit = {
+			has_war = yes
+		}
+		add_to_variable = {
+			var = weekly_inflation
+			value = 0.04
+		}
+	}
+	if = {
+		limit = {
+			has_idea = RUS_western_sanctions
+		}
+		add_to_variable = {
+			var = weekly_inflation
+			value = 0.04
+		}
+	}
+	if = {
+		limit = {
+			has_idea = RUS_western_sanctions_2
+		}
+		add_to_variable = {
+			var = weekly_inflation
+			value = 0.07
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = Inflation_factor
+		}
+		random_list = {
+			20 = {
+		        add_to_variable = {
+			        var = weekly_inflation
+			        value = 0.11
+		        }
+			}
+			20 = {
+		        add_to_variable = {
+			        var = weekly_inflation
+			        value = 0.07
+		        }
+			}
+			20 = {
+		        add_to_variable = {
+			        var = weekly_inflation
+			        value = 0.14
+		        }
+			}
+			10 = {
+		        add_to_variable = {
+			        var = weekly_inflation
+			        value = 0.07
+		        }
+			}						
+		}
+	}
+
+	add_to_variable = {
+		var = inflation
+		value = weekly_inflation
+	}
+
+	set_variable = {
+		var = consumer_infl
+		value = weekly_inflation
+	}
+    divide_variable = {
+		var = consumer_infl
+        value = 5
+	}
+
+	set_variable = {
+		var = weekly_inflation
+		value = 0
+	}
+
+	add_to_variable = { GEN_inflation_consumer_goods_factor = consumer_infl }
 }

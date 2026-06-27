@@ -907,6 +907,39 @@ UKR_decisions_of_the_transitional_government = {
 
 		}
 	}
+	UKR_raise_gas_tariffs = {
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+		}
+		visible = {
+			has_completed_focus = UKR_government_in_anarchy
+		}
+		icon = GFX_decision_icon_of_Unknown_man
+
+		fire_only_once = yes
+		cost = 5
+		complete_effect = {
+			add_stability = -0.03
+			custom_effect_tooltip = UKR_IMF_requirment_complete_tt
+            hidden_effect = {
+				country_event = {
+					id = Economic_events.3
+					days = 50
+				}
+				country_event = {
+					id = ukraine.143
+					days = 50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+
+		}
+	}
+
 }
 
 UKR_elections_of_president = {

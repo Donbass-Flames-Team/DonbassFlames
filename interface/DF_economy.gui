@@ -526,7 +526,6 @@ guiTypes = {
 			text = "number_of_individual_enterprises_text"
 		}
 		
-		
 		instantTextBoxType = {
 			name = "number_of_individual_enterprises_text"
 			position = { x = 620 y = 329 }
@@ -537,7 +536,38 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "number_of_individual_enterprises_text"
-		}		
+		}	
+		
+		
+		buttonType = {
+			name = "increase_key_rate"
+			spriteType = "GFX_cash_smol"
+			position = { x = 655 y = 390 }
+			clicksound = click_close
+			#tooltip = cental_bank_tt
+			#pdx_tooltip_delayed = cental_bank_tt2
+		}
+
+		instantTextBoxType = {
+			name = "key_rate_precentage"
+			position = { x = 680 y = 390 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "key_rate_precentage"
+		}
+
+		buttonType = {
+			name = "decrease_key_rate"
+			spriteType = "GFX_cash_smol"
+			position = { x = 695 y = 390 }
+			clicksound = click_close
+			#tooltip = cental_bank_tt
+			#pdx_tooltip_delayed = cental_bank_tt2
+		}
 
 	}
 

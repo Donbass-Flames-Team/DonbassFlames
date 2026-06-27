@@ -3524,6 +3524,7 @@ country_event = {
 	option = {
 		name = ukraine.107.a
 		add_political_power = -10
+		unlock_decision_category_tooltip = UKR_decisions_of_the_transitional_government
 	}
 }
 
@@ -4970,13 +4971,16 @@ country_event = {
 
 	option = {
 		name = ukraine.135.a
-		swap_ideas = {
-            remove_idea = UKR_helpless_government
-            add_idea = UKR_disorderly_government
-        }
-		retire_country_leader = yes
-		promote_character = UKR_alexander_tyrchinov
-		complete_national_focus = UKR_government_in_anarchy
+		unlock_decision_category_tooltip = UKR_decisions_of_the_transitional_government
+		hidden_effect = {
+			retire_country_leader = yes
+		    promote_character = UKR_alexander_tyrchinov
+		    complete_national_focus = UKR_government_in_anarchy
+			swap_ideas = {
+                remove_idea = UKR_helpless_government
+                add_idea = UKR_disorderly_government
+            }
+		}
 	}
 }
 
@@ -5129,6 +5133,27 @@ country_event = {
             target = DRP
             transfer_troops = no
         }
+	}
+}
+
+# Кредит от МВФ
+country_event = {
+	id = ukraine.143
+	title = ukraine.143.t
+	desc  = ukraine.143.d
+	picture = GFX_Report_event_mvf_and_mujik_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = ukraine.143.a
+		add_to_variable = { cash = 2.8 }
 	}
 }
 
