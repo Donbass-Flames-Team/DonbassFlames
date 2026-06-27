@@ -50,6 +50,10 @@ DF_economy_setup = {
 			var = mil_factories_income
 			value = 0.035
 		}
+		multiply_variable = {
+			var = mil_factories_income
+			value = corporate_tax_rate
+		}
 		if = {
 			limit = {
 				has_global_flag = add_remove_cash_flag
@@ -71,6 +75,10 @@ DF_economy_setup = {
 		multiply_variable = {
 			var = doc_factories_income
 			value = 0.3
+		}
+		multiply_variable = {
+			var = doc_factories_income
+			value = corporate_tax_rate
 		}
 		if = {
 			limit = {
@@ -94,6 +102,10 @@ DF_economy_setup = {
 			var = civ_factories_income
 			value = 0.045
 		}
+		multiply_variable = {
+			var = civ_factories_income
+			value = corporate_tax_rate
+		}
 		if = {
 			limit = {
 				has_global_flag = add_remove_cash_flag
@@ -115,6 +127,10 @@ DF_economy_setup = {
 		multiply_variable = {
 			var = agro_income
 			value = 0.01
+		}
+		multiply_variable = {
+			var = agro_income
+			value = corporate_tax_rate
 		}
 		if = {
 			limit = {
@@ -138,6 +154,10 @@ DF_economy_setup = {
 			var = office_income
 			value = 0.05
 		}
+		multiply_variable = {
+			var = office_income
+			value = corporate_tax_rate
+		}
 		if = {
 			limit = {
 				has_global_flag = add_remove_cash_flag
@@ -151,6 +171,10 @@ DF_economy_setup = {
 			var = corporation_tax
 			value = office_income
 		}
+		divide_variable = {
+            var = corporation_tax
+            value = percentage_shadow_economy 
+        }
 	}	
 
 
@@ -749,6 +773,34 @@ DF_economy_setup = {
 		value = office_gdp
 	}
 
+
+
+	set_variable = {
+		var = small_buissnes_gdp
+		value = small_businesses
+	}
+	divide_variable = {
+		var = small_buissnes_gdp
+		value = 15500
+	}
+	add_to_variable = {
+		var = gdp
+		value = small_buissnes_gdp
+	}
+
+	set_variable = {
+		var = individual_enterprises_gdp
+		value = individual_enterprises
+	}
+	divide_variable = {
+		var = individual_enterprises_gdp
+		value = 100000
+	}
+	add_to_variable = {
+		var = gdp
+		value = individual_enterprises_gdp
+	}	
+
 	######################
 	### GDP Per Capita ###
 	######################
@@ -796,15 +848,6 @@ DF_economy_setup = {
 	#####################
 	####### taxes #######
 	#####################
-	#set_variable = {
-	#	var = percentage_shadow_economy
-	#	value = 0
-	#}
-	#set_variable = {
-	#	var = income_tax_rate
-	#	value = 0
-	#}
-
     # Population Total
 	set_variable = {
 		var = population_total
@@ -818,23 +861,23 @@ DF_economy_setup = {
 
 	set_variable = {
 		var = income_tax
-		value = ROOT.population_total_m
+		value = population_total_m
 	}
 	multiply_variable = {
 		var = income_tax
 		value = gdp_per_population		
 	}		
 	multiply_variable = {
-        var = income_tax
-        value = ROOT.percentage_shadow_economy 
-    }
-	multiply_variable = {
 		var = income_tax
-		value = ROOT.income_tax_rate		
+		value = income_tax_rate		
 	}
     divide_variable = {
         var = income_tax
         value = 1000000000
+    }
+	multiply_variable = {
+        var = income_tax
+        value = percentage_shadow_economy 
     }
 
 	# Income Tax Modifier
@@ -846,6 +889,9 @@ DF_economy_setup = {
         var = corporation_tax
         value = 10
     }
+
+	clamp_variable = { var = income_tax min = 0 }
+	clamp_variable = { var = corporation_tax min = 0 }
 
 	#############################################################
 	####### small businesses and individual entrepreneurs #######
@@ -868,6 +914,19 @@ DF_economy_setup = {
 		var =  employed_in_individual_enterprises
 		value = 2		
 	}
+
+
+	add_to_variable = {
+		var = Total_employed_in_small_businesses
+		value = employed_in_individual_enterprises	
+	}
+	add_to_variable = {
+		var = Total_employed_in_small_businesses
+		value = employed_in_small_businesses	
+	}	
+
+
+
 
 	############################################################
 	####################### Unemployment #######################
@@ -1167,4 +1226,5 @@ DF_key_rate_calc = {
 	}
 
 	add_to_variable = { GEN_inflation_consumer_goods_factor = consumer_infl }
+
 }

@@ -63,7 +63,10 @@ country_event = {
 	hidden = yes
 	immediate = {
 		set_country_flag = Inflation_factor
-		country_event = Economic_events.4
+		country_event = { 
+			id = Economic_events.4
+			days = 30
+		}
 	}
 }
 

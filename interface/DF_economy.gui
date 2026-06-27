@@ -155,7 +155,7 @@ guiTypes = {
 			position = { x = 35 y = 185 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 112
+			maxWidth = 115
 			fixedsize = yes
 			maxHeight = 1
 			format = left
@@ -294,11 +294,12 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdp_value"
-			position = { x = 310 y = 410 }
+			position = { x = 430 y = 410 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 270
+			maxWidth = 110
 			maxHeight = 24
+			fixedsize = yes
 			format = right
 			Orientation = "UPPER_LEFT"
 			text = "gdp_value"
@@ -435,7 +436,7 @@ guiTypes = {
 			maxHeight = 64
 			format = left
 			Orientation = "UPPER_LEFT"
-			text = "1"
+			text = "corporate_tax_precentage"
 		}
 
 		buttonType = {
@@ -567,6 +568,18 @@ guiTypes = {
 			clicksound = click_close
 			#tooltip = cental_bank_tt
 			#pdx_tooltip_delayed = cental_bank_tt2
+		}
+
+		instantTextBoxType = {
+			name = "economy_status"
+			position = { x = 610 y = 440 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "economy_status"
 		}
 
 	}
