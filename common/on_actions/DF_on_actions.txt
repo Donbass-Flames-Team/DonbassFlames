@@ -22,8 +22,28 @@ on_actions = {
 			###################
 			### THE ECONOMY ###
 			###################
+			set_variable = {
+		        var = gdp_last_month
+		        value = gdp
+	        }
 			DF_economy_setup = yes
 			set_global_flag = add_remove_cash_flag
+			set_variable = {
+				var = gdp_current_month
+				value = gdp
+			}			
+			subtract_from_variable = {
+				var = gdp_current_month
+				value = gdp_last_month
+			}
+			divide_variable = {
+				var = gdp_current_month
+				value = gdp_last_month
+			}
+			multiply_variable = {
+				var = gdp_current_month
+				value = 100				
+			}
 		}
 	}
 	on_weekly = {

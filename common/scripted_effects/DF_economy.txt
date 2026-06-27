@@ -792,9 +792,9 @@ DF_economy_setup = {
 		value = ROOT.inflation
 	}
 
-	#############
-	### taxes ###
-	#############
+	#####################
+	####### taxes #######
+	#####################
 	#set_variable = {
 	#	var = percentage_shadow_economy
 	#	value = 0
@@ -846,6 +846,173 @@ DF_economy_setup = {
         value = 10
     }
 
+	#############################################################
+	####### small businesses and individual entrepreneurs #######
+	#############################################################
+
+    set_variable = {
+		var =  employed_in_small_businesses
+		value = small_businesses
+	}  
+    multiply_variable = {
+		var =  employed_in_small_businesses
+		value = 5		
+	}
+
+    set_variable = {
+		var =  employed_in_individual_enterprises
+		value = individual_enterprises
+	}  
+    multiply_variable = {
+		var =  employed_in_individual_enterprises
+		value = 2		
+	}
+
+	############################################################
+	####################### Unemployment #######################
+	############################################################
+    set_variable = {
+		var = economically_active_population_percentage
+		value = 0.60
+	}  
+	set_variable = {
+		var = economically_active_population
+		value = population_total
+	}
+	multiply_variable = {
+		var = economically_active_population
+		value = economically_active_population_percentage
+	}
+	set_variable = {
+		var = unemployed_population
+		value = economically_active_population
+	}
+
+
+    # Civil factories
+	set_variable = {
+		var = employed_per_civil_factory
+		value = 55000
+	}	
+	set_variable = {
+		var = employed_in_civil_factories
+		value = employed_per_civil_factory
+	}	
+	multiply_variable = {
+		var = employed_in_civil_factories
+		value = ROOT.num_of_civilian_factories
+	}
+    # Military factories
+	set_variable = {
+		var = employed_per_military_factory
+		value = 25000
+	}	
+	set_variable = {
+		var = employed_in_military_factories
+		value = employed_per_military_factory
+	}	
+	multiply_variable = {
+		var = employed_in_military_factories
+		value = ROOT.num_of_military_factories
+	}	
+    # naval factories
+	set_variable = {
+		var = employed_per_naval_factory
+		value = 15000
+	}	
+	set_variable = {
+		var = employed_in_naval_factories
+		value = employed_per_naval_factory
+	}	
+	multiply_variable = {
+		var = employed_in_naval_factories
+		value = ROOT.num_of_naval_factories
+	}
+    # farms
+	set_variable = {
+		var = employed_per_agroculture_industry
+		value = 10000
+	}	
+	set_variable = {
+		var = employed_in_agroculture_industry
+		value = employed_per_agroculture_industry
+	}	
+	multiply_variable = {
+		var = employed_in_agroculture_industry
+		value = ROOT.num_of_agro_industrial_complex
+	}	
+    # offices
+	set_variable = {
+		var = employed_per_office
+		value = 77500
+	}	
+	set_variable = {
+		var = employed_in_offices
+		value = employed_per_office
+	}	
+	multiply_variable = {
+		var = employed_in_offices
+		value = ROOT.num_of_offices_building
+	}
+
+
+	# calculation unemployment
+    subtract_from_variable = {
+        var = unemployed_population
+        value = employed_in_civil_factories 
+    }
+    subtract_from_variable = {
+        var = unemployed_population
+        value = employed_in_military_factories 
+    }
+    subtract_from_variable = {
+        var = unemployed_population
+        value = employed_in_naval_factories 
+    }		
+    subtract_from_variable = {
+        var = unemployed_population
+        value = employed_in_agroculture_industry 
+    }	
+    subtract_from_variable = {
+        var = unemployed_population
+        value = employed_in_offices 
+    }	
+	subtract_from_variable = {
+        var = unemployed_population
+        value = employed_in_small_businesses 
+    }
+	subtract_from_variable = {
+        var = unemployed_population
+        value = employed_in_individual_enterprises 
+    }
+	if = {
+		limit = {
+			check_variable = {
+                var = unemployed_population
+                value = 0
+                compare = less_than_or_equals
+            }
+		}
+		set_variable = {
+			var = unemployed_population
+			value = 0
+		}
+	}
+    
+    set_variable = {
+        var = unemployed_population_percentage
+        value = unemployed_population 
+    }
+    divide_variable = {
+        var = unemployed_population_percentage
+        value = economically_active_population
+    }
+	multiply_variable = {
+		var = unemployed_population_percentage
+		value = 100
+	}
+
+
 	#set_variable = {
 	#	var = corporate_tax_rate
 	#	value = 0
@@ -855,4 +1022,12 @@ DF_economy_setup = {
 	#	value = 0
 	#}
 
+}
+
+
+DF_gdp_monthly_growth = {
+	set_variable = {
+		var = gdp_last_month
+		value = gdp
+	}
 }
