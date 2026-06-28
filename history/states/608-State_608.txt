@@ -3,7 +3,7 @@ state = {
 	name = "STATE_608" 
 	manpower = 3994000 
 	
-	state_category = slot_46 
+	state_category = slot_55
 	buildings_max_level_factor = 1 
 	
 	resources = { oil = 192 } 
@@ -19,7 +19,8 @@ state = {
 			infrastructure = 3 
 			synthetic_refinery = 1 
 			ammunition_plant = 1
-		}
+			agro_industrial_complex = 15
+}
 		
 		add_core_of = ROM 
 	}
