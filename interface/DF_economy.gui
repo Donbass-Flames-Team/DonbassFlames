@@ -94,22 +94,6 @@ guiTypes = {
 			pdx_tooltip_delayed = cash_balance_value_tt2
 		}
 
-		iconType = {
-			name = "debt_bg"
-			spriteType = GFX_generic_text_bg_88
-			position = { x = 275 y = 25 }
-			tooltip = debt_balance_value_tt
-			pdx_tooltip_delayed = debt_balance_value_tt2
-		}
-
-		iconType = {
-			name = "debt_icon"
-			spriteType = "GFX_im_broke_bae_smol"
-			position = { x = 278 y = 28 }
-			tooltip = debt_balance_value_tt
-			pdx_tooltip_delayed = debt_balance_value_tt2
-		}
-
 		instantTextBoxType = {
 			name = "debt_balance_value"
 			position = { x = 290 y = 26 }
@@ -123,6 +107,23 @@ guiTypes = {
 			tooltip = debt_balance_value_tt
 			pdx_tooltip_delayed = debt_balance_value_tt2
 		}
+
+		iconType = {
+			name = "debt_bg"
+			spriteType = GFX_generic_text_bg_88
+			position = { x = 275 y = 25 }
+			tooltip = debt_balance_value_tt
+			pdx_tooltip_delayed = debt_balance_value_tt2
+		}
+ 
+		iconType = {
+			name = "debt_icon"
+			spriteType = "GFX_im_broke_bae_smol"
+			position = { x = 278 y = 28 }
+			tooltip = debt_balance_value_tt
+			pdx_tooltip_delayed = debt_balance_value_tt2
+		}
+
 
 		instantTextBoxType = {
 			name = "income_total"
@@ -207,8 +208,8 @@ guiTypes = {
 			position = { x = 320 y = 110 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 300
-			maxHeight = 64
+			maxWidth = 199
+			maxHeight = 34
 			format = left
 			fixedsize = yes
 			Orientation = "UPPER_LEFT"
@@ -220,8 +221,8 @@ guiTypes = {
 			position = { x = 320 y = 150 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 300
-			maxHeight = 64
+			maxWidth = 199
+			maxHeight = 34
 			fixedsize = yes
 			format = left
 			Orientation = "UPPER_LEFT"
@@ -233,8 +234,8 @@ guiTypes = {
 			position = { x = 320 y = 190 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 300
-			maxHeight = 64
+			maxWidth = 225
+			maxHeight = 34
 			fixedsize = yes
 			format = left
 			Orientation = "UPPER_LEFT"
@@ -246,7 +247,7 @@ guiTypes = {
 			position = { x = 320 y = 230 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 300
+			maxWidth = 150
 			maxHeight = 64
 			fixedsize = yes
 			format = left
@@ -272,8 +273,8 @@ guiTypes = {
 			position = { x = 320 y = 300 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 300
-			maxHeight = 64
+			maxWidth = 209
+			maxHeight = 32
 			fixedsize = yes
 			format = left
 			Orientation = "UPPER_LEFT"
@@ -378,7 +379,7 @@ guiTypes = {
 		##########################################################
 		instantTextBoxType = {
 			name = "TAXES"
-			position = { x = 665 y = 30 }
+			position = { x = 615 y = 30 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
@@ -390,16 +391,17 @@ guiTypes = {
 
 		buttonType = {
 			name = "increase_income_tax"
-			spriteType = "GFX_cash_smol"
-			position = { x = 655 y = 70 }
+			spriteType = "GFX_plus_button_increase_DF"
+			position = { x = 645 y = 70 }
 			clicksound = click_close
+			scale = 0.5
 			#tooltip = cental_bank_tt
 			#pdx_tooltip_delayed = cental_bank_tt2
 		}
 
 		instantTextBoxType = {
 			name = "income_tax_precentage"
-			position = { x = 680 y = 67 }
+			position = { x = 657 y = 45 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
@@ -409,27 +411,41 @@ guiTypes = {
 			text = "income_tax_precentage"
 		}
 
+		instantTextBoxType = {
+			name = "income_tax_precentage_value"
+			position = { x = 674 y = 72 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "income_tax_precentage_value"
+		}
+
 		buttonType = {
 			name = "decrease_income_tax"
-			spriteType = "GFX_cash_smol"
+			spriteType = "GFX_minus_button_decrease_DF"
 			position = { x = 695 y = 70 }
 			clicksound = click_close
+			scale = 0.5
 			#tooltip = cental_bank_tt
 			#pdx_tooltip_delayed = cental_bank_tt2
 		}
         ##########################################################
 		buttonType = {
 			name = "increase_corporate_tax"
-			spriteType = "GFX_cash_smol"
-			position = { x = 655 y = 120 }
+			spriteType = "GFX_plus_button_increase_DF"
+			position = { x = 645 y = 120 }
 			clicksound = click_close
+			scale = 0.5
 			#tooltip = cental_bank_tt
 			#pdx_tooltip_delayed = cental_bank_tt2
 		}
 
 		instantTextBoxType = {
 			name = "corporate_tax_precentage"
-			position = { x = 680 y = 117 }
+			position = { x = 611 y = 99 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
@@ -439,41 +455,68 @@ guiTypes = {
 			text = "corporate_tax_precentage"
 		}
 
-		buttonType = {
-			name = "decrease_corporate_tax"
-			spriteType = "GFX_cash_smol"
-			position = { x = 695 y = 120 }
-			clicksound = click_close
-			#tooltip = cental_bank_tt
-			#pdx_tooltip_delayed = cental_bank_tt2
-		}
-        ##########################################################
-		buttonType = {
-			name = "increase_sales_taxes"
-			spriteType = "GFX_cash_smol"
-			position = { x = 655 y = 160 }
-			clicksound = click_close
-			#tooltip = cental_bank_tt
-			#pdx_tooltip_delayed = cental_bank_tt2
-		}
-
 		instantTextBoxType = {
-			name = "sales_taxes_precentage"
-			position = { x = 680 y = 159 }
+			name = "corporate_tax_precentage_value"
+			position = { x = 674 y = 121 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
 			maxHeight = 64
 			format = left
 			Orientation = "UPPER_LEFT"
-			text = "1"
+			text = "corporate_tax_precentage_value"
+		}		
+
+		buttonType = {
+			name = "decrease_corporate_tax"
+			spriteType = "GFX_minus_button_decrease_DF"
+			position = { x = 695 y = 120 }
+			clicksound = click_close
+			scale = 0.5
+			#tooltip = cental_bank_tt
+			#pdx_tooltip_delayed = cental_bank_tt2
+		}
+        ##########################################################
+		buttonType = {
+			name = "increase_sales_taxes"
+			spriteType = "GFX_plus_button_increase_DF"
+			position = { x = 645 y = 166 }
+			clicksound = click_close
+			scale = 0.5
+			#tooltip = cental_bank_tt
+			#pdx_tooltip_delayed = cental_bank_tt2
+		}
+
+		instantTextBoxType = {
+			name = "sales_taxes_precentage"
+			position = { x = 666 y = 145 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "sales_taxes_precentage"
+		}
+
+		instantTextBoxType = {
+			name = "sales_taxes_precentage_value"
+			position = { x = 674 y = 167 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "sales_taxes_precentage_value"
 		}
 
 		buttonType = {
 			name = "decrease_sales_taxes"
-			spriteType = "GFX_cash_smol"
-			position = { x = 695 y = 160 }
+			spriteType = "GFX_minus_button_decrease_DF"
+			position = { x = 695 y = 166 }
 			clicksound = click_close
+			scale = 0.5
 			#tooltip = cental_bank_tt
 			#pdx_tooltip_delayed = cental_bank_tt2
 		}
@@ -538,20 +581,14 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			text = "number_of_individual_enterprises_text"
 		}	
-		
-		
-		buttonType = {
-			name = "increase_key_rate"
-			spriteType = "GFX_cash_smol"
-			position = { x = 655 y = 390 }
-			clicksound = click_close
-			#tooltip = cental_bank_tt
-			#pdx_tooltip_delayed = cental_bank_tt2
-		}
 
+		###############################
+		########## KEY RATE ###########
+		###############################
+		
 		instantTextBoxType = {
 			name = "key_rate_precentage"
-			position = { x = 680 y = 390 }
+			position = { x = 610 y = 380 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
@@ -562,10 +599,33 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "decrease_key_rate"
-			spriteType = "GFX_cash_smol"
-			position = { x = 695 y = 390 }
+			name = "increase_key_rate"
+			spriteType = "GFX_plus_button_increase_DF"
+			position = { x = 655 y = 400 }
 			clicksound = click_close
+			scale = 0.5
+			#tooltip = cental_bank_tt
+			#pdx_tooltip_delayed = cental_bank_tt2
+		}
+
+		instantTextBoxType = {
+			name = "key_rate_precentage_value"
+			position = { x = 680 y = 400 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "key_rate_precentage_value"
+		}
+
+		buttonType = {
+			name = "decrease_key_rate"
+			spriteType = "GFX_minus_button_decrease_DF"
+			position = { x = 705 y = 400 }
+			clicksound = click_close
+			scale = 0.5
 			#tooltip = cental_bank_tt
 			#pdx_tooltip_delayed = cental_bank_tt2
 		}

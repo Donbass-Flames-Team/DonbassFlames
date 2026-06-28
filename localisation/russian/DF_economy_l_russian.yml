@@ -7,16 +7,17 @@
  debt_balance_value_tt:0 "Долг"
  debt_balance_value_tt2:0 "На данный момент у вас есть долг в размере [?cash] миллионов долларов."
 
- income_total:0 "Итоговый Доход:"
+ income_total:0 "Итоговый Доход: [?income] "
  income_civ:0 "Гражданские фабрики:"
  income_mil:0 "Военные фабрики:"
  income_doc:0 "Верфи:"
 
- expense_total:0 "Итоговые затраты:"
- healthcare_expense:0 "Здравоохранение:"
- social_security_expense:0 "Социальные расходы:"
- education_expense:0 "Образование:"
- policing_expense:0 "Полиция:"
+ expense_total:0 "Итоговые затраты: [?expense]"
+ healthcare_expense:0 "Здравоохранение: [?healthcare_expense]"
+ social_security_expense:0 "Социальные расходы: [?social_security_expense]"
+ education_expense:0 "Образование: [?education_expense]"
+ policing_expense:0 "Полиция: [?policing_expense]"
+ army_expense:0 "Вооруженные силы: [?army_expense_show]"
 
  gdp_value:0 "ВВП:§G[?gdp]§!млрд."
  gdp_per_population_value:0 "ВВП на душу населения:§G[?gdp_per_population]§!$"
@@ -29,15 +30,24 @@
  number_of_small_businesses_text:0 "Малые предприятия:§Y[?small_businesses]§!"
  number_of_individual_enterprises_text:0 "Индивидуальные предприниматели:§Y[?individual_enterprises]§!"
  monthly_gdp_growth_value:0 "Ежемесячный рост ВВП:§Y[?gdp_current_month]§!%"
+ 
 
- people_taxes:0 "Налог:  §Y[?income_tax]§!"
- income_tax_precentage:0 "[?income_tax_rate]"
- key_rate_precentage:0 "[?key_rate]"
+
+
+ people_taxes:0 "НДФЛ:  §Y[?income_tax]§!"
+ key_rate_precentage:0 "Ключевая ставка ЦБ"
+ key_rate_precentage_value:0 "§Y[?key_rate]§!"
  precentage_shadow_economy: "Теневая экономика: [?precentage_shadow_economy]"
  corporation_taxes:0 "Корпоративные налоги:  §Y[?corporation_tax]§!"
- sales_taxes:0 "НДС:  §Y[?office_gdp]§!"
+ sales_taxes:0 "НДС:  §Y[?sale_tax]§!"
 
- corporate_tax_precentage:0 "Копроративный налог: §Y[?corporate_tax_rate]§!"
+ Taxes:0 "Налогооблажение"
+ corporate_tax_precentage:0 "Копроративный налог"
+ corporate_tax_precentage_value:0 "§Y[?corporate_tax_rate]§!"
+ sales_taxes_precentage:0 "НДС"
+ sales_taxes_precentage_value:0 "§Y[?sales_tax_rate]§!"
+ income_tax_precentage:0 "НДФЛ"
+ income_tax_precentage_value:0 "§Y[?income_tax_rate]§!"
 
  healthcare:0 "Закон о здравоохранении"
  universal_health_care:0 "Всеобщее здравоохранение"
@@ -75,7 +85,6 @@
  regular_policing_tt:0 "Баланс бюджета: §R-[?policing_expense_regular_policing] млн§!"
  fuck_tha_police:0 "Без полиции"
 
- army_expense:0 "Вооруженные силы: [?army_spend_expense_show]"
 
  cash_balance_minus_45_tt:0 "Баланс бюджета: §R-45млн§!"
  cash_balance_minus_65_tt:0 "Баланс бюджета: §R-65млн§!"

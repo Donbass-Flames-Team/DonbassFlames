@@ -27,5 +27,25 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = AZV_liberate_mariupol
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.1
+		x = 0
+		y = 1
+		prerequisite = {focus = AZV_form_first_batalion}
+		relative_position_id = AZV_form_first_batalion
+		available = {
+			
+		}
+
+		completion_reward = {
+			declare_war_on = {
+                target = SDR
+                type = annex_everything
+            }
+		}
+	}	
+
 
 }

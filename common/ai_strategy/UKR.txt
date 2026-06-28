@@ -148,6 +148,14 @@ UKR_counteroffensive = {
 	}
 
 	ai_strategy = {
+		type = front_control
+		tag = SDR
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}	
+
+	ai_strategy = {
 		type = theatre_distribution_demand_increase
 		value = 5
 		id = 237
@@ -200,6 +208,14 @@ UKR_counteroffensive_in_kramatorsk_slavyansk = {
 	}
 
 	ai_strategy = {
+		type = front_control
+		tag = NDR
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
 		type = theatre_distribution_demand_increase
 		value = 8
 		id = 291
@@ -228,7 +244,7 @@ UKR_template_design = {
 	ai_strategy = {
 		type = template_prio
 		id = modern_armor
-		value = 30
+		value = 40
 	}
 
 	ai_strategy = {
@@ -247,11 +263,5 @@ UKR_template_design = {
 		type = template_prio
 		id = artillery
 		value = 5
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = cavalry
-		value = -100
 	}
 }
