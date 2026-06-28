@@ -9,7 +9,7 @@ country_event = {
 	id = Dnieper_kolomoysky.1
 	title = Dnieper_kolomoysky.1.t
 	desc = Dnieper_kolomoysky.1.d
-	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	picture = GFX_Report_event_kolomoysky_2_picture
 	
 	is_triggered_only = yes
 
@@ -19,6 +19,9 @@ country_event = {
 	
 	option = {
 		name = Dnieper_kolomoysky.1.a
+		ai_chance = {
+		factor = 100
+		}
 		UKR = {
 			country_event = {
 				id = ukraine.142
@@ -32,6 +35,15 @@ country_event = {
 		name = Dnieper_kolomoysky.1.b
 		set_country_flag = Dnieper_independent
 	}	
+	# Война с Укр
+	option = {
+		name = Dnieper_kolomoysky.1.c
+		set_country_flag = Dnieper_Ukr_War
+		declare_war_on = {
+			target = UKR
+			type = annex_everything
+		}
+	}
 }
 
 
@@ -40,27 +52,27 @@ country_event = {
 	id = Dnieper_kolomoysky.2
 	title = Dnieper_kolomoysky.2.t
 	desc = Dnieper_kolomoysky.2.d
-	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	picture = GFX_Report_event_kolomoysky_2_picture
 	
 	is_triggered_only = yes
 
 	immediate = {
 		set_country_flag = DPR_forces_to_ilovaysk
 	}
-	# днепропетровск
+	# Сичеслав
 	option = {
 		name = Dnieper_kolomoysky.2.a
 	
 	}
 
-	# днепр
+	# Днепр
 	option = {
 		name = Dnieper_kolomoysky.2.b
 		
 	}
-	# днепроколомойск
+	# Днепроколомойск
 	option = {
-		name = Dnieper_kolomoysky.2.b
+		name = Dnieper_kolomoysky.2.c
 		
 	}		
 }
