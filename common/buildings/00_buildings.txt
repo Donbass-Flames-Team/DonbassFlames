@@ -37,8 +37,8 @@ buildings = {
 	}
 
 	social_infrastructure = {
-		base_cost = 3000
-		per_level_extra_cost = 500
+		base_cost = 1000
+		per_level_extra_cost = 250
 		icon_frame = 33
 		infrastructure = yes
 		value = 2
@@ -95,7 +95,7 @@ buildings = {
 
 	offices_building = {
 		show_on_map = 6
-		base_cost = 40000
+		base_cost = 15000
 		icon_frame = 34
 		value = 6
 		infrastructure_construction_effect = yes
