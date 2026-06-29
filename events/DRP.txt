@@ -14,13 +14,14 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_country_flag = DPR_forces_to_ilovaysk
+		
 	}
-	
+
+	# присоединение к украине
 	option = {
 		name = Dnieper_kolomoysky.1.a
 		ai_chance = {
-		factor = 100
+		    factor = 100
 		}
 		UKR = {
 			country_event = {
@@ -33,17 +34,10 @@ country_event = {
 	# независимый днепр
 	option = {
 		name = Dnieper_kolomoysky.1.b
+		add_political_power = -100
 		set_country_flag = Dnieper_independent
+		mark_focus_tree_layout_dirty = yes
 	}	
-	# Война с Укр
-	option = {
-		name = Dnieper_kolomoysky.1.c
-		set_country_flag = Dnieper_Ukr_War
-		declare_war_on = {
-			target = UKR
-			type = annex_everything
-		}
-	}
 }
 
 
@@ -57,7 +51,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_country_flag = DPR_forces_to_ilovaysk
+		
 	}
 	# Сичеслав
 	option = {
