@@ -13,7 +13,7 @@ focus_tree = {
 	focus = {
 		id = DPR_capture_administrations
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.2
+		cost = 0.1
 		x = 12
 		y = 0
 
@@ -35,7 +35,7 @@ focus_tree = {
 	focus = {
 		id = DPR_formation_of_a_provisional_government
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.2
+		cost = 0.1
 		x = 0
 		y = 1
 
@@ -76,7 +76,7 @@ focus_tree = {
 	focus = {
 		id = DPR_call_on_people_to_stand_up_for_the_republic
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.2
+		cost = 0.1
 		x = 0
 		y = 2
 
@@ -93,6 +93,69 @@ focus_tree = {
 			hidden_effect = {
 			    load_oob = Donetsk_millitia	
 			}
+		}
+	}
+
+	focus = {
+		id = DPR_annex_makeevka
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.1
+		x = 0
+		y = 3
+
+		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
+		relative_position_id = DPR_capture_administrations
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = DPR_call_on_people_to_stand_up_for_the_republic
+			NOT = { has_war_with = UKR }
+		}
+
+		completion_reward = {
+		424 = { transfer_state_to = DPR }
+		435 = { transfer_state_to = DPR }
+		437 = { transfer_state_to = DPR }
+		424 = { set_demilitarized_zone = no }
+		435 = { set_demilitarized_zone = no }
+		437 = { set_demilitarized_zone = no }
+		}
+	}
+
+	focus = {
+		id = DPR_annex_horlivka
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.1
+		x = 0
+		y = 4
+		
+		prerequisite = {focus = DPR_annex_makeevka}
+		relative_position_id = DPR_capture_administrations
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = DPR_annex_makeevka
+			NOT = { has_war_with = UKR }
+		}
+
+		completion_reward = {
+		404 = { transfer_state_to = DPR }
+		397 = { transfer_state_to = DPR }
+		398 = { transfer_state_to = DPR }
+		381 = { transfer_state_to = DPR }
+		402 = { transfer_state_to = DPR }
+		404 = { set_demilitarized_zone = no }
+		397 = { set_demilitarized_zone = no }
+		398 = { set_demilitarized_zone = no }
+		381 = { set_demilitarized_zone = no }
+		402 = { set_demilitarized_zone = no }
+		
 		}
 	}
 
@@ -142,7 +205,7 @@ focus_tree = {
 		id = DPR_loot_the_offices_of_the_mvd_and_sbu
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.2
-		x = -1
+		x = -2
 		y = 3
 
 		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
@@ -181,7 +244,7 @@ focus_tree = {
 		id = DPR_create_a_people_militia_of_the_dpr
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.2
-		x = -1
+		x = -2
 		y = 4
 
 		prerequisite = {focus = DPR_loot_the_offices_of_the_mvd_and_sbu}
@@ -516,7 +579,7 @@ focus_tree = {
 		id = DPR_set_up_production
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 1
+		x = 2
 		y = 3
 
 		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
@@ -535,7 +598,7 @@ focus_tree = {
 		id = DPR_reopening_of_captured_ukrainian_warehouses
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 1
+		x = 2
 		y = 4
 
 		prerequisite = {focus = DPR_set_up_production}
@@ -1114,7 +1177,8 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		prerequisite = {focus = DPR_secure_south focus = DPR_donetsk_castle}
+		prerequisite = { focus = DPR_secure_south }
+		prerequisite = { focus = DPR_donetsk_castle }
 		relative_position_id = DPR_defend_of_citites
 
 		available = {

@@ -50,7 +50,6 @@ country_event = {
 				hours = 6
 			}
 			432 = { transfer_state_to = DPR }
-			424 = { transfer_state_to = DPR }
 			DPR = {
 				add_state_core = 432
 				add_state_core = 448
@@ -98,7 +97,7 @@ country_event = {
 				add_state_core = 650
 				add_state_core = 291
 				add_state_core = 327
-				526 = { set_demilitarized_zone = no }
+				432 = { set_demilitarized_zone = no }
 				country_event = {
 					id = DPR.20
 					days = 5
