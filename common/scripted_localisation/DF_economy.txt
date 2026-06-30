@@ -7,7 +7,7 @@ defined_text = {
             check_variable = {
                 var = gdp_current_month
                 value = -5
-                compare = less_than
+                compare = less_than_or_equals
             }
         }
         localization_key = "economy_status_depression"
