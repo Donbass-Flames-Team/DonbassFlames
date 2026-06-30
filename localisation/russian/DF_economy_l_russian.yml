@@ -30,14 +30,21 @@
  number_of_small_businesses_text:0 "Малые предприятия:§Y[?small_businesses]§!"
  number_of_individual_enterprises_text:0 "Индивидуальные предприниматели:§Y[?individual_enterprises]§!"
  monthly_gdp_growth_value:0 "Ежемесячный рост ВВП:§Y[?gdp_current_month]§!%"
- 
 
+ state_reserves:0 "Гос.резерв:§Y[?state_reserves]§!млрд."
+ economy_status_text:0 "Статус экономики: [economy_status]"
+ economy_status_depression:0 "§RДепрессия§!"
+ economy_status_recession:0 "§RРецессия§!"
+ economy_status_stagnation:0 "§YСтагнация§!"
+ economy_status_steady_growth:0 "§GОбычный рост§!"
+ economy_status_fast_growth:0 "§GБыстрый рост§!"
+ economy_status_economic_boom:0 "§YЭкономический бум§!"
 
 
  people_taxes:0 "НДФЛ:  §Y[?income_tax]§!"
  key_rate_precentage:0 "Ключевая ставка ЦБ"
  key_rate_precentage_value:0 "§Y[?key_rate]§!"
- precentage_shadow_economy: "Теневая экономика: [?precentage_shadow_economy]"
+ precentage_shadow_economy: "Теневая экономика: §Y[?precentage_shadow_economy]§!"
  corporation_taxes:0 "Корпоративные налоги:  §Y[?corporation_tax]§!"
  sales_taxes:0 "НДС:  §Y[?sale_tax]§!"
 
