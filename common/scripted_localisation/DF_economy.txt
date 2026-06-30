@@ -34,7 +34,7 @@ defined_text = {
             check_variable = {
                 var = gdp_current_month
                 value = -1
-                compare = less_than_or_equals
+                compare = greater_than_or_equals
             }
             check_variable = {
                 var = gdp_current_month

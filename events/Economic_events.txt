@@ -34,6 +34,21 @@ country_event = {
 				value = 0
 			}
 		}
+		set_variable = { cash = 0 }
+		if = {
+			limit = {
+				check_variable = {
+					var = cash
+					value = 0
+					compare = less_than
+				}
+			}
+			set_temp_variable = { temp_debt = var:cash }
+			multiply_variable = { var = temp_debt value = -1 }
+			add_to_variable = { var = debt value = var:temp_debt }
+			set_variable = { var = cash value = 1 }
+			clear_variable = temp_debt
+		}
 		country_event = {
 			id = Economic_events.1
 			days = 365

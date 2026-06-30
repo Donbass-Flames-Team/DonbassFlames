@@ -2,21 +2,25 @@ DF_buildings_setup = {
 	set_variable = { num_of_agro_industrial_complex = 0 }
 	set_variable = { num_of_offices_building = 0 }
 	set_variable = { num_of_ammunition_plant = 0 }
+	set_variable = { num_of_steel_mill = 0 } 
 
 	set_variable = { num_of_available_agro_industrial_complex = 0 }
 	set_variable = { num_of_available_offices_building = 0 }
 	set_variable = { num_of_available_ammunitons_plants_building = 0 }
+	set_variable = { num_of_available_num_of_steel_mill = 0 }
 
 	every_controlled_state = {
 		# Total Custom Buildings Amount
 		add_to_variable = { PREV.num_of_agro_industrial_complex = building_level@agro_industrial_complex }
 		add_to_variable = { PREV.num_of_offices_building = building_level@offices_building }
         add_to_variable = { PREV.num_of_ammunition_plant = building_level@ammunition_plant }
+		add_to_variable = { PREV.num_of_steel_mill = building_level@steel_mill }
 
 		# Available Custom Buildings Amount
 		add_to_variable = { PREV.num_of_available_agro_industrial_complex = non_damaged_building_level@agro_industrial_complex }
 		add_to_variable = { PREV.num_of_available_offices_building = non_damaged_building_level@offices_building }
 		add_to_variable = { PREV.num_of_available_ammunitons_plants_building = non_damaged_building_level@ammunition_plant }
+	    add_to_variable = { PREV.num_of_available_num_of_steel_mill = non_damaged_building_level@steel_mill }
 	}
 }
 
@@ -95,6 +99,24 @@ DF_economy_setup = {
 			value = civ_factories_income
 		}
 
+		set_variable = {
+			var = steel_mill_income
+			value = ROOT.num_of_steel_mill
+		}
+		multiply_variable = {
+			var = steel_mill_income
+			value = 0.05
+		}
+		multiply_variable = {
+			var = steel_mill_income
+			value = corporate_tax_rate
+		}
+		add_to_variable = {
+			var = corporation_tax
+			value = steel_mill_income
+		}
+
+		
 		set_variable = {
 			var = agro_income
 			value = ROOT.num_of_agro_industrial_complex
@@ -863,6 +885,9 @@ DF_economy_setup = {
         value = 10
     }
 
+    ########################################
+    ########## exported resources ##########
+	########################################
 	set_variable = {
 		var = oil_exported
 		value = resource_exported@oil
@@ -883,7 +908,8 @@ DF_economy_setup = {
 		var = steel_exported
 		value = resource_exported@steel
 	}	
-    
+
+
 	divide_variable = {
 		var = oil_exported
 		value = 1700
@@ -903,8 +929,87 @@ DF_economy_setup = {
 	divide_variable = {
 		var = steel_exported
 		value = 2500
-	}	
+	}
 
+    ########################################
+    ########## imported resources ##########
+	########################################
+	set_variable = {
+		var = oil_imported
+		value = resource_imported@oil
+	}
+	set_variable = {
+		var = aluminium_imported
+		value = resource_imported@aluminium
+	}	
+	set_variable = {
+		var = rubber_imported
+		value = resource_imported@rubber
+	}
+	set_variable = {
+		var = tungsten_imported
+		value = resource_imported@tungsten
+	}
+	set_variable = {
+		var = steel_imported
+		value = resource_imported@steel
+	}
+
+
+	divide_variable = {
+		var = oil_imported
+		value = 1700
+	}
+	divide_variable = {
+		var = aluminium_imported
+		value = 1400
+	}	
+	divide_variable = {
+		var = rubber_imported
+		value = 1500
+	}
+	divide_variable = {
+		var = tungsten_imported
+		value = 1750
+	}
+	divide_variable = {
+		var = steel_imported
+		value = 2500
+	}	
+	
+
+	set_variable = {
+		var = resources_expense
+		value = 0
+	}
+
+	add_to_variable = {
+		var = resources_expense
+		value = steel_imported
+	}
+	add_to_variable = {
+		var = resources_expense
+		value = tungsten_imported
+	}	
+	add_to_variable = {
+		var = resources_expense
+		value = rubber_imported
+	}
+	add_to_variable = {
+		var = resources_expense
+		value = aluminium_imported
+	}
+	add_to_variable = {
+		var = resources_expense
+		value = oil_imported
+	}
+
+	add_to_variable = {
+		var = expense
+		value = resources_expense
+	}
+	
+	
 	set_variable = {
 		var = resources_income
 		value = 0
@@ -1065,6 +1170,19 @@ DF_economy_setup = {
 		var = employed_in_agroculture_industry
 		value = ROOT.num_of_agro_industrial_complex
 	}	
+    # steel mills
+	set_variable = {
+		var = employed_per_agroculture_industry
+		value = 5000
+	}	
+	set_variable = {
+		var = employed_in_agroculture_industry
+		value = employed_per_agroculture_industry
+	}	
+	multiply_variable = {
+		var = employed_in_agroculture_industry
+		value = ROOT.num_of_agro_industrial_complex
+	}
     # offices
 	set_variable = {
 		var = employed_per_office

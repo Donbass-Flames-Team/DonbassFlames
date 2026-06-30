@@ -2,7 +2,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "economy_button_window"
-		position = { x = 970 y = 5 }
+		position = { x = 980 y = 5 }
 		size = { width = 76 height = 30 }
 
 		background = {
@@ -36,6 +36,36 @@ guiTypes = {
 			text = "[?cash]"
 		}
 	}
+
+	containerWindowType = {
+		name = "debt_window"
+		position = { x = 1065 y = 5 }
+		size = { width = 76 height = 30 }
+
+		background = {
+			name = "Background"	
+			spriteType = "GFX_mini_tooltip"
+		}
+
+		buttonType = {
+			name = "debt_button"
+			spriteType = "GFX_im_broke_bae_smol"
+			position = { x = 5 y = 5 }
+			clicksound = click_close
+		}
+
+		instantTextBoxType = {
+			name = "debt_value"
+			position = { x = 23 y = 5 }
+			font = hoi_18mbs
+			borderSize = { x = 0 y = 0}
+			maxWidth = 47
+			maxHeight = 14
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "debt_value_top"
+		}
+	}	
 
 	containerWindowType = {
 		name = "economy_window"
@@ -94,20 +124,6 @@ guiTypes = {
 			pdx_tooltip_delayed = cash_balance_value_tt2
 		}
 
-		instantTextBoxType = {
-			name = "debt_balance_value"
-			position = { x = 290 y = 26 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 67
-			maxHeight = 24
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "debt_balance"
-			tooltip = debt_balance_value_tt
-			pdx_tooltip_delayed = debt_balance_value_tt2
-		}
-
 		iconType = {
 			name = "debt_bg"
 			spriteType = GFX_generic_text_bg_88
@@ -122,6 +138,34 @@ guiTypes = {
 			position = { x = 278 y = 28 }
 			tooltip = debt_balance_value_tt
 			pdx_tooltip_delayed = debt_balance_value_tt2
+		}
+
+		instantTextBoxType = {
+			name = "deficite_balance_value"
+			position = { x = 290 y = 26 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 67
+			maxHeight = 24
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "debt_balance"
+			tooltip = debt_balance_value_tt
+			pdx_tooltip_delayed = debt_balance_value_tt2
+		}
+
+		instantTextBoxType = {
+			name = "deficit_budget_percentage_from_gdp_value"
+			position = { x = 430 y = 26 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 127
+			maxHeight = 24
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "deficit_budget_percentage_from_gdp_value"
+			tooltip = deficit_budget_percentage_from_gdp_value_tt
+			pdx_tooltip_delayed = deficit_budget_percentage_from_gdp_value_tt2
 		}
 
 		################
@@ -234,7 +278,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "healthcare_expense"
-			position = { x = 320 y = 150 }
+			position = { x = 320 y = 140 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 199
@@ -247,7 +291,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "social_security_expense"
-			position = { x = 320 y = 190 }
+			position = { x = 320 y = 170 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 225
@@ -260,7 +304,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "education_expense"
-			position = { x = 320 y = 230 }
+			position = { x = 320 y = 200 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 150
@@ -273,7 +317,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "policing_expense"
-			position = { x = 320 y = 270 }
+			position = { x = 320 y = 230 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
@@ -286,7 +330,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "army_expense"
-			position = { x = 320 y = 300 }
+			position = { x = 320 y = 260 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 209
@@ -296,6 +340,19 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			text = "army_expense"
 		}
+
+		instantTextBoxType = {
+			name = "recources_expense"
+			position = { x = 320 y = 290 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 209
+			maxHeight = 32
+			fixedsize = yes
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "recources_expense"
+		}		
 
 		iconType = {
 			name = "economy_divider"
@@ -311,7 +368,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdp_value"
-			position = { x = 430 y = 410 }
+			position = { x = 430 y = 405 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 110
@@ -324,7 +381,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdp_per_population_value"
-			position = { x = 310 y = 440 }
+			position = { x = 270 y = 440 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 270
@@ -372,23 +429,14 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "debt_value"
-			position = { x = 320 y = 405 }
+			position = { x = 315 y = 405 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 95
+			maxWidth = 125
 			maxHeight = 24
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "debt_value"
-		}
-
-		buttonType = {
-			name = "central_bank_button"
-			spriteType = "GFX_cash_smol"
-			position = { x = 280 y = 410 }
-			clicksound = click_close
-			tooltip = cental_bank_tt
-			pdx_tooltip_delayed = cental_bank_tt2
 		}
         ##########################################################
 		##########################################################

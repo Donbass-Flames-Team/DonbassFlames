@@ -12,12 +12,12 @@
  income_mil:0 "Военные фабрики:"
  income_doc:0 "Верфи:"
 
- expense_total:0 "Итоговые затраты: [?expense]"
- healthcare_expense:0 "Здравоохранение: [?healthcare_expense]"
- social_security_expense:0 "Социальные расходы: [?social_security_expense]"
- education_expense:0 "Образование: [?education_expense]"
- policing_expense:0 "Полиция: [?policing_expense]"
- army_expense:0 "Вооруженные силы: [?army_expense_show]"
+ expense_total:0 "Итоговые затраты: §R[?expense]§!"
+ healthcare_expense:0 "Здравоохранение: §R[?healthcare_expense]§!"
+ social_security_expense:0 "Социальные расходы: §R[?social_security_expense]§!"
+ education_expense:0 "Образование: §R[?education_expense]§!"
+ policing_expense:0 "Безопасность: §R[?policing_expense]§!"
+ army_expense:0 "Вооруженные силы: §R[?army_expense_show]§!"
 
  gdp_value:0 "ВВП:§G[?gdp]§!млрд."
  gdp_per_population_value:0 "ВВП на душу населения:§G[?gdp_per_population]§!$"
@@ -32,6 +32,7 @@
  monthly_gdp_growth_value:0 "Ежемесячный рост ВВП:§Y[?gdp_current_month]§!%"
 
  state_reserves:0 "Гос.резерв:§Y[?state_reserves]§!млрд."
+ deficit_budget_percentage_from_gdp_value:0 "Дефицит бюджета от ВВП: [?deficit_budget_percentage]%"
  economy_status_text:0 "Статус экономики: [economy_status]"
  economy_status_depression:0 "§RДепрессия§!"
  economy_status_recession:0 "§RРецессия§!"
@@ -41,6 +42,9 @@
  economy_status_economic_boom:0 "§YЭкономический бум§!"
 
 
+ debt_value_top:0 "[?debt] млрд.$"
+ recources_expense:0 "Импорт: §R[?resources_expense]§! "
+
  people_taxes:0 "НДФЛ:  §Y[?income_tax]§!"
  key_rate_precentage:0 "Ключевая ставка ЦБ"
  key_rate_precentage_value:0 "§Y[?key_rate]§!"
@@ -48,7 +52,7 @@
  corporation_taxes:0 "Корпоративные налоги:  §Y[?corporation_tax]§!"
  sales_taxes:0 "НДС:  §Y[?sale_tax]§!"
  resources_income:0 "Экспорт: §Y[?resources_income]§!"
- other_income:0 "Остальное: "
+ other_income:0 "Остальное: §Y[?other_income]§!"
 
  Taxes:0 "Налогооблажение"
  corporate_tax_precentage:0 "Копроративный налог"
