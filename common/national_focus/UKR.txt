@@ -3201,7 +3201,7 @@ focus_tree = {
 		id = UKR_new_foreign_policy
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 16
+		x = 15
 		y = 0
 
 		available = {
@@ -3234,7 +3234,7 @@ focus_tree = {
 		id = UKR_stop_cooperation_with_russia
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 5
+		x = 6
 		y = 1
 
 		prerequisite = { focus = UKR_new_foreign_policy }
@@ -3246,6 +3246,28 @@ focus_tree = {
 
 		completion_reward = {
 
+		}
+	}
+
+	focus = {
+		id = UKR_return_part_of_kherson_oblast
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -2
+		y = 1
+
+		prerequisite = { focus = UKR_stop_cooperation_with_russia }
+		relative_position_id = UKR_stop_cooperation_with_russia
+
+		available = {
+            
+		}
+
+		completion_reward = {
+            country_event = {
+				id = ukraine.48
+				hours = 3
+			}
 		}
 	}
 
@@ -5727,7 +5749,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_continuation_of_the_ato
-		icon = GFX_focus_UKR_victory_over_separatism
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = -2
 		y = 1
@@ -5854,7 +5876,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_dig_in
-		icon = GFX_focus_UKR_victory_over_separatism
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 1
 		y = 1
@@ -5877,7 +5899,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_donbass_restoration_programs
-		icon = GFX_focus_UKR_victory_over_separatism
+		icon = GFX_goal_no_focus_UKR
 		cost = 4
 		x = -2
 		y = 1
@@ -5896,7 +5918,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_joint_forces_operation
-		icon = GFX_focus_UKR_victory_over_separatism
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 1

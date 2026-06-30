@@ -863,7 +863,79 @@ DF_economy_setup = {
         value = 10
     }
 
+	set_variable = {
+		var = oil_exported
+		value = resource_exported@oil
+	}
+	set_variable = {
+		var = aluminium_exported
+		value = resource_exported@aluminium
+	}	
+	set_variable = {
+		var = rubber_exported
+		value = resource_exported@rubber
+	}
+	set_variable = {
+		var = tungsten_exported
+		value = resource_exported@tungsten
+	}
+	set_variable = {
+		var = steel_exported
+		value = resource_exported@steel
+	}	
+    
+	divide_variable = {
+		var = oil_exported
+		value = 1700
+	}
+	divide_variable = {
+		var = aluminium_exported
+		value = 1400
+	}	
+	divide_variable = {
+		var = rubber_exported
+		value = 1500
+	}
+	divide_variable = {
+		var = tungsten_exported
+		value = 1750
+	}
+	divide_variable = {
+		var = steel_exported
+		value = 2500
+	}	
 
+	set_variable = {
+		var = resources_income
+		value = 0
+	}
+
+	add_to_variable = {
+		var = resources_income
+		value = steel_exported
+	}
+	add_to_variable = {
+		var = resources_income
+		value = tungsten_exported
+	}	
+	add_to_variable = {
+		var = resources_income
+		value = rubber_exported
+	}
+	add_to_variable = {
+		var = resources_income
+		value = aluminium_exported
+	}
+	add_to_variable = {
+		var = resources_income
+		value = oil_exported
+	}
+	
+	
+	add_to_variable = {
+		var = income
+		value = resources_income
+	}
 	add_to_variable = {
 		var = income
 		value = sale_tax
@@ -882,6 +954,7 @@ DF_economy_setup = {
 	add_to_temp_variable = {income_tax_multiplier_modifier = modifier@income_tax_multiplier_modifier }
 
 	clamp_variable = { var = income_tax min = 0 }
+	clamp_variable = { var = sale_tax min = 0 }
 	clamp_variable = { var = corporation_tax min = 0 }
 
 	#############################################################
@@ -943,7 +1016,7 @@ DF_economy_setup = {
     # Civil factories
 	set_variable = {
 		var = employed_per_civil_factory
-		value = 55000
+		value = 52000
 	}	
 	set_variable = {
 		var = employed_in_civil_factories
@@ -969,7 +1042,7 @@ DF_economy_setup = {
     # naval factories
 	set_variable = {
 		var = employed_per_naval_factory
-		value = 15000
+		value = 1500
 	}	
 	set_variable = {
 		var = employed_in_naval_factories
@@ -982,7 +1055,7 @@ DF_economy_setup = {
     # farms
 	set_variable = {
 		var = employed_per_agroculture_industry
-		value = 10000
+		value = 5000
 	}	
 	set_variable = {
 		var = employed_in_agroculture_industry
@@ -1076,7 +1149,7 @@ DF_economy_setup = {
 }
 
 ###########################
-#### INFLATION CALC########
+#### KEY RATE AND INFLATION CALC########
 ###########################
 DF_key_rate_calc = {
 	set_temp_variable = { temp_inflation = var:inflation } 

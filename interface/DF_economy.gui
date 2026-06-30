@@ -124,6 +124,22 @@ guiTypes = {
 			pdx_tooltip_delayed = debt_balance_value_tt2
 		}
 
+		################
+
+		instantTextBoxType = {
+			name = "state_reserves_value"
+			position = { x = 35 y = 26 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 67
+			maxHeight = 24
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "state_reserves"
+			tooltip = state_reserves_value_tt
+			pdx_tooltip_delayed = state_reserves_value_tt2
+		}
+
 
 		instantTextBoxType = {
 			name = "income_total"
@@ -187,7 +203,7 @@ guiTypes = {
 			maxHeight = 1
 			format = left
 			Orientation = "UPPER_LEFT"
-			text = "resources_taxes"
+			text = "resources_income"
 		}		
 
 		instantTextBoxType = {
@@ -632,15 +648,27 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "economy_status"
-			position = { x = 610 y = 440 }
+			position = { x = 610 y = 430 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
 			maxWidth = 300
 			maxHeight = 64
 			format = left
 			Orientation = "UPPER_LEFT"
-			text = "economy_status"
+			text = "economy_status_text"
 		}
+
+		instantTextBoxType = {
+			name = "business_activity"
+			position = { x = 610 y = 465 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 300
+			maxHeight = 64
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "business_activity"
+		}		
 
 	}
 
