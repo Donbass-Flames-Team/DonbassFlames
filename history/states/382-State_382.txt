@@ -22,7 +22,13 @@ state = {
 			agro_industrial_complex = 1
 		}
 		
-		add_core_of = UKR 
+		add_core_of = UKR
+
+		2014.5.19 = {
+			owner = DPR
+			controller = DPR
+			add_core_of = DPR
+		}
 	}
 	provinces = { 1181 3217 3845 8879 9852 10111 11263 15491 15514 15532 }
 }

@@ -18,7 +18,13 @@ state = {
 			infrastructure = 3 
 		}
 		
-		add_core_of = UKR 
+		add_core_of = UKR
+
+		2014.5.19 = {
+			owner = LPR
+			controller = LPR
+			add_core_of = LPR
+		}
 	}
 	provinces = { 5807 18566 18567 18568 18569 }
 }
