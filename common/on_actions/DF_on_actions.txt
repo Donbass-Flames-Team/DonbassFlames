@@ -44,10 +44,32 @@ on_actions = {
 				var = gdp_current_month
 				value = 100				
 			}
+
+			if = {
+				limit = {
+					check_variable = {
+						var = cash
+						value = 0
+						compare = less_than
+					}
+				}
+				set_variable = {
+					var = deficit_budget_percentage
+					value = cash
+				}
+				divide_variable = {
+					var = deficit_budget_percentage
+					value = gdp
+				}	
+                multiply_variable = {
+					var = deficit_budget_percentage
+					value = 100					
+				}
+			}			
 		}
 		effect = {
 			set_variable = {
-				
+
 			}
 		}
 	}
@@ -55,6 +77,7 @@ on_actions = {
 		effect = {
 	        DF_key_rate_calc = yes
 		}
+		
 	}
 	on_weekly = {
 		effect = {

@@ -52,19 +52,33 @@ scripted_gui = {
 						set_global_flag = economy_tab_on
 					}
 				}
-				if = {
-					limit = {
-						has_global_flag = economy_decisions_tab_on
-					}
-					clr_global_flag = economy_decisions_tab_on
-				}
-				if = {
-					limit = {
-						has_global_flag = cental_bank_tab_on
-					}
-					clr_global_flag = cental_bank_tab_on
-				}
+
 			}
+		}
+	}
+
+	debt_window = {
+		window_name = "debt_window"
+		context_type = player_context
+		parent_window_name = topbar
+
+		triggers = {
+
+		}
+
+		effects = {
+			debt_button_click = {
+				if = {
+					limit = {
+						has_global_flag = economy_tab_on
+					}
+					clr_global_flag = economy_tab_on
+					else = {
+						set_global_flag = economy_tab_on
+					}
+				}
+
+			}			
 		}
 	}
 
