@@ -336,12 +336,61 @@ add_to_variable = { JAM_ammo_stockpile = 1000 }
 	
 }
 
-2014.3.31 = {
+2014.5.18 = {
 	remove_opinion_modifier = {
 		target = RUS
 		modifier = kharkiv_pact
 	}
+	set_country_flag = Yanukovich_escaped
+    complete_national_focus = UKR_yanukovich_escaped
+	mark_focus_tree_layout_dirty = yes
+	complete_national_focus = UKR_government_in_anarchy
+	complete_national_focus = UKR_the_end_of_the_yanukovych_regime
+	complete_national_focus = UKR_release_political_prisoners_from_prisons
+	complete_national_focus = UKR_coalition_in_parlamient
+	complete_national_focus = UKR_preparation_for_elections
+	complete_national_focus = UKR_adoption_of_new_laws
+	complete_national_focus = UKR_unrest_in_the_east
+    complete_national_focus = UKR_army_review
+	complete_national_focus = UKR_appeal_to_the_oligarchs
+	complete_national_focus = UKR_concessions_to_the_oligarchs
+	complete_national_focus = UKR_support_of_the_volunteer_battalion
+	complete_national_focus = UKR_form_national_guardia
+	complete_national_focus = UKR_creation_of_tro
+	complete_national_focus = UKR_forced_demobilization
+	complete_national_focus = UKR_unrest_in_crimea
+	complete_national_focus = UKR_highlighting_the_situation_in_the_media
+	complete_national_focus = UKR_leave_the_peninsula
+	complete_national_focus = UKR_pick_up_weapons_from_warehouses
+	complete_national_focus = UKR_partial_mobilization
+    complete_national_focus = UKR_start_of_ato
+	complete_national_focus = UKR_volunteer_battalions
+    complete_national_focus = UKR_emergency_redeployment_of_troops
+	complete_national_focus = UKR_organize_frontline
+	complete_national_focus = UKR_volunteer_battalion_azov
+	
+
+
+	activate_mission = 	UKR_elections_2014
+	add_days_mission_timeout = {
+        mission = UKR_elections_2014
+        days = -85
+    }
+
+	retire_country_leader = yes
+	set_politics = {
+        ruling_party = conservatism_democracy
+        elections_allowed = no
+    }
+	promote_character = UKR_alexander_tyrchinov
+    remove_ideas = {
+		UKR_protests
+		UKR_helpless_government		
+	}
+
 }
+
+
 
 2022.2.28 = {
 	set_global_flag = Russo_Ukranian_War

@@ -119,6 +119,10 @@ country_event = {
 				        type = infantry_equipment_1 
 				        amount = 1500 
 			        }
+					add_equipment_to_stockpile = {
+				        type = uniform_equipment_1
+				        amount = 2250
+			        }					
 				}
 			}
 			if = {
@@ -133,8 +137,12 @@ country_event = {
 		            add_equipment_to_stockpile = { 
 				        type = infantry_equipment_1 
 				        amount = 2500 
-			        }					
-				}
+			        }
+					add_equipment_to_stockpile = {
+				        type = uniform_equipment_1
+				        amount = 2250
+			        }										
+				} 
 			}
 			if = {
 				limit = {
@@ -148,12 +156,12 @@ country_event = {
 		            add_equipment_to_stockpile = { 
 				        type = infantry_equipment_1 
 				        amount = 4500 
-			        }					
+			        }	
+					add_equipment_to_stockpile = {
+				        type = uniform_equipment_1
+				        amount = 4250
+			        }				
 				}
-			}
-			country_event = {
-				id = ukraine.26
-				days = 6
 			}
 			country_event = {
 				id = ukraine.78
@@ -1432,7 +1440,9 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-        load_oob = UKR_First_Wave_of_mobilization_2014
+        hidden_effect = {
+            load_oob = UKR_First_Wave_of_mobilization_2014
+        }
 	}
 
 	option = {
@@ -1441,10 +1451,12 @@ country_event = {
             id = ukraine.29
             days = 46
         }
-		country_event = {
-            id = ukraine.90
-            days = 136
-        }
+		hidden_effect = {
+			country_event = {
+				id = ukraine.90
+				days = 136
+			}
+		}
 	}
 }
 
@@ -1458,7 +1470,9 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-        load_oob = UKR_Second_Wave_of_mobilization_2014
+		hidden_effect = {
+			load_oob = UKR_Second_Wave_of_mobilization_2014
+		}	
 	}
 
 	option = {
@@ -1480,7 +1494,9 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-        load_oob = UKR_Third_Wave_of_mobilization_2014
+		hidden_effect = {
+			load_oob = UKR_Third_Wave_of_mobilization_2014
+		}
 	}
 
 	option = {

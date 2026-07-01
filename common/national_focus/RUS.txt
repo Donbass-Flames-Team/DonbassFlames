@@ -27,6 +27,12 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+			hidden_effect = {
+				news_event = {
+					id = news_events.29
+					hours = 5
+				}
+			}
 		}
 	}
 
@@ -673,18 +679,22 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = russia.2
-			621 = {
-				add_compliance = 30
-			}
-			637 = {
-				add_compliance = 30
-			}
 			hidden_effect = {
 				clr_country_flag = RUS_rush_in_crimea
 				news_event = {
 					id = news_events.7
 					hours = 9
 				}
+				annex_country = {
+					target = CRI
+					transfer_troops = no
+				}
+				621 = {
+				    add_compliance = 30
+			    }
+			    637 = {
+				    add_compliance = 30
+			    }
 			}
 		}
 	}
@@ -738,7 +748,7 @@ focus_tree = {
 	focus = {
 		id = RUS_support_prorussians_protests
 		icon = GFX_goal_no_focus_RUS
-		cost = 0.5
+		cost = 0.3
 		x = 2
 		y = 1
 
@@ -834,6 +844,14 @@ focus_tree = {
 			add_stability = 0.025
 			DPR = {
                 country_event = DPR.10
+			}
+			hidden_effect = {
+				UKR = {
+			        country_event = {
+				        id = ukraine.26
+				        hours = 6
+			        }
+				}
 			}
 		}
 	}
