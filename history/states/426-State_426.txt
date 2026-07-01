@@ -19,7 +19,13 @@ state = {
 			infrastructure = 3 
 		}
 		
-		add_core_of = UKR 
+		add_core_of = UKR
+
+		2014.5.19 = {
+			owner = DPR
+			controller = DPR
+			add_core_of = DPR
+		}
 	}
 	provinces = { 6047 6823 7542 15733 18582 18583 18588 }
 }

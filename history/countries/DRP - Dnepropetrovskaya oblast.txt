@@ -9,6 +9,16 @@ capital = 1
 		closed_economy
 		war_economy
 	}
+    set_variable = { cash = 1 }
+    set_variable = { debt = -1 }
+    set_variable = { percentage_shadow_economy = 40 }
+    set_variable = { income_tax_rate = 17 }
+    set_variable = { corporate_tax_rate = 18 }
+    set_variable = { key_rate = 6.5 }
+    set_variable = { sales_tax_rate = 20 }
+    set_variable = { small_businesses = 3900 }
+    set_variable = { individual_enterprises = 12000 } 
+    set_variable = { consumer_activity = 38 } 
 
 
 	set_technology = {

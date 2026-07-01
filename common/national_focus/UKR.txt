@@ -97,33 +97,6 @@ focus_tree = {
 				has_country_flag = Tree_post_yanukovich_hidden
 			}
 		}
-		offset = {
-			x = 3
-			trigger = {
-				NOT = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = SHOW
-					}
-				}
-				has_completed_focus = UKR_dictatorship_takes_over
-			    NOT = {
-					has_country_flag = Tree_post_yanukovich_hidden
-				}
-			}
-		}
-		offset = {
-			x = -3
-			trigger = {
-				NOT = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = SHOW
-					}
-				}
-				has_country_flag = Tree_post_yanukovich_hidden
-			}
-		}
 		
 		
 
@@ -3201,7 +3174,7 @@ focus_tree = {
 		id = UKR_new_foreign_policy
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 16
+		x = 15
 		y = 0
 
 		available = {
@@ -3234,7 +3207,7 @@ focus_tree = {
 		id = UKR_stop_cooperation_with_russia
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 5
+		x = 6
 		y = 1
 
 		prerequisite = { focus = UKR_new_foreign_policy }
@@ -3246,6 +3219,28 @@ focus_tree = {
 
 		completion_reward = {
 
+		}
+	}
+
+	focus = {
+		id = UKR_return_part_of_kherson_oblast
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -2
+		y = 1
+
+		prerequisite = { focus = UKR_stop_cooperation_with_russia }
+		relative_position_id = UKR_stop_cooperation_with_russia
+
+		available = {
+            
+		}
+
+		completion_reward = {
+            country_event = {
+				id = ukraine.48
+				hours = 3
+			}
 		}
 	}
 
@@ -3265,6 +3260,25 @@ focus_tree = {
 
 		completion_reward = {
 
+		}
+	}	
+
+	focus = {
+		id = UKR_develop_renewable_energy_sources
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 2
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_energy_independence_from_the_russia }
+		relative_position_id = UKR_energy_independence_from_the_russia
+
+		available = {
+           
+		}
+
+		completion_reward = {
+			add_political_power = 25
 		}
 	}
 
@@ -4624,7 +4638,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 		}
-	}
+	}	
 
 	focus = {
 		id = UKR_call_early_parliamentary_elections
@@ -5727,7 +5741,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_continuation_of_the_ato
-		icon = GFX_focus_UKR_victory_over_separatism
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = -2
 		y = 1
@@ -5854,7 +5868,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_dig_in
-		icon = GFX_focus_UKR_victory_over_separatism
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 1
 		y = 1
@@ -5877,7 +5891,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_donbass_restoration_programs
-		icon = GFX_focus_UKR_victory_over_separatism
+		icon = GFX_goal_no_focus_UKR
 		cost = 4
 		x = -2
 		y = 1
@@ -5896,7 +5910,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_joint_forces_operation
-		icon = GFX_focus_UKR_victory_over_separatism
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 1

@@ -26,9 +26,12 @@ on_actions = {
 
                 # isil rise(2014-06-29)
                 if = {
-                    limit = { date > 2014.6.29  NOT = { has_global_flag = we_isil } }
+                    limit = { date > 2014.6.29 NOT = { has_global_flag = we_isil } }
                     set_global_flag = we_isil
-                    news_event = { id = world_events.3 hours = 6 }
+                    if = {
+                        limit = { NOT = { has_global_flag = streamer_mode_enabled } }
+                        news_event = { id = world_events.3 hours = 6 }
+                    }
                 }
 
                 # paris (2015-11-13)

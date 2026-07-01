@@ -52,19 +52,33 @@ scripted_gui = {
 						set_global_flag = economy_tab_on
 					}
 				}
-				if = {
-					limit = {
-						has_global_flag = economy_decisions_tab_on
-					}
-					clr_global_flag = economy_decisions_tab_on
-				}
-				if = {
-					limit = {
-						has_global_flag = cental_bank_tab_on
-					}
-					clr_global_flag = cental_bank_tab_on
-				}
+
 			}
+		}
+	}
+
+	debt_window = {
+		window_name = "debt_window"
+		context_type = player_context
+		parent_window_name = topbar
+
+		triggers = {
+
+		}
+
+		effects = {
+			debt_button_click = {
+				if = {
+					limit = {
+						has_global_flag = economy_tab_on
+					}
+					clr_global_flag = economy_tab_on
+					else = {
+						set_global_flag = economy_tab_on
+					}
+				}
+
+			}			
 		}
 	}
 
@@ -113,6 +127,166 @@ scripted_gui = {
 			close_button_click = {
 				clr_global_flag = economy_tab_on
 			}
+			## Key rate
+			increase_key_rate_click = {
+				add_to_variable = {
+					var = key_rate
+					value = 0.5
+				}
+				clamp_variable = {
+					var = key_rate
+					max = 20
+				}
+				add_political_power = -10
+			}
+			decrease_key_rate_click = {
+				subtract_from_variable = {
+					var = key_rate
+					value = 0.5
+				}
+				clamp_variable = {
+					var = key_rate
+					min = 0
+				}
+				add_political_power = -10
+			}	
+            ## Sales tax
+			increase_sales_taxes_click = {
+				add_to_variable = {
+					var = sales_tax_rate
+					value = 0.5
+				}
+				clamp_variable = {
+					var = sales_tax_rate
+					max = 25
+				}
+				add_political_power = -10
+				random_list = {
+					20 = {
+					    add_to_variable = {
+						    var = percentage_shadow_economy
+						    value = 0.5
+					    }
+					}
+					10 = {
+					    add_to_variable = {
+						    var = percentage_shadow_economy
+						    value = 1
+					    }
+					}					
+				}
+				random_list = {
+					20 = {
+					    subtract_from_variable = {
+						    var = small_businesses
+						    value = 1000
+					    }
+					}
+					10 = {
+					    subtract_from_variable = {
+						    var = small_businesses
+						    value = 2000
+					    }
+					}
+					5 = {
+					    subtract_from_variable = {
+						    var = small_businesses
+						    value = 2500
+					    }
+					}										
+				}
+			}			
+			decrease_sales_taxes_click = {
+				subtract_from_variable = {
+					var = sales_tax_rate
+					value = 0.5
+				}
+				clamp_variable = {
+					var = sales_tax_rate
+					min = 5
+				}
+				add_political_power = -10
+			}
+            ## Corporate tax
+			increase_corporate_tax_click = {
+				add_to_variable = {
+					var = corporate_tax_rate
+					value = 1
+				}
+				clamp_variable = {
+					var = corporate_tax_rate
+					max = 25
+				}
+				add_political_power = -10
+			}			
+			decrease_corporate_tax_click = {
+				subtract_from_variable = {
+					var = corporate_tax_rate
+					value = 1
+				}
+				clamp_variable = {
+					var = corporate_tax_rate
+					min = 3
+				}
+				add_political_power = -10
+			}			
+            ## Income_tax
+			increase_income_tax_click = {
+				add_to_variable = {
+					var = income_tax_rate
+					value = 1
+				}
+				clamp_variable = {
+					var = income_tax_rate
+					max = 25
+				}
+				add_political_power = -10
+				random_list = {
+					20 = {
+					    add_to_variable = {
+						    var = percentage_shadow_economy
+						    value = 0.5
+					    }
+					}
+					10 = {
+					    add_to_variable = {
+						    var = percentage_shadow_economy
+						    value = 1
+					    }
+					}					
+				}
+				random_list = {
+					20 = {
+					    subtract_from_variable = {
+						    var = small_businesses
+						    value = 500
+					    }
+					}
+					10 = {
+					    subtract_from_variable = {
+						    var = small_businesses
+						    value = 1000
+					    }
+					}
+					5 = {
+					    subtract_from_variable = {
+						    var = small_businesses
+						    value = 1500
+					    }
+					}										
+				}
+			}			
+			decrease_income_tax_click = {
+				subtract_from_variable = {
+					var = income_tax_rate
+					value = 1
+				}
+				clamp_variable = {
+					var = income_tax_rate
+					min = 3
+				}
+				add_political_power = -10
+			}			
 		}
 	}
 

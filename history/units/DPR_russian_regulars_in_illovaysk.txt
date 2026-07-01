@@ -1,46 +1,45 @@
-division_template = {
+division_template = { 
 	name = "Russian Tankovyy batal'on"
 	regiments = {
-        modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
 		modern_armor = { x = 0 y = 2 }
-        ifv_unit = { x = 1 y = 0 }
+		ifv_unit = { x = 1 y = 0 }
 	}
-    support = {
-        engineer = { x = 0 y = 0 }
+	support = {
+		engineer = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        sniper_company = { x = 1 y = 0 }
+		sniper_company = { x = 1 y = 0 }
 	}
 
-    is_locked = yes
+	is_locked = yes
 }
 
 division_template = {
 	name = "Russian Motosrelkovy batal'on"
 	regiments = {
-        ifv_unit = { x = 0 y = 0 }
+		ifv_unit = { x = 0 y = 0 }
 		apc_unit = { x = 0 y = 1 }
 		apc_unit = { x = 0 y = 2 }
-        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
 	}
-    support = {
-        engineer = { x = 0 y = 0 }
+	support = {
+		engineer = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        sniper_company = { x = 1 y = 0 }
+		sniper_company = { x = 1 y = 0 }
 	}
 
-    is_locked = yes
+	is_locked = yes
 }
-
 
 division_template = {
 	name = "Russian VDV"
 	regiments = {
-        paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 0 }
 		paratrooper = { x = 0 y = 1 }
 		paratrooper = { x = 0 y = 2 }
 		paratrooper = { x = 1 y = 0 }
@@ -48,204 +47,184 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		logistics_company = { x = 0 y = 1}
-		signal_company = { x = 0 y = 2}
-		field_hospital = { x = 0 y = 3}
+		logistics_company = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
 		mortar = { x = 1 y = 0 }
 		recon = { x = 1 y = 1 }
-        sniper_company = { x = 1 y = 2 }
+		sniper_company = { x = 1 y = 2 }
 	}
 
 	is_locked = yes
 }
 
 units = {
-    division= {
-        name = "1-y tankovyy batal'on 6-y otdel'noy tankovoy brigady"
-        location = 6860
-        division_template = "Russian Tankovyy batal'on"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.8
+	division = {
+		name = "1-y tankovyy batal'on 6-y otdel'noy tankovoy brigady"
+		location = 18946
+		division_template = "Russian Tankovyy batal'on"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-    division= {
-        name = "2-y tankovyy batal'on 6-y otdel'noy tankovoy brigady"
-        location = 11207
-        division_template = "Russian Tankovyy batal'on"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2-y tankovyy batal'on 6-y otdel'noy tankovoy brigady"
+		location = 18907
+		division_template = "Russian Tankovyy batal'on"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-    division= {
-        name = "3-y tankovyy batal'on 6-y otdel'noy tankovoy brigady"
-        location = 5810
-        division_template = "Russian Tankovyy batal'on"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3-y tankovyy batal'on 6-y otdel'noy tankovoy brigady"
+		location = 18900
+		division_template = "Russian Tankovyy batal'on"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-    division= {
-        name = "1-y motostrelkovyy batal'on 6-y otdel'noy tankovoy brigady"
-        location = 10882
-        division_template = "Russian Motosrelkovy batal'on"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.8
+	}
+	division = {
+		name = "1-y motostrelkovyy batal'on 6-y otdel'noy tankovoy brigady"
+		location = 18899
+		division_template = "Russian Motosrelkovy batal'on"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-    division= {
-        name = "1-y motostrelkovyy batal'on 17-y otdel'noy motostrelkovoy brigady"
-        location = 16353
-        division_template = "Russian Motosrelkovy batal'on"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.8
+	}
+	division = {
+		name = "1-y motostrelkovyy batal'on 17-y otdel'noy motostrelkovoy brigady"
+		location = 18855
+		division_template = "Russian Motosrelkovy batal'on"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-    division= {
-        name = "2-y motostrelkovyy batal'on 17-y otdel'noy motostrelkovoy brigady"
-        location = 16071
-        division_template = "Russian Motosrelkovy batal'on"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2-y motostrelkovyy batal'on 17-y otdel'noy motostrelkovoy brigady"
+		location = 16071
+		division_template = "Russian Motosrelkovy batal'on"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-
-    division= {
-        name = "3-y motostrelkovyy batal'on 17-y otdel'noy motostrelkovoy brigady"
-        location = 16071
-        division_template = "Russian Motosrelkovy batal'on"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3-y motostrelkovyy batal'on 17-y otdel'noy motostrelkovoy brigady"
+		location = 16071
+		division_template = "Russian Motosrelkovy batal'on"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-
-    division= {
-        name = "1-y tankovyy batal'on 17-y otdel'noy motostrelkovoy brigady"
-        location = 16004
-        division_template = "Russian Tankovyy batal'on"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division = {
+		name = "1-y tankovyy batal'on 17-y otdel'noy motostrelkovoy brigady"
+		location = 16004
+		division_template = "Russian Tankovyy batal'on"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-
-    division= {
-        name = "1-y motostrelkovyy batal'on 18-y otdel'noy motostrelkovoy brigady"
-        location = 16353
-        division_template = "Russian Motosrelkovy batal'on"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division = {
+		name = "1-y motostrelkovyy batal'on 18-y otdel'noy motostrelkovoy brigady"
+		location = 10105
+		division_template = "Russian Motosrelkovy batal'on"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-    division= {
-        name = "2-y motostrelkovyy batal'on 18-y otdel'noy motostrelkovoy brigady"
-        location = 2870
-        division_template = "Russian Motosrelkovy batal'on"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2-y motostrelkovyy batal'on 18-y otdel'noy motostrelkovoy brigady"
+		location = 2870
+		division_template = "Russian Motosrelkovy batal'on"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-
-    division= {
-        name = "3-y motostrelkovyy batal'on 18-y otdel'noy motostrelkovoy brigady"
-        location = 5588
-        division_template = "Russian Motosrelkovy batal'on"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3-y motostrelkovyy batal'on 18-y otdel'noy motostrelkovoy brigady"
+		location = 18954
+		division_template = "Russian Motosrelkovy batal'on"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-
-    division= {
-        name = "1-y tankovyy batal'on 18-y otdel'noy motostrelkovoy brigady"
-        location = 5588
-        division_template = "Russian Tankovyy batal'on"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division = {
+		name = "1-y tankovyy batal'on 18-y otdel'noy motostrelkovoy brigady"
+		location = 18976
+		division_template = "Russian Tankovyy batal'on"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-     
-    #
-    division= {
-        name = "1-y desantno-shturmovoy batal'on 76-y gvardeyskoy desantno-shturmovoy divizii"
-        location = 16001
-        division_template = "Russian VDV"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division = {
+		name = "1-y desantno-shturmovoy batal'on 76-y gvardeyskoy desantno-shturmovoy divizii"
+		location = 18856
+		division_template = "Russian VDV"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-    division= {
-        name = "2-y desantno-shturmovoy batal'on 76-y gvardeyskoy desantno-shturmovoy divizii"
-        location = 2870
-        division_template = "Russian VDV"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2-y desantno-shturmovoy batal'on 76-y gvardeyskoy desantno-shturmovoy divizii"
+		location = 2870
+		division_template = "Russian VDV"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-
-    division= {
-        name = "3-y desantno-shturmovoy batal'on 76-y gvardeyskoy desantno-shturmovoy divizii"
-        location = 15952
-        division_template = "Russian VDV"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3-y desantno-shturmovoy batal'on 76-y gvardeyskoy desantno-shturmovoy divizii"
+		location = 16004
+		division_template = "Russian VDV"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-    #
-    division= {
-        name = "1-y parashyutno-desantnyy polk 98-y gvardeyskoy vozdushno-desantnoy divizii"
-        location = 5588
-        division_template = "Russian VDV"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division = {
+		name = "1-y parashyutno-desantnyy polk 98-y gvardeyskoy vozdushno-desantnoy divizii"
+		location = 10105
+		division_template = "Russian VDV"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-
-    division= {
-        name = "2-y parashyutno-desantnyy polk 98-y gvardeyskoy vozdushno-desantnoy divizii"
-        location = 5588
-        division_template = "Russian VDV"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.3
-		start_manpower_factor = 0.3
-    }
-
-    division= {
-        name = "1-y desantno-shturmovoy polk 98-y gvardeyskoy vozdushno-desantnoy divizii"
-        location = 5588
-        division_template = "Russian VDV"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.3
-		start_manpower_factor = 0.3
-    }   
-    #
-    division= {
-        name = "1-y desantno-shturmovoy batal'on 31-y otdel'noy gvardeyskoy desantno-shturmovoy brigady"
-        location = 5588
-        division_template = "Russian VDV"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2-y parashyutno-desantnyy polk 98-y gvardeyskoy vozdushno-desantnoy divizii"
+		location = 18954
+		division_template = "Russian VDV"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.5
-    }
-
-    division= {
-        name = "2-y desantno-shturmovoy batal'on 31-y otdel'noy gvardeyskoy desantno-shturmovoy brigady"
-        location = 5588
-        division_template = "Russian VDV"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.3
-		start_manpower_factor = 0.3
-    }
-
-    division= {
-        name = "3-y desantno-shturmovoy batal'on 31-y otdel'noy gvardeyskoy desantno-shturmovoy brigady"
-        location = 5588
-        division_template = "Russian VDV"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.3
-		start_manpower_factor = 0.3
-    }  
-
-
-    
-
-
-
+	}
+	division = {
+		name = "1-y desantno-shturmovoy polk 98-y gvardeyskoy vozdushno-desantnoy divizii"
+		location = 18952
+		division_template = "Russian VDV"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+	}
+	division = {
+		name = "1-y desantno-shturmovoy batal'on 31-y otdel'noy gvardeyskoy desantno-shturmovoy brigady"
+		location = 18951
+		division_template = "Russian VDV"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+	}
+	division = {
+		name = "2-y desantno-shturmovoy batal'on 31-y otdel'noy gvardeyskoy desantno-shturmovoy brigady"
+		location = 18951
+		division_template = "Russian VDV"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+	}
+	division = {
+		name = "3-y desantno-shturmovoy batal'on 31-y otdel'noy gvardeyskoy desantno-shturmovoy brigady"
+		location = 18952
+		division_template = "Russian VDV"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+	}
 }

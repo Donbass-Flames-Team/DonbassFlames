@@ -167,84 +167,84 @@ focus_tree = {
 		completion_reward = {
 			340 = {
 			add_dynamic_modifier = { modifier = LPR_luhansk_castle_dynamic_idea scope = LPR }
-			    }
+				}
 						custom_effect_tooltip = LPR_bunkers_around_luhansk_tt
-			        	hidden_effect = {
-			                if = {
-							    limit = {
-								    LPR = {
-									    controls_province = 11062
-								    }
-							    }
-							    340 = {
-								    add_building_construction = {
-									    type = bunker
-									    level = 3
-									    province = 11062
-										instant_build = yes
-								    }
-							    }
-						    }
-			                if = {
-							    limit = {
-								    LPR = {
-									    controls_province = 11604 
-								    }
-							    }
-							    340 = {
-								    add_building_construction = {
-									    type = bunker
-									    level = 4
-									    province = 11604 
-										instant_build = yes
-								    }
-							    }
-						    }	
+						hidden_effect = {
 							if = {
-							    limit = {
-								    LPR = {
-									    controls_province = 8516  
-								    }
-							    }
-							    340 = {
-								    add_building_construction = {
-									    type = bunker
-									    level = 2
-									    province = 8516  
+								limit = {
+									LPR = {
+										controls_province = 11062
+									}
+								}
+								340 = {
+									add_building_construction = {
+										type = bunker
+										level = 3
+										province = 11062
 										instant_build = yes
-								    }
-							    }
-						    }
+									}
+								}
+							}
 							if = {
-							    limit = {
-								    LPR = {
-									    controls_province = 15279   
-								    }
-							    }
-							    340 = {
-								    add_building_construction = {
-									    type = bunker
-									    level = 3
-									    province = 15279  
+								limit = {
+									LPR = {
+										controls_province = 11604 
+									}
+								}
+								340 = {
+									add_building_construction = {
+										type = bunker
+										level = 4
+										province = 11604 
+										instant_build = yes
+									}
+								}
+							}	
+							if = {
+								limit = {
+									LPR = {
+										controls_province = 8516  
+									}
+								}
+								340 = {
+									add_building_construction = {
+										type = bunker
+										level = 2
+										province = 8516  
+										instant_build = yes
+									}
+								}
+							}
+							if = {
+								limit = {
+									LPR = {
+										controls_province = 15279   
+									}
+								}
+								340 = {
+									add_building_construction = {
+										type = bunker
+										level = 3
+										province = 15279  
 										instant_build = yes 
-								    }
-							    }
-						    }
+									}
+								}
+							}
 							if = {
-							    limit = {
-								    LPR = {
-									    controls_province = 15254   
-								    }
-							    }
-							    340 = {
-								    add_building_construction = {
-									    type = bunker
-									    level = 3
-									    province = 15254  
+								limit = {
+									LPR = {
+										controls_province = 15254   
+									}
+								}
+								340 = {
+									add_building_construction = {
+										type = bunker
+										level = 3
+										province = 15254  
 										instant_build = yes 
-								    }
-							    }
-						    }				
+									}
+								}
+							}				
 							
 						}
 		}
@@ -394,7 +394,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_republic_of_bolotov"
-			                        set_country_flag = LPR_politics
+									set_country_flag = LPR_politics
 						add_ideas = LPR_republic_of_bolotov
 						country_event = {
 							id = LPR.2
@@ -487,7 +487,7 @@ focus_tree = {
 				amount = 600
 			}
 			add_equipment_to_stockpile = {
-				type = uniform_equpment_1
+				type = uniform_equipment_1
 				amount = 6000
 			}
 			add_equipment_to_stockpile = {
@@ -547,7 +547,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_peoples_court_of_novorossiya"
 						add_political_power = -50
 						add_ideas = LPR_harsh_courts
-			                        add_stability = -0.05
+									add_stability = -0.05
 						
 						country_event = {
 							id = LPR.4
@@ -633,7 +633,6 @@ focus_tree = {
 		y = 8
 		cost = 0
 		prerequisite = { focus = LPR_start_solving_the_republics_problems }
-		prerequisite = { focus = LPR_start_solving_the_republics_problems }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
@@ -707,6 +706,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
+		}
+
+		available = {
+			has_completed_focus = LPR_get_enterprises_back_online
 		}
 
 		completion_reward = {
@@ -963,7 +966,7 @@ focus_tree = {
 
 	focus = {
 		id = LPR_get_enterprises_back_online
-		icon = GFX_focus_UKR_The_regime_Is_under_threat
+		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 41
 		y = 12
 		cost = 5

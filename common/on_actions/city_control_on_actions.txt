@@ -1,10 +1,12 @@
 on_actions = {
     on_startup = {
         effect = {
-            set_global_flag = slavyansk_nr
-            set_global_flag = lysychansk_nr
-            set_global_flag = severodonetsk_nr
-            set_global_flag = kramatorsk_nr
+            set_global_flag = slavyansk_NR
+            set_global_flag = lysychansk_NR
+            set_global_flag = severodonetsk_NR
+            set_global_flag = kramatorsk_NR
+            set_global_flag = horlivka_NR
+			set_global_flag = yenakiyevo_NR
         }
     }
     on_state_control_changed = {
