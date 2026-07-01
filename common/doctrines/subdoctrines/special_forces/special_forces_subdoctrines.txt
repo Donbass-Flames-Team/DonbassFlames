@@ -26,14 +26,6 @@ mountaineers_1 = {
 
     ai_will_do = {
         base = 1
-        modifier = {
-            factor = 25
-           	OR = {
-           		original_tag = SWE
-           		original_tag = FIN
-           		original_tag = NOR
-           	} 
-        }
     }
 
     # EFFECTS
@@ -117,16 +109,6 @@ mountaineers_2 = {
 
     ai_will_do = {
         base = 1
-        modifier = {
-            factor = 25
-            OR = {
-            	original_tag = GER
-            	original_tag = SOV
-            	original_tag = POL
-            	original_tag = ITA
-            	original_tag = BEL
-            }           
-        }
     }
 
     # EFFECTS
@@ -228,16 +210,6 @@ marines_1 = {
 
     ai_will_do = {
         base = 1
-        modifier = {
-            factor = 25
-            OR = {
-            	original_tag = ENG
-            	original_tag = CAN
-            	original_tag = AST
-            	original_tag = NZL
-            	original_tag = SAF
-            }
-        }
     }
 
     # EFFECTS
@@ -336,13 +308,6 @@ marines_2 = {
 
     ai_will_do = {
         base = 1
-        modifier = {
-            factor = 25
-            OR = {
-            	original_tag = JAP
-            	original_tag = USA
-            }
-        }
     }
 
     # EFFECTS
@@ -447,14 +412,6 @@ paratroopers_1 = {
     }
     ai_will_do = {
         base = 1
-        modifier = {
-            factor = 15
-            OR = {
-            	original_tag = SOV
-            	original_tag = JAP
-            	original_tag = ITA
-            }
-        }
     }
 
    # EFFECTS
@@ -547,15 +504,6 @@ paratroopers_2 = {
 
     ai_will_do = {
         base = 1
-        modifier = {
-            factor = 15
-            OR = {
-            	original_tag = GER
-            	original_tag = ENG
-            	original_tag = POL
-            	original_tag = USA
-            }
-        }
     }
 
     # EFFECTS
@@ -634,15 +582,6 @@ rangers_1 = {
 
     ai_will_do = {
         base = 1
-        modifier = {
-            factor = 25
-            OR = {
-            	original_tag = FIN
-            	original_tag = SWE
-            	original_tag = NOR
-            	original_tag = BEL
-            }          
-        }
     }
 
     # EFFECTS
@@ -747,14 +686,6 @@ rangers_2 = {
 
     ai_will_do = {
         base = 1
-        modifier = {
-            factor = 25
-            OR = {
-            	original_tag = SIA
-            	original_tag = RAJ
-            	original_tag = BRM 
-            }         
-        }
     }
 
     # EFFECTS   

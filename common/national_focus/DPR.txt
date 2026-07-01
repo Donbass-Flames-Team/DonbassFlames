@@ -1320,6 +1320,25 @@ focus_tree = {
     		add_stability = 0.15																							
 		}
 	}
+	
+	focus = {
+		id = DPR_peace_on_donbass
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 19
+		y = 0
+
+		available = {
+			NOT = {
+				has_war_with = UKR
+			}
+			date > 2015.3.1
+		}
+
+		completion_reward = {
+
+		}
+	}
 
 	focus = {
 		id = DPR_nationalize_the_captured_factories
@@ -1371,25 +1390,6 @@ focus_tree = {
 
 		available = {
 			
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = DPR_peace_on_donbass
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
-		x = 19
-		y = 0
-
-		available = {
-			NOT = {
-				has_war_with = UKR
-			}
-			date > 2015.3.1
 		}
 
 		completion_reward = {

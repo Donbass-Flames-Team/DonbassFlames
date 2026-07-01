@@ -1,7 +1,7 @@
 equipments = {
 
     motorized_equipment = {
-		year = 1970
+		year = 1965
 
 		is_archetype = yes
 		picture = archetype_motorized_equipment		
@@ -17,7 +17,6 @@ equipments = {
 		maximum_speed = 12
 		reliability = 0.8
 		hardness = 0.1
-
 		breakthrough = 5
 
 		#Space taken in convoy
@@ -33,38 +32,102 @@ equipments = {
 		supply_truck = yes
 	}
 
-	motorized_equipment_0 = {
-		year = 1970
+	motorized_equipment_0 = { # ЗИЛ-131
+		year = 1965
 
 		archetype = motorized_equipment
 		priority = 30
-		maximum_speed = 10
-		reliability = 0.65
-		breakthrough = 2			
+
+		maximum_speed = 12
+		reliability = 0.72
+		hardness = 0.1
+		breakthrough = 5
+		lend_lease_cost = 5
+		build_cost_ic = 1.5
+		resources = {
+			rubber = 1
+			steel = 1
+		}
+		fuel_consumption = 1.2
 	}
 
-	motorized_equipment_1 = {
+	motorized_equipment_1 = { # Урал-4320
 		year = 1980
 
 		archetype = motorized_equipment
 		parent = motorized_equipment_0
-		priority = 30			
+		priority = 30
+
+		maximum_speed = 12
+		reliability = 0.8
+		hardness = 0.1
+		breakthrough = 5
+		lend_lease_cost = 5
+		build_cost_ic = 1.5
+		resources = {
+			rubber = 1
+			steel = 1
+		}
+		fuel_consumption = 1.2
 	}
 
-	motorized_equipment_2 = {
-		year = 1995
+	motorized_equipment_2 = { # КамАЗ-6350
+		year = 2000
 
 		archetype = motorized_equipment
 		parent = motorized_equipment_1
-		priority = 30			
+		priority = 30
+
+		maximum_speed = 12
+		reliability = 0.84
+		hardness = 0.1
+		breakthrough = 5
+		lend_lease_cost = 5
+		build_cost_ic = 1.5
+		resources = {
+			rubber = 1
+			steel = 1
+		}
+		fuel_consumption = 1.2
 	}
 
-	motorized_equipment_3 = {
+	motorized_equipment_3 = { # Тайфун-К
 		year = 2015
 
 		archetype = motorized_equipment
 		parent = motorized_equipment_2
-		priority = 30			
+		priority = 30
+
+		maximum_speed = 12
+		reliability = 0.86
+		hardness = 0.1
+		breakthrough = 5
+		lend_lease_cost = 5
+		build_cost_ic = 1.5
+		resources = {
+			rubber = 1
+			steel = 1
+		}
+		fuel_consumption = 1.2
 	}
 
+	motorized_equipment_4 = { # хз
+		year = 2030
+
+		archetype = motorized_equipment
+		parent = motorized_equipment_3
+		priority = 30
+
+		maximum_speed = 12
+		reliability = 0.88
+		hardness = 0.1
+		breakthrough = 5
+		lend_lease_cost = 5
+		build_cost_ic = 1.5
+		resources = {
+			rubber = 1
+			steel = 1
+		}
+		fuel_consumption = 1.2
+	}
 }
