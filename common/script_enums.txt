@@ -294,8 +294,12 @@ script_enum_equipment_bonus_type = {
 	manpads_equipment_2
 	manpads_equipment_3
 	manpads_equipment_4
+	motorized_equipment
+	motorized_equipment_0
+	motorized_equipment_1
 	motorized_equipment_2
 	motorized_equipment_3
+	motorized_equipment_4
 
 	# Equipment archetypes & types
 	land_cruiser_chassis
@@ -354,9 +358,6 @@ script_enum_equipment_bonus_type = {
 	mechanized_equipment_1
 	mechanized_equipment_2
 	mechanized_equipment_3
-	motorized_equipment
-	motorized_equipment_0
-	motorized_equipment_1
 	small_plane_airframe
 	cv_small_plane_airframe
 	small_plane_airframe_0
@@ -487,8 +488,6 @@ script_enum_equipment_bonus_type = {
 	heavy_tank_chassis_3
 	modern_tank_chassis
 	modern_tank_chassis_1
-	super_heavy_tank_chassis
-	super_heavy_tank_chassis_1
 	amphibious_tank_chassis
 	amphibious_tank_chassis_1
 	train_equipment
@@ -613,9 +612,6 @@ script_enum_equipment_bonus_type = {
 	heavy_tank_destroyer_chassis
 	heavy_tank_amphibious_chassis
 	heavy_tank_flame_chassis
-	super_heavy_tank_aa_chassis
-	super_heavy_tank_artillery_chassis
-	super_heavy_tank_destroyer_chassis
 	modern_tank_aa_chassis
 	modern_tank_artillery_chassis
 	modern_tank_destroyer_chassis
@@ -679,9 +675,6 @@ script_enum_equipment_bonus_type = {
 	heavy_tank_flame_chassis_1
 	heavy_tank_flame_chassis_2
 	heavy_tank_flame_chassis_3
-	super_heavy_tank_aa_chassis_1
-	super_heavy_tank_artillery_chassis_1
-	super_heavy_tank_destroyer_chassis_1
 	modern_tank_aa_chassis_1
 	modern_tank_artillery_chassis_1
 	modern_tank_destroyer_chassis_1
@@ -723,13 +716,13 @@ script_enum_equipment_bonus_type = {
 	heavy_tank_aa_equipment_2
 	heavy_tank_aa_equipment_3
 	modern_tank_equipment_1
+	modern_tank_equipment_2
+	modern_tank_equipment_3
+	modern_tank_equipment_4
+	modern_tank_equipment_5
 	modern_tank_artillery_equipment_1
 	modern_tank_destroyer_equipment_1
 	modern_tank_aa_equipment_1
-	super_heavy_tank_equipment_1
-	super_heavy_tank_artillery_equipment_1
-	super_heavy_tank_destroyer_equipment_1
-	super_heavy_tank_aa_equipment_1
 	amphibious_tank_equipment_1
 	amphibious_tank_equipment_2
 	supersonic_fighter_equipment_1
