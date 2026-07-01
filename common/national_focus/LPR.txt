@@ -708,9 +708,6 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
 		}
-		available = {
-			has_completed_focus = get_enterprises_back_online
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_Establishing_new_workplaces"
