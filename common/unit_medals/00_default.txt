@@ -1,0 +1,421 @@
+# Valid unit modifiers are not exhaustive
+# Currently supported:
+# army_morale
+# army_morale_factor
+# army_org
+# army_org_factor
+# supply_consumption_factor
+# equipment_capture
+# equipment_capture_factor
+# army_fuel_capacity_factor
+# army_fuel_consumption_factor
+# recon_factor
+# recon_factor_while_entrenched
+# transport_capacity (?)
+# breakthrough_factor
+# armor_factor
+# army_strength_factor
+# experience_loss_factor
+# leader_modifiers applies unit modifiers to all units under them as a general, similarly to traits.
+# army_attack_factor
+# army_defence_factor
+# max_dig_in
+# max_dig_in_factor
+
+# medals can have both ship_modifiers and unit_modifiers. If only one is filled, the medal will not be available to be awarded to the other type.
+# one_time_effect will NOT be run when awarded to a ship.
+
+@cost = 30
+
+unit_medals = {
+
+	### Generic Democratic
+	
+	democratic_gallantry = {
+		
+		available = { 
+			has_government = democratic 
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 1
+		icon = "GFX_medal_icon_democratic"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_morale_factor = 0.1
+		}
+
+		ship_modifiers = {
+			naval_morale_factor = 0.1
+		}
+		
+		officer_xp = 100
+		
+	}
+	
+	democratic_honor = {
+		
+		available = { 
+			has_government = democratic 
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 2
+		icon = "GFX_medal_icon_democratic"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			supply_consumption_factor = -0.15
+		}
+
+		ship_modifiers = {
+			naval_supply_consumption_factor = -0.15
+		}
+		
+		officer_xp = 100
+		
+	}
+	
+	democratic_war_cross = {
+		
+		available = { 
+			has_government = democratic
+			should_have_any_unique_medals_trigger = no	
+		}
+		frame = 3
+		icon = "GFX_medal_icon_democratic"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_defence_factor = 0.05
+			recon_factor = 0.1
+		}
+
+		ship_modifiers = {
+			naval_detection = 0.1
+			naval_defense_factor = 0.05
+		}	
+		
+		officer_xp = 100
+		
+	}
+	
+	democratic_lion = {
+		
+		available = { 
+			has_government = democratic
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 4
+		icon = "GFX_medal_icon_democratic"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			experience_loss_factor = -0.25
+		}
+
+		ship_modifiers = {
+			experience_gain_navy_unit_factor = 0.25
+		}
+		
+		officer_xp = 100
+		
+	}
+	
+	### Generic Communist
+	
+	communist_service_medal = {
+		
+		available = { 
+			has_government = communism
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 1
+		icon = "GFX_medal_icon_communism"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			supply_consumption_factor = -0.15
+			army_fuel_consumption_factor = -0.15
+		}
+
+		ship_modifiers = {
+			naval_supply_consumption_factor = -0.15
+			navy_fuel_consumption_factor = -0.15
+		}
+		
+		officer_xp = 100
+		
+	}
+	
+	communist_red_star = {
+		
+		available = { 
+			has_government = communism
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 2
+		icon = "GFX_medal_icon_communism"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_morale_factor = 0.1
+			army_defence_factor = 0.05
+		}
+
+		ship_modifiers = {
+			naval_morale_factor = 0.05
+			naval_defense_factor = 0.05
+		}
+		
+		officer_xp = 100
+		
+	}
+	
+	communist_merit_medal = {
+		
+		available = { 
+			has_government = communism
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 3
+		icon = "GFX_medal_icon_communism"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_org_factor = 0.1
+		}
+
+		ship_modifiers = {
+			navy_org_factor = 0.1
+		}
+		
+		officer_xp = 100
+		
+	}
+	
+	communist_hero_of_revolution = {
+		
+		available = { 
+			has_government = communism
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 4
+		icon = "GFX_medal_icon_communism"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_strength_factor = 0.1
+		}
+		
+
+		ship_modifiers = {
+			naval_damage_factor = 0.1
+		}
+		officer_xp = 100
+		
+	}
+	
+	### Generic Fascism
+	
+	fascism_bravery = {
+		
+		available = { 
+			has_government = fascism
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 1
+		icon = "GFX_medal_icon_fascism"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_org_factor = 0.1
+		}
+
+		ship_modifiers = {
+			navy_org_factor = 0.1
+		}
+		
+		officer_xp = 100
+		
+	}
+	
+	fascism_merit = {
+		
+		available = { 
+			has_government = fascism
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 2
+		icon = "GFX_medal_icon_fascism"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_attack_factor = 0.05
+		}
+
+		ship_modifiers = {
+			naval_damage_factor = 0.05
+		}
+		
+		officer_xp = 100
+		
+	}
+	
+	fascism_order_brave = {
+		
+		available = { 
+			has_government = fascism
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 3
+		icon = "GFX_medal_icon_fascism"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			armor_factor = 0.1
+			recon_factor = 0.1
+		}
+
+		ship_modifiers = {
+			naval_detection = 0.1
+			critical_receive_chance = -0.1
+		}
+		
+		officer_xp = 100
+		
+	}
+	
+	fascism_heroism = {
+		
+		available = { 
+			has_government = fascism
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 4
+		icon = "GFX_medal_icon_fascism"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			breakthrough_factor = 0.1
+		}
+
+		ship_modifiers = {
+			naval_critical_score_chance_factor = 0.1
+		}
+		
+		officer_xp = 100
+		
+	}
+	
+	### Generic Neutrality
+	
+	neutral_bravery = {
+		
+		available = { 
+			has_government = neutrality
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 1
+		icon = "GFX_medal_icon_default"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_defence_factor = 0.05
+			max_dig_in_factor = 0.1
+		}
+
+		ship_modifiers = {
+			naval_defense_factor = 0.05
+			naval_mines_effect_reduction = 0.1
+		}
+		
+		officer_xp = 100
+		
+	}
+	
+	neutral_military_order = {
+		
+		available = { 
+			has_government = neutrality
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 2
+		icon = "GFX_medal_icon_default"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			supply_consumption_factor = -0.15
+			army_morale_factor = 0.1
+		}
+
+		ship_modifiers = {
+			naval_morale_factor = 0.1
+			naval_supply_consumption_factor = -0.15
+		}
+		
+		officer_xp = 100
+		
+	}
+	
+	neutral_sword = {
+		
+		available = { 
+			has_government = neutrality
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 3
+		icon = "GFX_medal_icon_default"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_attack_factor = 0.05
+		}
+
+		ship_modifiers = {
+			naval_damage_factor = 0.05
+		}
+		
+		officer_xp = 100
+		
+	}
+	
+	neutral_virtue = {
+		
+		available = { 
+			has_government = neutrality
+			should_have_any_unique_medals_trigger = no
+		}
+		frame = 4
+		icon = "GFX_medal_icon_default"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			experience_loss_factor = -0.2
+			army_morale_factor = 0.05
+		}
+
+		ship_modifiers = {
+			naval_morale_factor = 0.05
+			experience_gain_navy_unit_factor = 0.05
+		}
+		
+		officer_xp = 100
+		
+	}
+}
