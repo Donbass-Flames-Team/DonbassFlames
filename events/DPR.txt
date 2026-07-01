@@ -284,7 +284,6 @@ country_event = {
             target = NDR
             transfer_troops = yes
         }
-		
 	}
 }
 
@@ -379,12 +378,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = {
-			country_event = {
-				id = DPR.21
-				days = 32
-			}
-		}
+
 	}
 	
 	option = {
@@ -417,12 +411,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = {
-			country_event = {
-				id = DPR.22
-				days = 62
-			}
-		}
+
 	}
 	
 	option = {
@@ -455,12 +444,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = {
-			country_event = {
-				id = DPR.23
-				days = 5
-			}
-		}
+
 	}
 	
 	option = {
@@ -493,12 +477,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = {
-			country_event = {
-				id = DPR.24
-				days = 115
-			}
-		}
+
 	}
 	
 	option = {
@@ -677,7 +656,7 @@ country_event = {
 	}	
 }
 
-#Гиркин становится военным комендантом доецка
+#Гиркин становится военным комендантом доенцка
 country_event = {
 	id = DPR.29
 	title = DPR.29.t
@@ -693,5 +672,43 @@ country_event = {
 	option = {
 		name = DPR.29.a
 		
+	}	
+}
+
+#Переворот стрелкова
+country_event = {
+	id = DPR.30
+	title = DPR.30.t
+	desc = DPR.30.d
+	picture = GFX_Report_event_strelkov_event_2
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = news_events.40
+				hours = 6
+			}
+		}
+	}
+	
+	option = {
+		name = DPR.30.a
+		clr_country_flag = DPR_change_of_governments
+		add_country_leader_role = {
+            character = igor_strelkov_girkin
+            promote_leader = yes
+            country_leader = {
+                ideology = autoritarian_democracy
+                expire = "2045.1.1.1"
+            } 
+        }
+		hidden_effect = {
+		    promote_character = {
+                character = igor_strelkov_girkin
+                ideology = autoritarian_democracy
+            }
+		}
 	}	
 }

@@ -402,3 +402,155 @@ DPR_war_for_independence_of_donbass = {
 		}
 	}
 }
+
+DPR_government_of_republic = {
+	DPR_change_of_leadership_in_dpr = {
+
+		icon = GFX_decision_DPR_offensive_icon
+		is_good = no
+		selectable_mission = no
+		fire_only_once = no
+		days_mission_timeout = 5
+
+		allowed = {
+			has_country_flag = DPR_change_of_governments
+		}
+
+		#Fail trigger
+		available = {
+			check_variable = {
+                var = DPR_change_of_governments_var
+                value = 6
+                compare = equals
+            }
+		}
+
+		activation = {
+			always = no
+		}
+
+		complete_effect = {
+			
+		}
+
+		timeout_effect = {
+			add_to_variable = {
+				var = DPR_change_of_governments_var
+				value = 1
+			}
+			if = {
+				limit = {
+					check_variable = {
+                        var = DPR_change_of_governments_var
+                        value = 1
+                        compare = equals
+                    }                      
+                }
+				country_event = {
+					id = DPR.20
+					hours = 2
+				}
+				activate_mission = DPR_change_of_leadership_in_dpr
+				add_days_mission_timeout = {
+                    mission = DPR_change_of_leadership_in_dpr
+                    days = 27
+                }
+			}
+			if = {
+				limit = {
+					check_variable = {
+                        var = DPR_change_of_governments_var
+                        value = 2
+                        compare = equals
+                    }                      
+                }
+				country_event = {
+					id = DPR.21
+					hours = 2
+				}
+				activate_mission = DPR_change_of_leadership_in_dpr
+				add_days_mission_timeout = {
+                    mission = DPR_change_of_leadership_in_dpr
+                    days = 57
+                }
+			}
+			# Владимир Макович
+			if = {
+				limit = {
+					check_variable = {
+                        var = DPR_change_of_governments_var
+                        value = 3
+                        compare = equals
+                    }                      
+                }
+				country_event = {
+					id = DPR.22
+					hours = 2
+				}
+				activate_mission = DPR_change_of_leadership_in_dpr
+			}
+			# Борис Литвинов
+			if = {
+				limit = {
+					check_variable = {
+                        var = DPR_change_of_governments_var
+                        value = 4
+                        compare = equals
+                    }                      
+                }
+				country_event = {
+					id = DPR.23
+					hours = 2
+				}
+				activate_mission = DPR_change_of_leadership_in_dpr
+				add_days_mission_timeout = {
+                    mission = DPR_change_of_leadership_in_dpr
+                    days = 110
+                }
+			}
+			if = {
+				limit = {
+					check_variable = {
+                        var = DPR_change_of_governments_var
+                        value = 5
+                        compare = equals
+                    }                      
+                }
+				country_event = {
+					id = DPR.24
+					hours = 2
+				}
+			}												
+		}
+	}
+
+
+	DPR_carry_out_strelkov_coup = {
+
+		icon = GFX_decision_generic_Guns_from_communists
+
+		allowed = {
+			original_tag = DPR
+		}
+
+		visible = {
+			has_global_flag = Girkin_in_DPR
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		complete_effect = {
+			country_event = {
+				id = DPR.30
+				hours = 6
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+}

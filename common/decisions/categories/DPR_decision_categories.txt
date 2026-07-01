@@ -31,3 +31,18 @@ DPR_war_for_independence_of_donbass = {
 	scripted_gui = Escalation_on_Donbas
 	visible_when_empty = yes
 }
+
+DPR_government_of_republic = {
+
+	priority = 84
+	
+	icon = GFX_decision_afu_icon
+	
+	allowed = {
+		original_tag = DPR 
+	}
+
+	allowed = {
+		original_tag = DPR 
+	}
+}
