@@ -5,18 +5,18 @@ state = {
 	
 	state_category = slot_7 
 	buildings_max_level_factor = 1 
-	resources = {
-		coal = 40 
-	} 
+	
+	resources = { coal = 40 } 
 	history = { 
 		owner = RUS 
+		
 		victory_points = { 15976 25 }
 		
 		buildings = { 
-			social_infrastructure = 2
-			network_infrastructure = 2
-			industrial_complex = 2
-			arms_factory = 0
+			social_infrastructure = 2 
+			network_infrastructure = 2 
+			industrial_complex = 2 
+			arms_factory = 0 
 			infrastructure = 4 
 		}
 		

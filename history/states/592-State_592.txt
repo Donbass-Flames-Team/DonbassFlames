@@ -1,21 +1,21 @@
 state = { 
-    id = 592 
-    name = "STATE_592" 
-    manpower = 572 
-    
-    state_category = slot_0 
-    history = { 
-        owner = UKR 
-        
-        buildings = { 
-        	social_infrastructure = 0
-        	network_infrastructure = 0
-            infrastructure = 1 
-            arms_factory = 0
-            industrial_complex = 0
-        }
-        
-        add_core_of = UKR 
-    }
-    provinces = { 16934 }
+	id = 592 
+	name = "STATE_592" 
+	manpower = 572 
+	
+	state_category = slot_0 
+	history = { 
+		owner = UKR 
+		
+		buildings = { 
+			social_infrastructure = 0 
+			network_infrastructure = 0 
+			infrastructure = 1 
+			arms_factory = 0 
+			industrial_complex = 0 
+		}
+		
+		add_core_of = UKR 
+	}
+	provinces = { 16934 }
 }

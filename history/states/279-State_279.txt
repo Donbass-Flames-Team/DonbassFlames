@@ -3,23 +3,24 @@ state = {
 	name = "STATE_279" 
 	manpower = 123008 
 	
-	state_category = slot_10
+	state_category = slot_10 
 	buildings_max_level_factor = 2 
 	history = { 
 		owner = UKR 
 		
-		victory_points = { 14895 30 }
-		victory_points = { 14874 3 }
-		victory_points = { 14898 2 }
 		victory_points = { 8484 3 }
+		victory_points = { 14874 3 }
+		victory_points = { 14895 30 }
+		victory_points = { 14898 2 }
+		
 		buildings = { 
-			offices_building = 1
-			social_infrastructure = 2
-			network_infrastructure = 2
-			industrial_complex = 1
-			arms_factory = 0
+			offices_building = 1 
+			social_infrastructure = 2 
+			network_infrastructure = 2 
+			industrial_complex = 1 
+			arms_factory = 0 
 			infrastructure = 4 
-			synthetic_refinery = 3
+			synthetic_refinery = 3 
 			fuel_silo = 3 
 		}
 		

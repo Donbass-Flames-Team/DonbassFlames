@@ -8,33 +8,34 @@ state = {
 	history = { 
 		owner = RUS 
 		
-		victory_points = { 16441 3 }
-		victory_points = { 16402 3 }
-		victory_points = { 6074 3 }
 		victory_points = { 3141 2 }
-		victory_points = { 16362 2 }
-		victory_points = { 16321 6 }
-		victory_points = { 8758 2 }
 		victory_points = { 3827 10 }
-		victory_points = { 16434 2 }
+		victory_points = { 4449 2 }
+		victory_points = { 4968 2 }
 		victory_points = { 6035 3 }
-		victory_points = { 16342 3 }
-		victory_points = { 16280 3 }
+		victory_points = { 6074 3 }
+		victory_points = { 8758 2 }
 		victory_points = { 8846 3 }
 		victory_points = { 9014 2 }
-		victory_points = { 4968 2 }
 		victory_points = { 11472 2 }
-		victory_points = { 16439 2 }
+		victory_points = { 16280 3 }
+		victory_points = { 16321 6 }
+		victory_points = { 16342 3 }
+		victory_points = { 16362 2 }
+		victory_points = { 16402 3 }
 		victory_points = { 16424 2 }
-		victory_points = { 4449 2 }
+		victory_points = { 16434 2 }
+		victory_points = { 16439 2 }
+		victory_points = { 16441 3 }
+		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 0
-			arms_factory = 0
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 2 
-			agro_industrial_complex = 1
-}
+			agro_industrial_complex = 1 
+		}
 		
 		add_core_of = RUS 
 	}

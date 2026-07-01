@@ -5,21 +5,20 @@ state = {
 	
 	state_category = slot_25 
 	buildings_max_level_factor = 1 
-	resources = {
-		coal = 32 
-	} 
+	
+	resources = { coal = 32 } 
 	history = { 
 		owner = POL 
 		
 		buildings = { 
-			offices_building = 5
-			social_infrastructure = 3
-			network_infrastructure = 3
-			industrial_complex = 12
-			arms_factory = 1
+			offices_building = 5 
+			social_infrastructure = 3 
+			network_infrastructure = 3 
+			industrial_complex = 12 
+			arms_factory = 1 
 			infrastructure = 3 
-			agro_industrial_complex = 6
-}
+			agro_industrial_complex = 6 
+		}
 		
 		add_core_of = POL 
 	}

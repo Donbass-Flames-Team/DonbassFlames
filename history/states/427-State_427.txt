@@ -5,28 +5,29 @@ state = {
 	
 	state_category = slot_4 
 	buildings_max_level_factor = 2 
-	resources = {
-		coal = 23 
-	} 
+	
+	resources = { coal = 23 } 
 	history = { 
 		owner = UKR 
 		
 		victory_points = { 15698 20 }
 		
 		buildings = { 
-			offices_building = 1
-			social_infrastructure = 2
-			network_infrastructure = 2
-			industrial_complex = 0
-			arms_factory = 0
+			offices_building = 1 
+			social_infrastructure = 2 
+			network_infrastructure = 2 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 4 
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			add_core_of = LPR
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			
+			add_core_of = LPR 
 		}
-}
+	}
 	provinces = { 15680 15698 }
 }

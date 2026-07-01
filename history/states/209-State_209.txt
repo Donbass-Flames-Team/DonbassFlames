@@ -9,19 +9,20 @@ state = {
 		owner = RUS 
 		
 		victory_points = { 1561 10 }
+		victory_points = { 4602 2 }
 		victory_points = { 10171 5 }
 		victory_points = { 11852 2 }
-		victory_points = { 4602 2 }
-		victory_points = { 14380 2 }
 		victory_points = { 14305 2 }
+		victory_points = { 14380 2 }
+		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 0
-			arms_factory = 0
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 3 
-			agro_industrial_complex = 1
-}
+			agro_industrial_complex = 1 
+		}
 		
 		add_core_of = RUS 
 	}

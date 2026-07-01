@@ -8,26 +8,29 @@ state = {
 	history = { 
 		owner = WAL 
 		
-		victory_points = { 15532 15 }
-		victory_points = { 11263 3 }
 		victory_points = { 1181 3 }
 		victory_points = { 3845 15 }
+		victory_points = { 11263 3 }
 		victory_points = { 15491 4 }
+		victory_points = { 15532 15 }
+		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 0
-			arms_factory = 0
-			infrastructure = 3
-			agro_industrial_complex = 1
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 0 
+			arms_factory = 0 
+			infrastructure = 3 
+			agro_industrial_complex = 1 
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			owner = WAL
-			controller = WAL
-			add_core_of = WAL
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			owner = WAL 
+			controller = WAL 
+			
+			add_core_of = WAL 
 		}
 	}
 	provinces = { 1181 3217 3845 8879 9852 10111 11263 15491 15514 15532 }

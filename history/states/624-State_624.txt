@@ -1,36 +1,37 @@
 state = { 
-    id = 624 
-    name = "STATE_624" 
-    manpower = 75 
-    
-    state_category = platforma
-    buildings_max_level_factor = 1
-    
-    resources = { oil = 3 } 
-    history = { 
-        owner = UKR 
-        
-        victory_points = { 17478 5 }
-        victory_points = { 17479 5 }
-        victory_points = { 17480 5 }
-        victory_points = { 17481 5 }
-        
-        buildings = { 
-        	social_infrastructure = 0
-        	network_infrastructure = 0
-            infrastructure = 5 
-            arms_factory = 0
-            industrial_complex = 0
-        }
-        
-        add_core_of = UKR 
-    
-
-        2014.5.19 = {
-            owner = RUS
-            controller = RUS
-            add_core_of = RUS
-        }
-    }
-    provinces = { 17478 17479 17480 17481 }
+	id = 624 
+	name = "STATE_624" 
+	manpower = 75 
+	
+	state_category = platforma 
+	buildings_max_level_factor = 1 
+	
+	resources = { oil = 3 } 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 17478 5 }
+		victory_points = { 17479 5 }
+		victory_points = { 17480 5 }
+		victory_points = { 17481 5 }
+		
+		buildings = { 
+			social_infrastructure = 0 
+			network_infrastructure = 0 
+			infrastructure = 5 
+			arms_factory = 0 
+			industrial_complex = 0 
+		}
+		
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			owner = RUS 
+			controller = RUS 
+			
+			add_core_of = RUS 
+		}
+	}
+	provinces = { 17478 17479 17480 17481 }
 }

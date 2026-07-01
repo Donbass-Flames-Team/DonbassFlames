@@ -1,7 +1,7 @@
 state = { 
 	id = 629 
 	name = "STATE_629" 
-	manpower = 497985
+	manpower = 497985 
 	
 	state_category = slot_10 
 	buildings_max_level_factor = 1 
@@ -11,14 +11,14 @@ state = {
 		owner = RUS 
 		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 3
-			arms_factory = 1
-			infrastructure = 3
-			synthetic_refinery = 1
-			agro_industrial_complex = 1
-}
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 3 
+			arms_factory = 1 
+			infrastructure = 3 
+			synthetic_refinery = 1 
+			agro_industrial_complex = 1 
+		}
 		
 		add_core_of = RUS 
 		add_core_of = ADY 

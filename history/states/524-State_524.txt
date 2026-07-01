@@ -11,19 +11,15 @@ state = {
 		victory_points = { 2862 35 }
 		
 		buildings = { 
-			offices_building = 2
-			social_infrastructure = 2
-			network_infrastructure = 2
-			industrial_complex = 2
-			arms_factory = 0
+			offices_building = 2 
+			social_infrastructure = 2 
+			network_infrastructure = 2 
+			industrial_complex = 2 
+			arms_factory = 0 
 			infrastructure = 4 
-			dockyard = 3
-			1838 = {
-				naval_base = 2
-			}
-			16403 = {
-				naval_base = 3
-			}
+			dockyard = 3 
+			1838 = { naval_base = 2 }
+			16403 = { naval_base = 3 }
 		}
 		
 		add_core_of = RUS 

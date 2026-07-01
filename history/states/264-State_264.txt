@@ -1,7 +1,7 @@
 state = { 
 	id = 264 
 	name = "STATE_264" 
-	manpower = 23447
+	manpower = 23447 
 	
 	state_category = slot_2 
 	buildings_max_level_factor = 2 
@@ -13,19 +13,21 @@ state = {
 		victory_points = { 18347 15 }
 		
 		buildings = { 
-			social_infrastructure = 2
-			network_infrastructure = 2
-			industrial_complex = 0
-			arms_factory = 0
+			social_infrastructure = 2 
+			network_infrastructure = 2 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 4 
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			owner = DPR
-			controller = DPR
-			add_core_of = DPR
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			owner = DPR 
+			controller = DPR 
+			
+			add_core_of = DPR 
 		}
 	}
 	provinces = { 16092 18347 }

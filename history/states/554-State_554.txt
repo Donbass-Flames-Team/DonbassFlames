@@ -3,7 +3,7 @@ state = {
 	name = "STATE_554" 
 	manpower = 4206779 
 	
-	state_category = slot_55
+	state_category = slot_55 
 	buildings_max_level_factor = 1 
 	
 	resources = { oil = 36 } 
@@ -14,16 +14,16 @@ state = {
 		victory_points = { 17346 25 }
 		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 28
-			arms_factory = 14
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 28 
+			arms_factory = 14 
 			infrastructure = 3 
 			synthetic_refinery = 3 
+			agro_industrial_complex = 8 
 			3517 = { naval_base = 4 }
 			17346 = { naval_base = 3 }
-			agro_industrial_complex = 8
-}
+		}
 		
 		add_core_of = RUS 
 	}

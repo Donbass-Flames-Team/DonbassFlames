@@ -1,19 +1,20 @@
 state = { 
 	id = 243 
 	name = "STATE_243" 
-	manpower = 15814  
+	manpower = 15814 
 	
 	state_category = slot_2 
 	buildings_max_level_factor = 1 
 	history = { 
 		owner = RUS 
+		
 		victory_points = { 9659 10 }
 		
 		buildings = { 
-			social_infrastructure = 0
-			network_infrastructure = 0
-			industrial_complex = 0
-			arms_factory = 0
+			social_infrastructure = 0 
+			network_infrastructure = 0 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 2 
 		}
 		

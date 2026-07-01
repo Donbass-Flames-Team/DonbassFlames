@@ -8,27 +8,28 @@ state = {
 	history = { 
 		owner = UKR 
 		
-		victory_points = { 12898 15 }
-		victory_points = { 9406 10 }
-		victory_points = { 13312 7 }
-		victory_points = { 10019 7 }
-		victory_points = { 13020 5 }
-		victory_points = { 12750 2 }
-		victory_points = { 7243 2 }
-		victory_points = { 12699 5 }
-		victory_points = { 5914 2 }
-		victory_points = { 8214 4 }
 		victory_points = { 3097 10 }
+		victory_points = { 5914 2 }
+		victory_points = { 7243 2 }
 		victory_points = { 7964 2 }
+		victory_points = { 8214 4 }
 		victory_points = { 8617 2 }
+		victory_points = { 9406 10 }
+		victory_points = { 10019 7 }
+		victory_points = { 12699 5 }
+		victory_points = { 12750 2 }
+		victory_points = { 12898 15 }
+		victory_points = { 13020 5 }
+		victory_points = { 13312 7 }
+		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 2
-			arms_factory = 0
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 2 
+			arms_factory = 0 
 			infrastructure = 3 
-			agro_industrial_complex = 1
-}
+			agro_industrial_complex = 1 
+		}
 		
 		add_core_of = UKR 
 	}

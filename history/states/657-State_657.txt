@@ -1,0 +1,36 @@
+state = { 
+	id = 657 
+	name = "STATE_657" 
+	manpower = 30000 
+	
+	state_category = slot_16 
+	buildings_max_level_factor = 2 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 7500 3 }
+		victory_points = { 15766 5 }
+		
+		buildings = { 
+			offices_building = 4 
+			social_infrastructure = 4 
+			network_infrastructure = 4 
+			industrial_complex = 6 
+			arms_factory = 3 
+			steel_mill = 2 
+			ammunition_plant = 2 
+			infrastructure = 4 
+		}
+		
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			owner = DPR 
+			controller = DPR 
+			
+			add_core_of = DPR 
+		}
+	}
+	provinces = { 7500 11928 15766 15811 18558 18591 }
+}

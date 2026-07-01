@@ -9,18 +9,18 @@ state = {
 	resources = { oil = 5 } 
 	history = { 
 		owner = UKR 
-
+		
 		victory_points = { 6591 20 }
 		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 2
-			arms_factory = 0
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 2 
+			arms_factory = 0 
 			infrastructure = 2 
 			fuel_silo = 1 
-			agro_industrial_complex = 1
-}
+			agro_industrial_complex = 1 
+		}
 		
 		add_core_of = UKR 
 	}

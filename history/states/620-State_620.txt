@@ -3,7 +3,7 @@ state = {
 	name = "STATE_620" 
 	manpower = 820355 
 	
-	state_category = slot_28
+	state_category = slot_28 
 	buildings_max_level_factor = 1 
 	
 	resources = { 
@@ -12,22 +12,21 @@ state = {
 	} 
 	history = { 
 		owner = ROM 
+		
 		victory_points = { 9535 35 }
 		
 		buildings = { 
-			offices_building = 3
-			social_infrastructure = 3
-			network_infrastructure = 3
-			industrial_complex = 6
-			arms_factory = 1
+			offices_building = 3 
+			social_infrastructure = 3 
+			network_infrastructure = 3 
+			industrial_complex = 6 
+			arms_factory = 1 
 			infrastructure = 2 
 			synthetic_refinery = 1 
 			dockyard = 10 
-			9535 = {
-				naval_base = 10
-			}
-			agro_industrial_complex = 10
-}
+			agro_industrial_complex = 10 
+			9535 = { naval_base = 10 }
+		}
 		
 		add_core_of = ROM 
 	}

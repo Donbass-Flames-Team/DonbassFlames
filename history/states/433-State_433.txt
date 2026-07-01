@@ -11,19 +11,21 @@ state = {
 		victory_points = { 615 5 }
 		
 		buildings = { 
-			social_infrastructure = 3
-			network_infrastructure = 3
-			industrial_complex = 0
-			arms_factory = 0
+			social_infrastructure = 3 
+			network_infrastructure = 3 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 3 
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			owner = DPR
-			controller = DPR
-			add_core_of = DPR
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			owner = DPR 
+			controller = DPR 
+			
+			add_core_of = DPR 
 		}
 	}
 	provinces = { 615 3488 }

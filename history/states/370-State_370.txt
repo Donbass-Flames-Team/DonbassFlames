@@ -6,7 +6,7 @@ state = {
 	state_category = slot_7 
 	buildings_max_level_factor = 2 
 	
-	resources = {
+	resources = { 
 		steel = 5 
 		coal = 29 
 	} 
@@ -17,19 +17,21 @@ state = {
 		victory_points = { 15369 15 }
 		
 		buildings = { 
-			social_infrastructure = 2
-			network_infrastructure = 2
-			industrial_complex = 1
-			arms_factory = 0
-			steel_mill = 1
+			social_infrastructure = 2 
+			network_infrastructure = 2 
+			industrial_complex = 1 
+			arms_factory = 0 
+			steel_mill = 1 
 			infrastructure = 4 
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			add_core_of = LPR
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			
+			add_core_of = LPR 
 		}
-}
+	}
 	provinces = { 6646 8778 15332 15369 }
 }

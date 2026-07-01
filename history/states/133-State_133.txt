@@ -6,7 +6,7 @@ state = {
 	state_category = slot_46 
 	buildings_max_level_factor = 1 
 	
-	resources = {
+	resources = { 
 		steel = 45 
 		coal = 88 
 	} 
@@ -14,14 +14,14 @@ state = {
 		owner = POL 
 		
 		buildings = { 
-			offices_building = 11
-			social_infrastructure = 3
-			network_infrastructure = 3
-			industrial_complex = 30
-			arms_factory = 4
+			offices_building = 11 
+			social_infrastructure = 3 
+			network_infrastructure = 3 
+			industrial_complex = 30 
+			arms_factory = 4 
 			infrastructure = 3 
-			agro_industrial_complex = 5
-}
+			agro_industrial_complex = 5 
+		}
 		
 		add_core_of = POL 
 	}

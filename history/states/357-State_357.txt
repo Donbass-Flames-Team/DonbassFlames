@@ -9,23 +9,27 @@ state = {
 	resources = { steel = 1 } 
 	history = { 
 		owner = UKR 
+		
+		victory_points = { 5999 3 }
 		victory_points = { 18470 5 }
 		victory_points = { 18471 10 }
-		victory_points = { 5999 3 }
+		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 0
-			arms_factory = 0
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 3 
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			owner = LPR
-			controller = LPR
-			add_core_of = LPR
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			owner = LPR 
+			controller = LPR 
+			
+			add_core_of = LPR 
 		}
 	}
 	provinces = { 5999 18470 18471 18472 }

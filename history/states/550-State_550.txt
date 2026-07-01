@@ -3,7 +3,7 @@ state = {
 	name = "STATE_550" 
 	manpower = 332741 
 	
-	state_category = slot_10
+	state_category = slot_10 
 	buildings_max_level_factor = 1 
 	history = { 
 		owner = TMR 
@@ -15,14 +15,14 @@ state = {
 		victory_points = { 16750 10 }
 		
 		buildings = { 
-			offices_building = 3
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 2
-			arms_factory = 1
+			offices_building = 3 
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 2 
+			arms_factory = 1 
 			infrastructure = 3 
-			fuel_silo = 1
-			ammunition_plant = 1
+			fuel_silo = 1 
+			ammunition_plant = 1 
 		}
 		
 		add_core_of = TMR 

@@ -1,44 +1,45 @@
 state = { 
-    id = 406 
-    name = "STATE_406" 
-    manpower = 54421
-    
-    state_category = slot_4 
-    buildings_max_level_factor = 2 
-    resources = {
-        coal = 21 
-    } 
-    history = { 
-        owner = UKR 
-        
-        victory_points = { 9024 2 }
-        victory_points = { 11595 10 }
-        victory_points = { 4037 2 }
-        
-    	victory_points = { 15653 3 }
-    	victory_points = { 10367 4 }
-    	victory_points = { 15735 4 }
-    	victory_points = { 10673 3 }
-    	victory_points = { 6581 3 }
-    	victory_points = { 15623 2 }
-    	victory_points = { 2233 2 }
-    	victory_points = { 15618 2 }
-    	victory_points = { 15760 2 }
-    	victory_points = { 15599 2 }
-    	victory_points = { 9325 2 }
-        buildings = { 
-        	social_infrastructure = 1
-        	network_infrastructure = 1
-            infrastructure = 2 
-            arms_factory = 0
-            industrial_complex = 0
-        }
-        
-        add_core_of = UKR
-
-        2014.5.19 = {
-            add_core_of = LPR
-        }
-}
-    provinces = { 1096 2233 4037 5041 5997 6581 7241 8365 9024 9325 9937 10367 10517 10673 10839 11595 11822 15594 15599 15618 15623 15626 15653 15674 15735 15746 15760 15802 15815 15843 }
+	id = 406 
+	name = "STATE_406" 
+	manpower = 54421 
+	
+	state_category = slot_4 
+	buildings_max_level_factor = 2 
+	
+	resources = { coal = 21 } 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 2233 2 }
+		victory_points = { 4037 2 }
+		victory_points = { 6581 3 }
+		victory_points = { 9024 2 }
+		victory_points = { 9325 2 }
+		victory_points = { 10367 4 }
+		victory_points = { 10673 3 }
+		victory_points = { 11595 10 }
+		victory_points = { 15599 2 }
+		victory_points = { 15618 2 }
+		victory_points = { 15623 2 }
+		victory_points = { 15653 3 }
+		victory_points = { 15735 4 }
+		victory_points = { 15760 2 }
+		
+		buildings = { 
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			infrastructure = 2 
+			arms_factory = 0 
+			industrial_complex = 0 
+		}
+		
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			
+			add_core_of = LPR 
+		}
+	}
+	provinces = { 1096 2233 4037 5041 5997 6581 7241 8365 9024 9325 9937 10367 10517 10673 10839 11595 11822 15594 15599 15618 15623 15626 15653 15674 15735 15746 15760 15802 15815 15843 }
 }

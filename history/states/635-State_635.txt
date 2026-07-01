@@ -7,17 +7,18 @@ state = {
 	buildings_max_level_factor = 1 
 	history = { 
 		owner = ROM 
+		
 		victory_points = { 3865 30 }
 		
 		buildings = { 
-			offices_building = 1
-			social_infrastructure = 4
-			network_infrastructure = 4
-			industrial_complex = 2
-			arms_factory = 0
+			offices_building = 1 
+			social_infrastructure = 4 
+			network_infrastructure = 4 
+			industrial_complex = 2 
+			arms_factory = 0 
 			infrastructure = 4 
 			synthetic_refinery = 3 
-			ammunition_plant = 1
+			ammunition_plant = 1 
 		}
 		
 		add_core_of = ROM 

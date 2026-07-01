@@ -9,28 +9,30 @@ state = {
 		owner = UKR 
 		
 		victory_points = { 1542 10 }
-		victory_points = { 14349 4 }
-		
-		victory_points = { 14490 2 }
-		victory_points = { 14498 2 }
 		victory_points = { 2598 2 }
+		victory_points = { 9755 2 }
 		victory_points = { 10720 2 }
 		victory_points = { 11138 2 }
-		victory_points = { 9755 2 }
 		victory_points = { 11285 2 }
+		victory_points = { 14349 4 }
+		victory_points = { 14490 2 }
+		victory_points = { 14498 2 }
+		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 0
-			arms_factory = 0
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 2 
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			add_claim_by = LPR
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			
+			add_claim_by = LPR 
 		}
-}
+	}
 	provinces = { 190 410 1405 1542 2195 2598 3084 4178 4868 5174 5718 6929 7418 8247 8279 8849 9755 10720 10804 10830 11138 11285 11415 11450 14314 14349 14406 14463 14474 14490 14498 14509 14528 14617 14637 }
 }

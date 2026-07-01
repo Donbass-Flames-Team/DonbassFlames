@@ -1,39 +1,41 @@
 state = { 
 	id = 340 
 	name = "STATE_340" 
-	manpower = 425848  
+	manpower = 425848 
 	
 	state_category = slot_10 
 	buildings_max_level_factor = 2 
-	resources = {
-		coal = 30 
-	} 
+	
+	resources = { coal = 30 } 
 	history = { 
 		owner = UKR 
 		
+		victory_points = { 3730 2 }
 		victory_points = { 11062 50 }
 		victory_points = { 15254 5 }
-		victory_points = { 3730 2 }
-		victory_points = { 18565 3 }
-		victory_points = { 18551 3 }
 		victory_points = { 15280 2 }
+		victory_points = { 18551 3 }
 		victory_points = { 18552 2 }
+		victory_points = { 18565 3 }
+		
 		buildings = { 
-			offices_building = 4
-			social_infrastructure = 3
-			network_infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 1
+			offices_building = 4 
+			social_infrastructure = 3 
+			network_infrastructure = 3 
+			industrial_complex = 3 
+			arms_factory = 1 
 			infrastructure = 4 
-			ammunition_plant = 2
+			ammunition_plant = 2 
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			owner = LPR
-			controller = LPR
-			add_core_of = LPR
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			owner = LPR 
+			controller = LPR 
+			
+			add_core_of = LPR 
 		}
 	}
 	provinces = { 3730 7630 8516 10649 11062 11604 11767 15188 15204 15207 15254 15279 15280 18545 18551 18552 18565 18596 18597 18598 18599 }

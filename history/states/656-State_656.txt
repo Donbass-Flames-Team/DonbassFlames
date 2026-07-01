@@ -1,26 +1,26 @@
 state = { 
 	id = 656 
 	name = "STATE_656" 
-	manpower = 1000
+	manpower = 1000 
 	
 	state_category = mil_base 
 	buildings_max_level_factor = 2 
 	history = { 
-		owner = NAT
+		owner = NAT 
 		
 		victory_points = { 19121 15 }
 		
 		buildings = { 
-			social_infrastructure = 3
-			network_infrastructure = 3
-			industrial_complex = 0
-			arms_factory = 0
-			infrastructure = 4
-			fuel_silo = 3
+			social_infrastructure = 3 
+			network_infrastructure = 3 
+			industrial_complex = 0 
+			arms_factory = 0 
+			infrastructure = 4 
+			fuel_silo = 3 
 		}
 		
 		add_core_of = ROM 
-		add_core_of = NAT
+		add_core_of = NAT 
 	}
 	provinces = { 19121 }
 }

@@ -1,35 +1,35 @@
 state = { 
 	id = 348 
 	name = "STATE_348" 
-	manpower = 45836
+	manpower = 45836 
 	
 	state_category = slot_3 
 	buildings_max_level_factor = 1 
-		resources = {
-		coal = 8
-	} 
+	
+	resources = { coal = 8 } 
 	history = { 
 		owner = RUS 
 		
-		victory_points = { 15495 20 }
-		victory_points = { 11657 2 }
-		victory_points = { 15451 8 }
-		victory_points = { 15297 8 }
-		victory_points = { 5592 4 }
-		victory_points = { 11571 2 }
-		victory_points = { 2917 2 }
-		victory_points = { 15349 2 }
-		victory_points = { 5599 2 }
 		victory_points = { 1141 2 }
-		victory_points = { 15600 10 }
+		victory_points = { 2917 2 }
+		victory_points = { 5592 4 }
+		victory_points = { 5599 2 }
 		victory_points = { 8176 8 }
+		victory_points = { 11571 2 }
+		victory_points = { 11657 2 }
+		victory_points = { 15297 8 }
+		victory_points = { 15349 2 }
+		victory_points = { 15451 8 }
+		victory_points = { 15495 20 }
+		victory_points = { 15600 10 }
+		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 0
-			arms_factory = 0
-			infrastructure = 3
-			ammunition_plant = 1
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 0 
+			arms_factory = 0 
+			infrastructure = 3 
+			ammunition_plant = 1 
 		}
 		
 		add_core_of = RUS 

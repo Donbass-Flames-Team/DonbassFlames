@@ -11,22 +11,24 @@ state = {
 		victory_points = { 18214 2 }
 		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 0
-			arms_factory = 0
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 5 
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			owner = SDR
-			controller = SDR
-			add_core_of = DPR
-			add_core_of = SDR
-			add_claim_by = SDR
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			owner = SDR 
+			controller = SDR 
+			
+			add_core_of = DPR 
+			add_core_of = SDR 
+			add_claim_by = SDR 
 		}
-}
+	}
 	provinces = { 18214 }
 }

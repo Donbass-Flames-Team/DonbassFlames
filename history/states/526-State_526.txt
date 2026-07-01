@@ -6,7 +6,7 @@ state = {
 	state_category = slot_10 
 	buildings_max_level_factor = 2 
 	
-	resources = {
+	resources = { 
 		steel = 24 
 		coal = 9 
 	} 
@@ -37,28 +37,28 @@ state = {
 		victory_points = { 18527 2 }
 		
 		buildings = { 
-			offices_building = 2
-			social_infrastructure = 3
-			network_infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 1
+			offices_building = 2 
+			social_infrastructure = 3 
+			network_infrastructure = 3 
+			industrial_complex = 3 
+			arms_factory = 1 
 			infrastructure = 4 
 			dockyard = 2 
-			steel_mill = 2
-			5830 = {
-				naval_base = 5
-			}
+			steel_mill = 2 
+			5830 = { naval_base = 5 }
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			owner = SDR
-			controller = SDR
-			add_core_of = DPR
-			add_core_of = SDR
-			add_claim_by = SDR
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			owner = SDR 
+			controller = SDR 
+			
+			add_core_of = DPR 
+			add_core_of = SDR 
+			add_claim_by = SDR 
 		}
-}
+	}
 	provinces = { 5816 5830 7682 8904 16470 16477 16487 18211 18212 18213 18215 18216 18218 18219 18220 18221 18222 18224 18523 18524 18525 18526 18527 18595 }
 }

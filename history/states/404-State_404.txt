@@ -1,7 +1,7 @@
 state = { 
 	id = 404 
 	name = "STATE_404" 
-	manpower = 16615
+	manpower = 16615 
 	
 	state_category = slot_2 
 	buildings_max_level_factor = 2 
@@ -9,20 +9,23 @@ state = {
 		owner = UKR 
 		
 		victory_points = { 18577 4 }
+		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 0
-			arms_factory = 0
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 3 
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			owner = DPR
-			controller = DPR
-			add_core_of = DPR
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			owner = DPR 
+			controller = DPR 
+			
+			add_core_of = DPR 
 		}
 	}
 	provinces = { 7674 18575 18576 18577 19027 }

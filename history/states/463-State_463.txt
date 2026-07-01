@@ -6,24 +6,26 @@ state = {
 	state_category = slot_2 
 	buildings_max_level_factor = 2 
 	history = { 
-		owner = UKR
-
-		victory_points = { 18800 5 }
+		owner = UKR 
+		
 		victory_points = { 7307 3 }
+		victory_points = { 18800 5 }
 		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 0
-			arms_factory = 0
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 3 
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			add_claim_by = DPR
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			
+			add_claim_by = DPR 
 		}
-}
+	}
 	provinces = { 142 2593 3294 5187 7307 15941 15998 16010 16029 16047 16056 16061 16158 18786 18787 18788 18789 18790 18791 18792 18793 18794 18795 18796 18797 18798 18799 18800 18801 18802 }
 }

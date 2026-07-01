@@ -1,21 +1,21 @@
 state = { 
 	id = 633 
 	name = "STATE_633" 
-	manpower = 4303
+	manpower = 4303 
 	
 	state_category = mil_base 
 	buildings_max_level_factor = 1 
-	
 	history = { 
 		owner = RUS 
+		
 		victory_points = { 19112 10 }
 		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
+			social_infrastructure = 1 
+			network_infrastructure = 1 
 			infrastructure = 2 
-			arms_factory = 0
-			industrial_complex = 0
+			arms_factory = 0 
+			industrial_complex = 0 
 		}
 		
 		add_core_of = RUS 

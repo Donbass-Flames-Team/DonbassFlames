@@ -4,21 +4,19 @@ state = {
 	manpower = 1 
 	
 	state_category = island 
-	buildings_max_level_factor = 1
+	buildings_max_level_factor = 1 
 	history = { 
 		owner = UKR 
 		
 		victory_points = { 17214 15 }
 		
 		buildings = { 
-			social_infrastructure = 0
-			network_infrastructure = 0
-			industrial_complex = 0
-			arms_factory = 0
+			social_infrastructure = 0 
+			network_infrastructure = 0 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 3 
-			17214 = {
-				naval_base = 1
-			}
+			17214 = { naval_base = 1 }
 		}
 		
 		add_core_of = UKR 

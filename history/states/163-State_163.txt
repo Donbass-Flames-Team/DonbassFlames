@@ -1,6 +1,6 @@
 state = { 
 	id = 163 
-	name = "STATE_163"
+	name = "STATE_163" 
 	manpower = 500 
 	
 	state_category = slot_0 
@@ -9,11 +9,12 @@ state = {
 		owner = RUS 
 		
 		victory_points = { 5018 2 }
+		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 0
-			arms_factory = 0
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 2 
 		}
 		

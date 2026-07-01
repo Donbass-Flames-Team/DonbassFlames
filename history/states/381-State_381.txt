@@ -5,31 +5,33 @@ state = {
 	
 	state_category = slot_7 
 	buildings_max_level_factor = 2 
-	resources = {
-		coal = 33 
-	} 
+	
+	resources = { coal = 33 } 
 	history = { 
 		owner = UKR 
 		
+		victory_points = { 2765 4 }
 		victory_points = { 10561 25 }
+		victory_points = { 19096 7 }
 		victory_points = { 19103 3 }
 		victory_points = { 19104 3 }
-		victory_points = { 19096 7 }
-		victory_points = { 2765 4 }
+		
 		buildings = { 
-			social_infrastructure = 2
-			network_infrastructure = 2
-			industrial_complex = 2
-			arms_factory = 0
+			social_infrastructure = 2 
+			network_infrastructure = 2 
+			industrial_complex = 2 
+			arms_factory = 0 
 			infrastructure = 4 
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			owner = DPR
-			controller = DPR
-			add_core_of = DPR
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			owner = DPR 
+			controller = DPR 
+			
+			add_core_of = DPR 
 		}
 	}
 	provinces = { 2765 3575 4494 5333 10236 10561 15394 15425 15500 19089 19090 19091 19092 19093 19094 19095 19096 19097 19098 19099 19100 19101 19102 19103 19104 19105 19106 19107 19108 19109 19110 }

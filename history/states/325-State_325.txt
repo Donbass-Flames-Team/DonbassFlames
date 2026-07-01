@@ -3,21 +3,22 @@ state = {
 	name = "STATE_325" 
 	manpower = 239797 
 	
-	state_category = slot_10
+	state_category = slot_10 
 	buildings_max_level_factor = 1 
 	history = { 
 		owner = SLO 
+		
 		victory_points = { 9180 100 }
 		
 		buildings = { 
-			offices_building = 7
-			social_infrastructure = 4
-			network_infrastructure = 4
-			industrial_complex = 2
-			arms_factory = 0
+			offices_building = 7 
+			social_infrastructure = 4 
+			network_infrastructure = 4 
+			industrial_complex = 2 
+			arms_factory = 0 
 			infrastructure = 4 
-			agro_industrial_complex = 1
-}
+			agro_industrial_complex = 1 
+		}
 		
 		add_core_of = SLO 
 	}

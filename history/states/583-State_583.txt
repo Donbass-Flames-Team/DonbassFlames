@@ -13,23 +13,21 @@ state = {
 	history = { 
 		owner = UKR 
 		
+		victory_points = { 478 7 }
 		victory_points = { 3846 3 }
 		victory_points = { 5133 5 }
 		victory_points = { 10727 30 }
-		victory_points = { 478 7 }
 		
 		buildings = { 
-			offices_building = 1
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 2
-			arms_factory = 0
+			offices_building = 1 
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 2 
+			arms_factory = 0 
 			infrastructure = 2 
-			10727 = {
-				naval_base = 3
-			}
-			agro_industrial_complex = 1
-}
+			agro_industrial_complex = 1 
+			10727 = { naval_base = 3 }
+		}
 		
 		add_core_of = UKR 
 	}

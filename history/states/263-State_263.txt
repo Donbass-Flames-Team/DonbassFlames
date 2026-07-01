@@ -7,28 +7,32 @@ state = {
 	buildings_max_level_factor = 2 
 	history = { 
 		owner = UKR 
-		victory_points = { 14790 8 }
-		victory_points = { 5204 2 }
-		victory_points = { 8424 2 }
-		victory_points = { 14763 2 }
+		
 		victory_points = { 2798 2 }
-		victory_points = { 14811 2 }
-		victory_points = { 9782 2 }
+		victory_points = { 5204 2 }
 		victory_points = { 7201 2 }
+		victory_points = { 8424 2 }
+		victory_points = { 9782 2 }
+		victory_points = { 14763 2 }
+		victory_points = { 14790 8 }
+		victory_points = { 14811 2 }
+		
 		buildings = { 
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 0
-			arms_factory = 0
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 0 
+			arms_factory = 0 
 			infrastructure = 2 
 		}
 		
-		add_core_of = UKR
-
-		2014.5.19 = {
-			owner = LPR
-			controller = LPR
-			add_core_of = LPR
+		add_core_of = UKR 
+		
+		
+		2014.5.19 = { 
+			owner = LPR 
+			controller = LPR 
+			
+			add_core_of = LPR 
 		}
 	}
 	provinces = { 1372 2798 3212 4637 4875 4891 5204 5300 5328 6478 7201 8178 8424 9019 9632 9728 9782 9795 9979 11712 11749 12095 14689 14695 14763 14790 14793 14801 14810 14811 14815 14827 14866 14873 }

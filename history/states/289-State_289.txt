@@ -8,20 +8,21 @@ state = {
 	history = { 
 		owner = WAL 
 		
-		victory_points = { 4316 30 }	
 		victory_points = { 546 10 }
-		victory_points = { 15121 7 }
-		victory_points = { 2764 7 }
 		victory_points = { 696 3 }
+		victory_points = { 2764 7 }
 		victory_points = { 3275 3 }
+		victory_points = { 4316 30 }
+		victory_points = { 15121 7 }
+		
 		buildings = { 
-			offices_building = 1
-			social_infrastructure = 1
-			network_infrastructure = 1
-			industrial_complex = 2
-			arms_factory = 0
-			infrastructure = 3
-			agro_industrial_complex = 1
+			offices_building = 1 
+			social_infrastructure = 1 
+			network_infrastructure = 1 
+			industrial_complex = 2 
+			arms_factory = 0 
+			infrastructure = 3 
+			agro_industrial_complex = 1 
 		}
 		
 		add_core_of = UKR 
