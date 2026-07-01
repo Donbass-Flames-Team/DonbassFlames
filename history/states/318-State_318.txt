@@ -28,10 +28,12 @@ state = {
 		add_core_of = UKR
 
 		2014.5.19 = {
-			owner = DPR
-			controller = DPR
+			owner = NDR
+			controller = NDR
 			add_core_of = DPR
+			add_core_of = NDR
+			add_claim_by = NDR
 		}
-	}
+}
 	provinces = { 8800 15057 18227 18228 18229 18230 18231 18232 }
 }

@@ -21,10 +21,12 @@ state = {
 		add_core_of = UKR
 
 		2014.5.19 = {
-			owner = LPR
-			controller = LPR
+			owner = SKR
+			controller = SKR
 			add_core_of = LPR
+			add_core_of = SKR
+			add_claim_by = SKR
 		}
-	}
+}
 	provinces = { 15631 }
 }

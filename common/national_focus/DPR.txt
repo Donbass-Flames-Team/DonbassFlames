@@ -119,9 +119,11 @@ focus_tree = {
 		424 = { transfer_state_to = DPR }
 		435 = { transfer_state_to = DPR }
 		437 = { transfer_state_to = DPR }
+				hidden_effect = {
 		424 = { set_demilitarized_zone = no }
 		435 = { set_demilitarized_zone = no }
 		437 = { set_demilitarized_zone = no }
+		}
 		}
 	}
 
@@ -145,17 +147,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		404 = { transfer_state_to = DPR }
 		397 = { transfer_state_to = DPR }
 		398 = { transfer_state_to = DPR }
 		381 = { transfer_state_to = DPR }
-		402 = { transfer_state_to = DPR }
-		404 = { set_demilitarized_zone = no }
+		404 = { transfer_state_to = DPR }
+		hidden_effect = {
 		397 = { set_demilitarized_zone = no }
 		398 = { set_demilitarized_zone = no }
 		381 = { set_demilitarized_zone = no }
-		402 = { set_demilitarized_zone = no }
-		
+		404 = { set_demilitarized_zone = no }
+		}
 		}
 	}
 
