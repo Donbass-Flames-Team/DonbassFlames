@@ -1,103 +1,4 @@
 on_actions = {
-	on_startup = {
-		effect = {
-			every_country = {
-				country_event = {
-					id = Economic_events.2
-					days = 1
-				}
-			}
-		}
-	}
-	on_daily = {
-		effect = {
-			###############################
-			#### CUSTOM BUILDING UTILS ####
-			###############################
-			DF_buildings_setup = yes
-		}
-	}
-	on_monthly = {
-		effect = {
-			###################
-			### THE ECONOMY ###
-			###################
-			set_variable = {
-		        var = gdp_last_month
-		        value = gdp
-	        }
-			DF_economy_setup = yes
-			set_global_flag = add_remove_cash_flag
-			set_variable = {
-				var = gdp_current_month
-				value = gdp
-			}			
-			subtract_from_variable = {
-				var = gdp_current_month
-				value = gdp_last_month
-			}
-			divide_variable = {
-				var = gdp_current_month
-				value = gdp_last_month
-			}
-			multiply_variable = {
-				var = gdp_current_month
-				value = 100				
-			}
-
-			if = {
-				limit = {
-					check_variable = {
-						var = cash
-						value = 0
-						compare = less_than
-					}
-				}
-				set_variable = {
-					var = deficit_budget_percentage
-					value = cash
-				}
-				divide_variable = {
-					var = deficit_budget_percentage
-					value = gdp
-				}	
-                multiply_variable = {
-					var = deficit_budget_percentage
-					value = 100					
-				}
-			}			
-		}
-		effect = {
-			set_variable = {
-
-			}
-		}
-	}
-	on_weekly = {
-		effect = {
-	        DF_key_rate_calc = yes
-		}
-		
-	}
-	on_weekly = {
-		effect = {
-			if = {
-				limit = {
-					check_variable = {
-						var = cash
-						value = 0
-						compare = less_than
-					}
-					has_country_flag = automatic_repayment_of_the_budget_deficit
-				}
-				set_temp_variable = { temp_debt = var:cash }
-				multiply_variable = { var = temp_debt value = -1 }
-				add_to_variable = { var = debt value = var:temp_debt }
-				set_variable = { var = cash value = 1 }
-				clear_variable = temp_debt
-			}	
-		}	
-	}
 	on_government_change = {
 		effect = {
 			if = {
@@ -157,5 +58,14 @@ on_actions = {
 			}
 		}
 	}
-
+	on_daily = {
+		if = {
+			limit = {
+				has_cosmetic_tag = LPR_early
+				tag = LPR
+				date > 2014.5.9
+			}
+			drop_comsetic_tag = yes
+		}
+	}
 }
