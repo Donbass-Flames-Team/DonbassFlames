@@ -70,6 +70,10 @@ news_event = {
     picture = GFX_report_event_generic_war
     major = yes
     is_triggered_only = yes
+
+    option = {
+        name = tmr.4.a
+    }
 }
 
 news_event = {
@@ -79,6 +83,10 @@ news_event = {
     picture = GFX_report_event_generic_war
     major = yes
     is_triggered_only = yes
+
+    option = {
+        name = tmr.5.a
+    }
 }
 
 news_event = {
@@ -88,6 +96,10 @@ news_event = {
     picture = GFX_report_event_generic_war
     major = yes
     is_triggered_only = yes
+
+    option = {
+        name = tmr.6.a
+    }
 }
 
 news_event = {
@@ -97,6 +109,10 @@ news_event = {
     picture = GFX_report_event_generic_war
     major = yes
     is_triggered_only = yes
+
+    option = {
+        name = tmr.7.a
+    }
 }
 
 country_event = {

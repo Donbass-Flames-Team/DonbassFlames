@@ -142,33 +142,6 @@ duplicate_archetypes = {
 		}
 	}
 
-	# superheavy tank
-
-	super_heavy_tank_aa_chassis = {
-		archetype = super_heavy_tank_chassis
-		type = { armor anti_air }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.9 }
-		}
-	}
-
-	super_heavy_tank_artillery_chassis = {
-		archetype = super_heavy_tank_chassis
-		type = { armor artillery }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.9 }
-		}
-	}
-
-	super_heavy_tank_destroyer_chassis = {
-		archetype = super_heavy_tank_chassis
-		type = { armor anti_tank }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-		}
-	}
 
 	# modern tank
 

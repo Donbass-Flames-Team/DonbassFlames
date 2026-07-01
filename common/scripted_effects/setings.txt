@@ -1,8 +1,6 @@
 WAL_make_state_empty_effect = {
 	add_core_of = WAL
 	set_state_category = wasteland
-	remove_manpower_from_state = yes
-	remove_buildings_from_state = yes
 
 	remove_building = {
 		type = industrial_complex

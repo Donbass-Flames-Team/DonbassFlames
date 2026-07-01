@@ -1,4 +1,4 @@
-DPR_first_phase_Of_ato = {
+DPR_first_phase_of_ato = {
 	allowed = {
 		original_tag = DPR
 	}
@@ -12,7 +12,7 @@ DPR_first_phase_Of_ato = {
 			has_country_flag = DPR_first_phase_of_ato
 		}
 	}
-	
+
 	ai_strategy = {
 		type = front_control
 		tag = UKR
@@ -41,7 +41,7 @@ DPR_second_phase_of_ato = {
 			has_global_flag = second_phase_of_ato
 		}
 	}
-	
+
 	ai_strategy = {
 		type = front_control
 		tag = UKR
@@ -70,7 +70,7 @@ DPR_hold_donetsk = {
 			has_country_flag = DPR_first_phase_of_ato
 		}
 	}
-	
+
 	ai_strategy = {
 		type = front_unit_request
 		state = 432
@@ -85,7 +85,6 @@ DPR_start_of_rebeltion = {
 
 	enable = {
 		has_war_with = UKR
-		always = yes
 	}
 
 	abort = {
@@ -98,20 +97,42 @@ DPR_start_of_rebeltion = {
 		always = no
 	}
 
-    #Бот будет пытаться соединится с Гиркином
+	#Бот будет пытаться соединится с Гиркином
 
 	ai_strategy = {
 		type = front_control
-        priority = 550
+		state = 426
+		priority = 550
 		ordertype = front
 		execution_type = rush
 		manual_attack = yes
-		state_trigger = {
-			426
-			401
-			48
-			381
-		}
+	}
+
+	ai_strategy = {
+		type = front_control
+		state = 401
+		priority = 550
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		state = 48
+		priority = 550
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		state = 381
+		priority = 550
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
 	}
 }
 
@@ -129,7 +150,7 @@ DPR_debaltsevo_attack = {
 			has_country_flag = Debaltsevo_battle
 		}
 	}
-	
+
 	ai_strategy = {
 		type = front_control
 		state = 13
@@ -192,10 +213,12 @@ DPR_russian_forces_ilovaysk = {
 	abort = {
 		NOT = {
 			has_country_flag = DPR_first_phase_of_ato
+		}
+		NOT = {
 			has_country_flag = DPR_forces_to_ilovaysk
 		}
 	}
-	
+
 	ai_strategy = {
 		type = front_control
 		state = 444
