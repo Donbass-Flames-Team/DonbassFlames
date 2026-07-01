@@ -3504,6 +3504,8 @@ country_event = {
 	option = {
 		name = ukraine.106.a
 		add_stability = -0.045
+		add_to_variable = { income_tax_rate = 1 }
+		add_to_variable = { percentage_shadow_economy = 2 }
 	}
 }
 

@@ -97,33 +97,6 @@ focus_tree = {
 				has_country_flag = Tree_post_yanukovich_hidden
 			}
 		}
-		offset = {
-			x = 3
-			trigger = {
-				NOT = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = SHOW
-					}
-				}
-				has_completed_focus = UKR_dictatorship_takes_over
-			    NOT = {
-					has_country_flag = Tree_post_yanukovich_hidden
-				}
-			}
-		}
-		offset = {
-			x = -3
-			trigger = {
-				NOT = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = SHOW
-					}
-				}
-				has_country_flag = Tree_post_yanukovich_hidden
-			}
-		}
 		
 		
 
@@ -3288,6 +3261,25 @@ focus_tree = {
 		completion_reward = {
 
 		}
+	}	
+
+	focus = {
+		id = UKR_develop_renewable_energy_sources
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 2
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_energy_independence_from_the_russia }
+		relative_position_id = UKR_energy_independence_from_the_russia
+
+		available = {
+           
+		}
+
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 
 	focus = {
@@ -4646,7 +4638,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 		}
-	}
+	}	
 
 	focus = {
 		id = UKR_call_early_parliamentary_elections
