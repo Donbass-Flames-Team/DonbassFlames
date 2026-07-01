@@ -1,873 +1,877 @@
 spriteTypes = {
 
-	### Events Pictures ###
-	spriteType = {
-		name = "GFX_news_event_poroshenko_pic"
-		texturefile = "gfx/event_pictures/news_events/Poroshenko.png"
-	}
-
-	spriteType = {
-		name = "GFX_news_event_Putin_angry_pic"
-		texturefile = "gfx/event_pictures/news_events/Putin_angry.png"
-	}
-
-	spriteType = {
-		name = "GFX_news_event_yanukovich_pic"
-		texturefile = "gfx/event_pictures/news_events/Yanukovich.png"
-	}
-
-	spriteType = {
-		name = "GFX_news_event_annexation_crym_pic"
-		texturefile = "gfx/event_pictures/news_events/annexation_crym.png"
-	}
-
-	spriteType = {
-		name = "GFX_news_event_continuation_ato"
-		texturefile = "gfx/event_pictures/news_events/continuation_ato.png"
-	}
-
-	spriteType = {
-		name = "GFX_news_event_second_minsk"
-		texturefile = "gfx/event_pictures/news_events/second_minsk.png"
-	}	
-
-	spriteType = {
-		name = "GFX_news_event_meeting_in_minsk_2014"
-		texturefile = "gfx/event_pictures/news_events/meeting_in_minsk_2014.png"
-	}
-
-	spriteType = {
-		name = "GFX_news_event_dpr_captured_debaltsevo"
-		texturefile = "gfx/event_pictures/news_events/dpr_captured_debaltsevo.png"
-	}	
-
-	spriteType = {
-		name = "GFX_news_event_dpr_creation"
-		texturefile = "gfx/event_pictures/news_events/dpr_creation.png"
-	}	
-
-	spriteType = {
-		name = "GFX_news_event_eu_sanctions"
-		texturefile = "gfx/event_pictures/news_events/eu_sanctions.png"
-	}	
-
-	spriteType = {
-		name = "GFX_news_event_eu_sanctions2"
-		texturefile = "gfx/event_pictures/news_events/eu_sanctions2.png"
-	}	
-
-	spriteType = {
-		name = "GFX_news_event_eu_sanctions3"
-		texturefile = "gfx/event_pictures/news_events/eu_sanctions3.png"
-	}
-	
-	spriteType = {
-		name = "GFX_news_event_lpr_creation"
-		texturefile = "gfx/event_pictures/news_events/lpr_creation.png"
-	}	
-
-	spriteType = {
-		name = "GFX_news_event_malaysian_boing_down"
-		texturefile = "gfx/event_pictures/news_events/malaysian_boing_down.png"
-	}
-
-	spriteType = {
-		name = "GFX_news_event_unknown_soldiers_in_crimea"
-		texturefile = "gfx/event_pictures/news_events/unknown_soldiers_in_crimea.png"
-	}
-
-	spriteType = {
-		name = "GFX_news_event_vonovakha_bus_was_under_attack_2015"
-		texturefile = "gfx/event_pictures/news_events/vonovakha_bus_was_under_attack_2015.png"
-	}	
-	spriteType = {
-		name = "GFX_news_event_OPR_creation"
-		texturefile = "gfx/event_pictures/news_events/OPR_creation.png"
-	}
-	spriteType = {
-		name = "GFX_news_event_first_minsk_signed"
-		texturefile = "gfx/event_pictures/news_events/first_minsk_signed.png"
-	}
-	spriteType = {
-		name = "GFX_news_event_beach_in_zugres"
-		texturefile = "gfx/event_pictures/news_events/beach_in_zugres.png"
-	}
-	spriteType = {
-		name = "GFX_news_event_timoshenko_won"
-		texturefile = "gfx/event_pictures/news_events/timoshenko_won.png"
-	}
-	spriteType = {
-		name = "GFX_news_event_referendum_in_crimea"
-		texturefile = "gfx/event_pictures/news_events/referendum_in_crimea.png"
-	}
-	spriteType = {
-		name = "GFX_news_event_partial_mobilization_in_ukraine"
-		texturefile = "gfx/event_pictures/news_events/partial_mobilization_in_ukraine.png"
-	}
-	spriteType = {
-		name = "GFX_news_event_kpr_creation"
-		texturefile = "gfx/event_pictures/news_events/kpr_creation.png"
-	}
-	spriteType = {
-		name = "GFX_news_event_kpr_creation2"
-		texturefile = "gfx/event_pictures/news_events/kpr_creation2.png"
-	}	
-	spriteType = {
-		name = "GFX_news_event_zakharchenko_dead"
-		texturefile = "gfx/event_pictures/news_events/zakharchenko_dead.png"
-	}	
-	spriteType = {
-		name = "GFX_news_event_start_of_ato"
-		texturefile = "gfx/event_pictures/news_events/start_of_ato.png"
-	}
-	spriteType = {
-		name = "GFX_news_event_Sochi_olympic_games_2014"
-		texturefile = "gfx/event_pictures/news_events/Sochi_olympic_games_2014.png"
-	}
-	spriteType = {
-		name = "GFX_news_event_mobilization_in_tmr"
-		texturefile = "gfx/event_pictures/news_events/TMR_mobilization.png"
-	}
-	spriteType = {
-		name = "GFX_news_event_kharkov_accords_terminated"
-		texturefile = "gfx/event_pictures/news_events/kharkov_accords_terminated.dds"
-	}
-
-	spriteType = {
-		name = "GFX_news_event_eu_association_with_ukraine"
-		texturefile = "gfx/event_pictures/news_events/eu_association_with_ukraine.png"
-	}	
-
-	spriteType = {
-		name = "GFX_news_event_lublin_triangle"
-		texturefile = "gfx/event_pictures/news_events/lublin_triangle.png"
-	}	
-
-	spriteType = {
-		name = "GFX_news_event_associated_trio"
-		texturefile = "gfx/event_pictures/news_events/associated_trio.png"
-	}	
-
-	spriteType = {
-		name = "GFX_Report_event_threat_of_default_picture"
-		texturefile = "gfx/event_pictures/Report_event_threat_of_default_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_rinat_ahmetov_fond_picture"
-		texturefile = "gfx/event_pictures/Report_event_rinat_ahmetov_fond_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_1000_dollars_for_moskaley_picture"
-		texturefile = "gfx/event_pictures/Report_event_1000_dollars_for_moskaley_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_oleg_lyashko_picture"
-		texturefile = "gfx/event_pictures/Report_event_oleg_lyashko_picture.png"
-	}
-	spriteType = {
-		name = "GFX_Report_event_skr_kazaki_picture"
-		texturefile = "gfx/event_pictures/SKR/Report_event_skr_kazaki_picture.png"
-	}
-
-
-
-
-
-
-	spriteType = {
-		name = "GFX_Report_event_gunter_smile_picture"
-		texturefile = "gfx/event_pictures/Report_event_gunter_smile_picture.png"
-	}
-
-
-	
-	
-	
-
-	## Zheka ##
-
-	spriteType = {
-		name = "GFX_Report_event_vaislyev_1_picture"
-		texturefile = "gfx/event_pictures/Report_event_vaislyev_1_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_vaislyev_2_picture"
-		texturefile = "gfx/event_pictures/Report_event_vaislyev_2_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_vaislyev_earn_money_picture_picture"
-		texturefile = "gfx/event_pictures/Report_event_vaislyev_earn_money_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_vaislyev_is_scared_picture_picture"
-		texturefile = "gfx/event_pictures/Report_event_vaislyev_is_scared_picture.png"
-	}
-	
-
-	####
-
-
-	spriteType = {
-		name = "GFX_Report_event_gas_picture_picture"
-		texturefile = "gfx/event_pictures/Report_event_gas_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_mvf_and_mujik_picture"
-		texturefile = "gfx/event_pictures/Report_event_mvf_and_mujik_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_berkut_pic_picture_picture"
-		texturefile = "gfx/event_pictures/Report_event_berkut_pic_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_civilian_vehicle_picture"
-		texturefile = "gfx/event_pictures/Report_event_civilian_vehicle_picture.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Report_event_Alesander_Turchinov_picture"
-		texturefile = "gfx/event_pictures/Report_event_Alesander_Turchinov_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_coronavirus_picture"
-		texturefile = "gfx/event_pictures/Report_event_coronavirus_picture.png"
-	}
-
-	
-	spriteType = {
-		name = "GFX_Report_event_promaidan_rally_24_november_2013_picture"
-		texturefile = "gfx/event_pictures/Report_event_promaidan_rally_24_november_2013_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_formation_of_right_sector"
-		texturefile = "gfx/event_pictures/Report_event_Right_Sector_Formation_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_maidan_11_december_2013_rally_picture"
-		texturefile = "gfx/event_pictures/Report_event_maidan_11_december_2013_rally_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_dobrobati_ukraine_picture"
-		texturefile = "gfx/event_pictures/Report_event_dobrobati_ukraine_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_2may_picture"
-		texturefile = "gfx/event_pictures/Report_event_2may_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_arest_morguna_picture"
-		texturefile = "gfx/event_pictures/Report_event_arest_morguna_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_poroshenko_inauguration_picture"
-		texturefile = "gfx/event_pictures/Report_event_poroshenko_inauguration_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_debaltsevo_soldier_picture"
-		texturefile = "gfx/event_pictures/Report_event_debaltsevo_soldier_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_yulia_timoshenko_picture"
-		texturefile = "gfx/event_pictures/Report_event_yulia_timoshenko_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_azarov_picture"
-		texturefile = "gfx/event_pictures/Report_event_azarov_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_azov_picture"
-		texturefile = "gfx/event_pictures/Report_event_azov_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_chonhar_vozvrashenie_picture"
-		texturefile = "gfx/event_pictures/Report_event_chonhar_vozvrashenie_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_donetsk_proru_picture"
-		texturefile = "gfx/event_pictures/Report_event_donetsk_proru_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_donetsk_proukr_picture"
-		texturefile = "gfx/event_pictures/Report_event_donetsk_proukr_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_formirovanie_dpr_picture"
-		texturefile = "gfx/event_pictures/Report_event_formirovanie_dpr_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_formirovanie_kpr_picture"
-		texturefile = "gfx/event_pictures/Report_event_formirovanie_kpr_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_formirovanie_opr_picture"
-		texturefile = "gfx/event_pictures/Report_event_formirovanie_opr_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_kharkiv_proru_picture"
-		texturefile = "gfx/event_pictures/Report_event_kharkiv_proru_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_kharkiv_proukr_picture"
-		texturefile = "gfx/event_pictures/Report_event_kharkiv_proukr_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_krym_bez_sveta_picture"
-		texturefile = "gfx/event_pictures/Report_event_krym_bez_sveta_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_lugansk_proukr_picture"
-		texturefile = "gfx/event_pictures/Report_event_lugansk_proukr_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_luhansk_proru_picture"
-		texturefile = "gfx/event_pictures/Report_event_luhansk_proru_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_mkr_vostochnyi_picture"
-		texturefile = "gfx/event_pictures/Report_event_mkr_vostochnyi_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_obstril_kramatorska_picture"
-		texturefile = "gfx/event_pictures/Report_event_obstril_kramatorska_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_odesa_proru_picture"
-		texturefile = "gfx/event_pictures/Report_event_odesa_proru_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_odesa_proukr_picture"
-		texturefile = "gfx/event_pictures/Report_event_odesa_proukr_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_osvobozhdenie_savchenko_picture"
-		texturefile = "gfx/event_pictures/Report_event_osvobozhdenie_savchenko_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_peremoha_poroshenka_picture"
-		texturefile = "gfx/event_pictures/Report_event_peremoha_poroshenka_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_plyazh_zugres_picture"
-		texturefile = "gfx/event_pictures/Report_event_plyazh_zugres_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_pobeg_yanukovicha_picture"
-		texturefile = "gfx/event_pictures/Report_event_pobeg_yanukovicha_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_release_sluhi_narodu_picture"
-		texturefile = "gfx/event_pictures/Report_event_release_sluhi_narodu_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_pervaya_volna_mobki_picture"
-		texturefile = "gfx/event_pictures/Report_event_pervaya_volna_mobki_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_vtoraya_volna_mobki_picture"
-		texturefile = "gfx/event_pictures/Report_event_vtoraya_volna_mobki_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_tretia_volna_mobki_picture"
-		texturefile = "gfx/event_pictures/Report_event_tretia_volna_mobki_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_tsep_maidan_picture"
-		texturefile = "gfx/event_pictures/Report_event_tsep_maidan_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_vybory_ukraine_picture"
-		texturefile = "gfx/event_pictures/Report_event_vybory_ukraine_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_yanukovich_v_donetske_picture"
-		texturefile = "gfx/event_pictures/Report_event_yanukovich_v_donetske_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_zahvat_kramatorska_picture"
-		texturefile = "gfx/event_pictures/Report_event_zahvat_kramatorska_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_zahvat_sbu_lpr_picture"
-		texturefile = "gfx/event_pictures/Report_event_zahvat_sbu_lpr_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_zahvat_slovianska_picture"
-		texturefile = "gfx/event_pictures/Report_event_zahvat_slovianska_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_zasada_picture"
-		texturefile = "gfx/event_pictures/Report_event_zasada_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_zelenie_chelovechki_picture"
-		texturefile = "gfx/event_pictures/Report_event_zelenie_chelovechki_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_russian_go_thrgouh_border_picture"
-		texturefile = "gfx/event_pictures/Report_event_russian_go_thrgouh_border_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_pod_predlogom_elki_picture"
-		texturefile = "gfx/event_pictures/Report_event_pod_predlogom_elki.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_vilnius_summit_picture"
-		texturefile = "gfx/event_pictures/Report_event_vilnius_summit_picture.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Report_event_narodnoe_veche_picture"
-		texturefile = "gfx/event_pictures/Report_event_narodnoe_veche_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_creation_of_maidan_movement_picture"
-		texturefile = "gfx/event_pictures/Report_event_creation_of_maidan_movement_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_antimaidanovci_go_street_picture"
-		texturefile = "gfx/event_pictures/Report_event_antimaidanovci_go_street_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_nationalists_are_raging_picture"
-		texturefile = "gfx/event_pictures/Report_event_nationalists_are_raging_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_recreation_of_ngu_picture"
-		texturefile = "gfx/event_pictures/Report_event_recreation_of_ngu_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_soglashenie_ob_uregulirovanie_picture"
-		texturefile = "gfx/event_pictures/Report_event_soglashenie_ob_uregulirovanie_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_battles_on_grushevsky_picture"
-		texturefile = "gfx/event_pictures/Report_event_battles_on_grushevsky_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_odessa_fights_2014_picture"
-		texturefile = "gfx/event_pictures/Report_event_odessa_fights_2014_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_timoshenko_leave_jail_picture"
-		texturefile = "gfx/event_pictures/Report_event_timoshenko_leave_jail_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_donetsk_airport_battle_picture"
-		texturefile = "gfx/event_pictures/Report_event_donetsk_airport_battle_picture.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Report_malasian_boing_fell_down_picture"
-		texturefile = "gfx/event_pictures/Report_malasian_boing_fell_down_picture.png"
-	}	
-
-	spriteType = {
-		name = "GFX_Report_event_continuation_of_ato_2015_picture"
-		texturefile = "gfx/event_pictures/Report_event_continuation_of_ato_2015_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_bus_volnovahovsky_picture"
-		texturefile = "gfx/event_pictures/Report_event_bus_volnovahovsky_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_il76_crashed_in_luhansk_picture"
-		texturefile = "gfx/event_pictures/Report_event_il76_crashed_in_luhansk_picture.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Report_event_attack_to_students_town_picture"
-		texturefile = "gfx/event_pictures/Report_event_attack_to_students_town_picture.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Report_event_oleg_morgun_arrested_picture"
-		texturefile = "gfx/event_pictures/Report_event_arest_morguna_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_fsb_picture"
-		texturefile = "gfx/event_pictures/Report_event_fsb_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_girkin_killed_picture"
-		texturefile = "gfx/event_pictures/Report_event_girkin_killed_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_yanukovich_thinking_picture"
-		texturefile = "gfx/event_pictures/Report_event_yanukovich_thinking_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_crashed_helicopter_near_slavyansk_picture"
-		texturefile = "gfx/event_pictures/Report_event_crashed_helicopter_near_slavyansk_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_meeting_poroshenko_and_putin_in_minsk"
-		texturefile = "gfx/event_pictures/Report_event_meeting_poroshenko_and_putin_in_minsk.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_poroshenko_phone"
-		texturefile = "gfx/event_pictures/Report_event_poroshenko_phone.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_32_roadblock_picture"
-		texturefile = "gfx/event_pictures/Report_event_32_roadblock_picture.png"
-	}	
-
-	spriteType = {
-		name = "GFX_Report_event_strelkov_event_1"
-		texturefile = "gfx/event_pictures/Report_event_strelkov_event_1.png"
-	}	
-	
-	spriteType = {
-		name = "GFX_Report_event_strelkov_event_2"
-		texturefile = "gfx/event_pictures/Report_event_strelkov_event_2.png"
-	}	
-	
-	spriteType = {
-		name = "GFX_Report_event_13_aprill_mariupol_rally_picture"
-		texturefile = "gfx/event_pictures/Report_event_13_aprill_mariupol_rally_picture.png"
-	}	
-	
-	spriteType = {
-		name = "GFX_Report_event_sheling_beach_in_zugres_picture"
-		texturefile = "gfx/event_pictures/Report_event_plyazh_zugres_picture.png"
-	}	
-
-	spriteType = {
-		name = "GFX_Report_event_resotre_of_order_in_kharkov_picture"
-		texturefile = "gfx/event_pictures/Report_event_resotre_of_order_in_kharkov_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_mirny_march_na_radu_picture"
-		texturefile = "gfx/event_pictures/Report_event_mirny_march_na_radu_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_kills_on_maidan_2014_picture"
-		texturefile = "gfx/event_pictures/Report_event_kills_on_maidan_2014_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_zhenevskie_solgasheniya_2014_picture"
-		texturefile = "gfx/event_pictures/Report_event_zhenevskie_solgasheniya_2014_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_rocket_attack_in_zelenopolye_picture"
-		texturefile = "gfx/event_pictures/Report_event_rocket_attack_in_zelenopolye_picture.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Report_event_rocket_attack_in_headquarter_kramatorsk_2014_picture"
-		texturefile = "gfx/event_pictures/Report_event_rocket_attack_in_headquarter_kramatorsk_2014_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_help_from_france_and_usa_picture"
-		texturefile = "gfx/event_pictures/Report_event_help_from_france_and_usa_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_right_corp_is_expanded_picture"
-		texturefile = "gfx/event_pictures/Report_event_right_corp_is_expanded_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_sbu_picture"
-		texturefile = "gfx/event_pictures/Report_event_sbu_picture.png"
-	}	
-
-	spriteType = {
-		name = "GFX_Report_event_mariupol_1_may_2014_picture"
-		texturefile = "gfx/event_pictures/Report_event_mariupol_1_may_2014_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_mariupol_3_may_2014_picture"
-		texturefile = "gfx/event_pictures/Report_event_mariupol_3_may_2014_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_mariupol_24_aprill_picture"
-		texturefile = "gfx/event_pictures/Report_event_mariupol_24_aprill_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_conflict_around_ukrnafta_picture"
-		texturefile = "gfx/event_pictures/Report_event_conflict_around_ukrnafta_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_kolomoysky_picture"
-		texturefile = "gfx/event_pictures/Report_event_kolomoysky_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_kolomoysky_2_picture"
-		texturefile = "gfx/event_pictures/Report_event_kolomoysky_2_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_donetsk_1_marth_2014_picture"
-		texturefile = "gfx/event_pictures/Report_event_donetsk_1_marth_2014_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_donetsk_13_marth_2014_picture"
-		texturefile = "gfx/event_pictures/Report_event_donetsk_13_marth_2014_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_conscripts_national_guardia_rally_in_kiyv_2014"
-		texturefile = "gfx/event_pictures/Report_event_conscripts_national_guardia_rally_in_kiyv_2014.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_formation_of_first_government_of_yacenuk"
-		texturefile = "gfx/event_pictures/Report_event_formation_of_first_government_of_yacenuk.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Report_event_ukranian_parlamient_picture"
-		texturefile = "gfx/event_pictures/Report_event_ukranian_parlamient_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_poroshenko_in_parlamient_picture"
-		texturefile = "gfx/event_pictures/Report_event_poroshenko_in_parlamient.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_ukraine_motoinfantry_picture"
-		texturefile = "gfx/event_pictures/Report_event_ukraine_motoinfantry_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_darth_aleeksevich_vader_picture"
-		texturefile = "gfx/event_pictures/Report_event_darth_aleeksevich_vader_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_battle_on_rymarsky_picture"
-		texturefile = "gfx/event_pictures/Report_event_battle_on_rymarsky_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_elections_2014_picture"
-		texturefile = "gfx/event_pictures/Report_event_elections_2014_picture.png"
-	}
-
-	spriteType = {
-		name = "GFX_Report_event_Turchinov_appeal_picture"
-		texturefile = "gfx/event_pictures/Report_event_Turchinov_appeal_picture.png"
-	}
+### Events Pictures ###
+spriteType = {
+name = "GFX_news_event_poroshenko_pic"
+texturefile = "gfx/event_pictures/news_events/Poroshenko.png"
+}
 
 spriteType = {
-	name = "GFX_scotland"
-	texturefile = "gfx/event_pictures/news_events/scotland.png"
+name = "GFX_news_event_Putin_angry_pic"
+texturefile = "gfx/event_pictures/news_events/Putin_angry.png"
+}
+
+spriteType = {
+name = "GFX_news_event_yanukovich_pic"
+texturefile = "gfx/event_pictures/news_events/Yanukovich.png"
+}
+
+spriteType = {
+name = "GFX_news_event_annexation_crym_pic"
+texturefile = "gfx/event_pictures/news_events/annexation_crym.png"
+}
+
+spriteType = {
+name = "GFX_news_event_continuation_ato"
+texturefile = "gfx/event_pictures/news_events/continuation_ato.png"
+}
+
+spriteType = {
+name = "GFX_news_event_second_minsk"
+texturefile = "gfx/event_pictures/news_events/second_minsk.png"
+}
+
+spriteType = {
+name = "GFX_news_event_meeting_in_minsk_2014"
+texturefile = "gfx/event_pictures/news_events/meeting_in_minsk_2014.png"
+}
+
+spriteType = {
+name = "GFX_news_event_dpr_captured_debaltsevo"
+texturefile = "gfx/event_pictures/news_events/dpr_captured_debaltsevo.png"
+}
+
+spriteType = {
+name = "GFX_news_event_dpr_creation"
+texturefile = "gfx/event_pictures/news_events/dpr_creation.png"
+}
+
+spriteType = {
+name = "GFX_news_event_eu_sanctions"
+texturefile = "gfx/event_pictures/news_events/eu_sanctions.png"
+}
+
+spriteType = {
+name = "GFX_news_event_eu_sanctions2"
+texturefile = "gfx/event_pictures/news_events/eu_sanctions2.png"
+}
+
+spriteType = {
+name = "GFX_news_event_eu_sanctions3"
+texturefile = "gfx/event_pictures/news_events/eu_sanctions3.png"
+}
+
+spriteType = {
+name = "GFX_news_event_lpr_creation"
+texturefile = "gfx/event_pictures/news_events/lpr_creation.png"
+}
+
+spriteType = {
+name = "GFX_news_event_malaysian_boing_down"
+texturefile = "gfx/event_pictures/news_events/malaysian_boing_down.png"
+}
+
+spriteType = {
+name = "GFX_news_event_unknown_soldiers_in_crimea"
+texturefile = "gfx/event_pictures/news_events/unknown_soldiers_in_crimea.png"
+}
+
+spriteType = {
+name = "GFX_news_event_vonovakha_bus_was_under_attack_2015"
+texturefile = "gfx/event_pictures/news_events/vonovakha_bus_was_under_attack_2015.png"
 }
 spriteType = {
-	name = "GFX_ebola"
-	texturefile = "gfx/event_pictures/news_events/ebola.png"
+name = "GFX_news_event_OPR_creation"
+texturefile = "gfx/event_pictures/news_events/OPR_creation.png"
 }
 spriteType = {
-	name = "GFX_isil"
-	texturefile = "gfx/event_pictures/news_events/isil.png"
+name = "GFX_news_event_first_minsk_signed"
+texturefile = "gfx/event_pictures/news_events/first_minsk_signed.png"
 }
 spriteType = {
-	name = "GFX_paris"
-	texturefile = "gfx/event_pictures/news_events/paris.png"
+name = "GFX_news_event_beach_in_zugres"
+texturefile = "gfx/event_pictures/news_events/beach_in_zugres.png"
 }
 spriteType = {
-	name = "GFX_COP21"
-	texturefile = "gfx/event_pictures/news_events/COP21.png"
+name = "GFX_news_event_timoshenko_won"
+texturefile = "gfx/event_pictures/news_events/timoshenko_won.png"
 }
 spriteType = {
-	name = "GFX_migrant"
-	texturefile = "gfx/event_pictures/news_events/migrant.png"
+name = "GFX_news_event_referendum_in_crimea"
+texturefile = "gfx/event_pictures/news_events/referendum_in_crimea.png"
 }
 spriteType = {
-	name = "GFX_brexit"
-	texturefile = "gfx/event_pictures/news_events/brexit.png"
+name = "GFX_news_event_partial_mobilization_in_ukraine"
+texturefile = "gfx/event_pictures/news_events/partial_mobilization_in_ukraine.png"
 }
 spriteType = {
-	name = "GFX_turkey"
-	texturefile = "gfx/event_pictures/news_events/turkey.png"
+name = "GFX_news_event_kpr_creation"
+texturefile = "gfx/event_pictures/news_events/kpr_creation.png"
 }
 spriteType = {
-	name = "GFX_aleppo"
-	texturefile = "gfx/event_pictures/news_events/aleppo.png"
+name = "GFX_news_event_kpr_creation2"
+texturefile = "gfx/event_pictures/news_events/kpr_creation2.png"
 }
 spriteType = {
-	name = "GFX_korea"
-	texturefile = "gfx/event_pictures/news_events/korea.png"
+name = "GFX_news_event_zakharchenko_dead"
+texturefile = "gfx/event_pictures/news_events/zakharchenko_dead.png"
 }
 spriteType = {
-	name = "GFX_spain"
-	texturefile = "gfx/event_pictures/news_events/spain.png"
+name = "GFX_news_event_start_of_ato"
+texturefile = "gfx/event_pictures/news_events/start_of_ato.png"
 }
 spriteType = {
-	name = "GFX_vests"
-	texturefile = "gfx/event_pictures/news_events/vests.png"
+name = "GFX_news_event_Sochi_olympic_games_2014"
+texturefile = "gfx/event_pictures/news_events/Sochi_olympic_games_2014.png"
 }
 spriteType = {
-	name = "GFX_fifa"
-	texturefile = "gfx/event_pictures/news_events/fifa.png"
+name = "GFX_news_event_mobilization_in_tmr"
+texturefile = "gfx/event_pictures/news_events/TMR_mobilization.png"
 }
 spriteType = {
-	name = "GFX_covid1"
-	texturefile = "gfx/event_pictures/news_events/covid1.png"
+name = "GFX_news_event_kharkov_accords_terminated"
+texturefile = "gfx/event_pictures/news_events/kharkov_accords_terminated.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_eu_association_with_ukraine"
+texturefile = "gfx/event_pictures/news_events/eu_association_with_ukraine.png"
+}
+
+spriteType = {
+name = "GFX_news_event_lublin_triangle"
+texturefile = "gfx/event_pictures/news_events/lublin_triangle.png"
+}
+
+spriteType = {
+name = "GFX_news_event_associated_trio"
+texturefile = "gfx/event_pictures/news_events/associated_trio.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_threat_of_default_picture"
+texturefile = "gfx/event_pictures/Report_event_threat_of_default_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_rinat_ahmetov_fond_picture"
+texturefile = "gfx/event_pictures/Report_event_rinat_ahmetov_fond_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_1000_dollars_for_moskaley_picture"
+texturefile = "gfx/event_pictures/Report_event_1000_dollars_for_moskaley_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_oleg_lyashko_picture"
+texturefile = "gfx/event_pictures/Report_event_oleg_lyashko_picture.png"
 }
 spriteType = {
-	name = "GFX_covid2"
-	texturefile = "gfx/event_pictures/news_events/covid2.png"
+name = "GFX_Report_event_skr_kazaki_picture"
+texturefile = "gfx/event_pictures/SKR/Report_event_skr_kazaki_picture.png"
+}
+
+
+
+
+
+
+spriteType = {
+name = "GFX_Report_event_gunter_smile_picture"
+texturefile = "gfx/event_pictures/Report_event_gunter_smile_picture.png"
+}
+
+
+
+
+
+
+## Zheka ##
+
+spriteType = {
+name = "GFX_Report_event_vaislyev_1_picture"
+texturefile = "gfx/event_pictures/Report_event_vaislyev_1_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_vaislyev_2_picture"
+texturefile = "gfx/event_pictures/Report_event_vaislyev_2_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_vaislyev_earn_money_picture_picture"
+texturefile = "gfx/event_pictures/Report_event_vaislyev_earn_money_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_vaislyev_is_scared_picture_picture"
+texturefile = "gfx/event_pictures/Report_event_vaislyev_is_scared_picture.png"
+}
+
+
+####
+
+
+spriteType = {
+name = "GFX_Report_event_gas_picture_picture"
+texturefile = "gfx/event_pictures/Report_event_gas_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_mvf_and_mujik_picture"
+texturefile = "gfx/event_pictures/Report_event_mvf_and_mujik_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_berkut_pic_picture_picture"
+texturefile = "gfx/event_pictures/Report_event_berkut_pic_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_civilian_vehicle_picture"
+texturefile = "gfx/event_pictures/Report_event_civilian_vehicle_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_Alesander_Turchinov_picture"
+texturefile = "gfx/event_pictures/Report_event_Alesander_Turchinov_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_coronavirus_picture"
+texturefile = "gfx/event_pictures/Report_event_coronavirus_picture.png"
+}
+
+
+spriteType = {
+name = "GFX_Report_event_promaidan_rally_24_november_2013_picture"
+texturefile = "gfx/event_pictures/Report_event_promaidan_rally_24_november_2013_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_formation_of_right_sector"
+texturefile = "gfx/event_pictures/Report_event_Right_Sector_Formation_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_maidan_11_december_2013_rally_picture"
+texturefile = "gfx/event_pictures/Report_event_maidan_11_december_2013_rally_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_dobrobati_ukraine_picture"
+texturefile = "gfx/event_pictures/Report_event_dobrobati_ukraine_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_2may_picture"
+texturefile = "gfx/event_pictures/Report_event_2may_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_arest_morguna_picture"
+texturefile = "gfx/event_pictures/Report_event_arest_morguna_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_poroshenko_inauguration_picture"
+texturefile = "gfx/event_pictures/Report_event_poroshenko_inauguration_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_debaltsevo_soldier_picture"
+texturefile = "gfx/event_pictures/Report_event_debaltsevo_soldier_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_yulia_timoshenko_picture"
+texturefile = "gfx/event_pictures/Report_event_yulia_timoshenko_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_azarov_picture"
+texturefile = "gfx/event_pictures/Report_event_azarov_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_azov_picture"
+texturefile = "gfx/event_pictures/Report_event_azov_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_chonhar_vozvrashenie_picture"
+texturefile = "gfx/event_pictures/Report_event_chonhar_vozvrashenie_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_donetsk_proru_picture"
+texturefile = "gfx/event_pictures/Report_event_donetsk_proru_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_donetsk_proukr_picture"
+texturefile = "gfx/event_pictures/Report_event_donetsk_proukr_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_formirovanie_dpr_picture"
+texturefile = "gfx/event_pictures/Report_event_formirovanie_dpr_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_formirovanie_kpr_picture"
+texturefile = "gfx/event_pictures/Report_event_formirovanie_kpr_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_formirovanie_opr_picture"
+texturefile = "gfx/event_pictures/Report_event_formirovanie_opr_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_kharkiv_proru_picture"
+texturefile = "gfx/event_pictures/Report_event_kharkiv_proru_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_kharkiv_proukr_picture"
+texturefile = "gfx/event_pictures/Report_event_kharkiv_proukr_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_krym_bez_sveta_picture"
+texturefile = "gfx/event_pictures/Report_event_krym_bez_sveta_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_lugansk_proukr_picture"
+texturefile = "gfx/event_pictures/Report_event_lugansk_proukr_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_luhansk_proru_picture"
+texturefile = "gfx/event_pictures/Report_event_luhansk_proru_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_mkr_vostochnyi_picture"
+texturefile = "gfx/event_pictures/Report_event_mkr_vostochnyi_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_obstril_kramatorska_picture"
+texturefile = "gfx/event_pictures/Report_event_obstril_kramatorska_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_odesa_proru_picture"
+texturefile = "gfx/event_pictures/Report_event_odesa_proru_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_odesa_proukr_picture"
+texturefile = "gfx/event_pictures/Report_event_odesa_proukr_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_osvobozhdenie_savchenko_picture"
+texturefile = "gfx/event_pictures/Report_event_osvobozhdenie_savchenko_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_peremoha_poroshenka_picture"
+texturefile = "gfx/event_pictures/Report_event_peremoha_poroshenka_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_plyazh_zugres_picture"
+texturefile = "gfx/event_pictures/Report_event_plyazh_zugres_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_pobeg_yanukovicha_picture"
+texturefile = "gfx/event_pictures/Report_event_pobeg_yanukovicha_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_release_sluhi_narodu_picture"
+texturefile = "gfx/event_pictures/Report_event_release_sluhi_narodu_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_pervaya_volna_mobki_picture"
+texturefile = "gfx/event_pictures/Report_event_pervaya_volna_mobki_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_vtoraya_volna_mobki_picture"
+texturefile = "gfx/event_pictures/Report_event_vtoraya_volna_mobki_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_tretia_volna_mobki_picture"
+texturefile = "gfx/event_pictures/Report_event_tretia_volna_mobki_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_tsep_maidan_picture"
+texturefile = "gfx/event_pictures/Report_event_tsep_maidan_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_vybory_ukraine_picture"
+texturefile = "gfx/event_pictures/Report_event_vybory_ukraine_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_yanukovich_v_donetske_picture"
+texturefile = "gfx/event_pictures/Report_event_yanukovich_v_donetske_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_zahvat_kramatorska_picture"
+texturefile = "gfx/event_pictures/Report_event_zahvat_kramatorska_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_zahvat_sbu_lpr_picture"
+texturefile = "gfx/event_pictures/Report_event_zahvat_sbu_lpr_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_zahvat_slovianska_picture"
+texturefile = "gfx/event_pictures/Report_event_zahvat_slovianska_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_zasada_picture"
+texturefile = "gfx/event_pictures/Report_event_zasada_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_zelenie_chelovechki_picture"
+texturefile = "gfx/event_pictures/Report_event_zelenie_chelovechki_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_russian_go_thrgouh_border_picture"
+texturefile = "gfx/event_pictures/Report_event_russian_go_thrgouh_border_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_pod_predlogom_elki_picture"
+texturefile = "gfx/event_pictures/Report_event_pod_predlogom_elki.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_vilnius_summit_picture"
+texturefile = "gfx/event_pictures/Report_event_vilnius_summit_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_narodnoe_veche_picture"
+texturefile = "gfx/event_pictures/Report_event_narodnoe_veche_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_creation_of_maidan_movement_picture"
+texturefile = "gfx/event_pictures/Report_event_creation_of_maidan_movement_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_antimaidanovci_go_street_picture"
+texturefile = "gfx/event_pictures/Report_event_antimaidanovci_go_street_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_nationalists_are_raging_picture"
+texturefile = "gfx/event_pictures/Report_event_nationalists_are_raging_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_recreation_of_ngu_picture"
+texturefile = "gfx/event_pictures/Report_event_recreation_of_ngu_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_soglashenie_ob_uregulirovanie_picture"
+texturefile = "gfx/event_pictures/Report_event_soglashenie_ob_uregulirovanie_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_battles_on_grushevsky_picture"
+texturefile = "gfx/event_pictures/Report_event_battles_on_grushevsky_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_odessa_fights_2014_picture"
+texturefile = "gfx/event_pictures/Report_event_odessa_fights_2014_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_timoshenko_leave_jail_picture"
+texturefile = "gfx/event_pictures/Report_event_timoshenko_leave_jail_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_donetsk_airport_battle_picture"
+texturefile = "gfx/event_pictures/Report_event_donetsk_airport_battle_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_malasian_boing_fell_down_picture"
+texturefile = "gfx/event_pictures/Report_malasian_boing_fell_down_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_continuation_of_ato_2015_picture"
+texturefile = "gfx/event_pictures/Report_event_continuation_of_ato_2015_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_bus_volnovahovsky_picture"
+texturefile = "gfx/event_pictures/Report_event_bus_volnovahovsky_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_il76_crashed_in_luhansk_picture"
+texturefile = "gfx/event_pictures/Report_event_il76_crashed_in_luhansk_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_attack_to_students_town_picture"
+texturefile = "gfx/event_pictures/Report_event_attack_to_students_town_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_oleg_morgun_arrested_picture"
+texturefile = "gfx/event_pictures/Report_event_arest_morguna_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_fsb_picture"
+texturefile = "gfx/event_pictures/Report_event_fsb_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_girkin_killed_picture"
+texturefile = "gfx/event_pictures/Report_event_girkin_killed_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_yanukovich_thinking_picture"
+texturefile = "gfx/event_pictures/Report_event_yanukovich_thinking_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_crashed_helicopter_near_slavyansk_picture"
+texturefile = "gfx/event_pictures/Report_event_crashed_helicopter_near_slavyansk_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_meeting_poroshenko_and_putin_in_minsk"
+texturefile = "gfx/event_pictures/Report_event_meeting_poroshenko_and_putin_in_minsk.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_poroshenko_phone"
+texturefile = "gfx/event_pictures/Report_event_poroshenko_phone.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_32_roadblock_picture"
+texturefile = "gfx/event_pictures/Report_event_32_roadblock_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_strelkov_event_1"
+texturefile = "gfx/event_pictures/Report_event_strelkov_event_1.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_strelkov_event_2"
+texturefile = "gfx/event_pictures/Report_event_strelkov_event_2.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_13_aprill_mariupol_rally_picture"
+texturefile = "gfx/event_pictures/Report_event_13_aprill_mariupol_rally_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_sheling_beach_in_zugres_picture"
+texturefile = "gfx/event_pictures/Report_event_plyazh_zugres_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_resotre_of_order_in_kharkov_picture"
+texturefile = "gfx/event_pictures/Report_event_resotre_of_order_in_kharkov_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_mirny_march_na_radu_picture"
+texturefile = "gfx/event_pictures/Report_event_mirny_march_na_radu_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_kills_on_maidan_2014_picture"
+texturefile = "gfx/event_pictures/Report_event_kills_on_maidan_2014_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_zhenevskie_solgasheniya_2014_picture"
+texturefile = "gfx/event_pictures/Report_event_zhenevskie_solgasheniya_2014_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_rocket_attack_in_zelenopolye_picture"
+texturefile = "gfx/event_pictures/Report_event_rocket_attack_in_zelenopolye_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_rocket_attack_in_headquarter_kramatorsk_2014_picture"
+texturefile = "gfx/event_pictures/Report_event_rocket_attack_in_headquarter_kramatorsk_2014_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_help_from_france_and_usa_picture"
+texturefile = "gfx/event_pictures/Report_event_help_from_france_and_usa_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_right_corp_is_expanded_picture"
+texturefile = "gfx/event_pictures/Report_event_right_corp_is_expanded_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_sbu_picture"
+texturefile = "gfx/event_pictures/Report_event_sbu_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_mariupol_1_may_2014_picture"
+texturefile = "gfx/event_pictures/Report_event_mariupol_1_may_2014_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_mariupol_3_may_2014_picture"
+texturefile = "gfx/event_pictures/Report_event_mariupol_3_may_2014_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_mariupol_24_aprill_picture"
+texturefile = "gfx/event_pictures/Report_event_mariupol_24_aprill_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_conflict_around_ukrnafta_picture"
+texturefile = "gfx/event_pictures/Report_event_conflict_around_ukrnafta_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_kolomoysky_picture"
+texturefile = "gfx/event_pictures/Report_event_kolomoysky_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_kolomoysky_2_picture"
+texturefile = "gfx/event_pictures/Report_event_kolomoysky_2_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_donetsk_1_marth_2014_picture"
+texturefile = "gfx/event_pictures/Report_event_donetsk_1_marth_2014_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_donetsk_13_marth_2014_picture"
+texturefile = "gfx/event_pictures/Report_event_donetsk_13_marth_2014_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_conscripts_national_guardia_rally_in_kiyv_2014"
+texturefile = "gfx/event_pictures/Report_event_conscripts_national_guardia_rally_in_kiyv_2014.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_formation_of_first_government_of_yacenuk"
+texturefile = "gfx/event_pictures/Report_event_formation_of_first_government_of_yacenuk.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_ukranian_parlamient_picture"
+texturefile = "gfx/event_pictures/Report_event_ukranian_parlamient_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_poroshenko_in_parlamient_picture"
+texturefile = "gfx/event_pictures/Report_event_poroshenko_in_parlamient.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_ukraine_motoinfantry_picture"
+texturefile = "gfx/event_pictures/Report_event_ukraine_motoinfantry_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_darth_aleeksevich_vader_picture"
+texturefile = "gfx/event_pictures/Report_event_darth_aleeksevich_vader_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_battle_on_rymarsky_picture"
+texturefile = "gfx/event_pictures/Report_event_battle_on_rymarsky_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_elections_2014_picture"
+texturefile = "gfx/event_pictures/Report_event_elections_2014_picture.png"
+}
+
+spriteType = {
+name = "GFX_Report_event_Turchinov_appeal_picture"
+texturefile = "gfx/event_pictures/Report_event_Turchinov_appeal_picture.png"
+}
+
+spriteType = {
+name = "GFX_scotland"
+texturefile = "gfx/event_pictures/news_events/scotland.png"
 }
 spriteType = {
-	name = "GFX_BLM"
-	texturefile = "gfx/event_pictures/news_events/BLM.png"
+name = "GFX_ebola"
+texturefile = "gfx/event_pictures/news_events/ebola.png"
 }
 spriteType = {
-	name = "GFX_beirut"
-	texturefile = "gfx/event_pictures/news_events/beirut.png"
+name = "GFX_isil"
+texturefile = "gfx/event_pictures/news_events/isil.png"
 }
 spriteType = {
-	name = "GFX_NK"
-	texturefile = "gfx/event_pictures/news_events/NK.png"
+name = "GFX_paris"
+texturefile = "gfx/event_pictures/news_events/paris.png"
 }
 spriteType = {
-	name = "GFX_covid3"
-	texturefile = "gfx/event_pictures/news_events/covid3.png"
+name = "GFX_COP21"
+texturefile = "gfx/event_pictures/news_events/COP21.png"
 }
 spriteType = {
-	name = "GFX_australia"
-	texturefile = "gfx/event_pictures/news_events/australia.png"
+name = "GFX_migrant"
+texturefile = "gfx/event_pictures/news_events/migrant.png"
 }
 spriteType = {
-	name = "GFX_capitol"
-	texturefile = "gfx/event_pictures/news_events/capitol.png"
+name = "GFX_brexit"
+texturefile = "gfx/event_pictures/news_events/brexit.png"
 }
 spriteType = {
-	name = "GFX_afghanistan"
-	texturefile = "gfx/event_pictures/news_events/afghanistan.png"
+name = "GFX_turkey"
+texturefile = "gfx/event_pictures/news_events/turkey.png"
 }
 spriteType = {
-	name = "GFX_covid4"
-	texturefile = "gfx/event_pictures/news_events/covid4.png"
+name = "GFX_aleppo"
+texturefile = "gfx/event_pictures/news_events/aleppo.png"
 }
 spriteType = {
-	name = "GFX_suez"
-	texturefile = "gfx/event_pictures/news_events/suez.png"
+name = "GFX_korea"
+texturefile = "gfx/event_pictures/news_events/korea.png"
 }
 spriteType = {
-	name = "GFX_pegasus"
-	texturefile = "gfx/event_pictures/news_events/pegasus.png"
+name = "GFX_spain"
+texturefile = "gfx/event_pictures/news_events/spain.png"
 }
 spriteType = {
-	name = "GFX_elizabeth"
-	texturefile = "gfx/event_pictures/news_events/elizabeth.png"
+name = "GFX_vests"
+texturefile = "gfx/event_pictures/news_events/vests.png"
 }
 spriteType = {
-	name = "GFX_fifa_qatar"
-	texturefile = "gfx/event_pictures/news_events/fifa_qatar.png"
+name = "GFX_fifa"
+texturefile = "gfx/event_pictures/news_events/fifa.png"
 }
 spriteType = {
-	name = "GFX_israel_hamas"
-	texturefile = "gfx/event_pictures/news_events/israel_hamas.png"
+name = "GFX_covid1"
+texturefile = "gfx/event_pictures/news_events/covid1.png"
 }
 spriteType = {
-	name = "GFX_turkey_syria"
-	texturefile = "gfx/event_pictures/news_events/turkey_syria.png"
+name = "GFX_covid2"
+texturefile = "gfx/event_pictures/news_events/covid2.png"
 }
 spriteType = {
-	name = "GFX_AI"
-	texturefile = "gfx/event_pictures/news_events/AI.png"
+name = "GFX_BLM"
+texturefile = "gfx/event_pictures/news_events/BLM.png"
 }
 spriteType = {
-	name = "GFX_usa1"
-	texturefile = "gfx/event_pictures/news_events/usa1.png"
+name = "GFX_beirut"
+texturefile = "gfx/event_pictures/news_events/beirut.png"
 }
 spriteType = {
-	name = "GFX_usa2"
-	texturefile = "gfx/event_pictures/news_events/usa2.png"
+name = "GFX_NK"
+texturefile = "gfx/event_pictures/news_events/NK.png"
 }
 spriteType = {
-	name = "GFX_usa3"
-	texturefile = "gfx/event_pictures/news_events/usa3.png"
-}	
+name = "GFX_covid3"
+texturefile = "gfx/event_pictures/news_events/covid3.png"
+}
 spriteType = {
-	name = "GFX_parad"
-	texturefile = "gfx/event_pictures/news_events/parad.png"
-}	
+name = "GFX_australia"
+texturefile = "gfx/event_pictures/news_events/australia.png"
+}
+spriteType = {
+name = "GFX_capitol"
+texturefile = "gfx/event_pictures/news_events/capitol.png"
+}
+spriteType = {
+name = "GFX_afghanistan"
+texturefile = "gfx/event_pictures/news_events/afghanistan.png"
+}
+spriteType = {
+name = "GFX_covid4"
+texturefile = "gfx/event_pictures/news_events/covid4.png"
+}
+spriteType = {
+name = "GFX_suez"
+texturefile = "gfx/event_pictures/news_events/suez.png"
+}
+spriteType = {
+name = "GFX_pegasus"
+texturefile = "gfx/event_pictures/news_events/pegasus.png"
+}
+spriteType = {
+name = "GFX_elizabeth"
+texturefile = "gfx/event_pictures/news_events/elizabeth.png"
+}
+spriteType = {
+name = "GFX_fifa_qatar"
+texturefile = "gfx/event_pictures/news_events/fifa_qatar.png"
+}
+spriteType = {
+name = "GFX_israel_hamas"
+texturefile = "gfx/event_pictures/news_events/israel_hamas.png"
+}
+spriteType = {
+name = "GFX_turkey_syria"
+texturefile = "gfx/event_pictures/news_events/turkey_syria.png"
+}
+spriteType = {
+name = "GFX_AI"
+texturefile = "gfx/event_pictures/news_events/AI.png"
+}
+spriteType = {
+name = "GFX_usa1"
+texturefile = "gfx/event_pictures/news_events/usa1.png"
+}
+spriteType = {
+name = "GFX_usa2"
+texturefile = "gfx/event_pictures/news_events/usa2.png"
+}
+spriteType = {
+name = "GFX_usa3"
+texturefile = "gfx/event_pictures/news_events/usa3.png"
+}
+spriteType = {
+name = "GFX_parad"
+texturefile = "gfx/event_pictures/news_events/parad.png"
+}
+spriteType = {
+name = "GFX_NATO"
+texturefile = "gfx/event_pictures/news_events/NATO.png"
+}
 }

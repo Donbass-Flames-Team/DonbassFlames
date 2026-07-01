@@ -1,0 +1,114 @@
+focus_tree = {
+	id = NATO
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = NAT
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2500 y = 500 }
+
+	focus = {
+		id = NAT_nato_expansion
+		icon = GFX_goal_generic_alliance
+		x = 10
+		y = 0
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = NAT_montenegro_join
+		icon = GFX_goal_generic_alliance
+		x = 12
+		y = 1
+		cost = 1
+		prerequisite = { focus = NAT_nato_expansion }
+
+		available = {
+			date > 2017.6.5
+		}
+
+		completion_reward = {
+			country_event = { id = NAT.1 hours = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = NAT_north_macedonia_join
+		icon = GFX_goal_generic_alliance
+		x = 8
+		y = 1
+		cost = 1
+		prerequisite = { focus = NAT_nato_expansion }
+
+		available = {
+			date > 2020.3.27
+		}
+
+		completion_reward = {
+			country_event = { id = NAT.2 hours = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = NAT_finland_join
+		icon = GFX_goal_generic_alliance
+		x = 10
+		y = 1
+		cost = 59
+		prerequisite = { focus = NAT_nato_expansion }
+
+		available = {
+			OR = {
+				UKR = { has_war_with = RUS }
+				RUS = { has_war_with = UKR }
+			}
+		}
+
+		completion_reward = {
+			country_event = { id = NAT.3 hours = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = NAT_sweden_join
+		icon = GFX_goal_generic_alliance
+		x = 10
+		y = 2
+		cost = 50
+		prerequisite = { focus = NAT_finland_join }
+
+		available = {
+			OR = {
+				UKR = { has_war_with = RUS }
+				RUS = { has_war_with = UKR }
+			}
+		}
+
+		completion_reward = {
+			country_event = { id = NAT.4 hours = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
