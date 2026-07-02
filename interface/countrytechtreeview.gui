@@ -3414,7 +3414,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "wonderweapon_year"
-				position = { x=950 y=40 }
+				position = { x=1520 y=40 }
 				size = { width = 130 height = 100% }
 				orientation = upper_left
 
@@ -3437,7 +3437,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1940"
+					text = "2000"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3450,7 +3450,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1942"
+					text = "2010"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3463,7 +3463,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1943"
+					text = "2015"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3476,7 +3476,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1944"
+					text = "2020"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3489,7 +3489,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1945"
+					text = "2025"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3502,7 +3502,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1946"
+					text = "2030"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3686,17 +3686,6 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 				}
 
-				instantTextBoxType = {
-					name = "experimental_rockets_subtitle"
-					position = { x = 1200 y = 230 }
-					font = "hoi_22tech"
-					borderSize = {x = 0 y = 4}
-					text = "TITLE_EXP_ROCKETS_SUBTITLE"
-					maxWidth = 200
-					maxHeight = 122
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
 
 				instantTextBoxType = {
 					name = "atomic_research_subtitle"
@@ -3718,6 +3707,23 @@ guiTypes = {
 				format = "UP"
 			}
 
+			gridboxtype = {
+				name = "satellite_communications_tree"
+				position = { x=120 y=172 }
+				size = { width = 680 height = 800 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "artificial_intelligence_tree"
+				position = { x=120 y=172 }
+				size = { width = 680 height = 800 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+			}
+			
+			
 			iconType = {
 				name = "highlight_internet_connection"
 				spriteType = "GFX_tutorial_research_small_item_icon_glow"

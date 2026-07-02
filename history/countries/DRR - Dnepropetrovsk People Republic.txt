@@ -44,13 +44,6 @@ recruit_character = DRR_oleg_tsarev
 		uniform_equipment2 = 1
 	}
 
-	set_power_balance = {
-        id = DPR_centralization_bop
-        left_side = DPR_ideological_radicals
-        right_side = DPR_bandits
-        set_value = 0.1
-    }
-
 	set_politics = {
 		ruling_party = autoritarian_democracy
 		last_election = "2010.02.07"
