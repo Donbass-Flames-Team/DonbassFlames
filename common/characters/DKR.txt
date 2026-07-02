@@ -1,0 +1,25 @@
+characters = {
+    safonenko_yuri_viktorovich = {
+		name = safonenko_yuri_viktorovich
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_DKR_safonenko_yuri_viktorovich"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+		}
+		corps_commander = {
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+
+
+}

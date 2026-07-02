@@ -1,4 +1,4 @@
-capital = 340
+capital = 416
 set_variable = { cash = 1 }
 set_variable = { debt = -1 }
 set_variable = { percentage_shadow_economy = 40 }
@@ -10,14 +10,9 @@ set_variable = { small_businesses = 3900 }
 set_variable = { individual_enterprises = 12000 } 
 set_variable = { consumer_activity = 38 } 
 
-
-recruit_character = aleksandr_kharitonov
-recruit_character = gennady_tsipkalov
-recruit_character = valeryy_bolotov
-recruit_character = igor_polotnicky
+recruit_character = safonenko_yuri_viktorovich
 
 2013.11.21 = {
-	set_cosmetic_tag = LPR_early
 	set_technology = {
 		infantry_weapons = 1
 		infantry_weapons1 = 1
@@ -39,57 +34,54 @@ recruit_character = igor_polotnicky
 		mortar_weapons1 = 1
 		mortar_weapons2 = 1
 		mortar_weapons3 = 1
-		basic_train = 1 
 
 		tech_support = 1
-
+        basic_train = 1 
 		toward_artilery = 1
 		spau_artillery = 1
 		multiple_launch_rocket_system = 1
 		uniform_equipment = 1
 		uniform_equipment1 = 1
 		uniform_equipment2 = 1
+		apc_chassis = 1
+		apc_chassis_2 = 1
+		apc_chassis_3 = 1
+		apc_chassis_4 = 1
+
+		ifv_1 = 1
+		ifv_2 = 1
+		ifv_3 = 1
+		bmd_1 = 1
+		bmd_2 = 1
+		bmd_3 = 1
+		APC_1 = 1
+		APC_2 = 1
+		APC_3 = 1
+		modern_tank_1 = 1	
+		modern_tank_2 = 1
+		modern_tank_3 = 1		
+		modern_tank_4 = 1
 	}
-
-	set_power_balance = {
-        id = LPR_centralization_bop
-        left_side = LPR_cossack_autonomy_bop_fully
-        right_side = LPR_vertical_power_bop
-        set_value = 0.1
-    }
-
-	add_equipment_to_stockpile = {
-		type = train_equipment_1
-		amount = 36
-		producer = LPR
-	}	
 
 	add_ideas = {
 		service_by_requirement
 		closed_economy
 		war_economy
-        LPR_ruined_factories
-        LPR_dependent_electric_power
-        militarized_police
-        free_elementary_and_middle_schools
-        private_healthcare
-        no_social_security
+		DPR_power_of_bandits
     }
 
 	set_politics = {
 		ruling_party = autoritarian_democracy
-		last_election = "2014.02.07"
+		last_election = "2010.02.07"
 		election_frequency = 48
 		elections_allowed = no
 	}
 
 	set_popularities = {
-        communism = 42
-        nationalism = 32
-        autoritarian_democracy = 18
-        conservatism_democracy = 6
-        liberal_democracy = 2
-        social_democracy = 0
-    }
-
+		liberal_democracy = 1
+		conservatism_democracy = 4
+		nationalism = 35
+		communism = 15
+		autoritarian_democracy = 45
+	}
 }
