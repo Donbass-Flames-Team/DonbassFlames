@@ -712,3 +712,31 @@ country_event = {
 		}
 	}	
 }
+
+#сафоненко требует автономию
+country_event = {
+	id = DPR.31
+	title = DPR.31.t
+	desc = DPR.31.d
+	picture = GFX_Report_event_strelkov_event_2
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.31.a
+		657 = {
+            transfer_state_to = DKR
+		}
+		hidden_effect = {
+			DKR = {
+				add_state_core = 657
+
+			}
+			add_to_faction = DKR
+		}
+	}
+}
