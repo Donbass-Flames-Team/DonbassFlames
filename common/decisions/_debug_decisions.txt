@@ -252,6 +252,307 @@ debug_decisions = {
 	    }
     }	
 
+	spawn_all_people_republic = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+						LPR = {
+				transfer_state = 406
+				transfer_state = 351
+				transfer_state = 427
+				transfer_state = 363
+				transfer_state = 362
+				transfer_state = 366
+				transfer_state = 352
+				transfer_state = 357
+				transfer_state = 346
+				transfer_state = 333
+				transfer_state = 344
+				transfer_state = 320
+				transfer_state = 370
+				transfer_state = 384
+				transfer_state = 335
+				transfer_state = 288
+				transfer_state = 339
+				transfer_state = 329
+				transfer_state = 343
+				transfer_state = 334
+				transfer_state = 326
+				transfer_state = 285
+				transfer_state = 10
+				transfer_state = 305
+				transfer_state = 304
+				transfer_state = 307
+				transfer_state = 311
+				transfer_state = 263
+				transfer_state = 245
+				transfer_state = 235
+				transfer_state = 259
+				transfer_state = 271
+				transfer_state = 225
+				transfer_state = 223
+				transfer_state = 207
+				transfer_state = 237	
+				transfer_state = 308
+				transfer_state = 303
+				transfer_state = 269
+				transfer_state = 297
+				transfer_state = 272
+				transfer_state = 246
+				transfer_state = 258			
+			}
+				SKR = {
+					transfer_state = 387
+					transfer_state = 416
+					transfer_state = 413
+				}
+			DPR = {
+				transfer_state = 468
+				transfer_state = 421
+				transfer_state = 441
+				transfer_state = 264
+				transfer_state = 465
+				transfer_state = 463
+				transfer_state = 429
+				transfer_state = 511
+				transfer_state = 446
+				transfer_state = 489
+				transfer_state = 448
+				transfer_state = 467
+				transfer_state = 450
+				transfer_state = 452
+				transfer_state = 401
+				transfer_state = 426
+				transfer_state = 433
+				transfer_state = 408
+				transfer_state = 399
+				transfer_state = 412
+				transfer_state = 444
+				transfer_state = 437
+				transfer_state = 435
+				transfer_state = 402
+				transfer_state = 438
+				transfer_state = 430
+				transfer_state = 418
+				transfer_state = 582
+				transfer_state = 265
+				transfer_state = 381
+				transfer_state = 404
+				transfer_state = 397
+				transfer_state = 398
+				transfer_state = 394
+				transfer_state = 13
+				transfer_state = 378
+				transfer_state = 376
+				transfer_state = 651
+				transfer_state = 390
+				transfer_state = 391
+				transfer_state = 380
+				transfer_state = 658 
+				transfer_state = 657				
+			}
+				DPR = {
+					transfer_state = 527
+					transfer_state = 533
+					transfer_state = 649
+					transfer_state = 551
+					transfer_state = 511
+					transfer_state = 518
+					transfer_state = 486
+					transfer_state = 652
+					transfer_state = 653
+					transfer_state = 502
+					transfer_state = 526
+					transfer_state = 650
+				}
+			DPR = {
+				transfer_state = 291
+				transfer_state = 327
+				transfer_state = 277
+				transfer_state = 312
+				transfer_state = 300
+				transfer_state = 317
+				transfer_state = 324
+				transfer_state = 295
+				transfer_state = 318
+				transfer_state = 388
+				transfer_state = 395
+				transfer_state = 573
+				transfer_state = 353
+				transfer_state = 337
+				transfer_state = 359
+				transfer_state = 342
+				transfer_state = 347
+				transfer_state = 328					
+			}
+
+			BPR = {
+				transfer_state = 606
+				transfer_state = 618
+				transfer_state = 622
+				transfer_state = 581
+				transfer_state = 583
+			}	
+			OPR = {
+				transfer_state = 626
+				transfer_state = 596
+				transfer_state = 585
+				transfer_state = 567
+				transfer_state = 572
+				transfer_state = 549
+				transfer_state = 499
+				transfer_state = 477
+				transfer_state = 409
+			}
+			HPR = {
+				transfer_state = 548
+				transfer_state = 534
+				transfer_state = 510
+				transfer_state = 503
+				transfer_state = 490
+				transfer_state = 561
+				transfer_state = 565
+				transfer_state = 559
+				transfer_state = 552
+				transfer_state = 564
+				transfer_state = 578
+				transfer_state = 576
+				transfer_state = 575
+				transfer_state = 588
+				transfer_state = 587
+				transfer_state = 577
+				transfer_state = 568
+				transfer_state = 597
+				transfer_state = 598
+				transfer_state = 615
+				transfer_state = 574
+				transfer_state = 555
+				transfer_state = 540	
+				transfer_state = 523	
+				transfer_state = 512
+				transfer_state = 544			
+			}
+			ZPR = {
+					transfer_state = 451
+					transfer_state = 457
+					transfer_state = 449
+
+					transfer_state = 449
+					transfer_state = 423
+					transfer_state = 420
+					transfer_state = 431
+
+					transfer_state = 485
+					transfer_state = 459
+
+					transfer_state = 476
+					transfer_state = 462
+					transfer_state = 497
+					transfer_state = 508
+					transfer_state = 501
+					transfer_state = 495
+					transfer_state = 520
+					transfer_state = 537
+					transfer_state = 557
+					transfer_state = 539
+					transfer_state = 515
+					transfer_state = 592
+					transfer_state = 545
+					transfer_state = 553
+					transfer_state = 541
+					transfer_state = 532
+					transfer_state = 562	
+					transfer_state = 566	
+					transfer_state = 504
+					transfer_state = 484
+					transfer_state = 481
+					transfer_state = 466
+					transfer_state = 478
+					transfer_state = 516
+					transfer_state = 521
+					transfer_state = 509
+					transfer_state = 505
+					transfer_state = 530
+					transfer_state = 500
+					transfer_state = 513
+					transfer_state = 457		
+				}
+				KPR = {
+					transfer_state = 167
+					transfer_state = 182
+					transfer_state = 221
+					transfer_state = 213
+					transfer_state = 234
+					transfer_state = 655
+					transfer_state = 247
+					transfer_state = 276
+					transfer_state = 298
+					transfer_state = 275
+					transfer_state = 270
+					transfer_state = 266
+					transfer_state = 238
+					transfer_state = 251
+					transfer_state = 211
+					transfer_state = 226
+					transfer_state = 248
+					transfer_state = 230
+					transfer_state = 208
+					transfer_state = 173
+					transfer_state = 203
+					transfer_state = 212
+					transfer_state = 184
+					transfer_state = 193
+					transfer_state = 244
+					transfer_state = 227
+					transfer_state = 236
+					transfer_state = 199
+					transfer_state = 181
+					transfer_state = 210
+					transfer_state = 165
+                    transfer_state = 219
+					transfer_state = 260
+				}
+				DRR = {
+					transfer_state = 345
+					transfer_state = 302
+					transfer_state = 368
+					transfer_state = 354
+					transfer_state = 393
+					transfer_state = 281
+					transfer_state = 367
+					transfer_state = 371
+					transfer_state = 336
+				}
+                DRP = {
+					transfer_state = 374
+                    transfer_state = 440
+					transfer_state = 475
+					transfer_state = 480
+					transfer_state = 396
+					transfer_state = 411
+					transfer_state = 319
+					transfer_state = 372
+					transfer_state = 365
+					transfer_state = 350
+
+				}
+	    }
+    }	
+
 	clear_smo_plan_debug = {
 		icon = generic_research
 

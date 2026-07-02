@@ -71,3 +71,24 @@ country_event = {
 		add_political_power = -25
 	}
 }
+
+# Подписание минских соглашений
+country_event = {
+	id = SKR.4
+	title = SKR.4.t
+	desc = SKR.4.d
+	picture = GFX_Report_event_skr_kazaki_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = SKR.4.a
+		add_war_support = 0.05
+		leave_faction = yes
+	}
+}
+

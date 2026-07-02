@@ -44,8 +44,10 @@ NDR_hold_slavyansk = {
 	
 	ai_strategy = {
 		type = front_unit_request
+		tag = UKR
 		state = 318  # SLAVYANSK AND KRAMATORSK
-		value = 80  
+		value = 2000  
+		execute_order = yes	
 	}
 
 	ai_strategy = {

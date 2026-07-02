@@ -22,6 +22,20 @@ country_event = {
 		add_stability = 0.05
 		add_war_support = 0.05
 		load_oob = DPR_russian_regulars_in_illovaysk
+		RUS = {
+			give_military_access = DPR
+		}
+		hidden_effect = {
+			444 = {
+				add_dynamic_modifier = { modifier = russian_fire_support_idea scope = DPR days = 15 }
+			}
+			448 = {
+				add_dynamic_modifier = { modifier = russian_fire_support_idea scope = DPR days = 15 }
+			}
+			652 = {
+				add_dynamic_modifier = { modifier = russian_fire_support_idea scope = DPR days = 15 }
+			}				
+		}				
 	}
 }
 

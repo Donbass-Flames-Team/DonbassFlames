@@ -19,11 +19,12 @@ DPR_first_phase_of_ato = {
 		ordertype = front
 		execution_type = rush
 		manual_attack = yes
+		execute_order = yes
 	}
 
 	ai_strategy = {
 		type = garrison
-		value = -500
+		value = -1500
 	}
 }
 
@@ -48,6 +49,7 @@ DPR_second_phase_of_ato = {
 		ordertype = front
 		execution_type = rush
 		manual_attack = yes
+		execute_order = yes	
 	}
 
 	ai_strategy = {
@@ -74,7 +76,8 @@ DPR_hold_donetsk = {
 	ai_strategy = {
 		type = front_unit_request
 		state = 432
-		value = 50
+		value = 35
+		execute_order = yes	
 	}
 }
 
@@ -85,16 +88,13 @@ DPR_start_of_rebeltion = {
 
 	enable = {
 		has_war_with = UKR
+		has_country_flag = DPR_first_phase_of_ato
 	}
 
 	abort = {
 		NOT = {
-			has_war_with = UKR
-		}
-		NOT = {
 			country_exists = NDR
 		}
-		always = no
 	}
 
 	#Бот будет пытаться соединится с Гиркином
@@ -102,37 +102,19 @@ DPR_start_of_rebeltion = {
 	ai_strategy = {
 		type = front_control
 		state = 426
-		priority = 550
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
-	}
-
-	ai_strategy = {
-		type = front_control
 		state = 401
-		priority = 550
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
-	}
-
-	ai_strategy = {
-		type = front_control
 		state = 48
-		priority = 550
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
-	}
-
-	ai_strategy = {
-		type = front_control
 		state = 381
 		priority = 550
 		ordertype = front
 		execution_type = rush
+		execute_order = yes	
 		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = 500
 	}
 }
 
@@ -154,50 +136,15 @@ DPR_debaltsevo_attack = {
 	ai_strategy = {
 		type = front_control
 		state = 13
+		state = 378
+		state = 376
 		ratio = 0.1
 		priority = 530
 		ordertype = front
 		execution_type = rush
 		manual_attack = yes
-	}
-
-	ai_strategy = {
-		type = front_control
-		state = 378
-		ratio = 0.1
-		priority = 550
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
-	}
-
-	ai_strategy = {
-		type = front_control
-		state = 376
-		ratio = 0.1
-		priority = 600
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
+		execute_order = yes	
 	}	
-
-	ai_strategy = {
-		type = theatre_distribution_demand_increase
-		value = 11
-		id = 13
-	}
-
-	ai_strategy = {
-		type = theatre_distribution_demand_increase
-		value = 11
-		id = 378
-	}
-
-	ai_strategy = {
-		type = theatre_distribution_demand_increase
-		value = 12
-		id = 376
-	}
 }
 
 DPR_russian_forces_ilovaysk = {
@@ -206,14 +153,14 @@ DPR_russian_forces_ilovaysk = {
 	}
 
 	enable = {
-		has_country_flag = DPR_first_phase_of_ato
 		has_country_flag = DPR_forces_to_ilovaysk
+		RUS = {
+			has_completed_focus = RUS_open_invasion
+		}
+		date > 2014.7.7
 	}
 
 	abort = {
-		NOT = {
-			has_country_flag = DPR_first_phase_of_ato
-		}
 		NOT = {
 			has_country_flag = DPR_forces_to_ilovaysk
 		}
@@ -222,30 +169,13 @@ DPR_russian_forces_ilovaysk = {
 	ai_strategy = {
 		type = front_control
 		state = 444
-		ratio = 0.1
-		priority = 500
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
-	}
-
-	ai_strategy = {
-		type = front_control
 		state = 448
-		ratio = 0.1
-		priority = 500
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
-	}
-
-	ai_strategy = {
-		type = front_control
 		state = 652
 		ratio = 0.1
 		priority = 500
 		ordertype = front
-		execution_type = rush
-		manual_attack = yes
+		execution_type = rush_weak
+		execute_order = yes	
+		manual_attack = no
 	}
 }
