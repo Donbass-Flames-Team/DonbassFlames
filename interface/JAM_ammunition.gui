@@ -8,7 +8,7 @@ guiTypes = {
         # Need to put the stuff in a subcontainer or else the area in which it can be moved around is severely limited; idk why
         containerWindowType = {
             name     = "JAM_ammunition_topbar_2"
-            position = { x = 1189 y = 4 } # to the right of the nukes # (487, 30) for right under the fuel section
+            position = { x = 1189 y = 6 } # to the right of the nukes # (487, 30) for right under the fuel section
             size     = { width = 70 height = 26 }
             moveable = yes
             
