@@ -312,7 +312,7 @@ guiTypes = {
 			gridBoxType = {
 				name = "games_grid"
 				position = { x=14 y =10}
-				size = { width =280 height = 100%% }
+				size = { width =280 height = 100% }
 				slotsize = { width = 280 height = 55 }
 				format = "UPPER_LEFT"
 				max_slots_horizontal = 1
@@ -754,7 +754,6 @@ guiTypes = {
 				slotsize = { width = 53 height = 40 }
 				max_slots_horizontal = 22
 				add_horizontal = yes
-				max_slots_horizontal = 22
 				max_slots_vertical = 2
 				format = "UPPER_LEFT"
 			}
@@ -915,7 +914,7 @@ guiTypes = {
 			containerWindowType = {
 				name ="ideas"
 				position = { x = 91 y = -1 }
-				size = { width = 100%% height = 70 }
+				size = { width = 100% height = 70 }
 
 				gridboxType = {
 					name ="ideas_grid"
@@ -1271,7 +1270,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "scrollable_container"
 			position = { x = 0 y = 56 }
-			size = { width = 100%% height = 100%% }
+			size = { width = 100% height = 100% }
 			margin = { top = 0 bottom = 0 right = 26 left = 15 }
 			verticalScrollbar = "right_vertical_slider"
 			scroll_wheel_factor = 40
@@ -1421,7 +1420,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "scrollable_container"
 			position = { x = 0 y = 56 }
-			size = { width = 100%% height = 484 }
+			size = { width = 100% height = 484 }
 			margin = { top = 0 bottom = 0 right = 26 left = 15 }
 			verticalScrollbar = "right_vertical_slider"
 			scroll_wheel_factor = 40
@@ -1435,7 +1434,7 @@ guiTypes = {
 			gridBoxType = {
 				name = "settings_groups_grid"
 				position = { x = 0 y = 0 }
-				slotsize = { width = 100%% height = 1 }
+				slotsize = { width = 100% height = 1 }
 				format = "UPPER_LEFT"
 				max_slots_horizontal = 1
 			}
@@ -1490,7 +1489,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "game_setting_group_header"
-		size = { width = 100%% height = 40 }
+		size = { width = 100% height = 40 }
 
 		background = {
 			name = "group_header_bg"
@@ -1615,7 +1614,7 @@ guiTypes = {
 			name = "difficulty_grid"
 			position = { x = 0 y = 0 }
 			size = { width = 0 height = 0 }
-			slotsize = { width = 100%% height = 40 }
+			slotsize = { width = 100% height = 40 }
 			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
 		}
@@ -1689,7 +1688,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "current_option"
 				position = { x = 0 y = 0 }
-				size = { width = 99%% height = 32 }
+				size = { width = 99% height = 32 }
 
 				background = {
 					name = "background"
@@ -1743,7 +1742,7 @@ guiTypes = {
 				gridBoxType = {
 					name = "options_grid"
 					position = { x = 8 y = 0 }
-					size = { width = 300 height = 100%% }
+					size = { width = 300 height = 100% }
 					slotsize = { width = 284 height = 24 }
 					max_slots_horizontal = 1
 					format = "UPPER_LEFT"
@@ -1760,7 +1759,7 @@ guiTypes = {
 			name = "game_rule_grid"
 			position = { x = 0 y = 0 }
 			size = { width = 0 height = 0 }
-			slotsize = { width = 100%% height = 40 }
+			slotsize = { width = 100% height = 40 }
 			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
 		}
