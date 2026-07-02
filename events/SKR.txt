@@ -17,12 +17,12 @@ country_event = {
 		hidden_effect = {
 			set_global_flag = Mozgovoy_evacuated_to_alcheevsk
 			SLR = {
-				teleport_armies = {
-                    limit = {
-                        has_global_flag = Mozgovoy_evacuated_to_alcheevsk
-                    }
-                    to_state = 370
-                }
+				#teleport_armies = {
+                #    limit = {
+                #        has_global_flag = Mozgovoy_evacuated_to_alcheevsk
+                #    }
+                #    to_state = 370
+                #}
 			}
 		}
 	}

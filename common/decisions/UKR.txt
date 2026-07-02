@@ -3426,12 +3426,24 @@ UKR_general_staff_decision = {
 		complete_effect = {
 			#custom_effect_tooltip = UKR_35_otdelnaya_brihada_morskoy_pikhoti_formed_tt
 			hidden_effect = {
-				create_unit = {
-				    division = "name = \"1-y batalyon operatyvnoho pryznachennya 3-yi bryhady operatyvnoho pryznachennya NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
-				    owner = UKR
-				    count = 3
-			    }
-			}
+				random_owned_controlled_state = {
+				    create_unit = {
+				        division = "name = \"1-y batalyon operatyvnoho pryznachennya 3-yi bryhady operatyvnoho pryznachennya NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 1
+			        }
+				    create_unit = {
+				        division = "name = \"2-y batalyon operatyvnoho pryznachennya 3-yi bryhady operatyvnoho pryznachennya NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 1
+					}
+				    create_unit = {
+				        division = "name = \"3-y batalyon operatyvnoho pryznachennya 3-yi bryhady operatyvnoho pryznachennya NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 1
+			        }			        
+		        }
+		    }
 		}
 		ai_will_do = {
 			factor = 10
@@ -3454,11 +3466,13 @@ UKR_general_staff_decision = {
 		complete_effect = {
 			#custom_effect_tooltip = UKR_35_otdelnaya_brihada_morskoy_pikhoti_formed_tt
 			hidden_effect = {
-				create_unit = {
-				    division = "name = \"4-y striletskyy batalyon 27-yi okremoyi bryhady NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
-				    owner = UKR
-				    count = 1
-			    }
+				random_owned_controlled_state = {
+					create_unit = {
+				        division = "name = \"4-y striletskyy batalyon 27-yi okremoyi bryhady NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 1
+			        }
+				}
 			}
 		}
 		ai_will_do = {
@@ -3482,10 +3496,12 @@ UKR_general_staff_decision = {
 		complete_effect = {
 			#custom_effect_tooltip = UKR_35_otdelnaya_brihada_morskoy_pikhoti_formed_tt
 			hidden_effect = {
-				create_unit = {
-				    division = "name = \"18-y okremyy batalyon NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
-				    owner = UKR
-				    count = 1
+				random_owned_controlled_state = {
+				    create_unit = {
+				        division = "name = \"18-y okremyy batalyon NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 1
+			        }
 			    }
 			}
 		}

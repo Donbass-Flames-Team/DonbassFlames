@@ -50,6 +50,8 @@ country_event = {
 				hours = 6
 			}
 			432 = { transfer_state_to = DPR }
+            658 = { transfer_state_to = DPR }
+            657 = { transfer_state_to = DPR }
 			DPR = {
 				add_state_core = 432
 				add_state_core = 448
@@ -323,9 +325,9 @@ country_event = {
 		    }
 			LPR = {
 				country_event = {
-					id = LPR.1
-					days = 4
-				}
+					id = LPR.15
+					days = 15
+				}				
 			}
 	    }		
 	}
@@ -3736,6 +3738,8 @@ country_event = {
 				transfer_state = 390
 				transfer_state = 391
 				transfer_state = 380
+				transfer_state = 658 
+				transfer_state = 657				
 			}
 			if = {
 				limit = {

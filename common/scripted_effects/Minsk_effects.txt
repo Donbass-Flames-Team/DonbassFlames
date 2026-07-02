@@ -87,6 +87,8 @@ first_minsk_effect = {
 		transfer_state = 404
 		transfer_state = 408
 		transfer_state = 432
+		transfer_state = 657
+		transfer_state = 658		
 		clr_country_flag = DPR_forces_to_ilovaysk
 	}
 	LPR = {
@@ -115,6 +117,8 @@ first_minsk_effect = {
 	    if = { limit = { 288 = { is_controlled_by = LPR } 335 = { is_controlled_by = LPR } } transfer_state = 288 }
 		if = { limit = { 285 = { is_controlled_by = LPR } } transfer_state = 285 }
 		if = { limit = { 10 = { is_controlled_by = LPR } } transfer_state = 10 }
+		if = { limit = { 305 = { is_controlled_by = LPR } 285 = { is_controlled_by = LPR } } transfer_state = 305 }
+		if = { limit = { 305 = { is_controlled_by = LPR } 304 = { is_controlled_by = LPR } } transfer_state = 304 }
 		clr_country_flag = LPR_first_phase_of_ato
 	}
 	SKR = {
@@ -131,6 +135,8 @@ first_minsk_effect = {
 		if = { limit = { 337 = { is_controlled_by = UKR } } transfer_state = 337 transfer_state = 359 }
 		if = { limit = { 381 = { is_controlled_by = UKR } } transfer_state = 381 }
 		if = { limit = { 288 = { is_controlled_by = UKR } 335 = { is_controlled_by = UKR } } transfer_state = 335 }
+		if = { limit = { 304 = { is_controlled_by = UKR } } transfer_state = 304 }
+		if = { limit = { 305 = { is_controlled_by = UKR } } transfer_state = 305 }
 	}
 	white_peace = DPR
 	white_peace = LPR
@@ -283,6 +289,10 @@ second_minsk_effect = {
 		if = { limit = { 649 = { is_controlled_by = UKR } } transfer_state = 649 }
 		if = { limit = { 421 = { is_controlled_by = UKR } } transfer_state = 421 transfer_state = 465 }
 		if = { limit = { 468 = { is_controlled_by = UKR } } transfer_state = 468 }			
+
+		# Если лнр захватила и украина отвоевала
+		if = { limit = { 304 = { is_controlled_by = UKR } } transfer_state = 304 }
+		if = { limit = { 305 = { is_controlled_by = UKR } } transfer_state = 305 }
 	}
 	white_peace = DPR
 	white_peace = LPR

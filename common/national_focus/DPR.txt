@@ -733,7 +733,58 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = DPR_form_novorossia
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.5
+		x = 0
+		y = 3
 
+		prerequisite = {focus = DPR_united_parliament}
+		relative_position_id = DPR_cooperation_with_lpr
+
+		available = {
+			has_global_flag = ATO_Separatists_victory
+		}
+
+		completion_reward = {
+            hidden_effect = {
+				set_cosmetic_tag = NOV
+				puppet = {
+                    target = LPR
+                    end_wars = no
+                }
+			    puppet = {
+                    target = ZPR
+                    end_wars = no
+                }
+			    puppet = {
+                    target = OPR
+                    end_wars = no
+                }
+			    puppet = {
+                    target = BPR
+                    end_wars = no
+                }		
+			    puppet = {
+                    target = NPR
+                    end_wars = no
+                }
+			    puppet = {
+                    target = KPR
+                    end_wars = no
+                }	
+			    puppet = {
+                    target = DRR
+                    end_wars = no
+                }																	
+				news_event = { 
+					id = news_events.41 
+                    hours = 3				
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = DPR_defend_of_citites

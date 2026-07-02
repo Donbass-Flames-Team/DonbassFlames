@@ -248,3 +248,37 @@ country_event = {
 		add_political_power = -5
 	}
 }
+
+# Цыпалков становится лидером лнр
+country_event = {
+	id = LPR.15
+	title = LPR.15.t
+	desc = LPR.15.d
+	#picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = LPR.15.a
+		add_political_power = -5
+		retire_country_leader = yes
+		add_country_leader_role = {
+            character = gennady_tsipkalov
+            promote_leader = yes
+            country_leader = {
+                ideology = autoritarian_democracy
+                expire = "2045.1.1.1"
+            } 
+        }
+		hidden_effect = {
+		    promote_character = {
+                character = gennady_tsipkalov
+                ideology = autoritarian_democracy
+            }
+			country_event = {
+				id = LPR.1
+				days = 4
+			}
+		}
+	}
+}

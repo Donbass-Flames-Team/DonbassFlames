@@ -197,7 +197,6 @@ default_mountaineers_production = {
 default_mobile_production = {
 	enable = {
 		ai_wants_divisions > 11
-		has_tech = motorised_infantry
 	}
 	abort = { ai_wants_divisions < 12 }
 
@@ -497,7 +496,6 @@ minors_dont_spy = {
 
 default_build_a_nl_facility = {
 	enable = {
-		has_tech = atomic_research
 		num_of_civilian_factories > 25
 		num_of_military_factories > 25
 		nuclear_facility < 1
