@@ -69,6 +69,25 @@ People_republic_ATO_idea = {
 	experience_loss_factor = People_republic_experience_loss_factor #-0.15
 	casualty_trickleback =  People_republic_casualty_trickleback #-0.15
 	army_speed_factor = People_republic_army_speed_factor #-0.15
+	army_attack_factor = People_republic_army_attack_factor
+}
+
+DPR_army_idea = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	army_org_factor = DPR_armed_forces_army_org_factor #-0.45
+	army_attack_factor = DPR_armed_forces_army_attack_factor #-0.25
+	army_defence_factor = DPR_armed_forces_army_defence_factor #-0.25
+	army_org_regain = DPR_armed_forces_army_org_regain #-0.25
+	army_morale_factor = DPR_armed_forces_army_morale_factor #-0.25
+	army_speed_factor = DPR_armed_forces_army_speed_factor #-0.15
+	planning_speed = DPR_armed_forces_planning_speed #-0.1
+	breakthrough_factor = DPR_armed_forces_war_breakthrough_factor #-0.15
+	war_support_factor = DPR_armed_forces_war_support_factor #-0.15
+	conscription = DPR_armed_forces_conscription #-0.02
+	
 }
 
 

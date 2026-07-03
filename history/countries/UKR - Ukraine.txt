@@ -62,6 +62,7 @@ add_to_variable = { JAM_ammo_stockpile = 1000 }
     set_variable = { UKR_AFU_army_speed_factor = -0.15 }
 	set_variable = { UKR_AFU_war_breakthrough_factor = -0.15 }
 	set_variable = { UKR_AFU_war_support_factor = -0.15 }
+	set_variable = { UKR_AFU_conscription = -0.02 } 
 
 	add_dynamic_modifier = { modifier = UKR_oligarchs_idea }
 	set_variable = { UKR_Oligarchs_political_power_gain = 0.15 }

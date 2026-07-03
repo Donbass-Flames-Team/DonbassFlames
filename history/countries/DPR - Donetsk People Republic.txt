@@ -30,6 +30,15 @@ create_faction_from_template = {
 }
 
 2013.11.21 = {
+	
+	add_dynamic_modifier = { modifier = DPR_army_idea }
+	set_variable = { DPR_armed_forces_army_org_factor = -0.15 }
+	set_variable = { DPR_armed_forces_army_attack_factor = -0.075 }
+    set_variable = { DPR_armed_forces_army_defence_factor = -0.05 }
+    set_variable = { DPR_armed_forces_planning_speed = -0.15 }
+    set_variable = { DPR_armed_forces_war_breakthrough_factor = -0.15 }
+    
+
 	set_technology = {
 		infantry_weapons = 1
 		infantry_weapons1 = 1
@@ -52,10 +61,10 @@ create_faction_from_template = {
 		mortar_weapons2 = 1
 		mortar_weapons3 = 1
 
-                motorized_equipment = 1
-                motorized_equipment_0 = 1
-                motorized_equipment_1 = 1
-                motorized_equipment_2 = 1
+        motorized_equipment = 1
+        motorized_equipment_0 = 1
+        motorized_equipment_1 = 1
+        motorized_equipment_2 = 1
 
 		tech_support = 1
         basic_train = 1 
@@ -98,6 +107,13 @@ create_faction_from_template = {
 		election_frequency = 48
 		elections_allowed = no
 	}
+
+	set_power_balance = {
+        id = DPR_centralization_bop
+        left_side = DPR_ideological_radicals_bop
+        right_side = DPR_bandits_bop
+        set_value = 0.1
+    }
 
 	set_popularities = {
 		liberal_democracy = 1

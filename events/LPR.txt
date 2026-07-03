@@ -276,18 +276,18 @@ country_event = {
 				ideology = autoritarian_democracy
 				expire = "2045.1.1.1"
 			}
-		} # <-- Теперь блок роли лидера четко закрыт
+		}
 
 		hidden_effect = {
 			promote_character = {
 				character = gennady_tsipkalov
 				ideology = autoritarian_democracy
 			}
-		}
 
-		country_event = {
-			id = LPR.1
-			days = 4
+			country_event = {
+			    id = LPR.1
+			    days = 4
+		    }
 		}
 	}
 }

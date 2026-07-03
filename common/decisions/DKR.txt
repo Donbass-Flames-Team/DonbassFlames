@@ -1,0 +1,111 @@
+DKR_spread_influence = {
+
+	DKR_capture_part_of_makeevka = {
+
+		icon = GFX_decision_generic_Guns_from_communists
+
+		allowed = {
+			original_tag = DKR
+		}
+
+		visible = {
+			original_tag = DKR
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		complete_effect = {
+			transfer_state = 658
+			DPR = {
+				country_event = DPR.32
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 658
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	}
+
+	DKR_capture_part_of_makeevkaa = {
+
+		icon = GFX_decision_generic_Guns_from_communists
+
+		allowed = {
+			original_tag = DKR
+		}
+
+		visible = {
+			original_tag = DKR
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		complete_effect = {
+			transfer_state = 437
+			DPR = {
+				country_event = DPR.33
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 437
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	}
+	
+	DKR_capture_kharzitsk = {
+
+		icon = GFX_decision_generic_Guns_from_communists
+
+		allowed = {
+			original_tag = DKR
+		}
+
+		visible = {
+			original_tag = DKR
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		complete_effect = {
+			transfer_state = 435
+			DPR = {
+				country_event = DPR.34
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 435
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	}	
+
+}

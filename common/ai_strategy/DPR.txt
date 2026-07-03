@@ -26,6 +26,10 @@ DPR_first_phase_of_ato = {
 		type = garrison
 		value = -1500
 	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = -1000
+	}	
 }
 
 DPR_second_phase_of_ato = {
@@ -106,6 +110,7 @@ DPR_start_of_rebeltion = {
 		state = 48
 		state = 381
 		priority = 550
+		tag = UKR
 		ordertype = front
 		execution_type = rush
 		execute_order = yes	
@@ -140,6 +145,7 @@ DPR_debaltsevo_attack = {
 		state = 376
 		ratio = 0.1
 		priority = 530
+		tag = UKR
 		ordertype = front
 		execution_type = rush
 		manual_attack = yes

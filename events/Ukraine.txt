@@ -2914,7 +2914,12 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		
+		hidden_effect = {
+			annex_country = {
+                target = NDR
+                transfer_troops = no
+            }
+		}
 	}
 
 	option = {

@@ -87,8 +87,13 @@ first_minsk_effect = {
 		transfer_state = 404
 		transfer_state = 408
 		transfer_state = 432
-		transfer_state = 657
-		transfer_state = 658		
+		transfer_state = 658	
+		DKR = {
+			transfer_state = 657
+			if = { limit = { 658 = { is_controlled_by = DKR }} transfer_state = 658 }
+			if = { limit = { 437 = { is_controlled_by = DKR }} transfer_state = 437 }
+			if = { limit = { 435 = { is_controlled_by = DKR }} transfer_state = 435 }
+		}	
 		clr_country_flag = DPR_forces_to_ilovaysk
 	}
 	LPR = {
@@ -156,12 +161,37 @@ second_minsk_effect = {
 		if = { limit = { 433 = { is_controlled_by = DPR } } transfer_state = 433 }
 		if = { limit = { 381 = { is_controlled_by = DPR } } transfer_state = 381 }
 		if = { limit = { 13 = { is_controlled_by = DPR } } transfer_state = 13 }
-		if = { limit = { 378 = { is_controlled_by = DPR } } transfer_state = 378 transfer_state = 13 }
-		if = { limit = { 376 = { is_controlled_by = DPR } } transfer_state = 376 }
 		if = { limit = { 426 = { is_controlled_by = DPR } } transfer_state = 426 }
 		if = { limit = { 399 = { is_controlled_by = DPR } } transfer_state = 399 }
 		if = { limit = { 390 = { is_controlled_by = DPR } } transfer_state = 390 }
 		if = { limit = { 391 = { is_controlled_by = DPR } } transfer_state = 391 }
+		### Дебальцево
+		if = { 
+			limit = { 
+				any_country = {
+					OR = {
+						tag = DPR
+						is_in_faction_with = DPR
+					}
+					controls_state  = 378 
+				}
+			} 
+			transfer_state = 378 
+			transfer_state = 13 
+		}
+		if = { 
+			limit = { 
+				any_country = {
+					OR = {
+						tag = DPR
+						is_in_faction_with = DPR
+					}
+					controls_state  = 376 
+				}
+			} 
+			transfer_state = 376  
+		}
+		####
 		if = { 
 			limit = { 
 				any_country = {
@@ -231,6 +261,11 @@ second_minsk_effect = {
 		transfer_state = 404
 		transfer_state = 408
 		transfer_state = 432
+		DKR = {
+			if = { limit = { 658 = { is_controlled_by = DKR }} transfer_state = 658 }
+			if = { limit = { 437 = { is_controlled_by = DKR }} transfer_state = 437 }
+			if = { limit = { 435 = { is_controlled_by = DKR }} transfer_state = 435 }
+		}
 	}
 	LPR = {
 		transfer_state = 387

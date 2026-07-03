@@ -64,5 +64,80 @@ focus_tree = {
 		}
 	}	
 
+	focus = {
+		id = NDR_military_tribunals
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.2
+		x = 1
+		y = 1
+
+		prerequisite = { focus = NDR_distribute_weapons }
+		relative_position_id = NDR_distribute_weapons
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = NDR_fight_looting
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.2
+		x = -1
+		y = 1
+
+		prerequisite = { focus = NDR_distribute_weapons }
+		relative_position_id = NDR_distribute_weapons
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = NDR_escape_from_slavyansk
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.2
+		x = 0
+		y = 3
+
+		prerequisite = { focus = NDR_military_tribunals }
+		prerequisite = { focus = NDR_fight_looting }
+		relative_position_id = NDR_capture_mvd
+
+		available = {
+			date > 2014.6.25
+			NOT = {
+				NDR = {
+					controls_state = 291
+				}
+			}
+		}
+
+		completion_reward = {
+			country_event = NDR.1
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				is_historical_focus_on = yes
+				date > 2014.7.2
+				add = 45
+			}
+		}
+
+
+
+	}	
+
 
 }

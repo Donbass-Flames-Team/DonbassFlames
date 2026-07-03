@@ -271,13 +271,13 @@ country_event = {
 	
 	option = {
 		name = DPR.15.a
-		annex_country = {
-            target = NDR
-            transfer_troops = yes
-        }
 		custom_effect_tooltip = DPR_Strelkov_in_DPR_tooltip
 	    hidden_effect = {
 			set_global_flag = Girkin_in_DPR
+			country_event = {
+				id = DPR.29
+				days = 11
+			}
 		}
 		
 	}
@@ -685,7 +685,7 @@ country_event = {
 	
 	option = {
 		name = DPR.29.a
-		
+		add_command_power = 5
 	}	
 }
 
@@ -748,9 +748,116 @@ country_event = {
 		hidden_effect = {
 			DKR = {
 				add_state_core = 657
-
+                declare_war_on = {
+					target = UKR
+					type = independence_wargoal
+				}
 			}
 			add_to_faction = DKR
 		}
+	}
+}
+
+#Казаки забирают часть макеевки
+country_event = {
+	id = DPR.32
+	title = DPR.32.t
+	desc = DPR.32.d
+	picture = GFX_Report_event_strelkov_event_2
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.32.a
+		add_stability = -0.01
+		add_political_power = -15
+		add_power_balance_value = {
+            id = DPR_centralization_bop
+            value = -0.05
+            tooltip_side = DPR_bandits_bop
+        }
+	}
+}
+
+#Казаки забирают межевой район
+country_event = {
+	id = DPR.33
+	title = DPR.33.t
+	desc = DPR.33.d
+	picture = GFX_Report_event_strelkov_event_2
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.33.a
+		add_stability = -0.01
+		add_political_power = -15
+		add_power_balance_value = {
+            id = DPR_centralization_bop
+            value = -0.05
+            tooltip_side = DPR_bandits_bop
+        }
+	}
+}
+
+#Казаки забирают харзыцк
+country_event = {
+	id = DPR.34
+	title = DPR.34.t
+	desc = DPR.34.d
+	picture = GFX_Report_event_strelkov_event_2
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.34.a
+		add_stability = -0.01
+		add_political_power = -15
+		add_power_balance_value = {
+            id = DPR_centralization_bop
+            value = -0.05
+            tooltip_side = DPR_bandits_bop
+        }
+	}
+}
+
+#Разоружение казаков
+country_event = {
+	id = DPR.35
+	title = DPR.35.t
+	desc = DPR.35.d
+	picture = GFX_Report_event_strelkov_event_2
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.35.a
+		add_stability = 0.025
+		add_political_power = 15
+		annex_country = {
+			target = DKR
+			transfer_troops = no
+		}
+		add_power_balance_value = {
+            id = DPR_centralization_bop
+            value = -0.05
+            tooltip_side = DPR_bandits_bop
+        }
 	}
 }
