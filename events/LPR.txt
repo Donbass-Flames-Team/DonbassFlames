@@ -33,6 +33,10 @@ country_event = {
                 character = valeryy_bolotov
                 ideology = autoritarian_democracy
             }
+			country_event = {
+				id = LPR.17
+				days = 88
+			}
 		}
 	}
 }
@@ -301,7 +305,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-option = {
+    option = {
 		name = LPR.16.a
 		add_political_power = 10
 		LPR = {
@@ -316,5 +320,58 @@ option = {
 				country_event = { id = russia.29 days = 1 }
 			}
 		}
+	}
+}
+
+#Плотницкий презик
+country_event = {
+	id = LPR.17
+	title = LPR.17.t
+	desc = LPR.17.d
+	#picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+    option = {
+		name = LPR.17.a
+		
+		add_country_leader_role = {
+        character = igor_polotnicky
+        promote_leader = yes
+            country_leader = {
+                ideology = autoritarian_democracy
+                expire = "2045.1.1.1"
+                traits = { 
+					# 
+				}
+            } 
+        }
+		remove_country_leader_role = {
+            character = valeryy_bolotov
+            ideology = autoritarian_democracy
+        }
+		hidden_effect = {
+			promote_character = {
+                character = igor_polotnicky
+                ideology = autoritarian_democracy
+            }
+		}		
+	}
+}
+
+#Казаки выходят из состава ЛНР
+country_event = {
+	id = LPR.18
+	title = LPR.18.t
+	desc = LPR.18.d
+	#picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+    option = {
+		name = LPR.18.a
+	
+        add_political_power = -35
+		add_stability = -0.035		
 	}
 }

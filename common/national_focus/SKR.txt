@@ -134,7 +134,7 @@ focus_tree = {
 		relative_position_id = SKR_expand_kazak_squads
 
 		available = {
-			date > 2014.11.1
+			date > 2014.9.1
 		}
 
 		x = 0
@@ -145,7 +145,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		
+			add_war_support = 0.025
+		    LPR = {
+				country_event = {
+					id = LPR.18
+					hours = 3
+				}
+			}
 		}
 	}
 

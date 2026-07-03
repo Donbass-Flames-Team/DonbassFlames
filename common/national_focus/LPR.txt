@@ -593,7 +593,8 @@ focus_tree = {
 		x = 12
 		y = 7
 		cost = 1
-		prerequisite = { focus = LPR_referendum }
+		prerequisite = { focus = LPR_The_situation_has_stabilized }
+		relative_position_id = LPR_start_solving_the_republics_problems
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
@@ -612,10 +613,11 @@ focus_tree = {
 	focus = {
 		id = LPR_social_tension
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 3
-		y = 8
+		x = -9
+		y = 1
 		cost = 0
 		prerequisite = { focus = LPR_start_solving_the_republics_problems }
+		relative_position_id = LPR_start_solving_the_republics_problems
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
@@ -636,10 +638,12 @@ focus_tree = {
 	focus = {
 		id = LPR_provide_assistance_to_those_in_need
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 3
-		y = 9
+		x = 0
+		y = 1
 		cost = 2
 		prerequisite = { focus = LPR_social_tension }
+		relative_position_id = LPR_social_tension
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
@@ -659,10 +663,12 @@ focus_tree = {
 	focus = {
 		id = LPR_Support_for_vulnerable_populations
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 2
-		y = 11
+		x = -1
+		y = 3
 		cost = 2
 		prerequisite = { focus = LPR_provide_assistance_to_those_in_need }
+        relative_position_id = LPR_social_tension
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
@@ -682,14 +688,13 @@ focus_tree = {
 	focus = {
 		id = LPR_establishing_new_workplaces
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 4
-		y = 11
+		x = 1
+		y = 3
 		cost = 4
 		prerequisite = { focus = LPR_provide_assistance_to_those_in_need }
+		relative_position_id = LPR_social_tension
+		
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		available = {
 			has_completed_focus = LPR_get_enterprises_back_online
@@ -711,14 +716,13 @@ focus_tree = {
 	focus = {
 		id = LPR_start_paying_pensions
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 2
-		y = 12
+		x = -1
+		y = 4
 		cost = 8
 		prerequisite = { focus = LPR_Support_for_vulnerable_populations }
+        relative_position_id = LPR_social_tension
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_start_paying_pensions"
@@ -736,14 +740,13 @@ focus_tree = {
 	focus = {
 		id = LPR_psychological_rehabilitation
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 4
-		y = 12
+		x = 1
+		y = 4
 		cost = 2
 		prerequisite = { focus = LPR_establishing_new_workplaces }
+       relative_position_id = LPR_social_tension
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_psychological_rehabilitation"
@@ -784,14 +787,14 @@ focus_tree = {
 	focus = {
 		id = LPR_economic_collapse
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 40
-		y = 8
+		x = 28
+		y = 1
 		cost = 0
 		prerequisite = { focus = LPR_start_solving_the_republics_problems }
+		relative_position_id = LPR_start_solving_the_republics_problems
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
+
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_economic_collapse"
@@ -808,14 +811,13 @@ focus_tree = {
 	focus = {
 		id = LPR_financial_system_issue
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 38
-		y = 10
+		x = -1
+		y = 1
 		cost = 0.4
 		prerequisite = { focus = LPR_economic_collapse }
+        relative_position_id = LPR_economic_collapse
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_financial_system_issue"
@@ -829,14 +831,13 @@ focus_tree = {
 	focus = {
 		id = LPR_restore_trade_links
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 36
-		y = 10
+		x = -3
+		y = 1
 		cost = 4
 		prerequisite = { focus = LPR_economic_collapse }
+        relative_position_id = LPR_economic_collapse
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_restore_trade_links"
@@ -852,10 +853,11 @@ focus_tree = {
 	focus = {
 		id = LPR_creating_a_banking_system
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 38
-		y = 11
+		x = 0
+		y = 1
 		cost = 5
 		prerequisite = { focus = LPR_financial_system_issue }
+		relative_position_id = LPR_financial_system_issue
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
@@ -875,14 +877,13 @@ focus_tree = {
 	focus = {
 		id = LPR_reviving_idle_factories
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 41
-		y = 10
+		x = 2
+		y = 1
 		cost = 4
 		prerequisite = { focus = LPR_economic_collapse }
+		relative_position_id = LPR_economic_collapse
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_reviving_idle_factories"
@@ -900,14 +901,13 @@ focus_tree = {
 	focus = {
 		id = LPR_agricultural_development
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 44
-		y = 10
+		x = 5
+		y = 1
 		cost = 6
 		prerequisite = { focus = LPR_economic_collapse }
+        relative_position_id = LPR_economic_collapse
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_agricultural_development"
@@ -925,14 +925,13 @@ focus_tree = {
 	focus = {
 		id = LPR_restore_supply_chains
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 41
-		y = 11
+		x = 0
+		y = 1
 		cost = 2
 		prerequisite = { focus = LPR_reviving_idle_factories }
+		relative_position_id = LPR_reviving_idle_factories
+		
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_restore_supply_chains"
@@ -950,14 +949,13 @@ focus_tree = {
 	focus = {
 		id = LPR_get_enterprises_back_online
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 41
-		y = 12
+		x = 0
+		y = 2
 		cost = 5
 		prerequisite = { focus = LPR_restore_supply_chains }
+		relative_position_id = LPR_reviving_idle_factories
+		
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_get_enterprises_back_online"
@@ -972,10 +970,11 @@ focus_tree = {
 	focus = {
 		id = LPR_restoring_other_tec
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 36
-		y = 11
+		x = 2
+		y = 1
 		cost = 8
 		prerequisite = { focus = LPR_start_restoring_power_supply }
+		relative_position_id = LPR_start_restoring_power_supply
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
@@ -995,14 +994,13 @@ focus_tree = {
 	focus = {
 		id = LPR_shattered_electric_power
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 34
-		y = 8
+		x = 22
+		y = 1
 		cost = 0
 		prerequisite = { focus = LPR_start_solving_the_republics_problems }
+		relative_position_id = LPR_start_solving_the_republics_problems
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_shattered_electric_power"
@@ -1019,14 +1017,13 @@ focus_tree = {
 	focus = {
 		id = LPR_start_restoring_power_supply
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 34
-		y = 10
+		x = 0
+		y = 1
 		cost = 5
 		prerequisite = { focus = LPR_shattered_electric_power }
+        relative_position_id = LPR_shattered_electric_power
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_start_restoring_power_supply"
@@ -1044,14 +1041,13 @@ focus_tree = {
 	focus = {
 		id = LPR_restore_luhansk_tec
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 34
-		y = 11
+		x = 0
+		y = 2
 		cost = 4
 		prerequisite = { focus = LPR_start_restoring_power_supply }
+        relative_position_id = LPR_start_restoring_power_supply
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_restore_luhansk_tec"
@@ -1067,16 +1063,35 @@ focus_tree = {
 	}
 
 	focus = {
-		id = LPR_connect_to_shchastynska_tec
+		id = LPR_convert_lugansk_thermal_power_plant_to_gas
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 34
-		y = 12
+		x = -2
+		y = 1
 		cost = 4
 		prerequisite = { focus = LPR_restore_luhansk_tec }
+        relative_position_id = LPR_restore_luhansk_tec
+		
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
+
+		completion_reward = {
+			
 		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_connect_to_shchastynska_tec
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = LPR_restore_luhansk_tec }
+        relative_position_id = LPR_restore_luhansk_tec
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_connect_to_shchastynska_tec"
@@ -1094,14 +1109,13 @@ focus_tree = {
 	focus = {
 		id = LPR_energy_independence_from_ukr
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 34
-		y = 13
+		x = 0
+		y = 1
 		cost = 10
 		prerequisite = { focus = LPR_connect_to_shchastynska_tec }
+        relative_position_id = LPR_connect_to_shchastynska_tec
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_energy_independence_from_ukr"
@@ -1116,14 +1130,13 @@ focus_tree = {
 	focus = {
 		id = LPR_humanitarian_catastrophe
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 28
-		y = 8
+		x = 16
+		y = 1
 		cost = 0
 		prerequisite = { focus = LPR_start_solving_the_republics_problems }
+		relative_position_id = LPR_start_solving_the_republics_problems
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_humanitarian_catastrophe"
@@ -1140,15 +1153,14 @@ focus_tree = {
 	focus = {
 		id = LPR_rapid_response_units
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 31
-		y = 9
+		x = 4
+		y = 1
 		cost = 2
 		prerequisite = { focus = LPR_shattered_electric_power }
 		prerequisite = { focus = LPR_humanitarian_catastrophe }
+        relative_position_id = LPR_humanitarian_catastrophe
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_rapid_response_units"
@@ -1163,14 +1175,13 @@ focus_tree = {
 	focus = {
 		id = LPR_restoration_of_social_infrastructure
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 30
-		y = 10
+		x = 2
+		y = 1
 		cost = 5
 		prerequisite = { focus = LPR_humanitarian_catastrophe }
+		relative_position_id = LPR_humanitarian_catastrophe
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_restoration_of_social_infrastructure"
@@ -1185,14 +1196,13 @@ focus_tree = {
 	focus = {
 		id = LPR_supplying_social_facilities
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 29
-		y = 11
+		x = -1
+		y = 1
 		cost = 4
 		prerequisite = { focus = LPR_restoration_of_social_infrastructure }
+		relative_position_id = LPR_restoration_of_social_infrastructure
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_supplying_social_facilities"
@@ -1207,14 +1217,13 @@ focus_tree = {
 	focus = {
 		id = LPR_support_for_displaced_persons
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 31
-		y = 11
+		x = 1
+		y = 1
 		cost = 2
 		prerequisite = { focus = LPR_restoration_of_social_infrastructure }
+		relative_position_id = LPR_restoration_of_social_infrastructure
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_support_for_displaced_persons"
@@ -1232,14 +1241,13 @@ focus_tree = {
 	focus = {
 		id = LPR_humanitarian_aid
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 26
-		y = 10
+		x = -2
+		y = 1
 		cost = 3
 		prerequisite = { focus = LPR_humanitarian_catastrophe }
+        relative_position_id = LPR_humanitarian_catastrophe
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_humanitarian_aid"
@@ -1255,14 +1263,13 @@ focus_tree = {
 	focus = {
 		id = LPR_engaging_international_aid
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 27
-		y = 11
+		x = 1
+		y = 1
 		cost = 5
 		prerequisite = { focus = LPR_humanitarian_aid }
+		relative_position_id = LPR_humanitarian_aid
+		
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_engaging_international_aid"
@@ -1277,14 +1284,13 @@ focus_tree = {
 	focus = {
 		id = LPR_aid_from_russia
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 25
-		y = 11
+		x = -1
+		y = 1
 		cost = 10
 		prerequisite = { focus = LPR_humanitarian_aid }
+        relative_position_id = LPR_humanitarian_aid
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_aid_from_russia"
@@ -1302,14 +1308,13 @@ focus_tree = {
 	focus = {
 		id = LPR_accept_aid_from_private_funds
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 28
-		y = 12
+		x = 2
+		y = 2
 		cost = 5
 		prerequisite = { focus = LPR_engaging_international_aid }
+		relative_position_id = LPR_humanitarian_aid
+		
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_accept_aid_from_private_funds"
@@ -1324,15 +1329,14 @@ focus_tree = {
 	focus = {
 		id = LPR_fair_aid_distribution
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 26
-		y = 13
+		x = 0
+		y = 2
 		cost = 10
 		prerequisite = { focus = LPR_engaging_international_aid }
 		prerequisite = { focus = LPR_aid_from_russia }
+		relative_position_id = LPR_humanitarian_aid
+		
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_fair_aid_distribution"
@@ -1353,18 +1357,34 @@ focus_tree = {
 		prerequisite = { focus = LPR_start_solving_the_republics_problems }
 		relative_position_id = LPR_start_solving_the_republics_problems
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		allow_branch = {
-			has_country_flag = LPR_referendum_passed
-		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_info_war_and_propaganda"
+			
 		}
 
 		ai_will_do = {
 			base = 1
 		}
 	}
+
+	focus = {
+		id = LPR_fight_with_traitors
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = LPR_disarm_illegal_formations }
+		relative_position_id = LPR_disarm_illegal_formations
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}	
 
 
 	focus = {
