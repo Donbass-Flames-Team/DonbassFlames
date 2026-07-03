@@ -17,7 +17,8 @@ RUS_rush_in_crimea_2014 = {
 		type = front_control
 		tag = CRI
 		ordertype = front
-		execution_type = rush
+		execution_type = rush_weak
+		execute_order = yes	
 		manual_attack = yes
 	}
 
@@ -71,4 +72,9 @@ RUS_support_dpr_and_lpr = {
 		id = DPR
 		value = 450
 	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = LPR
+		value = 350
+	}	
 }

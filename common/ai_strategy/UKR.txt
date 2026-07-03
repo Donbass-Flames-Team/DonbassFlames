@@ -23,7 +23,7 @@ UKR_ato_is_going = {
 
 	ai_strategy = {
 		type = garrison
-		value = -5000
+		value = -500
 	}
 	
 	ai_strategy = {
@@ -53,6 +53,7 @@ UKR_ato_is_going = {
 		ordertype = front
 		execution_type = careful
 		manual_attack = yes
+		execute_order = yes	
 	}
 
 	ai_strategy = {
@@ -61,6 +62,7 @@ UKR_ato_is_going = {
 		ordertype = front
 		execution_type = careful
 		manual_attack = yes
+		execute_order = yes	
 	}
 
 	ai_strategy = {
@@ -69,6 +71,7 @@ UKR_ato_is_going = {
 		ordertype = front
 		execution_type = careful
 		manual_attack = yes
+		execute_order = yes	
 	}
 
 	ai_strategy = {
@@ -77,6 +80,7 @@ UKR_ato_is_going = {
 		ordertype = front
 		execution_type = careful
 		manual_attack = yes
+		execute_order = yes	
 	}
 }
 
@@ -180,30 +184,13 @@ UKR_counteroffensive_in_kramatorsk_slavyansk = {
 	ai_strategy = {
 		type = front_control
 		state = 291
-		ratio = 0.1
-		priority = 500
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
-	}
-
-	ai_strategy = {
-		type = front_control
 		state = 318
-		ratio = 0.1
-		priority = 400
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
-	}
-
-	ai_strategy = {
-		type = front_control
 		state = 327
 		ratio = 0.1
-		priority = 400
+		priority = 750
 		ordertype = front
-		execution_type = rush
+		execution_type = rush_weak
+		execute_order = yes	
 		manual_attack = yes
 	}
 
@@ -211,14 +198,35 @@ UKR_counteroffensive_in_kramatorsk_slavyansk = {
 		type = front_control
 		tag = NDR
 		ordertype = front
-		execution_type = rush
+		execution_type = rush_weak
 		manual_attack = yes
+		execute_order = yes	
 	}
 
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
-		value = 8
+		value = 2
 		id = 291
+	}
+}
+
+UKR_TMR_hold_the_border = {
+	allowed = {
+		original_tag = UKR
+	}
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		has_war_with = TMR
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = TMR
+		value = 10
 	}
 }
 

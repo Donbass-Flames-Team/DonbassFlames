@@ -16,10 +16,11 @@ LPR_first_phase_Of_ato = {
 	ai_strategy = {
 		type = front_control
 		tag = UKR
-		priority = 500
+		priority = 750
 		ordertype = front
 		execution_type = balanced
 		manual_attack = yes
+		execute_order = yes	
 	}
 
 	ai_strategy = {

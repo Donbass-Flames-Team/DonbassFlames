@@ -142,7 +142,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1980 }
+			position = { x = 0 y = @1990 }
 		}
 		
 		categories = {
@@ -188,7 +188,7 @@ technologies = {
 		start_year = 1990
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1990 }
+			position = { x = 0 y = @2000 }
 		}
 		
 		categories = {
@@ -234,7 +234,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @2000 }
+			position = { x = 0 y = @2010 }
 		}
 		
 		categories = {
@@ -280,7 +280,7 @@ technologies = {
 		start_year = 2010
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @2010 }
+			position = { x = 0 y = @2015 }
 		}
 		
 		categories = {
@@ -326,7 +326,7 @@ technologies = {
 		start_year = 2015
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @2015 }
+			position = { x = 0 y = @2020 }
 		}
 		
 		categories = {
@@ -367,7 +367,7 @@ technologies = {
 		start_year = 2020
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @2020 }
+			position = { x = 0 y = @2025 }
 		}
 		
 		categories = {
@@ -458,7 +458,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1980 }
+			position = { x = 0 y = @1990 }
 		}
 		
 		categories = {
@@ -497,7 +497,7 @@ technologies = {
 		start_year = 1990
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1990 }
+			position = { x = 0 y = @2015 }
 		}
 		
 		categories = {
@@ -536,7 +536,7 @@ technologies = {
 		start_year = 2000
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @2000 }
+			position = { x = 0 y = @2025 }
 		}
 		
 		categories = {
@@ -548,40 +548,6 @@ technologies = {
 		}
 	}
 
-	uniform_equipment5 = {
-
-		enable_equipments = {
-			uniform_equipment_5
-			bulletproof_vests_equipment_5
-		}
-
-		category_light_infantry = {
-			defense = 0.05
-		}
-
-		category_cavalry = {
-			defense = 0.05
-		}
-
-		category_vehicle_infantry = {
-			defense = 0.05
-		}
-
-		research_cost = 1.5
-		start_year = 2010
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @2010 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	civil_drones = {
 
@@ -747,108 +713,6 @@ technologies = {
 		}
 	}
 
-	atgl_weapons_4 = {
-
-		enable_equipments = {
-			grenade_launcher_equipment_4
-		}
-
-		path = {
-			leads_to_tech = atgl_weapons_5
-			research_cost_coeff = 1
-		}	
-
-		research_cost = 1.5
-		start_year = 2000
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @2000 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	atgl_weapons_5 = {
-
-		enable_equipments = {
-			grenade_launcher_equipment_5
-		}
-
-		path = {
-			leads_to_tech = atgl_weapons_6
-			research_cost_coeff = 1
-		}	
-
-		research_cost = 1.5
-		start_year = 2010
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @2010 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	atgl_weapons_6 = {
-
-		enable_equipments = {
-			grenade_launcher_equipment_6
-		}
-
-		path = {
-			leads_to_tech = atgl_weapons_7
-			research_cost_coeff = 1
-		}	
-
-		research_cost = 1.5
-		start_year = 2015
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @2015 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	atgl_weapons_7 = {
-
-		enable_equipments = {
-			grenade_launcher_equipment_7
-		}
-
-		research_cost = 1.5
-		start_year = 2020
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @2020 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	atgm_weapons = {
 

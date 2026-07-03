@@ -102,6 +102,10 @@ country_event = {
 				432 = { set_demilitarized_zone = no }
 				set_country_flag = DPR_change_of_governments
 				activate_mission = DPR_change_of_leadership_in_dpr
+				country_event = {
+					id = DPR.31
+					days = 30
+				}
 			}
 			DPR = {
 				load_oob = Donetsk_Uprising_Militia

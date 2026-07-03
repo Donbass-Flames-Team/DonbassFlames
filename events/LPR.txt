@@ -28,6 +28,12 @@ country_event = {
             character = gennady_tsipkalov
             ideology = autoritarian_democracy
         }
+		hidden_effect = {
+			promote_character = {
+                character = valeryy_bolotov
+                ideology = autoritarian_democracy
+            }
+		}
 	}
 }
 

@@ -22,6 +22,20 @@ country_event = {
 		add_stability = 0.05
 		add_war_support = 0.05
 		load_oob = DPR_russian_regulars_in_illovaysk
+		RUS = {
+			give_military_access = DPR
+		}
+		hidden_effect = {
+			444 = {
+				add_dynamic_modifier = { modifier = russian_fire_support_idea scope = DPR days = 15 }
+			}
+			448 = {
+				add_dynamic_modifier = { modifier = russian_fire_support_idea scope = DPR days = 15 }
+			}
+			652 = {
+				add_dynamic_modifier = { modifier = russian_fire_support_idea scope = DPR days = 15 }
+			}				
+		}				
 	}
 }
 
@@ -711,4 +725,32 @@ country_event = {
             }
 		}
 	}	
+}
+
+#сафоненко требует автономию
+country_event = {
+	id = DPR.31
+	title = DPR.31.t
+	desc = DPR.31.d
+	picture = GFX_Report_event_strelkov_event_2
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.31.a
+		657 = {
+            transfer_state_to = DKR
+		}
+		hidden_effect = {
+			DKR = {
+				add_state_core = 657
+
+			}
+			add_to_faction = DKR
+		}
+	}
 }
