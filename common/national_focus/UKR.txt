@@ -210,6 +210,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.025
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 5
+			}
 		}
 	}
 
@@ -234,6 +238,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.025
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 5
+			}
 		}
 	}
 
@@ -258,6 +266,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.025
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 5
+			}
 		}
 	}
 
@@ -282,6 +294,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.025
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 5
+			}
 		}
 	}
 
@@ -314,7 +330,7 @@ focus_tree = {
 	focus = {
 		id = UKR_mobilization_of_titushek
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.5
 		x = -1
 		y = 1
 
@@ -333,13 +349,14 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.025
 			add_political_power = 35
+			unlock_decision_tooltip = UKR_import_of_prorussian_protesters
 		}
 	}
 
 	focus = {
 		id = UKR_ensuring_impunity
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.5
 		x = -1
 		y = 2
 
@@ -358,6 +375,35 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.025
 			add_political_power = 35
+			hidden_effect = {
+				add_to_variable = {
+                    var = UKR_radicalisation_of_proeuropeans_value
+                    value = 2
+                }
+			    add_to_variable = {
+                    var = UKR_radicalisation_of_nationalists_value
+                    value = 2
+                }
+			    add_to_variable = {
+                    var = UKR_radicalisation_of_prorussians_value
+                    value = 2
+                }				
+			    clamp_variable = {
+				    var = UKR_radicalisation_of_proeuropeans_value
+				    min = 0
+				    max = 100
+			    }
+			    clamp_variable = {
+				    var = UKR_radicalisation_of_nationalists_value
+				    min = 0
+				    max = 100
+			    }
+				clamp_variable = {
+				    var = UKR_radicalisation_of_prorussians_value
+				    min = 0
+				    max = 100
+			    }
+			}
 		}
 	}
 
@@ -383,6 +429,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.025
 			add_political_power = 35
+			unlock_decision_tooltip = UKR_discrediting_the_opposition_in_the_media
 		}
 	}
 
@@ -803,7 +850,7 @@ focus_tree = {
 	focus = {
 		id = UKR_liqudation_of_opposition
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 1.5
 		x = -1
 		y = 2
 
@@ -818,7 +865,7 @@ focus_tree = {
 				    has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
-			always = no
+			
 		}
 
 		completion_reward = {
@@ -826,7 +873,35 @@ focus_tree = {
 				mission = UKR_yanukovich_overthrow
 				days = 5
 			}
-			add_stability = 0.025
+			add_stability = -0.085
+			hidden_effect = {
+				add_to_variable = {
+                    var = UKR_radicalisation_of_proeuropeans_value
+                    value = 1
+                }
+			    add_to_variable = {
+                    var = UKR_radicalisation_of_nationalists_value
+                    value = 6
+                }
+			    clamp_variable = {
+				    var = UKR_radicalisation_of_proeuropeans_value
+				    min = 0
+				    max = 100
+			    }
+			    clamp_variable = {
+				    var = UKR_radicalisation_of_nationalists_value
+				    min = 0
+				    max = 100
+			    }
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				is_historical_focus_on = no
+				add = 15
+			}
 		}
 	}
 
@@ -837,8 +912,7 @@ focus_tree = {
 		x = -1
 		y = 4
 
-		prerequisite = { focus = UKR_researching_for_compromise }
-		prerequisite = { focus = UKR_negotiations_have_reached_an_impasse focus = UKR_a_step_towards_the_protesters }
+		prerequisite = { focus = UKR_negotiations_have_reached_an_impasse focus = UKR_a_step_towards_the_protesters  focus = UKR_liqudation_of_opposition }
 		relative_position_id = UKR_emergency_measures
 
 		available = {
@@ -1041,7 +1115,18 @@ focus_tree = {
 				mission = UKR_yanukovich_overthrow
 				days = 5
 			}
-			add_stability = 0.025
+			add_stability = 0.05
+			hidden_effect = {
+				add_to_variable = {
+                    var = UKR_radicalisation_of_prorussians_value
+                    value = 2
+                }
+				clamp_variable = {
+				    var = UKR_radicalisation_of_prorussians_value
+				    min = 0
+				    max = 100
+			    }
+			}
 		}
 	}
 
@@ -1067,6 +1152,17 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.025
+			hidden_effect = {
+				add_to_variable = {
+                    var = UKR_radicalisation_of_prorussians_value
+                    value = 2
+                }
+				clamp_variable = {
+				    var = UKR_radicalisation_of_prorussians_value
+				    min = 0
+				    max = 100
+			    }
+			}
 		}
 	}
 
@@ -1092,7 +1188,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.025
+			add_stability = 0.035
 		}
 	}
 
@@ -1118,7 +1214,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.025
+			add_political_power = 35
+			add_stability = 0.015
 		}
 	}
 
@@ -1144,6 +1241,17 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.025
+			hidden_effect = {
+				add_to_variable = {
+                    var = UKR_radicalisation_of_prorussians_value
+                    value = 2
+                }
+				clamp_variable = {
+				    var = UKR_radicalisation_of_prorussians_value
+				    min = 0
+				    max = 100
+			    }
+			}
 		}
 	}
 
@@ -1168,7 +1276,22 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.025
+			add_stability = 0.015
+			hidden_effect = {
+				news_event = {
+					id = news_events.37
+					hours = 3
+				}
+				add_to_variable = {
+                    var = UKR_radicalisation_of_prorussians_value
+                    value = 2
+                }
+				clamp_variable = {
+				    var = UKR_radicalisation_of_prorussians_value
+				    min = 0
+				    max = 100
+			    }
+			}
 		}
 	}
 	
@@ -3221,6 +3344,51 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_minsk_protocols
+		icon = GFX_goal_no_focus_UKR
+		cost = 0.5
+		x = 10
+		y = 1
+
+		prerequisite = { focus = UKR_new_foreign_policy }
+		relative_position_id = UKR_new_foreign_policy
+
+		available = {
+            
+		}
+
+		allow_branch = {
+			OR = {
+				has_global_flag = Minsk1_is_signed
+				has_global_flag = Minsk2_is_signed
+			}
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = UKR_law_on_special_status_of_donbass
+		icon = GFX_goal_no_focus_UKR
+		cost = 0.5
+		x = 10
+		y = 2
+
+		prerequisite = { focus = UKR_minsk_protocols }
+		relative_position_id = UKR_new_foreign_policy
+
+		available = {
+            
+		}
+
+		completion_reward = {
+            
+		}
+	}	
+
+	focus = {
 		id = UKR_stop_cooperation_with_russia
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
@@ -3605,7 +3773,7 @@ focus_tree = {
 		id = UKR_snap_presidential_elections
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 40
+		x = 44
 		y = 0
 
 		available = {
@@ -4916,7 +5084,7 @@ focus_tree = {
 		id = UKR_military_reforms_afu
 		icon = GFX_focus_UKR_afu_reforms
 		cost = 3
-		x = 77
+		x = 82
 		y = 0
 
 
@@ -6508,6 +6676,10 @@ focus_tree = {
 
 		completion_reward = {
             custom_effect_tooltip = UKR_started_partial_mobilization_tt
+			swap_ideas = {
+                remove_idea = volunteer_only
+                add_idea = limited_conscription
+            }
 			hidden_effect = {
 				news_event = {
 					id = news_events.19

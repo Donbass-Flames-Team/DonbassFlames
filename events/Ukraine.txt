@@ -106,6 +106,10 @@ country_event = {
 					id = DPR.31
 					days = 30
 				}
+				country_event = {
+					id = DPR.36
+					days = 4
+				}
 			}
 			DPR = {
 				load_oob = Donetsk_Uprising_Militia
@@ -5182,6 +5186,90 @@ country_event = {
 	option = {
 		name = ukraine.143.a
 		add_to_variable = { cash = 2.8 }
+	}
+}
+
+# Взрыв в здание кабмина (Янукович 200)
+country_event = {
+	id = ukraine.144
+	title = ukraine.144.t
+	desc  = ukraine.144.d
+	picture = GFX_Report_event_ukr_cabinet_of_ministers_in_fire_picture
+
+	is_triggered_only = yes
+
+	trigger = {
+        tag = UKR
+		has_completed_focus = UKR_liqudation_of_opposition
+        check_variable = {
+            var = UKR_radicalisation_of_nationalists_value
+            value = 90
+            compare = greater_than_or_equals
+        }
+    }
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.145
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.144.a
+		add_stability = -0.15
+		retire_country_leader = yes
+		create_country_leader = {
+			name = verkhovna_rada_of_ukraine
+			desc = verkhovna_rada_of_ukraine_desc
+			ideology = autoritarian_democracy
+			picture = gfx/leaders/UKR/UKR_anarchy.dds
+			traits = {}
+		}
+		add_days_mission_timeout = {
+			mission = UKR_yanukovich_overthrow
+			days = 5
+		}
+	}
+}
+
+# Людмила янукович становится президентом
+country_event = {
+	id = ukraine.145
+	title = ukraine.145.t
+	desc  = ukraine.145.d
+	picture = GFX_Report_event_ukr_cabinet_of_ministers_in_fire_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = ukraine.145.a
+		retire_country_leader = yes
+		add_country_leader_role = {
+        character = UKR_lyudmila_yanukovich
+        promote_leader = yes
+            country_leader = {
+                ideology = autoritarian_democracy
+                expire = "2045.1.1.1"
+                traits = { 
+					#
+				}
+            } 
+        }
+		hidden_effect = {
+			promote_character = {
+                character = UKR_lyudmila_yanukovich
+                ideology = autoritarian_democracy
+            }
+		}		
 	}
 }
 

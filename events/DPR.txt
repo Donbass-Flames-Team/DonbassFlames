@@ -861,3 +861,22 @@ country_event = {
         }
 	}
 }
+
+#Переговоры с юлией тимошенко 
+country_event = {
+	id = DPR.36
+	title = DPR.36.t
+	desc = DPR.36.d
+	picture = GFX_Report_event_timoshenko_leave_jail_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = DPR.36.a
+		
+	}
+}

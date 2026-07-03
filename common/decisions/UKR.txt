@@ -1235,7 +1235,11 @@ UKR_maidan_decision = {
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 0
+			modifier = {
+				is_historical_focus_on = no
+				add = 25
+			}
 		}
 	}
 
@@ -1265,7 +1269,11 @@ UKR_maidan_decision = {
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 		}
 		ai_will_do = {
-			factor = 75
+			factor = 0
+			modifier = {
+				is_historical_focus_on = no
+				add = 25
+			}
 		}
 	}
 
@@ -1274,6 +1282,9 @@ UKR_maidan_decision = {
 			original_tag = UKR
 		}
 		icon = GFX_decision_UKR_maidan_zavoz
+		visible = {
+			has_completed_focus = UKR_mobilization_of_titushek
+		}
 
 		fire_only_once = no
 		days_re_enable = 60
@@ -1290,9 +1301,81 @@ UKR_maidan_decision = {
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 		}
 		ai_will_do = {
-			factor = 75
+			factor = 0
+			modifier = {
+				is_historical_focus_on = no
+				add = 25
+			}
 		}
 	}
+
+	UKR_discrediting_the_opposition_in_the_media = {
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			has_completed_focus = UKR_deligitization_of_opposition
+		}
+		icon = GFX_decision_UKR_maidan_zavoz
+
+		fire_only_once = no
+		days_re_enable = 60
+		cost = 35
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 2
+			}
+			add_to_variable = {
+				var = UKR_radicalisation_of_proeuropeans_value
+				value = 2
+			}
+			add_to_variable = {
+				var = UKR_radicalisation_of_nationalists_value
+				value = 3
+			}
+			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				is_historical_focus_on = no
+				add = 25
+			}
+		}
+	}
+	
+	UKR_information_company_against_nationalists = {
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			has_completed_focus = UKR_deligitization_of_opposition
+		}
+		icon = GFX_decision_UKR_maidan_zavoz
+
+		fire_only_once = no
+		days_re_enable = 15
+		cost = 25
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = UKR_yanukovich_overthrow
+				days = 2
+			}
+			add_to_variable = {
+				var = UKR_radicalisation_of_nationalists_value
+				value = 5
+			}
+			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
+		}
+		ai_will_do = {
+			factor = -15
+			modifier = {
+				is_historical_focus_on = no
+				add = 25
+			}
+		}
+	}	
 
 	UKR_weekly_radicalisation_value = {
 		icon = GFX_decision_UKR_maidan_radicalisation

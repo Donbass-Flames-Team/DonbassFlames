@@ -10,11 +10,27 @@ characters = {
 		country_leader={
 			desc = "UKR_victor_yanukovich_desc"
 			ideology = autoritarian_democracy
-			traits = { df_russophile df_authoritarian_tendencies df_yanukovich }
+			traits = { df_russophile df_authoritarian_tendencies }
 			expire="2060.1.1.1"
 			id=-1
 		}
 	}
+
+	UKR_lyudmila_yanukovich = {
+		name = lyudmila_yanukovich
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Lyudmila_yanukovich"
+			}
+		}
+		country_leader={
+			desc = "UKR_lyudmila_yanukovich_desc"
+			ideology = autoritarian_democracy
+			traits = { df_russophile df_authoritarian_tendencies df_revenge_for_her_husband }
+			expire="2060.1.1.1"
+			id=-1
+		}
+	}	
 
 
 	UKR_mykhaylo_dobkin = {
@@ -44,7 +60,7 @@ characters = {
 		country_leader={
 			desc = "UKR_victor_medvechuk_desc"
 			ideology = autoritarian_democracy
-			traits = { df_russophile }
+			traits = { df_russophile df_oligarch }
 			expire="2060.1.1.1"
 			id=-1
 		}

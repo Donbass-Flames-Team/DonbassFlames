@@ -47,6 +47,11 @@ texturefile = "gfx/event_pictures/news_events/dpr_captured_debaltsevo.png"
 }
 
 spriteType = {
+name = "GFX_news_event_lpr_independet_proclaimed"
+texturefile = "gfx/event_pictures/news_events/lpr_independet_proclaimed.png"
+}
+
+spriteType = {
 name = "GFX_news_event_dpr_creation"
 texturefile = "gfx/event_pictures/news_events/dpr_creation.png"
 }
@@ -192,7 +197,10 @@ name = "GFX_Report_event_gunter_smile_picture"
 texturefile = "gfx/event_pictures/Report_event_gunter_smile_picture.png"
 }
 
-
+spriteType = {
+name = "GFX_Report_event_ukr_cabinet_of_ministers_in_fire_picture"
+texturefile = "gfx/event_pictures/Report_event_ukr_cabinet_of_ministers_in_fire.png"
+}
 
 
 

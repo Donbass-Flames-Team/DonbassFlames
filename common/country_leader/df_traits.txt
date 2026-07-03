@@ -41,6 +41,15 @@ leader_traits = {
 		}
 	}
 
+	df_revenge_for_her_husband = {
+		random = no
+		sprite = 13
+
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+
 	df_oligarch = {
 		random = no
 		sprite = 13

@@ -394,11 +394,11 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_republic_of_bolotov"
-									set_country_flag = LPR_politics
-						add_ideas = LPR_republic_of_bolotov
-						country_event = {
-							id = LPR.2
-						}
+			set_country_flag = LPR_politics
+			add_ideas = LPR_republic_of_bolotov
+			country_event = {
+				id = LPR.2
+			}
 		}
 
 		ai_will_do = {
@@ -574,6 +574,12 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_referendum"
 			set_country_flag = LPR_referendum_passed
+			hidden_effect = {
+				news_event = {
+					id = news_events.42
+					hours = 12
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -1339,12 +1345,36 @@ focus_tree = {
 	}
 
 	focus = {
-		id = LPR_info_war_and_propaganda
+		id = LPR_disarm_illegal_formations
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 10
-		y = 8
+		x = 5
+		y = 1
 		cost = 0
 		prerequisite = { focus = LPR_start_solving_the_republics_problems }
+		relative_position_id = LPR_start_solving_the_republics_problems
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		allow_branch = {
+			has_country_flag = LPR_referendum_passed
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_info_war_and_propaganda"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+
+	focus = {
+		id = LPR_info_war_and_propaganda
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = -2
+		y = 1
+		cost = 0
+		prerequisite = { focus = LPR_start_solving_the_republics_problems }
+		relative_position_id = LPR_start_solving_the_republics_problems
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
@@ -1366,10 +1396,11 @@ focus_tree = {
 	focus = {
 		id = LPR_creating_own_media
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 10
-		y = 9
+		x = -2
+		y = 2
 		cost = 4
 		prerequisite = { focus = LPR_info_war_and_propaganda }
+		relative_position_id = LPR_start_solving_the_republics_problems
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
@@ -1395,10 +1426,11 @@ focus_tree = {
 	focus = {
 		id = LPR_disconnect_from_ukrainian_media
 		icon = generic_political_pressure
-		x = 10
-		y = 10
+		x = -2
+		y = 3
 		cost = 2
 		prerequisite = { focus = LPR_creating_own_media }
+		relative_position_id = LPR_start_solving_the_republics_problems
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
@@ -1424,10 +1456,11 @@ focus_tree = {
 	focus = {
 		id = LPR_public_engagement
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 9
-		y = 11
+		x = -3
+		y = 4
 		cost = 5
 		prerequisite = { focus = LPR_disconnect_from_ukrainian_media }
+		relative_position_id = LPR_start_solving_the_republics_problems
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
@@ -1448,10 +1481,11 @@ focus_tree = {
 	focus = {
 		id = LPR_invite_international_reporters
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 11
-		y = 11
+		x = -1
+		y = 4
 		cost = 8
 		prerequisite = { focus = LPR_disconnect_from_ukrainian_media }
+		relative_position_id = LPR_start_solving_the_republics_problems
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
 			has_country_flag = LPR_referendum_passed
