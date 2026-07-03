@@ -520,3 +520,22 @@ country_event = {
 		white_peace = CRI
 	}	
 }
+
+#Жириновский крут, отдал машинку лнр
+country_event = {
+	id = russia.29
+	title = russia.29.t
+	desc = russia.29.d
+	#picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.29.a
+		add_popularity = {
+			ideology = Nationalism
+			popularity = 0.015
+		}
+		add_war_support = 0.025
+	}
+}
