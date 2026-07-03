@@ -5273,6 +5273,40 @@ country_event = {
 	}
 }
 
+# Захват здания сбу 7 апреля 2014 луганск
+country_event = {
+	id = ukraine.146
+	title = ukraine.146.t
+	desc  = ukraine.146.d
+	picture = GFX_Report_event_the_seizure_of_sbu_building_luhansk_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = ukraine.146.a
+		add_stability = -0.01
+		custom_effect_tooltip = UKR_protesters_will_receive_more_than_500_firearms_tt
+		hidden_effect = {
+			340 = {
+			    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 65 }
+		    }
+			363 = {
+			    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 65 }
+		    }
+			362 = {
+			    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 65 }
+		    }
+		}		
+	}
+}
+
+
 # Выборы 2019 скоро
 country_event = {
 	id = ukr_elections_2019.1

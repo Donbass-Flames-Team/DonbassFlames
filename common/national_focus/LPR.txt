@@ -9,7 +9,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 2500 y = 500 }
+	continuous_focus_position = { x = 4500 y = 1500 }
 
 	focus = {
 		id = LPR_capture_SBU
@@ -495,7 +495,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 1
 		y = 1
-		cost = 0.3
+		cost = 1
 		relative_position_id = LPR_Introduction_of_a_state_emergency
 		prerequisite = { focus = LPR_Introduction_of_a_state_emergency }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -511,6 +511,70 @@ focus_tree = {
 			base = 1
 		}
 	}
+
+	focus = {
+		id = LPR_strengthen_mobilization
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 0
+		y = 2
+		cost = 2
+		relative_position_id = LPR_Introduction_of_a_state_emergency
+		prerequisite = { focus = LPR_experts_from_russia_in_government }
+		prerequisite = { focus = LPR_seek_recognition }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LPR_Introduction_of_a_state_emergency"
+			add_ideas = LPR_introduction_of_a_state_of_emergency
+			add_political_power = 20
+			add_stability = 0.035
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = LPR_republic_of_plotnicky
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 0
+		y = 3
+		cost = 2
+		relative_position_id = LPR_Introduction_of_a_state_emergency
+		prerequisite = { focus = LPR_strengthen_mobilization }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 20
+			add_stability = 0.035
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+	focus = {
+		id = LPR_elections_2014
+		icon = GFX_focus_UKR_The_regime_is_under_threat
+		x = 0
+		y = 4
+		cost = 2
+		relative_position_id = LPR_Introduction_of_a_state_emergency
+		prerequisite = { focus = LPR_republic_of_plotnicky }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 20
+			add_stability = 0.035
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}	
+
 
 	focus = {
 		id = LPR_experts_from_russia_in_government
@@ -568,7 +632,7 @@ focus_tree = {
 	focus = {
 		id = LPR_start_solving_the_republics_problems
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 12
+		x = 0
 		y = 1
 		cost = 1
 		prerequisite = { focus = LPR_The_situation_has_stabilized }
@@ -740,7 +804,7 @@ focus_tree = {
 	focus = {
 		id = LPR_The_situation_has_stabilized
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 21
+		x = 26
 		y = 0
 		cost = 2
 		search_filters = { FOCUS_FILTER_POLITICAL }
