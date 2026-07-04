@@ -142,7 +142,7 @@ counter_offensive_ukraine_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
 DPR_donetsk_castle_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
 	enable = { always = yes }
 
-	icon = GFX_idea_UKR_ukraine_army
+	icon = GFX_idea_donetsk_castle_idea
 
 	army_org_factor = 0.15
 	army_org_regain = 0.075
@@ -195,7 +195,7 @@ LPR_luhansk_castle_dynamic_idea = { #DYNAMIC MODIFIER ON STATE
 prorussian_rallies_region_idea = { #DYNAMIC MODIFIER ON STATE
 	enable = { always = yes }
 
-	icon = GFX_idea_UKR_ukraine_army
+	icon = GFX_idea_prorussian_rallies_idea
 
 	army_speed_factor = -0.95
 	army_org_factor = -0.35
