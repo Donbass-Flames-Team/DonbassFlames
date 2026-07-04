@@ -1090,6 +1090,10 @@ focus_tree = {
 						days = 14
 					}
 				}
+				news_event = {
+					id = news_events.43
+					days = 2
+				}
 			
 			}
 		}
@@ -1513,6 +1517,12 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+			hidden_effect = {
+				news_event = {
+					id = news_events.44
+					hours = 5
+				}
+			}
 		}
 	}
 
