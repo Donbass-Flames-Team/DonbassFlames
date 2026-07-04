@@ -9,6 +9,8 @@ state = {
 	resources = { coal = 21 } 
 	history = { 
 		owner = UKR 
+
+		add_dynamic_modifier = { modifier = donbass_state_idea }
 		
 		victory_points = { 9980 10 }
 		victory_points = { 10964 3 }

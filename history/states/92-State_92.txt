@@ -7,10 +7,12 @@ state = {
 	buildings_max_level_factor = 2 
 	history = { 
 		owner = UKR 
-		
-		victory_points = { 12978 5 }
-		victory_points = { 12993 5 }
-		victory_points = { 13037 5 }
+
+		add_dynamic_modifier = { modifier = chernobyl_state_idea }
+
+		victory_points = { 12978 2 }
+		victory_points = { 12993 2 }
+		victory_points = { 13037 2 }
 		
 		buildings = { 
 			social_infrastructure = 0 

@@ -12,6 +12,11 @@ spriteType = {
 }
 
 spriteType = {
+    name = "GFX_news_event_Parade_of_prisoners_of_war_in_Donetsk"
+    texturefile = "gfx/event_pictures/news_events/Parade_of_prisoners_of_war_in_Donetsk.png"
+}
+
+spriteType = {
     name = "GFX_news_event_russia_is_introducing_troops"
     texturefile = "gfx/event_pictures/news_events/russia_is_introducing_troops.png"
 }
@@ -19,6 +24,11 @@ spriteType = {
 spriteType = {
     name = "GFX_news_event_creation_of_eaeu"
     texturefile = "gfx/event_pictures/news_events/creation_of_eaeu.png"
+}
+
+spriteType = {
+    name = "GFX_news_event_ukr_independent_parade"
+    texturefile = "gfx/event_pictures/news_events/ukr_independent_parade.png"
 }
 
 spriteType = {
@@ -272,35 +282,40 @@ texturefile = "gfx/event_pictures/Report_event_coronavirus_picture.png"
 }
 
 
-spriteType = {
-name = "GFX_Report_event_promaidan_rally_24_november_2013_picture"
-texturefile = "gfx/event_pictures/Report_event_promaidan_rally_24_november_2013_picture.png"
-}
+    spriteType = {
+        name = "GFX_Report_event_promaidan_rally_24_november_2013_picture"
+        texturefile = "gfx/event_pictures/Report_event_promaidan_rally_24_november_2013_picture.png"
+    }
 
-spriteType = {
-name = "GFX_Report_event_formation_of_right_sector"
-texturefile = "gfx/event_pictures/Report_event_Right_Sector_Formation_picture.png"
-}
+    spriteType = {
+        name = "GFX_Report_event_formation_of_right_sector"
+        texturefile = "gfx/event_pictures/Report_event_Right_Sector_Formation_picture.png"
+    }
 
-spriteType = {
-name = "GFX_Report_event_maidan_11_december_2013_rally_picture"
-texturefile = "gfx/event_pictures/Report_event_maidan_11_december_2013_rally_picture.png"
-}
+    spriteType = {
+        name = "GFX_Report_event_maidan_11_december_2013_rally_picture"
+        texturefile = "gfx/event_pictures/Report_event_maidan_11_december_2013_rally_picture.png"
+    }
 
-spriteType = {
-name = "GFX_Report_event_dobrobati_ukraine_picture"
-texturefile = "gfx/event_pictures/Report_event_dobrobati_ukraine_picture.png"
-}
+    spriteType = {
+        name = "GFX_Report_event_dobrobati_ukraine_picture"
+        texturefile = "gfx/event_pictures/Report_event_dobrobati_ukraine_picture.png"
+    }
 
-spriteType = {
-name = "GFX_Report_event_2may_picture"
-texturefile = "gfx/event_pictures/Report_event_2may_picture.png"
-}
+    spriteType = {
+        name = "GFX_Report_event_2may_picture"
+        texturefile = "gfx/event_pictures/Report_event_2may_picture.png"
+    }
 
-spriteType = {
-name = "GFX_Report_event_arest_morguna_picture"
-texturefile = "gfx/event_pictures/Report_event_arest_morguna_picture.png"
-}
+    spriteType = {
+        name = "GFX_Report_event_ukraine_independent_parade_picture"
+        texturefile = "gfx/event_pictures/Report_event_ukraine_independent_parade_picture.png"
+    }
+
+    spriteType = {
+        name = "GFX_Report_event_arest_morguna_picture"
+        texturefile = "gfx/event_pictures/Report_event_arest_morguna_picture.png"
+    }
 
 spriteType = {
 name = "GFX_Report_event_poroshenko_inauguration_picture"

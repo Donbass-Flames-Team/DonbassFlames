@@ -237,7 +237,6 @@ focus_tree = {
 			add_to_variable = {
 				JAM_ammo_stockpile = 35000
 			}
-
 		}
 	}
 
@@ -261,6 +260,7 @@ focus_tree = {
 
 		completion_reward = {
             load_oob = Donetsk_people_Millitia
+			add_ideas = DPR_people_militia_of_donbass
 		}
 	}
 
@@ -297,7 +297,7 @@ focus_tree = {
 		id = DPR_armed_forces_of_dpr
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.5
-		x = -7
+		x = -8
 		y = 5
 
 		prerequisite = {focus = DPR_create_a_people_militia_of_the_dpr}
@@ -336,7 +336,7 @@ focus_tree = {
 		id = DPR_batallion_disel
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.5
-		x = -2
+		x = -1
 		y = 1
 
 		prerequisite = {focus = DPR_armed_forces_of_dpr}
@@ -359,7 +359,7 @@ focus_tree = {
 		id = DPR_batallion_sparta
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.5
-		x = 0
+		x = 1
 		y = 1
 
 		prerequisite = {focus = DPR_armed_forces_of_dpr}
@@ -393,7 +393,7 @@ focus_tree = {
 		id = DPR_batallion_somali
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.5
-		x = 2
+		x = 3
 		y = 1
 
 		prerequisite = {focus = DPR_armed_forces_of_dpr}
@@ -416,7 +416,7 @@ focus_tree = {
 		id = DPR_batallion_oplot
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.5
-		x = -4
+		x = -3
 		y = 1
 
 		prerequisite = {focus = DPR_armed_forces_of_dpr}
@@ -474,6 +474,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			remove_ideas = DPR_people_militia_of_donbass
 			hidden_effect = {
 				load_oob = DPR_first_army_corp_of_people_millitia
 			}

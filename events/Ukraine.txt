@@ -5317,9 +5317,48 @@ country_event = {
 
 	option = {
 		name = ukraine.147.a
-		add_political_power = -25
-		add_stability = -0.05
+		add_political_power = -5
 	}
+}
+
+#Вопрос проведения парада
+country_event = {
+	id = ukraine.148
+	title = ukraine.148.t
+	desc = ukraine.148.d
+    picture = GFX_Report_event_ukraine_independent_parade_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = UKR_parade_question_event_fired
+		}
+	}
+
+	option = {
+		name = ukraine.148.a
+		add_stability = 0.02
+		add_war_support = 0.015
+		add_political_power = -35
+		hidden_effect = {
+			news_event = {
+				id = news_events.45
+				hours = 2
+			}
+			DPR = {
+				country_event = {
+					id = DPR.40
+					hours = 3
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.148.b
+		add_political_power = 25
+	}	
 }
 
 # Выборы 2019 скоро

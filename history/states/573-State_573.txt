@@ -7,6 +7,13 @@ state = {
 	buildings_max_level_factor = 2 
 	history = { 
 		owner = UKR 
+
+		add_dynamic_modifier = { modifier = donbass_state_idea }
+
+		strategic_province_location = {
+			defensive_chokepoint = 18333
+		}
+
 		
 		victory_points = { 9978 10 }
 		victory_points = { 18333 3 }

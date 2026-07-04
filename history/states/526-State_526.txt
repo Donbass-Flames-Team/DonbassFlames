@@ -12,6 +12,12 @@ state = {
 	} 
 	history = { 
 		owner = UKR 
+
+		add_dynamic_modifier = { modifier = donbass_state_idea }
+
+		strategic_province_location = {
+			defensive_chokepoint = 18211
+		}
 		
 		victory_points = { 5816 5 }
 		victory_points = { 5830 5 }

@@ -48,6 +48,18 @@ UKR_ato_is_going = {
 	}
 
 	ai_strategy = {
+		type = front_unit_request
+		tag = OPR
+		value = 2
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = KPR
+		value = 4
+	}	
+
+	ai_strategy = {
 		type = front_control
 		tag = SDR
 		ordertype = front
@@ -82,6 +94,8 @@ UKR_ato_is_going = {
 		manual_attack = yes
 		execute_order = yes	
 	}
+
+
 }
 
 UKR_second_phase_of_ato = {

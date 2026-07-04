@@ -144,7 +144,7 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_idea_DPR_arrise_donbass_idea"
-        texturefile = "gfx/interface/ideas/DPR/DPR_russian_spring.dds"
+        texturefile = "gfx/interface/ideas/DPR/DPR_arrise_donbass.dds"
     }
 
     spriteType = {
@@ -163,8 +163,13 @@ spriteTypes = {
     }
 
     spriteType = {
-    name = "GFX_idea_DPR_roadblock_idea"
-    texturefile = "gfx/interface/ideas/DPR/DPR_roadblocks.dds"
+        name = "GFX_idea_DPR_roadblock_idea"
+        texturefile = "gfx/interface/ideas/DPR/DPR_roadblocks.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_DPR_people_militia_of_donbass"
+        texturefile = "gfx/interface/ideas/DPR/DPR_people_militia_of_donbass.dds"
     }
 
     # LPR Ideas
@@ -256,4 +261,19 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/DRP/DRP_forge_of_the_dobrobats.dds"
     }    
 
+
+    spriteType = {
+        name = "GFX_idea_Radiation_icon"
+        texturefile = "gfx/interface/ideas/Radiation_icon.dds"
+    } 
+
+    spriteType = {
+        name = "GFX_idea_russian_fire_support_idea"
+        texturefile = "gfx/interface/ideas/russian_fire_support_idea.dds"
+    }  
+    
+    spriteType = {
+        name = "GFX_idea_donbass_state_idea"
+        texturefile = "gfx/interface/ideas/donbass_state_idea.dds"
+    }   
 }

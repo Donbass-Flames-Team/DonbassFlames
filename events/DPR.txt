@@ -312,9 +312,11 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			country_event = {
-				id = ukraine.96
-				hours  = 5
+			UKR = {
+                country_event = {
+				    id = ukraine.96
+				    hours  = 5
+			    }   
 			}
 		}
 	}
@@ -324,6 +326,15 @@ country_event = {
 		activate_mission = DPR_capture_debaltsevo
 		hidden_effect = {
 			set_country_flag = Debaltsevo_battle
+			378 = {
+				add_dynamic_modifier = { modifier = russian_fire_support_idea scope = DPR days = 8 }
+			}
+			13 = {
+				add_dynamic_modifier = { modifier = russian_fire_support_idea scope = DPR days = 8 }
+			}	
+			376 = {
+				add_dynamic_modifier = { modifier = russian_fire_support_idea scope = DPR days = 8 }
+			}					
 		}
 	}
 }
@@ -910,7 +921,7 @@ country_event = {
 		name = DPR.38.a
 		add_stability = -0.04
 		add_political_power = -15
-                add_command_power = -5
+        add_command_power = -5
 	}
 }
 
@@ -928,6 +939,28 @@ country_event = {
 		add_stability = -0.03
 		add_war_support = 0.02
 		add_political_power = -10
-                add_command_power = -10
+        add_command_power = -10
 	}
 }
+
+# Парад военнопленных
+country_event = {
+	id = DPR.40
+	title = DPR.40.t
+	desc = DPR.40.d
+	#picture = GFX_Report_event_battles_on_grushevsky_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = DPR.40.a
+		add_war_support = 0.02
+		hidden_effect = {
+			news_event = {
+				id = news_events.46
+				hours = 2
+			}
+		}
+	}
+}
+

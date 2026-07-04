@@ -28,6 +28,21 @@ on_actions = {
 						has_global_flag = Ukraine_victory_in_ATO
 						has_global_flag = People_republic_victory
 						has_global_flag = ATO_Separatists_victory
+						has_country_flag =  UKR_parade_question_event_fired
+						date > 2014.9.15
+					}
+				    tag = UKR
+				    date = 2014.8.23
+			    }
+			    country_event = { id = ukraine.148 }
+		    }			
+		    if = {
+			    limit = {
+				    has_global_flag = Start_Of_ATO
+					NOT = {
+						has_global_flag = Ukraine_victory_in_ATO
+						has_global_flag = People_republic_victory
+						has_global_flag = ATO_Separatists_victory
                         has_country_flag =  UKR_civilian_vehicle_attacked_2015_fired
 					    513 = {
 						    is_controlled_by = UKR

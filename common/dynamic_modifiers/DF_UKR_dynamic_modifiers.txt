@@ -207,11 +207,33 @@ prorussian_rallies_region_idea = { #DYNAMIC MODIFIER ON STATE
 russian_fire_support_idea = { #DYNAMIC MODIFIER ON STATE
 	enable = { always = yes }
 
-	icon = GFX_idea_UKR_ukraine_army
+	icon = GFX_idea_russian_fire_support_idea
 
 	army_speed_factor = 0.15
 	army_org_factor = 0.15
 	army_attack_factor = 0.2
 	army_org_regain = 0.075
 	army_morale_factor = 0.05
+}
+
+donbass_state_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_donbass_state_idea
+
+	army_speed_factor = -0.25
+	army_attack_factor = -0.05
+}
+
+chernobyl_state_idea = { #DYNAMIC MODIFIER ON STATE
+	enable = { always = yes }
+
+	icon = GFX_idea_Radiation_icon
+
+	army_speed_factor = -0.25
+	army_org_factor = -0.15
+	army_attack_factor = -0.15
+	army_morale_factor = -0.10
+	army_org_regain = -0.10
+	monthly_population = -0.25
 }
