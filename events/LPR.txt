@@ -375,3 +375,25 @@ country_event = {
 		add_stability = -0.035		
 	}
 }
+
+country_event = {
+	id = LPR.19
+	title = LPR.19.t
+	desc = LPR.19.d
+	#picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = LPR.19.a
+		add_stability = -0.05             
+		add_war_support = 0.15           # ну тип сплоченность против врага, ес кто то не поймет
+		add_manpower = 2500              # +2.5 тысячи добровольцев
+		
+		hidden_effect = {
+			UKR = {
+				country_event = { id = ukraine.147 days = 1 }
+			}
+		}
+	}
+}

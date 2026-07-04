@@ -880,3 +880,54 @@ country_event = {
 		
 	}
 }
+
+# Митинг в Стаханове (21 сентября 2014)
+country_event = {
+	id = DPR.37
+	title = DPR.37.t
+	desc = DPR.37.d
+	#picture = GFX_Report_event_battles_on_grushevsky_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = DPR.37.a
+		add_stability = -0.05
+		add_political_power = -20
+	}
+}
+
+# Митинг в Антраците (23 сентября 2014)
+country_event = {
+	id = DPR.38
+	title = DPR.38.t
+	desc = DPR.38.d
+	#picture = GFX_Report_event_battles_on_grushevsky_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = DPR.38.a
+		add_stability = -0.04
+		add_political_power = -15
+                add_command_power = -5
+	}
+}
+
+# Протесты в Макеевке (3 ноября 2014)
+country_event = {
+	id = DPR.39
+	title = DPR.39.t
+	desc = DPR.39.d
+	#picture = GFX_Report_event_battles_on_grushevsky_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = DPR.39.a
+		add_stability = -0.03
+		add_war_support = 0.02
+		add_political_power = -10
+                add_command_power = -10
+	}
+}

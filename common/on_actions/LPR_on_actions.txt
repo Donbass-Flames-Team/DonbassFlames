@@ -28,6 +28,19 @@ on_actions = {
 				}
 				set_global_flag = lpr_zhirinovsky_event_fired
 			}
+
+			if = {
+				limit = {
+					date > 2014.06.01
+					date < 2014.06.03
+					LPR = { exists = yes }
+					NOT = { has_global_flag = lpr_oga_strike_fired }
+				}
+				LPR = {
+					country_event = { id = LPR.19 }
+				}
+				set_global_flag = lpr_oga_strike_fired
+			}
 			
 		}
 	}

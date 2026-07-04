@@ -5306,6 +5306,21 @@ country_event = {
 	}
 }
 
+#Удар по ОГА ЛНР, и последствия от этого
+country_event = {
+	id = ukraine.147
+	title = ukraine.147.t
+	desc = ukraine.147.d
+        picture = GFX_Report_event_2may_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ukraine.147.a
+		add_political_power = -25
+		add_stability = -0.05
+	}
+}
 
 # Выборы 2019 скоро
 country_event = {

@@ -90,7 +90,55 @@ on_actions = {
 				}
 				set_global_flag = ANNEX_ODESSA_REBELS
 			}
+
+			if = {
+				limit = {
+					date > 2014.09.20
+					date < 2014.09.22
+					DPR = { 
+						exists = yes 
+						controls_province = 15241
+					}
+					NOT = { has_global_flag = dpr_stakhanov_protest_fired }
+				}
+				DPR = {
+					country_event = { id = DPR.37 }
+				}
+				set_global_flag = dpr_stakhanov_protest_fired
+			}
+
+			if = {
+				limit = {
+					date > 2014.09.22
+					date < 2014.09.24
+					DPR = { 
+						exists = yes 
+						controls_province = 15631
+					}
+					NOT = { has_global_flag = dpr_antratsit_protest_fired }
+				}
+				DPR = {
+					country_event = { id = DPR.38 }
+				}
+				set_global_flag = dpr_antratsit_protest_fired
+			}
+
+			if = {
+				limit = {
+					date > 2014.11.02
+					date < 2014.11.04
+					DPR = { 
+						exists = yes 
+						controls_province = 15707
+					}
+					NOT = { has_global_flag = dpr_makeevka_protest_fired }
+				}
+				DPR = {
+					country_event = { id = DPR.39 }
+				}
+				set_global_flag = dpr_makeevka_protest_fired
+			}
+			
 		}
 	}
 }
-
