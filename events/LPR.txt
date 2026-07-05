@@ -376,6 +376,7 @@ country_event = {
 	}
 }
 
+# обстрел луганской ОГА
 country_event = {
 	id = LPR.19
 	title = LPR.19.t
@@ -386,9 +387,9 @@ country_event = {
 
 	option = {
 		name = LPR.19.a
-		add_stability = -0.05             
-		add_war_support = 0.15           # ну тип сплоченность против врага, ес кто то не поймет
-		add_manpower = 2500              # +2.5 тысячи добровольцев
+		add_stability = -0.03            
+		add_war_support = 0.03           # ну тип сплоченность против врага, ес кто то не поймет
+		add_manpower = 25              # +25 добровольцев
 		
 		hidden_effect = {
 			UKR = {
