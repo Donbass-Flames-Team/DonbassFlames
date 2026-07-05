@@ -82,22 +82,14 @@ set_variable = { consumer_activity = 38 }
 		communism = 17
 		autoritarian_democracy = 15
 	}
-	
-    create_country_leader = {
-	    name = igor_strelkov_girkin
-	    desc = "STRELKOV_GIRKIN_DESC"
-	    picture = GFX_portrait_igor_strelkov_girkin
-	    expire = "2035.1.1"
-	    ideology = autoritarian_democracy
-	    traits = {
-			#
-	    }
-    }
+
+	recruit_character = vyacheslav_ponomarev
+
 
 
 	add_equipment_to_stockpile = {
 		type = train_equipment_1
-		amount = 6
+		amount = 1
 		producer = NDR
 	}
 }
