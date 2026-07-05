@@ -95,3 +95,34 @@ country_event = {
 		}
 	}
 }
+
+# Арест понамарева
+country_event = {
+	id = NDR.4
+	title = NDR.4.t
+	desc = NDR.4.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+	
+	option = {
+		name = NDR.4.a
+		retire_country_leader = yes
+		create_country_leader = {
+	        name = igor_strelkov_girkin
+	        desc = "STRELKOV_GIRKIN_DESC"
+	        picture = GFX_portrait_igor_strelkov_girkin
+	        expire = "2035.1.1"
+	        ideology = autoritarian_democracy
+	        traits = {
+			    #
+	        }
+        }
+	}
+}

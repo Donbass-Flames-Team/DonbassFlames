@@ -1489,6 +1489,26 @@ UKR_depreservation_decision = {
 		}
 	}
 
+	UKR_depreservation_of_shells = {
+		allowed = {
+			original_tag = UKR
+		}
+		icon = GFX_decision_icon_of_Tank
+
+		fire_only_once = no
+		days_re_enable = 60
+		days_remove = 5
+		cost = 25
+		complete_effect = {
+			add_to_variable = {
+				JAM_ammo_stockpile = 1000
+			}			
+		}
+		ai_will_do = {
+			factor = 75
+		}
+	}
+
 	UKR_depreservation_of_ifvs = {
 		allowed = {
 			original_tag = UKR
@@ -1527,11 +1547,11 @@ UKR_depreservation_decision = {
 		complete_effect = {
 			add_equipment_to_stockpile = { 
 				type = apc_chassis_1
-				amount = 215 
+				amount = 115 
 			}
 			add_equipment_to_stockpile = { 
 				type = apc_chassis_2
-				amount = 55 
+				amount = 25 
 			}
 		}
 		ai_will_do = {
@@ -3002,6 +3022,28 @@ UKR_ATO_decision = {
 					} 
 				}
 			}
+			random_list = {
+				14 = {
+					add_to_variable = {
+				        JAM_ammo_stockpile = 25
+			        }
+				}
+				5 = {
+					add_to_variable = {
+				        JAM_ammo_stockpile = 45
+			        }
+				}
+				10 = {
+					add_to_variable = {
+				        JAM_ammo_stockpile = 65
+			        }
+				}
+				3 = {
+					add_to_variable = {
+				        JAM_ammo_stockpile = 95
+			        } 
+				}
+			}			
 		}
 
 		complete_effect = {

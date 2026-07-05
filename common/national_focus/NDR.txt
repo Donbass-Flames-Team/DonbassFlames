@@ -26,22 +26,6 @@ focus_tree = {
 			add_stability = 0.05
 			add_political_power = 35
 			add_command_power = 10
-			set_state_controller = 291
-            set_state_controller = 327
-
-			hidden_effect = {
-				add_timed_idea = {
-					idea = NDR_hold_slavyansk_idea
-					days = 68
-				}
-				set_country_flag = DPR_first_phase_of_ato
-				add_state_core = 291
-				add_state_core = 327
-				add_state_core = 337
-                add_state_core = 359
-				add_state_core = 342
-				add_state_core = 347
-			}
 		}
 	}
 
@@ -61,6 +45,22 @@ focus_tree = {
 
 		completion_reward = {
 			load_oob = NDR_slavyansk_millitia
+			set_state_controller = 291
+            set_state_controller = 327
+
+			hidden_effect = {
+				add_timed_idea = {
+					idea = NDR_hold_slavyansk_idea
+					days = 68
+				}
+				set_country_flag = DPR_first_phase_of_ato
+				add_state_core = 291
+				add_state_core = 327
+				add_state_core = 337
+                add_state_core = 359
+				add_state_core = 342
+				add_state_core = 347
+			}
 		}
 	}	
 
@@ -103,14 +103,37 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NDR_escape_from_slavyansk
+		id = NDR_arrest_ponomarev
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.2
+		cost = 2
 		x = 0
 		y = 3
 
 		prerequisite = { focus = NDR_military_tribunals }
 		prerequisite = { focus = NDR_fight_looting }
+		relative_position_id = NDR_capture_mvd
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			country_event = NDR.4
+		}
+
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	focus = {
+		id = NDR_escape_from_slavyansk
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.2
+		x = 0
+		y = 4
+
+		prerequisite = { focus = NDR_arrest_ponomarev }
 		relative_position_id = NDR_capture_mvd
 
 		available = {
@@ -134,9 +157,6 @@ focus_tree = {
 				add = 45
 			}
 		}
-
-
-
 	}	
 
 

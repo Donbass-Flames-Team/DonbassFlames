@@ -289,6 +289,12 @@ country_event = {
 				id = news_events.17
 				hours = 6
 			}
+			UKR = {
+				set_portraits = {
+                    character = UKR_petro_poroshenko
+                    civilian = { large ="GFX_portrait_petro_poroshenko_2" }
+                }
+			}
 		}
 	}
 }

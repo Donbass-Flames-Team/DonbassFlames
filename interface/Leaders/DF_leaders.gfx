@@ -108,6 +108,11 @@ spriteTypes = {
 		texturefile = "gfx/leaders/DPR/Motorola.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_vyacheslav_ponomarev"
+		texturefile = "gfx/leaders/DPR/Vyacheslav_Ponomarev.dds"
+	}
+	
 	# DRP leaders
 	
 	spriteType = {
@@ -253,6 +258,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_portrait_petro_poroshenko_2"
+		texturefile = "gfx/leaders/UKR/Petro_Poroshenko_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_petro_poroshenko_millitary"
+		texturefile = "gfx/leaders/UKR/Petro_Poroshenko_millitary.dds"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_Turchinov"
 		texturefile = "gfx/leaders/UKR/Turchinov.dds"
 	}
@@ -281,6 +296,7 @@ spriteTypes = {
 		name = "GFX_portrait_darth_alekseeovich_vader"
 		texturefile = "gfx/leaders/UKR/darth_alekseeovich_vader.dds"
 	}
+
 	
 	# Ukraine Generals
 	spriteType = {

@@ -2137,6 +2137,12 @@ country_event = {
 				id = news_events.18
 				hours = 6
 			}
+			UKR = {
+			    set_portraits = {
+                    character = UKR_petro_poroshenko
+                    civilian = { large ="GFX_portrait_petro_poroshenko_millitary" }
+                }
+			}
 		}
 	}
 }
@@ -5032,7 +5038,12 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		
+		hidden_effect = {
+			country_event = {
+				id = ukraine.151
+				days = 248
+			}
+		}
 	}
 
 	option = {
@@ -5420,6 +5431,40 @@ country_event = {
 
 	option = {
 		name = ukraine.150.a
+	
+	}
+}
+
+#Расформирование торнадо
+country_event = {
+	id = ukraine.151
+	title = ukraine.151.t
+	desc = ukraine.151.d
+    picture = GFX_Report_event_battalion_tornado_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			
+			SKR = {
+				transfer_state = 659
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				load_oob = SKR_uprising_millitia
+				add_state_core = 406
+				add_state_core = 427
+				add_state_core = 387
+				add_state_core = 416
+				add_state_core = 413
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.151.a
 	
 	}
 }
