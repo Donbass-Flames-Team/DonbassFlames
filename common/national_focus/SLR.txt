@@ -1,0 +1,68 @@
+focus_tree = {
+	id = SKR
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = SLR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2500 y = 500 }
+
+	focus = {
+		id = SLR_go_to_lisichansk
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.2
+		x = 12
+		y = 0
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			set_province_controller = 15026
+			add_state_core = 307
+			416 = {
+		        teleport_armies = {
+                    to_state = 307
+					limit = {
+                        tag = SLR
+                    }
+                }
+	        }
+		}
+	}
+
+
+	focus = {
+		id = SLR_retreat_to_alcheevsk
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.2
+		x = 12
+		y = 1
+
+		prerequisite = { focus = SLR_go_to_lisichansk }
+
+		available = {
+			date > 2014.7.20
+		}
+
+		completion_reward = {
+			transfer_state = 370
+			add_state_core = 370
+			307 = {
+		        teleport_armies = {
+                    to_state = 370
+					limit = {
+                        tag = SLR
+                    }
+                }
+	        }
+		}
+	}
+
+
+
+}

@@ -218,12 +218,19 @@ country_event = {
 
 	immediate = { 
 		hidden_effect = {
+			country_event = {
+				id =  ukraine.150
+				days = 3
+			}
+			country_event = {
+				id =  ukraine.149
+				days = 5
+			}
 			news_event = {
 				id = news_events.3
 				hours = 6
 			}
 			340 = { transfer_state_to = LPR }
-            416 = { transfer_state_to = SKR }
 			LPR = {
 				add_state_core = 339
 				add_state_core = 340
@@ -255,28 +262,7 @@ country_event = {
                 }
 				load_oob = Luhansk_Uprising_Militia
 			}
-			SKR = {
-				declare_war_on = {
-                    target = UKR
-                    type = annex_everything
-                }
-				load_oob = SKR_uprising_millitia
-				add_state_core = 416
-				add_state_core = 387
-				add_state_core = 413
-			}
-			304 = { transfer_state_to = SLR }
-			SLR = {
-				declare_war_on = {
-                    target = UKR
-                    type = annex_everything
-                }
-				load_oob = SLR_Uprising_Militia
-				add_state_core = 304
-				add_state_core = 307
-				add_state_core = 297
-				add_state_core = 305
-			}			
+			
 		if = {
 			limit = {
 				check_variable = {
@@ -5302,6 +5288,18 @@ country_event = {
 			362 = {
 			    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 65 }
 		    }
+			307 = {
+			    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 85 }
+		    }	
+			304 = {
+			    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 85 }
+		    }
+			297 = {
+			    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 85 }
+		    }	
+			305 = {
+			    add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 85 }
+		    }										
 		}		
 	}
 }
@@ -5311,7 +5309,7 @@ country_event = {
 	id = ukraine.147
 	title = ukraine.147.t
 	desc = ukraine.147.d
-        picture = GFX_Report_event_2may_picture
+    picture = GFX_Report_event_2may_picture
 
 	is_triggered_only = yes
 
@@ -5359,6 +5357,71 @@ country_event = {
 		name = ukraine.148.b
 		add_political_power = 25
 	}	
+}
+
+#Захват Антрацита
+country_event = {
+	id = ukraine.149
+	title = ukraine.149.t
+	desc = ukraine.149.d
+    picture = GFX_Report_event_2may_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			416 = { transfer_state_to = SLR }
+		    SLR = {
+			    declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+			    load_oob = SLR_Uprising_Militia
+			    add_state_core = 416
+			    add_state_core = 387
+			    add_state_core = 413
+			    add_state_core = 305
+		    }
+		}
+	}
+
+	option = {
+		name = ukraine.149.a
+	}
+}
+
+#Казаки переходят границу
+country_event = {
+	id = ukraine.150
+	title = ukraine.150.t
+	desc = ukraine.150.d
+    picture = GFX_Report_event_2may_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			
+			SKR = {
+				transfer_state = 659
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				load_oob = SKR_uprising_millitia
+				add_state_core = 406
+				add_state_core = 427
+				add_state_core = 387
+				add_state_core = 416
+				add_state_core = 413
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.150.a
+	
+	}
 }
 
 # Выборы 2019 скоро

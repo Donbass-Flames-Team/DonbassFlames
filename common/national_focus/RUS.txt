@@ -875,7 +875,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			country_event = russia.30
 			DPR = {
 				country_event = russia.9
 			}
@@ -888,6 +888,7 @@ focus_tree = {
 			LPR = {
 				country_event = russia.9
 			}
+
 			hidden_effect = {
 				DPR = {
 					country_event = {
@@ -900,13 +901,59 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_form_an_orchestra
+		icon = GFX_goal_no_focus_RUS
+		cost = 0.5
+		x = 0
+		y = 5
+
+		prerequisite = { focus = RUS_volunteers_on_donbass }
+		relative_position_id = RUS_russian_spring_in_the_east
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			633 = { transfer_state_to = WGN }
+		    633 = { add_core_of = WGN }
+
+			hidden_effect = {
+				DPR = {
+					country_event = {
+						id = DPR.12
+						days = 57
+					}
+				}
+				if = {
+				    limit = {
+					    has_game_rule = {
+						    rule = streamer_mode
+						    option = STREAMER_ON
+					    }
+				    }
+                    WGN = {
+				        set_portraits = {
+					        character = WGN_dmitry_utkin
+					        civilian = { large = "gfx/leaders/WGN/WGN_dmitry_utkin_streamer.dds" }
+				        }
+			        } 
+			    }
+			}
+		}
+	}	
+
+	focus = {
 		id = RUS_ammunition_supply
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
 		x = 2
-		y = 5
+		y = 6
 
-		prerequisite = { focus = RUS_volunteers_on_donbass }
+		prerequisite = { focus = RUS_form_an_orchestra }
 		relative_position_id = RUS_russian_spring_in_the_east
 		
 		ai_will_do = {
@@ -927,9 +974,9 @@ focus_tree = {
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
 		x = 0
-		y = 5
+		y = 6
 
-		prerequisite = { focus = RUS_volunteers_on_donbass }
+		prerequisite = { focus = RUS_form_an_orchestra }
 		relative_position_id = RUS_russian_spring_in_the_east
 		
 		ai_will_do = {
@@ -950,9 +997,9 @@ focus_tree = {
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
 		x = -2
-		y = 5
+		y = 6
 
-		prerequisite = { focus = RUS_volunteers_on_donbass }
+		prerequisite = { focus = RUS_form_an_orchestra }
 		relative_position_id = RUS_russian_spring_in_the_east
 		
 		ai_will_do = {
@@ -977,7 +1024,7 @@ focus_tree = {
 		icon = GFX_goal_no_focus_RUS
 		cost = 2
 		x = -2
-		y = 6
+		y = 7
 
 		prerequisite = { focus = RUS_arms_supply }
 		relative_position_id = RUS_russian_spring_in_the_east
@@ -1008,7 +1055,7 @@ focus_tree = {
 		icon = GFX_goal_no_focus_RUS
 		cost = 2
 		x = 0
-		y = 6
+		y = 7
 
 		prerequisite = { focus = RUS_machinery_supply }
 		prerequisite = { focus = RUS_arms_supply }

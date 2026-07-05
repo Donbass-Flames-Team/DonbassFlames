@@ -68,7 +68,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Hirnycho-pikhotnyy batalʹyon"
+	name = "Hirnycho-pikhotnyy batal'yon"
 	regiments = {
         mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -141,6 +141,28 @@ division_template = {
 	regiments = {
         special_forces_infantry = { x = 0 y = 0 }
 		special_forces_infantry = { x = 0 y = 1 }
+		special_forces_infantry = { x = 0 y = 2 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
+division_template = {
+	name = "Batal'yon okhorony HSH"
+	regiments = {
+        apc_unit = { x = 0 y = 0 }
+		apc_unit = { x = 0 y = 1 }
 		special_forces_infantry = { x = 0 y = 2 }
 	}
     support = {

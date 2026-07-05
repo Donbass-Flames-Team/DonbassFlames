@@ -103,9 +103,8 @@ country_event = {
     }
 
     trigger = {
-        has_completed_focus = LPR_preparing_for_may_11
-        has_completed_focus = LPR_full_mobilization
-        has_completed_focus = LPR_peoples_court_of_novorossiya
+        has_completed_focus = LPR_peoples_druzhina
+		has_completed_focus = LPR_resource_mobilization
     }
 
     option = {
@@ -396,5 +395,50 @@ country_event = {
 				country_event = { id = ukraine.147 days = 1 }
 			}
 		}
+	}
+}
+
+# убийство мозгового
+country_event = {
+	id = LPR.20
+	title = LPR.20.t
+	desc = LPR.20.d
+	#picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = LPR.20.a
+		add_political_power = 35
+	}
+}
+
+# убийство дремова
+country_event = {
+	id = LPR.21
+	title = LPR.21.t
+	desc = LPR.21.d
+	#picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = LPR.21.a
+		add_political_power = 35
+	}
+}
+
+# ивент мир с мозговым (6 мая 2014)
+country_event = {
+	id = LPR.22
+	title = LPR.22.t
+	desc = LPR.22.d
+	#picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = LPR.22.a
+		add_political_power = 35
 	}
 }

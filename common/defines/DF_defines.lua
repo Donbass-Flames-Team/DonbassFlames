@@ -80,3 +80,16 @@ NDefines.NMilitary.ATTRITION_WHILE_MOVING_FACTOR = 1				-- Attrition multiplier 
 NDefines.NMilitary.ATTRITION_WHILE_MOVING_FACTOR = 0.2				-- attrition multiplier while moving & doing missions
 
 NDefines.REGIMENTAL_SUPPORT_REQUIRED_BATTALIONS = { 1 }
+
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 60		-- Each level of airbase building multiplied by this gives capacity (max operational value). Value is int. 1 for each airplane.
+NDefines.NMilitary.AIR_SUPPORT_BASE = 0.15
+NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 400 
+NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 400 
+NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 400 
+NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 200 
+NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 300
+
+NDefines.NAI.PLAN_ATTACK_MIN_ORG_FACTOR_LOW = 0.85		-- Minimum org % for a unit to actively attack an enemy unit when executing a plan
+NDefines.NAI.PLAN_ATTACK_MIN_STRENGTH_FACTOR_LOW = 0.4	-- Minimum strength for a unit to actively attack an enemy unit when executing a plan
+NDefines.NAI.PLAN_ATTACK_MIN_ORG_FACTOR_MED = 0.7		-- (LOWMEDHIGH) corresponds to the plan execution agressiveness level.
+NDefines.NAI.PLAN_ATTACK_MIN_STRENGTH_FACTOR_MED = 0.35 -- (LOW,MED,HIGH) corresponds to the plan execution agressiveness level.

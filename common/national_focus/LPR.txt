@@ -47,6 +47,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
+			country_event = LPR.22
 		}
 
 		ai_will_do = {
@@ -502,7 +503,6 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_Introduction_of_a_state_emergency"
-			add_ideas = LPR_introduction_of_a_state_of_emergency
 			add_political_power = 20
 			add_stability = 0.035
 		}
@@ -524,8 +524,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_Introduction_of_a_state_emergency"
-			add_ideas = LPR_introduction_of_a_state_of_emergency
 			add_political_power = 20
 			add_stability = 0.035
 		}
@@ -587,8 +585,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LPR_Introduction_of_a_state_emergency"
-			add_ideas = LPR_introduction_of_a_state_of_emergency
 			add_political_power = 20
 			add_stability = 0.035
 		}
@@ -812,7 +808,7 @@ focus_tree = {
 			has_country_flag = LPR_referendum_passed
 		}
 		available = {
-			has_war = no
+			has_completed_focus = LPR_republic_of_plotnicky
 		}
 
 		completion_reward = {
@@ -1393,11 +1389,11 @@ focus_tree = {
 	focus = {
 		id = LPR_disarm_illegal_formations
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 5
+		x = 2
 		y = 1
 		cost = 0
-		prerequisite = { focus = LPR_start_solving_the_republics_problems }
-		relative_position_id = LPR_start_solving_the_republics_problems
+		prerequisite = { focus = LPR_republic_of_plotnicky }
+		relative_position_id = LPR_republic_of_plotnicky
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {

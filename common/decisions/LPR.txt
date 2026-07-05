@@ -55,7 +55,6 @@ LPR_politicy_category = {
 		timeout_effect = {
 			add_stability = 0.02
 			add_war_support = 0.01
-			
 		}
 
 	    ai_will_do = {
@@ -82,6 +81,100 @@ LPR_politicy_category = {
 
 		}
 	}
-
 }
+
+LPR_fight_with_disagree_category = {
+    LPR_kill_mozgovoy = {
+
+	    icon = generic_political_resolution
+
+	    allowed = {
+		    always = yes
+	    }
+
+	    visible = {
+		    always = yes
+	    }
+
+	    available = {
+		   
+	    }
+
+	    fire_only_once = no
+		days_remove = 10
+		days_re_enable = 35
+		cost = 25
+
+		timeout_effect = {
+			add_stability = 0.02
+			add_war_support = 0.01
+		}
+
+	    ai_will_do = {
+		    factor = 1
+	    }
+    }
+    LPR_kill_dremev = {
+
+	    icon = generic_political_resolution
+
+	    allowed = {
+		    always = yes
+	    }
+
+	    visible = {
+		    always = yes
+	    }
+
+	    available = {
+		   
+	    }
+
+	    fire_only_once = no
+		days_remove = 10
+		days_re_enable = 35
+		cost = 25
+
+		timeout_effect = {
+			add_stability = 0.02
+			add_war_support = 0.01
+		}
+
+	    ai_will_do = {
+		    factor = 1
+	    }
+    }	
+    LPR_kill_bedenov = {
+
+	    icon = generic_political_resolution
+
+	    allowed = {
+		    always = yes
+	    }
+
+	    visible = {
+		    always = yes
+	    }
+
+	    available = {
+		   
+	    }
+
+	    fire_only_once = no
+		days_remove = 10
+		days_re_enable = 35
+		cost = 25
+
+		timeout_effect = {
+			add_stability = 0.02
+			add_war_support = 0.01
+		}
+
+	    ai_will_do = {
+		    factor = 1
+	    }
+    }	
+}
+
+
 

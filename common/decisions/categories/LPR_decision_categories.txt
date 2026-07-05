@@ -12,3 +12,18 @@ LPR_politicy_category = {
 		has_completed_focus = LPR_republic_of_bolotov
 	}
 }
+
+LPR_fight_with_disagree_category = {
+
+	priority = 84
+	
+	icon = GFX_decision_icon_of_elections
+	
+	allowed = {
+		original_tag = LPR
+	}
+
+	visible = {
+		has_completed_focus = LPR_republic_of_bolotov
+	}
+}

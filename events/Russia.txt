@@ -151,6 +151,30 @@ country_event = {
 				tag = DPR
 			}
 			add_manpower = 4500
+			division_template = {
+	            name = "Otryad Iskra"
+	            regiments = {
+                    special_forces_infantry  = { x = 0 y = 0 }
+		            special_forces_infantry  = { x = 0 y = 1 }
+	            }
+                support = {
+                    engineer = { x = 0 y = 0 }
+                    recon = { x = 0 y = 1 }
+                    mortar = { x = 0 y = 2 }
+				    atgm_company = { x = 0 y = 3 }
+        		    field_hospital = { x = 0 y = 4} 
+        		    sniper_company = { x = 1 y = 0 }
+        		    signal_company = { x = 1 y = 1}
+  				    logistics_company = { x = 1 y = 2}
+	            }
+            }
+			random_owned_controlled_state = {
+				create_unit = {
+				    division = "name = \"Otryad Iskra\" division_template = \"Otryad Iskra\" start_experience_factor = 0.7"
+				    owner = DPR
+				    count = 1
+			    }
+			}
 		}
 		if = {
 			limit = {
@@ -548,5 +572,20 @@ country_event = {
 			popularity = 0.015
 		}
 		add_war_support = 0.025
+	}
+}
+
+#Лагерь подготовки в Ростове
+country_event = {
+	id = russia.30
+	title = russia.30.t
+	desc = russia.30.d
+	#picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.30.a
+		
 	}
 }
