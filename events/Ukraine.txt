@@ -5445,27 +5445,13 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-        hidden_effect = {
-			
-			SKR = {
-				transfer_state = 659
-				declare_war_on = {
-                    target = UKR
-                    type = annex_everything
-                }
-				load_oob = SKR_uprising_millitia
-				add_state_core = 406
-				add_state_core = 427
-				add_state_core = 387
-				add_state_core = 416
-				add_state_core = 413
-			}
-		}
+
 	}
 
 	option = {
 		name = ukraine.151.a
-	
+	    add_stability = -0.015
+		add_war_support = -0.02
 	}
 }
 
