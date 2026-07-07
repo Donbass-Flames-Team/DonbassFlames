@@ -1225,6 +1225,7 @@ country_event = {
                 }
 				load_oob = NDR_Slavyansk_strelkov_otryad
 				add_state_core = 318
+				complete_national_focus = NDR_capture_mvd
 			}
 			if = {
 				limit = { 
@@ -1235,43 +1236,43 @@ country_event = {
 				complete_national_focus = UKR_start_of_ato
 			}
 			291 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 15 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 55 }
 			}
 			318 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 15 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 65 }
 			}
 			318 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 15 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 65 }
 			}
 			401 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 60 }
 			}
 			399 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 40 }
 			}
 			337 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 30 }
 			}
 			359 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 30 }
 			}
 			380 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 30 }
 			}
 			391 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 30 }
 			}
 			342 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 30 }
 			}
 			347 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 30 }
 			}
 			328 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 30 }
 			}
 			381 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 30 }
 			}		
 
 			if = {
@@ -1416,6 +1417,10 @@ country_event = {
                 end_wars = no
                 end_civil_wars = no
             }
+			country_event = {
+				id = ukraine.153
+				days = 3
+			}
 		}
 	}
 
@@ -2879,7 +2884,7 @@ country_event = {
 	}
 }
 
-# Игорь стрелков ликвидирован
+# Игорь гиркин стрелков ликвидирован (200)
 country_event = {
 	id = ukraine.83
 	title = ukraine.83.t
@@ -2900,7 +2905,7 @@ country_event = {
 	}
 }
 
-# Игорь стрелков покидает славянск
+# Игорь гиркин стрелков покидает славянск
 country_event = {
 	id = ukraine.84
 	title = ukraine.84.t
@@ -5452,6 +5457,50 @@ country_event = {
 		name = ukraine.151.a
 	    add_stability = -0.015
 		add_war_support = -0.02
+	}
+}
+
+#Перемирие АТО
+country_event = {
+	id = ukraine.152
+	title = ukraine.152.t
+	desc = ukraine.152.d
+    picture = GFX_Report_event_battalion_tornado_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			news_event = {
+				id = news_events.47
+				hours = 3
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.152.a
+	    add_stability = 0.025
+	}
+}
+
+#Наплыв добровольцев после анексии крыма
+country_event = {
+	id = ukraine.153
+	title = ukraine.153.t
+	desc = ukraine.153.d
+    picture = GFX_Report_event_maidan_selfdefense_squads_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+        
+	}
+
+	option = {
+		name = ukraine.153.a
+	    add_war_support = 0.015
+		add_political_power = 25
 	}
 }
 

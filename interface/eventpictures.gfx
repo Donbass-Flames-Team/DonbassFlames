@@ -26,15 +26,26 @@ spriteType = {
     texturefile = "gfx/event_pictures/news_events/creation_of_eaeu.png"
 }
 
-spriteType = {
-    name = "GFX_news_event_ukr_independent_parade"
-    texturefile = "gfx/event_pictures/news_events/ukr_independent_parade.png"
-}
+    spriteType = {
+        name = "GFX_news_event_ukr_independent_parade"
+        texturefile = "gfx/event_pictures/news_events/ukr_independent_parade.png"
+    }
 
-spriteType = {
-name = "GFX_news_event_Putin_angry_pic"
-texturefile = "gfx/event_pictures/news_events/Putin_angry.png"
-}
+    spriteType = {
+        name = "GFX_news_event_Putin_angry_pic"
+        texturefile = "gfx/event_pictures/news_events/Putin_angry.png"
+    }
+
+    spriteType = {
+        name = "GFX_news_event_crucified_boy_in_slavyansk_pic"
+        texturefile = "gfx/event_pictures/news_events/crucified_boy_in_slavyansk.png"
+    }
+
+   spriteType = {
+        name = "GFX_news_event_the_first_meeting_of_the_Normandy_format"
+        texturefile = "gfx/event_pictures/news_events/the_first_meeting_of_the_Normandy_format.png"
+    }
+
 
 spriteType = {
 name = "GFX_news_event_yanukovich_pic"
@@ -501,6 +512,12 @@ spriteType = {
 name = "GFX_Report_event_zelenie_chelovechki_picture"
 texturefile = "gfx/event_pictures/Report_event_zelenie_chelovechki_picture.png"
 }
+
+spriteType = {
+name = "GFX_Report_event_maidan_selfdefense_squads_picture"
+texturefile = "gfx/event_pictures/Report_event_maidan_selfdefense_squads_picture.png"
+}
+
 
 spriteType = {
 name = "GFX_Report_event_russian_go_thrgouh_border_picture"

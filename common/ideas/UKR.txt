@@ -214,6 +214,26 @@ ideas = {
 				political_power_gain = 0.035			
 			    consumer_goods_factor = -0.075
 			}
+		}	
+		
+		ceasefire_idea = {
+            allowed = {
+                always = yes
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+
+			removal_cost = -1
+			
+			modifier = {
+			    enemy_army_speed_factor = -5
+				army_speed_factor = -1
+				army_attack_speed_factor = -1
+				army_speed_factor_for_controller = -0.5
+				army_attack_factor = -0.25
+			}
 		}		
 
 		AI_buff_idea = {
