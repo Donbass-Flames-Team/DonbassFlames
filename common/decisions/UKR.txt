@@ -3570,6 +3570,36 @@ UKR_ATO_decision = {
 
 UKR_general_staff_decision = {
 
+	UKR_46th_separate_special_purpose_battalion_donbass_ukraine_decision = {
+		icon = GFX_decision_UKR_35_bryhada_icon
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2015.4.2
+		}
+		visible = {
+			has_completed_focus = UKR_general_staff
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			custom_effect_tooltip = UKR_46th_separate_special_purpose_battalion_donbass_ukraine_formed_tt
+			hidden_effect = {
+				random_owned_controlled_state = {
+				    create_unit = {
+				        division = "name = \"46-y okremyy shturmovyy batal'yon «Donbas»\" division_template = \"Shturmovyy batal'yon\" start_experience_factor = 0.4"
+				        owner = UKR
+				        count = 1
+			        }								        
+		        }
+		    }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
 	UKR_put_on_alert_general_staff_security_brigade_decision = {
 		icon = GFX_decision_UKR_35_bryhada_icon
 		allowed = {
@@ -3584,7 +3614,7 @@ UKR_general_staff_decision = {
 		fire_only_once = yes
 		cost = 25
 		complete_effect = {
-			#custom_effect_tooltip = UKR_35_otdelnaya_brihada_morskoy_pikhoti_formed_tt
+			custom_effect_tooltip = UKR_put_on_alert_general_staff_security_brigade_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
 				    create_unit = {
@@ -3627,9 +3657,9 @@ UKR_general_staff_decision = {
 			has_completed_focus = UKR_form_national_guardia
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 20
 		complete_effect = {
-			#custom_effect_tooltip = UKR_35_otdelnaya_brihada_morskoy_pikhoti_formed_tt
+			custom_effect_tooltip = UKR_3_bryhada_operatyvnoho_pryznachennya_nhu_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
 				    create_unit = {
@@ -4007,6 +4037,33 @@ UKR_general_staff_decision = {
 
 UKR_ATO_volunteer_battalions_decision = {
 
+	UKR_second_reserve_battalion_nhu = {
+		icon = GFX_decision_UKR_batalion_aidar
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			has_completed_focus = UKR_volunteer_battalions
+		}
+		fire_only_once = yes
+		cost = 5
+		complete_effect = {
+			custom_effect_tooltip = UKR_second_reserve_battalion_nhu_formed_tt
+			hidden_effect = {
+				random_owned_controlled_state = {
+					create_unit = {
+				        division = "name = \"2-y rezervnyy batal'yon operatyvnoho pryznachennya NHU\" division_template = \"Rezervnyy batal'yon operatyvnoho pryznachennya NHU\" start_experience_factor = 0.15"
+				        owner = UKR
+				        count = 1
+			        }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
 	UKR_volunteer_battalion_aidar = {
 		icon = GFX_decision_UKR_batalion_aidar
 		allowed = {
@@ -4016,7 +4073,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 15
 		complete_effect = {
 			custom_effect_tooltip = UKR_Aidar_Battalion_formed_tt
 			hidden_effect = {
@@ -4079,7 +4136,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 15
+		cost = 10
 		complete_effect = {
 			custom_effect_tooltip = UKR_Dnipro2_Battalion_formed_tt
 			hidden_effect = {
@@ -4100,7 +4157,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 15
+		cost = 10
 		complete_effect = {
 			custom_effect_tooltip = UKR_Dnipropetrovsk_Battalion_formed_tt
 			hidden_effect = {
@@ -4121,7 +4178,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions_of_mvd
 		}
 		fire_only_once = yes
-		cost = 15
+		cost = 10
 		complete_effect = {
 			custom_effect_tooltip = UKR_Donbas_Battalion_formed_tt
 			hidden_effect = {
@@ -4205,7 +4262,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions_of_mvd
 		}
 		fire_only_once = yes
-		cost = 15
+		cost = 10
 		complete_effect = {
 			custom_effect_tooltip = UKR_battalion_mvd_bohdan_formed_tt
 			hidden_effect = {
@@ -4226,7 +4283,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions_of_mvd
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 20
 		complete_effect = {
 			custom_effect_tooltip = UKR_Goldgates_Battalion_formed_tt
 			hidden_effect = {
@@ -4247,7 +4304,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 20
 		complete_effect = {
 			custom_effect_tooltip = UKR_Kharkov_1_Battalion_formed_tt
 			hidden_effect = {
@@ -4268,7 +4325,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 15
 		complete_effect = {
 			custom_effect_tooltip = UKR_Kievska_rus_Battalion_formed_tt
 			hidden_effect = {
@@ -4289,7 +4346,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 15
 		complete_effect = {
 			custom_effect_tooltip = UKR_Krivbas_Battalion_formed_tt
 			hidden_effect = {
@@ -4310,7 +4367,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 15
 		complete_effect = {
 			custom_effect_tooltip = UKR_Kulchickogo_Battalion_formed_tt
 			hidden_effect = {
@@ -4331,7 +4388,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions_of_mvd
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 15
 		complete_effect = {
 			custom_effect_tooltip = UKR_battalion_mirotvorec_formed_tt
 			hidden_effect = {
@@ -4352,7 +4409,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions_of_mvd
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 15
 		complete_effect = {
 			custom_effect_tooltip = UKR_battalion_luhansk_1_formed_tt
 			hidden_effect = {
@@ -4394,7 +4451,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 35
 		complete_effect = {
 			custom_effect_tooltip = UKR_Pravyy_Corpus_formed_tt
 			hidden_effect = {
@@ -4419,7 +4476,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 15
 		complete_effect = {
 			custom_effect_tooltip = UKR_battalion_shatrask_formed_tt
 			hidden_effect = {
@@ -4440,7 +4497,7 @@ UKR_ATO_volunteer_battalions_decision = {
 			has_completed_focus = UKR_volunteer_battalions
 		}
 		fire_only_once = yes
-		cost = 25
+		cost = 15
 		complete_effect = {
 			custom_effect_tooltip = UKR_battalion_sich_formed_tt
 			hidden_effect = {
@@ -4494,4 +4551,131 @@ UKR_ATO_volunteer_battalions_decision = {
 		}
 	}
 
+	UKR_volunteer_battalion_chernihiv_2 = {
+		icon = GFX_decision_UKR_batalion_svitaz
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			has_completed_focus = UKR_volunteer_battalions
+		}
+		fire_only_once = yes
+		cost = 15
+		complete_effect = {
+			custom_effect_tooltip = UKR_battalion_svitaz_formed_tt
+			hidden_effect = {
+				
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}	
+
+	UKR_volunteer_battalion_patriot = {
+		icon = GFX_decision_UKR_batalion_svitaz
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			has_completed_focus = UKR_volunteer_battalions
+		}
+		fire_only_once = yes
+		cost = 15
+		complete_effect = {
+			custom_effect_tooltip = UKR_battalion_svitaz_formed_tt
+			hidden_effect = {
+				
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}	
+
+
+
+}
+
+UKR_territorial_defense_decision = {
+
+	UKR_mobilization_of_the_tro_in_the_south_regional_administration = {
+		icon = GFX_decision_UKR_batalion_svitaz
+		allowed = {
+			original_tag = UKR
+			has_war = yes
+		}
+		visible = {
+			has_completed_focus = UKR_reform_of_tro
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			custom_effect_tooltip = UKR_mobilization_of_the_tro_in_the_south_regional_administration_tt
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	UKR_mobilization_of_the_tro_in_the_north_regional_administration = {
+		icon = GFX_decision_UKR_batalion_svitaz
+		allowed = {
+			original_tag = UKR
+			has_war = yes
+		}
+		visible = {
+			has_completed_focus = UKR_reform_of_tro
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			custom_effect_tooltip = UKR_mobilization_of_the_tro_in_the_north_regional_administration_tt
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	UKR_mobilization_of_the_tro_in_the_east_regional_administration = {
+		icon = GFX_decision_UKR_batalion_svitaz
+		allowed = {
+			original_tag = UKR
+			has_war = yes
+		}
+		visible = {
+			has_completed_focus = UKR_reform_of_tro
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			custom_effect_tooltip = UKR_mobilization_of_the_tro_in_the_east_regional_administration_tt
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	UKR_mobilization_of_the_tro_in_the_west_regional_administration = {
+		icon = GFX_decision_UKR_batalion_svitaz
+		allowed = {
+			original_tag = UKR
+			has_war = yes
+		}
+		visible = {
+			has_completed_focus = UKR_reform_of_tro
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			custom_effect_tooltip = UKR_mobilization_of_the_tro_in_the_west_regional_administration_tt
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}	
 }

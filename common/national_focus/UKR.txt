@@ -1903,7 +1903,7 @@ focus_tree = {
 	focus = {
 		id = UKR_support_of_the_volunteer_battalion
 		icon = GFX_goal_no_focus_UKR
-		cost = 0.3
+		cost = 0.2
 		x = 0
 		y = 3
 
@@ -1916,17 +1916,66 @@ focus_tree = {
 
 		bypass = {
 			has_global_flag = Start_Of_ATO
+			division_template = {
+	            name = "Rezervnyy batalyon operatyvnoho pryznachennya NHU"
+	            regiments = {
+                    infantry = { x = 0 y = 0 }
+		            infantry = { x = 0 y = 1 }
+		            infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 }
+	            }
+                support = {
+                    engineer = { x = 0 y = 0 }
+                    recon = { x = 0 y = 1 }
+                    mortar = { x = 0 y = 2 }
+				    atgm_company = { x = 0 y = 3 }
+        		    field_hospital = { x = 0 y = 4} 
+        		    sniper_company = { x = 1 y = 0 }
+        		    manpads_platoon = { x = 1 y = 1}
+  				    logistics_company = { x = 1 y = 2}
+				    signal_company = { x = 1 y = 3} 
+	            }
+            }
 		}
 
 		available = {
-
+            
 		}
 
 		completion_reward = {
-		    add_manpower = 6500
+		    add_manpower = 4500
 			add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
 		    custom_effect_tooltip = UKR_support_of_the_volunteer_battalion_tt
 			custom_effect_tooltip = UKR_support_of_the_volunteers_tt
+			hidden_effect = {
+				division_template = {
+	                name = "Rezervnyy batal'yon operatyvnoho pryznachennya NHU"
+	                regiments = {
+                        infantry = { x = 0 y = 0 }
+		                infantry = { x = 0 y = 1 }
+		                infantry = { x = 0 y = 2 }
+                        infantry = { x = 1 y = 0 }
+	                }
+                    support = {
+                        engineer = { x = 0 y = 0 }
+                        recon = { x = 0 y = 1 }
+                        mortar = { x = 0 y = 2 }
+				        atgm_company = { x = 0 y = 3 }
+        		        field_hospital = { x = 0 y = 4} 
+        		        sniper_company = { x = 1 y = 0 }
+        		        manpads_platoon = { x = 1 y = 1}
+  				        logistics_company = { x = 1 y = 2}
+				        signal_company = { x = 1 y = 3} 
+	                }
+                }
+				random_owned_controlled_state = {
+					create_unit = {
+				        division = "name = \"1-y rezervnyy batal'yon operatyvnoho pryznachennya NHU\" division_template = \"Rezervnyy batal'yon operatyvnoho pryznachennya NHU\" start_experience_factor = 0.15"
+				        owner = UKR
+				        count = 1
+			        }
+				}
+			}
 		}
 	}
 
@@ -6173,7 +6222,7 @@ focus_tree = {
 	focus = {
 		id = UKR_launch_counterattacks
 		icon = GFX_focus_UKR_launch_counterattacks
-		cost = 3
+		cost = 2.5
 		x = 0
 		y = 1
 
@@ -6563,7 +6612,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			has_global_flag = open_unfinished_content
 		}
 
 		completion_reward = {

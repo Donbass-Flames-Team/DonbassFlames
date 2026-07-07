@@ -9,8 +9,8 @@
 
 # Difficulty game rule production multipliers
 # Remember to update game rule desc localizations if these are changed
-@JAM_difficulty_very_easy_mult = 1.2
-@JAM_difficulty_easy_mult      = 1.1
+@JAM_difficulty_very_easy_mult = 1.8
+@JAM_difficulty_easy_mult      = 1.5
 @JAM_difficulty_hard_mult      = 0.9
 @JAM_difficulty_very_hard_mult = 0.8
 
@@ -28,7 +28,7 @@
 # Infantry consumption increases with tech - these are ADDITIVE with each other
 # Final multiplier is used to adjust base ammo usage for infantry, cavalry, and motorized
 @JAM_inf_ammo_sweps_1_mult  = 0.50 # Support Weapons 1 (Maxim gun, autorifles) - +50%
-@JAM_inf_ammo_sweps_2_mult  = 0.75 # Support Weapons 2 (LMGs)
+@JAM_inf_ammo_sweps_2_mult  = 0.5 # Support Weapons 2 (LMGs)
 @JAM_inf_ammo_sweps_3_mult  = 0.50 # Support Weapons 3 (More LMGs)
 @JAM_inf_ammo_sweps_4_mult  = 0.25 # Support Weapons 4 (ARs)
 @JAM_inf_ammo_at_rfl_1_mult = 0.25 # Anti-Tank Eq 1 (ATRs)
@@ -38,11 +38,11 @@
 @JAM_army_sup_fpwr_mult = 1.25
 
 # Army ammo usage
-@JAM_army_LTK_ammo = 0.3 # Light tank
-@JAM_army_MTK_ammo = 0.4 # Medium tank
-@JAM_army_HTK_ammo = 0.5 # Heavy tank
-@JAM_army_STK_ammo = 0.6 # Super-heavy tank
-@JAM_army_OTK_ammo = 0.5 # Modern armor
+#@JAM_army_LTK_ammo = 0.3 # Light tank
+#@JAM_army_MTK_ammo = 0.4 # Medium tank
+#@JAM_army_HTK_ammo = 0.5 # Heavy tank
+#@JAM_army_STK_ammo = 0.6 # Super-heavy tank
+@JAM_army_OTK_ammo = 0.1 # Modern armor
 
 @JAM_army_LAR_ammo = 0.5 # Light SPG
 @JAM_army_MAR_ammo = 0.6 # Medium SPG
@@ -72,15 +72,15 @@
 @JAM_army_MFT_ammo = 0.4 # Medium flame tank
 @JAM_army_HFT_ammo = 0.5 # Heavy flame tank
 
-@JAM_army_INF_ammo = 0.1 # Infantry
-@JAM_army_BIC_ammo = 0.1 # Bike battalion
-@JAM_army_MRN_ammo = 0.1 # Marines
-@JAM_army_MRC_ammo = 0.1 # Marine commandos
-@JAM_army_MTN_ammo = 0.1 # Mountaineers
-@JAM_army_PAR_ammo = 0.1 # Paratroopers
-@JAM_army_MIL_ammo = 0.1 # Militia
-@JAM_army_STR_ammo = 0.1 # Sturmtruppe battalion
-@JAM_army_FIU_ammo = 0.0 # Fake intel unit
+@JAM_army_INF_ammo = 0.01 # Infantry
+@JAM_army_BIC_ammo = 0.01 # Bike battalion
+@JAM_army_MRN_ammo = 0.01 # Marines
+@JAM_army_MRC_ammo = 0.01 # Marine commandos
+@JAM_army_MTN_ammo = 0.01 # Mountaineers
+@JAM_army_PAR_ammo = 0.01 # Paratroopers
+@JAM_army_MIL_ammo = 0.01 # Militia
+@JAM_army_STR_ammo = 0.01 # Sturmtruppe battalion
+@JAM_army_FIU_ammo = 0.01 # Fake intel unit
 
 @JAM_army_MOT_ammo = 0.1 # Motorized infantry
 @JAM_army_MEC_ammo = 0.2 # Mechanized infantry
@@ -105,7 +105,7 @@
 @JAM_army_TRA_ammo  = 0.7 # Motorized rocket arty (truck-drawn)
 @JAM_army_MRA_ammo  = 0.7 # Truck-mounted rocket arty (katyushas)
 
-@JAM_army_AT_ammo  = 0.3 # Support anti-tank
+@JAM_army_AT_ammo  = 0.2 # Support anti-tank
 @JAM_army_ANT_ammo = 0.4 # Line Anti-tank
 @JAM_army_MAT_ammo = 0.4 # Motorized anti-tank
 
@@ -122,8 +122,6 @@
 
 @JAM_army_RWG_ammo = 1.0 # Railway gun
 @JAM_army_SRG_ammo = 1.5 # Super-heavy railway gun
-
-@JAM_army_LCB_ammo = 1.0 # Land cruiser
 
 # Unused in code but listing to stay explicit
 @JAM_army_LOG_ammo = 0 # Logistics # logiman logiman pls deliver more mammons logiman
@@ -162,7 +160,6 @@
 @JAM_air_CVN_ammo = 0.3 # CV Naval bomber
 @JAM_air_KMK_ammo = 0.2 # Suicide craft (Kamikaze)
 @JAM_air_CKM_ammo = 0.2 # CV suicide craft
-@JAM_air_MSH_ammo = 1.0 # Mothership
 
 @JAM_air_TAB_ammo = 0.3 # Tac bomber
 @JAM_air_HFT_ammo = 0.3 # Heavy fighter
@@ -218,65 +215,9 @@ JAM_se_calculate_army_ammo_demand = {
         
         # Calculate infantry multiplier
         set_temp_variable = { inf_demand_mult = 1 }
-        if = {
-            limit = {
-                has_game_rule = {
-                    rule   = JAM_gr_inf_ammo_tech_mult
-                    option = enable
-                }
-            }
-            if = {
-                limit = { has_tech = support_weapons }
-                add_to_temp_variable = { inf_demand_mult = @JAM_inf_ammo_sweps_1_mult }
-            }
-            if = {
-                limit = { has_tech = support_weapons2 }
-                add_to_temp_variable = { inf_demand_mult = @JAM_inf_ammo_sweps_2_mult }
-            }
-            if = {
-                limit = { has_tech = support_weapons3 }
-                add_to_temp_variable = { inf_demand_mult = @JAM_inf_ammo_sweps_3_mult }
-            }
-            if = {
-                limit = { has_tech = support_weapons4 }
-                add_to_temp_variable = { inf_demand_mult = @JAM_inf_ammo_sweps_4_mult }
-            }
-            if = {
-                limit = { has_tech = infantry_at }
-                add_to_temp_variable = { inf_demand_mult = @JAM_inf_ammo_at_rfl_1_mult }
-            }
-            if = {
-                limit = { has_tech = infantry_at2 }
-                add_to_temp_variable = { inf_demand_mult = @JAM_inf_ammo_at_rfl_2_mult }
-            }
-        }
         set_variable = { debug_var = inf_demand_mult }
         
         # Tanks
-        set_temp_variable = { temp_units  = num_battalions_with_type@light_armor }
-        set_temp_variable = { temp_demand = @JAM_army_LTK_ammo    }
-        multiply_temp_variable = { temp_demand      = temp_units  }
-        add_to_temp_variable   = { total_demand     = temp_demand }
-        subtract_from_temp_variable = { total_units = temp_units  }
-        
-        set_temp_variable = { temp_units  = num_battalions_with_type@medium_armor }
-        set_temp_variable = { temp_demand = @JAM_army_MTK_ammo    }
-        multiply_temp_variable = { temp_demand      = temp_units  }
-        add_to_temp_variable   = { total_demand     = temp_demand }
-        subtract_from_temp_variable = { total_units = temp_units  }
-        
-        set_temp_variable = { temp_units  = num_battalions_with_type@heavy_armor }
-        set_temp_variable = { temp_demand = @JAM_army_HTK_ammo    }
-        multiply_temp_variable = { temp_demand      = temp_units  }
-        add_to_temp_variable   = { total_demand     = temp_demand }
-        subtract_from_temp_variable = { total_units = temp_units  }
-        
-        set_temp_variable = { temp_units  = num_battalions_with_type@super_heavy_armor }
-        set_temp_variable = { temp_demand = @JAM_army_STK_ammo    }
-        multiply_temp_variable = { temp_demand      = temp_units  }
-        add_to_temp_variable   = { total_demand     = temp_demand }
-        subtract_from_temp_variable = { total_units = temp_units  }
-        
         set_temp_variable = { temp_units  = num_battalions_with_type@modern_armor }
         set_temp_variable = { temp_demand = @JAM_army_OTK_ammo    }
         multiply_temp_variable = { temp_demand      = temp_units  }
@@ -718,13 +659,7 @@ JAM_se_calculate_army_ammo_demand = {
         multiply_temp_variable = { temp_demand      = temp_units  }
         add_to_temp_variable   = { total_demand     = temp_demand }
         subtract_from_temp_variable = { total_units = temp_units  }
-        
-        # Land cruisers
-        set_temp_variable = { temp_units  = num_battalions_with_type@land_cruiser }
-        set_temp_variable = { temp_demand = @JAM_army_LCB_ammo    }
-        multiply_temp_variable = { temp_demand      = temp_units  }
-        add_to_temp_variable   = { total_demand     = temp_demand }
-        subtract_from_temp_variable = { total_units = temp_units  }
+
         
         # Misc. ammo-less
         set_temp_variable = { temp_units = num_battalions_with_type@logistics_company }
@@ -1141,12 +1076,6 @@ JAM_se_calculate_air_ammo_demand = {
         add_to_temp_variable   = { total_demand     = temp_demand }
         subtract_from_temp_variable = { total_units = temp_units  }
         
-        set_temp_variable = { temp_units  = num_deployed_planes_with_type@mothership }
-        set_temp_variable = { temp_demand = @JAM_air_MSH_ammo     }
-        multiply_temp_variable = { temp_demand      = temp_units  }
-        add_to_temp_variable   = { total_demand     = temp_demand }
-        subtract_from_temp_variable = { total_units = temp_units  }
-        
         # Medium props
         set_temp_variable = { temp_units  = num_deployed_planes_with_type@tac_bomber }
         set_temp_variable = { temp_demand = @JAM_air_TAB_ammo     }
@@ -1535,25 +1464,25 @@ JAM_se_calculate_derivative_values = {
     
     # Millions vars
     set_variable    = { JAM_army_ammo_demand_now_M = JAM_army_ammo_demand_now }
-    divide_variable = { JAM_army_ammo_demand_now_M = 1000 }
+    divide_variable = { JAM_army_ammo_demand_now_M = 500 }
     set_variable    = { JAM_army_ammo_demand_max_M = JAM_army_ammo_demand_max }
-    divide_variable = { JAM_army_ammo_demand_max_M = 1000 }
+    divide_variable = { JAM_army_ammo_demand_max_M = 500 }
     set_variable    = { JAM_army_ammo_demand_defending_M  = JAM_army_ammo_demand_defending }
     divide_variable = { JAM_army_ammo_demand_defending_M  = 1000 }
     set_variable    = { JAM_army_ammo_demand_attacking_M  = JAM_army_ammo_demand_attacking }
     divide_variable = { JAM_army_ammo_demand_attacking_M  = 1000 }
     set_variable    = { JAM_navy_ammo_demand_now_M  = JAM_navy_ammo_demand_now }
-    divide_variable = { JAM_navy_ammo_demand_now_M  = 1000 }
+    divide_variable = { JAM_navy_ammo_demand_now_M  = 500 }
     set_variable    = { JAM_navy_ammo_demand_max_M  = JAM_navy_ammo_demand_max }
-    divide_variable = { JAM_navy_ammo_demand_max_M  = 1000 }
+    divide_variable = { JAM_navy_ammo_demand_max_M  = 500 }
     set_variable    = { JAM_air_ammo_demand_now_M   = JAM_air_ammo_demand_now }
-    divide_variable = { JAM_air_ammo_demand_now_M   = 1000 }
+    divide_variable = { JAM_air_ammo_demand_now_M   = 500 }
     set_variable    = { JAM_air_ammo_demand_max_M   = JAM_air_ammo_demand_max }
-    divide_variable = { JAM_air_ammo_demand_max_M   = 1000 }
+    divide_variable = { JAM_air_ammo_demand_max_M   = 500 }
     set_variable    = { JAM_total_ammo_demand_now_M = JAM_total_ammo_demand_now }
-    divide_variable = { JAM_total_ammo_demand_now_M = 1000 }
+    divide_variable = { JAM_total_ammo_demand_now_M = 500 }
     set_variable    = { JAM_total_ammo_demand_max_M = JAM_total_ammo_demand_max }
-    divide_variable = { JAM_total_ammo_demand_max_M = 1000 }
+    divide_variable = { JAM_total_ammo_demand_max_M = 500 }
     set_variable    = { JAM_ammo_produced_M  = JAM_ammo_produced }
     divide_variable = { JAM_ammo_produced_M  = 1000 }
     set_variable    = { JAM_ammo_gain_busy_M = JAM_ammo_gain_busy }

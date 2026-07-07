@@ -63,7 +63,7 @@ UKR_ato_is_going = {
 		type = front_control
 		tag = SDR
 		ordertype = front
-		execution_type = careful
+		execution_type = balanced
 		manual_attack = yes
 		execute_order = yes	
 	}
@@ -72,7 +72,7 @@ UKR_ato_is_going = {
 		type = front_control
 		tag = DPR
 		ordertype = front
-		execution_type = careful
+		execution_type = balanced
 		manual_attack = yes
 		execute_order = yes	
 	}

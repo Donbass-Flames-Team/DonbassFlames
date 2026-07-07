@@ -27,7 +27,7 @@ units = {
     }
 
     division= {
-        name = "21-y batal'on TRO «Kherson»"
+        name = "21-y batal'on TRO «Sarmat»"
         location = 8540
         division_template = "Batal'on TRO"
         start_experience_factor = 0.1
@@ -45,11 +45,20 @@ units = {
     }
 
     division= {
-        name = "23-y batal'on TRO «Zaporozh'ye»"
+        name = "23-y batal'on TRO «Khortytsya»"
         location = 8540
         division_template = "Batal'on TRO"
         start_experience_factor = 0.05
         start_equipment_factor = 0.5
 		start_manpower_factor = 0.9
     }
+
+    division= {
+        name = "23-y batal'on TRO «Khortytsya»"
+        location = 8540
+        division_template = "Batal'on TRO"
+        start_experience_factor = 0.05
+        start_equipment_factor = 0.5
+		start_manpower_factor = 0.9
+    }    
 }

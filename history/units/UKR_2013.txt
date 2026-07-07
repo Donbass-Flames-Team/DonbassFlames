@@ -229,6 +229,51 @@ division_template = {
 	is_locked = yes
 }
 
+division_template = {
+	name = "Motoryzovanyy batal'yon desantno-shturmovykh viys'k"
+	regiments = {
+        apc_unit = { x = 0 y = 0 }
+		apc_unit = { x = 0 y = 1 }
+		apc_unit = { x = 1 y = 0 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+	is_locked = yes
+}
+
+division_template = {
+	name = "Shturmovyy batal'yon"
+	regiments = {
+        ifv_unit = { x = 0 y = 0 }
+		ifv_unit = { x = 0 y = 1 }
+		ifv_unit = { x = 0 y = 2 }
+        modern_armor = { x = 1 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
 units = {
     division= {
         name = "1-y mekhanizovanyy batalyon 30-oyi okremoyi mekhanizovanoyi bryhady"

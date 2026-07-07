@@ -202,3 +202,19 @@ UKR_western_help_decision = {
 	}
 	visible_when_empty = yes
 }
+
+UKR_territorial_defense_decision = {
+
+	priority = 83
+	
+	icon = GFX_decision_UKR_separatism
+	
+	allowed = {
+		original_tag = UKR
+	}
+
+	visible = {
+		has_completed_focus = UKR_reform_of_tro
+	}
+	visible_when_empty = yes
+}

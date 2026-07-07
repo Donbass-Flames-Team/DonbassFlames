@@ -1,0 +1,37 @@
+SLR_dont_attack= {
+	allowed = {
+		original_tag = SLR
+	}
+
+	enable = {
+		has_war_with = UKR
+	}
+
+	abort = {
+		has_completed_focus = SLR_go_to_lisichansk
+	}
+
+	ai_strategy = {
+		type = garrison
+		value = 1200
+	}
+	
+
+	ai_strategy = {
+		type = front_control
+		tag = UKR
+		ordertype = front
+		state = 416	
+		execution_type = careful
+		manual_attack = yes
+		execute_order = yes	
+	}
+
+    ai_strategy = {
+	    type = theatre_distribution_demand_increase
+	    id = 416  # State ID for Alexandria, so will target the theatre where Alexandria belongs
+	    value = 100  # Increase desired unit demand by 10
+    }
+
+
+}
