@@ -117,6 +117,37 @@ on_actions = {
 				set_global_flag = KHARKOV_STUDENTS_TOWN_ATTACKED
 				country_event = { id = ukraine.75 }
 			}
+			# 2014.7.20 перемирие ивент
+			if = {
+				limit = {
+					has_global_flag = Start_Of_ATO
+					date = 2014.7.20
+					NOT = { 
+						has_country_flag = UKR_Ceasefire_event_fired 
+						has_global_flag = Ukraine_victory_in_ATO
+						has_global_flag = People_republic_victory
+						has_global_flag = ATO_Separatists_victory					
+					}
+					tag = UKR
+				}
+				set_country_flag = UKR_Ceasefire_event_fired
+				country_event = { id = ukraine.152 }
+			}
+			# 2014.7.6 встреча в Бенувиль 
+			if = {
+				limit = {
+					has_global_flag = Start_Of_ATO
+					date = 2014.7.6
+					NOT = { 
+						has_global_flag = Benouville_Normandy_format_event_fired 
+						has_global_flag = Ukraine_victory_in_ATO
+						has_global_flag = People_republic_victory
+						has_global_flag = ATO_Separatists_victory					
+					}
+				}
+				set_global_flag = Benouville_Normandy_format_event_fired
+				news_event = { id = news_events.49 }
+			}
 			if = {
 			    limit = {
 				    has_global_flag = Start_Of_ATO

@@ -10,6 +10,9 @@ UKR_ato_is_going = {
 			has_war_with = KPR
 			has_war_with = OPR
 		}
+		NOT = {
+			has_global_flag = Ceasefire_is_active
+		}
 	}
 
 	abort = {
@@ -141,6 +144,9 @@ UKR_counteroffensive = {
 
 	enable = {
 		has_country_flag = UKR_counteroffensive_is_happening
+		NOT = {
+			has_global_flag = Ceasefire_is_active
+		}
 	}
 
 	abort = {
@@ -286,4 +292,51 @@ UKR_template_design = {
 		id = artillery
 		value = 5
 	}
+}
+
+UKR_ceasefire = {
+	allowed = {
+		original_tag = UKR
+	}
+
+	enable = {
+		has_global_flag = Ceasefire_is_active
+	}
+
+	abort = {
+		NOT = {
+			has_global_flag = Ceasefire_is_active
+		}
+	}
+
+	ai_strategy = {
+		type = garrison
+		value = -500
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = DPR
+		ordertype = front
+		execution_type = careful
+		execute_order = yes	
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = LPR
+		ordertype = front
+		execution_type = careful
+		execute_order = yes	
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = NDR
+		ordertype = front
+		execution_type = careful
+		execute_order = yes	
+	}
+
+
 }

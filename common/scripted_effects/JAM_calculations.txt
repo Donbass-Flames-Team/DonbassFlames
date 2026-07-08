@@ -15,14 +15,14 @@
 @JAM_difficulty_very_hard_mult = 0.8
 
 # All ammo usage quantities are in thousands per day
-@JAM_army_fallback_ammo = 0.3
+@JAM_army_fallback_ammo = 0.1
 @JAM_navy_fallback_ammo = 0.8
 @JAM_air_fallback_ammo  = 0.2
 
 # Consumption multipliers
 # Use for quick blanket balancing
-@JAM_army_ammo_mult = 1
-@JAM_navy_ammo_mult = 0.75
+@JAM_army_ammo_mult = 0.5
+@JAM_navy_ammo_mult = 0.5
 @JAM_air_ammo_mult  = 0.25
 
 # Infantry consumption increases with tech - these are ADDITIVE with each other

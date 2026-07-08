@@ -2242,25 +2242,20 @@ focus_tree = {
 					limit = {
 						OR = {
 						    DPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+							    is_ai = no
 						    }
 						    KPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+							    is_ai = no
 						    }	
 						    OPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+							    is_ai = no
 						    }
 						    LPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
-						    }																				
+								is_ai = no
+						    }		
+							RUS = {
+								is_ai = no
+							}																		
 					    }
 						UKR = {
 							is_ai = yes
@@ -2273,11 +2268,15 @@ focus_tree = {
 	            set_variable = { UKR_ATO_experience_loss_factor = -0.30 }
 				set_variable = { UKR_ATO_casualty_trickleback = 0.35}
 				set_variable = { UKR_ATO_army_speed_factor = -0.35 }
+				set_variable = { UKR_ATO_army_attack_speed_factor = -0.35}
+
+				
 				NDR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
+					set_variable = { People_republic_army_attack_speed_factor = -0.45}
                     set_variable = { People_republic_casualty_trickleback = 0.35}
 					set_variable = { People_republic_army_attack_factor = -0.15}
 				}
@@ -2286,6 +2285,7 @@ focus_tree = {
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
+					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
 					set_variable = { People_republic_army_attack_factor = -0.15}
 				}	
@@ -2294,6 +2294,7 @@ focus_tree = {
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
+					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
 					set_variable = { People_republic_army_attack_factor = -0.15}
 				}
@@ -2302,6 +2303,7 @@ focus_tree = {
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
+					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
 					set_variable = { People_republic_army_attack_factor = -0.15}
 				}
@@ -2310,6 +2312,7 @@ focus_tree = {
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
+					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
 					set_variable = { People_republic_army_attack_factor = -0.15}
 				}									
@@ -2318,6 +2321,7 @@ focus_tree = {
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
+					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
 					set_variable = { People_republic_army_attack_factor = -0.15}
 				}
@@ -5897,8 +5901,8 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		prerequisite = { focus = UKR_humanitarion_help_to_people }
-		relative_position_id = UKR_humanitarion_help_to_people
+		prerequisite = { focus = UKR_organize_defense }
+		relative_position_id = UKR_organize_defense
 		ai_will_do = {
 			factor = 100
 		}
@@ -5927,6 +5931,39 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_humanitarion_help_to_people
+		icon = GFX_focus_UKR_humanitarion_help_to_people
+		cost = 0.5
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_volunteer_help }
+		relative_position_id = UKR_volunteer_help
+		ai_will_do = {
+			factor = 100
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		bypass = {
+			has_global_flag = ATO_Separatists_victory
+		}
+
+		completion_reward = {
+		    add_stability = 0.05
+			add_political_power = 35
+			hidden_effect = {
+
+			}
+		}
+	}
+
+	focus = {
 		id = UKR_end_of_separatism
 		icon = GFX_focus_UKR_victory_over_separatism
 		cost = 0.5
@@ -5934,7 +5971,7 @@ focus_tree = {
 		y = 1
 
 		prerequisite = { focus = UKR_launch_counterattacks }
-		prerequisite = { focus = UKR_volunteer_help }
+		prerequisite = { focus = UKR_humanitarion_help_to_people }
 		prerequisite = { focus = UKR_decommissioning_of_stocks }
 		mutually_exclusive = { focus = UKR_continuation_of_the_ato }
 		relative_position_id = UKR_decommissioning_of_stocks
@@ -6062,25 +6099,20 @@ focus_tree = {
 					limit = {
 						OR = {
 						    DPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+							    is_ai = no
 						    }
 						    KPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+							    is_ai = no
 						    }	
 						    OPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+							    is_ai = no
 						    }
 						    LPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
-						    }																				
+							    is_ai = no
+						    }
+						    RUS = { 
+							    is_ai = no
+						    }																										
 					    }
 						UKR = {
 							is_ai = yes
@@ -6367,39 +6399,6 @@ focus_tree = {
                 days = 45
             } 
 			unlock_decision_tooltip = UKR_defense_line_in_the_kramatorsk_slavyansk_agglomeration
-		}
-	}
-
-	focus = {
-		id = UKR_humanitarion_help_to_people
-		icon = GFX_focus_UKR_humanitarion_help_to_people
-		cost = 0.5
-		x = 0
-		y = 1
-
-		prerequisite = { focus = UKR_organize_defense }
-		relative_position_id = UKR_organize_defense
-		ai_will_do = {
-			factor = 100
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		available = {
-
-		}
-
-		bypass = {
-			has_global_flag = ATO_Separatists_victory
-		}
-
-		completion_reward = {
-		    add_stability = 0.05
-			add_political_power = 35
-			hidden_effect = {
-
-			}
 		}
 	}
 

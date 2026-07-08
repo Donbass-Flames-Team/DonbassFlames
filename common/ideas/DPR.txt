@@ -100,6 +100,7 @@ ideas = {
 			picture = GFX_idea_DPR_people_militia_of_donbass
 			
 			modifier = {
+				army_core_defence_factor = 0.2
 			    war_support_factor = 0.15
 				surrender_limit = 0.15
 				army_morale_factor = 0.05
