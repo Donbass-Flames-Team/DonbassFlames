@@ -7,8 +7,6 @@ state = {
 	buildings_max_level_factor = 2 
 	history = { 
 		owner = UKR 
-
-		add_dynamic_modifier = { modifier = donbass_state_idea }
 		
 		victory_points = { 18452 15 }
 		
@@ -20,6 +18,7 @@ state = {
 			infrastructure = 4 
 		}
 		
+		add_dynamic_modifier = { modifier = donbass_state_idea }
 		add_core_of = UKR 
 		
 		

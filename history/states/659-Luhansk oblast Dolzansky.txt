@@ -1,21 +1,18 @@
 state = { 
-	id = 659
+	id = 659 
 	name = "STATE_659" 
 	manpower = 350 
 	
-	state_category = slot_0
+	state_category = slot_0 
 	buildings_max_level_factor = 2 
 	history = { 
 		owner = UKR 
-
-		add_dynamic_modifier = { modifier = donbass_state_idea }
 		
 		victory_points = { 4037 2 }
 		
-		buildings = {  
-			infrastructure = 2
-		}
+		buildings = { infrastructure = 2 }
 		
+		add_dynamic_modifier = { modifier = donbass_state_idea }
 		add_core_of = UKR 
 		
 		
