@@ -2242,25 +2242,20 @@ focus_tree = {
 					limit = {
 						OR = {
 						    DPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+							    is_ai = no
 						    }
 						    KPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+							    is_ai = no
 						    }	
 						    OPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+							    is_ai = no
 						    }
 						    LPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
-						    }																				
+								is_ai = no
+						    }		
+							RUS = {
+								is_ai = no
+							}																		
 					    }
 						UKR = {
 							is_ai = yes
@@ -2273,11 +2268,15 @@ focus_tree = {
 	            set_variable = { UKR_ATO_experience_loss_factor = -0.30 }
 				set_variable = { UKR_ATO_casualty_trickleback = 0.35}
 				set_variable = { UKR_ATO_army_speed_factor = -0.35 }
+				set_variable = { UKR_ATO_army_attack_speed_factor = -0.35}
+
+				
 				NDR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
+					set_variable = { People_republic_army_attack_speed_factor = -0.45}
                     set_variable = { People_republic_casualty_trickleback = 0.35}
 					set_variable = { People_republic_army_attack_factor = -0.15}
 				}
@@ -2286,6 +2285,7 @@ focus_tree = {
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
+					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
 					set_variable = { People_republic_army_attack_factor = -0.15}
 				}	
@@ -2294,6 +2294,7 @@ focus_tree = {
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
+					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
 					set_variable = { People_republic_army_attack_factor = -0.15}
 				}
@@ -2302,6 +2303,7 @@ focus_tree = {
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
+					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
 					set_variable = { People_republic_army_attack_factor = -0.15}
 				}
@@ -2310,6 +2312,7 @@ focus_tree = {
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
+					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
 					set_variable = { People_republic_army_attack_factor = -0.15}
 				}									
@@ -2318,6 +2321,7 @@ focus_tree = {
 	                set_variable = { People_republic_pocket_penalty = -0.30 }
 	                set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
+					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
 					set_variable = { People_republic_army_attack_factor = -0.15}
 				}
@@ -6095,25 +6099,20 @@ focus_tree = {
 					limit = {
 						OR = {
 						    DPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+							    is_ai = no
 						    }
 						    KPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+							    is_ai = no
 						    }	
 						    OPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
+							    is_ai = no
 						    }
 						    LPR = { 
-							    NOT = {
-								    is_ai = yes
-							    }
-						    }																				
+							    is_ai = no
+						    }
+						    RUS = { 
+							    is_ai = no
+						    }																										
 					    }
 						UKR = {
 							is_ai = yes

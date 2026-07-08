@@ -2368,9 +2368,11 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		country_event = {
-			id = ukraine.65
-			days = 5
+		hidden_effect = {
+		    country_event = {
+			    id = ukraine.65
+			    days = 5
+		    }
 		}
 	}
 
@@ -2398,40 +2400,47 @@ country_event = {
 	            set_variable = { UKR_ATO_experience_loss_factor = -0.25 }
 			    set_variable = { UKR_ATO_casualty_trickleback = 0.25}
 			    set_variable = { UKR_ATO_army_speed_factor = -0.25 }
+				set_variable = { People_republic_army_attack_speed_factor = -0.25 }
 			}
 			NDR = {
 	            set_variable = { People_republic_pocket_penalty = -0.30 }
 	            set_variable = { People_republic_experience_loss_factor = -0.15 }
 				set_variable = { People_republic_army_speed_factor = -0.25 }
+                set_variable = { People_republic_army_attack_speed_factor = -0.25 }
 			}
 			DPR = {
 	            set_variable = { People_republic_pocket_penalty = -0.30 }
 	            set_variable = { People_republic_experience_loss_factor = -0.15 }
 				set_variable = { People_republic_army_speed_factor = -0.25 }
+				set_variable = { People_republic_army_attack_speed_factor = -0.25 }
 			}	
 			LPR = {
 				add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	            set_variable = { People_republic_pocket_penalty = -0.30 }
 	            set_variable = { People_republic_experience_loss_factor = -0.15 }
 				set_variable = { People_republic_army_speed_factor = -0.25 }
+				set_variable = { People_republic_army_attack_speed_factor = -0.25 }
 			}
 			SKR = {
 				add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	            set_variable = { People_republic_pocket_penalty = -0.30 }
 	            set_variable = { People_republic_experience_loss_factor = -0.15 }
 				set_variable = { People_republic_army_speed_factor = -0.25 }
+				set_variable = { People_republic_army_attack_speed_factor = -0.25 }
 			}
 			SLR = {
 				add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	            set_variable = { People_republic_pocket_penalty = -0.30 }
 	            set_variable = { People_republic_experience_loss_factor = -0.15 }
 				set_variable = { People_republic_army_speed_factor = -0.25 }
+				set_variable = { People_republic_army_attack_speed_factor = -0.25 }
 			}							
 			SDR = {
 				add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 	            set_variable = { People_republic_pocket_penalty = -0.30 }
 	            set_variable = { People_republic_experience_loss_factor = -0.15 }
 				set_variable = { People_republic_army_speed_factor = -0.25 }
+				set_variable = { People_republic_army_attack_speed_factor = -0.25 }
 			}
 		}
 	}
@@ -5501,6 +5510,25 @@ country_event = {
 		name = ukraine.153.a
 	    add_war_support = 0.015
 		add_political_power = 25
+	}
+}
+
+#Наплыв добровольцев после анексии крыма
+country_event = {
+	id = ukraine.154
+	title = ukraine.154.t
+	desc = ukraine.154.d
+    picture = GFX_Report_event_maidan_selfdefense_squads_picture
+
+	is_triggered_only = yes
+
+	immediate = {
+        
+	}
+
+	option = {
+		name = ukraine.154.a
+	   
 	}
 }
 
