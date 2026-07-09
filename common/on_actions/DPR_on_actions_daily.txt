@@ -1,0 +1,38 @@
+on_actions = {
+    on_daily = {
+        effect = {
+            if = {
+                limit = { country_exists = DPR }
+                DPR = {
+                    if = {
+                        limit = {
+                            date = 2014.09.21
+                            controls_state = 352
+                            NOT = { has_country_flag = dpr_37_fired }
+                        }
+                        country_event = { id = DPR.37 }
+                        set_country_flag = dpr_37_fired
+                    }
+                    if = {
+                        limit = {
+                            date = 2014.09.23
+                            controls_state = 416
+                            NOT = { has_country_flag = dpr_38_fired }
+                        }
+                        country_event = { id = DPR.38 }
+                        set_country_flag = dpr_38_fired
+                    }
+                    if = {
+                        limit = {
+                            date = 2014.11.03
+                            controls_state = 658
+                            NOT = { has_country_flag = dpr_39_fired }
+                        }
+                        country_event = { id = DPR.39 }
+                        set_country_flag = dpr_39_fired
+                    }
+                }
+            }
+        }
+    }
+}
