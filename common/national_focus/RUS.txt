@@ -1227,7 +1227,7 @@ focus_tree = {
 		id = RUS_introduction_of_anti_sanctions
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 48
+		x = 51
 		y = 0
 		
 		ai_will_do = {
@@ -1242,6 +1242,31 @@ focus_tree = {
 			
 		}
 	}
+
+	focus = {
+		id = RUS_agricultural_subsidies
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = -1
+		y = 1
+
+		prerequisite = { focus = RUS_introduction_of_anti_sanctions }
+		relative_position_id = RUS_introduction_of_anti_sanctions
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+
 
 	focus = {
 		id = RUS_support_the_import_substitution_policy
@@ -1266,11 +1291,103 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = RUS_turkish_pipeline
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 1
+		y = 1
+
+		prerequisite = { focus = RUS_support_the_import_substitution_policy }
+		relative_position_id = RUS_support_the_import_substitution_policy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = {
+		id = RUS_north_pipeline_two
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = -1
+		y = 1
+
+		prerequisite = { focus = RUS_support_the_import_substitution_policy }
+		relative_position_id = RUS_support_the_import_substitution_policy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = RUS_get_closer_to_china
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 5
+		y = 1
+
+		prerequisite = { focus = RUS_introduction_of_anti_sanctions }
+		relative_position_id = RUS_introduction_of_anti_sanctions
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_the_power_of_siberia_pipeline
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = RUS_get_closer_to_china }
+		relative_position_id = RUS_get_closer_to_china
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
     focus = {
-	    id = RUS_PMC
+	    id = RUS_regain_global_influence
 	    icon = GFX_goal_no_focus_RUS
 	    cost = 1
-	    x = -2
+	    x = -6
 	    y = 1
 
 	    prerequisite = { focus = RUS_introduction_of_anti_sanctions }
@@ -1284,37 +1401,41 @@ focus_tree = {
 	    }
 
 	    completion_reward = {
-		    633 = { transfer_state_to = WGN }
-		    633 = { add_core_of = WGN }
-
-		    hidden_effect = {
-			    if = {
-				    limit = {
-					    has_game_rule = {
-						    rule = streamer_mode
-						    option = STREAMER_ON
-					    }
-				    }
-                    WGN = {
-				        set_portraits = {
-					        character = WGN_dmitry_utkin
-					        civilian = { large = "gfx/leaders/WGN/WGN_dmitry_utkin_streamer.dds" }
-				        }
-			        } 
-			    }
-		    }
+		    
 	    }
     }
 
     focus = {
-	    id = RUS_pmc_redut
+	    id = RUS_information_war_with_europe
 	    icon = GFX_goal_no_focus_RUS
 	    cost = 1
-	    x = -2
+	    x = 4
+	    y = 1
+
+	    prerequisite = { focus = RUS_regain_global_influence }
+	    relative_position_id = RUS_regain_global_influence
+	
+	    ai_will_do = {
+		    factor = 1
+	    }
+
+	    available = {
+	    }
+
+	    completion_reward = {
+		    
+	    }
+    }
+
+    focus = {
+	    id = RUS_interfere_in_elections
+	    icon = GFX_goal_no_focus_RUS
+	    cost = 1
+	    x = 4
 	    y = 2
 
-	    prerequisite = { focus = RUS_PMC }
-	    relative_position_id = RUS_introduction_of_anti_sanctions
+	    prerequisite = { focus = RUS_information_war_with_europe }
+	    relative_position_id = RUS_regain_global_influence
 	
 	    ai_will_do = {
 		    factor = 1
@@ -1329,14 +1450,59 @@ focus_tree = {
     }	
 
     focus = {
+	    id = RUS_influence_in_syria
+	    icon = GFX_goal_no_focus_RUS
+	    cost = 1
+	    x = 1
+	    y = 1
+
+	    prerequisite = { focus = RUS_regain_global_influence }
+	    relative_position_id = RUS_regain_global_influence
+	
+	    ai_will_do = {
+		    factor = 1
+	    }
+
+	    available = {
+	    }
+
+	    completion_reward = {
+		    
+	    }
+    }	
+
+    focus = {
+	    id = RUS_pmc_redut
+	    icon = GFX_goal_no_focus_RUS
+	    cost = 1
+	    x = 0
+	    y = 2
+
+	    prerequisite = { focus = RUS_influence_in_syria }
+		prerequisite = { focus = RUS_influence_in_africa }
+	    relative_position_id = RUS_regain_global_influence
+	
+	    ai_will_do = {
+		    factor = 1
+	    }
+
+	    available = {
+	    }
+
+	    completion_reward = {
+		    
+	    }
+    }
+
+    focus = {
 	    id = RUS_influence_in_africa
 	    icon = GFX_goal_no_focus_RUS
 	    cost = 1
-	    x = -4
-	    y = 2
+	    x = -1
+	    y = 1
 
-	    prerequisite = { focus = RUS_PMC }
-	    relative_position_id = RUS_introduction_of_anti_sanctions
+	    prerequisite = { focus = RUS_regain_global_influence }
+	    relative_position_id = RUS_regain_global_influence
 	
 	    ai_will_do = {
 		    factor = 1
@@ -1549,7 +1715,7 @@ focus_tree = {
 		id = RUS_create_EAEU
 		icon = GFX_goal_no_focus_RUS
 		cost = 3
-		x = -5
+		x = -8
 		y = 1
 
 		prerequisite = { focus = RUS_domestic_policy }
@@ -1573,6 +1739,96 @@ focus_tree = {
 			}
 		}
 	}
+
+
+	focus = {
+		id = RUS_development_of_the_digital_economy
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = -6
+		y = 1
+
+		prerequisite = { focus = RUS_domestic_policy }
+		relative_position_id = RUS_domestic_policy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = RUS_improve_internet_infrastructure
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = -1
+		y = 1
+
+		prerequisite = { focus = RUS_development_of_the_digital_economy }
+		relative_position_id = RUS_development_of_the_digital_economy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = RUS_development_of_digital_government_services
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = 1
+		y = 1
+
+		prerequisite = { focus = RUS_development_of_the_digital_economy }
+		relative_position_id = RUS_development_of_the_digital_economy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = {
+		id = RUS_fight_against_bureaucracy
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = 0
+		y = 2
+
+		prerequisite = { focus = RUS_improve_internet_infrastructure }
+		prerequisite = { focus = RUS_development_of_digital_government_services }
+		relative_position_id = RUS_development_of_the_digital_economy
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}	
 
 	focus = {
 		id = RUS_support_etatism
@@ -1639,6 +1895,8 @@ focus_tree = {
 		    
 		}
 	}
+
+
 
 	focus = {
 		id = RUS_yarovaya_package
@@ -1713,7 +1971,7 @@ focus_tree = {
 		id = RUS_investments_in_crimea
 		icon = GFX_goal_no_focus_RUS
 		cost = 5
-		x = 5
+		x = 6
 		y = 1
 
 		prerequisite = { focus = RUS_domestic_policy }
@@ -1736,11 +1994,56 @@ focus_tree = {
 		id = RUS_construction_of_the_crimean_bridge
 		icon = GFX_goal_no_focus_RUS
 		cost = 3
-		x = 5
-		y = 2
+		x = -1
+		y = 1
 
 		prerequisite = { focus = RUS_investments_in_crimea }
-		relative_position_id = RUS_domestic_policy
+		relative_position_id = RUS_investments_in_crimea
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = RUS_send_settlers_to_crimea
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = 0
+		y = 2
+
+		prerequisite = { focus = RUS_construction_of_the_crimean_bridge }
+		prerequisite = { focus = RUS_fight_with_crimean_tatar_separatism }
+		relative_position_id = RUS_investments_in_crimea
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_fight_with_crimean_tatar_separatism
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = 1
+		y = 1
+
+		prerequisite = { focus = RUS_investments_in_crimea }
+		relative_position_id = RUS_investments_in_crimea
 		
 		ai_will_do = {
 			factor = 1
@@ -1759,8 +2062,13 @@ focus_tree = {
 		icon = GFX_goal_no_focus_RUS
 		cost = 3
 		x = 35
-		y = 6
+		y = 5
 
+        prerequisite = { focus = RUS_expand_the_law_on_foreign_agents }
+		prerequisite = { focus = RUS_rosgvardia }
+		prerequisite = { focus = RUS_state_media_monopoly }
+		prerequisite = { focus = RUS_yunarmy }
+		prerequisite = { focus = RUS_cultural_sovereignty }
 		
 		ai_will_do = {
 			factor = 1
@@ -1840,9 +2148,9 @@ focus_tree = {
 			
 		}
 	}
-
+    #Мишустин становится презиком
 	focus = {
-		id = RUS_constitutional_amendments
+		id = RUS_renew_the_cabinet_of_ministers
 		icon = GFX_goal_no_focus_RUS
 		cost = 3
 		x = 0
@@ -1863,6 +2171,28 @@ focus_tree = {
 			
 		}
 	}	
+
+	focus = {
+		id = RUS_constitutional_amendments
+		icon = GFX_goal_no_focus_RUS
+		cost = 3
+		x = 0
+		y = 4
+
+	    prerequisite = { focus = RUS_renew_the_cabinet_of_ministers }
+		relative_position_id = RUS_elections_2018
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			
+		}
+	}
 
 	focus = {
 		id = RUS_cooperation_with_people_republics
@@ -1896,6 +2226,29 @@ focus_tree = {
 
 		prerequisite = { focus = RUS_cooperation_with_people_republics }
 		prerequisite = { focus = RUS_sign_minsk_two }
+		relative_position_id = RUS_cooperation_with_people_republics
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = RUS_economic_cooperation_with_ldpr
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = -2
+		y = 3
+
+		prerequisite = { focus = RUS_recognize_peoples_passports }
 		relative_position_id = RUS_cooperation_with_people_republics
 		
 		ai_will_do = {
@@ -2013,7 +2366,7 @@ focus_tree = {
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
 		x = 35
-		y = 10
+		y = 11
 
 		
 		ai_will_do = {
@@ -2031,10 +2384,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_establish_bars
+		id = RUS_expand_military_export
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 3
+		x = 0
 		y = 1
 
 		prerequisite = { focus = RUS_development_of_amred_forces }
@@ -2053,10 +2406,32 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_establish_bars
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 4
+		y = 2
+
+		prerequisite = { focus = RUS_increase_contracts_in_army }
+		relative_position_id = RUS_development_of_amred_forces
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
 		id = RUS_establish_aerospace_forces
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = -3
+		x = -2
 		y = 1
 
 		prerequisite = { focus = RUS_development_of_amred_forces }
@@ -2122,7 +2497,7 @@ focus_tree = {
 		id = RUS_increase_contracts_in_army
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 0
+		x = 2
 		y = 1
 
 		prerequisite = { focus = RUS_development_of_amred_forces }
@@ -2166,12 +2541,17 @@ focus_tree = {
 		id = RUS_ultimatum_to_the_west
 		icon = GFX_goal_no_focus_RUS
 		cost = 5
-		x = 35
-		y = 14
+		x = 2
+		y = 1
 		
 		ai_will_do = {
 			factor = 1
 		}
+
+		
+		prerequisite = { focus = RUS_pmc_redut }
+		prerequisite = { focus = RUS_interfere_in_elections }
+		relative_position_id = RUS_pmc_redut
 
 		available = {
 			date > 2021.11.11
