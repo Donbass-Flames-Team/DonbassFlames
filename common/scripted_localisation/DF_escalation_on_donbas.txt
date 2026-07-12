@@ -181,3 +181,54 @@ defined_text = {
         localization_key = "DF_escalation_ukraine_army_icon_tt_5"
     }
 }
+
+defined_text = {
+    name = get_controlled_checkpoints_in_donetsk_region
+
+    text = {
+        trigger = {
+            tag = UKR
+        }
+        localization_key = "UKR_controlled_checkpoints_in_donetsk_region"
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                tag = DPR
+                tag = LPR
+                tag = RUS
+                tag = SKR
+                tag = NDR
+                tag = SDR
+            }
+        }
+        localization_key = "People_Republic_controlled_checkpoints_in_donetsk_region"
+    }
+}
+
+
+defined_text = {
+    name = get_controlled_checkpoints_in_luhansk_region
+
+    text = {
+        trigger = {
+            tag = UKR
+        }
+        localization_key = "UKR_controlled_checkpoints_in_luhansk_region"
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                tag = DPR
+                tag = LPR
+                tag = RUS
+                tag = SKR
+                tag = NDR
+                tag = SDR
+            }
+        }
+        localization_key = "People_Republic_controlled_checkpoints_in_luhansk_region"
+    }
+}

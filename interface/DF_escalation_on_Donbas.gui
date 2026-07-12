@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "Escalation_on_Donbas"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height = 312 }
+		size = { width = 100% height = 322 }
 
 		iconType = {
 		    name = "ATO_escalation_background"
@@ -86,16 +86,36 @@ guiTypes = {
 		buttonType = {
 			name = "DF_ukraine_army_icon"
 			spriteType = "GFX_escalation_ukraine_army_icon"
-			position = { x = 34 y = 116 }
-			tooltip = "[get_escalation_ukranian_army_icon_tt]"
+			position = { x = 34 y = 106 }
+			pdx_tooltip = get_escalation_ukranian_army_icon_tt
 		}
 
 		buttonType = {
 			name = "DF_people_republic_army_icon"
 			spriteType = "GFX_escalation_people_republic_army_icon"
-			position = { x = 258 y = 112 }
-			tooltip = "[get_escalation_people_republic_army_icon_tt]"
+			position = { x = 258 y = 106 }
+			pdx_tooltip  = "[get_escalation_people_republic_army_icon_tt]"
 		}
+
+		instantTextBoxType = {
+			name = "DF_checkpoint_in_donetsk_region"
+			position = { x = -110 y = 285 }
+			font = "hoi_18mbs"
+			text = "DF_checkpoint_in_donetsk_region"
+			maxWidth = 500
+			format = centre
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "DF_checkpoint_in_luhansk_region"
+			position = { x = 130 y = 285 }
+			font = "hoi_18mbs"
+			text = "DF_checkpoint_in_luhansk_region"
+			maxWidth = 500
+			format = centre
+			alwaystransparent = yes
+		}		
 
 	}
 }

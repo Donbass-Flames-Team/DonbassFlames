@@ -183,6 +183,39 @@ UKR_separatism_decision = {
 		}
 	}
 
+	UKR_start_operation_border = {
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			
+		}
+		visible = {
+			NOT = {
+				has_country_flag = UKR_odessa_uprised
+			}
+		}
+		icon = GFX_decision_coat_of_arms_odessa_oblast
+
+		fire_only_once = yes
+		cost = 5
+		complete_effect = {
+			subtract_from_variable = {
+				var = OPR_separatism_value
+				value = 5
+				tooltip = UKR_minus_separatism
+			} 
+			clamp_variable = {
+				var = OPR_separatism_value
+				min = 0
+				max = 100
+			}
+		}
+		ai_will_do = {
+			factor = 75
+		}
+	}
+
 	UKR_raise_the_sbu = {
 
 		allowed = {
@@ -2773,7 +2806,7 @@ UKR_ATO_decision = {
 				if = {
 					limit = {
 						UKR = {
-							controls_province = 18218  
+							controls_province = 18218 
 						}
 					}
 					526 = {

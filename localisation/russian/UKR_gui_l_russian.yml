@@ -168,7 +168,7 @@
  #Main menu
  MENU_UPDATELOGO:0 "§OТекущая версия: Alpha 0.0.1.6§!\n\n§HЧТО ПЛАНИРУЕТСЯ НА РЕЛИЗЕ 0.1:§!\n- §R[WIP]§! Контент для Украины, Российской Федерации, Донецкой Народной Республики, Луганской Народной Республики, Харьковской Народной Республики и Одесской Народной Республики\n- §G[ГОТОВО]§! Новая уникальная карта восточной Европы\n- §G[ГОТОВО]§! Уникальная GUI «Регионального сепаратизма» для Украины\n- §G[ГОТОВО]§! Уникальная механика радикализации Евромайдана для Украины\n- §Y[DEMO]§! Уникальная GUI Верховной Рады для Украины\n- §Y[DEMO]§! Национальные духи для всех стран\n- §G[ГОТОВО]§! Обновленный минималистичный интерфейс игры для более приятной игры в мод\n- §G[ГОТОВО]§! Новое меню выбора сценариев\n- §G[ГОТОВО]§! Специально подобранная музыка для более лучшего погружения в атмосферу мода\n- §G[ГОТОВО]§! Уникальная механика президентских выборов для Украины\n- §R[WIP]§! Уникальные ветки для президентов Украины\n- §R[WIP]§! Уникальная механика генштаба для всех сторон\n- §R[WIP]§! Уникальная механика артилерийских ударов для всех сторон\n- §G[ГОТОВО]§! Решения на создание добровольческих батальонов для зоны АТО для Украины\n- §R[WIP]§! Портреты для всех правителей стран на карте на момент 21.11.2013\n- §G[ГОТОВО]§! Уникальная механика эскалации\n\n§YСледите за обновлениями мода§! на нашем §CDiscord-сервере§! и §CTelegram-канале!§!"
 
-
+ #АТО
  Escalation_on_donbas_1_tt: "Первый уровень Эскалации\n\n§YЭффекты:§!\n\nАтака дивизий: §R-35.00%§!\nСкорость дивизий: §R-15.00%§!\nПрорыв дивизий: §R-15.00%§!"
  Escalation_on_donbas_2_tt: "Второй уровень Эскалации\n\n§YЭффекты:§!\n\nАтака дивизий: §R-5.00%§!\nПрорыв дивизий: §R-5.00%§!"
  Escalation_on_donbas_3_tt: "Третий уровень Эскалации\n\n§YЭффекты:§!\n\nАтака дивизий: §R-5.00%§!\nПрорыв дивизий: §R-5.00%§!"
@@ -182,10 +182,20 @@
  DF_escalation_ukraine_army_icon_tt_3: "§YАрмия Украины§!n\n§YТекущие эффекты:§!\n\nАтака дивизий: §R-5.00%§!\nСкорость дивизий: §R-5.00%§!\nПрорыв дивизий: §R-5.00%§!"
  DF_escalation_ukraine_army_icon_tt_4: "§YАрмия Украины§!\n\n§YТекущие эффекты:§!\n\nАтака дивизий: §R-5.00%§!\nПрорыв дивизий: §R-5.00%§!"
 
+ get_escalation_ukranian_army_icon_tt: "[get_escalation_ukranian_army_icon_tt]" 
+
  DF_escalation_people_republic_army_icon_tt: "§YАрмия Народных Республик§!"
  DF_escalation_title_text: "Уровень эскалации"
- DF_escalationUKR_title_text: "Вооруженные Силы Украины"
- DF_escalationDPR_title_text: "Народная милиция"
+ DF_escalationUKR_title_text: "[UKR.GetFlag]§YВооруженные Силы Украины§!"
+ DF_escalationDPR_title_text: "[DPR.GetFlag]§YНародная милиция§!"
+
+ DF_checkpoint_in_donetsk_region: "КПП в Донецкой области  \n[get_controlled_checkpoints_in_donetsk_region]/3"
+ DF_checkpoint_in_luhansk_region: "КПП в Луганской области \n [get_controlled_checkpoints_in_luhansk_region]/3"
+
+ UKR_controlled_checkpoints_in_donetsk_region: "§Y[?UKR_controlled_checkpoints_in_donetsk_region_value]§!"
+ People_Republic_controlled_checkpoints_in_donetsk_region: "§Y[?People_Republic_controlled_checkpoints_in_donetsk_region_value]§!"
+ UKR_controlled_checkpoints_in_luhansk_region: "§Y[?UKR_controlled_checkpoints_in_luhansk_region_value]§!"
+ People_Republic_controlled_checkpoints_in_luhansk_region: "§Y[?People_Republic_controlled_checkpoints_in_luhansk_region_value]§!"
 
 
 

@@ -1457,7 +1457,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_preparation_for_elections
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_preparation_for_elections
 		cost = 0.3
 		x = -1
 		y = 2
@@ -1761,7 +1761,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_coalition_in_parlamient
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_coalition_in_parilamient
 		cost = 0.3
 		x = 1
 		y = 1
@@ -1797,7 +1797,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_adoption_of_new_laws
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_adoption_of_new_laws
 		cost = 0.2
 		x = 1
 		y = 2
@@ -1902,7 +1902,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_support_of_the_volunteer_battalion
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_support_of_the_volunteer_battalion
 		cost = 0.2
 		x = 0
 		y = 3
@@ -3444,7 +3444,7 @@ focus_tree = {
 	focus = {
 		id = UKR_stop_cooperation_with_russia
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.5
 		x = 6
 		y = 1
 
@@ -3503,7 +3503,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_develop_renewable_energy_sources
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 2
 		x = 0
 		y = 1
@@ -3894,7 +3894,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_ministry_of_information_policy_of_ukraine
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 2
 		x = 0
 		y = 1
@@ -3915,7 +3915,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_independent_church
-		icon = GFX_focus_UKR_police_reform
+		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 4
 		y = 1
@@ -3933,7 +3933,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_take_tomos
-		icon = GFX_focus_UKR_police_reform
+		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 0
 		y = 1
@@ -3951,7 +3951,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_anti_raider_law
-		icon = GFX_focus_UKR_police_reform
+		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 0
 		y = 3
@@ -3969,7 +3969,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_support_ukranian_language
-		icon = GFX_focus_UKR_police_reform
+		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 2
 		y = 3
@@ -3987,7 +3987,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_groysman_govenrement
-		icon = GFX_focus_UKR_police_reform
+		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 0
 		y = 2
@@ -4007,7 +4007,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_army_language_faith
-		icon = GFX_focus_UKR_police_reform
+		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 0
 		y = 4
@@ -4028,7 +4028,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_police_reform
-		icon = GFX_focus_UKR_police_reform
+		icon = GFX_goal_no_focus_UKR
 		cost = 3
 		x = 2
 		y = 1
@@ -4046,7 +4046,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_form_kord
-		icon = GFX_focus_UKR_police_reform
+		icon = GFX_goal_no_focus_UKR
 		cost = 3
 		x = 2
 		y = 2
@@ -4064,7 +4064,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_healthcare_reform
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 3
 		x = -2
 		y = 1
@@ -4082,7 +4082,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_education_reform
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 3
 		x = -2
 		y = 3
@@ -4102,7 +4102,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_economic_reforms
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 9
 		y = 1
@@ -4123,7 +4123,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_strengthening_banking_system
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 2
 		x = 1
 		y = 1
@@ -4142,7 +4142,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_cleaning_up_banking_system
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 2
 		x = 0
 		y = 2
@@ -4161,7 +4161,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_nationalize_privatbank
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 2
 		x = 2
 		y = 2
@@ -4180,7 +4180,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_increase_millitary_spends
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1.5
 		x = -1
 		y = 1
@@ -4201,7 +4201,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_credits_from_imf
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1.5
 		x = -3
 		y = 1
@@ -4222,7 +4222,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_measures_to_reduce_deficit
-		icon = GFX_focus_UKR_petr_poroshenko
+		icon = GFX_goal_no_focus_UKR
 		cost = 1.5
 		x = 1
 		y = 1
@@ -5175,7 +5175,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_cooperation_with_volunteers
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 2
 		y = 1
@@ -5194,7 +5194,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_western_instructors
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 0
 		y = 1
@@ -5213,7 +5213,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_new_communication_systems
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 3
 		x = -4
 		y = 2
@@ -5254,7 +5254,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_missionary_command
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 0
 		y = 1
@@ -5356,7 +5356,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_increase_the_number_of_contract_soldiers
-		icon = GFX_focus_UKR_logistic_reforms
+		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 2
 		y = 6
@@ -5410,7 +5410,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_nato_standard_army
-		icon = GFX_focus_UKR_tro_reforms
+		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 0
 		y = 7
@@ -5430,7 +5430,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_reliance_on_centralized_command
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 2
 		y = 2
@@ -5450,7 +5450,7 @@ focus_tree = {
 	focus = {
 		id = UKR_expand_the_general_staff
 		icon = GFX_focus_UKR_start_of_ato
-		cost = 5
+		cost = GFX_goal_no_focus_UKR
 		x = 2
 		y = 3
 
@@ -5468,7 +5468,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_strengthen_general_staff_planning
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 3
 		x = 2
 		y = 4
@@ -5486,7 +5486,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_ukranian_mic
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = -6
 		y = 2
@@ -5504,7 +5504,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_new_infantry_equipment
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 1
@@ -5522,7 +5522,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_mlrs_vilkha
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = -4
 		y = 1
@@ -5545,7 +5545,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_investments_in_armored_vehicles
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = -2
 		y = 1
@@ -5568,7 +5568,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_expand_ammunition_plants
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = -1
 		y = 2
@@ -5603,7 +5603,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_expand_millitary_factories
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 8
 		x = -1
 		y = 3
@@ -6573,7 +6573,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_highlighting_the_situation_in_the_media
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_highlighting_the_situation_in_the_media
 		cost = 0.3
 		x = 0
 		y = 1
