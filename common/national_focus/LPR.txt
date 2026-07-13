@@ -505,6 +505,12 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_Introduction_of_a_state_emergency"
 			add_political_power = 20
 			add_stability = 0.035
+			hidden_effect = {
+				country_event = {
+					id = LPR.12
+					days = 6
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -556,7 +562,7 @@ focus_tree = {
 	focus = {
 		id = LPR_elections_2014
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 0
+		x = -1
 		y = 4
 		cost = 2
 		relative_position_id = LPR_Introduction_of_a_state_emergency
@@ -651,7 +657,7 @@ focus_tree = {
 	focus = {
 		id = LPR_social_tension
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = -9
+		x = -7
 		y = 1
 		cost = 0
 		prerequisite = { focus = LPR_start_solving_the_republics_problems }
@@ -702,7 +708,7 @@ focus_tree = {
 		id = LPR_Support_for_vulnerable_populations
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = -1
-		y = 3
+		y = 2
 		cost = 2
 		prerequisite = { focus = LPR_provide_assistance_to_those_in_need }
         relative_position_id = LPR_social_tension
@@ -727,7 +733,7 @@ focus_tree = {
 		id = LPR_establishing_new_workplaces
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 1
-		y = 3
+		y = 2
 		cost = 4
 		prerequisite = { focus = LPR_provide_assistance_to_those_in_need }
 		relative_position_id = LPR_social_tension
@@ -755,7 +761,7 @@ focus_tree = {
 		id = LPR_start_paying_pensions
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = -1
-		y = 4
+		y = 3
 		cost = 8
 		prerequisite = { focus = LPR_Support_for_vulnerable_populations }
         relative_position_id = LPR_social_tension
@@ -779,7 +785,7 @@ focus_tree = {
 		id = LPR_psychological_rehabilitation
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 1
-		y = 4
+		y = 3
 		cost = 2
 		prerequisite = { focus = LPR_establishing_new_workplaces }
        relative_position_id = LPR_social_tension
@@ -825,7 +831,7 @@ focus_tree = {
 	focus = {
 		id = LPR_economic_collapse
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 28
+		x = 18
 		y = 1
 		cost = 0
 		prerequisite = { focus = LPR_start_solving_the_republics_problems }
@@ -1032,7 +1038,7 @@ focus_tree = {
 	focus = {
 		id = LPR_shattered_electric_power
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 22
+		x = 12
 		y = 1
 		cost = 0
 		prerequisite = { focus = LPR_start_solving_the_republics_problems }
@@ -1168,7 +1174,7 @@ focus_tree = {
 	focus = {
 		id = LPR_humanitarian_catastrophe
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 16
+		x = 6
 		y = 1
 		cost = 0
 		prerequisite = { focus = LPR_start_solving_the_republics_problems }
@@ -1389,7 +1395,7 @@ focus_tree = {
 	focus = {
 		id = LPR_disarm_illegal_formations
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 2
+		x = 1
 		y = 1
 		cost = 0
 		prerequisite = { focus = LPR_republic_of_plotnicky }
@@ -1408,10 +1414,11 @@ focus_tree = {
 	focus = {
 		id = LPR_fight_with_traitors
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 0
+		x = -1
 		y = 1
 		cost = 0
 		prerequisite = { focus = LPR_disarm_illegal_formations }
+		prerequisite = { focus = LPR_elections_2014 }
 		relative_position_id = LPR_disarm_illegal_formations
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -1428,7 +1435,7 @@ focus_tree = {
 	focus = {
 		id = LPR_info_war_and_propaganda
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = -2
+		x = -1
 		y = 1
 		cost = 0
 		prerequisite = { focus = LPR_start_solving_the_republics_problems }
@@ -1454,7 +1461,7 @@ focus_tree = {
 	focus = {
 		id = LPR_creating_own_media
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = -2
+		x = -1
 		y = 2
 		cost = 4
 		prerequisite = { focus = LPR_info_war_and_propaganda }
@@ -1484,7 +1491,7 @@ focus_tree = {
 	focus = {
 		id = LPR_disconnect_from_ukrainian_media
 		icon = generic_political_pressure
-		x = -2
+		x = -1
 		y = 3
 		cost = 2
 		prerequisite = { focus = LPR_creating_own_media }
@@ -1514,7 +1521,7 @@ focus_tree = {
 	focus = {
 		id = LPR_public_engagement
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = -3
+		x = -2
 		y = 4
 		cost = 5
 		prerequisite = { focus = LPR_disconnect_from_ukrainian_media }
@@ -1539,7 +1546,7 @@ focus_tree = {
 	focus = {
 		id = LPR_invite_international_reporters
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = -1
+		x = 0
 		y = 4
 		cost = 8
 		prerequisite = { focus = LPR_disconnect_from_ukrainian_media }
