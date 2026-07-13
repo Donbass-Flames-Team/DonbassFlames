@@ -99,6 +99,25 @@ minsk_negotations_historical_borders = {
 	}
 }
 
+ilovaisk_encirclement_of_troops_status = {
+	name = "ilovaisk_encirclement_of_troops_status"
+	group = "RULE_MOD_SETTINGS"
+
+	default = {
+		name = "ilovaisk_encirclement_of_troops_status_default"
+		text = "ilovaisk_encirclement_of_troops_status_default"
+		desc = "ilovaisk_encirclement_of_troops_status_default_desc"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = "ilovaisk_encirclement_of_troops_status_events"
+		text = "ilovaisk_encirclement_of_troops_status_events"
+		desc = "ilovaisk_encirclement_of_troops_status_events_desc"
+		allow_achievements = yes
+	}
+}
+
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"

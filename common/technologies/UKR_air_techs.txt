@@ -1,0 +1,659 @@
+technologies = {
+	
+	@1960 = -1
+	@1970 = 2
+	@1980 = 5
+	@1990 = 8
+	@2000 = 11
+	@2010 = 14
+	@2015 = 17
+	@2020 = 20
+	@2025 = 23
+	@2030 = 26
+	@2035 = 29
+    # light fighter
+	light_fighter_1 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = light_fighter_2
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1960
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x =  @1960 y = 0 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	light_fighter_2 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = light_fighter_3
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1970
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = @1970 y = 0 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	light_fighter_3 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = light_fighter_4
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1980
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = @1980 y = 0 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	light_fighter_4 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = light_fighter_5
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 2010
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = @2010 y = 0 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	light_fighter_5 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}		
+
+		research_cost = 1.5
+		start_year = 2020
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = @2020 y = 0 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+ # heavy fighter
+	heavy_fighter_1 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = heavy_fighter_2
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1960
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	heavy_fighter_2 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = heavy_fighter_3
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1970
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @1970 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	heavy_fighter_3 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = heavy_fighter_4
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1980
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @1980 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	heavy_fighter_4 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = heavy_fighter_5
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 2010
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @2010 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+ # frontline bomber
+	frontline_bomber_1 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = frontline_bomber_2
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1960
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	frontline_bomber_2 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = frontline_bomber_3
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1970
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @1970 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	frontline_bomber_3 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = frontline_bomber_4
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1980
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @1980 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+ # cas
+	cas_1 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = cas_2
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1960
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	cas_2 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = cas_3
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1970
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @1970 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	cas_3 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = cas_4
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1980
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @1980 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	cas_4 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = cas_5
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 2010
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @2010 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	cas_5 = {
+		enable_equipments = {
+			
+		}
+		
+		enable_subunits = {
+			
+		}		
+
+		research_cost = 1.5
+		start_year = 2020
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @2020 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    # Transport plane
+	transport_plane_1 = {
+		enable_equipments = {
+			transport_plane_equipment_1
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = transport_plane_2
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1960
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @1960 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	transport_plane_2 = {
+		enable_equipments = {
+			transport_plane_equipment_2
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = transport_plane_3
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1970
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @1970 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	transport_plane_3 = {
+		enable_equipments = {
+			transport_plane_equipment_3
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = transport_plane_4
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1980
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @1980 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	transport_plane_4 = {
+		enable_equipments = {
+			transport_plane_equipment_4
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		path = {
+			leads_to_tech = transport_plane_5
+			research_cost_coeff = 1
+		}			
+
+		research_cost = 1.5
+		start_year = 1990
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @1990 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	transport_plane_5 = {
+		enable_equipments = {
+			transport_plane_equipment_5
+		}
+		
+		enable_subunits = {
+			
+		}		
+
+		research_cost = 1.5
+		start_year = 2020
+		folder = {
+			name = UKR_air_techs_folder
+			position = { x = 0 y = @2020 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}
