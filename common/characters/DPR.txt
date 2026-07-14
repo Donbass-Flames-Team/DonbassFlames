@@ -23,7 +23,66 @@ characters = {
 			ideology = autoritarian_democracy
 			traits = { }
 		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
 	}
+
+    Mikhail_Tolstykh = {
+		name = Mikhail_Tolstykh
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Mikhail_Tolstykh"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+    Alexander_Khodakovsky = {
+		name = Alexander_Khodakovsky
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Alexander_Khodakovsky"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}	
+
+    Igor_Bezler = {
+		name = Igor_Bezler
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Igor_Bezler"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}	
 
 	andrey_purgin = {
 		name = andrey_purgin
@@ -48,6 +107,14 @@ characters = {
 		country_leader = {
 			ideology = autoritarian_democracy
 			traits = { }
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}	
 

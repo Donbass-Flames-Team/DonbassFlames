@@ -2409,7 +2409,7 @@ focus_tree = {
 		id = RUS_establish_bars
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 4
+		x = 3
 		y = 2
 
 		prerequisite = { focus = RUS_increase_contracts_in_army }
@@ -2519,7 +2519,7 @@ focus_tree = {
 		id = RUS_modernization_of_tanks
 		icon = GFX_goal_no_focus_RUS
 		cost = 1
-		x = 0
+		x = -1
 		y = 1
 
 		prerequisite = { focus = RUS_increase_contracts_in_army }

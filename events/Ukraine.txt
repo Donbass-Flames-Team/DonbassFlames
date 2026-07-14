@@ -5084,6 +5084,7 @@ country_event = {
 	option = {
 		name = ukraine.138.a
 		add_political_power = 15
+		add_stability = 0.01
 	}
 }
 
@@ -5513,7 +5514,7 @@ country_event = {
 	}
 }
 
-#Наплыв добровольцев после анексии крыма
+#
 country_event = {
 	id = ukraine.154
 	title = ukraine.154.t
