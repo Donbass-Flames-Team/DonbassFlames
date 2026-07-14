@@ -95,5 +95,160 @@ on_actions = {
 			}
 		}
 	}
+	on_daily = {
+		effect = {
+			# Uspenivka
+			if = {
+				limit = {
+					NOT = { has_global_flag = Uspenivka_is_under_UKR }
+					UKR = { controls_province = 16004 }
+				}
+				set_global_flag = Uspenivka_is_under_UKR
+				UKR = {
+				    add_to_variable = {
+					    value = 1
+					    var = UKR_controlled_checkpoints_in_donetsk_region_value
+				    }
+				}
+				if = {
+					limit = { has_global_flag = Uspenivka_is_under_DPR }
+					clr_global_flag = Uspenivka_is_under_DPR
+					DPR = {
+					    subtract_from_variable = {
+					        value = 1
+					        var = People_Republic_controlled_checkpoints_in_donetsk_region_value
+				        }
+					}
+				}
+			}	
+			if = {
+				limit = {
+					NOT = { has_global_flag = Uspenivka_is_under_DPR }
+					OR = {
+					    DPR = { controls_province = 16004 }
+						LPR = { controls_province = 16004 }
+					}
+				}
+				set_global_flag = Uspenivka_is_under_DPR
+				DPR = {
+				    add_to_variable = {
+					    value = 1
+					    var = People_Republic_controlled_checkpoints_in_donetsk_region_value
+				    }
+				}
+				if = {
+					limit = { has_global_flag = Uspenivka_is_under_UKR }
+					clr_global_flag = Uspenivka_is_under_UKR
+					UKR = {
+					    subtract_from_variable = {
+					        value = 1
+					        var = UKR_controlled_checkpoints_in_donetsk_region_value
+				        }
+					}
+				}
+			}
+			# Marinovka
+			if = {
+				limit = {
+					NOT = { has_global_flag = Marinovka_is_under_UKR }
+					UKR = { controls_province = 11706  }
+				}
+				set_global_flag = Marinovka_is_under_UKR
+				UKR = {
+			        add_to_variable = {
+					    value = 1
+					    var = UKR_controlled_checkpoints_in_donetsk_region_value
+				    }
+				}
+				if = {
+					limit = { has_global_flag = Marinovka_is_under_DPR }
+					clr_global_flag = Marinovka_is_under_DPR
+					DPR = {
+					    subtract_from_variable = {
+					        value = 1
+					        var = People_Republic_controlled_checkpoints_in_donetsk_region_value
+				        }
+					}
+				}
+			}	
+			if = {
+				limit = {
+					NOT = { has_global_flag = Marinovka_is_under_DPR }
+					OR = {
+					    DPR = { controls_province = 11706  }
+						LPR = { controls_province = 11706  }
+					}
+				}
+				set_global_flag = Marinovka_is_under_DPR
+				DPR = {
+				    add_to_variable = {
+					    value = 1
+					    var = People_Republic_controlled_checkpoints_in_donetsk_region_value
+				    }
+				}
+				if = {
+					limit = { has_global_flag = Marinovka_is_under_UKR }
+					clr_global_flag = Marinovka_is_under_UKR
+					UKR = {
+					    subtract_from_variable = {
+					        value = 1
+					        var = UKR_controlled_checkpoints_in_donetsk_region_value
+				        }
+					}
+				}
+			}	
+			# Novoazovsk
+			if = {
+				limit = {
+					NOT = { has_global_flag = Novoazovsk_is_under_UKR }
+					UKR = { controls_province = 10105  }
+				}
+				set_global_flag = Novoazovsk_is_under_UKR
+				log = "[GetDateText]: [Root.GetName]: Novoazovsk is under control ukr"
+				UKR = {
+				    add_to_variable = {
+					    value = 1
+					    var = UKR_controlled_checkpoints_in_donetsk_region_value
+				    }
+				}
+				if = {
+					limit = { has_global_flag = Novoazovsk_is_under_DPR }
+					clr_global_flag = Novoazovsk_is_under_DPR
+				    DPR = {
+					    subtract_from_variable = {
+					        value = 1
+					        var = People_Republic_controlled_checkpoints_in_donetsk_region_value
+				        }
+					}
+				}
+			}	
+			if = {
+				limit = {
+					NOT = { has_global_flag = Novoazovsk_is_under_DPR }
+					OR = {
+					    DPR = { controls_province = 10105  }
+						LPR = { controls_province = 10105  }
+					}
+				}
+				set_global_flag = Novoazovsk_is_under_DPR
+				DPR = {
+				    add_to_variable = {
+					    value = 1
+					    var = People_Republic_controlled_checkpoints_in_donetsk_region_value
+				    }
+				}
+				if = {
+					limit = { has_global_flag = Novoazovsk_is_under_UKR }
+					clr_global_flag = Novoazovsk_is_under_UKR
+					UKR = {
+					    subtract_from_variable = {
+					        value = 1
+					        var = UKR_controlled_checkpoints_in_donetsk_region_value
+				        }
+					}
+				}
+			}										
+		}
+	}
 }
 
