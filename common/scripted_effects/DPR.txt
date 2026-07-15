@@ -1,0 +1,137 @@
+## Help from russian through checkpoints
+
+DPR_help_from_russia_through_checkpoints_effect = {
+	set_variable = {
+        var = infantry_equipment_value
+		value = 250
+	}
+	multiply_variable = {
+        var = infantry_equipment_value
+        value = People_Republic_controlled_checkpoints_in_donetsk_region_value
+    }
+
+	set_variable = {
+        var = bulletproof_vests_equipment_value
+		value = 350
+	}
+	multiply_variable = {
+        var = bulletproof_vests_equipment_value
+        value = People_Republic_controlled_checkpoints_in_donetsk_region_value
+    }
+	
+	set_variable = {
+        var = uniform_equipment_value
+		value = 450
+	}
+	multiply_variable = {
+        var =  uniform_equipment_value
+        value = People_Republic_controlled_checkpoints_in_donetsk_region_value
+    }
+	
+	set_variable = {
+        var = ifv_value
+		value = 2
+	}
+	multiply_variable = {
+        var =  ifv_value
+        value = People_Republic_controlled_checkpoints_in_donetsk_region_value
+    }
+	
+	set_variable = {
+        var = apc_value
+		value = 2
+	}
+	multiply_variable = {
+        var =  apc_value
+        value = People_Republic_controlled_checkpoints_in_donetsk_region_value
+    }	
+
+	add_equipment_to_stockpile = { 
+		type = infantry_equipment_1
+		amount = infantry_equipment_value
+	}
+	add_equipment_to_stockpile = { 
+		type = bulletproof_vests_equipment_1
+		amount = bulletproof_vests_equipment_value
+	} 		
+	add_equipment_to_stockpile = { 
+		type = uniform_equipment_1 
+		amount = uniform_equipment_value
+	}    
+	add_equipment_to_stockpile = {
+		type = infantry_fighting_vehicle_1
+		amount = ifv_value
+	}
+	add_equipment_to_stockpile = {
+		type = apc_chassis_1
+		amount = apc_value
+	}
+}
+
+LPR_help_from_russia_through_checkpoints_effect = {
+	set_variable = {
+        var = infantry_equipment_value
+		value = 250
+	}
+	multiply_variable = {
+        var = infantry_equipment_value
+        value = People_Republic_controlled_checkpoints_in_luhansk_region_value
+    }
+
+	set_variable = {
+        var = bulletproof_vests_equipment_value
+		value = 350
+	}
+	multiply_variable = {
+        var = bulletproof_vests_equipment_value
+        value = People_Republic_controlled_checkpoints_in_luhansk_region_value
+    }
+	
+	set_variable = {
+        var = uniform_equipment_value
+		value = 450
+	}
+	multiply_variable = {
+        var =  uniform_equipment_value
+        value = People_Republic_controlled_checkpoints_in_luhansk_region_value
+    }
+	
+	set_variable = {
+        var = ifv_value
+		value = 2
+	}
+	multiply_variable = {
+        var =  ifv_value
+        value = People_Republic_controlled_checkpoints_in_luhansk_region_value
+    }
+	
+	set_variable = {
+        var = apc_value
+		value = 2
+	}
+	multiply_variable = {
+        var =  apc_value
+        value = People_Republic_controlled_checkpoints_in_luhansk_region_value
+    }	
+
+	add_equipment_to_stockpile = { 
+		type = infantry_equipment_1
+		amount = infantry_equipment_value
+	}
+	add_equipment_to_stockpile = { 
+		type = bulletproof_vests_equipment_1
+		amount = bulletproof_vests_equipment_value
+	} 		
+	add_equipment_to_stockpile = { 
+		type = uniform_equipment_1 
+		amount = uniform_equipment_value
+	}    
+	add_equipment_to_stockpile = {
+		type = infantry_fighting_vehicle_1
+		amount = ifv_value
+	}
+	add_equipment_to_stockpile = {
+		type = apc_chassis_1
+		amount = apc_value
+	}
+}

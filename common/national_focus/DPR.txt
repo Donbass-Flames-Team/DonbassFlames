@@ -14,7 +14,7 @@ focus_tree = {
 		id = DPR_capture_administrations
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.1
-		x = 12
+		x = 11
 		y = 0
 
 		available = {
@@ -100,7 +100,7 @@ focus_tree = {
 		id = DPR_annex_makeevka
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.1
-		x = 0
+		x = 1
 		y = 3
 
 		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
@@ -131,7 +131,7 @@ focus_tree = {
 		id = DPR_annex_horlivka
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.1
-		x = 0
+		x = 1
 		y = 4
 		
 		prerequisite = {focus = DPR_annex_makeevka}
@@ -163,7 +163,7 @@ focus_tree = {
 	focus = {
 		id = DPR_humanitaran_help_from_russia
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
+		cost = 0.5
 		x = 2
 		y = 6
 
@@ -176,6 +176,7 @@ focus_tree = {
 
 		completion_reward = {
             add_stability = 0.05
+			activate_mission = DPR_help_from_russia_decision
 			add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
 				amount = 3500 
@@ -205,8 +206,8 @@ focus_tree = {
 	focus = {
 		id = DPR_loot_the_offices_of_the_mvd_and_sbu
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.2
-		x = -2
+		cost = 0.1
+		x = -1
 		y = 3
 
 		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
@@ -244,7 +245,7 @@ focus_tree = {
 		id = DPR_create_a_people_militia_of_the_dpr
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.2
-		x = -2
+		x = -1
 		y = 4
 
 		prerequisite = {focus = DPR_loot_the_offices_of_the_mvd_and_sbu}
@@ -268,10 +269,10 @@ focus_tree = {
 		id = DPR_create_roadblocks
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.5
-		x = -5
-		y = 5
+		x = 5
+		y = 6
 
-		prerequisite = {focus = DPR_create_a_people_militia_of_the_dpr}
+		prerequisite = {focus = DPR_arrise_donbass}
 		relative_position_id = DPR_capture_administrations
 
 		available = {
@@ -297,10 +298,10 @@ focus_tree = {
 		id = DPR_armed_forces_of_dpr
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.5
-		x = -10
-		y = 5
+		x = -9
+		y = 6
 
-		prerequisite = {focus = DPR_create_a_people_militia_of_the_dpr}
+		prerequisite = {focus = DPR_arrise_donbass}
 		relative_position_id = DPR_capture_administrations
 
 		available = {
@@ -581,10 +582,11 @@ focus_tree = {
 		id = DPR_set_up_production
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 2
-		y = 3
+		x = -4
+		y = 9
 
-		prerequisite = {focus = DPR_call_on_people_to_stand_up_for_the_republic}
+		prerequisite = {focus = DPR_nationalization_of_assets}
+		prerequisite = {focus = DPR_create_donetsk_mvd}
 		relative_position_id = DPR_capture_administrations
 
 		available = {
@@ -600,8 +602,8 @@ focus_tree = {
 		id = DPR_reopening_of_captured_ukrainian_warehouses
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 2
-		y = 4
+		x = -4
+		y = 10
 
 		prerequisite = {focus = DPR_set_up_production}
 		relative_position_id = DPR_capture_administrations
@@ -638,6 +640,7 @@ focus_tree = {
 		y = 5
 
 		prerequisite = {focus = DPR_create_a_people_militia_of_the_dpr}
+		prerequisite = {focus = DPR_annex_horlivka}
 		relative_position_id = DPR_capture_administrations
 
 		ai_will_do = {
@@ -723,6 +726,28 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = DPR_nationalization_of_assets
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.3
+		x = -2
+		y = 1
+
+		prerequisite = {focus = DPR_accept_constitution}
+		relative_position_id = DPR_accept_constitution
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			
+		}
+
+		completion_reward = {
+            
+		}
+	}
 
 	focus = {
 		id = DPR_cooperation_with_lpr
@@ -758,7 +783,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+            news_event = {
+				id = news_events.50
+				hours = 3
+			}
 		}
 	}
 

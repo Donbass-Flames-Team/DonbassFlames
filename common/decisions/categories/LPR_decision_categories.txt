@@ -1,3 +1,17 @@
+LPR_war_for_independence_of_donbass = {
+
+	priority = 86
+	
+	icon = GFX_decision_icon_of_elections
+	
+	allowed = {
+		original_tag = LPR 
+	}
+
+	scripted_gui = Escalation_on_Donbas
+	visible_when_empty = yes
+}
+
 LPR_politicy_category = {
 
 	priority = 85
