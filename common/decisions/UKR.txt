@@ -3607,6 +3607,136 @@ UKR_ATO_decision = {
 
 UKR_general_staff_decision = {
 
+	UKR_406_okrema_artyleriyska_hrupa_decision = {
+		icon = GFX_decision_UKR_35_bryhada_icon
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2015.2.2
+		}
+		visible = {
+			has_completed_focus = UKR_general_staff
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			custom_effect_tooltip = UKR_406_okrema_artyleriyska_hrupa_formed_tt
+			hidden_effect = {
+				random_owned_controlled_state = {
+				    create_unit = {
+				        division = "name = \"406-a okrema artyleriys'ka hrupa\" division_template = \"Batalyon samokhidnoyi artyleriyi\" start_experience_factor = 0.25"
+				        owner = UKR
+				        count = 1
+			        }													        
+		        }
+		    }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	UKR_148_otdelnyy_gaubicheskiy_samokhodno_artilleriyskiy_divizion = {
+		icon = GFX_decision_UKR_35_bryhada_icon
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2015.2.2
+		}
+		visible = {
+			has_completed_focus = UKR_general_staff
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			custom_effect_tooltip = UKR_148_otdelnyy_gaubicheskiy_samokhodno_artilleriyskiy_divizion_formed_tt
+			hidden_effect = {
+				random_owned_controlled_state = {
+				    create_unit = {
+				        division = "name = \"148-y okremyy haubichnyy samokhidno-artyleriys'kyy dyvizion\" division_template = \"Batalyon samokhidnoyi artyleriyi\" start_experience_factor = 0.25"
+				        owner = UKR
+				        count = 1
+			        }													        
+		        }
+		    }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	UKR_3_desantno_shturmovyy_batalyon_feniks_decision = {
+		icon = GFX_decision_UKR_35_bryhada_icon
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2014.8.8
+		}
+		visible = {
+			has_completed_focus = UKR_general_staff
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			custom_effect_tooltip = UKR_81_okrema_aeromobilna_bryhada_formed_tt
+			hidden_effect = {
+				random_owned_controlled_state = {
+				    create_unit = {
+				        division = "name = \"3-y desantno-shturmovyy batal'yon «Feniks»\" division_template = \"Motoryzovanyy batal'yon desantno-shturmovykh viys'k\" start_experience_factor = 0.4"
+				        owner = UKR
+				        count = 1
+			        }													        
+		        }
+		    }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	UKR_81_okrema_aeromobilna_bryhada_decision = {
+		icon = GFX_decision_UKR_35_bryhada_icon
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2015.4.2
+		}
+		visible = {
+			has_completed_focus = UKR_general_staff
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			custom_effect_tooltip = UKR_81_okrema_aeromobilna_bryhada_formed_tt
+			hidden_effect = {
+				random_owned_controlled_state = {
+				    create_unit = {
+				        division = "name = \"122-y okremyy aeromobil'nyy batal'yon\" division_template = \"Desantno-Povitryani Viyska\" start_experience_factor = 0.4"
+				        owner = UKR
+				        count = 1
+			        }	
+				    create_unit = {
+				        division = "name = \"90-y okremyy aeromobil'nyy batal'yon\" division_template = \"Desantno-Povitryani Viyska\" start_experience_factor = 0.4"
+				        owner = UKR
+				        count = 1
+			        }					
+				    create_unit = {
+				        division = "name = \"5-a batal'yonna taktychna hrupa\" division_template = \"Desantno-Povitryani Viyska\" start_experience_factor = 0.4"
+				        owner = UKR
+				        count = 1
+			        }												        
+		        }
+		    }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
 	UKR_46th_separate_special_purpose_battalion_donbass_ukraine_decision = {
 		icon = GFX_decision_UKR_35_bryhada_icon
 		allowed = {
@@ -3736,11 +3866,11 @@ UKR_general_staff_decision = {
 		fire_only_once = yes
 		cost = 15
 		complete_effect = {
-			#custom_effect_tooltip = UKR_35_otdelnaya_brihada_morskoy_pikhoti_formed_tt
+			custom_effect_tooltip = UKR_4_striletskyy_batalyon_27_okrema_bryhada_nhu_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
 					create_unit = {
-				        division = "name = \"4-y striletskyy batalyon 27-yi okremoyi bryhady NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+				        division = "name = \"4-y striletskyy batal'yon 27-yi okremoyi bryhady NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
 				        owner = UKR
 				        count = 1
 			        }
@@ -3766,11 +3896,11 @@ UKR_general_staff_decision = {
 		fire_only_once = yes
 		cost = 15
 		complete_effect = {
-			#custom_effect_tooltip = UKR_35_otdelnaya_brihada_morskoy_pikhoti_formed_tt
+			custom_effect_tooltip = UKR_18_batalyon_hromadskoho_poryadku_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
 				    create_unit = {
-				        division = "name = \"18-y okremyy batalyon NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+				        division = "name = \"18-y okremyy batal'yon NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
 				        owner = UKR
 				        count = 1
 			        }
@@ -3782,6 +3912,42 @@ UKR_general_staff_decision = {
 		}
 	}	
 
+	## Morkaya pikhota VSU
+
+	UKR_140_okremyy_rozviduvalnyy_batalyon_decision = {
+		icon = GFX_decision_UKR_137_bryhada_icon
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2019.1.1
+		}
+		visible = {
+			has_completed_focus = UKR_marine_infantry_reform
+		}
+		fire_only_once = yes
+		cost = 15
+		complete_effect = {
+			custom_effect_tooltip = UKR_137_otdelnay_batalyon_morskoy_pikhoti_formed_tt
+			hidden_effect = {
+				random_owned_controlled_state = {
+				    create_unit = {
+				        division = "name = \"140-y okremyy rozviduval'nyy batal'yon\" division_template = \"Morska pikhota\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 1
+			        }
+			    }
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 110
+				date > 2015.1.9
+			}
+		}
+	}
+
 	UKR_35_otdelna_bryhada_morskoi_pyhoti_decision = {
 		icon = GFX_decision_UKR_35_bryhada_icon
 		allowed = {
@@ -3791,7 +3957,7 @@ UKR_general_staff_decision = {
 			date > 2018.3.2
 		}
 		visible = {
-			has_completed_focus = UKR_western_instructors
+			has_completed_focus = UKR_marine_infantry_reform
 		}
 		fire_only_once = yes
 		cost = 25
@@ -3805,6 +3971,66 @@ UKR_general_staff_decision = {
 			factor = 10
 		}
 	}
+
+	UKR_36_otdelna_bryhada_morskoi_pyhoti_decision = {
+		icon = GFX_decision_UKR_36_bryhada_icon
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2015.1.2
+		}
+		visible = {
+			has_completed_focus = UKR_western_instructors
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			custom_effect_tooltip = UKR_36_otdelnaya_brihada_morskoy_pikhoti_formed_tt
+			hidden_effect = {
+				random_owned_controlled_state = {
+				    create_unit = {
+				        division = "name = \"503-y okremyy batal'yon mors'koyi pikhoty\" division_template = \"Morska pikhota\" start_experience_factor = 0.075"
+				        owner = UKR
+				        count = 1
+			        }
+			    }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	UKR_137_otdelnay_batalyon_morskoy_pikhoti_decision = {
+		icon = GFX_decision_UKR_137_bryhada_icon
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			date > 2015.9.9
+		}
+		visible = {
+			has_completed_focus = UKR_general_staff
+		}
+		fire_only_once = yes
+		cost = 15
+		complete_effect = {
+			custom_effect_tooltip = UKR_137_otdelnay_batalyon_morskoy_pikhoti_formed_tt
+			hidden_effect = {
+				load_oob = UKR_137_otdelny_batalyon_morskoy_pikhoti
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 110
+				date > 2015.1.9
+			}
+		}
+	}
+
+	##
 
 	UKR_53_otdelna_mechanizirovana_bryhada_decision = {
 		icon = GFX_decision_UKR_53_bryhada_icon
@@ -3890,33 +4116,6 @@ UKR_general_staff_decision = {
 		}
 	}
 
-	UKR_137_otdelnay_batalyon_morskoy_pikhoti_decision = {
-		icon = GFX_decision_UKR_137_bryhada_icon
-		allowed = {
-			original_tag = UKR
-		}
-		available = {
-			date > 2015.1.9
-		}
-		visible = {
-			has_completed_focus = UKR_general_staff
-		}
-		fire_only_once = yes
-		cost = 15
-		complete_effect = {
-			custom_effect_tooltip = UKR_137_otdelnay_batalyon_morskoy_pikhoti_formed_tt
-			hidden_effect = {
-				load_oob = UKR_137_otdelny_batalyon_morskoy_pikhoti
-			}
-		}
-		ai_will_do = {
-			base = 5
-			modifier = {
-				add = 110
-				date > 2015.1.9
-			}
-		}
-	}
 
 	UKR_43_otdelnaya_artilleriyskaya_brigada_decision = {
 		icon = GFX_decision_UKR_43_bryhada_icon

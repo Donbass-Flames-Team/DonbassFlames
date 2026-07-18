@@ -4444,12 +4444,11 @@ focus_tree = {
 		id = UKR_land_market
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 5
-		x = -3
-		y = 5
+		x = 0
+		y = 1
 
 		prerequisite = { focus = UKR_introduction_of_the_institute_of_prefects }
-		prerequisite = { focus = UKR_country_without_corruption }
-		relative_position_id = UKR_anticorruption_reforms
+		relative_position_id = UKR_introduction_of_the_institute_of_prefects
 
 		available = {
 
@@ -4484,8 +4483,8 @@ focus_tree = {
 		id = UKR_introduction_of_the_otg
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = 23
-		y = 5
+		x = -1
+		y = 1
 
 		prerequisite = { focus = UKR_decentralization }
 		relative_position_id = UKR_decentralization
@@ -4503,7 +4502,7 @@ focus_tree = {
 		id = UKR_law_on_voluntary_association_of_ter_communities
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = 2
+		x = 1
 		y = 1
 
 		prerequisite = { focus = UKR_decentralization }
@@ -4522,8 +4521,8 @@ focus_tree = {
 		id = UKR_financial_reform
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = -2
-		y = 1
+		x = 0
+		y = 2
 
 		prerequisite = { focus = UKR_introduction_of_the_otg }
 		prerequisite = { focus = UKR_law_on_voluntary_association_of_ter_communities }
@@ -4543,7 +4542,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
 		x = 0
-		y = 2
+		y = 3
 
 		prerequisite = { focus = UKR_financial_reform }
 		relative_position_id = UKR_decentralization
@@ -5614,6 +5613,78 @@ focus_tree = {
 				}	
 				add_extra_state_shared_building_slots = 2
 			}			
+		}
+	}	
+
+	focus = {
+		id = UKR_modernization_of_airfields
+		icon = GFX_focus_UKR_creation_of_sso
+		cost = 1
+		x = 8
+		y = 2
+
+		prerequisite = { focus = UKR_western_instructors }
+		relative_position_id = UKR_military_reforms_afu
+
+		available = {
+           
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = UKR_joint_flight_exercises_with_the_west
+		icon = GFX_focus_UKR_creation_of_sso
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_modernization_of_airfields }
+		relative_position_id = UKR_modernization_of_airfields
+
+		available = {
+           
+		}
+
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = UKR_modernization_of_odessa_ports
+		icon = GFX_focus_UKR_creation_of_sso
+		cost = 1
+		x = 10
+		y = 2
+
+		prerequisite = { focus = UKR_western_instructors }
+		relative_position_id = UKR_military_reforms_afu
+
+		available = {
+           
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = UKR_marine_infantry_reform
+		icon = GFX_focus_UKR_creation_of_sso
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = { focus = UKR_modernization_of_odessa_ports }
+		relative_position_id = UKR_modernization_of_odessa_ports
+
+		available = {
+           
+		}
+
+		completion_reward = {
 		}
 	}	
 

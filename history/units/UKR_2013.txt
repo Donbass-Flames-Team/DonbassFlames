@@ -274,6 +274,28 @@ division_template = {
     is_locked = yes
 }
 
+division_template = {
+	name = "Reaktyvnyy artyleriys'kyy dyvizion"
+	regiments = {
+        MLRS = { x = 0 y = 0 }
+		MLRS = { x = 0 y = 1 }
+		MLRS = { x = 0 y = 2 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
 units = {
     division= {
         name = "1-y mekhanizovanyy batalyon 30-oyi okremoyi mekhanizovanoyi bryhady"
@@ -723,25 +745,7 @@ units = {
 	}
 
     division= {
-		name = "3-y batalyon desantnykh viysk 79-yi okremoyi aeromobilnoyi bryhady"
-		location = 16584
-		division_template = "Desantno-Povitryani Viyska"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.65
-		start_manpower_factor = 0.7
-	}
-
-	division= {
-		name = "4-y batalyon desantnykh viysk 79-yi okremoyi aeromobilnoyi bryhady"
-		location = 16584
-		division_template = "Desantno-Povitryani Viyska"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.65
-		start_manpower_factor = 0.7
-	}
-
-    division= {
-		name = "1-y batalyon desantnykh viysk 80-yi okremoyi aeromobilnoyi bryhady"
+		name = "1-y batalyon desantnykh viysk 80-yi okremoyi aeromobilnoyi polku"
 		location = 14742
 		division_template = "Desantno-Povitryani Viyska"
 		start_experience_factor = 0.15
@@ -750,7 +754,7 @@ units = {
 	}
 
 	division= {
-		name = "2-y batalyon desantnykh viysk 80-yi okremoyi aeromobilnoyi bryhady"
+		name = "2-y batalyon desantnykh viysk 80-yi okremoyi aeromobilnoyi polku"
 		location = 14742
 		division_template = "Desantno-Povitryani Viyska"
 		start_experience_factor = 0.15
@@ -759,16 +763,7 @@ units = {
 	}
 
 	division= {
-		name = "3-y batalyon desantnykh viysk 80-yi okremoyi aeromobilnoyi bryhady"
-		location = 14742
-		division_template = "Desantno-Povitryani Viyska"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.65
-		start_manpower_factor = 0.7
-	}
-
-	division= {
-		name = "4-y batalyon desantnykh viysk 80-yi okremoyi aeromobilnoyi bryhady"
+		name = "3-ya batal'yonna taktychna hrupa 80-yi okremoyi aeromobilnoyi polku"
 		location = 14742
 		division_template = "Desantno-Povitryani Viyska"
 		start_experience_factor = 0.15
@@ -795,25 +790,7 @@ units = {
 	}
 
     division= {
-		name = "3-y batalyon desantnykh viysk 95-yi okremoyi aeromobilnoyi bryhady"
-		location = 13924
-		division_template = "Desantno-Povitryani Viyska"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.65
-		start_manpower_factor = 0.7
-	}
-
-    division= {
-		name = "4-y batalyon desantnykh viysk 95-yi okremoyi aeromobilnoyi bryhady"
-		location = 13924
-		division_template = "Desantno-Povitryani Viyska"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.65
-		start_manpower_factor = 0.7
-	}
-
-    division= {
-		name = "13-y batalyon desantnykh viysk 95-yi okremoyi aeromobilnoyi bryhady"
+		name = "13-y okremyy desantno-shturmovyy batal'yon"
 		location = 13924
 		division_template = "Desantno-Povitryani Viyska"
 		start_experience_factor = 0.15
@@ -829,6 +806,30 @@ units = {
 		start_equipment_factor = 0.65
 		start_manpower_factor = 0.7
 	}
+
+    ##################################
+    ###   Morska-Pikhota Ukraini   ###
+    ##################################
+
+    division= {
+		name = "1-y okremyy batal'yon mors'koyi pikhoty"
+		location = 3835
+		division_template = "Morska pikhota"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.3
+	} 
+    
+    
+    division= {
+		name = "501-y okremyy batal'yon mors'koyi pikhoty"
+		location = 18262
+		division_template = "Morska pikhota"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.3
+	} 
+
     #Okremyy tsentr spetsialʹnykh operatsiy «Voskhod»
     division= {
 		name = "1-y zagin SSO 3-ho okremoho polku spetsialnoho pryznachennya"
@@ -938,6 +939,106 @@ units = {
 		start_equipment_factor = 0.65
 		start_manpower_factor = 0.7
 	}    
+
+
+    division= {
+		name = "1-y dyvizion reaktyvnoyi artyleriyi 27-ho reaktyvnoho artyleriys'koho polku"
+		location = 13395
+		division_template = "Reaktyvnyy artyleriys'kyy dyvizion"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.3
+	}   
+
+    division= {
+		name = "2-y dyvizion reaktyvnoyi artyleriyi 27-ho reaktyvnoho artyleriys'koho polku"
+		location = 13395
+		division_template = "Reaktyvnyy artyleriys'kyy dyvizion"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.3
+	}
+
+    division= {
+		name = "3-y dyvizion reaktyvnoyi artyleriyi 27-ho reaktyvnoho artyleriys'koho polku"
+		location = 13395
+		division_template = "Reaktyvnyy artyleriys'kyy dyvizion"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.3
+	}
+
+    division= {
+		name = "1-y haubichnyy samokhidnyy artyleriys'kyy dyvizion 26-a okrema artyleriys'ka bryhada"
+		location = 7032
+		division_template = "Batalyon samokhidnoyi artyleriyi"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.3
+	}   
+
+    division= {
+		name = "2-y haubichnyy samokhidnyy artyleriys'kyy dyvizion 26-a okrema artyleriys'ka bryhada"
+		location = 7032
+		division_template = "Batalyon samokhidnoyi artyleriyi"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.3
+	}
+
+    division= {
+		name = "3-y haubichnyy samokhidnyy artyleriys'kyy dyvizion 26-a okrema artyleriys'ka bryhada"
+		location = 7032
+		division_template = "Batalyon samokhidnoyi artyleriyi"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.3
+	}   
+
+    division= {
+		name = "4-y haubichnyy samokhidnyy artyleriys'kyy dyvizion 26-a okrema artyleriys'ka bryhada"
+		location = 7032
+		division_template = "Batalyon samokhidnoyi artyleriyi"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.3
+	} 
+
+    division= {
+		name = "1-y haubichnyy samokhidnyy artyleriys'kyy dyvizion 55-yi okremoyi artyleriys'koyi bryhady «Zaporiz'ka Sich»"
+		location = 19169
+		division_template = "Batalyon samokhidnoyi artyleriyi"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.3
+	}   
+
+    division= {
+		name = "2-y haubichnyy samokhidnyy artyleriys'kyy dyvizion 55-yi okremoyi artyleriys'koyi bryhady «Zaporiz'ka Sich»"
+		location = 19169
+		division_template = "Batalyon samokhidnoyi artyleriyi"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.3
+	}
+
+    division= {
+		name = "3-y haubichnyy samokhidnyy artyleriys'kyy dyvizion 55-yi okremoyi artyleriys'koyi bryhady «Zaporiz'ka Sich»"
+		location = 19169
+		division_template = "Batalyon samokhidnoyi artyleriyi"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.3
+	}   
+
+    division= {
+		name = "4-y haubichnyy samokhidnyy artyleriys'kyy dyvizion 55-yi okremoyi artyleriys'koyi bryhady «Zaporiz'ka Sich»"
+		location = 19169
+		division_template = "Batalyon samokhidnoyi artyleriyi"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.3
+	}     
     
     
 }
