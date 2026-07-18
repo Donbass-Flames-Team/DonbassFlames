@@ -5297,6 +5297,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			
 		}
 	}
 
@@ -5315,6 +5316,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_to_variable = { UKR_AFU_paratrooper_attack_factor = 0.05 }
+		    custom_effect_tooltip = UKR_reform_of_dshv_tt
 		}
 	}
 
@@ -5376,6 +5379,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_to_variable = { UKR_AFU_supply_factor = 0.05 }
+		    custom_effect_tooltip = UKR_command_of_the_logistics_forces_afu_tt
 		}
 	}
 
@@ -5394,6 +5399,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_to_variable = { UKR_AFU_army_core_defence_factor = 0.035 }
+		    custom_effect_tooltip = UKR_reform_of_tro_tt			
 		}
 	}
 
@@ -5433,6 +5440,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_to_variable = { UKR_AFU_command_power_gain = 0.035 }
+            add_to_variable = { UKR_AFU_grant_medal_cost_factor = -0.05 }
+		    custom_effect_tooltip = UKR_reliance_on_centralized_command_tt
 		}
 	}
 
@@ -5452,6 +5462,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_to_variable = { UKR_AFU_planning_speed = 0.05 }
+		    custom_effect_tooltip = UKR_expand_the_general_staff_tt
 		}
 	}
 
@@ -5618,7 +5630,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_modernization_of_airfields
-		icon = GFX_focus_UKR_creation_of_sso
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 8
 		y = 2
@@ -5636,7 +5648,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_joint_flight_exercises_with_the_west
-		icon = GFX_focus_UKR_creation_of_sso
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 1
@@ -5654,7 +5666,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_modernization_of_odessa_ports
-		icon = GFX_focus_UKR_creation_of_sso
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 10
 		y = 2
@@ -5672,7 +5684,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_marine_infantry_reform
-		icon = GFX_focus_UKR_creation_of_sso
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 1
@@ -5703,6 +5715,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_to_variable = { UKR_AFU_special_forces_out_of_supply_factor = 0.05 }
+		    custom_effect_tooltip = UKR_creation_of_sso_tt
 		}
 	}
 

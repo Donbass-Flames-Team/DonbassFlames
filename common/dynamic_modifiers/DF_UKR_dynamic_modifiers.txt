@@ -9,9 +9,18 @@ UKR_ukraine_army_idea = { #NATIONAL SPIRIT
 	army_org_regain = UKR_AFU_army_org_regain #-0.25
 	army_morale_factor = UKR_AFU_army_morale_factor #-0.25
 	army_speed_factor = UKR_AFU_army_speed_factor #-0.15
+	initiative_factor = UKR_AFU_initiative_factor
+	army_strength_factor = UKR_AFU_army_strength_factor
+	army_core_defence_factor = UKR_AFU_army_core_defence_factor
+	supply_factor = UKR_AFU_supply_factor 
 	planning_speed = UKR_AFU_planning_speed #-0.1
 	breakthrough_factor = UKR_AFU_war_breakthrough_factor #-0.15
 	war_support_factor = UKR_AFU_war_support_factor #-0.15
+	special_forces_out_of_supply_factor = UKR_AFU_special_forces_out_of_supply_factor
+	command_power_gain = UKR_AFU_command_power_gain
+	grant_medal_cost_factor = UKR_AFU_grant_medal_cost_factor
+	planning_speed  = UKR_AFU_planning_speed 
+	paratrooper_attack_factor = UKR_AFU_paratrooper_attack_factor
 	conscription = UKR_AFU_conscription #-0.02
 	
 }
