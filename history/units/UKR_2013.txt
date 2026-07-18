@@ -22,6 +22,29 @@ division_template = {
 }
 
 division_template = {
+	name = "Motoryzovanyy batal'yon"
+	regiments = {
+        apc_unit = { x = 0 y = 0 }
+		apc_unit = { x = 1 y = 0 }
+		apc_unit = { x = 2 y = 0 }
+        apc_unit = { x = 3 y = 0 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3}     
+	}
+
+    is_locked = yes
+}
+
+division_template = {
 	name = "Tankovyy batalyon"
 	regiments = {
         modern_armor = { x = 0 y = 0 }
@@ -296,6 +319,28 @@ division_template = {
     is_locked = yes
 }
 
+division_template = {
+	name = "Reaktyvnyy artyleriys'kyy dyvizion"
+	regiments = {
+        MLRS = { x = 0 y = 0 }
+		MLRS = { x = 0 y = 1 }
+		MLRS = { x = 0 y = 2 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4} 
+        sniper_company = { x = 1 y = 0 }
+        manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+    is_locked = yes
+}
+
 units = {
     division= {
         name = "1-y mekhanizovanyy batalyon 30-oyi okremoyi mekhanizovanoyi bryhady"
@@ -522,7 +567,7 @@ units = {
         division_template = "Mekhanizovanyy batalyon"
         start_experience_factor = 0.2
         start_equipment_factor = 0.4
-		start_manpower_factor = 1
+		start_manpower_factor = 0.1
     }
     
     division= {
@@ -531,7 +576,7 @@ units = {
         division_template = "Mekhanizovanyy batalyon"
         start_experience_factor = 0.2
         start_equipment_factor = 0.4
-		start_manpower_factor = 1
+		start_manpower_factor = 0.1
     }
     
     division= {
@@ -540,7 +585,7 @@ units = {
         division_template = "Mekhanizovanyy batalyon"
         start_experience_factor = 0.2
         start_equipment_factor = 0.4
-		start_manpower_factor = 1
+		start_manpower_factor = 0.1
     }
 
     division= {
@@ -549,7 +594,7 @@ units = {
         division_template = "Tankovyy batalyon"
         start_experience_factor = 0.2
         start_equipment_factor = 0.4
-		start_manpower_factor = 1
+		start_manpower_factor = 0.1
     }
 
     division= {
@@ -558,9 +603,30 @@ units = {
         division_template = "Batalyon samokhidnoyi artyleriyi"
         start_experience_factor = 0.2
         start_equipment_factor = 0.4
-		start_manpower_factor = 1
+		start_manpower_factor = 0.1
     }
-    ###
+
+    division= {
+        name = "54-y okremyy rozviduval'nyy batal'yon"
+        location = 15113
+        division_template = "Motoryzovanyy batal'yon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 0.1
+    }
+
+    division= {
+        name = "74-y okremyy rozviduval'nyy batal'yon"
+        location = 15113
+        division_template = "Motoryzovanyy batal'yon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 0.1
+    }
+
+	##########################################
+    ######  hirnycho-shturmovoyi viyska ######
+	##########################################
     division= {
         name = "1-y mekhanizovanyy batalyon 128-yi okremoyi hirnycho-shturmovoyi bryhady"
         location = 15333
@@ -580,7 +646,7 @@ units = {
     }
     
     division= {
-        name = "3-y mekhanizovanyy batalyon 128-yi okremoyi hirnycho-shturmovoyi bryhady"
+        name = "3-y mekhanizovanyy batal'yon 128-yi okremoyi hirnycho-shturmovoyi bryhady"
         location = 15333
         division_template = "Mekhanizovanyy batalyon"
         start_experience_factor = 0.2
@@ -589,7 +655,7 @@ units = {
     }
 
     division= {
-        name = "1-y tankovyy batalyon 128-yi okremoyi hirnycho-shturmovoyi bryhady"
+        name = "1-y tankovyy batal'yon 128-yi okremoyi hirnycho-shturmovoyi bryhady"
         location = 15333
         division_template = "Tankovyy batalyon"
         start_experience_factor = 0.2
@@ -598,13 +664,22 @@ units = {
     }
 
     division= {
-        name = "1-y batalyon samokhidnoyi artyleriyi 128-yi okremoyi hirnycho-shturmovoyi bryhady"
+        name = "1-y batal'yon samokhidnoyi artyleriyi 128-yi okremoyi hirnycho-shturmovoyi bryhady"
         location = 15333
         division_template = "Batalyon samokhidnoyi artyleriyi"
         start_experience_factor = 0.2
         start_equipment_factor = 0.4
 		start_manpower_factor = 1
     }
+
+    division= {
+        name = "15-y okremyy hirs'ko-pikhotnyy batal'yon"
+        location = 15333
+        division_template = "Mekhanizovanyy batalyon"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.4
+		start_manpower_factor = 1
+    }	
     ###
     division= {
         name = "1-yi tankovyy batalyon 1-yi okremoyi tankovoyi Siverskoyi bryhady"
