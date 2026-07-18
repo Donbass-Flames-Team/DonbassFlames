@@ -3444,7 +3444,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            
+            custom_effect_tooltip = UKR_law_on_special_status_of_donbass_tt
 		}
 	}	
 
@@ -4459,8 +4459,10 @@ focus_tree = {
 		}
 	}	
 
+
+
 	focus = {
-		id = UKR_land_reforms
+		id = UKR_decentralization
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
 		x = 14
@@ -4479,33 +4481,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_decentralization
-		icon = GFX_focus_UKR_start_of_ato
-		cost = 2
-		x = 0
-		y = 1
-
-		prerequisite = { focus = UKR_land_reforms }
-		relative_position_id = UKR_land_reforms
-
-		available = {
-
-		}
-
-		completion_reward = {
-			add_political_power = 25
-		}
-	}
-
-	focus = {
 		id = UKR_introduction_of_the_otg
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = -1
-		y = 2
+		x = 23
+		y = 5
 
 		prerequisite = { focus = UKR_decentralization }
-		relative_position_id = UKR_land_reforms
+		relative_position_id = UKR_decentralization
 
 		available = {
 
@@ -4520,11 +4503,11 @@ focus_tree = {
 		id = UKR_law_on_voluntary_association_of_ter_communities
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 2
-		x = 1
-		y = 2
+		x = 2
+		y = 1
 
 		prerequisite = { focus = UKR_decentralization }
-		relative_position_id = UKR_land_reforms
+		relative_position_id = UKR_decentralization
 
 		available = {
 
@@ -4539,12 +4522,12 @@ focus_tree = {
 		id = UKR_financial_reform
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
-		x = 0
-		y = 3
+		x = -2
+		y = 1
 
 		prerequisite = { focus = UKR_introduction_of_the_otg }
 		prerequisite = { focus = UKR_law_on_voluntary_association_of_ter_communities }
-		relative_position_id = UKR_land_reforms
+		relative_position_id = UKR_decentralization
 
 		available = {
 
@@ -4560,10 +4543,10 @@ focus_tree = {
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
 		x = 0
-		y = 4
+		y = 2
 
 		prerequisite = { focus = UKR_financial_reform }
-		relative_position_id = UKR_land_reforms
+		relative_position_id = UKR_decentralization
 
 		available = {
 

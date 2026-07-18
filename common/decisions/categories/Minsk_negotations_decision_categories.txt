@@ -10,7 +10,11 @@ Minsk_Negotations_decision = {
 	icon = SOV_propaganda
 	
 	allowed = {
-		original_tag = UKR 
+		OR = {
+		    tag = DPR	
+			tag = LPR
+			tag = RUS		
+		}
 	}
 
 	visible = {
