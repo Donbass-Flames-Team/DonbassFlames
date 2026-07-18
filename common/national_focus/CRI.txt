@@ -1,0 +1,112 @@
+focus_tree = {
+	id = crimea_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = CRI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2500 y = 500 }
+	
+	focus = {
+		id = CRI_portests_are_going
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.5
+		x = 12
+		y = 0
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = CRI_support_pro_russian
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.5
+		x = -1
+		y = 2
+
+		
+		prerequisite = {focus = CRI_portests_are_going}
+		mutually_exclusive = { focus = CRI_support_pro_ukranian }
+		relative_position_id = CRI_portests_are_going
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = CRI_self_defense_units
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.5
+		x = -1
+		y = 1
+
+		
+		prerequisite = {focus = CRI_support_pro_russian}
+		relative_position_id =  CRI_support_pro_russian 
+
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = CRI_hold_a_referendum
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.5
+		x = 0
+		y = 1
+
+		
+		prerequisite = {focus = CRI_self_defense_units}
+		relative_position_id =  CRI_self_defense_units 
+
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = {
+		id = CRI_support_pro_ukranian
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 1
+		y = 2
+
+		
+		prerequisite = {focus = CRI_portests_are_going}
+		mutually_exclusive = { focus = CRI_support_pro_russian }
+		relative_position_id = CRI_portests_are_going
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+			
+		}
+	}
+}
