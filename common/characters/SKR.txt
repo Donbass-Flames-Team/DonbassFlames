@@ -43,4 +43,15 @@ characters = {
 			logistics_skill = 2
 		}
 	}
+	Yuri_Safonenko = {
+		name = Yuri_Safonenko
+		corps_commander = {
+			traits = { cavalry_officer inspirational_leader }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 }

@@ -1,16 +1,44 @@
 characters = {
-    oleg_morgun = {
+	oleg_morgun = {
 		name = oleg_morgun
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_Oleg_Morgun"
 			}
 		}
-		country_leader = {
-			ideology = autoritarian_democracy
-			traits = { }
+		advisor = {
+			slot = political_advisor
+			idea_token = oleg_morgun
+			cost = 150
+			traits = { df_Chief_of_police }
 		}
 	}
-
-
+	Andrey_Borisov = {
+		name = Andrey_Borisov
+		country_leader = {
+			ideology = autoritarian_democracy
+			expire = "1965.1.1.1"
+			traits = {}
+			id = -1
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	Oleg_Nedavniy = {
+		name = Oleg_Nedavniy
+		corps_commander = {
+			traits = { trickster }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
 }
