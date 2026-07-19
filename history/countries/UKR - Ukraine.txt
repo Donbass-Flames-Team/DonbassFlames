@@ -68,10 +68,13 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 
 	add_dynamic_modifier = { modifier = UKR_ukrainian_air_forces_idea }
     set_variable = { UKR_ukrainian_air_forces_air_accidents_factor = 0.15 }
+	set_variable = { UKR_ukrainian_air_forces_air_attack_factor = -0.05 }
 	set_variable = { UKR_ukrainian_air_forces_air_cas_efficiency = -0.15 }
 	set_variable = { UKR_ukrainian_air_forces_air_mission_efficiency = -0.15 }
-    set_variable = { UKR_ukrainian_air_forces_air_escort_efficiency = -0.1 }
-	set_variable = { UKR_ukrainian_air_forces_air_attack_factor = -0.05 }
+    set_variable = { UKR_ukrainian_air_forces_air_attack_factor = -0.1 }
+	set_variable = { UKR_ukrainian_air_forces_air_escort_efficiency = -0.1 }
+
+
 
 	add_dynamic_modifier = { modifier = UKR_ukrainian_navy_idea }
     set_variable = { UKR_ukrainian_navy_navy_org_factor = -0.2 }

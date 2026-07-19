@@ -20,8 +20,8 @@ UKR_ukraine_army_idea = { #NATIONAL SPIRIT
 	command_power_gain = UKR_AFU_command_power_gain
 	grant_medal_cost_factor = UKR_AFU_grant_medal_cost_factor
 	planning_speed  = UKR_AFU_planning_speed 
-	paratrooper_attack_factor = UKR_AFU_paratrooper_attack_factor
 	conscription = UKR_AFU_conscription #-0.02
+	paratrooper_attack_factor = UKR_AFU_paratrooper_attack_factor
 }
 
 UKR_ukrainian_navy_idea = { #NATIONAL SPIRIT
@@ -33,6 +33,7 @@ UKR_ukrainian_navy_idea = { #NATIONAL SPIRIT
 	naval_damage_factor = UKR_ukrainian_navy_naval_damage_factor
 	naval_morale_factor = UKR_ukrainian_navy_naval_morale_factor
 	navy_org_factor = UKR_ukrainian_navy_navy_org_factor
+	marine_attack_factor = UKR_ukrainian_navy_marine_attack_factor
 }
 
 UKR_ukrainian_air_forces_idea = { #NATIONAL SPIRIT
