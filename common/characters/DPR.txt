@@ -228,4 +228,59 @@ characters = {
 			}
 		}
 	}
+	Vladimir_Kononov = {
+		name = Vladimir_Kononov
+		corps_commander = {
+			traits = { organizer inspirational_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	Eduard_Basurin = {
+		name = Eduard_Basurin
+		corps_commander = {
+			traits = { politically_connected trait_cautious }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	Aleksandr_Khodakovskiy = {
+		name = Aleksandr_Khodakovskiy
+		corps_commander = {
+			traits = { commando infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	Olga_Kachura = {
+		name = Olga_Kachura
+		corps_commander = {
+			traits = { expert_delegator brilliant_strategist }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	DPR_Sergey_Zdriluk = {
+		name = DPR_Sergey_Zdriluk
+		corps_commander = {
+			traits = { trickster infantry_officer }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 }

@@ -1,0 +1,24 @@
+characters = {
+	NDR_Igor_Strelkov_girkin = {
+		name = NDR_Igor_Strelkov_girkin
+		corps_commander = {
+			traits = { defensive_doctrine ambusher }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	Sergey_Zdriluk = {
+		name = Sergey_Zdriluk
+		corps_commander = {
+			traits = { trickster }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}
