@@ -27,11 +27,11 @@ SLR_dont_attack= {
 		execute_order = yes	
 	}
 
-    ai_strategy = {
-	    type = theatre_distribution_demand_increase
-	    id = 416  # State ID for Alexandria, so will target the theatre where Alexandria belongs
-	    value = 100  # Increase desired unit demand by 10
-    }
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 416  # State ID for Alexandria, so will target the theatre where Alexandria belongs
+		value = 100  # Increase desired unit demand by 10
+	}
 
 
 }

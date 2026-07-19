@@ -27,7 +27,7 @@ scripted_gui = {
 		}
 	}
 
-    UKR_parlamient_general_window = {
+	UKR_parlamient_general_window = {
 		context_type = player_context
 		parent_window_token = top_bar
 		window_name = "UKR_parlamient_general_window"
@@ -40,7 +40,7 @@ scripted_gui = {
 		effects = {
 			close_map_button_click = {
 				clear_variable = show_parlamient_general_window
-		    }
+			}
 		}
 		
 		dynamic_lists = {
@@ -48,7 +48,7 @@ scripted_gui = {
 		}
 		
 		properties = {
-            UKR_speaker_parlamient_portrait = {
+			UKR_speaker_parlamient_portrait = {
 				image = "[ukr_parlamient_speaker_image]"
 			}
 		}

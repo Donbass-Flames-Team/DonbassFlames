@@ -345,7 +345,7 @@ focus_tree = {
 			add_political_power = 25
 			custom_effect_tooltip = ukraine_increase_prorussian_moods_tt
 			UKR = {
-                country_event = ukraine.41
+				country_event = ukraine.41
 			}
 		}
 	}
@@ -432,8 +432,8 @@ focus_tree = {
 			625 = { transfer_state_to = RUS }
 			hidden_effect = {
 				UKR = {
-			        country_event = ukraine.27
-			    }		
+					country_event = ukraine.27
+				}		
 				add_state_claim = 621
 				add_state_claim = 637
 				add_state_claim = 614
@@ -478,32 +478,32 @@ focus_tree = {
 				}
 				set_country_flag = RUS_rush_in_crimea
 				637 = {
-				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
-			    }
+					add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
+				}
 				628 = {
-				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
-			    }
+					add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
+				}
 				613 = {
-				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
-			    }
+					add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
+				}
 				619 = {
-				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
-			    }
+					add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
+				}
 				614 = {
-				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
-			    }
+					add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
+				}
 				599 = {
-				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
-			    }
+					add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
+				}
 				607 = {
-				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
-			    }		
+					add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
+				}		
 				600 = {
-				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
-			    }	
+					add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
+				}	
 				634 = {
-				    add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
-			    }
+					add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
+				}
 				news_event = {
 					id = news_events.15
 					days = 6
@@ -575,9 +575,9 @@ focus_tree = {
 			add_stability = 0.025
 			hidden_effect = {
 				RUS = {
-		            delete_unit = {
-                        division_template = "Zelenyy Chelovechki" 
-		            }
+					delete_unit = {
+						division_template = "Zelenyy Chelovechki" 
+					}
 				}
 			}
 		}
@@ -634,9 +634,9 @@ focus_tree = {
 			country_event = russia.2
 			hidden_effect = {
 				RUS = {
-		            delete_unit = {
-                        division_template = "Zelenyy Chelovechki" 
-		            }
+					delete_unit = {
+						division_template = "Zelenyy Chelovechki" 
+					}
 				}
 				news_event = {
 					id = news_events.8
@@ -690,11 +690,11 @@ focus_tree = {
 					transfer_troops = no
 				}
 				621 = {
-				    add_compliance = 30
-			    }
-			    637 = {
-				    add_compliance = 30
-			    }
+					add_compliance = 30
+				}
+				637 = {
+					add_compliance = 30
+				}
 			}
 		}
 	}
@@ -784,10 +784,10 @@ focus_tree = {
 
 		available = {
 			OR = {
-			    country_exists = DPR
-			    country_exists = LPR
-			    country_exists = OPR
-			    country_exists = KPR
+				country_exists = DPR
+				country_exists = LPR
+				country_exists = OPR
+				country_exists = KPR
 			}
 		}
 
@@ -843,14 +843,14 @@ focus_tree = {
 			add_political_power = 15
 			add_stability = 0.025
 			DPR = {
-                country_event = DPR.10
+				country_event = DPR.10
 			}
 			hidden_effect = {
 				UKR = {
-			        country_event = {
-				        id = ukraine.26
-				        hours = 6
-			        }
+					country_event = {
+						id = ukraine.26
+						hours = 6
+					}
 				}
 			}
 		}
@@ -919,7 +919,7 @@ focus_tree = {
 
 		completion_reward = {
 			633 = { transfer_state_to = WGN }
-		    633 = { add_core_of = WGN }
+			633 = { add_core_of = WGN }
 
 			hidden_effect = {
 				DPR = {
@@ -929,19 +929,19 @@ focus_tree = {
 					}
 				}
 				if = {
-				    limit = {
-					    has_game_rule = {
-						    rule = streamer_mode
-						    option = STREAMER_ON
-					    }
-				    }
-                    WGN = {
-				        set_portraits = {
-					        character = WGN_dmitry_utkin
-					        civilian = { large = "gfx/leaders/WGN/WGN_dmitry_utkin_streamer.dds" }
-				        }
-			        } 
-			    }
+					limit = {
+						has_game_rule = {
+							rule = streamer_mode
+							option = STREAMER_ON
+						}
+					}
+					WGN = {
+						set_portraits = {
+							character = WGN_dmitry_utkin
+							civilian = { large = "gfx/leaders/WGN/WGN_dmitry_utkin_streamer.dds" }
+						}
+					} 
+				}
 			}
 		}
 	}	
@@ -1127,11 +1127,11 @@ focus_tree = {
 					}
 				}
 				DPR = {
-				    country_event = {
-					    id = DPR.13
-					    days = 14
-				    }
-			    }
+					country_event = {
+						id = DPR.13
+						days = 14
+					}
+				}
 				UKR = {
 					country_event = {
 						id = ukraine.70
@@ -1383,138 +1383,138 @@ focus_tree = {
 		}
 	}	
 
-    focus = {
-	    id = RUS_regain_global_influence
-	    icon = GFX_goal_no_focus_RUS
-	    cost = 1
-	    x = -6
-	    y = 1
+	focus = {
+		id = RUS_regain_global_influence
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = -6
+		y = 1
 
-	    prerequisite = { focus = RUS_introduction_of_anti_sanctions }
-	    relative_position_id = RUS_introduction_of_anti_sanctions
+		prerequisite = { focus = RUS_introduction_of_anti_sanctions }
+		relative_position_id = RUS_introduction_of_anti_sanctions
 	
-	    ai_will_do = {
-		    factor = 1
-	    }
+		ai_will_do = {
+			factor = 1
+		}
 
-	    available = {
-	    }
+		available = {
+		}
 
-	    completion_reward = {
-		    
-	    }
-    }
+		completion_reward = {
+			
+		}
+	}
 
-    focus = {
-	    id = RUS_information_war_with_europe
-	    icon = GFX_goal_no_focus_RUS
-	    cost = 1
-	    x = 4
-	    y = 1
+	focus = {
+		id = RUS_information_war_with_europe
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 4
+		y = 1
 
-	    prerequisite = { focus = RUS_regain_global_influence }
-	    relative_position_id = RUS_regain_global_influence
+		prerequisite = { focus = RUS_regain_global_influence }
+		relative_position_id = RUS_regain_global_influence
 	
-	    ai_will_do = {
-		    factor = 1
-	    }
+		ai_will_do = {
+			factor = 1
+		}
 
-	    available = {
-	    }
+		available = {
+		}
 
-	    completion_reward = {
-		    
-	    }
-    }
+		completion_reward = {
+			
+		}
+	}
 
-    focus = {
-	    id = RUS_interfere_in_elections
-	    icon = GFX_goal_no_focus_RUS
-	    cost = 1
-	    x = 4
-	    y = 2
+	focus = {
+		id = RUS_interfere_in_elections
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 4
+		y = 2
 
-	    prerequisite = { focus = RUS_information_war_with_europe }
-	    relative_position_id = RUS_regain_global_influence
+		prerequisite = { focus = RUS_information_war_with_europe }
+		relative_position_id = RUS_regain_global_influence
 	
-	    ai_will_do = {
-		    factor = 1
-	    }
+		ai_will_do = {
+			factor = 1
+		}
 
-	    available = {
-	    }
+		available = {
+		}
 
-	    completion_reward = {
-		    
-	    }
-    }	
+		completion_reward = {
+			
+		}
+	}	
 
-    focus = {
-	    id = RUS_influence_in_syria
-	    icon = GFX_goal_no_focus_RUS
-	    cost = 1
-	    x = 1
-	    y = 1
+	focus = {
+		id = RUS_influence_in_syria
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 1
+		y = 1
 
-	    prerequisite = { focus = RUS_regain_global_influence }
-	    relative_position_id = RUS_regain_global_influence
+		prerequisite = { focus = RUS_regain_global_influence }
+		relative_position_id = RUS_regain_global_influence
 	
-	    ai_will_do = {
-		    factor = 1
-	    }
+		ai_will_do = {
+			factor = 1
+		}
 
-	    available = {
-	    }
+		available = {
+		}
 
-	    completion_reward = {
-		    
-	    }
-    }	
+		completion_reward = {
+			
+		}
+	}	
 
-    focus = {
-	    id = RUS_pmc_redut
-	    icon = GFX_goal_no_focus_RUS
-	    cost = 1
-	    x = 0
-	    y = 2
+	focus = {
+		id = RUS_pmc_redut
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = 0
+		y = 2
 
-	    prerequisite = { focus = RUS_influence_in_syria }
+		prerequisite = { focus = RUS_influence_in_syria }
 		prerequisite = { focus = RUS_influence_in_africa }
-	    relative_position_id = RUS_regain_global_influence
+		relative_position_id = RUS_regain_global_influence
 	
-	    ai_will_do = {
-		    factor = 1
-	    }
+		ai_will_do = {
+			factor = 1
+		}
 
-	    available = {
-	    }
+		available = {
+		}
 
-	    completion_reward = {
-		    
-	    }
-    }
+		completion_reward = {
+			
+		}
+	}
 
-    focus = {
-	    id = RUS_influence_in_africa
-	    icon = GFX_goal_no_focus_RUS
-	    cost = 1
-	    x = -1
-	    y = 1
+	focus = {
+		id = RUS_influence_in_africa
+		icon = GFX_goal_no_focus_RUS
+		cost = 1
+		x = -1
+		y = 1
 
-	    prerequisite = { focus = RUS_regain_global_influence }
-	    relative_position_id = RUS_regain_global_influence
+		prerequisite = { focus = RUS_regain_global_influence }
+		relative_position_id = RUS_regain_global_influence
 	
-	    ai_will_do = {
-		    factor = 1
-	    }
+		ai_will_do = {
+			factor = 1
+		}
 
-	    available = {
-	    }
+		available = {
+		}
 
-	    completion_reward = {
-		    
-	    }
-    }
+		completion_reward = {
+			
+		}
+	}
 
 	focus = {
 		id = RUS_minsk_protocols
@@ -1543,10 +1543,10 @@ focus_tree = {
 			HPR = { exists = no }	
 			NPR = { exists = no }	
 			NOT = {
-			    DPR = {
-				    surrender_progress > 0.5
-			    }	
-		    }
+				DPR = {
+					surrender_progress > 0.5
+				}	
+			}
 			
 		}
 
@@ -1663,51 +1663,51 @@ focus_tree = {
 	}
 
 
-    focus = {
-	    id = RUS_family_values_protection
-	    icon = GFX_goal_no_focus_RUS
-	    x = 1
-	    y = 1
-	    relative_position_id = RUS_propaganda_of_traditional_values
-	    cost = 2
-	    prerequisite = { focus = RUS_propaganda_of_traditional_values }
+	focus = {
+		id = RUS_family_values_protection
+		icon = GFX_goal_no_focus_RUS
+		x = 1
+		y = 1
+		relative_position_id = RUS_propaganda_of_traditional_values
+		cost = 2
+		prerequisite = { focus = RUS_propaganda_of_traditional_values }
 	
-	    completion_reward = {
-            add_ideas = RUS_traditional_values_spirit_idea
-        }
+		completion_reward = {
+			add_ideas = RUS_traditional_values_spirit_idea
+		}
 	}
 
 
-    focus = {
-	    id = RUS_cultural_sovereignty
-	    icon = GFX_goal_no_focus_RUS
-	    x = 1
-	    y = 1
-	    relative_position_id = RUS_family_values_protection
-	    cost = 2
-	    prerequisite = { focus = RUS_family_values_protection }
+	focus = {
+		id = RUS_cultural_sovereignty
+		icon = GFX_goal_no_focus_RUS
+		x = 1
+		y = 1
+		relative_position_id = RUS_family_values_protection
+		cost = 2
+		prerequisite = { focus = RUS_family_values_protection }
 	
-	    completion_reward = {
+		completion_reward = {
 			swap_ideas = {
-                remove_idea = RUS_traditional_values_spirit_idea
-                add_idea = RUS_traditional_values_spirit_upgraded_idea
-            }
-            add_political_power = 50
-        }
+				remove_idea = RUS_traditional_values_spirit_idea
+				add_idea = RUS_traditional_values_spirit_upgraded_idea
+			}
+			add_political_power = 50
+		}
 	}
 
-    focus = {
-	    id = RUS_yunarmy
-	    icon = GFX_goal_no_focus_RUS
-	    x = -1
-	    y = 1
-	    relative_position_id = RUS_family_values_protection
-	    cost = 2
-	    prerequisite = { focus = RUS_family_values_protection }
+	focus = {
+		id = RUS_yunarmy
+		icon = GFX_goal_no_focus_RUS
+		x = -1
+		y = 1
+		relative_position_id = RUS_family_values_protection
+		cost = 2
+		prerequisite = { focus = RUS_family_values_protection }
 	
-	    completion_reward = {
-            
-        }
+		completion_reward = {
+			
+		}
 	}
 
 
@@ -1853,46 +1853,46 @@ focus_tree = {
 		}
 	}
 
-    focus = {
-	    id = RUS_nationalization_of_elites
-	    icon = GFX_goal_no_focus_RUS
-	    x = -1
-	    y = 1
-	    relative_position_id = RUS_support_etatism
-	    cost = 4
-	    prerequisite = { focus = RUS_support_etatism }
+	focus = {
+		id = RUS_nationalization_of_elites
+		icon = GFX_goal_no_focus_RUS
+		x = -1
+		y = 1
+		relative_position_id = RUS_support_etatism
+		cost = 4
+		prerequisite = { focus = RUS_support_etatism }
 	
-	    completion_reward = {
-		    add_political_power = 70
-		    add_stability = 0.05
+		completion_reward = {
+			add_political_power = 70
+			add_stability = 0.05
 		}
 	}
 
-    focus = {
-	    id = RUS_state_media_monopoly
-	    icon = GFX_goal_no_focus_RUS
-	    x = -1
-	    y = 1
-	    relative_position_id = RUS_nationalization_of_elites
-	    cost = 3
-	    prerequisite = { focus = RUS_nationalization_of_elites }
+	focus = {
+		id = RUS_state_media_monopoly
+		icon = GFX_goal_no_focus_RUS
+		x = -1
+		y = 1
+		relative_position_id = RUS_nationalization_of_elites
+		cost = 3
+		prerequisite = { focus = RUS_nationalization_of_elites }
 	
-	    completion_reward = {
-		    add_ideas = RUS_state_media_monopoly_spirit_idea
+		completion_reward = {
+			add_ideas = RUS_state_media_monopoly_spirit_idea
 		}
 	}
 
-    focus = {
-	    id = RUS_rosgvardia
-	    icon = GFX_goal_no_focus_RUS
-	    x = 1
-	    y = 1
-	    relative_position_id = RUS_nationalization_of_elites
-	    cost = 3
-	    prerequisite = { focus = RUS_nationalization_of_elites }
+	focus = {
+		id = RUS_rosgvardia
+		icon = GFX_goal_no_focus_RUS
+		x = 1
+		y = 1
+		relative_position_id = RUS_nationalization_of_elites
+		cost = 3
+		prerequisite = { focus = RUS_nationalization_of_elites }
 	
-	    completion_reward = {
-		    
+		completion_reward = {
+			
 		}
 	}
 
@@ -2064,7 +2064,7 @@ focus_tree = {
 		x = 35
 		y = 5
 
-        prerequisite = { focus = RUS_expand_the_law_on_foreign_agents }
+		prerequisite = { focus = RUS_expand_the_law_on_foreign_agents }
 		prerequisite = { focus = RUS_rosgvardia }
 		prerequisite = { focus = RUS_state_media_monopoly }
 		prerequisite = { focus = RUS_yunarmy }
@@ -2134,7 +2134,7 @@ focus_tree = {
 		x = 1
 		y = 2
 
-	    prerequisite = { focus = RUS_national_projects }
+		prerequisite = { focus = RUS_national_projects }
 		relative_position_id = RUS_elections_2018
 		
 		ai_will_do = {
@@ -2148,7 +2148,7 @@ focus_tree = {
 			
 		}
 	}
-    #Мишустин становится презиком
+	#Мишустин становится презиком
 	focus = {
 		id = RUS_renew_the_cabinet_of_ministers
 		icon = GFX_goal_no_focus_RUS
@@ -2156,7 +2156,7 @@ focus_tree = {
 		x = 0
 		y = 3
 
-	    prerequisite = { focus = RUS_the_sovereign_internet_act }
+		prerequisite = { focus = RUS_the_sovereign_internet_act }
 		prerequisite = { focus = RUS_raise_the_retirement_age }
 		relative_position_id = RUS_elections_2018
 		
@@ -2179,7 +2179,7 @@ focus_tree = {
 		x = 0
 		y = 4
 
-	    prerequisite = { focus = RUS_renew_the_cabinet_of_ministers }
+		prerequisite = { focus = RUS_renew_the_cabinet_of_ministers }
 		relative_position_id = RUS_elections_2018
 		
 		ai_will_do = {
@@ -2306,13 +2306,13 @@ focus_tree = {
 
 		completion_reward = {
 			puppet = {
-                target = DPR
-                end_wars = no
-            }
+				target = DPR
+				end_wars = no
+			}
 			puppet = {
-                target = LPR
-                end_wars = no
-            }			
+				target = LPR
+				end_wars = no
+			}			
 		}
 	}
 
@@ -2560,7 +2560,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            news_event = {
+			news_event = {
 				id = news_events.36
 				hours = 3
 			}
@@ -2595,7 +2595,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            custom_effect_tooltip = SMO_preparation_gui_tt
+			custom_effect_tooltip = SMO_preparation_gui_tt
 
 			hidden_effect = {
 				set_country_flag = SMO_preparation_gui_activated
@@ -2622,7 +2622,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 35
-            add_stability = 0.04
+			add_stability = 0.04
 			add_war_support = 0.025
 			hidden_effect = {
 				news_event = {
@@ -2654,7 +2654,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = RUS_SMO_start_tt
 			add_war_support = 0.05
-            hidden_effect = {
+			hidden_effect = {
 				set_global_flag = Russo_Ukranian_war
 				UKR = {
 					complete_national_focus = UKR_battle_for_ukraine
@@ -2670,20 +2670,20 @@ focus_tree = {
 					hours = 5
 				}				
 				declare_war_on = {
-                    target = UKR
-                    type = annex_everything
-                }
+					target = UKR
+					type = annex_everything
+				}
 				DPR = {
-				    declare_war_on = {
-                        target = UKR
-                        type = annex_everything
-                    }					
+					declare_war_on = {
+						target = UKR
+						type = annex_everything
+					}					
 				}
 				LPR = {
-				    declare_war_on = {
-                        target = UKR
-                        type = annex_everything
-                    }					
+					declare_war_on = {
+						target = UKR
+						type = annex_everything
+					}					
 				}	
 				if = {
 					limit = { has_country_flag = Berdyansk_seaborne_landing_prepared }

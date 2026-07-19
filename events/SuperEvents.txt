@@ -22,7 +22,7 @@ country_event = {
 	option = {
 		name = superevent.1.a
 		
-        set_global_flag = Start_of_ATO_SP
+		set_global_flag = Start_of_ATO_SP
 		set_global_flag = Visbile_sp_events
 		play_song = "nexus_ukraina-15"
 	}
@@ -47,7 +47,7 @@ country_event = {
 	option = {
 		name = superevent.2.a
 		
-        set_global_flag = separatist_victory_SP
+		set_global_flag = separatist_victory_SP
 		set_global_flag = Visbile_sp_events
 		play_song = "nexus_chorus-40"
 	}
@@ -72,7 +72,7 @@ country_event = {
 	option = {
 		name = superevent.3.a
 		
-        set_global_flag = ukraine_victory_against_separatists_SP
+		set_global_flag = ukraine_victory_against_separatists_SP
 		set_global_flag = Visbile_sp_events
 		play_song = "nexus_ukraina-02"
 	}
@@ -97,7 +97,7 @@ country_event = {
 	option = {
 		name = superevent.4.a
 		
-        set_global_flag = yanukovich_overthrow_SP
+		set_global_flag = yanukovich_overthrow_SP
 		set_global_flag = Visbile_sp_events
 		play_song = "nexus_ukraina-44"
 	}
@@ -122,7 +122,7 @@ country_event = {
 	option = {
 		name = superevent.5.a
 		
-        set_global_flag = special_military_operation_SP
+		set_global_flag = special_military_operation_SP
 		set_global_flag = Visbile_sp_events
 		play_song = "nexus_chorus-12"
 	}

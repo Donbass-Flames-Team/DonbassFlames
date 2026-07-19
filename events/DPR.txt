@@ -272,7 +272,7 @@ country_event = {
 	option = {
 		name = DPR.15.a
 		custom_effect_tooltip = DPR_Strelkov_in_DPR_tooltip
-	    hidden_effect = {
+		hidden_effect = {
 			set_global_flag = Girkin_in_DPR
 			country_event = {
 				id = DPR.29
@@ -295,9 +295,9 @@ country_event = {
 	option = {
 		name = DPR.16.a
 		annex_country = {
-            target = NDR
-            transfer_troops = yes
-        }
+			target = NDR
+			transfer_troops = yes
+		}
 	}
 }
 
@@ -313,10 +313,10 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			UKR = {
-                country_event = {
-				    id = ukraine.96
-				    hours  = 5
-			    }   
+				country_event = {
+					id = ukraine.96
+					hours  = 5
+				}   
 			}
 		}
 	}
@@ -389,7 +389,7 @@ country_event = {
 		name = DPR.19.a
 		add_stability = -0.045
 		add_political_power = -65
-        retire_character = aleksandr_zakharchenko
+		retire_character = aleksandr_zakharchenko
 	}
 }
 
@@ -410,18 +410,18 @@ country_event = {
 		name = DPR.20.a
 		retire_country_leader = yes
 		add_country_leader_role = {
-            character = andrey_purgin
-            promote_leader = yes
-            country_leader = {
-                ideology = autoritarian_democracy
-                expire = "2045.1.1.1"
-            } 
-        }
+			character = andrey_purgin
+			promote_leader = yes
+			country_leader = {
+				ideology = autoritarian_democracy
+				expire = "2045.1.1.1"
+			} 
+		}
 		hidden_effect = {
-		    promote_character = {
-                character = andrey_purgin
-                ideology = autoritarian_democracy
-            }
+			promote_character = {
+				character = andrey_purgin
+				ideology = autoritarian_democracy
+			}
 		}
 	}
 }
@@ -443,18 +443,18 @@ country_event = {
 		name = DPR.21.a
 		retire_country_leader = yes
 		add_country_leader_role = {
-            character = denis_pushilin
-            promote_leader = yes
-            country_leader = {
-                ideology = autoritarian_democracy
-                expire = "2045.1.1.1"
-            } 
-        }
+			character = denis_pushilin
+			promote_leader = yes
+			country_leader = {
+				ideology = autoritarian_democracy
+				expire = "2045.1.1.1"
+			} 
+		}
 		hidden_effect = {
-		    promote_character = {
-                character = denis_pushilin
-                ideology = autoritarian_democracy
-            }
+			promote_character = {
+				character = denis_pushilin
+				ideology = autoritarian_democracy
+			}
 		}
 	}
 }
@@ -476,18 +476,18 @@ country_event = {
 		name = DPR.22.a
 		retire_country_leader = yes
 		add_country_leader_role = {
-            character = vladimir_makovich
-            promote_leader = yes
-            country_leader = {
-                ideology = autoritarian_democracy
-                expire = "2045.1.1.1"
-            } 
-        }
+			character = vladimir_makovich
+			promote_leader = yes
+			country_leader = {
+				ideology = autoritarian_democracy
+				expire = "2045.1.1.1"
+			} 
+		}
 		hidden_effect = {
-		    promote_character = {
-                character = vladimir_makovich
-                ideology = autoritarian_democracy
-            }
+			promote_character = {
+				character = vladimir_makovich
+				ideology = autoritarian_democracy
+			}
 		}
 	}
 }
@@ -509,18 +509,18 @@ country_event = {
 		name = DPR.23.a
 		retire_country_leader = yes
 		add_country_leader_role = {
-            character = boris_litvinov
-            promote_leader = yes
-            country_leader = {
-                ideology = autoritarian_democracy
-                expire = "2045.1.1.1"
-            } 
-        }
+			character = boris_litvinov
+			promote_leader = yes
+			country_leader = {
+				ideology = autoritarian_democracy
+				expire = "2045.1.1.1"
+			} 
+		}
 		hidden_effect = {
-		    promote_character = {
-                character = boris_litvinov
-                ideology = autoritarian_democracy
-            }
+			promote_character = {
+				character = boris_litvinov
+				ideology = autoritarian_democracy
+			}
 		}
 	}
 }
@@ -542,18 +542,18 @@ country_event = {
 		name = DPR.24.a
 		retire_country_leader = yes
 		add_country_leader_role = {
-            character = aleksandr_zakharchenko
-            promote_leader = yes
-            country_leader = {
-                ideology = autoritarian_democracy
-                expire = "2045.1.1.1"
-            } 
-        }
+			character = aleksandr_zakharchenko
+			promote_leader = yes
+			country_leader = {
+				ideology = autoritarian_democracy
+				expire = "2045.1.1.1"
+			} 
+		}
 		hidden_effect = {
-		    promote_character = {
-                character = aleksandr_zakharchenko
-                ideology = autoritarian_democracy
-            }
+			promote_character = {
+				character = aleksandr_zakharchenko
+				ideology = autoritarian_democracy
+			}
 		}
 	}
 }
@@ -574,18 +574,18 @@ country_event = {
 	option = {
 		name = DPR.25.a
 		add_country_leader_role = {
-            character = denis_pushilin
-            promote_leader = yes
-            country_leader = {
-                ideology = autoritarian_democracy
-                expire = "2045.1.1.1"
-            } 
-        }
+			character = denis_pushilin
+			promote_leader = yes
+			country_leader = {
+				ideology = autoritarian_democracy
+				expire = "2045.1.1.1"
+			} 
+		}
 		hidden_effect = {
-		    promote_character = {
-                character = denis_pushilin
-                ideology = autoritarian_democracy
-            }
+			promote_character = {
+				character = denis_pushilin
+				ideology = autoritarian_democracy
+			}
 		}
 	}
 }
@@ -633,20 +633,20 @@ country_event = {
 		name = DPR.27.b
 		retire_country_leader = yes
 		add_country_leader_role = {
-            character = zheka_vasilievich
-            promote_leader = yes
-            country_leader = {
-                ideology = autoritarian_democracy
-                expire = "2045.1.1.1"
-            } 
-        }
-		hidden_effect = {
-		    promote_character = {
-                character = zheka_vasilievich
-                ideology = autoritarian_democracy
-            }
+			character = zheka_vasilievich
+			promote_leader = yes
+			country_leader = {
+				ideology = autoritarian_democracy
+				expire = "2045.1.1.1"
+			} 
 		}
-        
+		hidden_effect = {
+			promote_character = {
+				character = zheka_vasilievich
+				ideology = autoritarian_democracy
+			}
+		}
+		
 	}	
 }
 
@@ -670,7 +670,7 @@ country_event = {
 		name = DPR.28.b
 		custom_effect_tooltip = Zeka_became_general_tt
 		set_country_flag = Zeka_became_general
-        add_command_power = -30
+		add_command_power = -30
 		add_political_power = -90
 		hidden_effect = {
 			country_event = {
@@ -722,18 +722,18 @@ country_event = {
 		name = DPR.30.a
 		clr_country_flag = DPR_change_of_governments
 		add_country_leader_role = {
-            character = igor_strelkov_girkin
-            promote_leader = yes
-            country_leader = {
-                ideology = autoritarian_democracy
-                expire = "2045.1.1.1"
-            } 
-        }
+			character = igor_strelkov_girkin
+			promote_leader = yes
+			country_leader = {
+				ideology = autoritarian_democracy
+				expire = "2045.1.1.1"
+			} 
+		}
 		hidden_effect = {
-		    promote_character = {
-                character = igor_strelkov_girkin
-                ideology = autoritarian_democracy
-            }
+			promote_character = {
+				character = igor_strelkov_girkin
+				ideology = autoritarian_democracy
+			}
 		}
 	}	
 }
@@ -754,12 +754,12 @@ country_event = {
 	option = {
 		name = DPR.31.a
 		657 = {
-            transfer_state_to = DKR
+			transfer_state_to = DKR
 		}
 		hidden_effect = {
 			DKR = {
 				add_state_core = 657
-                declare_war_on = {
+				declare_war_on = {
 					target = UKR
 					type = independence_wargoal
 				}
@@ -787,10 +787,10 @@ country_event = {
 		add_stability = -0.01
 		add_political_power = -15
 		add_power_balance_value = {
-            id = DPR_centralization_bop
-            value = -0.05
-            tooltip_side = DPR_bandits_bop
-        }
+			id = DPR_centralization_bop
+			value = -0.05
+			tooltip_side = DPR_bandits_bop
+		}
 	}
 }
 
@@ -812,10 +812,10 @@ country_event = {
 		add_stability = -0.01
 		add_political_power = -15
 		add_power_balance_value = {
-            id = DPR_centralization_bop
-            value = -0.05
-            tooltip_side = DPR_bandits_bop
-        }
+			id = DPR_centralization_bop
+			value = -0.05
+			tooltip_side = DPR_bandits_bop
+		}
 	}
 }
 
@@ -837,10 +837,10 @@ country_event = {
 		add_stability = -0.01
 		add_political_power = -15
 		add_power_balance_value = {
-            id = DPR_centralization_bop
-            value = -0.05
-            tooltip_side = DPR_bandits_bop
-        }
+			id = DPR_centralization_bop
+			value = -0.05
+			tooltip_side = DPR_bandits_bop
+		}
 	}
 }
 
@@ -866,10 +866,10 @@ country_event = {
 			transfer_troops = no
 		}
 		add_power_balance_value = {
-            id = DPR_centralization_bop
-            value = -0.05
-            tooltip_side = DPR_bandits_bop
-        }
+			id = DPR_centralization_bop
+			value = -0.05
+			tooltip_side = DPR_bandits_bop
+		}
 	}
 }
 
@@ -921,7 +921,7 @@ country_event = {
 		name = DPR.38.a
 		add_stability = -0.04
 		add_political_power = -15
-        add_command_power = -5
+		add_command_power = -5
 	}
 }
 
@@ -939,7 +939,7 @@ country_event = {
 		add_stability = -0.03
 		add_war_support = 0.02
 		add_political_power = -10
-        add_command_power = -10
+		add_command_power = -10
 	}
 }
 

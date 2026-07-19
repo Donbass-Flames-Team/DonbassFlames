@@ -451,10 +451,10 @@ DPR_government_of_republic = {
 		#Fail trigger
 		available = {
 			check_variable = {
-                var = DPR_change_of_governments_var
-                value = 6
-                compare = equals
-            }
+				var = DPR_change_of_governments_var
+				value = 6
+				compare = equals
+			}
 		}
 
 		activation = {
@@ -473,48 +473,48 @@ DPR_government_of_republic = {
 			if = {
 				limit = {
 					check_variable = {
-                        var = DPR_change_of_governments_var
-                        value = 1
-                        compare = equals
-                    }                      
-                }
+						var = DPR_change_of_governments_var
+						value = 1
+						compare = equals
+					}					  
+				}
 				country_event = {
 					id = DPR.20
 					hours = 2
 				}
 				activate_mission = DPR_change_of_leadership_in_dpr
 				add_days_mission_timeout = {
-                    mission = DPR_change_of_leadership_in_dpr
-                    days = 27
-                }
+					mission = DPR_change_of_leadership_in_dpr
+					days = 27
+				}
 			}
 			if = {
 				limit = {
 					check_variable = {
-                        var = DPR_change_of_governments_var
-                        value = 2
-                        compare = equals
-                    }                      
-                }
+						var = DPR_change_of_governments_var
+						value = 2
+						compare = equals
+					}					  
+				}
 				country_event = {
 					id = DPR.21
 					hours = 2
 				}
 				activate_mission = DPR_change_of_leadership_in_dpr
 				add_days_mission_timeout = {
-                    mission = DPR_change_of_leadership_in_dpr
-                    days = 57
-                }
+					mission = DPR_change_of_leadership_in_dpr
+					days = 57
+				}
 			}
 			# Владимир Макович
 			if = {
 				limit = {
 					check_variable = {
-                        var = DPR_change_of_governments_var
-                        value = 3
-                        compare = equals
-                    }                      
-                }
+						var = DPR_change_of_governments_var
+						value = 3
+						compare = equals
+					}					  
+				}
 				country_event = {
 					id = DPR.22
 					hours = 2
@@ -525,29 +525,29 @@ DPR_government_of_republic = {
 			if = {
 				limit = {
 					check_variable = {
-                        var = DPR_change_of_governments_var
-                        value = 4
-                        compare = equals
-                    }                      
-                }
+						var = DPR_change_of_governments_var
+						value = 4
+						compare = equals
+					}					  
+				}
 				country_event = {
 					id = DPR.23
 					hours = 2
 				}
 				activate_mission = DPR_change_of_leadership_in_dpr
 				add_days_mission_timeout = {
-                    mission = DPR_change_of_leadership_in_dpr
-                    days = 110
-                }
+					mission = DPR_change_of_leadership_in_dpr
+					days = 110
+				}
 			}
 			if = {
 				limit = {
 					check_variable = {
-                        var = DPR_change_of_governments_var
-                        value = 5
-                        compare = equals
-                    }                      
-                }
+						var = DPR_change_of_governments_var
+						value = 5
+						compare = equals
+					}					  
+				}
 				country_event = {
 					id = DPR.24
 					hours = 2

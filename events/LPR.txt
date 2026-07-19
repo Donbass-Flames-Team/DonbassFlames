@@ -16,23 +16,23 @@ country_event = {
 	option = {
 		name = LPR.1.a
 		add_country_leader_role = {
-        character = valeryy_bolotov
-        promote_leader = yes
-            country_leader = {
-                ideology = autoritarian_democracy
-                expire = "2045.1.1.1"
-                traits = { war_industrialist }
-            } 
-        }
+		character = valeryy_bolotov
+		promote_leader = yes
+			country_leader = {
+				ideology = autoritarian_democracy
+				expire = "2045.1.1.1"
+				traits = { war_industrialist }
+			} 
+		}
 		remove_country_leader_role = {
-            character = gennady_tsipkalov
-            ideology = autoritarian_democracy
-        }
+			character = gennady_tsipkalov
+			ideology = autoritarian_democracy
+		}
 		hidden_effect = {
 			promote_character = {
-                character = valeryy_bolotov
-                ideology = autoritarian_democracy
-            }
+				character = valeryy_bolotov
+				ideology = autoritarian_democracy
+			}
 			country_event = {
 				id = LPR.17
 				days = 88
@@ -53,7 +53,7 @@ country_event = {
 	option = {
 		name = LPR.2.a
 		add_war_support = 0.05
-        add_stability = 0.1
+		add_stability = 0.1
 		add_political_power = 30
 	}
 }
@@ -69,7 +69,7 @@ country_event = {
 	
 	option = {
 		name = LPR.3.a
-        add_stability = -0.02
+		add_stability = -0.02
 	}
 }
 
@@ -84,42 +84,42 @@ country_event = {
 	
 	option = {
 		name = LPR.4.a
-        add_war_support = 0.03
-        add_political_power = 10
+		add_war_support = 0.03
+		add_political_power = 10
 	}
 }
 
 #Референдум ЛНР
 country_event = {
-    id = LPR.5
-    title = LPR.5.t
-    desc = LPR.5.d
-    #picture = GFX_report_event_royal_parade
+	id = LPR.5
+	title = LPR.5.t
+	desc = LPR.5.d
+	#picture = GFX_report_event_royal_parade
 
-    fire_only_once = yes
+	fire_only_once = yes
 
-    mean_time_to_happen = {
-        days = 5
-    }
+	mean_time_to_happen = {
+		days = 5
+	}
 
-    trigger = {
-        has_completed_focus = LPR_peoples_druzhina
+	trigger = {
+		has_completed_focus = LPR_peoples_druzhina
 		has_completed_focus = LPR_resource_mobilization
-    }
+	}
 
-    option = {
-        name = LPR.5.a
-        add_stability = 0.15
+	option = {
+		name = LPR.5.a
+		add_stability = 0.15
 		mark_focus_tree_layout_dirty = yes
-        complete_national_focus = LPR_referendum
-        add_political_power = 120
+		complete_national_focus = LPR_referendum
+		add_political_power = 120
 
-        add_popularity = {
-            ideology = autoritarian_democracy
-            popularity = 0.15
-        } 
-        add_ideas = LPR_peoples_mandate
-    } 
+		add_popularity = {
+			ideology = autoritarian_democracy
+			popularity = 0.15
+		} 
+		add_ideas = LPR_peoples_mandate
+	} 
 }
 
 #Социальная ситуация в стране, для фокуса ивент
@@ -133,7 +133,7 @@ country_event = {
 	
 	option = {
 		name = LPR.6.a
-        add_political_power = -5
+		add_political_power = -5
 	}
 }
 
@@ -148,7 +148,7 @@ country_event = {
 	
 	option = {
 		name = LPR.7.a
-        add_political_power = -5
+		add_political_power = -5
 	}
 }
 
@@ -163,7 +163,7 @@ country_event = {
 	
 	option = {
 		name = LPR.8.a
-        add_political_power = -5
+		add_political_power = -5
 	}
 }
 
@@ -178,7 +178,7 @@ country_event = {
 	
 	option = {
 		name = LPR.9.a
-        add_political_power = -5
+		add_political_power = -5
 	}
 }
 
@@ -193,7 +193,7 @@ country_event = {
 	
 	option = {
 		name = LPR.10.a
-        add_political_power = -5
+		add_political_power = -5
 	}
 }
 
@@ -208,7 +208,7 @@ country_event = {
 	
 	option = {
 		name = LPR.11.a
-        add_political_power = -5
+		add_political_power = -5
 	}
 }
 
@@ -223,7 +223,7 @@ country_event = {
 	
 	option = {
 		name = LPR.12.a
-        add_stability = 0.02
+		add_stability = 0.02
 		add_political_power = 25
 	}
 }
@@ -288,9 +288,9 @@ country_event = {
 			}
 
 			country_event = {
-			    id = LPR.1
-			    days = 4
-		    }
+				id = LPR.1
+				days = 4
+			}
 		}
 	}
 }
@@ -304,7 +304,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-    option = {
+	option = {
 		name = LPR.16.a
 		add_political_power = 10
 		LPR = {
@@ -331,29 +331,29 @@ country_event = {
 
 	is_triggered_only = yes
 
-    option = {
+	option = {
 		name = LPR.17.a
 		
 		add_country_leader_role = {
-        character = igor_polotnicky
-        promote_leader = yes
-            country_leader = {
-                ideology = autoritarian_democracy
-                expire = "2045.1.1.1"
-                traits = { 
+		character = igor_polotnicky
+		promote_leader = yes
+			country_leader = {
+				ideology = autoritarian_democracy
+				expire = "2045.1.1.1"
+				traits = { 
 					# 
 				}
-            } 
-        }
+			} 
+		}
 		remove_country_leader_role = {
-            character = valeryy_bolotov
-            ideology = autoritarian_democracy
-        }
+			character = valeryy_bolotov
+			ideology = autoritarian_democracy
+		}
 		hidden_effect = {
 			promote_character = {
-                character = igor_polotnicky
-                ideology = autoritarian_democracy
-            }
+				character = igor_polotnicky
+				ideology = autoritarian_democracy
+			}
 		}		
 	}
 }
@@ -367,10 +367,10 @@ country_event = {
 
 	is_triggered_only = yes
 
-    option = {
+	option = {
 		name = LPR.18.a
 	
-        add_political_power = -35
+		add_political_power = -35
 		add_stability = -0.035		
 	}
 }
@@ -386,9 +386,9 @@ country_event = {
 
 	option = {
 		name = LPR.19.a
-		add_stability = -0.03            
-		add_war_support = 0.03           # ну тип сплоченность против врага, ес кто то не поймет
-		add_manpower = 25              # +25 добровольцев
+		add_stability = -0.03			
+		add_war_support = 0.03		   # ну тип сплоченность против врага, ес кто то не поймет
+		add_manpower = 25			  # +25 добровольцев
 		
 		hidden_effect = {
 			UKR = {

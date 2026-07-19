@@ -9,43 +9,43 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	complete_national_focus = UKR_yanukovychs_results
 
 	set_variable = { cash = 1 }
-    set_variable = { debt = 257 }
+	set_variable = { debt = 257 }
 	set_variable = { state_reserves = 18.8 }
-    set_variable = { percentage_shadow_economy = 35 }
-    set_variable = { income_tax_rate = 17 }
-    set_variable = { corporate_tax_rate = 18 }
-    set_variable = { key_rate = 6.5 }
-    set_variable = { sales_tax_rate = 20 }
+	set_variable = { percentage_shadow_economy = 35 }
+	set_variable = { income_tax_rate = 17 }
+	set_variable = { corporate_tax_rate = 18 }
+	set_variable = { key_rate = 6.5 }
+	set_variable = { sales_tax_rate = 20 }
 	set_variable = { small_businesses = 356000 }
 	set_variable = { individual_enterprises = 1350000 } 
 	set_variable = { consumer_activity = 58 } 
 
 
 	country_event = {
-	    id = ukraine.101
+		id = ukraine.101
 		days = 4
 	}
 
 	country_event = {
-	    id = ukraine.23
+		id = ukraine.23
 		days = 725
 	}
 
 	country_event = {
-	    id = ukraine.57
+		id = ukraine.57
 		days = 4
 	}
 
 	country_event = {
-	    id = Economic_events.1
+		id = Economic_events.1
 		days = 41
 	}
 
 	set_autonomy = {
-	    target = CRI
-	    autonomous_state = autonomy_integrated_puppet
-	    freedom_level = 0.5
-    }
+		target = CRI
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
 
 	set_country_flag = UKRBeforeOverthrowOfYanukovych
 	set_country_flag = Speaker_Is_Turchinov
@@ -56,14 +56,14 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	set_variable = { UKR_AFU_army_org_factor = -0.55 }
 	set_variable = { UKR_AFU_army_org_regain = -0.25 }
 	set_variable = { UKR_AFU_army_morale_factor = -0.25 }
-    set_variable = { UKR_AFU_army_attack_factor = -0.45 }
-    set_variable = { UKR_AFU_army_defence_factor = -0.2 }
+	set_variable = { UKR_AFU_army_attack_factor = -0.45 }
+	set_variable = { UKR_AFU_army_defence_factor = -0.2 }
 	set_variable = { UKR_AFU_planning_speed = -0.20 }
-    set_variable = { UKR_AFU_army_speed_factor = -0.15 }
+	set_variable = { UKR_AFU_army_speed_factor = -0.15 }
 	set_variable = { UKR_AFU_war_breakthrough_factor = -0.15 }
 	set_variable = { UKR_AFU_war_support_factor = -0.15 }
 	set_variable = { UKR_AFU_conscription = -0.002 } 
-    set_variable = { UKR_AFU_supply_factor = -0.15 } 
+	set_variable = { UKR_AFU_supply_factor = -0.15 } 
 
 
 	add_dynamic_modifier = { modifier = UKR_ukrainian_air_forces_idea }
@@ -76,12 +76,13 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 
 
 
+
 	add_dynamic_modifier = { modifier = UKR_ukrainian_navy_idea }
-    set_variable = { UKR_ukrainian_navy_navy_org_factor = -0.2 }
+	set_variable = { UKR_ukrainian_navy_navy_org_factor = -0.2 }
 	set_variable = { UKR_ukrainian_navy_naval_accidents_chance = -0.15 }
 	set_variable = { UKR_ukrainian_navy_naval_detection = -0.15 }
 	set_variable = { UKR_ukrainian_navy_naval_damage_factor = -0.15 }
-    set_variable = { UKR_ukrainian_navy_naval_morale_factor = -0.1 }
+	set_variable = { UKR_ukrainian_navy_naval_morale_factor = -0.1 }
 
 
 	add_dynamic_modifier = { modifier = UKR_oligarchs_idea }
@@ -93,7 +94,7 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	set_variable = { UKR_ukrainian_economy_consumer_goods_factor = 0.15 }
 	set_variable = { UKR_ukrainian_economy_industrial_capacity_factory = -0.15 }	
 	set_variable = { UKR_ukrainian_economy_production_speed_buildings_factor = -0.075 }
-    set_variable = { UKR_ukrainian_economy_production_oil_factor = -0.25 }
+	set_variable = { UKR_ukrainian_economy_production_oil_factor = -0.25 }
 	set_variable = { UKR_ukrainian_economy_industry_free_repair_factor = -0.35 }
 
 
@@ -141,45 +142,45 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	
 	#if = {
 	#   limit = { has_dlc = "By Blood Alone" }
-	#	    set_technology = {
-	#		    aa_lmg = 1
-	#		    engines_1 = 1
-	#		    aircraft_construction = 1
-	#		    iw_small_airframe = 1
-	#	    }
+	#		set_technology = {
+	#			aa_lmg = 1
+	#			engines_1 = 1
+	#			aircraft_construction = 1
+	#			iw_small_airframe = 1
+	#		}
 	#   else = {
-	#	    set_technology = {
-	#		    early_fighter = 1
-	#	    }
-	#    }
-    #}
+	#		set_technology = {
+	#			early_fighter = 1
+	#		}
+	#	}
+	#}
 
 	if = {
-	    limit = { has_dlc = "No Step Back" }
-		    set_technology = {
- 		        apc_chassis = 1
-		        apc_chassis_2 = 1
-		        apc_chassis_3 = 1
-		        apc_chassis_4 = 1
+		limit = { has_dlc = "No Step Back" }
+			set_technology = {
+ 				apc_chassis = 1
+				apc_chassis_2 = 1
+				apc_chassis_3 = 1
+				apc_chassis_4 = 1
 
-		        ifv_chassis = 1
-		        ifv_chassis_2 = 1
-		        ifv_chassis_3 = 1
-		        ifv_chassis_4 = 1
+				ifv_chassis = 1
+				ifv_chassis_2 = 1
+				ifv_chassis_3 = 1
+				ifv_chassis_4 = 1
 				gwtank_chassis = 1
-		    }
+			}
 			set_oob = "UKR_2013"
-	    else = {
-		    set_technology = {
-	 		    apc_chassis = 1
-		        apc_chassis_2 = 1
-		        apc_chassis_3 = 1
-		        apc_chassis_4 = 1
+		else = {
+			set_technology = {
+	 			apc_chassis = 1
+				apc_chassis_2 = 1
+				apc_chassis_3 = 1
+				apc_chassis_4 = 1
 
-		        ifv_1 = 1
-		        ifv_2 = 1
-		        ifv_3 = 1
-		        bmd_1 = 1
+				ifv_1 = 1
+				ifv_2 = 1
+				ifv_3 = 1
+				bmd_1 = 1
 				bmd_2 = 1
 				bmd_3 = 1
 				APC_1 = 1
@@ -189,112 +190,112 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 				modern_tank_2 = 1
 				modern_tank_3 = 1		
 				modern_tank_4 = 1		   
-		    }
+			}
 			set_oob = "UKR_2013"
-	    }
-    }
+		}
+	}
 
 	# Pralamient values
 	set_variable = {
-        var = UKR_parlamient_support
-        value = 187
-    }
+		var = UKR_parlamient_support
+		value = 187
+	}
 
 	set_variable = {
-        var = UKR_unyielding_opponents
-        value = 90
-    }
+		var = UKR_unyielding_opponents
+		value = 90
+	}
 	#
-    
+	
 
 	# Separatism values
 	set_variable = {
-        var = DPR_separatism_value
-        value = 30
-    }
+		var = DPR_separatism_value
+		value = 30
+	}
 
 	set_variable = {
-        var = LPR_separatism_value
-        value = 25
-    }
+		var = LPR_separatism_value
+		value = 25
+	}
 
 	set_variable = {
-        var = HPR_separatism_value
-        value = 5
-    }
+		var = HPR_separatism_value
+		value = 5
+	}
 
 	set_variable = {
-        var = OPR_separatism_value
-        value = 4
-    }
+		var = OPR_separatism_value
+		value = 4
+	}
 
 	set_variable = {
-        var = ZKR_separatism_value
-        value = 1
-    }
+		var = ZKR_separatism_value
+		value = 1
+	}
 
-    # Radicalisation values
+	# Radicalisation values
 	set_variable = {
-        var = UKR_radicalisation_of_prorussians_value
-        value = 15
-    }
-
-	set_variable = {
-        var = UKR_radicalisation_of_proeuropeans_value
-        value = 40
-    }
+		var = UKR_radicalisation_of_prorussians_value
+		value = 15
+	}
 
 	set_variable = {
-        var = UKR_radicalisation_of_nationalists_value
-        value = 30
-    }
+		var = UKR_radicalisation_of_proeuropeans_value
+		value = 40
+	}
 
 	set_variable = {
-        var = UKR_legitimacy_of_central_power_value
-        value = 85
-    }
+		var = UKR_radicalisation_of_nationalists_value
+		value = 30
+	}
+
+	set_variable = {
+		var = UKR_legitimacy_of_central_power_value
+		value = 85
+	}
 
 	# Separatism values in regions
 	set_variable = {
-        var = Luhansk_prorussian_support_value
-        value = 55
-    }
+		var = Luhansk_prorussian_support_value
+		value = 55
+	}
 	set_variable = {
-        var = Luhansk_proukranian_support_value
-        value = 45
-    }
+		var = Luhansk_proukranian_support_value
+		value = 45
+	}
 	set_variable = {
-        var = Donetsk_prorussian_support_value
-        value = 65
-    }
+		var = Donetsk_prorussian_support_value
+		value = 65
+	}
 	set_variable = {
-        var = Donetsk_proukranian_support_value
-        value = 35
-    }
+		var = Donetsk_proukranian_support_value
+		value = 35
+	}
 	set_variable = {
-        var = Kharkiv_prorussian_support_value
-        value = 35
-    }
+		var = Kharkiv_prorussian_support_value
+		value = 35
+	}
 	set_variable = {
-        var = Kharkiv_proukranian_support_value
-        value = 65
-    }
+		var = Kharkiv_proukranian_support_value
+		value = 65
+	}
 	set_variable = {
-        var = Odesa_prorussian_support_value
-        value = 25
-    }
+		var = Odesa_prorussian_support_value
+		value = 25
+	}
 	set_variable = {
-        var = Odesa_proukranian_support_value
-        value = 75
-    }
+		var = Odesa_proukranian_support_value
+		value = 75
+	}
 	set_variable = {
-        var = Crimea_prorussian_support_value
-        value = 75
-    }
+		var = Crimea_prorussian_support_value
+		value = 75
+	}
 	set_variable = {
-        var = Crimea_proukranian_support_value
-        value = 25
-    }
+		var = Crimea_proukranian_support_value
+		value = 25
+	}
 	##
 	
 	set_politics = {
@@ -305,13 +306,13 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	}
 	
 	set_popularities = {
-        conservatism_democracy = 32
-        autoritarian_democracy = 24
-        liberal_democracy = 20
-        nationalism = 16
-        communism = 7
-        social_democracy = 1
-    }
+		conservatism_democracy = 32
+		autoritarian_democracy = 24
+		liberal_democracy = 20
+		nationalism = 16
+		communism = 7
+		social_democracy = 1
+	}
 
 	recruit_character = UKR_victor_yanukovich
 	recruit_character = UKR_mykhaylo_dobkin
@@ -348,7 +349,7 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 		volunteer_only
 		export_focus
 		civilian_economy
-    }
+	}
 
 	add_opinion_modifier = {
 		target = RUS
@@ -364,7 +365,7 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 		modifier = kharkiv_pact
 	}
 	set_country_flag = Yanukovich_escaped
-    complete_national_focus = UKR_yanukovich_escaped
+	complete_national_focus = UKR_yanukovich_escaped
 	mark_focus_tree_layout_dirty = yes
 	complete_national_focus = UKR_government_in_anarchy
 	complete_national_focus = UKR_the_end_of_the_yanukovych_regime
@@ -373,7 +374,7 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	complete_national_focus = UKR_preparation_for_elections
 	complete_national_focus = UKR_adoption_of_new_laws
 	complete_national_focus = UKR_unrest_in_the_east
-    complete_national_focus = UKR_army_review
+	complete_national_focus = UKR_army_review
 	complete_national_focus = UKR_appeal_to_the_oligarchs
 	complete_national_focus = UKR_concessions_to_the_oligarchs
 	complete_national_focus = UKR_support_of_the_volunteer_battalion
@@ -385,9 +386,9 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	complete_national_focus = UKR_leave_the_peninsula
 	complete_national_focus = UKR_pick_up_weapons_from_warehouses
 	complete_national_focus = UKR_partial_mobilization
-    complete_national_focus = UKR_start_of_ato
+	complete_national_focus = UKR_start_of_ato
 	complete_national_focus = UKR_volunteer_battalions
-    complete_national_focus = UKR_emergency_redeployment_of_troops
+	complete_national_focus = UKR_emergency_redeployment_of_troops
 	complete_national_focus = UKR_organize_frontline
 	complete_national_focus = UKR_volunteer_battalion_azov
 	
@@ -395,17 +396,17 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 
 	activate_mission = 	UKR_elections_2014
 	add_days_mission_timeout = {
-        mission = UKR_elections_2014
-        days = -85
-    }
+		mission = UKR_elections_2014
+		days = -85
+	}
 
 	retire_country_leader = yes
 	set_politics = {
-        ruling_party = conservatism_democracy
-        elections_allowed = no
-    }
+		ruling_party = conservatism_democracy
+		elections_allowed = no
+	}
 	promote_character = UKR_alexander_tyrchinov
-    remove_ideas = {
+	remove_ideas = {
 		UKR_protests
 		UKR_helpless_government		
 	}

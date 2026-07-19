@@ -18,11 +18,11 @@ country_event = {
 			set_global_flag = Mozgovoy_evacuated_to_alcheevsk
 			SLR = {
 				#teleport_armies = {
-                #    limit = {
-                #        has_global_flag = Mozgovoy_evacuated_to_alcheevsk
-                #    }
-                #    to_state = 370
-                #}
+				#	limit = {
+				#		has_global_flag = Mozgovoy_evacuated_to_alcheevsk
+				#	}
+				#	to_state = 370
+				#}
 			}
 		}
 	}

@@ -1,6 +1,6 @@
 
 first_minsk_effect = {
-    DPR = {
+	DPR = {
 		if = { 
 			limit = { 
 				any_country = {
@@ -15,7 +15,7 @@ first_minsk_effect = {
 		}
 		if = { 
 			limit = { 
-			    any_country = {
+				any_country = {
 					OR = {
 						tag = DPR
 						is_in_faction_with = DPR
@@ -27,7 +27,7 @@ first_minsk_effect = {
 		}							
 		if = { 
 			limit = { 
-			    any_country = {
+				any_country = {
 					OR = {
 						tag = DPR
 						is_in_faction_with = DPR
@@ -78,10 +78,10 @@ first_minsk_effect = {
 		transfer_state = 582
 		transfer_state = 438
 		transfer_state = 467
-	    transfer_state = 398
+		transfer_state = 398
 		transfer_state = 418
 		transfer_state = 430
-        transfer_state = 265
+		transfer_state = 265
 		transfer_state = 452
 		transfer_state = 397
 		transfer_state = 404
@@ -119,7 +119,7 @@ first_minsk_effect = {
 		if = { limit = { 333 = { is_controlled_by = LPR } } transfer_state = 333 transfer_state = 344 }
 		if = { limit = { 326 = { is_controlled_by = LPR } } transfer_state = 326 }
 		if = { limit = { 335 = { is_controlled_by = LPR } } transfer_state = 335 }
-	    if = { limit = { 288 = { is_controlled_by = LPR } 335 = { is_controlled_by = LPR } } transfer_state = 288 }
+		if = { limit = { 288 = { is_controlled_by = LPR } 335 = { is_controlled_by = LPR } } transfer_state = 288 }
 		if = { limit = { 285 = { is_controlled_by = LPR } } transfer_state = 285 }
 		if = { limit = { 10 = { is_controlled_by = LPR } } transfer_state = 10 }
 		if = { limit = { 305 = { is_controlled_by = LPR } 285 = { is_controlled_by = LPR } } transfer_state = 305 }
@@ -206,7 +206,7 @@ second_minsk_effect = {
 		}
 		if = { 
 			limit = { 
-			    any_country = {
+				any_country = {
 					OR = {
 						tag = DPR
 						is_in_faction_with = DPR
@@ -218,7 +218,7 @@ second_minsk_effect = {
 		}							
 		if = { 
 			limit = { 
-			    any_country = {
+				any_country = {
 					OR = {
 						tag = DPR
 						is_in_faction_with = DPR
@@ -255,7 +255,7 @@ second_minsk_effect = {
 		transfer_state = 398
 		transfer_state = 418
 		transfer_state = 430
-        transfer_state = 265
+		transfer_state = 265
 		transfer_state = 452
 		transfer_state = 397
 		transfer_state = 404
@@ -319,7 +319,7 @@ second_minsk_effect = {
 		if = { limit = { 329 = { is_controlled_by = UKR } } transfer_state = 329 }
 		if = { limit = { 335 = { is_controlled_by = UKR } } transfer_state = 335 }
 
-        # Если днр захватил и украина отвоевала
+		# Если днр захватил и украина отвоевала
 		if = { limit = { 527 = { is_controlled_by = UKR } } transfer_state = 527 }
 		if = { limit = { 649 = { is_controlled_by = UKR } } transfer_state = 649 }
 		if = { limit = { 421 = { is_controlled_by = UKR } } transfer_state = 421 transfer_state = 465 }

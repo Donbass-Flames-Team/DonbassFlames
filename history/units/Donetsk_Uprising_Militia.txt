@@ -1,390 +1,390 @@
 division_template = {
 	name = "Donetsk Militia"
 	regiments = {
-        militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 0 }
 		militia = { x = 0 y = 1 }
 		militia = { x = 0 y = 2 }
-        militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 0 }
 	}
-    support = {
-        engineer = { x = 0 y = 0 }
+	support = {
+		engineer = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        signal_company = { x = 1 y = 0}
-        sniper_company = { x = 1 y = 1 }
-        field_hospital = { x = 1 y = 2 }
+		signal_company = { x = 1 y = 0}
+		sniper_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
 	}
 }
 
 division_template = {
 	name = "Tankovyy batal'on"
 	regiments = {
-        modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
 		modern_armor = { x = 0 y = 2 }
-        ifv_unit = { x = 1 y = 0 }
+		ifv_unit = { x = 1 y = 0 }
 	}
-    support = {
-        engineer = { x = 0 y = 0 }
+	support = {
+		engineer = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        field_hospital = { x = 0 y = 4} 
-        sniper_company = { x = 1 y = 0 }
-        manpads_platoon = { x = 1 y = 1}
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
   		logistics_company = { x = 1 y = 2}
 		signal_company = { x = 1 y = 3} 
 	}
 
-    is_locked = yes
+	is_locked = yes
 }
 
 division_template = {
 	name = "Batalyon samokhidnoyi artyleriyi"
 	regiments = {
-        sau_artillery = { x = 0 y = 0 }
+		sau_artillery = { x = 0 y = 0 }
 		sau_artillery = { x = 0 y = 1 }
 		sau_artillery = { x = 0 y = 2 }
-        sau_artillery = { x = 1 y = 0 }
+		sau_artillery = { x = 1 y = 0 }
 	}
-    support = {
-        engineer = { x = 0 y = 0 }
+	support = {
+		engineer = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        field_hospital = { x = 0 y = 4} 
-        sniper_company = { x = 1 y = 0 }
-        manpads_platoon = { x = 1 y = 1}
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
   		logistics_company = { x = 1 y = 2}
 		signal_company = { x = 1 y = 3} 
 	}
 
-    is_locked = yes
+	is_locked = yes
 }
 
 division_template = {
 	name = "Motosrelkovy batal'on"
 	regiments = {
-        ifv_unit = { x = 0 y = 0 }
+		ifv_unit = { x = 0 y = 0 }
 		apc_unit = { x = 0 y = 1 }
 		apc_unit = { x = 0 y = 2 }
-        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
 	}
-    support = {
-        engineer = { x = 0 y = 0 }
+	support = {
+		engineer = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        field_hospital = { x = 0 y = 4} 
-        sniper_company = { x = 1 y = 0 }
-        manpads_platoon = { x = 1 y = 1}
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
   		logistics_company = { x = 1 y = 2}
 		signal_company = { x = 1 y = 3} 
 	}
 
-    is_locked = yes
+	is_locked = yes
 }
 
 division_template = {
 	name = "Pekhotnyy batal'on"
 	regiments = {
-        infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		apc_unit = { x = 0 y = 2 }
-        apc_unit = { x = 1 y = 0 }
+		apc_unit = { x = 1 y = 0 }
 	}
-    support = {
-        engineer = { x = 0 y = 0 }
+	support = {
+		engineer = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        field_hospital = { x = 0 y = 4} 
-        sniper_company = { x = 1 y = 0 }
-        manpads_platoon = { x = 1 y = 1}
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
   		logistics_company = { x = 1 y = 2}
 		signal_company = { x = 1 y = 3} 
 	}
 
-    is_locked = yes
+	is_locked = yes
 }
 
 division_template = {
 	name = "Spetsnaz"
 	regiments = {
-        special_forces_infantry = { x = 0 y = 0 }
+		special_forces_infantry = { x = 0 y = 0 }
 		special_forces_infantry = { x = 0 y = 1 }
 		special_forces_infantry = { x = 0 y = 2 }
-        special_forces_infantry = { x = 1 y = 0 }
+		special_forces_infantry = { x = 1 y = 0 }
 	}
-    support = {
-        engineer = { x = 0 y = 0 }
+	support = {
+		engineer = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
 		mortar = { x = 0 y = 2 }
 		atgm_company = { x = 0 y = 3 }
-        field_hospital = { x = 0 y = 4} 
-        sniper_company = { x = 1 y = 0 }
-        manpads_platoon = { x = 1 y = 1}
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
   		logistics_company = { x = 1 y = 2}
 		signal_company = { x = 1 y = 3} 
 	}
 
-    is_locked = yes
+	is_locked = yes
 }
 
 units = {
-    division= {
-        name = "1-y batal'on Donetskogo opolcheniya"
-        location = 7500
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.5
+	division= {
+		name = "1-y batal'on Donetskogo opolcheniya"
+		location = 7500
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 		start_manpower_factor = 1
-    }
-    division= {
-        name = "2-y batal'on Donetskogo opolcheniya"
-        location = 15766
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.5
+	}
+	division= {
+		name = "2-y batal'on Donetskogo opolcheniya"
+		location = 15766
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 		start_manpower_factor = 1
-    }
-    division= {
-        name = "3-y batal'on Donetskogo opolcheniya"
-        location = 9377
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.5
+	}
+	division= {
+		name = "3-y batal'on Donetskogo opolcheniya"
+		location = 9377
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 		start_manpower_factor = 1
-    }
-    division= {
-        name = "4-y batal'on Donetskogo opolcheniya"
-        location = 10391
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.5
+	}
+	division= {
+		name = "4-y batal'on Donetskogo opolcheniya"
+		location = 10391
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 		start_manpower_factor = 1
-    }
+	}
 
-    division= {
-        name = "5-y batal'on Donetskogo opolcheniya"
-        location = 10450
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.5
+	division= {
+		name = "5-y batal'on Donetskogo opolcheniya"
+		location = 10450
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 		start_manpower_factor = 1
-    }
+	}
 
-    division= {
-        name = "5-y batal'on Donetskogo opolcheniya"
-        location = 15811
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.5
+	division= {
+		name = "5-y batal'on Donetskogo opolcheniya"
+		location = 15811
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 		start_manpower_factor = 1
-    }
+	}
 
-    division= {
-        name = "6-y batal'on Donetskogo opolcheniya"
-        location = 18222
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.5
+	division= {
+		name = "6-y batal'on Donetskogo opolcheniya"
+		location = 18222
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 		start_manpower_factor = 1
-    }
+	}
 
-    division= {
-        name = "7-oi batal'on Donetskogo opolcheniya"
-        location = 18219
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.5
+	division= {
+		name = "7-oi batal'on Donetskogo opolcheniya"
+		location = 18219
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.8
-    }
+	}
 
-    division= {
-        name = "8-oi batal'on Donetskogo opolcheniya"
-        location = 16470
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.5
+	division= {
+		name = "8-oi batal'on Donetskogo opolcheniya"
+		location = 16470
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.8
-    }
+	}
 
-    division= {
-        name = "9-ii batal'on Donetskogo opolcheniya"
-        location = 18220
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.5
+	division= {
+		name = "9-ii batal'on Donetskogo opolcheniya"
+		location = 18220
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.8
-    }
+	}
 
-    division= {
-        name = "10-y batal'on Donetskogo opolcheniya"
-        location = 18220
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.5
+	division= {
+		name = "10-y batal'on Donetskogo opolcheniya"
+		location = 18220
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.8
-    }
+	}
 
-    division= {
-        name = "11-y batal'on Donetskogo opolcheniya"
-        location = 18220
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	division= {
+		name = "11-y batal'on Donetskogo opolcheniya"
+		location = 18220
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.8
-    }
+	}
 
-    division= {
-        name = "12-y batal'on Donetskogo opolcheniya"
-        location = 18220
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	division= {
+		name = "12-y batal'on Donetskogo opolcheniya"
+		location = 18220
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.8
-    }
+	}
 
-    division= {
-        name = "13-y batal'on Donetskogo opolcheniya"
-        location = 15707
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	division= {
+		name = "13-y batal'on Donetskogo opolcheniya"
+		location = 15707
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.8
-    }
+	}
 
-    division= {
-        name = "14-y batal'on Donetskogo opolcheniya"
-        location = 15707
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	division= {
+		name = "14-y batal'on Donetskogo opolcheniya"
+		location = 15707
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.3
-    }
+	}
 
-    division= {
-        name = "15-y batal'on Donetskogo opolcheniya"
-        location = 15719
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	division= {
+		name = "15-y batal'on Donetskogo opolcheniya"
+		location = 15719
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.3
-    }
-    division= {
-        name = "16-y batal'on Donetskogo opolcheniya"
-        location = 15719
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division= {
+		name = "16-y batal'on Donetskogo opolcheniya"
+		location = 15719
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.3
-    }
-    division= {
-        name = "17-y batal'on Donetskogo opolcheniya"
-        location = 10391
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division= {
+		name = "17-y batal'on Donetskogo opolcheniya"
+		location = 10391
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.3
-    }
+	}
 
-    division= {
-        name = "18-y batal'on Donetskogo opolcheniya"
-        location = 10391
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	division= {
+		name = "18-y batal'on Donetskogo opolcheniya"
+		location = 10391
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.3
-    }
+	}
 
-    division= {
-        name = "19-y batal'on Donetskogo opolcheniya"
-        location = 10391
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	division= {
+		name = "19-y batal'on Donetskogo opolcheniya"
+		location = 10391
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.3
-    }
+	}
 
-    division= {
-        name = "20-y batal'on Donetskogo opolcheniya"
-        location = 10391
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	division= {
+		name = "20-y batal'on Donetskogo opolcheniya"
+		location = 10391
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.3
-    }
-    division= {
-        name = "21-y batal'on Donetskogo opolcheniya"
-        location = 7500
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+	}
+	division= {
+		name = "21-y batal'on Donetskogo opolcheniya"
+		location = 7500
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.3
-    }
+	}
 
-    division= {
-        name = "22-y batal'on Donetskogo opolcheniya"
-        location = 7500
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.2
-        start_equipment_factor = 0.5
+	division= {
+		name = "22-y batal'on Donetskogo opolcheniya"
+		location = 7500
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.2
-    }
+	}
 
-    division= {
-        name = "23-y batal'on Donetskogo opolcheniya"
-        location = 7500
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.2
-        start_equipment_factor = 0.5
+	division= {
+		name = "23-y batal'on Donetskogo opolcheniya"
+		location = 7500
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.2
-    }
+	}
 
-    division= {
-        name = "24-y batal'on Donetskogo opolcheniya"
-        location = 7500
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.4
+	division= {
+		name = "24-y batal'on Donetskogo opolcheniya"
+		location = 7500
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
 		start_manpower_factor = 0.25
-    }
+	}
 
-    division= {
-        name = "25-y batal'on Donetskogo opolcheniya"
-        location = 10298
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.4
+	division= {
+		name = "25-y batal'on Donetskogo opolcheniya"
+		location = 10298
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
 		start_manpower_factor = 0.25
-    }
+	}
 
-    division= {
-        name = "26-y batal'on Donetskogo opolcheniya"
-        location = 10298
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.4
+	division= {
+		name = "26-y batal'on Donetskogo opolcheniya"
+		location = 10298
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
 		start_manpower_factor = 0.25
-    }
+	}
 
-    division= {
-        name = "27-y batal'on Donetskogo opolcheniya"
-        location = 10298
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.4
+	division= {
+		name = "27-y batal'on Donetskogo opolcheniya"
+		location = 10298
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
 		start_manpower_factor = 0.25
-    }
+	}
 
-    division= {
-        name = "28-y batal'on Donetskogo opolcheniya"
-        location = 15696
-        division_template = "Donetsk Militia"
-        start_experience_factor = 0.1
-        start_equipment_factor = 0.4
+	division= {
+		name = "28-y batal'on Donetskogo opolcheniya"
+		location = 15696
+		division_template = "Donetsk Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
 		start_manpower_factor = 0.15
-    }
+	}
 }

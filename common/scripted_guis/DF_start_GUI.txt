@@ -8,7 +8,7 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = open_start_gui
-		    NOT = {
+			NOT = {
 				has_country_flag = open_country_info
 				has_country_flag = open_information_mod
 				has_country_flag = open_start_gui_whats_new
@@ -19,14 +19,14 @@ scripted_gui = {
 		effects = {
 			close_startgui_button_click = {
 				clr_country_flag = open_start_gui
-		    }
+			}
 			play_startgui_button_click = {
 				clr_country_flag = open_start_gui
-		    }
+			}
 
 			information_country_startgui_button_click = {
 				set_country_flag = open_country_info
-		    }
+			}
 			information_mod_startgui_button_click = {
 				set_country_flag = open_information_mod
 			}
@@ -55,20 +55,20 @@ scripted_gui = {
 		dirty = show_startgui
 
 		visible = {
-		    NOT = {
+			NOT = {
 				has_country_flag = open_information_mod
 			}
 			has_country_flag = open_start_gui
-            has_country_flag = open_country_info
+			has_country_flag = open_country_info
 		}
 		
 		effects = {
 			close_startgui_button_click = {
 				clr_country_flag = open_start_gui
-		    }
+			}
 			play_startgui_button_click = {
 				clr_country_flag = open_start_gui
-		    }
+			}
 
 			information_mod_startgui_button_click = {
 				set_country_flag = open_information_mod
@@ -106,27 +106,27 @@ scripted_gui = {
 		dirty = show_startgui
 
 		visible = {
-		    NOT = {
-                
+			NOT = {
+				
 			}
 			has_country_flag = open_start_gui
-            has_country_flag = open_country_mechanics_info
+			has_country_flag = open_country_mechanics_info
 		}
 		
 		effects = {
 			
 			close_startgui_button_click = {
 				clr_country_flag = open_start_gui
-		    }
+			}
 
 			play_startgui_button_click = {
 				clr_country_flag = open_start_gui
-		    }
+			}
 
 			information_country_startgui_button_click = {
 				set_country_flag = open_country_info
 				clr_country_flag = open_country_mechanics_info
-		    }
+			}
 			information_mod_startgui_button_click = {
 				set_country_flag = open_information_mod
 				clr_country_flag = open_country_mechanics_info
@@ -154,28 +154,28 @@ scripted_gui = {
 		dirty = show_startgui
 
 		visible = {
-		    NOT = {
-                
+			NOT = {
+				
 			}
 			has_country_flag = open_start_gui
-            has_country_flag = open_information_mod
+			has_country_flag = open_information_mod
 		}
 		
 		effects = {
 			
 			close_startgui_button_click = {
 				clr_country_flag = open_start_gui
-		    }
+			}
 
 			play_startgui_button_click = {
 				clr_country_flag = open_start_gui
-		    }
+			}
 
 
 			information_country_startgui_button_click = {
 				set_country_flag = open_country_info
 				clr_country_flag = open_information_mod
-		    }
+			}
 			information_country_mechanics_startgui_button_click = {
 				set_country_flag = open_country_mechanics_info
 				clr_country_flag = open_information_mod
@@ -204,26 +204,26 @@ scripted_gui = {
 		dirty = show_startgui
 
 		visible = {
-		    NOT = {
-                
+			NOT = {
+				
 			}
 			has_country_flag = open_start_gui
-            has_country_flag = open_start_gui_whats_new
+			has_country_flag = open_start_gui_whats_new
 		}
 		
 		effects = {
 			
 			close_startgui_button_click = {
 				clr_country_flag = open_start_gui
-		    }
+			}
 			play_startgui_button_click = {
 				clr_country_flag = open_start_gui
-		    }
+			}
 
 			information_country_startgui_button_click = {
 				set_country_flag = open_country_info
 				clr_country_flag = open_start_gui_whats_new
-		    }
+			}
 			information_mod_startgui_button_click = {
 				set_country_flag = open_information_mod
 				clr_country_flag = open_start_gui_whats_new

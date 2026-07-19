@@ -25,13 +25,13 @@ focus_tree = {
 			set_province_controller = 15026
 			add_state_core = 307
 			416 = {
-		        teleport_armies = {
-                    to_state = 307
+				teleport_armies = {
+					to_state = 307
 					limit = {
-                        tag = SLR
-                    }
-                }
-	        }
+						tag = SLR
+					}
+				}
+			}
 		}
 	}
 
@@ -53,13 +53,13 @@ focus_tree = {
 			transfer_state = 370
 			add_state_core = 370
 			307 = {
-		        teleport_armies = {
-                    to_state = 370
+				teleport_armies = {
+					to_state = 370
 					limit = {
-                        tag = SLR
-                    }
-                }
-	        }
+						tag = SLR
+					}
+				}
+			}
 		}
 	}
 

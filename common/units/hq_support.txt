@@ -22,7 +22,7 @@ sub_units = {
 		}
 
 		deployed_leader_modifiers = {
-		        skill_bonus_factor = 0.2
+				skill_bonus_factor = 0.2
 		}
 
 		regimental = no
@@ -803,18 +803,18 @@ sub_units = {
 		suppression = 2.5
 
 		forest = {
-		    attack = -0.2
+			attack = -0.2
 			movement = -0.4
 		}
 		mountain = 	{
-		    attack = -0.1
+			attack = -0.1
 		}
 		jungle = {
-		    attack = -0.3
+			attack = -0.3
 			movement = -0.4
 		}
 		marsh = {
-		    attack = -0.1 
+			attack = -0.1 
 			movement = -0.1
 		}
 		urban = {
@@ -932,21 +932,21 @@ sub_units = {
 		required_dlc = { "Thunder at Our Gates" }
 
 		forest = {
-		    attack = -0.40
+			attack = -0.40
 			movement = -0.40
 		}
 		hills = {
-		    attack = -0.20
+			attack = -0.20
 		}
 		mountain = 	{
-		    attack = -0.3
+			attack = -0.3
 		}
 		jungle = {
-		    attack = -0.6
+			attack = -0.6
 			movement = -0.4
 		}
 		marsh = {
-		    attack = -0.4 
+			attack = -0.4 
 			movement = -0.2
 		}
 		urban = {

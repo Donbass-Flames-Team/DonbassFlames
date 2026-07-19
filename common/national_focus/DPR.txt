@@ -88,10 +88,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            add_ideas = DPR_russian_spring_idea
+			add_ideas = DPR_russian_spring_idea
 			unlock_decision_category_tooltip = DPR_war_for_independence_of_donbass
 			hidden_effect = {
-			    load_oob = Donetsk_millitia	
+				load_oob = Donetsk_millitia	
 			}
 		}
 	}
@@ -175,7 +175,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            add_stability = 0.05
+			add_stability = 0.05
 			activate_mission = DPR_help_from_russia_decision
 			add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
@@ -260,7 +260,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            load_oob = Donetsk_people_Millitia
+			load_oob = Donetsk_people_Millitia
 			add_ideas = DPR_people_militia_of_donbass
 		}
 	}
@@ -281,10 +281,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
-            add_timed_idea = {
-                idea = DPR_roadblock_idea
+			add_timed_idea = {
+				idea = DPR_roadblock_idea
 				days = 180
-            }
+			}
 			hidden_effect = {
 				country_event = {
 					id = DPR.26
@@ -309,7 +309,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            army_experience = 25
+			army_experience = 25
 			unlock_decision_category_tooltip = DPR_armed_forces_of_dpr
 		}
 	}
@@ -329,7 +329,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            army_experience = 25
+			army_experience = 25
 		}
 	}
 
@@ -348,7 +348,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            country_event = DPR.6
+			country_event = DPR.6
 			custom_effect_tooltip = DPR_battalion_diesel_tt
 			hidden_effect = {
 				load_oob = DPR_disel_batallion
@@ -371,18 +371,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            country_event = DPR.7
+			country_event = DPR.7
 			custom_effect_tooltip = DPR_battalion_sparta_tt
 			hidden_effect = {
 				load_oob = DPR_sparta_batallion_2014
 				if = {
 					limit = {
-					    DPR = {
-						    is_ai = yes
-					    }
-					    UKR = {
-						    is_ai = no
-					    }
+						DPR = {
+							is_ai = yes
+						}
+						UKR = {
+							is_ai = no
+						}
 					}
 					load_oob = Donetsk_people_Millitia
 				}
@@ -405,7 +405,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            country_event = DPR.8
+			country_event = DPR.8
 			custom_effect_tooltip = DPR_battalion_somali_tt
 			hidden_effect = {
 				load_oob = DPR_somali_batallion_2014
@@ -652,7 +652,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            add_war_support = 0.05
+			add_war_support = 0.05
 			add_ideas = DPR_arrise_donbass_idea
 		}
 	}
@@ -676,7 +676,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            add_stability = 0.05
+			add_stability = 0.05
 		}
 	}
 
@@ -699,7 +699,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            
+			
 		}
 	}
 
@@ -722,7 +722,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            
+			
 		}
 	}
 
@@ -745,7 +745,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            
+			
 		}
 	}
 
@@ -783,7 +783,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            news_event = {
+			news_event = {
 				id = news_events.50
 				hours = 3
 			}
@@ -824,39 +824,39 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            hidden_effect = {
+			hidden_effect = {
 				set_cosmetic_tag = NOV
 				puppet = {
-                    target = LPR
-                    end_wars = no
-                }
-			    puppet = {
-                    target = ZPR
-                    end_wars = no
-                }
-			    puppet = {
-                    target = OPR
-                    end_wars = no
-                }
-			    puppet = {
-                    target = BPR
-                    end_wars = no
-                }		
-			    puppet = {
-                    target = NPR
-                    end_wars = no
-                }
-			    puppet = {
-                    target = KPR
-                    end_wars = no
-                }	
-			    puppet = {
-                    target = DRR
-                    end_wars = no
-                }																	
+					target = LPR
+					end_wars = no
+				}
+				puppet = {
+					target = ZPR
+					end_wars = no
+				}
+				puppet = {
+					target = OPR
+					end_wars = no
+				}
+				puppet = {
+					target = BPR
+					end_wars = no
+				}		
+				puppet = {
+					target = NPR
+					end_wars = no
+				}
+				puppet = {
+					target = KPR
+					end_wars = no
+				}	
+				puppet = {
+					target = DRR
+					end_wars = no
+				}																	
 				news_event = { 
 					id = news_events.41 
-                    hours = 3				
+					hours = 3				
 				}
 			}
 		}
@@ -877,15 +877,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-    		432 = {
-			    add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
-		    }       
+			432 = {
+				add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
+			}	   
 			424 = {
-			    add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
-		    }  
+				add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
+			}  
 			408 = {
-			    add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
-		    }
+				add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
+			}
 		}
 	}
 
@@ -905,187 +905,187 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = DPR_bunkers_around_donetsk
-        	hidden_effect = {
-                if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 10391
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 3
-						    province = 10391
-							instant_build = yes
-					    }
-				    }
-			    }
-                if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 10450 
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 10450 
-							instant_build = yes
-					    }
-				    }
-			    }	
+			hidden_effect = {
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 15789  
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 15789  
+					limit = {
+						DPR = {
+							controls_province = 10391
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 10391
 							instant_build = yes
-					    }
-				    }
-			    }
+						}
+					}
+				}
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 15811   
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 15811  
+					limit = {
+						DPR = {
+							controls_province = 10450 
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 10450 
+							instant_build = yes
+						}
+					}
+				}	
+				if = {
+					limit = {
+						DPR = {
+							controls_province = 15789  
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 15789  
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						DPR = {
+							controls_province = 15811   
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 15811  
 							instant_build = yes 
-					    }
-				    }
-			    }
+						}
+					}
+				}
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 9377    
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 9377   
+					limit = {
+						DPR = {
+							controls_province = 9377	
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9377   
 							instant_build = yes 
-					    }
-				    }
-			    }		
+						}
+					}
+				}		
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 15719     
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 15719  
+					limit = {
+						DPR = {
+							controls_province = 15719	 
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 15719  
 							instant_build = yes   
-					    }
-				    }
-			    }			
+						}
+					}
+				}			
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 11928      
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 11928  
-							instant_build = yes    
-					    }
-				    }
-			    }	
+					limit = {
+						DPR = {
+							controls_province = 11928	  
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11928  
+							instant_build = yes	
+						}
+					}
+				}	
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 7500       
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 7500 
-							instant_build = yes      
-					    }
-				    }
-			    }
+					limit = {
+						DPR = {
+							controls_province = 7500	   
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7500 
+							instant_build = yes	  
+						}
+					}
+				}
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 7471       
-					    }
-				    }
-				    424 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 7471   
-							instant_build = yes    
-					    }
-				    }
-			    }
+					limit = {
+						DPR = {
+							controls_province = 7471	   
+						}
+					}
+					424 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7471   
+							instant_build = yes	
+						}
+					}
+				}
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 11018       
-					    }
-				    }
-				    424 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 11018 
-							instant_build = yes      
-					    }
-				    }
-			    }
+					limit = {
+						DPR = {
+							controls_province = 11018	   
+						}
+					}
+					424 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11018 
+							instant_build = yes	  
+						}
+					}
+				}
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 15677       
-					    }
-				    }
-				    424 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 15677
-							instant_build = yes       
-					    }
-				    }
-			    }
+					limit = {
+						DPR = {
+							controls_province = 15677	   
+						}
+					}
+					424 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 15677
+							instant_build = yes	   
+						}
+					}
+				}
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 8269       
-					    }
-				    }
-				    424 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 8269  
-							instant_build = yes     
-					    }
-				    }
-			    }
+					limit = {
+						DPR = {
+							controls_province = 8269	   
+						}
+					}
+					424 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 8269  
+							instant_build = yes	 
+						}
+					}
+				}
 			}
 		}
 	}
@@ -1107,7 +1107,7 @@ focus_tree = {
 
 		completion_reward = {
 			
-        	
+			
 		}
 	}	
 
@@ -1132,190 +1132,190 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = DPR_bunkers_in_south_dpr
-        	hidden_effect = {
+			hidden_effect = {
 				#Novoazovsky district
-                if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 16471
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 3
-						    province = 16471
-							instant_build = yes
-					    }
-				    }
-			    }
-                if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 8203 
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 8203 
-							instant_build = yes
-					    }
-				    }
-			    }	
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 8533  
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 8533  
+					limit = {
+						DPR = {
+							controls_province = 16471
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 16471
 							instant_build = yes
-					    }
-				    }
-			    }
+						}
+					}
+				}
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 18531   
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 18531  
+					limit = {
+						DPR = {
+							controls_province = 8203 
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 8203 
+							instant_build = yes
+						}
+					}
+				}	
+				if = {
+					limit = {
+						DPR = {
+							controls_province = 8533  
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 8533  
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						DPR = {
+							controls_province = 18531   
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 18531  
 							instant_build = yes 
-					    }
-				    }
-			    }
+						}
+					}
+				}
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 16330    
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 16330   
+					limit = {
+						DPR = {
+							controls_province = 16330	
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 16330   
 							instant_build = yes 
-					    }
-				    }
-			    }		
+						}
+					}
+				}		
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 16480     
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 3
-						    province = 16480  
+					limit = {
+						DPR = {
+							controls_province = 16480	 
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 16480  
 							instant_build = yes   
-					    }
-				    }
-			    }			
+						}
+					}
+				}			
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 16461      
-					    }
-				    }
-				    432 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 1
-						    province = 16461  
-							instant_build = yes    
-					    }
-				    }
-			    }	
+					limit = {
+						DPR = {
+							controls_province = 16461	  
+						}
+					}
+					432 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 16461  
+							instant_build = yes	
+						}
+					}
+				}	
 				##Telmensky district
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 167       
-					    }
-				    }
-				    652 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 167 
-							instant_build = yes      
-					    }
-				    }
-			    }
+					limit = {
+						DPR = {
+							controls_province = 167	   
+						}
+					}
+					652 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 167 
+							instant_build = yes	  
+						}
+					}
+				}
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 11728       
-					    }
-				    }
-				    652 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 11728   
-							instant_build = yes    
-					    }
-				    }
-			    }
+					limit = {
+						DPR = {
+							controls_province = 11728	   
+						}
+					}
+					652 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11728   
+							instant_build = yes	
+						}
+					}
+				}
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 2665       
-					    }
-				    }
-				    652 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 2665 
-							instant_build = yes      
-					    }
-				    }
-			    }
+					limit = {
+						DPR = {
+							controls_province = 2665	   
+						}
+					}
+					652 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 2665 
+							instant_build = yes	  
+						}
+					}
+				}
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 17472       
-					    }
-				    }
-				    652 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 17472
-							instant_build = yes       
-					    }
-				    }
-			    }
+					limit = {
+						DPR = {
+							controls_province = 17472	   
+						}
+					}
+					652 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 17472
+							instant_build = yes	   
+						}
+					}
+				}
 				if = {
-				    limit = {
-					    DPR = {
-						    controls_province = 5941       
-					    }
-				    }
-				    652 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 5941  
-							instant_build = yes     
-					    }
-				    }
-			    }
-			}        
+					limit = {
+						DPR = {
+							controls_province = 5941	   
+						}
+					}
+					652 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 5941  
+							instant_build = yes	 
+						}
+					}
+				}
+			}		
 		}
 	}
 
@@ -1337,13 +1337,13 @@ focus_tree = {
 			
 			add_stability = 0.075
 			add_command_power = 25
-    		if = {
+			if = {
 				limit = {
 					country_exists = NDR
 				}
 				country_event = NDR.3
 			}	
-    		if = {
+			if = {
 				limit = {
 					country_exists = SDR
 				}
@@ -1370,7 +1370,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.075
 			add_command_power = 25
-    		add_political_power = 75
+			add_political_power = 75
 			hidden_effect = {
 				clr_global_flag = Girkin_in_DPR
 			}		
@@ -1393,42 +1393,42 @@ focus_tree = {
 		}
 
 		completion_reward = {
-    		468 = {
-			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-		    }	
-    		421 = {
-			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-		    }	
-    		388 = {
-			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-		    }
-    		337 = {
-			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-		    }	
-    		359 = {
-			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-		    }		
-    		328 = {
-			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-		    }	
-    		312 = {
-			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-		    }		
-    		353 = {
-			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-		    }		
-    		652 = {
-			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
-		    }
-    		486 = {
-			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
-		    }		
-    		402 = {
-			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
-		    }
-    		381 = {
-			    add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
-		    }																								
+			468 = {
+				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+			}	
+			421 = {
+				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+			}	
+			388 = {
+				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+			}
+			337 = {
+				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+			}	
+			359 = {
+				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+			}		
+			328 = {
+				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+			}	
+			312 = {
+				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+			}		
+			353 = {
+				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
+			}		
+			652 = {
+				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
+			}
+			486 = {
+				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
+			}		
+			402 = {
+				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
+			}
+			381 = {
+				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
+			}																								
 		}
 	}
 
@@ -1451,7 +1451,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-    		add_stability = 0.15																							
+			add_stability = 0.15																							
 		}
 	}
 
@@ -1470,7 +1470,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-    		add_stability = 0.15																							
+			add_stability = 0.15																							
 		}
 	}
 
@@ -1489,7 +1489,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-    		add_stability = 0.15																							
+			add_stability = 0.15																							
 		}
 	}
 	
@@ -1603,7 +1603,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            country_event = DPR.35
+			country_event = DPR.35
 		}
 	}	
 

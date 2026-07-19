@@ -1,234 +1,234 @@
 defined_text = {
-    name = DF_escalation_icon_1_image
+	name = DF_escalation_icon_1_image
 
-    text = {
-        trigger = {
-            NOT = {
-                has_global_flag = Donbas_war_1_escalation
-            }
-        }
-        localization_key = "GFX_escalation_one"
-    }
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = Donbas_war_1_escalation
+			}
+		}
+		localization_key = "GFX_escalation_one"
+	}
 
-    text = {
-        trigger = {
-            has_global_flag = Donbas_war_1_escalation
-        }
-        localization_key = "GFX_escalation_one_active"
-    }
+	text = {
+		trigger = {
+			has_global_flag = Donbas_war_1_escalation
+		}
+		localization_key = "GFX_escalation_one_active"
+	}
 }
 
 defined_text = {
-    name = DF_escalation_icon_2_image
+	name = DF_escalation_icon_2_image
 
-    text = {
-        trigger = {
-            NOT = {
-                has_global_flag = Donbas_war_2_escalation
-            }
-        }
-        localization_key = "GFX_escalation_two"
-    }
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = Donbas_war_2_escalation
+			}
+		}
+		localization_key = "GFX_escalation_two"
+	}
 
-    text = {
-        trigger = {
-            has_global_flag = Donbas_war_2_escalation
-        }
-        localization_key = "GFX_escalation_two_active"
-    }
+	text = {
+		trigger = {
+			has_global_flag = Donbas_war_2_escalation
+		}
+		localization_key = "GFX_escalation_two_active"
+	}
 }
 
 defined_text = {
-    name = DF_escalation_icon_3_image
+	name = DF_escalation_icon_3_image
 
-    text = {
-        trigger = {
-            NOT = {
-                has_global_flag = Donbas_war_3_escalation
-            }
-        }
-        localization_key = "GFX_escalation_three"
-    }
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = Donbas_war_3_escalation
+			}
+		}
+		localization_key = "GFX_escalation_three"
+	}
 
-    text = {
-        trigger = {
-            has_global_flag = Donbas_war_3_escalation
-        }
-        localization_key = "GFX_escalation_three_active"
-    }
+	text = {
+		trigger = {
+			has_global_flag = Donbas_war_3_escalation
+		}
+		localization_key = "GFX_escalation_three_active"
+	}
 }
 
 defined_text = {
-    name = DF_escalation_icon_4_image
+	name = DF_escalation_icon_4_image
 
-    text = {
-        trigger = {
-            NOT = {
-                has_global_flag = Donbas_war_4_escalation
-            }
-        }
-        localization_key = "GFX_escalation_four"
-    }
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = Donbas_war_4_escalation
+			}
+		}
+		localization_key = "GFX_escalation_four"
+	}
 
-    text = {
-        trigger = {
-            has_global_flag = Donbas_war_4_escalation
-        }
-        localization_key = "GFX_escalation_four_active"
-    }
+	text = {
+		trigger = {
+			has_global_flag = Donbas_war_4_escalation
+		}
+		localization_key = "GFX_escalation_four_active"
+	}
 }
 
 defined_text = {
-    name = DF_escalation_icon_5_image
+	name = DF_escalation_icon_5_image
 
-    text = {
-        trigger = {
-            NOT = {
-                has_global_flag = Donbas_war_5_escalation
-            }
-        }
-        localization_key = "GFX_escalation_five"
-    }
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = Donbas_war_5_escalation
+			}
+		}
+		localization_key = "GFX_escalation_five"
+	}
 
-    text = {
-        trigger = {
-            has_global_flag = Donbas_war_5_escalation
-        }
-        localization_key = "GFX_escalation_five_active"
-    }
+	text = {
+		trigger = {
+			has_global_flag = Donbas_war_5_escalation
+		}
+		localization_key = "GFX_escalation_five_active"
+	}
 }
 
 defined_text = {
-    name = DF_escalation_icon_6_image
+	name = DF_escalation_icon_6_image
 
-    text = {
-        trigger = {
-            NOT = {
-                has_global_flag = Donbas_war_6_escalation
-            }
-        }
-        localization_key = "GFX_escalation_six"
-    }
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = Donbas_war_6_escalation
+			}
+		}
+		localization_key = "GFX_escalation_six"
+	}
 
-    text = {
-        trigger = {
-            has_global_flag = Donbas_war_6_escalation
-        }
-        localization_key = "GFX_escalation_six_active"
-    }
+	text = {
+		trigger = {
+			has_global_flag = Donbas_war_6_escalation
+		}
+		localization_key = "GFX_escalation_six_active"
+	}
 }
 
 defined_text = {
-    name = get_escalation_ukranian_army_icon_tt
+	name = get_escalation_ukranian_army_icon_tt
 
-    text = {
-        trigger = {
-            has_global_flag = Donbas_war_1_escalation
-            NOT = {
-                has_global_flag = Donbas_war_2_escalation
-                has_global_flag = Donbas_war_3_escalation
-                has_global_flag = Donbas_war_4_escalation
-                has_global_flag = Donbas_war_5_escalation
-                has_global_flag = Donbas_war_6_escalation
-            }
-        }
-        localization_key = "DF_escalation_ukraine_army_icon_tt_1"
-    }
+	text = {
+		trigger = {
+			has_global_flag = Donbas_war_1_escalation
+			NOT = {
+				has_global_flag = Donbas_war_2_escalation
+				has_global_flag = Donbas_war_3_escalation
+				has_global_flag = Donbas_war_4_escalation
+				has_global_flag = Donbas_war_5_escalation
+				has_global_flag = Donbas_war_6_escalation
+			}
+		}
+		localization_key = "DF_escalation_ukraine_army_icon_tt_1"
+	}
 
-    text = {
-        trigger = {
-            has_global_flag = Donbas_war_2_escalation
-            NOT = {
-                has_global_flag = Donbas_war_3_escalation
-                has_global_flag = Donbas_war_4_escalation
-                has_global_flag = Donbas_war_5_escalation
-                has_global_flag = Donbas_war_6_escalation
-            }
-        }
-        localization_key = "DF_escalation_ukraine_army_icon_tt_2"
-    }
+	text = {
+		trigger = {
+			has_global_flag = Donbas_war_2_escalation
+			NOT = {
+				has_global_flag = Donbas_war_3_escalation
+				has_global_flag = Donbas_war_4_escalation
+				has_global_flag = Donbas_war_5_escalation
+				has_global_flag = Donbas_war_6_escalation
+			}
+		}
+		localization_key = "DF_escalation_ukraine_army_icon_tt_2"
+	}
 
-    text = {
-        trigger = {
-            has_global_flag = Donbas_war_3_escalation
-            NOT = {
-                has_global_flag = Donbas_war_4_escalation
-                has_global_flag = Donbas_war_5_escalation
-                has_global_flag = Donbas_war_6_escalation
-            }
-        }
-        localization_key = "DF_escalation_ukraine_army_icon_tt_3"
-    }
+	text = {
+		trigger = {
+			has_global_flag = Donbas_war_3_escalation
+			NOT = {
+				has_global_flag = Donbas_war_4_escalation
+				has_global_flag = Donbas_war_5_escalation
+				has_global_flag = Donbas_war_6_escalation
+			}
+		}
+		localization_key = "DF_escalation_ukraine_army_icon_tt_3"
+	}
 
-    text = {
-        trigger = {
-            has_global_flag = Donbas_war_4_escalation
-            NOT = {
-                has_global_flag = Donbas_war_5_escalation
-                has_global_flag = Donbas_war_6_escalation
-            }
-        }
-        localization_key = "DF_escalation_ukraine_army_icon_tt_4"
-    }
+	text = {
+		trigger = {
+			has_global_flag = Donbas_war_4_escalation
+			NOT = {
+				has_global_flag = Donbas_war_5_escalation
+				has_global_flag = Donbas_war_6_escalation
+			}
+		}
+		localization_key = "DF_escalation_ukraine_army_icon_tt_4"
+	}
 
-    text = {
-        trigger = {
-            has_global_flag = Donbas_war_5_escalation
-            NOT = {
-                has_global_flag = Donbas_war_6_escalation
-            }
-        }
-        localization_key = "DF_escalation_ukraine_army_icon_tt_5"
-    }
+	text = {
+		trigger = {
+			has_global_flag = Donbas_war_5_escalation
+			NOT = {
+				has_global_flag = Donbas_war_6_escalation
+			}
+		}
+		localization_key = "DF_escalation_ukraine_army_icon_tt_5"
+	}
 }
 
 defined_text = {
-    name = get_controlled_checkpoints_in_donetsk_region
+	name = get_controlled_checkpoints_in_donetsk_region
 
-    text = {
-        trigger = {
-            tag = UKR
-        }
-        localization_key = "UKR_controlled_checkpoints_in_donetsk_region"
-    }
+	text = {
+		trigger = {
+			tag = UKR
+		}
+		localization_key = "UKR_controlled_checkpoints_in_donetsk_region"
+	}
 
-    text = {
-        trigger = {
-            OR = {
-                tag = DPR
-                tag = LPR
-                tag = RUS
-                tag = SKR
-                tag = NDR
-                tag = SDR
-            }
-        }
-        localization_key = "People_Republic_controlled_checkpoints_in_donetsk_region"
-    }
+	text = {
+		trigger = {
+			OR = {
+				tag = DPR
+				tag = LPR
+				tag = RUS
+				tag = SKR
+				tag = NDR
+				tag = SDR
+			}
+		}
+		localization_key = "People_Republic_controlled_checkpoints_in_donetsk_region"
+	}
 }
 
 
 defined_text = {
-    name = get_controlled_checkpoints_in_luhansk_region
+	name = get_controlled_checkpoints_in_luhansk_region
 
-    text = {
-        trigger = {
-            tag = UKR
-        }
-        localization_key = "UKR_controlled_checkpoints_in_luhansk_region"
-    }
+	text = {
+		trigger = {
+			tag = UKR
+		}
+		localization_key = "UKR_controlled_checkpoints_in_luhansk_region"
+	}
 
-    text = {
-        trigger = {
-            OR = {
-                tag = DPR
-                tag = LPR
-                tag = RUS
-                tag = SKR
-                tag = NDR
-                tag = SDR
-            }
-        }
-        localization_key = "People_Republic_controlled_checkpoints_in_luhansk_region"
-    }
+	text = {
+		trigger = {
+			OR = {
+				tag = DPR
+				tag = LPR
+				tag = RUS
+				tag = SKR
+				tag = NDR
+				tag = SDR
+			}
+		}
+		localization_key = "People_Republic_controlled_checkpoints_in_luhansk_region"
+	}
 }

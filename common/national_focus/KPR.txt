@@ -66,98 +66,98 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = KPR_bunkers_in_kharkov
-        	hidden_effect = {
+			hidden_effect = {
 				#Kharkov
-                if = {
-				    limit = {
-					    KPR = {
-						    controls_province = 14090
-					    }
-				    }
-				    203 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 3
-						    province = 14090
+				if = {
+					limit = {
+						KPR = {
+							controls_province = 14090
+						}
+					}
+					203 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14090
 							instant_build = yes
-					    }
-				    }
-			    }
-                if = {
-				    limit = {
-					    KPR = {
-						    controls_province = 14071
-					    }
-				    }
-				    203 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 14071
+						}
+					}
+				}
+				if = {
+					limit = {
+						KPR = {
+							controls_province = 14071
+						}
+					}
+					203 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 14071
 							instant_build = yes
-					    }
-				    }
-			    }	
-                if = {
-				    limit = {
-					    KPR = {
-						    controls_province = 14119
-					    }
-				    }
-				    203 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 14119
+						}
+					}
+				}	
+				if = {
+					limit = {
+						KPR = {
+							controls_province = 14119
+						}
+					}
+					203 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 14119
 							instant_build = yes
-					    }
-				    }
-			    }		
-                if = {
-				    limit = {
-					    KPR = {
-						    controls_province = 10148
-					    }
-				    }
-				    203 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 10148
+						}
+					}
+				}		
+				if = {
+					limit = {
+						KPR = {
+							controls_province = 10148
+						}
+					}
+					203 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 10148
 							instant_build = yes
-					    }
-				    }
-			    }	
-                if = {
-				    limit = {
-					    KPR = {
-						    controls_province = 14138
-					    }
-				    }
-				    203 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 2
-						    province = 14138
+						}
+					}
+				}	
+				if = {
+					limit = {
+						KPR = {
+							controls_province = 14138
+						}
+					}
+					203 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 14138
 							instant_build = yes
-					    }
-				    }
-			    }				
-                if = {
-				    limit = {
-					    KPR = {
-						    controls_province = 14101
-					    }
-				    }
-				    212 = {
-					    add_building_construction = {
-						    type = bunker
-						    level = 4
-						    province = 14101
+						}
+					}
+				}				
+				if = {
+					limit = {
+						KPR = {
+							controls_province = 14101
+						}
+					}
+					212 = {
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 14101
 							instant_build = yes
-					    }
-				    }
-			    }												
+						}
+					}
+				}												
 			}
 		}
 	}

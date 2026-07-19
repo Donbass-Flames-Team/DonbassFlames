@@ -3,107 +3,107 @@ ideas = {
 	country = {
 
 		UKR_protests = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    stability_factor = -0.25
+				stability_factor = -0.25
 				political_power_gain = -0.1
 				stability_weekly = -0.005
 			}
 		}
 
 		UKR_protests_in_the_east = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    stability_factor = -0.15
+				stability_factor = -0.15
 				political_power_gain = -0.05
 				stability_weekly = -0.001
 			}
 		}
 
 		UKR_helpless_government = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    stability_factor = -0.25
+				stability_factor = -0.25
 				political_power_gain = -0.2
 				consumer_goods_factor = 0.25
 			}
 		}
-        
+		
 		UKR_disorderly_government = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    stability_factor = -0.15
+				stability_factor = -0.15
 				political_power_gain = -0.4
 			}
 		}
 
 		UKR_separatism = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    stability_factor = -0.15
+				stability_factor = -0.15
 				political_power_gain = -0.05
 				war_support_factor = -0.15
 			}
 		}
 
 		UKR_ukraine_army = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    army_attack_factor = -0.25
+				army_attack_factor = -0.25
 				army_speed_factor = -0.15
 				army_org_factor = -0.10
 				army_morale_factor = -0.15
@@ -115,18 +115,18 @@ ideas = {
 		}
 
 		UKR_dependence_on_russia = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.25
 				political_power_gain = -0.1
 				stability_factor = -0.15
 				war_support_factor = -0.1
@@ -134,18 +134,18 @@ ideas = {
 		}
 
 		UKR_ukrainian_mic = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    production_factory_max_efficiency_factor = -0.25
+				production_factory_max_efficiency_factor = -0.25
 				production_speed_arms_factory_factor = -0.45 
 			}
 
@@ -160,84 +160,84 @@ ideas = {
 		}
 
 		UKR_emergency_redeployment_of_troops_idea = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    army_speed_factor = 0.35
+				army_speed_factor = 0.35
 			}
 		}	
 		
 		UKR_organize_defence_idea = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    army_defence_factor = 0.35
+				army_defence_factor = 0.35
 			}
 		}
 
 		UKR_defence_of_cities_idea = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    production_speed_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
 			}
 		}
 
 		UKR_the_breadbasket_of_europe_idea = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    stability_factor = 0.05
+				stability_factor = 0.05
 				political_power_gain = 0.035			
-			    consumer_goods_factor = -0.075
+				consumer_goods_factor = -0.075
 			}
 		}	
 		
 		ceasefire_idea = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    enemy_army_speed_factor = -5
+				enemy_army_speed_factor = -5
 				army_speed_factor = -1
 				army_attack_speed_factor = -1
 				army_speed_factor_for_controller = -0.5
@@ -246,18 +246,18 @@ ideas = {
 		}		
 
 		AI_buff_idea = {
-            allowed = {
-                always = yes
-            }
-        
-            allowed_civil_war = {
-                always = yes
-            }
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-			    army_defence_factor = 0.15
+				army_defence_factor = 0.15
 				supply_factor = 0.15
 				attrition = -0.10
 			}

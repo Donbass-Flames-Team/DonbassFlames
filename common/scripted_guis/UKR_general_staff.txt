@@ -1,12 +1,12 @@
 scripted_gui = {
 
-    UKR_general_staff = {
-       context_type = decision_category
+	UKR_general_staff = {
+	   context_type = decision_category
 	   window_name = "UKR_general_staff"
  
-        visible = {
-            tag = UKR
-        }
+		visible = {
+			tag = UKR
+		}
  
 		effects = {
 			UKR_general_staff_button_click = {
@@ -20,16 +20,16 @@ scripted_gui = {
 			}
 		}
 
-        triggers = {
+		triggers = {
 
-        }
+		}
 		
 		properties = {
 			
 		}
-    }
+	}
 
-    UKR_general_staff_map = {
+	UKR_general_staff_map = {
 		context_type = player_context
 		window_name = "UKR_general_staff_map"
 
@@ -56,7 +56,7 @@ scripted_gui = {
 			}
 			close_map_button_click = {
 				clear_variable = show_ukraine_general_staff_map
-		    }
+			}
 			separatism_increase_button_click = {
 				if = {
 					limit = { check_variable = {select_separatists_region = 1} }
@@ -124,11 +124,11 @@ scripted_gui = {
 				}				
 				if = {
 					limit = { check_variable = {show_proukranian_actions_window = 1} } 
-				    clear_variable = show_proukranian_actions_window
+					clear_variable = show_proukranian_actions_window
 				}
 				if = {
 					limit = { check_variable = {show_prorussian_actions_window = 1} } 
-				    clear_variable = show_prorussian_actions_window
+					clear_variable = show_prorussian_actions_window
 				}
 
 			}
@@ -138,7 +138,7 @@ scripted_gui = {
 
 		}
 		
-	    properties = {
+		properties = {
 			separatism_gui_background = {
 				image = "[separatism_gui_background_image]"
 			}	
@@ -157,7 +157,7 @@ scripted_gui = {
 			luhansk_icon = {
 				image = "[luhansk_icon_glow]"
 			} 
-		    odessa_icon = {
+			odessa_icon = {
 				image = "[odessa_icon_glow]"
 			}
 			kharkov_icon = {

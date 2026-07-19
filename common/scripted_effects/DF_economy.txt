@@ -13,14 +13,14 @@ DF_buildings_setup = {
 		# Total Custom Buildings Amount
 		add_to_variable = { PREV.num_of_agro_industrial_complex = building_level@agro_industrial_complex }
 		add_to_variable = { PREV.num_of_offices_building = building_level@offices_building }
-        add_to_variable = { PREV.num_of_ammunition_plant = building_level@ammunition_plant }
+		add_to_variable = { PREV.num_of_ammunition_plant = building_level@ammunition_plant }
 		add_to_variable = { PREV.num_of_steel_mill = building_level@steel_mill }
 
 		# Available Custom Buildings Amount
 		add_to_variable = { PREV.num_of_available_agro_industrial_complex = non_damaged_building_level@agro_industrial_complex }
 		add_to_variable = { PREV.num_of_available_offices_building = non_damaged_building_level@offices_building }
 		add_to_variable = { PREV.num_of_available_ammunitons_plants_building = non_damaged_building_level@ammunition_plant }
-	    add_to_variable = { PREV.num_of_available_num_of_steel_mill = non_damaged_building_level@steel_mill }
+		add_to_variable = { PREV.num_of_available_num_of_steel_mill = non_damaged_building_level@steel_mill }
 	}
 }
 
@@ -151,13 +151,13 @@ DF_economy_setup = {
 			value = office_income
 		}
 		divide_variable = {
-            var = corporation_tax
-            value = percentage_shadow_economy 
-        }
-	    divide_variable = {
-            var = corporation_tax
-            value = 40
-        }
+			var = corporation_tax
+			value = percentage_shadow_economy 
+		}
+		divide_variable = {
+			var = corporation_tax
+			value = 40
+		}
 	}	
 
 
@@ -390,7 +390,7 @@ DF_economy_setup = {
 		divide_variable = {
 			var = education_expense_show
 			value = 12000
-		}        		
+		}				
 		round_variable = education_expense_show
 		multiply_variable = {
 			var = education_expense_show
@@ -484,7 +484,7 @@ DF_economy_setup = {
 		}
 
 		###############################################################
-		####################      ARMY        #########################
+		####################	  ARMY		#########################
 		###############################################################
 
 		set_variable = {
@@ -562,15 +562,15 @@ DF_economy_setup = {
 			var = policing_expense_show
 			value = 10000
 		}
-	    multiply_variable = {
-		    var = policing_expense_show
-		    value = 10
-	    }
-	    round_variable = policing_expense_show
-	    divide_variable = {
-		    var = policing_expense_show
-		    value = 10
-	    }
+		multiply_variable = {
+			var = policing_expense_show
+			value = 10
+		}
+		round_variable = policing_expense_show
+		divide_variable = {
+			var = policing_expense_show
+			value = 10
+		}
 
 		set_variable = {
 			var = policing_expense_police_state
@@ -816,7 +816,7 @@ DF_economy_setup = {
 	#####################
 	####### taxes #######
 	#####################
-    # Population Total
+	# Population Total
 	set_variable = {
 		var = population_total
 		value = max_manpower
@@ -843,18 +843,18 @@ DF_economy_setup = {
 		var = income_tax
 		value = 2.5		
 	}	
-    divide_variable = {
-        var = income_tax
-        value = 1000000000
-    }
-	multiply_variable = {
-        var = income_tax
-        value = percentage_shadow_economy
-    }
 	divide_variable = {
-        var = income_tax
-        value = 5
-    }
+		var = income_tax
+		value = 1000000000
+	}
+	multiply_variable = {
+		var = income_tax
+		value = percentage_shadow_economy
+	}
+	divide_variable = {
+		var = income_tax
+		value = 5
+	}
 
 	set_variable = {
 		var = sale_tax
@@ -868,25 +868,25 @@ DF_economy_setup = {
 		var = sale_tax
 		value = sales_tax_rate		
 	}
-    divide_variable = {
-        var = sale_tax
-        value = 10000000000
-    }
-	multiply_variable = {
-        var = sale_tax
-        value = percentage_shadow_economy
-    }
-	multiply_variable = {
-        var = sale_tax
-        value = consumer_activity
-    }
 	divide_variable = {
-        var = sale_tax
-        value = 10
-    }
+		var = sale_tax
+		value = 10000000000
+	}
+	multiply_variable = {
+		var = sale_tax
+		value = percentage_shadow_economy
+	}
+	multiply_variable = {
+		var = sale_tax
+		value = consumer_activity
+	}
+	divide_variable = {
+		var = sale_tax
+		value = 10
+	}
 
-    ########################################
-    ########## exported resources ##########
+	########################################
+	########## exported resources ##########
 	########################################
 	set_variable = {
 		var = oil_exported
@@ -931,8 +931,8 @@ DF_economy_setup = {
 		value = 2500
 	}
 
-    ########################################
-    ########## imported resources ##########
+	########################################
+	########## imported resources ##########
 	########################################
 	set_variable = {
 		var = oil_imported
@@ -1048,11 +1048,11 @@ DF_economy_setup = {
 	add_to_variable = {
 		var = income
 		value = corporation_tax
-    }
+	}
 	add_to_variable = {
 		var = income
 		value = income_tax
-    }	
+	}	
 
 	# Income Tax Modifier
 	set_temp_variable = { income_tax_multiplier_modifier = 1 }
@@ -1066,20 +1066,20 @@ DF_economy_setup = {
 	####### small businesses and individual entrepreneurs #######
 	#############################################################
 
-    set_variable = {
+	set_variable = {
 		var =  employed_in_small_businesses
 		value = small_businesses
 	}  
-    multiply_variable = {
+	multiply_variable = {
 		var =  employed_in_small_businesses
 		value = 5		
 	}
 
-    set_variable = {
+	set_variable = {
 		var =  employed_in_individual_enterprises
 		value = individual_enterprises
 	}  
-    multiply_variable = {
+	multiply_variable = {
 		var =  employed_in_individual_enterprises
 		value = 2		
 	}
@@ -1100,7 +1100,7 @@ DF_economy_setup = {
 	############################################################
 	####################### Unemployment #######################
 	############################################################
-    set_variable = {
+	set_variable = {
 		var = economically_active_population_percentage
 		value = 0.60
 	}  
@@ -1118,7 +1118,7 @@ DF_economy_setup = {
 	}
 
 
-    # Civil factories
+	# Civil factories
 	set_variable = {
 		var = employed_per_civil_factory
 		value = 52000
@@ -1131,7 +1131,7 @@ DF_economy_setup = {
 		var = employed_in_civil_factories
 		value = ROOT.num_of_civilian_factories
 	}
-    # Military factories
+	# Military factories
 	set_variable = {
 		var = employed_per_military_factory
 		value = 25000
@@ -1144,7 +1144,7 @@ DF_economy_setup = {
 		var = employed_in_military_factories
 		value = ROOT.num_of_military_factories
 	}	
-    # naval factories
+	# naval factories
 	set_variable = {
 		var = employed_per_naval_factory
 		value = 1500
@@ -1157,7 +1157,7 @@ DF_economy_setup = {
 		var = employed_in_naval_factories
 		value = ROOT.num_of_naval_factories
 	}
-    # farms
+	# farms
 	set_variable = {
 		var = employed_per_agroculture_industry
 		value = 5000
@@ -1170,7 +1170,7 @@ DF_economy_setup = {
 		var = employed_in_agroculture_industry
 		value = ROOT.num_of_agro_industrial_complex
 	}	
-    # steel mills
+	# steel mills
 	set_variable = {
 		var = employed_per_agroculture_industry
 		value = 5000
@@ -1183,7 +1183,7 @@ DF_economy_setup = {
 		var = employed_in_agroculture_industry
 		value = ROOT.num_of_agro_industrial_complex
 	}
-    # offices
+	# offices
 	set_variable = {
 		var = employed_per_office
 		value = 77500
@@ -1199,56 +1199,56 @@ DF_economy_setup = {
 
 
 	# calculation unemployment
-    subtract_from_variable = {
-        var = unemployed_population
-        value = employed_in_civil_factories 
-    }
-    subtract_from_variable = {
-        var = unemployed_population
-        value = employed_in_military_factories 
-    }
-    subtract_from_variable = {
-        var = unemployed_population
-        value = employed_in_naval_factories 
-    }		
-    subtract_from_variable = {
-        var = unemployed_population
-        value = employed_in_agroculture_industry 
-    }	
-    subtract_from_variable = {
-        var = unemployed_population
-        value = employed_in_offices 
-    }	
 	subtract_from_variable = {
-        var = unemployed_population
-        value = employed_in_small_businesses 
-    }
+		var = unemployed_population
+		value = employed_in_civil_factories 
+	}
 	subtract_from_variable = {
-        var = unemployed_population
-        value = employed_in_individual_enterprises 
-    }
+		var = unemployed_population
+		value = employed_in_military_factories 
+	}
+	subtract_from_variable = {
+		var = unemployed_population
+		value = employed_in_naval_factories 
+	}		
+	subtract_from_variable = {
+		var = unemployed_population
+		value = employed_in_agroculture_industry 
+	}	
+	subtract_from_variable = {
+		var = unemployed_population
+		value = employed_in_offices 
+	}	
+	subtract_from_variable = {
+		var = unemployed_population
+		value = employed_in_small_businesses 
+	}
+	subtract_from_variable = {
+		var = unemployed_population
+		value = employed_in_individual_enterprises 
+	}
 	if = {
 		limit = {
 			check_variable = {
-                var = unemployed_population
-                value = 0
-                compare = less_than_or_equals
-            }
+				var = unemployed_population
+				value = 0
+				compare = less_than_or_equals
+			}
 		}
 		set_variable = {
 			var = unemployed_population
 			value = 0
 		}
 	}
-    
-    set_variable = {
-        var = unemployed_population_percentage
-        value = unemployed_population 
-    }
-    divide_variable = {
-        var = unemployed_population_percentage
-        value = economically_active_population
-    }
+	
+	set_variable = {
+		var = unemployed_population_percentage
+		value = unemployed_population 
+	}
+	divide_variable = {
+		var = unemployed_population_percentage
+		value = economically_active_population
+	}
 	multiply_variable = {
 		var = unemployed_population_percentage
 		value = 100
@@ -1298,8 +1298,8 @@ DF_key_rate_calc = {
 			has_idea = partial_economic_mobilisation
 		}
 		add_to_variable = {
-		    var = weekly_inflation
-		    value = 0.09
+			var = weekly_inflation
+			value = 0.09
 		}
 	}
 	if = {
@@ -1362,28 +1362,28 @@ DF_key_rate_calc = {
 		}
 		random_list = {
 			20 = {
-		        add_to_variable = {
-			        var = weekly_inflation
-			        value = 0.11
-		        }
+				add_to_variable = {
+					var = weekly_inflation
+					value = 0.11
+				}
 			}
 			20 = {
-		        add_to_variable = {
-			        var = weekly_inflation
-			        value = 0.07
-		        }
+				add_to_variable = {
+					var = weekly_inflation
+					value = 0.07
+				}
 			}
 			20 = {
-		        add_to_variable = {
-			        var = weekly_inflation
-			        value = 0.14
-		        }
+				add_to_variable = {
+					var = weekly_inflation
+					value = 0.14
+				}
 			}
 			10 = {
-		        add_to_variable = {
-			        var = weekly_inflation
-			        value = 0.07
-		        }
+				add_to_variable = {
+					var = weekly_inflation
+					value = 0.07
+				}
 			}						
 		}
 	}
@@ -1397,9 +1397,9 @@ DF_key_rate_calc = {
 		var = consumer_infl
 		value = weekly_inflation
 	}
-    divide_variable = {
+	divide_variable = {
 		var = consumer_infl
-        value = 5
+		value = 5
 	}
 
 	set_variable = {

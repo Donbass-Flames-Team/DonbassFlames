@@ -150,7 +150,7 @@ scripted_gui = {
 				}
 				add_political_power = -10
 			}	
-            ## Sales tax
+			## Sales tax
 			increase_sales_taxes_click = {
 				add_to_variable = {
 					var = sales_tax_rate
@@ -163,36 +163,36 @@ scripted_gui = {
 				add_political_power = -10
 				random_list = {
 					20 = {
-					    add_to_variable = {
-						    var = percentage_shadow_economy
-						    value = 0.5
-					    }
+						add_to_variable = {
+							var = percentage_shadow_economy
+							value = 0.5
+						}
 					}
 					10 = {
-					    add_to_variable = {
-						    var = percentage_shadow_economy
-						    value = 1
-					    }
+						add_to_variable = {
+							var = percentage_shadow_economy
+							value = 1
+						}
 					}					
 				}
 				random_list = {
 					20 = {
-					    subtract_from_variable = {
-						    var = small_businesses
-						    value = 1000
-					    }
+						subtract_from_variable = {
+							var = small_businesses
+							value = 1000
+						}
 					}
 					10 = {
-					    subtract_from_variable = {
-						    var = small_businesses
-						    value = 2000
-					    }
+						subtract_from_variable = {
+							var = small_businesses
+							value = 2000
+						}
 					}
 					5 = {
-					    subtract_from_variable = {
-						    var = small_businesses
-						    value = 2500
-					    }
+						subtract_from_variable = {
+							var = small_businesses
+							value = 2500
+						}
 					}										
 				}
 			}			
@@ -207,7 +207,7 @@ scripted_gui = {
 				}
 				add_political_power = -10
 			}
-            ## Corporate tax
+			## Corporate tax
 			increase_corporate_tax_click = {
 				add_to_variable = {
 					var = corporate_tax_rate
@@ -230,7 +230,7 @@ scripted_gui = {
 				}
 				add_political_power = -10
 			}			
-            ## Income_tax
+			## Income_tax
 			increase_income_tax_click = {
 				add_to_variable = {
 					var = income_tax_rate
@@ -243,36 +243,36 @@ scripted_gui = {
 				add_political_power = -10
 				random_list = {
 					20 = {
-					    add_to_variable = {
-						    var = percentage_shadow_economy
-						    value = 0.5
-					    }
+						add_to_variable = {
+							var = percentage_shadow_economy
+							value = 0.5
+						}
 					}
 					10 = {
-					    add_to_variable = {
-						    var = percentage_shadow_economy
-						    value = 1
-					    }
+						add_to_variable = {
+							var = percentage_shadow_economy
+							value = 1
+						}
 					}					
 				}
 				random_list = {
 					20 = {
-					    subtract_from_variable = {
-						    var = small_businesses
-						    value = 500
-					    }
+						subtract_from_variable = {
+							var = small_businesses
+							value = 500
+						}
 					}
 					10 = {
-					    subtract_from_variable = {
-						    var = small_businesses
-						    value = 1000
-					    }
+						subtract_from_variable = {
+							var = small_businesses
+							value = 1000
+						}
 					}
 					5 = {
-					    subtract_from_variable = {
-						    var = small_businesses
-						    value = 1500
-					    }
+						subtract_from_variable = {
+							var = small_businesses
+							value = 1500
+						}
 					}										
 				}
 			}			

@@ -2,11 +2,11 @@ types = {
 
 #################################################################
 
- ## ### ### ### #       #   # ### #  # ###     ###   ##  ### ###
-#    #  #   #   #       ## ##  #  ## # #       #  # #  #  #  #  #
- #   #  ##  ##  #       # # #  #  # ## ##      ###  ####  #  #  #
-  #  #  #   #   #       #   #  #  #  # #       #  # #  #  #  #  #
-##   #  ### ### ###     #   # ### #  # ###     #  # #  # ### ###
+ ## ### ### ### #	   #   # ### #  # ###	 ###   ##  ### ###
+#	#  #   #   #	   ## ##  #  ## # #	   #  # #  #  #  #  #
+ #   #  ##  ##  #	   # # #  #  # ## ##	  ###  ####  #  #  #
+  #  #  #   #   #	   #   #  #  #  # #	   #  # #  #  #  #  #
+##   #  ### ### ###	 #   # ### #  # ###	 #  # #  # ### ###
 
 #################################################################
 
@@ -91,11 +91,11 @@ types = {
 
 		launch_sound = raid_launch_paratrooper
 		arrow = {
-		    type = air
+			type = air
 		}
-        unit_model = {
-            equipment = air_transport
-        }
+		unit_model = {
+			equipment = air_transport
+		}
 
 		starting_point = {
 			types = { air_base }
@@ -167,7 +167,7 @@ types = {
 
 		success_levels = {
 			failure = {
-			    victim_effects = {
+				victim_effects = {
 					# Effects on target
 					#var:target_state = {
 					#	add_dynamic_modifier = {
@@ -175,7 +175,7 @@ types = {
 					#		days = 30
 					#	}
 					#}
-			    }
+				}
 				actor_effects = {
 					# Damage to unit
 					raid_damage_units = {
@@ -185,7 +185,7 @@ types = {
 
 					# Unit Experience
 					raid_add_unit_experience = 0.05
-                    add_raid_history_entry = yes
+					add_raid_history_entry = yes
 
 				}
 				# Other unit effects
@@ -198,14 +198,14 @@ types = {
 					}
 			}
 			limited_success = {
-			    victim_effects = {
+				victim_effects = {
 					var:target_state = {
 						add_dynamic_modifier = {
 							modifier = steel_mines_lightly_damaged_modifier
 							days = 90
 						}
 					}
-			    }
+				}
 				actor_effects = {
 					# Damage to unit
 					raid_damage_units = {
@@ -215,7 +215,7 @@ types = {
 
 					# Unit Experience
 					raid_add_unit_experience = 0.1
-                    add_raid_history_entry = yes
+					add_raid_history_entry = yes
 				}
 				division_effects = {
 					add_divisional_commander_xp = 100
@@ -226,14 +226,14 @@ types = {
 				}
 			}
 			success = {
-			    victim_effects = {
+				victim_effects = {
 					var:target_state = {
 						add_dynamic_modifier = {
 							modifier = steel_mines_damaged_modifier
 							days = 120
 						}
 					}
-			    }
+				}
 				actor_effects = {
 					# Damage to unit
 					raid_damage_units = {
@@ -243,7 +243,7 @@ types = {
 
 					# Unit Experience
 					raid_add_unit_experience = 0.2
-                    add_raid_history_entry = yes
+					add_raid_history_entry = yes
 				}
 				# Other unit effects
 				division_effects = {
@@ -255,14 +255,14 @@ types = {
 					}
 			}
 			critical_success = {
-			    victim_effects = {
+				victim_effects = {
 					var:target_state = {
 						add_dynamic_modifier = {
 							modifier = steel_mines_critically_damaged_modifier
 							days = 180
 						}
 					}
-			    }
+				}
 				actor_effects = {
 					# Damage to unit
 					raid_damage_units = {
@@ -273,7 +273,7 @@ types = {
 
 					# Unit Experience
 					raid_add_unit_experience = 0.35
-                    add_raid_history_entry = yes
+					add_raid_history_entry = yes
 				}
 				# Other unit effects
 				division_effects = {
@@ -289,11 +289,11 @@ types = {
 
 ####################################################################
 
-###   ##  ### #  # ### ### #  # ###  ### ###      ###   ##  ### ###
-#  # #  #  #  #  # #    #  ## # #  # #   #  #     #  # #  #  #  #  #
-###  ####  #  #### ##   #  # ## #  # ##  ###      ###  ####  #  #  #
-#    #  #  #  #  # #    #  #  # #  # #   #  #     #  # #  #  #  #  #
-#    #  #  #  #  # #   ### #  # ###  ### #  #     #  # #  # ### ###
+###   ##  ### #  # ### ### #  # ###  ### ###	  ###   ##  ### ###
+#  # #  #  #  #  # #	#  ## # #  # #   #  #	 #  # #  #  #  #  #
+###  ####  #  #### ##   #  # ## #  # ##  ###	  ###  ####  #  #  #
+#	#  #  #  #  # #	#  #  # #  # #   #  #	 #  # #  #  #  #  #
+#	#  #  #  #  # #   ### #  # ###  ### #  #	 #  # #  # ### ###
 
 ####################################################################
 
@@ -370,11 +370,11 @@ types = {
 
 		launch_sound = raid_launch_paratrooper
 		arrow = {
-		    type = air
+			type = air
 		}
-        unit_model = {
-            equipment = air_transport
-        }
+		unit_model = {
+			equipment = air_transport
+		}
 
 		starting_point = {
 			types = { air_base }
@@ -440,7 +440,7 @@ types = {
 
 		success_levels = {
 			failure = {
-			    victim_effects = {
+				victim_effects = {
 					# Effects on target
 					#var:target_state = {
 					#	add_dynamic_modifier = {
@@ -448,7 +448,7 @@ types = {
 					#		days = 30
 					#	}
 					#}
-			    }
+				}
 				actor_effects = {
 					# Damage to unit
 					raid_damage_units = {
@@ -458,7 +458,7 @@ types = {
 
 					# Unit Experience
 					raid_add_unit_experience = 0.05
-                    add_raid_history_entry = yes
+					add_raid_history_entry = yes
 
 				}
 				# Other unit effects
@@ -471,14 +471,14 @@ types = {
 					}
 			}
 			limited_success = {
-			    victim_effects = {
+				victim_effects = {
 					var:target_state = {
 						add_dynamic_modifier = {
 							modifier = pathfinder_infiltration_modifier
 							days = 20
 						}
 					}
-			    }
+				}
 				actor_effects = {
 					# Damage to unit
 					raid_damage_units = {
@@ -488,7 +488,7 @@ types = {
 
 					# Unit Experience
 					raid_add_unit_experience = 0.1
-                    add_raid_history_entry = yes
+					add_raid_history_entry = yes
 				}
 				division_effects = {
 					add_divisional_commander_xp = 100
@@ -499,14 +499,14 @@ types = {
 					}
 			}
 			success = {
-			    victim_effects = {
+				victim_effects = {
 					var:target_state = {
 						add_dynamic_modifier = {
 							modifier = pathfinder_infiltration_modifier
 							days = 40
 						}
 					}
-			    }
+				}
 				actor_effects = {
 					# Damage to unit
 					raid_damage_units = {
@@ -516,7 +516,7 @@ types = {
 
 					# Unit Experience
 					raid_add_unit_experience = 0.2
-                    add_raid_history_entry = yes
+					add_raid_history_entry = yes
 				}
 				# Other unit effects
 				division_effects = {
@@ -528,14 +528,14 @@ types = {
 					}
 			}
 			critical_success = {
-			    victim_effects = {
+				victim_effects = {
 					var:target_state = {
 						add_dynamic_modifier = {
 							modifier = pathfinder_infiltration_modifier
 							days = 60
 						}
 					}
-			    }
+				}
 				actor_effects = {
 					# Damage to unit
 					raid_damage_units = {
@@ -546,7 +546,7 @@ types = {
 
 					# Unit Experience
 					raid_add_unit_experience = 0.35
-                    add_raid_history_entry = yes
+					add_raid_history_entry = yes
 
 				}
 				# Other unit effects

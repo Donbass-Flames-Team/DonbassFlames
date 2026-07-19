@@ -1,1171 +1,1171 @@
 add_namespace = city
 
 news_event = {
-    id = city.201
-    title = city.201.t
-    desc = city.201.d
-    picture = GFX_lysychansk_NR
-    major = yes
-    is_triggered_only = yes
+	id = city.201
+	title = city.201.t
+	desc = city.201.d
+	picture = GFX_lysychansk_NR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.201.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.201.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.201.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.201.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.201.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.201.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.202
-    title = city.202.t
-    desc = city.202.d
-    picture = GFX_lysychansk_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.202
+	title = city.202.t
+	desc = city.202.d
+	picture = GFX_lysychansk_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.202.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.202.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.202.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.202.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.202.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.202.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.203
-    title = city.203.t
-    desc = city.203.d
-    picture = GFX_lysychansk_UKR
-    major = yes
-    is_triggered_only = yes
+	id = city.203
+	title = city.203.t
+	desc = city.203.d
+	picture = GFX_lysychansk_UKR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.203.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.203.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.203.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.203.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.203.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.203.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.204
-    title = city.204.t
-    desc = city.204.d
-    picture = GFX_severodonetsk_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.204
+	title = city.204.t
+	desc = city.204.d
+	picture = GFX_severodonetsk_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.204.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.204.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.204.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.204.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.204.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.204.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.205
-    title = city.205.t
-    desc = city.205.d
-    picture = GFX_severodonetsk_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.205
+	title = city.205.t
+	desc = city.205.d
+	picture = GFX_severodonetsk_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.205.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.205.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.205.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.205.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.205.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.205.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.206
-    title = city.206.t
-    desc = city.206.d
-    picture = GFX_severodonetsk_UKR
-    major = yes
-    is_triggered_only = yes
+	id = city.206
+	title = city.206.t
+	desc = city.206.d
+	picture = GFX_severodonetsk_UKR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.206.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.206.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.206.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.206.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.206.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.206.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.207
-    title = city.207.t
-    desc = city.207.d
-    picture = GFX_alchevsk_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.207
+	title = city.207.t
+	desc = city.207.d
+	picture = GFX_alchevsk_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.207.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.207.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.207.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.207.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.207.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.207.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.208
-    title = city.208.t
-    desc = city.208.d
-    picture = GFX_alchevsk_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.208
+	title = city.208.t
+	desc = city.208.d
+	picture = GFX_alchevsk_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.208.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.208.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.208.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.208.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.208.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.208.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.209
-    title = city.209.t
-    desc = city.209.d
-    picture = GFX_alchevsk_UKR
-    major = yes
-    is_triggered_only = yes
+	id = city.209
+	title = city.209.t
+	desc = city.209.d
+	picture = GFX_alchevsk_UKR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.209.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.209.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.209.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.209.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.209.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.209.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.210
-    title = city.210.t
-    desc = city.210.d
-    picture = GFX_bakhmut_NR
-    major = yes
-    is_triggered_only = yes
+	id = city.210
+	title = city.210.t
+	desc = city.210.d
+	picture = GFX_bakhmut_NR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.210.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.210.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.210.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.210.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.210.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.210.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.211
-    title = city.211.t
-    desc = city.211.d
-    picture = GFX_bakhmut_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.211
+	title = city.211.t
+	desc = city.211.d
+	picture = GFX_bakhmut_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.211.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.211.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.211.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.211.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.211.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.211.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.212
-    title = city.212.t
-    desc = city.212.d
-    picture = GFX_bakhmut_UKR
-    major = yes
-    is_triggered_only = yes
+	id = city.212
+	title = city.212.t
+	desc = city.212.d
+	picture = GFX_bakhmut_UKR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.212.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.212.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.212.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.212.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.212.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.212.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.213
-    title = city.213.t
-    desc = city.213.d
-    picture = GFX_konstantinovka_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.213
+	title = city.213.t
+	desc = city.213.d
+	picture = GFX_konstantinovka_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.213.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.213.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.213.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.213.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.213.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.213.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.214
-    title = city.214.t
-    desc = city.214.d
-    picture = GFX_konstantinovka_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.214
+	title = city.214.t
+	desc = city.214.d
+	picture = GFX_konstantinovka_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.214.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.214.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.214.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.214.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.214.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.214.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.215
-    title = city.215.t
-    desc = city.215.d
-    picture = GFX_konstantinovka_UKR
-    major = yes
-    is_triggered_only = yes
+	id = city.215
+	title = city.215.t
+	desc = city.215.d
+	picture = GFX_konstantinovka_UKR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.215.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.215.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.215.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.215.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.215.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.215.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.216
-    title = city.216.t
-    desc = city.216.d
-    picture = GFX_yenakiyevo_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.216
+	title = city.216.t
+	desc = city.216.d
+	picture = GFX_yenakiyevo_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.216.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.216.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.216.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.216.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.216.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.216.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.217
-    title = city.217.t
-    desc = city.217.d
-    picture = GFX_yenakiyevo_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.217
+	title = city.217.t
+	desc = city.217.d
+	picture = GFX_yenakiyevo_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.217.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.217.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.217.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.217.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.217.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.217.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.218
-    title = city.218.t
-    desc = city.218.d
-    picture = GFX_yenakiyevo_UKR
-    major = yes
-    is_triggered_only = yes
+	id = city.218
+	title = city.218.t
+	desc = city.218.d
+	picture = GFX_yenakiyevo_UKR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.218.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.218.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.218.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.218.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.218.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.218.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.219
-    title = city.219.t
-    desc = city.219.d
-    picture = GFX_slavyansk_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.219
+	title = city.219.t
+	desc = city.219.d
+	picture = GFX_slavyansk_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.219.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.219.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.219.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.219.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.219.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.219.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.220
-    title = city.220.t
-    desc = city.220.d
-    picture = GFX_slavyansk_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.220
+	title = city.220.t
+	desc = city.220.d
+	picture = GFX_slavyansk_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.220.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.220.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.220.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.220.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.220.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.220.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.221
-    title = city.221.t
-    desc = city.221.d
-    picture = GFX_slavyansk_UKR
-    major = yes
-    is_triggered_only = yes
+	id = city.221
+	title = city.221.t
+	desc = city.221.d
+	picture = GFX_slavyansk_UKR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.221.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.221.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.221.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.221.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.221.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.221.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.222
-    title = city.222.t
-    desc = city.222.d
-    picture = GFX_kramatorsk_NR
-    major = yes
-    is_triggered_only = yes
+	id = city.222
+	title = city.222.t
+	desc = city.222.d
+	picture = GFX_kramatorsk_NR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.222.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.222.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.222.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.222.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.222.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.222.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.223
-    title = city.223.t
-    desc = city.223.d
-    picture = GFX_kramatorsk_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.223
+	title = city.223.t
+	desc = city.223.d
+	picture = GFX_kramatorsk_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.223.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.223.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.223.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.223.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.223.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.223.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.224
-    title = city.224.t
-    desc = city.224.d
-    picture = GFX_kramatorsk_UKR
-    major = yes
-    is_triggered_only = yes
+	id = city.224
+	title = city.224.t
+	desc = city.224.d
+	picture = GFX_kramatorsk_UKR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.224.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.224.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.224.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.224.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.224.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.224.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.225
-    title = city.225.t
-    desc = city.225.d
-    picture = GFX_horlivka_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.225
+	title = city.225.t
+	desc = city.225.d
+	picture = GFX_horlivka_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.225.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.225.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.225.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.225.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.225.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.225.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.226
-    title = city.226.t
-    desc = city.226.d
-    picture = GFX_horlivka_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.226
+	title = city.226.t
+	desc = city.226.d
+	picture = GFX_horlivka_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.226.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.226.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.226.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.226.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.226.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.226.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.227
-    title = city.227.t
-    desc = city.227.d
-    picture = GFX_horlivka_UKR
-    major = yes
-    is_triggered_only = yes
+	id = city.227
+	title = city.227.t
+	desc = city.227.d
+	picture = GFX_horlivka_UKR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.227.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.227.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.227.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.227.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.227.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.227.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.228
-    title = city.228.t
-    desc = city.228.d
-    picture = GFX_mariupol_NR
-    major = yes
-    is_triggered_only = yes
+	id = city.228
+	title = city.228.t
+	desc = city.228.d
+	picture = GFX_mariupol_NR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.228.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.228.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.228.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.228.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.228.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.228.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.229
-    title = city.229.t
-    desc = city.229.d
-    picture = GFX_mariupol_RUS
-    major = yes
-    is_triggered_only = yes
+	id = city.229
+	title = city.229.t
+	desc = city.229.d
+	picture = GFX_mariupol_RUS
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.229.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.229.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.229.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.229.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.229.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.229.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = city.230
-    title = city.230.t
-    desc = city.230.d
-    picture = GFX_mariupol_UKR
-    major = yes
-    is_triggered_only = yes
+	id = city.230
+	title = city.230.t
+	desc = city.230.d
+	picture = GFX_mariupol_UKR
+	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = city.230.ukr
-        trigger = { tag = UKR }
-    }
+	option = {
+		name = city.230.ukr
+		trigger = { tag = UKR }
+	}
 
-    option = {
-        name = city.230.rus
-        trigger = {
-            OR = {
-                tag = RUS
-                tag = DPR
-                tag = LPR
-            }
-        }
-    }
+	option = {
+		name = city.230.rus
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
 
-    option = {
-        name = city.230.world
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = UKR
-                    tag = RUS
-                    tag = DPR
-                    tag = LPR
-                }
-            }
-        }
-    }
+	option = {
+		name = city.230.world
+		trigger = {
+			NOT = {
+				OR = {
+					tag = UKR
+					tag = RUS
+					tag = DPR
+					tag = LPR
+				}
+			}
+		}
+	}
 }

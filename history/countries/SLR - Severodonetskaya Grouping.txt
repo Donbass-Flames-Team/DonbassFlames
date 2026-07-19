@@ -28,11 +28,11 @@ set_variable = { debt = -1 }
 		mortar_weapons2 = 1
 		mortar_weapons3 = 1
 		basic_train = 1 
-               
-                motorized_equipment = 1
-                motorized_equipment_0 = 1
-                motorized_equipment_1 = 1
-                motorized_equipment_2 = 1
+			   
+				motorized_equipment = 1
+				motorized_equipment_0 = 1
+				motorized_equipment_1 = 1
+				motorized_equipment_2 = 1
 
 		tech_support = 1
 
@@ -54,7 +54,7 @@ set_variable = { debt = -1 }
 		service_by_requirement
 		closed_economy
 		war_economy
-    }
+	}
 
 	set_politics = {
 		ruling_party = autoritarian_democracy
@@ -64,12 +64,12 @@ set_variable = { debt = -1 }
 	}
 
 	set_popularities = {
-        communism = 42
-        nationalism = 32
-        autoritarian_democracy = 18
-        conservatism_democracy = 6
-        liberal_democracy = 2
-        social_democracy = 0
-    }
+		communism = 42
+		nationalism = 32
+		autoritarian_democracy = 18
+		conservatism_democracy = 6
+		liberal_democracy = 2
+		social_democracy = 0
+	}
 
 }

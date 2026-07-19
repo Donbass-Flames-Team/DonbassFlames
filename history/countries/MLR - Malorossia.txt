@@ -10,10 +10,10 @@ DF_economy_setup = yes
 	set_variable = { UKR_AFU_army_org_factor = -0.55 }
 	set_variable = { UKR_AFU_army_org_regain = -0.25 }
 	set_variable = { UKR_AFU_army_morale_factor = -0.25 }
-    set_variable = { UKR_AFU_army_attack_factor = -0.45 }
-    set_variable = { UKR_AFU_army_defence_factor = -0.2 }
+	set_variable = { UKR_AFU_army_attack_factor = -0.45 }
+	set_variable = { UKR_AFU_army_defence_factor = -0.2 }
 	set_variable = { UKR_AFU_planning_speed = -0.20 }
-    set_variable = { UKR_AFU_army_speed_factor = -0.15 }
+	set_variable = { UKR_AFU_army_speed_factor = -0.15 }
 	set_variable = { UKR_AFU_war_breakthrough_factor = -0.15 }
 	set_variable = { UKR_AFU_war_support_factor = -0.15 }
 
@@ -42,10 +42,10 @@ DF_economy_setup = yes
 		mortar_weapons2 = 1
 		mortar_weapons3 = 1
 
-                motorized_equipment = 1
-                motorized_equipment_0 = 1
-                motorized_equipment_1 = 1
-                motorized_equipment_2 = 1
+				motorized_equipment = 1
+				motorized_equipment_0 = 1
+				motorized_equipment_1 = 1
+				motorized_equipment_2 = 1
 
 		tech_support = 1
 
@@ -67,44 +67,44 @@ DF_economy_setup = yes
 	
 	#if = {
 	#   limit = { has_dlc = "By Blood Alone" }
-	#	    set_technology = {
-	#		    aa_lmg = 1
-	#		    engines_1 = 1
-	#		    aircraft_construction = 1
-	#		    iw_small_airframe = 1
-	#	    }
+	#		set_technology = {
+	#			aa_lmg = 1
+	#			engines_1 = 1
+	#			aircraft_construction = 1
+	#			iw_small_airframe = 1
+	#		}
 	#   else = {
-	#	    set_technology = {
-	#		    early_fighter = 1
-	#	    }
-	#    }
-    #}
+	#		set_technology = {
+	#			early_fighter = 1
+	#		}
+	#	}
+	#}
 
 	if = {
-	    limit = { has_dlc = "No Step Back" }
-		    set_technology = {
- 		        apc_chassis = 1
-		        apc_chassis_2 = 1
-		        apc_chassis_3 = 1
-		        apc_chassis_4 = 1
+		limit = { has_dlc = "No Step Back" }
+			set_technology = {
+ 				apc_chassis = 1
+				apc_chassis_2 = 1
+				apc_chassis_3 = 1
+				apc_chassis_4 = 1
 
-		        ifv_chassis = 1
-		        ifv_chassis_2 = 1
-		        ifv_chassis_3 = 1
-		        ifv_chassis_4 = 1
+				ifv_chassis = 1
+				ifv_chassis_2 = 1
+				ifv_chassis_3 = 1
+				ifv_chassis_4 = 1
 				gwtank_chassis = 1
-		    }
-	    else = {
-		    set_technology = {
-	 		    apc_chassis = 1
-		        apc_chassis_2 = 1
-		        apc_chassis_3 = 1
-		        apc_chassis_4 = 1
+			}
+		else = {
+			set_technology = {
+	 			apc_chassis = 1
+				apc_chassis_2 = 1
+				apc_chassis_3 = 1
+				apc_chassis_4 = 1
 
-		        ifv_1 = 1
-		        ifv_2 = 1
-		        ifv_3 = 1
-		        bmd_1 = 1
+				ifv_1 = 1
+				ifv_2 = 1
+				ifv_3 = 1
+				bmd_1 = 1
 				bmd_2 = 1
 				bmd_3 = 1
 				APC_1 = 1
@@ -114,9 +114,9 @@ DF_economy_setup = yes
 				modern_tank_2 = 1
 				modern_tank_3 = 1		
 				modern_tank_4 = 1		   
-		    }
-	    }
-    }
+			}
+		}
+	}
 	
 	set_politics = {
 		ruling_party = autoritarian_democracy
@@ -126,13 +126,13 @@ DF_economy_setup = yes
 	}
 	
 	set_popularities = {
-        conservatism_democracy = 12
-        autoritarian_democracy = 14
-        liberal_democracy = 10
-        nationalism = 56
-        communism = 7
-        social_democracy = 1
-    }
+		conservatism_democracy = 12
+		autoritarian_democracy = 14
+		liberal_democracy = 10
+		nationalism = 56
+		communism = 7
+		social_democracy = 1
+	}
 
 	add_ideas = {
 		UKR_helpless_government
@@ -141,7 +141,7 @@ DF_economy_setup = yes
 		volunteer_only
 		export_focus
 		civilian_economy
-    }
+	}
 
 	recruit_character = UKR_victor_medvechuk
 }

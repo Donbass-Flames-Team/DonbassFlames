@@ -212,10 +212,10 @@ technology_folders = {
 	}
 	special_forces_doctrine_folder = {
 		available = {
-                        OR = {
-                                has_dlc = "Arms Against Tyranny"
-                                has_dlc = "No Compromise, No Surrender"
-                        }
+						OR = {
+								has_dlc = "Arms Against Tyranny"
+								has_dlc = "No Compromise, No Surrender"
+						}
 		}
 		ledger = hidden #For now
 		doctrine = yes

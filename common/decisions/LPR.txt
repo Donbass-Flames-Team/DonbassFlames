@@ -35,53 +35,53 @@ LPR_war_for_independence_of_donbass = {
 
 LPR_politicy_category = {
 
-    LPR_cancel_state_of_emergency = {
+	LPR_cancel_state_of_emergency = {
 
-	    icon = generic_political_resolution
+		icon = generic_political_resolution
 
-	    allowed = {
-		    always = yes
-	    }
+		allowed = {
+			always = yes
+		}
 
-	    visible = {
-		    has_idea = LPR_introduction_of_a_state_of_emergency
-	    }
+		visible = {
+			has_idea = LPR_introduction_of_a_state_of_emergency
+		}
 
-	    available = {
-		    
-	    }
+		available = {
+			
+		}
 
-        cost = 150
+		cost = 150
 
-	    complete_effect = {
-		    remove_ideas = LPR_introduction_of_a_state_of_emergency
-		    add_stability = 0.05 
-	    }
+		complete_effect = {
+			remove_ideas = LPR_introduction_of_a_state_of_emergency
+			add_stability = 0.05 
+		}
 
-	    fire_only_once = yes
+		fire_only_once = yes
 
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-    LPR_humanitarian_aid_from_russia_decision = {
+	LPR_humanitarian_aid_from_russia_decision = {
 
-	    icon = generic_political_resolution
+		icon = generic_political_resolution
 
-	    allowed = {
-		    always = yes
-	    }
+		allowed = {
+			always = yes
+		}
 
-	    visible = {
-		    always = yes
-	    }
+		visible = {
+			always = yes
+		}
 
-	    available = {
+		available = {
 		   
-	    }
+		}
 
-	    fire_only_once = no
+		fire_only_once = no
 		days_remove = 80
 		days_re_enable = 185
 		cost = 15
@@ -91,10 +91,10 @@ LPR_politicy_category = {
 			add_war_support = 0.01
 		}
 
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }	
+		ai_will_do = {
+			factor = 1
+		}
+	}	
 
 	LPR_referendum = {
 		icon = GFX_decision_icon_of_elections
@@ -118,23 +118,23 @@ LPR_politicy_category = {
 }
 
 LPR_fight_with_disagree_category = {
-    LPR_kill_mozgovoy = {
+	LPR_kill_mozgovoy = {
 
-	    icon = generic_political_resolution
+		icon = generic_political_resolution
 
-	    allowed = {
-		    always = yes
-	    }
+		allowed = {
+			always = yes
+		}
 
-	    visible = {
-		    always = yes
-	    }
+		visible = {
+			always = yes
+		}
 
-	    available = {
+		available = {
 		   
-	    }
+		}
 
-	    fire_only_once = no
+		fire_only_once = no
 		days_remove = 10
 		days_re_enable = 35
 		cost = 25
@@ -144,27 +144,27 @@ LPR_fight_with_disagree_category = {
 			add_war_support = 0.01
 		}
 
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }
-    LPR_kill_dremev = {
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	LPR_kill_dremev = {
 
-	    icon = generic_political_resolution
+		icon = generic_political_resolution
 
-	    allowed = {
-		    always = yes
-	    }
+		allowed = {
+			always = yes
+		}
 
-	    visible = {
-		    always = yes
-	    }
+		visible = {
+			always = yes
+		}
 
-	    available = {
+		available = {
 		   
-	    }
+		}
 
-	    fire_only_once = no
+		fire_only_once = no
 		days_remove = 10
 		days_re_enable = 35
 		cost = 25
@@ -174,27 +174,27 @@ LPR_fight_with_disagree_category = {
 			add_war_support = 0.01
 		}
 
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }	
-    LPR_kill_bedenov = {
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	LPR_kill_bedenov = {
 
-	    icon = generic_political_resolution
+		icon = generic_political_resolution
 
-	    allowed = {
-		    always = yes
-	    }
+		allowed = {
+			always = yes
+		}
 
-	    visible = {
-		    always = yes
-	    }
+		visible = {
+			always = yes
+		}
 
-	    available = {
+		available = {
 		   
-	    }
+		}
 
-	    fire_only_once = no
+		fire_only_once = no
 		days_remove = 10
 		days_re_enable = 35
 		cost = 25
@@ -204,10 +204,10 @@ LPR_fight_with_disagree_category = {
 			add_war_support = 0.01
 		}
 
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }	
+		ai_will_do = {
+			factor = 1
+		}
+	}	
 }
 
 
