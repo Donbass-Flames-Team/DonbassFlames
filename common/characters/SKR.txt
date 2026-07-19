@@ -1,5 +1,5 @@
 characters = {
-    nikolay_kozicyn = {
+	nikolay_kozicyn = {
 		name = nikolay_kozicyn
 		portraits = {
 			civilian = {
@@ -8,11 +8,12 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			expire = "1965.1.1.1"
+			traits = {}
+			id = -1
 		}
-
 		field_marshal = {
-			traits = { }
+			traits = {}
 			skill = 2
 			attack_skill = 3
 			defense_skill = 2
@@ -20,7 +21,7 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-    vyacheslav_pitko = {
+	vyacheslav_pitko = {
 		name = vyacheslav_pitko
 		portraits = {
 			civilian = {
@@ -29,10 +30,12 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			expire = "1965.1.1.1"
+			traits = {}
+			id = -1
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -40,6 +43,4 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-
-
 }

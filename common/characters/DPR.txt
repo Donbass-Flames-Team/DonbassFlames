@@ -1,5 +1,5 @@
 characters = {
-    dmitry_trapeznikov = {
+	dmitry_trapeznikov = {
 		name = dmitry_trapeznikov
 		portraits = {
 			civilian = {
@@ -8,11 +8,10 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
 	}
-
-    pavel_gubarev = {
+	pavel_gubarev = {
 		name = pavel_gubarev
 		portraits = {
 			civilian = {
@@ -21,10 +20,10 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -32,8 +31,7 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-
-    Mikhail_Tolstykh = {
+	Mikhail_Tolstykh = {
 		name = Mikhail_Tolstykh
 		portraits = {
 			civilian = {
@@ -41,7 +39,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -49,8 +47,7 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-
-    Alexander_Khodakovsky = {
+	Alexander_Khodakovsky = {
 		name = Alexander_Khodakovsky
 		portraits = {
 			civilian = {
@@ -58,16 +55,15 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
 		}
-	}	
-
-    Igor_Bezler = {
+	}
+	Igor_Bezler = {
 		name = Igor_Bezler
 		portraits = {
 			civilian = {
@@ -75,15 +71,14 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
 		}
-	}	
-
+	}
 	andrey_purgin = {
 		name = andrey_purgin
 		portraits = {
@@ -93,10 +88,9 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
 	}
-
 	vyacheslav_ponomarev = {
 		name = vyacheslav_ponomarev
 		portraits = {
@@ -106,18 +100,19 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			expire = "1965.1.1.1"
+			traits = {}
+			id = -1
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
 		}
-	}	
-
+	}
 	arsen_motorola = {
 		name = arsen_motorola
 		portraits = {
@@ -126,7 +121,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -134,9 +129,6 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-
-
-
 	vladimir_makovich = {
 		name = vladimir_makovich
 		portraits = {
@@ -146,10 +138,9 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
 	}
-
 	boris_litvinov = {
 		name = boris_litvinov
 		portraits = {
@@ -159,11 +150,9 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
-	}	
-
-	#Penis
+	}
 	denis_pushilin = {
 		name = denis_pushilin
 		portraits = {
@@ -173,10 +162,9 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
 	}
-
 	aleksandr_zakharchenko = {
 		name = aleksandr_zakharchenko
 		portraits = {
@@ -186,18 +174,17 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
 		}
-	}	
-
+	}
 	zheka_vasilievich = {
 		name = zheka_vasilievich
 		portraits = {
@@ -207,7 +194,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -219,10 +206,9 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
 	}
-
 	igor_strelkov_girkin = {
 		name = igor_strelkov_girkin
 		portraits = {
@@ -231,7 +217,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 3
 			attack_skill = 4
 			defense_skill = 3
@@ -242,5 +228,4 @@ characters = {
 			}
 		}
 	}
-
 }
