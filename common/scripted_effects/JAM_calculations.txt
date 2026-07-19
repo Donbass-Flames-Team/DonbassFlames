@@ -10,8 +10,8 @@
 # Difficulty game rule production multipliers
 # Remember to update game rule desc localizations if these are changed
 @JAM_difficulty_very_easy_mult = 1.8
-@JAM_difficulty_easy_mult	  = 1.5
-@JAM_difficulty_hard_mult	  = 0.9
+@JAM_difficulty_easy_mult      = 1.5
+@JAM_difficulty_hard_mult      = 0.9
 @JAM_difficulty_very_hard_mult = 0.8
 
 # All ammo usage quantities are in thousands per day
@@ -189,651 +189,651 @@
 #   JAM_army_ammo_demand_defending:  Current ammo demand from defending units, in thousands
 #   JAM_army_ammo_demand_attacking:  Current ammo demand from attacking units, in thousands
 JAM_se_calculate_army_ammo_demand = {
-	# Declaring some working variables
-	set_temp_variable = {
-		var   = total_units
-		value = num_battalions
-	}
-	set_temp_variable = {
-		var   = total_demand
-		value = 0
-	}
-	set_temp_variable = {
-		var   = temp_units
-		value = 0
-	}
-	set_temp_variable = {
-		var   = temp_demand
-		value = 0
-	}
-	
-	# Calculate total possible demand
-	if = {
-		limit = {
-			check_variable = { total_units > 0 }
-		}
-		
-		# Calculate infantry multiplier
-		set_temp_variable = { inf_demand_mult = 1 }
-		set_variable = { debug_var = inf_demand_mult }
-		
-		# Tanks
-		set_temp_variable = { temp_units  = num_battalions_with_type@modern_armor }
-		set_temp_variable = { temp_demand = @JAM_army_OTK_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# SPG
-		set_temp_variable = { temp_units  = num_battalions_with_type@light_sp_artillery_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_LAR_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@medium_sp_artillery_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_MAR_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@heavy_sp_artillery_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_HAR_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@super_heavy_sp_artillery_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_SAR_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@self_propelled_super_heavy_artillery }
-		set_temp_variable = { temp_demand = @JAM_army_SHG_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@modern_sp_artillery_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_OAR_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# SPAA
-		set_temp_variable = { temp_units  = num_battalions_with_type@light_sp_anti_air_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_LAA_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@medium_sp_anti_air_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_MAA_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@heavy_sp_anti_air_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_HAA_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@super_heavy_sp_anti_air_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_SAA_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@modern_sp_anti_air_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_OAA_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# TD
-		set_temp_variable = { temp_units  = num_battalions_with_type@light_tank_destroyer_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_LTD_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@medium_tank_destroyer_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_MTD_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@heavy_tank_destroyer_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_HTD_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@super_heavy_tank_destroyer_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_STD_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@modern_tank_destroyer_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_OTD_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Amphibious tanks
-		set_temp_variable = { temp_units  = num_battalions_with_type@amphibious_armor }
-		set_temp_variable = { temp_demand = @JAM_army_ATK_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@amphibious_light_armor }
-		set_temp_variable = { temp_demand = @JAM_army_LAM_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@amphibious_medium_armor }
-		set_temp_variable = { temp_demand = @JAM_army_MAM_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@amphibious_heavy_armor }
-		set_temp_variable = { temp_demand = @JAM_army_HAM_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Flame tanks
-		set_temp_variable = { temp_units  = num_battalions_with_type@light_flame_tank }
-		set_temp_variable = { temp_demand = @JAM_army_LFT_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@medium_flame_tank }
-		set_temp_variable = { temp_demand = @JAM_army_MFT_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@heavy_flame_tank }
-		set_temp_variable = { temp_demand = @JAM_army_HFT_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Infantry
-		set_temp_variable = { temp_units  = num_battalions_with_type@infantry }
-		set_temp_variable = { temp_demand = @JAM_army_INF_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@bicycle_battalion }
-		set_temp_variable = { temp_demand = @JAM_army_BIC_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@marine }
-		set_temp_variable = { temp_demand = @JAM_army_MRN_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@marine_commando }
-		set_temp_variable = { temp_demand = @JAM_army_MRC_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@mountaineers }
-		set_temp_variable = { temp_demand = @JAM_army_MTN_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@paratrooper }
-		set_temp_variable = { temp_demand = @JAM_army_PAR_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@penal_battalion }
-		set_temp_variable = { temp_demand = @JAM_army_PEN_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@irregular_infantry }
-		set_temp_variable = { temp_demand = @JAM_army_IRR_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@militia }
-		set_temp_variable = { temp_demand = @JAM_army_MIL_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@blackshirt_assault_battalion }
-		set_temp_variable = { temp_demand = @JAM_army_BAB_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@sturmtruppe_battalion }
-		set_temp_variable = { temp_demand = @JAM_army_STR_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@fake_intel_unit }
-		set_temp_variable = { temp_demand = @JAM_army_FIU_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		# Motorized
-		set_temp_variable = { temp_units  = num_battalions_with_type@motorized }
-		set_temp_variable = { temp_demand = @JAM_army_MOT_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@mechanized }
-		set_temp_variable = { temp_demand = @JAM_army_MEC_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@amphibious_mechanized }
-		set_temp_variable = { temp_demand = @JAM_army_AMT_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		# Cavalry
-		set_temp_variable = { temp_units  = num_battalions_with_type@cavalry }
-		set_temp_variable = { temp_demand = @JAM_army_CAV_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@camelry }
-		set_temp_variable = { temp_demand = @JAM_army_CAM_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@elephantry }
-		set_temp_variable = { temp_demand = @JAM_army_ELE_ammo		}
-		multiply_temp_variable = { temp_demand	  = temp_units	  }
-		multiply_temp_variable = { temp_demand	  = inf_demand_mult }
-		add_to_temp_variable   = { total_demand	 = temp_demand	 }
-		subtract_from_temp_variable = { total_units = temp_units	  }
-		
-		# Armored car
-		set_temp_variable = { temp_units  = num_battalions_with_type@armored_car }
-		set_temp_variable = { temp_demand = @JAM_army_CAR_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# AA
-		set_temp_variable = { temp_units  = num_battalions_with_type@anti_air }
-		set_temp_variable = { temp_demand = @JAM_army_AA_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@anti_air_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_ANA_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@mot_anti_air_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_MTA_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Arty
-		set_temp_variable = { temp_units  = num_battalions_with_type@artillery }
-		set_temp_variable = { temp_demand = @JAM_army_SAT_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@artillery_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_ART_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@mot_artillery_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_MRT_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@super_heavy_artillery }
-		set_temp_variable = { temp_demand = @JAM_army_SHA_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Rockets
-		set_temp_variable = { temp_units  = num_battalions_with_type@rocket_artillery }
-		set_temp_variable = { temp_demand = @JAM_army_RART_ammo   }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@rocket_artillery_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_RRT_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@mot_rocket_artillery_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_TRA_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@motorized_rocket_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_MRA_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# AT
-		set_temp_variable = { temp_units  = num_battalions_with_type@anti_tank }
-		set_temp_variable = { temp_demand = @JAM_army_AT_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@anti_tank_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_ANT_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@mot_anti_tank_brigade }
-		set_temp_variable = { temp_demand = @JAM_army_MAT_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Recon
-		set_temp_variable = { temp_units  = num_battalions_with_type@recon }
-		set_temp_variable = { temp_demand = @JAM_army_CREC_ammo   }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@mot_recon }
-		set_temp_variable = { temp_demand = @JAM_army_MREC_ammo   }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@armored_car_recon }
-		set_temp_variable = { temp_demand = @JAM_army_AREC_ammo   }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@light_tank_recon }
-		set_temp_variable = { temp_demand = @JAM_army_TREC_ammo   }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Misc. support battalions
-		set_temp_variable = { temp_units  = num_battalions_with_type@military_police }
-		set_temp_variable = { temp_demand = @JAM_army_MP_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@motorized_military_police }
-		set_temp_variable = { temp_demand = @JAM_army_MMP_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@airborne_light_armor }
-		set_temp_variable = { temp_demand = @JAM_army_LTA_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@rangers_support }
-		set_temp_variable = { temp_demand = @JAM_army_RAN_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@long_range_patrol_support }
-		set_temp_variable = { temp_demand = @JAM_army_LRP_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Railway guns
-		set_temp_variable = { temp_units  = num_battalions_with_type@railway_gun }
-		set_temp_variable = { temp_demand = @JAM_army_RWG_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_battalions_with_type@super_heavy_railway_gun }
-		set_temp_variable = { temp_demand = @JAM_army_SRG_ammo	}
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
+    # Declaring some working variables
+    set_temp_variable = {
+        var   = total_units
+        value = num_battalions
+    }
+    set_temp_variable = {
+        var   = total_demand
+        value = 0
+    }
+    set_temp_variable = {
+        var   = temp_units
+        value = 0
+    }
+    set_temp_variable = {
+        var   = temp_demand
+        value = 0
+    }
+    
+    # Calculate total possible demand
+    if = {
+        limit = {
+            check_variable = { total_units > 0 }
+        }
+        
+        # Calculate infantry multiplier
+        set_temp_variable = { inf_demand_mult = 1 }
+        set_variable = { debug_var = inf_demand_mult }
+        
+        # Tanks
+        set_temp_variable = { temp_units  = num_battalions_with_type@modern_armor }
+        set_temp_variable = { temp_demand = @JAM_army_OTK_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # SPG
+        set_temp_variable = { temp_units  = num_battalions_with_type@light_sp_artillery_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_LAR_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@medium_sp_artillery_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_MAR_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@heavy_sp_artillery_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_HAR_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@super_heavy_sp_artillery_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_SAR_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@self_propelled_super_heavy_artillery }
+        set_temp_variable = { temp_demand = @JAM_army_SHG_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@modern_sp_artillery_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_OAR_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # SPAA
+        set_temp_variable = { temp_units  = num_battalions_with_type@light_sp_anti_air_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_LAA_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@medium_sp_anti_air_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_MAA_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@heavy_sp_anti_air_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_HAA_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@super_heavy_sp_anti_air_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_SAA_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@modern_sp_anti_air_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_OAA_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # TD
+        set_temp_variable = { temp_units  = num_battalions_with_type@light_tank_destroyer_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_LTD_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@medium_tank_destroyer_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_MTD_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@heavy_tank_destroyer_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_HTD_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@super_heavy_tank_destroyer_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_STD_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@modern_tank_destroyer_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_OTD_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Amphibious tanks
+        set_temp_variable = { temp_units  = num_battalions_with_type@amphibious_armor }
+        set_temp_variable = { temp_demand = @JAM_army_ATK_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@amphibious_light_armor }
+        set_temp_variable = { temp_demand = @JAM_army_LAM_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@amphibious_medium_armor }
+        set_temp_variable = { temp_demand = @JAM_army_MAM_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@amphibious_heavy_armor }
+        set_temp_variable = { temp_demand = @JAM_army_HAM_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Flame tanks
+        set_temp_variable = { temp_units  = num_battalions_with_type@light_flame_tank }
+        set_temp_variable = { temp_demand = @JAM_army_LFT_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@medium_flame_tank }
+        set_temp_variable = { temp_demand = @JAM_army_MFT_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@heavy_flame_tank }
+        set_temp_variable = { temp_demand = @JAM_army_HFT_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Infantry
+        set_temp_variable = { temp_units  = num_battalions_with_type@infantry }
+        set_temp_variable = { temp_demand = @JAM_army_INF_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@bicycle_battalion }
+        set_temp_variable = { temp_demand = @JAM_army_BIC_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@marine }
+        set_temp_variable = { temp_demand = @JAM_army_MRN_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@marine_commando }
+        set_temp_variable = { temp_demand = @JAM_army_MRC_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@mountaineers }
+        set_temp_variable = { temp_demand = @JAM_army_MTN_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@paratrooper }
+        set_temp_variable = { temp_demand = @JAM_army_PAR_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@penal_battalion }
+        set_temp_variable = { temp_demand = @JAM_army_PEN_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@irregular_infantry }
+        set_temp_variable = { temp_demand = @JAM_army_IRR_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@militia }
+        set_temp_variable = { temp_demand = @JAM_army_MIL_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@blackshirt_assault_battalion }
+        set_temp_variable = { temp_demand = @JAM_army_BAB_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@sturmtruppe_battalion }
+        set_temp_variable = { temp_demand = @JAM_army_STR_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@fake_intel_unit }
+        set_temp_variable = { temp_demand = @JAM_army_FIU_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        # Motorized
+        set_temp_variable = { temp_units  = num_battalions_with_type@motorized }
+        set_temp_variable = { temp_demand = @JAM_army_MOT_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@mechanized }
+        set_temp_variable = { temp_demand = @JAM_army_MEC_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@amphibious_mechanized }
+        set_temp_variable = { temp_demand = @JAM_army_AMT_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        # Cavalry
+        set_temp_variable = { temp_units  = num_battalions_with_type@cavalry }
+        set_temp_variable = { temp_demand = @JAM_army_CAV_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@camelry }
+        set_temp_variable = { temp_demand = @JAM_army_CAM_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@elephantry }
+        set_temp_variable = { temp_demand = @JAM_army_ELE_ammo        }
+        multiply_temp_variable = { temp_demand      = temp_units      }
+        multiply_temp_variable = { temp_demand      = inf_demand_mult }
+        add_to_temp_variable   = { total_demand     = temp_demand     }
+        subtract_from_temp_variable = { total_units = temp_units      }
+        
+        # Armored car
+        set_temp_variable = { temp_units  = num_battalions_with_type@armored_car }
+        set_temp_variable = { temp_demand = @JAM_army_CAR_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # AA
+        set_temp_variable = { temp_units  = num_battalions_with_type@anti_air }
+        set_temp_variable = { temp_demand = @JAM_army_AA_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@anti_air_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_ANA_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@mot_anti_air_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_MTA_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Arty
+        set_temp_variable = { temp_units  = num_battalions_with_type@artillery }
+        set_temp_variable = { temp_demand = @JAM_army_SAT_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@artillery_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_ART_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@mot_artillery_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_MRT_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@super_heavy_artillery }
+        set_temp_variable = { temp_demand = @JAM_army_SHA_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Rockets
+        set_temp_variable = { temp_units  = num_battalions_with_type@rocket_artillery }
+        set_temp_variable = { temp_demand = @JAM_army_RART_ammo   }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@rocket_artillery_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_RRT_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@mot_rocket_artillery_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_TRA_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@motorized_rocket_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_MRA_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # AT
+        set_temp_variable = { temp_units  = num_battalions_with_type@anti_tank }
+        set_temp_variable = { temp_demand = @JAM_army_AT_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@anti_tank_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_ANT_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@mot_anti_tank_brigade }
+        set_temp_variable = { temp_demand = @JAM_army_MAT_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Recon
+        set_temp_variable = { temp_units  = num_battalions_with_type@recon }
+        set_temp_variable = { temp_demand = @JAM_army_CREC_ammo   }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@mot_recon }
+        set_temp_variable = { temp_demand = @JAM_army_MREC_ammo   }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@armored_car_recon }
+        set_temp_variable = { temp_demand = @JAM_army_AREC_ammo   }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@light_tank_recon }
+        set_temp_variable = { temp_demand = @JAM_army_TREC_ammo   }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Misc. support battalions
+        set_temp_variable = { temp_units  = num_battalions_with_type@military_police }
+        set_temp_variable = { temp_demand = @JAM_army_MP_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@motorized_military_police }
+        set_temp_variable = { temp_demand = @JAM_army_MMP_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@airborne_light_armor }
+        set_temp_variable = { temp_demand = @JAM_army_LTA_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@rangers_support }
+        set_temp_variable = { temp_demand = @JAM_army_RAN_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@long_range_patrol_support }
+        set_temp_variable = { temp_demand = @JAM_army_LRP_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Railway guns
+        set_temp_variable = { temp_units  = num_battalions_with_type@railway_gun }
+        set_temp_variable = { temp_demand = @JAM_army_RWG_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_battalions_with_type@super_heavy_railway_gun }
+        set_temp_variable = { temp_demand = @JAM_army_SRG_ammo    }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
 
-		
-		# Misc. ammo-less
-		set_temp_variable = { temp_units = num_battalions_with_type@logistics_company }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@winter_logistics_support }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@maintenance_company }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@armored_maintenance }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@engineer }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@pioneer_support }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@assault_engineer }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@armored_engineer }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@bus }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@helicopter_brigade }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@helicopter_recon }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@helicopter_transport }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@field_hospital }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@helicopter_field_hospital }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@signal_company }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		set_temp_variable = { temp_units = num_battalions_with_type@armored_signal }
-		subtract_from_temp_variable = { total_units = temp_units }
-		
-		# Fallback
-		if = {
-			limit = {
-				check_variable = { total_units > 0 }
-			}
-			set_temp_variable = { temp_demand = @JAM_army_fallback_ammo }
-			multiply_temp_variable = { temp_demand	  = total_units   }
-			add_to_temp_variable   = { total_demand	 = temp_demand   }
-			subtract_from_temp_variable = { total_units = temp_units	}
-		}
-		
-		# Doctrine multiplier
-		if = {
-			limit = {
-				has_tech = superior_firepower
-				has_game_rule = {
-					rule   = JAM_gr_army_ammo_sup_fire_mult
-					option = enable
-				}
-			}
-			multiply_temp_variable = { total_demand = @JAM_army_sup_fpwr_mult }
-		}
-		
-		# Balancing multiplier
-		multiply_temp_variable = { total_demand = @JAM_army_ammo_mult }
-		
-		# Record theoretical max demand
-		set_temp_variable = {
-			var   = normal_max_demand # Saving a copy for later use - see below
-			value = total_demand
-		}
-		set_variable = {
-			var   = JAM_army_ammo_demand_max
-			value = total_demand
-		}
-		multiply_variable = { # Theoretical max if every land division is attacking simultaneously
-			JAM_army_ammo_demand_max = 2
-		}
-		
-		# Calculate current demand
-		# Current working theory: just take the % of troops currently in combat and scale the ammo use by that
-		# This is how the OG Ammunition and Ebby's Ammunition mods do it; I don't think there's a better way than that
-		# since it is currently impossible to tell which individual units are in battle (or doing anything besides
-		# idling) and which aren't.
-		# Also adds a penalty for any units without a general because we can only get the current units in combat which
-		# are led by a commander, and we want to penalize players for trying to cheat the game. Ebby's (and probably the
-		# original) already do this by making all leaderless units count as units in defensive combat, but I want to
-		# make this penalty smaller.
-		set_temp_variable = {
-			total_units = num_divisions
-		}
-		set_temp_variable = {
-			total_demand = 0
-		}
-		set_temp_variable = {
-			temp_units = 0
-		}
-		set_temp_variable = {
-			atk_units = 0
-		}
-		set_temp_variable = {
-			def_units = 0
-		}
-		set_temp_variable = {
-			no_leader_units = num_divisions
-		}
-		
-		# Sum up units
-		every_army_leader = {
-			limit = {
-				is_leading_army_group = no
-			}
-			subtract_from_temp_variable = { no_leader_units = num_units }
-			add_to_temp_variable = { atk_units = num_units_offensive_combats }
-			add_to_temp_variable = { def_units = num_units_defensive_combats }
-		}
-		
-		
-		# Defending: 100% consumption
-		add_to_temp_variable = { total_demand = def_units }
-		
-		set_variable = {
-			JAM_army_ammo_demand_defending = def_units
-		}
-		divide_variable = {
-			JAM_army_ammo_demand_defending = total_units
-		}
-		multiply_variable = {
-			JAM_army_ammo_demand_defending = normal_max_demand
-		}
-		
-		# Attacking: 200% consumption
-		set_temp_variable	  = { temp_units   = atk_units }
-		multiply_temp_variable = { temp_units   = 2 }
-		add_to_temp_variable   = { total_demand = temp_units }
-		
-		set_variable = {
-			JAM_army_ammo_demand_attacking = temp_units
-		}
-		divide_variable = {
-			JAM_army_ammo_demand_attacking = total_units
-		}
-		multiply_variable = {
-			JAM_army_ammo_demand_attacking = normal_max_demand
-		}
-		
-		# Calculate ratio
-		divide_temp_variable = { total_demand = total_units }
-	}
-	else = {
-		set_variable = {
-			var   = JAM_army_ammo_demand_max
-			value = 0
-		}
-	}
-	
-	# Final output
-	set_variable = {
-		var   = JAM_army_ammo_demand_now
-		value = normal_max_demand
-	}
-	multiply_variable = {
-		JAM_army_ammo_demand_now = total_demand
-	}
+        
+        # Misc. ammo-less
+        set_temp_variable = { temp_units = num_battalions_with_type@logistics_company }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@winter_logistics_support }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@maintenance_company }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@armored_maintenance }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@engineer }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@pioneer_support }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@assault_engineer }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@armored_engineer }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@bus }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@helicopter_brigade }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@helicopter_recon }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@helicopter_transport }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@field_hospital }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@helicopter_field_hospital }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@signal_company }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        set_temp_variable = { temp_units = num_battalions_with_type@armored_signal }
+        subtract_from_temp_variable = { total_units = temp_units }
+        
+        # Fallback
+        if = {
+            limit = {
+                check_variable = { total_units > 0 }
+            }
+            set_temp_variable = { temp_demand = @JAM_army_fallback_ammo }
+            multiply_temp_variable = { temp_demand      = total_units   }
+            add_to_temp_variable   = { total_demand     = temp_demand   }
+            subtract_from_temp_variable = { total_units = temp_units    }
+        }
+        
+        # Doctrine multiplier
+        if = {
+            limit = {
+                has_tech = superior_firepower
+                has_game_rule = {
+                    rule   = JAM_gr_army_ammo_sup_fire_mult
+                    option = enable
+                }
+            }
+            multiply_temp_variable = { total_demand = @JAM_army_sup_fpwr_mult }
+        }
+        
+        # Balancing multiplier
+        multiply_temp_variable = { total_demand = @JAM_army_ammo_mult }
+        
+        # Record theoretical max demand
+        set_temp_variable = {
+            var   = normal_max_demand # Saving a copy for later use - see below
+            value = total_demand
+        }
+        set_variable = {
+            var   = JAM_army_ammo_demand_max
+            value = total_demand
+        }
+        multiply_variable = { # Theoretical max if every land division is attacking simultaneously
+            JAM_army_ammo_demand_max = 2
+        }
+        
+        # Calculate current demand
+        # Current working theory: just take the % of troops currently in combat and scale the ammo use by that
+        # This is how the OG Ammunition and Ebby's Ammunition mods do it; I don't think there's a better way than that
+        # since it is currently impossible to tell which individual units are in battle (or doing anything besides
+        # idling) and which aren't.
+        # Also adds a penalty for any units without a general because we can only get the current units in combat which
+        # are led by a commander, and we want to penalize players for trying to cheat the game. Ebby's (and probably the
+        # original) already do this by making all leaderless units count as units in defensive combat, but I want to
+        # make this penalty smaller.
+        set_temp_variable = {
+            total_units = num_divisions
+        }
+        set_temp_variable = {
+            total_demand = 0
+        }
+        set_temp_variable = {
+            temp_units = 0
+        }
+        set_temp_variable = {
+            atk_units = 0
+        }
+        set_temp_variable = {
+            def_units = 0
+        }
+        set_temp_variable = {
+            no_leader_units = num_divisions
+        }
+        
+        # Sum up units
+        every_army_leader = {
+            limit = {
+                is_leading_army_group = no
+            }
+            subtract_from_temp_variable = { no_leader_units = num_units }
+            add_to_temp_variable = { atk_units = num_units_offensive_combats }
+            add_to_temp_variable = { def_units = num_units_defensive_combats }
+        }
+        
+        
+        # Defending: 100% consumption
+        add_to_temp_variable = { total_demand = def_units }
+        
+        set_variable = {
+            JAM_army_ammo_demand_defending = def_units
+        }
+        divide_variable = {
+            JAM_army_ammo_demand_defending = total_units
+        }
+        multiply_variable = {
+            JAM_army_ammo_demand_defending = normal_max_demand
+        }
+        
+        # Attacking: 200% consumption
+        set_temp_variable      = { temp_units   = atk_units }
+        multiply_temp_variable = { temp_units   = 2 }
+        add_to_temp_variable   = { total_demand = temp_units }
+        
+        set_variable = {
+            JAM_army_ammo_demand_attacking = temp_units
+        }
+        divide_variable = {
+            JAM_army_ammo_demand_attacking = total_units
+        }
+        multiply_variable = {
+            JAM_army_ammo_demand_attacking = normal_max_demand
+        }
+        
+        # Calculate ratio
+        divide_temp_variable = { total_demand = total_units }
+    }
+    else = {
+        set_variable = {
+            var   = JAM_army_ammo_demand_max
+            value = 0
+        }
+    }
+    
+    # Final output
+    set_variable = {
+        var   = JAM_army_ammo_demand_now
+        value = normal_max_demand
+    }
+    multiply_variable = {
+        JAM_army_ammo_demand_now = total_demand
+    }
 }
 
 # Determine total current ammo demand of the navy
@@ -841,161 +841,161 @@ JAM_se_calculate_army_ammo_demand = {
 #   JAM_navy_ammo_demand_now: Total qty. of ammo demanded right now, in thousands; will always be 0 if not at war
 #   JAM_navy_ammo_demand_max: Total qty. of ammo demanded if at maximum demand, in thousands
 JAM_se_calculate_navy_ammo_demand = {
-	# Declaring some working variables
-	set_temp_variable = {
-		var   = total_units
-		value = num_ships
-	}
-	set_temp_variable = {
-		var   = total_demand
-		value = 0
-	}
-	set_temp_variable = {
-		var   = temp_units
-		value = 0
-	}
-	set_temp_variable = {
-		var   = temp_demand
-		value = 0
-	}
-	
-	# Calculate total possible demand
-	if = {
-		limit = {
-			check_variable = { total_units > 0 }
-		}
-		
-		set_temp_variable = { temp_units  = num_ships_with_type@carrier }
-		set_temp_variable = { temp_demand = @JAM_navy_CV_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_ships_with_type@battleship }
-		set_temp_variable = { temp_demand = @JAM_navy_BB_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_ships_with_type@battle_cruiser }
-		set_temp_variable = { temp_demand = @JAM_navy_BC_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_ships_with_type@heavy_cruiser }
-		set_temp_variable = { temp_demand = @JAM_navy_CA_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_ships_with_type@light_cruiser }
-		set_temp_variable = { temp_demand = @JAM_navy_CL_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_ships_with_type@destroyer }
-		set_temp_variable = { temp_demand = @JAM_navy_DD_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_ships_with_type@submarine }
-		set_temp_variable = { temp_demand = @JAM_navy_SS_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Fallback
-		if = {
-			limit = {
-				check_variable = { total_units > 0 }
-			}
-			set_temp_variable = { temp_demand = @JAM_navy_fallback_ammo }
-			multiply_temp_variable = { temp_demand	  = total_units   }
-			add_to_temp_variable   = { total_demand	 = temp_demand   }
-			subtract_from_temp_variable = { total_units = temp_units	}
-		}
-		
-		# Balancing multiplier
-		multiply_temp_variable = { total_demand = @JAM_navy_ammo_mult }
-		
-		# Record theoretical max demand
-		set_variable = {
-			var   = JAM_navy_ammo_demand_max
-			value = total_demand
-		}
-		
-		# Calculate current demand
-		# Current working theory: find % of ships currently out on the seas (i.e. not docked)
-		# It appears to be impossible to calculate which specific ships are in combat
-		# Always returns 0 if not at war
-		if = {
-			limit = {
-				has_war = yes
-			}
-			set_temp_variable = {
-				total_units = num_ships
-			}
-			set_temp_variable = {
-				temp_demand = num_ships
-			}
-			
-			save_event_target_as = country # make it scope-/context-agnostic
-			every_state = { # Subtracts total amount of docked ships from `temp_demand`
-				limit = {
-					naval_base > 0
-				}
-				save_event_target_as = state_target
-				event_target:country = {
-					if = {
-						limit = {
-							ships_in_state_ports = {
-								size  > 0
-								state = event_target:state_target
-							}
-						}
-						set_temp_variable = { i = 0 }
-						while_loop_effect = {
-							limit = {
-								check_variable = { i < 100 }
-								ships_in_state_ports = {
-									size  > i
-									state = event_target:state_target
-								}
-							}
-							add_to_temp_variable = { i = 1 }
-						}
-						subtract_from_temp_variable = {
-							temp_demand = i
-						}
-					}
-				}
-			}
-		}
-		else = {
-			set_temp_variable = {
-				temp_demand = 0
-			}
-		}
-		
-		# Calculate ratio
-		divide_temp_variable   = { temp_demand  = total_units }
-		multiply_temp_variable = { total_demand = temp_demand }
-	}
-	else = {
-		set_variable = {
-			var   = JAM_navy_ammo_demand_max
-			value = 0
-		}
-	}
-	
-	# Final output
-	set_variable = {
-		var   = JAM_navy_ammo_demand_now
-		value = total_demand
-	}
+    # Declaring some working variables
+    set_temp_variable = {
+        var   = total_units
+        value = num_ships
+    }
+    set_temp_variable = {
+        var   = total_demand
+        value = 0
+    }
+    set_temp_variable = {
+        var   = temp_units
+        value = 0
+    }
+    set_temp_variable = {
+        var   = temp_demand
+        value = 0
+    }
+    
+    # Calculate total possible demand
+    if = {
+        limit = {
+            check_variable = { total_units > 0 }
+        }
+        
+        set_temp_variable = { temp_units  = num_ships_with_type@carrier }
+        set_temp_variable = { temp_demand = @JAM_navy_CV_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_ships_with_type@battleship }
+        set_temp_variable = { temp_demand = @JAM_navy_BB_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_ships_with_type@battle_cruiser }
+        set_temp_variable = { temp_demand = @JAM_navy_BC_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_ships_with_type@heavy_cruiser }
+        set_temp_variable = { temp_demand = @JAM_navy_CA_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_ships_with_type@light_cruiser }
+        set_temp_variable = { temp_demand = @JAM_navy_CL_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_ships_with_type@destroyer }
+        set_temp_variable = { temp_demand = @JAM_navy_DD_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_ships_with_type@submarine }
+        set_temp_variable = { temp_demand = @JAM_navy_SS_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Fallback
+        if = {
+            limit = {
+                check_variable = { total_units > 0 }
+            }
+            set_temp_variable = { temp_demand = @JAM_navy_fallback_ammo }
+            multiply_temp_variable = { temp_demand      = total_units   }
+            add_to_temp_variable   = { total_demand     = temp_demand   }
+            subtract_from_temp_variable = { total_units = temp_units    }
+        }
+        
+        # Balancing multiplier
+        multiply_temp_variable = { total_demand = @JAM_navy_ammo_mult }
+        
+        # Record theoretical max demand
+        set_variable = {
+            var   = JAM_navy_ammo_demand_max
+            value = total_demand
+        }
+        
+        # Calculate current demand
+        # Current working theory: find % of ships currently out on the seas (i.e. not docked)
+        # It appears to be impossible to calculate which specific ships are in combat
+        # Always returns 0 if not at war
+        if = {
+            limit = {
+                has_war = yes
+            }
+            set_temp_variable = {
+                total_units = num_ships
+            }
+            set_temp_variable = {
+                temp_demand = num_ships
+            }
+            
+            save_event_target_as = country # make it scope-/context-agnostic
+            every_state = { # Subtracts total amount of docked ships from `temp_demand`
+                limit = {
+                    naval_base > 0
+                }
+                save_event_target_as = state_target
+                event_target:country = {
+                    if = {
+                        limit = {
+                            ships_in_state_ports = {
+                                size  > 0
+                                state = event_target:state_target
+                            }
+                        }
+                        set_temp_variable = { i = 0 }
+                        while_loop_effect = {
+                            limit = {
+                                check_variable = { i < 100 }
+                                ships_in_state_ports = {
+                                    size  > i
+                                    state = event_target:state_target
+                                }
+                            }
+                            add_to_temp_variable = { i = 1 }
+                        }
+                        subtract_from_temp_variable = {
+                            temp_demand = i
+                        }
+                    }
+                }
+            }
+        }
+        else = {
+            set_temp_variable = {
+                temp_demand = 0
+            }
+        }
+        
+        # Calculate ratio
+        divide_temp_variable   = { temp_demand  = total_units }
+        multiply_temp_variable = { total_demand = temp_demand }
+    }
+    else = {
+        set_variable = {
+            var   = JAM_navy_ammo_demand_max
+            value = 0
+        }
+    }
+    
+    # Final output
+    set_variable = {
+        var   = JAM_navy_ammo_demand_now
+        value = total_demand
+    }
 }
 
 # Determine total current ammo demand of the air force
@@ -1003,226 +1003,226 @@ JAM_se_calculate_navy_ammo_demand = {
 #   JAM_air_ammo_demand_now: Total qty. of ammo demanded right now, in thousands; will always be 0 if not at war
 #   JAM_air_ammo_demand_max: Total qty. of ammo demanded if at maximum demand, in thousands
 JAM_se_calculate_air_ammo_demand = {
-	# Declaring some working variables
-	set_temp_variable = {
-		var   = total_units
-		value = num_deployed_planes
-	}
-	set_temp_variable = {
-		var   = total_demand
-		value = 0
-	}
-	set_temp_variable = {
-		var   = temp_units
-		value = 0
-	}
-	set_temp_variable = {
-		var   = temp_demand
-		value = 0
-	}
-	
-	# Calculate total possible demand
-	if = {
-		limit = {
-			check_variable = { total_units > 0 }
-		}
-		
-		# Small props
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@fighter }
-		set_temp_variable = { temp_demand = @JAM_air_FTR_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@cv_fighter }
-		set_temp_variable = { temp_demand = @JAM_air_CVF_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@cas }
-		set_temp_variable = { temp_demand = @JAM_air_CAS_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@cv_cas }
-		set_temp_variable = { temp_demand = @JAM_air_CVC_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@nav_bomber }
-		set_temp_variable = { temp_demand = @JAM_air_NAV_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@cv_nav_bomber }
-		set_temp_variable = { temp_demand = @JAM_air_CVN_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@suicide_craft }
-		set_temp_variable = { temp_demand = @JAM_air_KMK_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@cv_suicide_craft }
-		set_temp_variable = { temp_demand = @JAM_air_CKM_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Medium props
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@tac_bomber }
-		set_temp_variable = { temp_demand = @JAM_air_TAB_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@heavy_fighter }
-		set_temp_variable = { temp_demand = @JAM_air_HFT_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@scout_plane }
-		set_temp_variable = { temp_demand = @JAM_air_SCP_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Heavy props
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@strat_bomber }
-		set_temp_variable = { temp_demand = @JAM_air_STB_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@maritime_patrol_plane }
-		set_temp_variable = { temp_demand = @JAM_air_MPP_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@strat_bomber_intercontinental }
-		set_temp_variable = { temp_demand = @JAM_air_ITC_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Jets
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@jet_fighter }
-		set_temp_variable = { temp_demand = @JAM_air_JFT_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@jet_tac_bomber }
-		set_temp_variable = { temp_demand = @JAM_air_JTB_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@jet_strat_bomber }
-		set_temp_variable = { temp_demand = @JAM_air_JSB_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Misc. ammo-less
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@rocket_interceptor }
-		set_temp_variable = { temp_demand = @JAM_air_RIT_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@transport_plane }
-		set_temp_variable = { temp_demand = @JAM_air_TRP_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@guided_missile }
-		set_temp_variable = { temp_demand = @JAM_air_GDM_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@explosive_ammo }
-		set_temp_variable = { temp_demand = @JAM_air_EXA_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@ballistic_missile }
-		set_temp_variable = { temp_demand = @JAM_air_BM_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@nuclear_missile }
-		set_temp_variable = { temp_demand = @JAM_air_NM_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		set_temp_variable = { temp_units  = num_deployed_planes_with_type@sam_missile }
-		set_temp_variable = { temp_demand = @JAM_air_SAM_ammo	 }
-		multiply_temp_variable = { temp_demand	  = temp_units  }
-		add_to_temp_variable   = { total_demand	 = temp_demand }
-		subtract_from_temp_variable = { total_units = temp_units  }
-		
-		# Fallback
-		if = {
-			limit = {
-				check_variable = { total_units > 0 }
-			}
-			set_temp_variable = { temp_demand = @JAM_air_fallback_ammo }
-			multiply_temp_variable = { temp_demand	  = total_units  }
-			add_to_temp_variable   = { total_demand	 = temp_demand  }
-			subtract_from_temp_variable = { total_units = temp_units   }
-		}
-		
-		# Balancing multiplier
-		multiply_temp_variable = { total_demand = @JAM_air_ammo_mult }
-		
-		# Record theoretical max demand
-		set_variable = {
-			var   = JAM_air_ammo_demand_max
-			value = total_demand
-		}
-		
-		# Calculate current demand
-		# Current working theory: deployed air wings consume ammo - I'm really not sure what else I could do lol
-		# Always returns 0 if not at war
-		if = {
-			limit = {
-				has_war = yes
-			}
-			# NOP
-		}
-		else = {
-			set_temp_variable = {
-				total_demand = 0
-			}
-		}
-	}
-	else = {
-		set_variable = {
-			var   = JAM_air_ammo_demand_max
-			value = 0
-		}
-	}
-	
-	# Final output
-	set_variable = {
-		var   = JAM_air_ammo_demand_now
-		value = total_demand
-	}
+    # Declaring some working variables
+    set_temp_variable = {
+        var   = total_units
+        value = num_deployed_planes
+    }
+    set_temp_variable = {
+        var   = total_demand
+        value = 0
+    }
+    set_temp_variable = {
+        var   = temp_units
+        value = 0
+    }
+    set_temp_variable = {
+        var   = temp_demand
+        value = 0
+    }
+    
+    # Calculate total possible demand
+    if = {
+        limit = {
+            check_variable = { total_units > 0 }
+        }
+        
+        # Small props
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@fighter }
+        set_temp_variable = { temp_demand = @JAM_air_FTR_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@cv_fighter }
+        set_temp_variable = { temp_demand = @JAM_air_CVF_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@cas }
+        set_temp_variable = { temp_demand = @JAM_air_CAS_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@cv_cas }
+        set_temp_variable = { temp_demand = @JAM_air_CVC_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@nav_bomber }
+        set_temp_variable = { temp_demand = @JAM_air_NAV_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@cv_nav_bomber }
+        set_temp_variable = { temp_demand = @JAM_air_CVN_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@suicide_craft }
+        set_temp_variable = { temp_demand = @JAM_air_KMK_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@cv_suicide_craft }
+        set_temp_variable = { temp_demand = @JAM_air_CKM_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Medium props
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@tac_bomber }
+        set_temp_variable = { temp_demand = @JAM_air_TAB_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@heavy_fighter }
+        set_temp_variable = { temp_demand = @JAM_air_HFT_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@scout_plane }
+        set_temp_variable = { temp_demand = @JAM_air_SCP_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Heavy props
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@strat_bomber }
+        set_temp_variable = { temp_demand = @JAM_air_STB_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@maritime_patrol_plane }
+        set_temp_variable = { temp_demand = @JAM_air_MPP_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@strat_bomber_intercontinental }
+        set_temp_variable = { temp_demand = @JAM_air_ITC_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Jets
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@jet_fighter }
+        set_temp_variable = { temp_demand = @JAM_air_JFT_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@jet_tac_bomber }
+        set_temp_variable = { temp_demand = @JAM_air_JTB_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@jet_strat_bomber }
+        set_temp_variable = { temp_demand = @JAM_air_JSB_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Misc. ammo-less
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@rocket_interceptor }
+        set_temp_variable = { temp_demand = @JAM_air_RIT_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@transport_plane }
+        set_temp_variable = { temp_demand = @JAM_air_TRP_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@guided_missile }
+        set_temp_variable = { temp_demand = @JAM_air_GDM_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@explosive_ammo }
+        set_temp_variable = { temp_demand = @JAM_air_EXA_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@ballistic_missile }
+        set_temp_variable = { temp_demand = @JAM_air_BM_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@nuclear_missile }
+        set_temp_variable = { temp_demand = @JAM_air_NM_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        set_temp_variable = { temp_units  = num_deployed_planes_with_type@sam_missile }
+        set_temp_variable = { temp_demand = @JAM_air_SAM_ammo     }
+        multiply_temp_variable = { temp_demand      = temp_units  }
+        add_to_temp_variable   = { total_demand     = temp_demand }
+        subtract_from_temp_variable = { total_units = temp_units  }
+        
+        # Fallback
+        if = {
+            limit = {
+                check_variable = { total_units > 0 }
+            }
+            set_temp_variable = { temp_demand = @JAM_air_fallback_ammo }
+            multiply_temp_variable = { temp_demand      = total_units  }
+            add_to_temp_variable   = { total_demand     = temp_demand  }
+            subtract_from_temp_variable = { total_units = temp_units   }
+        }
+        
+        # Balancing multiplier
+        multiply_temp_variable = { total_demand = @JAM_air_ammo_mult }
+        
+        # Record theoretical max demand
+        set_variable = {
+            var   = JAM_air_ammo_demand_max
+            value = total_demand
+        }
+        
+        # Calculate current demand
+        # Current working theory: deployed air wings consume ammo - I'm really not sure what else I could do lol
+        # Always returns 0 if not at war
+        if = {
+            limit = {
+                has_war = yes
+            }
+            # NOP
+        }
+        else = {
+            set_temp_variable = {
+                total_demand = 0
+            }
+        }
+    }
+    else = {
+        set_variable = {
+            var   = JAM_air_ammo_demand_max
+            value = 0
+        }
+    }
+    
+    # Final output
+    set_variable = {
+        var   = JAM_air_ammo_demand_now
+        value = total_demand
+    }
 }
 
 # Determine current ammo supply
@@ -1231,170 +1231,170 @@ JAM_se_calculate_air_ammo_demand = {
 #   JAM_ammo_gain_busy: Qty. ammo produced by busy military factories, in thousands
 #   JAM_ammo_gain_idle: Qty. ammo produced by idle military factories, in thousands
 JAM_se_calculate_ammo_produced = {
-	# Set up base values
-	set_temp_variable = {
-		var   = ammunitions_plants
-		value = num_of_available_ammunitons_plants_building
-	}
-	
-	# Remove damaged mils
-	set_temp_variable = {
-		damaged_mils = 0
-	}
-	every_controlled_state = {
-		limit = {
-			arms_factory > 0
-		}
-		add_to_temp_variable = {
-			damaged_mils = damaged_building_level@arms_factory
-		}
-	}
-	subtract_from_temp_variable = {
-		idle_mils = damaged_mils
-	}
-	if = {
-		limit = {
-			check_variable = { idle_mils < 0 }
-		}
-		add_to_temp_variable = {
-			ammunitions_plants = idle_mils
-		}
-	}
-	clamp_temp_variable = {
-		var = idle_mils
-		min = 0
-	}
-	clamp_temp_variable = {
-		var = ammunitions_plants
-		min = 0
-	}
-	
-	# Get ammo production numbers
-	multiply_temp_variable = {
-		idle_mils = @JAM_idle_mil_ammo
-	}
-	multiply_temp_variable = {
-		ammunitions_plants = @JAM_busy_mil_ammo
-	}
-	
-	# Factory output modifier (from tech, etc.)
-	set_temp_variable = {
-		output_mult = 1
-	}
-	add_to_temp_variable = {
-		output_mult = modifier@industrial_capacity_factory
-	}
-	clamp_temp_variable = {
-		var = output_mult
-		min = 0
-	}
-	multiply_temp_variable = {
-		idle_mils = output_mult
-	}
-	multiply_temp_variable = {
-		ammunitions_plants = output_mult
-	}
-	
-	# Difficulty modifiers
-	if = {
-		limit = {
-			is_ai = yes
-		}
-		if = {
-			limit = {
-				has_game_rule = {
-					rule   = JAM_gr_ai_ammo_gain_difficulty_mult
-					option = very_easy
-				}
-			}
-			multiply_temp_variable = { idle_mils = @JAM_difficulty_very_easy_mult }
-			multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_very_easy_mult }
-		}
-		else_if = {
-			limit = {
-				has_game_rule = {
-					rule   = JAM_gr_ai_ammo_gain_difficulty_mult
-					option = easy
-				}
-			}
-			multiply_temp_variable = { idle_mils = @JAM_difficulty_easy_mult }
-			multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_easy_mult }
-		}
-		else_if = {
-			limit = {
-				has_game_rule = {
-					rule   = JAM_gr_ai_ammo_gain_difficulty_mult
-					option = hard
-				}
-			}
-			multiply_temp_variable = { idle_mils = @JAM_difficulty_hard_mult }
-			multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_hard_mult }
-		}
-		else_if = {
-			limit = {
-				has_game_rule = {
-					rule   = JAM_gr_ai_ammo_gain_difficulty_mult
-					option = very_hard
-				}
-			}
-			multiply_temp_variable = { idle_mils = @JAM_difficulty_very_hard_mult }
-			multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_very_hard_mult }
-		}
-	}
-	else = {
-		if = {
-			limit = {
-				has_game_rule = {
-					rule   = JAM_gr_player_ammo_gain_difficulty_mult
-					option = very_easy
-				}
-			}
-			multiply_temp_variable = { idle_mils = @JAM_difficulty_very_easy_mult }
-			multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_very_easy_mult }
-		}
-		else_if = {
-			limit = {
-				has_game_rule = {
-					rule   = JAM_gr_player_ammo_gain_difficulty_mult
-					option = easy
-				}
-			}
-			multiply_temp_variable = { idle_mils = @JAM_difficulty_easy_mult }
-			multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_easy_mult }
-		}
-		else_if = {
-			limit = {
-				has_game_rule = {
-					rule   = JAM_gr_player_ammo_gain_difficulty_mult
-					option = hard
-				}
-			}
-			multiply_temp_variable = { idle_mils = @JAM_difficulty_hard_mult }
-			multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_hard_mult }
-		}
-		else_if = {
-			limit = {
-				has_game_rule = {
-					rule   = JAM_gr_player_ammo_gain_difficulty_mult
-					option = very_hard
-				}
-			}
-			multiply_temp_variable = { idle_mils = @JAM_difficulty_very_hard_mult }
-			multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_very_hard_mult }
-		}
-	}
-	
-	# Final output
-	set_variable = {
-		JAM_ammo_gain_busy = ammunitions_plants
-	}
-	
-	set_variable = {
-		JAM_ammo_produced = idle_mils
-	}
-	add_to_variable = {
-		JAM_ammo_produced = ammunitions_plants
-	}
+    # Set up base values
+    set_temp_variable = {
+        var   = ammunitions_plants
+        value = num_of_available_ammunitons_plants_building
+    }
+    
+    # Remove damaged mils
+    set_temp_variable = {
+        damaged_mils = 0
+    }
+    every_controlled_state = {
+        limit = {
+            arms_factory > 0
+        }
+        add_to_temp_variable = {
+            damaged_mils = damaged_building_level@arms_factory
+        }
+    }
+    subtract_from_temp_variable = {
+        idle_mils = damaged_mils
+    }
+    if = {
+        limit = {
+            check_variable = { idle_mils < 0 }
+        }
+        add_to_temp_variable = {
+            ammunitions_plants = idle_mils
+        }
+    }
+    clamp_temp_variable = {
+        var = idle_mils
+        min = 0
+    }
+    clamp_temp_variable = {
+        var = ammunitions_plants
+        min = 0
+    }
+    
+    # Get ammo production numbers
+    multiply_temp_variable = {
+        idle_mils = @JAM_idle_mil_ammo
+    }
+    multiply_temp_variable = {
+        ammunitions_plants = @JAM_busy_mil_ammo
+    }
+    
+    # Factory output modifier (from tech, etc.)
+    set_temp_variable = {
+        output_mult = 1
+    }
+    add_to_temp_variable = {
+        output_mult = modifier@industrial_capacity_factory
+    }
+    clamp_temp_variable = {
+        var = output_mult
+        min = 0
+    }
+    multiply_temp_variable = {
+        idle_mils = output_mult
+    }
+    multiply_temp_variable = {
+        ammunitions_plants = output_mult
+    }
+    
+    # Difficulty modifiers
+    if = {
+        limit = {
+            is_ai = yes
+        }
+        if = {
+            limit = {
+                has_game_rule = {
+                    rule   = JAM_gr_ai_ammo_gain_difficulty_mult
+                    option = very_easy
+                }
+            }
+            multiply_temp_variable = { idle_mils = @JAM_difficulty_very_easy_mult }
+            multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_very_easy_mult }
+        }
+        else_if = {
+            limit = {
+                has_game_rule = {
+                    rule   = JAM_gr_ai_ammo_gain_difficulty_mult
+                    option = easy
+                }
+            }
+            multiply_temp_variable = { idle_mils = @JAM_difficulty_easy_mult }
+            multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_easy_mult }
+        }
+        else_if = {
+            limit = {
+                has_game_rule = {
+                    rule   = JAM_gr_ai_ammo_gain_difficulty_mult
+                    option = hard
+                }
+            }
+            multiply_temp_variable = { idle_mils = @JAM_difficulty_hard_mult }
+            multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_hard_mult }
+        }
+        else_if = {
+            limit = {
+                has_game_rule = {
+                    rule   = JAM_gr_ai_ammo_gain_difficulty_mult
+                    option = very_hard
+                }
+            }
+            multiply_temp_variable = { idle_mils = @JAM_difficulty_very_hard_mult }
+            multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_very_hard_mult }
+        }
+    }
+    else = {
+        if = {
+            limit = {
+                has_game_rule = {
+                    rule   = JAM_gr_player_ammo_gain_difficulty_mult
+                    option = very_easy
+                }
+            }
+            multiply_temp_variable = { idle_mils = @JAM_difficulty_very_easy_mult }
+            multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_very_easy_mult }
+        }
+        else_if = {
+            limit = {
+                has_game_rule = {
+                    rule   = JAM_gr_player_ammo_gain_difficulty_mult
+                    option = easy
+                }
+            }
+            multiply_temp_variable = { idle_mils = @JAM_difficulty_easy_mult }
+            multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_easy_mult }
+        }
+        else_if = {
+            limit = {
+                has_game_rule = {
+                    rule   = JAM_gr_player_ammo_gain_difficulty_mult
+                    option = hard
+                }
+            }
+            multiply_temp_variable = { idle_mils = @JAM_difficulty_hard_mult }
+            multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_hard_mult }
+        }
+        else_if = {
+            limit = {
+                has_game_rule = {
+                    rule   = JAM_gr_player_ammo_gain_difficulty_mult
+                    option = very_hard
+                }
+            }
+            multiply_temp_variable = { idle_mils = @JAM_difficulty_very_hard_mult }
+            multiply_temp_variable = { ammunitions_plants = @JAM_difficulty_very_hard_mult }
+        }
+    }
+    
+    # Final output
+    set_variable = {
+        JAM_ammo_gain_busy = ammunitions_plants
+    }
+    
+    set_variable = {
+        JAM_ammo_produced = idle_mils
+    }
+    add_to_variable = {
+        JAM_ammo_produced = ammunitions_plants
+    }
 }
 
 # Determine current ammo capacity
@@ -1402,29 +1402,29 @@ JAM_se_calculate_ammo_produced = {
 #   JAM_ammo_capacity:  Total ammo capacity, in thousands
 #   JAM_ammo_cap_infra: Total ammo capacity excluding the quantity from base, in thousands
 JAM_se_calculate_ammo_capacity = {
-	set_temp_variable = {
-		ammo_cap = 0
-	}
-	every_controlled_state = {
-		set_temp_variable = {
-			temp_cap = infrastructure_level
-		}
-		multiply_temp_variable = {
-			temp_cap = @JAM_ammo_cap_per_infra
-		}
-		add_to_temp_variable = {
-			ammo_cap = temp_cap
-		}
-	}
-	set_variable = {
-		JAM_ammo_cap_infra = ammo_cap
-	}
-	add_to_temp_variable = {
-		ammo_cap = @JAM_base_ammo_capacity
-	}
-	set_variable = {
-		JAM_ammo_capacity = ammo_cap
-	}
+    set_temp_variable = {
+        ammo_cap = 0
+    }
+    every_controlled_state = {
+        set_temp_variable = {
+            temp_cap = infrastructure_level
+        }
+        multiply_temp_variable = {
+            temp_cap = @JAM_ammo_cap_per_infra
+        }
+        add_to_temp_variable = {
+            ammo_cap = temp_cap
+        }
+    }
+    set_variable = {
+        JAM_ammo_cap_infra = ammo_cap
+    }
+    add_to_temp_variable = {
+        ammo_cap = @JAM_base_ammo_capacity
+    }
+    set_variable = {
+        JAM_ammo_capacity = ammo_cap
+    }
 }
 
 # Computes some misc. deriative values
@@ -1447,183 +1447,183 @@ JAM_se_calculate_ammo_capacity = {
 #   JAM_ammo_gain_idle_M
 #   JAM_ammo_capacity_M
 #   JAM_ammo_cap_infra_M
-#   JAM_ammo_net_change:	   Current net change in ammo quantity
+#   JAM_ammo_net_change:       Current net change in ammo quantity
 #   JAM_ammo_is_accumulating:  Indicates if ammo is accumulating (net inflow) or not. 0 -> false, 1 -> true
 #   JAM_ammo_days_remaining:   Number of days until max ammo if accumulating or until no ammo left if not accumulating
 #   JAM_ammo_months_remaining: Same as above but in months
 #   JAM_ammo_years_remaining:  Same as above but in years
 JAM_se_calculate_derivative_values = {
-	# Total demand
-	set_variable	= { JAM_total_ammo_demand_now = JAM_army_ammo_demand_now }
-	add_to_variable = { JAM_total_ammo_demand_now = JAM_navy_ammo_demand_now }
-	add_to_variable = { JAM_total_ammo_demand_now = JAM_air_ammo_demand_now  }
-	
-	set_variable	= { JAM_total_ammo_demand_max = JAM_army_ammo_demand_max }
-	add_to_variable = { JAM_total_ammo_demand_max = JAM_navy_ammo_demand_max }
-	add_to_variable = { JAM_total_ammo_demand_max = JAM_air_ammo_demand_max  }
-	
-	# Millions vars
-	set_variable	= { JAM_army_ammo_demand_now_M = JAM_army_ammo_demand_now }
-	divide_variable = { JAM_army_ammo_demand_now_M = 500 }
-	set_variable	= { JAM_army_ammo_demand_max_M = JAM_army_ammo_demand_max }
-	divide_variable = { JAM_army_ammo_demand_max_M = 500 }
-	set_variable	= { JAM_army_ammo_demand_defending_M  = JAM_army_ammo_demand_defending }
-	divide_variable = { JAM_army_ammo_demand_defending_M  = 1000 }
-	set_variable	= { JAM_army_ammo_demand_attacking_M  = JAM_army_ammo_demand_attacking }
-	divide_variable = { JAM_army_ammo_demand_attacking_M  = 1000 }
-	set_variable	= { JAM_navy_ammo_demand_now_M  = JAM_navy_ammo_demand_now }
-	divide_variable = { JAM_navy_ammo_demand_now_M  = 500 }
-	set_variable	= { JAM_navy_ammo_demand_max_M  = JAM_navy_ammo_demand_max }
-	divide_variable = { JAM_navy_ammo_demand_max_M  = 500 }
-	set_variable	= { JAM_air_ammo_demand_now_M   = JAM_air_ammo_demand_now }
-	divide_variable = { JAM_air_ammo_demand_now_M   = 500 }
-	set_variable	= { JAM_air_ammo_demand_max_M   = JAM_air_ammo_demand_max }
-	divide_variable = { JAM_air_ammo_demand_max_M   = 500 }
-	set_variable	= { JAM_total_ammo_demand_now_M = JAM_total_ammo_demand_now }
-	divide_variable = { JAM_total_ammo_demand_now_M = 500 }
-	set_variable	= { JAM_total_ammo_demand_max_M = JAM_total_ammo_demand_max }
-	divide_variable = { JAM_total_ammo_demand_max_M = 500 }
-	set_variable	= { JAM_ammo_produced_M  = JAM_ammo_produced }
-	divide_variable = { JAM_ammo_produced_M  = 1000 }
-	set_variable	= { JAM_ammo_gain_busy_M = JAM_ammo_gain_busy }
-	divide_variable = { JAM_ammo_gain_busy_M = 1000 }
-	set_variable	= { JAM_ammo_gain_idle_M = JAM_ammo_gain_idle }
-	divide_variable = { JAM_ammo_gain_idle_M = 1000 }
-	set_variable	= { JAM_ammo_capacity_M  = JAM_ammo_capacity }
-	divide_variable = { JAM_ammo_capacity_M  = 1000 }
-	set_variable	= { JAM_ammo_cap_infra_M = JAM_ammo_cap_infra }
-	divide_variable = { JAM_ammo_cap_infra_M = 1000 }
-	
-	# Net change
-	set_temp_variable = {
-		ammo_net = JAM_ammo_produced
-	}
-	subtract_from_temp_variable = {
-		ammo_net = JAM_army_ammo_demand_now
-	}
-	subtract_from_temp_variable = {
-		ammo_net = JAM_navy_ammo_demand_now
-	}
-	subtract_from_temp_variable = {
-		ammo_net = JAM_air_ammo_demand_now
-	}
-	set_variable = {
-		JAM_ammo_net_change = ammo_net
-	}
-	
-	# Days remaining
-	if = {
-		limit = {
-			NOT = {
-				AND = {
-					has_variable = JAM_ammo_stockpile
-					has_variable = JAM_ammo_capacity
-				}
-			}
-		}
-		set_variable = {
-			JAM_ammo_stockpile = 0
-		}
-		JAM_se_calculate_ammo_capacity = yes
-	}
-	if = {
-		limit = {
-			check_variable = { ammo_net > 0 }
-		}
-		set_variable = {
-			JAM_ammo_is_accumulating = 1
-		}
-		
-		set_temp_variable  = {
-			remaining_ammo = JAM_ammo_capacity
-		}
-		subtract_from_temp_variable  = {
-			remaining_ammo = JAM_ammo_stockpile
-		}
-		subtract_from_temp_variable  = {
-			remaining_ammo = ammo_net
-		}
-		set_variable = {
-			JAM_ammo_days_remaining = remaining_ammo
-		}
-		divide_variable = {
-			JAM_ammo_days_remaining = JAM_ammo_net_change
-		}
-		
-		set_variable = {
-			JAM_ammo_months_remaining = JAM_ammo_days_remaining
-		}
-		divide_variable = {
-			JAM_ammo_months_remaining = 30
-		}
-		
-		set_variable = {
-			JAM_ammo_years_remaining = JAM_ammo_days_remaining
-		}
-		divide_variable = {
-			JAM_ammo_years_remaining = 365
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = { ammo_net < 0 }
-		}
-		set_variable = {
-			JAM_ammo_is_accumulating = 0
-		}
-		
-		set_temp_variable  = {
-			remaining_ammo = JAM_ammo_stockpile
-		}
-		add_to_temp_variable = {
-			remaining_ammo   = ammo_net
-		}
-		set_variable = {
-			JAM_ammo_days_remaining = remaining_ammo
-		}
-		divide_variable = {
-			JAM_ammo_days_remaining = JAM_ammo_net_change
-		}
-		multiply_variable = {
-			JAM_ammo_days_remaining = -1 # flip sign to positive
-		}
-		
-		set_variable = {
-			JAM_ammo_months_remaining = JAM_ammo_days_remaining
-		}
-		divide_variable = {
-			JAM_ammo_months_remaining = 30
-		}
-		
-		set_variable = {
-			JAM_ammo_years_remaining = JAM_ammo_days_remaining
-		}
-		divide_variable = {
-			JAM_ammo_years_remaining = 365
-		}
-	}
-	else = {
-		set_variable = {
-			JAM_ammo_is_accumulating = 1
-		}
-		set_variable = {
-			JAM_ammo_days_remaining = 36500 # arbitrary high number lol
-		}
-		set_variable = {
-			JAM_ammo_months_remaining = 1200
-		}
-		set_variable = {
-			JAM_ammo_years_remaining = 100
-		}
-	}
+    # Total demand
+    set_variable    = { JAM_total_ammo_demand_now = JAM_army_ammo_demand_now }
+    add_to_variable = { JAM_total_ammo_demand_now = JAM_navy_ammo_demand_now }
+    add_to_variable = { JAM_total_ammo_demand_now = JAM_air_ammo_demand_now  }
+    
+    set_variable    = { JAM_total_ammo_demand_max = JAM_army_ammo_demand_max }
+    add_to_variable = { JAM_total_ammo_demand_max = JAM_navy_ammo_demand_max }
+    add_to_variable = { JAM_total_ammo_demand_max = JAM_air_ammo_demand_max  }
+    
+    # Millions vars
+    set_variable    = { JAM_army_ammo_demand_now_M = JAM_army_ammo_demand_now }
+    divide_variable = { JAM_army_ammo_demand_now_M = 500 }
+    set_variable    = { JAM_army_ammo_demand_max_M = JAM_army_ammo_demand_max }
+    divide_variable = { JAM_army_ammo_demand_max_M = 500 }
+    set_variable    = { JAM_army_ammo_demand_defending_M  = JAM_army_ammo_demand_defending }
+    divide_variable = { JAM_army_ammo_demand_defending_M  = 1000 }
+    set_variable    = { JAM_army_ammo_demand_attacking_M  = JAM_army_ammo_demand_attacking }
+    divide_variable = { JAM_army_ammo_demand_attacking_M  = 1000 }
+    set_variable    = { JAM_navy_ammo_demand_now_M  = JAM_navy_ammo_demand_now }
+    divide_variable = { JAM_navy_ammo_demand_now_M  = 500 }
+    set_variable    = { JAM_navy_ammo_demand_max_M  = JAM_navy_ammo_demand_max }
+    divide_variable = { JAM_navy_ammo_demand_max_M  = 500 }
+    set_variable    = { JAM_air_ammo_demand_now_M   = JAM_air_ammo_demand_now }
+    divide_variable = { JAM_air_ammo_demand_now_M   = 500 }
+    set_variable    = { JAM_air_ammo_demand_max_M   = JAM_air_ammo_demand_max }
+    divide_variable = { JAM_air_ammo_demand_max_M   = 500 }
+    set_variable    = { JAM_total_ammo_demand_now_M = JAM_total_ammo_demand_now }
+    divide_variable = { JAM_total_ammo_demand_now_M = 500 }
+    set_variable    = { JAM_total_ammo_demand_max_M = JAM_total_ammo_demand_max }
+    divide_variable = { JAM_total_ammo_demand_max_M = 500 }
+    set_variable    = { JAM_ammo_produced_M  = JAM_ammo_produced }
+    divide_variable = { JAM_ammo_produced_M  = 1000 }
+    set_variable    = { JAM_ammo_gain_busy_M = JAM_ammo_gain_busy }
+    divide_variable = { JAM_ammo_gain_busy_M = 1000 }
+    set_variable    = { JAM_ammo_gain_idle_M = JAM_ammo_gain_idle }
+    divide_variable = { JAM_ammo_gain_idle_M = 1000 }
+    set_variable    = { JAM_ammo_capacity_M  = JAM_ammo_capacity }
+    divide_variable = { JAM_ammo_capacity_M  = 1000 }
+    set_variable    = { JAM_ammo_cap_infra_M = JAM_ammo_cap_infra }
+    divide_variable = { JAM_ammo_cap_infra_M = 1000 }
+    
+    # Net change
+    set_temp_variable = {
+        ammo_net = JAM_ammo_produced
+    }
+    subtract_from_temp_variable = {
+        ammo_net = JAM_army_ammo_demand_now
+    }
+    subtract_from_temp_variable = {
+        ammo_net = JAM_navy_ammo_demand_now
+    }
+    subtract_from_temp_variable = {
+        ammo_net = JAM_air_ammo_demand_now
+    }
+    set_variable = {
+        JAM_ammo_net_change = ammo_net
+    }
+    
+    # Days remaining
+    if = {
+        limit = {
+            NOT = {
+                AND = {
+                    has_variable = JAM_ammo_stockpile
+                    has_variable = JAM_ammo_capacity
+                }
+            }
+        }
+        set_variable = {
+            JAM_ammo_stockpile = 0
+        }
+        JAM_se_calculate_ammo_capacity = yes
+    }
+    if = {
+        limit = {
+            check_variable = { ammo_net > 0 }
+        }
+        set_variable = {
+            JAM_ammo_is_accumulating = 1
+        }
+        
+        set_temp_variable  = {
+            remaining_ammo = JAM_ammo_capacity
+        }
+        subtract_from_temp_variable  = {
+            remaining_ammo = JAM_ammo_stockpile
+        }
+        subtract_from_temp_variable  = {
+            remaining_ammo = ammo_net
+        }
+        set_variable = {
+            JAM_ammo_days_remaining = remaining_ammo
+        }
+        divide_variable = {
+            JAM_ammo_days_remaining = JAM_ammo_net_change
+        }
+        
+        set_variable = {
+            JAM_ammo_months_remaining = JAM_ammo_days_remaining
+        }
+        divide_variable = {
+            JAM_ammo_months_remaining = 30
+        }
+        
+        set_variable = {
+            JAM_ammo_years_remaining = JAM_ammo_days_remaining
+        }
+        divide_variable = {
+            JAM_ammo_years_remaining = 365
+        }
+    }
+    else_if = {
+        limit = {
+            check_variable = { ammo_net < 0 }
+        }
+        set_variable = {
+            JAM_ammo_is_accumulating = 0
+        }
+        
+        set_temp_variable  = {
+            remaining_ammo = JAM_ammo_stockpile
+        }
+        add_to_temp_variable = {
+            remaining_ammo   = ammo_net
+        }
+        set_variable = {
+            JAM_ammo_days_remaining = remaining_ammo
+        }
+        divide_variable = {
+            JAM_ammo_days_remaining = JAM_ammo_net_change
+        }
+        multiply_variable = {
+            JAM_ammo_days_remaining = -1 # flip sign to positive
+        }
+        
+        set_variable = {
+            JAM_ammo_months_remaining = JAM_ammo_days_remaining
+        }
+        divide_variable = {
+            JAM_ammo_months_remaining = 30
+        }
+        
+        set_variable = {
+            JAM_ammo_years_remaining = JAM_ammo_days_remaining
+        }
+        divide_variable = {
+            JAM_ammo_years_remaining = 365
+        }
+    }
+    else = {
+        set_variable = {
+            JAM_ammo_is_accumulating = 1
+        }
+        set_variable = {
+            JAM_ammo_days_remaining = 36500 # arbitrary high number lol
+        }
+        set_variable = {
+            JAM_ammo_months_remaining = 1200
+        }
+        set_variable = {
+            JAM_ammo_years_remaining = 100
+        }
+    }
 }
 
 # Runs all of the above
 JAM_se_calculate_all = {
-	JAM_se_calculate_ammo_capacity	 = yes
-	JAM_se_calculate_army_ammo_demand  = yes
-	JAM_se_calculate_navy_ammo_demand  = yes
-	JAM_se_calculate_air_ammo_demand   = yes
-	JAM_se_calculate_ammo_produced	 = yes
-	JAM_se_calculate_derivative_values = yes
+    JAM_se_calculate_ammo_capacity     = yes
+    JAM_se_calculate_army_ammo_demand  = yes
+    JAM_se_calculate_navy_ammo_demand  = yes
+    JAM_se_calculate_air_ammo_demand   = yes
+    JAM_se_calculate_ammo_produced     = yes
+    JAM_se_calculate_derivative_values = yes
 }
