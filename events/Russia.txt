@@ -55,7 +55,7 @@ country_event = {
 		name = russia.3.a
 
 
-	    UKR = {
+		UKR = {
 			country_event = ukraine.5
 		}
 	}
@@ -101,7 +101,7 @@ country_event = {
 	option = {
 		name = russia.6.a
 		complete_national_focus = RUS_coup_in_ukraine
-        custom_effect_tooltip = evacuation_of_yanukovich_tt
+		custom_effect_tooltip = evacuation_of_yanukovich_tt
 	}
 }
 
@@ -116,7 +116,7 @@ country_event = {
 	
 	option = {
 		name = russia.7.a
-        add_political_power = 25
+		add_political_power = 25
 	}
 }
 
@@ -131,7 +131,7 @@ country_event = {
 	
 	option = {
 		name = russia.8.a
-        add_political_power = -75
+		add_political_power = -75
 	}
 }
 
@@ -152,28 +152,28 @@ country_event = {
 			}
 			add_manpower = 4500
 			division_template = {
-	            name = "Otryad Iskra"
-	            regiments = {
-                    special_forces_infantry  = { x = 0 y = 0 }
-		            special_forces_infantry  = { x = 0 y = 1 }
-	            }
-                support = {
-                    engineer = { x = 0 y = 0 }
-                    recon = { x = 0 y = 1 }
-                    mortar = { x = 0 y = 2 }
-				    atgm_company = { x = 0 y = 3 }
-        		    field_hospital = { x = 0 y = 4} 
-        		    sniper_company = { x = 1 y = 0 }
-        		    signal_company = { x = 1 y = 1}
-  				    logistics_company = { x = 1 y = 2}
-	            }
-            }
+				name = "Otryad Iskra"
+				regiments = {
+					special_forces_infantry  = { x = 0 y = 0 }
+					special_forces_infantry  = { x = 0 y = 1 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					recon = { x = 0 y = 1 }
+					mortar = { x = 0 y = 2 }
+					atgm_company = { x = 0 y = 3 }
+					field_hospital = { x = 0 y = 4} 
+					sniper_company = { x = 1 y = 0 }
+					signal_company = { x = 1 y = 1}
+  					logistics_company = { x = 1 y = 2}
+				}
+			}
 			random_owned_controlled_state = {
 				create_unit = {
-				    division = "name = \"Otryad Iskra\" division_template = \"Otryad Iskra\" start_experience_factor = 0.7"
-				    owner = DPR
-				    count = 1
-			    }
+					division = "name = \"Otryad Iskra\" division_template = \"Otryad Iskra\" start_experience_factor = 0.7"
+					owner = DPR
+					count = 1
+				}
 			}
 		}
 		if = {
@@ -220,11 +220,11 @@ country_event = {
 			UKR = {
 				if = { 
 					limit = { 433 = { is_controlled_by = UKR } } 
-				    country_event = {
-					    id = ukraine.45
-					    days = 5
-				    }
-			    }
+					country_event = {
+						id = ukraine.45
+						days = 5
+					}
+				}
 				country_event = {
 					id = ukraine.86
 					days = 42
@@ -233,10 +233,10 @@ country_event = {
 				complete_national_focus = UKR_minsk_protocols
 			}
 			SKR = {
-			    country_event = {
-				    id = SKR.4
-				    hours = 18
-			    }
+				country_event = {
+					id = SKR.4
+					hours = 18
+				}
 			}
 			LPR = {
 				
@@ -278,7 +278,7 @@ country_event = {
 		name = russia.13.a
 		add_stability = 0.05
 		custom_effect_tooltip = Minsk_2_will_be_signed_tt
-        hidden_effect = {
+		hidden_effect = {
 			set_global_flag = Minsk2_is_signed
 			second_minsk_effect = yes
 			DPR = {
@@ -291,9 +291,9 @@ country_event = {
 			}
 			UKR = {
 				set_portraits = {
-                    character = UKR_petro_poroshenko
-                    civilian = { large ="GFX_portrait_petro_poroshenko_2" }
-                }
+					character = UKR_petro_poroshenko
+					civilian = { large ="GFX_portrait_petro_poroshenko_2" }
+				}
 			}
 		}
 	}
@@ -548,9 +548,9 @@ country_event = {
 		name = russia.28.a
 		add_war_support = 0.02
 		declare_war_on = {
-            target = UKR
-            type = annex_everything
-        }
+			target = UKR
+			type = annex_everything
+		}
 	}
 
 	option = {

@@ -42,23 +42,23 @@ country_event = {
 			value = Voter_turnout_ukraine_elections
 		}
 		divide_variable = {
-            var = Voter_turnout_procent_ukraine_elections
-            value = 100
-        }
+			var = Voter_turnout_procent_ukraine_elections
+			value = 100
+		}
 
 		### General population on elections
 		set_variable = {
 			var = General_population_on_elections
 			value = 195
 		}
-        multiply_variable = {
-            var = General_population_on_elections
-            value = 125000
-        }	
 		multiply_variable = {
-            var = General_population_on_elections
-            value = Voter_turnout_procent_ukraine_elections
-        }	
+			var = General_population_on_elections
+			value = 125000
+		}	
+		multiply_variable = {
+			var = General_population_on_elections
+			value = Voter_turnout_procent_ukraine_elections
+		}	
 		
 
 		### Stamine
@@ -72,78 +72,78 @@ country_event = {
 			var = general_population_support_timoshenko_value
 			value = Timoshenko_general_support
 		}
-        multiply_variable = {
-            var = general_population_support_timoshenko_value
-            value = 125000
-            tooltip = multiply_var_by_100_tt
-        }	
 		multiply_variable = {
-            var = general_population_support_timoshenko_value
-            value = Voter_turnout_procent_ukraine_elections
-        }
+			var = general_population_support_timoshenko_value
+			value = 125000
+			tooltip = multiply_var_by_100_tt
+		}	
+		multiply_variable = {
+			var = general_population_support_timoshenko_value
+			value = Voter_turnout_procent_ukraine_elections
+		}
 		# Poroshenko
 		set_variable = {
 			var = general_population_support_poroshenko_value
 			value = Poroshenko_general_support
 		}
-        multiply_variable = {
-            var = general_population_support_poroshenko_value
-            value = 125000
-            tooltip = multiply_var_by_100_tt
-        }	
 		multiply_variable = {
-            var = general_population_support_poroshenko_value
-            value = Voter_turnout_procent_ukraine_elections
-            tooltip = multiply_var_by_100_tt
-        }	
+			var = general_population_support_poroshenko_value
+			value = 125000
+			tooltip = multiply_var_by_100_tt
+		}	
+		multiply_variable = {
+			var = general_population_support_poroshenko_value
+			value = Voter_turnout_procent_ukraine_elections
+			tooltip = multiply_var_by_100_tt
+		}	
 		# Lyashko
 		set_variable = {
 			var = general_population_support_lyashko_value
 			value = Lyashko_general_support 
 		}
-        multiply_variable = {
-            var = general_population_support_lyashko_value
-            value = 125000
-            tooltip = multiply_var_by_100_tt
-        }	
 		multiply_variable = {
-            var = general_population_support_lyashko_value
-            value = Voter_turnout_procent_ukraine_elections
-        }	
+			var = general_population_support_lyashko_value
+			value = 125000
+			tooltip = multiply_var_by_100_tt
+		}	
+		multiply_variable = {
+			var = general_population_support_lyashko_value
+			value = Voter_turnout_procent_ukraine_elections
+		}	
 		# Mihail Dobkin
 		set_variable = {
 			var = general_population_support_dobkin_value
 			value = Dobkin_general_support 
 		}
-        multiply_variable = {
-            var = general_population_support_dobkin_value
-            value = 125000
-            tooltip = multiply_var_by_100_tt
-        }	
 		multiply_variable = {
-            var = general_population_support_dobkin_value
-            value = Voter_turnout_procent_ukraine_elections
-        }
+			var = general_population_support_dobkin_value
+			value = 125000
+			tooltip = multiply_var_by_100_tt
+		}	
+		multiply_variable = {
+			var = general_population_support_dobkin_value
+			value = Voter_turnout_procent_ukraine_elections
+		}
 		# Darth Alekseevich Vader
 		set_variable = {
 			var = general_population_support_darth_alekseevich_value
 			value = Darth_Alekseevich_Vader_general_support 
 		}
-        multiply_variable = {
-            var = general_population_support_darth_alekseevich_value
-            value = 125000
-            tooltip = multiply_var_by_100_tt
-        }	
 		multiply_variable = {
-            var = general_population_support_darth_alekseevich_value
-            value = Voter_turnout_procent_ukraine_elections
-        }		
+			var = general_population_support_darth_alekseevich_value
+			value = 125000
+			tooltip = multiply_var_by_100_tt
+		}	
+		multiply_variable = {
+			var = general_population_support_darth_alekseevich_value
+			value = Voter_turnout_procent_ukraine_elections
+		}		
 		##################################################
 		##################################################
 		### Timoshenko precentage support on elections ###
 		##################################################
 		##################################################
-        set_variable = {
+		set_variable = {
 			var = Timoshenko_percentage_result_on_elections
 			value = general_population_support_timoshenko_value
 		}
@@ -157,7 +157,7 @@ country_event = {
 		}
 		round_variable = Timoshenko_percentage_result_on_elections
 		### Poroshenko precentage support on elections
-        set_variable = {
+		set_variable = {
 			var = Poroshenko_percentage_result_on_elections
 			value = general_population_support_poroshenko_value
 		}
@@ -171,7 +171,7 @@ country_event = {
 		}
 		round_variable = Poroshenko_percentage_result_on_elections
 		### Lyashko precentage support on elections
-        set_variable = {
+		set_variable = {
 			var = Lyashko_percentage_result_on_elections
 			value = general_population_support_lyashko_value
 		}
@@ -185,7 +185,7 @@ country_event = {
 		}
 		round_variable = Lyashko_percentage_result_on_elections		
 		### Dobkin precentage support on elections
-        set_variable = {
+		set_variable = {
 			var = Dobkin_percentage_result_on_elections
 			value = general_population_support_dobkin_value
 		}
@@ -199,7 +199,7 @@ country_event = {
 		}
 		round_variable = Dobkin_percentage_result_on_elections
 		### Darth Alekseevich Vader precentage support on elections
-        set_variable = {
+		set_variable = {
 			var = Darth_alekseevich_percentage_result_on_elections
 			value = general_population_support_darth_alekseevich_value
 		}

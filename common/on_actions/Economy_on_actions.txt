@@ -23,9 +23,9 @@ on_actions = {
 			### THE ECONOMY ###
 			###################
 			set_variable = {
-		        var = gdp_last_month
-		        value = gdp
-	        }
+				var = gdp_last_month
+				value = gdp
+			}
 			DF_economy_setup = yes
 			set_global_flag = add_remove_cash_flag
 			set_variable = {
@@ -61,7 +61,7 @@ on_actions = {
 					var = deficit_budget_percentage
 					value = gdp
 				}	
-                multiply_variable = {
+				multiply_variable = {
 					var = deficit_budget_percentage
 					value = 100					
 				}
@@ -75,7 +75,7 @@ on_actions = {
 	}
 	on_weekly = {
 		effect = {
-	        DF_key_rate_calc = yes
+			DF_key_rate_calc = yes
 		}
 		
 	}

@@ -1,32 +1,32 @@
 #Titles
 defined_text = {
-    name = get_super_event_title
+	name = get_super_event_title
 	
-    text = {
-        trigger = {
-            has_global_flag = Start_of_ATO_SP
-        }
-        localization_key = "sp_event_UKR_start_of_ato_title"
-    }
-     text = { 
+	text = {
+		trigger = {
+			has_global_flag = Start_of_ATO_SP
+		}
+		localization_key = "sp_event_UKR_start_of_ato_title"
+	}
+	 text = { 
 		trigger = {
 			has_global_flag = separatist_victory_SP
 		}
 		localization_key = "sp_event_separatist_victory_title"
 	}
-    text = { 
+	text = { 
 		trigger = {
 			has_global_flag = ukraine_victory_against_separatists_SP
 		}
 		localization_key = "sp_event_ukraine_victory_against_separatists_title"
 	} 
-    text = { 
+	text = { 
 		trigger = {
 			has_global_flag = yanukovich_overthrow_SP
 		}
 		localization_key = "sp_event_yanukovich_overthrow_title"
 	} 
-    text = { 
+	text = { 
 		trigger = {
 			has_global_flag = special_military_operation_SP
 		}
@@ -37,7 +37,7 @@ defined_text = {
 
 #Quotes
 defined_text = {
-    name = get_super_event_quote
+	name = get_super_event_quote
 
 	text = { 
 		trigger = {
@@ -45,25 +45,25 @@ defined_text = {
 		}
 		localization_key = "sp_event_UKR_start_of_ato_quote"
 	}
-    text = { 
+	text = { 
 		trigger = {
 			has_global_flag = separatist_victory_SP
 		}
 		localization_key = "sp_event_separatist_victory_quote"
 	}
-    text = { 
+	text = { 
 		trigger = {
 			has_global_flag = ukraine_victory_against_separatists_SP
 		}
 		localization_key = "sp_event_ukraine_victory_against_separatists_quote"
 	}
-    text = { 
+	text = { 
 		trigger = {
 			has_global_flag = yanukovich_overthrow_SP
 		}
 		localization_key = "sp_event_yanukovich_overthrow_quote"
 	}
-    text = { 
+	text = { 
 		trigger = {
 			has_global_flag = special_military_operation_SP
 		}
@@ -73,32 +73,32 @@ defined_text = {
 
 #Remarks
 defined_text = {
-    name = get_super_event_remark
+	name = get_super_event_remark
 	text = { 
 		trigger = {
 			has_global_flag = Start_of_ATO_SP
 		}
 		localization_key = "sp_event_UKR_start_of_ato_remark"
 	}
-    text = { 
+	text = { 
 		trigger = {
 			has_global_flag = separatist_victory_SP
 		}
 		localization_key = "sp_event_separatist_victory_remark"
 	}
-    text = { 
+	text = { 
 		trigger = {
 			has_global_flag = ukraine_victory_against_separatists_SP
 		}
 		localization_key = "sp_event_ukraine_victory_against_separatists_remark"
 	}
-    text = { 
+	text = { 
 		trigger = {
 			has_global_flag = yanukovich_overthrow_SP
 		}
 		localization_key = "sp_event_yanukovich_overthrow_remark"
 	} 
-    text = { 
+	text = { 
 		trigger = {
 			has_global_flag = special_military_operation_SP
 		}

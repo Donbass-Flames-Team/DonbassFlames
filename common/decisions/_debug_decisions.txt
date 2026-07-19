@@ -50,7 +50,7 @@ debug_decisions = {
 		cost = 0
 
 		complete_effect = {
-		    SLO = {
+			SLO = {
 				annex_country = {
 					target = UKR
 					peace_time = no
@@ -67,9 +67,9 @@ debug_decisions = {
 					target = ROM
 					peace_time = no
 				}
-		    }
-	    }
-    }
+			}
+		}
+	}
 
 	overthorw_yanukovich_debug = {
 		icon = generic_research
@@ -90,11 +90,11 @@ debug_decisions = {
 
 		complete_effect = {
 			add_days_mission_timeout = {
-                mission = UKR_yanukovich_overthrow
-                days = -80
-            }
-	    }
-    }
+				mission = UKR_yanukovich_overthrow
+				days = -80
+			}
+		}
+	}
 
 	show_start_gui_debug = {
 		icon = generic_research
@@ -118,8 +118,8 @@ debug_decisions = {
 				var = show_startgui
 				value = -1
 			}
-	    }
-    }
+		}
+	}
 
 	start_of_ato_debug = {
 		icon = generic_research
@@ -140,19 +140,19 @@ debug_decisions = {
 
 		complete_effect = {
 			add_days_mission_timeout = {
-                mission = UKR_donetsk_uprising
-                days = -60
-            }
-		    add_days_mission_timeout = {
-                mission = UKR_luhansk_uprising
-                days = -60
-            }	
+				mission = UKR_donetsk_uprising
+				days = -60
+			}
+			add_days_mission_timeout = {
+				mission = UKR_luhansk_uprising
+				days = -60
+			}	
 			country_event = {
 				id = ukraine.26
 				hours = 1
 			}
-	    }
-    }
+		}
+	}
 
 	russian_crime_invasion_debug = {
 		icon = generic_research
@@ -177,8 +177,8 @@ debug_decisions = {
 				complete_national_focus = RUS_transfer_of_contingent_to_sevastopol
 				complete_national_focus = RUS_support_independent_crimea
 			}
-	    }
-    }
+		}
+	}
 
 	stamina_for_elections_gui_debug = {
 		icon = generic_research
@@ -202,8 +202,8 @@ debug_decisions = {
 				var = President_elections_stamina_value
 				value = 10
 			}
-	    }
-    }
+		}
+	}
 
 	stop_elections_gui_debug = {
 		icon = generic_research
@@ -224,11 +224,11 @@ debug_decisions = {
 
 		complete_effect = {
 			add_days_mission_timeout = {
-                mission = UKR_elections_2014
-                days = -96
-            }
-	    }
-    }
+				mission = UKR_elections_2014
+				days = -96
+			}
+		}
+	}
 
 	update_economy = {
 		icon = generic_research
@@ -249,8 +249,8 @@ debug_decisions = {
 
 		complete_effect = {
 			DF_economy_setup = yes
-	    }
-    }	
+		}
+	}	
 
 	spawn_all_people_republic = {
 		icon = generic_research
@@ -523,7 +523,7 @@ debug_decisions = {
 					transfer_state = 181
 					transfer_state = 210
 					transfer_state = 165
-                    transfer_state = 219
+					transfer_state = 219
 					transfer_state = 260
 				}
 				DRR = {
@@ -537,9 +537,9 @@ debug_decisions = {
 					transfer_state = 371
 					transfer_state = 336
 				}
-                DRP = {
+				DRP = {
 					transfer_state = 374
-                    transfer_state = 440
+					transfer_state = 440
 					transfer_state = 475
 					transfer_state = 480
 					transfer_state = 396
@@ -550,8 +550,8 @@ debug_decisions = {
 					transfer_state = 350
 
 				}
-	    }
-    }	
+		}
+	}	
 
 	clear_smo_plan_debug = {
 		icon = generic_research
@@ -579,7 +579,7 @@ debug_decisions = {
 			clr_country_flag = SMO_Plan_offensive_on_dnieper_selected
 			clr_country_flag = SMO_Plan_Kyiv_offensive_operation_selected
 			clr_country_flag = SMO_Plan_Volyn_Galician_barrier_selected
-	    }
-    }	
+		}
+	}	
 }
 	

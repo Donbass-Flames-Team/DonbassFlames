@@ -17,12 +17,12 @@ country_event = {
 		set_country_flag = Coronavirus_pandemic
 		hidden_effect = {
 			add_dynamic_modifier = { modifier = Coronavirus_idea }
-	        set_variable = { Coronavirus_idea_political_power_gain = -0.025 }
-	        set_variable = { Coronavirus_idea_consumer_goods_factor = 0.02 }
+			set_variable = { Coronavirus_idea_political_power_gain = -0.025 }
+			set_variable = { Coronavirus_idea_consumer_goods_factor = 0.02 }
 			set_variable = { Coronavirus_idea_production_speed_buildings_factor = -0.02}
 			set_variable = { Coronavirus_idea_monthly_population = -0.02 }
-            set_variable = { Coronavirus_idea_stability_factor = -0.02 }
-            set_variable = { Coronavirus_idea_party_popularity_stability_factor = -0.02 }
+			set_variable = { Coronavirus_idea_stability_factor = -0.02 }
+			set_variable = { Coronavirus_idea_party_popularity_stability_factor = -0.02 }
 			
 		}
 	}

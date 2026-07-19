@@ -1,69 +1,69 @@
 ideas = {
 
-    country = {
+	country = {
 
-        POL_rapid_economy = {
-            allowed = {
-                always = yes
-            }
-            removal_cost = -1
-
-    		modifier = {
-			    stability_factor = -0.5
+		POL_rapid_economy = {
+			allowed = {
+				always = yes
 			}
-        }
+			removal_cost = -1
 
-        POL_catholic_nation = {
-            allowed = {
-                always = yes
-            }
-            removal_cost = -1
-        }
+			modifier = {
+				stability_factor = -0.5
+			}
+		}
 
-        POL_eastern_NATO_shield = {
-            allowed = {
-                always = yes
-            }
-            removal_cost = -1
-        }
+		POL_catholic_nation = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+		}
 
-        POL_political_polarization = {
-            allowed = {
-                always = yes
-            }
-            removal_cost = -1
-        }
+		POL_eastern_NATO_shield = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+		}
 
-        POL_EU_subsidies = {
-            allowed = {
-                always = yes
-            }
-            removal_cost = -1
-        }
+		POL_political_polarization = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+		}
 
-        POL_eastern_neighbor_concerns = {
-            allowed = {
-                always = yes
-            }
-            removal_cost = -1
-        }
+		POL_EU_subsidies = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+		}
 
-        POL_fast_es_eco = {
-            allowed = {
-                always = yes
-            }
-            removal_cost = -1
-            
-            picture = GFX_idea_POL_fast_es_eco
-            
-            modifier = {
-                production_speed_buildings_factor = 0.15
-                industrial_capacity_factory = 0.10
-                production_factory_efficiency_gain_factor = 0.10
-                consumer_goods_factor = -0.05
-            }
-        }
+		POL_eastern_neighbor_concerns = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+		}
 
-    }
+		POL_fast_es_eco = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			picture = GFX_idea_POL_fast_es_eco
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+
+	}
 
 }

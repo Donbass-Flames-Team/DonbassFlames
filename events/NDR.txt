@@ -16,18 +16,18 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
-		    DPR = {
-			    country_event = {
-				    id = DPR.15
-				    hours = 6
-			    }
-		    }
-		    UKR = {
-			    country_event = {
-				    id = ukraine.84
-				    hours = 7
-			    }
-		    }
+			DPR = {
+				country_event = {
+					id = DPR.15
+					hours = 6
+				}
+			}
+			UKR = {
+				country_event = {
+					id = ukraine.84
+					hours = 7
+				}
+			}
 			news_event = {
 				id = news_events.48
 				days = 3
@@ -53,18 +53,18 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_global_flag = GIRKIN_ESCAPE_FROM_SLAVYANSK
-		    DPR = {
-			    country_event = {
-				    id = DPR.16
-				    hours = 6
-			    }
-		    }
-		    UKR = {
-		        country_event = {
-				    id = ukraine.83
-				    hours = 6
-			    }
-		    }
+			DPR = {
+				country_event = {
+					id = DPR.16
+					hours = 6
+				}
+			}
+			UKR = {
+				country_event = {
+					id = ukraine.83
+					hours = 6
+				}
+			}
 			news_event = {
 				id = news_events.48
 				days = 3
@@ -123,14 +123,14 @@ country_event = {
 		name = NDR.4.a
 		retire_country_leader = yes
 		create_country_leader = {
-	        name = igor_strelkov_girkin
-	        desc = "STRELKOV_GIRKIN_DESC"
-	        picture = GFX_portrait_igor_strelkov_girkin
-	        expire = "2035.1.1"
-	        ideology = autoritarian_democracy
-	        traits = {
-			    #
-	        }
-        }
+			name = igor_strelkov_girkin
+			desc = "STRELKOV_GIRKIN_DESC"
+			picture = GFX_portrait_igor_strelkov_girkin
+			expire = "2035.1.1"
+			ideology = autoritarian_democracy
+			traits = {
+				#
+			}
+		}
 	}
 }

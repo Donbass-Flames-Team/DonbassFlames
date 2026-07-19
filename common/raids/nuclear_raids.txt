@@ -80,7 +80,7 @@ types = {
 		}
 
 		starting_point = {
-		    types = { air_base }
+			types = { air_base }
 		}
 
 		arrow = {
@@ -181,7 +181,7 @@ types = {
 				}
 			}
 			success = {
-			    custom_sound = raid_result_success_nuclear
+				custom_sound = raid_result_success_nuclear
 				actor_effects = {
 					raid_damage_units = {
 						plane_loss = 0.1
@@ -208,7 +208,7 @@ types = {
 				}
 			}
 			critical_success = {
-			    custom_sound = raid_result_critical_success_nuclear
+				custom_sound = raid_result_critical_success_nuclear
 				actor_effects = {
 					raid_add_unit_experience = 0.5
 				}
@@ -305,19 +305,19 @@ types = {
 		}
 
 		starting_point = {
-		    types = {
-		        rocket_site
-		    }
+			types = {
+				rocket_site
+			}
 		}
 		arrow = {
-		    type = ballistic
+			type = ballistic
 		}
 
 		launch_sound = raid_launch_nuclear_missile
 
-        unit_model = {
-            scale = 0.5
-        }
+		unit_model = {
+			scale = 0.5
+		}
 
 		success_factors = {
 			success = {
@@ -348,7 +348,7 @@ types = {
 				}
 			}
 			success = {
-			    custom_sound = raid_result_success_nuclear
+				custom_sound = raid_result_success_nuclear
 				actor_effects = {
 				}
 				victim_effects = {
@@ -370,7 +370,7 @@ types = {
 				}
 			}
 			critical_success = {
-			    custom_sound = raid_result_critical_success_nuclear
+				custom_sound = raid_result_critical_success_nuclear
 				actor_effects = {
 				}
 
@@ -464,19 +464,19 @@ types = {
 		}
 
 		starting_point = {
-		    types = {
-		        submarine
-		    }
+			types = {
+				submarine
+			}
 		}
 		arrow = {
-		    type = ballistic
+			type = ballistic
 		}
 
 		launch_sound = raid_launch_nuclear_missile
 
-        unit_model = {
-            scale = 0.5
-        }
+		unit_model = {
+			scale = 0.5
+		}
 
 		success_factors = {
 			success = {
@@ -507,7 +507,7 @@ types = {
 				}
 			}
 			success = {
-			    custom_sound = raid_result_success_nuclear
+				custom_sound = raid_result_success_nuclear
 				actor_effects = {
 				}
 				victim_effects = {
@@ -529,7 +529,7 @@ types = {
 				}
 			}
 			critical_success = {
-			    custom_sound = raid_result_critical_success_nuclear
+				custom_sound = raid_result_critical_success_nuclear
 				actor_effects = {
 				}
 
@@ -634,7 +634,7 @@ types = {
 		}
 
 		starting_point = {
-		    types = { air_base }
+			types = { air_base }
 		}
 
 		arrow = {
@@ -720,7 +720,7 @@ types = {
 				}
 			}
 			success = {
-			    custom_sound = raid_result_success_nuclear
+				custom_sound = raid_result_success_nuclear
 				actor_effects = {
 					raid_damage_units = {
 						plane_loss = 0.05
@@ -760,7 +760,7 @@ types = {
 				}
 			}
 			critical_success = {
-			    custom_sound = raid_result_critical_success_nuclear
+				custom_sound = raid_result_critical_success_nuclear
 				actor_effects = {
 					raid_add_unit_experience = 0.5
 				}
@@ -871,19 +871,19 @@ types = {
 		}
 		nuke_type = thermonuclear_bomb
 		starting_point = {
-		    types = {
-		        rocket_site
-		    }
+			types = {
+				rocket_site
+			}
 		}
 		arrow = {
-		    type = ballistic
+			type = ballistic
 		}
 
 		launch_sound = raid_launch_nuclear_missile
 
-        unit_model = {
-            scale = 0.5
-        }
+		unit_model = {
+			scale = 0.5
+		}
 
 		success_factors = {
 			success = {
@@ -912,7 +912,7 @@ types = {
 				}
 			}
 			success = {
-			    custom_sound = raid_result_success_nuclear
+				custom_sound = raid_result_success_nuclear
 				actor_effects = {
 				}
 				victim_effects = {
@@ -936,7 +936,7 @@ types = {
 				}
 			}
 			critical_success = {
-			    custom_sound = raid_result_critical_success_nuclear
+				custom_sound = raid_result_critical_success_nuclear
 				actor_effects = {
 				}
 				victim_effects = {
@@ -1032,19 +1032,19 @@ types = {
 		}
 		nuke_type = thermonuclear_bomb
 		starting_point = {
-		    types = {
-		        submarine
-		    }
+			types = {
+				submarine
+			}
 		}
 		arrow = {
-		    type = ballistic
+			type = ballistic
 		}
 
 		launch_sound = raid_launch_nuclear_missile
 
-        unit_model = {
-            scale = 0.5
-        }
+		unit_model = {
+			scale = 0.5
+		}
 
 		success_factors = {
 			success = {
@@ -1073,7 +1073,7 @@ types = {
 				}
 			}
 			success = {
-			    custom_sound = raid_result_success_nuclear
+				custom_sound = raid_result_success_nuclear
 				actor_effects = {
 				}
 				victim_effects = {
@@ -1097,7 +1097,7 @@ types = {
 				}
 			}
 			critical_success = {
-			    custom_sound = raid_result_critical_success_nuclear
+				custom_sound = raid_result_critical_success_nuclear
 				actor_effects = {
 				}
 				victim_effects = {

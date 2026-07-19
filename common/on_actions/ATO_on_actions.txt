@@ -9,41 +9,41 @@ on_actions = {
 					date > 2014.4.4
 					surrender_progress > 0.31
 					OR = {
-					    NOT = {
-						    526 = {
-							    is_controlled_by = UKR
-						    }
-						    264 = {
-							    is_controlled_by = UKR
-						    }
-						    441 = {
-							    is_controlled_by = UKR
-						    }
-						    353 = {
-							    is_controlled_by = UKR
-						    }
-						    327 = {
-							    is_controlled_by = UKR
-						    }
-						    359 = {
-							    is_controlled_by = UKR
-						    }	
-						    342 = {
-							    is_controlled_by = UKR
-						    }	
-						    307 = {
-							    is_controlled_by = UKR
-						    }	
-						    304 = {
-							    is_controlled_by = UKR
-						    }
-						    297 = {
-							    is_controlled_by = UKR
-						    }
-						    271 = {
-							    is_controlled_by = UKR
-						    }
-					    }
+						NOT = {
+							526 = {
+								is_controlled_by = UKR
+							}
+							264 = {
+								is_controlled_by = UKR
+							}
+							441 = {
+								is_controlled_by = UKR
+							}
+							353 = {
+								is_controlled_by = UKR
+							}
+							327 = {
+								is_controlled_by = UKR
+							}
+							359 = {
+								is_controlled_by = UKR
+							}	
+							342 = {
+								is_controlled_by = UKR
+							}	
+							307 = {
+								is_controlled_by = UKR
+							}	
+							304 = {
+								is_controlled_by = UKR
+							}
+							297 = {
+								is_controlled_by = UKR
+							}
+							271 = {
+								is_controlled_by = UKR
+							}
+						}
 						surrender_progress > 0.41	
 					}
 					NOT = {
@@ -111,19 +111,19 @@ on_actions = {
 				}
 				set_global_flag = Uspenivka_is_under_UKR
 				UKR = {
-				    add_to_variable = {
-					    value = 1
-					    var = UKR_controlled_checkpoints_in_donetsk_region_value
-				    }
+					add_to_variable = {
+						value = 1
+						var = UKR_controlled_checkpoints_in_donetsk_region_value
+					}
 				}
 				if = {
 					limit = { has_global_flag = Uspenivka_is_under_DPR }
 					clr_global_flag = Uspenivka_is_under_DPR
 					DPR = {
-					    subtract_from_variable = {
-					        value = 1
-					        var = People_Republic_controlled_checkpoints_in_donetsk_region_value
-				        }
+						subtract_from_variable = {
+							value = 1
+							var = People_Republic_controlled_checkpoints_in_donetsk_region_value
+						}
 					}
 				}
 			}	
@@ -131,25 +131,25 @@ on_actions = {
 				limit = {
 					NOT = { has_global_flag = Uspenivka_is_under_DPR }
 					OR = {
-					    DPR = { controls_province = 16004 }
+						DPR = { controls_province = 16004 }
 						LPR = { controls_province = 16004 }
 					}
 				}
 				set_global_flag = Uspenivka_is_under_DPR
 				DPR = {
-				    add_to_variable = {
-					    value = 1
-					    var = People_Republic_controlled_checkpoints_in_donetsk_region_value
-				    }
+					add_to_variable = {
+						value = 1
+						var = People_Republic_controlled_checkpoints_in_donetsk_region_value
+					}
 				}
 				if = {
 					limit = { has_global_flag = Uspenivka_is_under_UKR }
 					clr_global_flag = Uspenivka_is_under_UKR
 					UKR = {
-					    subtract_from_variable = {
-					        value = 1
-					        var = UKR_controlled_checkpoints_in_donetsk_region_value
-				        }
+						subtract_from_variable = {
+							value = 1
+							var = UKR_controlled_checkpoints_in_donetsk_region_value
+						}
 					}
 				}
 			}
@@ -161,19 +161,19 @@ on_actions = {
 				}
 				set_global_flag = Marinovka_is_under_UKR
 				UKR = {
-			        add_to_variable = {
-					    value = 1
-					    var = UKR_controlled_checkpoints_in_donetsk_region_value
-				    }
+					add_to_variable = {
+						value = 1
+						var = UKR_controlled_checkpoints_in_donetsk_region_value
+					}
 				}
 				if = {
 					limit = { has_global_flag = Marinovka_is_under_DPR }
 					clr_global_flag = Marinovka_is_under_DPR
 					DPR = {
-					    subtract_from_variable = {
-					        value = 1
-					        var = People_Republic_controlled_checkpoints_in_donetsk_region_value
-				        }
+						subtract_from_variable = {
+							value = 1
+							var = People_Republic_controlled_checkpoints_in_donetsk_region_value
+						}
 					}
 				}
 			}	
@@ -181,25 +181,25 @@ on_actions = {
 				limit = {
 					NOT = { has_global_flag = Marinovka_is_under_DPR }
 					OR = {
-					    DPR = { controls_province = 11706  }
+						DPR = { controls_province = 11706  }
 						LPR = { controls_province = 11706  }
 					}
 				}
 				set_global_flag = Marinovka_is_under_DPR
 				DPR = {
-				    add_to_variable = {
-					    value = 1
-					    var = People_Republic_controlled_checkpoints_in_donetsk_region_value
-				    }
+					add_to_variable = {
+						value = 1
+						var = People_Republic_controlled_checkpoints_in_donetsk_region_value
+					}
 				}
 				if = {
 					limit = { has_global_flag = Marinovka_is_under_UKR }
 					clr_global_flag = Marinovka_is_under_UKR
 					UKR = {
-					    subtract_from_variable = {
-					        value = 1
-					        var = UKR_controlled_checkpoints_in_donetsk_region_value
-				        }
+						subtract_from_variable = {
+							value = 1
+							var = UKR_controlled_checkpoints_in_donetsk_region_value
+						}
 					}
 				}
 			}	
@@ -212,19 +212,19 @@ on_actions = {
 				set_global_flag = Novoazovsk_is_under_UKR
 				log = "[GetDateText]: [Root.GetName]: Novoazovsk is under control ukr"
 				UKR = {
-				    add_to_variable = {
-					    value = 1
-					    var = UKR_controlled_checkpoints_in_donetsk_region_value
-				    }
+					add_to_variable = {
+						value = 1
+						var = UKR_controlled_checkpoints_in_donetsk_region_value
+					}
 				}
 				if = {
 					limit = { has_global_flag = Novoazovsk_is_under_DPR }
 					clr_global_flag = Novoazovsk_is_under_DPR
-				    DPR = {
-					    subtract_from_variable = {
-					        value = 1
-					        var = People_Republic_controlled_checkpoints_in_donetsk_region_value
-				        }
+					DPR = {
+						subtract_from_variable = {
+							value = 1
+							var = People_Republic_controlled_checkpoints_in_donetsk_region_value
+						}
 					}
 				}
 			}	
@@ -232,31 +232,31 @@ on_actions = {
 				limit = {
 					NOT = { has_global_flag = Novoazovsk_is_under_DPR }
 					OR = {
-					    DPR = { controls_province = 10105  }
+						DPR = { controls_province = 10105  }
 						LPR = { controls_province = 10105  }
 					}
 				}
 				set_global_flag = Novoazovsk_is_under_DPR
 				DPR = {
-				    add_to_variable = {
-					    value = 1
-					    var = People_Republic_controlled_checkpoints_in_donetsk_region_value
-				    }
+					add_to_variable = {
+						value = 1
+						var = People_Republic_controlled_checkpoints_in_donetsk_region_value
+					}
 				}
 				if = {
 					limit = { has_global_flag = Novoazovsk_is_under_UKR }
 					clr_global_flag = Novoazovsk_is_under_UKR
 					UKR = {
-					    subtract_from_variable = {
-					        value = 1
-					        var = UKR_controlled_checkpoints_in_donetsk_region_value
-				        }
+						subtract_from_variable = {
+							value = 1
+							var = UKR_controlled_checkpoints_in_donetsk_region_value
+						}
 					}
 				}
 			}	
 			###################
-		    ####### LPR #######
-		    ###################		
+			####### LPR #######
+			###################		
 			# Dovzansky
 			if = {
 				limit = {
@@ -265,19 +265,19 @@ on_actions = {
 				}
 				set_global_flag = Dovzansky_is_under_UKR
 				UKR = {
-				    add_to_variable = {
-					    value = 1
-					    var = UKR_controlled_checkpoints_in_luhansk_region_value
-				    }
+					add_to_variable = {
+						value = 1
+						var = UKR_controlled_checkpoints_in_luhansk_region_value
+					}
 				}
 				if = {
 					limit = { has_global_flag = Dovzansky_is_under_LPR }
 					clr_global_flag = Dovzansky_is_under_LPR
 					LPR = {
-					    subtract_from_variable = {
-					        value = 1
-					        var = People_Republic_controlled_checkpoints_in_luhansk_region_value
-				        }
+						subtract_from_variable = {
+							value = 1
+							var = People_Republic_controlled_checkpoints_in_luhansk_region_value
+						}
 					}
 				}
 			}	
@@ -285,7 +285,7 @@ on_actions = {
 				limit = {
 					NOT = { has_global_flag = Dovzansky_is_under_LPR }
 					OR = {
-					    DPR = { controls_province = 4047 }
+						DPR = { controls_province = 4047 }
 						LPR = { controls_province = 4047 }
 						SKR = { controls_province = 4047 }
 						SLR = { controls_province = 4047 }
@@ -293,19 +293,19 @@ on_actions = {
 				}
 				set_global_flag = Dovzansky_is_under_LPR
 				LPR = {
-				    add_to_variable = {
-					    value = 1
-					    var = People_Republic_controlled_checkpoints_in_luhansk_region_value
-				    }
+					add_to_variable = {
+						value = 1
+						var = People_Republic_controlled_checkpoints_in_luhansk_region_value
+					}
 				}
 				if = {
 					limit = { has_global_flag = Dovzansky_is_under_UKR }
 					clr_global_flag = Dovzansky_is_under_UKR
 					UKR = {
-					    subtract_from_variable = {
-					        value = 1
-					        var = UKR_controlled_checkpoints_in_luhansk_region_value
-				        }
+						subtract_from_variable = {
+							value = 1
+							var = UKR_controlled_checkpoints_in_luhansk_region_value
+						}
 					}
 				}
 			}
@@ -317,19 +317,19 @@ on_actions = {
 				}
 				set_global_flag = Izvarino_is_under_UKR
 				UKR = {
-				    add_to_variable = {
-					    value = 1
-					    var = UKR_controlled_checkpoints_in_luhansk_region_value
-				    }
+					add_to_variable = {
+						value = 1
+						var = UKR_controlled_checkpoints_in_luhansk_region_value
+					}
 				}
 				if = {
 					limit = { has_global_flag = Izvarino_is_under_LPR }
 					clr_global_flag = Izvarino_is_under_LPR
 					LPR = {
-					    subtract_from_variable = {
-					        value = 1
-					        var = People_Republic_controlled_checkpoints_in_luhansk_region_value
-				        }
+						subtract_from_variable = {
+							value = 1
+							var = People_Republic_controlled_checkpoints_in_luhansk_region_value
+						}
 					}
 				}
 			}	
@@ -337,7 +337,7 @@ on_actions = {
 				limit = {
 					NOT = { has_global_flag = Izvarino_is_under_LPR }
 					OR = {
-					    DPR = { controls_province = 5875 }
+						DPR = { controls_province = 5875 }
 						LPR = { controls_province = 5875 }
 						SKR = { controls_province = 5875 }
 						SLR = { controls_province = 5875 }
@@ -346,19 +346,19 @@ on_actions = {
 				}
 				set_global_flag = Izvarino_is_under_LPR
 				LPR = {
-				    add_to_variable = {
-					    value = 1
-					    var = People_Republic_controlled_checkpoints_in_luhansk_region_value
-				    }
+					add_to_variable = {
+						value = 1
+						var = People_Republic_controlled_checkpoints_in_luhansk_region_value
+					}
 				}
 				if = {
 					limit = { has_global_flag = Izvarino_is_under_UKR }
 					clr_global_flag = Izvarino_is_under_UKR
 					UKR = {
-					    subtract_from_variable = {
-					        value = 1
-					        var = UKR_controlled_checkpoints_in_luhansk_region_value
-				        }
+						subtract_from_variable = {
+							value = 1
+							var = UKR_controlled_checkpoints_in_luhansk_region_value
+						}
 					}
 				}
 			}
@@ -370,19 +370,19 @@ on_actions = {
 				}
 				set_global_flag = Chervonopartizansk_is_under_UKR
 				UKR = {
-				    add_to_variable = {
-					    value = 1
-					    var = UKR_controlled_checkpoints_in_luhansk_region_value
-				    }
+					add_to_variable = {
+						value = 1
+						var = UKR_controlled_checkpoints_in_luhansk_region_value
+					}
 				}
 				if = {
 					limit = { has_global_flag = Chervonopartizansk_is_under_LPR }
 					clr_global_flag = Chervonopartizansk_is_under_LPR
 					LPR = {
-					    subtract_from_variable = {
-					        value = 1
-					        var = People_Republic_controlled_checkpoints_in_luhansk_region_value
-				        }
+						subtract_from_variable = {
+							value = 1
+							var = People_Republic_controlled_checkpoints_in_luhansk_region_value
+						}
 					}
 				}
 			}	
@@ -390,7 +390,7 @@ on_actions = {
 				limit = {
 					NOT = { has_global_flag = Chervonopartizansk_is_under_LPR }
 					OR = {
-					    DPR = { controls_province = 11595 }
+						DPR = { controls_province = 11595 }
 						LPR = { controls_province = 11595 }
 						SKR = { controls_province = 11595 }
 						SLR = { controls_province = 11595 }
@@ -399,19 +399,19 @@ on_actions = {
 				}
 				set_global_flag = Chervonopartizansk_is_under_LPR
 				LPR = {
-				    add_to_variable = {
-					    value = 1
-					    var = People_Republic_controlled_checkpoints_in_luhansk_region_value
-				    }
+					add_to_variable = {
+						value = 1
+						var = People_Republic_controlled_checkpoints_in_luhansk_region_value
+					}
 				}
 				if = {
 					limit = { has_global_flag = Chervonopartizansk_is_under_LPR }
 					clr_global_flag = Chervonopartizansk_is_under_LPR
 					UKR = {
-					    subtract_from_variable = {
-					        value = 1
-					        var = UKR_controlled_checkpoints_in_luhansk_region_value
-				        }
+						subtract_from_variable = {
+							value = 1
+							var = UKR_controlled_checkpoints_in_luhansk_region_value
+						}
 					}
 				}
 			}													

@@ -23,12 +23,12 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_state = {
-		        create_unit = {
-			        division = "name = \"Battalyon Kazackogo Opolcheniya\" division_template = \"Battalyon Kazackogo Opolcheniya\" start_experience_factor = 0.35"
-			        owner = SKR
-			        count = 3
-		        }
-	        }
+				create_unit = {
+					division = "name = \"Battalyon Kazackogo Opolcheniya\" division_template = \"Battalyon Kazackogo Opolcheniya\" start_experience_factor = 0.35"
+					owner = SKR
+					count = 3
+				}
+			}
 		}
 	}
 
@@ -74,7 +74,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    army_experience = 25
+			army_experience = 25
 		}
 	}
 
@@ -95,7 +95,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_war_support = 0.05
+			add_war_support = 0.05
 			hidden_effect = {
 				country_event = {
 					id = SKR.2
@@ -146,7 +146,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.025
-		    LPR = {
+			LPR = {
 				country_event = {
 					id = LPR.18
 					hours = 3

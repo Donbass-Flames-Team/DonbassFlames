@@ -46,7 +46,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-        prerequisite = { focus = UKR_yanukovychs_results }
+		prerequisite = { focus = UKR_yanukovychs_results }
 		prerequisite = { focus = UKR_situation_is_out_of_control }
 		relative_position_id = UKR_yanukovychs_results
 
@@ -61,7 +61,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_political_power = 25
+			add_political_power = 25
 			country_event = ukraine.6
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
@@ -127,24 +127,24 @@ focus_tree = {
 		x = 0
 		y = 2
 
-        prerequisite = { focus = UKR_force_deal_with_protests }
+		prerequisite = { focus = UKR_force_deal_with_protests }
 		prerequisite = { focus = UKR_next_steps }
 		relative_position_id = UKR_next_steps
 
 		completion_reward = {
-		    add_stability = -0.05
+			add_stability = -0.05
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
 				days = 4
 			}
 			add_to_variable = {
-                var = UKR_radicalisation_of_proeuropeans_value
-                value = 3
-            }
+				var = UKR_radicalisation_of_proeuropeans_value
+				value = 3
+			}
 			add_to_variable = {
-                var = UKR_radicalisation_of_nationalists_value
-                value = 2
-            }
+				var = UKR_radicalisation_of_nationalists_value
+				value = 2
+			}
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 			if = {
 				limit = {
@@ -172,10 +172,10 @@ focus_tree = {
 		relative_position_id = UKR_dictatorship_takes_over
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 			has_completed_focus = UKR_emergency_measures
@@ -196,13 +196,13 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_influence_through_the_media }
 		relative_position_id = UKR_influence_through_the_media
-        mutually_exclusive = { focus = UKR_start_company_of_antimaidan }
+		mutually_exclusive = { focus = UKR_start_company_of_antimaidan }
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 			always = no
@@ -228,10 +228,10 @@ focus_tree = {
 		relative_position_id = UKR_influence_through_the_media
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -256,10 +256,10 @@ focus_tree = {
 		relative_position_id = UKR_influence_through_the_media
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -284,10 +284,10 @@ focus_tree = {
 		relative_position_id = UKR_influence_through_the_media
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -310,13 +310,13 @@ focus_tree = {
 
 		prerequisite = { focus = UKR_influence_through_the_media }
 		relative_position_id = UKR_influence_through_the_media
-        mutually_exclusive = { focus = UKR_prevent_civil_war }
+		mutually_exclusive = { focus = UKR_prevent_civil_war }
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -338,10 +338,10 @@ focus_tree = {
 		relative_position_id = UKR_start_company_of_antimaidan
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -364,10 +364,10 @@ focus_tree = {
 		relative_position_id = UKR_start_company_of_antimaidan
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -377,32 +377,32 @@ focus_tree = {
 			add_political_power = 35
 			hidden_effect = {
 				add_to_variable = {
-                    var = UKR_radicalisation_of_proeuropeans_value
-                    value = 2
-                }
-			    add_to_variable = {
-                    var = UKR_radicalisation_of_nationalists_value
-                    value = 2
-                }
-			    add_to_variable = {
-                    var = UKR_radicalisation_of_prorussians_value
-                    value = 2
-                }				
-			    clamp_variable = {
-				    var = UKR_radicalisation_of_proeuropeans_value
-				    min = 0
-				    max = 100
-			    }
-			    clamp_variable = {
-				    var = UKR_radicalisation_of_nationalists_value
-				    min = 0
-				    max = 100
-			    }
+					var = UKR_radicalisation_of_proeuropeans_value
+					value = 2
+				}
+				add_to_variable = {
+					var = UKR_radicalisation_of_nationalists_value
+					value = 2
+				}
+				add_to_variable = {
+					var = UKR_radicalisation_of_prorussians_value
+					value = 2
+				}				
 				clamp_variable = {
-				    var = UKR_radicalisation_of_prorussians_value
-				    min = 0
-				    max = 100
-			    }
+					var = UKR_radicalisation_of_proeuropeans_value
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = UKR_radicalisation_of_nationalists_value
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = UKR_radicalisation_of_prorussians_value
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}
@@ -418,10 +418,10 @@ focus_tree = {
 		relative_position_id = UKR_start_company_of_antimaidan
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -444,10 +444,10 @@ focus_tree = {
 		relative_position_id = UKR_start_company_of_antimaidan
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -470,10 +470,10 @@ focus_tree = {
 		relative_position_id = UKR_start_company_of_antimaidan
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -494,10 +494,10 @@ focus_tree = {
 		relative_position_id = UKR_dictatorship_takes_over
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -522,10 +522,10 @@ focus_tree = {
 		relative_position_id = UKR_external_coordination
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -550,10 +550,10 @@ focus_tree = {
 		relative_position_id = UKR_external_coordination
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -579,10 +579,10 @@ focus_tree = {
 		relative_position_id = UKR_external_coordination
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -595,23 +595,23 @@ focus_tree = {
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 			hidden_effect = {
 				add_to_variable = {
-                    var = UKR_radicalisation_of_proeuropeans_value
-                    value = 1
-                }
-			    add_to_variable = {
-                    var = UKR_radicalisation_of_nationalists_value
-                    value = 1
-                }
-			    clamp_variable = {
-				    var = UKR_radicalisation_of_proeuropeans_value
-				    min = 0
-				    max = 100
-			    }
-			    clamp_variable = {
-				    var = UKR_radicalisation_of_nationalists_value
-				    min = 0
-				    max = 100
-			    }
+					var = UKR_radicalisation_of_proeuropeans_value
+					value = 1
+				}
+				add_to_variable = {
+					var = UKR_radicalisation_of_nationalists_value
+					value = 1
+				}
+				clamp_variable = {
+					var = UKR_radicalisation_of_proeuropeans_value
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = UKR_radicalisation_of_nationalists_value
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}
@@ -627,10 +627,10 @@ focus_tree = {
 		relative_position_id = UKR_external_coordination
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 			has_completed_focus = UKR_emergency_measures
@@ -645,23 +645,23 @@ focus_tree = {
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 			hidden_effect = {
 				add_to_variable = {
-                    var = UKR_radicalisation_of_proeuropeans_value
-                    value = 1
-                }
-			    add_to_variable = {
-                    var = UKR_radicalisation_of_nationalists_value
-                    value = 1
-                }
-			    clamp_variable = {
-				    var = UKR_radicalisation_of_proeuropeans_value
-				    min = 0
-				    max = 100
-			    }
-			    clamp_variable = {
-				    var = UKR_radicalisation_of_nationalists_value
-				    min = 0
-				    max = 100
-			    }
+					var = UKR_radicalisation_of_proeuropeans_value
+					value = 1
+				}
+				add_to_variable = {
+					var = UKR_radicalisation_of_nationalists_value
+					value = 1
+				}
+				clamp_variable = {
+					var = UKR_radicalisation_of_proeuropeans_value
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = UKR_radicalisation_of_nationalists_value
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}
@@ -678,10 +678,10 @@ focus_tree = {
 
 		available = {
 			date > 2014.1.5
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -689,13 +689,13 @@ focus_tree = {
 		completion_reward = {
 			country_event = ukraine.103
 			add_to_variable = {
-                var = UKR_radicalisation_of_proeuropeans_value
-                value = 1
-            }
+				var = UKR_radicalisation_of_proeuropeans_value
+				value = 1
+			}
 			add_to_variable = {
-                var = UKR_radicalisation_of_nationalists_value
-                value = 1
-            }
+				var = UKR_radicalisation_of_nationalists_value
+				value = 1
+			}
 			clamp_variable = {
 				var = UKR_radicalisation_of_proeuropeans_value
 				min = 0
@@ -709,9 +709,9 @@ focus_tree = {
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
 			hidden_effect = {
 				country_event = {
-				    id = ukraine.50
-				    days = 3
-			    }
+					id = ukraine.50
+					days = 3
+				}
 			}
 		}
 	}
@@ -727,10 +727,10 @@ focus_tree = {
 		relative_position_id = UKR_external_coordination
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -751,10 +751,10 @@ focus_tree = {
 		relative_position_id = UKR_external_coordination
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -776,10 +776,10 @@ focus_tree = {
 		relative_position_id = UKR_external_coordination
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 			always = no
@@ -788,7 +788,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.025
 			country_event = {
-                id = ukraine.59
+				id = ukraine.59
 				hours = 6
 			}
 		}
@@ -805,10 +805,10 @@ focus_tree = {
 		relative_position_id = UKR_dictatorship_takes_over
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 			has_completed_focus = UKR_under_the_pretext_of_a_christmas_tree
@@ -830,10 +830,10 @@ focus_tree = {
 		relative_position_id = UKR_emergency_measures
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -859,10 +859,10 @@ focus_tree = {
 		mutually_exclusive = { focus = UKR_deal_with_opposition }
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 			
@@ -876,23 +876,23 @@ focus_tree = {
 			add_stability = -0.085
 			hidden_effect = {
 				add_to_variable = {
-                    var = UKR_radicalisation_of_proeuropeans_value
-                    value = 1
-                }
-			    add_to_variable = {
-                    var = UKR_radicalisation_of_nationalists_value
-                    value = 6
-                }
-			    clamp_variable = {
-				    var = UKR_radicalisation_of_proeuropeans_value
-				    min = 0
-				    max = 100
-			    }
-			    clamp_variable = {
-				    var = UKR_radicalisation_of_nationalists_value
-				    min = 0
-				    max = 100
-			    }
+					var = UKR_radicalisation_of_proeuropeans_value
+					value = 1
+				}
+				add_to_variable = {
+					var = UKR_radicalisation_of_nationalists_value
+					value = 6
+				}
+				clamp_variable = {
+					var = UKR_radicalisation_of_proeuropeans_value
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = UKR_radicalisation_of_nationalists_value
+					min = 0
+					max = 100
+				}
 			}
 		}
 
@@ -916,10 +916,10 @@ focus_tree = {
 		relative_position_id = UKR_emergency_measures
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -940,10 +940,10 @@ focus_tree = {
 		relative_position_id = UKR_emergency_measures
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -964,10 +964,10 @@ focus_tree = {
 		relative_position_id = UKR_emergency_measures
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -989,10 +989,10 @@ focus_tree = {
 		relative_position_id = UKR_emergency_measures
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 			always = no
@@ -1014,10 +1014,10 @@ focus_tree = {
 		relative_position_id = UKR_emergency_measures
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -1039,10 +1039,10 @@ focus_tree = {
 		mutually_exclusive = { focus = UKR_liqudation_of_opposition }
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -1068,10 +1068,10 @@ focus_tree = {
 		mutually_exclusive = { focus = UKR_negotiations_have_reached_an_impasse }
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -1100,10 +1100,10 @@ focus_tree = {
 		relative_position_id = UKR_emergency_measures
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 			
@@ -1118,14 +1118,14 @@ focus_tree = {
 			add_stability = 0.05
 			hidden_effect = {
 				add_to_variable = {
-                    var = UKR_radicalisation_of_prorussians_value
-                    value = 2
-                }
+					var = UKR_radicalisation_of_prorussians_value
+					value = 2
+				}
 				clamp_variable = {
-				    var = UKR_radicalisation_of_prorussians_value
-				    min = 0
-				    max = 100
-			    }
+					var = UKR_radicalisation_of_prorussians_value
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}
@@ -1141,10 +1141,10 @@ focus_tree = {
 		relative_position_id = UKR_emergency_measures
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 			always = no
@@ -1154,14 +1154,14 @@ focus_tree = {
 			add_stability = 0.025
 			hidden_effect = {
 				add_to_variable = {
-                    var = UKR_radicalisation_of_prorussians_value
-                    value = 2
-                }
+					var = UKR_radicalisation_of_prorussians_value
+					value = 2
+				}
 				clamp_variable = {
-				    var = UKR_radicalisation_of_prorussians_value
-				    min = 0
-				    max = 100
-			    }
+					var = UKR_radicalisation_of_prorussians_value
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}
@@ -1178,10 +1178,10 @@ focus_tree = {
 		mutually_exclusive = { focus = UKR_reform_of_berkut }
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 			always = no
@@ -1204,10 +1204,10 @@ focus_tree = {
 		mutually_exclusive = { focus = UKR_liqudation_of_berkut }
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 			always = no
@@ -1230,10 +1230,10 @@ focus_tree = {
 		relative_position_id = UKR_relax_repressive_laws
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 			always = no
@@ -1243,14 +1243,14 @@ focus_tree = {
 			add_stability = 0.025
 			hidden_effect = {
 				add_to_variable = {
-                    var = UKR_radicalisation_of_prorussians_value
-                    value = 2
-                }
+					var = UKR_radicalisation_of_prorussians_value
+					value = 2
+				}
 				clamp_variable = {
-				    var = UKR_radicalisation_of_prorussians_value
-				    min = 0
-				    max = 100
-			    }
+					var = UKR_radicalisation_of_prorussians_value
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}
@@ -1266,10 +1266,10 @@ focus_tree = {
 		relative_position_id = UKR_relax_repressive_laws
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 			always = no
@@ -1283,14 +1283,14 @@ focus_tree = {
 					hours = 3
 				}
 				add_to_variable = {
-                    var = UKR_radicalisation_of_prorussians_value
-                    value = 2
-                }
+					var = UKR_radicalisation_of_prorussians_value
+					value = 2
+				}
 				clamp_variable = {
-				    var = UKR_radicalisation_of_prorussians_value
-				    min = 0
-				    max = 100
-			    }
+					var = UKR_radicalisation_of_prorussians_value
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}
@@ -1307,10 +1307,10 @@ focus_tree = {
 		mutually_exclusive = { focus = UKR_a_step_towards_the_protesters }
 
 		available = {
-            NOT = {
+			NOT = {
 				OR = {
-				    has_completed_focus = UKR_yanukovich_escaped
-				    has_completed_focus = UKR_arrest_yanukovich
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
 		}
@@ -1341,13 +1341,13 @@ focus_tree = {
 
 		available = {
 			OR = {
-                has_global_flag = Yanukovich_escaped
+				has_global_flag = Yanukovich_escaped
 				check_variable = {
-                    var = UKR_legitimacy_of_central_power_value
-                    value = 15
-                    compare = less_than_or_equals
-				    tooltip = legitimacy_of_power_lesser_than_15_ukr_tt
-                }
+					var = UKR_legitimacy_of_central_power_value
+					value = 15
+					compare = less_than_or_equals
+					tooltip = legitimacy_of_power_lesser_than_15_ukr_tt
+				}
 			}
 		}	
 
@@ -1397,7 +1397,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            add_political_power = -15
+			add_political_power = -15
 			RUS = {
 				set_country_flag = CoupInUkraine
 			}
@@ -1407,9 +1407,9 @@ focus_tree = {
 						date < 2014.4.22
 					}
 					country_event = {
-					    id = superevent.4
-					    hours = 12
-				    }
+						id = superevent.4
+						hours = 12
+					}
 				}
 			}
 			if = {
@@ -1437,7 +1437,7 @@ focus_tree = {
 		relative_position_id = UKR_arrest_yanukovich
 
 		available = {
-            has_country_flag = UKR_Yanukovich_overthrown
+			has_country_flag = UKR_Yanukovich_overthrown
 			always = no
 		}
 
@@ -1470,7 +1470,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_stability = 0.025
+			add_stability = 0.025
 			add_political_power = 25
 			set_country_flag = Focuses_after_Ato
 			country_event = ukraine.21
@@ -1495,11 +1495,11 @@ focus_tree = {
 					value = 10
 				}
 				clamp_variable = {
-		            var = President_elections_stamina_value
-		            min = 0
-		            max = 10
-	            }				
-                # Zakarpatie
+					var = President_elections_stamina_value
+					min = 0
+					max = 10
+				}				
+				# Zakarpatie
 				set_variable = { var = Zakarpatska_oblast_timoshenko_support_value value = 3 }
 				set_variable = { var = Zakarpatska_oblast_poroshenko_support_value value = 2 }	
 				set_variable = { var = Zakarpatska_oblast_lyashko_support_value value = 1 }	
@@ -1509,188 +1509,188 @@ focus_tree = {
 				set_variable = { var = Zakarpatska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Zakarpatska_oblast_pravy_sektor_candidate_support_value value = 0 }
 				# Kiyv MAX 23
-                set_variable = { var = Kiyv_timoshenko_support_value value = 7 }
-                set_variable = { var = Kiyv_poroshenko_support_value value = 14 }
+				set_variable = { var = Kiyv_timoshenko_support_value value = 7 }
+				set_variable = { var = Kiyv_poroshenko_support_value value = 14 }
 				set_variable = { var = Kiyv_lyashko_support_value value = 2 }
-                set_variable = { var = Kiyv_dobkin_support_value value = 0 }
-                set_variable = { var = Kiyv_darth_alekseevich_vader_support_value value = 0 }
+				set_variable = { var = Kiyv_dobkin_support_value value = 0 }
+				set_variable = { var = Kiyv_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Kiyv_svoboda_candidate_support_value value = 0 }
 				set_variable = { var = Kiyv_simonenko_support_value value = 0 }
 				set_variable = { var = Kiyv_pravy_sektor_candidate_support_value value = 0 }
 				# Lvivska
-                set_variable = { var = Lvivska_oblast_timoshenko_support_value value = 5 }
-                set_variable = { var = Lvivska_oblast_poroshenko_support_value value = 7 }
+				set_variable = { var = Lvivska_oblast_timoshenko_support_value value = 5 }
+				set_variable = { var = Lvivska_oblast_poroshenko_support_value value = 7 }
 				set_variable = { var = Lvivska_oblast_lyashko_support_value value = 1 }
 				set_variable = { var = Lvivska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Lvivska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Lvivska_oblast_svoboda_candidate_support_value value = 0 }
 				set_variable = { var = Lvivska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Lvivska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # IvanoFrankivska
-                set_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value value = 2 }
-                set_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value value = 4 }
+				# IvanoFrankivska
+				set_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value value = 2 }
+				set_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value value = 4 }
 				set_variable = { var = IvanoFrankivska_oblast_lyashko_support_value value = 1 }
 				set_variable = { var = IvanoFrankivska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = IvanoFrankivska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = IvanoFrankivska_oblast_svoboda_candidate_support_value value = 0 }
-                set_variable = { var = IvanoFrankivska_oblast_simonenko_support_value value = 0 }
-                set_variable = { var = IvanoFrankivska_oblast_pravy_sektor_candidate_support_value value = 0 }
+				set_variable = { var = IvanoFrankivska_oblast_simonenko_support_value value = 0 }
+				set_variable = { var = IvanoFrankivska_oblast_pravy_sektor_candidate_support_value value = 0 }
 				# Ternopilska
-                set_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
-                set_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 3 }
+				set_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
+				set_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 3 }
 				set_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
 				set_variable = { var = Ternopilska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Ternopilska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Ternopilska_oblast_svoboda_candidate_support_value value = 0 }
-                set_variable = { var = Ternopilska_oblast_simonenko_support_value value = 0 }
+				set_variable = { var = Ternopilska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Ternopilska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Volynska
-                set_variable = { var = Volynska_oblast_timoshenko_support_value value = 2 }
-                set_variable = { var = Volynska_oblast_poroshenko_support_value value = 3 }
+				# Volynska
+				set_variable = { var = Volynska_oblast_timoshenko_support_value value = 2 }
+				set_variable = { var = Volynska_oblast_poroshenko_support_value value = 3 }
 				set_variable = { var = Volynska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Volynska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Volynska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Volynska_oblast_svoboda_candidate_support_value value = 0 }
-                set_variable = { var = Volynska_oblast_simonenko_support_value value = 0 }
+				set_variable = { var = Volynska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Volynska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Rivnenska
-                set_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 3 }
-                set_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 3 }
+				# Rivnenska
+				set_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 3 }
+				set_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 3 }
 				set_variable = { var = Rivnenska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Rivnenska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Rivnenska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Rivnenska_oblast_svoboda_candidate_support_value value = 0 }
-                set_variable = { var = Rivnenska_oblast_simonenko_support_value value = 0 }
+				set_variable = { var = Rivnenska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Rivnenska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Chernivetska
-                set_variable = { var = Chernivetska_oblast_timoshenko_support_value value = 2 }
-                set_variable = { var = Chernivetska_oblast_poroshenko_support_value value = 3 }
+				# Chernivetska
+				set_variable = { var = Chernivetska_oblast_timoshenko_support_value value = 2 }
+				set_variable = { var = Chernivetska_oblast_poroshenko_support_value value = 3 }
 				set_variable = { var = Chernivetska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Chernivetska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Chernivetska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Chernivetska_oblast_svoboda_candidate_support_value value = 0 }
-                set_variable = { var = Chernivetska_oblast_simonenko_support_value value = 0 }
+				set_variable = { var = Chernivetska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Chernivetska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Khmelnytska
-                set_variable = { var = Khmelnytska_oblast_timoshenko_support_value value = 3 }
-                set_variable = { var = Khmelnytska_oblast_poroshenko_support_value value = 4 }
+				# Khmelnytska
+				set_variable = { var = Khmelnytska_oblast_timoshenko_support_value value = 3 }
+				set_variable = { var = Khmelnytska_oblast_poroshenko_support_value value = 4 }
 				set_variable = { var = Khmelnytska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Khmelnytska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Khmelnytska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Khmelnytska_oblast_svoboda_candidate_support_value value = 0 }
-                set_variable = { var = Khmelnytska_oblast_simonenko_support_value value = 0 }
+				set_variable = { var = Khmelnytska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Khmelnytska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Vinnytska
-                set_variable = { var = Vinnytska_oblast_timoshenko_support_value value = 3 }
-                set_variable = { var = Vinnytska_oblast_poroshenko_support_value value = 5 }
+				# Vinnytska
+				set_variable = { var = Vinnytska_oblast_timoshenko_support_value value = 3 }
+				set_variable = { var = Vinnytska_oblast_poroshenko_support_value value = 5 }
 				set_variable = { var = Vinnytska_oblast_lyashko_support_value value = 0 }
-                set_variable = { var = Vinnytska_oblast_dobkin_support_value value = 0 }
+				set_variable = { var = Vinnytska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Vinnytska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Vinnytska_oblast_svoboda_candidate_support_value value = 0 }
-                set_variable = { var = Vinnytska_oblast_simonenko_support_value value = 0 }
+				set_variable = { var = Vinnytska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Vinnytska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Zhytomyrska
-                set_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 2 }
-                set_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 4 }
+				# Zhytomyrska
+				set_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 2 }
+				set_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 4 }
 				set_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Zhytomyrska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Zhytomyrska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Zhytomyrska_oblast_svoboda_candidate_support_value value = 0 }
-                set_variable = { var = Zhytomyrska_oblast_simonenko_support_value value = 0 }
+				set_variable = { var = Zhytomyrska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Zhytomyrska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Cherkaska
-                set_variable = { var = Cherkaska_oblast_timoshenko_support_value value = 2 }
-                set_variable = { var = Cherkaska_oblast_poroshenko_support_value value = 3 }
+				# Cherkaska
+				set_variable = { var = Cherkaska_oblast_timoshenko_support_value value = 2 }
+				set_variable = { var = Cherkaska_oblast_poroshenko_support_value value = 3 }
 				set_variable = { var = Cherkaska_oblast_lyashko_support_value value = 1 }
-                set_variable = { var = Cherkaska_oblast_dobkin_support_value value = 0 }
+				set_variable = { var = Cherkaska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Cherkaska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Cherkaska_oblast_svoboda_candidate_support_value value = 0 }
-                set_variable = { var = Cherkaska_oblast_simonenko_support_value value = 0 }
+				set_variable = { var = Cherkaska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Cherkaska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Poltavska
-                set_variable = { var = Poltavska_oblast_timoshenko_support_value value = 2 }
-                set_variable = { var = Poltavska_oblast_poroshenko_support_value value = 5 }
+				# Poltavska
+				set_variable = { var = Poltavska_oblast_timoshenko_support_value value = 2 }
+				set_variable = { var = Poltavska_oblast_poroshenko_support_value value = 5 }
 				set_variable = { var = Poltavska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Poltavska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Poltavska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Poltavska_oblast_svoboda_candidate_support_value value = 0 }
-                set_variable = { var = Poltavska_oblast_simonenko_support_value value = 0 }
+				set_variable = { var = Poltavska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Poltavska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Kirovohradska
-                set_variable = { var = Kirovohradska_oblast_timoshenko_support_value value = 2 }
-                set_variable = { var = Kirovohradska_oblast_poroshenko_support_value value = 3 }
+				# Kirovohradska
+				set_variable = { var = Kirovohradska_oblast_timoshenko_support_value value = 2 }
+				set_variable = { var = Kirovohradska_oblast_poroshenko_support_value value = 3 }
 				set_variable = { var = Kirovohradska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Kirovohradska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Kirovohradska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Kirovohradska_oblast_svoboda_candidate_support_value value = 0 }
-                set_variable = { var = Kirovohradska_oblast_simonenko_support_value value = 0 }
+				set_variable = { var = Kirovohradska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Kirovohradska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Chernihivska
-                set_variable = { var = Chernihivska_oblast_timoshenko_support_value value = 2 }
-                set_variable = { var = Chernihivska_oblast_poroshenko_support_value value = 3 }
-                set_variable = { var = Chernihivska_oblast_lyashko_support_value value = 0 }
+				# Chernihivska
+				set_variable = { var = Chernihivska_oblast_timoshenko_support_value value = 2 }
+				set_variable = { var = Chernihivska_oblast_poroshenko_support_value value = 3 }
+				set_variable = { var = Chernihivska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Chernihivska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Chernihivska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Chernihivska_oblast_svoboda_candidate_support_value value = 0 }
 				set_variable = { var = Chernihivska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Chernihivska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Sumska
-                set_variable = { var = Sumska_oblast_timoshenko_support_value value = 2 }
-                set_variable = { var = Sumska_oblast_poroshenko_support_value value = 4 }
-                set_variable = { var = Sumska_oblast_lyashko_support_value value = 0 }
+				# Sumska
+				set_variable = { var = Sumska_oblast_timoshenko_support_value value = 2 }
+				set_variable = { var = Sumska_oblast_poroshenko_support_value value = 4 }
+				set_variable = { var = Sumska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Sumska_oblast_dobkin_support_value value = 0 }
-                set_variable = { var = Sumska_oblast_darth_alekseevich_vader_support_value value = 0 }
+				set_variable = { var = Sumska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Sumska_oblast_svoboda_candidate_support_value value = 0 }
 				set_variable = { var = Sumska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Sumska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Kharkivska
-                set_variable = { var = Kharkivska_oblast_timoshenko_support_value value = 3 }
-                set_variable = { var = Kharkivska_oblast_poroshenko_support_value value = 7 }
+				# Kharkivska
+				set_variable = { var = Kharkivska_oblast_timoshenko_support_value value = 3 }
+				set_variable = { var = Kharkivska_oblast_poroshenko_support_value value = 7 }
 				set_variable = { var = Kharkivska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Kharkivska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Kharkivska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Kharkivska_oblast_svoboda_candidate_support_value value = 0 }
 				set_variable = { var = Kharkivska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Kharkivska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Dnipropetrovska
-                set_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value value = 4 }
-                set_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 10 }
+				# Dnipropetrovska
+				set_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value value = 4 }
+				set_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 10 }
 				set_variable = { var = Dnipropetrovska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Dnipropetrovska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Dnipropetrovska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Dnipropetrovska_oblast_svoboda_candidate_support_value value = 0 }
 				set_variable = { var = Dnipropetrovska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Dnipropetrovska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Zaporizka
-                set_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 2 }
-                set_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 5 }
+				# Zaporizka
+				set_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 2 }
+				set_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 5 }
 				set_variable = { var = Zaporizka_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Zaporizka_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Zaporizka_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Zaporizka_oblast_svoboda_candidate_support_value value = 0 }
 				set_variable = { var = Zaporizka_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Zaporizka_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Mykolaivska
-                set_variable = { var = Mykolaivska_oblast_timoshenko_support_value value = 2 }
-                set_variable = { var = Mykolaivska_oblast_poroshenko_support_value value = 4 }
+				# Mykolaivska
+				set_variable = { var = Mykolaivska_oblast_timoshenko_support_value value = 2 }
+				set_variable = { var = Mykolaivska_oblast_poroshenko_support_value value = 4 }
 				set_variable = { var = Mykolaivska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Mykolaivska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Mykolaivska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Mykolaivska_oblast_svoboda_candidate_support_value value = 0 }
 				set_variable = { var = Mykolaivska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Mykolaivska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Khersonska
-                set_variable = { var = Khersonska_oblast_timoshenko_support_value value = 2 }
-                set_variable = { var = Khersonska_oblast_poroshenko_support_value value = 3 }
+				# Khersonska
+				set_variable = { var = Khersonska_oblast_timoshenko_support_value value = 2 }
+				set_variable = { var = Khersonska_oblast_poroshenko_support_value value = 3 }
 				set_variable = { var = Khersonska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Khersonska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Khersonska_oblast_darth_alekseevich_vader_support_value value = 0 }
 				set_variable = { var = Khersonska_oblast_svoboda_candidate_support_value value = 0 }
 				set_variable = { var = Khersonska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Khersonska_oblast_pravy_sektor_candidate_support_value value = 0 }
-                # Odeska
-                set_variable = { var = Odeska_oblast_timoshenko_support_value value = 4 }
-                set_variable = { var = Odeska_oblast_poroshenko_support_value value = 6 }
+				# Odeska
+				set_variable = { var = Odeska_oblast_timoshenko_support_value value = 4 }
+				set_variable = { var = Odeska_oblast_poroshenko_support_value value = 6 }
 				set_variable = { var = Odeska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Odeska_oblast_dobkin_support_value value = 0 }
 				set_variable = { var = Odeska_oblast_darth_alekseevich_vader_support_value value = 0 }
@@ -1698,9 +1698,9 @@ focus_tree = {
 				set_variable = { var = Odeska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Odeska_oblast_pravy_sektor_candidate_support_value value = 0 }
 				# MAX 22
-                # Donetska
-                set_variable = { var = Donetska_oblast_timoshenko_support_value value = 5 }
-                set_variable = { var = Donetska_oblast_poroshenko_support_value value = 6 }
+				# Donetska
+				set_variable = { var = Donetska_oblast_timoshenko_support_value value = 5 }
+				set_variable = { var = Donetska_oblast_poroshenko_support_value value = 6 }
 				set_variable = { var = Donetska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Donetska_oblast_dobkin_support_value value = 1 }
 				set_variable = { var = Donetska_oblast_darth_alekseevich_vader_support_value value = 0 }
@@ -1708,9 +1708,9 @@ focus_tree = {
 				set_variable = { var = Donetska_oblast_simonenko_support_value value = 0 }
 				set_variable = { var = Donetska_oblast_pravy_sektor_candidate_support_value value = 0 }
 				# MAX 11
-                # Luhanska
-                set_variable = { var = Luhanska_oblast_timoshenko_support_value value = 2 }
-                set_variable = { var = Luhanska_oblast_poroshenko_support_value value = 4 }	
+				# Luhanska
+				set_variable = { var = Luhanska_oblast_timoshenko_support_value value = 2 }
+				set_variable = { var = Luhanska_oblast_poroshenko_support_value value = 4 }	
 				set_variable = { var = Luhanska_oblast_lyashko_support_value value = 0 }
 				set_variable = { var = Luhanska_oblast_dobkin_support_value value = 1 }
 				set_variable = { var = Luhanska_oblast_darth_alekseevich_vader_support_value value = 0 }
@@ -1746,12 +1746,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_stability = 0.035
+			add_stability = 0.035
 			add_political_power = 15
 			add_popularity = {
-                ideology = conservatism_democracy
-                popularity = 0.05
-            }
+				ideology = conservatism_democracy
+				popularity = 0.05
+			}
 			country_event = {
 				id = ukraine.56
 				hours = 6
@@ -1778,19 +1778,19 @@ focus_tree = {
 				id = ukraine.91
 				hour = 3
 			}
-		    add_stability = 0.02
+			add_stability = 0.02
 			add_war_support = 0.03
 			custom_effect_tooltip = increase_of_support_in_parlamient_tt
 			hidden_effect = {
 				add_to_variable = {
-                    var = UKR_parlamient_support
-                    value = 35
-                }
+					var = UKR_parlamient_support
+					value = 35
+				}
 				clamp_variable = {
-                    var = UKR_parlamient_support
+					var = UKR_parlamient_support
 					min = 0
-                    max = 450
-                }
+					max = 450
+				}
 			}
 		}
 	}
@@ -1810,15 +1810,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    unlock_decision_category_tooltip = UKR_decisions_of_the_transitional_government
+			unlock_decision_category_tooltip = UKR_decisions_of_the_transitional_government
 			add_popularity = {
-                ideology = conservatism_democracy
-                popularity = 0.03
-            }
+				ideology = conservatism_democracy
+				popularity = 0.03
+			}
 			add_popularity = {
-                ideology = social_democracy
-                popularity = 0.03
-            }
+				ideology = social_democracy
+				popularity = 0.03
+			}
 			remove_ideas = UKR_disorderly_government
 		}
 	}
@@ -1841,13 +1841,13 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			swap_ideas = {
-                remove_idea = UKR_protests
-                add_idea = UKR_protests_in_the_east
-            }
+				remove_idea = UKR_protests
+				add_idea = UKR_protests_in_the_east
+			}
 			add_popularity = {
-                ideology = autoritarian_democracy
-                popularity = 0.025
-            }
+				ideology = autoritarian_democracy
+				popularity = 0.025
+			}
 			add_stability = -0.025
 			hidden_effect = {
 				country_event = ukraine.20
@@ -1896,7 +1896,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    army_experience = 35
+			army_experience = 35
 		}
 	}
 
@@ -1917,63 +1917,63 @@ focus_tree = {
 		bypass = {
 			has_global_flag = Start_Of_ATO
 			division_template = {
-	            name = "Rezervnyy batalyon operatyvnoho pryznachennya NHU"
-	            regiments = {
-                    infantry = { x = 0 y = 0 }
-		            infantry = { x = 0 y = 1 }
-		            infantry = { x = 0 y = 2 }
-                    infantry = { x = 1 y = 0 }
-	            }
-                support = {
-                    engineer = { x = 0 y = 0 }
-                    recon = { x = 0 y = 1 }
-                    mortar = { x = 0 y = 2 }
-				    atgm_company = { x = 0 y = 3 }
-        		    field_hospital = { x = 0 y = 4} 
-        		    sniper_company = { x = 1 y = 0 }
-        		    manpads_platoon = { x = 1 y = 1}
-  				    logistics_company = { x = 1 y = 2}
-				    signal_company = { x = 1 y = 3} 
-	            }
-            }
+				name = "Rezervnyy batalyon operatyvnoho pryznachennya NHU"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					recon = { x = 0 y = 1 }
+					mortar = { x = 0 y = 2 }
+					atgm_company = { x = 0 y = 3 }
+					field_hospital = { x = 0 y = 4} 
+					sniper_company = { x = 1 y = 0 }
+					manpads_platoon = { x = 1 y = 1}
+  					logistics_company = { x = 1 y = 2}
+					signal_company = { x = 1 y = 3} 
+				}
+			}
 		}
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
-		    add_manpower = 4500
+			add_manpower = 4500
 			add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
-		    custom_effect_tooltip = UKR_support_of_the_volunteer_battalion_tt
+			custom_effect_tooltip = UKR_support_of_the_volunteer_battalion_tt
 			custom_effect_tooltip = UKR_support_of_the_volunteers_tt
 			hidden_effect = {
 				division_template = {
-	                name = "Rezervnyy batal'yon operatyvnoho pryznachennya NHU"
-	                regiments = {
-                        infantry = { x = 0 y = 0 }
-		                infantry = { x = 0 y = 1 }
-		                infantry = { x = 0 y = 2 }
-                        infantry = { x = 1 y = 0 }
-	                }
-                    support = {
-                        engineer = { x = 0 y = 0 }
-                        recon = { x = 0 y = 1 }
-                        mortar = { x = 0 y = 2 }
-				        atgm_company = { x = 0 y = 3 }
-        		        field_hospital = { x = 0 y = 4} 
-        		        sniper_company = { x = 1 y = 0 }
-        		        manpads_platoon = { x = 1 y = 1}
-  				        logistics_company = { x = 1 y = 2}
-				        signal_company = { x = 1 y = 3} 
-	                }
-                }
+					name = "Rezervnyy batal'yon operatyvnoho pryznachennya NHU"
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						mortar = { x = 0 y = 2 }
+						atgm_company = { x = 0 y = 3 }
+						field_hospital = { x = 0 y = 4} 
+						sniper_company = { x = 1 y = 0 }
+						manpads_platoon = { x = 1 y = 1}
+  						logistics_company = { x = 1 y = 2}
+						signal_company = { x = 1 y = 3} 
+					}
+				}
 				random_owned_controlled_state = {
 					create_unit = {
-				        division = "name = \"1-y rezervnyy batal'yon operatyvnoho pryznachennya NHU\" division_template = \"Rezervnyy batal'yon operatyvnoho pryznachennya NHU\" start_experience_factor = 0.15"
-				        owner = UKR
-				        count = 1
-			        }
+						division = "name = \"1-y rezervnyy batal'yon operatyvnoho pryznachennya NHU\" division_template = \"Rezervnyy batal'yon operatyvnoho pryznachennya NHU\" start_experience_factor = 0.15"
+						owner = UKR
+						count = 1
+					}
 				}
 			}
 		}
@@ -2002,7 +2002,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    country_event = ukraine.53
+			country_event = ukraine.53
 		}
 	}
 
@@ -2024,7 +2024,7 @@ focus_tree = {
 			has_global_flag = Start_Of_ATO
 		}
 		bypass_effect = {
-		    add_to_variable = { UKR_AFU_army_org_factor = 0.075 }
+			add_to_variable = { UKR_AFU_army_org_factor = 0.075 }
 			add_to_variable = { UKR_AFU_army_morale_factor = 0.15 }
 			custom_effect_tooltip = UKR_forced_demobilization_tt
 		}
@@ -2034,9 +2034,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_to_variable = { UKR_AFU_army_org_factor = 0.075 }
+			add_to_variable = { UKR_AFU_army_org_factor = 0.075 }
 			add_to_variable = { UKR_AFU_army_morale_factor = 0.15 }
-		    custom_effect_tooltip = UKR_forced_demobilization_tt
+			custom_effect_tooltip = UKR_forced_demobilization_tt
 		}
 	}
 
@@ -2059,97 +2059,97 @@ focus_tree = {
 		}
 		bypass_effect = {
 			add_to_variable = { UKR_AFU_army_org_factor = 0.15 }
-		    custom_effect_tooltip = UKR_creation_of_tro_tt
+			custom_effect_tooltip = UKR_creation_of_tro_tt
 			hidden_effect = {
 				country_event = {
-                    id = ukraine.28
-                    days = 46
-                }
+					id = ukraine.28
+					days = 46
+				}
 				division_template = {
-	                name = "Dobrovol'che formuvannya"
-	                regiments = {
-                        territorial_defense_unit = { x = 0 y = 0 }
-		                territorial_defense_unit = { x = 0 y = 1 }
-		                territorial_defense_unit = { x = 0 y = 2 }
-                        territorial_defense_unit = { x = 1 y = 0 }
-	                }
-                    support = {
-                        engineer = { x = 0 y = 0 }
-                        recon = { x = 0 y = 1 }
-                        mortar = { x = 0 y = 2 }
-				        atgm_company = { x = 0 y = 3 }
-        		        field_hospital = { x = 0 y = 4} 
-        		        sniper_company = { x = 1 y = 0 }
-        		        manpads_platoon = { x = 1 y = 1}
-  				        logistics_company = { x = 1 y = 2}
-				        signal_company = { x = 1 y = 3} 
-	                }
-                }
+					name = "Dobrovol'che formuvannya"
+					regiments = {
+						territorial_defense_unit = { x = 0 y = 0 }
+						territorial_defense_unit = { x = 0 y = 1 }
+						territorial_defense_unit = { x = 0 y = 2 }
+						territorial_defense_unit = { x = 1 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						mortar = { x = 0 y = 2 }
+						atgm_company = { x = 0 y = 3 }
+						field_hospital = { x = 0 y = 4} 
+						sniper_company = { x = 1 y = 0 }
+						manpads_platoon = { x = 1 y = 1}
+  						logistics_company = { x = 1 y = 2}
+						signal_company = { x = 1 y = 3} 
+					}
+				}
 				division_template = {
-	                name = "Batal'on TRO"
-	                regiments = {
-                        territorial_defense_unit = { x = 0 y = 0 }
-		                territorial_defense_unit = { x = 0 y = 1 }
-		                territorial_defense_unit = { x = 0 y = 2 }
-                        territorial_defense_unit = { x = 1 y = 0 }
-	                }
-                    support = {
-                        engineer = { x = 0 y = 0 }
-                        recon = { x = 0 y = 1 }
-                        mortar = { x = 0 y = 2 }
-				        atgm_company = { x = 0 y = 3 }
-        		        field_hospital = { x = 0 y = 4} 
-        		        sniper_company = { x = 1 y = 0 }
-        		        manpads_platoon = { x = 1 y = 1}
-  				        logistics_company = { x = 1 y = 2}
-				        signal_company = { x = 1 y = 3} 
-	                }
-                }
+					name = "Batal'on TRO"
+					regiments = {
+						territorial_defense_unit = { x = 0 y = 0 }
+						territorial_defense_unit = { x = 0 y = 1 }
+						territorial_defense_unit = { x = 0 y = 2 }
+						territorial_defense_unit = { x = 1 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						mortar = { x = 0 y = 2 }
+						atgm_company = { x = 0 y = 3 }
+						field_hospital = { x = 0 y = 4} 
+						sniper_company = { x = 1 y = 0 }
+						manpads_platoon = { x = 1 y = 1}
+  						logistics_company = { x = 1 y = 2}
+						signal_company = { x = 1 y = 3} 
+					}
+				}
 			}
 		}
 
 		available = {
-            has_completed_focus = UKR_partial_mobilization
+			has_completed_focus = UKR_partial_mobilization
 		}
 
 		completion_reward = {
 			add_to_variable = { UKR_AFU_army_org_factor = 0.15 }
-		    custom_effect_tooltip = UKR_creation_of_tro_tt
+			custom_effect_tooltip = UKR_creation_of_tro_tt
 			hidden_effect = {
 				country_event = {
-                    id = ukraine.28
-                    days = 46
-                }
+					id = ukraine.28
+					days = 46
+				}
 				division_template = {
-	                name = "Dobrovol'che formuvannya"
-	                regiments = {
-                        territorial_defense_unit = { x = 0 y = 0 }
-		                territorial_defense_unit = { x = 0 y = 1 }
-		                territorial_defense_unit = { x = 0 y = 2 }
-                        territorial_defense_unit = { x = 1 y = 0 }
-	                }
-                    support = {
-                        engineer = { x = 0 y = 0 }
-		                recon = { x = 0 y = 1 }
-		                mortar = { x = 0 y = 2 }
-		                atgm_company = { x = 0 y = 3 }
-	                }
-                }
+					name = "Dobrovol'che formuvannya"
+					regiments = {
+						territorial_defense_unit = { x = 0 y = 0 }
+						territorial_defense_unit = { x = 0 y = 1 }
+						territorial_defense_unit = { x = 0 y = 2 }
+						territorial_defense_unit = { x = 1 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						mortar = { x = 0 y = 2 }
+						atgm_company = { x = 0 y = 3 }
+					}
+				}
 				division_template = {
-	                name = "Batal'on TRO"
-	                regiments = {
-                        territorial_defense_unit = { x = 0 y = 0 }
-		                territorial_defense_unit = { x = 0 y = 1 }
-		                territorial_defense_unit = { x = 0 y = 2 }
-                        territorial_defense_unit = { x = 1 y = 0 }
-	                }
-                    support = {
-                        engineer = { x = 0 y = 0 }
-		                recon = { x = 0 y = 1 }
-		                mortar = { x = 0 y = 2 }
-		                atgm_company = { x = 0 y = 3 }
-	                }
-                }
+					name = "Batal'on TRO"
+					regiments = {
+						territorial_defense_unit = { x = 0 y = 0 }
+						territorial_defense_unit = { x = 0 y = 1 }
+						territorial_defense_unit = { x = 0 y = 2 }
+						territorial_defense_unit = { x = 1 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						mortar = { x = 0 y = 2 }
+						atgm_company = { x = 0 y = 3 }
+					}
+				}
 			}
 		}
 	}
@@ -2219,7 +2219,7 @@ focus_tree = {
 		relative_position_id = UKR_support_of_the_volunteer_battalion
 
 		available = {
-            always = no
+			always = no
 		}
 
 		completion_reward = {
@@ -2241,31 +2241,31 @@ focus_tree = {
 				if = {
 					limit = {
 						OR = {
-						    DPR = { 
-							    is_ai = no
-						    }
-						    KPR = { 
-							    is_ai = no
-						    }	
-						    OPR = { 
-							    is_ai = no
-						    }
-						    LPR = { 
+							DPR = { 
 								is_ai = no
-						    }		
+							}
+							KPR = { 
+								is_ai = no
+							}	
+							OPR = { 
+								is_ai = no
+							}
+							LPR = { 
+								is_ai = no
+							}		
 							RUS = {
 								is_ai = no
 							}																		
-					    }
+						}
 						UKR = {
 							is_ai = yes
 						}
 					}
-                    load_oob = UKR_ATO_Buff
+					load_oob = UKR_ATO_Buff
 				}
-		        add_dynamic_modifier = { modifier = UKR_ATO_idea }
-	            set_variable = { UKR_ATO_pocket_penalty = -0.30 }
-	            set_variable = { UKR_ATO_experience_loss_factor = -0.30 }
+				add_dynamic_modifier = { modifier = UKR_ATO_idea }
+				set_variable = { UKR_ATO_pocket_penalty = -0.30 }
+				set_variable = { UKR_ATO_experience_loss_factor = -0.30 }
 				set_variable = { UKR_ATO_casualty_trickleback = 0.35}
 				set_variable = { UKR_ATO_army_speed_factor = -0.35 }
 				set_variable = { UKR_ATO_army_attack_speed_factor = -0.35}
@@ -2280,17 +2280,17 @@ focus_tree = {
 				}				
 				NDR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                set_variable = { People_republic_pocket_penalty = -0.30 }
-	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_pocket_penalty = -0.30 }
+					set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
 					set_variable = { People_republic_army_attack_speed_factor = -0.45}
-                    set_variable = { People_republic_casualty_trickleback = 0.35}
+					set_variable = { People_republic_casualty_trickleback = 0.35}
 					set_variable = { People_republic_army_attack_factor = -0.15}
 				}
 				DPR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                set_variable = { People_republic_pocket_penalty = -0.30 }
-	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_pocket_penalty = -0.30 }
+					set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
 					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
@@ -2298,8 +2298,8 @@ focus_tree = {
 				}	
 				LPR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                set_variable = { People_republic_pocket_penalty = -0.30 }
-	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_pocket_penalty = -0.30 }
+					set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
 					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
@@ -2307,8 +2307,8 @@ focus_tree = {
 				}
 				SKR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                set_variable = { People_republic_pocket_penalty = -0.30 }
-	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_pocket_penalty = -0.30 }
+					set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
 					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
@@ -2316,8 +2316,8 @@ focus_tree = {
 				}
 				SLR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                set_variable = { People_republic_pocket_penalty = -0.30 }
-	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_pocket_penalty = -0.30 }
+					set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
 					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
@@ -2325,8 +2325,8 @@ focus_tree = {
 				}									
 				SDR = {
 					add_dynamic_modifier = { modifier = People_republic_ATO_idea }
-	                set_variable = { People_republic_pocket_penalty = -0.30 }
-	                set_variable = { People_republic_experience_loss_factor = -0.20 }
+					set_variable = { People_republic_pocket_penalty = -0.30 }
+					set_variable = { People_republic_experience_loss_factor = -0.20 }
 					set_variable = { People_republic_army_speed_factor = -0.55 }
 					set_variable = { People_republic_army_attack_speed_factor = -0.45}
 					set_variable = { People_republic_casualty_trickleback = 0.35}
@@ -2916,7 +2916,7 @@ focus_tree = {
 		y = 2
 		
 		prerequisite = { focus = UKR_lower_the_age_for_conscription }
-        prerequisite = { focus = UKR_start_busification }
+		prerequisite = { focus = UKR_start_busification }
 		prerequisite = { focus = UKR_offensive_guard }
 		relative_position_id = UKR_mobilization
 
@@ -3397,7 +3397,7 @@ focus_tree = {
 		y = 0
 
 		available = {
-		    NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -3433,7 +3433,7 @@ focus_tree = {
 		relative_position_id = UKR_new_foreign_policy
 
 		available = {
-            
+			
 		}
 
 		allow_branch = {
@@ -3459,11 +3459,11 @@ focus_tree = {
 		relative_position_id = UKR_new_foreign_policy
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
-            custom_effect_tooltip = UKR_law_on_special_status_of_donbass_tt
+			custom_effect_tooltip = UKR_law_on_special_status_of_donbass_tt
 		}
 	}	
 
@@ -3478,7 +3478,7 @@ focus_tree = {
 		relative_position_id = UKR_new_foreign_policy
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
@@ -3497,11 +3497,11 @@ focus_tree = {
 		relative_position_id = UKR_stop_cooperation_with_russia
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
-            country_event = {
+			country_event = {
 				id = ukraine.48
 				hours = 3
 			}
@@ -3519,7 +3519,7 @@ focus_tree = {
 		relative_position_id = UKR_stop_cooperation_with_russia
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
@@ -3538,7 +3538,7 @@ focus_tree = {
 		relative_position_id = UKR_energy_independence_from_the_russia
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
@@ -3557,7 +3557,7 @@ focus_tree = {
 		relative_position_id = UKR_stop_cooperation_with_russia
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
@@ -3596,7 +3596,7 @@ focus_tree = {
 		relative_position_id = UKR_new_foreign_policy
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
@@ -3615,7 +3615,7 @@ focus_tree = {
 		relative_position_id = UKR_integration_with_nato
 
 		available = {
-            has_completed_focus = UKR_zelensky
+			has_completed_focus = UKR_zelensky
 			date > 2020.1.1
 		}
 
@@ -3635,11 +3635,11 @@ focus_tree = {
 		relative_position_id = UKR_integration_with_nato
 
 		available = {
-            has_completed_focus = UKR_western_instructors
+			has_completed_focus = UKR_western_instructors
 		}
 
 		completion_reward = {
-            army_experience = 35
+			army_experience = 35
 		}
 	}	
 
@@ -3655,7 +3655,7 @@ focus_tree = {
 		relative_position_id = UKR_integration_with_nato
 
 		available = {
-            has_completed_focus = UKR_nato_standard_army
+			has_completed_focus = UKR_nato_standard_army
 			date > 2020.1.1
 		}
 
@@ -3675,7 +3675,7 @@ focus_tree = {
 		relative_position_id = UKR_new_foreign_policy
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
@@ -3694,11 +3694,11 @@ focus_tree = {
 		relative_position_id = UKR_new_foreign_policy
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
-            add_ideas = UKR_the_breadbasket_of_europe_idea
+			add_ideas = UKR_the_breadbasket_of_europe_idea
 		}
 	}
 
@@ -3713,7 +3713,7 @@ focus_tree = {
 		relative_position_id = UKR_new_foreign_policy
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
@@ -3733,12 +3733,12 @@ focus_tree = {
 		relative_position_id = UKR_new_foreign_policy
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
 			add_political_power = 25
-            hidden_effect = {
+			hidden_effect = {
 				news_event = news_events.38
 				hours = 3
 			}
@@ -3757,12 +3757,12 @@ focus_tree = {
 		relative_position_id = UKR_new_foreign_policy
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
 			add_political_power = 25
-            set_country_flag = UKR_associated_trio_flag
+			set_country_flag = UKR_associated_trio_flag
 			hidden_effect = {
 				news_event = news_events.39
 				hours = 3
@@ -3792,7 +3792,7 @@ focus_tree = {
 					days > 100
 				}
 			}
-            has_completed_focus = UKR_country_without_corruption
+			has_completed_focus = UKR_country_without_corruption
 			has_completed_focus = UKR_gas_market_reform
 			has_completed_focus = UKR_land_market
 			date > 2021.1.1
@@ -3814,12 +3814,12 @@ focus_tree = {
 		relative_position_id = UKR_new_foreign_policy
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
 			add_political_power = 25
-            hidden_effect = {
+			hidden_effect = {
 				news_event = {
 					id = news_events.37
 					hours = 3
@@ -3839,7 +3839,7 @@ focus_tree = {
 		relative_position_id = UKR_new_foreign_policy
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
@@ -3889,7 +3889,7 @@ focus_tree = {
 		relative_position_id = UKR_snap_presidential_elections
 
 		available = {
-            always = no
+			always = no
 		}
 
 		completion_reward = {
@@ -3908,7 +3908,7 @@ focus_tree = {
 		relative_position_id = UKR_snap_presidential_elections
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -3929,7 +3929,7 @@ focus_tree = {
 		relative_position_id = UKR_poroshenko_victory
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -4019,7 +4019,7 @@ focus_tree = {
 		y = 2
 
 		prerequisite = { focus = UKR_police_reform }
-        prerequisite = { focus = UKR_healthcare_reform }
+		prerequisite = { focus = UKR_healthcare_reform }
 		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
 
 		available = {
@@ -4137,7 +4137,7 @@ focus_tree = {
 		relative_position_id = UKR_poroshenko_victory
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -4158,7 +4158,7 @@ focus_tree = {
 		relative_position_id = UKR_economic_reforms
 
 		available = {
-            
+			
 		}
 
 		completion_reward = {
@@ -4215,7 +4215,7 @@ focus_tree = {
 		relative_position_id = UKR_economic_reforms
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -4236,7 +4236,7 @@ focus_tree = {
 		relative_position_id = UKR_economic_reforms
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -4281,7 +4281,7 @@ focus_tree = {
 		relative_position_id = UKR_poroshenko_victory
 
 		available = {
-            has_completed_focus = UKR_amend_the_law_on_joint_stock_companies
+			has_completed_focus = UKR_amend_the_law_on_joint_stock_companies
 		}
 
 		completion_reward = {
@@ -4660,128 +4660,128 @@ focus_tree = {
 		}
 	}
 
-    focus = {
-        id = UKR_decomunization
-        icon = GFX_focus_UKR_start_of_ato
+	focus = {
+		id = UKR_decomunization
+		icon = GFX_focus_UKR_start_of_ato
 		cost = 10
-        x = 29
-        y = 1
+		x = 29
+		y = 1
  
-        prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
-        relative_position_id = UKR_poroshenko_victory
+		prerequisite = { focus = UKR_poroshenko_victory focus = UKR_timoshenko_victory focus = UKR_oleg_lyashko_victory focus = UKR_zelensky }
+		relative_position_id = UKR_poroshenko_victory
 
 		completion_reward = {
 			add_popularity = {
-                ideology = communism
-                popularity = -0.015
-            }
+				ideology = communism
+				popularity = -0.015
+			}
 		}
-    }
+	}
 
-    focus = {
-        id = UKR_rename_streets
-        icon = GFX_focus_UKR_start_of_ato
-        prerequisite = { focus = UKR_decomunization }
-        relative_position_id = UKR_decomunization
-        x = -3
-        y = 2
-        cost = 10
+	focus = {
+		id = UKR_rename_streets
+		icon = GFX_focus_UKR_start_of_ato
+		prerequisite = { focus = UKR_decomunization }
+		relative_position_id = UKR_decomunization
+		x = -3
+		y = 2
+		cost = 10
 
 		completion_reward = {
 			add_political_power = 15
 			add_popularity = {
-                ideology = communism
-                popularity = -0.025
-            }
+				ideology = communism
+				popularity = -0.025
+			}
 		}
-    }
+	}
 
-    focus = {
-        id = UKR_memory_institute
-        icon = GFX_focus_UKR_start_of_ato
-        prerequisite = { focus = UKR_decomunization }
-        relative_position_id = UKR_decomunization
-        cost = 10
+	focus = {
+		id = UKR_memory_institute
+		icon = GFX_focus_UKR_start_of_ato
+		prerequisite = { focus = UKR_decomunization }
+		relative_position_id = UKR_decomunization
+		cost = 10
 		x = 0
-        y = 1
+		y = 1
 
 		completion_reward = {
 			add_popularity = {
-                ideology = communism
-                popularity = -0.015
-            }
+				ideology = communism
+				popularity = -0.015
+			}
 		}
-    }
+	}
 
-    focus = {
-        id = UKR_remove_monuments
-        icon = GFX_focus_UKR_start_of_ato
-        prerequisite = { focus = UKR_decomunization }
-        relative_position_id = UKR_decomunization
-        cost = 10
+	focus = {
+		id = UKR_remove_monuments
+		icon = GFX_focus_UKR_start_of_ato
+		prerequisite = { focus = UKR_decomunization }
+		relative_position_id = UKR_decomunization
+		cost = 10
 		x = 3
-        y = 2
-        
+		y = 2
+		
 		completion_reward = {
 			add_popularity = {
-                ideology = communism
-                popularity = -0.015
-            }
+				ideology = communism
+				popularity = -0.015
+			}
 		}
-    }
+	}
 
-    focus = {
-        id = UKR_open_soviet_archives
-        icon = GFX_focus_UKR_start_of_ato
-        prerequisite = { focus = UKR_memory_institute }
-        relative_position_id = UKR_decomunization
+	focus = {
+		id = UKR_open_soviet_archives
+		icon = GFX_focus_UKR_start_of_ato
+		prerequisite = { focus = UKR_memory_institute }
+		relative_position_id = UKR_decomunization
 		cost = 10
-        x = -1
-        y = 2
+		x = -1
+		y = 2
 
 		completion_reward = {
 			add_popularity = {
-                ideology = communism
-                popularity = -0.015
-            }
+				ideology = communism
+				popularity = -0.015
+			}
 		}
-    }
+	}
 
-    focus = {
-        id = UKR_history_education_reform
-        icon = GFX_focus_UKR_start_of_ato
-        prerequisite = { focus = UKR_memory_institute }
-        relative_position_id = UKR_decomunization
-        cost = 10
+	focus = {
+		id = UKR_history_education_reform
+		icon = GFX_focus_UKR_start_of_ato
+		prerequisite = { focus = UKR_memory_institute }
+		relative_position_id = UKR_decomunization
+		cost = 10
 		x = 1
-        y = 2
+		y = 2
 
 		completion_reward = {
 			add_popularity = {
-                ideology = communism
-                popularity = -0.015
-            }
+				ideology = communism
+				popularity = -0.015
+			}
 		}
-    }
+	}
 
-    focus = {
-        id = UKR_dissolve_cpu
-        icon = GFX_focus_UKR_start_of_ato
+	focus = {
+		id = UKR_dissolve_cpu
+		icon = GFX_focus_UKR_start_of_ato
 		cost = 10
-        x = 0
-        y = 3
-        
-        prerequisite = { focus = UKR_rename_streets focus = UKR_remove_monuments focus = UKR_open_soviet_archives focus = UKR_history_education_reform }
-        relative_position_id = UKR_decomunization
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = UKR_rename_streets focus = UKR_remove_monuments focus = UKR_open_soviet_archives focus = UKR_history_education_reform }
+		relative_position_id = UKR_decomunization
 
 		completion_reward = {
 			add_political_power = -25
 			add_popularity = {
-                ideology = communism
-                popularity = -0.035
-            }
+				ideology = communism
+				popularity = -0.035
+			}
 		}
-    }
+	}
 	
 
 	focus = {
@@ -4796,7 +4796,7 @@ focus_tree = {
 
 		available = {
 			date = 2018.01.01
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2019InProgress
 			}
 			has_country_flag = innextupdate
@@ -4817,7 +4817,7 @@ focus_tree = {
 		relative_position_id = UKR_zelensky
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -4838,7 +4838,7 @@ focus_tree = {
 		relative_position_id = UKR_zelensky
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -4859,15 +4859,15 @@ focus_tree = {
 		relative_position_id = UKR_create_the_office_of_the_president
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
 			add_dynamic_modifier = { modifier = UKR_electronic_country_idea }
-	        set_variable = { UKR_electronic_country_consumer_goods_factor = -0.035 }
-	        set_variable = { UKR_electronic_country_political_power_gain = 0.075 }
+			set_variable = { UKR_electronic_country_consumer_goods_factor = -0.035 }
+			set_variable = { UKR_electronic_country_political_power_gain = 0.075 }
 			set_variable = { UKR_electronic_country_stability_factor = 0.05 }
-            set_variable = { UKR_electronic_country_production_speed_buildings_factor = 0.035 }
+			set_variable = { UKR_electronic_country_production_speed_buildings_factor = 0.035 }
 			set_variable = { UKR_electronic_country_research_speed_factor = 0.005 }
 		}
 	}
@@ -4883,7 +4883,7 @@ focus_tree = {
 		relative_position_id = UKR_create_digital_country
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
@@ -4900,7 +4900,7 @@ focus_tree = {
 		y = 1
 
 		prerequisite = { focus = UKR_create_the_office_of_the_president }
-        prerequisite = { focus = UKR_start_personnel_purges }
+		prerequisite = { focus = UKR_start_personnel_purges }
 		relative_position_id = UKR_create_the_office_of_the_president
 
 		available = {
@@ -4923,7 +4923,7 @@ focus_tree = {
 		relative_position_id = UKR_create_the_office_of_the_president
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -4944,7 +4944,7 @@ focus_tree = {
 		relative_position_id = UKR_new_information_policy
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -4965,7 +4965,7 @@ focus_tree = {
 		relative_position_id = UKR_new_information_policy
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -4986,7 +4986,7 @@ focus_tree = {
 		relative_position_id = UKR_call_early_parliamentary_elections
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -5007,7 +5007,7 @@ focus_tree = {
 		relative_position_id = UKR_create_the_office_of_the_president
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -5029,7 +5029,7 @@ focus_tree = {
 		relative_position_id = UKR_expand_privatization
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -5053,7 +5053,7 @@ focus_tree = {
 		relative_position_id = UKR_create_the_office_of_the_president
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -5074,7 +5074,7 @@ focus_tree = {
 		relative_position_id = UKR_create_the_office_of_the_president
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -5095,7 +5095,7 @@ focus_tree = {
 		relative_position_id = UKR_expand_privatization
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -5116,7 +5116,7 @@ focus_tree = {
 		relative_position_id = UKR_snap_presidential_elections
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 			has_country_flag = innextupdate
@@ -5137,7 +5137,7 @@ focus_tree = {
 		relative_position_id = UKR_snap_presidential_elections
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 			has_country_flag = innextupdate
@@ -5157,7 +5157,7 @@ focus_tree = {
 
 		available = {
 			has_country_flag = Focuses_after_Ato
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -5177,7 +5177,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    army_experience = 35
+			army_experience = 35
 		}
 	}
 
@@ -5192,8 +5192,8 @@ focus_tree = {
 		relative_position_id = UKR_military_reforms_afu
 
 		available = {
-            has_completed_focus = UKR_turn_to_the_west_for_help
-            has_completed_focus = UKR_integration_with_nato
+			has_completed_focus = UKR_turn_to_the_west_for_help
+			has_completed_focus = UKR_integration_with_nato
 		}
 
 		completion_reward = {
@@ -5211,8 +5211,8 @@ focus_tree = {
 		relative_position_id = UKR_military_reforms_afu
 
 		available = {
-            has_completed_focus = UKR_turn_to_the_west_for_help
-            has_completed_focus = UKR_integration_with_nato
+			has_completed_focus = UKR_turn_to_the_west_for_help
+			has_completed_focus = UKR_integration_with_nato
 		}
 
 		completion_reward = {
@@ -5235,8 +5235,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { UKR_AFU_initiative_factor = 0.015 }
-		    add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
-		    custom_effect_tooltip = UKR_realiance_on_decentralized_command_tt
+			add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
+			custom_effect_tooltip = UKR_realiance_on_decentralized_command_tt
 		}
 	}
 
@@ -5256,9 +5256,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_to_variable = { UKR_AFU_army_morale_factor = 0.015 }
+			add_to_variable = { UKR_AFU_army_morale_factor = 0.015 }
 			add_to_variable = { UKR_AFU_initiative_factor = 0.005 }
-		    custom_effect_tooltip = UKR_realiance_on_decentralized_command_tt
+			custom_effect_tooltip = UKR_realiance_on_decentralized_command_tt
 		}
 	}
 
@@ -5279,7 +5279,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { UKR_AFU_army_morale_factor = 0.015 }
 			add_to_variable = { UKR_AFU_initiative_factor = 0.015 }
-		    custom_effect_tooltip = UKR_missionary_command_tt
+			custom_effect_tooltip = UKR_missionary_command_tt
 		}
 	}
 
@@ -5301,7 +5301,7 @@ focus_tree = {
 			add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
 			add_to_variable = { UKR_AFU_army_org_factor = 0.015 }
 			add_to_variable = { UKR_AFU_initiative_factor = 0.015 }
-		    custom_effect_tooltip = UKR_reform_of_the_sergeant_corps_tt
+			custom_effect_tooltip = UKR_reform_of_the_sergeant_corps_tt
 		}
 	}
 
@@ -5321,7 +5321,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { UKR_AFU_initiative_factor = 0.025 }
-		    custom_effect_tooltip = UKR_reform_of_dshv_tt			
+			custom_effect_tooltip = UKR_reform_of_dshv_tt			
 		}
 	}
 
@@ -5355,7 +5355,7 @@ focus_tree = {
 		x = 0
 		y = 5
 
-        prerequisite = { focus = UKR_creation_of_a_reserve_corps }
+		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
 		prerequisite = { focus = UKR_creation_of_a_reserve_corps focus = UKR_reform_of_the_sergeant_corps focus = UKR_strengthen_general_staff_planning }
 		relative_position_id = UKR_military_reforms_afu
 
@@ -5365,7 +5365,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { UKR_AFU_paratrooper_attack_factor = 0.05 }
-		    custom_effect_tooltip = UKR_reform_of_dshv_tt
+			custom_effect_tooltip = UKR_reform_of_dshv_tt
 		}
 	}
 
@@ -5403,7 +5403,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { UKR_AFU_supply_factor = 0.05 }
-		    custom_effect_tooltip = UKR_command_of_the_logistics_forces_afu_tt
+			custom_effect_tooltip = UKR_command_of_the_logistics_forces_afu_tt
 		}
 	}
 
@@ -5423,7 +5423,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { UKR_AFU_army_core_defence_factor = 0.035 }
-		    custom_effect_tooltip = UKR_reform_of_tro_tt			
+			custom_effect_tooltip = UKR_reform_of_tro_tt			
 		}
 	}
 
@@ -5464,8 +5464,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { UKR_AFU_command_power_gain = 0.035 }
-            add_to_variable = { UKR_AFU_grant_medal_cost_factor = -0.05 }
-		    custom_effect_tooltip = UKR_reliance_on_centralized_command_tt
+			add_to_variable = { UKR_AFU_grant_medal_cost_factor = -0.05 }
+			custom_effect_tooltip = UKR_reliance_on_centralized_command_tt
 		}
 	}
 
@@ -5486,7 +5486,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { UKR_AFU_planning_speed = 0.05 }
-		    custom_effect_tooltip = UKR_expand_the_general_staff_tt
+			custom_effect_tooltip = UKR_expand_the_general_staff_tt
 		}
 	}
 
@@ -5519,7 +5519,7 @@ focus_tree = {
 		relative_position_id = UKR_military_reforms_afu
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
@@ -5537,7 +5537,7 @@ focus_tree = {
 		relative_position_id = UKR_ukranian_mic
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
@@ -5555,15 +5555,15 @@ focus_tree = {
 		relative_position_id = UKR_ukranian_mic
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
 			add_tech_bonus = {
-                bonus = 0.5
-                uses = 1
-                category = modern_tank_5
-            }
+				bonus = 0.5
+				uses = 1
+				category = modern_tank_5
+			}
 		}
 	}
 
@@ -5578,15 +5578,15 @@ focus_tree = {
 		relative_position_id = UKR_ukranian_mic
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
 			add_tech_bonus = {
-                bonus = 0.5
-                uses = 1
-                category = modern_tank_5
-            }
+				bonus = 0.5
+				uses = 1
+				category = modern_tank_5
+			}
 		}
 	}
 
@@ -5598,11 +5598,11 @@ focus_tree = {
 		y = 2
 
 		prerequisite = { focus = UKR_investments_in_armored_vehicles }
-        prerequisite = { focus = UKR_new_infantry_equipment }
+		prerequisite = { focus = UKR_new_infantry_equipment }
 		relative_position_id = UKR_ukranian_mic
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
@@ -5636,7 +5636,7 @@ focus_tree = {
 		relative_position_id = UKR_ukranian_mic
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
@@ -5662,7 +5662,7 @@ focus_tree = {
 		relative_position_id = UKR_military_reforms_afu
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
@@ -5680,7 +5680,7 @@ focus_tree = {
 		relative_position_id = UKR_modernization_of_airfields
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
@@ -5698,7 +5698,7 @@ focus_tree = {
 		relative_position_id = UKR_military_reforms_afu
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
@@ -5716,7 +5716,7 @@ focus_tree = {
 		relative_position_id = UKR_modernization_of_odessa_ports
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
@@ -5734,12 +5734,12 @@ focus_tree = {
 		relative_position_id = UKR_military_reforms_afu
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
 			add_to_variable = { UKR_AFU_special_forces_out_of_supply_factor = 0.05 }
-		    custom_effect_tooltip = UKR_creation_of_sso_tt
+			custom_effect_tooltip = UKR_creation_of_sso_tt
 		}
 	}
 
@@ -5754,7 +5754,7 @@ focus_tree = {
 		relative_position_id = UKR_creation_of_sso
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
@@ -5772,7 +5772,7 @@ focus_tree = {
 		relative_position_id = UKR_creation_of_sso
 
 		available = {
-           
+		   
 		}
 
 		completion_reward = {
@@ -5813,22 +5813,22 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_timed_idea = {
-                idea = UKR_emergency_redeployment_of_troops_idea 
-                days = 15
-            }
+			add_timed_idea = {
+				idea = UKR_emergency_redeployment_of_troops_idea 
+				days = 15
+			}
 			hidden_effect = {
 				if = {
 					limit = {
 						OR = {
-						    DPR = {  is_ai = no }
-						    KPR = {  is_ai = no }	
-						    OPR = {  is_ai = no }
-						    LPR = {  is_ai = no }
-					    }
+							DPR = {  is_ai = no }
+							KPR = {  is_ai = no }	
+							OPR = {  is_ai = no }
+							LPR = {  is_ai = no }
+						}
 						UKR = { is_ai = yes }
 					}
-                    load_oob = UKR_ATO_Buff
+					load_oob = UKR_ATO_Buff
 				}
 			}
 		}
@@ -5849,7 +5849,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            add_stability = 0.025
+			add_stability = 0.025
 		}
 	}
 
@@ -5864,13 +5864,13 @@ focus_tree = {
 		relative_position_id = UKR_information_war
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
 
 		completion_reward = {
-            add_stability = 0.025
+			add_stability = 0.025
 			custom_effect_tooltip = UKR_western_help_2014_tt
 			hidden_effect = {
 				country_event = {
@@ -5892,13 +5892,13 @@ focus_tree = {
 		relative_position_id = UKR_information_war
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
 
 		completion_reward = {
-            add_stability = 0.025
+			add_stability = 0.025
 		}
 	}
 
@@ -5925,8 +5925,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_to_variable = { UKR_AFU_army_org_factor = 0.15 }
-		    custom_effect_tooltip = UKR_organize_frontline_tt
+			add_to_variable = { UKR_AFU_army_org_factor = 0.15 }
+			custom_effect_tooltip = UKR_organize_frontline_tt
 		}
 	}
 
@@ -5953,12 +5953,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_timed_idea = {
-                idea = UKR_organize_defence_idea 
-                days = 45
-            }
+			add_timed_idea = {
+				idea = UKR_organize_defence_idea 
+				days = 45
+			}
 			add_to_variable = { UKR_AFU_army_defence_factor = 0.10 }
-		    custom_effect_tooltip = UKR_organize_defense_tt
+			custom_effect_tooltip = UKR_organize_defense_tt
 		}
 	}
 
@@ -5988,7 +5988,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    unlock_decision_category_tooltip = UKR_depreservation_decision
+			unlock_decision_category_tooltip = UKR_depreservation_decision
 		}
 	}
 
@@ -6053,7 +6053,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_stability = 0.05
+			add_stability = 0.05
 			add_political_power = 35
 			hidden_effect = {
 
@@ -6095,21 +6095,21 @@ focus_tree = {
 		}
 
 		available = {
-            NOT = {
+			NOT = {
 				has_global_flag = Minsk2_is_signed
 				date > 2015.9.10
 			}
 			custom_trigger_tooltip = {
-                tooltip = UKR_end_of_separatism_trigger_tt		
+				tooltip = UKR_end_of_separatism_trigger_tt		
 				NOT = {
-				    country_exists = DPR
+					country_exists = DPR
 					country_exists = KPR
 					country_exists = LPR
 					country_exists = OPR
 					country_exists = NDR
 					country_exists = SDR
-			    }
-            }
+				}
+			}
 		}
 
 		completion_reward = {
@@ -6178,45 +6178,45 @@ focus_tree = {
 				limit = {
 					country_exists = KPR
 				}
-			    declare_war_on = {
-				    type = annex_everything
-				    target = KPR
-			    }				
+				declare_war_on = {
+					type = annex_everything
+					target = KPR
+				}				
 			}	
 			if = {
 				limit = {
 					country_exists = OPR
 				}
-			    declare_war_on = {
-				    type = annex_everything
-				    target = OPR
-			    }				
+				declare_war_on = {
+					type = annex_everything
+					target = OPR
+				}				
 			}	
 			hidden_effect = {
 				if = {
 					limit = {
 						OR = {
-						    DPR = { 
-							    is_ai = no
-						    }
-						    KPR = { 
-							    is_ai = no
-						    }	
-						    OPR = { 
-							    is_ai = no
-						    }
-						    LPR = { 
-							    is_ai = no
-						    }
-						    RUS = { 
-							    is_ai = no
-						    }																										
-					    }
+							DPR = { 
+								is_ai = no
+							}
+							KPR = { 
+								is_ai = no
+							}	
+							OPR = { 
+								is_ai = no
+							}
+							LPR = { 
+								is_ai = no
+							}
+							RUS = { 
+								is_ai = no
+							}																										
+						}
 						UKR = {
 							is_ai = yes
 						}
 					}
-                    load_oob = UKR_ATO_Buff
+					load_oob = UKR_ATO_Buff
 				}
 				DPR = {
 					country_event = { id = DPR.17 days = 3 }
@@ -6238,16 +6238,16 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = {
-                tooltip = UKR_end_of_separatism_trigger_tt		
+				tooltip = UKR_end_of_separatism_trigger_tt		
 				NOT = {
-				    country_exists = DPR
+					country_exists = DPR
 					country_exists = KPR
 					country_exists = LPR
 					country_exists = OPR
 					country_exists = NDR
 					country_exists = SDR
-			    }
-            }
+				}
+			}
 		}
 
 		completion_reward = {
@@ -6272,9 +6272,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = {
-                idea = UKR_defence_of_cities_idea 
-                days = 75
-            }				
+				idea = UKR_defence_of_cities_idea 
+				days = 75
+			}				
 		}
 	}
 
@@ -6313,9 +6313,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = {
-                idea = UKR_defence_of_cities_idea 
-                days = 75
-            }				
+				idea = UKR_defence_of_cities_idea 
+				days = 75
+			}				
 		}
 	}
 
@@ -6342,7 +6342,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            unlock_decision_category_tooltip = UKR_general_staff_decision
+			unlock_decision_category_tooltip = UKR_general_staff_decision
 			custom_effect_tooltip = UKR_new_brigades_formation_tt
 			army_experience = 20
 			add_command_power = 10
@@ -6366,7 +6366,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-            NOT = {
+			NOT = {
 				has_country_flag = Elections2014InProgress
 			}
 		}
@@ -6377,90 +6377,90 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_category_tooltip = UKR_ATO_decision
-		    add_to_variable = { UKR_AFU_army_attack_factor = 0.15 }
-		    custom_effect_tooltip = UKR_launch_counterattacks_tt
+			add_to_variable = { UKR_AFU_army_attack_factor = 0.15 }
+			custom_effect_tooltip = UKR_launch_counterattacks_tt
 			custom_effect_tooltip = Icercase_escalation_war_on_donbas_tt
 			hidden_effect = {
 				set_global_flag = Donbas_war_3_escalation
 				if = {
 					limit = {
-					    UKR = {
-						    is_ai = yes
-					    }
-					}
-					526 = {
-			            add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		            }
-				527 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }
-				518 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }
-				468 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }
-				511 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }
-				502 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }
-				653 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }
-				421 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }
-				395 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }		
-				573 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }
-				388 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }	
-				337 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }			
-				401 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }
-				412 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }			
-				399 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }	
-				328 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }	
-				333 = {
-			        add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-		        }
-				}	
-				if = {
-					limit = {
-						OR = {
-						    DPR = { 
-								is_ai = no
-						    }
-						    KPR = { 
-								is_ai = no
-						    }	
-						    OPR = { 
-								is_ai = no
-						    }
-						    LPR = { 
-								is_ai = no
-						    }
-					    }
 						UKR = {
 							is_ai = yes
 						}
 					}
-                    load_oob = UKR_ATO_Buff
+					526 = {
+						add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+					}
+				527 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				518 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				468 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				511 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				502 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				653 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				421 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				395 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}		
+				573 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				388 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}	
+				337 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}			
+				401 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				412 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}			
+				399 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}	
+				328 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}	
+				333 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				}	
+				if = {
+					limit = {
+						OR = {
+							DPR = { 
+								is_ai = no
+							}
+							KPR = { 
+								is_ai = no
+							}	
+							OPR = { 
+								is_ai = no
+							}
+							LPR = { 
+								is_ai = no
+							}
+						}
+						UKR = {
+							is_ai = yes
+						}
+					}
+					load_oob = UKR_ATO_Buff
 				}
 				set_country_flag = UKR_counteroffensive_is_happening		
 			}
@@ -6492,10 +6492,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_timed_idea = {
-                idea = UKR_defence_of_cities_idea 
-                days = 45
-            } 
+			add_timed_idea = {
+				idea = UKR_defence_of_cities_idea 
+				days = 45
+			} 
 			unlock_decision_tooltip = UKR_defense_line_in_the_kramatorsk_slavyansk_agglomeration
 		}
 	}
@@ -6519,9 +6519,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
-		    add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
-		    custom_effect_tooltip = UKR_volunteer_battalions_tt
+			unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
+			add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
+			custom_effect_tooltip = UKR_volunteer_battalions_tt
 			add_political_power = 10
 			hidden_effect = {
 				if = {
@@ -6555,27 +6555,27 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
+			unlock_decision_category_tooltip = UKR_ATO_volunteer_battalions_decision
 			add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
-		    add_political_power = 25
+			add_political_power = 25
 			hidden_effect = {
 				division_template = {
-	                name = "Rota politsiyi"
-	                regiments = {
-                        territorial_defense_unit = { x = 0 y = 0 }
-		                territorial_defense_unit = { x = 0 y = 1 }
-	                }
-                    support = {
-                        engineer = { x = 0 y = 0 }
-                        recon = { x = 0 y = 1 }
-                        mortar = { x = 0 y = 2 }
-				        atgm_company = { x = 0 y = 3 }
-        		        field_hospital = { x = 0 y = 4} 
-        		        sniper_company = { x = 1 y = 0 }
-        		        signal_company = { x = 1 y = 1}
-  				        logistics_company = { x = 1 y = 2}
-	                }
-                }
+					name = "Rota politsiyi"
+					regiments = {
+						territorial_defense_unit = { x = 0 y = 0 }
+						territorial_defense_unit = { x = 0 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						mortar = { x = 0 y = 2 }
+						atgm_company = { x = 0 y = 3 }
+						field_hospital = { x = 0 y = 4} 
+						sniper_company = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1}
+  						logistics_company = { x = 1 y = 2}
+					}
+				}
 				if = {
 					limit = {
 						UKR = {
@@ -6603,11 +6603,11 @@ focus_tree = {
 		}
 
 		available = {
-            date > 2014.10.1
+			date > 2014.10.1
 		}
 
 		completion_reward = {
-		    country_event = ukraine.95
+			country_event = ukraine.95
 		}
 	}
 
@@ -6632,8 +6632,8 @@ focus_tree = {
 		completion_reward = {
 			country_event = ukraine.85
 			add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
-		    custom_effect_tooltip = UKR_volunteer_battalions_tt
-		    add_political_power = 10
+			custom_effect_tooltip = UKR_volunteer_battalions_tt
+			add_political_power = 10
 		}
 	}
 
@@ -6688,7 +6688,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_political_power = 25
+			add_political_power = 25
 		}
 	}
 
@@ -6799,7 +6799,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = { 
 				type = infantry_equipment_1 
 				amount = 7500 
 			}
@@ -6824,7 +6824,7 @@ focus_tree = {
 		prerequisite = { focus = UKR_pick_up_weapons_from_warehouses focus = UKR_organize_defence_in_crimea }
 		relative_position_id = UKR_unrest_in_crimea
 
-	    ai_will_do = {
+		ai_will_do = {
 			factor = 25
 		}
 		allow_branch = {
@@ -6846,11 +6846,11 @@ focus_tree = {
 
 
 		completion_reward = {
-            custom_effect_tooltip = UKR_started_partial_mobilization_tt
+			custom_effect_tooltip = UKR_started_partial_mobilization_tt
 			swap_ideas = {
-                remove_idea = volunteer_only
-                add_idea = limited_conscription
-            }
+				remove_idea = volunteer_only
+				add_idea = limited_conscription
+			}
 			hidden_effect = {
 				news_event = {
 					id = news_events.19
@@ -6870,7 +6870,7 @@ focus_tree = {
 		prerequisite = { focus = UKR_organize_defence_in_crimea focus = UKR_pick_up_weapons_from_warehouses }
 		relative_position_id = UKR_unrest_in_crimea
 
-	    ai_will_do = {
+		ai_will_do = {
 			factor = 25
 		}
 
@@ -6888,75 +6888,75 @@ focus_tree = {
 
 
 		completion_reward = {
-            custom_effect_tooltip = UKR_started_partial_mobilization_tt
+			custom_effect_tooltip = UKR_started_partial_mobilization_tt
 			add_manpower = 25000
 			hidden_effect = {
 				division_template = {
-	                name = "Pikhotnyy batal'yon"
-	                regiments = {
-                        territorial_defense_unit = { x = 0 y = 0 }
-		                territorial_defense_unit = { x = 0 y = 1 }
-		                territorial_defense_unit = { x = 0 y = 2 }
-                        territorial_defense_unit = { x = 1 y = 0 }
-	                }
-                    support = {
-                        engineer = { x = 0 y = 0 }
-                        recon = { x = 0 y = 1 }
-                        mortar = { x = 0 y = 2 }
-				        atgm_company = { x = 0 y = 3 }
-        		        field_hospital = { x = 0 y = 4} 
-        		        sniper_company = { x = 1 y = 0 }
-        		        manpads_platoon = { x = 1 y = 1}
-  				        logistics_company = { x = 1 y = 2}
-				        signal_company = { x = 1 y = 3} 
-	                }
-                }
+					name = "Pikhotnyy batal'yon"
+					regiments = {
+						territorial_defense_unit = { x = 0 y = 0 }
+						territorial_defense_unit = { x = 0 y = 1 }
+						territorial_defense_unit = { x = 0 y = 2 }
+						territorial_defense_unit = { x = 1 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						mortar = { x = 0 y = 2 }
+						atgm_company = { x = 0 y = 3 }
+						field_hospital = { x = 0 y = 4} 
+						sniper_company = { x = 1 y = 0 }
+						manpads_platoon = { x = 1 y = 1}
+  						logistics_company = { x = 1 y = 2}
+						signal_company = { x = 1 y = 3} 
+					}
+				}
 				random_owned_controlled_state = {
 					create_unit = {
-				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 4
-			        }
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 4
+					}
 					create_unit = {
-				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 2
-			        }		
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 2
+					}		
 					create_unit = {
-				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 2
-			        }
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 2
+					}
 					create_unit = {
-				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 1
-			        }	
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 1
+					}	
 					create_unit = {
-				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 1
-			        }
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 1
+					}
 					create_unit = {
-				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 1
-			        }	
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 1
+					}	
 					create_unit = {
-				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 1
-			        }
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 1
+					}
 					create_unit = {
-				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 1
-			        }
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 1
+					}
 					create_unit = {
-				        division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 5
-			        }																																				
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 5
+					}																																				
 				}
 				news_event = {
 					id = news_events.19

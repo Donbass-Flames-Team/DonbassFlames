@@ -65,9 +65,9 @@ country_event = {
 	immediate = {
 		DF_economy_setup = yes
 		set_variable = {
-		    var = gdp_last_month
-		    value = gdp
-	    }
+			var = gdp_last_month
+			value = gdp
+		}
 	}
 }
 

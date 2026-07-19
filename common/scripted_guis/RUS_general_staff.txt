@@ -1,12 +1,12 @@
 scripted_gui = {
 
-    RUS_general_staff = {
-       context_type = decision_category
+	RUS_general_staff = {
+	   context_type = decision_category
 	   window_name = "RUS_general_staff"
  
-        visible = {
-            tag = RUS
-        }
+		visible = {
+			tag = RUS
+		}
  
 		effects = {
 			RUS_general_staff_button_click = {
@@ -14,23 +14,23 @@ scripted_gui = {
 			}
 		}
 
-        triggers = {
+		triggers = {
 
-        }
+		}
 		
 		properties = {
 			
 		}
-    }
+	}
 
 	RUS_general_staff_selection_gui = {
-       context_type = player_context
+	   context_type = player_context
 	   window_name = "RUS_general_staff_selection_gui"
  
-        visible = {
-            tag = RUS
+		visible = {
+			tag = RUS
 			has_country_flag = show_rus_general_staff_selection_gui
-        }
+		}
  
 		effects = {
 			RUS_general_staff_open_map_click = {
@@ -39,39 +39,39 @@ scripted_gui = {
 			}
 
 			RUS_general_staff_open_preparation_for_smo_click = {
-                set_country_flag = show_rus_general_staff_preparation_for_operation
+				set_country_flag = show_rus_general_staff_preparation_for_operation
 				clr_country_flag = show_rus_general_staff_selection_gui
 			}
 
 			
 
 			close_button_click = {
-                clr_country_flag = show_rus_general_staff_selection_gui
+				clr_country_flag = show_rus_general_staff_selection_gui
 			}
 		}
 
-        triggers = {
+		triggers = {
 
-        }
+		}
 		
 		properties = {
 			
 		}
-    }
+	}
 
 	RUS_general_staff_preparation_for_operation_gui = {
-       context_type = player_context
+	   context_type = player_context
 	   window_name = "RUS_general_staff_preparation_for_operation_gui"
  
-        visible = {
-            tag = RUS
+		visible = {
+			tag = RUS
 			has_country_flag = show_rus_general_staff_preparation_for_operation
-        }
+		}
  
 		effects = {
 
 			close_button_click = {
-                clr_country_flag = show_rus_general_staff_preparation_for_operation
+				clr_country_flag = show_rus_general_staff_preparation_for_operation
 			}
 			back_button_click = {
 				clr_country_flag = show_rus_general_staff_preparation_for_operation
@@ -81,69 +81,69 @@ scripted_gui = {
 				if = {
 					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
 					set_country_flag = SMO_Plan_is_selected
-                    set_country_flag = SMO_Plan_operation_mangust_selected
+					set_country_flag = SMO_Plan_operation_mangust_selected
 				}
 			}
 			Across_the_entire_border_invasion_click = {
 				if = {
 					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
-				    set_country_flag = SMO_Plan_is_selected
-				    set_country_flag = SMO_Plan_Across_the_entire_border_invasion_selected
+					set_country_flag = SMO_Plan_is_selected
+					set_country_flag = SMO_Plan_Across_the_entire_border_invasion_selected
 				}
 			}
 			from_border_to_border_click = {
 				if = {
 					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
-				    set_country_flag = SMO_Plan_is_selected
-				    set_country_flag = SMO_Plan_from_border_to_border_selected
+					set_country_flag = SMO_Plan_is_selected
+					set_country_flag = SMO_Plan_from_border_to_border_selected
 				}
 			}		
 			liberation_of_Novorossiya_click = {
 				if = {
 					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
-				    set_country_flag = SMO_Plan_is_selected
-				    set_country_flag = SMO_Plan_liberation_of_Novorossiya_selected
+					set_country_flag = SMO_Plan_is_selected
+					set_country_flag = SMO_Plan_liberation_of_Novorossiya_selected
 				}
 			}
 			offensive_on_Donbass_click = {
 				if = {
 					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
 					set_country_flag = SMO_Plan_is_selected
-				    set_country_flag = SMO_Plan_offensive_on_donbass_selected
+					set_country_flag = SMO_Plan_offensive_on_donbass_selected
 				}
 			}	
 			offensive_on_Dnieper_click = {
 				if = {
 					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
-				    set_country_flag = SMO_Plan_is_selected
-				    set_country_flag = SMO_Plan_offensive_on_dnieper_selected
+					set_country_flag = SMO_Plan_is_selected
+					set_country_flag = SMO_Plan_offensive_on_dnieper_selected
 				}
 			}	
 			Kyiv_offensive_operation_click = {
 				if = {
 					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
-				    set_country_flag = SMO_Plan_is_selected
-				    set_country_flag = SMO_Plan_Kyiv_offensive_operation_selected
+					set_country_flag = SMO_Plan_is_selected
+					set_country_flag = SMO_Plan_Kyiv_offensive_operation_selected
 				}
 			}	
 			Volyn_Galician_barrier_click = {
 				if = {
 					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
-				    set_country_flag = SMO_Plan_is_selected
-				    set_country_flag = SMO_Plan_Volyn_Galician_barrier_selected
+					set_country_flag = SMO_Plan_is_selected
+					set_country_flag = SMO_Plan_Volyn_Galician_barrier_selected
 				}
 			}																		
 			##################
 			#### Landings ####
 			##################
 			airborne_assault_hostomel_button_click = {
-                if = {
+				if = {
 					limit = { 
 						NOT = { has_country_flag = Hostomel_airborne_assault_prepared }
 						command_power > 9
-			        }
+					}
 					set_country_flag = Hostomel_airborne_assault_prepared
-				    add_command_power = -10
+					add_command_power = -10
 				}
 			}
 			airborne_assault_borispol_button_click = {
@@ -151,9 +151,9 @@ scripted_gui = {
 					limit = { 
 						NOT = { has_country_flag = Borispol_airborne_assault_prepared }
 						command_power > 14
-			        }
+					}
 					set_country_flag = Borispol_airborne_assault_prepared
-				    add_command_power = -15
+					add_command_power = -15
 				}
 			}		
 			airborne_assault_zhitomir_button_click = {
@@ -161,9 +161,9 @@ scripted_gui = {
 					limit = { 
 						NOT = { has_country_flag = Zhitomir_airborne_assault_prepared }
 						command_power > 14
-			        }
+					}
 					set_country_flag = Zhitomir_airborne_assault_prepared
-				    add_command_power = -15
+					add_command_power = -15
 				}
 			}
 			airborne_assault_kharkov_button_click = {
@@ -171,9 +171,9 @@ scripted_gui = {
 					limit = { 
 						NOT = { has_country_flag = Kharkov_airborne_assault_prepared }
 						command_power > 14
-			        }
+					}
 					set_country_flag = Kharkov_airborne_assault_prepared
-				    add_command_power = -15
+					add_command_power = -15
 				}
 			}		
 			airborne_assault_zaporozhye_button_click = {
@@ -181,9 +181,9 @@ scripted_gui = {
 					limit = { 
 						NOT = { has_country_flag = Zaporozhye_airborne_assault_prepared }
 						command_power > 14
-			        }
+					}
 					set_country_flag = Zaporozhye_airborne_assault_prepared
-				    add_command_power = -15
+					add_command_power = -15
 				}
 			}
 			seaborne_landing_berdyansk_button_click = {
@@ -191,9 +191,9 @@ scripted_gui = {
 					limit = { 
 						NOT = { has_country_flag = Berdyansk_seaborne_landing_prepared }
 						command_power > 9
-			        }
+					}
 					set_country_flag = Berdyansk_seaborne_landing_prepared
-				    add_command_power = -10
+					add_command_power = -10
 				}
 			}
 			seaborne_landing_odesa_button_click = {
@@ -201,9 +201,9 @@ scripted_gui = {
 					limit = { 
 						NOT = { has_country_flag = Odesa_seaborne_landing_prepared }
 						command_power > 19
-			        }
+					}
 					set_country_flag = Odesa_seaborne_landing_prepared
-				    add_command_power = -20
+					add_command_power = -20
 				}
 			}	
 			seaborne_landing_izmail_button_click = {
@@ -211,16 +211,16 @@ scripted_gui = {
 					limit = { 
 						NOT = { has_country_flag = Izmail_seaborne_landing_prepared }
 						command_power > 19
-			        }
+					}
 					set_country_flag = Izmail_seaborne_landing_prepared
-				    add_command_power = -20
+					add_command_power = -20
 				}
 			}																
 		}
 
-        triggers = {
+		triggers = {
 
-        }
+		}
 		
 		properties = {
 			airborne_assault_hostomel_button = { image = "[airborne_assault_hostomel_button_image]" }
@@ -228,16 +228,16 @@ scripted_gui = {
 			airborne_assault_zhitomir_button = { image = "[airborne_assault_zhitomir_button_image]" }
 			airborne_assault_kharkov_button = { image = "[airborne_assault_kharkov_button_image]" }
 			airborne_assault_zaporozhye_button = { image = "[airborne_assault_zaporozhye_button_image]" }
-            seaborne_landing_berdyansk_button = { image = "[seaborne_landing_berdyansk_button_image]" }
+			seaborne_landing_berdyansk_button = { image = "[seaborne_landing_berdyansk_button_image]" }
 			seaborne_landing_odesa_button = { image = "[seaborne_landing_odesa_button_image]" }
 			seaborne_landing_izmail_button = { image = "[seaborne_landing_izmail_button_image]" }
-            smo_plan_border_glow = { image = "[smo_plan_border_glow_image]" }
+			smo_plan_border_glow = { image = "[smo_plan_border_glow_image]" }
 
 		}
-    }
+	}
 
 
-    RUS_general_staff_map = {
+	RUS_general_staff_map = {
 		context_type = player_context
 		window_name = "RUS_general_staff_map"
 
@@ -248,7 +248,7 @@ scripted_gui = {
 		
 		effects = {
 			close_map_button_click = {
-                clr_country_flag = show_rus_general_staff_map
+				clr_country_flag = show_rus_general_staff_map
 			}
 
 			### Coats of arms of Regions
@@ -283,7 +283,7 @@ scripted_gui = {
 
 		}
 		
-	    properties = {
+		properties = {
 			separatism_gui_background = {
 				image = "[separatism_gui_background_image]"
 			}	
@@ -302,7 +302,7 @@ scripted_gui = {
 			luhansk_icon = {
 				image = "[luhansk_icon_glow]"
 			} 
-		    odessa_icon = {
+			odessa_icon = {
 				image = "[odessa_icon_glow]"
 			}
 			kharkov_icon = {
@@ -314,7 +314,7 @@ scripted_gui = {
 		}	
 	}
 
-    RUS_general_staff_donetsk_region_map = {
+	RUS_general_staff_donetsk_region_map = {
 		context_type = player_context
 		window_name = "RUS_general_staff_donetsk_region_map"
 
@@ -325,7 +325,7 @@ scripted_gui = {
 		
 		effects = {
 			close_map_button_click = {
-                clr_country_flag = show_rus_general_staff_donetsk_region_map
+				clr_country_flag = show_rus_general_staff_donetsk_region_map
 			}
 				
 		}
@@ -334,12 +334,12 @@ scripted_gui = {
 
 		}
 		
-	    properties = {
+		properties = {
 			
 		}	
 	}
 
-    RUS_general_staff_luhansk_region_map = {
+	RUS_general_staff_luhansk_region_map = {
 		context_type = player_context
 		window_name = "RUS_general_staff_luhansk_region_map"
 
@@ -350,7 +350,7 @@ scripted_gui = {
 		
 		effects = {
 			close_map_button_click = {
-                clr_country_flag = show_rus_general_staff_luhansk_region_map
+				clr_country_flag = show_rus_general_staff_luhansk_region_map
 			}
 				
 		}
@@ -359,12 +359,12 @@ scripted_gui = {
 
 		}
 		
-	    properties = {
+		properties = {
 			
 		}	
 	}
 
-    RUS_general_staff_dnepr_region_map = {
+	RUS_general_staff_dnepr_region_map = {
 		context_type = player_context
 		window_name = "RUS_general_staff_dnepr_region_map"
 
@@ -375,7 +375,7 @@ scripted_gui = {
 		
 		effects = {
 			close_map_button_click = {
-                clr_country_flag = show_rus_general_staff_dnepr_region_map
+				clr_country_flag = show_rus_general_staff_dnepr_region_map
 			}
 				
 		}
@@ -384,12 +384,12 @@ scripted_gui = {
 
 		}
 		
-	    properties = {
+		properties = {
 			
 		}	
 	}
 
-    RUS_general_staff_zaporozhie_region_map = {
+	RUS_general_staff_zaporozhie_region_map = {
 		context_type = player_context
 		window_name = "RUS_general_staff_zaporozhie_region_map"
 
@@ -400,7 +400,7 @@ scripted_gui = {
 		
 		effects = {
 			close_map_button_click = {
-                clr_country_flag = show_rus_general_staff_zaporozhie_region_map
+				clr_country_flag = show_rus_general_staff_zaporozhie_region_map
 			}
 				
 		}
@@ -409,12 +409,12 @@ scripted_gui = {
 
 		}
 		
-	    properties = {
+		properties = {
 			
 		}	
 	}
 
-    RUS_general_staff_kharkov_region_map = {
+	RUS_general_staff_kharkov_region_map = {
 		context_type = player_context
 		window_name = "RUS_general_staff_kharkov_region_map"
 
@@ -425,7 +425,7 @@ scripted_gui = {
 		
 		effects = {
 			close_map_button_click = {
-                clr_country_flag = show_rus_general_staff_kharkov_region_map
+				clr_country_flag = show_rus_general_staff_kharkov_region_map
 			}
 				
 		}
@@ -434,12 +434,12 @@ scripted_gui = {
 
 		}
 		
-	    properties = {
+		properties = {
 			
 		}	
 	}
 
-    RUS_general_staff_kherson_region_map = {
+	RUS_general_staff_kherson_region_map = {
 		context_type = player_context
 		window_name = "RUS_general_staff_kherson_region_map"
 
@@ -450,7 +450,7 @@ scripted_gui = {
 		
 		effects = {
 			close_map_button_click = {
-                clr_country_flag = show_rus_general_staff_kherson_region_map
+				clr_country_flag = show_rus_general_staff_kherson_region_map
 			}
 				
 		}
@@ -459,12 +459,12 @@ scripted_gui = {
 
 		}
 		
-	    properties = {
+		properties = {
 			
 		}	
 	}
 
-    RUS_general_staff_nikolayev_region_map = {
+	RUS_general_staff_nikolayev_region_map = {
 		context_type = player_context
 		window_name = "RUS_general_staff_nikolayev_region_map"
 
@@ -475,7 +475,7 @@ scripted_gui = {
 		
 		effects = {
 			close_map_button_click = {
-                clr_country_flag = show_rus_general_staff_nikolayev_region_map
+				clr_country_flag = show_rus_general_staff_nikolayev_region_map
 			}
 				
 		}
@@ -484,12 +484,12 @@ scripted_gui = {
 
 		}
 		
-	    properties = {
+		properties = {
 			
 		}	
 	}
 
-    RUS_general_staff_odessa_region_map = {
+	RUS_general_staff_odessa_region_map = {
 		context_type = player_context
 		window_name = "RUS_general_staff_odessa_region_map"
 
@@ -500,7 +500,7 @@ scripted_gui = {
 		
 		effects = {
 			close_map_button_click = {
-                clr_country_flag = show_rus_general_staff_region_map
+				clr_country_flag = show_rus_general_staff_region_map
 			}
 				
 		}
@@ -509,12 +509,12 @@ scripted_gui = {
 
 		}
 		
-	    properties = {
+		properties = {
 			
 		}	
 	}
 	
-    RUS_general_staff_kiyv_region_map = {
+	RUS_general_staff_kiyv_region_map = {
 		context_type = player_context
 		window_name = "RUS_general_staff_kiyv_region_map"
 
@@ -525,7 +525,7 @@ scripted_gui = {
 		
 		effects = {
 			close_map_button_click = {
-                clr_country_flag = show_rus_general_staff_kiyv_region_map
+				clr_country_flag = show_rus_general_staff_kiyv_region_map
 			}
 				
 		}
@@ -534,7 +534,7 @@ scripted_gui = {
 
 		}
 		
-	    properties = {
+		properties = {
 			
 		}	
 	}	

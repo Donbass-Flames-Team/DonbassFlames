@@ -259,9 +259,9 @@ UKR_template_design = {
 	} 
 	abort = { 
 		NOT = {
-		    tag = UKR
-	    } 
-    }
+			tag = UKR
+		} 
+	}
 
 	ai_strategy = {
 		type = template_prio

@@ -60,16 +60,16 @@ on_actions = {
 	}
 	on_daily = {
 		effect = {
-		    if = {
-			    limit = {
-				    has_cosmetic_tag = LPR_early
-				    tag = LPR
-				    date > 2014.5.9
-			    }
+			if = {
+				limit = {
+					has_cosmetic_tag = LPR_early
+					tag = LPR
+					date > 2014.5.9
+				}
 				LPR = {
 					drop_cosmetic_tag = yes
 				}
-		    }
-	    }
+			}
+		}
 	}
 }

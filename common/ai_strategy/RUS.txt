@@ -47,16 +47,16 @@ RUS_support_dpr_and_lpr = {
 		}
 	}
 	
-    ai_strategy = {
-        type = support
-        id = DPR
-        value = 175
-    }
 	ai_strategy = {
-        type = support
-        id = LPR
-        value = 100
-    }
+		type = support
+		id = DPR
+		value = 175
+	}
+	ai_strategy = {
+		type = support
+		id = LPR
+		value = 100
+	}
 	ai_strategy = {
 		type = befriend
 		id = DPR

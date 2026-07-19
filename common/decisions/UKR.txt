@@ -380,7 +380,7 @@ UKR_separatism_decision = {
 		}
 		timeout_effect = {
 			custom_effect_tooltip = zkr_uprising_tt
-            clr_global_flag = UKR_zakarpatie_rallies
+			clr_global_flag = UKR_zakarpatie_rallies
 			hidden_effect = {
 				country_event = ukraine.120
 				set_country_flag = UKR_zakarpatie_uprised
@@ -989,7 +989,7 @@ UKR_decisions_of_the_transitional_government = {
 		complete_effect = {
 			add_stability = -0.03
 			custom_effect_tooltip = UKR_IMF_requirment_complete_tt
-            hidden_effect = {
+			hidden_effect = {
 				country_event = {
 					id = Economic_events.3
 					days = 50
@@ -3062,23 +3062,23 @@ UKR_ATO_decision = {
 			random_list = {
 				14 = {
 					add_to_variable = {
-				        JAM_ammo_stockpile = 25
-			        }
+						JAM_ammo_stockpile = 25
+					}
 				}
 				5 = {
 					add_to_variable = {
-				        JAM_ammo_stockpile = 45
-			        }
+						JAM_ammo_stockpile = 45
+					}
 				}
 				10 = {
 					add_to_variable = {
-				        JAM_ammo_stockpile = 65
-			        }
+						JAM_ammo_stockpile = 65
+					}
 				}
 				3 = {
 					add_to_variable = {
-				        JAM_ammo_stockpile = 95
-			        } 
+						JAM_ammo_stockpile = 95
+					} 
 				}
 			}			
 		}
@@ -3624,18 +3624,18 @@ UKR_general_staff_decision = {
 			custom_effect_tooltip = UKR_10_okrema_hirsko_shturmova_bryhada_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
-				    create_unit = {
-				        division = "name = \"108-y okremyy hirs'ko-shturmovyy batal'yon\" division_template = \"Hirnycho-pikhotnyy batal'yon\" start_experience_factor = 0.4"
-				        owner = UKR
-				        count = 1
-			        }
-				    create_unit = {
-				        division = "name = \"109-y okremyy hirs'ko-shturmovyy batal'yon\" division_template = \"Hirnycho-pikhotnyy batal'yon\" start_experience_factor = 0.4"
-				        owner = UKR
-				        count = 1
-			        }																		        
-		        }
-		    }
+					create_unit = {
+						division = "name = \"108-y okremyy hirs'ko-shturmovyy batal'yon\" division_template = \"Hirnycho-pikhotnyy batal'yon\" start_experience_factor = 0.4"
+						owner = UKR
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"109-y okremyy hirs'ko-shturmovyy batal'yon\" division_template = \"Hirnycho-pikhotnyy batal'yon\" start_experience_factor = 0.4"
+						owner = UKR
+						count = 1
+					}																				
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3659,13 +3659,13 @@ UKR_general_staff_decision = {
 			custom_effect_tooltip = UKR_214_okremyy_shturmovyy_batalyon_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
-				    create_unit = {
-				        division = "name = \"214-y okremyy shturmovyy batal'yon OPFOR\" division_template = \"Shturmovyy batal'yon\" start_experience_factor = 0.4"
-				        owner = UKR
-				        count = 1
-			        }													        
-		        }
-		    }
+					create_unit = {
+						division = "name = \"214-y okremyy shturmovyy batal'yon OPFOR\" division_template = \"Shturmovyy batal'yon\" start_experience_factor = 0.4"
+						owner = UKR
+						count = 1
+					}															
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3692,13 +3692,13 @@ UKR_general_staff_decision = {
 			custom_effect_tooltip = UKR_3_desantno_shturmovyy_batalyon_feniks_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
-				    create_unit = {
-				        division = "name = \"3-y desantno-shturmovyy batal'yon «Feniks»\" division_template = \"Motoryzovanyy batal'yon desantno-shturmovykh viys'k\" start_experience_factor = 0.4"
-				        owner = UKR
-				        count = 1
-			        }													        
-		        }
-		    }
+					create_unit = {
+						division = "name = \"3-y desantno-shturmovyy batal'yon «Feniks»\" division_template = \"Motoryzovanyy batal'yon desantno-shturmovykh viys'k\" start_experience_factor = 0.4"
+						owner = UKR
+						count = 1
+					}															
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3722,13 +3722,13 @@ UKR_general_staff_decision = {
 			custom_effect_tooltip = UKR_132_okremyy_rozviduvalnyy_batalyon_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
-				    create_unit = {
-				        division = "name = \"132-y okremyy rozviduval'nyy batal'yon\" division_template = \"Motoryzovanyy batal'yon desantno-shturmovykh viys'k\" start_experience_factor = 0.4"
-				        owner = UKR
-				        count = 1
-			        }													        
-		        }
-		    }
+					create_unit = {
+						division = "name = \"132-y okremyy rozviduval'nyy batal'yon\" division_template = \"Motoryzovanyy batal'yon desantno-shturmovykh viys'k\" start_experience_factor = 0.4"
+						owner = UKR
+						count = 1
+					}															
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3752,23 +3752,23 @@ UKR_general_staff_decision = {
 			custom_effect_tooltip = UKR_81_okrema_aeromobilna_bryhada_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
-				    create_unit = {
-				        division = "name = \"122-y okremyy aeromobil'nyy batal'yon\" division_template = \"Desantno-Povitryani Viyska\" start_experience_factor = 0.4"
-				        owner = UKR
-				        count = 1
-			        }	
-				    create_unit = {
-				        division = "name = \"90-y okremyy aeromobil'nyy batal'yon\" division_template = \"Desantno-Povitryani Viyska\" start_experience_factor = 0.4"
-				        owner = UKR
-				        count = 1
-			        }					
-				    create_unit = {
-				        division = "name = \"5-a batal'yonna taktychna hrupa\" division_template = \"Desantno-Povitryani Viyska\" start_experience_factor = 0.4"
-				        owner = UKR
-				        count = 1
-			        }												        
-		        }
-		    }
+					create_unit = {
+						division = "name = \"122-y okremyy aeromobil'nyy batal'yon\" division_template = \"Desantno-Povitryani Viyska\" start_experience_factor = 0.4"
+						owner = UKR
+						count = 1
+					}	
+					create_unit = {
+						division = "name = \"90-y okremyy aeromobil'nyy batal'yon\" division_template = \"Desantno-Povitryani Viyska\" start_experience_factor = 0.4"
+						owner = UKR
+						count = 1
+					}					
+					create_unit = {
+						division = "name = \"5-a batal'yonna taktychna hrupa\" division_template = \"Desantno-Povitryani Viyska\" start_experience_factor = 0.4"
+						owner = UKR
+						count = 1
+					}														
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3792,13 +3792,13 @@ UKR_general_staff_decision = {
 			custom_effect_tooltip = UKR_46th_separate_special_purpose_battalion_donbass_ukraine_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
-				    create_unit = {
-				        division = "name = \"46-y okremyy shturmovyy batal'yon «Donbas»\" division_template = \"Shturmovyy batal'yon\" start_experience_factor = 0.4"
-				        owner = UKR
-				        count = 1
-			        }								        
-		        }
-		    }
+					create_unit = {
+						division = "name = \"46-y okremyy shturmovyy batal'yon «Donbas»\" division_template = \"Shturmovyy batal'yon\" start_experience_factor = 0.4"
+						owner = UKR
+						count = 1
+					}										
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3822,28 +3822,28 @@ UKR_general_staff_decision = {
 			custom_effect_tooltip = UKR_put_on_alert_general_staff_security_brigade_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
-				    create_unit = {
-				        division = "name = \"1-y batal'yon okhorony 101-yi okremoyi bryhady okhorony HSH\" division_template = \"Batal'yon okhorony HSH\" start_experience_factor = 0.4"
-				        owner = UKR
-				        count = 1
-			        }
-				    create_unit = {
-				        division = "name = \"2-y batal'yon okhorony 101-yi okremoyi bryhady okhorony HSH\" division_template = \"Batal'yon okhorony HSH\" start_experience_factor = 0.35"
-				        owner = UKR
-				        count = 1
+					create_unit = {
+						division = "name = \"1-y batal'yon okhorony 101-yi okremoyi bryhady okhorony HSH\" division_template = \"Batal'yon okhorony HSH\" start_experience_factor = 0.4"
+						owner = UKR
+						count = 1
 					}
-				    create_unit = {
-				        division = "name = \"3-y batal'yon okhorony 101-yi okremoyi bryhady okhorony HSH\" division_template = \"Batal'yon okhorony HSH\" start_experience_factor = 0.35"
-				        owner = UKR
-				        count = 1
-			        }
-				    create_unit = {
-				        division = "name = \"4-y batal'yon okhorony 101-yi okremoyi bryhady okhorony HSH\" division_template = \"Batal'yon okhorony HSH\" start_experience_factor = 0.35"
-				        owner = UKR
-				        count = 1
-			        }								        
-		        }
-		    }
+					create_unit = {
+						division = "name = \"2-y batal'yon okhorony 101-yi okremoyi bryhady okhorony HSH\" division_template = \"Batal'yon okhorony HSH\" start_experience_factor = 0.35"
+						owner = UKR
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"3-y batal'yon okhorony 101-yi okremoyi bryhady okhorony HSH\" division_template = \"Batal'yon okhorony HSH\" start_experience_factor = 0.35"
+						owner = UKR
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"4-y batal'yon okhorony 101-yi okremoyi bryhady okhorony HSH\" division_template = \"Batal'yon okhorony HSH\" start_experience_factor = 0.35"
+						owner = UKR
+						count = 1
+					}										
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3870,23 +3870,23 @@ UKR_general_staff_decision = {
 			custom_effect_tooltip = UKR_3_bryhada_operatyvnoho_pryznachennya_nhu_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
-				    create_unit = {
-				        division = "name = \"1-y batalyon operatyvnoho pryznachennya 3-yi bryhady operatyvnoho pryznachennya NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 1
-			        }
-				    create_unit = {
-				        division = "name = \"2-y batalyon operatyvnoho pryznachennya 3-yi bryhady operatyvnoho pryznachennya NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 1
+					create_unit = {
+						division = "name = \"1-y batalyon operatyvnoho pryznachennya 3-yi bryhady operatyvnoho pryznachennya NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 1
 					}
-				    create_unit = {
-				        division = "name = \"3-y batalyon operatyvnoho pryznachennya 3-yi bryhady operatyvnoho pryznachennya NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 1
-			        }			        
-		        }
-		    }
+					create_unit = {
+						division = "name = \"2-y batalyon operatyvnoho pryznachennya 3-yi bryhady operatyvnoho pryznachennya NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"3-y batalyon operatyvnoho pryznachennya 3-yi bryhady operatyvnoho pryznachennya NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 1
+					}					
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -3911,10 +3911,10 @@ UKR_general_staff_decision = {
 			hidden_effect = {
 				random_owned_controlled_state = {
 					create_unit = {
-				        division = "name = \"4-y striletskyy batal'yon 27-yi okremoyi bryhady NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 1
-			        }
+						division = "name = \"4-y striletskyy batal'yon 27-yi okremoyi bryhady NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 1
+					}
 				}
 			}
 		}
@@ -3940,12 +3940,12 @@ UKR_general_staff_decision = {
 			custom_effect_tooltip = UKR_18_batalyon_hromadskoho_poryadku_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
-				    create_unit = {
-				        division = "name = \"18-y okremyy batal'yon NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 1
-			        }
-			    }
+					create_unit = {
+						division = "name = \"18-y okremyy batal'yon NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 1
+					}
+				}
 			}
 		}
 		ai_will_do = {
@@ -3953,9 +3953,9 @@ UKR_general_staff_decision = {
 		}
 	}	
 
-    #################################
+	#################################
 	###### Morkaya pikhota VSU ######
-    #################################
+	#################################
 	UKR_140_okremyy_rozviduvalnyy_batalyon_decision = {
 		icon = GFX_decision_UKR_137_bryhada_icon
 		allowed = {
@@ -3973,12 +3973,12 @@ UKR_general_staff_decision = {
 			custom_effect_tooltip = UKR_137_otdelnay_batalyon_morskoy_pikhoti_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
-				    create_unit = {
-				        division = "name = \"140-y okremyy rozviduval'nyy batal'yon\" division_template = \"Morska pikhota\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 1
-			        }
-			    }
+					create_unit = {
+						division = "name = \"140-y okremyy rozviduval'nyy batal'yon\" division_template = \"Morska pikhota\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 1
+					}
+				}
 			}
 		}
 		ai_will_do = {
@@ -4031,12 +4031,12 @@ UKR_general_staff_decision = {
 			custom_effect_tooltip = UKR_36_otdelnaya_brihada_morskoy_pikhoti_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
-				    create_unit = {
-				        division = "name = \"503-y okremyy batal'yon mors'koyi pikhoty\" division_template = \"Morska pikhota\" start_experience_factor = 0.075"
-				        owner = UKR
-				        count = 1
-			        }
-			    }
+					create_unit = {
+						division = "name = \"503-y okremyy batal'yon mors'koyi pikhoty\" division_template = \"Morska pikhota\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 1
+					}
+				}
 			}
 		}
 		ai_will_do = {
@@ -4072,9 +4072,9 @@ UKR_general_staff_decision = {
 		}
 	}
 
-    #################################
+	#################################
 	#### Mekhanizirovany viyska #####
-    #################################
+	#################################
 	UKR_53_otdelna_mechanizirovana_bryhada_decision = {
 		icon = GFX_decision_UKR_53_bryhada_icon
 		allowed = {
@@ -4159,9 +4159,9 @@ UKR_general_staff_decision = {
 		}
 	}
 
-    #################################
+	#################################
 	#### artyleriyskie batalyoni ####
-    #################################
+	#################################
 	UKR_406_okrema_artyleriyska_hrupa_decision = {
 		icon = GFX_decision_UKR_35_bryhada_icon
 		allowed = {
@@ -4179,13 +4179,13 @@ UKR_general_staff_decision = {
 			custom_effect_tooltip = UKR_406_okrema_artyleriyska_hrupa_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
-				    create_unit = {
-				        division = "name = \"406-a okrema artyleriys'ka hrupa\" division_template = \"Batalyon samokhidnoyi artyleriyi\" start_experience_factor = 0.25"
-				        owner = UKR
-				        count = 1
-			        }													        
-		        }
-		    }
+					create_unit = {
+						division = "name = \"406-a okrema artyleriys'ka hrupa\" division_template = \"Batalyon samokhidnoyi artyleriyi\" start_experience_factor = 0.25"
+						owner = UKR
+						count = 1
+					}															
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -4209,13 +4209,13 @@ UKR_general_staff_decision = {
 			custom_effect_tooltip = UKR_148_otdelnyy_gaubicheskiy_samokhodno_artilleriyskiy_divizion_formed_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
-				    create_unit = {
-				        division = "name = \"148-y okremyy haubichnyy samokhidno-artyleriys'kyy dyvizion\" division_template = \"Batalyon samokhidnoyi artyleriyi\" start_experience_factor = 0.25"
-				        owner = UKR
-				        count = 1
-			        }													        
-		        }
-		    }
+					create_unit = {
+						division = "name = \"148-y okremyy haubichnyy samokhidno-artyleriys'kyy dyvizion\" division_template = \"Batalyon samokhidnoyi artyleriyi\" start_experience_factor = 0.25"
+						owner = UKR
+						count = 1
+					}															
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -4396,10 +4396,10 @@ UKR_ATO_volunteer_battalions_decision = {
 			hidden_effect = {
 				random_owned_controlled_state = {
 					create_unit = {
-				        division = "name = \"2-y rezervnyy batal'yon operatyvnoho pryznachennya NHU\" division_template = \"Rezervnyy batal'yon operatyvnoho pryznachennya NHU\" start_experience_factor = 0.15"
-				        owner = UKR
-				        count = 1
-			        }
+						division = "name = \"2-y rezervnyy batal'yon operatyvnoho pryznachennya NHU\" division_template = \"Rezervnyy batal'yon operatyvnoho pryznachennya NHU\" start_experience_factor = 0.15"
+						owner = UKR
+						count = 1
+					}
 				}
 			}
 		}

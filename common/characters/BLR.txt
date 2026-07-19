@@ -1,18 +1,18 @@
 characters = {
 
-    BLR_aleksandr_lukashenko = {
-        name = BLR_aleksandr_lukashenko
-        portraits = {
-            civilian = {
-                large = "GFX_portrait_BLR_aleksandr_lukashenko"
-            }
-        }
-        country_leader = {
-            ideology = autoritarian_democracy
-            traits = { }
-            expire = "2060.1.1"
-            id = -1
-        }
-    }
+	BLR_aleksandr_lukashenko = {
+		name = BLR_aleksandr_lukashenko
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_BLR_aleksandr_lukashenko"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+			expire = "2060.1.1"
+			id = -1
+		}
+	}
 
 }

@@ -41,10 +41,10 @@ recruit_character = igor_polotnicky
 		mortar_weapons3 = 1
 		basic_train = 1
 
-                motorized_equipment = 1
-                motorized_equipment_0 = 1
-                motorized_equipment_1 = 1
-                motorized_equipment_2 = 1
+				motorized_equipment = 1
+				motorized_equipment_0 = 1
+				motorized_equipment_1 = 1
+				motorized_equipment_2 = 1
 
 		tech_support = 1
 
@@ -57,11 +57,11 @@ recruit_character = igor_polotnicky
 	}
 
 	set_power_balance = {
-        id = LPR_centralization_bop
-        left_side = LPR_cossack_autonomy_bop_fully
-        right_side = LPR_vertical_power_bop
-        set_value = 0.1
-    }
+		id = LPR_centralization_bop
+		left_side = LPR_cossack_autonomy_bop_fully
+		right_side = LPR_vertical_power_bop
+		set_value = 0.1
+	}
 
 	add_equipment_to_stockpile = {
 		type = train_equipment_1
@@ -73,13 +73,13 @@ recruit_character = igor_polotnicky
 		service_by_requirement
 		closed_economy
 		war_economy
-        LPR_ruined_factories
-        LPR_dependent_electric_power
-        militarized_police
-        free_elementary_and_middle_schools
-        private_healthcare
-        no_social_security
-    }
+		LPR_ruined_factories
+		LPR_dependent_electric_power
+		militarized_police
+		free_elementary_and_middle_schools
+		private_healthcare
+		no_social_security
+	}
 
 	set_politics = {
 		ruling_party = autoritarian_democracy
@@ -89,12 +89,12 @@ recruit_character = igor_polotnicky
 	}
 
 	set_popularities = {
-        communism = 42
-        nationalism = 32
-        autoritarian_democracy = 18
-        conservatism_democracy = 6
-        liberal_democracy = 2
-        social_democracy = 0
-    }
+		communism = 42
+		nationalism = 32
+		autoritarian_democracy = 18
+		conservatism_democracy = 6
+		liberal_democracy = 2
+		social_democracy = 0
+	}
 
 }

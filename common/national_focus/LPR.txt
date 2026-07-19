@@ -711,7 +711,7 @@ focus_tree = {
 		y = 2
 		cost = 2
 		prerequisite = { focus = LPR_provide_assistance_to_those_in_need }
-        relative_position_id = LPR_social_tension
+		relative_position_id = LPR_social_tension
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
@@ -764,7 +764,7 @@ focus_tree = {
 		y = 3
 		cost = 8
 		prerequisite = { focus = LPR_Support_for_vulnerable_populations }
-        relative_position_id = LPR_social_tension
+		relative_position_id = LPR_social_tension
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -788,7 +788,7 @@ focus_tree = {
 		y = 3
 		cost = 2
 		prerequisite = { focus = LPR_establishing_new_workplaces }
-       relative_position_id = LPR_social_tension
+	   relative_position_id = LPR_social_tension
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -859,7 +859,7 @@ focus_tree = {
 		y = 1
 		cost = 0.4
 		prerequisite = { focus = LPR_economic_collapse }
-        relative_position_id = LPR_economic_collapse
+		relative_position_id = LPR_economic_collapse
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -879,7 +879,7 @@ focus_tree = {
 		y = 1
 		cost = 4
 		prerequisite = { focus = LPR_economic_collapse }
-        relative_position_id = LPR_economic_collapse
+		relative_position_id = LPR_economic_collapse
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -949,7 +949,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		prerequisite = { focus = LPR_economic_collapse }
-        relative_position_id = LPR_economic_collapse
+		relative_position_id = LPR_economic_collapse
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -1065,7 +1065,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = LPR_shattered_electric_power }
-        relative_position_id = LPR_shattered_electric_power
+		relative_position_id = LPR_shattered_electric_power
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -1089,7 +1089,7 @@ focus_tree = {
 		y = 2
 		cost = 4
 		prerequisite = { focus = LPR_start_restoring_power_supply }
-        relative_position_id = LPR_start_restoring_power_supply
+		relative_position_id = LPR_start_restoring_power_supply
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -1113,7 +1113,7 @@ focus_tree = {
 		y = 1
 		cost = 4
 		prerequisite = { focus = LPR_restore_luhansk_tec }
-        relative_position_id = LPR_restore_luhansk_tec
+		relative_position_id = LPR_restore_luhansk_tec
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -1133,7 +1133,7 @@ focus_tree = {
 		y = 1
 		cost = 4
 		prerequisite = { focus = LPR_restore_luhansk_tec }
-        relative_position_id = LPR_restore_luhansk_tec
+		relative_position_id = LPR_restore_luhansk_tec
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -1157,7 +1157,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		prerequisite = { focus = LPR_connect_to_shchastynska_tec }
-        relative_position_id = LPR_connect_to_shchastynska_tec
+		relative_position_id = LPR_connect_to_shchastynska_tec
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -1202,7 +1202,7 @@ focus_tree = {
 		cost = 2
 		prerequisite = { focus = LPR_shattered_electric_power }
 		prerequisite = { focus = LPR_humanitarian_catastrophe }
-        relative_position_id = LPR_humanitarian_catastrophe
+		relative_position_id = LPR_humanitarian_catastrophe
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -1289,7 +1289,7 @@ focus_tree = {
 		y = 1
 		cost = 3
 		prerequisite = { focus = LPR_humanitarian_catastrophe }
-        relative_position_id = LPR_humanitarian_catastrophe
+		relative_position_id = LPR_humanitarian_catastrophe
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -1332,7 +1332,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		prerequisite = { focus = LPR_humanitarian_aid }
-        relative_position_id = LPR_humanitarian_aid
+		relative_position_id = LPR_humanitarian_aid
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
