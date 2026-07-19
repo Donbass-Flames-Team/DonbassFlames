@@ -5234,6 +5234,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_to_variable = { UKR_AFU_initiative_factor = 0.015 }
 		    add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
 		    custom_effect_tooltip = UKR_realiance_on_decentralized_command_tt
 		}
@@ -5255,7 +5256,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
+		    add_to_variable = { UKR_AFU_army_morale_factor = 0.015 }
+			add_to_variable = { UKR_AFU_initiative_factor = 0.005 }
 		    custom_effect_tooltip = UKR_realiance_on_decentralized_command_tt
 		}
 	}
@@ -5275,7 +5277,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
+			add_to_variable = { UKR_AFU_army_morale_factor = 0.015 }
+			add_to_variable = { UKR_AFU_initiative_factor = 0.015 }
 		    custom_effect_tooltip = UKR_missionary_command_tt
 		}
 	}
@@ -5297,6 +5300,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { UKR_AFU_army_morale_factor = 0.035 }
 			add_to_variable = { UKR_AFU_army_org_factor = 0.015 }
+			add_to_variable = { UKR_AFU_initiative_factor = 0.015 }
 		    custom_effect_tooltip = UKR_reform_of_the_sergeant_corps_tt
 		}
 	}
@@ -5316,27 +5320,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = UKR_reform_of_dshv
-		icon = GFX_focus_UKR_reforms_of_dshv
-		cost = 2
-		x = 0
-		y = 4
-
-		prerequisite = { focus = UKR_deosovetization_of_army }
-		relative_position_id = UKR_military_reforms_afu
-
-		available = {
-
-		}
-
-		completion_reward = {
-			add_to_variable = { UKR_AFU_paratrooper_attack_factor = 0.05 }
-		    custom_effect_tooltip = UKR_reform_of_dshv_tt
+			add_to_variable = { UKR_AFU_initiative_factor = 0.025 }
+		    custom_effect_tooltip = UKR_reform_of_dshv_tt			
 		}
 	}
 
@@ -5345,11 +5330,9 @@ focus_tree = {
 		icon = GFX_focus_UKR_reserve_corp
 		cost = 8
 		x = 0
-		y = 5
+		y = 4
 
-		prerequisite = { focus = UKR_reform_of_dshv }
-		prerequisite = { focus = UKR_reform_of_dshv focus = UKR_reform_of_the_sergeant_corps focus = UKR_strengthen_general_staff_planning }
-
+		prerequisite = { focus = UKR_deosovetization_of_army }
 		relative_position_id = UKR_military_reforms_afu
 
 		available = {
@@ -5366,13 +5349,34 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UKR_reform_of_dshv
+		icon = GFX_focus_UKR_reforms_of_dshv
+		cost = 2
+		x = 0
+		y = 5
+
+        prerequisite = { focus = UKR_creation_of_a_reserve_corps }
+		prerequisite = { focus = UKR_creation_of_a_reserve_corps focus = UKR_reform_of_the_sergeant_corps focus = UKR_strengthen_general_staff_planning }
+		relative_position_id = UKR_military_reforms_afu
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_to_variable = { UKR_AFU_paratrooper_attack_factor = 0.05 }
+		    custom_effect_tooltip = UKR_reform_of_dshv_tt
+		}
+	}
+
+	focus = {
 		id = UKR_increase_the_number_of_contract_soldiers
 		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 2
 		y = 6
 
-		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
+		prerequisite = { focus = UKR_reform_of_dshv }
 		relative_position_id = UKR_military_reforms_afu
 
 		available = {
@@ -5410,7 +5414,7 @@ focus_tree = {
 		x = -2
 		y = 6
 
-		prerequisite = { focus = UKR_creation_of_a_reserve_corps }
+		prerequisite = { focus = UKR_reform_of_dshv }
 		relative_position_id = UKR_military_reforms_afu
 
 		available = {
@@ -5853,7 +5857,7 @@ focus_tree = {
 		id = UKR_turn_to_the_west_for_help
 		icon = GFX_focus_UKR_turn_to_the_west_for_help
 		cost = 0.3
-		x = 0
+		x = 1
 		y = 1
 
 		prerequisite = { focus = UKR_information_war }
@@ -5881,7 +5885,7 @@ focus_tree = {
 		id = UKR_ban_russian_social_networks
 		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
-		x = -2
+		x = -1
 		y = 1
 
 		prerequisite = { focus = UKR_information_war }

@@ -66,6 +66,21 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
     set_variable = { UKR_AFU_supply_factor = -0.15 } 
 
 
+	add_dynamic_modifier = { modifier = UKR_ukrainian_air_forces_idea }
+    set_variable = { UKR_ukrainian_air_forces_air_accidents_factor = 0.15 }
+	set_variable = { UKR_ukrainian_air_forces_air_cas_efficiency = -0.15 }
+	set_variable = { UKR_ukrainian_air_forces_air_mission_efficiency = -0.15 }
+    set_variable = { UKR_ukrainian_air_forces_air_escort_efficiency = -0.1 }
+	set_variable = { UKR_ukrainian_air_forces_air_attack_factor = -0.05 }
+
+	add_dynamic_modifier = { modifier = UKR_ukrainian_navy_idea }
+    set_variable = { UKR_ukrainian_navy_navy_org_factor = -0.2 }
+	set_variable = { UKR_ukrainian_navy_naval_accidents_chance = -0.15 }
+	set_variable = { UKR_ukrainian_navy_naval_detection = -0.15 }
+	set_variable = { UKR_ukrainian_navy_naval_damage_factor = -0.15 }
+    set_variable = { UKR_ukrainian_navy_naval_morale_factor = -0.1 }
+
+
 	add_dynamic_modifier = { modifier = UKR_oligarchs_idea }
 	set_variable = { UKR_Oligarchs_political_power_gain = 0.15 }
 	set_variable = { UKR_Oligarchs_consumer_goods_factor = 0.20 }
