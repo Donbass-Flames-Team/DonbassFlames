@@ -24,7 +24,7 @@ technologies = {
 		path = {
 			leads_to_tech = light_fighter_2
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1960
@@ -54,7 +54,7 @@ technologies = {
 		path = {
 			leads_to_tech = light_fighter_3
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1970
@@ -70,7 +70,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
+	}
 	
 	light_fighter_3 = {
 		enable_equipments = {
@@ -84,7 +84,7 @@ technologies = {
 		path = {
 			leads_to_tech = light_fighter_4
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1980
@@ -114,7 +114,7 @@ technologies = {
 		path = {
 			leads_to_tech = light_fighter_5
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 2010
@@ -139,7 +139,7 @@ technologies = {
 		
 		enable_subunits = {
 			
-		}		
+		}
 
 		research_cost = 1.5
 		start_year = 2020
@@ -169,7 +169,7 @@ technologies = {
 		path = {
 			leads_to_tech = heavy_fighter_2
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1960
@@ -199,7 +199,7 @@ technologies = {
 		path = {
 			leads_to_tech = heavy_fighter_3
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1970
@@ -215,7 +215,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
+	}
 	
 	heavy_fighter_3 = {
 		enable_equipments = {
@@ -229,7 +229,7 @@ technologies = {
 		path = {
 			leads_to_tech = heavy_fighter_4
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1980
@@ -259,7 +259,7 @@ technologies = {
 		path = {
 			leads_to_tech = heavy_fighter_5
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 2010
@@ -289,7 +289,7 @@ technologies = {
 		path = {
 			leads_to_tech = frontline_bomber_2
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1960
@@ -319,7 +319,7 @@ technologies = {
 		path = {
 			leads_to_tech = frontline_bomber_3
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1970
@@ -335,7 +335,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
+	}
 	
 	frontline_bomber_3 = {
 		enable_equipments = {
@@ -349,7 +349,7 @@ technologies = {
 		path = {
 			leads_to_tech = frontline_bomber_4
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1980
@@ -379,7 +379,7 @@ technologies = {
 		path = {
 			leads_to_tech = cas_2
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1960
@@ -409,7 +409,7 @@ technologies = {
 		path = {
 			leads_to_tech = cas_3
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1970
@@ -425,7 +425,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
+	}
 	
 	cas_3 = {
 		enable_equipments = {
@@ -439,7 +439,7 @@ technologies = {
 		path = {
 			leads_to_tech = cas_4
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1980
@@ -469,7 +469,7 @@ technologies = {
 		path = {
 			leads_to_tech = cas_5
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 2010
@@ -494,7 +494,7 @@ technologies = {
 		
 		enable_subunits = {
 			
-		}		
+		}
 
 		research_cost = 1.5
 		start_year = 2020
@@ -524,7 +524,7 @@ technologies = {
 		path = {
 			leads_to_tech = transport_plane_2
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1960
@@ -554,7 +554,7 @@ technologies = {
 		path = {
 			leads_to_tech = transport_plane_3
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1970
@@ -570,7 +570,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
+	}
 	
 	transport_plane_3 = {
 		enable_equipments = {
@@ -584,7 +584,7 @@ technologies = {
 		path = {
 			leads_to_tech = transport_plane_4
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1980
@@ -614,7 +614,7 @@ technologies = {
 		path = {
 			leads_to_tech = transport_plane_5
 			research_cost_coeff = 1
-		}			
+		}
 
 		research_cost = 1.5
 		start_year = 1990
@@ -639,7 +639,7 @@ technologies = {
 		
 		enable_subunits = {
 			
-		}		
+		}
 
 		research_cost = 1.5
 		start_year = 2020
@@ -655,5 +655,5 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
+	}
 }

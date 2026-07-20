@@ -21,7 +21,7 @@ country_event = {
 			news_event = {
 				id = news_events.1
 				hours = 12
-			}			
+			}
 			set_global_flag = Yanukovich_escaped
 			complete_national_focus = UKR_the_end_of_the_yanukovych_regime
 			clr_country_flag = Tree_post_yanukovich_hidden
@@ -130,7 +130,7 @@ country_event = {
 					add_equipment_to_stockpile = {
 						type = uniform_equipment_1
 						amount = 2250
-					}					
+					}
 				}
 			}
 			if = {
@@ -149,8 +149,8 @@ country_event = {
 					add_equipment_to_stockpile = {
 						type = uniform_equipment_1
 						amount = 2250
-					}										
-				} 
+					}
+				}
 			}
 			if = {
 				limit = {
@@ -164,11 +164,11 @@ country_event = {
 					add_equipment_to_stockpile = { 
 						type = infantry_equipment_1 
 						amount = 4500 
-					}	
+					}
 					add_equipment_to_stockpile = {
 						type = uniform_equipment_1
 						amount = 4250
-					}				
+					}
 				}
 			}
 			country_event = {
@@ -183,10 +183,10 @@ country_event = {
 			}
 			426 = {
 				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 35 }
-			}	
+			}
 			421 = {
 				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 35 }
-			}								
+			}
 		}
 	}
 	
@@ -290,7 +290,7 @@ country_event = {
 				add_equipment_to_stockpile = { 
 					type = infantry_equipment_1 
 					amount = 2500 
-				}					
+				}
 			}
 		}
 		if = {
@@ -305,7 +305,7 @@ country_event = {
 				add_equipment_to_stockpile = { 
 					type = infantry_equipment_1 
 					amount = 4500 
-				}					
+				}
 			}
 		}
 			340 = {
@@ -321,9 +321,9 @@ country_event = {
 				country_event = {
 					id = LPR.15
 					days = 15
-				}				
+				}
 			}
-		}		
+		}
 	}
 	
 	option = {
@@ -333,10 +333,10 @@ country_event = {
 				limit = {
 					DPR = { 
 						is_ai = yes
-					}	
+					}
 					UKR = {
 						is_ai = no
-					}																			
+					}
 				}
 				DPR = {
 					load_oob = Donetsk_people_Millitia
@@ -455,7 +455,7 @@ country_event = {
 				add_equipment_to_stockpile = { 
 					type = infantry_equipment_1 
 					amount = 2500 
-				}					
+				}
 			}
 		}
 		if = {
@@ -470,9 +470,9 @@ country_event = {
 				add_equipment_to_stockpile = { 
 					type = infantry_equipment_1 
 					amount = 4500 
-				}					
+				}
 			}
-		}		
+		}
 	}
 	}
 	
@@ -578,7 +578,7 @@ country_event = {
 				add_equipment_to_stockpile = { 
 					type = infantry_equipment_1 
 					amount = 2500 
-				}					
+				}
 			}
 		}
 		if = {
@@ -593,9 +593,9 @@ country_event = {
 				add_equipment_to_stockpile = { 
 					type = infantry_equipment_1 
 					amount = 4500 
-				}					
+				}
 			}
-		}		
+		}
 	}
 	
 	option = {
@@ -717,7 +717,7 @@ country_event = {
 			var = Donetsk_prorussian_support_value
 			min = 0
 			max = 100
-		}		
+		}
 	}
 }
 
@@ -909,7 +909,7 @@ country_event = {
 			var = Crimea_prorussian_support_value
 			min = 0
 			max = 100
-		}		
+		}
 	}
 }
 
@@ -972,7 +972,7 @@ country_event = {
 				id = news_events.9
 				hours = 12
 			}
-		}				
+		}
 	}
 }
 
@@ -1043,7 +1043,7 @@ country_event = {
 			add_to_variable = {
 				var = UKR_radicalisation_of_prorussians_value
 				value = 2
-			}		
+			}
 		}
 	}
 
@@ -1096,7 +1096,7 @@ country_event = {
 			}
 		}
 	}
-} 
+}
 
 # Yanukovich in donetsk
 country_event = {
@@ -1148,7 +1148,7 @@ country_event = {
 			}
 		}
 	}
-} 
+}
 
 # Слуга народа TV series released
 country_event = {
@@ -1273,7 +1273,7 @@ country_event = {
 			}
 			381 = {
 				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 30 }
-			}		
+			}
 
 			if = {
 				limit = {
@@ -1288,10 +1288,10 @@ country_event = {
 				}
 				533 = {
 					add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
-				}	
+				}
 				511 = {
 					add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
-				}	
+				}
 				468 = {
 					add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
 				}
@@ -1300,12 +1300,12 @@ country_event = {
 				}
 				421 = {
 					add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
-				}										
-			}	
+				}
+			}
 
 			432 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 35 }
-			}	
+			}
 			486 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 55 }
 			}
@@ -1335,7 +1335,7 @@ country_event = {
 			}
 			318 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = DPR days = 15 }
-			}	
+			}
 			318 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = NDR days = 25 }
 			}
@@ -1471,7 +1471,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			load_oob = UKR_Second_Wave_of_mobilization_2014
-		}	
+		}
 	}
 
 	option = {
@@ -1586,7 +1586,7 @@ country_event = {
 				var = Kharkiv_prorussian_support_value
 				min = 0
 				max = 100
-			}	
+			}
 			
 			subtract_from_variable = {
 				var = Odesa_proukranian_support_value
@@ -1744,7 +1744,7 @@ country_event = {
 		add_equipment_to_stockpile = { 
 			type = uniform_equipment_3
 			amount = 3600 
-		}		
+		}
 	}
 }
 
@@ -1902,7 +1902,7 @@ country_event = {
 				on_lose = DPR.3
 				dig_in_factor = 0
 				terrain_factor = 0
-			}	
+			}
 			defender = {
 				state = 433
 				num_provinces = 1
@@ -2074,7 +2074,7 @@ country_event = {
 				num_provinces = 3
 				dig_in_factor = 0
 				terrain_factor = 0
-			}	
+			}
 			defender = {
 				state = 426
 				num_provinces = 3
@@ -2087,7 +2087,7 @@ country_event = {
 				num_provinces = 3
 				dig_in_factor = 0
 				terrain_factor = 0
-			}	
+			}
 			defender = {
 				state = 412
 				num_provinces = 3
@@ -2215,7 +2215,7 @@ country_event = {
 			country_event = {
 				id = ukraine.42
 				days = 13
-			}		
+			}
 			country_event = {
 				id = ukraine.61
 				days = 9
@@ -2223,7 +2223,7 @@ country_event = {
 			country_event = {
 				id = ukraine.62
 				days = 37
-			}	
+			}
 			country_event = {
 				id = ukraine.72
 				days = 5
@@ -2241,7 +2241,7 @@ country_event = {
 		add_popularity = {
 			ideology = nationalism
 			popularity = 0.025
-		}				
+		}
 	}
 }
 
@@ -2297,11 +2297,11 @@ country_event = {
 		add_stability = -0.055	
 		154 = {
 			add_manpower = -53
-		}	
+		}
 		add_popularity = {
 			ideology = autoritarian_democracy
 			popularity = -0.075
-		}	
+		}
 	}
 }
 
@@ -2320,7 +2320,7 @@ country_event = {
 		add_popularity = {
 			ideology = autoritarian_democracy
 			popularity = 0.015
-		}	
+		}
 	}
 }
 
@@ -2338,7 +2338,7 @@ country_event = {
 		add_popularity = {
 			ideology = nationalism
 			popularity = 0.015
-		}	
+		}
 	}
 }
 
@@ -2413,7 +2413,7 @@ country_event = {
 				set_variable = { People_republic_experience_loss_factor = -0.15 }
 				set_variable = { People_republic_army_speed_factor = -0.25 }
 				set_variable = { People_republic_army_attack_speed_factor = -0.25 }
-			}	
+			}
 			LPR = {
 				add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 				set_variable = { People_republic_pocket_penalty = -0.30 }
@@ -2434,7 +2434,7 @@ country_event = {
 				set_variable = { People_republic_experience_loss_factor = -0.15 }
 				set_variable = { People_republic_army_speed_factor = -0.25 }
 				set_variable = { People_republic_army_attack_speed_factor = -0.25 }
-			}							
+			}
 			SDR = {
 				add_dynamic_modifier = { modifier = People_republic_ATO_idea }
 				set_variable = { People_republic_pocket_penalty = -0.30 }
@@ -2480,7 +2480,7 @@ country_event = {
 			set_country_flag = RocketAttackInZelenople
 			406 = {
 				add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = LPR days = 55 }
-			}	
+			}
 		}
 	}
 
@@ -2812,7 +2812,7 @@ country_event = {
 				id = ukraine.80
 				days = 6
 			}
-		}		
+		}
 	}
 
 	option = {
@@ -3300,7 +3300,7 @@ country_event = {
 				add = 30
 			}
 		}
-	}	
+	}
 
 	# Кандидаты дальше
 	option = {
@@ -3352,7 +3352,7 @@ country_event = {
 		clr_country_flag = Petr_Poroshenko_on_2014_elections_favourite
 		set_country_flag = Mihail_dobkin_on_2014_elections_favourite
 		custom_effect_tooltip = NOT_A_WORKING_WAY_tt
-	}	
+	}
 
 	option = {
 		name = ukraine.99.c
@@ -3397,7 +3397,7 @@ country_event = {
 			country_leader = {
 				ideology = social_democracy
 				expire = "2045.1.1.1"
-			} 
+			}
 		}
 		set_politics = {
 			ruling_party = social_democracy
@@ -3592,7 +3592,7 @@ country_event = {
 		if = {
 			limit = { country_exists = HPR }
 			white_peace = HPR
-		}	
+		}
 		if = {
 			limit = { country_exists = OPR }
 			white_peace = OPR
@@ -3604,15 +3604,15 @@ country_event = {
 		if = {
 			limit = { country_exists = BPR }
 			white_peace = BPR
-		}	
+		}
 		if = {
 			limit = { country_exists = NPR }
 			white_peace = NPR
-		}		
+		}
 		if = {
 			limit = { country_exists = BPR }
 			white_peace = BPR
-		}						
+		}
 		hidden_effect = {
 			set_global_flag = ATO_Separatists_victory
 			news_event = {
@@ -3650,7 +3650,7 @@ country_event = {
 						id = ukraine.119
 						days = 10
 						random_days = 25
-					}		
+					}
 				}
 			}
 			LPR = {
@@ -3712,7 +3712,7 @@ country_event = {
 						transfer_state = 387
 						transfer_state = 416
 						transfer_state = 413
-					}					
+					}
 				}
 			}
 			DPR = {
@@ -3862,7 +3862,7 @@ country_event = {
 				}
 			}
 			if = {
-				limit = { NOT = { country_exists = BPR } }
+				limit = { NOT = { country_exists = BPR }}
 				OPR = {
 					transfer_state = 606
 					transfer_state = 618
@@ -3870,7 +3870,7 @@ country_event = {
 					transfer_state = 581
 					transfer_state = 583
 				}
-			}			
+			}
 			if = {
 				limit = {
 					country_exists = OPR
@@ -4017,7 +4017,7 @@ country_event = {
 					transfer_state = 219
 					transfer_state = 260
 				}
-			}	
+			}
 			if = {
 				limit = { country_exists = NPR }
 				NPR = {
@@ -4036,7 +4036,7 @@ country_event = {
 					country_exists = DRR
 					NOT = {
 						country_exists = DRP
-					} 
+					}
 				}
 				DRR = {
 					transfer_state = 345
@@ -4091,7 +4091,7 @@ country_event = {
 					transfer_state = 350
 
 				}
-			}																													
+			}
 		}
 	}
 }
@@ -4143,14 +4143,14 @@ country_event = {
 	option = {
 		name = ukraine.110.b
 		add_political_power = -20
-	}	
+	}
 	option = {
 		name = ukraine.110.c
 		add_political_power = -55
 		hidden_effect = {
 			set_country_flag = Kolomysky_has_more_powers
 		}
-	}	
+	}
 }
 
 # Победа Ляшко (2014)
@@ -4180,7 +4180,7 @@ country_event = {
 			country_leader = {
 				ideology = populism
 				expire = "2045.1.1.1"
-			} 
+			}
 		}
 		hidden_effect = {
 			news_event = {
@@ -4214,11 +4214,11 @@ country_event = {
 					recon = { x = 0 y = 1 }
 					mortar = { x = 0 y = 2 }
 					atgm_company = { x = 0 y = 3 }
-					field_hospital = { x = 0 y = 4} 
+					field_hospital = { x = 0 y = 4}
 					sniper_company = { x = 1 y = 0 }
 					manpads_platoon = { x = 1 y = 1}
   					logistics_company = { x = 1 y = 2}
-					signal_company = { x = 1 y = 3} 
+					signal_company = { x = 1 y = 3}
 				}
 			}
 			load_oob = UKR_Chechen_batalion
@@ -4274,7 +4274,7 @@ country_event = {
 				id = ukraine.115
 				days = 3
 				random_days = 6
-			}			
+			}
 			country_event = {
 				id = ukraine.118
 				days = 4
@@ -4313,7 +4313,7 @@ country_event = {
 			country_event = { 
 				id = ukraine.116
 				days = 1
-			}		
+			}
 		}
 	}
 
@@ -4350,7 +4350,7 @@ country_event = {
 					type = annex_everything
 				}
 				load_oob = DRP_millitia
-			}		
+			}
 		}
 	}
 
@@ -4391,7 +4391,7 @@ country_event = {
 					type = annex_everything
 				}
 				load_oob = BPR_uprising_millitia
-			}		
+			}
 		}
 	}
 
@@ -4424,7 +4424,7 @@ country_event = {
 					type = annex_everything
 				}
 				load_oob = NPR_uprising_millitia
-			}		
+			}
 		}
 	}
 
@@ -4448,7 +4448,7 @@ country_event = {
 				id = ukraine.121
 				days = 7
 				random_days = 16
-			}		
+			}
 			country_event = {
 				id = ukraine.124
 				days = 11
@@ -4512,7 +4512,7 @@ country_event = {
 		ZKR = {
 			change_tag_from = ROOT
 		}
-	}	
+	}
 }
 
 # Рост праврадикальных идей
@@ -4748,11 +4748,11 @@ country_event = {
 				set_state_controller = 67
 				set_state_controller = 148
 				set_state_controller = 113
-			}		
+			}
 			country_event = {
 				id = ukraine.128
 				days = 7
-			}	
+			}
 		}
 	}
 
@@ -4785,7 +4785,7 @@ country_event = {
 					target = UKR
 					type = annex_everything
 				}
-			}			
+			}
 		}
 	}
 
@@ -4848,7 +4848,7 @@ country_event = {
 				country_leader = {
 					ideology = liberalism
 					expire = "2045.1.1.1"
-				} 
+				}
 			}
 			set_politics = {
 				ruling_party = liberalism
@@ -4890,7 +4890,7 @@ country_event = {
 				country_leader = {
 					ideology = autoritarian_democracy
 					expire = "2045.1.1.1"
-				} 
+				}
 			}
 			set_politics = {
 				ruling_party = autoritarian_democracy
@@ -4956,7 +4956,7 @@ country_event = {
 			country_event = {
 				id = ukraine.127
 				days = 1
-			}			
+			}
 		}
 	}
 
@@ -5274,14 +5274,14 @@ country_event = {
 				traits = { 
 					#
 				}
-			} 
+			}
 		}
 		hidden_effect = {
 			promote_character = {
 				character = UKR_lyudmila_yanukovich
 				ideology = autoritarian_democracy
 			}
-		}		
+		}
 	}
 }
 
@@ -5316,17 +5316,17 @@ country_event = {
 			}
 			307 = {
 				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 85 }
-			}	
+			}
 			304 = {
 				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 85 }
 			}
 			297 = {
 				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 85 }
-			}	
+			}
 			305 = {
 				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 85 }
-			}										
-		}		
+			}
+		}
 	}
 }
 
@@ -5382,7 +5382,7 @@ country_event = {
 	option = {
 		name = ukraine.148.b
 		add_political_power = 25
-	}	
+	}
 }
 
 #Захват Антрацита

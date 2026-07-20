@@ -34,7 +34,7 @@ buildings = {
 			state_production_speed_buildings_factor = 0.01
 			local_building_slots_factor = 0.025
 			local_resources_factor = 0.01
-		}		
+		}
 	}
 
 	social_infrastructure = {
@@ -50,7 +50,7 @@ buildings = {
 		}
 		state_modifiers = {
 			monthly_population = 0.02
-		}		
+		}
 	}
 
 	arms_factory = {
@@ -129,7 +129,7 @@ buildings = {
 			shares_slots = yes
 			state_max = 5
 		}
-	}	
+	}
 
 	ammunition_plant = {
 		show_on_map = 6
@@ -143,7 +143,7 @@ buildings = {
 		}
 
 		show_modifier = yes
-	}	
+	}
 
 	ammunition_depot = {
 		show_on_map = 6

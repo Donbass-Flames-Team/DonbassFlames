@@ -54,11 +54,11 @@ country_event = {
 		multiply_variable = {
 			var = General_population_on_elections
 			value = 125000
-		}	
+		}
 		multiply_variable = {
 			var = General_population_on_elections
 			value = Voter_turnout_procent_ukraine_elections
-		}	
+		}
 		
 
 		### Stamine
@@ -76,7 +76,7 @@ country_event = {
 			var = general_population_support_timoshenko_value
 			value = 125000
 			tooltip = multiply_var_by_100_tt
-		}	
+		}
 		multiply_variable = {
 			var = general_population_support_timoshenko_value
 			value = Voter_turnout_procent_ukraine_elections
@@ -90,12 +90,12 @@ country_event = {
 			var = general_population_support_poroshenko_value
 			value = 125000
 			tooltip = multiply_var_by_100_tt
-		}	
+		}
 		multiply_variable = {
 			var = general_population_support_poroshenko_value
 			value = Voter_turnout_procent_ukraine_elections
 			tooltip = multiply_var_by_100_tt
-		}	
+		}
 		# Lyashko
 		set_variable = {
 			var = general_population_support_lyashko_value
@@ -105,11 +105,11 @@ country_event = {
 			var = general_population_support_lyashko_value
 			value = 125000
 			tooltip = multiply_var_by_100_tt
-		}	
+		}
 		multiply_variable = {
 			var = general_population_support_lyashko_value
 			value = Voter_turnout_procent_ukraine_elections
-		}	
+		}
 		# Mihail Dobkin
 		set_variable = {
 			var = general_population_support_dobkin_value
@@ -119,7 +119,7 @@ country_event = {
 			var = general_population_support_dobkin_value
 			value = 125000
 			tooltip = multiply_var_by_100_tt
-		}	
+		}
 		multiply_variable = {
 			var = general_population_support_dobkin_value
 			value = Voter_turnout_procent_ukraine_elections
@@ -133,11 +133,11 @@ country_event = {
 			var = general_population_support_darth_alekseevich_value
 			value = 125000
 			tooltip = multiply_var_by_100_tt
-		}	
+		}
 		multiply_variable = {
 			var = general_population_support_darth_alekseevich_value
 			value = Voter_turnout_procent_ukraine_elections
-		}		
+		}
 		##################################################
 		##################################################
 		### Timoshenko precentage support on elections ###
@@ -278,7 +278,7 @@ country_event = {
 			}
 			set_country_flag = UKR_elections_results_darth_alekseevich_vader_winner_gui
 			country_event = ukraine.130
-		}		
+		}
 		if = {
 			limit = {
 				check_variable = { var = Dobkin_general_support value = Poroshenko_general_support compare = greater_than }

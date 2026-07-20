@@ -414,7 +414,7 @@ mounted_infantry = {
 					max_organisation = 5
 					add = yes
 				}
-			} 
+			}
 			category_cavalry = {
 				max_organisation = 5
 			}
@@ -424,8 +424,8 @@ mounted_infantry = {
 			category_cavalry = {
 				hard_attack = 0.2
 				ap_attack = 0.2
-			}		
-		}	
+			}
+		}
 		
 		beasts_of_war = {
 			category_cavalry = {
@@ -498,7 +498,7 @@ commandos = {
 			}
 			helicopter_field_hospital = {
 				casualty_trickleback = 0.05
-			}			
+			}
 			category_regimental_support_artillery = {
 				supply_consumption = -0.01
 				soft_attack = 0.05
@@ -523,7 +523,7 @@ commandos = {
 			category_vehicle_infantry = {
 				reliability = 0.05
 				breakthrough = 0.1
-			} 
+			}
 			
 		}
 		rigorous_training_regimen = {
@@ -753,7 +753,7 @@ peoples_war = {
 			   initiative = 0.015
 			   max_organisation = 10
 			   breakthrough = 0.2
-			} 
+			}
 		}
 		
 		people_not_things = {

@@ -81,11 +81,11 @@ defined_text = {
 defined_text = {
 	name = crimea_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 5 } }
+		trigger = { check_variable = { select_separatists_region = 5 }}
 		localization_key = "GFX_crimea_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 5 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 5 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -93,11 +93,11 @@ defined_text = {
 defined_text = {
 	name = cherkasy_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 6 } }
+		trigger = { check_variable = { select_separatists_region = 6 }}
 		localization_key = "GFX_cherkasy_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 6 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 6 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -105,11 +105,11 @@ defined_text = {
 defined_text = {
 	name = chernihiv_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 7 } }
+		trigger = { check_variable = { select_separatists_region = 7 }}
 		localization_key = "GFX_chernihiv_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 7 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 7 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -117,11 +117,11 @@ defined_text = {
 defined_text = {
 	name = chernivtsi_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 8 } }
+		trigger = { check_variable = { select_separatists_region = 8 }}
 		localization_key = "GFX_chernivtsi_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 8 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 8 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -129,11 +129,11 @@ defined_text = {
 defined_text = {
 	name = dnipro_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 9 } }
+		trigger = { check_variable = { select_separatists_region = 9 }}
 		localization_key = "GFX_dnipro_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 9 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 9 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -141,11 +141,11 @@ defined_text = {
 defined_text = {
 	name = ivanofrankivsk_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 10 } }
+		trigger = { check_variable = { select_separatists_region = 10 }}
 		localization_key = "GFX_ivanofrankivsk_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 10 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 10 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -153,11 +153,11 @@ defined_text = {
 defined_text = {
 	name = khmelnytskyi_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 11 } }
+		trigger = { check_variable = { select_separatists_region = 11 }}
 		localization_key = "GFX_khmelnytskyi_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 11 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 11 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -165,11 +165,11 @@ defined_text = {
 defined_text = {
 	name = kherson_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 12 } }
+		trigger = { check_variable = { select_separatists_region = 12 }}
 		localization_key = "GFX_kherson_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 12 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 12 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -177,11 +177,11 @@ defined_text = {
 defined_text = {
 	name = kyiv_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 13 } }
+		trigger = { check_variable = { select_separatists_region = 13 }}
 		localization_key = "GFX_kyiv_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 13 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 13 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -189,11 +189,11 @@ defined_text = {
 defined_text = {
 	name = kirovohrad_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 14 } }
+		trigger = { check_variable = { select_separatists_region = 14 }}
 		localization_key = "GFX_kyrovohrad_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 14 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 14 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -201,11 +201,11 @@ defined_text = {
 defined_text = {
 	name = lviv_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 15 } }
+		trigger = { check_variable = { select_separatists_region = 15 }}
 		localization_key = "GFX_lviv_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 15 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 15 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -213,11 +213,11 @@ defined_text = {
 defined_text = {
 	name = mykolaiv_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 16 } }
+		trigger = { check_variable = { select_separatists_region = 16 }}
 		localization_key = "GFX_mykolaiv_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 16 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 16 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -225,11 +225,11 @@ defined_text = {
 defined_text = {
 	name = poltava_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 17 } }
+		trigger = { check_variable = { select_separatists_region = 17 }}
 		localization_key = "GFX_poltava_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 17 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 17 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -237,11 +237,11 @@ defined_text = {
 defined_text = {
 	name = sumy_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 18 } }
+		trigger = { check_variable = { select_separatists_region = 18 }}
 		localization_key = "GFX_sumy_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 18 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 18 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -249,11 +249,11 @@ defined_text = {
 defined_text = {
 	name = ternopil_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 19 } }
+		trigger = { check_variable = { select_separatists_region = 19 }}
 		localization_key = "GFX_ternopil_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 19 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 19 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -261,11 +261,11 @@ defined_text = {
 defined_text = {
 	name = vinnytsia_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 20 } }
+		trigger = { check_variable = { select_separatists_region = 20 }}
 		localization_key = "GFX_vinnytsia_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 20 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 20 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -273,11 +273,11 @@ defined_text = {
 defined_text = {
 	name = volyn_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 21 } }
+		trigger = { check_variable = { select_separatists_region = 21 }}
 		localization_key = "GFX_volyn_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 21 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 21 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -285,11 +285,11 @@ defined_text = {
 defined_text = {
 	name = zakarpattia_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 22 } }
+		trigger = { check_variable = { select_separatists_region = 22 }}
 		localization_key = "GFX_zakarpattya_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 22 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 22 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -297,11 +297,11 @@ defined_text = {
 defined_text = {
 	name = zaporizhzhia_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 23 } }
+		trigger = { check_variable = { select_separatists_region = 23 }}
 		localization_key = "GFX_zaporizhzhia_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 23 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 23 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -309,11 +309,11 @@ defined_text = {
 defined_text = {
 	name = zhytomyr_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 24 } }
+		trigger = { check_variable = { select_separatists_region = 24 }}
 		localization_key = "GFX_zhytomyr_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 24 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 24 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -321,11 +321,11 @@ defined_text = {
 defined_text = {
 	name = rivne_icon_glow
 	text = {
-		trigger = { check_variable = { select_separatists_region = 25 } }
+		trigger = { check_variable = { select_separatists_region = 25 }}
 		localization_key = "GFX_rivne_glow_seapartism_gui"
 	}
 	text = {
-		trigger = { NOT = { check_variable = { select_separatists_region = 25 } } }
+		trigger = { NOT = { check_variable = { select_separatists_region = 25 }}}
 		localization_key = "GFX_placeholder_nothing"
 	}
 }
@@ -478,97 +478,97 @@ defined_text = {
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 7 } }
+		trigger = { check_variable = { select_separatists_region = 7 }}
 		localization_key = "GFX_separatismgui_bgchernihiv"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 8 } }
+		trigger = { check_variable = { select_separatists_region = 8 }}
 		localization_key = "GFX_separatismgui_bgchernivtsi"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 9 } }
+		trigger = { check_variable = { select_separatists_region = 9 }}
 		localization_key = "GFX_separatismgui_bgdnipro"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 10 } }
+		trigger = { check_variable = { select_separatists_region = 10 }}
 		localization_key = "GFX_separatismgui_bgivanofrankivsk"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 11 } }
+		trigger = { check_variable = { select_separatists_region = 11 }}
 		localization_key = "GFX_separatismgui_bgkhmelnytskyi"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 12 } }
+		trigger = { check_variable = { select_separatists_region = 12 }}
 		localization_key = "GFX_separatismgui_bgkherson"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 13 } }
+		trigger = { check_variable = { select_separatists_region = 13 }}
 		localization_key = "GFX_separatismgui_bgkyiv"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 14 } }
+		trigger = { check_variable = { select_separatists_region = 14 }}
 		localization_key = "GFX_separatismgui_bgkyrovohrad"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 15 } }
+		trigger = { check_variable = { select_separatists_region = 15 }}
 		localization_key = "GFX_separatismgui_bglviv"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 16 } }
+		trigger = { check_variable = { select_separatists_region = 16 }}
 		localization_key = "GFX_separatismgui_bgmykolaiv"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 17 } }
+		trigger = { check_variable = { select_separatists_region = 17 }}
 		localization_key = "GFX_separatismgui_bgpoltava"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 18 } }
+		trigger = { check_variable = { select_separatists_region = 18 }}
 		localization_key = "GFX_separatismgui_bgsumy"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 19 } }
+		trigger = { check_variable = { select_separatists_region = 19 }}
 		localization_key = "GFX_separatismgui_bgternopil"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 20 } }
+		trigger = { check_variable = { select_separatists_region = 20 }}
 		localization_key = "GFX_separatismgui_bgvinnytsia"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 21 } }
+		trigger = { check_variable = { select_separatists_region = 21 }}
 		localization_key = "GFX_separatismgui_bglutsk"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 22 } }
+		trigger = { check_variable = { select_separatists_region = 22 }}
 		localization_key = "GFX_separatismgui_bgzakarpattya"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 23 } }
+		trigger = { check_variable = { select_separatists_region = 23 }}
 		localization_key = "GFX_separatismgui_bgzaporizhzhia"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 24 } }
+		trigger = { check_variable = { select_separatists_region = 24 }}
 		localization_key = "GFX_separatismgui_bgzhytomyr"
 	}
 
 	text = {
-		trigger = { check_variable = { select_separatists_region = 25 } }
+		trigger = { check_variable = { select_separatists_region = 25 }}
 		localization_key = "GFX_separatismgui_bgrivne"
 	}
 }

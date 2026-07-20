@@ -433,7 +433,7 @@ focus_tree = {
 			hidden_effect = {
 				UKR = {
 					country_event = ukraine.27
-				}		
+				}
 				add_state_claim = 621
 				add_state_claim = 637
 				add_state_claim = 614
@@ -497,10 +497,10 @@ focus_tree = {
 				}
 				607 = {
 					add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
-				}		
+				}
 				600 = {
 					add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
-				}	
+				}
 				634 = {
 					add_dynamic_modifier = { modifier = crimean_spring_dynamic_idea scope = RUS days = 15 }
 				}
@@ -940,11 +940,11 @@ focus_tree = {
 							character = WGN_dmitry_utkin
 							civilian = { large = "gfx/leaders/WGN/WGN_dmitry_utkin_streamer.dds" }
 						}
-					} 
+					}
 				}
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = RUS_ammunition_supply
@@ -1117,7 +1117,7 @@ focus_tree = {
 			hidden_effect = {
 				set_global_flag = Donbas_war_4_escalation
 				if = {
-					limit = { NOT = { has_global_flag = Donbas_war_3_escalation } }
+					limit = { NOT = { has_global_flag = Donbas_war_3_escalation }}
 					set_global_flag = Donbas_war_3_escalation
 				}
 				UKR = {
@@ -1193,7 +1193,7 @@ focus_tree = {
 		available = {
 			has_global_flag = Ukraine_victory_in_ATO
 			DPR = { exists = no }
-			LPR = { exists = no }	
+			LPR = { exists = no }
 			KPR = { exists = no }
 		}
 
@@ -1312,7 +1312,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-	}	
+	}
 
 	focus = {
 		id = RUS_north_pipeline_two
@@ -1381,7 +1381,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-	}	
+	}
 
 	focus = {
 		id = RUS_regain_global_influence
@@ -1447,7 +1447,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-	}	
+	}
 
 	focus = {
 		id = RUS_influence_in_syria
@@ -1469,7 +1469,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-	}	
+	}
 
 	focus = {
 		id = RUS_pmc_redut
@@ -1540,12 +1540,12 @@ focus_tree = {
 				has_country_flag = RUS_People_republic_victory
 			}
 			ZPR = { exists = no }
-			HPR = { exists = no }	
-			NPR = { exists = no }	
+			HPR = { exists = no }
+			NPR = { exists = no }
 			NOT = {
 				DPR = {
 					surrender_progress > 0.5
-				}	
+				}
 			}
 			
 		}
@@ -1805,7 +1805,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-	}	
+	}
 
 	focus = {
 		id = RUS_fight_against_bureaucracy
@@ -1828,7 +1828,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-	}	
+	}
 
 	focus = {
 		id = RUS_support_etatism
@@ -1920,7 +1920,7 @@ focus_tree = {
 		completion_reward = {
 
 		}
-	}	
+	}
 
 	focus = {
 		id = RUS_expand_the_law_on_foreign_agents
@@ -2081,7 +2081,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-	}	
+	}
 
 	focus = {
 		id = RUS_national_projects
@@ -2170,7 +2170,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-	}	
+	}
 
 	focus = {
 		id = RUS_constitutional_amendments
@@ -2312,7 +2312,7 @@ focus_tree = {
 			puppet = {
 				target = LPR
 				end_wars = no
-			}			
+			}
 		}
 	}
 
@@ -2469,7 +2469,7 @@ focus_tree = {
 		completion_reward = {
 
 		}
-	}	
+	}
 
 	focus = {
 		id = RUS_new_types_of_missiles
@@ -2491,7 +2491,7 @@ focus_tree = {
 		completion_reward = {
 
 		}
-	}	
+	}
 
 	focus = {
 		id = RUS_increase_contracts_in_army
@@ -2668,7 +2668,7 @@ focus_tree = {
 				country_event = {
 					id = superevent.5
 					hours = 5
-				}				
+				}
 				declare_war_on = {
 					target = UKR
 					type = annex_everything
@@ -2677,35 +2677,35 @@ focus_tree = {
 					declare_war_on = {
 						target = UKR
 						type = annex_everything
-					}					
+					}
 				}
 				LPR = {
 					declare_war_on = {
 						target = UKR
 						type = annex_everything
-					}					
-				}	
+					}
+				}
 				if = {
 					limit = { has_country_flag = Berdyansk_seaborne_landing_prepared }
 					country_event = {
 						id = russia.20
 						days = 2
 					}
-				}				
+				}
 				if = {
 					limit = { has_country_flag = Kharkov_airborne_assault_prepared }
 					country_event = {
 						id = russia.21
 						hours = 5
 					}
-				}				
+				}
 				if = {
 					limit = { has_country_flag = Hostomel_airborne_assault_prepared }
 					country_event = {
 						id = russia.22
 						hours = 5
 					}
-				}			
+				}
 				if = {
 					limit = { has_country_flag = Borispol_airborne_assault_prepared }
 					country_event = {
@@ -2726,7 +2726,7 @@ focus_tree = {
 						id = russia.25
 						hours = 29
 					}
-				}	
+				}
 				if = {
 					limit = { has_country_flag = Izmail_seaborne_landing_prepared }
 					country_event = {
@@ -2740,7 +2740,7 @@ focus_tree = {
 						id = russia.27
 						days = 4
 					}
-				}								
+				}
 
 			}
 		}
@@ -2821,4 +2821,4 @@ focus_tree = {
 		}
 	}
 	
-}	
+}

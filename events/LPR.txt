@@ -22,7 +22,7 @@ country_event = {
 				ideology = autoritarian_democracy
 				expire = "2045.1.1.1"
 				traits = { war_industrialist }
-			} 
+			}
 		}
 		remove_country_leader_role = {
 			character = gennady_tsipkalov
@@ -117,9 +117,9 @@ country_event = {
 		add_popularity = {
 			ideology = autoritarian_democracy
 			popularity = 0.15
-		} 
+		}
 		add_ideas = LPR_peoples_mandate
-	} 
+	}
 }
 
 #Социальная ситуация в стране, для фокуса ивент
@@ -343,7 +343,7 @@ country_event = {
 				traits = { 
 					# 
 				}
-			} 
+			}
 		}
 		remove_country_leader_role = {
 			character = valeryy_bolotov
@@ -354,7 +354,7 @@ country_event = {
 				character = igor_polotnicky
 				ideology = autoritarian_democracy
 			}
-		}		
+		}
 	}
 }
 

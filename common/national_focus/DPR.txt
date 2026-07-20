@@ -66,7 +66,7 @@ focus_tree = {
 						add_timed_idea = {
 							idea = DPR_ai_buff_idea
 							days = 180
-						} 
+						}
 					}
 				}
 			}
@@ -184,7 +184,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { 
 				type = bulletproof_vests_equipment_1
 				amount = 750
-			} 		
+			}
 			add_equipment_to_stockpile = { 
 				type = uniform_equipment_1 
 				amount = 2500
@@ -196,7 +196,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { 
 				type = modern_tank_equipment_1 
 				amount = 30
-			}	
+			}
 			add_to_variable = {
 				JAM_ammo_stockpile = 5000
 			}
@@ -230,11 +230,11 @@ focus_tree = {
 			add_equipment_to_stockpile = { 
 				type = bulletproof_vests_equipment_1
 				amount = 750
-			} 		
+			}
 			add_equipment_to_stockpile = { 
 				type = uniform_equipment_1 
 				amount = 2500
-			}	
+			}
 			add_to_variable = {
 				JAM_ammo_stockpile = 35000
 			}
@@ -621,7 +621,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { 
 				type = bulletproof_vests_equipment_1 
 				amount = 1500
-			} 		
+			}
 			add_equipment_to_stockpile = { 
 				type = uniform_equipment_1 
 				amount = 2500
@@ -841,7 +841,7 @@ focus_tree = {
 				puppet = {
 					target = BPR
 					end_wars = no
-				}		
+				}
 				puppet = {
 					target = NPR
 					end_wars = no
@@ -849,11 +849,11 @@ focus_tree = {
 				puppet = {
 					target = KPR
 					end_wars = no
-				}	
+				}
 				puppet = {
 					target = DRR
 					end_wars = no
-				}																	
+				}
 				news_event = { 
 					id = news_events.41 
 					hours = 3				
@@ -879,10 +879,10 @@ focus_tree = {
 		completion_reward = {
 			432 = {
 				add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
-			}	   
+			}
 			424 = {
 				add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
-			}  
+			}
 			408 = {
 				add_dynamic_modifier = { modifier = DPR_donetsk_castle_dynamic_idea scope = DPR }
 			}
@@ -935,7 +935,7 @@ focus_tree = {
 							instant_build = yes
 						}
 					}
-				}	
+				}
 				if = {
 					limit = {
 						DPR = {
@@ -980,7 +980,7 @@ focus_tree = {
 							instant_build = yes 
 						}
 					}
-				}		
+				}
 				if = {
 					limit = {
 						DPR = {
@@ -995,7 +995,7 @@ focus_tree = {
 							instant_build = yes   
 						}
 					}
-				}			
+				}
 				if = {
 					limit = {
 						DPR = {
@@ -1010,7 +1010,7 @@ focus_tree = {
 							instant_build = yes	
 						}
 					}
-				}	
+				}
 				if = {
 					limit = {
 						DPR = {
@@ -1109,7 +1109,7 @@ focus_tree = {
 			
 			
 		}
-	}	
+	}
 
 	focus = {
 		id = DPR_secure_south
@@ -1163,7 +1163,7 @@ focus_tree = {
 							instant_build = yes
 						}
 					}
-				}	
+				}
 				if = {
 					limit = {
 						DPR = {
@@ -1208,7 +1208,7 @@ focus_tree = {
 							instant_build = yes 
 						}
 					}
-				}		
+				}
 				if = {
 					limit = {
 						DPR = {
@@ -1223,7 +1223,7 @@ focus_tree = {
 							instant_build = yes   
 						}
 					}
-				}			
+				}
 				if = {
 					limit = {
 						DPR = {
@@ -1238,7 +1238,7 @@ focus_tree = {
 							instant_build = yes	
 						}
 					}
-				}	
+				}
 				##Telmensky district
 				if = {
 					limit = {
@@ -1315,7 +1315,7 @@ focus_tree = {
 						}
 					}
 				}
-			}		
+			}
 		}
 	}
 
@@ -1342,13 +1342,13 @@ focus_tree = {
 					country_exists = NDR
 				}
 				country_event = NDR.3
-			}	
+			}
 			if = {
 				limit = {
 					country_exists = SDR
 				}
 				country_event = SDR.1
-			}			
+			}
 		}
 	}
 
@@ -1373,7 +1373,7 @@ focus_tree = {
 			add_political_power = 75
 			hidden_effect = {
 				clr_global_flag = Girkin_in_DPR
-			}		
+			}
 		}
 	}
 
@@ -1395,40 +1395,40 @@ focus_tree = {
 		completion_reward = {
 			468 = {
 				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-			}	
+			}
 			421 = {
 				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-			}	
+			}
 			388 = {
 				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
 			}
 			337 = {
 				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-			}	
+			}
 			359 = {
 				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-			}		
+			}
 			328 = {
 				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-			}	
+			}
 			312 = {
 				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-			}		
+			}
 			353 = {
 				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 20 }
-			}		
+			}
 			652 = {
 				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
 			}
 			486 = {
 				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
-			}		
+			}
 			402 = {
 				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
 			}
 			381 = {
 				add_dynamic_modifier = { modifier = DPR_attack_dynamic_idea scope = DPR days = 40 }
-			}																								
+			}
 		}
 	}
 
@@ -1548,7 +1548,7 @@ focus_tree = {
 		completion_reward = {
 
 		}
-	}	
+	}
 
 	focus = {
 		id = DPR_get_rid_of_the_customs_border
@@ -1605,7 +1605,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = DPR.35
 		}
-	}	
+	}
 
 	focus = {
 		id = DPR_economy_of_donetsk

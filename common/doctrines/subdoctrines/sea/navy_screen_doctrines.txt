@@ -187,7 +187,7 @@ torpedo_primacy = {
 			destroyer = {
 				max_organisation = 20
 			}
-		}	
+		}
 		dedicated_torpedo_task_forces = {
 			light_cruiser = {
 				sub_attack = 0.2
@@ -330,7 +330,7 @@ screen_support_focus = {
 			}
 			light_cruiser = {
 				patrol_coordination = 0.2
-			}	
+			}
 
 		}
 	}
@@ -420,7 +420,7 @@ patrol_boats = {
 		naval_speed = 0.10
 		fuel_consumption = -0.25
 		supply_consumption = -0.01
-	}	
+	}
 
 	rewards = {
 
@@ -432,7 +432,7 @@ patrol_boats = {
 			destroyer = {
 				torpedo_attack = 0.20
 			}
-		}	
+		}
 		lie_in_wait = {		
 			destroyer = {
 				surface_visibility = -0.05

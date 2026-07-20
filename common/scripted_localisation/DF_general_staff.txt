@@ -6,7 +6,7 @@ defined_text = {
 	name = airborne_assault_hostomel_button_image
 
 	text = {
-		trigger = { NOT = { has_country_flag = Hostomel_airborne_assault_prepared } }
+		trigger = { NOT = { has_country_flag = Hostomel_airborne_assault_prepared }}
 		localization_key = "GFX_russian_vdv_landing_force_icon"
 	}
 	text = {
@@ -19,7 +19,7 @@ defined_text = {
 	name = airborne_assault_borispol_button_image
 
 	text = {
-		trigger = { NOT = { has_country_flag = Borispol_airborne_assault_prepared } }
+		trigger = { NOT = { has_country_flag = Borispol_airborne_assault_prepared }}
 		localization_key = "GFX_russian_vdv_landing_force_icon"
 	}
 	text = {
@@ -32,7 +32,7 @@ defined_text = {
 	name = airborne_assault_zhitomir_button_image
 
 	text = {
-		trigger = { NOT = { has_country_flag = Zhitomir_airborne_assault_prepared } }
+		trigger = { NOT = { has_country_flag = Zhitomir_airborne_assault_prepared }}
 		localization_key = "GFX_russian_vdv_landing_force_icon"
 	}
 	text = {
@@ -46,7 +46,7 @@ defined_text = {
 	name = airborne_assault_kharkov_button_image
 
 	text = {
-		trigger = { NOT = { has_country_flag = Kharkov_airborne_assault_prepared } }
+		trigger = { NOT = { has_country_flag = Kharkov_airborne_assault_prepared }}
 		localization_key = "GFX_russian_vdv_landing_force_icon"
 	}
 	text = {
@@ -59,7 +59,7 @@ defined_text = {
 	name = airborne_assault_zaporozhye_button_image
 
 	text = {
-		trigger = { NOT = { has_country_flag = Zaporozhye_airborne_assault_prepared } }
+		trigger = { NOT = { has_country_flag = Zaporozhye_airborne_assault_prepared }}
 		localization_key = "GFX_russian_vdv_landing_force_icon"
 	}
 	text = {
@@ -72,7 +72,7 @@ defined_text = {
 	name = seaborne_landing_berdyansk_button_image
 
 	text = {
-		trigger = { NOT = { has_country_flag = Berdyansk_seaborne_landing_prepared } }
+		trigger = { NOT = { has_country_flag = Berdyansk_seaborne_landing_prepared }}
 		localization_key = "GFX_russian_landing_force_by_ships_icon"
 	}
 	text = {
@@ -85,7 +85,7 @@ defined_text = {
 	name = seaborne_landing_odesa_button_image
 
 	text = {
-		trigger = { NOT = { has_country_flag = Odesa_seaborne_landing_prepared } }
+		trigger = { NOT = { has_country_flag = Odesa_seaborne_landing_prepared }}
 		localization_key = "GFX_russian_landing_force_by_ships_icon"
 	}
 	text = {
@@ -98,7 +98,7 @@ defined_text = {
 	name = seaborne_landing_izmail_button_image
 
 	text = {
-		trigger = { NOT = { has_country_flag = Izmail_seaborne_landing_prepared } }
+		trigger = { NOT = { has_country_flag = Izmail_seaborne_landing_prepared }}
 		localization_key = "GFX_russian_landing_force_by_ships_icon"
 	}
 	text = {
@@ -122,7 +122,7 @@ defined_text = {
 	text = {
 		trigger = { has_country_flag = SMO_Plan_from_border_to_border_selected  }
 		localization_key = "GFX_from_border_to_border_border_glow_icon"
-	}   
+	}
 	text = {
 		trigger = { has_country_flag = SMO_Plan_liberation_of_Novorossiya_selected  }
 		localization_key = "GFX_offensive_in_novorossia_border_glow_icon"
@@ -142,5 +142,5 @@ defined_text = {
 	text = {
 		trigger = { has_country_flag = SMO_Plan_Volyn_Galician_barrier_selected  }
 		localization_key = "GFX_Volyn_Galician_barrier_border_glow"
-	}					  
+	}
 }

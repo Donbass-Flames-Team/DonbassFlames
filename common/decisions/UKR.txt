@@ -59,7 +59,7 @@ UKR_separatism_decision = {
 				var = DPR_separatism_value
 				value = 5
 				tooltip = UKR_minus_separatism
-			} 
+			}
 			clamp_variable = {
 				var = DPR_separatism_value
 				min = 0
@@ -98,7 +98,7 @@ UKR_separatism_decision = {
 				var = LPR_separatism_value
 				value = 5
 				tooltip = UKR_minus_separatism
-			} 
+			}
 			clamp_variable = {
 				var = LPR_separatism_value
 				min = 0
@@ -137,7 +137,7 @@ UKR_separatism_decision = {
 				var = HPR_separatism_value
 				value = 5
 				tooltip = UKR_minus_separatism
-			} 
+			}
 		}
 		ai_will_do = {
 			factor = 75
@@ -171,7 +171,7 @@ UKR_separatism_decision = {
 				var = OPR_separatism_value
 				value = 5
 				tooltip = UKR_minus_separatism
-			} 
+			}
 			clamp_variable = {
 				var = OPR_separatism_value
 				min = 0
@@ -204,7 +204,7 @@ UKR_separatism_decision = {
 				var = OPR_separatism_value
 				value = 5
 				tooltip = UKR_minus_separatism
-			} 
+			}
 			clamp_variable = {
 				var = OPR_separatism_value
 				min = 0
@@ -920,7 +920,7 @@ UKR_decisions_of_the_transitional_government = {
 				var = DPR_separatism_value
 				value = 5
 				tooltip = UKR_minus_separatism
-			} 
+			}
 			subtract_from_variable = {
 				var = HPR_separatism_value
 				value = 5
@@ -1274,7 +1274,7 @@ UKR_maidan_decision = {
 				572 = { set_demilitarized_zone = yes }
 				297 = { set_demilitarized_zone = yes }
 				657 = { set_demilitarized_zone = yes }
-				658 = { set_demilitarized_zone = yes }				
+				658 = { set_demilitarized_zone = yes }
 			}
 		}
 	}
@@ -1445,7 +1445,7 @@ UKR_maidan_decision = {
 				add = 25
 			}
 		}
-	}	
+	}
 
 	UKR_weekly_radicalisation_value = {
 		icon = GFX_decision_UKR_maidan_radicalisation
@@ -1539,7 +1539,7 @@ UKR_depreservation_decision = {
 		complete_effect = {
 			add_to_variable = {
 				JAM_ammo_stockpile = 1000
-			}			
+			}
 		}
 		ai_will_do = {
 			factor = 75
@@ -1614,7 +1614,7 @@ UKR_depreservation_decision = {
 			add_equipment_to_stockpile = { 
 				type = bulletproof_vests_equipment_1
 				amount = 3500
-			} 
+			}
 			add_equipment_to_stockpile = { 
 				type = uniform_equipment_1
 				amount = 4500
@@ -2984,13 +2984,13 @@ UKR_ATO_decision = {
 					add_equipment_to_stockpile = { 
 						type = infantry_equipment_1 
 						amount = 70
-					} 
+					}
 				}
 				10 = {
 					add_equipment_to_stockpile = { 
 						type = infantry_equipment_1 
 						amount = 90
-					} 
+					}
 				}
 			}
 			random_list = {
@@ -2998,19 +2998,19 @@ UKR_ATO_decision = {
 					add_equipment_to_stockpile = { 
 						type = bulletproof_vests_equipment_3 
 						amount = 120
-					} 
+					}
 				}
 				10 = {
 					add_equipment_to_stockpile = { 
 						type = bulletproof_vests_equipment_4 
 						amount = 80
-					} 
+					}
 				}
 				3 = {
 					add_equipment_to_stockpile = { 
 						type = bulletproof_vests_equipment_5 
 						amount = 90
-					} 
+					}
 				}
 			}
 			random_list = {
@@ -3018,19 +3018,19 @@ UKR_ATO_decision = {
 					add_equipment_to_stockpile = { 
 						type = uniform_equipment_3 
 						amount = 1220
-					} 
+					}
 				}
 				10 = {
 					add_equipment_to_stockpile = { 
 						type = uniform_equipment_4 
 						amount = 950
-					} 
+					}
 				}
 				3 = {
 					add_equipment_to_stockpile = { 
 						type = uniform_equipment_5 
 						amount = 800
-					} 
+					}
 				}
 			}
 			random_list = {
@@ -3038,25 +3038,25 @@ UKR_ATO_decision = {
 					add_equipment_to_stockpile = { 
 						type = bbm_chassis_0 
 						amount = 4
-					} 
+					}
 				}
 				5 = {
 					add_equipment_to_stockpile = { 
 						type = bbm_chassis_0 
 						amount = 9
-					} 
+					}
 				}
 				10 = {
 					add_equipment_to_stockpile = { 
 						type = bbm_chassis_1 
 						amount = 2
-					} 
+					}
 				}
 				3 = {
 					add_equipment_to_stockpile = { 
 						type = bbm_chassis_2 
 						amount = 2
-					} 
+					}
 				}
 			}
 			random_list = {
@@ -3078,9 +3078,9 @@ UKR_ATO_decision = {
 				3 = {
 					add_to_variable = {
 						JAM_ammo_stockpile = 95
-					} 
+					}
 				}
-			}			
+			}
 		}
 
 		complete_effect = {
@@ -3137,7 +3137,7 @@ UKR_ATO_decision = {
 		}
 		ai_will_do = {
 			factor = 150
-		} 
+		}
 	}
 
 	UKR_counter_offensive_in_kramatorsk_mission = {
@@ -3235,7 +3235,7 @@ UKR_ATO_decision = {
 		}
 		ai_will_do = {
 			factor = 150
-		} 
+		}
 	}
 
 	UKR_counter_offensive_in_donetsk = {
@@ -3290,7 +3290,7 @@ UKR_ATO_decision = {
 		}
 		ai_will_do = {
 			factor = 150
-		} 
+		}
 	}
 
 	UKR_counter_offensive_in_krasnoarmeysk = {
@@ -3633,7 +3633,7 @@ UKR_general_staff_decision = {
 						division = "name = \"109-y okremyy hirs'ko-shturmovyy batal'yon\" division_template = \"Hirnycho-pikhotnyy batal'yon\" start_experience_factor = 0.4"
 						owner = UKR
 						count = 1
-					}																				
+					}
 				}
 			}
 		}
@@ -3663,7 +3663,7 @@ UKR_general_staff_decision = {
 						division = "name = \"214-y okremyy shturmovyy batal'yon OPFOR\" division_template = \"Shturmovyy batal'yon\" start_experience_factor = 0.4"
 						owner = UKR
 						count = 1
-					}															
+					}
 				}
 			}
 		}
@@ -3696,7 +3696,7 @@ UKR_general_staff_decision = {
 						division = "name = \"3-y desantno-shturmovyy batal'yon «Feniks»\" division_template = \"Motoryzovanyy batal'yon desantno-shturmovykh viys'k\" start_experience_factor = 0.4"
 						owner = UKR
 						count = 1
-					}															
+					}
 				}
 			}
 		}
@@ -3726,7 +3726,7 @@ UKR_general_staff_decision = {
 						division = "name = \"132-y okremyy rozviduval'nyy batal'yon\" division_template = \"Motoryzovanyy batal'yon desantno-shturmovykh viys'k\" start_experience_factor = 0.4"
 						owner = UKR
 						count = 1
-					}															
+					}
 				}
 			}
 		}
@@ -3756,17 +3756,17 @@ UKR_general_staff_decision = {
 						division = "name = \"122-y okremyy aeromobil'nyy batal'yon\" division_template = \"Desantno-Povitryani Viyska\" start_experience_factor = 0.4"
 						owner = UKR
 						count = 1
-					}	
+					}
 					create_unit = {
 						division = "name = \"90-y okremyy aeromobil'nyy batal'yon\" division_template = \"Desantno-Povitryani Viyska\" start_experience_factor = 0.4"
 						owner = UKR
 						count = 1
-					}					
+					}
 					create_unit = {
 						division = "name = \"5-a batal'yonna taktychna hrupa\" division_template = \"Desantno-Povitryani Viyska\" start_experience_factor = 0.4"
 						owner = UKR
 						count = 1
-					}														
+					}
 				}
 			}
 		}
@@ -3796,7 +3796,7 @@ UKR_general_staff_decision = {
 						division = "name = \"46-y okremyy shturmovyy batal'yon «Donbas»\" division_template = \"Shturmovyy batal'yon\" start_experience_factor = 0.4"
 						owner = UKR
 						count = 1
-					}										
+					}
 				}
 			}
 		}
@@ -3841,7 +3841,7 @@ UKR_general_staff_decision = {
 						division = "name = \"4-y batal'yon okhorony 101-yi okremoyi bryhady okhorony HSH\" division_template = \"Batal'yon okhorony HSH\" start_experience_factor = 0.35"
 						owner = UKR
 						count = 1
-					}										
+					}
 				}
 			}
 		}
@@ -3884,7 +3884,7 @@ UKR_general_staff_decision = {
 						division = "name = \"3-y batalyon operatyvnoho pryznachennya 3-yi bryhady operatyvnoho pryznachennya NHU\" division_template = \"Natsionalna hvardiya Ukrayiny\" start_experience_factor = 0.075"
 						owner = UKR
 						count = 1
-					}					
+					}
 				}
 			}
 		}
@@ -3951,7 +3951,7 @@ UKR_general_staff_decision = {
 		ai_will_do = {
 			factor = 10
 		}
-	}	
+	}
 
 	#################################
 	###### Morkaya pikhota VSU ######
@@ -4183,7 +4183,7 @@ UKR_general_staff_decision = {
 						division = "name = \"406-a okrema artyleriys'ka hrupa\" division_template = \"Batalyon samokhidnoyi artyleriyi\" start_experience_factor = 0.25"
 						owner = UKR
 						count = 1
-					}															
+					}
 				}
 			}
 		}
@@ -4213,7 +4213,7 @@ UKR_general_staff_decision = {
 						division = "name = \"148-y okremyy haubichnyy samokhidno-artyleriys'kyy dyvizion\" division_template = \"Batalyon samokhidnoyi artyleriyi\" start_experience_factor = 0.25"
 						owner = UKR
 						count = 1
-					}															
+					}
 				}
 			}
 		}
@@ -4574,7 +4574,7 @@ UKR_ATO_volunteer_battalions_decision = {
 		ai_will_do = {
 			factor = 100
 		}
-	}	
+	}
 
 	UKR_volunteer_battalion_mvd_northern_units = {
 		icon = GFX_decision_UKR_batalion_donbass
@@ -4595,7 +4595,7 @@ UKR_ATO_volunteer_battalions_decision = {
 		ai_will_do = {
 			factor = 100
 		}
-	}	
+	}
 
 	UKR_volunteer_battalion_mvd_bohdan = {
 		icon = GFX_decision_UKR_batalion_donbass
@@ -4616,7 +4616,7 @@ UKR_ATO_volunteer_battalions_decision = {
 		ai_will_do = {
 			factor = 100
 		}
-	}	
+	}
 
 	UKR_volunteer_battalion_goldgates = {
 		icon = GFX_decision_UKR_batalion_goldgates
@@ -4763,7 +4763,7 @@ UKR_ATO_volunteer_battalions_decision = {
 		ai_will_do = {
 			factor = 100
 		}
-	}	
+	}
 
 	UKR_volunteer_battalion_oun = {
 		icon = GFX_decision_UKR_batalion_oun
@@ -4914,7 +4914,7 @@ UKR_ATO_volunteer_battalions_decision = {
 		ai_will_do = {
 			factor = 100
 		}
-	}	
+	}
 
 	UKR_volunteer_battalion_patriot = {
 		icon = GFX_decision_UKR_batalion_svitaz
@@ -4935,7 +4935,7 @@ UKR_ATO_volunteer_battalions_decision = {
 		ai_will_do = {
 			factor = 100
 		}
-	}	
+	}
 
 
 
@@ -5021,5 +5021,5 @@ UKR_territorial_defense_decision = {
 		ai_will_do = {
 			factor = 100
 		}
-	}	
+	}
 }

@@ -64,13 +64,13 @@ mountaineers_1 = {
 			}
 			mountaineers = {
 				combat_width = -0.2
-			}	  		
+			}
 		}
 		reward_4 = {
 			mastery = 60
 			category_mountaineers = {
 				max_organisation = 10
-			}			
+			}
 		}
 		reward_5 = {
 			mastery = 60
@@ -142,7 +142,7 @@ mountaineers_2 = {
 				desert = {
 					movement = 0.05
 				}
-			}		   
+			}
 		}
 		reward_2 = {
 			mastery = 60
@@ -159,13 +159,13 @@ mountaineers_2 = {
 					category = category_mountaineers
 					breakthrough = 0.15
 				}
-			}		
+			}
 			rangers_support = {
 				battalion_mult = {
 					category = category_line_artillery
 					soft_attack = 0.20
 				}
-			}		   
+			}
 		}
 		reward_4 = {
 			mastery = 60
@@ -250,7 +250,7 @@ marines_1 = {
 			}
 			effect = {
 				custom_effect_tooltip = SF_marine_demoliton_effect_TT
-			}			
+			}
 		}
 		reward_4 = {
 			mastery = 60
@@ -362,7 +362,7 @@ marines_2 = {
 					category = category_marines
 					defense = 0.05					
 				}
-			}			
+			}
 		}
 		reward_3 = {
 			mastery = 60
@@ -432,7 +432,7 @@ paratroopers_1 = {
 			mastery = 60
 			transport_plane = {
 				air_defence = 0.20
-			}			
+			}
 			effect = {
 				# Display only — real effect fires in on_units_paradropped_in_state (00_on_actions.txt), gated on has_mastery_level of paratroopers_1
 				custom_effect_tooltip = SF_PARAS_sabotage_effect_tt
@@ -451,7 +451,7 @@ paratroopers_1 = {
 			category_special_forces = {
 				max_organisation = 10
 				soft_attack = 0.05
-			}			
+			}
 		}
 		reward_4 = {
 			mastery = 60
@@ -527,7 +527,7 @@ paratroopers_2 = {
 				# Display only — real effect fires in on_units_paradropped_in_state (00_on_actions.txt), gated on has_mastery_level of paratroopers_2
 				custom_effect_tooltip = SF_PARAS_combat_effect_tt
 			}
-		}	
+		}
 		reward_2 = {
 			mastery = 60
 			special_forces_training_time_factor = -0.1
@@ -700,7 +700,7 @@ rangers_2 = {
 			defence = 0.1
 			movement = 0.05
 		}
-	}		
+	}
 
 	rewards = {
 		reward_1 = {

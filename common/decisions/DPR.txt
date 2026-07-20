@@ -101,7 +101,7 @@ DPR_armed_forces_of_dpr_category = {
 		ai_will_do = {
 			factor = 50
 		}
-	}	
+	}
 }
 
 DPR_war_for_independence_of_donbass = {
@@ -476,7 +476,7 @@ DPR_government_of_republic = {
 						var = DPR_change_of_governments_var
 						value = 1
 						compare = equals
-					}					  
+					}
 				}
 				country_event = {
 					id = DPR.20
@@ -494,7 +494,7 @@ DPR_government_of_republic = {
 						var = DPR_change_of_governments_var
 						value = 2
 						compare = equals
-					}					  
+					}
 				}
 				country_event = {
 					id = DPR.21
@@ -513,7 +513,7 @@ DPR_government_of_republic = {
 						var = DPR_change_of_governments_var
 						value = 3
 						compare = equals
-					}					  
+					}
 				}
 				country_event = {
 					id = DPR.22
@@ -528,7 +528,7 @@ DPR_government_of_republic = {
 						var = DPR_change_of_governments_var
 						value = 4
 						compare = equals
-					}					  
+					}
 				}
 				country_event = {
 					id = DPR.23
@@ -546,13 +546,13 @@ DPR_government_of_republic = {
 						var = DPR_change_of_governments_var
 						value = 5
 						compare = equals
-					}					  
+					}
 				}
 				country_event = {
 					id = DPR.24
 					hours = 2
 				}
-			}												
+			}
 		}
 	}
 
@@ -589,7 +589,7 @@ DPR_government_of_republic = {
 			modifier = {
 				is_historical_focus_on = no
 				add = 25
-			}			
+			}
 		}
 	}
 

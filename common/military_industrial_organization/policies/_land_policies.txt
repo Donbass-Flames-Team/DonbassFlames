@@ -14,7 +14,7 @@ mio_policy_land_armor_welding_specialists = {
 			has_mio_equipment_type = light_tank_artillery_chassis 
 			has_mio_equipment_type = medium_tank_artillery_chassis 
 			has_mio_equipment_type = heavy_tank_artillery_chassis
-		} 	
+		}
 	}
 	available = { has_mio_size > 5}
 	equipment_bonus = {
@@ -41,7 +41,7 @@ mio_policy_land_casting_specialists = {
 			has_mio_equipment_type = light_tank_artillery_chassis 
 			has_mio_equipment_type = medium_tank_artillery_chassis 
 			has_mio_equipment_type = heavy_tank_artillery_chassis
-		} 
+		}
 	}
 	available = { has_mio_size > 5}
 	equipment_bonus = {
@@ -63,7 +63,7 @@ mio_policy_land_heavy_gantry_cranes = {
 			has_mio_equipment_type = train
 			has_mio_equipment_type = mio_cat_eq_all_medium_tank
 			has_mio_equipment_type = mio_cat_eq_all_heavy_tank
-		} 
+		}
 	 }
 	available = { has_mio_size > 5}
 	equipment_bonus = {
@@ -99,7 +99,7 @@ mio_policy_land_factory_applied_camouflage  = {
 			has_mio_equipment_type = light_tank_artillery_chassis 
 			has_mio_equipment_type = medium_tank_artillery_chassis 
 			has_mio_equipment_type = heavy_tank_artillery_chassis
-		} 
+		}
 	 }
 	available = { has_mio_size > 5}
 	equipment_bonus = {
@@ -128,7 +128,7 @@ mio_policy_land_cutting_corners  = {
 			has_mio_equipment_type = light_tank_artillery_chassis 
 			has_mio_equipment_type = medium_tank_artillery_chassis 
 			has_mio_equipment_type = heavy_tank_artillery_chassis
-		} 
+		}
 	 }
 	available = { has_mio_size > 5}
 	equipment_bonus = {

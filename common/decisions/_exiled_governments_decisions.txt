@@ -16,7 +16,7 @@ governments_in_exile = {
 		}
 
 		targets = { host }
-		target_trigger = { FROM = { is_hosting_exile = ROOT } }
+		target_trigger = { FROM = { is_hosting_exile = ROOT }}
 
 		complete_effect = { }
 
@@ -42,7 +42,7 @@ governments_in_exile = {
 		}
 
 		target_array = exiles
-		target_trigger = { FROM = { is_exiled_in = ROOT } }
+		target_trigger = { FROM = { is_exiled_in = ROOT }}
 
 		modifier = {
 			political_power_cost = 0.15
@@ -89,7 +89,7 @@ governments_in_exile = {
 		}
 
 		targets = { host }
-		target_trigger = { FROM = { is_hosting_exile = ROOT } }
+		target_trigger = { FROM = { is_hosting_exile = ROOT }}
 
 		modifier = {
 			political_power_cost = 0.25
@@ -170,7 +170,7 @@ governments_in_exile = {
 		}
 
 		targets = { host }
-		target_trigger = { FROM = { is_hosting_exile = ROOT } }
+		target_trigger = { FROM = { is_hosting_exile = ROOT }}
 
 		modifier = {
 			political_power_cost = 1.0
@@ -208,7 +208,7 @@ governments_in_exile = {
 		}
 
 		target_array = exiles
-		target_trigger = { FROM = { is_exiled_in = ROOT } }
+		target_trigger = { FROM = { is_exiled_in = ROOT }}
 
 		targeted_modifier = {
 			tag = FROM
@@ -283,7 +283,7 @@ governments_in_exile = {
 		}
 
 		target_array = exiles
-		target_trigger = { FROM = { is_exiled_in = ROOT } }
+		target_trigger = { FROM = { is_exiled_in = ROOT }}
 
 		modifier = {
 			industrial_factory_donations = 1
@@ -359,12 +359,12 @@ category_exile_forces = {
 		visible = {
 			FROM = { has_legitimacy > 15 is_exiled_in = ROOT }
 			any_enemy_country = {
-				FROM = { any_owned_state = { is_controlled_by = PREV.PREV } }
+				FROM = { any_owned_state = { is_controlled_by = PREV.PREV }}
 			}
 		}
 
 		target_array = exiles
-		target_trigger = { FROM = { is_exiled_in = ROOT } }
+		target_trigger = { FROM = { is_exiled_in = ROOT }}
 
 		complete_effect = {
 			hidden_effect = {
@@ -401,7 +401,7 @@ category_exile_forces = {
 		}
 
 		target_array = exiles
-		target_trigger = { FROM = { is_exiled_in = ROOT } }
+		target_trigger = { FROM = { is_exiled_in = ROOT }}
 
 		targeted_modifier = {
 			tag = FROM
@@ -445,7 +445,7 @@ category_exile_forces = {
 		}
 
 		target_array = exiles
-		target_trigger = { FROM = { is_exiled_in = ROOT } }
+		target_trigger = { FROM = { is_exiled_in = ROOT }}
 
 		complete_effect = {
 			army_experience = 25

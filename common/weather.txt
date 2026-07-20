@@ -33,7 +33,7 @@ terrain_modifiers = {
   }
 
   temperature = {
-  	#terrain = { type = "desert" value = 10.0 } ##Not unless we make separate day/night temp bonus
+  	#terrain = { type = "desert" value = 10.0 }##Not unless we make separate day/night temp bonus
 	terrain = { type = "mountain" value = -7.0 }
 	terrain = { type = "hills" value = -3.0 }
 	terrain = { type = "forest" value = -1.0 }
@@ -58,7 +58,7 @@ settings = {
 	###
 	# Old thresholds - if adjusting extremes, these should probably go back
 	###
-	#weather_extreme_cold = { -100.0 -25.0 } 
+	#weather_extreme_cold = { -100.0 -25.0 }
 	#weather_very_cold = { -25.0 -15.0 }
 	#weather_very_hot = { 27.0 32.0 }
 	#weather_extreme_hot = { 32.0 100.0 }

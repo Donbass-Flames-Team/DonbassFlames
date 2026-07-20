@@ -13,7 +13,7 @@ duplicate_archetypes = {
 			# For each duplicated equipment type (excluding the archetype), set variant_name by taking what would be
 			# used as the localization key (the name of the type) and run a find-and-replace on it.
 			# Example: light_tank_aa_chassis_1 gets variant_name light_tank_aa_equipment_1.
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 			hardness = { set = 0.5 }
 		}
 	}
@@ -22,7 +22,7 @@ duplicate_archetypes = {
 		archetype = light_tank_chassis
 		type = { armor artillery }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 			hardness = { set = 0.5 }
 		}
 	}
@@ -31,7 +31,7 @@ duplicate_archetypes = {
 		archetype = light_tank_chassis
 		type = { armor anti_tank }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 		}
 	}
 
@@ -39,7 +39,7 @@ duplicate_archetypes = {
 		archetype = light_tank_chassis
 		type = { armor amphibious }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 			hardness = { set = 0.55 }
 		}
 	}
@@ -48,7 +48,7 @@ duplicate_archetypes = {
 		archetype = light_tank_chassis
 		type = { armor flame }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 		}
 	}
 
@@ -58,7 +58,7 @@ duplicate_archetypes = {
 		archetype = medium_tank_chassis
 		type = { armor anti_air }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 			hardness = { set = 0.65 }
 		}
 	}
@@ -67,7 +67,7 @@ duplicate_archetypes = {
 		archetype = medium_tank_chassis
 		type = { armor artillery }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 			hardness = { set = 0.65 }
 		}
 	}
@@ -76,7 +76,7 @@ duplicate_archetypes = {
 		archetype = medium_tank_chassis
 		type = { armor anti_tank }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 		}
 	}
 
@@ -84,7 +84,7 @@ duplicate_archetypes = {
 		archetype = medium_tank_chassis
 		type = { armor amphibious }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 			hardness = { set = 0.7 }
 		}
 	}
@@ -93,7 +93,7 @@ duplicate_archetypes = {
 		archetype = medium_tank_chassis
 		type = { armor flame }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 		}
 	}
 
@@ -103,7 +103,7 @@ duplicate_archetypes = {
 		archetype = heavy_tank_chassis
 		type = { armor anti_air }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 			hardness = { set = 0.8 }
 		}
 	}
@@ -112,7 +112,7 @@ duplicate_archetypes = {
 		archetype = heavy_tank_chassis
 		type = { armor artillery }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 			hardness = { set = 0.8 }
 		}
 	}
@@ -121,7 +121,7 @@ duplicate_archetypes = {
 		archetype = heavy_tank_chassis
 		type = { armor anti_tank }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 		}
 	}
 
@@ -129,7 +129,7 @@ duplicate_archetypes = {
 		archetype = heavy_tank_chassis
 		type = { armor amphibious }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 			hardness = { set = 0.8 }
 		}
 	}
@@ -138,7 +138,7 @@ duplicate_archetypes = {
 		archetype = heavy_tank_chassis
 		type = { armor flame }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 		}
 	}
 
@@ -149,7 +149,7 @@ duplicate_archetypes = {
 		archetype = modern_tank_chassis
 		type = { armor anti_air }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 			hardness = { set = 0.85 }
 		}
 	}
@@ -158,7 +158,7 @@ duplicate_archetypes = {
 		archetype = modern_tank_chassis
 		type = { armor artillery }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 			hardness = { set = 0.85 }
 		}
 	}
@@ -167,7 +167,7 @@ duplicate_archetypes = {
 		archetype = modern_tank_chassis
 		type = { armor anti_tank }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			variant_name = { find_and_replace = { "chassis" "equipment" }}
 		}
 	}
 }
@@ -703,7 +703,7 @@ equipments = {
 			#oil = 1
 			tungsten = 2
 			steel = 3
-		}	
+		}
 	}
 
 	# 1943
@@ -736,7 +736,7 @@ equipments = {
 			#oil = 2
 			tungsten = 2
 			steel = 4
-		}	
+		}
 	}
 
 	medium_tank_artillery_equipment_1 = {
@@ -925,7 +925,7 @@ equipments = {
 			#oil = 1
 			tungsten = 4
 			steel = 3
-		}		
+		}
 	}
 
 	# 1943
@@ -1076,7 +1076,7 @@ equipments = {
 			#oil = 2
 			tungsten = 2
 			steel = 4
-		}		
+		}
 	}
 
 	# 1934

@@ -79,60 +79,60 @@ scripted_gui = {
 			}
 			Large_scale_invasion_click = {
 				if = {
-					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected }}
 					set_country_flag = SMO_Plan_is_selected
 					set_country_flag = SMO_Plan_operation_mangust_selected
 				}
 			}
 			Across_the_entire_border_invasion_click = {
 				if = {
-					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected }}
 					set_country_flag = SMO_Plan_is_selected
 					set_country_flag = SMO_Plan_Across_the_entire_border_invasion_selected
 				}
 			}
 			from_border_to_border_click = {
 				if = {
-					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected }}
 					set_country_flag = SMO_Plan_is_selected
 					set_country_flag = SMO_Plan_from_border_to_border_selected
 				}
-			}		
+			}
 			liberation_of_Novorossiya_click = {
 				if = {
-					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected }}
 					set_country_flag = SMO_Plan_is_selected
 					set_country_flag = SMO_Plan_liberation_of_Novorossiya_selected
 				}
 			}
 			offensive_on_Donbass_click = {
 				if = {
-					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected }}
 					set_country_flag = SMO_Plan_is_selected
 					set_country_flag = SMO_Plan_offensive_on_donbass_selected
 				}
-			}	
+			}
 			offensive_on_Dnieper_click = {
 				if = {
-					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected }}
 					set_country_flag = SMO_Plan_is_selected
 					set_country_flag = SMO_Plan_offensive_on_dnieper_selected
 				}
-			}	
+			}
 			Kyiv_offensive_operation_click = {
 				if = {
-					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected }}
 					set_country_flag = SMO_Plan_is_selected
 					set_country_flag = SMO_Plan_Kyiv_offensive_operation_selected
 				}
-			}	
+			}
 			Volyn_Galician_barrier_click = {
 				if = {
-					limit = { NOT = { has_country_flag = SMO_Plan_is_selected } }
+					limit = { NOT = { has_country_flag = SMO_Plan_is_selected }}
 					set_country_flag = SMO_Plan_is_selected
 					set_country_flag = SMO_Plan_Volyn_Galician_barrier_selected
 				}
-			}																		
+			}
 			##################
 			#### Landings ####
 			##################
@@ -155,7 +155,7 @@ scripted_gui = {
 					set_country_flag = Borispol_airborne_assault_prepared
 					add_command_power = -15
 				}
-			}		
+			}
 			airborne_assault_zhitomir_button_click = {
 				if = {
 					limit = { 
@@ -175,7 +175,7 @@ scripted_gui = {
 					set_country_flag = Kharkov_airborne_assault_prepared
 					add_command_power = -15
 				}
-			}		
+			}
 			airborne_assault_zaporozhye_button_click = {
 				if = {
 					limit = { 
@@ -205,7 +205,7 @@ scripted_gui = {
 					set_country_flag = Odesa_seaborne_landing_prepared
 					add_command_power = -20
 				}
-			}	
+			}
 			seaborne_landing_izmail_button_click = {
 				if = {
 					limit = { 
@@ -215,7 +215,7 @@ scripted_gui = {
 					set_country_flag = Izmail_seaborne_landing_prepared
 					add_command_power = -20
 				}
-			}																
+			}
 		}
 
 		triggers = {
@@ -252,31 +252,31 @@ scripted_gui = {
 			}
 
 			### Coats of arms of Regions
-			coat_donetsk_button_click = { set_variable = { select_separatists_region = 1} }
-			coat_luhansk_button_click = { set_variable = { select_separatists_region = 2} }
-			coat_kharkiv_button_click = { set_variable = { select_separatists_region = 3} }
-			coat_odesa_button_click = { set_variable = { select_separatists_region = 4} }
-			coat_krym_button_click = { set_variable = { select_separatists_region = 5} }
-			coat_cherkasy_button_click = { set_variable = { select_separatists_region = 6} }
-			coat_chernihiv_button_click = { set_variable = { select_separatists_region = 7} }			
-			coat_chernivtsi_button_click = { set_variable = { select_separatists_region = 8} }
-			coat_dnipro_button_click = { set_variable = { select_separatists_region = 9} }
-			coat_ivanofrankivsk_button_click = { set_variable = { select_separatists_region = 10} }
-			coat_khmelnytskyi_button_click = { set_variable = { select_separatists_region = 11} }
-			coat_kherson_button_click = { set_variable = { select_separatists_region = 12} }
-			coat_kyiv_button_click = { set_variable = { select_separatists_region = 13} }			
-			coat_kyrovohrad_button_click = { set_variable = { select_separatists_region = 14} }
-			coat_lviv_button_click = { set_variable = { select_separatists_region = 15} }
-			coat_mykolaiv_button_click = { set_variable = { select_separatists_region = 16} }
-			coat_poltava_button_click = { set_variable = { select_separatists_region = 17} }		
-			coat_sumy_button_click = { set_variable = { select_separatists_region = 18} }
-			coat_ternopil_button_click = { set_variable = { select_separatists_region = 19} }
-			coat_vinnytsia_button_click = { set_variable = { select_separatists_region = 20} }
-			coat_volyn_button_click = { set_variable = { select_separatists_region = 21} }
-			coat_zakarpattya_button_click = { set_variable = { select_separatists_region = 22} }
-			coat_zaporizhzhia_button_click = { set_variable = { select_separatists_region = 23} }
-			coat_zhytomyr_button_click = { set_variable = { select_separatists_region = 24} }
-			coat_rivne_button_click = { set_variable = { select_separatists_region = 25} }	
+			coat_donetsk_button_click = { set_variable = { select_separatists_region = 1}}
+			coat_luhansk_button_click = { set_variable = { select_separatists_region = 2}}
+			coat_kharkiv_button_click = { set_variable = { select_separatists_region = 3}}
+			coat_odesa_button_click = { set_variable = { select_separatists_region = 4}}
+			coat_krym_button_click = { set_variable = { select_separatists_region = 5}}
+			coat_cherkasy_button_click = { set_variable = { select_separatists_region = 6}}
+			coat_chernihiv_button_click = { set_variable = { select_separatists_region = 7}}
+			coat_chernivtsi_button_click = { set_variable = { select_separatists_region = 8}}
+			coat_dnipro_button_click = { set_variable = { select_separatists_region = 9}}
+			coat_ivanofrankivsk_button_click = { set_variable = { select_separatists_region = 10}}
+			coat_khmelnytskyi_button_click = { set_variable = { select_separatists_region = 11}}
+			coat_kherson_button_click = { set_variable = { select_separatists_region = 12}}
+			coat_kyiv_button_click = { set_variable = { select_separatists_region = 13}}
+			coat_kyrovohrad_button_click = { set_variable = { select_separatists_region = 14}}
+			coat_lviv_button_click = { set_variable = { select_separatists_region = 15}}
+			coat_mykolaiv_button_click = { set_variable = { select_separatists_region = 16}}
+			coat_poltava_button_click = { set_variable = { select_separatists_region = 17}}
+			coat_sumy_button_click = { set_variable = { select_separatists_region = 18}}
+			coat_ternopil_button_click = { set_variable = { select_separatists_region = 19}}
+			coat_vinnytsia_button_click = { set_variable = { select_separatists_region = 20}}
+			coat_volyn_button_click = { set_variable = { select_separatists_region = 21}}
+			coat_zakarpattya_button_click = { set_variable = { select_separatists_region = 22}}
+			coat_zaporizhzhia_button_click = { set_variable = { select_separatists_region = 23}}
+			coat_zhytomyr_button_click = { set_variable = { select_separatists_region = 24}}
+			coat_rivne_button_click = { set_variable = { select_separatists_region = 25}}
 		}
 		
 		dynamic_lists = {
@@ -286,7 +286,7 @@ scripted_gui = {
 		properties = {
 			separatism_gui_background = {
 				image = "[separatism_gui_background_image]"
-			}	
+			}
 			separatismgui_ukraine_noleader = {
 				image = "[get_leader_prorukranian_separatism_gui]"
 			}
@@ -298,10 +298,10 @@ scripted_gui = {
 			}
 			donetsk_icon = {
 				image = "[donetsk_icon_glow]"
-			} 
+			}
 			luhansk_icon = {
 				image = "[luhansk_icon_glow]"
-			} 
+			}
 			odessa_icon = {
 				image = "[odessa_icon_glow]"
 			}
@@ -311,7 +311,7 @@ scripted_gui = {
 			crimea_icon = {
 				image = "[crimea_icon_glow]"
 			}
-		}	
+		}
 	}
 
 	RUS_general_staff_donetsk_region_map = {
@@ -336,7 +336,7 @@ scripted_gui = {
 		
 		properties = {
 			
-		}	
+		}
 	}
 
 	RUS_general_staff_luhansk_region_map = {
@@ -361,7 +361,7 @@ scripted_gui = {
 		
 		properties = {
 			
-		}	
+		}
 	}
 
 	RUS_general_staff_dnepr_region_map = {
@@ -386,7 +386,7 @@ scripted_gui = {
 		
 		properties = {
 			
-		}	
+		}
 	}
 
 	RUS_general_staff_zaporozhie_region_map = {
@@ -411,7 +411,7 @@ scripted_gui = {
 		
 		properties = {
 			
-		}	
+		}
 	}
 
 	RUS_general_staff_kharkov_region_map = {
@@ -436,7 +436,7 @@ scripted_gui = {
 		
 		properties = {
 			
-		}	
+		}
 	}
 
 	RUS_general_staff_kherson_region_map = {
@@ -461,7 +461,7 @@ scripted_gui = {
 		
 		properties = {
 			
-		}	
+		}
 	}
 
 	RUS_general_staff_nikolayev_region_map = {
@@ -486,7 +486,7 @@ scripted_gui = {
 		
 		properties = {
 			
-		}	
+		}
 	}
 
 	RUS_general_staff_odessa_region_map = {
@@ -511,7 +511,7 @@ scripted_gui = {
 		
 		properties = {
 			
-		}	
+		}
 	}
 	
 	RUS_general_staff_kiyv_region_map = {
@@ -536,7 +536,7 @@ scripted_gui = {
 		
 		properties = {
 			
-		}	
-	}	
+		}
+	}
 
 }

@@ -146,7 +146,7 @@ debug_decisions = {
 			add_days_mission_timeout = {
 				mission = UKR_luhansk_uprising
 				days = -60
-			}	
+			}
 			country_event = {
 				id = ukraine.26
 				hours = 1
@@ -250,7 +250,7 @@ debug_decisions = {
 		complete_effect = {
 			DF_economy_setup = yes
 		}
-	}	
+	}
 
 	spawn_all_people_republic = {
 		icon = generic_research
@@ -406,7 +406,7 @@ debug_decisions = {
 				transfer_state = 622
 				transfer_state = 581
 				transfer_state = 583
-			}	
+			}
 			OPR = {
 				transfer_state = 626
 				transfer_state = 596
@@ -551,7 +551,7 @@ debug_decisions = {
 
 				}
 		}
-	}	
+	}
 
 	clear_smo_plan_debug = {
 		icon = generic_research
@@ -580,6 +580,6 @@ debug_decisions = {
 			clr_country_flag = SMO_Plan_Kyiv_offensive_operation_selected
 			clr_country_flag = SMO_Plan_Volyn_Galician_barrier_selected
 		}
-	}	
+	}
 }
 	

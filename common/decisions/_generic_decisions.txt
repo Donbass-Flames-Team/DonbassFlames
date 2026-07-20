@@ -400,7 +400,7 @@ special_projects = {
 
 		available = {
 			has_full_control_of_state = 685
-			NOT = { any_enemy_country = { controls_state = 304 } }
+			NOT = { any_enemy_country = { controls_state = 304 }}
 			num_of_civilian_factories > 25
 		}
 
@@ -416,7 +416,7 @@ special_projects = {
 			if = {
 				limit = {
 					has_full_control_of_state = 685
-					NOT = { any_enemy_country = { controls_state = 304 } }
+					NOT = { any_enemy_country = { controls_state = 304 }}
 				}
 				set_country_flag = rebuilt_panama
 				clr_global_flag = PANAMA_CANAL_BLOCKED
@@ -616,8 +616,8 @@ foreign_politics = {
 		}
 
 		complete_effect = {
-			FROM = { country_event = { id = generic.14 hours = 6 } }
-			hidden_effect = { FROM = { set_country_flag = object_attache_going_on } }
+			FROM = { country_event = { id = generic.14 hours = 6 }}
+			hidden_effect = { FROM = { set_country_flag = object_attache_going_on }}
 		}
 
 		ai_will_do = { factor = 1 }
@@ -744,7 +744,7 @@ economy_decisions = {
 			factor = 1
 			modifier = {
 				factor = 10
-				all_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
+				all_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no }}
 			}
 			modifier = {
 				any_owned_state = {

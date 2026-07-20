@@ -146,14 +146,14 @@ focus = {
 	relative_position_id = TMR_support_yanukovych
 	cost = 1
 	prerequisite = { focus = TMR_coordination_with_russia focus = TMR_security_border_filtering }
-	available = { RUS = { controls_state = 640 } }
+	available = { RUS = { controls_state = 640 }}
 	completion_reward = {
 		add_political_power = 100
 		add_war_support = 0.05
 		add_opinion_modifier = { target = RUS modifier = opinion_15 }
-		RUS = { add_opinion_modifier = { target = TMR modifier = opinion_15 } }
+		RUS = { add_opinion_modifier = { target = TMR modifier = opinion_15 }}
 		add_opinion_modifier = { target = UKR modifier = opinion_anti_15 }
-		UKR = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 } }
+		UKR = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 }}
 	}
 }
 
@@ -164,7 +164,7 @@ focus = {
 	relative_position_id = TMR_support_yanukovych
 	cost = 1
 	prerequisite = { focus = TMR_support_crimea_operation }
-	available = { DPR = { controls_state = 432 } }
+	available = { DPR = { controls_state = 432 }}
 	completion_reward = {
 		add_war_support = 0.05
 	}
@@ -185,9 +185,9 @@ focus = {
 		add_opinion_modifier = { target = MOL modifier = opinion_anti_15 }
 		add_opinion_modifier = { target = UKR modifier = opinion_anti_15 }
 
-		RUS = { add_opinion_modifier = { target = TMR modifier = opinion_15 } }
-		MOL = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 } }
-		UKR = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 } }
+		RUS = { add_opinion_modifier = { target = TMR modifier = opinion_15 }}
+		MOL = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 }}
+		UKR = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 }}
 	}
 }
 
@@ -217,9 +217,9 @@ focus = {
 		add_opinion_modifier = { target = MOL modifier = opinion_anti_15 }
 		add_opinion_modifier = { target = UKR modifier = opinion_anti_15 }
 
-		RUS = { add_opinion_modifier = { target = TMR modifier = opinion_15 } }
-		MOL = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 } }
-		UKR = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 } }
+		RUS = { add_opinion_modifier = { target = TMR modifier = opinion_15 }}
+		MOL = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 }}
+		UKR = { add_opinion_modifier = { target = TMR modifier = opinion_anti_15 }}
 	}
 }
 
@@ -246,7 +246,7 @@ focus = {
 	completion_reward = {
 		add_war_support = 0.03
 		add_opinion_modifier = { target = UKR modifier = threat_of_war }
-		UKR = { add_opinion_modifier = { target = TMR modifier = threat_of_war } }
+		UKR = { add_opinion_modifier = { target = TMR modifier = threat_of_war }}
 	}
 }
 
@@ -256,7 +256,7 @@ focus = {
 		y = 10
 		cost = 0
 		prerequisite = { focus = TMR_second_direction_threat }
-		available = { OPR = { exists = yes } }
+		available = { OPR = { exists = yes }}
 		completion_reward = { add_political_power = 25 }
 	}
 
@@ -266,7 +266,7 @@ focus = {
 		y = 10
 		cost = 0
 		prerequisite = { focus = TMR_second_direction_threat }
-		available = { NOT = { OPR = { exists = yes } } }
+		available = { NOT = { OPR = { exists = yes }}}
 		completion_reward = { add_political_power = 10 }
 	}
 
@@ -276,7 +276,7 @@ focus = {
 		y = 11
 		cost = 1
 		prerequisite = { focus = TMR_opr_success }
-		available = { OPR = { exists = yes } }
+		available = { OPR = { exists = yes }}
 		completion_reward = {
 		OPR = {
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 }
@@ -294,7 +294,7 @@ focus = {
 		y = 12
 		cost = 1
 		prerequisite = { focus = TMR_smuggling_to_opr }
-		available = { OPR = { exists = yes } }
+		available = { OPR = { exists = yes }}
 		completion_reward = {
 			OPR = {
 				add_manpower = 1000
@@ -311,7 +311,7 @@ focus = {
 		y = 12
 		cost = 1
 		prerequisite = { focus = TMR_smuggling_to_opr }
-		available = { OPR = { exists = yes } }
+		available = { OPR = { exists = yes }}
 		completion_reward = {
 			add_political_power = -25
 			OPR = { add_command_power = 15 }
@@ -325,8 +325,8 @@ focus = {
 		y = 13
 		cost = 1
 		prerequisite = { focus = TMR_tourists }
-		available = { OPR = { exists = yes } }
-		completion_reward = { OPR = { add_stability = 0.05 } }
+		available = { OPR = { exists = yes }}
+		completion_reward = { OPR = { add_stability = 0.05 }}
 	}
 
 	focus = {
@@ -335,7 +335,7 @@ focus = {
 		y = 13
 		cost = 1
 		prerequisite = { focus = TMR_tourists }
-		available = { OPR = { exists = yes } }
+		available = { OPR = { exists = yes }}
 		completion_reward = {
 			OPR = {
 				add_fuel = 2500
@@ -351,7 +351,7 @@ focus = {
 	y = 13
 	cost = 1
 	prerequisite = { focus = TMR_send_advisors }
-	available = { OPR = { exists = yes } }
+	available = { OPR = { exists = yes }}
 
 	completion_reward = {
 		OPR = { add_political_power = 150 }
@@ -364,12 +364,12 @@ focus = {
 		y = 14
 		cost = 1
 		prerequisite = { focus = TMR_humanitarian_corridor_opr focus = TMR_fuel_and_supplies_opr focus = TMR_intelligence_liaison_opr }
-		available = { OPR = { exists = yes } }
+		available = { OPR = { exists = yes }}
 		completion_reward = {
 			OPR = { add_stability = 0.05 }
 			add_political_power = -25
 			add_opinion_modifier = { target = OPR modifier = opinion_50 }
-			OPR = { add_opinion_modifier = { target = TMR modifier = opinion_50 } }
+			OPR = { add_opinion_modifier = { target = TMR modifier = opinion_50 }}
 		}
 	}
 
@@ -380,7 +380,7 @@ focus = {
 	cost = 1
 
 	prerequisite = { focus = TMR_recognize_opr }
-	available = { OPR = { exists = yes } }
+	available = { OPR = { exists = yes }}
 	mutually_exclusive = { focus = TMR_opr_open_confrontation }
 
 	completion_reward = {
@@ -399,7 +399,7 @@ focus = {
 			add_stability = -0.10
 			add_war_support = 0.05
 			add_opinion_modifier = { target = UKR modifier = threat_of_war }
-			UKR = { add_opinion_modifier = { target = TMR modifier = threat_of_war } }
+			UKR = { add_opinion_modifier = { target = TMR modifier = threat_of_war }}
 		}
 	}
 
@@ -409,7 +409,7 @@ focus = {
 	y = 18
 	cost = 1
 	prerequisite = { focus = TMR_obey_kremlin }
-	available = { OPR = { exists = yes } }
+	available = { OPR = { exists = yes }}
 
 	completion_reward = {
 		OPR = { add_war_support = 0.05 }
@@ -427,7 +427,7 @@ focus = {
 		focus = TMR_return_to_opr_support
 	}
 
-	available = { OPR = { exists = yes } }
+	available = { OPR = { exists = yes }}
 
 	completion_reward = {
 		OPR = {
@@ -452,7 +452,7 @@ focus = {
 	y = 20
 	cost = 1
 	prerequisite = { focus = TMR_opr_support_pipeline }
-	available = { OPR = { exists = yes } }
+	available = { OPR = { exists = yes }}
 
 	completion_reward = {
 		OPR = {
@@ -471,7 +471,7 @@ focus = {
 		y = 20
 		cost = 1
 		prerequisite = { focus = TMR_opr_support_pipeline }
-		available = { OPR = { exists = yes } }
+		available = { OPR = { exists = yes }}
 	}
 
 	focus = {
@@ -480,8 +480,8 @@ focus = {
 		y = 21
 		cost = 1
 		prerequisite = { focus = TMR_opr_training_camps focus = TMR_opr_intel_exchange }
-		available = { OPR = { exists = yes } }
-		completion_reward = { OPR = { add_equipment_to_stockpile = { type = motorized_equipment amount = 100 } } }
+		available = { OPR = { exists = yes }}
+		completion_reward = { OPR = { add_equipment_to_stockpile = { type = motorized_equipment amount = 100 }}}
 	}
 
 	focus = {
@@ -490,12 +490,12 @@ focus = {
 	y = 11
 	cost = 1
 	prerequisite = { focus = TMR_opr_failure }
-	available = { NOT = { OPR = { exists = yes } } }
+	available = { NOT = { OPR = { exists = yes }}}
 
 	completion_reward = {
 		550 = {
 			add_manpower = 750
-		}	
+		}
 	}
 	}
 
@@ -505,7 +505,7 @@ focus = {
 		y = 12
 		cost = 1
 		prerequisite = { focus = TMR_accept_refugees }
-		available = { NOT = { OPR = { exists = yes } } }
+		available = { NOT = { OPR = { exists = yes }}}
 		completion_reward = { add_stability = 0.05 add_political_power = -50 }
 	}
 
@@ -515,7 +515,7 @@ focus = {
 	y = 12
 	cost = 1
 	prerequisite = { focus = TMR_accept_refugees }
-	available = { NOT = { OPR = { exists = yes } } }
+	available = { NOT = { OPR = { exists = yes }}}
 
 	completion_reward = {
 		add_stability = 0.03
@@ -528,7 +528,7 @@ focus = {
 		y = 13
 		cost = 1
 		prerequisite = { focus = TMR_temporary_shelters focus = TMR_refugee_registration }
-		available = { NOT = { OPR = { exists = yes } } }
+		available = { NOT = { OPR = { exists = yes }}}
 	}
 
 	focus = {
@@ -537,7 +537,7 @@ focus = {
 		y = 13
 		cost = 1
 		prerequisite = { focus = TMR_refugee_registration }
-		available = { NOT = { OPR = { exists = yes } } }
+		available = { NOT = { OPR = { exists = yes }}}
 		}
 
 	focus = {
@@ -546,7 +546,7 @@ focus = {
 		y = 14
 		cost = 1
 		prerequisite = { focus = TMR_employment_program focus = TMR_border_hardening }
-		available = { NOT = { OPR = { exists = yes } } }
+		available = { NOT = { OPR = { exists = yes }}}
 		completion_reward = { add_stability = 0.05 add_war_support = -0.02 }
 	}
 
@@ -556,7 +556,7 @@ focus = {
 	y = 15
 	cost = 1
 	prerequisite = { focus = TMR_internal_stabilization }
-	available = { NOT = { OPR = { exists = yes } } }
+	available = { NOT = { OPR = { exists = yes }}}
 	mutually_exclusive = { focus = TMR_war_choice_after_failure }
 
 	ai_will_do = {
@@ -575,7 +575,7 @@ focus = {
 	y = 15
 	cost = 1
 	prerequisite = { focus = TMR_internal_stabilization }
-	available = { NOT = { OPR = { exists = yes } } }
+	available = { NOT = { OPR = { exists = yes }}}
 	mutually_exclusive = { focus = TMR_quiet_life_end }
 
 	ai_will_do = {
@@ -598,7 +598,7 @@ focus = {
 			NOT = { has_country_flag = TMR_kremlin_approved }
 			NOT = { has_country_flag = TMR_kremlin_denied }
 		}
-		completion_reward = { RUS = { country_event = { id = tmr.1 days = 1 } } }
+		completion_reward = { RUS = { country_event = { id = tmr.1 days = 1 }}}
 	}
 
 	focus = {
@@ -721,7 +721,7 @@ focus = {
 					id = news_events.30
 					hours = 6
 				}
-			}  
+			}
 		}
 	}
 
@@ -732,7 +732,7 @@ focus = {
 		cost = 1
 		prerequisite = { focus = TMR_raise_folk_militias }
 		available = { has_country_flag = TMR_rus_support_denied_go_alone }
-		completion_reward = { add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 } }
+		completion_reward = { add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }}
 	}
 
 	focus = {
@@ -767,7 +767,7 @@ focus = {
 
 			if = {
 				limit = { has_country_flag = TMR_rus_support_denied_go_alone }
-				RUS = { country_event = { id = tmr.8 days = 1 } }
+				RUS = { country_event = { id = tmr.8 days = 1 }}
 			}
 		}
 	}
@@ -831,5 +831,5 @@ focus = {
 		completion_reward = {
 			country_event = tmr.14
 		}
-	}	
+	}
 }

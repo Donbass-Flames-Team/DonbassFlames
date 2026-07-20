@@ -9,12 +9,12 @@ country_event = {
 
 	option = {
 		name = tmr.1.a
-		TMR = { country_event = { id = tmr.2 days = 1 } }
+		TMR = { country_event = { id = tmr.2 days = 1 }}
 	}
 
 	option = {
 		name = tmr.1.b
-		TMR = { country_event = { id = tmr.3 days = 1 } }
+		TMR = { country_event = { id = tmr.3 days = 1 }}
 	}
 }
 
@@ -137,7 +137,7 @@ country_event = {
 		set_country_flag = RUS_hold_kolbasna
 
 		if = {
-			limit = { CRT = { exists = no } }
+			limit = { CRT = { exists = no }}
 			CRT = {
 				transfer_state = 443
 				transfer_state = 415
@@ -147,7 +147,7 @@ country_event = {
 		TMR = { set_country_flag = TMR_kolbasna_under_crt }
 		news_event = { id = tmr.6 hours = 1 }
 
-		UKR = { country_event = { id = tmr.9 days = 2 } }
+		UKR = { country_event = { id = tmr.9 days = 2 }}
 	}
 }
 
@@ -162,11 +162,11 @@ country_event = {
 		name = tmr.9.a
 
 		if = {
-			limit = { CRT = { exists = yes } }
+			limit = { CRT = { exists = yes }}
 			declare_war_on = { target = CRT type = annex_everything }
 		}
 
-		RUS = { country_event = { id = tmr.10 days = 1 } }
+		RUS = { country_event = { id = tmr.10 days = 1 }}
 	}
 
 	option = {
@@ -241,7 +241,7 @@ country_event = {
 	option = {
 		name = tmr.12.b
 		if = {
-			limit = { MOL = { exists = yes } }
+			limit = { MOL = { exists = yes }}
 			MOL = {
 				transfer_state = 415
 				transfer_state = 443
@@ -310,7 +310,7 @@ country_event = {
 				end_wars = no
 			}
 		}
-	}	
+	}
 }
 
 # Победа

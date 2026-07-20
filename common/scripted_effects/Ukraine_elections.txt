@@ -22,13 +22,13 @@ Zhytomir_elections_campaign_effect = {
 			subtract_from_variable = { var = Dobkin_general_support value = 1 }
 			add_to_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
 			add_to_variable = { var = Poroshenko_general_support value = 1 }
-		} 
+		}
  		Zhytomyrska_oblast_darth_alekseevich_vader_support_value = {
 			subtract_from_variable = { var = Zhytomyrska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 			add_to_variable = { var = Zhytomyrska_oblast_poroshenko_support_value value = 1 }
 			add_to_variable = { var = Poroshenko_general_support value = 1 }
-		}			  
+		}
 	}
 	}
 	# Timoshenko
@@ -54,13 +54,13 @@ Zhytomir_elections_campaign_effect = {
 		subtract_from_variable = { var = Dobkin_general_support value = 1 }
 		add_to_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 }
 		add_to_variable = { var = Timoshenko_general_support value = 1 }
-		} 
+		}
  		Zhytomyrska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Zhytomyrska_oblast_darth_alekseevich_vader_support_value value = 1 }
 		subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 		add_to_variable = { var = Zhytomyrska_oblast_timoshenko_support_value value = 1 }
 		add_to_variable = { var = Timoshenko_general_support value = 1 }
-		}			  
+		}
 	}
 	}
 	# Lyashko
@@ -86,14 +86,14 @@ Zhytomir_elections_campaign_effect = {
 		subtract_from_variable = { var = Dobkin_general_support value = 1 }
 		add_to_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 }
 		add_to_variable = { var = Lyashko_general_support value = 1 }
-		} 
+		}
  		Zhytomyrska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Zhytomyrska_oblast_darth_alekseevich_vader_support_value value = 1 }
 		subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 		add_to_variable = { var = Zhytomyrska_oblast_lyashko_support_value value = 1 }
 		add_to_variable = { var = Lyashko_general_support value = 1 }
-		}			  
-	}				
+		}
+	}
 	}
 	# Dobkin
 	if = {
@@ -118,14 +118,14 @@ Zhytomir_elections_campaign_effect = {
 		subtract_from_variable = { var = Lyashko_general_support value = 1 }
 		add_to_variable = { var = Zhytomyrska_oblast_dobkin_support_value value = 1 }
 		add_to_variable = { var = Dobkin_general_support value = 1 }
-		} 
+		}
  		Zhytomyrska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Zhytomyrska_oblast_darth_alekseevich_vader_support_value value = 1 }
 		subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 		add_to_variable = { var = Zhytomyrska_oblast_dobkin_support_value value = 1 }
 		add_to_variable = { var = Dobkin_general_support value = 1 }
-		}				  
-	}				
+		}
+	}
 	}
 	# Darth Vader Alekseevich
 	if = {
@@ -150,20 +150,20 @@ Zhytomir_elections_campaign_effect = {
 		subtract_from_variable = { var = Lyashko_general_support value = 1 }
 		add_to_variable = { var = Zhytomyrska_oblast_darth_alekseevich_vader_support_value value = 1 }
 		add_to_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-		} 
+		}
 		Zhytomyrska_oblast_dobkin_support_value = {
 		subtract_from_variable = { var = Zhytomyrska_oblast_dobkin_support_value value = 1 }
 		subtract_from_variable = { var = Dobkin_general_support value = 1 }
 		add_to_variable = { var = Zhytomyrska_oblast_darth_alekseevich_vader_support_value value = 1 }
 		add_to_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-		}						  
-	}				
-	}						
-	clamp_variable = { var = Zhytomyrska_oblast_poroshenko_support_value min = 0 max = 6 }						
+		}
+	}
+	}
+	clamp_variable = { var = Zhytomyrska_oblast_poroshenko_support_value min = 0 max = 6 }
 	clamp_variable = { var = Zhytomyrska_oblast_timoshenko_support_value min = 0 max = 6 }
-	clamp_variable = { var = Zhytomyrska_oblast_lyashko_support_value min = 0 max = 6 }	
-	clamp_variable = { var = Zhytomyrska_oblast_dobkin_support_value min = 0 max = 6 }	
-	clamp_variable = { var = Zhytomyrska_oblast_darth_alekseevich_vader_support_value min = 0 max = 6 }	
+	clamp_variable = { var = Zhytomyrska_oblast_lyashko_support_value min = 0 max = 6 }
+	clamp_variable = { var = Zhytomyrska_oblast_dobkin_support_value min = 0 max = 6 }
+	clamp_variable = { var = Zhytomyrska_oblast_darth_alekseevich_vader_support_value min = 0 max = 6 }
 }
 
 
@@ -194,13 +194,13 @@ Zakarpatie_elections_campaign_effect = {
 			subtract_from_variable = { var = Dobkin_general_support value = 1 }
 			add_to_variable = { var = Zakarpatska_oblast_poroshenko_support_value value = 1 }
 			add_to_variable = { var = Poroshenko_general_support value = 1 }
-		} 
+		}
 		Zakarpatska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Zakarpatska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 			add_to_variable = { var = Zakarpatska_oblast_poroshenko_support_value value = 1 }
 			add_to_variable = { var = Poroshenko_general_support value = 1 }
-		}			  
+		}
 	}
 	}
 	# Timoshenko
@@ -226,13 +226,13 @@ Zakarpatie_elections_campaign_effect = {
 			subtract_from_variable = { var = Dobkin_general_support value = 1 }
 			add_to_variable = { var = Zakarpatska_oblast_timoshenko_support_value value = 1 }
 			add_to_variable = { var = Timoshenko_general_support value = 1 }
-		}  
+		}
 		Zakarpatska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Zakarpatska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 			add_to_variable = { var = Zakarpatska_oblast_timoshenko_support_value value = 1 }
 			add_to_variable = { var = Timoshenko_general_support value = 1 }
-		}			  
+		}
 	}
 	}
 	# Lyashko
@@ -258,13 +258,13 @@ Zakarpatie_elections_campaign_effect = {
 			subtract_from_variable = { var = Dobkin_general_support value = 1 }
 			add_to_variable = { var = Zakarpatska_oblast_lyashko_support_value value = 1 }
 			add_to_variable = { var = Lyashko_general_support value = 1 }
-		} 
+		}
 		Zakarpatska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Zakarpatska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 			add_to_variable = { var = Zakarpatska_oblast_lyashko_support_value value = 1 }
 			add_to_variable = { var = Lyashko_general_support value = 1 }
-		}			   
+		}
 	}
 	}
 	# Dobkin
@@ -290,13 +290,13 @@ Zakarpatie_elections_campaign_effect = {
 			subtract_from_variable = { var = Lyashko_general_support value = 1 }
 			add_to_variable = { var = Zakarpatska_oblast_dobkin_support_value value = 1 }
 			add_to_variable = { var = Dobkin_general_support value = 1 }
-		} 
+		}
 		Zakarpatska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Zakarpatska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 			add_to_variable = { var = Zakarpatska_oblast_dobkin_support_value value = 1 }
 			add_to_variable = { var = Dobkin_general_support value = 1 }
-		}				 
+		}
 	}
 	}
 	# Darth Vader Alekseevich
@@ -328,12 +328,12 @@ Zakarpatie_elections_campaign_effect = {
 			subtract_from_variable = { var = Dobkin_general_support value = 1 }
 			add_to_variable = { var = Zakarpatska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			add_to_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-		}						 
+		}
 	}
-	}						
-	clamp_variable = { var = Zakarpatska_oblast_poroshenko_support_value min = 0 max = 6 }						
+	}
+	clamp_variable = { var = Zakarpatska_oblast_poroshenko_support_value min = 0 max = 6 }
 	clamp_variable = { var = Zakarpatska_oblast_timoshenko_support_value min = 0 max = 6 }
-	clamp_variable = { var = Zakarpatska_oblast_lyashko_support_value min = 0 max = 6 }	
+	clamp_variable = { var = Zakarpatska_oblast_lyashko_support_value min = 0 max = 6 }
 }
 
 
@@ -364,13 +364,13 @@ Volynska_oblast_elections_campaign_effect = {
 			subtract_from_variable = { var = Dobkin_general_support value = 1 }
 			add_to_variable = { var = Volynska_oblast_poroshenko_support_value value = 1 }
 			add_to_variable = { var = Poroshenko_general_support value = 1 }
-		} 
+		}
 		Volynska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Volynska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 			add_to_variable = { var = Volynska_oblast_poroshenko_support_value value = 1 }
 			add_to_variable = { var = Poroshenko_general_support value = 1 }
-		}			  
+		}
 	}
 	}
 	# Timoshenko
@@ -396,13 +396,13 @@ Volynska_oblast_elections_campaign_effect = {
 			subtract_from_variable = { var = Dobkin_general_support value = 1 }
 			add_to_variable = { var = Volynska_oblast_timoshenko_support_value value = 1 }
 			add_to_variable = { var = Timoshenko_general_support value = 1 }
-		}  
+		}
 		Volynska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Volynska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 			add_to_variable = { var = Volynska_oblast_timoshenko_support_value value = 1 }
 			add_to_variable = { var = Timoshenko_general_support value = 1 }
-		}			  
+		}
 	}
 	}
 	# Lyashko
@@ -428,13 +428,13 @@ Volynska_oblast_elections_campaign_effect = {
 			subtract_from_variable = { var = Dobkin_general_support value = 1 }
 			add_to_variable = { var = Volynska_oblast_lyashko_support_value value = 1 }
 			add_to_variable = { var = Lyashko_general_support value = 1 }
-		} 
+		}
 		Volynska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Volynska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 			add_to_variable = { var = Volynska_oblast_lyashko_support_value value = 1 }
 			add_to_variable = { var = Lyashko_general_support value = 1 }
-		}			   
+		}
 	}
 	}
 	# Dobkin
@@ -460,13 +460,13 @@ Volynska_oblast_elections_campaign_effect = {
 			subtract_from_variable = { var = Lyashko_general_support value = 1 }
 			add_to_variable = { var = Volynska_oblast_dobkin_support_value value = 1 }
 			add_to_variable = { var = Dobkin_general_support value = 1 }
-		} 
+		}
 		Volynska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Volynska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 			add_to_variable = { var = Volynska_oblast_dobkin_support_value value = 1 }
 			add_to_variable = { var = Dobkin_general_support value = 1 }
-		}				 
+		}
 	}
 	}
 	# Darth Vader Alekseevich
@@ -498,12 +498,12 @@ Volynska_oblast_elections_campaign_effect = {
 			subtract_from_variable = { var = Dobkin_general_support value = 1 }
 			add_to_variable = { var = Volynska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			add_to_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-		}						 
+		}
 	}
-	}						
-	clamp_variable = { var = Volynska_oblast_poroshenko_support_value min = 0 max = 5 }						
+	}
+	clamp_variable = { var = Volynska_oblast_poroshenko_support_value min = 0 max = 5 }
 	clamp_variable = { var = Volynska_oblast_timoshenko_support_value min = 0 max = 5 }
-	clamp_variable = { var = Volynska_oblast_lyashko_support_value min = 0 max = 5 }	
+	clamp_variable = { var = Volynska_oblast_lyashko_support_value min = 0 max = 5 }
 }
 
 
@@ -534,13 +534,13 @@ Ternopilska_oblast_elections_campaign_effect = {
 			subtract_from_variable = { var = Dobkin_general_support value = 1 }
 			add_to_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
 			add_to_variable = { var = Poroshenko_general_support value = 1 }
-		} 
+		}
 		Ternopilska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Ternopilska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 			add_to_variable = { var = Ternopilska_oblast_poroshenko_support_value value = 1 }
 			add_to_variable = { var = Poroshenko_general_support value = 1 }
-		}			  
+		}
 	}
 	}
 	# Timoshenko
@@ -566,13 +566,13 @@ Ternopilska_oblast_elections_campaign_effect = {
 			subtract_from_variable = { var = Dobkin_general_support value = 1 }
 			add_to_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
 			add_to_variable = { var = Timoshenko_general_support value = 1 }
-		}  
+		}
 		Ternopilska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Ternopilska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 			add_to_variable = { var = Ternopilska_oblast_timoshenko_support_value value = 1 }
 			add_to_variable = { var = Timoshenko_general_support value = 1 }
-		}			  
+		}
 	}
 	}
 	# Lyashko
@@ -598,13 +598,13 @@ Ternopilska_oblast_elections_campaign_effect = {
 			subtract_from_variable = { var = Dobkin_general_support value = 1 }
 			add_to_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
 			add_to_variable = { var = Lyashko_general_support value = 1 }
-		} 
+		}
 		Ternopilska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Ternopilska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 			add_to_variable = { var = Ternopilska_oblast_lyashko_support_value value = 1 }
 			add_to_variable = { var = Lyashko_general_support value = 1 }
-		}			   
+		}
 	}
 	}
 	# Dobkin
@@ -630,13 +630,13 @@ Ternopilska_oblast_elections_campaign_effect = {
 			subtract_from_variable = { var = Lyashko_general_support value = 1 }
 			add_to_variable = { var = Ternopilska_oblast_dobkin_support_value value = 1 }
 			add_to_variable = { var = Dobkin_general_support value = 1 }
-		} 
+		}
 		Ternopilska_oblast_darth_alekseevich_vader_support_value = {
 		subtract_from_variable = { var = Ternopilska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
 			add_to_variable = { var = Ternopilska_oblast_dobkin_support_value value = 1 }
 			add_to_variable = { var = Dobkin_general_support value = 1 }
-		}				 
+		}
 	}
 	}
 	# Darth Vader Alekseevich
@@ -668,10 +668,10 @@ Ternopilska_oblast_elections_campaign_effect = {
 			subtract_from_variable = { var = Dobkin_general_support value = 1 }
 			add_to_variable = { var = Ternopilska_oblast_darth_alekseevich_vader_support_value value = 1 }
 			add_to_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
-		}						 
-	}				  
-	}		   
-	clamp_variable = { var = Ternopilska_oblast_poroshenko_support_value min = 0 max = 8 }						
+		}
+	}
+	}
+	clamp_variable = { var = Ternopilska_oblast_poroshenko_support_value min = 0 max = 8 }
 	clamp_variable = { var = Ternopilska_oblast_timoshenko_support_value min = 0 max = 8 }
 	clamp_variable = { var = Ternopilska_oblast_lyashko_support_value min = 0 max = 8 }
 }
@@ -699,7 +699,7 @@ Vinnytska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Vinnytska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Vinnytska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Vinnytska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -731,7 +731,7 @@ Vinnytska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Vinnytska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Vinnytska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Vinnytska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -763,7 +763,7 @@ Vinnytska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Vinnytska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Vinnytska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Vinnytska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -795,7 +795,7 @@ Vinnytska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Vinnytska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Vinnytska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Vinnytska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -861,7 +861,7 @@ Sumska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Sumska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Sumska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Sumska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -893,7 +893,7 @@ Sumska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Sumska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Sumska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Sumska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -925,7 +925,7 @@ Sumska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Sumska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Sumska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Sumska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -957,7 +957,7 @@ Sumska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Sumska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Sumska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Sumska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1023,7 +1023,7 @@ Poltavska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Poltavska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Poltavska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Poltavska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1055,7 +1055,7 @@ Poltavska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Poltavska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Poltavska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Poltavska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1087,7 +1087,7 @@ Poltavska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Poltavska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Poltavska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Poltavska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1119,7 +1119,7 @@ Poltavska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Poltavska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Poltavska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Poltavska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1185,7 +1185,7 @@ Mykolaivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Mykolaivska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Mykolaivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Mykolaivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1217,7 +1217,7 @@ Mykolaivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Mykolaivska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Mykolaivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Mykolaivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1249,7 +1249,7 @@ Mykolaivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Mykolaivska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Mykolaivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Mykolaivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1281,7 +1281,7 @@ Mykolaivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Mykolaivska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Mykolaivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Mykolaivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1347,7 +1347,7 @@ Lvivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Lvivska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Lvivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Lvivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1379,7 +1379,7 @@ Lvivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Lvivska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Lvivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Lvivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1411,7 +1411,7 @@ Lvivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Lvivska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Lvivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Lvivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1443,7 +1443,7 @@ Lvivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Lvivska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Lvivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Lvivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1509,7 +1509,7 @@ Kirovohradska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Kirovohradska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Kirovohradska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Kirovohradska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1541,7 +1541,7 @@ Kirovohradska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Kirovohradska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Kirovohradska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Kirovohradska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1573,7 +1573,7 @@ Kirovohradska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Kirovohradska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Kirovohradska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Kirovohradska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1605,7 +1605,7 @@ Kirovohradska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Kirovohradska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Kirovohradska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Kirovohradska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1671,7 +1671,7 @@ Khersonska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Khersonska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Khersonska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Khersonska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1703,7 +1703,7 @@ Khersonska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Khersonska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Khersonska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Khersonska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1735,7 +1735,7 @@ Khersonska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Khersonska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Khersonska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Khersonska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1767,7 +1767,7 @@ Khersonska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Khersonska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Khersonska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Khersonska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1833,7 +1833,7 @@ Khmelnytska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Khmelnytska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Khmelnytska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Khmelnytska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1865,7 +1865,7 @@ Khmelnytska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Khmelnytska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Khmelnytska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Khmelnytska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1897,7 +1897,7 @@ Khmelnytska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Khmelnytska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Khmelnytska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Khmelnytska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1929,7 +1929,7 @@ Khmelnytska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Khmelnytska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Khmelnytska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Khmelnytska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -1995,7 +1995,7 @@ IvanoFrankivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = IvanoFrankivska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			IvanoFrankivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = IvanoFrankivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2027,7 +2027,7 @@ IvanoFrankivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = IvanoFrankivska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			IvanoFrankivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = IvanoFrankivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2059,7 +2059,7 @@ IvanoFrankivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = IvanoFrankivska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			IvanoFrankivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = IvanoFrankivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2091,7 +2091,7 @@ IvanoFrankivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = IvanoFrankivska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			IvanoFrankivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = IvanoFrankivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2157,7 +2157,7 @@ Dnipropetrovska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Dnipropetrovska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Dnipropetrovska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Dnipropetrovska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2189,7 +2189,7 @@ Dnipropetrovska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Dnipropetrovska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Dnipropetrovska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Dnipropetrovska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2221,7 +2221,7 @@ Dnipropetrovska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Dnipropetrovska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Dnipropetrovska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Dnipropetrovska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2253,7 +2253,7 @@ Dnipropetrovska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Dnipropetrovska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Dnipropetrovska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Dnipropetrovska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2319,7 +2319,7 @@ Chernivetska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Chernivetska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Chernivetska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Chernivetska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2351,7 +2351,7 @@ Chernivetska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Chernivetska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Chernivetska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Chernivetska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2383,7 +2383,7 @@ Chernivetska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Chernivetska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Chernivetska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Chernivetska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2415,7 +2415,7 @@ Chernivetska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Chernivetska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Chernivetska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Chernivetska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2481,7 +2481,7 @@ Chernihivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Chernihivska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Chernihivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Chernihivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2513,7 +2513,7 @@ Chernihivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Chernihivska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Chernihivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Chernihivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2545,7 +2545,7 @@ Chernihivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Chernihivska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Chernihivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Chernihivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2577,7 +2577,7 @@ Chernihivska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Chernihivska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Chernihivska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Chernihivska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2643,7 +2643,7 @@ Cherkaska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Cherkaska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Cherkaska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Cherkaska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2675,7 +2675,7 @@ Cherkaska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Cherkaska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Cherkaska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Cherkaska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2707,7 +2707,7 @@ Cherkaska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Cherkaska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Cherkaska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Cherkaska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2739,7 +2739,7 @@ Cherkaska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Cherkaska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Cherkaska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Cherkaska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2805,7 +2805,7 @@ Krym_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Krym_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Krym_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2837,7 +2837,7 @@ Krym_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Krym_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Krym_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2869,7 +2869,7 @@ Krym_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Krym_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Krym_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2901,7 +2901,7 @@ Krym_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Krym_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Krym_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Krym_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2967,7 +2967,7 @@ Odeska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Odeska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Odeska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Odeska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -2999,7 +2999,7 @@ Odeska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Odeska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Odeska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Odeska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -3031,7 +3031,7 @@ Odeska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Odeska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Odeska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Odeska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -3063,7 +3063,7 @@ Odeska_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Odeska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Odeska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Odeska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -3129,7 +3129,7 @@ Rivnenska_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Rivnenska_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Rivnenska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Rivnenska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -3161,7 +3161,7 @@ Rivnenska_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Rivnenska_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Rivnenska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Rivnenska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -3193,7 +3193,7 @@ Rivnenska_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Rivnenska_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Rivnenska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Rivnenska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -3225,7 +3225,7 @@ Rivnenska_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Rivnenska_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Rivnenska_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Rivnenska_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -3292,7 +3292,7 @@ Zaporizka_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Zaporizka_oblast_poroshenko_support_value value = 1 }
 				add_to_variable = { var = Poroshenko_general_support value = 1 }
-			} 
+			}
 			Zaporizka_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Zaporizka_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -3324,7 +3324,7 @@ Zaporizka_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Zaporizka_oblast_timoshenko_support_value value = 1 }
 				add_to_variable = { var = Timoshenko_general_support value = 1 }
-			}  
+			}
 			Zaporizka_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Zaporizka_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -3356,7 +3356,7 @@ Zaporizka_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Dobkin_general_support value = 1 }
 				add_to_variable = { var = Zaporizka_oblast_lyashko_support_value value = 1 }
 				add_to_variable = { var = Lyashko_general_support value = 1 }
-			} 
+			}
 			Zaporizka_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Zaporizka_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }
@@ -3388,7 +3388,7 @@ Zaporizka_oblast_elections_campaign_effect = {
 				subtract_from_variable = { var = Lyashko_general_support value = 1 }
 				add_to_variable = { var = Zaporizka_oblast_dobkin_support_value value = 1 }
 				add_to_variable = { var = Dobkin_general_support value = 1 }
-			} 
+			}
 			Zaporizka_oblast_darth_alekseevich_vader_support_value = {
 				subtract_from_variable = { var = Zaporizka_oblast_darth_alekseevich_vader_support_value value = 1 }
 				subtract_from_variable = { var = Darth_Alekseevich_Vader_general_support value = 1 }

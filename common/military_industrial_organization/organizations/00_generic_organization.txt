@@ -2058,7 +2058,7 @@ generic_task_force_ship_organization = {
 		name = generic_mio_trait_carrier_flight_operations_center
 		icon = GFX_generic_mio_trait_icon_max_strength
 
-		position = { x=1 y=2 } #MM: This one could be moved up (4th row) so that it is visually clear which traits are the parents
+		position = { x=1 y=2 }#MM: This one could be moved up (4th row) so that it is visually clear which traits are the parents
 		relative_position_id = generic_mio_trait_gyro_stabilized_mounts
 		
 		all_parents = { generic_mio_trait_gyro_stabilized_mounts generic_mio_trait_advanced_fitting_works generic_mio_trait_splinter_protection }
@@ -3496,7 +3496,7 @@ generic_black_sea_fleet_organization = {
 		name = generic_mio_trait_deck_guns_black_sea
 		icon = GFX_generic_mio_trait_icon_anti_air_attack
 
-		position = { x=-1 y=2 } 
+		position = { x=-1 y=2 }
 		relative_position_id = generic_mio_trait_base_defense
 		
 		any_parent = { generic_mio_trait_base_defense generic_mio_trait_piercing_rounds }
@@ -3506,7 +3506,7 @@ generic_black_sea_fleet_organization = {
 		equipment_bonus = {
 			anti_air_attack = 0.06
 		}
-	}	
+	}
 }
 
 
@@ -6261,7 +6261,7 @@ generic_range_focused_aircraft_organization = {
 
 		position = { x=5 y=0 }
 
-		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }		
+		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
 
 		equipment_bonus = {
 			air_range = 0.10
@@ -6355,7 +6355,7 @@ generic_range_focused_aircraft_organization = {
 
 		production_bonus = {
 			production_capacity_factor = 0.10
-		}		
+		}
 	}
 
 	trait = {
@@ -7931,7 +7931,7 @@ generic_helicopter_organization = {
 	}
 
 	equipment_type = { helicopter_equipment }
-	research_categories = { helicopter_tech } 
+	research_categories = { helicopter_tech }
 
 	tree_header_text = {
 		text = mio_header_tandem_rotor

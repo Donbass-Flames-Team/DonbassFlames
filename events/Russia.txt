@@ -162,7 +162,7 @@ country_event = {
 					recon = { x = 0 y = 1 }
 					mortar = { x = 0 y = 2 }
 					atgm_company = { x = 0 y = 3 }
-					field_hospital = { x = 0 y = 4} 
+					field_hospital = { x = 0 y = 4}
 					sniper_company = { x = 1 y = 0 }
 					signal_company = { x = 1 y = 1}
   					logistics_company = { x = 1 y = 2}
@@ -219,7 +219,7 @@ country_event = {
 			first_minsk_effect = yes
 			UKR = {
 				if = { 
-					limit = { 433 = { is_controlled_by = UKR } } 
+					limit = { 433 = { is_controlled_by = UKR }}
 					country_event = {
 						id = ukraine.45
 						days = 5
@@ -559,7 +559,7 @@ country_event = {
 		add_war_support = -0.05
 		add_stability = -0.12
 		white_peace = CRI
-	}	
+	}
 }
 
 #Жириновский крут, отдал машинку лнр

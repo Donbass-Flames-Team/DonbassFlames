@@ -45,7 +45,7 @@ special_forces_quantity = {
 				else = {
 					add_to_variable = { special_forces_milestone_var = 1 }
 				}
-			}			
+			}
 		}
 		{
 			special_forces_cap = 0.04
@@ -64,7 +64,7 @@ special_forces_quantity = {
 				else = {
 					add_to_variable = { special_forces_milestone_var = 1 }
 				}
-			}					  
+			}
 		}
 	}
 }
@@ -122,7 +122,7 @@ special_forces_quality = {
 				else = {
 					add_to_variable = { special_forces_milestone_var = 1 }
 				}
-			}			
+			}
 		}
 		{
 			category_special_forces = {
@@ -144,7 +144,7 @@ special_forces_quality = {
 				else = {
 					add_to_variable = { special_forces_milestone_var = 1 }
 				}
-			}			
+			}
 		}
 	}
 }

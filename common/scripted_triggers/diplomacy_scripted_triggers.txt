@@ -668,7 +668,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
 	if = { 
 		limit = {
-			FROM = { NOT = { has_war_with_non_exiled_country = yes } }
+			FROM = { NOT = { has_war_with_non_exiled_country = yes }}
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_NON_GIE_JOIN
@@ -680,7 +680,7 @@ DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
 DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 	if = { 
 		limit = {
-			NOT = { has_war_with_non_exiled_country = yes } 
+			NOT = { has_war_with_non_exiled_country = yes }
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_NON_GIE_CALL

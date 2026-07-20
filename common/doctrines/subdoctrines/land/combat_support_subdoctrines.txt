@@ -174,7 +174,7 @@ flying_batteries = {
 
 		modifier = {
 			factor = 0 
-			NOT = { has_tech = rocket_artillery } 
+			NOT = { has_tech = rocket_artillery }
 		}
 	}
 
@@ -276,7 +276,7 @@ air_cavalry = {
 	}
 	visible = {
 		has_dlc = "Gotterdammerung"
-	}   
+	}
 
 	ai_will_do = { base = 0 }
 

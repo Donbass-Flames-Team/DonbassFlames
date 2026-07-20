@@ -59,75 +59,75 @@ scripted_gui = {
 			}
 			separatism_increase_button_click = {
 				if = {
-					limit = { check_variable = {select_separatists_region = 1} }
-					set_variable = { show_prorussian_actions_window = 1 }	
+					limit = { check_variable = {select_separatists_region = 1}}
+					set_variable = { show_prorussian_actions_window = 1 }
 				}
 				if = {
-					limit = { check_variable = {select_separatists_region = 2} }
-					set_variable = { show_prorussian_actions_window = 1 }	
+					limit = { check_variable = {select_separatists_region = 2}}
+					set_variable = { show_prorussian_actions_window = 1 }
 				}
 				if = {
-					limit = { check_variable = {select_separatists_region = 3} }
-					set_variable = { show_prorussian_actions_window = 1 }	
+					limit = { check_variable = {select_separatists_region = 3}}
+					set_variable = { show_prorussian_actions_window = 1 }
 				}
 				if = {
-					limit = { check_variable = {select_separatists_region = 4} }
-					set_variable = { show_prorussian_actions_window = 1 }	
+					limit = { check_variable = {select_separatists_region = 4}}
+					set_variable = { show_prorussian_actions_window = 1 }
 				}
 				if = {
-					limit = { check_variable = {select_separatists_region = 5} }
-					set_variable = { show_prorussian_actions_window = 1 }	
+					limit = { check_variable = {select_separatists_region = 5}}
+					set_variable = { show_prorussian_actions_window = 1 }
 				}
 			}
 			separatism_counteract_button_click = {
 				if = {
-					limit = { check_variable = {select_separatists_region = 1} }
-					set_variable = { show_proukranian_actions_window = 1 }	
+					limit = { check_variable = {select_separatists_region = 1}}
+					set_variable = { show_proukranian_actions_window = 1 }
 				}
 				if = {
-					limit = { check_variable = {select_separatists_region = 2} }
-					set_variable = { show_proukranian_actions_window = 1 }	
+					limit = { check_variable = {select_separatists_region = 2}}
+					set_variable = { show_proukranian_actions_window = 1 }
 				}
 				if = {
-					limit = { check_variable = {select_separatists_region = 3} }
-					set_variable = { show_proukranian_actions_window = 1 }	
+					limit = { check_variable = {select_separatists_region = 3}}
+					set_variable = { show_proukranian_actions_window = 1 }
 				}
 				if = {
-					limit = { check_variable = {select_separatists_region = 4} }
-					set_variable = { show_proukranian_actions_window = 1 }	
+					limit = { check_variable = {select_separatists_region = 4}}
+					set_variable = { show_proukranian_actions_window = 1 }
 				}
 				if = {
-					limit = { check_variable = {select_separatists_region = 5} }
-					set_variable = { show_proukranian_actions_window = 1 }	
+					limit = { check_variable = {select_separatists_region = 5}}
+					set_variable = { show_proukranian_actions_window = 1 }
 				}
 			}
 			separatismgui_closebutton_nw_click = {
 				if = {
-					limit = { check_variable = {select_separatists_region = 1} }
+					limit = { check_variable = {select_separatists_region = 1}}
 					clear_variable = select_separatists_region
 				}
 				if = {
-					limit = { check_variable = {select_separatists_region = 2} }
+					limit = { check_variable = {select_separatists_region = 2}}
 					clear_variable = select_separatists_region
 				}
 				if = {
-					limit = { check_variable = {select_separatists_region = 3} }
+					limit = { check_variable = {select_separatists_region = 3}}
 					clear_variable = select_separatists_region
 				}
 				if = {
-					limit = { check_variable = {select_separatists_region = 4} }
+					limit = { check_variable = {select_separatists_region = 4}}
 					clear_variable = select_separatists_region
 				}
 				if = {
-					limit = { check_variable = {select_separatists_region = 5} }
+					limit = { check_variable = {select_separatists_region = 5}}
 					clear_variable = select_separatists_region
-				}				
+				}
 				if = {
-					limit = { check_variable = {show_proukranian_actions_window = 1} } 
+					limit = { check_variable = {show_proukranian_actions_window = 1}}
 					clear_variable = show_proukranian_actions_window
 				}
 				if = {
-					limit = { check_variable = {show_prorussian_actions_window = 1} } 
+					limit = { check_variable = {show_prorussian_actions_window = 1}}
 					clear_variable = show_prorussian_actions_window
 				}
 
@@ -141,7 +141,7 @@ scripted_gui = {
 		properties = {
 			separatism_gui_background = {
 				image = "[separatism_gui_background_image]"
-			}	
+			}
 			separatismgui_ukraine_noleader = {
 				image = "[get_leader_prorukranian_separatism_gui]"
 			}
@@ -153,10 +153,10 @@ scripted_gui = {
 			}
 			donetsk_icon = {
 				image = "[donetsk_icon_glow]"
-			} 
+			}
 			luhansk_icon = {
 				image = "[luhansk_icon_glow]"
-			} 
+			}
 			odessa_icon = {
 				image = "[odessa_icon_glow]"
 			}
@@ -166,6 +166,6 @@ scripted_gui = {
 			crimea_icon = {
 				image = "[crimea_icon_glow]"
 			}
-		}	
+		}
 	}
 }

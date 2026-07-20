@@ -34,8 +34,8 @@ country_event = {
 			}
 			652 = {
 				add_dynamic_modifier = { modifier = russian_fire_support_idea scope = DPR days = 15 }
-			}				
-		}				
+			}
+		}
 	}
 }
 
@@ -316,7 +316,7 @@ country_event = {
 				country_event = {
 					id = ukraine.96
 					hours  = 5
-				}   
+				}
 			}
 		}
 	}
@@ -331,10 +331,10 @@ country_event = {
 			}
 			13 = {
 				add_dynamic_modifier = { modifier = russian_fire_support_idea scope = DPR days = 8 }
-			}	
+			}
 			376 = {
 				add_dynamic_modifier = { modifier = russian_fire_support_idea scope = DPR days = 8 }
-			}					
+			}
 		}
 	}
 }
@@ -415,7 +415,7 @@ country_event = {
 			country_leader = {
 				ideology = autoritarian_democracy
 				expire = "2045.1.1.1"
-			} 
+			}
 		}
 		hidden_effect = {
 			promote_character = {
@@ -448,7 +448,7 @@ country_event = {
 			country_leader = {
 				ideology = autoritarian_democracy
 				expire = "2045.1.1.1"
-			} 
+			}
 		}
 		hidden_effect = {
 			promote_character = {
@@ -481,7 +481,7 @@ country_event = {
 			country_leader = {
 				ideology = autoritarian_democracy
 				expire = "2045.1.1.1"
-			} 
+			}
 		}
 		hidden_effect = {
 			promote_character = {
@@ -514,7 +514,7 @@ country_event = {
 			country_leader = {
 				ideology = autoritarian_democracy
 				expire = "2045.1.1.1"
-			} 
+			}
 		}
 		hidden_effect = {
 			promote_character = {
@@ -547,7 +547,7 @@ country_event = {
 			country_leader = {
 				ideology = autoritarian_democracy
 				expire = "2045.1.1.1"
-			} 
+			}
 		}
 		hidden_effect = {
 			promote_character = {
@@ -579,7 +579,7 @@ country_event = {
 			country_leader = {
 				ideology = autoritarian_democracy
 				expire = "2045.1.1.1"
-			} 
+			}
 		}
 		hidden_effect = {
 			promote_character = {
@@ -610,7 +610,7 @@ country_event = {
 	option = {
 		name = DPR.26.b
 		country_event = DPR.28
-	}	
+	}
 }
 
 #Жека продвигается оп службе
@@ -638,7 +638,7 @@ country_event = {
 			country_leader = {
 				ideology = autoritarian_democracy
 				expire = "2045.1.1.1"
-			} 
+			}
 		}
 		hidden_effect = {
 			promote_character = {
@@ -647,7 +647,7 @@ country_event = {
 			}
 		}
 		
-	}	
+	}
 }
 
 #Интервью с жекой
@@ -678,7 +678,7 @@ country_event = {
 				days = 26
 			}
 		}
-	}	
+	}
 }
 
 #Гиркин становится военным комендантом доенцка
@@ -697,7 +697,7 @@ country_event = {
 	option = {
 		name = DPR.29.a
 		add_command_power = 5
-	}	
+	}
 }
 
 #Переворот стрелкова
@@ -727,7 +727,7 @@ country_event = {
 			country_leader = {
 				ideology = autoritarian_democracy
 				expire = "2045.1.1.1"
-			} 
+			}
 		}
 		hidden_effect = {
 			promote_character = {
@@ -735,7 +735,7 @@ country_event = {
 				ideology = autoritarian_democracy
 			}
 		}
-	}	
+	}
 }
 
 #сафоненко требует автономию

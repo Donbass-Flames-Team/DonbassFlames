@@ -48,7 +48,7 @@ my_custom_mio = {
 			production_efficiency_cap_factor = 0.1
 		}
 		position = { x=0 y=0 }
-		available = { owner = { has_political_power > 10 } }
+		available = { owner = { has_political_power > 10 }}
 	}
 
 	trait = {

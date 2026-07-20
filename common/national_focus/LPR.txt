@@ -73,7 +73,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { 
 				type = bulletproof_vests_equipment_1
 				amount = 250
-			} 		
+			}
 			add_equipment_to_stockpile = { 
 				type = uniform_equipment_1 
 				amount = 750
@@ -219,7 +219,7 @@ focus_tree = {
 										instant_build = yes
 									}
 								}
-							}	
+							}
 							if = {
 								limit = {
 									LPR = {
@@ -264,7 +264,7 @@ focus_tree = {
 										instant_build = yes 
 									}
 								}
-							}				
+							}
 							
 						}
 		}
@@ -462,7 +462,7 @@ focus_tree = {
 		ai_will_do = {
 			base = 1
 		}
-	}	
+	}
 
 	focus = {
 		id = LPR_republic_of_bolotov
@@ -577,7 +577,7 @@ focus_tree = {
 		ai_will_do = {
 			base = 1
 		}
-	}	
+	}
 
 
 	focus = {
@@ -598,7 +598,7 @@ focus_tree = {
 		ai_will_do = {
 			base = 1
 		}
-	}	
+	}
 
 
 
@@ -1429,7 +1429,7 @@ focus_tree = {
 		ai_will_do = {
 			base = 1
 		}
-	}	
+	}
 
 
 	focus = {

@@ -162,7 +162,7 @@ types = {
 					raid_add_unit_experience = 0.1
 				}
 				victim_effects = {
-					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
 					var:target_state = {
 						bathe_in_hellfire_nuclear = yes
 						custom_effect_tooltip = raid_nuclear_strike_tt
@@ -190,7 +190,7 @@ types = {
 					raid_add_unit_experience = 0.35
 				}
 				victim_effects = {
-					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
 					var:target_state = {
 						bathe_in_hellfire_nuclear = yes
 						custom_effect_tooltip = raid_nuclear_strike_tt
@@ -219,7 +219,7 @@ types = {
 							use_nuke = no
 						}
 					}
-					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
 					var:target_state = {
 						bathe_in_hellfire_nuclear = yes
 						custom_effect_tooltip = raid_nuclear_strike_tt
@@ -352,7 +352,7 @@ types = {
 				actor_effects = {
 				}
 				victim_effects = {
-					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
 					var:target_state = {
 						bathe_in_hellfire_nuclear = yes
 						#custom_effect_tooltip = raid_nuclear_strike_tt
@@ -375,7 +375,7 @@ types = {
 				}
 
 				victim_effects = {
-					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
 					var:target_state = {
 						bathe_in_hellfire_nuclear = yes
 						add_dynamic_modifier = {
@@ -511,7 +511,7 @@ types = {
 				actor_effects = {
 				}
 				victim_effects = {
-					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
 					var:target_state = {
 						bathe_in_hellfire_nuclear = yes
 						#custom_effect_tooltip = raid_nuclear_strike_tt
@@ -534,7 +534,7 @@ types = {
 				}
 
 				victim_effects = {
-					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
 					var:target_state = {
 						bathe_in_hellfire_nuclear = yes
 						add_dynamic_modifier = {
@@ -729,7 +729,7 @@ types = {
 					raid_add_unit_experience = 0.35
 				}
 				victim_effects = {
-					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }   
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
 					var:target_state = {
 						bathe_in_hellfire_thermonuclear = yes
 						custom_effect_tooltip = raid_nuclear_strike_tt
@@ -739,7 +739,7 @@ types = {
 									has_dynamic_modifier = {
 										modifier = fallout_atomic
 									}
-								}	
+								}
 								remove_dynamic_modifier = {
 									modifier = fallout_atomic
 								}
@@ -765,7 +765,7 @@ types = {
 					raid_add_unit_experience = 0.5
 				}
 				victim_effects = {
-					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
 					var:target_state = {
 						bathe_in_hellfire_thermonuclear = yes
 						custom_effect_tooltip = raid_nuclear_strike_tt
@@ -775,7 +775,7 @@ types = {
 									has_dynamic_modifier = {
 										modifier = fallout_atomic
 									}
-								}	
+								}
 								remove_dynamic_modifier = {
 									modifier = fallout_atomic
 								}
@@ -916,7 +916,7 @@ types = {
 				actor_effects = {
 				}
 				victim_effects = {
-					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
 					var:target_state = {
 						bathe_in_hellfire_thermonuclear = yes
 						#custom_effect_tooltip = raid_nuclear_strike_tt
@@ -940,7 +940,7 @@ types = {
 				actor_effects = {
 				}
 				victim_effects = {
-					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
 					var:target_state = {
 						bathe_in_hellfire_thermonuclear = yes
 						add_dynamic_modifier = {
@@ -1077,7 +1077,7 @@ types = {
 				actor_effects = {
 				}
 				victim_effects = {
-					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
 					var:target_state = {
 						bathe_in_hellfire_thermonuclear = yes
 						#custom_effect_tooltip = raid_nuclear_strike_tt
@@ -1101,7 +1101,7 @@ types = {
 				actor_effects = {
 				}
 				victim_effects = {
-					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
 					var:target_state = {
 						bathe_in_hellfire_thermonuclear = yes
 						add_dynamic_modifier = {
