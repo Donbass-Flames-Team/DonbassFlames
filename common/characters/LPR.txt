@@ -1,5 +1,4 @@
 characters = {
-
 	gennady_tsipkalov = {
 		name = gennady_tsipkalov
 		portraits = {
@@ -9,10 +8,10 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3
@@ -21,8 +20,7 @@ characters = {
 			legacy_id = 5
 		}
 	}
-
-	aleksandr_kharitonov  = {
+	aleksandr_kharitonov = {
 		name = aleksandr_kharitonov
 		portraits = {
 			civilian = {
@@ -31,10 +29,10 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3
@@ -43,7 +41,6 @@ characters = {
 			legacy_id = 5
 		}
 	}
-	
 	valeryy_bolotov = {
 		name = valeryy_bolotov
 		portraits = {
@@ -53,10 +50,10 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3
@@ -65,7 +62,6 @@ characters = {
 			legacy_id = 5
 		}
 	}
-
 	igor_polotnicky = {
 		name = igor_polotnicky
 		portraits = {
@@ -75,10 +71,10 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
 		corps_commander = {
-			traits = { }
+			traits = {}
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3
@@ -87,7 +83,6 @@ characters = {
 			legacy_id = 5
 		}
 	}
-
 	leonid_pasehcnik = {
 		name = leonid_pasehcnik
 		portraits = {
@@ -97,10 +92,9 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
 	}
-
 	aleksey_mozgovoi = {
 		name = aleksey_mozgovoi
 		portraits = {
@@ -110,9 +104,8 @@ characters = {
 		}
 		country_leader = {
 			ideology = autoritarian_democracy
-			traits = { }
+			traits = {}
 		}
-
 		field_marshal = {
 			traits = { politically_connected }
 			skill = 3
@@ -121,5 +114,60 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 1
 		}
-	}	
+	}
+	Oleg_Bugrov = {
+		name = Oleg_Bugrov
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	Sergey_Grachev = {
+		name = Sergey_Grachev
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	Alexandr_Bednov = {
+		name = Alexandr_Bednov
+		corps_commander = {
+			traits = { trickster organizer commando }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	Aleksey_Pavlov = {
+		name = Aleksey_Pavlov
+		corps_commander = {
+			traits = { trickster }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	Oleg_Anashenko = {
+		name = Oleg_Anashenko
+		corps_commander = {
+			traits = {}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
 }

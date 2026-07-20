@@ -1,0 +1,46 @@
+characters = {
+	Alexandr_Kostin = {
+		name = Alexandr_Kostin
+		corps_commander = {
+			traits = { armor_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	Aleksey_Markov = {
+		name = Aleksey_Markov
+		corps_commander = {
+			traits = { infantry_officer organizer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	Yuri_Shevchenko = {
+		name = Yuri_Shevchenko
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	Petr_Burikov = {
+		name = Petr_Burikov
+		corps_commander = {
+			traits = { brilliant_strategist }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}
