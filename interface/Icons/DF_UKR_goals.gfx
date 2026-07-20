@@ -28,7 +28,17 @@ spriteTypes = {
         name = "GFX_focus_UKR_activation_of_security_forces"
         texturefile = "gfx/interface/goals/UKR/UKR_activation_of_security_forces.png"
     }	
-    
+
+    spriteType = {
+        name = "GFX_focus_UKR_joint_flight_exercises_with_the_west"
+        texturefile = "gfx/interface/goals/UKR/UKR_joint_flight_exercises_with_the_west.dds"
+    }
+
+    spriteType = {
+        name = "GFX_focus_UKR_marine_infantry_reform"
+        texturefile = "gfx/interface/goals/UKR/UKR_marine_infantry_reform.dds"
+    }   
+
     spriteType = {
         name = "GFX_focus_UKR_unrest_in_the_east"
         texturefile = "gfx/interface/goals/UKR/UKR_unrest_in_the_east.dds"
@@ -190,9 +200,24 @@ spriteTypes = {
     } 
 
     spriteType = {
+        name = "GFX_focus_UKR_modernization_of_airfields"
+        texturefile = "gfx/interface/goals/UKR/UKR_modernization_of_airfields.png"
+    } 
+
+    spriteType = {
         name = "GFX_focus_UKR_police_reform"
         texturefile = "gfx/interface/goals/UKR/UKR_police_reform.dds"
     }  
+
+    spriteType = {
+        name = "GFX_focus_UKR_pick_up_weapons_from_warehouses"
+        texturefile = "gfx/interface/goals/UKR/UKR_pick_up_weapons_from_warehouses.dds"
+    } 
+
+    spriteType = {
+        name = "GFX_focus_UKR_leave_the_peninsula"
+        texturefile = "gfx/interface/goals/UKR/UKR_leave_the_peninsula.dds"
+    }
 
     spriteType = {
         name = "GFX_focus_UKR_under_the_pretext_of_a_christmas_tree"

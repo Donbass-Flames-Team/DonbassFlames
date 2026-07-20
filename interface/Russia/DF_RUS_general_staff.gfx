@@ -6,6 +6,26 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_Russian_General_Staff_icon"
+		texturefile = "gfx/interface/scripted_guis/general_staff/Russian_General_Staff_icon.png"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_general_staff_open_offensive_campaigns"
+		texturefile = "gfx/interface/scripted_guis/general_staff/RUS_general_staff_open_offensive_campaigns.png"
+	}
+
+	spriteType = {
+		name = "GFX_RUS_general_staff_open_preparation_for_smo"
+		texturefile = "gfx/interface/scripted_guis/general_staff/RUS_general_staff_open_preparation_for_smo.png"
+	}
+
+	spriteType = {
+		name = "GFX_Settings_button"
+		texturefile = "gfx/interface/scripted_guis/Settings_button.png"
+	}
+
+	spriteType = {
 		name = "GFX_General_Staff_Map"
 		texturefile = "gfx/interface/scripted_guis/general_staff/General_Staff_Map.png"
 	}
