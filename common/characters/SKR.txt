@@ -43,4 +43,37 @@ characters = {
 			logistics_skill = 2
 		}
 	}
+	Pavel_Dremov = {
+		name = Pavel_Dremov
+		corps_commander = {
+			traits = { inspirational_leader infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	Evgenii_Ishenko = {
+		name = Evgenii_Ishenko
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	Sergey_Kosogorov = {
+		name = Sergey_Kosogorov
+		corps_commander = {
+			traits = { trait_cautious }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 }
