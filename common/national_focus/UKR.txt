@@ -43,9 +43,6 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_yanukovychs_results
 		}
-		prerequisite = {
-			focus = UKR_situation_is_out_of_control
-		}
 		relative_position_id = UKR_yanukovychs_results
 		available = {}
 		bypass = {
@@ -89,9 +86,6 @@ focus_tree = {
 		cost = 0.2
 		x = 0
 		y = 2
-		prerequisite = {
-			focus = UKR_force_deal_with_protests
-		}
 		prerequisite = {
 			focus = UKR_next_steps
 		}
@@ -2242,7 +2236,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = ukraine.91
-				hour = 3
+				hours = 3
 			}
 			add_stability = 0.02
 			add_war_support = 0.03
@@ -2333,9 +2327,6 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = UKR_unrest_in_the_east
-		}
-		prerequisite = {
-			focus = UKR_national_decentralization_project
 		}
 		relative_position_id = UKR_unrest_in_the_east
 		allow_branch = {
@@ -4226,11 +4217,13 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 			hidden_effect = {
-				news_event = news_events.38
+				news_event = {
+				id = news_events.39
 				hours = 3
 			}
 		}
 	}
+}
 	focus = {
 		id = UKR_associated_trio
 		icon = GFX_goal_no_focus_UKR
@@ -4249,11 +4242,13 @@ focus_tree = {
 			add_political_power = 25
 			set_country_flag = UKR_associated_trio_flag
 			hidden_effect = {
-				news_event = news_events.39
+				news_event = {
+				id = news_events.39
 				hours = 3
 			}
 		}
 	}
+}
 	focus = {
 		id = UKR_join_to_the_eu
 		icon = GFX_goal_no_focus_UKR
@@ -4828,6 +4823,19 @@ focus_tree = {
 		completion_reward = {}
 	}
 	focus = {
+		id = UKR_introduction_of_the_institute_of_prefects
+		icon = GFX_focus_UKR_start_of_ato
+		cost = 1
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = UKR_financial_reform
+		}
+		relative_position_id = UKR_decentralization
+		available = {}
+		completion_reward = {}
+	}
+	focus = {
 		id = UKR_land_market
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 5
@@ -4905,19 +4913,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 		}
-	}
-	focus = {
-		id = UKR_introduction_of_the_institute_of_prefects
-		icon = GFX_focus_UKR_start_of_ato
-		cost = 1
-		x = 0
-		y = 3
-		prerequisite = {
-			focus = UKR_financial_reform
-		}
-		relative_position_id = UKR_decentralization
-		available = {}
-		completion_reward = {}
 	}
 	focus = {
 		id = UKR_deoligarhization

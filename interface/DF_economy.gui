@@ -621,19 +621,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			text = "number_of_small_businesses_text"
 		}	
-		
-		instantTextBoxType = {
-			name = "number_of_individual_enterprises_text"
-			position = { x = 620 y = 329 }
-			font = hoi_24header
-			borderSize = { x = 0 y = 0}
-			maxWidth = 300
-			maxHeight = 64
-			format = left
-			Orientation = "UPPER_LEFT"
-			text = "number_of_individual_enterprises_text"
-		}
-		
+
 		instantTextBoxType = {
 			name = "number_of_individual_enterprises_text"
 			position = { x = 620 y = 329 }
@@ -649,7 +637,7 @@ guiTypes = {
 		###############################
 		########## KEY RATE ###########
 		###############################
-		
+
 		instantTextBoxType = {
 			name = "key_rate_precentage"
 			position = { x = 610 y = 380 }
