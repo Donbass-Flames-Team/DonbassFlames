@@ -4,113 +4,112 @@ LPR_centralization_bop = {
 	right_side = LPR_vertical_power
 	decision_category = LPR_centralization_power_balance_decisions
 
-	range = { #Balanced Range, neither Councils nor Cantons
-		id = LPR_centralization_bop_balanced 
-		min = -0.05
-		max = 0.05
+range = { #Balanced Range, neither Councils nor Cantons
+	id = LPR_centralization_bop_balanced 
+	min = -0.05
+	max = 0.05
+	modifier = {
+		political_advisor_cost_factor = -0.5
+		surrender_limit	= 0.1
+	}
+}
+
+side = {
+	id = LPR_cossack_autonomy_bop_fully
+	icon = GFX_focus_UKR_The_regime_is_under_threat
+	
+	range = {
+		id = LPR_cossack_autonomy_bop_small_power
+		min = 0.05
+		max = 0.35
 		modifier = {
-			political_advisor_cost_factor = -0.5
-			surrender_limit	= 0.1
+			war_support_factor = -0.15
+			political_advisor_cost_factor = -0.75
+			surrender_limit	= 0.4
+		}
+		on_activate = {
+			promote_character = SWI_federal_assembly
+			log = "Very cantons activated"
 		}
 	}
 
-	side = {
-		id = LPR_cossack_autonomy_bop_fully
-		icon = GFX_focus_UKR_The_regime_is_under_threat
-		
-		range = {
-			id = LPR_cossack_autonomy_bop_small_power
-			min = 0.05
-			max = 0.35
-			modifier = {
-				war_support_factor = -0.15
-				political_advisor_cost_factor = -0.75
-				surrender_limit	= 0.4
-			}
-			on_activate = {
-				promote_character = SWI_federal_assembly
-				log = "Very cantons activated"
-			}
+	range = {
+		id = LPR_cossack_autonomy_bop_medium_power
+		min = 0.35
+		max = 0.85
+		modifier = {
+			war_support_factor = -0.15
+			political_advisor_cost_factor = -0.75
+			surrender_limit	= 0.4
 		}
-
-		range = {
-			id = LPR_cossack_autonomy_bop_medium_power
-			min = 0.35
-			max = 0.85
-			modifier = {
-				war_support_factor = -0.15
-				political_advisor_cost_factor = -0.75
-				surrender_limit	= 0.4
-			}
-			on_activate = {
-				promote_character = SWI_federal_assembly
-				log = "Very cantons activated"
-			}
-		}
-
-		range = {
-			id = LPR_cossack_autonomy_bop_strong_power
-			min = 0.85
-			max = 1
-			modifier = {
-				war_support_factor = -0.15
-				political_advisor_cost_factor = -0.75
-				surrender_limit	= 0.4
-			}
-			on_activate = {
-				promote_character = SWI_federal_assembly
-				log = "Very cantons activated"
-			}
+		on_activate = {
+			promote_character = SWI_federal_assembly
+			log = "Very cantons activated"
 		}
 	}
 
-	side = {
-		id = LPR_vertical_power_bop
-		icon = GFX_focus_UKR_The_regime_is_under_threat
-		
-		range = {
-			id = LPR_vertical_power_bop_small_power
-			min = -0.05
-			max = -0.35
-			modifier = {
-				war_support_factor = -0.15
-				political_advisor_cost_factor = -0.75
-				surrender_limit	= 0.4
-			}
-			on_activate = {
-				promote_character = SWI_federal_assembly
-				log = "Very cantons activated"
-			}
+	range = {
+		id = LPR_cossack_autonomy_bop_strong_power
+		min = 0.85
+		max = 1
+		modifier = {
+			war_support_factor = -0.15
+			political_advisor_cost_factor = -0.75
+			surrender_limit	= 0.4
 		}
-
-		range = {
-			id = LPR_vertical_power_bop_medium_power
-			min = -0.35
-			max = -0.85
-			modifier = {
-				war_support_factor = -0.15
-				political_advisor_cost_factor = -0.75
-				surrender_limit	= 0.4
-			}
-			on_activate = {
-				promote_character = SWI_federal_assembly
-				log = "Very cantons activated"
-			}
+		on_activate = {
+			promote_character = SWI_federal_assembly
+			log = "Very cantons activated"
 		}
+	}
+}
 
-		range = {
-			id = LPR_vertical_power_bop_strong_power
-			min = -0.85
-			max = -1
-			modifier = {
-				war_support_factor = -0.15
-				political_advisor_cost_factor = -0.75
-				surrender_limit	= 0.4
-			}
-			on_activate = {
-				promote_character = SWI_federal_assembly
-				log = "Very cantons activated"
-			}
+side = {
+	id = LPR_vertical_power_bop
+	icon = GFX_focus_UKR_The_regime_is_under_threat
+	
+	range = {
+		id = LPR_vertical_power_bop_small_power
+		min = -0.35
+		max = -0.05
+		modifier = {
+			war_support_factor = -0.15
+			political_advisor_cost_factor = -0.75
+			surrender_limit	= 0.4
+		}
+		on_activate = {
+			promote_character = SWI_federal_assembly
+			log = "Very cantons activated"
+		}
+	}
+
+	range = {
+		id = LPR_vertical_power_bop_medium_power
+		min = -0.85
+		max = -0.35
+		modifier = {
+			war_support_factor = -0.15
+			political_advisor_cost_factor = -0.75
+			surrender_limit	= 0.4
+		}
+		on_activate = {
+			promote_character = SWI_federal_assembly
+			log = "Very cantons activated"
+		}
+	}
+
+	range = {
+		id = LPR_vertical_power_bop_strong_power
+		min = -1
+		max = -0.85
+		modifier = {
+			war_support_factor = -0.15
+			political_advisor_cost_factor = -0.75
+			surrender_limit	= 0.4
+		}
+		on_activate = {
+			promote_character = SWI_federal_assembly
+			log = "Very cantons activated"
 		}
 	}
 }
