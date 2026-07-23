@@ -27,10 +27,6 @@ side = {
 			political_advisor_cost_factor = -0.75
 			surrender_limit	= 0.4
 		}
-		on_activate = {
-			promote_character = SWI_federal_assembly
-			log = "Very cantons activated"
-		}
 	}
 
 	range = {
@@ -42,10 +38,6 @@ side = {
 			political_advisor_cost_factor = -0.75
 			surrender_limit	= 0.4
 		}
-		on_activate = {
-			promote_character = SWI_federal_assembly
-			log = "Very cantons activated"
-		}
 	}
 
 	range = {
@@ -56,10 +48,6 @@ side = {
 			war_support_factor = -0.15
 			political_advisor_cost_factor = -0.75
 			surrender_limit	= 0.4
-		}
-		on_activate = {
-			promote_character = SWI_federal_assembly
-			log = "Very cantons activated"
 		}
 	}
 }
@@ -77,10 +65,6 @@ side = {
 			political_advisor_cost_factor = -0.75
 			surrender_limit	= 0.4
 		}
-		on_activate = {
-			promote_character = SWI_federal_assembly
-			log = "Very cantons activated"
-		}
 	}
 
 	range = {
@@ -92,10 +76,6 @@ side = {
 			political_advisor_cost_factor = -0.75
 			surrender_limit	= 0.4
 		}
-		on_activate = {
-			promote_character = SWI_federal_assembly
-			log = "Very cantons activated"
-		}
 	}
 
 	range = {
@@ -106,10 +86,6 @@ side = {
 			war_support_factor = -0.15
 			political_advisor_cost_factor = -0.75
 			surrender_limit	= 0.4
-		}
-		on_activate = {
-			promote_character = SWI_federal_assembly
-			log = "Very cantons activated"
 		}
 	}
 }
