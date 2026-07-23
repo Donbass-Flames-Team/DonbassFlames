@@ -1,7 +1,6 @@
 ﻿capital = 634
 set_variable = { cash = 1 }
 set_variable = { debt = -73 }
-#oob = "CRI_1936"
 
 recruit_character = CRI_sergey_aksyonov
 
@@ -23,10 +22,10 @@ recruit_character = CRI_sergey_aksyonov
 		mountain_warfare = 1
 		tech_trucks = 1
 		toward_artilery = 1
-				motorized_equipment = 1
-				motorized_equipment_0 = 1
-				motorized_equipment_1 = 1
-				motorized_equipment_2 = 1
+		tech_trucks = 1
+		tech_trucks_0 = 1
+		tech_trucks_1 = 1
+		tech_trucks_2 = 1
 	}
 
 	set_grand_doctrine = mass_assault

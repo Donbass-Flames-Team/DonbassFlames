@@ -65,7 +65,6 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	set_variable = { UKR_AFU_conscription = -0.002 } 
 	set_variable = { UKR_AFU_supply_factor = -0.15 } 
 
-
 	add_dynamic_modifier = { modifier = UKR_ukrainian_air_forces_idea }
     set_variable = { UKR_ukrainian_air_forces_air_accidents_factor = 0.15 }
 	set_variable = { UKR_ukrainian_air_forces_air_attack_factor = -0.05 }
@@ -73,9 +72,6 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	set_variable = { UKR_ukrainian_air_forces_air_mission_efficiency = -0.15 }
     set_variable = { UKR_ukrainian_air_forces_air_attack_factor = -0.1 }
 	set_variable = { UKR_ukrainian_air_forces_air_escort_efficiency = -0.1 }
-
-
-
 
 	add_dynamic_modifier = { modifier = UKR_ukrainian_navy_idea }
 	set_variable = { UKR_ukrainian_navy_navy_org_factor = -0.2 }
@@ -113,7 +109,7 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 		atgl_weapons_1 = 1
 		atgl_weapons_2 = 1
 		atgl_weapons_3 = 1
-		atgl_weapons_4 = 1
+
 		manpads_weapons = 1
 		manpads_weapons2 = 1
 		manpads_weapons3 = 1
