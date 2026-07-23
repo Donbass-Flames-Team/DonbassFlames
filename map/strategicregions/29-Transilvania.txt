@@ -8,7 +8,7 @@ strategic_region = {
 
 	weather = {
 		period = {
-			between = { 1.12 8.12 }
+			between = { 0.11 7.11 }
 			temperature = { -8 -1 }
 			no_phenomenon = 0.713
 			rain_light = 0.025
@@ -21,7 +21,7 @@ strategic_region = {
 			min_snow_level = 0.08
 		}
 		period = {
-			between = { 9.12 15.12 }
+			between = { 8.11 14.11 }
 			temperature = { -9 -1 }
 			no_phenomenon = 0.716
 			rain_light = 0.022
@@ -34,7 +34,7 @@ strategic_region = {
 			min_snow_level = 0.08
 		}
 		period = {
-			between = { 16.12 23.12 }
+			between = { 15.11 22.11 }
 			temperature = { -9 -1 }
 			no_phenomenon = 0.716
 			rain_light = 0.022
@@ -47,7 +47,7 @@ strategic_region = {
 			min_snow_level = 0.08
 		}
 		period = {
-			between = { 24.12 30.12 }
+			between = { 23.11 29.11 }
 			temperature = { -8 -1 }
 			no_phenomenon = 0.713
 			rain_light = 0.025
@@ -60,7 +60,7 @@ strategic_region = {
 			min_snow_level = 0.08
 		}
 		period = {
-			between = { 31.12 7.1 }
+			between = { 30.11 6.0 }
 			temperature = { -8 -1 }
 			no_phenomenon = 0.644
 			rain_light = 0.033
@@ -73,7 +73,7 @@ strategic_region = {
 			min_snow_level = 0.08
 		}
 		period = {
-			between = { 8.1 15.1 }
+			between = { 7.0 14.0 }
 			temperature = { -7 0 }
 			no_phenomenon = 0.648
 			rain_light = 0.046
@@ -86,7 +86,7 @@ strategic_region = {
 			min_snow_level = 0.08
 		}
 		period = {
-			between = { 16.1 22.1 }
+			between = { 15.0 21.0 }
 			temperature = { -6 1 }
 			no_phenomenon = 0.668
 			rain_light = 0.067
@@ -99,7 +99,7 @@ strategic_region = {
 			min_snow_level = 0.08
 		}
 		period = {
-			between = { 23.1 30.1 }
+			between = { 22.0 29.0 }
 			temperature = { -5 2 }
 			no_phenomenon = 0.649
 			rain_light = 0.111
@@ -112,7 +112,7 @@ strategic_region = {
 			min_snow_level = 0.02
 		}
 		period = {
-			between = { 31.1 6.2 }
+			between = { 30.0 5.1 }
 			temperature = { -4 3 }
 			no_phenomenon = 0.592
 			rain_light = 0.182
@@ -125,7 +125,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 7.2 14.2 }
+			between = { 6.1 13.1 }
 			temperature = { -3 4 }
 			no_phenomenon = 0.566
 			rain_light = 0.27
@@ -138,7 +138,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 15.2 22.2 }
+			between = { 14.1 21.1 }
 			temperature = { -1 6 }
 			no_phenomenon = 0.546
 			rain_light = 0.345
@@ -151,7 +151,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 23.2 1.3 }
+			between = { 22.1 0.2 }
 			temperature = { 0 7 }
 			no_phenomenon = 0.511
 			rain_light = 0.413
@@ -164,7 +164,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 2.3 9.3 }
+			between = { 1.2 8.2 }
 			temperature = { 2 9 }
 			no_phenomenon = 0.47
 			rain_light = 0.451
@@ -177,7 +177,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 10.3 16.3 }
+			between = { 9.2 15.2 }
 			temperature = { 4 11 }
 			no_phenomenon = 0.506
 			rain_light = 0.432
@@ -190,7 +190,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 17.3 24.3 }
+			between = { 16.2 23.2 }
 			temperature = { 5 12 }
 			no_phenomenon = 0.496
 			rain_light = 0.403
@@ -203,7 +203,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 25.3 1.4 }
+			between = { 24.2 0.3 }
 			temperature = { 7 14 }
 			no_phenomenon = 0.489
 			rain_light = 0.363
@@ -216,7 +216,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 2.4 8.4 }
+			between = { 1.3 7.3 }
 			temperature = { 9 16 }
 			no_phenomenon = 0.483
 			rain_light = 0.336
@@ -229,7 +229,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 9.4 16.4 }
+			between = { 8.3 15.3 }
 			temperature = { 10 17 }
 			no_phenomenon = 0.479
 			rain_light = 0.339
@@ -242,7 +242,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 17.4 23.4 }
+			between = { 16.3 22.3 }
 			temperature = { 12 19 }
 			no_phenomenon = 0.476
 			rain_light = 0.341
@@ -255,7 +255,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 24.4 1.5 }
+			between = { 23.3 0.4 }
 			temperature = { 13 20 }
 			no_phenomenon = 0.472
 			rain_light = 0.343
@@ -268,7 +268,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 2.5 9.5 }
+			between = { 1.4 8.4 }
 			temperature = { 14 21 }
 			no_phenomenon = 0.469
 			rain_light = 0.345
@@ -281,7 +281,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 10.5 16.5 }
+			between = { 9.4 15.4 }
 			temperature = { 15 22 }
 			no_phenomenon = 0.468
 			rain_light = 0.346
@@ -294,7 +294,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 17.5 24.5 }
+			between = { 16.4 23.4 }
 			temperature = { 16 23 }
 			no_phenomenon = 0.466
 			rain_light = 0.347
@@ -307,7 +307,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 25.5 31.5 }
+			between = { 24.4 30.4 }
 			temperature = { 17 24 }
 			no_phenomenon = 0.466
 			rain_light = 0.347
@@ -320,7 +320,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 1.6 8.6 }
+			between = { 0.5 7.5 }
 			temperature = { 17 24 }
 			no_phenomenon = 0.465
 			rain_light = 0.348
@@ -333,7 +333,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 9.6 16.6 }
+			between = { 8.5 15.5 }
 			temperature = { 17 24 }
 			no_phenomenon = 0.465
 			rain_light = 0.348
@@ -346,7 +346,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 17.6 23.6 }
+			between = { 16.5 22.5 }
 			temperature = { 17 24 }
 			no_phenomenon = 0.466
 			rain_light = 0.347
@@ -359,7 +359,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 24.6 1.7 }
+			between = { 23.5 0.6 }
 			temperature = { 17 24 }
 			no_phenomenon = 0.468
 			rain_light = 0.346
@@ -372,7 +372,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 2.7 9.7 }
+			between = { 1.6 8.6 }
 			temperature = { 17 24 }
 			no_phenomenon = 0.469
 			rain_light = 0.345
@@ -385,7 +385,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 10.7 16.7 }
+			between = { 9.6 15.6 }
 			temperature = { 16 23 }
 			no_phenomenon = 0.472
 			rain_light = 0.343
@@ -398,7 +398,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 17.7 24.7 }
+			between = { 16.6 23.6 }
 			temperature = { 15 22 }
 			no_phenomenon = 0.475
 			rain_light = 0.341
@@ -411,7 +411,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 25.7 31.7 }
+			between = { 24.6 30.6 }
 			temperature = { 14 21 }
 			no_phenomenon = 0.478
 			rain_light = 0.339
@@ -424,7 +424,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 1.8 8.8 }
+			between = { 0.7 7.7 }
 			temperature = { 13 20 }
 			no_phenomenon = 0.482
 			rain_light = 0.337
@@ -437,7 +437,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 9.8 16.8 }
+			between = { 8.7 15.7 }
 			temperature = { 11 19 }
 			no_phenomenon = 0.486
 			rain_light = 0.334
@@ -450,7 +450,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 17.8 23.8 }
+			between = { 16.7 22.7 }
 			temperature = { 10 17 }
 			no_phenomenon = 0.491
 			rain_light = 0.331
@@ -463,7 +463,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 24.8 31.8 }
+			between = { 23.7 30.7 }
 			temperature = { 9 16 }
 			no_phenomenon = 0.495
 			rain_light = 0.328
@@ -476,7 +476,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 1.9 7.9 }
+			between = { 0.8 6.8 }
 			temperature = { 7 14 }
 			no_phenomenon = 0.501
 			rain_light = 0.36
@@ -489,7 +489,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 8.9 15.9 }
+			between = { 7.8 14.8 }
 			temperature = { 5 12 }
 			no_phenomenon = 0.509
 			rain_light = 0.396
@@ -502,7 +502,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 16.9 23.9 }
+			between = { 15.8 22.8 }
 			temperature = { 4 11 }
 			no_phenomenon = 0.518
 			rain_light = 0.424
@@ -515,7 +515,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 24.9 30.9 }
+			between = { 23.8 29.8 }
 			temperature = { 2 9 }
 			no_phenomenon = 0.486
 			rain_light = 0.437
@@ -528,7 +528,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 1.10 8.10 }
+			between = { 0.9 7.9 }
 			temperature = { 0 7 }
 			no_phenomenon = 0.529
 			rain_light = 0.397
@@ -541,7 +541,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 9.10 15.10 }
+			between = { 8.9 14.9 }
 			temperature = { -2 6 }
 			no_phenomenon = 0.53
 			rain_light = 0.333
@@ -554,7 +554,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 16.10 23.10 }
+			between = { 15.9 22.9 }
 			temperature = { -3 4 }
 			no_phenomenon = 0.545
 			rain_light = 0.259
@@ -567,7 +567,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 24.10 31.10 }
+			between = { 23.9 30.9 }
 			temperature = { -4 3 }
 			no_phenomenon = 0.579
 			rain_light = 0.169
@@ -580,7 +580,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 1.11 7.11 }
+			between = { 0.10 6.10 }
 			temperature = { -5 2 }
 			no_phenomenon = 0.659
 			rain_light = 0.102
@@ -593,7 +593,7 @@ strategic_region = {
 			min_snow_level = 0
 		}
 		period = {
-			between = { 8.11 15.11 }
+			between = { 7.10 14.10 }
 			temperature = { -7 1 }
 			no_phenomenon = 0.674
 			rain_light = 0.064
@@ -606,7 +606,7 @@ strategic_region = {
 			min_snow_level = 0.06
 		}
 		period = {
-			between = { 16.11 22.11 }
+			between = { 15.10 21.10 }
 			temperature = { -7 0 }
 			no_phenomenon = 0.681
 			rain_light = 0.045
@@ -619,7 +619,7 @@ strategic_region = {
 			min_snow_level = 0.08
 		}
 		period = {
-			between = { 23.11 30.11 }
+			between = { 22.10 29.10 }
 			temperature = { -8 -1 }
 			no_phenomenon = 0.687
 			rain_light = 0.031
