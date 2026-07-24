@@ -45,7 +45,7 @@
  Aleksandr_Zaharchenko_separatism_gui:0 "Aleksandr Zakharchenko"
  Igor_Plotnitsky_separatism_gui:0 "Igor Plotnitsky"
  Yevgenii_Zhylin_separatism_gui:0 "Yevgeny Zhylin"
- Anton_Davidchenko_separatism_gui:0 "Anton" Davidchenko"
+ Anton_Davidchenko_separatism_gui:0 "Anton Davidchenko"
  Serhii_Taruta_separatism_gui:0 "Sergey Taruta"
  Ihor_Palytsia_separatism_gui:0 "Igor Palytsya"
 
@@ -98,12 +98,12 @@
  UKR_Turchinov_speaker_name:0 "Speaker: Oleksandr Turchynov"
  UKR_7_congress_of_rada_name:0 "7th Congress of the Verkhovna Rada"
  UKR_8_congress_of_rada_name:0 "8th Congress of the Verkhovna Rada"
- UKR_9_congress_of_rada_name:0 "9th Congress of the Verkhovna Rada" Rada"
+ UKR_9_congress_of_rada_name:0 "9th Congress of the Verkhovna Rada"
 
  UKR_ATO_decision: "Anti-terrorist operation"
  ## Verkhovna Rada parties
  UKR_party_1_of_7_congress:0 "Party of Regions:"
- UKR_party_2_of_7_congress:0 "All-Ukrainian Union "Batkivshchyna":"
+ UKR_party_2_of_7_congress:0 "All-Ukrainian Union \"Batkivshchyna\":"
  UKR_party_3_of_7_congress:0 "UDAR:"
  UKR_party_4_of_7_congress:0 "CPU:"
  UKR_party_5_of_7_congress:0 "Svoboda:"
@@ -140,7 +140,7 @@
  UKR_yanukovich_overthrow: "End of the regime..."
  UKR_maidan_powers_prorussians_tt:0 "Pro-Russian forces\n\nWhat it gives: §gDaily support for authoritarian democracy +0.02"
  UKR_maidan_powers_nationalists_tt:0 "Nationalist forces\n\nWhat it gives: §LDaily support for nationalism +0.01"
- UKR_maidan_powers_maidanites_tt:0 "Pro-European forces\n\nWhat it gives: §5Daily support for democracy" +0.03 "
+ UKR_maidan_powers_maidanites_tt:0 "Pro-European forces\n\nWhat it gives: §5Daily support for democracy +0.03"
  UKR_maidan_powers_prorussians_text_tt:0 "Exceeding the 80% radicalization threshold will lead to a sharp increase in separatist sentiment in southeastern Ukraine."
  UKR_maidan_powers_nationalists_text_tt:0 "Exceeding the 50% radicalization threshold will lead to a surge in violence, increased political pressure on moderate forces, and a radicalization of the overall political agenda."
  UKR_maidan_powers_maidanites_text_tt:0 "Exceeding the 60% radicalization threshold will significantly accelerate the collapse of Yanukovych's government."
@@ -155,7 +155,7 @@
  Yanukovich_escaped: "Yanukovych has escaped"
 
  #Main menu
- MENU_UPDATELOGO:0 "§OCurrent version: Alpha 0.0.1§!\n\n§HWHAT'S PLANNED FOR RELEASE 0.1:§!\n- §R[WIP]§! Content for Ukraine, the Russian Federation, the Donetsk People's Republic, the Luhansk People's Republic, the Kharkiv People's Republic, and the Odessa People's Republic.\n- §G[DONE]§! New unique map of Eastern Europe.\n- §G[DONE]§! Unique "Regional Separatism" GUI for Ukraine.\n- §G[DONE]§! Unique Euromaidan radicalization mechanics for Ukraine.\n- §Y[DEMO]§! Unique Verkhovna Rada GUI for Ukraine.\n- §R[WIP]§! National spirits for all countries\n- §G[DONE]§! Updated minimalistic game interface for a more enjoyable gameplay\n- §G[DONE]§! New scenario selection menu\n- §G[DONE]§! Specially selected music for better immersion in the atmosphere of the mod\n- §R[WIP]§! Unique presidential election mechanics for Ukraine\n- §R[WIP]§! Unique branches for the presidents of Ukraine\n- §R[WIP]§! Unique General Staff mechanics for all sides\n- §R[WIP]§! Unique artillery strike mechanics for all sides\n- §G[DONE]§! Decisions on the creation of volunteer battalions for the ATO zone for Ukraine\n- §R[WIP]§! Portraits for everyone Country rulers on the map as of November 21, 2013 - §R[WIP]§! Unique escalation mechanics. §YFollow the mod updates§! on our §CDiscord server§! and §CTelegram channel!§!"
+ MENU_UPDATELOGO:0 "§OCurrent version: Alpha 0.0.1§!\n\n§HWHAT'S PLANNED FOR RELEASE 0.1:§!\n- §R[WIP]§! Content for Ukraine, the Russian Federation, the Donetsk People's Republic, the Luhansk People's Republic, the Kharkiv People's Republic, and the Odessa People's Republic.\n- §G[DONE]§! New unique map of Eastern Europe.\n- §G[DONE]§! Unique \"Regional Separatism\" GUI for Ukraine.\n- §G[DONE]§! Unique Euromaidan radicalization mechanics for Ukraine.\n- §Y[DEMO]§! Unique Verkhovna Rada GUI for Ukraine.\n- §R[WIP]§! National spirits for all countries\n- §G[DONE]§! Updated minimalistic game interface for a more enjoyable gameplay\n- §G[DONE]§! New scenario selection menu\n- §G[DONE]§! Specially selected music for better immersion in the atmosphere of the mod\n- §R[WIP]§! Unique presidential election mechanics for Ukraine\n- §R[WIP]§! Unique branches for the presidents of Ukraine\n- §R[WIP]§! Unique General Staff mechanics for all sides\n- §R[WIP]§! Unique artillery strike mechanics for all sides\n- §G[DONE]§! Decisions on the creation of volunteer battalions for the ATO zone for Ukraine\n- §R[WIP]§! Portraits for everyone Country rulers on the map as of November 21, 2013 - §R[WIP]§! Unique escalation mechanics. §YFollow the mod updates§! on our §CDiscord server§! and §CTelegram channel!§!"
 
  Escalation_on_donbas_1_tt: "First Escalation Level\n\n§YEffects:§!\n\nDivision Attack: §R-35.00%§!\nDivision Speed: §R-15.00%§!\nDivision Breakthrough: §R-15.00%§!"
  Escalation_on_donbas_2_tt: "Second Escalation Level\n\n§YEffects:§!\n\nDivision Attack: §R-5.00%§!\nDivision Breakthrough: §R-5.00%§!"
@@ -191,17 +191,17 @@
  NOT_A_WORKING_WAY_tt:0 "§RCURRENTLY NOT A WORKING WAY§!"
 
  sp_event_UKR_start_of_ato_title:0 "The Beginning of the ATO"
- sp_event_UKR_start_of_ato_quote:0 ""Ukraine's enemies are trying to replay the Crimean scenario, but we will not allow it. Anti-terrorist measures will be taken against those who take up arms." - §YAleksandr Turchynov!"
+ sp_event_UKR_start_of_ato_quote:0 "\"Ukraine's enemies are trying to replay the Crimean scenario, but we will not allow it. Anti-terrorist measures will be taken against those who take up arms.\" - §YAleksandr Turchynov§!"
  sp_event_UKR_start_of_ato_remark:0 "Ukraine will be united!"
 
  sp_event_separatist_victory_title:0 "Victory of the Separatists"
- sp_event_separatist_victory_quote:0 ""The time will come when one will say 'Glory to the DPR,' and millions will respond 'Glory to the Heroes!' - §YDenis Pushilin!"
+ sp_event_separatist_victory_quote:0 "\"The time will come when one will say 'Glory to the DPR,' and millions will respond 'Glory to the Heroes!'\" - §YDenis Pushilin§!"
  sp_event_separatist_victory_remark:0 "Freedom for Donbas!"
 
  sp_event_ukraine_victory_against_separatists_title:0 "Defeat of the Separatists"
- sp_event_ukraine_victory_against_separatists_quote:0 ""Any attempts at destabilization within the country will be harshly suppressed." - Ruslan Khomchak!"
+ sp_event_ukraine_victory_against_separatists_quote:0 "\"Any attempts at destabilization within the country will be harshly suppressed.\" - §YRuslan Khomchak§!"
  sp_event_ukraine_victory_against_separatists_remark:0 "Glory to Ukraine!"
 
  sp_event_yanukovich_overthrow_title:0 "The Overthrow of Yanukovych"
- sp_event_yanukovich_overthrow_quote:0 ""A regime built on fear and corruption collapsed in a matter of days." \n- §YOleksandr Turchynov§!"
+ sp_event_yanukovich_overthrow_quote:0 "\"A regime built on fear and corruption collapsed in a matter of days.\" \n- §YOleksandr Turchynov§!"
  sp_event_yanukovich_overthrow_remark:0 "Ukraine is Europe!"
