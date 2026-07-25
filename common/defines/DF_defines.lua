@@ -1,6 +1,6 @@
 NDefines.NGame.START_DATE = "2010.1.1.12"
 NDefines.NGame.END_DATE = "2033.1.1.1"
-NDefines.NGame.MAP_SCALE_PIXEL_TO_KM = 0.514
+NDefines.NGame.MAP_SCALE_PIXEL_TO_KM = 0.675
 NDefines.NGame.SAVE_VERSION = 24
 NDefines.NGame.HANDS_OFF_START_TAG = "TKM"		-- tag for player country for -hands_off runs. use an existing tag that is less likely to affect the game
 NDefines.NGame.TRADE_ROUTE_RECALCULATE_FREQUENCY_DAYS = 30 
