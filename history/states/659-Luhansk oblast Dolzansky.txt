@@ -1,7 +1,7 @@
 state = { 
 	id = 659
 	name = "STATE_659" 
-	manpower = 350 
+	manpower = 675 
 	
 	state_category = slot_0
 	buildings_max_level_factor = 2 
@@ -14,6 +14,8 @@ state = {
 		
 		buildings = {  
 			infrastructure = 2
+			social_infrastructure = 2
+			network_infrastructure = 2
 		}
 		
 		add_core_of = UKR 
@@ -22,7 +24,6 @@ state = {
 		2014.5.19 = { 
 			owner = LPR 
 			controller = LPR 
-			
 			add_core_of = LPR 
 		}
 	}

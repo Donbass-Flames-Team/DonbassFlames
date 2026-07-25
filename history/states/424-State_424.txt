@@ -1,14 +1,13 @@
 state = { 
 	id = 424 
 	name = "STATE_424" 
-	manpower = 353918 
+	manpower = 246702 
 	
-	state_category = slot_10 
+	state_category = slot_7
 	buildings_max_level_factor = 2 
-	
 	resources = { 
-		steel = 5 
-		coal = 32 
+		steel = 4 
+		coal = 22
 	} 
 	history = { 
 		owner = UKR 
@@ -21,7 +20,6 @@ state = {
 		victory_points = { 15745 5 }
 		
 		buildings = { 
-			offices_building = 1 
 			social_infrastructure = 2 
 			network_infrastructure = 2 
 			industrial_complex = 2 
@@ -35,7 +33,6 @@ state = {
 		2014.5.19 = { 
 			owner = DPR 
 			controller = DPR 
-			
 			add_core_of = DPR 
 		}
 	}

@@ -1,12 +1,12 @@
 state = { 
 	id = 432 
 	name = "STATE_432" 
-	manpower = 953217 
+	manpower = 756227 
 	
 	state_category = slot_16 
 	buildings_max_level_factor = 2 
 	
-	resources = { coal = 33 } 
+	resources = { coal = 26 } 
 	history = { 
 		owner = UKR 
 
@@ -22,13 +22,13 @@ state = {
 		victory_points = { 18561 5 }
 		
 		buildings = { 
-			offices_building = 4 
-			social_infrastructure = 4 
-			network_infrastructure = 4 
-			industrial_complex = 6 
-			arms_factory = 3 
-			steel_mill = 2 
-			ammunition_plant = 2 
+			offices_building = 3
+			social_infrastructure = 4
+			network_infrastructure = 4
+			industrial_complex = 5
+			arms_factory = 3
+			steel_mill = 2
+			ammunition_plant = 2
 			infrastructure = 4 
 		}
 		
@@ -38,7 +38,6 @@ state = {
 		2014.5.19 = { 
 			owner = DPR 
 			controller = DPR 
-			
 			add_core_of = DPR 
 		}
 	}
