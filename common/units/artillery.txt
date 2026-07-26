@@ -163,19 +163,19 @@ sub_units = {
 		ai_priority = 0
 		active = yes
 		affects_speed = no
-		
+		is_artillery_brigade = yes
+
 		type = {
 			infantry
-			support
+			artillery
 		}
-		
-		group = support
+
+		group = combat_support
 
 		categories = {
-			category_support_battalions
 			category_army
 			category_artillery
-			category_support_artillery
+			category_line_artillery
 		}
 
 		combat_width = 0
@@ -189,11 +189,11 @@ sub_units = {
 
 		manpower = 40
 		training_time = 120
-		max_organisation = 0
+		max_organisation = 60
 		default_morale = 0.1
 		max_strength = 0.2
 		weight = 0.1
-		
+
 		supply_consumption = 0.16
 
 		# Support nerfs to combat abilities
@@ -201,7 +201,6 @@ sub_units = {
 		breakthrough = -0.5
 		soft_attack = -0.5
 		hard_attack = -0.5
-
 
 		can_be_parachuted = yes
 	}
