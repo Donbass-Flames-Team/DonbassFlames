@@ -150,105 +150,70 @@ spriteTypes = {
 	### Infantry ###
 	################
 
-	SpriteType = {
-		name = "GFX_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/AKM.dds"
-	}	
-	SpriteType = {
-		name = "GFX_infantry_weapons1_medium"
-		texturefile = "gfx/interface/technologies/AKMS.dds"
-	}	
-	SpriteType = {
-		name = "GFX_infantry_weapons2_medium"
-		texturefile = "gfx/interface/technologies/AKS74U.dds"
-	}	
-	SpriteType = {
-		name = "GFX_infantry_weapons3_medium"
-		texturefile = "gfx/interface/technologies/AK74M.dds"
-	}	
-	SpriteType = {
-		name = "GFX_infantry_weapons4_medium"
-		texturefile = "gfx/interface/technologies/AK105.dds"
-	}	
-	SpriteType = {
-		name = "GFX_infantry_weapons5_medium"
-		texturefile = "gfx/interface/technologies/AK12.dds"
-	}	
-	SpriteType = {
-		name = "GFX_infantry_weapons6_medium"
-		texturefile = "gfx/interface/technologies/AK203.dds"
-	}
-	SpriteType = {
-		name = "GFX_infantry_weapons7_medium"
-		texturefile = "gfx/interface/technologies/AK12M1.dds"
-	}
-
-
-	SpriteType = {
-		name = "GFX_UKR_infantry_equipment_0_medium"
-		texturefile = "gfx/interface/technologies/AKM.dds"
-	}	
-	SpriteType = {
-		name = "GFX_UKR_infantry_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/AKMS.dds"
-	}	
-	SpriteType = {
-		name = "GFX_UKR_infantry_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/AKS74U.dds"
-	}	
-	SpriteType = {
-		name = "GFX_UKR_infantry_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/AK74M.dds"
-	}	
-	SpriteType = {
-		name = "GFX_UKR_infantry_weapons4_medium"
-		texturefile = "gfx/interface/technologies/AK105.dds"
-	}	
-	SpriteType = {
-		name = "GFX_UKR_infantry_weapons5_medium"
-		texturefile = "gfx/interface/technologies/infantry_gun/AK12.dds"
-	}	
-	SpriteType = {
-		name = "GFX_UKR_infantry_weapons6_medium"
-		texturefile = "gfx/interface/technologies/AK203.dds"
-	}
-	SpriteType = {
-		name = "GFX_UKR_infantry_weapons7_medium"
-		texturefile = "gfx/interface/technologies/AK12M1.dds"
-	}
-
-    SpriteType = {
-		name = "GFX_RUS_infantry_equipment_0_medium"
-		texturefile = "gfx/interface/technologies/infantry_gun/AKM.dds"
-	}	
-	SpriteType = {
-		name = "GFX_RUS_infantry_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/infantry_gun/AKMS.dds"
-	}	
-	SpriteType = {
-		name = "GFX_RUS_infantry_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/infantry_gun/AK74.dds"
-	}	
-	SpriteType = {
-		name = "GFX_RUS_infantry_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/infantry_gun/AKS74U.dds"
-	}	
-	SpriteType = {
-		name = "GFX_RUS_infantry_weapons4_medium"
-		texturefile = "gfx/interface/technologies/infantry_gun/AK74M.dds"
-	}	
-	SpriteType = {
-		name = "GFX_RUS_infantry_weapons5_medium"
-		texturefile = "gfx/interface/technologies/infantry_gun/AK103.dds"
-	}	
-	SpriteType = {
-		name = "GFX_RUS_infantry_weapons6_medium"
-		texturefile = "gfx/interface/technologies/infantry_gun/AK12.dds"
-	}
-	SpriteType = {
-		name = "GFX_RUS_infantry_weapons7_medium"
-		texturefile = "gfx/interface/technologies/infantry_gun/AK12M1.dds"
-	}
+SpriteType = {
+	name = "GFX_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/gun/AKM.png"
+}
+SpriteType = {
+	name = "GFX_infantry_equipment_0_medium"
+	texturefile = "gfx/interface/technologies/gun/AKM.png"
+}
+SpriteType = {
+	name = "GFX_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/gun/AKMS.png"
+}
+SpriteType = {
+	name = "GFX_infantry_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/gun/AKMS.png"
+}
+SpriteType = {
+	name = "GFX_infantry_weapons2_medium"
+	texturefile = "gfx/interface/technologies/gun/AKS74U.png"
+}
+SpriteType = {
+	name = "GFX_infantry_equipment_2_medium"
+	texturefile = "gfx/interface/technologies/gun/AKS74U.png"
+}
+SpriteType = {
+	name = "GFX_infantry_weapons3_medium"
+	texturefile = "gfx/interface/technologies/gun/AK74M.png"
+}
+SpriteType = {
+	name = "GFX_infantry_equipment_3_medium"
+	texturefile = "gfx/interface/technologies/gun/AK74M.png"
+}
+SpriteType = {
+	name = "GFX_infantry_weapons4_medium"
+	texturefile = "gfx/interface/technologies/gun/AK105.png"
+}
+SpriteType = {
+	name = "GFX_infantry_equipment_4_medium"
+	texturefile = "gfx/interface/technologies/gun/AK105.png"
+}
+SpriteType = {
+	name = "GFX_infantry_weapons5_medium"
+	texturefile = "gfx/interface/technologies/gun/AK12.png"
+}
+SpriteType = {
+	name = "GFX_infantry_equipment_5_medium"
+	texturefile = "gfx/interface/technologies/gun/AK12.png"
+}
+SpriteType = {
+	name = "GFX_infantry_weapons6_medium"
+	texturefile = "gfx/interface/technologies/gun/AK203.png"
+}
+SpriteType = {
+	name = "GFX_infantry_equipment_6_medium"
+	texturefile = "gfx/interface/technologies/gun/AK203.png"
+}
+SpriteType = {
+	name = "GFX_infantry_weapons7_medium"
+	texturefile = "gfx/interface/technologies/gun/AK12M1.png"
+}
+SpriteType = {
+	name = "GFX_infantry_equipment_7_medium"
+	texturefile = "gfx/interface/technologies/gun/AK12M1.png"
+}
 
     #########################################################
 	### Anti-Tank Guided Missile Equipment (ATGM) ###
