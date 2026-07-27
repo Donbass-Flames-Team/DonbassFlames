@@ -4,7 +4,7 @@ equipments = {
 		is_archetype = yes
 		is_buildable = no
 
-		picture = archetype_light_tank_equipment
+		picture = archetype_apc_chassis
 		type = armor
 		group_by = archetype
 		interface_category = interface_category_armor
@@ -37,8 +37,9 @@ equipments = {
 		year = 1960
 
 		archetype = apc_chassis
+		picture = apc_1
 		active = yes
-		priority = 05
+		priority = 5
 		visual_level = 0
 	}
 
@@ -47,6 +48,7 @@ equipments = {
 
 		archetype = apc_chassis
 		parent = apc_chassis_0
+		picture = apc_2
 		priority = 10
 		visual_level = 1
 
@@ -78,6 +80,7 @@ equipments = {
 
 		archetype = apc_chassis
 		parent = apc_chassis_1
+		picture = apc_3
 		priority = 10
 		visual_level = 1
 
@@ -109,6 +112,7 @@ equipments = {
 
 		archetype = apc_chassis
 		parent = apc_chassis_2
+		picture = apc_4
 		priority = 10
 		visual_level = 1
 
@@ -140,6 +144,7 @@ equipments = {
 
 		archetype = apc_chassis
 		parent = apc_chassis_3
+		picture = apc_5
 		priority = 10
 		visual_level = 1
 

@@ -3,7 +3,7 @@
 equipments = {
 
 	infantry_equipment = {
-		year = 1970
+		year = 1960
 	
 		is_archetype = yes
 		picture = archetype_infantry_equipment		
@@ -42,19 +42,19 @@ equipments = {
 	}
 
 	infantry_equipment_0 = {
-		year = 1918
+		year = 1960
 	
 		archetype = infantry_equipment
 		active = yes
-		priority = 05
+		priority = 5
 		visual_level = 0
 	}
 
 
 
-	# Regular infantry  1936
+	# 1970 equipment
 	infantry_equipment_1 = {
-		year = 1936
+		year = 1970
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_0
@@ -74,9 +74,9 @@ equipments = {
 		build_cost_ic = 0.50
 	}
 
-	# Improved weapons  ~1939
+	# 1980 equipment
 	infantry_equipment_2 = {
-		year = 1939
+		year = 1980
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_1
@@ -100,9 +100,9 @@ equipments = {
 		
 	}
 	
-	# Advanced weapons  ~1942
+	# 1990 equipment
 	infantry_equipment_3 = {
-		year = 1942
+		year = 1990
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_2
@@ -127,7 +127,7 @@ equipments = {
 	}
 
 	infantry_equipment_4 = {
-		year = 1942
+		year = 2000
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_3
@@ -152,7 +152,7 @@ equipments = {
 	}
 
 	infantry_equipment_5 = {
-		year = 1942
+		year = 2010
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_4
@@ -177,7 +177,7 @@ equipments = {
 	}
 
 	infantry_equipment_6 = {
-		year = 1942
+		year = 2015
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_5
@@ -202,7 +202,7 @@ equipments = {
 	}
 
 	infantry_equipment_7 = {
-		year = 1942
+		year = 2020
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_6
@@ -266,15 +266,15 @@ equipments = {
 	
 		archetype = bulletproof_vests_equipment
 		active = yes
-		priority = 05
+		priority = 5
 		visual_level = 0
 	}
 
 
 
-	# Regular infantry  1936
+	# 1970 equipment
 	bulletproof_vests_equipment_1 = {
-		year = 1936
+		year = 1970
 	
 		archetype = bulletproof_vests_equipment
 		parent = bulletproof_vests_equipment_0
@@ -299,9 +299,9 @@ equipments = {
 		}
 	}
 
-	# Improved weapons  ~1939
+	# 1980 equipment
 	bulletproof_vests_equipment_2 = {
-		year = 1939
+		year = 1980
 
 		archetype = bulletproof_vests_equipment
 		parent = bulletproof_vests_equipment_1
@@ -327,9 +327,9 @@ equipments = {
 		
 	}
 	
-	# Advanced weapons  ~1942
+	# 1990 equipment
 	bulletproof_vests_equipment_3 = {
-		year = 1942
+		year = 1990
 	
 		archetype = bulletproof_vests_equipment
 		parent = bulletproof_vests_equipment_2
@@ -355,7 +355,7 @@ equipments = {
 	}
 
 	bulletproof_vests_equipment_4 = {
-		year = 1942
+		year = 2000
 
 		archetype = bulletproof_vests_equipment
 		parent = bulletproof_vests_equipment_3
@@ -381,7 +381,7 @@ equipments = {
 	}
 
 	bulletproof_vests_equipment_5 = {
-		year = 1942
+		year = 2010
 
 		archetype = bulletproof_vests_equipment
 		parent = bulletproof_vests_equipment_4
@@ -407,7 +407,7 @@ equipments = {
 	}
 
 	bulletproof_vests_equipment_6 = {
-		year = 1942
+		year = 2015
 
 		archetype = bulletproof_vests_equipment
 		parent = bulletproof_vests_equipment_5
@@ -433,7 +433,7 @@ equipments = {
 	}
 
 	bulletproof_vests_equipment_7 = {
-		year = 1942
+		year = 2020
 
 		archetype = bulletproof_vests_equipment
 		parent = bulletproof_vests_equipment_6
@@ -498,15 +498,15 @@ equipments = {
 	
 		archetype = uniform_equipment
 		active = yes
-		priority = 05
+		priority = 5
 		visual_level = 0
 	}
 
 
 
-	# Regular infantry  1936
+	# 1970 equipment
 	uniform_equipment_1 = {
-		year = 1936
+		year = 1970
 	
 		archetype = uniform_equipment
 		parent = uniform_equipment_0
@@ -531,9 +531,9 @@ equipments = {
 		}
 	}
 
-	# Improved weapons  ~1939
+	# 1980 equipment
 	uniform_equipment_2 = {
-		year = 1939
+		year = 1980
 
 		archetype = uniform_equipment
 		parent = uniform_equipment_1
@@ -559,9 +559,9 @@ equipments = {
 		
 	}
 	
-	# Advanced weapons  ~1942
+	# 1990 equipment
 	uniform_equipment_3 = {
-		year = 1942
+		year = 1990
 	
 		archetype = uniform_equipment
 		parent = uniform_equipment_2
@@ -587,7 +587,7 @@ equipments = {
 	}
 
 	uniform_equipment_4 = {
-		year = 1942
+		year = 2000
 
 		archetype = uniform_equipment
 		parent = uniform_equipment_3
@@ -613,7 +613,7 @@ equipments = {
 	}
 
 	uniform_equipment_5 = {
-		year = 1942
+		year = 2010
 
 		archetype = uniform_equipment
 		parent = uniform_equipment_4
@@ -639,7 +639,7 @@ equipments = {
 	}
 
 	uniform_equipment_6 = {
-		year = 1942
+		year = 2015
 
 		archetype = uniform_equipment
 		parent = uniform_equipment_5
@@ -665,7 +665,7 @@ equipments = {
 	}
 
 	uniform_equipment_7 = {
-		year = 1942
+		year = 2020
 
 		archetype = uniform_equipment
 		parent = uniform_equipment_6

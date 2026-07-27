@@ -131,8 +131,7 @@ technologies = {
 	apc_chassis = {
 
 		enable_equipments = {
-			apc_chassis
-
+			apc_chassis_0
 		}
 		enable_subunits = {
 			apc_unit
@@ -230,6 +229,35 @@ technologies = {
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 8 y = 0 }
+		}
+
+		path = {
+			leads_to_tech = apc_chassis_5
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+
+	apc_chassis_5 = {
+
+		enable_equipments = {
+			apc_chassis_4
+		}
+		enable_subunits = {
+
+		}
+		
+		research_cost = 2
+		start_year = 2020
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 10 y = 0 }
 		}
 		
 		categories = {

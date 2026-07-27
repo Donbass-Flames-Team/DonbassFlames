@@ -1,500 +1,675 @@
 spriteTypes = {
 
-	### generic equipment archetypes ###
-
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_infantry_equipment_medium"
-		texturefile = "gfx/interface/archetypes/archetype_infantry_equipment.dds"
+		texturefile = "gfx/interface/technologies/gun/AK74M.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_uniform_equipment_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
 	}
 
-	SpriteType = {
-		name = "GFX_archetype_uniform_equipment_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
-	}
-
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_bulletproof_vests_equipment_medium"
-		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.png"
+	}
+	spriteType = {
+	name = "GFX_archetype_apc_chassis_medium"
+	texturefile = "gfx/interface/technologies/apc_1.png"
 	}
 
-	####
+	###################
+	### Uniform tech ###
+	###################
 
-	SpriteType = {
-		name = "GFX_uniform_equipment_0_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_uniform_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_uniform_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_uniform_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_uniform_equipment_4_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_uniform_equipment_5_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_uniform_equipment_6_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_uniform_equipment_7_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
-	}
-
-	####
-
-	SpriteType = {
+	spriteType = {
 		name = "GFX_uniform_equipment_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_uniform_equipment1_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_uniform_equipment2_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_uniform_equipment3_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_uniform_equipment4_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_uniform_equipment5_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_uniform_equipment6_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_uniform_equipment7_medium"
-		texturefile = "gfx/interface/technologies/uniform_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
 	}
-	###
-	SpriteType = {
+
+	########################
+	### Uniform equipment ###
+	########################
+
+	spriteType = {
+		name = "GFX_uniform_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
+	}
+
+	spriteType = {
+		name = "GFX_uniform_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
+	}
+
+	spriteType = {
+		name = "GFX_uniform_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
+	}
+
+	spriteType = {
+		name = "GFX_uniform_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
+	}
+
+	spriteType = {
+		name = "GFX_uniform_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
+	}
+
+	spriteType = {
+		name = "GFX_uniform_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
+	}
+
+	spriteType = {
+		name = "GFX_uniform_equipment_6_medium"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
+	}
+
+	spriteType = {
+		name = "GFX_uniform_equipment_7_medium"
+		texturefile = "gfx/interface/technologies/uniform_equipment_0.png"
+	}
+
+	##################################
+	### Bulletproof vest equipment ###
+	##################################
+
+	spriteType = {
 		name = "GFX_bulletproof_vests_equipment_0_medium"
-		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bulletproof_vests_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bulletproof_vests_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bulletproof_vests_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bulletproof_vests_equipment_4_medium"
-		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bulletproof_vests_equipment_5_medium"
-		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bulletproof_vests_equipment_6_medium"
-		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bulletproof_vests_equipment_7_medium"
-		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.png"
 	}
 
-    ################
+	################
 	### Infantry ###
 	################
 
-SpriteType = {
-	name = "GFX_infantry_weapons_medium"
-	texturefile = "gfx/interface/technologies/gun/AKM.png"
-}
-SpriteType = {
-	name = "GFX_infantry_equipment_0_medium"
-	texturefile = "gfx/interface/technologies/gun/AKM.png"
-}
-SpriteType = {
-	name = "GFX_infantry_weapons1_medium"
-	texturefile = "gfx/interface/technologies/gun/AKMS.png"
-}
-SpriteType = {
-	name = "GFX_infantry_equipment_1_medium"
-	texturefile = "gfx/interface/technologies/gun/AKMS.png"
-}
-SpriteType = {
-	name = "GFX_infantry_weapons2_medium"
-	texturefile = "gfx/interface/technologies/gun/AKS74U.png"
-}
-SpriteType = {
-	name = "GFX_infantry_equipment_2_medium"
-	texturefile = "gfx/interface/technologies/gun/AKS74U.png"
-}
-SpriteType = {
-	name = "GFX_infantry_weapons3_medium"
-	texturefile = "gfx/interface/technologies/gun/AK74M.png"
-}
-SpriteType = {
-	name = "GFX_infantry_equipment_3_medium"
-	texturefile = "gfx/interface/technologies/gun/AK74M.png"
-}
-SpriteType = {
-	name = "GFX_infantry_weapons4_medium"
-	texturefile = "gfx/interface/technologies/gun/AK105.png"
-}
-SpriteType = {
-	name = "GFX_infantry_equipment_4_medium"
-	texturefile = "gfx/interface/technologies/gun/AK105.png"
-}
-SpriteType = {
-	name = "GFX_infantry_weapons5_medium"
-	texturefile = "gfx/interface/technologies/gun/AK12.png"
-}
-SpriteType = {
-	name = "GFX_infantry_equipment_5_medium"
-	texturefile = "gfx/interface/technologies/gun/AK12.png"
-}
-SpriteType = {
-	name = "GFX_infantry_weapons6_medium"
-	texturefile = "gfx/interface/technologies/gun/AK203.png"
-}
-SpriteType = {
-	name = "GFX_infantry_equipment_6_medium"
-	texturefile = "gfx/interface/technologies/gun/AK203.png"
-}
-SpriteType = {
-	name = "GFX_infantry_weapons7_medium"
-	texturefile = "gfx/interface/technologies/gun/AK12M1.png"
-}
-SpriteType = {
-	name = "GFX_infantry_equipment_7_medium"
-	texturefile = "gfx/interface/technologies/gun/AK12M1.png"
-}
+	spriteType = {
+		name = "GFX_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/gun/AKM.png"
+	}
 
-    #########################################################
+	spriteType = {
+		name = "GFX_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/gun/AKM.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/gun/AKMS.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/gun/AKMS.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/gun/AKS74U.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/gun/AKS74U.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/gun/AK74M.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/gun/AK74M.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_weapons4_medium"
+		texturefile = "gfx/interface/technologies/gun/AK105.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/gun/AK105.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_weapons5_medium"
+		texturefile = "gfx/interface/technologies/gun/AK12.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/gun/AK12.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_weapons6_medium"
+		texturefile = "gfx/interface/technologies/gun/AK203.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_equipment_6_medium"
+		texturefile = "gfx/interface/technologies/gun/AK203.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_weapons7_medium"
+		texturefile = "gfx/interface/technologies/gun/AK12M1.png"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_equipment_7_medium"
+		texturefile = "gfx/interface/technologies/gun/AK12M1.png"
+	}
+
+	#########################################################
 	### Anti-Tank Guided Missile Equipment (ATGM) ###
 	#########################################################
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_atgm_weapons_medium"
 		texturefile = "gfx/interface/technologies/atgm0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_atgm_weapons1_medium"
 		texturefile = "gfx/interface/technologies/atgm1.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_atgm_weapons2_medium"
 		texturefile = "gfx/interface/technologies/atgm4.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_atgm_weapons3_medium"
 		texturefile = "gfx/interface/technologies/atgm2.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_atgm_weapons4_medium"
 		texturefile = "gfx/interface/technologies/atgm3.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_atgm_equipment_0_medium"
 		texturefile = "gfx/interface/technologies/atgm0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_atgm_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/atgm2.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_atgm_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/atgm4.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_atgm_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/atgm3.png"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_atgm_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/atgm1.png"
 	}
 
-    #####################
-	### RPG Equipment ###
+	#####################
+	### RPG / ATGL ###
 	#####################
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_atgl_weapons_medium"
-		texturefile = "gfx/interface/technologies/rpg0.dds"
-	}	
+		texturefile = "gfx/interface/technologies/rpg1.png"
+	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_grenade_launcher_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/rpg1.png"
+	}
+
+	spriteType = {
 		name = "GFX_atgl_weapons_1_medium"
-		texturefile = "gfx/interface/technologies/rpg1.dds"
+		texturefile = "gfx/interface/technologies/rpg1.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_grenade_launcher_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/rpg1.png"
+	}
+
+	spriteType = {
 		name = "GFX_atgl_weapons_2_medium"
-		texturefile = "gfx/interface/technologies/rpg2.dds"
+		texturefile = "gfx/interface/technologies/rpg1.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_grenade_launcher_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/rpg1.png"
+	}
+
+	spriteType = {
 		name = "GFX_atgl_weapons_3_medium"
-		texturefile = "gfx/interface/technologies/rpg3.dds"
+		texturefile = "gfx/interface/technologies/rpg1.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_grenade_launcher_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/rpg1.png"
+	}
+
+	spriteType = {
 		name = "GFX_atgl_weapons_4_medium"
-		texturefile = "gfx/interface/technologies/rpg4.dds"
+		texturefile = "gfx/interface/technologies/rpg1.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_grenade_launcher_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/rpg1.png"
+	}
+
+	spriteType = {
 		name = "GFX_atgl_weapons_5_medium"
-		texturefile = "gfx/interface/technologies/rpg5.dds"
+		texturefile = "gfx/interface/technologies/rpg1.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_grenade_launcher_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/rpg1.png"
+	}
+
+	spriteType = {
 		name = "GFX_atgl_weapons_6_medium"
-		texturefile = "gfx/interface/technologies/rpg6.dds"
+		texturefile = "gfx/interface/technologies/rpg1.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_grenade_launcher_equipment_6_medium"
+		texturefile = "gfx/interface/technologies/rpg1.png"
+	}
+
+	spriteType = {
 		name = "GFX_atgl_weapons_7_medium"
-		texturefile = "gfx/interface/technologies/rpg7.dds"
+		texturefile = "gfx/interface/technologies/rpg1.png"
 	}
 
-    ######################
-	### Tank Equipment ###
+	spriteType = {
+		name = "GFX_grenade_launcher_equipment_7_medium"
+		texturefile = "gfx/interface/technologies/rpg1.png"
+	}
+
+	######################
+	### Modern tanks ###
 	######################
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_modern_tank_1_medium"
-		texturefile = "gfx/interface/technologies/generic_modern_tank1.dds"
-	}	
+		texturefile = "gfx/interface/technologies/modern_tank1.png"
+	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_modern_tank_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/modern_tank1.png"
+	}
+
+	spriteType = {
 		name = "GFX_modern_tank_2_medium"
-		texturefile = "gfx/interface/technologies/generic_modern_tank2.dds"
+		texturefile = "gfx/interface/technologies/modern_tank2.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_modern_tank_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/modern_tank2.png"
+	}
+
+	spriteType = {
 		name = "GFX_modern_tank_3_medium"
-		texturefile = "gfx/interface/technologies/generic_modern_tank3.dds"
+		texturefile = "gfx/interface/technologies/modern_tank3.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_modern_tank_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/modern_tank3.png"
+	}
+
+	spriteType = {
 		name = "GFX_modern_tank_4_medium"
-		texturefile = "gfx/interface/technologies/generic_modern_tank4.dds"
+		texturefile = "gfx/interface/technologies/modern_tank4.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_modern_tank_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/modern_tank4.png"
+	}
+
+	spriteType = {
 		name = "GFX_modern_tank_5_medium"
-		texturefile = "gfx/interface/technologies/generic_modern_tank5.dds"
+		texturefile = "gfx/interface/technologies/modern_tank5.png"
 	}
 
-    #####################
+	spriteType = {
+		name = "GFX_modern_tank_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/modern_tank5.png"
+	}
+
+	#####################
 	### IFV Equipment ###
 	#####################
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_ifv_1_medium"
-		texturefile = "gfx/interface/technologies/generic_ifv_1.png"
-	}	
+		texturefile = "gfx/interface/technologies/ifv_1.png"
+	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_infantry_fighting_vehicle_0_medium"
+		texturefile = "gfx/interface/technologies/ifv_1.png"
+	}
+
+	spriteType = {
 		name = "GFX_ifv_2_medium"
-		texturefile = "gfx/interface/technologies/generic_ifv_2.png"
+		texturefile = "gfx/interface/technologies/ifv_2.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_infantry_fighting_vehicle_1_medium"
+		texturefile = "gfx/interface/technologies/ifv_2.png"
+	}
+
+	spriteType = {
 		name = "GFX_ifv_3_medium"
-		texturefile = "gfx/interface/technologies/generic_ifv_3.png"
+		texturefile = "gfx/interface/technologies/ifv_3.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_infantry_fighting_vehicle_2_medium"
+		texturefile = "gfx/interface/technologies/ifv_3.png"
+	}
+
+	spriteType = {
 		name = "GFX_ifv_4_medium"
-		texturefile = "gfx/interface/technologies/generic_ifv_4.png"
+		texturefile = "gfx/interface/technologies/ifv_3.png"
 	}
 
-    #####################
-	### APC Equipment ###
-	#####################
-
-	SpriteType = {
-		name = "GFX_APC_1_medium"
-		texturefile = "gfx/interface/technologies/generic_apc_1.png"
-	}	
-
-	SpriteType = {
-		name = "GFX_APC_2_medium"
-		texturefile = "gfx/interface/technologies/generic_apc_2.png"
+	spriteType = {
+		name = "GFX_infantry_fighting_vehicle_3_medium"
+		texturefile = "gfx/interface/technologies/ifv_3.png"
 	}
 
-	SpriteType = {
-		name = "GFX_APC_3_medium"
-		texturefile = "gfx/interface/technologies/generic_apc_3.png"
-	}
-
-	SpriteType = {
-		name = "GFX_APC_4_medium"
-		texturefile = "gfx/interface/technologies/generic_apc_4.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_APC_5_medium"
-		texturefile = "gfx/interface/technologies/generic_apc_5.png"
-	}
-
-    ########################
+	########################
 	### Mortar Equipment ###
 	########################
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_mortar_weapons_medium"
-		texturefile = "gfx/interface/technologies/mortar1.dds"
-	}	
+		texturefile = "gfx/interface/technologies/mortar1.png"
+	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_mortar_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/mortar1.png"
+	}
+
+	spriteType = {
 		name = "GFX_mortar_weapons1_medium"
-		texturefile = "gfx/interface/technologies/mortar2.dds"
+		texturefile = "gfx/interface/technologies/mortar1.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_mortar_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/mortar1.png"
+	}
+
+	spriteType = {
 		name = "GFX_mortar_weapons2_medium"
-		texturefile = "gfx/interface/technologies/mortar3.dds"
+		texturefile = "gfx/interface/technologies/mortar1.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_mortar_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/mortar1.png"
+	}
+
+	spriteType = {
 		name = "GFX_mortar_weapons3_medium"
-		texturefile = "gfx/interface/technologies/mortar4.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_mortar_weapons4_medium"
-		texturefile = "gfx/interface/technologies/mortar5.dds"
+		texturefile = "gfx/interface/technologies/mortar1.png"
 	}
 
-    ########################
+	spriteType = {
+		name = "GFX_mortar_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/mortar1.png"
+	}
+
+	spriteType = {
+		name = "GFX_mortar_weapons4_medium"
+		texturefile = "gfx/interface/technologies/mortar1.png"
+	}
+
+	spriteType = {
+		name = "GFX_mortar_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/mortar1.png"
+	}
+
+	########################
 	### Manpad Equipment ###
 	########################
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_manpads_weapons_medium"
-		texturefile = "gfx/interface/technologies/generic_manpad_0.dds"
-	}	
+		texturefile = "gfx/interface/technologies/manpad_0.png"
+	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_manpads_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/manpad_0.png"
+	}
+
+	spriteType = {
 		name = "GFX_manpads_weapons1_medium"
-		texturefile = "gfx/interface/technologies/generic_manpad_1.dds"
+		texturefile = "gfx/interface/technologies/manpad_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_manpads_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/manpad_0.png"
+	}
+
+	spriteType = {
 		name = "GFX_manpads_weapons2_medium"
-		texturefile = "gfx/interface/technologies/generic_manpad_2.dds"
+		texturefile = "gfx/interface/technologies/manpad_0.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_manpads_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/manpad_0.png"
+	}
+
+	spriteType = {
 		name = "GFX_manpads_weapons3_medium"
-		texturefile = "gfx/interface/technologies/generic_manpad_3.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_manpads_weapons4_medium"
-		texturefile = "gfx/interface/technologies/generic_manpad_4.dds"
+		texturefile = "gfx/interface/technologies/manpad_0.png"
 	}
 
-    ########################
+	spriteType = {
+		name = "GFX_manpads_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/manpad_0.png"
+	}
+
+	spriteType = {
+		name = "GFX_manpads_weapons4_medium"
+		texturefile = "gfx/interface/technologies/manpad_0.png"
+	}
+
+	spriteType = {
+		name = "GFX_manpads_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/manpad_0.png"
+	}
+
+	########################
 	### BMD Equipment ###
 	########################
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bmd_1_medium"
 		texturefile = "gfx/interface/technologies/bmd1.png"
-	}	
+	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_airborne_combat_vehicle_0_medium"
+		texturefile = "gfx/interface/technologies/bmd1.png"
+	}
+
+	spriteType = {
 		name = "GFX_bmd_2_medium"
 		texturefile = "gfx/interface/technologies/bmd2.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_airborne_combat_vehicle_1_medium"
+		texturefile = "gfx/interface/technologies/bmd2.png"
+	}
+
+	spriteType = {
 		name = "GFX_bmd_3_medium"
 		texturefile = "gfx/interface/technologies/bmd3.png"
 	}
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_airborne_combat_vehicle_2_medium"
+		texturefile = "gfx/interface/technologies/bmd3.png"
+	}
+
+	spriteType = {
 		name = "GFX_bmd_4_medium"
 		texturefile = "gfx/interface/technologies/bmd4.png"
 	}
 
-	SpriteType = {
-		name = "GFX_airborne_combat_vehicle_1_medium"
-		texturefile = "gfx/interface/technologies/bmd1.png"
-	}	
-
-	SpriteType = {
-		name = "GFX_airborne_combat_vehicle_2_medium"
-		texturefile = "gfx/interface/technologies/bmd2.png"
-	}
-
-	SpriteType = {
+	spriteType = {
 		name = "GFX_airborne_combat_vehicle_3_medium"
-		texturefile = "gfx/interface/technologies/bmd3.png"
+		texturefile = "gfx/interface/technologies/bmd4.png"
+	}
+	spriteType = {
+		name = "GFX_APC_1_medium"
+		texturefile = "gfx/interface/technologies/apc_1.png"
 	}
 
-	SpriteType = {
-		name = "GFX_airborne_combat_vehicle_4_medium"
-		texturefile = "gfx/interface/technologies/bmd4.png"
+	spriteType = {
+		name = "GFX_APC_2_medium"
+		texturefile = "gfx/interface/technologies/apc_2.png"
+	}
+
+	spriteType = {
+		name = "GFX_APC_3_medium"
+		texturefile = "gfx/interface/technologies/apc_3.png"
+	}
+
+	spriteType = {
+		name = "GFX_APC_4_medium"
+		texturefile = "gfx/interface/technologies/apc_4.png"
+	}
+
+	spriteType = {
+		name = "GFX_APC_5_medium"
+		texturefile = "gfx/interface/technologies/apc_4.png"
+	}
+
+	spriteType = {
+		name = "GFX_apc_chassis_medium"
+		texturefile = "gfx/interface/technologies/apc_1.png"
+	}
+
+	spriteType = {
+		name = "GFX_apc_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/apc_2.png"
+	}
+
+	spriteType = {
+		name = "GFX_apc_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/apc_3.png"
+	}
+
+	spriteType = {
+		name = "GFX_apc_chassis_4_medium"
+		texturefile = "gfx/interface/technologies/apc_4.png"
+	}
+
+	spriteType = {
+		name = "GFX_apc_chassis_5_medium"
+		texturefile = "gfx/interface/technologies/apc_4.png"
 	}
 
 }
