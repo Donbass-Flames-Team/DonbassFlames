@@ -4717,7 +4717,15 @@ focus_tree = {
 		}
 		relative_position_id = UKR_anticorruption_reforms
 		available = {}
-		completion_reward = {}
+		completion_reward = {
+			add_dynamic_modifier = { modifier = UKR_anti_corruption_agencies_idea }
+			set_variable = { UKR_anti_corruption_agencies_political_power_gain = 0.05 }
+			subtract_from_variable = {
+                var = corruption_value
+                value = 2
+            }
+			custom_effect_tooltip = corruption_level_will_reduce_tt
+		}
 	}
 	focus = {
 		id = UKR_judicial_reform
@@ -4730,7 +4738,9 @@ focus_tree = {
 		}
 		relative_position_id = UKR_anticorruption_reforms
 		available = {}
-		completion_reward = {}
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = UKR_establish_vaks
@@ -4749,7 +4759,13 @@ focus_tree = {
 		}
 		relative_position_id = UKR_anticorruption_reforms
 		available = {}
-		completion_reward = {}
+		completion_reward = {
+			subtract_from_variable = {
+                var = corruption_value
+                value = 2
+            }
+			custom_effect_tooltip = corruption_level_will_reduce_tt
+		}
 	}
 	focus = {
 		id = UKR_form_sap
@@ -4762,7 +4778,13 @@ focus_tree = {
 		}
 		relative_position_id = UKR_anticorruption_reforms
 		available = {}
-		completion_reward = {}
+		completion_reward = {
+			subtract_from_variable = {
+                var = corruption_value
+                value = 2
+            }
+			custom_effect_tooltip = corruption_level_will_reduce_tt
+		}
 	}
 	focus = {
 		id = UKR_privatization_of_private_property
@@ -4775,7 +4797,13 @@ focus_tree = {
 		}
 		relative_position_id = UKR_anticorruption_reforms
 		available = {}
-		completion_reward = {}
+		completion_reward = {
+			subtract_from_variable = {
+                var = corruption_value
+                value = 2
+            }
+			custom_effect_tooltip = corruption_level_will_reduce_tt
+		}
 	}
 	focus = {
 		id = UKR_form_napk
@@ -4788,7 +4816,13 @@ focus_tree = {
 		}
 		relative_position_id = UKR_anticorruption_reforms
 		available = {}
-		completion_reward = {}
+		completion_reward = {
+			subtract_from_variable = {
+                var = corruption_value
+                value = 2
+            }
+			custom_effect_tooltip = corruption_level_will_reduce_tt
+		}
 	}
 	focus = {
 		id = UKR_electronic_declaration_of_officials
@@ -4801,7 +4835,13 @@ focus_tree = {
 		}
 		relative_position_id = UKR_anticorruption_reforms
 		available = {}
-		completion_reward = {}
+		completion_reward = {
+			subtract_from_variable = {
+                var = corruption_value
+                value = 2
+            }
+			custom_effect_tooltip = corruption_level_will_reduce_tt
+		}
 	}
 	focus = {
 		id = UKR_country_without_corruption
@@ -4820,7 +4860,12 @@ focus_tree = {
 		}
 		relative_position_id = UKR_anticorruption_reforms
 		available = {}
-		completion_reward = {}
+		completion_reward = {
+			subtract_from_variable = {
+                var = corruption_value
+                value = 2
+            }
+		}
 	}
 	focus = {
 		id = UKR_introduction_of_the_institute_of_prefects
@@ -5183,24 +5228,12 @@ focus_tree = {
 		relative_position_id = UKR_create_the_office_of_the_president
 		available = {}
 		completion_reward = {
-			add_dynamic_modifier = {
-				modifier = UKR_electronic_country_idea
-			}
-			set_variable = {
-				UKR_electronic_country_consumer_goods_factor = -0.035
-			}
-			set_variable = {
-				UKR_electronic_country_political_power_gain = 0.075
-			}
-			set_variable = {
-				UKR_electronic_country_stability_factor = 0.05
-			}
-			set_variable = {
-				UKR_electronic_country_production_speed_buildings_factor = 0.035
-			}
-			set_variable = {
-				UKR_electronic_country_research_speed_factor = 0.005
-			}
+			add_dynamic_modifier = { modifier = UKR_electronic_country_idea }
+			set_variable = { UKR_electronic_country_consumer_goods_factor = -0.035 }
+			set_variable = { UKR_electronic_country_political_power_gain = 0.075 }
+			set_variable = { UKR_electronic_country_stability_factor = 0.05 }
+			set_variable = { UKR_electronic_country_production_speed_buildings_factor = 0.035 }
+			set_variable = { UKR_electronic_country_research_speed_factor = 0.005 }
 		}
 	}
 	focus = {

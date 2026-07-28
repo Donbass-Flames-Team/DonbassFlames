@@ -47,6 +47,14 @@ UKR_ukrainian_air_forces_idea = { #NATIONAL SPIRIT
 	air_escort_efficiency  = UKR_ukrainian_air_forces_air_escort_efficiency 
 }
 
+UKR_anti_corruption_agencies_idea = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_anti_corruption_agencies
+	political_power_gain  = UKR_anti_corruption_agencies_political_power_gain
+
+}
+
 
 UKR_oligarchs_idea = { #NATIONAL SPIRIT
 	enable = { always = yes }

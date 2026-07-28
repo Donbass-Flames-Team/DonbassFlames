@@ -20,6 +20,9 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	set_variable = { individual_enterprises = 1350000 } 
 	set_variable = { consumer_activity = 58 } 
 
+	set_variable = { corruption_value = 78 } 
+	set_variable = { criminality_value = 38 } 
+
 
 	country_event = {
 		id = ukraine.101
