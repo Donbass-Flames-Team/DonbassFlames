@@ -4674,7 +4674,7 @@ focus_tree = {
 		id = UKR_anticorruption_reforms
 		icon = GFX_goal_no_focus_UKR
 		cost = 4
-		x = 20
+		x = 19
 		y = 1
 		prerequisite = {
 			focus = UKR_poroshenko_victory
@@ -4720,11 +4720,14 @@ focus_tree = {
 		completion_reward = {
 			add_dynamic_modifier = { modifier = UKR_anti_corruption_agencies_idea }
 			set_variable = { UKR_anti_corruption_agencies_political_power_gain = 0.05 }
+			set_variable = { UKR_anti_corruption_agencies_monthly_decrease = 0.1 }
+			set_variable = { anti_corruption_monthly_decrease = 0.1 }
 			subtract_from_variable = {
                 var = corruption_value
                 value = 2
             }
 			custom_effect_tooltip = corruption_level_will_reduce_tt
+
 		}
 	}
 	focus = {
@@ -4764,6 +4767,8 @@ focus_tree = {
                 var = corruption_value
                 value = 2
             }
+			set_variable = { UKR_anti_corruption_agencies_monthly_decrease = 0.05 }
+			set_variable = { anti_corruption_monthly_decrease = 0.05 }
 			custom_effect_tooltip = corruption_level_will_reduce_tt
 		}
 	}
@@ -4783,6 +4788,8 @@ focus_tree = {
                 var = corruption_value
                 value = 2
             }
+			set_variable = { UKR_anti_corruption_agencies_monthly_decrease = 0.05 }
+			set_variable = { anti_corruption_monthly_decrease = 0.05 }
 			custom_effect_tooltip = corruption_level_will_reduce_tt
 		}
 	}
@@ -4821,6 +4828,8 @@ focus_tree = {
                 var = corruption_value
                 value = 2
             }
+			set_variable = { UKR_anti_corruption_agencies_monthly_decrease = 0.05 }
+			set_variable = { anti_corruption_monthly_decrease = 0.05 }
 			custom_effect_tooltip = corruption_level_will_reduce_tt
 		}
 	}
@@ -4840,6 +4849,8 @@ focus_tree = {
                 var = corruption_value
                 value = 2
             }
+			set_variable = { UKR_anti_corruption_agencies_monthly_decrease = 0.1 }
+			set_variable = { anti_corruption_monthly_decrease = 0.1 }
 			custom_effect_tooltip = corruption_level_will_reduce_tt
 		}
 	}
@@ -4859,7 +4870,13 @@ focus_tree = {
 			focus = UKR_establish_vaks
 		}
 		relative_position_id = UKR_anticorruption_reforms
-		available = {}
+		available = {
+			check_variable = {
+                var = corruption_value
+                value = 30
+                compare = less_than_or_equals
+            }
+		}
 		completion_reward = {
 			subtract_from_variable = {
                 var = corruption_value
@@ -4964,7 +4981,7 @@ focus_tree = {
 		id = UKR_deoligarhization
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 24
+		x = 23
 		y = 1
 		prerequisite = {
 			focus = UKR_poroshenko_victory
@@ -5036,7 +5053,7 @@ focus_tree = {
 		id = UKR_decomunization
 		icon = GFX_goal_no_focus_UKR
 		cost = 10
-		x = 29
+		x = 28
 		y = 1
 		prerequisite = {
 			focus = UKR_poroshenko_victory
@@ -5221,9 +5238,9 @@ focus_tree = {
 		icon = GFX_goal_no_focus_UKR
 		cost = 2
 		x = -6
-		y = 2
+		y = 3
 		prerequisite = {
-			focus = UKR_call_early_parliamentary_elections
+			focus = UKR_start_large_construction
 		}
 		relative_position_id = UKR_create_the_office_of_the_president
 		available = {}
@@ -5277,9 +5294,9 @@ focus_tree = {
 		icon = GFX_goal_no_focus_UKR
 		cost = 2
 		x = 1
-		y = 2
+		y = 3
 		prerequisite = {
-			focus = UKR_call_early_parliamentary_elections
+			focus = UKR_start_large_construction
 		}
 		relative_position_id = UKR_create_the_office_of_the_president
 		available = {
@@ -5334,9 +5351,9 @@ focus_tree = {
 		icon = GFX_goal_no_focus_UKR
 		cost = 2
 		x = 0
-		y = 1
+		y = 2
 		prerequisite = {
-			focus = UKR_call_early_parliamentary_elections
+			focus = UKR_start_large_construction
 		}
 		relative_position_id = UKR_call_early_parliamentary_elections
 		available = {
@@ -5353,9 +5370,9 @@ focus_tree = {
 		icon = GFX_goal_no_focus_UKR
 		cost = 2
 		x = -3
-		y = 2
+		y = 3
 		prerequisite = {
-			focus = UKR_call_early_parliamentary_elections
+			focus = UKR_start_large_construction
 		}
 		relative_position_id = UKR_create_the_office_of_the_president
 		available = {
@@ -5394,19 +5411,11 @@ focus_tree = {
 		icon = GFX_goal_no_focus_UKR
 		cost = 2
 		x = -1
-		y = 4
+		y = 2
 		prerequisite = {
-			focus = UKR_business_recovery_program
+			focus = UKR_call_early_parliamentary_elections
 		}
-		prerequisite = {
-			focus = UKR_question_of_legalization_of_casino
-		}
-		prerequisite = {
-			focus = UKR_indigenous_peoples_act
-		}
-		prerequisite = {
-			focus = UKR_create_russian_channels
-		}
+
 		relative_position_id = UKR_create_the_office_of_the_president
 		available = {
 			NOT = {
@@ -5419,11 +5428,23 @@ focus_tree = {
 		id = UKR_anti_oligarchy_law
 		icon = GFX_goal_no_focus_UKR
 		cost = 2
-		x = -1
+		x = -2
 		y = 5
 		prerequisite = {
-			focus = UKR_start_large_construction
+			focus = UKR_business_recovery_program
 		}
+		prerequisite = {
+			focus = UKR_question_of_legalization_of_casino
+		}
+		prerequisite = {
+			focus = UKR_indigenous_peoples_act
+		}	
+		prerequisite = {
+			focus = UKR_create_russian_channels
+		}
+		prerequisite = {
+			focus = UKR_electronic_education
+		}					
 		relative_position_id = UKR_create_the_office_of_the_president
 		available = {
 			NOT = {
