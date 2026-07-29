@@ -394,7 +394,6 @@ on_actions = {
 						LPR = { controls_province = 11595 }
 						SKR = { controls_province = 11595 }
 						SLR = { controls_province = 11595 }
-
 					}
 				}
 				set_global_flag = Chervonopartizansk_is_under_LPR
@@ -405,8 +404,8 @@ on_actions = {
 					}
 				}
 				if = {
-					limit = { has_global_flag = Chervonopartizansk_is_under_LPR }
-					clr_global_flag = Chervonopartizansk_is_under_LPR
+					limit = { has_global_flag = Chervonopartizansk_is_under_UKR }
+					clr_global_flag = Chervonopartizansk_is_under_UKR
 					UKR = {
 						subtract_from_variable = {
 							value = 1

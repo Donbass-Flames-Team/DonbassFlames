@@ -705,12 +705,12 @@ defined_text = {
 		trigger = {
 			has_country_flag = UKR_elections_results_poroshenko_winner_gui
 		}
-		localization_key = "GFX_portrait_petro_poroshenko"
+		localization_key = "election_results_support_poroshenko_value"
 	}
 	text = { 
 		trigger = {
 			has_country_flag = UKR_elections_results_timoshenko_winner_gui
 		}
-		localization_key = "GFX_portrait_yulia_timoshenko"
+		localization_key = "election_results_support_timoshenko_value"
 	}
 }

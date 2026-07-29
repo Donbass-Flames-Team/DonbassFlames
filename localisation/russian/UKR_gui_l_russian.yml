@@ -217,7 +217,6 @@
 
  
  UKR_elections_results_text:0 "Результаты выборов"
- UKR_winner_results_text:0 "[get_winner_on_elections_popularity]"
 
  Minsk_negotations_progress_text:0 "Прогресс переговоров:"
  Minsk_negotations_current_negotiations_text:0 "Текущие переговоры: [minsk_current_negotations]"
@@ -226,7 +225,8 @@
  minsk_2_is_signed:0 "§YМинск 2§!"
  
  UKR_local_population_text: "Статистика региона:\n\nПоддержка Порошенко: §Y[?Zhytomyrska_oblast_poroshenko_support_value]§!\nПоддержка Тимошенко: §Y[?Zhytomyrska_oblast_timoshenko_support_value]§!\nПоддержка Ляшко: §Y[?Zhytomyrska_oblast_lyashko_support_value]§!\nПоддержка Добкина: §Y[?Zhytomyrska_oblast_dobkin_support_value]§!\nПоддержка Дарта Алексеевича: §Y[?Zhytomyrska_oblast_darth_alekseevich_vader_support_value]§!"
-
-
+ UKR_winner_results_text:0 "На выборах победил §Y[UKR.GetLeader]§! с результатом [get_winner_on_elections_popularity]"
+ election_results_support_poroshenko_value:0 "§Y[?Poroshenko_percentage_result_on_elections]§!%"
+ election_results_support_timoshenko_value:0 "§Y[?general_population_support_timoshenko_value]§!%"
 
 
