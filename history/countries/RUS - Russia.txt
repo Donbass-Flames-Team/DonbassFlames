@@ -11,6 +11,9 @@ set_variable = { small_businesses = 356000 }
 set_variable = { individual_enterprises = 1350000 } 
 set_variable = { consumer_activity = 58 } 
 
+set_variable = { corruption_value = 60 } 
+set_variable = { criminality_value = 20 }
+
 
 set_country_flag = open_start_gui
 add_to_variable = { JAM_ammo_stockpile = 1000 }

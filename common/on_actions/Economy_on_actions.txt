@@ -67,9 +67,11 @@ on_actions = {
 				}
 			}
 		}
+		# Corruption level update
 		effect = {
-			set_variable = {
-
+			subtract_from_variable = {
+				var = corruption_value
+                value = anti_corruption_monthly_decrease
 			}
 		}
 	}
