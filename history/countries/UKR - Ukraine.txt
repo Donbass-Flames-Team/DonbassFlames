@@ -89,6 +89,9 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	set_variable = { UKR_Oligarchs_consumer_goods_factor = 0.20 }
 	set_variable = { UKR_Oligarchs_production_speed_buildings_factor = -0.075 }
 
+	set_variable = { UKR_corruption_level_monthly_increase_by_oligarchs = 0.65 }
+	add_to_variable = { corruption_level_monthly_increase = 0.65 }
+
 	add_dynamic_modifier = { modifier = UKR_ukrainian_economy_idea }
 	set_variable = { UKR_ukrainian_economy_consumer_goods_factor = 0.15 }
 	set_variable = { UKR_ukrainian_economy_industrial_capacity_factory = -0.15 }	

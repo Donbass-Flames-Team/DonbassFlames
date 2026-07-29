@@ -4314,7 +4314,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_snap_presidential_elections
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_preparation_for_elections
 		cost = 1
 		x = 44
 		y = 0
@@ -4886,7 +4886,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_introduction_of_the_institute_of_prefects
-		icon = GFX_focus_UKR_start_of_ato
+		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 3
@@ -6185,6 +6185,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.025
+			news_event = {
+				id = news_events.51
+				hours = 2
+			}
 		}
 	}
 	focus = {
