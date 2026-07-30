@@ -175,7 +175,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_restoring_the_image_in_the_west
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_restoring_the_image_in_the_west
 		cost = 1
 		x = -1
 		y = 2
@@ -227,7 +227,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_returning_to_the_eurointegration
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_sign_an_association_agreement_with_the_eu
 		cost = 1
 		x = -1
 		y = 4
@@ -355,7 +355,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_deligitization_of_opposition
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_deligitization_of_opposition
 		cost = 1
 		x = 1
 		y = 1
@@ -554,7 +554,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_transition_to_forceful_measures
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_violent_suppression_of_protests
 		cost = 0.3
 		x = 0
 		y = 3
@@ -689,7 +689,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_stability = 0.025
+			custom_effect_tooltip = UKR_black_company_will_be_deployed
 		}
 	}
 	focus = {
@@ -724,7 +724,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_emergency_measures
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_emergency_measures
 		cost = 0.8
 		x = 0
 		y = 1
@@ -791,6 +791,7 @@ focus_tree = {
 					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
+			always = no
 		}
 		completion_reward = {
 			add_days_mission_timeout = {
@@ -830,7 +831,7 @@ focus_tree = {
 	focus = {
 		id = UKR_escalation_of_confrontation
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.5
 		x = -1
 		y = 4
 		prerequisite = {
@@ -854,7 +855,7 @@ focus_tree = {
 	focus = {
 		id = UKR_extreme_measures_of_suppression
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 0.5
 		x = -1
 		y = 5
 		prerequisite = {
@@ -875,8 +876,8 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_use_of_special_means
-		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		icon = GFX_focus_UKR_use_of_special_means
+		cost = 0.5
 		x = -1
 		y = 6
 		prerequisite = {
@@ -963,8 +964,13 @@ focus_tree = {
 					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
+			has_completed_focus = UKR_transition_to_forceful_measures
 		}
 		completion_reward = {
+			country_event = {
+				id = ukraine.154
+				hours = 2
+			}
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
 				days = 5
@@ -992,12 +998,9 @@ focus_tree = {
 					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
+			always = no
 		}
 		completion_reward = {
-			country_event = {
-				id = ukraine.44
-				hours = 6
-			}
 			add_days_mission_timeout = {
 				mission = UKR_yanukovich_overthrow
 				days = 4
@@ -1007,7 +1010,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_return_to_the_2004_constitution
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_return_to_the_2004_constitution
 		cost = 1
 		x = 2
 		y = 4
@@ -1023,6 +1026,7 @@ focus_tree = {
 				}
 			}
 			has_completed_focus = UKR_declaration_of_a_political_thaw
+			always = no
 		}
 		completion_reward = {
 			add_days_mission_timeout = {
@@ -1167,7 +1171,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_sign_an_association_agreement_with_the_eu
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_sign_an_association_agreement_with_the_eu
 		cost = 1
 		x = 0
 		y = 3
@@ -1223,6 +1227,7 @@ focus_tree = {
 					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
+			always = no
 		}
 		completion_reward = {
 			add_days_mission_timeout = {
@@ -2555,6 +2560,11 @@ focus_tree = {
 				UKR_AFU_army_morale_factor = 0.15
 			}
 			custom_effect_tooltip = UKR_forced_demobilization_tt
+			subtract_from_variable = {
+                var = corruption_value
+                value = 2
+            }
+			custom_effect_tooltip = corruption_level_will_reduce_tt
 		}
 	}
 	focus = {

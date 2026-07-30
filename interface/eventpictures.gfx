@@ -53,10 +53,12 @@ spriteType = {
 
 
 
-spriteType = {
-name = "GFX_news_event_yanukovich_pic"
-texturefile = "gfx/event_pictures/news_events/Yanukovich.png"
-}
+
+
+    spriteType = {
+        name = "GFX_news_event_yanukovich_pic"
+        texturefile = "gfx/event_pictures/news_events/Yanukovich.png"
+    }
 
 spriteType = {
 name = "GFX_news_event_annexation_crym_pic"
@@ -333,6 +335,31 @@ texturefile = "gfx/event_pictures/Report_event_coronavirus_picture.png"
         name = "GFX_Report_event_arest_morguna_picture"
         texturefile = "gfx/event_pictures/Report_event_arest_morguna_picture.png"
     }
+
+    spriteType = {
+        name = "GFX_Report_event_seizures_of_government_buildings_in_western_ukraine"
+        texturefile = "gfx/event_pictures/Report_event_seizures_of_government_buildings_in_western_ukraine.png"
+    }
+
+    spriteType = {
+        name = "GFX_Report_event_negotations_yanukovich_with_opposition"
+        texturefile = "gfx/event_pictures/Report_event_negotations_yanukovich_with_opposition.png"
+    }
+
+    spriteType = {
+        name = "GFX_Report_event_negotations_yanukovich_with_opposition_2"
+        texturefile = "gfx/event_pictures/Report_event_negotations_yanukovich_with_opposition_2.png"
+    }
+
+    spriteType = {
+        name = "GFX_Report_event_kazaks_donbass"
+        texturefile = "gfx/event_pictures/Report_event_kazaks_donbass.png"
+    }    
+    
+    spriteType = {
+        name = "GFX_Report_event_ato_tank_picture"
+        texturefile = "gfx/event_pictures/Report_event_ato_tank_picture.png"
+    }    
 
 spriteType = {
 name = "GFX_Report_event_poroshenko_inauguration_picture"

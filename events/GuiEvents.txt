@@ -237,7 +237,6 @@ country_event = {
 	hidden = yes
 	
 	option = {
-		set_global_flag = UKR_elections_results_2014
 		name = ukraine_elections_gui.2.a
 		if = {
 			limit = {

@@ -972,6 +972,7 @@ country_event = {
 				id = news_events.9
 				hours = 12
 			}
+			set_global_flag = UKR_elections_results_2014
 		}
 	}
 }
@@ -1867,6 +1868,7 @@ country_event = {
 				var = UKR_legitimacy_of_central_power_value
 				value = 2
 			}
+			complete_national_focus = UKR_a_step_towards_the_protesters
 		}
 	}
 }
@@ -2254,10 +2256,18 @@ country_event = {
 	
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			country_event = {
+			    id = ukraine.156
+			    days = 1
+		    }
+		}		
+	}
+
 	option = {
 		name = ukraine.58.a
-		add_political_power = -10	
-		complete_national_focus = UKR_ato_in_kiyv			
+		add_political_power = -10			
 	}
 }
 
@@ -2271,9 +2281,16 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		country_event = {
-			id = ukraine.60
-			hours = 3
+		hidden_effect = {
+			if = {
+				limit = {
+					has_completed_focus = UKR_black_company
+				}
+				country_event = {
+			        id = ukraine.60
+			        days = 1
+		        }
+			}
 		}
 	}
 
@@ -5421,7 +5438,7 @@ country_event = {
 	id = ukraine.150
 	title = ukraine.150.t
 	desc = ukraine.150.d
-	picture = GFX_Report_event_2may_picture
+	picture = GFX_Report_event_kazaks_donbass
 
 	is_triggered_only = yes
 
@@ -5475,7 +5492,7 @@ country_event = {
 	id = ukraine.152
 	title = ukraine.152.t
 	desc = ukraine.152.d
-	picture = GFX_Report_event_battalion_tornado_picture
+	picture = GFX_Report_event_ato_tank_picture
 
 	is_triggered_only = yes
 
@@ -5514,22 +5531,78 @@ country_event = {
 	}
 }
 
-#
+# Попытка перемирия
 country_event = {
 	id = ukraine.154
 	title = ukraine.154.t
 	desc = ukraine.154.d
-	picture = GFX_Report_event_maidan_selfdefense_squads_picture
+	picture = GFX_Report_event_negotations_yanukovich_with_opposition
 
 	is_triggered_only = yes
 
 	immediate = {
-		
+		hidden_effect = {
+			country_event = {
+				id = ukraine.155
+				days = 2
+			}
+		}
 	}
 
 	option = {
 		name = ukraine.154.a
 	   
+	}
+}
+
+# Предложение постов в правительстве
+country_event = {
+	id = ukraine.155
+	title = ukraine.155.t
+	desc = ukraine.155.d
+	picture = GFX_Report_event_negotations_yanukovich_with_opposition_2
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.44
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = ukraine.155.a
+	   
+	}
+}
+
+# Захваты гос учреждений на западе украины
+country_event = {
+	id = ukraine.156
+	title = ukraine.156.t
+	desc = ukraine.156.d
+	picture = GFX_Report_event_seizures_of_government_buildings_in_western_ukraine
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			complete_national_focus = UKR_ato_in_kiyv
+		}
+	}
+
+	option = {
+		name = ukraine.156.a
+	   	custom_effect_tooltip = UKR_minus_legitimacy_of_the_power_text_tt
+		hidden_effect = {
+			subtract_from_variable = {
+				var = UKR_legitimacy_of_central_power_value
+				value = 5
+			}
+		}
 	}
 }
 

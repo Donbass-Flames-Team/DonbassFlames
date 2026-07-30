@@ -55,6 +55,26 @@ guiTypes = {
 			scale = 1
 		}
 
+		containerWindowType = {
+			name = "parliament_main_container"
+			position = { x = 390 y = 325 }
+			size = { width = 490 height = 200 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
+
+			gridboxtype = {
+				name = "parliament_main_grid"
+				position = { x = -310 y = 25 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 15 height = 15 }
+				max_slots_vertical = 10
+				add_horizontal = no
+			}
+		}
+
 	    iconType = {
 		    name = "UKR_siezd_icon"
 		    spriteType = "GFX_ukraine_siezd_icon"
@@ -73,20 +93,20 @@ guiTypes = {
 		iconType = {
 		    name = "UKR_speaker_parlamient_frame"
 			spriteType = "GFX_startgui_leader_frame"
-			position = { x = 11025 y = 165 }
-			scale = 0.79
+			position = { x = 250 y = 165 }
+			scale = 0.49
 		}
 
 		iconType = {
 		    name = "UKR_speaker_parlamient_portrait"
 			spriteType = "GFX_closebutton"
-			position = { x = 10049 y = 190 }
-			scale = 1.25
+			position = { x = 265 y = 180 }
+			scale = 0.79
 		}
 
 	    instantTextBoxType = {
 		    name = "UKR_speaker_name"
-		    position = { x = 10070 y = 470 }
+		    position = { x = 247 y = 355 }
 		    font = "hoi_24header"
 		    text = "[ukr_parlamient_speaker_name]"
 	    }
@@ -282,6 +302,33 @@ guiTypes = {
         }
 
 	}
+
+	containerWindowType = {
+        name = "parliament_member_entry"
+        position = { x = 0 y = 0 }
+		size = { width = 200 height = 18 }
+
+		iconType = {
+			name = "parliament_member_icon"
+			spriteType = "GFX_separatismgui_closebutton_nw"
+			position = { x = -20 y = 0 }
+		}
+		buttonType = {
+			name = "parliament_modify_button"
+			spriteType = "GFX_separatismgui_closebutton_nw"
+			position = { x = -20 y = 0 }
+			pdx_tooltip = "parliament_modify_button_tt"
+		}
+		instantTextboxType = {
+			name = "parliament_member_text"
+			position = { x = 0 y = 0 }
+			font = "hoi_16mbs"
+			maxWidth = 200
+			maxHeight = 16
+			format = left
+			text = "parliament_member_text"
+		}
+    }
 
 	containerWindowType = {
 		name = "UKR_menu_of_laws_window"
