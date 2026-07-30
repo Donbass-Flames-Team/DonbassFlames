@@ -26,13 +26,18 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			bbm_chassis = 25
+			bbm_chassis = 15
+			infantry_equipment = 80
+			uniform_equipment = 80
+			bulletproof_vests_equipment = 80
+			support_equipment = 15
+			grenade_launcher_equipment = 10
 		}
-		manpower = 50
-		max_organisation = 15
+		manpower = 80
+		max_organisation = 60
 		default_morale = 0.3
 		training_time = 180
-		max_strength = 2
+		max_strength = 40
 		weight = 1
 		supply_consumption = 0.22
 

@@ -33,7 +33,7 @@ sub_units = {
 			uniform_equipment = 8
 		}
 		manpower = 8
-		max_organisation = 0
+		max_organisation = 20
 		default_morale = 0.1
 		max_strength = 0.2
 		training_time = 120
@@ -79,7 +79,7 @@ sub_units = {
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
-		manpower = 15
+		manpower = 40
 		training_time = 120
 
 		#Misc Abilities
@@ -107,7 +107,7 @@ sub_units = {
 
 		need = {
 			bulletproof_vests_equipment = 15
-			uniform_equipment = 15
+			uniform_equipment = 40
 			mortar_equipment = 8
 			infantry_equipment = 5
 			bbm_chassis = 2
@@ -144,12 +144,12 @@ sub_units = {
 		need = {
 			infantry_equipment = 8
 			manpads_equipment = 4
-			bulletproof_vests_equipment = 8
-			uniform_equipment = 8
+			bulletproof_vests_equipment = 12
+			uniform_equipment = 12
 			bbm_chassis = 1
 		}
-		manpower = 8
-		max_organisation = 0
+		manpower = 12
+		max_organisation = 20
 		default_morale = 0.1
 		max_strength = 0.2
 		training_time = 120
@@ -189,7 +189,7 @@ sub_units = {
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
-		manpower = 35
+		manpower = 30
 		training_time = 120
 
 		#Misc Abilities
@@ -198,8 +198,8 @@ sub_units = {
 		can_be_parachuted = yes
 
 		# Important Ability
-		casualty_trickleback = 0.20
-		experience_loss_factor = -0.15
+		casualty_trickleback = 0.30
+		experience_loss_factor = -0.25
 
 		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
 		
@@ -217,6 +217,8 @@ sub_units = {
 			support_equipment = 30
 			bbm_chassis = 10
 			infantry_equipment = 5
+			bulletproof_vests_equipment = 30
+			bulletproof_vests_equipment = 10
 		}
 
 		same_support_type = field_hospital
@@ -249,15 +251,15 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			bulletproof_vests_equipment = 15
-			uniform_equipment = 15
-			infantry_equipment = 5
-			atgm_equipment = 5
+			bulletproof_vests_equipment = 24
+			uniform_equipment = 24
+			infantry_equipment = 8
+			atgm_equipment = 8
 			bbm_chassis = 3
 		}
 
-		manpower = 15
-		max_organisation = 0
+		manpower = 24
+		max_organisation = 20
 		default_morale = 0.1
 		max_strength = 0.2
 		hard_attack = 12
@@ -295,14 +297,14 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			bulletproof_vests_equipment = 8
-			uniform_equipment = 8
+			bulletproof_vests_equipment = 6
+			uniform_equipment = 6
 			infantry_equipment = 3
 			atgm_equipment = 2
 		}
 
 		manpower = 6
-		max_organisation = 0
+		max_organisation = 20
 		default_morale = 0.1
 		max_strength = 0.2
 		hard_attack = 12
@@ -344,7 +346,7 @@ sub_units = {
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
-		manpower = 45
+		manpower = 40
 		training_time = 120
 
 		#Misc Abilities
@@ -370,8 +372,8 @@ sub_units = {
 		}
 
 		need = {
-			uniform_equipment = 45
-			support_equipment = 30
+			uniform_equipment = 40
+			support_equipment = 20
 			bulletproof_vests_equipment = 10
 			infantry_equipment = 10
 			bbm_chassis = 5
@@ -533,7 +535,7 @@ sub_units = {
 		max_strength = 1
 		max_organisation = 20
 		default_morale = 0.3
-		manpower = 25
+		manpower = 50
 		training_time = 120
 
 		#Misc Abilities
@@ -552,8 +554,8 @@ sub_units = {
 		}
 
 		need = {
-			support_equipment = 25
-			uniform_equipment = 25
+			support_equipment = 20
+			uniform_equipment = 40
 			bulletproof_vests_equipment = 8
 			motorized_equipment = 5
 		}
@@ -589,7 +591,7 @@ sub_units = {
 		max_strength = 1
 		max_organisation = 10	
 		default_morale = 0.3
-		manpower = 20
+		manpower = 50
 		training_time = 120
 
 		#Misc Abilities
@@ -608,8 +610,9 @@ sub_units = {
 		}
 
 		need = {
-			support_equipment = 20
-			bbm_chassis  = 10
+			support_equipment = 10
+			bbm_chassis  = 20
+			uniform_equipment = 50
 		}
 	}
 }
