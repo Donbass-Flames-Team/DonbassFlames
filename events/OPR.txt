@@ -1,0 +1,35 @@
+﻿###########################
+# NDR Events
+###########################
+
+add_namespace = OPR
+
+# Восстание националистов
+country_event = {
+	id = OPR.1
+	title = OPR.1.t
+	desc = OPR.1.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			660 = { transfer_state_to = OPS }
+		    OPS = {
+			    add_state_core = 660
+			    add_state_core = 572
+			    declare_war_on = {
+				    target = OPR
+				    type = annex_everything
+			    }
+				load_oob = OPS_self_defense_units
+		    }
+		}
+	}
+	
+	option = {
+		name = OPR.1.a		
+	}
+}
+

@@ -504,24 +504,32 @@ country_event = {
 
 	immediate = { 
 		hidden_effect = {
-			572 = { transfer_state_to = OPR }
-			OPR = {
-				add_state_core = 572
-				add_state_core = 567
-				add_state_core = 549
-				add_state_core = 499
-				add_state_core = 477
-			}
-			news_event = {
-				id = news_events.5
-				hours = 6
-			}
 			if = {
 				limit = {
 					UKR = {
 						has_country_flag = UKR_separatist_cells_in_odessa
 					}
 				}
+			    572 = { transfer_state_to = OPR }
+			    OPR = {
+				    add_state_core = 572
+				    add_state_core = 567
+				    add_state_core = 549
+				    add_state_core = 499
+				    add_state_core = 477
+					declare_war_on = {
+					    target = UKR
+					    type = annex_everything
+				    }
+					country_event = {
+						id = OPR.1
+						days = 2
+					}
+			    }
+			    news_event = {
+				    id = news_events.5
+				    hours = 6
+			    }
 				567 = { transfer_state_to = OPR }
 			 	549 = { transfer_state_to = OPR }
 				499 = { transfer_state_to = OPR }
@@ -542,12 +550,6 @@ country_event = {
 						amount = 2500 
 					}
 					load_oob = OPR_Uprising_Militia
-				}
-			}
-			OPR = {
-				declare_war_on = {
-					target = UKR
-					type = annex_everything
 				}
 			}
 		}
