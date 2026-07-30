@@ -56,24 +56,44 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name = "parliament_main_container"
-			position = { x = 390 y = 325 }
-			size = { width = 490 height = 200 }
+			name = "parliament_semicircle_main_container"
+			position = { x = 320 y = 255 }
+			size = { width = 590 height = 295 }
+			scale = 1
 
-			background = {
-				name = "Background"
-				quadTextureSprite = "GFX_tiled_window_thin_border2"
-			}
+
 
 			gridboxtype = {
-				name = "parliament_main_grid"
-				position = { x = -310 y = 25 }
+				name = "parliament_semicircle_main_grid"
+				position = { x = 35 y = 25 }
 				size = { width = 100%% height = 100%% }
-				slotsize = { width = 15 height = 15 }
-				max_slots_vertical = 10
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
 				add_horizontal = no
 			}
 		}
+
+
+	#containerWindowType = {
+    #   name = "parliament_member_entry"
+    #   position = { x = 315 y = 422 }
+	#	size = { width = 200 height = 18 }
+
+	#	iconType = {
+	#		name = "parliament_member_icon"
+	#		spriteType = "GFX_UKR_parlamient_parties" 
+	#		position = { x = -120 y = 0 }
+	#	}
+	#	instantTextboxType = {
+	#		name = "parliament_member_text"
+	#		position = { x = 0 y = 0 }
+	#		font = "hoi_16mbs"
+	#		maxWidth = 200
+	#		maxHeight = 16
+	#		format = left
+	#		text = "parliament_member_text"
+	#	}
+    #}
 
 	    iconType = {
 		    name = "UKR_siezd_icon"
@@ -109,72 +129,6 @@ guiTypes = {
 		    position = { x = 247 y = 355 }
 		    font = "hoi_24header"
 		    text = "[ukr_parlamient_speaker_name]"
-	    }
-
-	    instantTextBoxType = {
-		    name = "UKR_party_1"
-		    position = { x = 5550 y = 160 }
-		    font = "hoi_16mbs"
-		    text = "[ukr_party_1]"
-	    }
-	    instantTextBoxType = {
-		    name = "UKR_party_2"
-		    position = { x =  5550 y = 180 }
-		    font = "hoi_16mbs"
-		    text = "[ukr_party_2]"
-	    }
-	    instantTextBoxType = {
-		    name = "UKR_party_3"
-		    position = { x = 5550 y = 200 }
-		    font = "hoi_16mbs"
-		    text = "[ukr_party_3]"
-	    }
-	    instantTextBoxType = {
-		    name = "UKR_party_4"
-		    position = { x = 5550 y = 220 }
-		    font = "hoi_16mbs"
-		    text = "[ukr_party_4]"
-	    }
-	    instantTextBoxType = {
-		    name = "UKR_party_5"
-		    position = { x = 5550 y = 240 }
-		    font = "hoi_16mbs"
-		    text = "[ukr_party_5]"
-	   }
-
-	    instantTextBoxType = {
-		    name = "UKR_party_6"
-		    position = { x = 5550 y = 260  }
-		    font = "hoi_16mbs"
-		    text = "[ukr_party_6]"
-	    }
-
-	    instantTextBoxType = {
-		    name = "UKR_party_7"
-		    position = { x = 5550 y = 280  }
-		    font = "hoi_16mbs"
-		    text = "[ukr_party_7]"
-	    }
-
-	    instantTextBoxType = {
-		    name = "UKR_party_8"
-		    position = { x = 5550 y = 300 }
-		    font = "hoi_16mbs"
-		    text = "[ukr_party_8]"
-	    }
-
-	    instantTextBoxType = {
-		    name = "UKR_party_9"
-		    position = { x = 5550 y = 320 }
-		    font = "hoi_16mbs"
-		    text = "[ukr_party_9]"
-	    }
-
-	    instantTextBoxType = {
-		    name = "UKR_party_10"
-		    position = { x = 5550 y = 340 }
-		    font = "hoi_16mbs"
-		    text = "[ukr_party_10]"
 	    }
 
 		buttonType = {
@@ -304,29 +258,14 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-        name = "parliament_member_entry"
+        name = "parliament_semicircle_main_entry"
         position = { x = 0 y = 0 }
-		size = { width = 200 height = 18 }
 
 		iconType = {
-			name = "parliament_member_icon"
-			spriteType = "GFX_separatismgui_closebutton_nw"
-			position = { x = -20 y = 0 }
-		}
-		buttonType = {
-			name = "parliament_modify_button"
-			spriteType = "GFX_separatismgui_closebutton_nw"
-			position = { x = -20 y = 0 }
-			pdx_tooltip = "parliament_modify_button_tt"
-		}
-		instantTextboxType = {
-			name = "parliament_member_text"
+			name = "parliament_semicircle_main_icon"
+			spriteType = "GFX_UKR_parlamient_parties"
 			position = { x = 0 y = 0 }
-			font = "hoi_16mbs"
-			maxWidth = 200
-			maxHeight = 16
-			format = left
-			text = "parliament_member_text"
+			pdx_tooltip = "parliament_main_icon_tt"
 		}
     }
 

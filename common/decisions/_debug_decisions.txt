@@ -581,5 +581,27 @@ debug_decisions = {
 			clr_country_flag = SMO_Plan_Volyn_Galician_barrier_selected
 		}
 	}
+
+	parliament_update = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			parliament_gui_initial = yes
+		}
+	}	
 }
 	
