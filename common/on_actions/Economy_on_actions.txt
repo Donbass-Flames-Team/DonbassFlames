@@ -67,10 +67,24 @@ on_actions = {
 				}
 			}
 		}
+		# Corruption level update
 		effect = {
-			set_variable = {
-
+			add_to_variable = {
+				var = corruption_value
+                value = corruption_level_monthly_increase
+			}						
+			subtract_from_variable = {
+				var = corruption_value
+                value = anti_corruption_monthly_decrease
 			}
+			clamp_variable = {
+                var = corruption_value
+                min = 0
+            }
+			clamp_variable = {
+                var = corruption_value
+                max = 100
+            }
 		}
 	}
 	on_weekly = {

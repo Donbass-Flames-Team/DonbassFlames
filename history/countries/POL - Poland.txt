@@ -2,6 +2,9 @@ capital = 48
 set_variable = { cash = 1 }
 set_variable = { debt = -365 }
 
+set_variable = { corruption_value = 40 } 
+set_variable = { criminality_value = 10 }
+
 recruit_character = POL_bronislaw_komorowski
 recruit_character = POL_andrzej_duda
 recruit_character = POL_karol_nawrocki
