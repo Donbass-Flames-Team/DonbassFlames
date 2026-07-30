@@ -205,7 +205,7 @@ sub_units = {
 			bulletproof_vests_equipment = 100	
 			uniform_equipment = 100
 			support_equipment = 30
-			grenade_launcher_equipment = 10
+			grenade_launcher_equipment = 15
 			bbm_chassis = 10
 		}
 
@@ -649,7 +649,7 @@ sub_units = {
 		max_strength = 10
 		max_organisation = 90
 		default_morale = 0.3
-		manpower = 30
+		manpower = 50
 
 		#Misc Abilities
 		training_time = 50
@@ -662,12 +662,12 @@ sub_units = {
 		supply_consumption = 0.06
 	
 		need = {
-			infantry_equipment = 30
-			uniform_equipment = 30
-			bulletproof_vests_equipment = 15
-			support_equipment = 15
-			grenade_launcher_equipment = 7
-			bbm_chassis = 5
+			infantry_equipment = 50
+			uniform_equipment = 50
+			bulletproof_vests_equipment = 25
+			support_equipment = 4
+			grenade_launcher_equipment = 5
+			bbm_chassis = 2
 		}
 	}
 
@@ -700,7 +700,7 @@ sub_units = {
 		max_strength = 55
 		max_organisation = 80 
 		default_morale = 0.3
-		manpower = 110
+		manpower = 100
 
 		#Misc Abilities
 		training_time = 75
@@ -710,9 +710,9 @@ sub_units = {
 		supply_consumption = 0.06
 	
 		need = {
-			infantry_equipment = 110
+			infantry_equipment = 100
 			bulletproof_vests_equipment = 100
-			uniform_equipment = 110
+			uniform_equipment = 100
 			grenade_launcher_equipment = 10
 			support_equipment = 15
 			bbm_chassis = 10
@@ -769,7 +769,7 @@ sub_units = {
 			bulletproof_vests_equipment = 50
 			support_equipment = 35
 			bbm_chassis = 10
-			grenade_launcher_equipment = 8
+			grenade_launcher_equipment = 12
 		}
 
 		plains = {

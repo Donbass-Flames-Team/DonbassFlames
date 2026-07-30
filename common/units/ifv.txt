@@ -22,10 +22,10 @@ sub_units = {
 	
 		combat_width = 2
 	
-		max_strength = 32	
+		max_strength = 40
 		max_organisation = 65
 		default_morale = 0.3
-		manpower = 105
+		manpower = 100
 	
 		#Misc Abilities
 		training_time = 25
@@ -40,9 +40,9 @@ sub_units = {
 			infantry_equipment = 100
 			bulletproof_vests_equipment = 100
 			uniform_equipment = 100
-			support_equipment = 45
-			grenade_launcher_equipment = 25
-			infantry_fighting_vehicle = 10
+			infantry_fighting_vehicle = 20
+			support_equipment = 15
+			grenade_launcher_equipment = 10
 		}
 	
 		forest = {
