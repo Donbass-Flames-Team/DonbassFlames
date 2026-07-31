@@ -773,7 +773,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_liqudation_of_opposition
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_liqudation_of_opposition
 		cost = 1.5
 		x = -1
 		y = 2
@@ -946,7 +946,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_deal_with_opposition
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_deal_with_opposition
 		cost = 1
 		x = 1
 		y = 2
@@ -964,7 +964,7 @@ focus_tree = {
 					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
-			has_completed_focus = UKR_transition_to_forceful_measures
+			has_completed_focus = UKR_expansion_of_police_powers
 		}
 		completion_reward = {
 			country_event = {
@@ -1209,7 +1209,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_negotiations_have_reached_an_impasse
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_negotiations_have_reached_an_impasse
 		cost = 0.5
 		x = 0
 		y = 3
