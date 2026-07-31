@@ -1443,7 +1443,6 @@
  cat_fleet_in_being_cost_factor:0 "£navy_doctrine_cost_texticon  Стоимость доктрины воздействия флотом"
  cat_trade_interdiction_cost_factor:0 "£navy_doctrine_cost_texticon  Стоимость доктрины заграждения морских путей"
  cat_base_strike_cost_factor:0 "£navy_doctrine_cost_texticon  Стоимость доктрины ударов по базам"
- modifier_army_sub_unit_cavalry_speed_factor:0 "£speed_cavalry_texticon  £speed_cavalry_texticon  Скорость кавалерии"
  MODIFIER_CHOOSE_PREFERRED_TACTIC_COST:0 "£tactics_cost_texticon  Стоимость выбора предпочитаемой тактики"
  MODIFIER_RAILWAY_GUN_BOMBARDMENT_FACTOR:0 "£railway_gun_texticon  Бомбардировка с моря"
  MODIFIER_UNIT_LEADER_AS_ADVISOR_CP_COST_FACTOR:0 "£leader_promotion_cost_texticon  Затраты на командира-советника"
@@ -1571,12 +1570,17 @@ modifier_army_sub_unit_long_range_patrol_support_defence_factor: "£defence_long
  MODIFIER_PARATROOPERS_SPECIAL_FORCES_CONTRIBUTION_FACTOR: "£paratroop_contribution_texticon  Высшее значение вклада десанта спецназначения"
  MODIFIER_MARINES_SPECIAL_FORCES_CONTRIBUTION_FACTOR: "£marines_contribution_texticon  Высшее значение вклада морской пехоты спецназначения"
  MODIFIER_MOUNTAINEERS_SPECIAL_FORCES_CONTRIBUTION_FACTOR: "£mountaineers_contribution_texticon  Высшее значение вклада горных стрелков спецназначения"
+ modifier_unit_mountaineers_ski_design_cost_factor:0 "£ski_troops_texticon  Стоимость проекта лыжных войск"
+ modifier_unit_rangers_support_design_cost_factor:0 "£rangers_texticon  Стоимость проекта рейнджеров"
  MODIFIER_BRIGADE_SIZE: "£motorised_rocket_brigade_texticon  Размер бригады"
  MODIFIER_MIO_RESEARCH_BONUS: "£research2_texticon  Бонус к исследованиям от военно-промышленной организации"
  MODIFIER_MIO_RESEARCH_BONUS_MIO_CONTEXT: "£research2_texticon  Бонус к исследованиям"
+ MODIFIER_MIO_DESIGN_TEAM_ASSIGN_COST:0 "£design_team_texticon  Стоимость назначения конструкторской группы"
+ MODIFIER_MIO_DESIGN_TEAM_CHANGE_COST:0 "£design_team_texticon  Стоимость смены конструкторской группы"
  MODIFIER_MIO_INDUSTRIAL_MANUFACTURER_ASSIGN_COST: "£industrial_manufacturer_texticon  Стоимость назначения производителя"
  MODIFIER_MIO_TASK_CAPACITY: "£mio_capacity_texticon  Вместимость задач"
  MODIFIER_MIO_FUNDS_SIZE_UP_REQUIREMENT: "£funds_texticon  Требования для увеличения"
+ MODIFIER_MIO_FUNDS_GAIN:0 "£funds_texticon  Прирост средств"
  MODIFIER_MIO_POLICY_COST_FACTOR: "£mio_policy_texticon  Стоимость политики"
  MODIFIER_MIO_POLICY_COOLDOWN_FACTOR: "£mio_policy_texticon  Время восстановления политики"
  MODIFIER_CIC_CONSTRUCTION_BOOST: "£construction_speed_texticon  Базовое ускорение линии строительства"
@@ -1823,7 +1827,6 @@ modifier_army_sub_unit_long_range_patrol_support_defence_factor: "£defence_long
  sp_tag_nuclear_power_speed_factor: "£special_project_nuclear_texticon  Скорость специального проекта (ядерная энергетика)"
  sp_tag_radar_speed_factor: "£special_project_radar_texticon  Скорость специального проекта (радар)"
  
- MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE: "£civ_factory_consumer_texticon  Ожидаемое количество заводов, перепрофилированных на товары народного потребления"
 
  
  #plane_designer_l_russian
@@ -1915,6 +1918,7 @@ modifier_army_sub_unit_long_range_patrol_support_defence_factor: "£defence_long
  STAT_AIR_NAVAL_STRIKE_AGILITY:0 "£attacker_speed_texticon  Маневренность флота: "
  STAT_AIR_GROUND_ATTACK:0 "£cas_texticon  Авиаштурмовая атака: "
  STAT_COMMON_MAX_STRENGTH:0 "£strenght_texticon  Прочность: "
+ STAT_COMMON_BUILD_COST_IC:0 "£production_cost  Стоимость производства:  "
  STAT_COMMON_MAXIMUM_SPEED:0 "£attacker_speed_texticon  Макс. скор.: "
  STAT_NAVY_MAXIMUM_SPEED:0 "£attacker_speed_texticon  Макс. скор.: "
  STAT_NAVY_RANGE:0 "£naval_range_texticon  Дальность плавания: "
