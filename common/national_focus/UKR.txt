@@ -279,7 +279,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_mobilization_of_titushek
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_mobilization_of_titushek
 		cost = 0.5
 		x = -1
 		y = 1
@@ -453,7 +453,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_appeal_to_russia_for_support
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_appeal_to_russia_for_support
 		cost = 0.2
 		x = -1
 		y = 1
@@ -602,7 +602,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_expansion_of_police_powers
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_expansion_of_police_powers
 		cost = 1
 		x = 0
 		y = 4
@@ -924,7 +924,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_course_on_the_east
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_course_on_the_east
 		cost = 1
 		x = -3
 		y = 8
@@ -980,7 +980,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_a_step_towards_the_protesters
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_a_step_towards_the_protesters
 		cost = 1
 		x = 2
 		y = 3
@@ -1109,7 +1109,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_reform_of_berkut
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_reform_of_berkut
 		cost = 1
 		x = 1
 		y = 6
@@ -1261,6 +1261,7 @@ focus_tree = {
 					tooltip = legitimacy_of_power_lesser_than_15_ukr_tt
 				}
 			}
+			always = no
 		}
 		completion_reward = {
 			add_stability = 0.025
@@ -1303,6 +1304,7 @@ focus_tree = {
 		allow_branch = {}
 		available = {
 			has_global_flag = Yanukovich_escaped
+			always = no
 		}
 		completion_reward = {
 			add_political_power = -15
