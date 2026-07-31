@@ -1,13 +1,13 @@
 technologies = {
 	
-	@1960 = -1
-	@1970 = 2
-	@1980 = 5
+	@1960 = -2
+	@1970 = 3
+	@1980 = 8
 	@1990 = 8
 	@2000 = 11
-	@2010 = 14
+	@2010 = 23
 	@2015 = 17
-	@2020 = 20
+	@2020 = 28
 	@2025 = 23
 	@2030 = 26
 	@2035 = 29
@@ -30,7 +30,7 @@ technologies = {
 		start_year = 1960
 		folder = {
 			name = UKR_air_techs_folder
-			position = { x =  @1960 y = 0 }
+			position = { x = 0 y =  @1960 }
 		}
 		
 		categories = {
@@ -60,7 +60,7 @@ technologies = {
 		start_year = 1970
 		folder = {
 			name = UKR_air_techs_folder
-			position = { x = @1970 y = 0 }
+			position = { x = 0 y = @1970 }
 		}
 		
 		categories = {
@@ -90,7 +90,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = UKR_air_techs_folder
-			position = { x = @1980 y = 0 }
+			position = { x = 0 y = @1980 }
 		}
 		
 		categories = {
@@ -120,7 +120,7 @@ technologies = {
 		start_year = 2010
 		folder = {
 			name = UKR_air_techs_folder
-			position = { x = @2010 y = 0 }
+			position = { x = 0 y =  @2010 }
 		}
 		
 		categories = {
@@ -145,7 +145,7 @@ technologies = {
 		start_year = 2020
 		folder = {
 			name = UKR_air_techs_folder
-			position = { x = @2020 y = 0 }
+			position = { x = 0 y = @2020 }
 		}
 		
 		categories = {
@@ -175,7 +175,7 @@ technologies = {
 		start_year = 1960
 		folder = {
 			name = UKR_air_techs_folder
-			position = { x = 0 y = @1960 }
+			position = { x = 0 y = @1960}
 		}
 		
 		categories = {
@@ -255,11 +255,6 @@ technologies = {
 		enable_subunits = {
 			
 		}
-		
-		path = {
-			leads_to_tech = heavy_fighter_5
-			research_cost_coeff = 1
-		}
 
 		research_cost = 1.5
 		start_year = 2010
@@ -276,7 +271,7 @@ technologies = {
 			factor = 1
 		}
 	}
- # frontline bomber
+   # frontline bomber
 	frontline_bomber_1 = {
 		enable_equipments = {
 			
