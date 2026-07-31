@@ -5,6 +5,42 @@ set_variable = { debt = -1 }
 2013.11.21 = {
 	set_research_slots = 2
 
+	set_technology = {
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		infantry_weapons3 = 1
+
+		atgl_weapons = 1
+		atgl_weapons_1 = 1
+		atgl_weapons_2 = 1
+		atgl_weapons_3 = 1
+
+		uniform_equipment = 1
+		uniform_equipment1 = 1
+		uniform_equipment2 = 1
+		uniform_equipment3 = 1
+
+		atgm_weapons = 1
+		atgm_weapons1 = 1
+		atgm_weapons2 = 1
+
+		mortar_weapons = 1
+		mortar_weapons1 = 1
+		mortar_weapons2 = 1
+
+		manpads_weapons = 1
+		manpads_weapons1 = 1
+		manpads_weapons2 = 1
+
+		tech_support = 1
+
+		tech_trucks = 1
+		tech_trucks_1 = 1
+
+		basic_train = 1
+	}
+
 	set_politics = {
 		ruling_party = autoritarian_democracy
 		last_election = "2013.11.21"
