@@ -151,20 +151,6 @@ default_paratroopers_production = {
 	ai_strategy = { type = role_ratio id = paratroopers value = 0 }
 }
 
-default_major_SF_para = {
-	enable = { is_major = yes has_tech = special_forces_paratroopers }
-	abort_when_not_enabled = yes
-
-	ai_strategy = { type = role_ratio id = paratroopers value = 4 }
-}
-
-default_major_SF_marines = {
-	enable = { is_major = yes has_tech = special_forces_marines }
-	abort_when_not_enabled = yes
-
-	ai_strategy = { type = role_ratio id = marines value = 2 }
-}
-
 build_patrol_bombers = {
 	enable = {
 		has_navy_size = { size > 1 }
@@ -455,20 +441,7 @@ put_garrisons_on_high_prio = {
 	ai_strategy = { type = garrison_reinforcement_priority value = 100 }
 }
 
-default_spyplanes_production = {
-	enable = {
-		OR = {
-			has_tech = scout_plane1
-			has_tech = photo_reconnaisance
-		}
-		is_major = yes
-	}
-	abort_when_not_enabled = yes
 
-	ai_strategy = { type = unit_ratio id = scout_plane value = -99 }
-	ai_strategy = { type = equipment_production_factor id = scout_plane value = -99 }
-	ai_strategy = { type = equipment_production_min_factories id = scout_plane value = 1 }
-}
 
 minors_dont_spy = {
 	enable = {
