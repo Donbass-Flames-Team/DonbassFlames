@@ -24,6 +24,7 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 
 	set_variable = { corruption_value = 78 } 
 	set_variable = { criminality_value = 38 } 
+	set_variable = { prestige_value = 40 } 
 
 	set_variable = { business_activity = 65 } 
 
@@ -331,6 +332,7 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 
 	recruit_character = UKR_victor_yanukovich
 	recruit_character = UKR_mykhaylo_dobkin
+	recruit_character = UKR_vitali_klitschko
 	recruit_character = volodymir_zelenskyy
 	recruit_character = UKR_petro_poroshenko
 	recruit_character = UKR_alexander_tyrchinov

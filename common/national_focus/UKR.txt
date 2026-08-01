@@ -7345,6 +7345,9 @@ focus_tree = {
 		cost = 0.2
 		x = 15
 		y = 0
+		allow_branch = {
+			has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
+		}
 		ai_will_do = {
 			factor = 25
 		}

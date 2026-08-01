@@ -4801,6 +4801,7 @@ country_event = {
 		    country_event = {
 				id = superevent.6
 			}
+			set_global_flag = civil_war_in_ukraine_has_started
 			UWC = {
 				transfer_state = 241
 				transfer_state = 314

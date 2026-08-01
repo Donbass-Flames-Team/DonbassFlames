@@ -2,13 +2,18 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_DF_corruption_small"
-		texturefile = "gfx/interface/corruption_small.dds"
+		texturefile = "gfx/interface//scripted_guis/corruption_small.dds"
 	}
 
 	spriteType = {
 		name = "GFX_DF_criminality_small"
-		texturefile = "gfx/interface/criminality_small.dds"
+		texturefile = "gfx/interface//scripted_guis/criminality_small.dds"
 	}
+
+	spriteType = {
+		name = "GFX_DF_prestige_small"
+		texturefile = "gfx/interface/scripted_guis/prestige_small.dds"
+	}	
 	
 	spriteType = {
 		name = "GFX_DF_question_button"

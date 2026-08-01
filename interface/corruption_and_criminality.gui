@@ -7,6 +7,44 @@ guiTypes = {
         
         # Need to put the stuff in a subcontainer or else the area in which it can be moved around is severely limited; idk why
         containerWindowType = {
+            name     = "prestige_topbar"
+            position = { x = 1181 y = 4 } # to the right of the nukes # (487, 30) for right under the fuel section
+            size     = { width = 70 height = 30 }
+            moveable = no
+            
+            background = {
+                name = "background"
+                spriteType = "GFX_mini_tooltip"
+                alwaystransparent = no
+            }
+            
+            iconType = {
+                name = "prestige_icon"
+                spriteType = "GFX_DF_prestige_small"
+                position = { x = 1 y = 1 }
+                Orientation = "UPPER_LEFT"
+                scale = 0.9
+
+                pdx_tooltip = "prestige_tt_stats"
+                pdx_tooltip_delayed = "prestige_tt_desc"
+            }
+            
+            instantTextBoxType = {
+                name      = "prestige_value"
+                position  = { x = 18 y = 4 }
+                font      = "hoi_18mbs"
+                text      = "prestige_status"
+                format    = center
+                maxWidth  = 48
+                maxHeight = 24
+                fixedsize = yes
+
+                pdx_tooltip = "prestige_tt_stats"
+                pdx_tooltip_delayed = "prestige_tt_desc"
+            }
+        }
+       
+        containerWindowType = {
             name     = "corruption_topbar"
             position = { x = 1111 y = 4 } # to the right of the nukes # (487, 30) for right under the fuel section
             size     = { width = 70 height = 30 }
@@ -79,6 +117,6 @@ guiTypes = {
                 pdx_tooltip = "criminality_tt_stats"
                 pdx_tooltip_delayed = "criminality_tt_desc"
             }
-        }        
+        }  
     }
 }

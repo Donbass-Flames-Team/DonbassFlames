@@ -56,6 +56,20 @@ characters = {
 			id = -1
 		}
 	}
+	UKR_vitali_klitschko = {
+		name = UKR_vitali_klitschko
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_vitali_klitschko"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {}
+			expire = "2060.1.1.1"
+			id = -1
+		}
+	}
 	volodymir_zelenskyy = {
 		name = volodymir_zelenskyy
 		portraits = {
