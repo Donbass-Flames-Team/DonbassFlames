@@ -5037,6 +5037,13 @@ country_event = {
 				remove_idea = UKR_helpless_government
 				add_idea = UKR_disorderly_government
 			}
+			249 = { set_demilitarized_zone = no }
+			306 = { set_demilitarized_zone = no }
+			306 = { set_demilitarized_zone = no }
+			224 = { set_demilitarized_zone = no }
+			183 = { set_demilitarized_zone = no }
+            220 = { set_demilitarized_zone = no }
+			111 = { set_demilitarized_zone = no }
 		}
 	}
 }
@@ -5604,6 +5611,13 @@ country_event = {
 				var = UKR_legitimacy_of_central_power_value
 				value = 5
 			}
+			249 = { set_demilitarized_zone = yes }
+			306 = { set_demilitarized_zone = yes }
+			306 = { set_demilitarized_zone = yes }
+			224 = { set_demilitarized_zone = yes }
+			183 = { set_demilitarized_zone = yes }
+            220 = { set_demilitarized_zone = yes }
+			111 = { set_demilitarized_zone = yes }
 		}
 	}
 }

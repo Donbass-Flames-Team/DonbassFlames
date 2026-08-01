@@ -173,28 +173,61 @@ scripted_gui = {
 							var = percentage_shadow_economy
 							value = 1
 						}
-					}					
+					}	
+					clamp_variable = {
+                        var = percentage_shadow_economy
+                        min = 0
+						max = 100
+                    }				
 				}
 				random_list = {
 					20 = {
 						subtract_from_variable = {
 							var = small_businesses
-							value = 1000
+							value = 200
 						}
 					}
 					10 = {
 						subtract_from_variable = {
 							var = small_businesses
-							value = 2000
+							value = 250
 						}
 					}
 					5 = {
 						subtract_from_variable = {
 							var = small_businesses
-							value = 2500
+							value = 350
 						}
 					}										
 				}
+				random_list = {
+					20 = {
+						subtract_from_variable = {
+							var = individual_enterprises
+							value = 500
+						}
+					}
+					10 = {
+						subtract_from_variable = {
+							var = individual_enterprises
+							value = 700
+						}
+					}
+					5 = {
+						subtract_from_variable = {
+							var = individual_enterprises
+							value = 1250
+						}
+					}
+				}
+				clamp_variable = {
+                    var = small_businesses
+                    min = 0
+                }
+				clamp_variable = {
+                    var = individual_enterprises
+                    min = 0
+                }
 			}			
 			decrease_sales_taxes_click = {
 				subtract_from_variable = {
@@ -255,26 +288,59 @@ scripted_gui = {
 						}
 					}					
 				}
+				clamp_variable = {
+                    var = percentage_shadow_economy
+                    min = 0
+					max = 100
+                }
 				random_list = {
 					20 = {
 						subtract_from_variable = {
 							var = small_businesses
-							value = 500
+							value = 100
 						}
 					}
 					10 = {
 						subtract_from_variable = {
 							var = small_businesses
-							value = 1000
+							value = 200
 						}
 					}
 					5 = {
 						subtract_from_variable = {
 							var = small_businesses
-							value = 1500
+							value = 350
 						}
 					}										
 				}
+				random_list = {
+					20 = {
+						subtract_from_variable = {
+							var = individual_enterprises
+							value = 500
+						}
+					}
+					10 = {
+						subtract_from_variable = {
+							var = individual_enterprises
+							value = 700
+						}
+					}
+					5 = {
+						subtract_from_variable = {
+							var = individual_enterprises
+							value = 1250
+						}
+					}
+				}				
+				clamp_variable = {
+                    var = small_businesses
+                    min = 0
+                }
+				clamp_variable = {
+                    var = individual_enterprises
+                    min = 0
+                }				
 			}			
 			decrease_income_tax_click = {
 				subtract_from_variable = {
