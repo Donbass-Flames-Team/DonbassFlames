@@ -1410,3 +1410,41 @@ DF_key_rate_calc = {
 	add_to_variable = { GEN_inflation_consumer_goods_factor = consumer_infl }
 
 }
+
+DF_business_activity_calc = {
+	if = {
+		limit = {
+			check_variable = {
+                var = business_activity
+                value = 20
+                compare = less_than_or_equals
+            }
+		}
+		set_variable = {
+			var = small_business_decline
+			value = 20
+		}
+		multiply_variable = {
+			var = small_business_decline
+			value = business_activity
+		}
+		subtract_from_variable = {
+			var = small_businesses 
+			value = 30
+		}
+	}
+	else = {
+		set_variable = {
+			var = small_business_growth
+			value = 20
+		}
+		multiply_variable = {
+			var = small_business_growth
+			value = business_activity
+		}
+		add_to_variable = {
+			var = small_businesses
+			value = small_business_growth 
+		}
+	}
+}

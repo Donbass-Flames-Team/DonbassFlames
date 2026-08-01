@@ -32,7 +32,12 @@ defined_text = {
 		}
 		localization_key = "sp_event_special_military_operation_title"
 	}
-
+	text = { 
+		trigger = {
+			has_global_flag = start_of_civil_war_in_ukraine_SP
+		}
+		localization_key = "sp_event_start_of_civil_war_in_ukraine_title"
+	}
 }
 
 #Quotes
@@ -69,6 +74,12 @@ defined_text = {
 		}
 		localization_key = "sp_event_special_military_operation_quote"
 	}
+	text = { 
+		trigger = {
+			has_global_flag = start_of_civil_war_in_ukraine_SP
+		}
+		localization_key = "sp_event_start_of_civil_war_in_ukraine_quote"
+	}
 }
 
 #Remarks
@@ -103,5 +114,11 @@ defined_text = {
 			has_global_flag = special_military_operation_SP
 		}
 		localization_key = "sp_event_special_military_operation_remark"
+	}
+	text = { 
+		trigger = {
+			has_global_flag = start_of_civil_war_in_ukraine_SP
+		}
+		localization_key = "sp_event_start_of_civil_war_in_ukraine_remark"
 	}
 }

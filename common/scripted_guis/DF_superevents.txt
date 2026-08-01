@@ -24,6 +24,9 @@ scripted_gui = {
 			superevents_special_millitary_operation_visible = {
 				has_global_flag = special_military_operation_SP
 			}
+			superevents_start_of_civil_war_in_ukraine_visible = {
+				has_global_flag = start_of_civil_war_in_ukraine_SP
+			}			
 		}
 		
 		############
@@ -50,6 +53,14 @@ scripted_gui = {
 					limit = { has_global_flag = yanukovich_overthrow_SP }
 					clr_global_flag = yanukovich_overthrow_SP
 				}
+				if = {
+					limit = { has_global_flag = special_military_operation_SP }
+					clr_global_flag = special_military_operation_SP
+				}				
+				if = {
+					limit = { has_global_flag = start_of_civil_war_in_ukraine_SP }
+					clr_global_flag = start_of_civil_war_in_ukraine_SP
+				}				
 			
 				
 				

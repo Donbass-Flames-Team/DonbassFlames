@@ -23,6 +23,9 @@ focus_tree = {
 			NOT = {
 				has_completed_focus = UKR_the_end_of_the_yanukovych_regime
 			}
+			NOT = {
+				has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
+			}
 		}
 		available = {}
 		bypass = {
@@ -68,6 +71,7 @@ focus_tree = {
 		allow_branch = {
 			NOT = {
 				has_country_flag = Tree_post_yanukovich_hidden
+				has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
 			}
 		}
 		available = {}
@@ -2348,6 +2352,9 @@ focus_tree = {
 				}
 				has_completed_focus = UKR_unrest_in_the_east
 			}
+			NOT = {
+				has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
+			}
 		}
 		available = {}
 		completion_reward = {
@@ -3976,6 +3983,9 @@ focus_tree = {
 				}
 				has_country_flag = Focuses_after_Ato
 			}
+			NOT = {
+				has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
+			}
 		}
 		completion_reward = {
 			add_stability = 0.035
@@ -4344,6 +4354,9 @@ focus_tree = {
 					}
 				}
 				has_country_flag = Focuses_after_Ato
+			}
+			NOT = {
+				has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
 			}
 		}
 		completion_reward = {}
@@ -6103,6 +6116,9 @@ focus_tree = {
 				has_completed_focus = UKR_unrest_in_the_east
 				has_completed_focus = UKR_start_of_ato
 			}
+			NOT = {
+				has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -6376,6 +6392,9 @@ focus_tree = {
 					has_country_flag = UKR_donbas_war_resumes_spring_2015
 				}
 			}
+			NOT = {
+				has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
+			}
 		}
 		available = {
 			NOT = {
@@ -6445,6 +6464,9 @@ focus_tree = {
 				}
 				has_completed_focus = UKR_start_of_ato
 				has_country_flag = UKR_donbas_war_resumes_spring_2015
+			}
+			NOT = {
+				has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
 			}
 		}
 		available = {}
@@ -7007,6 +7029,9 @@ focus_tree = {
 				}
 				has_completed_focus = UKR_unrest_in_the_east
 			}
+		    NOT = {
+				has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
+			}
 		}
 		available = {}
 		completion_reward = {}
@@ -7154,6 +7179,9 @@ focus_tree = {
 				has_completed_focus = UKR_organize_defence_in_crimea
 			}
 			has_completed_focus = UKR_unrest_in_the_east
+			NOT = {
+				has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
+			}
 		}
 		bypass = {
 			has_global_flag = Start_Of_ATO
@@ -7307,6 +7335,139 @@ focus_tree = {
 					id = news_events.19
 					hours = 5
 				}
+			}
+		}
+	}
+
+	focus = {
+		id = UKR_defeats_in_the_ato
+		icon = GFX_focus_UKR_partial_mobilization
+		cost = 0.2
+		x = 15
+		y = 0
+		ai_will_do = {
+			factor = 25
+		}
+		bypass_effect = {}
+		available = {}
+		completion_reward = {
+			hidden_effect = {
+
+			}
+		}
+	}
+
+	focus = {
+		id = UKR_find_the_culprits
+		icon = GFX_focus_UKR_partial_mobilization
+		cost = 0.2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = UKR_defeats_in_the_ato
+		}
+		relative_position_id = UKR_defeats_in_the_ato
+		ai_will_do = {
+			factor = 25
+		}
+		bypass_effect = {}
+		available = {}
+		completion_reward = {
+			hidden_effect = {
+
+			}
+		}
+	}
+
+	focus = {
+		id = UKR_introduction_of_martial_las
+		icon = GFX_focus_UKR_partial_mobilization
+		cost = 0.2
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = UKR_find_the_culprits
+		}
+		relative_position_id = UKR_defeats_in_the_ato
+		ai_will_do = {
+			factor = 25
+		}
+		bypass_effect = {}
+		available = {}
+		completion_reward = {
+			country_event = {
+				id = ukraine.133
+			}
+		}
+	}
+
+	focus = {
+		id = UKR_fight_with_extremists
+		icon = GFX_focus_UKR_partial_mobilization
+		cost = 0.2
+		x = 1
+		y = 3
+		prerequisite = {
+			focus = UKR_introduction_of_martial_las
+		}
+		relative_position_id = UKR_defeats_in_the_ato
+		ai_will_do = {
+			factor = 25
+		}
+		bypass_effect = {}
+		available = {}
+		completion_reward = {
+			hidden_effect = {
+
+			}
+		}
+	}
+
+	focus = {
+		id = UKR_purges_in_the_army
+		icon = GFX_focus_UKR_partial_mobilization
+		cost = 0.2
+		x = -1
+		y = 3
+		prerequisite = {
+			focus = UKR_introduction_of_martial_las
+		}
+		relative_position_id = UKR_defeats_in_the_ato
+		ai_will_do = {
+			factor = 25
+		}
+		bypass_effect = {}
+		available = {}
+		completion_reward = {
+			hidden_effect = {
+
+			}
+		}
+	}
+
+	focus = {
+		id = UKR_civil_war
+		icon = GFX_focus_UKR_partial_mobilization
+		cost = 0.2
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = UKR_purges_in_the_army
+		}
+		prerequisite = {
+			focus = UKR_fight_with_extremists
+		}		
+		relative_position_id = UKR_defeats_in_the_ato
+		ai_will_do = {
+			factor = 25
+		}
+		bypass_effect = {}
+		available = {
+			has_global_flag = civil_war_in_ukraine_has_started
+		}
+		completion_reward = {
+			hidden_effect = {
+
 			}
 		}
 	}

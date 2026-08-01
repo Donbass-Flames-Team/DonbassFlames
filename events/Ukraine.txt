@@ -3593,7 +3593,9 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		
+		hidden_effect = {
+			set_global_flag = Ukraine_suffered_heavy_defeat_after_ato
+		}
 	}
 
 	option = {
@@ -4705,6 +4707,10 @@ country_event = {
 				#}
 				load_oob = MLR_Uprising_Militia
 			}
+			country_event = {
+				id = ukraine.126
+				days = 2
+			}
 		}
 	}
 
@@ -4792,6 +4798,9 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+		    country_event = {
+				id = superevent.6
+			}
 			UWC = {
 				transfer_state = 241
 				transfer_state = 314
@@ -4804,7 +4813,35 @@ country_event = {
 					target = UKR
 					type = annex_everything
 				}
+				declare_war_on = {
+					target = USR
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = MLR
+					type = annex_everything
+				}							
 			}
+			USR = {
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = MLR
+					type = annex_everything
+				}								
+			}
+			MLR = {
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = USR
+					type = annex_everything
+				}								
+			}			
 		}
 	}
 

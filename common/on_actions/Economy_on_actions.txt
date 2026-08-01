@@ -27,6 +27,7 @@ on_actions = {
 				value = gdp
 			}
 			DF_economy_setup = yes
+			DF_business_activity_calc = yes
 			set_global_flag = add_remove_cash_flag
 			set_variable = {
 				var = gdp_current_month

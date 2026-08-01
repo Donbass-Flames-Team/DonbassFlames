@@ -138,6 +138,14 @@ scripted_gui = {
 					max = 20
 				}
 				add_political_power = -10
+				subtract_from_variable = {
+					var = business_activity
+					value = 1
+				}
+				clamp_variable = {
+                    var = business_activity
+                    min = 0
+                }
 			}
 			decrease_key_rate_click = {
 				subtract_from_variable = {
@@ -228,6 +236,14 @@ scripted_gui = {
                     var = individual_enterprises
                     min = 0
                 }
+				subtract_from_variable = {
+					var = business_activity
+					value = 2
+				}
+				clamp_variable = {
+                    var = business_activity
+                    min = 0
+                }				
 			}			
 			decrease_sales_taxes_click = {
 				subtract_from_variable = {
@@ -340,7 +356,15 @@ scripted_gui = {
 				clamp_variable = {
                     var = individual_enterprises
                     min = 0
-                }				
+                }	
+				subtract_from_variable = {
+					var = business_activity
+					value = 2
+				}
+				clamp_variable = {
+                    var = business_activity
+                    min = 0
+                }			
 			}			
 			decrease_income_tax_click = {
 				subtract_from_variable = {
