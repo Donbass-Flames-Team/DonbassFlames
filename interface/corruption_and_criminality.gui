@@ -8,20 +8,20 @@ guiTypes = {
         # Need to put the stuff in a subcontainer or else the area in which it can be moved around is severely limited; idk why
         containerWindowType = {
             name     = "corruption_topbar"
-            position = { x = 1099 y = 6 } # to the right of the nukes # (487, 30) for right under the fuel section
-            size     = { width = 70 height = 26 }
-            moveable = yes
+            position = { x = 1111 y = 4 } # to the right of the nukes # (487, 30) for right under the fuel section
+            size     = { width = 70 height = 30 }
+            moveable = no
             
             background = {
                 name = "background"
-                spriteType = "GFX_generic_box_smallest"
+                spriteType = "GFX_mini_tooltip"
                 alwaystransparent = no
             }
             
             iconType = {
                 name = "corruption_icon"
                 spriteType = "GFX_DF_corruption_small"
-                position = { x = -1 y = 0 }
+                position = { x = 1 y = 1 }
                 Orientation = "UPPER_LEFT"
 
                 pdx_tooltip = "corruption_tt_stats"
@@ -30,7 +30,7 @@ guiTypes = {
             
             instantTextBoxType = {
                 name      = "corruption_value"
-                position  = { x = 22 y = 0 }
+                position  = { x = 22 y = 4 }
                 font      = "hoi_18mbs"
                 text      = "corruption_status"
                 format    = center
@@ -45,20 +45,20 @@ guiTypes = {
 
         containerWindowType = {
             name     = "criminality_topbar"
-            position = { x = 1019 y = 6 } # to the right of the nukes # (487, 30) for right under the fuel section
-            size     = { width = 70 height = 26 }
-            moveable = yes
+            position = { x = 1041 y = 4 } # to the right of the nukes # (487, 30) for right under the fuel section
+            size     = { width = 70 height = 30 }
+            moveable = no
             
             background = {
                 name = "background"
-                spriteType = "GFX_generic_box_smallest"
+                spriteType = "GFX_mini_tooltip"
                 alwaystransparent = no
             }
             
             iconType = {
                 name = "criminality_icon"
                 spriteType = "GFX_DF_criminality_small"
-                position = { x = 3 y = 0 }
+                position = { x = 3 y = 2 }
                 scale = 0.9
                 Orientation = "UPPER_LEFT"
 
@@ -68,7 +68,7 @@ guiTypes = {
             
             instantTextBoxType = {
                 name      = "criminality_value"
-                position  = { x = 22 y = 0 }
+                position  = { x = 22 y = 4 }
                 font      = "hoi_18mbs"
                 text      = "criminality_status"
                 format    = center

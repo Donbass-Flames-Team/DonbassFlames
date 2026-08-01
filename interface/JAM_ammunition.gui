@@ -2,13 +2,13 @@ guiTypes = {
 
     containerWindowType = {
         name = "JAM_ammunition_topbar"
-        position = { x = 0 y = 0 }
+        position = { x = 0 y = 1 }
 		size = { width = 102%% height = 107%% } # not 100% so it can reach the edges... not sure why it works like this; could just be me?
         
         # Need to put the stuff in a subcontainer or else the area in which it can be moved around is severely limited; idk why
         containerWindowType = {
             name     = "JAM_ammunition_topbar_2"
-            position = { x = 1189 y = 6 } # to the right of the nukes # (487, 30) for right under the fuel section
+            position = { x = 711 y = 4 } # to the right of the nukes # (487, 30) for right under the fuel section
             size     = { width = 70 height = 26 }
             moveable = yes
             
@@ -21,7 +21,7 @@ guiTypes = {
             iconType = {
                 name = "JAM_ammo_icon"
                 spriteType = "GFX_JAM_ammo_icon"
-                position = { x = -1 y = 0 }
+                position = { x = 1 y = 0 }
                 Orientation = "UPPER_LEFT"
 
                 pdx_tooltip = "JAM_tt_ammo_stats"
@@ -30,7 +30,7 @@ guiTypes = {
             
             instantTextBoxType = {
                 name      = "JAM_ammo_value"
-                position  = { x = 22 y = 0 }
+                position  = { x = 22 y = -1 }
                 font      = "hoi_18mbs"
                 text      = "JAM_txt_ammo_status"
                 format    = center
@@ -45,7 +45,7 @@ guiTypes = {
             iconType = {
                 name       = "JAM_ammo_ratio_bar"
                 spriteType = "GFX_JAM_topbar_ammo_bar"
-                position   = { x= 23 y = 16 }
+                position   = { x= 24 y = 15 }
                 frame      = 50
                 alwaystransparent = yes
             }
