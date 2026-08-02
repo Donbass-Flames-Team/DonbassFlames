@@ -1,0 +1,23 @@
+scripted_gui = {
+
+	DPR_confrontation_between_powers = {
+	   context_type = decision_category
+	   window_name = "DPR_confrontation_between_powers"
+ 
+		visible = {
+			tag = UKR
+		}
+ 
+		effects = {
+			
+		}
+
+		triggers = {
+
+		}
+		
+		properties = {
+			
+		}
+	}
+}

@@ -1,0 +1,46 @@
+guiTypes = {
+	containerWindowType = {
+		name = "DPR_confrontation_between_powers"
+		size = { width = 142 height = 270 }
+		position = { x = 0 y = 0 }
+
+		
+		iconType = {
+		    name = "DPR_confrontation_between_powers_background"
+			spriteType = "GFX_ukraine_background_separatism"
+			position = { x = 5 y = -19 }
+		}
+
+		iconType = {
+			name = "DPR_strelkov_girkin_icon"
+			spriteType = "GFX_portrait_igor_strelkov_girkin"
+			position = { x = 70 y = 5 }
+			pdx_tooltip = "[CAT_OPENING]"
+			scale = 0.8
+		}
+
+		iconType = {
+			name = "DPR_dpr_leader_icon"
+			spriteType = "GFX_portrait_igor_strelkov_girkin"
+			position = { x = 295 y = 5 }
+			pdx_tooltip = "[CAT_OPENING]"
+			scale = 0.8
+		}		   
+
+		instantTextBoxType = {
+			name = "DPR_strelkov_girkin_text"
+			text = "DPR_strelkov_girkin_text"
+			font = "hoi_16mbs"
+			position = { x = 55 y = 210 }
+			pdx_tooltip = "[CAT_OPENING]"
+		}
+
+		instantTextBoxType = {
+			name = "DPR_donetsk_leader_text"
+			text = "DPR_donetsk_leader_text"
+			font = "hoi_16mbs"
+			position = { x = 275 y = 210 }
+			pdx_tooltip = "[CAT_OPENING]"
+		}
+    }
+}

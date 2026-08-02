@@ -5,7 +5,7 @@
 
 DPR_armed_forces_of_dpr_category = {
 
-	priority = 85
+	priority = 84
 	
 	icon = GFX_decision_afu_icon
 	
@@ -20,7 +20,7 @@ DPR_armed_forces_of_dpr_category = {
 
 DPR_war_for_independence_of_donbass = {
 
-	priority = 85
+	priority = 87
 	
 	icon = GFX_decision_afu_icon
 	
@@ -42,7 +42,18 @@ DPR_government_of_republic = {
 		original_tag = DPR 
 	}
 
-	allowed = {
+}
+
+DPR_confrontation_between_radical_and_pragmatic = {
+
+	priority = 86
+	
+	icon = GFX_decision_afu_icon
+	
+	visible = {
 		original_tag = DPR 
+		has_global_flag = Girkin_in_DPR
 	}
+    scripted_gui = DPR_confrontation_between_powers
+
 }
