@@ -28,7 +28,8 @@ state = {
 			network_infrastructure = 1 
 			industrial_complex = 0 
 			arms_factory = 0 
-			infrastructure = 3 
+			infrastructure = 3
+			agro_industrial_complex = 1
 		}
 		
 		add_core_of = UKR 
@@ -37,7 +38,6 @@ state = {
 		2014.5.19 = { 
 			owner = DPR 
 			controller = DPR 
-			
 			add_core_of = DPR 
 		}
 	}

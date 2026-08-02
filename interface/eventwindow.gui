@@ -489,7 +489,7 @@ guiTypes = {
 			iconType = {
 				name ="event_picture"
 				spriteType = "GFX_news_event_001"
-				position = { x = 59 y = 91 }
+				position = { x = 59 y = 90 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
@@ -497,14 +497,14 @@ guiTypes = {
 			iconType = {
 				name ="event_picture_overlay"
 				spriteType = "GFX_event_news_pic_overlay"
-				position = { x = 59 y = 91 }
+				position = { x = 59 y = 90 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}			
 			
 			instantTextBoxType = {
 				name = "Title"
-				position = { x = 12 y = 260 }
+				position = { x = 12 y = 250 }
 				font = "hoi4_typewriter22"
 				borderSize = {x = 0 y = 0}
 				text = "Title text here!"	
@@ -529,7 +529,7 @@ guiTypes = {
 		
 			instantTextBoxType = {
 				name = "Description"
-				position = { x = 39 y = 170 }
+				position = { x = 39 y = 155 }
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				text = "Long text here!"	
@@ -548,7 +548,7 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "options_grid"
-				position = { x = 80 y = -1 }
+				position = { x = 80 y = 23 }
 				size = { width = 300 height = 30 }
 				slotsize = { width = 300 height = 47 }
 				max_slots_horizontal = 1
