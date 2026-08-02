@@ -520,6 +520,7 @@ country_event = {
 				    add_state_core = 549
 				    add_state_core = 499
 				    add_state_core = 477
+				    add_state_core = 660
 					declare_war_on = {
 					    target = UKR
 					    type = annex_everything
@@ -537,6 +538,7 @@ country_event = {
 			 	549 = { transfer_state_to = OPR }
 				499 = { transfer_state_to = OPR }
 				477 = { transfer_state_to = OPR }
+				660 = { transfer_state_to = OPR }
 
 				567 = {
 					add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = OPR days = 55 }
@@ -1744,12 +1746,16 @@ country_event = {
 	option = {
 		name = ukraine.38.a
 		add_equipment_to_stockpile = { 
-			type = bulletproof_vests_equipment_3
-			amount = 3000 
+			type = bulletproof_vests_equipment_4
+			amount = 3000
 		}
 		add_equipment_to_stockpile = { 
-			type = uniform_equipment_3
+			type = uniform_equipment_4
 			amount = 3600 
+		}
+		add_equipment_to_stockpile = { 
+			type = support_equipment
+			amount = 390
 		}
 	}
 }
@@ -3678,6 +3684,7 @@ country_event = {
 				}
 			}
 			LPR = {
+				transfer_state = 340
 				transfer_state = 406
 				transfer_state = 351
 				transfer_state = 427
@@ -3720,7 +3727,8 @@ country_event = {
 				transfer_state = 297
 				transfer_state = 272
 				transfer_state = 246
-				transfer_state = 258			
+				transfer_state = 258
+				transfer_state = 659				
 			}
 			if = {
 				limit = {
@@ -3740,6 +3748,7 @@ country_event = {
 				}
 			}
 			DPR = {
+				transfer_state = 432
 				transfer_state = 468
 				transfer_state = 421
 				transfer_state = 441
@@ -3765,6 +3774,7 @@ country_event = {
 				transfer_state = 435
 				transfer_state = 402
 				transfer_state = 438
+				transfer_state = 424
 				transfer_state = 430
 				transfer_state = 418
 				transfer_state = 582
@@ -3909,6 +3919,7 @@ country_event = {
 					transfer_state = 499
 					transfer_state = 477
 					transfer_state = 409
+					transfer_state = 660
 				}
 			}
 			if = {
@@ -4366,7 +4377,9 @@ country_event = {
 				add_state_core = 372
 				add_state_core = 365
 				add_state_core = 336
-				add_state_core = 358				
+				add_state_core = 358
+				add_state_core = 350
+				add_state_core = 287				
 			}
 			DRP = {
 				declare_war_on = {
