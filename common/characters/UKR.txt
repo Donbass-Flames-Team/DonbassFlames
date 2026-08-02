@@ -56,6 +56,34 @@ characters = {
 			id = -1
 		}
 	}
+	UKR_irina_farion = {
+		name = UKR_irina_farion
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Irina_Farion"
+			}
+		}
+		country_leader = {
+			ideology = nationalism
+			expire = "1965.1.1.1"
+			traits = { df_russophobe }
+			id = -1
+		}
+	}
+	UKR_dmitro_yarosh = {
+		name = UKR_dmitro_yarosh
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Dmitro_Yarosh"
+			}
+		}
+		country_leader = {
+			ideology = nationalism
+			expire = "1965.1.1.1"
+			traits = { df_russophobe }
+			id = -1
+		}
+	}	
 	UKR_vitali_klitschko = {
 		name = UKR_vitali_klitschko
 		portraits = {

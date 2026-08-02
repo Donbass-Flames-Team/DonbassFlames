@@ -6,16 +6,6 @@ DF_economy_setup = yes
 2013.11.21 = {
 	set_research_slots = 3
 
-	add_dynamic_modifier = { modifier = UKR_ukraine_army_idea }
-	set_variable = { UKR_AFU_army_org_factor = -0.55 }
-	set_variable = { UKR_AFU_army_org_regain = -0.25 }
-	set_variable = { UKR_AFU_army_morale_factor = -0.25 }
-	set_variable = { UKR_AFU_army_attack_factor = -0.45 }
-	set_variable = { UKR_AFU_army_defence_factor = -0.2 }
-	set_variable = { UKR_AFU_planning_speed = -0.20 }
-	set_variable = { UKR_AFU_army_speed_factor = -0.15 }
-	set_variable = { UKR_AFU_war_breakthrough_factor = -0.15 }
-	set_variable = { UKR_AFU_war_support_factor = -0.15 }
 
 
 	add_dynamic_modifier = { modifier = GEN_inflation }
@@ -56,8 +46,8 @@ DF_economy_setup = yes
 
 	add_equipment_to_stockpile = {
 		type = train_equipment_1
-		amount = 10
-		producer = USR
+		amount = 2
+		producer = LVO
 	}
 	
 	#if = {
@@ -122,18 +112,16 @@ DF_economy_setup = yes
 	
 	set_popularities = {
 		conservatism_democracy = 12
-		autoritarian_democracy = 4
+		autoritarian_democracy = 14
 		liberal_democracy = 10
-		nationalism = 68
-		communism = 5
+		nationalism = 56
+		communism = 7
 		social_democracy = 1
 	}
 
-	recruit_character = UKR_dmitro_yarosh
+	recruit_character = UKR_irina_farion
 
 	add_ideas = {
-		UKR_helpless_government
-		UKR_ukrainian_mic
 
 		volunteer_only
 		export_focus

@@ -4608,6 +4608,7 @@ country_event = {
 				id = ukraine.123
 				days = 5
 			}
+
 		}
 	}
 
@@ -4634,9 +4635,7 @@ country_event = {
 		hidden_effect = {
 			USR = {
 				transfer_state = 220
-				transfer_state = 224
 				transfer_state = 322
-				transfer_state = 150
 				transfer_state = 306
 				transfer_state = 249
 				transfer_state = 183
@@ -4644,7 +4643,28 @@ country_event = {
 				transfer_state = 70
 				transfer_state = 189
 				transfer_state = 196
+
+
+				add_core_state = 220
+				add_core_state = 322
+				add_core_state = 150
+				add_core_state = 306
+				add_core_state = 249
+				add_core_state = 183
+				add_core_state = 119
+				add_core_state = 70
+				add_core_state = 189
+				add_core_state = 196	
+				add_core_state = 224			
 			}
+			LVO = {
+				transfer_state = 224
+				add_core_state = 224
+			}
+			CHR = {
+				transfer_state = 150
+				add_core_state = 150
+			}		
 		}
 	}
 
