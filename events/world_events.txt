@@ -4,7 +4,6 @@
 
 add_namespace = world_events
 
-
 # scotland (2014-09-18)
 news_event = {
 	id = world_events.1
@@ -13,7 +12,28 @@ news_event = {
 	picture = GFX_scotland
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.1.a }
+option = {
+	name = world_events.1.a
+	trigger = {
+		NOT = {
+			OR = {
+				tag = UKR
+				tag = DPR
+				tag = LPR
+			}
+		}
+	}
+}
+option = {
+	name = world_events.1.b
+	trigger = {
+		OR = {
+			tag = UKR
+			tag = DPR
+			tag = LPR
+		}
+	}
+}
 }
 
 # ebola (2014-08-08)
@@ -24,7 +44,20 @@ news_event = {
 	picture = GFX_ebola
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.2.a }
+	option = {
+		name = world_events.2.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.2.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # isil rise (2014-06-29)
@@ -35,7 +68,20 @@ news_event = {
 	picture = GFX_isil
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.3.a }
+	option = {
+		name = world_events.3.a
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+	option = {
+		name = world_events.3.b
+		trigger = {
+			tag = RUS
+		}
+	}
 }
 
 # paris (2015-11-13)
@@ -46,7 +92,20 @@ news_event = {
 	picture = GFX_paris
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.4.a }
+	option = {
+		name = world_events.4.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.4.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # COP21 (2015-12-12)
@@ -57,7 +116,20 @@ news_event = {
 	picture = GFX_COP21
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.5.a }
+	option = {
+		name = world_events.5.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.5.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # europe migrant (2015-09-01)
@@ -68,7 +140,32 @@ news_event = {
 	picture = GFX_migrant
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.6.a }
+option = {
+	name = world_events.6.a
+	trigger = {
+		NOT = {
+			OR = {
+				tag = POL
+				tag = HUN
+				tag = LIT
+				tag = SLO
+				tag = ROM
+			}
+		}
+	}
+}
+option = {
+	name = world_events.6.b
+	trigger = {
+		OR = {
+			tag = POL
+			tag = HUN
+			tag = LIT
+			tag = SLO
+			tag = ROM
+		}
+	}
+}
 }
 
 # brexit (2016-06-23)
@@ -79,7 +176,26 @@ news_event = {
 	picture = GFX_brexit
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.7.a }
+option = {
+	name = world_events.7.a
+	trigger = {
+		NOT = {
+			OR = {
+				tag = UKR
+				tag = MOL
+			}
+		}
+	}
+}
+option = {
+	name = world_events.7.b
+	trigger = {
+		OR = {
+			tag = UKR
+			tag = MOL
+		}
+	}
+}
 }
 
 # turkey (2016-07-15)
@@ -90,7 +206,20 @@ news_event = {
 	picture = GFX_turkey
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.8.a }
+	option = {
+		name = world_events.8.a
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+	option = {
+		name = world_events.8.b
+		trigger = {
+			tag = RUS
+		}
+	}
 }
 
 # aleppo (2016-12-22)
@@ -101,7 +230,20 @@ news_event = {
 	picture = GFX_aleppo
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.9.a }
+	option = {
+		name = world_events.9.a
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+	option = {
+		name = world_events.9.b
+		trigger = {
+			tag = RUS
+		}
+	}
 }
 
 # north korea (2017-09-03)
@@ -112,7 +254,28 @@ news_event = {
 	picture = GFX_korea
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.10.a }
+option = {
+	name = world_events.10.a
+	trigger = {
+		NOT = {
+			OR = {
+				tag = DPR
+				tag = LPR
+				tag = RUS
+			}
+		}
+	}
+}
+option = {
+	name = world_events.10.b
+	trigger = {
+		OR = {
+			tag = DPR
+			tag = LPR
+			tag = RUS
+		}
+	}
+}
 }
 
 # spain (2017-10-01)
@@ -123,7 +286,20 @@ news_event = {
 	picture = GFX_spain
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.11.a }
+	option = {
+		name = world_events.11.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.11.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # yellow vests (2018-11-17)
@@ -134,7 +310,20 @@ news_event = {
 	picture = GFX_vests
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.12.a }
+	option = {
+		name = world_events.12.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.12.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # fifa russia (2018-06-14)
@@ -145,7 +334,20 @@ news_event = {
 	picture = GFX_fifa
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.13.a }
+	option = {
+		name = world_events.13.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.13.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # covid 1 (2019-12-31)
@@ -172,7 +374,20 @@ news_event = {
 			}
 		}
 	}
-	option = { name = world_events.14.a }
+	option = {
+		name = world_events.14.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.14.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # covid 2 (2020-03-11)
@@ -183,7 +398,20 @@ news_event = {
 	picture = GFX_covid2
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.15.a }
+	option = {
+		name = world_events.15.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.15.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # black lives matter (2020-05-26)
@@ -194,7 +422,20 @@ news_event = {
 	picture = GFX_BLM
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.16.a }
+	option = {
+		name = world_events.16.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.16.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # beirut (2020-08-04)
@@ -205,7 +446,20 @@ news_event = {
 	picture = GFX_beirut
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.17.a }
+	option = {
+		name = world_events.17.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.17.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # nagorno-karabakh (2020-09-27)
@@ -216,7 +470,20 @@ news_event = {
 	picture = GFX_NK
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.18.a }
+	option = {
+		name = world_events.18.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.18.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # covid 3 (2020-12-08)
@@ -227,7 +494,20 @@ news_event = {
 	picture = GFX_covid3
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.19.a }
+	option = {
+		name = world_events.19.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.19.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # australia (2020-01-01)
@@ -238,7 +518,20 @@ news_event = {
 	picture = GFX_australia
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.20.a }
+	option = {
+		name = world_events.20.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.20.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # capitol (2021-01-06)
@@ -249,7 +542,20 @@ news_event = {
 	picture = GFX_capitol
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.21.a }
+	option = {
+		name = world_events.21.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.21.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # afghanistan (2021-08-15)
@@ -260,7 +566,20 @@ news_event = {
 	picture = GFX_afghanistan
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.22.a }
+	option = {
+		name = world_events.22.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.22.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # covid 4 (2021-07-01)
@@ -271,7 +590,20 @@ news_event = {
 	picture = GFX_covid4
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.23.a }
+	option = {
+		name = world_events.23.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.23.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # suez canal (2021-03-29)
@@ -282,7 +614,20 @@ news_event = {
 	picture = GFX_suez
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.24.a }
+	option = {
+		name = world_events.24.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.24.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # pegasus (2021-07-18)
@@ -293,7 +638,20 @@ news_event = {
 	picture = GFX_pegasus
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.25.a }
+	option = {
+		name = world_events.25.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.25.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # elizabeth (2022-09-08)
@@ -304,7 +662,20 @@ news_event = {
 	picture = GFX_elizabeth
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.26.a }
+	option = {
+		name = world_events.26.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.26.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # fifa qatar (2022-11-20)
@@ -315,7 +686,20 @@ news_event = {
 	picture = GFX_fifa_qatar
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.27.a }
+	option = {
+		name = world_events.27.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.27.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # israel–hamas (2023-10-07)
@@ -326,7 +710,20 @@ news_event = {
 	picture = GFX_israel_hamas
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.28.a }
+	option = {
+		name = world_events.28.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.28.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # turkey-syria (2023-02-06)
@@ -337,7 +734,20 @@ news_event = {
 	picture = GFX_turkey_syria
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.29.a }
+	option = {
+		name = world_events.29.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.29.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # AI (2023-03-14)
@@ -348,7 +758,20 @@ news_event = {
 	picture = GFX_AI
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.30.a }
+	option = {
+		name = world_events.30.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.30.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # usa elections (2017-01-20)
@@ -359,7 +782,20 @@ news_event = {
 	picture = GFX_usa1
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.31.a }
+	option = {
+		name = world_events.31.a
+		trigger = {
+			NOT = {
+				tag = WAL
+			}
+		}
+	}
+	option = {
+		name = world_events.31.b
+		trigger = {
+			tag = WAL
+		}
+	}
 }
 
 # usa elections (2021-01-20)
@@ -370,7 +806,20 @@ news_event = {
 	picture = GFX_usa2
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.32.a }
+	option = {
+		name = world_events.32.a
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+	option = {
+		name = world_events.32.b
+		trigger = {
+			tag = RUS
+		}
+	}
 }
 
 # usa elections (2025-01-20)
@@ -381,5 +830,18 @@ news_event = {
 	picture = GFX_usa3
 	major = yes
 	is_triggered_only = yes
-	option = { name = world_events.33.a }
+	option = {
+		name = world_events.33.a
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+	option = {
+		name = world_events.33.b
+		trigger = {
+			tag = RUS
+		}
+	}
 }
