@@ -5805,3 +5805,121 @@ country_event = {
 		mark_focus_tree_layout_dirty = yes
 	}
 }
+
+# Украина отправляет ивент на вступление в ЕС
+country_event = {
+    id = ukraine.157
+    title = ukraine.157.t
+    desc = ukraine.157.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.157.a
+        country_event = { id = ukraine.158 days = 3 }
+    }
+}
+
+# Украина отправила заявку в НАТО
+country_event = {
+    id = ukr_nato_cooperation.2
+    title = ukr_nato_cooperation.2.t
+    desc = ukr_nato_cooperation.2.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukr_nato_cooperation.2.a
+        NAT = {
+            country_event = { id = ukr_nato_cooperation.3 days = 3 }
+        }
+    }
+}
+
+# Запрос для НАТО (Отправляется тегу NAT, 100% Да / 0% Нет)
+country_event = {
+    id = ukr_nato_cooperation.3
+    title = ukr_nato_cooperation.3.t
+    desc = ukr_nato_cooperation.3.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukr_nato_cooperation.3.a
+        ai_chance = { base = 100 }
+        
+        UKR = {
+            add_to_faction = UKR
+            country_event = { id = ukraine.159 days = 1 } # Ивент UKR: Приняли в НАТО
+        }
+    }
+
+    option = {
+        name = ukr_nato_cooperation.3.b
+        ai_chance = { base = 0 }
+
+        UKR = {
+            country_event = { id = ukr_nato_cooperation.4 days = 1 } # Ивент UKR: Отказали в НАТО
+        }
+    }
+}
+
+# Заявка в ЕС принята
+country_event = {
+    id = ukraine.158
+    title = ukraine.158.t
+    desc = ukraine.158.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.158.a
+        add_stability = 0.15
+        add_to_variable = { UKR_eu_consumer_goods = -0.03 }
+        add_to_variable = { UKR_eu_research = 0.05 }
+        add_to_variable = { UKR_eu_construction = 0.05 }
+        
+        news_event = { id = news_events.52 }
+    }
+}
+
+# НАТО приняло заявку
+country_event = {
+    id = ukraine.159
+    title = ukraine.159.t
+    desc = ukraine.159.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.159.a
+        add_stability = 0.10
+        add_war_support = 0.10
+        add_to_variable = { UKR_AFU_army_attack_factor = 0.05 }
+        add_to_variable = { UKR_AFU_army_defence_factor = 0.05 }
+		add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
+        
+        news_event = { id = news_event.53 }
+    }
+}
+
+# НАТО отказало в заявке
+country_event = {
+    id = ukr_nato_cooperation.4
+    title = ukr_nato_cooperation.4.t
+    desc = ukr_nato_cooperation.4.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukr_nato_cooperation.4.a
+        add_stability = -0.05
+        add_political_power = -25
+    }
+}
