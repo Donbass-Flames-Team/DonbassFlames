@@ -769,64 +769,6 @@ guiTypes = {
         }
 	}
 
-	containerWindowType = {
-		name = "RUS_general_staff_dnepr_region_map"
-		position = { x = 0 y = -10 }
-		size = { width = 1378 height = 695 }
-		orientation = center
-		origo = center
-		fade_time = 350
-		moveable = no
-		fade_type = linear
-		click_to_front = no
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite = "GFX_General_Staff_Map"
-			position = { x = 27 y = 27 }
-		}
-
-		iconType = {
-            name = "city_gui_background"
-            position = { x = 1082 y = 101 }
-            quadTextureSprite = "GFX_separatismgui_bgempty"
-        }
-		
-		buttonType = {
-			name = "close_map_button"
-			position = { x = 1366 y = 34 }
-			quadTextureSprite = "GFX_closebutton"
-			pdx_tooltip = "CLOSE"
-			clicksound = click_close
-			shortcut = "ESCAPE"
-		}
-
-		instantTextBoxType = {
-			name = "General_Staff_region_name"
-			maxWidth = 300
-			position = { x = 986 y = 118 }
-			font = "hoi_36header"
-			text = "[get_region_name_separatism]"
-		}
-
-		instantTextBoxType = {
-			name = "UKR_separatismgui_name"
-			text = "UKR_separatismgui_name_text"
-			font = "hoi_36header"
-			maxWidth = 270
-			position = { x = 584 y = 35 }
-		}
-
-		#################
-		
-		buttonType = {
-            name = "coat_cherkasy_button"
-            position = { x = 510 y = 370 }
-            quadTextureSprite = "GFX_ukraine_cherkasy_coat_of_arms"
-            clicksound = click_close
-        }
-	}
 	
 	containerWindowType = {
 		name = "RUS_general_staff_zaporozhie_region_map"
@@ -1123,64 +1065,6 @@ guiTypes = {
         }
 	}
 	
-	containerWindowType = {
-		name = "RUS_general_staff_odessa_region_map"
-		position = { x = 0 y = -10 }
-		size = { width = 1378 height = 695 }
-		orientation = center
-		origo = center
-		fade_time = 350
-		moveable = no
-		fade_type = linear
-		click_to_front = no
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite = "GFX_General_Staff_Map"
-			position = { x = 27 y = 27 }
-		}
-
-		iconType = {
-            name = "city_gui_background"
-            position = { x = 1082 y = 101 }
-            quadTextureSprite = "GFX_separatismgui_bgempty"
-        }
-		
-		buttonType = {
-			name = "close_map_button"
-			position = { x = 1366 y = 34 }
-			quadTextureSprite = "GFX_closebutton"
-			pdx_tooltip = "CLOSE"
-			clicksound = click_close
-			shortcut = "ESCAPE"
-		}
-
-		instantTextBoxType = {
-			name = "General_Staff_region_name"
-			maxWidth = 300
-			position = { x = 986 y = 118 }
-			font = "hoi_36header"
-			text = "[get_region_name_separatism]"
-		}
-
-		instantTextBoxType = {
-			name = "UKR_separatismgui_name"
-			text = "UKR_separatismgui_name_text"
-			font = "hoi_36header"
-			maxWidth = 270
-			position = { x = 584 y = 35 }
-		}
-
-		#################
-		
-		buttonType = {
-            name = "coat_cherkasy_button"
-            position = { x = 510 y = 370 }
-            quadTextureSprite = "GFX_ukraine_cherkasy_coat_of_arms"
-            clicksound = click_close
-        }
-	}
 	
 	containerWindowType = {
 		name = "RUS_general_staff_kiyv_region_map"

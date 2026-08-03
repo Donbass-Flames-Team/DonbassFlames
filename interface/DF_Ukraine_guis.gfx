@@ -687,11 +687,6 @@ spriteTypes = {
 	}	
 
 	spriteType = {
-    	name = "GFX_separatismgui_bgsumy"
-    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Backgrounds/separatismgui_bgsumy.png"
-	}	
-
-	spriteType = {
     	name = "GFX_separatismgui_bgrivne"
     	textureFile = "gfx/interface/scripted_guis/ukraine_gui/separatism_gui/Backgrounds/separatismgui_bgrivne.png"
 	}	
@@ -954,16 +949,7 @@ spriteTypes = {
 	}	
 
     ## Luhansk
-	spriteType = {
-    	name = "GFX_ukraine_elections_luhansk_region_red"
-    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Red_color/Luhansk_red.png"
-	}
 	
-	spriteType = {
-    	name = "GFX_ukraine_elections_luhansk_region_blue"
-    	textureFile = "gfx/interface/scripted_guis/ukraine_gui/Elections_gui/Regions/Blue_color/Luhansk_blue.png"
-	}
-
     ## Kyrovohrad
 	spriteType = {
     	name = "GFX_ukraine_elections_kyrovohrad_region_red"

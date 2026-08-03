@@ -36,12 +36,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 	}
 	
-	textSpriteType = {
-		name = "GFX_main_lobby_button_exit"
-		textureFile = "gfx/interface/exit_button.dds"
-		noOfFrames = 3
-		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
-	}
 	
 	SpriteType = {
 		name = "GFX_tiktok_icon"
@@ -247,8 +241,4 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_PER_glory_of_cyrus.dds"
 	}
 	
-    spriteType = {
-		name = "GFX_frontend_medal_dlc046"
-		texturefile = "gfx/interface/goals/focus_PER_glory_of_cyrus.dds"
-	}
 }
