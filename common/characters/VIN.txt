@@ -1,0 +1,28 @@
+characters = {
+
+	VIN_oga = {
+		name = VIN_oga
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_VIN_oga"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+		}
+	}
+
+	VIN_papich = {
+		name = VIN_papich
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_VIN_papich"
+			}
+		}
+		country_leader = {
+			ideology = autoritarian_democracy
+			traits = { }
+		}
+	}
+}

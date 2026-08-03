@@ -410,6 +410,30 @@ spriteTypes = {
 		texturefile = "gfx/leaders/UKR/sergey_naev.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_UKR_sbu"
+		texturefile = "gfx/leaders/UKR/UKR_sbu.dds"
+	}
+
+	# Korchinsky
+
+	spriteType = {
+		name = "GFX_portrait_KOC_Dmytro_Korchynsky"
+		texturefile = "gfx/leaders/KOC/KOC_Dmytro_Korchynsky.dds"
+	}	
+
+	# Vinitsa
+
+	spriteType = {
+		name = "GFX_portrait_VIN_oga"
+		texturefile = "gfx/leaders/VIN/VIN_oga.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_VIN_papich"
+		texturefile = "gfx/leaders/VIN/VIN_papich.dds"
+	}	
+
 	# Hungary Leaders
 	spriteType = {
 		name = "GFX_portrait_HUN_viktor_orban"
