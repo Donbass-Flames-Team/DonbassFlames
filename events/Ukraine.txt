@@ -4707,7 +4707,7 @@ country_event = {
 				add_core_state = 278
 				add_core_state = 242
 			}
-			IVN = {
+			AZV = {
 				transfer_state = 143
 				transfer_state = 190
 
@@ -4893,7 +4893,15 @@ country_event = {
 				declare_war_on = {
 					target = MLR
 					type = annex_everything
-				}							
+				}		
+				declare_war_on = {
+					target = KOC
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = RSB
+					type = annex_everything
+				}					
 			}
 			USR = {
 				declare_war_on = {
@@ -4903,7 +4911,15 @@ country_event = {
 				declare_war_on = {
 					target = MLR
 					type = annex_everything
-				}								
+				}		
+				declare_war_on = {
+					target = KOC
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = RSB
+					type = annex_everything
+				}					
 			}
 			MLR = {
 				declare_war_on = {
@@ -4913,8 +4929,26 @@ country_event = {
 				declare_war_on = {
 					target = USR
 					type = annex_everything
-				}								
-			}			
+				}	
+				declare_war_on = {
+					target = KOC
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = RSB
+					type = annex_everything
+				}							
+			}	
+            KOC = {
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = RSB
+					type = annex_everything
+				}
+			}		
 		}
 	}
 
