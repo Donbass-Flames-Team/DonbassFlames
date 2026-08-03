@@ -930,6 +930,7 @@ sub_units = {
 		allow_in_non_army_hq = no
 		deployment_cost = 3
 		required_dlc = { "Thunder at Our Gates" }
+		training_time = 180
 
 		forest = {
 			attack = -0.40
