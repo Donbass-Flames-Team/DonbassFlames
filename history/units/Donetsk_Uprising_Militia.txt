@@ -91,8 +91,8 @@ division_template = {
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		apc_unit = { x = 0 y = 2 }
 		apc_unit = { x = 1 y = 0 }
+		apc_unit = { x = 1 y = 1 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
