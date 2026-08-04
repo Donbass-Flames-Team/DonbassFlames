@@ -92,15 +92,42 @@ on_actions = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = minsk_negotations_historical_borders
-						option = minsk_negotations_historical_borders_on
-					}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = minsk_1_borders
+					option = minsk_1_borders_historical
 				}
-				set_global_flag = minsk_negotations_historical_borders_on
 			}
+			set_global_flag = minsk_1_borders_historical
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = minsk_1_borders
+					option = minsk_1_borders_dynamic
+				}
+			}
+			set_global_flag = minsk_1_borders_dynamic
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = minsk_2_borders
+					option = minsk_2_borders_historical
+				}
+			}
+			set_global_flag = minsk_2_borders_historical
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = minsk_2_borders
+					option = minsk_2_borders_dynamic
+				}
+			}
+			set_global_flag = minsk_2_borders_dynamic
+		}
 			if = {
 				limit = {
 					has_game_rule = {
