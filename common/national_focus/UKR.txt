@@ -5394,6 +5394,24 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = UKR_cast_aside_luxury
+		icon = GFX_focus_UKR_cast_aside_luxury
+		cost = 1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = UKR_create_the_office_of_the_president
+		}
+		prerequisite = {
+			focus = UKR_start_personnel_purges
+		}
+		relative_position_id = UKR_create_the_office_of_the_president
+		available = {}
+		completion_reward = {
+			add_stability = 0.03
+		}
+	}
+	focus = {
 		id = UKR_start_personnel_purges
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
