@@ -6629,7 +6629,12 @@ focus_tree = {
 				has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
 			}
 		}
-		available = {}
+		available = {
+	NOT = { has_war_with = DPR }
+	NOT = { has_war_with = LPR }
+	NOT = { has_war_with = KPR }
+	NOT = { has_war_with = OPR }
+}
 		completion_reward = {
 			declare_war_on = {
 				type = annex_everything
