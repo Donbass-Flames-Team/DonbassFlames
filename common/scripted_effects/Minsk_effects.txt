@@ -205,6 +205,8 @@ first_minsk_historical_effect = {
 		transfer_state = 394
 		transfer_state = 397
 		transfer_state = 404
+		transfer_state = 467
+		transfer_state = 408 
 }
 	LPR = {
 		transfer_state = 351
@@ -213,6 +215,7 @@ first_minsk_historical_effect = {
 		transfer_state = 340
 		transfer_state = 339
 		transfer_state = 329
+		transfer_state = 10
 }
 	SKR = {
 		transfer_state = 387
@@ -241,13 +244,13 @@ first_minsk_historical_effect = {
 		transfer_state = 285
 		transfer_state = 10
 		transfer_state = 335
+		transfer_state = 433
 		transfer_state = 288
 		transfer_state = 305
 		transfer_state = 304
 		transfer_state = 297
 		transfer_state = 307
 		transfer_state = 269
-		transfer_state = 408
 		transfer_state = 526
 		transfer_state = 656
 		transfer_state = 527
@@ -260,103 +263,141 @@ first_minsk_historical_effect = {
 		transfer_state = 318
 		transfer_state = 412
 }
-
-
-
+}
+#здесь общее и выбирается какой именно Минск будет подписан
 second_minsk_effect = {
-	DPR = {
-		if = { limit = { 652 = { is_controlled_by = DPR }518 = { is_controlled_by = DPR }486 = { is_controlled_by = DPR }}transfer_state = 518 }
-		if = { limit = { 502 = { is_controlled_by = DPR }652 = { is_controlled_by = DPR }}transfer_state = 502 }
-		if = { limit = { 489 = { is_controlled_by = DPR }}transfer_state = 489 }
-		if = { limit = { 653 = { is_controlled_by = DPR }}transfer_state = 653 transfer_state = 489 }
-		if = { limit = { 446 = { is_controlled_by = DPR }}transfer_state = 446 }
-		if = { limit = { 486 = { is_controlled_by = DPR }}transfer_state = 486 }
-		if = { limit = { 652 = { is_controlled_by = DPR }}transfer_state = 652 }
-		if = { limit = { 450 = { is_controlled_by = DPR }}transfer_state = 450 }
-		if = { limit = { 433 = { is_controlled_by = DPR }}transfer_state = 433 }
-		if = { limit = { 381 = { is_controlled_by = DPR }}transfer_state = 381 }
-		if = { limit = { 13 = { is_controlled_by = DPR }}transfer_state = 13 }
-		if = { limit = { 426 = { is_controlled_by = DPR }}transfer_state = 426 }
-		if = { limit = { 399 = { is_controlled_by = DPR }}transfer_state = 399 }
-		if = { limit = { 390 = { is_controlled_by = DPR }}transfer_state = 390 }
-		if = { limit = { 391 = { is_controlled_by = DPR }}transfer_state = 391 }
-		### Дебальцево
-		if = { 
-			limit = { 
-				any_country = {
-					OR = {
-						tag = DPR
-						is_in_faction_with = DPR
-					}
-					controls_state  = 378 
-				}
-			}
-			transfer_state = 378 
-			transfer_state = 13 
+	if = {
+		limit = {
+			has_global_flag = minsk_2_borders_dynamic
 		}
-		if = { 
-			limit = { 
-				any_country = {
-					OR = {
-						tag = DPR
-						is_in_faction_with = DPR
-					}
-					controls_state  = 376 
-				}
-			}
-			transfer_state = 376  
+		second_minsk_dynamic_effect = yes
+	}
+	if = {
+		limit = {
+			has_global_flag = minsk_2_borders_historical
 		}
-		####
-		if = { 
-			limit = { 
-				any_country = {
-					OR = {
-						tag = DPR
-						is_in_faction_with = DPR
-					}
-					controls_state  = 527 
-				}
+		second_minsk_historical_effect = yes
+	}
+	UKR = {
+		if = {
+			limit = {
+				has_war_with = DPR
 			}
-			transfer_state = 527 
-		}
-		if = { 
-			limit = { 
-				any_country = {
-					OR = {
-						tag = DPR
-						is_in_faction_with = DPR
-					}
-					controls_state  = 649 
-				}
-			}
-			transfer_state = 649 
-		}
-		if = { 
-			limit = { 
-				any_country = {
-					OR = {
-						tag = DPR
-						is_in_faction_with = DPR
-					}
-					controls_state  = 421 
-				}
-			}
-			transfer_state = 421 
-			transfer_state = 465 
+			white_peace = DPR
 		}
 		if = {
-			limit = { 
+			limit = {
+				has_war_with = LPR
+			}
+			white_peace = LPR
+		}
+		if = {
+			limit = {
+				has_war_with = DKR
+			}
+			white_peace = DKR
+		}
+	}
+}
+
+
+second_minsk_dynamic_effect = {
+	DPR = {
+		if = { limit = { 652 = { is_controlled_by = DPR } 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
+		if = { limit = { 502 = { is_controlled_by = DPR } 652 = { is_controlled_by = DPR } } transfer_state = 502 }
+		if = { limit = { 489 = { is_controlled_by = DPR } } transfer_state = 489 }
+		if = { limit = { 653 = { is_controlled_by = DPR } } transfer_state = 653 transfer_state = 489 }
+		if = { limit = { 446 = { is_controlled_by = DPR } } transfer_state = 446 }
+		if = { limit = { 486 = { is_controlled_by = DPR } } transfer_state = 486 }
+		if = { limit = { 652 = { is_controlled_by = DPR } } transfer_state = 652 }
+		if = { limit = { 450 = { is_controlled_by = DPR } } transfer_state = 450 }
+		if = { limit = { 433 = { is_controlled_by = DPR } } transfer_state = 433 }
+		if = { limit = { 381 = { is_controlled_by = DPR } } transfer_state = 381 }
+		if = { limit = { 13 = { is_controlled_by = DPR } } transfer_state = 13 }
+		if = { limit = { 426 = { is_controlled_by = DPR } } transfer_state = 426 }
+		if = { limit = { 399 = { is_controlled_by = DPR } } transfer_state = 399 }
+		if = { limit = { 390 = { is_controlled_by = DPR } } transfer_state = 390 }
+		if = { limit = { 391 = { is_controlled_by = DPR } } transfer_state = 391 }
+
+		### Дебальцево
+		if = {
+			limit = {
 				any_country = {
 					OR = {
 						tag = DPR
 						is_in_faction_with = DPR
 					}
-					controls_state  = 468 
+					controls_state = 378
 				}
 			}
-			transfer_state = 468 
+			transfer_state = 378
+			transfer_state = 13
+		}
+		if = {
+			limit = {
+				any_country = {
+					OR = {
+						tag = DPR
+						is_in_faction_with = DPR
+					}
+					controls_state = 376
+				}
+			}
+			transfer_state = 376
+		}
+		####
+
+		if = {
+			limit = {
+				any_country = {
+					OR = {
+						tag = DPR
+						is_in_faction_with = DPR
+					}
+					controls_state = 527
+				}
+			}
+			transfer_state = 527
+		}
+		if = {
+			limit = {
+				any_country = {
+					OR = {
+						tag = DPR
+						is_in_faction_with = DPR
+					}
+					controls_state = 649
+				}
+			}
+			transfer_state = 649
+		}
+		if = {
+			limit = {
+				any_country = {
+					OR = {
+						tag = DPR
+						is_in_faction_with = DPR
+					}
+					controls_state = 421
+				}
+			}
+			transfer_state = 421
+			transfer_state = 465
+		}
+		if = {
+			limit = {
+				any_country = {
+					OR = {
+						tag = DPR
+						is_in_faction_with = DPR
+					}
+					controls_state = 468
+				}
+			}
+			transfer_state = 468
 			transfer_state = 264
 		}
+
 		transfer_state = 444
 		transfer_state = 437
 		transfer_state = 448
@@ -377,12 +418,14 @@ second_minsk_effect = {
 		transfer_state = 408
 		transfer_state = 432
 		transfer_state = 658
+
 		DKR = {
-			if = { limit = { 658 = { is_controlled_by = DKR }}transfer_state = 658 }
-			if = { limit = { 437 = { is_controlled_by = DKR }}transfer_state = 437 }
-			if = { limit = { 435 = { is_controlled_by = DKR }}transfer_state = 435 }
+			if = { limit = { 658 = { is_controlled_by = DKR } } transfer_state = 658 }
+			if = { limit = { 437 = { is_controlled_by = DKR } } transfer_state = 437 }
+			if = { limit = { 435 = { is_controlled_by = DKR } } transfer_state = 435 }
 		}
 	}
+
 	LPR = {
 		transfer_state = 387
 		transfer_state = 406
@@ -400,54 +443,135 @@ second_minsk_effect = {
 		transfer_state = 352
 		transfer_state = 339
 		transfer_state = 659
-		if = { limit = { 329 = { is_controlled_by = LPR }}transfer_state = 329 }
-		if = { limit = { 346 = { is_controlled_by = LPR }}transfer_state = 346 }
-		if = { limit = { 343 = { is_controlled_by = LPR }}transfer_state = 343 }
-		if = { limit = { 334 = { is_controlled_by = LPR }}transfer_state = 334 }
-		if = { limit = { 333 = { is_controlled_by = LPR }}transfer_state = 333 transfer_state = 344 }
-		if = { limit = { 326 = { is_controlled_by = LPR }}transfer_state = 326 }
-		if = { limit = { 335 = { is_controlled_by = LPR }}transfer_state = 335 }
+		if = { limit = { 329 = { is_controlled_by = LPR } } transfer_state = 329 }
+		if = { limit = { 346 = { is_controlled_by = LPR } } transfer_state = 346 }
+		if = { limit = { 343 = { is_controlled_by = LPR } } transfer_state = 343 }
+		if = { limit = { 334 = { is_controlled_by = LPR } } transfer_state = 334 }
+		if = { limit = { 333 = { is_controlled_by = LPR } } transfer_state = 333 transfer_state = 344 }
+		if = { limit = { 326 = { is_controlled_by = LPR } } transfer_state = 326 }
+		if = { limit = { 335 = { is_controlled_by = LPR } } transfer_state = 335 }
 	}
+
 	SKR = {
 		transfer_state = 387
 		transfer_state = 416
 		transfer_state = 413
 	}
+
 	UKR = {
 		transfer_state = 318
-		if = { limit = { 526 = { is_controlled_by = UKR }}transfer_state = 526 transfer_state = 650 }
-		if = { limit = { 650 = { is_fully_controlled_by = UKR }}transfer_state = 650 }
-		if = { limit = { 652 = { is_controlled_by = UKR }}transfer_state = 652 }
-		if = { limit = { 291 = { is_controlled_by = UKR }}transfer_state = 291 transfer_state = 327 transfer_state = 318 }
-		if = { limit = { 337 = { is_controlled_by = UKR }}transfer_state = 337 transfer_state = 359 }
-		if = { limit = { 381 = { is_controlled_by = UKR }}transfer_state = 381 }
-		if = { limit = { 426 = { is_controlled_by = UKR }401 = { is_controlled_by = UKR }}transfer_state = 426 }
-		if = { limit = { 412 = { is_controlled_by = UKR }399 = { is_controlled_by = UKR }}transfer_state = 412 }
-		if = { limit = { 412 = { is_controlled_by = UKR }401 = { is_controlled_by = UKR }}transfer_state = 412 }
-		if = { limit = { 412 = { is_controlled_by = UKR }}transfer_state = 412 }
-		if = { limit = { 401 = { is_controlled_by = UKR }}transfer_state = 401 }
-		if = { limit = { 399 = { is_controlled_by = UKR }}transfer_state = 399 }
-		if = { limit = { 390 = { is_controlled_by = UKR }}transfer_state = 390 }
-		if = { limit = { 391 = { is_controlled_by = UKR }}transfer_state = 391 }
-		if = { limit = { 446 = { is_controlled_by = UKR }}transfer_state = 446 }
-		if = { limit = { 343 = { is_controlled_by = UKR }}transfer_state = 343 }
-		if = { limit = { 334 = { is_controlled_by = UKR }}transfer_state = 334 }
-		if = { limit = { 346 = { is_controlled_by = UKR }}transfer_state = 346 }
-		if = { limit = { 329 = { is_controlled_by = UKR }}transfer_state = 329 }
-		if = { limit = { 335 = { is_controlled_by = UKR }}transfer_state = 335 }
+		if = { limit = { 526 = { is_controlled_by = UKR } } transfer_state = 526 transfer_state = 650 }
+		if = { limit = { 650 = { is_fully_controlled_by = UKR } } transfer_state = 650 }
+		if = { limit = { 652 = { is_controlled_by = UKR } } transfer_state = 652 }
+		if = { limit = { 291 = { is_controlled_by = UKR } } transfer_state = 291 transfer_state = 327 transfer_state = 318 }
+		if = { limit = { 337 = { is_controlled_by = UKR } } transfer_state = 337 transfer_state = 359 }
+		if = { limit = { 381 = { is_controlled_by = UKR } } transfer_state = 381 }
+		if = { limit = { 426 = { is_controlled_by = UKR } 401 = { is_controlled_by = UKR } } transfer_state = 426 }
+		if = { limit = { 412 = { is_controlled_by = UKR } 399 = { is_controlled_by = UKR } } transfer_state = 412 }
+		if = { limit = { 412 = { is_controlled_by = UKR } 401 = { is_controlled_by = UKR } } transfer_state = 412 }
+		if = { limit = { 412 = { is_controlled_by = UKR } } transfer_state = 412 }
+		if = { limit = { 401 = { is_controlled_by = UKR } } transfer_state = 401 }
+		if = { limit = { 399 = { is_controlled_by = UKR } } transfer_state = 399 }
+		if = { limit = { 390 = { is_controlled_by = UKR } } transfer_state = 390 }
+		if = { limit = { 391 = { is_controlled_by = UKR } } transfer_state = 391 }
+		if = { limit = { 446 = { is_controlled_by = UKR } } transfer_state = 446 }
+		if = { limit = { 343 = { is_controlled_by = UKR } } transfer_state = 343 }
+		if = { limit = { 334 = { is_controlled_by = UKR } } transfer_state = 334 }
+		if = { limit = { 346 = { is_controlled_by = UKR } } transfer_state = 346 }
+		if = { limit = { 329 = { is_controlled_by = UKR } } transfer_state = 329 }
+		if = { limit = { 335 = { is_controlled_by = UKR } } transfer_state = 335 }
 
-		# Если днр захватил и украина отвоевала
-		if = { limit = { 527 = { is_controlled_by = UKR }}transfer_state = 527 }
-		if = { limit = { 649 = { is_controlled_by = UKR }}transfer_state = 649 }
-		if = { limit = { 421 = { is_controlled_by = UKR }}transfer_state = 421 transfer_state = 465 }
-		if = { limit = { 468 = { is_controlled_by = UKR }}transfer_state = 468 }
+		# Если ДНР захватила и Украина отвоевала
+		if = { limit = { 527 = { is_controlled_by = UKR } } transfer_state = 527 }
+		if = { limit = { 649 = { is_controlled_by = UKR } } transfer_state = 649 }
+		if = { limit = { 421 = { is_controlled_by = UKR } } transfer_state = 421 transfer_state = 465 }
+		if = { limit = { 468 = { is_controlled_by = UKR } } transfer_state = 468 }
 
-		# Если лнр захватила и украина отвоевала
-		if = { limit = { 304 = { is_controlled_by = UKR }}transfer_state = 304 }
-		if = { limit = { 305 = { is_controlled_by = UKR }}transfer_state = 305 }
+		# Если ЛНР захватила и Украина отвоевала
+		if = { limit = { 304 = { is_controlled_by = UKR } } transfer_state = 304 }
+		if = { limit = { 305 = { is_controlled_by = UKR } } transfer_state = 305 }
 	}
-	white_peace = DPR
-	white_peace = LPR
-    white_peace = DKR
-
+}
+#здесь исторический минск
+	second_minsk_historical_effect = {
+	DPR = {
+		transfer_state = 486
+		transfer_state = 652
+		transfer_state = 448
+		transfer_state = 452
+		transfer_state = 432
+		transfer_state = 657
+		transfer_state = 437
+		transfer_state = 658
+		transfer_state = 444
+		transfer_state = 424
+		transfer_state = 435
+		transfer_state = 402
+		transfer_state = 430
+		transfer_state = 438
+		transfer_state = 582
+		transfer_state = 265
+		transfer_state = 418
+		transfer_state = 381
+		transfer_state = 398
+		transfer_state = 394
+		transfer_state = 397
+		transfer_state = 404
+		transfer_state = 408
+		transfer_state = 13
+		transfer_state = 378
+		transfer_state = 433
+		transfer_state = 467
+		transfer_state = 450
+}
+	LPR = {
+		transfer_state = 351
+		transfer_state = 363
+		transfer_state = 384
+		transfer_state = 340
+		transfer_state = 339
+		transfer_state = 329
+}
+	SKR = {
+		transfer_state = 362
+		transfer_state = 370
+		transfer_state = 352
+		transfer_state = 357
+		transfer_state = 366
+		transfer_state = 343
+		transfer_state = 334
+		transfer_state = 346
+		transfer_state = 387
+		transfer_state = 416
+		transfer_state = 413
+		transfer_state = 406
+		transfer_state = 659
+		transfer_state = 427
+		}
+	UKR = {
+		transfer_state = 376
+		transfer_state = 651
+		transfer_state = 326
+		transfer_state = 285
+		transfer_state = 10
+		transfer_state = 335
+		transfer_state = 288
+		transfer_state = 305
+		transfer_state = 304
+		transfer_state = 297
+		transfer_state = 307
+		transfer_state = 269
+		transfer_state = 526
+		transfer_state = 656
+		transfer_state = 527
+		transfer_state = 518
+		transfer_state = 615
+		transfer_state = 649
+		transfer_state = 426
+		transfer_state = 327
+		transfer_state = 291
+		transfer_state = 318
+		transfer_state = 412
+		transfer_state = 10
+}
 }
