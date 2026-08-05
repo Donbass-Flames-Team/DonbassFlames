@@ -80,21 +80,39 @@ sep = {
 	}
 }
 
-minsk_negotations_historical_borders = {
-	name = "minsk_negotations_historical_borders"
+minsk_1_borders = {
+	name = "minsk_1_borders"
 	group = "RULE_MOD_SETTINGS"
 
 	default = {
-		name = "minsk_negotations_historical_borders_off"
-		text = "minsk_negotations_historical_borders_off"
-		desc = "minsk_negotations_historical_borders_off_desc"
+		name = "minsk_1_borders_dynamic"
+		text = "minsk_1_borders_dynamic"
+		desc = "minsk_1_borders_dynamic_desc"
 		allow_achievements = yes
 	}
 
 	option = {
-		name = "minsk_negotations_historical_borders_on"
-		text = "minsk_negotations_historical_borders_on"
-		desc = "minsk_negotations_historical_borders_on_desc"
+		name = "minsk_1_borders_historical"
+		text = "minsk_1_borders_historical"
+		desc = "minsk_1_borders_historical_desc"
+		allow_achievements = yes
+	}
+}
+minsk_2_borders = {
+	name = "minsk_2_borders"
+	group = "RULE_MOD_SETTINGS"
+
+	default = {
+		name = "minsk_2_borders_dynamic"
+		text = "minsk_2_borders_dynamic"
+		desc = "minsk_2_borders_dynamic_desc"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = "minsk_2_borders_historical"
+		text = "minsk_2_borders_historical"
+		desc = "minsk_2_borders_historical_desc"
 		allow_achievements = yes
 	}
 }
