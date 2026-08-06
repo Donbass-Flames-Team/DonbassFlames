@@ -31,6 +31,12 @@ first_minsk_effect = {
 			}
 			white_peace = DKR
 		}
+		if = {
+			limit = {
+				has_war_with = SKR
+			}
+			white_peace = SKR
+		}
 	}
 			clr_country_flag = DPR_forces_to_ilovaysk
 }
@@ -47,7 +53,7 @@ first_minsk_dynamic_effect = {
 					controls_state = 527
 				}
 			}
-			transfer_state = 527
+			527 = { transfer_state_to = DPR }
 		}
 		if = {
 			limit = {
@@ -59,7 +65,7 @@ first_minsk_dynamic_effect = {
 					controls_state = 649
 				}
 			}
-			transfer_state = 649
+			649 = { transfer_state_to = DPR }
 		}
 		if = {
 			limit = {
@@ -71,8 +77,8 @@ first_minsk_dynamic_effect = {
 					controls_state = 421
 				}
 			}
-			transfer_state = 421
-			transfer_state = 465
+			421 = { transfer_state_to = DPR }
+			465 = { transfer_state_to = DPR }
 		}
 		if = {
 			limit = {
@@ -84,184 +90,625 @@ first_minsk_dynamic_effect = {
 					controls_state = 468
 				}
 			}
-			transfer_state = 468
-			transfer_state = 264
+			468 = { transfer_state_to = DPR }
+			264 = { transfer_state_to = DPR }
 		}
-		if = { limit = { 526 = { is_controlled_by = DPR } } transfer_state = 526 transfer_state = 650 }
-		if = { limit = { 433 = { is_controlled_by = DPR } } transfer_state = 433 }
-		if = { limit = { 381 = { is_controlled_by = DPR } } transfer_state = 381 }
-		if = { limit = { 426 = { is_controlled_by = DPR } } transfer_state = 426 }
-		if = { limit = { 412 = { is_controlled_by = DPR } } transfer_state = 412 }
-		if = { limit = { 401 = { is_controlled_by = DPR } } transfer_state = 401 }
-		if = { limit = { 399 = { is_controlled_by = DPR } } transfer_state = 399 }
-		if = { limit = { 390 = { is_controlled_by = DPR } } transfer_state = 390 }
-		if = { limit = { 391 = { is_controlled_by = DPR } } transfer_state = 391 }
-		if = { limit = { 652 = { is_controlled_by = DPR } 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
-		if = { limit = { 502 = { is_controlled_by = DPR } 652 = { is_controlled_by = DPR } } transfer_state = 502 }
-		if = { limit = { 489 = { is_controlled_by = DPR } } transfer_state = 489 }
-		if = { limit = { 653 = { is_controlled_by = DPR } } transfer_state = 653 transfer_state = 489 }
-		if = { limit = { 446 = { is_controlled_by = DPR } 450 = { is_controlled_by = DPR } } transfer_state = 446 }
-		if = { limit = { 486 = { is_controlled_by = DPR } 652 = { is_controlled_by = DPR } } transfer_state = 486 }
-		if = { limit = { 652 = { is_controlled_by = DPR } } transfer_state = 652 }
-		if = { limit = { 450 = { is_controlled_by = DPR } } transfer_state = 450 }
-		transfer_state = 444
-		transfer_state = 437
-		transfer_state = 448
-		transfer_state = 394
-		transfer_state = 424
-		transfer_state = 402
-		transfer_state = 435
-		transfer_state = 582
-		transfer_state = 438
-		transfer_state = 467
-		transfer_state = 398
-		transfer_state = 418
-		transfer_state = 430
-		transfer_state = 265
-		transfer_state = 452
-		transfer_state = 397
-		transfer_state = 404
-		transfer_state = 408
-		transfer_state = 432
-		transfer_state = 658
+		if = {
+			limit = {
+				526 = { is_controlled_by = DPR }
+			}
+			526 = { transfer_state_to = DPR }
+			650 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				426 = { is_controlled_by = DPR }
+			}
+			426 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				412 = { is_controlled_by = DPR }
+			}
+			412 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				401 = { is_controlled_by = DPR }
+			}
+			401 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				399 = { is_controlled_by = DPR }
+			}
+			399 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				390 = { is_controlled_by = DPR }
+			}
+			390 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				391 = { is_controlled_by = DPR }
+			}
+			391 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				AND = {
+					652 = { is_controlled_by = DPR }
+					518 = { is_controlled_by = DPR }
+					486 = { is_controlled_by = DPR }
+				}
+			}
+			518 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				AND = {
+					502 = { is_controlled_by = DPR }
+					652 = { is_controlled_by = DPR }
+				}
+			}
+			502 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				489 = { is_controlled_by = DPR }
+			}
+			489 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				653 = { is_controlled_by = DPR }
+			}
+			653 = { transfer_state_to = DPR }
+			489 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				AND = {
+					446 = { is_controlled_by = DPR }
+					450 = { is_controlled_by = DPR }
+				}
+			}
+			446 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				AND = {
+					486 = { is_controlled_by = DPR }
+					652 = { is_controlled_by = DPR }
+				}
+			}
+			486 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				652 = { is_controlled_by = DPR }
+			}
+			652 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				433 = { is_controlled_by = DPR }
+			}
+			433 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				426 = { is_controlled_by = DPR }
+			}
+			433 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				408 = { is_controlled_by = DPR }
+			}
+			408 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				467 = { is_controlled_by = DPR }
+			}
+			467 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				450 = { is_controlled_by = DPR }
+			}
+			450 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				452 = { is_controlled_by = DPR }
+			}
+			452 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				450 = { is_controlled_by = DPR }
+			}
+			452 = { transfer_state_to = DPR }
+		}
+		381 = { transfer_state_to = DPR }
+		444 = { transfer_state_to = DPR }
+		448 = { transfer_state_to = DPR }
+		394 = { transfer_state_to = DPR }
+		424 = { transfer_state_to = DPR }
+		402 = { transfer_state_to = DPR }
+		582 = { transfer_state_to = DPR }
+		438 = { transfer_state_to = DPR }
+		398 = { transfer_state_to = DPR }
+		418 = { transfer_state_to = DPR }
+		430 = { transfer_state_to = DPR }
+		265 = { transfer_state_to = DPR }
+		397 = { transfer_state_to = DPR }
+		404 = { transfer_state_to = DPR }
+		432 = { transfer_state_to = DPR }
+		if = {
+			limit = {
+				NOT = { 657 = { is_controlled_by = DKR } }
+			}
+			657 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				NOT = { 658 = { is_controlled_by = DKR } }
+			}
+			658 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				NOT = { 437 = { is_controlled_by = DKR } }
+			}
+			437 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				NOT = { 435 = { is_controlled_by = DKR } }
+			}
+			435 = { transfer_state_to = DPR }
+		}
 		DKR = {
-			transfer_state = 657
-			if = { limit = { 658 = { is_controlled_by = DKR } } transfer_state = 658 }
-			if = { limit = { 437 = { is_controlled_by = DKR } } transfer_state = 437 }
-			if = { limit = { 435 = { is_controlled_by = DKR } } transfer_state = 435 }
+			if = {
+				limit = {
+					657 = { is_controlled_by = DKR }
+				}
+				657 = { transfer_state_to = DKR }
+			}
+			if = {
+				limit = {
+					658 = { is_controlled_by = DKR }
+				}
+				658 = { transfer_state_to = DKR }
+			}
+			if = {
+				limit = {
+					437 = { is_controlled_by = DKR }
+				}
+				437 = { transfer_state_to = DKR }
+			}
+			if = {
+				limit = {
+					435 = { is_controlled_by = DKR }
+				}
+				435 = { transfer_state_to = DKR }
+			}
+		}
+	}
+	SKR = {
+		if = {
+			limit = {
+				387 = { is_controlled_by = SKR }
+			}
+			387 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				416 = { is_controlled_by = SKR }
+			}
+			416 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				413 = { is_controlled_by = SKR }
+			}
+			413 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				406 = { is_controlled_by = SKR }
+			}
+			406 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				659 = { is_controlled_by = SKR }
+			}
+			659 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				427 = { is_controlled_by = SKR }
+			}
+			427 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				362 = { is_controlled_by = SKR }
+			}
+			362 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				370 = { is_controlled_by = SKR }
+			}
+			370 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				352 = { is_controlled_by = SKR }
+			}
+			352 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				357 = { is_controlled_by = SKR }
+			}
+			357 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				343 = { is_controlled_by = SKR }
+			}
+			343 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				334 = { is_controlled_by = SKR }
+			}
+			334 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				366 = { is_controlled_by = SKR }
+			}
+			366 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				346 = { is_controlled_by = SKR }
+			}
+			346 = { transfer_state_to = SKR }
 		}
 	}
 	LPR = {
-		transfer_state = 387
-		transfer_state = 406
-		transfer_state = 351
-		transfer_state = 363
-		transfer_state = 384
-		transfer_state = 416
-		transfer_state = 413
-		transfer_state = 427
-		transfer_state = 346
-		transfer_state = 357
-		transfer_state = 340
-		transfer_state = 329
-		transfer_state = 362
-		transfer_state = 370
-		transfer_state = 366
-		transfer_state = 352
-		transfer_state = 339
-		transfer_state = 343
-		transfer_state = 334
-		transfer_state = 659
-		if = { limit = { 333 = { is_controlled_by = LPR } } transfer_state = 333 transfer_state = 344 }
-		if = { limit = { 326 = { is_controlled_by = LPR } } transfer_state = 326 }
-		if = { limit = { 335 = { is_controlled_by = LPR } } transfer_state = 335 }
-		if = { limit = { 288 = { is_controlled_by = LPR } 335 = { is_controlled_by = LPR } } transfer_state = 288 }
-		if = { limit = { 285 = { is_controlled_by = LPR } } transfer_state = 285 }
-		if = { limit = { 10 = { is_controlled_by = LPR } } transfer_state = 10 }
-		if = { limit = { 305 = { is_controlled_by = LPR } 285 = { is_controlled_by = LPR } } transfer_state = 305 }
-		if = { limit = { 305 = { is_controlled_by = LPR } 304 = { is_controlled_by = LPR } } transfer_state = 304 }
+		if = {
+			limit = {
+				NOT = { 387 = { is_controlled_by = SKR } }
+			}
+			387 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 416 = { is_controlled_by = SKR } }
+			}
+			416 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 413 = { is_controlled_by = SKR } }
+			}
+			413 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 406 = { is_controlled_by = SKR } }
+			}
+			406 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 659 = { is_controlled_by = SKR } }
+			}
+			659 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 427 = { is_controlled_by = SKR } }
+			}
+			427 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 362 = { is_controlled_by = SKR } }
+			}
+			362 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 370 = { is_controlled_by = SKR } }
+			}
+			370 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 352 = { is_controlled_by = SKR } }
+			}
+			352 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 357 = { is_controlled_by = SKR } }
+			}
+			357 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 343 = { is_controlled_by = SKR } }
+			}
+			343 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 334 = { is_controlled_by = SKR } }
+			}
+			334 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 366 = { is_controlled_by = SKR } }
+			}
+			366 = { transfer_state_to = LPR }
+		}
+		351 = { transfer_state_to = LPR }
+		363 = { transfer_state_to = LPR }
+		384 = { transfer_state_to = LPR }
+		340 = { transfer_state_to = LPR }
+		if = {
+			limit = {
+				339 = { is_controlled_by = LPR }
+			}
+			339 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				329 = { is_controlled_by = LPR }
+			}
+			339 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				346 = { is_controlled_by = LPR }
+			}
+			346 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				329 = { is_controlled_by = LPR }
+			}
+			329 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				333 = { is_controlled_by = LPR }
+			}
+			333 = { transfer_state_to = LPR }
+			344 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				326 = { is_controlled_by = LPR }
+			}
+			326 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				335 = { is_controlled_by = LPR }
+			}
+			335 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				288 = { is_controlled_by = LPR }
+			}
+			288 = { transfer_state_to = LPR }
+			335 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				285 = { is_controlled_by = LPR }
+			}
+			285 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				10 = { is_controlled_by = LPR }
+			}
+			10 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				AND = {
+					305 = { is_controlled_by = LPR }
+					285 = { is_controlled_by = LPR }
+				}
+			}
+			305 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				AND = {
+					305 = { is_controlled_by = LPR }
+					304 = { is_controlled_by = LPR }
+				}
+			}
+			304 = { transfer_state_to = LPR }
+		}
 		clr_country_flag = LPR_first_phase_of_ato
 	}
-	SKR = {
-		transfer_state = 387
-		transfer_state = 416
-		transfer_state = 413
-	}
 	UKR = {
-		transfer_state = 318
-		if = { limit = { 526 = { is_controlled_by = UKR } } transfer_state = 526 transfer_state = 650 }
-		if = { limit = { 650 = { is_fully_controlled_by = UKR } } transfer_state = 650 }
-		if = { limit = { 652 = { is_controlled_by = UKR } } transfer_state = 652 }
-		if = { limit = { 291 = { is_controlled_by = UKR } } transfer_state = 291 transfer_state = 327 transfer_state = 318 }
-		if = { limit = { 337 = { is_controlled_by = UKR } } transfer_state = 337 transfer_state = 359 }
-		if = { limit = { 381 = { is_controlled_by = UKR } } transfer_state = 381 }
-		if = { limit = { 288 = { is_controlled_by = UKR } 335 = { is_controlled_by = UKR } } transfer_state = 335 }
-		if = { limit = { 304 = { is_controlled_by = UKR } } transfer_state = 304 }
-		if = { limit = { 305 = { is_controlled_by = UKR } } transfer_state = 305 }
+		if = {
+			limit = {
+				526 = { is_controlled_by = UKR }
+			}
+			526 = { transfer_state_to = UKR }
+			650 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				652 = { is_controlled_by = UKR }
+			}
+			652 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				291 = { is_controlled_by = UKR }
+			}
+			291 = { transfer_state_to = UKR }
+			327 = { transfer_state_to = UKR }
+			318 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				337 = { is_controlled_by = UKR }
+			}
+			337 = { transfer_state_to = UKR }
+			359 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				288 = { is_controlled_by = UKR }
+			}
+			288 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				335 = { is_controlled_by = UKR }
+			}
+			335 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				304 = { is_controlled_by = UKR }
+			}
+			304 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				305 = { is_controlled_by = UKR }
+			}
+			305 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				408 = { is_controlled_by = UKR }
+			}
+			408 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				346 = { is_controlled_by = UKR }
+			}
+			346 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				339 = { is_controlled_by = UKR }
+			}
+			339 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				329 = { is_controlled_by = UKR }
+			}
+			329 = { transfer_state_to = UKR }
+		}
 	}
 }
-#здесь исторический минск
+#здесь первий исторический минск
 first_minsk_historical_effect = {
 	DPR = {
-		transfer_state = 486
-		transfer_state = 652
-		transfer_state = 448
-		transfer_state = 452
-		transfer_state = 432
-		transfer_state = 657
-		transfer_state = 437
-		transfer_state = 658
-		transfer_state = 444
-		transfer_state = 424
-		transfer_state = 435
-		transfer_state = 402
-		transfer_state = 430
-		transfer_state = 438
-		transfer_state = 582
-		transfer_state = 265
-		transfer_state = 418
-		transfer_state = 381
-		transfer_state = 398
-		transfer_state = 394
-		transfer_state = 397
-		transfer_state = 404
-		transfer_state = 467
-		transfer_state = 408 
+		486 = { transfer_state_to = DPR }
+		652 = { transfer_state_to = DPR }
+		448 = { transfer_state_to = DPR }
+		452 = { transfer_state_to = DPR }
+		432 = { transfer_state_to = DPR }
+		657 = { transfer_state_to = DPR }
+		437 = { transfer_state_to = DPR }
+		658 = { transfer_state_to = DPR }
+		444 = { transfer_state_to = DPR }
+		424 = { transfer_state_to = DPR }
+		435 = { transfer_state_to = DPR }
+		402 = { transfer_state_to = DPR }
+		430 = { transfer_state_to = DPR }
+		438 = { transfer_state_to = DPR }
+		582 = { transfer_state_to = DPR }
+		265 = { transfer_state_to = DPR }
+		418 = { transfer_state_to = DPR }
+		381 = { transfer_state_to = DPR }
+		398 = { transfer_state_to = DPR }
+		394 = { transfer_state_to = DPR }
+		397 = { transfer_state_to = DPR }
+		404 = { transfer_state_to = DPR }
+		467 = { transfer_state_to = DPR }
+		408 = { transfer_state_to = DPR }
 }
 	LPR = {
-		transfer_state = 351
-		transfer_state = 363
-		transfer_state = 384
-		transfer_state = 340
-		transfer_state = 339
-		transfer_state = 329
-		transfer_state = 10
+		351 = { transfer_state_to = LPR }
+		363 = { transfer_state_to = LPR }
+		384 = { transfer_state_to = LPR }
+		340 = { transfer_state_to = LPR }
+		339 = { transfer_state_to = LPR }
+		329 = { transfer_state_to = LPR }
 }
 	SKR = {
-		transfer_state = 387
-		transfer_state = 416
-		transfer_state = 413
-		transfer_state = 406
-		transfer_state = 659
-		transfer_state = 427
-		transfer_state = 362
-		transfer_state = 370
-		transfer_state = 352
-		transfer_state = 357
-		transfer_state = 343
-		transfer_state = 334
-		transfer_state = 362
-		transfer_state = 370
-		transfer_state = 366
-		transfer_state = 346
+		387 = { transfer_state_to = SKR }
+		416 = { transfer_state_to = SKR }
+		413 = { transfer_state_to = SKR }
+		406 = { transfer_state_to = SKR }
+		659 = { transfer_state_to = SKR }
+		427 = { transfer_state_to = SKR }
+		362 = { transfer_state_to = SKR }
+		370 = { transfer_state_to = SKR }
+		352 = { transfer_state_to = SKR }
+		357 = { transfer_state_to = SKR }
+		343 = { transfer_state_to = SKR }
+		334 = { transfer_state_to = SKR }
+		366 = { transfer_state_to = SKR }
+		346 = { transfer_state_to = SKR }
 		}
 	UKR = {
-		transfer_state = 13
-		transfer_state = 378
-		transfer_state = 376
-		transfer_state = 651
-		transfer_state = 326
-		transfer_state = 285
-		transfer_state = 10
-		transfer_state = 335
-		transfer_state = 433
-		transfer_state = 288
-		transfer_state = 305
-		transfer_state = 304
-		transfer_state = 297
-		transfer_state = 307
-		transfer_state = 269
-		transfer_state = 526
-		transfer_state = 656
-		transfer_state = 527
-		transfer_state = 518
-		transfer_state = 615
-		transfer_state = 649
-		transfer_state = 426
-		transfer_state = 327
-		transfer_state = 291
-		transfer_state = 318
-		transfer_state = 412
+		13 = { transfer_state_to = UKR }
+		378 = { transfer_state_to = UKR }
+		376 = { transfer_state_to = UKR }
+		651 = { transfer_state_to = UKR }
+		326 = { transfer_state_to = UKR }
+		285 = { transfer_state_to = UKR }
+		10 = { transfer_state_to = UKR }
+		335 = { transfer_state_to = UKR }
+		433 = { transfer_state_to = UKR }
+		288 = { transfer_state_to = UKR }
+		305 = { transfer_state_to = UKR }
+		304 = { transfer_state_to = UKR }
+		297 = { transfer_state_to = UKR }
+		307 = { transfer_state_to = UKR }
+		269 = { transfer_state_to = UKR }
+		526 = { transfer_state_to = UKR }
+		656 = { transfer_state_to = UKR }
+		527 = { transfer_state_to = UKR }
+		518 = { transfer_state_to = UKR }
+		615 = { transfer_state_to = UKR }
+		649 = { transfer_state_to = UKR }
+		426 = { transfer_state_to = UKR }
+		327 = { transfer_state_to = UKR }
+		291 = { transfer_state_to = UKR }
+		318 = { transfer_state_to = UKR }
+		412 = { transfer_state_to = UKR }
 }
 }
 #здесь общее и выбирается какой именно Минск будет подписан
@@ -297,27 +744,18 @@ second_minsk_effect = {
 			}
 			white_peace = DKR
 		}
+		if = {
+			limit = {
+				has_war_with = SKR
+			}
+			white_peace = SKR
+		}
 	}
 }
 
-
+#здесь обычный второй динамический минск
 second_minsk_dynamic_effect = {
 	DPR = {
-		if = { limit = { 652 = { is_controlled_by = DPR } 518 = { is_controlled_by = DPR } 486 = { is_controlled_by = DPR } } transfer_state = 518 }
-		if = { limit = { 502 = { is_controlled_by = DPR } 652 = { is_controlled_by = DPR } } transfer_state = 502 }
-		if = { limit = { 489 = { is_controlled_by = DPR } } transfer_state = 489 }
-		if = { limit = { 653 = { is_controlled_by = DPR } } transfer_state = 653 transfer_state = 489 }
-		if = { limit = { 446 = { is_controlled_by = DPR } } transfer_state = 446 }
-		if = { limit = { 486 = { is_controlled_by = DPR } } transfer_state = 486 }
-		if = { limit = { 652 = { is_controlled_by = DPR } } transfer_state = 652 }
-		if = { limit = { 450 = { is_controlled_by = DPR } } transfer_state = 450 }
-		if = { limit = { 433 = { is_controlled_by = DPR } } transfer_state = 433 }
-		if = { limit = { 381 = { is_controlled_by = DPR } } transfer_state = 381 }
-		if = { limit = { 13 = { is_controlled_by = DPR } } transfer_state = 13 }
-		if = { limit = { 426 = { is_controlled_by = DPR } } transfer_state = 426 }
-		if = { limit = { 399 = { is_controlled_by = DPR } } transfer_state = 399 }
-		if = { limit = { 390 = { is_controlled_by = DPR } } transfer_state = 390 }
-		if = { limit = { 391 = { is_controlled_by = DPR } } transfer_state = 391 }
 
 		### Дебальцево
 		if = {
@@ -330,8 +768,8 @@ second_minsk_dynamic_effect = {
 					controls_state = 378
 				}
 			}
-			transfer_state = 378
-			transfer_state = 13
+			378 = { transfer_state_to = DPR }
+			13 = { transfer_state_to = DPR }
 		}
 		if = {
 			limit = {
@@ -343,7 +781,31 @@ second_minsk_dynamic_effect = {
 					controls_state = 376
 				}
 			}
-			transfer_state = 376
+			376 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				any_country = {
+					OR = {
+						tag = DPR
+						is_in_faction_with = DPR
+					}
+					controls_state = 13
+				}
+			}
+			13 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				any_country = {
+					OR = {
+						tag = DPR
+						is_in_faction_with = DPR
+					}
+					controls_state = 651
+				}
+			}
+			651 = { transfer_state_to = DPR }
 		}
 		####
 
@@ -357,7 +819,7 @@ second_minsk_dynamic_effect = {
 					controls_state = 527
 				}
 			}
-			transfer_state = 527
+			527 = { transfer_state_to = DPR }
 		}
 		if = {
 			limit = {
@@ -369,7 +831,7 @@ second_minsk_dynamic_effect = {
 					controls_state = 649
 				}
 			}
-			transfer_state = 649
+			649 = { transfer_state_to = DPR }
 		}
 		if = {
 			limit = {
@@ -381,8 +843,8 @@ second_minsk_dynamic_effect = {
 					controls_state = 421
 				}
 			}
-			transfer_state = 421
-			transfer_state = 465
+			421 = { transfer_state_to = DPR }
+			465 = { transfer_state_to = DPR }
 		}
 		if = {
 			limit = {
@@ -394,184 +856,676 @@ second_minsk_dynamic_effect = {
 					controls_state = 468
 				}
 			}
-			transfer_state = 468
-			transfer_state = 264
+			468 = { transfer_state_to = DPR }
+			264 = { transfer_state_to = DPR }
 		}
 
-		transfer_state = 444
-		transfer_state = 437
-		transfer_state = 448
-		transfer_state = 394
-		transfer_state = 424
-		transfer_state = 402
-		transfer_state = 435
-		transfer_state = 582
-		transfer_state = 438
-		transfer_state = 467
-		transfer_state = 398
-		transfer_state = 418
-		transfer_state = 430
-		transfer_state = 265
-		transfer_state = 452
-		transfer_state = 397
-		transfer_state = 404
-		transfer_state = 408
-		transfer_state = 432
-		transfer_state = 658
+		if = {
+			limit = {
+				AND = {
+					652 = { is_controlled_by = DPR }
+					518 = { is_controlled_by = DPR }
+					486 = { is_controlled_by = DPR }
+				}
+			}
+			518 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				AND = {
+					502 = { is_controlled_by = DPR }
+					652 = { is_controlled_by = DPR }
+				}
+			}
+			502 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				489 = { is_controlled_by = DPR }
+			}
+			489 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				653 = { is_controlled_by = DPR }
+			}
+			653 = { transfer_state_to = DPR }
+			489 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				446 = { is_controlled_by = DPR }
+			}
+			446 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				486 = { is_controlled_by = DPR }
+			}
+			486 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				652 = { is_controlled_by = DPR }
+			}
+			652 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				450 = { is_controlled_by = DPR }
+			}
+			450 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				433 = { is_controlled_by = DPR }
+			}
+			433 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				426 = { is_controlled_by = DPR }
+			}
+			433 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				426 = { is_controlled_by = DPR }
+			}
+			426 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				399 = { is_controlled_by = DPR }
+			}
+			399 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				390 = { is_controlled_by = DPR }
+			}
+			390 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				391 = { is_controlled_by = DPR }
+			}
+			391 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				408 = { is_controlled_by = DPR }
+			}
+			408 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				467 = { is_controlled_by = DPR }
+			}
+			467 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				452 = { is_controlled_by = DPR }
+			}
+			452 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				450 = { is_controlled_by = DPR }
+			}
+			452 = { transfer_state_to = DPR }
+		}
+		381 = { transfer_state_to = DPR }
+		444 = { transfer_state_to = DPR }
+		448 = { transfer_state_to = DPR }
+		394 = { transfer_state_to = DPR }
+		424 = { transfer_state_to = DPR }
+		402 = { transfer_state_to = DPR }
+		582 = { transfer_state_to = DPR }
+		438 = { transfer_state_to = DPR }
+		398 = { transfer_state_to = DPR }
+		418 = { transfer_state_to = DPR }
+		430 = { transfer_state_to = DPR }
+		265 = { transfer_state_to = DPR }
+		397 = { transfer_state_to = DPR }
+		404 = { transfer_state_to = DPR }
+		432 = { transfer_state_to = DPR }
+		if = {
+			limit = {
+				NOT = { 657 = { is_controlled_by = DKR } }
+			}
+			657 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				NOT = { 658 = { is_controlled_by = DKR } }
+			}
+			658 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				NOT = { 437 = { is_controlled_by = DKR } }
+			}
+			437 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				NOT = { 435 = { is_controlled_by = DKR } }
+			}
+			435 = { transfer_state_to = DPR }
+		}
 
 		DKR = {
-			if = { limit = { 658 = { is_controlled_by = DKR } } transfer_state = 658 }
-			if = { limit = { 437 = { is_controlled_by = DKR } } transfer_state = 437 }
-			if = { limit = { 435 = { is_controlled_by = DKR } } transfer_state = 435 }
+			if = {
+				limit = {
+					657 = { is_controlled_by = DKR }
+				}
+				657 = { transfer_state_to = DKR }
+			}
+			if = {
+				limit = {
+					658 = { is_controlled_by = DKR }
+				}
+				658 = { transfer_state_to = DKR }
+			}
+			if = {
+				limit = {
+					437 = { is_controlled_by = DKR }
+				}
+				437 = { transfer_state_to = DKR }
+			}
+			if = {
+				limit = {
+					435 = { is_controlled_by = DKR }
+				}
+				435 = { transfer_state_to = DKR }
+			}
+		}
+	}
+
+	SKR = {
+		if = {
+			limit = {
+				387 = { is_controlled_by = SKR }
+			}
+			387 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				416 = { is_controlled_by = SKR }
+			}
+			416 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				413 = { is_controlled_by = SKR }
+			}
+			413 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				406 = { is_controlled_by = SKR }
+			}
+			406 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				659 = { is_controlled_by = SKR }
+			}
+			659 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				427 = { is_controlled_by = SKR }
+			}
+			427 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				362 = { is_controlled_by = SKR }
+			}
+			362 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				370 = { is_controlled_by = SKR }
+			}
+			370 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				352 = { is_controlled_by = SKR }
+			}
+			352 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				357 = { is_controlled_by = SKR }
+			}
+			357 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				343 = { is_controlled_by = SKR }
+			}
+			343 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				334 = { is_controlled_by = SKR }
+			}
+			334 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				366 = { is_controlled_by = SKR }
+			}
+			366 = { transfer_state_to = SKR }
+		}
+		if = {
+			limit = {
+				346 = { is_controlled_by = SKR }
+			}
+			346 = { transfer_state_to = SKR }
 		}
 	}
 
 	LPR = {
-		transfer_state = 387
-		transfer_state = 406
-		transfer_state = 351
-		transfer_state = 363
-		transfer_state = 384
-		transfer_state = 416
-		transfer_state = 413
-		transfer_state = 427
-		transfer_state = 357
-		transfer_state = 340
-		transfer_state = 362
-		transfer_state = 370
-		transfer_state = 366
-		transfer_state = 352
-		transfer_state = 339
-		transfer_state = 659
-		if = { limit = { 329 = { is_controlled_by = LPR } } transfer_state = 329 }
-		if = { limit = { 346 = { is_controlled_by = LPR } } transfer_state = 346 }
-		if = { limit = { 343 = { is_controlled_by = LPR } } transfer_state = 343 }
-		if = { limit = { 334 = { is_controlled_by = LPR } } transfer_state = 334 }
-		if = { limit = { 333 = { is_controlled_by = LPR } } transfer_state = 333 transfer_state = 344 }
-		if = { limit = { 326 = { is_controlled_by = LPR } } transfer_state = 326 }
-		if = { limit = { 335 = { is_controlled_by = LPR } } transfer_state = 335 }
-	}
-
-	SKR = {
-		transfer_state = 387
-		transfer_state = 416
-		transfer_state = 413
+		if = {
+			limit = {
+				NOT = { 387 = { is_controlled_by = SKR } }
+			}
+			387 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 416 = { is_controlled_by = SKR } }
+			}
+			416 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 413 = { is_controlled_by = SKR } }
+			}
+			413 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 406 = { is_controlled_by = SKR } }
+			}
+			406 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 659 = { is_controlled_by = SKR } }
+			}
+			659 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 427 = { is_controlled_by = SKR } }
+			}
+			427 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 362 = { is_controlled_by = SKR } }
+			}
+			362 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 370 = { is_controlled_by = SKR } }
+			}
+			370 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 352 = { is_controlled_by = SKR } }
+			}
+			352 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 357 = { is_controlled_by = SKR } }
+			}
+			357 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				NOT = { 366 = { is_controlled_by = SKR } }
+			}
+			366 = { transfer_state_to = LPR }
+		}
+		351 = { transfer_state_to = LPR }
+		363 = { transfer_state_to = LPR }
+		384 = { transfer_state_to = LPR }
+		340 = { transfer_state_to = LPR }
+		if = {
+			limit = {
+				339 = { is_controlled_by = LPR }
+			}
+			339 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				329 = { is_controlled_by = LPR }
+			}
+			339 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				329 = { is_controlled_by = LPR }
+			}
+			329 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				346 = { is_controlled_by = LPR }
+			}
+			346 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				343 = { is_controlled_by = LPR }
+			}
+			343 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				334 = { is_controlled_by = LPR }
+			}
+			334 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				333 = { is_controlled_by = LPR }
+			}
+			333 = { transfer_state_to = LPR }
+			344 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				326 = { is_controlled_by = LPR }
+			}
+			326 = { transfer_state_to = LPR }
+		}
+		if = {
+			limit = {
+				335 = { is_controlled_by = LPR }
+			}
+			335 = { transfer_state_to = LPR }
+		}
 	}
 
 	UKR = {
-		transfer_state = 318
-		if = { limit = { 526 = { is_controlled_by = UKR } } transfer_state = 526 transfer_state = 650 }
-		if = { limit = { 650 = { is_fully_controlled_by = UKR } } transfer_state = 650 }
-		if = { limit = { 652 = { is_controlled_by = UKR } } transfer_state = 652 }
-		if = { limit = { 291 = { is_controlled_by = UKR } } transfer_state = 291 transfer_state = 327 transfer_state = 318 }
-		if = { limit = { 337 = { is_controlled_by = UKR } } transfer_state = 337 transfer_state = 359 }
-		if = { limit = { 381 = { is_controlled_by = UKR } } transfer_state = 381 }
-		if = { limit = { 426 = { is_controlled_by = UKR } 401 = { is_controlled_by = UKR } } transfer_state = 426 }
-		if = { limit = { 412 = { is_controlled_by = UKR } 399 = { is_controlled_by = UKR } } transfer_state = 412 }
-		if = { limit = { 412 = { is_controlled_by = UKR } 401 = { is_controlled_by = UKR } } transfer_state = 412 }
-		if = { limit = { 412 = { is_controlled_by = UKR } } transfer_state = 412 }
-		if = { limit = { 401 = { is_controlled_by = UKR } } transfer_state = 401 }
-		if = { limit = { 399 = { is_controlled_by = UKR } } transfer_state = 399 }
-		if = { limit = { 390 = { is_controlled_by = UKR } } transfer_state = 390 }
-		if = { limit = { 391 = { is_controlled_by = UKR } } transfer_state = 391 }
-		if = { limit = { 446 = { is_controlled_by = UKR } } transfer_state = 446 }
-		if = { limit = { 343 = { is_controlled_by = UKR } } transfer_state = 343 }
-		if = { limit = { 334 = { is_controlled_by = UKR } } transfer_state = 334 }
-		if = { limit = { 346 = { is_controlled_by = UKR } } transfer_state = 346 }
-		if = { limit = { 329 = { is_controlled_by = UKR } } transfer_state = 329 }
-		if = { limit = { 335 = { is_controlled_by = UKR } } transfer_state = 335 }
+		318 = { transfer_state_to = UKR }
+		if = {
+			limit = {
+				526 = { is_controlled_by = UKR }
+			}
+			526 = { transfer_state_to = UKR }
+			650 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				652 = { is_controlled_by = UKR }
+			}
+			652 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				291 = { is_controlled_by = UKR }
+			}
+			291 = { transfer_state_to = UKR }
+			327 = { transfer_state_to = UKR }
+			318 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				337 = { is_controlled_by = UKR }
+			}
+			337 = { transfer_state_to = UKR }
+			359 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				AND = {
+					426 = { is_controlled_by = UKR }
+					433 = { is_controlled_by = UKR }
+				}
+			}
+			433 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				AND = {
+					426 = { is_controlled_by = UKR }
+					43 = { is_controlled_by = UKR }
+				}
+			}
+			426 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				412 = { is_controlled_by = UKR }
+			}
+			412 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				401 = { is_controlled_by = UKR }
+			}
+			401 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				399 = { is_controlled_by = UKR }
+			}
+			399 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				390 = { is_controlled_by = UKR }
+			}
+			390 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				391 = { is_controlled_by = UKR }
+			}
+			391 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				446 = { is_controlled_by = UKR }
+			}
+			446 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				343 = { is_controlled_by = UKR }
+			}
+			343 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				334 = { is_controlled_by = UKR }
+			}
+			334 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				346 = { is_controlled_by = UKR }
+			}
+			346 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				329 = { is_controlled_by = UKR }
+			}
+			329 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				335 = { is_controlled_by = UKR }
+			}
+			335 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				408 = { is_controlled_by = UKR }
+			}
+			408 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				326 = { is_controlled_by = UKR }
+			}
+			326 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				333 = { is_controlled_by = UKR }
+			}
+			333 = { transfer_state_to = UKR }
+			344 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				10 = { is_controlled_by = UKR }
+			}
+			10 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				339 = { is_controlled_by = UKR }
+			}
+			339 = { transfer_state_to = UKR }
+		}
 
 		# Если ДНР захватила и Украина отвоевала
-		if = { limit = { 527 = { is_controlled_by = UKR } } transfer_state = 527 }
-		if = { limit = { 649 = { is_controlled_by = UKR } } transfer_state = 649 }
-		if = { limit = { 421 = { is_controlled_by = UKR } } transfer_state = 421 transfer_state = 465 }
-		if = { limit = { 468 = { is_controlled_by = UKR } } transfer_state = 468 }
+		if = {
+			limit = {
+				527 = { is_controlled_by = UKR }
+			}
+			527 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				649 = { is_controlled_by = UKR }
+			}
+			649 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				421 = { is_controlled_by = UKR }
+			}
+			421 = { transfer_state_to = UKR }
+			465 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				468 = { is_controlled_by = UKR }
+			}
+			468 = { transfer_state_to = UKR }
+		}
 
 		# Если ЛНР захватила и Украина отвоевала
-		if = { limit = { 304 = { is_controlled_by = UKR } } transfer_state = 304 }
-		if = { limit = { 305 = { is_controlled_by = UKR } } transfer_state = 305 }
+		if = {
+			limit = {
+				304 = { is_controlled_by = UKR }
+			}
+			304 = { transfer_state_to = UKR }
+		}
+		if = {
+			limit = {
+				305 = { is_controlled_by = UKR }
+			}
+			305 = { transfer_state_to = UKR }
+		}
 	}
 }
 #здесь исторический минск
 	second_minsk_historical_effect = {
 	DPR = {
-		transfer_state = 486
-		transfer_state = 652
-		transfer_state = 448
-		transfer_state = 452
-		transfer_state = 432
-		transfer_state = 657
-		transfer_state = 437
-		transfer_state = 658
-		transfer_state = 444
-		transfer_state = 424
-		transfer_state = 435
-		transfer_state = 402
-		transfer_state = 430
-		transfer_state = 438
-		transfer_state = 582
-		transfer_state = 265
-		transfer_state = 418
-		transfer_state = 381
-		transfer_state = 398
-		transfer_state = 394
-		transfer_state = 397
-		transfer_state = 404
-		transfer_state = 408
-		transfer_state = 13
-		transfer_state = 378
-		transfer_state = 433
-		transfer_state = 467
-		transfer_state = 450
+		486 = { transfer_state_to = DPR }
+		652 = { transfer_state_to = DPR }
+		448 = { transfer_state_to = DPR }
+		452 = { transfer_state_to = DPR }
+		432 = { transfer_state_to = DPR }
+		657 = { transfer_state_to = DPR }
+		437 = { transfer_state_to = DPR }
+		658 = { transfer_state_to = DPR }
+		444 = { transfer_state_to = DPR }
+		424 = { transfer_state_to = DPR }
+		435 = { transfer_state_to = DPR }
+		402 = { transfer_state_to = DPR }
+		430 = { transfer_state_to = DPR }
+		438 = { transfer_state_to = DPR }
+		582 = { transfer_state_to = DPR }
+		265 = { transfer_state_to = DPR }
+		418 = { transfer_state_to = DPR }
+		381 = { transfer_state_to = DPR }
+		398 = { transfer_state_to = DPR }
+		394 = { transfer_state_to = DPR }
+		397 = { transfer_state_to = DPR }
+		404 = { transfer_state_to = DPR }
+		408 = { transfer_state_to = DPR }
+		13 = { transfer_state_to = DPR }
+		378 = { transfer_state_to = DPR }
+		433 = { transfer_state_to = DPR }
+		467 = { transfer_state_to = DPR }
+		450 = { transfer_state_to = DPR }
 }
 	LPR = {
-		transfer_state = 351
-		transfer_state = 363
-		transfer_state = 384
-		transfer_state = 340
-		transfer_state = 339
-		transfer_state = 329
+		351 = { transfer_state_to = LPR }
+		363 = { transfer_state_to = LPR }
+		384 = { transfer_state_to = LPR }
+		340 = { transfer_state_to = LPR }
+		339 = { transfer_state_to = LPR }
+		329 = { transfer_state_to = LPR }
 }
 	SKR = {
-		transfer_state = 362
-		transfer_state = 370
-		transfer_state = 352
-		transfer_state = 357
-		transfer_state = 366
-		transfer_state = 343
-		transfer_state = 334
-		transfer_state = 346
-		transfer_state = 387
-		transfer_state = 416
-		transfer_state = 413
-		transfer_state = 406
-		transfer_state = 659
-		transfer_state = 427
+		362 = { transfer_state_to = SKR }
+		370 = { transfer_state_to = SKR }
+		352 = { transfer_state_to = SKR }
+		357 = { transfer_state_to = SKR }
+		366 = { transfer_state_to = SKR }
+		343 = { transfer_state_to = SKR }
+		334 = { transfer_state_to = SKR }
+		346 = { transfer_state_to = SKR }
+		387 = { transfer_state_to = SKR }
+		416 = { transfer_state_to = SKR }
+		413 = { transfer_state_to = SKR }
+		406 = { transfer_state_to = SKR }
+		659 = { transfer_state_to = SKR }
+		427 = { transfer_state_to = SKR }
 		}
 	UKR = {
-		transfer_state = 376
-		transfer_state = 651
-		transfer_state = 326
-		transfer_state = 285
-		transfer_state = 10
-		transfer_state = 335
-		transfer_state = 288
-		transfer_state = 305
-		transfer_state = 304
-		transfer_state = 297
-		transfer_state = 307
-		transfer_state = 269
-		transfer_state = 526
-		transfer_state = 656
-		transfer_state = 527
-		transfer_state = 518
-		transfer_state = 615
-		transfer_state = 649
-		transfer_state = 426
-		transfer_state = 327
-		transfer_state = 291
-		transfer_state = 318
-		transfer_state = 412
-		transfer_state = 10
+		376 = { transfer_state_to = UKR }
+		651 = { transfer_state_to = UKR }
+		326 = { transfer_state_to = UKR }
+		285 = { transfer_state_to = UKR }
+		335 = { transfer_state_to = UKR }
+		288 = { transfer_state_to = UKR }
+		305 = { transfer_state_to = UKR }
+		304 = { transfer_state_to = UKR }
+		297 = { transfer_state_to = UKR }
+		307 = { transfer_state_to = UKR }
+		269 = { transfer_state_to = UKR }
+		526 = { transfer_state_to = UKR }
+		656 = { transfer_state_to = UKR }
+		527 = { transfer_state_to = UKR }
+		518 = { transfer_state_to = UKR }
+		615 = { transfer_state_to = UKR }
+		649 = { transfer_state_to = UKR }
+		426 = { transfer_state_to = UKR }
+		327 = { transfer_state_to = UKR }
+		291 = { transfer_state_to = UKR }
+		318 = { transfer_state_to = UKR }
+		412 = { transfer_state_to = UKR }
+		10 = { transfer_state_to = UKR }
 }
 }
