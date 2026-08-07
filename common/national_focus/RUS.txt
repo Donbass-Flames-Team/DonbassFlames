@@ -417,6 +417,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		add_opinion_modifier = { target = UKR modifier = green_people }
+		UKR = { add_opinion_modifier = { target = RUS modifier = green_people }}
+		add_opinion_modifier = { target = CRI modifier = invasion_crimea }
+		CRI = { add_opinion_modifier = { target = RUS modifier = invasion_crimea }}
 			load_oob = "RUS_Crimean_green_people"
 			diplomatic_relation = {
 				country = UKR
