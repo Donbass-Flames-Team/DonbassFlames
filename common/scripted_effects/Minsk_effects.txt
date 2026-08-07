@@ -976,6 +976,24 @@ second_minsk_dynamic_effect = {
 			}
 			452 = { transfer_state_to = DPR }
 		}
+		if = {
+			limit = {
+				441 = { is_controlled_by = DPR }
+			}
+			441 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				412 = { is_controlled_by = DPR }
+			}
+			412 = { transfer_state_to = DPR }
+		}
+		if = {
+			limit = {
+				401 = { is_controlled_by = DPR }
+			}
+			401 = { transfer_state_to = DPR }
+		}
 		381 = { transfer_state_to = DPR }
 		444 = { transfer_state_to = DPR }
 		448 = { transfer_state_to = DPR }
