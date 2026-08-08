@@ -12,6 +12,19 @@ characters = {
 			traits = {}
 		}
 	}
+	maxim_katz = {
+		name = maxim_katz
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_maxim_katz"
+			}
+		}
+		country_leader = {
+			desc = "maxim_katz_desc"
+			ideology = liberalism
+			traits = {}
+		}
+	}
 	sergey_shoigu = {
 		name = sergey_shoigu
 		portraits = {
@@ -76,4 +89,36 @@ characters = {
 			logistics_skill = 3
 		}
 	}
+	valelry_gerasimov = {
+		name = alexander_lapin
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_valery_gerasimov"
+			}
+		}
+		corps_commander = {
+			traits = {}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	viktor_bondarev = {
+		name = viktor_bondarev
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_viktor_bondarev"
+			}
+		}
+		corps_commander = {
+			traits = {}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}	
 }

@@ -58,45 +58,52 @@ set_convoys = 1074
 		basic_train = 1
 	}
 
-DF_economy_setup = yes
+    DF_economy_setup = yes
 
-add_dynamic_modifier = { modifier = GEN_inflation }
+    add_dynamic_modifier = { modifier = GEN_inflation }
 
-add_ideas = {
-	limited_conscription
-	limited_exports
-	low_economic_mobilisation
-	RUS_military_revival_idea
-	RUS_vertical_of_power_idea
-	RUS_oil_economy_idea
-	RUS_fears_of_protests_idea
-	RUS_corruption_and_oligarchy_idea
-	RUS_active_propaganda_idea
-}
+    add_ideas = {
+	    limited_conscription
+	    limited_exports
+	    low_economic_mobilisation
+	    RUS_military_revival_idea
+	    RUS_vertical_of_power_idea
+	    RUS_oil_economy_idea
+	    RUS_fears_of_protests_idea
+	    RUS_corruption_and_oligarchy_idea
+	    RUS_active_propaganda_idea
+    }
 
-add_equipment_to_stockpile = {
-	type = train_equipment_1
-	amount = 600
-	producer = RUS
-}
+    add_equipment_to_stockpile = {
+	    type = train_equipment_1
+	    amount = 600
+	    producer = RUS
+    }
 
-#create_faction_from_template = faction_template_csto #TMP TODO: Crash To Desktop
-create_faction_from_template = {
-	template = faction_template_generic_dominance
-	name = faction_csto
-	icon = GFX_faction_logo_csto
-}
-add_to_faction = BLR
-recruit_character = vladimir_putin
+    #create_faction_from_template = faction_template_csto #TMP TODO: Crash To Desktop
+    create_faction_from_template = {
+	    template = faction_template_generic_dominance
+	    name = faction_csto
+	    icon = GFX_faction_logo_csto
+    }
+    add_to_faction = BLR
+    recruit_character = vladimir_putin
+    recruit_character = maxim_katz
+    recruit_character = sergey_shoigu
+    recruit_character = sergey_surovikin
+    recruit_character = igor_turchenuk
+    recruit_character = alexander_lapin
+	recruit_character = valelry_gerasimov
+	recruit_character = viktor_bondarev
 
-add_opinion_modifier = {
-	target = UKR
-	modifier = kharkov_accords
-}
-diplomatic_relation = {
-	country = RUS
-	relation = docking_rights
-}
+    add_opinion_modifier = {
+	    target = UKR
+	    modifier = kharkov_accords
+    }
+    diplomatic_relation = {
+	    country = RUS
+	    relation = docking_rights
+    }
 
 2013.11.21 = {
 	set_oob = "RUS_2013"
