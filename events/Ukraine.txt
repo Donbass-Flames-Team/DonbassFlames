@@ -99,6 +99,8 @@ country_event = {
 				add_state_core = 650
 				add_state_core = 291
 				add_state_core = 327
+				add_state_core = 657
+				add_state_core = 658
 				432 = { set_demilitarized_zone = no }
 				set_country_flag = DPR_change_of_governments
 				activate_mission = DPR_change_of_leadership_in_dpr
@@ -112,7 +114,11 @@ country_event = {
 				}
 			}
 			DPR = {
-				load_oob = Donetsk_Uprising_Militia
+				load_oob = DPR_Uprising_Militia
+				country_event = {
+					id = DPR.42
+					days = 34
+				}
 			}
 			if = {
 				limit = {
@@ -253,6 +259,7 @@ country_event = {
 				add_state_core = 352
 				add_state_core = 384
 				add_state_core = 288
+				add_state_core = 659
 				set_country_flag = LPR_first_phase_of_ato
 			}
 			LPR = {
@@ -339,7 +346,7 @@ country_event = {
 					}
 				}
 				DPR = {
-					load_oob = Donetsk_people_Millitia
+					load_oob = DPR_people_Millitia
 				}
 			}
 		}
@@ -517,6 +524,7 @@ country_event = {
 				    add_state_core = 549
 				    add_state_core = 499
 				    add_state_core = 477
+				    add_state_core = 660
 					declare_war_on = {
 					    target = UKR
 					    type = annex_everything
@@ -534,6 +542,7 @@ country_event = {
 			 	549 = { transfer_state_to = OPR }
 				499 = { transfer_state_to = OPR }
 				477 = { transfer_state_to = OPR }
+				660 = { transfer_state_to = OPR }
 
 				567 = {
 					add_dynamic_modifier = { modifier = arisse_donbas_dynamic_idea scope = OPR days = 55 }
@@ -1304,6 +1313,12 @@ country_event = {
 				421 = {
 					add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
 				}
+                NDR = {
+				    country_event = {
+					    id = NDR.5
+					    days = 1
+				    }
+				}
 			}
 
 			432 = {
@@ -1741,12 +1756,16 @@ country_event = {
 	option = {
 		name = ukraine.38.a
 		add_equipment_to_stockpile = { 
-			type = bulletproof_vests_equipment_3
-			amount = 3000 
+			type = bulletproof_vests_equipment_4
+			amount = 3000
 		}
 		add_equipment_to_stockpile = { 
-			type = uniform_equipment_3
+			type = uniform_equipment_4
 			amount = 3600 
+		}
+		add_equipment_to_stockpile = { 
+			type = support_equipment
+			amount = 390
 		}
 	}
 }
@@ -2948,6 +2967,15 @@ country_event = {
 				target = NDR
 				transfer_troops = no
 			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = Nely_Stepa_is_leader_of_dpr_slavyansk }
+				}
+				country_event = {
+					id = ukraine.159
+					days = 1
+				}
+			}
 		}
 	}
 
@@ -3593,7 +3621,9 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		
+		hidden_effect = {
+			set_global_flag = Ukraine_suffered_heavy_defeat_after_ato
+		}
 	}
 
 	option = {
@@ -3673,6 +3703,7 @@ country_event = {
 				}
 			}
 			LPR = {
+				transfer_state = 340
 				transfer_state = 406
 				transfer_state = 351
 				transfer_state = 427
@@ -3715,7 +3746,8 @@ country_event = {
 				transfer_state = 297
 				transfer_state = 272
 				transfer_state = 246
-				transfer_state = 258			
+				transfer_state = 258
+				transfer_state = 659				
 			}
 			if = {
 				limit = {
@@ -3735,6 +3767,7 @@ country_event = {
 				}
 			}
 			DPR = {
+				transfer_state = 432
 				transfer_state = 468
 				transfer_state = 421
 				transfer_state = 441
@@ -3760,6 +3793,7 @@ country_event = {
 				transfer_state = 435
 				transfer_state = 402
 				transfer_state = 438
+				transfer_state = 424
 				transfer_state = 430
 				transfer_state = 418
 				transfer_state = 582
@@ -3904,6 +3938,7 @@ country_event = {
 					transfer_state = 499
 					transfer_state = 477
 					transfer_state = 409
+					transfer_state = 660
 				}
 			}
 			if = {
@@ -4361,7 +4396,9 @@ country_event = {
 				add_state_core = 372
 				add_state_core = 365
 				add_state_core = 336
-				add_state_core = 358				
+				add_state_core = 358
+				add_state_core = 350
+				add_state_core = 287				
 			}
 			DRP = {
 				declare_war_on = {
@@ -4603,6 +4640,7 @@ country_event = {
 				id = ukraine.123
 				days = 5
 			}
+
 		}
 	}
 
@@ -4629,9 +4667,7 @@ country_event = {
 		hidden_effect = {
 			USR = {
 				transfer_state = 220
-				transfer_state = 224
 				transfer_state = 322
-				transfer_state = 150
 				transfer_state = 306
 				transfer_state = 249
 				transfer_state = 183
@@ -4639,7 +4675,64 @@ country_event = {
 				transfer_state = 70
 				transfer_state = 189
 				transfer_state = 196
+
+
+				add_core_state = 220
+				add_core_state = 322
+				add_core_state = 150
+				add_core_state = 306
+				add_core_state = 249
+				add_core_state = 183
+				add_core_state = 119
+				add_core_state = 70
+				add_core_state = 189
+				add_core_state = 196	
+				add_core_state = 224			
 			}
+			LVO = {
+				transfer_state = 224
+				add_core_state = 224
+			}
+			CHR = {
+				transfer_state = 150
+				add_core_state = 150
+			}
+			KOC = {
+				transfer_state = 70
+				transfer_state = 119
+				add_core_state = 70
+				add_core_state = 119
+				add_core_state = 111
+				add_core_state = 66
+			}		
+			RSB = {
+				transfer_state = 111
+				transfer_state = 66
+				add_core_state = 111
+				add_core_state = 66
+				add_core_state = 70
+				add_core_state = 119
+			}
+			IVN = {
+				transfer_state = 249
+				transfer_state = 306
+				transfer_state = 332
+				transfer_state = 278
+                transfer_state = 242
+
+				add_core_state = 249
+				add_core_state = 306
+				add_core_state = 332
+				add_core_state = 278
+				add_core_state = 242
+			}
+			AZV = {
+				transfer_state = 143
+				transfer_state = 190
+
+				add_core_state = 143
+				add_core_state = 190
+			}												
 		}
 	}
 
@@ -4704,6 +4797,10 @@ country_event = {
 				#	type = annex_everything
 				#}
 				load_oob = MLR_Uprising_Militia
+			}
+			country_event = {
+				id = ukraine.126
+				days = 2
 			}
 		}
 	}
@@ -4792,6 +4889,10 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+		    country_event = {
+				id = superevent.6
+			}
+			set_global_flag = civil_war_in_ukraine_has_started
 			UWC = {
 				transfer_state = 241
 				transfer_state = 314
@@ -4804,7 +4905,69 @@ country_event = {
 					target = UKR
 					type = annex_everything
 				}
+				declare_war_on = {
+					target = USR
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = MLR
+					type = annex_everything
+				}		
+				declare_war_on = {
+					target = KOC
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = RSB
+					type = annex_everything
+				}					
 			}
+			USR = {
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = MLR
+					type = annex_everything
+				}		
+				declare_war_on = {
+					target = KOC
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = RSB
+					type = annex_everything
+				}					
+			}
+			MLR = {
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = USR
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = KOC
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = RSB
+					type = annex_everything
+				}							
+			}	
+            KOC = {
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = RSB
+					type = annex_everything
+				}
+			}		
 		}
 	}
 
@@ -4986,20 +5149,6 @@ country_event = {
 	}
 }
 
-# Гибель Андрея Кузьменко (Скрябин)
-country_event = {
-	id = ukraine.2015
-	title = ukraine.2015.t
-	desc = ukraine.2015.d
-	
-	picture = GFX_report_event_andrei_skrybin_death
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = ukraine.2015.a
-	}
-}
 
 # Уничтожение колонны гражданских (Когда Волноваха не срабатывает в 2015)
 country_event = {
@@ -5051,6 +5200,13 @@ country_event = {
 				remove_idea = UKR_helpless_government
 				add_idea = UKR_disorderly_government
 			}
+			249 = { set_demilitarized_zone = no }
+			306 = { set_demilitarized_zone = no }
+			306 = { set_demilitarized_zone = no }
+			224 = { set_demilitarized_zone = no }
+			183 = { set_demilitarized_zone = no }
+            220 = { set_demilitarized_zone = no }
+			111 = { set_demilitarized_zone = no }
 		}
 	}
 }
@@ -5618,9 +5774,74 @@ country_event = {
 				var = UKR_legitimacy_of_central_power_value
 				value = 5
 			}
+			249 = { set_demilitarized_zone = yes }
+			306 = { set_demilitarized_zone = yes }
+			306 = { set_demilitarized_zone = yes }
+			224 = { set_demilitarized_zone = yes }
+			183 = { set_demilitarized_zone = yes }
+            220 = { set_demilitarized_zone = yes }
+			111 = { set_demilitarized_zone = yes }
 		}
 	}
 }
+
+# Украина отправляет ивент на вступление в ЕС
+country_event = {
+    id = ukraine.157
+    title = ukraine.157.t
+    desc = ukraine.157.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.157.a
+        country_event = { id = ukraine.158 days = 3 }
+    }
+}
+
+# Заявка в ЕС принята
+country_event = {
+    id = ukraine.158
+    title = ukraine.158.t
+    desc = ukraine.158.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.158.a
+        add_stability = 0.15
+        add_to_variable = { UKR_eu_consumer_goods = -0.03 }
+        add_to_variable = { UKR_eu_research = 0.05 }
+        add_to_variable = { UKR_eu_construction = 0.05 }
+        
+        news_event = { id = news_events.52 }
+    }
+}
+
+# Судьба нели штепы
+country_event = {
+    id = ukraine.159
+    title = ukraine.159.t
+    desc = ukraine.159.d
+    picture = GFX_Report_event_neli_Stepa_picture
+
+    is_triggered_only = yes
+
+	# Арестовать
+    option = {
+        name = ukraine.159.a
+    }
+    # Отпустить
+    option = {
+        name = ukraine.159.b
+    }
+}
+
+
+
+
 
 # Выборы 2019 скоро
 country_event = {
@@ -5641,6 +5862,16 @@ country_event = {
 	}
 }
 
+
+
+
+
+################################################################
+################################################################
+######################### NATO SECTION #########################
+################################################################
+################################################################
+
 # НАТО предупреждает о скором вторжении
 country_event = {
 	id = ukr_nato_cooperation.1
@@ -5660,4 +5891,88 @@ country_event = {
 		set_country_flag = NATO_announced_preparations_for_war
 		mark_focus_tree_layout_dirty = yes
 	}
+}
+
+
+# Украина отправила заявку в НАТО
+country_event = {
+    id = ukr_nato_cooperation.2
+    title = ukr_nato_cooperation.2.t
+    desc = ukr_nato_cooperation.2.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukr_nato_cooperation.2.a
+        NAT = {
+            country_event = { id = ukr_nato_cooperation.3 days = 3 }
+        }
+    }
+}
+
+# Запрос для НАТО (Отправляется тегу NAT, 100% Да / 0% Нет)
+country_event = {
+    id = ukr_nato_cooperation.3
+    title = ukr_nato_cooperation.3.t
+    desc = ukr_nato_cooperation.3.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukr_nato_cooperation.3.a
+        ai_chance = { base = 100 }
+        
+        UKR = {
+            add_to_faction = UKR
+            country_event = { id = ukr_nato_cooperation.4 days = 1 } # Ивент UKR: Приняли в НАТО
+        }
+    }
+
+    option = {
+        name = ukr_nato_cooperation.3.b
+        ai_chance = { base = 0 }
+
+        UKR = {
+            country_event = { id = ukr_nato_cooperation.5 days = 1 } # Ивент UKR: Отказали в НАТО
+        }
+    }
+}
+
+# НАТО приняло заявку
+country_event = {
+    id = ukr_nato_cooperation.4
+    title = ukr_nato_cooperation.4.t
+    desc = ukr_nato_cooperation.4.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukr_nato_cooperation.4.a
+        add_stability = 0.10
+        add_war_support = 0.10
+        add_to_variable = { UKR_AFU_army_attack_factor = 0.05 }
+        add_to_variable = { UKR_AFU_army_defence_factor = 0.05 }
+		add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
+        
+        news_event = { id = news_event.53 }
+    }
+}
+
+# НАТО отказало в заявке
+country_event = {
+    id = ukr_nato_cooperation.5
+    title = ukr_nato_cooperation.5.t
+    desc = ukr_nato_cooperation.5.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukr_nato_cooperation.5.a
+        add_stability = -0.05
+        add_political_power = -25
+    }
 }
