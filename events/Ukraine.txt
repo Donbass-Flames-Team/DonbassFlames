@@ -115,6 +115,10 @@ country_event = {
 			}
 			DPR = {
 				load_oob = DPR_Uprising_Militia
+				country_event = {
+					id = DPR.42
+					days = 34
+				}
 			}
 			if = {
 				limit = {
@@ -1308,6 +1312,12 @@ country_event = {
 				}
 				421 = {
 					add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 10 }
+				}
+                NDR = {
+				    country_event = {
+					    id = NDR.5
+					    days = 1
+				    }
 				}
 			}
 
@@ -2956,6 +2966,15 @@ country_event = {
 			annex_country = {
 				target = NDR
 				transfer_troops = no
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = Nely_Stepa_is_leader_of_dpr_slavyansk }
+				}
+				country_event = {
+					id = ukraine.159
+					days = 1
+				}
 			}
 		}
 	}
@@ -5766,6 +5785,64 @@ country_event = {
 	}
 }
 
+# Украина отправляет ивент на вступление в ЕС
+country_event = {
+    id = ukraine.157
+    title = ukraine.157.t
+    desc = ukraine.157.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.157.a
+        country_event = { id = ukraine.158 days = 3 }
+    }
+}
+
+# Заявка в ЕС принята
+country_event = {
+    id = ukraine.158
+    title = ukraine.158.t
+    desc = ukraine.158.d
+    picture = GFX_report_event_diplomacy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.158.a
+        add_stability = 0.15
+        add_to_variable = { UKR_eu_consumer_goods = -0.03 }
+        add_to_variable = { UKR_eu_research = 0.05 }
+        add_to_variable = { UKR_eu_construction = 0.05 }
+        
+        news_event = { id = news_events.52 }
+    }
+}
+
+# Судьба нели штепы
+country_event = {
+    id = ukraine.159
+    title = ukraine.159.t
+    desc = ukraine.159.d
+    picture = GFX_Report_event_neli_Stepa_picture
+
+    is_triggered_only = yes
+
+	# Арестовать
+    option = {
+        name = ukraine.159.a
+    }
+    # Отпустить
+    option = {
+        name = ukraine.159.b
+    }
+}
+
+
+
+
+
 # Выборы 2019 скоро
 country_event = {
 	id = ukr_elections_2019.1
@@ -5784,6 +5861,16 @@ country_event = {
 		activate_mission = UKR_elections_2019
 	}
 }
+
+
+
+
+
+################################################################
+################################################################
+######################### NATO SECTION #########################
+################################################################
+################################################################
 
 # НАТО предупреждает о скором вторжении
 country_event = {
@@ -5806,20 +5893,6 @@ country_event = {
 	}
 }
 
-# Украина отправляет ивент на вступление в ЕС
-country_event = {
-    id = ukraine.157
-    title = ukraine.157.t
-    desc = ukraine.157.d
-    picture = GFX_report_event_diplomacy
-
-    is_triggered_only = yes
-
-    option = {
-        name = ukraine.157.a
-        country_event = { id = ukraine.158 days = 3 }
-    }
-}
 
 # Украина отправила заявку в НАТО
 country_event = {
@@ -5853,7 +5926,7 @@ country_event = {
         
         UKR = {
             add_to_faction = UKR
-            country_event = { id = ukraine.159 days = 1 } # Ивент UKR: Приняли в НАТО
+            country_event = { id = ukr_nato_cooperation.4 days = 1 } # Ивент UKR: Приняли в НАТО
         }
     }
 
@@ -5862,42 +5935,22 @@ country_event = {
         ai_chance = { base = 0 }
 
         UKR = {
-            country_event = { id = ukr_nato_cooperation.4 days = 1 } # Ивент UKR: Отказали в НАТО
+            country_event = { id = ukr_nato_cooperation.5 days = 1 } # Ивент UKR: Отказали в НАТО
         }
-    }
-}
-
-# Заявка в ЕС принята
-country_event = {
-    id = ukraine.158
-    title = ukraine.158.t
-    desc = ukraine.158.d
-    picture = GFX_report_event_diplomacy
-
-    is_triggered_only = yes
-
-    option = {
-        name = ukraine.158.a
-        add_stability = 0.15
-        add_to_variable = { UKR_eu_consumer_goods = -0.03 }
-        add_to_variable = { UKR_eu_research = 0.05 }
-        add_to_variable = { UKR_eu_construction = 0.05 }
-        
-        news_event = { id = news_events.52 }
     }
 }
 
 # НАТО приняло заявку
 country_event = {
-    id = ukraine.159
-    title = ukraine.159.t
-    desc = ukraine.159.d
+    id = ukr_nato_cooperation.4
+    title = ukr_nato_cooperation.4.t
+    desc = ukr_nato_cooperation.4.d
     picture = GFX_report_event_diplomacy
 
     is_triggered_only = yes
 
     option = {
-        name = ukraine.159.a
+        name = ukr_nato_cooperation.4.a
         add_stability = 0.10
         add_war_support = 0.10
         add_to_variable = { UKR_AFU_army_attack_factor = 0.05 }
@@ -5910,15 +5963,15 @@ country_event = {
 
 # НАТО отказало в заявке
 country_event = {
-    id = ukr_nato_cooperation.4
-    title = ukr_nato_cooperation.4.t
-    desc = ukr_nato_cooperation.4.d
+    id = ukr_nato_cooperation.5
+    title = ukr_nato_cooperation.5.t
+    desc = ukr_nato_cooperation.5.d
     picture = GFX_report_event_diplomacy
 
     is_triggered_only = yes
 
     option = {
-        name = ukr_nato_cooperation.4.a
+        name = ukr_nato_cooperation.5.a
         add_stability = -0.05
         add_political_power = -25
     }

@@ -15,6 +15,11 @@ characters = {
 	}
 	Andrey_Borisov = {
 		name = Andrey_Borisov
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Andrey_Borisov"
+			}
+		}
 		country_leader = {
 			ideology = autoritarian_democracy
 			expire = "1965.1.1.1"

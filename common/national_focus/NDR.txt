@@ -60,6 +60,13 @@ focus_tree = {
 				add_state_core = 359
 				add_state_core = 342
 				add_state_core = 347
+				if = {
+					limit = { 
+						UKR = { is_ai = no } 
+					    DPR = { is_ai = yes }
+					}
+					load_oob = NDR_slavyansk_millitia_ai_buff
+				}
 			}
 		}
 	}
@@ -79,6 +86,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = 0.03
 			add_war_support = 0.05
 		}
 	}
@@ -98,6 +106,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = 0.03
 			add_war_support = 0.05
 		}
 	}

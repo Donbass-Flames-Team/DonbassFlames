@@ -134,3 +134,42 @@ country_event = {
 		}
 	}
 }
+
+# Кто лидер
+country_event = {
+	id = NDR.5
+	title = NDR.5.t
+	desc = NDR.45.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+	
+	# Понамарев
+	option = {
+		name = NDR.5.a
+
+	}
+
+	# Неля штепа
+	option = {
+		name = NDR.5.b
+		retire_country_leader = yes
+		create_country_leader = {
+			name = nelya_stepa
+			desc = "NELYA_STEPA_DESC"
+			picture = GFX_portrait_nelya_stepa
+			expire = "2035.1.1"
+			ideology = autoritarian_democracy
+			traits = {
+				#
+			}
+		}
+		set_global_flag = Nely_Stepa_is_leader_of_dpr_slavyansk
+	}	
+}

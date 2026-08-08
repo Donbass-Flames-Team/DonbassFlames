@@ -964,3 +964,69 @@ country_event = {
 	}
 }
 
+# Вставай донбасс ивент
+country_event = {
+	id = DPR.41
+	title = DPR.41.t
+	desc = DPR.41.d
+	#picture = GFX_Report_event_battles_on_grushevsky_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = DPR.41.a
+		add_political_power = 5
+	}
+}
+
+
+# Референдум 11 мая о независимости
+country_event = {
+	id = DPR.42
+	title = DPR.42.t
+	desc = DPR.42.d
+	#picture = GFX_Report_event_battles_on_grushevsky_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = DPR.42.a
+		complete_national_focus = DPR_hold_referendum_on_independence
+		hidden_effect = {
+			news_event = {
+				id = news_events.56
+				hours = 6
+			}
+		}
+	}
+}
+
+# Проукраинские митинги 17 апреля 2014 года
+country_event = {
+	id = DPR.43
+	title = DPR.43.t
+	desc = DPR.43.d
+	#picture = GFX_Report_event_battles_on_grushevsky_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = DPR.43.a
+		add_stability = -0.01
+	}
+}
+
+# Столкновения 28 апреля 2014 года
+country_event = {
+	id = DPR.44
+	title = DPR.44.t
+	desc = DPR.44.d
+	#picture = GFX_Report_event_battles_on_grushevsky_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = DPR.44.a
+		add_stability = -0.02
+	}
+}

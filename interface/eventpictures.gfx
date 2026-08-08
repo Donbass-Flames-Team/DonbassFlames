@@ -618,9 +618,14 @@ texturefile = "gfx/event_pictures/Report_event_donetsk_airport_battle_picture.pn
 }
 
 spriteType = {
-name = "GFX_Report_malasian_boing_fell_down_picture"
-texturefile = "gfx/event_pictures/Report_malasian_boing_fell_down_picture.png"
+name = "GFX_Report_event_neli_Stepa_picture"
+texturefile = "gfx/event_pictures/Report_event_neli_Stepa.png"
 }
+
+    spriteType = {
+        name = "GFX_Report_malasian_boing_fell_down_picture"
+        texturefile = "gfx/event_pictures/Report_malasian_boing_fell_down_picture.png"
+    }
 
 spriteType = {
 name = "GFX_Report_event_continuation_of_ato_2015_picture"

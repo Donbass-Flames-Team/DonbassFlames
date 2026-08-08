@@ -53,20 +53,12 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						UKR = { 
-							NOT = {
-								is_ai = yes
-							}
-						}
-						DPR = {
-							is_ai = yes
-						}
+						UKR = {  is_ai = no }
+						DPR = { is_ai = yes }
 					}
-					DPR = {
-						add_timed_idea = {
-							idea = DPR_ai_buff_idea
-							days = 180
-						}
+					add_timed_idea = {
+						idea = DPR_ai_buff_idea
+						days = 180
 					}
 				}
 			}
@@ -111,19 +103,21 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = DPR_call_on_people_to_stand_up_for_the_republic
 			NOT = { has_war_with = UKR }
+		}
+		bypass = {
+			has_global_flag = Start_Of_ATO
 		}
 
 		completion_reward = {
-		424 = { transfer_state_to = DPR }
-		435 = { transfer_state_to = DPR }
-		437 = { transfer_state_to = DPR }
-				hidden_effect = {
-		424 = { set_demilitarized_zone = no }
-		435 = { set_demilitarized_zone = no }
-		437 = { set_demilitarized_zone = no }
-		}
+		    424 = { transfer_state_to = DPR }
+		    435 = { transfer_state_to = DPR }
+		    437 = { transfer_state_to = DPR }
+			hidden_effect = {
+		        424 = { set_demilitarized_zone = no }
+		        435 = { set_demilitarized_zone = no }
+		        437 = { set_demilitarized_zone = no }
+		    }
 		}
 	}
 
@@ -142,28 +136,30 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = DPR_annex_makeevka
 			NOT = { has_war_with = UKR }
+		}
+		bypass = {
+			has_global_flag = Start_Of_ATO
 		}
 
 		completion_reward = {
-		397 = { transfer_state_to = DPR }
-		398 = { transfer_state_to = DPR }
-		381 = { transfer_state_to = DPR }
-		404 = { transfer_state_to = DPR }
-		hidden_effect = {
-		397 = { set_demilitarized_zone = no }
-		398 = { set_demilitarized_zone = no }
-		381 = { set_demilitarized_zone = no }
-		404 = { set_demilitarized_zone = no }
-		}
+		    397 = { transfer_state_to = DPR }
+		    398 = { transfer_state_to = DPR }
+		    381 = { transfer_state_to = DPR }
+		    404 = { transfer_state_to = DPR }
+		    hidden_effect = {
+		        397 = { set_demilitarized_zone = no }
+		        398 = { set_demilitarized_zone = no }
+		        381 = { set_demilitarized_zone = no }
+		        404 = { set_demilitarized_zone = no }
+		    }
 		}
 	}
 
 	focus = {
 		id = DPR_humanitaran_help_from_russia
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.5
+		cost = 0.3
 		x = 2
 		y = 6
 
@@ -171,7 +167,7 @@ focus_tree = {
 		relative_position_id = DPR_capture_administrations
 
 		available = {
-			has_completed_focus = DPR_arrise_donbass
+			
 		}
 
 		completion_reward = {
@@ -280,7 +276,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.035
 			add_timed_idea = {
 				idea = DPR_roadblock_idea
 				days = 180
@@ -454,6 +450,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = DPR_expansion_of_the_dpr_elite_tt
 			hidden_effect = {
 				load_oob = DPR_expand_elite_of_dpr
 			}
@@ -476,6 +473,7 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = DPR_people_militia_of_donbass
+			custom_effect_tooltip = DPR_first_army_corp_of_dpr_tt
 			hidden_effect = {
 				load_oob = DPR_first_army_corp_of_people_millitia
 			}
@@ -497,7 +495,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			load_oob = DPR_republican_guardia
+			custom_effect_tooltip = DPR_republican_guardia_of_dpr_tt
+			hidden_effect = {
+				load_oob = DPR_republican_guardia
+			}
 		}
 	}
 
@@ -652,6 +653,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			country_event = DPR.41
 			add_war_support = 0.05
 			add_ideas = DPR_arrise_donbass_idea
 		}
@@ -672,11 +674,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+			always = no
 		}
 
 		completion_reward = {
-			add_stability = 0.05
+			
 		}
 	}
 
@@ -722,7 +724,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_stability = 0.03
+			add_war_support = 0.02
+			add_political_power = 45
 		}
 	}
 
@@ -745,7 +749,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_offsite_building = { type = industrial_complex level = 2 }
+			add_political_power = 35
+			add_stability = -0.03
 		}
 	}
 
@@ -764,7 +770,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+            add_political_power = 35
 		}
 	}
 
@@ -1106,7 +1112,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
 			
 		}
 	}
@@ -1451,7 +1456,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.15																							
+			add_stability = 0.05
+			add_war_support = -0.03																							
 		}
 	}
 
@@ -1470,7 +1476,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.15																							
+																										
 		}
 	}
 
