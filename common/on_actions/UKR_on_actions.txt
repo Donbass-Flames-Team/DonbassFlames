@@ -2,7 +2,6 @@ on_actions = {
 
 	on_daily = {
 		effect = {
-			# 1. Выборы 2019 года
 			if = {
 				limit = {
 					tag = UKR
@@ -12,7 +11,6 @@ on_actions = {
 				country_event = { id = ukr_elections_2019.1 }
 			}
 			
-			# 2. События Шатерска (2014)
 			if = {
 				limit = {
 					tag = UKR
@@ -25,14 +23,18 @@ on_actions = {
 				country_event = { id = ukraine.137 }
 			}
 			
-			# 3. Смерть Андрея Кузьменко (Скрябин) — 2 февраля 2015 года
+			# Смерть Андрея Кузьменко (Скрябин) — 2 февраля 2015 года
 			if = {
 				limit = {
 					tag = UKR
 					date > 2015.2.1
 					date < 2015.2.3
+					NOT = {
+						has_country_flag = Andrey_kuzmin_is_gone
+					}
 				}
-				country_event = { id = ukraine.2015 }
+				set_country_flag = Andrey_kuzmin_is_gone
+				country_event = { id = ukraine.160 }
 			}
 		}
 	}

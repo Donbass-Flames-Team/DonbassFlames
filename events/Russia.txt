@@ -595,3 +595,51 @@ country_event = {
 		
 	}
 }
+
+#Убийство Немцова
+country_event = {
+	id = russia.31
+	title = russia.31.t
+	desc = russia.31.d
+	#picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id =  news_events.55
+				hours = 6
+			}
+		}
+	}
+
+	option = {
+		name = russia.31.a
+		
+	}
+}
+
+#Смерть Новодворской
+country_event = {
+	id = russia.32
+	title = russia.32.t
+	desc = russia.32.d
+	#picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id =  news_events.54
+				hours = 6
+			}
+		}
+	}
+
+	option = {
+		name = russia.32.a
+		
+	}
+}

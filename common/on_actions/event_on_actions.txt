@@ -148,6 +148,30 @@ on_actions = {
 				set_global_flag = Benouville_Normandy_format_event_fired
 				news_event = { id = news_events.49 }
 			}
+			# Убийство бориса немцова
+			if = {
+				limit = {
+					date = 2015.3.27
+					tag = RUS
+					NOT = {
+						has_global_flag = Boris_nemcov_is_killed
+					}
+				}
+				set_global_flag = Boris_nemcov_is_killed
+				country_event = { id = russia.31 }
+			}	
+			# Смерть новодворской
+			if = {
+				limit = {
+					date = 2014.7.12
+					tag = RUS
+					NOT = {
+						has_global_flag = Valeria_Novodvorskaya_is_dead
+					}
+				}
+				set_global_flag = Valeria_Novodvorskaya_is_dead
+				country_event = { id = russia.32 }
+			}				
 			if = {
 				limit = {
 					has_global_flag = Start_Of_ATO
