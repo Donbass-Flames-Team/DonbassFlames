@@ -4544,7 +4544,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_stability = 0.025
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -4559,7 +4560,7 @@ focus_tree = {
 		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
 		available = {}
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = UKR_church_1_idea
 		}
 	}
 	focus = {
@@ -4574,7 +4575,8 @@ focus_tree = {
 		relative_position_id = UKR_independent_church
 		available = {}
 		completion_reward = {
-			add_political_power = 25
+			swap_ideas = { remove_idea = UKR_church_1_idea 
+						add_idea = UKR_church_2_idea }
 		}
 	}
 	focus = {
@@ -4589,7 +4591,12 @@ focus_tree = {
 		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
 		available = {}
 		completion_reward = {
-			add_political_power = 25
+			add_stability = 5
+			subtract_from_variable = {
+			var = corruption_value
+			value = 10
+			tooltip = decreasing_corruption_large_tt
+			}
 		}
 	}
 	focus = {
@@ -4605,6 +4612,7 @@ focus_tree = {
 		available = {}
 		completion_reward = {
 			add_political_power = 25
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -4620,7 +4628,7 @@ focus_tree = {
 			focus = UKR_healthcare_reform
 		}
 		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
-		available = {}
+		available = { }
 		completion_reward = {
 			add_political_power = 25
 		}
@@ -4645,7 +4653,7 @@ focus_tree = {
 			has_country_flag = Poroshenko_won_elections_2019
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = UKR_army_language_faith_idea
 		}
 	}
 	focus = {
@@ -4661,6 +4669,11 @@ focus_tree = {
 		available = {}
 		completion_reward = {
 			add_political_power = 25
+			subtract_from_variable = {
+			var = criminality_value
+			value = 5
+			tooltip = decreasing_criminality_middle_tt
+			}
 		}
 	}
 	focus = {
@@ -4676,6 +4689,11 @@ focus_tree = {
 		available = {}
 		completion_reward = {
 			add_political_power = 25
+			subtract_from_variable = {
+			var = criminality_value
+			value = 2.5
+			tooltip = decreasing_criminality_small
+			}
 		}
 	}
 	focus = {
@@ -4689,7 +4707,9 @@ focus_tree = {
 		}
 		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
 		available = {}
-		completion_reward = {}
+		completion_reward = {
+			add_ideas = UKR_reformed_healthcare_idea
+		}
 	}
 	focus = {
 		id = UKR_education_reform
@@ -4702,7 +4722,9 @@ focus_tree = {
 		}
 		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
 		available = {}
-		completion_reward = {}
+		completion_reward = {
+			add_ideas = UKR_reformed_education_idea
+		}
 	}
 	focus = {
 		id = UKR_economic_reforms
