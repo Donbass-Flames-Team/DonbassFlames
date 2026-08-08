@@ -262,6 +262,86 @@ ideas = {
 				attrition = -0.10
 			}
 		}
+		UKR_church_1_idea = {
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+			}
+		}
+		UKR_church_2_idea = {
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.20
+			}
+		}
+		UKR_reformed_healthcare_idea = {
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.1
+			}
+		}
+		UKR_reformed_education_idea = {
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		UKR_army_language_faith_idea  = {
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				war_support_factor = 0.15
+			}
+		}
+
 	}
 
 }
