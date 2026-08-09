@@ -4386,7 +4386,7 @@ focus_tree = {
 				}
 			}
 			has_completed_focus = UKR_country_without_corruption
-			has_completed_focus = UKR_gas_market_reform
+			has_completed_focus = UKR_anti_kolomoisky_law
 			has_completed_focus = UKR_land_market
 			date > 2021.1.1
 		}
@@ -4575,8 +4575,10 @@ focus_tree = {
 		relative_position_id = UKR_independent_church
 		available = {}
 		completion_reward = {
-			swap_ideas = { remove_idea = UKR_church_1_idea 
-						add_idea = UKR_church_2_idea }
+			swap_ideas = { 
+				remove_idea = UKR_church_1_idea 
+			    add_idea = UKR_church_2_idea 
+			}
 		}
 	}
 	focus = {
@@ -4591,12 +4593,16 @@ focus_tree = {
 		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
 		available = {}
 		completion_reward = {
-			add_stability = 5
+			add_stability = 0.05
 			subtract_from_variable = {
-			var = corruption_value
-			value = 10
-			tooltip = decreasing_corruption_large_tt
+			    var = corruption_value
+			    value = 5
+			    tooltip = decreasing_corruption_large_tt
 			}
+			subtract_from_variable = {
+			    var = criminality_value
+			    value = 2.5
+			}			
 		}
 	}
 	focus = {
@@ -4671,8 +4677,8 @@ focus_tree = {
 			add_political_power = 25
 			subtract_from_variable = {
 			var = criminality_value
-			value = 5
-			tooltip = decreasing_criminality_middle_tt
+			    value = 5
+			    tooltip = decreasing_criminality_middle_tt
 			}
 		}
 	}
@@ -4690,9 +4696,9 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 			subtract_from_variable = {
-			var = criminality_value
-			value = 2.5
-			tooltip = decreasing_criminality_small
+			    var = criminality_value
+			    value = 2.5
+			    tooltip = decreasing_criminality_small
 			}
 		}
 	}
@@ -4798,7 +4804,21 @@ focus_tree = {
 		}
 		relative_position_id = UKR_economic_reforms
 		available = {}
-		completion_reward = {}
+		completion_reward = {
+			subtract_from_variable = {
+			    var = corruption_value
+			    value = 1
+			    tooltip = decreasing_corruption_large_tt
+			}
+			subtract_from_variable = {
+			    var = criminality_value
+			    value = 1.5
+			}	
+			subtract_from_variable = {
+			    var = percentage_shadow_economy
+			    value = 1.5
+			}					
+		}
 	}	
 	focus = {
 		id = UKR_increase_millitary_spends
@@ -4899,7 +4919,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_form_nabu
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_form_nabu
 		cost = 5
 		x = 0
 		y = 1
@@ -4913,7 +4933,7 @@ focus_tree = {
 				modifier = UKR_anti_corruption_agencies_idea
 			}
 			set_variable = {
-				UKR_anti_corruption_agencies_political_power_gain = 0.05
+				UKR_anti_corruption_agencies_political_power_gain = -0.05
 			}
 			set_variable = {
 				UKR_anti_corruption_agencies_monthly_decrease = 0.1

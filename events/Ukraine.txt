@@ -112,13 +112,15 @@ country_event = {
 					id = DPR.36
 					days = 4
 				}
-			}
-			DPR = {
-				load_oob = DPR_Uprising_Militia
+				country_event = {
+					id = DPR.43
+					days = 10
+				}
 				country_event = {
 					id = DPR.42
 					days = 34
 				}
+				load_oob = DPR_Uprising_Militia
 			}
 			if = {
 				limit = {
