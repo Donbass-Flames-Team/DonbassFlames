@@ -398,7 +398,7 @@ country_event = {
 	id = DPR.20
 	title = DPR.20.t
 	desc = DPR.20.d
-	picture = GFX_Report_event_sheling_beach_in_zugres_picture
+	picture = GFX_Report_event_andrey_purgin_2014
 	
 	is_triggered_only = yes
 
@@ -431,7 +431,7 @@ country_event = {
 	id = DPR.21
 	title = DPR.21.t
 	desc = DPR.21.d
-	picture = GFX_Report_event_sheling_beach_in_zugres_picture
+	picture = GFX_Report_event_denis_pushilin_2014
 	
 	is_triggered_only = yes
 
@@ -464,7 +464,7 @@ country_event = {
 	id = DPR.22
 	title = DPR.22.t
 	desc = DPR.22.d
-	picture = GFX_Report_event_sheling_beach_in_zugres_picture
+	picture = GFX_Report_event_makovich_2014
 	
 	is_triggered_only = yes
 
@@ -497,7 +497,7 @@ country_event = {
 	id = DPR.23
 	title = DPR.23.t
 	desc = DPR.23.d
-	picture = GFX_Report_event_sheling_beach_in_zugres_picture
+	picture = GFX_Report_event_boris_litvinov_2014
 	
 	is_triggered_only = yes
 
@@ -530,7 +530,7 @@ country_event = {
 	id = DPR.24
 	title = DPR.24.t
 	desc = DPR.24.d
-	picture = GFX_Report_event_sheling_beach_in_zugres_picture
+	picture = GFX_Report_event_zakharchenko
 	
 	is_triggered_only = yes
 
@@ -948,7 +948,7 @@ country_event = {
 	id = DPR.40
 	title = DPR.40.t
 	desc = DPR.40.d
-	#picture = GFX_Report_event_battles_on_grushevsky_picture
+	picture = GFX_Report_event_parade_of_pows_in_donetsk
 
 	is_triggered_only = yes
 
@@ -969,7 +969,7 @@ country_event = {
 	id = DPR.41
 	title = DPR.41.t
 	desc = DPR.41.d
-	#picture = GFX_Report_event_battles_on_grushevsky_picture
+	picture = GFX_Report_event_arrise_donbass_event
 
 	is_triggered_only = yes
 
@@ -985,7 +985,7 @@ country_event = {
 	id = DPR.42
 	title = DPR.42.t
 	desc = DPR.42.d
-	#picture = GFX_Report_event_battles_on_grushevsky_picture
+	picture = GFX_Report_event_referendum_in_donbass_event
 
 	is_triggered_only = yes
 
@@ -1006,9 +1006,18 @@ country_event = {
 	id = DPR.43
 	title = DPR.43.t
 	desc = DPR.43.d
-	#picture = GFX_Report_event_battles_on_grushevsky_picture
+	picture = GFX_Report_event_proukr_riots_in_donetsk_17_aprill
 
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = DPR.44
+				days = 11
+			}
+		}
+	}
 
 	option = {
 		name = DPR.43.a
@@ -1021,7 +1030,7 @@ country_event = {
 	id = DPR.44
 	title = DPR.44.t
 	desc = DPR.44.d
-	#picture = GFX_Report_event_battles_on_grushevsky_picture
+	picture = GFX_Report_event_Clashes_in_Donetsk_on_Apri_28_2014
 
 	is_triggered_only = yes
 
