@@ -29,12 +29,12 @@ guiTypes = {
 		hide_animation_type = accelerated
 		animation_time = 300
 		orientation = lower_left
-		size = { width=436 height=496 }
+		size = { width=463 height=883 }
 		
 		containerWindowType = {
 			name = "state_info_window"
 			position = { x = 0 y = -175 }
-			size = { width=780 height=496 }
+			size = { width=780 height=626 }
 			
 			
 			background = {
@@ -56,16 +56,16 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "state_building_entries"
-				position = { x = 153 y = 45 }
+				position = { x = 153 y = 52 }
 				size = { width = 480 height = 105 }
 				format = "UPPER_LEFT"
-				slotsize = { width = 60 height = 52 }
-				max_slots_horizontal = 9 #df
+				slotsize = { width = 60 height = 82 }
+				max_slots_horizontal = 5 #df
 			}
 			
 			instantTextboxType = {
 				name = "shared_slot_count"
-				position = { x = 170 y = 132 }
+				position = { x = 165 y = 225 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				text = "SLOTS"
@@ -75,21 +75,22 @@ guiTypes = {
 				fixedsize = yes
 			}
 			
+			#Energy
 			iconType ={
 				name ="energy_consumption_bg"
 				spriteType = "GFX_victorypoint_stateview_bg"
-				position = { x = 403 y = 129 }
+				position = { x = 353 y = 222 }
 			}
 			
 			iconType = {
 				name = "energy_icon"
 				spriteType = "GFX_modifiers_energy"
-				position = { x = 418 y = 126 }
+				position = { x = 368 y = 216 }
 			}
 			
 			instantTextboxType = {
 				name = "energy_text"
-				position = { x = 398 y = 134 }
+				position = { x = 352 y = 226 }
 				textureFile = ""
 				font = "hoi_16mbs"
 				text = ""
@@ -100,23 +101,23 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "state_shared_slot_building_entries"
-				position = { x = 150 y = 170 }
+				position = { x = 150 y = 265 }
 				size = { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
 				slotsize = { width = 60 height = 40 } #df
-				max_slots_horizontal = 7 #df
-				max_slots_vertical = 6 #df
+				max_slots_horizontal = 5 #df
+				max_slots_vertical = 8 #df
 			}
 
 			iconType ={
 				name ="victory_points_bg"
 				spriteType = "GFX_victorypoint_stateview_bg"
-				position = { x = 403 y = 461 }
+				position = { x = 413 y = 221 }
 			}
 			
 			instantTextboxType = {
 				name = "victory_points"
-				position = { x = 373 y = 465 }
+				position = { x = 384 y = 224 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				text = ""
@@ -190,8 +191,8 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "state_resources"
-				position = { x= 26 y=301} #df
-				size = { width=135 height=99 } #df
+				position = { x= 26 y=485} #df
+				size = { width=135 height=110 } #df
 				
 				
 				background = {
@@ -201,12 +202,12 @@ guiTypes = {
 			
 				gridBoxType = {
 					name = "state_resources_entries"
-					position = { x = -42 y = -2 } #df
+					position = { x = -42 y = -92 } #df
 					size = { width = 132 height = 60 } #df
 					format = "UPPER_LEFT"
-					slotsize = { width = 50 height = 31 } #df
+					slotsize = { width = 55 height = 30 } #df
 					max_slots_horizontal = 2
-					max_slots_vertical = 3 #df
+					max_slots_vertical = 4 #df
 				}
 			}
 			
@@ -454,7 +455,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close_button"
-			position = { x = -11 y = -157 } #df
+			position = { x = -38 y = -157 } #df
 			quadTextureSprite ="GFX_closebutton_small"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -677,7 +678,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "amount"
-			position = { x = 70 y = 11 }
+			position = { x = 65 y = 93 }
 			font = "hoi_20b"
 			maxWidth = 37
 			maxHeight = 18
