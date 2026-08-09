@@ -9,11 +9,11 @@ focus_tree = {
 	}
 	default = no
 	continuous_focus_position = { x = 2500 y = 500 }
-	
+
 	focus = {
-		id = SDR_capture_mvd
+		id = SDR_capture_city_council
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 0.2
+		cost = 0.1
 		x = 12
 		y = 0
 
@@ -22,11 +22,537 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_war_support = 0.05
 			add_stability = 0.05
+			add_war_support = 0.05
 			add_political_power = 35
-			add_command_power = 10
 			load_oob = SDR_mariupol_militia
+		}
+}
+	focus = {
+		id = SDR_capture_mvd
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.1
+		x = 0
+		y = 1
+		prerequisite = {focus = SDR_capture_city_council}
+		relative_position_id = SDR_capture_city_council
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment_1 
+				amount = 200
+			}
+			add_equipment_to_stockpile = { 
+				type = bulletproof_vests_equipment_1
+				amount = 50
+			}
+			add_equipment_to_stockpile = { 
+				type = uniform_equipment_3
+				amount = 250
+			}
+			add_equipment_to_stockpile = { 
+				type = support_equipment 
+				amount = 20
+			}
+			add_to_variable = {
+				JAM_ammo_stockpile = 20
+			}
+		}
+	}
+	focus = {
+		id = SDR_build_barricades
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.1
+		x = 0
+		y = 2
+		prerequisite = {focus = SDR_capture_mvd}
+		relative_position_id = SDR_capture_city_council
+
+		available = {
+			
+		}
+		completion_reward = {
+				if = {
+					limit = {
+						SDR = {
+							controls_province = 16487	   
+						}
+					}
+					526 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 16487  
+							instant_build = yes	 
+						}
+					}
+				}
+				if = {
+					limit = {
+						SDR = {
+							controls_province = 18222	   
+						}
+					}
+					526 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 18222  
+							instant_build = yes	 
+						}
+					}
+				}
+				if = {
+					limit = {
+						SDR = {
+							controls_province = 18212	   
+						}
+					}
+					526 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 18212  
+							instant_build = yes	 
+						}
+					}
+				}
+				if = {
+					limit = {
+						SDR = {
+							controls_province = 18221	   
+						}
+					}
+					526 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 18221  
+							instant_build = yes	 
+						}
+					}
+				}
+				if = {
+					limit = {
+						SDR = {
+							controls_province = 5830	   
+						}
+					}
+					526 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 5830  
+							instant_build = yes	 
+						}
+					}
+				}
+				if = {
+					limit = {
+						SDR = {
+							controls_province = 18211	   
+						}
+					}
+					526 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 18211  
+							instant_build = yes	 
+						}
+					}
+				}
+		}
+	}
+	focus = {
+		id = SDR_capture_3057
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 0.1
+		x = 0
+		y = 3
+		prerequisite = {focus = SDR_build_barricades}
+		relative_position_id = SDR_capture_city_council
+
+		available = {
+			
+		}
+
+		completion_reward = {
+				random_list = {
+				50 = { country_event = { id = SDR.2 hours = 4 } }
+				50 = { country_event = { id = SDR.3 hours = 1 } }
+			}
+		}
+	}
+	focus = {
+		id = SDR_Azov
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 1
+		y = 4
+		prerequisite = {focus = SDR_capture_3057}
+		mutually_exclusive = { focus = SDR_Mariupol_fortress }
+		relative_position_id = SDR_capture_city_council
+
+		available = {
+			
+		}
+
+		completion_reward = {
+				if = {
+					limit = {
+						SDR = {
+							controls_province = 18211	   
+						}
+					}
+					526 = {
+						add_building_construction = {
+							type = bunker
+							level = 5
+							province = 18211  
+							instant_build = yes	 
+						}
+					}
+				}
+				if = {
+					limit = {
+						SDR = {
+							controls_province = 16487	   
+						}
+					}
+					526 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 16487  
+							instant_build = yes	 
+						}
+					}
+				}
+				if = {
+					limit = {
+						SDR = {
+							controls_province = 18222	   
+						}
+					}
+					526 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 18222  
+							instant_build = yes	 
+						}
+					}
+				}
+				if = {
+					limit = {
+						SDR = {
+							controls_province = 18212	   
+						}
+					}
+					526 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 18212  
+							instant_build = yes	 
+						}
+					}
+				}
+				if = {
+					limit = {
+						SDR = {
+							controls_province = 16477	   
+						}
+					}
+					526 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 16477  
+							instant_build = yes	 
+						}
+					}
+				}
+				if = {
+					limit = {
+						SDR = {
+							controls_province = 18213	   
+						}
+					}
+					526 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 18213  
+							instant_build = yes	 
+						}
+					}
+				}
+			}
+	}
+	focus = {
+		id = SDR_Mariupol_fortress
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -1
+		y = 4
+		prerequisite = {focus = SDR_capture_3057}
+		mutually_exclusive = { focus = SDR_Azov }
+		relative_position_id = SDR_capture_city_council
+
+		available = {
+			
+		}
+
+		completion_reward = {
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 5830
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 5830
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 18221
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 18221
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 5816
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 5816
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 18220
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 18220
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 18525
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 18525
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 16487
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 16487
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 18222
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 18222
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 7692
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7692
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 18224
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 18224
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 18524
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 18524
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 18218
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 18218
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 18211
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 18211
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 16477
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 16477
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 18216
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 18216
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDR = {
+					controls_province = 16470
+				}
+			}
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 16470
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+	focus = {
+		id = SDR_referendum
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 0
+		y = 5
+		prerequisite = {focus = SDR_Mariupol_fortress}
+		prerequisite = {focus = SDR_Azov}
+		relative_position_id = SDR_capture_city_council
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			country_event = { id = SDR.4 hours = 12 }
 		}
 	}
 }
