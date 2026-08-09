@@ -19,7 +19,16 @@ state = {
 			infrastructure = 3 
 		}
 		
-		add_core_of = UKR 
+		add_core_of = UKR
+		add_core_of = RUS
+
+		2014.5.19 = {
+			owner = RUS
+			controller = RUS
+			add_core_of = UKR
+			add_core_of = RUS
+			add_core_of = CRI
+		}
 	}
 	provinces = { 4802 8374 11015 16951 16966 16975 17017 }
 }

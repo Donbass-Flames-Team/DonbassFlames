@@ -31,6 +31,14 @@ state = {
 		add_core_of = CRI 
 		add_core_of = UKR
 		add_core_of = RUS
+
+		2014.5.19 = {
+			owner = RUS
+			controller = RUS
+			remove_core_of = UKR
+			add_core_of = RUS
+			add_core_of = CRI
+		}
 	}
 	provinces = { 237 1712 4116 4707 8283 8414 9138 10733 10860 11824 11961 11988 17361 17365 17446 17450 }
 }
