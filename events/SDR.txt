@@ -29,4 +29,69 @@ country_event = {
 		}
 	}
 }
+#ВЧ 3057 провал
+country_event = {
+	id = SDR.2
+	title = SDR.2.t
+	desc = SDR.2.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+	
+	option = {
+		name = SDR.2.a
+		add_stability = -0.015 
+		add_war_support = -0.05
+		add_manpower = -3
+	}
+}
+#ВЧ 3057 успех
+country_event = {
+	id = SDR.3
+	title = SDR.3.t
+	desc = SDR.3.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+	
+	option = {
+		name = SDR.3.a
+		add_stability = 0.015 
+		add_war_support = 0.05
+		load_oob = SDR_3057
+	}
+}
+#Референдум
+country_event = {
+	id = SDR.4
+	title = SDR.4.t
+	desc = SDR.4.d
+	picture = GFX_Report_event_russian_go_thrgouh_border_picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+	
+	option = {
+		name = SDR.4.a
+		add_stability = 0.1
+		add_war_support = 0.05
+	}
+}
 
