@@ -408,8 +408,31 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	complete_national_focus = UKR_emergency_redeployment_of_troops
 	complete_national_focus = UKR_organize_frontline
 	complete_national_focus = UKR_volunteer_battalion_azov
-	
 
+	    declare_war_on = {
+            target = DPR
+            type = annex_everything
+        }
+	    declare_war_on = {
+            target = LPR
+            type = annex_everything
+        }	
+	    declare_war_on = {
+            target = SDR
+            type = annex_everything
+        }
+	    declare_war_on = {
+            target = NDR
+            type = annex_everything
+        }
+	    declare_war_on = {
+            target = SKR
+            type = annex_everything
+        }
+	    declare_war_on = {
+            target = SLR
+            type = annex_everything
+        }		
 
 	activate_mission = 	UKR_elections_2014
 	add_days_mission_timeout = {
