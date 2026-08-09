@@ -22,9 +22,10 @@ state = {
 		
 		
 		2014.5.19 = { 
-			controller = AZV 
-			
-			add_claim_by = DPR 
+		controller = AZV 
+		add_core_of = AZV
+		add_core_of = UKR 
+		add_claim_by = DPR 
 		}
 	}
 	provinces = { 10761 }
