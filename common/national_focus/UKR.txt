@@ -7639,6 +7639,7 @@ focus_tree = {
 		bypass_effect = {}
 		available = {}
 		completion_reward = {
+			add_stability = -0.05
 			hidden_effect = {}
 		}
 	}
@@ -7658,7 +7659,9 @@ focus_tree = {
 		bypass_effect = {}
 		available = {}
 		completion_reward = {
-			hidden_effect = {}
+			hidden_effect = {
+				country_event = ukraine.126
+			}
 		}
 	}
 	focus = {
