@@ -5849,7 +5849,7 @@ country_event = {
     id = ukraine.160
     title = ukraine.160.t
     desc = ukraine.160.d
-    picture = GFX_Report_event_neli_Stepa_picture
+    picture = GFX_Report_event_kuzmenko_is_dead
 
     is_triggered_only = yes
 
@@ -5858,7 +5858,67 @@ country_event = {
     }
 }
 
+# Стрельба в мукачево
+country_event = {
+    id = ukraine.161
+    title = ukraine.161.t
+    desc = ukraine.161.d
+    picture = GFX_Report_event_right_corp_is_expanded_picture
 
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.162
+				days = 6
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.161.a
+		add_stability = -0.01
+		add_political_power = -5
+    }
+}
+
+# Новый курс «Правого сектора»
+country_event = {
+    id = ukraine.162
+    title = ukraine.162.t
+    desc = ukraine.162.d
+    picture = GFX_Report_event_right_corp_is_expanded_picture
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.162.a
+    }
+}
+
+# 17-й саммит Украина–ЕС
+country_event = {
+    id = ukraine.163
+    title = ukraine.163.t
+    desc = ukraine.163.d
+    picture = GFX_Report_event_neli_Stepa_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = news_events.57
+				hours = 6
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.163.a
+    }
+}
 
 
 ##########################################################################
