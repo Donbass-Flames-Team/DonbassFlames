@@ -133,7 +133,7 @@ guiTypes = {
 			}
 		}
 	}
-	
+
 	### MAIN MENU PANEL (upperleft)
 	containerWindowType = {
 		name  ="mainmenu_panel_upperleft"
@@ -490,6 +490,7 @@ guiTypes = {
 			position = { x = 0 y = 239 }
 		}
 		
+		
 		containerWindowType = {
 			name = "social_view_interface_window"
 			position = { x = 250 y = 0  }
@@ -572,6 +573,22 @@ guiTypes = {
                 pdx_tooltip = "MENU_DISCORD"
                 web_link = "https://www.tiktok.com/@donbassflameshoi4"
                 scale = 1
+            }
+			ButtonType = {
+                name = "homepage_button"
+                position = { x=6000 y=0 }
+                quadTextureSprite ="homepage"
+                clicksound = click_default
+                pdx_tooltip = "MENU_HOMEPAGE"
+                scale = 0.9
+            }
+			ButtonType = {
+                name = "privacy_policy_button"
+                position = { x=6008 y=0 }
+                quadTextureSprite ="privacy"
+                #clicksound = click_default
+                pdx_tooltip = "MENU_PRIVACY_POLICY"
+                scale = 0.9
             }
         }
 		ButtonType = {
