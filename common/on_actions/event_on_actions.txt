@@ -220,6 +220,34 @@ on_actions = {
 				set_country_flag = UKR_17_th_summit_eu_ukr
 				country_event = { id = ukraine.161 }
 			}
+			# 17-й саммит Украина–ЕС
+			if = {
+				limit = {
+					tag = UKR
+					date > 2015.4.27
+                    
+					NOT = { has_global_flag = Ukraine_suffered_heavy_defeat_after_ato }
+					NOT = { has_country_flag = UKR_17_th_summit_eu_ukr }
+				}
+				set_country_flag = UKR_17_th_summit_eu_ukr
+				country_event = { id = ukraine.161 }
+			}
+			# 2014.7.3 Михаил куцин контужен(смена главкома)
+			if = {
+				limit = {
+					has_global_flag = Start_Of_ATO
+					date > 2014.7.3
+					NOT = { 
+						has_country_flag = UKR_mikhail_kutsin_is_wounded 
+						has_global_flag = Ukraine_victory_in_ATO
+						has_global_flag = People_republic_victory
+						has_global_flag = ATO_Separatists_victory					
+					}
+					tag = UKR
+				}
+				set_country_flag = UKR_mikhail_kutsin_is_wounded
+				country_event = { id = ukraine.164 }
+			}
 
 
 		}

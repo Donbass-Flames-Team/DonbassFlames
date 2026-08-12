@@ -5976,6 +5976,29 @@ country_event = {
     }
 }
 
+# Михаил Николаевич Куцин получает контузию
+country_event = {
+    id = ukraine.164
+    title = ukraine.164.t
+    desc = ukraine.164.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = Mikhail_Kunitsin_is_commander_in_chief
+			set_country_flag = Viktor_Muzhenko_is_commander_in_chief
+		}
+	}
+
+    option = {
+        name = ukraine.164.a
+		add_command_power = -10
+		custom_effect_tooltip = Viktor_Muzhenko_is_commander_in_chief_tt
+    }
+}
+
 
 ##########################################################################
 ##########################################################################
