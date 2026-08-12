@@ -503,7 +503,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DPR_reforms_of_dpr_amy
+		id = DPR_reforms_of_dpr_army
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
 		x = 32
@@ -528,8 +528,8 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		prerequisite = {focus = DPR_reforms_of_dpr_amy}
-		relative_position_id = DPR_reforms_of_dpr_amy
+		prerequisite = {focus = DPR_reforms_of_dpr_army}
+		relative_position_id = DPR_reforms_of_dpr_army
 
 		available = {
 			date > 2015.1.1
@@ -547,8 +547,8 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		prerequisite = {focus = DPR_reforms_of_dpr_amy}
-		relative_position_id = DPR_reforms_of_dpr_amy
+		prerequisite = {focus = DPR_reforms_of_dpr_army}
+		relative_position_id = DPR_reforms_of_dpr_army
 
 		available = {
 			date > 2015.1.1
@@ -566,8 +566,8 @@ focus_tree = {
 		x = -4
 		y = 1
 
-		prerequisite = {focus = DPR_reforms_of_dpr_amy}
-		relative_position_id = DPR_reforms_of_dpr_amy
+		prerequisite = {focus = DPR_reforms_of_dpr_army}
+		relative_position_id = DPR_reforms_of_dpr_army
 
 		available = {
 			date > 2015.1.1
