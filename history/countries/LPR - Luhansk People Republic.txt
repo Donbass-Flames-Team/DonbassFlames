@@ -24,6 +24,15 @@ recruit_character = Sergey_Grachev
 recruit_character = Aleksey_Pavlov
 recruit_character = Oleg_Anashenko
 
+    add_dynamic_modifier = { modifier = LPR_electricity_system_idea }
+    set_variable = { LPR_electricity_consumer_goods_factor = 0.15 }
+    set_variable = { LPR_electricity_production_speed_buildings_factor = -0.25 }
+    set_variable = { LPR_electricity_industrial_capacity_factory = -0.20 }
+    set_variable = { LPR_electricity_production_speed_arms_factory_factor = -0.25 }
+    set_variable = { LPR_electricity_production_speed_industrial_complex_factor = -0.25 }
+    set_variable = { LPR_electricity_local_resources_factor = -0.30 }
+    set_variable = { LPR_electricity_stability_factor = -0.05 }	
+
 2013.11.21 = {
 	set_cosmetic_tag = LPR_early
 	set_technology = {
@@ -82,7 +91,6 @@ recruit_character = Oleg_Anashenko
 		closed_economy
 		war_economy
 		LPR_ruined_factories
-		LPR_dependent_electric_power
 		militarized_police
 		free_elementary_and_middle_schools
 		private_healthcare

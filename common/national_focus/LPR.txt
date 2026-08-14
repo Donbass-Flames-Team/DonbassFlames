@@ -865,6 +865,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_The_situation_has_stabilized"
 			add_ideas = limited_conscription
 			add_ideas = low_economic_mobilisation
+			
 		}
 
 		ai_will_do = {
@@ -1070,7 +1071,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_restoring_other_tec"
-			add_stability = 0.025
+			add_stability = 0.05
 			add_political_power = -15
 		}
 
@@ -1115,10 +1116,15 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_start_restoring_power_supply"
-			swap_ideas = {
-				remove_idea = LPR_partially_destroyed_factories
-				add_idea = LPR_partially_destroyed_factories_1
-			}
+			add_variable = { LPR_electricity_consumer_goods_factor = -0.03 }
+			add_variable = { LPR_electricity_production_speed_buildings_factor = 0.05 }
+			add_variable = { LPR_electricity_industrial_capacity_factory = 0.04 }
+			add_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.05 }
+			add_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.05 }
+			add_variable = { LPR_electricity_local_resources_factor = 0.06 }
+			add_variable = { LPR_electricity_stability_factor = 0.01 }
+			force_update_dynamic_modifier = yes
+			custom_effect_tooltip = LPR_electricity_improving_1_tt
 		}
 
 		ai_will_do = {
@@ -1139,10 +1145,15 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_restore_luhansk_tec"
-			swap_ideas = {
-				remove_idea = LPR_partially_destroyed_factories_1
-				add_idea = LPR_partially_destroyed_factories_2
-			}
+			add_variable = { LPR_electricity_consumer_goods_factor = -0.02 }
+			add_variable = { LPR_electricity_production_speed_buildings_factor = 0.03 }
+			add_variable = { LPR_electricity_industrial_capacity_factory = 0.025 }
+			add_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.03 }
+			add_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.03 }
+			add_variable = { LPR_electricity_local_resources_factor = 0.04 }
+			add_variable = { LPR_electricity_stability_factor = 0.02 }
+			force_update_dynamic_modifier = yes
+			custom_effect_tooltip = LPR_electricity_improving_tt
 		}
 
 		ai_will_do = {
@@ -1162,7 +1173,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			
+			add_variable = { LPR_electricity_consumer_goods_factor = -0.02 }
+			add_variable = { LPR_electricity_production_speed_buildings_factor = 0.03 }
+			add_variable = { LPR_electricity_industrial_capacity_factory = 0.025 }
+			add_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.03 }
+			add_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.03 }
+			add_variable = { LPR_electricity_local_resources_factor = 0.04 }
+			add_variable = { LPR_electricity_stability_factor = 0.02 }
+			custom_effect_tooltip = LPR_electricity_improving_tt
 		}
 
 		ai_will_do = {
@@ -1178,15 +1196,20 @@ focus_tree = {
 		cost = 4
 		prerequisite = { focus = LPR_restore_luhansk_tec }
 		relative_position_id = LPR_restore_luhansk_tec
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_connect_to_shchastynska_tec"
-			swap_ideas = {
-				remove_idea = LPR_partially_destroyed_factories_2
-				add_idea = LPR_partially_destroyed_factories_3
-			}
+			add_variable = { LPR_electricity_consumer_goods_factor = -0.03 }
+			add_variable = { LPR_electricity_production_speed_buildings_factor = 0.04 }
+			add_variable = { LPR_electricity_industrial_capacity_factory = 0.03 }
+			add_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.05 }
+			add_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.04 }
+			add_variable = { LPR_electricity_local_resources_factor = 0.03 }
+			add_variable = { LPR_electricity_stability_factor = 0.03 }
+			force_update_dynamic_modifier = yes
+			custom_effect_tooltip = LPR_electricity_improving_tt
 		}
 
 		ai_will_do = {
@@ -1207,7 +1230,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_energy_independence_from_ukr"
-			remove_ideas = LPR_partially_destroyed_factories_3
+			remove_dynamic_modifier = {
+				modifier = LPR_electricity_system_idea
+			}
+			custom_effect_tooltip = LPR_electricity_full_recovery_tt
 		}
 
 		ai_will_do = {
