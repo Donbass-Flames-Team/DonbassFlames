@@ -949,6 +949,28 @@ UKR_decisions_of_the_transitional_government = {
 			factor = 135
 		}
 	}
+	UKR_charity_event_565_support_the_army = {
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+		}
+		visible = {
+			has_completed_focus = UKR_adoption_of_new_laws
+		}
+		icon = GFX_decision_icon_of_Unknown_man
+
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+            add_war_support = 0.01
+			add_to_variable  = { cash = 0.2 }
+		}
+		ai_will_do = {
+			factor = 1
+
+		}
+	}
 	UKR_will_request_additional_powers = {
 		allowed = {
 			original_tag = UKR
