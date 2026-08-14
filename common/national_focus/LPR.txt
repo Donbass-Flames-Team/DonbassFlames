@@ -1060,9 +1060,9 @@ focus_tree = {
 		id = LPR_restoring_other_tec
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 2
-		y = 1
+		y = 3
 		cost = 8
-		prerequisite = { focus = LPR_start_restoring_power_supply }
+		prerequisite = { focus = LPR_restore_luhansk_tec }
 		relative_position_id = LPR_start_restoring_power_supply
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		allow_branch = {
@@ -1071,8 +1071,15 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_restoring_other_tec"
-			add_stability = 0.05
-			add_political_power = -15
+			add_variable = { LPR_electricity_consumer_goods_factor = -0.05 }
+			add_variable = { LPR_electricity_production_speed_buildings_factor = 0.03 }
+			add_variable = { LPR_electricity_industrial_capacity_factory = 0.02 }
+			add_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.04 }
+			add_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.03 }
+			add_variable = { LPR_electricity_local_resources_factor = 0.05 }
+			add_variable = { LPR_electricity_stability_factor = 0.05 }
+			force_update_dynamic_modifier = yes
+			custom_effect_tooltip = LPR_restoring_other_tec_tt
 		}
 
 		ai_will_do = {
@@ -1124,7 +1131,7 @@ focus_tree = {
 			add_variable = { LPR_electricity_local_resources_factor = 0.06 }
 			add_variable = { LPR_electricity_stability_factor = 0.01 }
 			force_update_dynamic_modifier = yes
-			custom_effect_tooltip = LPR_electricity_improving_1_tt
+			custom_effect_tooltip = LPR_start_restoring_power_supply_tt
 		}
 
 		ai_will_do = {
@@ -1136,7 +1143,7 @@ focus_tree = {
 		id = LPR_restore_luhansk_tec
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 0
-		y = 2
+		y = 1
 		cost = 4
 		prerequisite = { focus = LPR_start_restoring_power_supply }
 		relative_position_id = LPR_start_restoring_power_supply
@@ -1153,7 +1160,7 @@ focus_tree = {
 			add_variable = { LPR_electricity_local_resources_factor = 0.04 }
 			add_variable = { LPR_electricity_stability_factor = 0.02 }
 			force_update_dynamic_modifier = yes
-			custom_effect_tooltip = LPR_electricity_improving_tt
+			custom_effect_tooltip = LPR_restore_luhansk_tec_tt
 		}
 
 		ai_will_do = {
@@ -1164,7 +1171,7 @@ focus_tree = {
 	focus = {
 		id = LPR_convert_lugansk_thermal_power_plant_to_gas
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = -2
+		x = 0
 		y = 1
 		cost = 4
 		prerequisite = { focus = LPR_restore_luhansk_tec }
@@ -1173,6 +1180,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+		340 = {
+		add_resource = {
+		type = coal
+		amount = 8
+		}
+	}
 			add_variable = { LPR_electricity_consumer_goods_factor = -0.02 }
 			add_variable = { LPR_electricity_production_speed_buildings_factor = 0.03 }
 			add_variable = { LPR_electricity_industrial_capacity_factory = 0.025 }
@@ -1180,7 +1193,7 @@ focus_tree = {
 			add_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.03 }
 			add_variable = { LPR_electricity_local_resources_factor = 0.04 }
 			add_variable = { LPR_electricity_stability_factor = 0.02 }
-			custom_effect_tooltip = LPR_electricity_improving_tt
+			custom_effect_tooltip = LPR_convert_lugansk_thermal_power_plant_to_gas_tt
 		}
 
 		ai_will_do = {
@@ -1191,11 +1204,17 @@ focus_tree = {
 	focus = {
 		id = LPR_connect_to_shchastynska_tec
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 0
-		y = 1
+		x = -2
+		y = 2
 		cost = 4
 		prerequisite = { focus = LPR_restore_luhansk_tec }
+		mutually_exclusive = { focus = LPR_restoring_other_tec }
 		relative_position_id = LPR_restore_luhansk_tec
+		available = {
+				LPR = {
+					controls_state = 288
+				}
+		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -1209,7 +1228,7 @@ focus_tree = {
 			add_variable = { LPR_electricity_local_resources_factor = 0.03 }
 			add_variable = { LPR_electricity_stability_factor = 0.03 }
 			force_update_dynamic_modifier = yes
-			custom_effect_tooltip = LPR_electricity_improving_tt
+			custom_effect_tooltip = LPR_connect_to_shchastynska_tec_tt
 		}
 
 		ai_will_do = {
@@ -1221,10 +1240,10 @@ focus_tree = {
 		id = LPR_energy_independence_from_ukr
 		icon = GFX_focus_UKR_The_regime_is_under_threat
 		x = 0
-		y = 1
+		y = 3
 		cost = 10
-		prerequisite = { focus = LPR_connect_to_shchastynska_tec }
-		relative_position_id = LPR_connect_to_shchastynska_tec
+		prerequisite = { focus = LPR_connect_to_shchastynska_tec focus = LPR_restoring_other_tec }
+		relative_position_id = LPR_restore_luhansk_tec
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -1233,7 +1252,7 @@ focus_tree = {
 			remove_dynamic_modifier = {
 				modifier = LPR_electricity_system_idea
 			}
-			custom_effect_tooltip = LPR_electricity_full_recovery_tt
+			custom_effect_tooltip = LPR_energy_independence_from_ukr_tec_tt
 		}
 
 		ai_will_do = {
