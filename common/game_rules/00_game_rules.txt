@@ -137,7 +137,7 @@ ilovaisk_encirclement_of_troops_status = {
 }
 JAM_gr_inf_ammo_tech_mult = {
 	name  = "JAM_inf_ammo_tech_mult"
-	group = "RULE_GROUP_GAMEPLAY"
+	group = "RULE_GROUP_AMMO"
 	icon  = "GFX_JAM_ammo_small"
 	
 	default = {
@@ -158,7 +158,7 @@ JAM_gr_inf_ammo_tech_mult = {
 
 JAM_gr_army_ammo_sup_fire_mult = {
 	name  = "JAM_army_ammo_sup_fire_mult"
-	group = "RULE_GROUP_GAMEPLAY"
+	group = "RULE_GROUP_AMMO"
 	icon  = "GFX_JAM_ammo_small"
 	
 	default = {
@@ -179,7 +179,7 @@ JAM_gr_army_ammo_sup_fire_mult = {
 
 JAM_gr_player_ammo_gain_difficulty_mult = {
 	name  = "JAM_plr_ammo_gain_difficulty_mult"
-	group = "RULE_GROUP_GAMEPLAY"
+	group = "RULE_GROUP_AMMO"
 	icon  = "GFX_JAM_ammo_small"
 	
 	option = {
