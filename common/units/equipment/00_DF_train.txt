@@ -13,7 +13,7 @@ equipments = {
 
 		interface_category = interface_category_land
 
-		armor_value = 0 # HP = BASE_TRAIN_HP + armor_value
+		armor_value = 0
 
 		lend_lease_cost = 20
 
@@ -29,7 +29,7 @@ equipments = {
 		archetype = train_equipment
 		priority = 10
 
-		armor_value = 0 # HP = BASE_TRAIN_HP + armor_value
+		armor_value =
 
 		build_cost_ic = 70
 		resources = {
@@ -57,7 +57,7 @@ equipments = {
 		parent = train_equipment_1
 		priority = 30
 
-		armor_value = 250 # HP = BASE_TRAIN_HP + armor_value
+		armor_value = 250
 		air_attack = 18
 
 		build_cost_ic = 105

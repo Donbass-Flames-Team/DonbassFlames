@@ -21,12 +21,20 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.05
-			add_stability = 0.025
+			add_stability = -0.10
 			add_political_power = 35
-			add_command_power = 10
+			add_command_power = 20
 			add_equipment_to_stockpile = { 
 				type = uniform_equipment_1 
-				amount = 1500
+				amount = 1000
+			}
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment_1 
+				amount = 500
+			}
+			add_equipment_to_stockpile = { 
+				type = bulletproof_vests_equipment_1
+				amount = 500
 			}
 		}
 
@@ -67,19 +75,17 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.03
 			add_equipment_to_stockpile = { 
-				type = infantry_equipment_1 
-				amount = 750
-			}
-			add_equipment_to_stockpile = { 
 				type = bulletproof_vests_equipment_1
-				amount = 250
+				amount = 200
 			}
 			add_equipment_to_stockpile = { 
 				type = uniform_equipment_1 
-				amount = 750
+				amount = 500
 			}
-			add_political_power = 30
-			add_stability = 0.05
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+			}
 		}
 
 		ai_will_do = {
@@ -100,18 +106,18 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_distribute_weapons"
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
-				amount = 650
+				amount = 600
 			}
 			add_equipment_to_stockpile = {
 				type = bulletproof_vests_equipment_1
-				amount = 1200
+				amount = 800
 			}
 			add_equipment_to_stockpile = {
 				type = uniform_equipment_1 
 				amount = 1200
 			}
 			add_equipment_to_stockpile = {
-				type = manpads_equipment
+				type = grenade_launcher_equipment_1
 				amount = 50
 			}
 		}
@@ -188,7 +194,7 @@ focus_tree = {
 			340 = {
 			add_dynamic_modifier = { modifier = LPR_luhansk_castle_dynamic_idea scope = LPR }
 				}
-						custom_effect_tooltip = LPR_bunkers_around_luhansk_tt
+						custom_effect_tooltip = LPR_luhansk_castle_tt
 						hidden_effect = {
 							if = {
 								limit = {
@@ -265,6 +271,36 @@ focus_tree = {
 									}
 								}
 							}
+							if = {
+								limit = {
+									LPR = {
+										controls_province = 3730   
+									}
+								}
+								340 = {
+									add_building_construction = {
+										type = bunker
+										level = 3
+										province = 3730  
+										instant_build = yes 
+									}
+								}
+							}
+							if = {
+								limit = {
+									LPR = {
+										controls_province = 18545   
+									}
+								}
+								340 = {
+									add_building_construction = {
+										type = bunker
+										level = 3
+										province = 18545  
+										instant_build = yes 
+									}
+								}
+							}
 							
 						}
 		}
@@ -284,17 +320,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			add_stability = -0.05
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_vehicle_confiscation"
 			add_equipment_to_stockpile = {
-				type = infantry_fighting_vehicle_1
-				amount = 5
+				type = bbm_chassis_0
+				amount = 425
 			}
 			add_equipment_to_stockpile = {
-				type = apc_chassis_1
+				type = motorized_equipment_0
+				amount = 200
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
 				amount = 5
 			}
 		}
-
 		ai_will_do = {
 			base = 1
 		}
@@ -310,6 +350,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			custom_effect_tooltip = LPR_act_on_sovereignty_tt
+			hidden_effect = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_act_on_sovereignty"
 			add_stability = 0.025
 			add_political_power = 150
@@ -341,6 +383,7 @@ focus_tree = {
 			add_state_claim = 223
 			add_state_claim = 207
 			add_state_core = 340
+			}
 		}
 
 		ai_will_do = {
@@ -359,15 +402,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			add_stability = 0.025
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_resource_mobilization"
 			add_manpower = 2000
 			add_equipment_to_stockpile = {
 				type = uniform_equipment_1
-				amount = 2250
+				amount = 2000
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
-				amount = 1300
+				amount = 1200
 			}
 			add_equipment_to_stockpile = {
 				type = bulletproof_vests_equipment_1
@@ -375,19 +419,19 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = manpads_weapons
-				amount = 200
+				amount = 100
 			}
 			add_equipment_to_stockpile = {
 				type = atgm_weapons
-				amount = 60
+				amount = 20
 			}
 			add_equipment_to_stockpile = {
 				type = mortar_equipment
-				amount = 200
+				amount = 100
 			}
 			add_equipment_to_stockpile = {
 				type = grenade_launcher_equipment_1
-				amount = 400
+				amount = 300
 			}
 			add_to_variable = {
 				JAM_ammo_stockpile = 500
@@ -427,11 +471,11 @@ focus_tree = {
 			load_oob = "LPR_millitia"
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
-				amount = 3000
+				amount = 2500
 			}
 			add_equipment_to_stockpile = {
 				type = bbm_chassis_0
-				amount = 1200
+				amount = 120
 			}
 			add_equipment_to_stockpile = {
 				type = mortar_equipment
@@ -447,15 +491,15 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = uniform_equipment_1
-				amount = 6000
+				amount = 5000
 			}
 			add_equipment_to_stockpile = {
 				type = bulletproof_vests_equipment_1
-				amount = 4000
+				amount = 2500
 			}
 			add_equipment_to_stockpile = {
 				type = support_equipment
-				amount = 2000
+				amount = 1000
 			}
 		}
 
@@ -503,8 +547,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_Introduction_of_a_state_emergency"
-			add_political_power = 20
-			add_stability = 0.035
+			custom_effect_tooltip = LPR_seek_recognition_tt
 			hidden_effect = {
 				country_event = {
 					id = LPR.12
@@ -616,6 +659,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = LPR_referendum_tt
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_referendum"
 			set_country_flag = LPR_referendum_passed
 			hidden_effect = {
