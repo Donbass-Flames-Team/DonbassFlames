@@ -1,5 +1,23 @@
 guiTypes = {
 
+
+		containerWindowType = {
+			name = "eu_container"
+			position = { x = 400 y = 0 }
+
+			moveable = no
+			clipping = no
+
+		    buttonType = {
+			    name = "EU_button"
+			    position = { x = 0 y = 0 }
+			    quadTextureSprite = "GFX_eu_icon"
+			    scale = 0.65
+			    buttonFont = "hoi_16mbs"
+			    Orientation = "UPPER_LEFT"
+		    }
+	    }
+
 	containerWindowType = {
 		name = "countrypoliticsview"
 		position = { x=-606 y=78}	
@@ -545,7 +563,7 @@ guiTypes = {
 				name = "national_spirit_container"
 				position = { x = 99 y = 16 }
 				size = { width = 364 height = 74 }
-				verticalScrollbar = "right_vertical_slider"
+				horizontalScrollbar = "bottom_horizontal_slider"
 				
 				background = {
 					name = "Background"
@@ -556,7 +574,7 @@ guiTypes = {
 					name = "spirit_grid"
 					position = { x = 1 y = 2 }
 					size = { width = 354 height = 68 }
-					slotsize = { width = 59 height = 68 }
+					slotsize = { width = 60 height = 68 }
 					max_slots = { x = 6 y = 1 }
 					format = "UPPER_LEFT"
 				}
@@ -564,8 +582,8 @@ guiTypes = {
 					name = "spirit_grid_over_defined"
 					position = { x = 10 y = 1 }
 					size = { width = 330 height = 68 }
-					slotsize = { width = 33 height = 34 }
-					max_slots_horizontal = 10
+					slotsize = { width = 60 height = 68 }
+					max_slots_vertical = 2
 					format = "UPPER_LEFT"
 				}
 			}

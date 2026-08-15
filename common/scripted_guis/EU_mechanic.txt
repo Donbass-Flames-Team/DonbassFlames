@@ -1,0 +1,54 @@
+scripted_gui = {
+
+	eu_container = {
+		window_name = "eu_container"
+		context_type = player_context
+		parent_window_name = countrypoliticsview
+
+		triggers = {
+			
+		}
+
+		visible = {
+			tag = UKR
+		}
+
+		effects = {
+			EU_button_click = {
+				if = {
+					limit = {
+						has_country_flag = EU_tab_on
+					}
+					clr_country_flag = EU_tab_on
+					else = {
+						set_country_flag = EU_tab_on
+					}
+				}
+			}
+		}
+	}
+
+	EU_gui = {
+		context_type = player_context
+		window_name = "EU_gui"
+
+		visible = {
+			tag = UKR
+			has_country_flag = EU_tab_on
+		}
+		
+		effects = {
+			
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+		properties = {
+			
+		}
+	}	
+
+
+}

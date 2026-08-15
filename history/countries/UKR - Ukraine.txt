@@ -10,6 +10,7 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 
 	parliament_gui_initial = yes
 
+	# Economic values
 	set_variable = { cash = 1 }
 	set_variable = { debt = 257 }
 	set_variable = { state_reserves = 18.8 }
@@ -28,6 +29,15 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 
 	set_variable = { business_activity = 65 } 
 
+	# Levels of development
+	set_variable = { level_of_the_financial_sector = 35 }
+	set_variable = { level_of_well_being = 35 }
+	set_variable = { level_of_technological_development = 35 }
+	set_variable = { level_of_healthcare = 35 }
+	set_variable = { level_of_industrial_development = 35 }
+	set_variable = { level_of_human_development = 35 }
+	set_variable = { level_of_infrastructure_development = 35 }
+    set_variable = { level_of_public_administration = 35 }
 
 	country_event = {
 		id = ukraine.101
