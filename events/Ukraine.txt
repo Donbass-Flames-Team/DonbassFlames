@@ -1007,6 +1007,9 @@ country_event = {
 			value = 60
 			compare = greater_than_or_equals
 		}
+		NOT = {
+			has_global_flag = Maidan_is_suppressed
+		}
 	}
 
 	option = {
@@ -1041,6 +1044,9 @@ country_event = {
 			var = UKR_radicalisation_of_nationalists_value
 			value = 50
 			compare = greater_than_or_equals
+		}
+		NOT = {
+			has_global_flag = Maidan_is_suppressed
 		}
 	}
 
@@ -2319,7 +2325,11 @@ country_event = {
 
 	option = {
 		name = ukraine.59.a
-		add_political_power = -5				
+		add_political_power = -5
+		if = {
+			limit = { has_completed_focus = UKR_liqudation_of_opposition }
+			activate_mission = UKR_suppress_the_maidan_with_tanks
+		}				
 	}
 }
 
@@ -5996,6 +6006,192 @@ country_event = {
         name = ukraine.164.a
 		add_command_power = -10
 		custom_effect_tooltip = Viktor_Muzhenko_is_commander_in_chief_tt
+    }
+}
+
+# Майдан подавлен танками
+country_event = {
+    id = ukraine.165
+    title = ukraine.165.t
+    desc = ukraine.165.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			country_event = {
+				id = ukraine.166
+				days = 5
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.165.a
+		add_stability = -0.15
+		154 = {
+			add_manpower = -5000
+		}
+		remove_mission = UKR_yanukovich_overthrow
+		remove_mission = UKR_weekly_radicalisation_value
+		set_global_flag = Maidan_is_suppressed
+		complete_national_focus = UKR_maidan_is_suppressed
+    }
+}
+
+# Бандеровцы готовят восстание на западе
+country_event = {
+    id = ukraine.166
+    title = ukraine.166.t
+    desc = ukraine.166.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+    immediate = {
+		hidden_effect = {
+			USR = {
+				transfer_state = 220
+				transfer_state = 322
+				transfer_state = 306
+				transfer_state = 249
+				transfer_state = 183
+				transfer_state = 119
+				transfer_state = 70
+				transfer_state = 189
+				transfer_state = 196
+				transfer_state = 262
+
+
+				add_state_core  = 220
+				add_state_core  = 322
+				add_state_core  = 150
+				add_state_core  = 306
+				add_state_core  = 249
+				add_state_core  = 183
+				add_state_core  = 119
+				add_state_core  = 70
+				add_state_core  = 189
+				add_state_core  = 196	
+				add_state_core  = 224	
+				add_state_core  = 262
+				
+				load_oob = USR_uprising_militia
+				puppet = {
+                    target = LVO
+                    end_wars = no
+                }  
+
+				create_faction_from_template = {
+	                template = faction_template_generic
+	                name = faction_nationalists_of_ukraine
+	                icon = GFX_faction_nationalists_of_ukraine
+                }
+
+				add_to_faction = AZV
+			}
+			LVO = {
+				transfer_state = 224
+				add_state_core  = 224
+
+				load_oob = LVO_uprising_militia
+			}
+			CHR = {
+				transfer_state = 150
+				add_state_core  = 150
+
+				load_oob = CHR_uprising_militia
+			}
+			KOC = {
+				transfer_state = 70
+				transfer_state = 119
+				add_state_core  = 70
+				add_state_core  = 119
+				add_state_core  = 111
+				add_state_core  = 66
+
+				load_oob = KOC_uprising_militia
+			}		
+			RSB = {
+				transfer_state = 111
+				transfer_state = 66
+				add_state_core  = 111
+				add_state_core  = 66
+				add_state_core  = 70
+				add_state_core  = 119
+
+				load_oob = RSB_sbu_forces
+			}
+			IVN = {
+				transfer_state = 249
+				transfer_state = 306
+				transfer_state = 332
+				transfer_state = 278
+                transfer_state = 242
+
+				add_state_core  = 249
+				add_state_core  = 306
+				add_state_core  = 332
+				add_state_core  = 278
+				add_state_core  = 242
+			}
+			AZV = {
+				transfer_state = 143
+				transfer_state = 190
+
+				add_state_core  = 143
+				add_state_core  = 190
+
+				load_oob = AZV_uprising_militia
+			}	
+			
+			ZKR = {
+				add_state_core = 331
+				add_state_core = 361
+				add_state_core = 385
+				add_state_core = 382
+				add_state_core = 315
+				add_state_core = 289
+				add_state_core = 375
+			}
+			331 = { transfer_state_to = ZKR }
+			361 = { transfer_state_to = ZKR }
+			385 = { transfer_state_to = ZKR }
+			382 = { transfer_state_to = ZKR }
+			315 = { transfer_state_to = ZKR }
+			289 = { transfer_state_to = ZKR }
+			375 = { transfer_state_to = ZKR }
+
+			FUR = {
+				add_state_core = 67
+				add_state_core = 75
+				add_state_core = 113
+				add_state_core = 148
+				add_state_core = 153
+				add_state_core = 120
+			}
+			67 = { transfer_state_to = FUR }
+			75 = { transfer_state_to = FUR }
+			113 = { transfer_state_to = FUR }
+			148 = { transfer_state_to = FUR }
+			153 = { transfer_state_to = FUR }
+			120 = { transfer_state_to = FUR }
+
+
+			660 = { transfer_state_to = OPS }
+		    OPS = {
+			    add_state_core = 660
+			    add_state_core = 572
+				load_oob = OPS_self_defense_units
+		    }
+
+		}
+	}
+
+    option = {
+        name = ukraine.166.a
+		add_stability = -0.05
     }
 }
 

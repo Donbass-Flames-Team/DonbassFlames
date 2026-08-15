@@ -8,3 +8,16 @@ GEN_inflation = { #NATIONAL SPIRIT
 	production_speed_buildings_factor = GEN_inflation_production_speed_buildings_factor
 	
 }
+
+GEN_corruption_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_ukraine_army
+
+	political_power_gain = GEN_corruption_political_power_gain #-0.45
+	consumer_goods_factor = GEN_corruption_consumer_goods_factor
+	production_speed_buildings_factor = GEN_corruption_production_speed_buildings_factor
+	stability_factor  = GEN_corruption_stability_factor 
+
+	
+}

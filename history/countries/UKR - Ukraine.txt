@@ -10,6 +10,8 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 
 	parliament_gui_initial = yes
 
+	activate_mission = UKR_yanukovich_overthrow
+
 	# Economic values
 	set_variable = { cash = 1 }
 	set_variable = { debt = 257 }
@@ -71,6 +73,10 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	set_country_flag = 7_congress_of_rada
 	set_research_slots = 3
 
+
+	add_dynamic_modifier = { modifier = GEN_corruption_dynamic_modifier}
+	add_dynamic_modifier = { modifier = GEN_inflation }
+
 	add_dynamic_modifier = { modifier = UKR_ukraine_army_idea }
 	set_variable = { UKR_AFU_army_org_factor = -0.55 }
 	set_variable = { UKR_AFU_army_org_regain = -0.25 }
@@ -115,8 +121,6 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	set_variable = { UKR_ukrainian_economy_production_oil_factor = -0.25 }
 	set_variable = { UKR_ukrainian_economy_industry_free_repair_factor = -0.35 }
 
-
-	add_dynamic_modifier = { modifier = GEN_inflation }
 	
 	set_technology = {
 		infantry_weapons = 1

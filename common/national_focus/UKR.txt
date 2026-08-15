@@ -74,7 +74,9 @@ focus_tree = {
 				has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
 			}
 		}
-		available = {}
+		available = {
+			always = no
+		}
 		bypass = {
 			NOT = {
 				has_active_mission = UKR_yanukovich_overthrow
@@ -795,7 +797,6 @@ focus_tree = {
 					has_completed_focus = UKR_arrest_yanukovich
 				}
 			}
-			always = no
 		}
 		completion_reward = {
 			add_days_mission_timeout = {
@@ -946,8 +947,87 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.025
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
+	focus = {
+		id = UKR_emergency_army_reforms
+		icon = GFX_focus_UKR_course_on_the_east
+		cost = 0.3
+		x = -2
+		y = 9
+		prerequisite = {
+			focus = UKR_course_on_the_east
+		}
+		relative_position_id = UKR_emergency_measures
+		allow_branch = {
+			has_completed_focus = UKR_course_on_the_east
+		}
+		available = {
+			NOT = {
+				OR = {
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_fight_with_fascists
+		icon = GFX_focus_UKR_course_on_the_east
+		cost = 0.3
+		x = -4
+		y = 9
+		prerequisite = {
+			focus = UKR_course_on_the_east
+		}
+		relative_position_id = UKR_emergency_measures
+		allow_branch = {
+			has_completed_focus = UKR_course_on_the_east
+		}
+		available = {
+			NOT = {
+				OR = {
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UKR_ask_for_help_from_russia
+		icon = GFX_focus_UKR_course_on_the_east
+		cost = 0.3
+		x = -3
+		y = 10
+		prerequisite = {
+			focus = UKR_fight_with_fascists
+		}
+		prerequisite = {
+			focus = UKR_emergency_army_reforms
+		}		
+		relative_position_id = UKR_emergency_measures
+		available = {
+			NOT = {
+				OR = {
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+		completion_reward = {
+			
+		}
+	}	
+
+
 	focus = {
 		id = UKR_deal_with_opposition
 		icon = GFX_focus_UKR_deal_with_opposition

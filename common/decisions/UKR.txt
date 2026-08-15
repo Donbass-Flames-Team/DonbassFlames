@@ -1113,8 +1113,7 @@ UKR_maidan_decision = {
 			}
 		}
 		activation = {
-			tag = UKR
-			has_country_flag = UKRBeforeOverthrowOfYanukovych
+			always = no
 		}
 		timeout_effect = {
 			set_global_flag = UKR_Yanukovich_After_Overthrow_Crisis
@@ -1304,6 +1303,34 @@ UKR_maidan_decision = {
 				199 = { set_demilitarized_zone = yes }
 			}
 		}
+	}
+
+	UKR_suppress_the_maidan_with_tanks = {
+		icon = GFX_decision_UKR_maidan_end_of_regime
+		is_good = no
+		selectable_mission = no
+		fire_only_once = yes
+		days_mission_timeout = 3
+		available = {
+			has_country_flag = UKRBeforeOverthrowOfYanukovych
+			divisions_in_state = {
+                type = armor
+                size > 6
+                state = 154
+            }
+		}
+		activation = {
+			always = no
+		}
+		timeout_effect = {
+
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = ukraine.165
+			}
+		}
+         
 	}
 
 	UKR_suppress_protests = {
