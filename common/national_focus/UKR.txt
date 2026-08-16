@@ -951,7 +951,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = UKR_emergency_army_reforms
+		id = UKR_introduce_martial_law
 		icon = GFX_focus_UKR_course_on_the_east
 		cost = 0.3
 		x = -2
@@ -1011,7 +1011,7 @@ focus_tree = {
 			focus = UKR_fight_with_fascists
 		}
 		prerequisite = {
-			focus = UKR_emergency_army_reforms
+			focus = UKR_introduce_martial_law
 		}		
 		relative_position_id = UKR_emergency_measures
 		available = {
@@ -1023,11 +1023,322 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			
+			RUS = {
+
+			}
 		}
 	}	
 
+	focus = {
+		id = UKR_start_mobilization
+		icon = GFX_focus_UKR_course_on_the_east
+		cost = 0.3
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = UKR_ask_for_help_from_russia
+		}		
+		relative_position_id = UKR_ask_for_help_from_russia
+		available = {
+			NOT = {
+				OR = {
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = UKR_started_partial_mobilization_tt
+			add_manpower = 25000
+			swap_ideas = {
+				remove_idea = volunteer_only
+				add_idea = limited_conscription
+			}
+			hidden_effect = {
+				division_template = {
+					name = "Pikhotnyy batal'yon"
+					regiments = {
+						territorial_defense_unit = { x = 0 y = 0 }
+						territorial_defense_unit = { x = 0 y = 1 }
+						territorial_defense_unit = { x = 0 y = 2 }
+						territorial_defense_unit = { x = 1 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						mortar = { x = 0 y = 2 }
+						atgm_company = { x = 0 y = 3 }
+						field_hospital = { x = 0 y = 4 }
+						sniper_company = { x = 1 y = 0 }
+						manpads_platoon = { x = 1 y = 1 }
+						logistics_company = { x = 1 y = 2 }
+						signal_company = { x = 1 y = 3 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 2
+					}
+					create_unit = {
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.05"
+						owner = UKR
+						count = 2
+					}
+					create_unit = {
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.05"
+						owner = UKR
+						count = 2
+					}
+					create_unit = {
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.05"
+						owner = UKR
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.05"
+						owner = UKR
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.05"
+						owner = UKR
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.05"
+						owner = UKR
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.05"
+						owner = UKR
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"Pikhotnyy batal'yon\" division_template = \"Pikhotnyy batal'yon\" start_experience_factor = 0.05"
+						owner = UKR
+						count = 3
+					}
+				}
+			}
+		}
+	}
 
+	focus = {
+		id = UKR_form_the_militia_of_the_east
+		icon = GFX_focus_UKR_course_on_the_east
+		cost = 0.3
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = UKR_start_mobilization
+		}		
+		relative_position_id = UKR_ask_for_help_from_russia
+		available = {
+			NOT = {
+				OR = {
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				division_template = {
+					name = "Opolchenie vostoka"
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						militia = { x = 1 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						mortar = { x = 0 y = 2 }
+						atgm_company = { x = 0 y = 3 }
+						field_hospital = { x = 0 y = 4 }
+						sniper_company = { x = 1 y = 0 }
+						manpads_platoon = { x = 1 y = 1 }
+						logistics_company = { x = 1 y = 2 }
+						signal_company = { x = 1 y = 3 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Opolchenie vostoka\" division_template = \"Opolchenie vostoka\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 2
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Opolchenie vostoka\" division_template = \"Opolchenie vostoka\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 2
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Opolchenie vostoka\" division_template = \"Opolchenie vostoka\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 2
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Opolchenie vostoka\" division_template = \"Opolchenie vostoka\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 1
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Opolchenie vostoka\" division_template = \"Opolchenie vostoka\" start_experience_factor = 0.075"
+						owner = UKR
+						count = 2
+					}
+				}				
+			}
+		}
+	}
+	focus = {
+		id = UKR_expand_interior_troops
+		icon = GFX_focus_UKR_course_on_the_east
+		cost = 0.3
+		x = 4
+		y = 2
+		prerequisite = {
+			focus = UKR_start_mobilization
+		}		
+		relative_position_id = UKR_ask_for_help_from_russia
+		available = {
+			NOT = {
+				OR = {
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = UKR_russian_military_advisors
+		icon = GFX_focus_UKR_course_on_the_east
+		cost = 0.3
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = UKR_ask_for_help_from_russia
+		}		
+		relative_position_id = UKR_ask_for_help_from_russia
+		available = {
+			NOT = {
+				OR = {
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+		completion_reward = {
+			add_to_variable = { UKR_AFU_army_org_factor = 0.05 }
+		}
+	}
+	focus = {
+		id = UKR_emergency_army_reforms
+		icon = GFX_focus_UKR_course_on_the_east
+		cost = 0.3
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = UKR_russian_military_advisors
+		}		
+		relative_position_id = UKR_ask_for_help_from_russia
+		available = {
+			NOT = {
+				OR = {
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+		completion_reward = {
+			add_to_variable = { UKR_AFU_army_org_factor = 0.15 }
+		}
+	}
+	focus = {
+		id = UKR_suppress_facsists_cells
+		icon = GFX_focus_UKR_course_on_the_east
+		cost = 0.3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = UKR_ask_for_help_from_russia
+		}		
+		relative_position_id = UKR_ask_for_help_from_russia
+		available = {
+			NOT = {
+				OR = {
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 35
+			add_stability = -0.03
+		}
+	}	
+	focus = {
+		id = UKR_filtration_camps
+		icon = GFX_focus_UKR_course_on_the_east
+		cost = 0.3
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = UKR_ask_for_help_from_russia
+		}		
+		relative_position_id = UKR_ask_for_help_from_russia
+		available = {
+			NOT = {
+				OR = {
+					has_completed_focus = UKR_yanukovich_escaped
+					has_completed_focus = UKR_arrest_yanukovich
+				}
+			}
+		}
+		completion_reward = {
+			add_stability = -0.03
+			random_owned_controlled_state = {
+				add_manpower = -1000
+			}
+			random_owned_controlled_state = {
+				add_manpower = -5000
+			}
+			random_owned_controlled_state = {
+				add_manpower = -1500
+			}
+			random_owned_controlled_state = {
+				add_manpower = -500
+			}
+			random_owned_controlled_state = {
+				add_manpower = -500
+			}
+			random_owned_controlled_state = {
+				add_manpower = -750
+			}
+			random_owned_controlled_state = {
+				add_manpower = -1500
+			}
+			random_owned_controlled_state = {
+				add_manpower = -1000
+			}												
+		}
+	}
 	focus = {
 		id = UKR_deal_with_opposition
 		icon = GFX_focus_UKR_deal_with_opposition

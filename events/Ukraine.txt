@@ -6051,47 +6051,7 @@ country_event = {
 
     immediate = {
 		hidden_effect = {
-			USR = {
-				transfer_state = 220
-				transfer_state = 322
-				transfer_state = 306
-				transfer_state = 249
-				transfer_state = 183
-				transfer_state = 119
-				transfer_state = 70
-				transfer_state = 189
-				transfer_state = 196
-				transfer_state = 262
-
-
-				add_state_core  = 220
-				add_state_core  = 322
-				add_state_core  = 150
-				add_state_core  = 306
-				add_state_core  = 249
-				add_state_core  = 183
-				add_state_core  = 119
-				add_state_core  = 70
-				add_state_core  = 189
-				add_state_core  = 196	
-				add_state_core  = 224	
-				add_state_core  = 262
-				
-				load_oob = USR_uprising_militia
-				puppet = {
-                    target = LVO
-                    end_wars = no
-                }  
-
-				create_faction_from_template = {
-	                template = faction_template_generic
-	                name = faction_nationalists_of_ukraine
-	                icon = GFX_faction_nationalists_of_ukraine
-                }
-
-				add_to_faction = AZV
-			}
-			LVO = {
+            LVO = {
 				transfer_state = 224
 				add_state_core  = 224
 
@@ -6170,6 +6130,8 @@ country_event = {
 				add_state_core = 148
 				add_state_core = 153
 				add_state_core = 120
+
+				load_oob = FUR_oob
 			}
 			67 = { transfer_state_to = FUR }
 			75 = { transfer_state_to = FUR }
@@ -6185,12 +6147,108 @@ country_event = {
 			    add_state_core = 572
 				load_oob = OPS_self_defense_units
 		    }
+			USR = {
+				transfer_state = 220
+				transfer_state = 322
+				transfer_state = 306
+				transfer_state = 249
+				transfer_state = 183
+				transfer_state = 119
+				transfer_state = 70
+				transfer_state = 189
+				transfer_state = 196
+				transfer_state = 262
 
+
+				add_state_core  = 220
+				add_state_core  = 322
+				add_state_core  = 150
+				add_state_core  = 306
+				add_state_core  = 249
+				add_state_core  = 183
+				add_state_core  = 119
+				add_state_core  = 70
+				add_state_core  = 189
+				add_state_core  = 196	
+				add_state_core  = 224	
+				add_state_core  = 262
+				
+				load_oob = USR_uprising_militia
+				puppet = {
+                    target = LVO
+                    end_wars = no
+                }  
+
+				create_faction_from_template = {
+	                template = faction_template_generic
+	                name = faction_nationalists_of_ukraine
+	                icon = GFX_faction_nationalists_of_ukraine
+                }
+
+				add_to_faction = AZV
+				add_to_faction = OPS
+				add_to_faction = FUR
+				add_to_faction = IVN
+				add_to_faction = RSB
+				add_to_faction = KOC
+				add_to_faction = CHR
+			}
+
+
+			country_event = {
+				id = ukraine.167
+				days = 3
+			}
 		}
 	}
 
     option = {
         name = ukraine.166.a
+		add_stability = -0.05
+    }
+}
+
+# начало боевых действий
+country_event = {
+    id = ukraine.167
+    title = ukraine.167.t
+    desc = ukraine.167.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			declare_war_on = {
+				target = OPS
+                type = annex_everything
+			}
+			declare_war_on = {
+				target = AZV
+                type = annex_everything
+			}			
+			declare_war_on = {
+				target = FUR
+                type = annex_everything
+			}
+			declare_war_on = {
+				target = CHR
+                type = annex_everything
+			}
+			declare_war_on = {
+				target = KOC
+                type = annex_everything
+			}
+			declare_war_on = {
+				target = IVN
+                type = annex_everything
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.167.a
+		add_political_power = -25
 		add_stability = -0.05
     }
 }
