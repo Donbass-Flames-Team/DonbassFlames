@@ -12,7 +12,7 @@ guiTypes = {
 			    name = "EU_button"
 			    position = { x = 0 y = 0 }
 			    quadTextureSprite = "GFX_eu_icon"
-			    scale = 0.65
+			    scale = 0.5
 			    buttonFont = "hoi_16mbs"
 			    Orientation = "UPPER_LEFT"
 		    }
@@ -25,7 +25,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300	
-		size = { width=550 height=100%% }
+		size = { width=853 height=100%% }
 		
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window
@@ -57,22 +57,22 @@ guiTypes = {
 		iconType ={
 			name ="pol_view_bg"
 			spriteType = "GFX_pol_view_bg"
-			position = { x= 0 y = 44 }
+			position = { x= 6 y = 6 }
 			Orientation = "UPPER_LEFT"
 		}	
 
 		iconType ={
 			name ="pol_faction_icon"
 			spriteType = "GFX_pol_factions_strip"
-			position = { x= 18 y = 305 } #df
+			position = { x= 200 y = 157 } #df
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}
 
 		containerWindowType = {
 			name = "chart_explanation"
-			position = { x = 300 y = 305 } #df
-			size = { width = 240 height = 60 } #df
+			position = { x = 438 y = 261 } #df
+			size = { width = 264 height = 163 } #df
 			clipping = yes #df
 			verticalScrollbar = "right_vertical_slider" #df
 			margin = { top = 0 bottom = 0} #df
@@ -94,8 +94,9 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "political_pie_chart"
-			position = { x= 270 y = 304 }
+			position = { x= 395 y = 269 }
 			size = { width=100 height=100 }
+			scale = 1.1
 			clipping = no
 
 			iconType = {
@@ -113,7 +114,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "ruling_party_info"
-			position = { x = 88 y = 305 }
+			position = { x = 204 y = 265 }
 			size = { width = 255 height = 60 }
 			clipping = no
 					
@@ -147,7 +148,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "faction"
-				position = { x = 100 y = -50}
+				position = { x = 500 y = 50}
 				size = { width = 175 height = 20 }
 				clipping = no
 
@@ -264,7 +265,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "power_balance_button"
-				position = { x = 320 y = -62 }
+				position = { x = 496 y = -212 }
 				clipping = no
 
 				buttonType = {
@@ -440,18 +441,18 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "active_goal"
-			position = { x = 179 y = 48 }
-			size = { width = 330 height = 50 }
+			position = { x = 255 y = 65 }
+			size = { width = 830 height = 50 }
 			clipping = no
 						
 			background = {
 				name = "Background"		
-				spriteType ="GFX_pol_goal_bg"
+				spriteType =""
 			}
 			
 			buttonType = {
 				name = "add_national_goal_button"
-				position = { x = 100 y = 7 }
+				position = { x = 166 y = -3 }
 				spriteType = "GFX_add_national_goal_button"
 				clicksound = click_default
 			}
@@ -544,13 +545,13 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "national_spirit"
-			position = { x = 81 y = 153 }
+			position = { x = 210 y = 177 }
 			size = { width = 360 height = 50 }
 			clipping = no
 						
 			instantTextboxType = {
 				name = "title"
-				position = { x = 110 y = -2 }
+				position = { x = -11110 y = -2 }
 				font = "hoi_18mbs"
 				text = "POLITICS_NATIONAL_SPIRIT"
 				maxWidth = 200
@@ -562,7 +563,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "national_spirit_container"
 				position = { x = 99 y = 16 }
-				size = { width = 364 height = 74 }
+				size = { width = 379 height = 74 }
 				horizontalScrollbar = "bottom_horizontal_slider"
 				
 				background = {
@@ -590,20 +591,20 @@ guiTypes = {
 		}
 		iconType = {
 			name = "leader"
-			position = { x = 18 y = 58 }
+			position = { x = 32 y = 58 }
 			spriteType = "GFX_leader_unknown"
 		}
 		
 		iconType = {
 			name = "leader_frame2"
 			spriteType = "GFX_pol_leader_frame"
-			position = { x = 10 y = 44 }		
+			position = { x = 24 y = 44 }		
 			alwaystransparent = yes
 		}
 
 		instantTextboxType = {
 			name = "leader_name"
-			position = { x = 18 y = 262 }
+			position = { x = 32 y = 261 }
 			font = "hoi_18mbs"
 			text = "leader_name"
 			maxWidth = 155
@@ -614,7 +615,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "ideas"
-			position = { x = 0 y = 425 }
+			position = { x = 0 y = 501 }
 			size = { width=100%% height=100%% }
 			verticalScrollbar = "right_vertical_slider"
 			scroll_wheel_factor = 40
@@ -661,7 +662,7 @@ guiTypes = {
 		iconType ={
 			name ="politics_bottom"
 			spriteType = "GFX_main_screens_bottom"
-			position = { x = -2 y = 383 }
+			position = { x = -11112 y = 383 }
 			Orientation = "UPPER_LEFT"
 			scale = 1.02
 		}
@@ -691,7 +692,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "subjects_button_container"
-			position = { x = 367 y = 390 }
+			position = { x = 792 y = 390 }
 
 			buttonType = {
 				name = "show_subjects_button"
