@@ -1071,13 +1071,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_restoring_other_tec"
-			add_variable = { LPR_electricity_consumer_goods_factor = -0.05 }
-			add_variable = { LPR_electricity_production_speed_buildings_factor = 0.03 }
-			add_variable = { LPR_electricity_industrial_capacity_factory = 0.02 }
-			add_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.04 }
-			add_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.03 }
-			add_variable = { LPR_electricity_local_resources_factor = 0.05 }
-			add_variable = { LPR_electricity_stability_factor = 0.05 }
+			add_to_variable = { LPR_electricity_consumer_goods_factor = -0.05 }
+			add_to_variable = { LPR_electricity_production_speed_buildings_factor = 0.03 }
+			add_to_variable = { LPR_electricity_industrial_capacity_factory = 0.02 }
+			add_to_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.04 }
+			add_to_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.03 }
+			add_to_variable = { LPR_electricity_local_resources_factor = 0.05 }
+			add_to_variable = { LPR_electricity_stability_factor = 0.05 }
 			force_update_dynamic_modifier = yes
 			custom_effect_tooltip = LPR_restoring_other_tec_tt
 		}
@@ -1123,13 +1123,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_start_restoring_power_supply"
-			add_variable = { LPR_electricity_consumer_goods_factor = -0.03 }
-			add_variable = { LPR_electricity_production_speed_buildings_factor = 0.05 }
-			add_variable = { LPR_electricity_industrial_capacity_factory = 0.04 }
-			add_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.05 }
-			add_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.05 }
-			add_variable = { LPR_electricity_local_resources_factor = 0.06 }
-			add_variable = { LPR_electricity_stability_factor = 0.01 }
+			add_to_variable = { LPR_electricity_consumer_goods_factor = -0.03 }
+			add_to_variable = { LPR_electricity_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { LPR_electricity_industrial_capacity_factory = 0.04 }
+			add_to_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.05 }
+			add_to_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.05 }
+			add_to_variable = { LPR_electricity_local_resources_factor = 0.06 }
+			add_to_variable = { LPR_electricity_stability_factor = 0.01 }
 			force_update_dynamic_modifier = yes
 			custom_effect_tooltip = LPR_start_restoring_power_supply_tt
 		}
@@ -1152,13 +1152,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_restore_luhansk_tec"
-			add_variable = { LPR_electricity_consumer_goods_factor = -0.02 }
-			add_variable = { LPR_electricity_production_speed_buildings_factor = 0.03 }
-			add_variable = { LPR_electricity_industrial_capacity_factory = 0.025 }
-			add_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.03 }
-			add_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.03 }
-			add_variable = { LPR_electricity_local_resources_factor = 0.04 }
-			add_variable = { LPR_electricity_stability_factor = 0.02 }
+			add_to_variable = { LPR_electricity_consumer_goods_factor = -0.02 }
+			add_to_variable = { LPR_electricity_production_speed_buildings_factor = 0.03 }
+			add_to_variable = { LPR_electricity_industrial_capacity_factory = 0.025 }
+			add_to_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.03 }
+			add_to_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.03 }
+			add_to_variable = { LPR_electricity_local_resources_factor = 0.04 }
+			add_to_variable = { LPR_electricity_stability_factor = 0.02 }
 			force_update_dynamic_modifier = yes
 			custom_effect_tooltip = LPR_restore_luhansk_tec_tt
 		}
@@ -1186,13 +1186,13 @@ focus_tree = {
 		amount = 8
 		}
 	}
-			add_variable = { LPR_electricity_consumer_goods_factor = -0.02 }
-			add_variable = { LPR_electricity_production_speed_buildings_factor = 0.03 }
-			add_variable = { LPR_electricity_industrial_capacity_factory = 0.025 }
-			add_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.03 }
-			add_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.03 }
-			add_variable = { LPR_electricity_local_resources_factor = 0.04 }
-			add_variable = { LPR_electricity_stability_factor = 0.02 }
+			add_to_variable = { LPR_electricity_consumer_goods_factor = -0.02 }
+			add_to_variable = { LPR_electricity_production_speed_buildings_factor = 0.03 }
+			add_to_variable = { LPR_electricity_industrial_capacity_factory = 0.025 }
+			add_to_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.03 }
+			add_to_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.03 }
+			add_to_variable = { LPR_electricity_local_resources_factor = 0.04 }
+			add_to_variable = { LPR_electricity_stability_factor = 0.02 }
 			custom_effect_tooltip = LPR_convert_lugansk_thermal_power_plant_to_gas_tt
 		}
 
@@ -1220,13 +1220,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_connect_to_shchastynska_tec"
-			add_variable = { LPR_electricity_consumer_goods_factor = -0.03 }
-			add_variable = { LPR_electricity_production_speed_buildings_factor = 0.04 }
-			add_variable = { LPR_electricity_industrial_capacity_factory = 0.03 }
-			add_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.05 }
-			add_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.04 }
-			add_variable = { LPR_electricity_local_resources_factor = 0.03 }
-			add_variable = { LPR_electricity_stability_factor = 0.03 }
+			add_to_variable = { LPR_electricity_consumer_goods_factor = -0.03 }
+			add_to_variable = { LPR_electricity_production_speed_buildings_factor = 0.04 }
+			add_to_variable = { LPR_electricity_industrial_capacity_factory = 0.03 }
+			add_to_variable = { LPR_electricity_production_speed_arms_factory_factor = 0.05 }
+			add_to_variable = { LPR_electricity_production_speed_industrial_complex_factor = 0.04 }
+			add_to_variable = { LPR_electricity_local_resources_factor = 0.03 }
+			add_to_variable = { LPR_electricity_stability_factor = 0.03 }
 			force_update_dynamic_modifier = yes
 			custom_effect_tooltip = LPR_connect_to_shchastynska_tec_tt
 		}
