@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 2500 y = 500 }
+	continuous_focus_position = { x = 2500 y = 1500 }
 	
 	focus = {
 		id = DPR_capture_administrations
@@ -506,7 +506,7 @@ focus_tree = {
 		id = DPR_reforms_of_dpr_army
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 32
+		x = 35
 		y = 0
 
 		available = {
@@ -563,7 +563,7 @@ focus_tree = {
 		id = DPR_marine_infantry_of_dpr
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = -4
+		x = -3
 		y = 1
 
 		prerequisite = {focus = DPR_reforms_of_dpr_army}
@@ -1522,7 +1522,7 @@ focus_tree = {
 		id = DPR_foreign_policy_of_the_dpr
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = -3
+		x = -2
 		y = 1
 
 		prerequisite = {focus = DPR_shaky_peace_on_donbass}
@@ -1579,7 +1579,7 @@ focus_tree = {
 		id = DPR_fight_with_banditry
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = -6
+		x = -5
 		y = 1
 
 		prerequisite = {focus = DPR_shaky_peace_on_donbass}
@@ -1598,7 +1598,7 @@ focus_tree = {
 		id = DPR_disarm_safonov
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = -6
+		x = -5
 		y = 2
 
 		prerequisite = {focus = DPR_fight_with_banditry}
@@ -1610,6 +1610,63 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = DPR.35
+		}
+	}
+
+	focus = {
+		id = DPR_clear_minds
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 7
+		y = 1
+
+		prerequisite = {focus = DPR_shaky_peace_on_donbass}
+		relative_position_id = DPR_shaky_peace_on_donbass
+
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DPR_establish_donetsk_inform_agency
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -1
+		y = 1
+
+		prerequisite = {focus = DPR_clear_minds}
+		relative_position_id = DPR_clear_minds
+
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DPR_transition_of_education_to_russian_standards
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 1
+		y = 1
+
+		prerequisite = {focus = DPR_clear_minds}
+		relative_position_id = DPR_clear_minds
+
+		available = {
+			
+		}
+
+		completion_reward = {
+
 		}
 	}
 

@@ -6253,6 +6253,91 @@ country_event = {
     }
 }
 
+# Перестают приходит выплаты пенсии из украины (ивент у днров)
+country_event = {
+    id = ukraine.168
+    title = ukraine.168.t
+    desc = ukraine.168.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			
+		}
+	}
+
+    option = {
+        name = ukraine.168.a
+		add_stability = -0.05
+    }
+}
+
+# взрыв под верховной радой
+country_event = {
+    id = ukraine.169
+    title = ukraine.169.t
+    desc = ukraine.169.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			
+		}
+	}
+
+    option = {
+        name = ukraine.169.a
+		add_stability = -0.03
+    }
+}
+
+# Саакашвили показывает размеры коррупции
+country_event = {
+    id = ukraine.170
+    title = ukraine.170.t
+    desc = ukraine.170.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			
+		}
+	}
+
+    option = {
+        name = ukraine.170.a
+		custom_effect_tooltip = the_political_crisis_is_worsening_tt
+		add_political_power = -5
+    }
+}
+
+# теракт во время «Марша достоинства» в Харькове 22 февраля 2014
+country_event = {
+    id = ukraine.171
+    title = ukraine.171.t
+    desc = ukraine.171.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			
+		}
+	}
+
+    option = {
+        name = ukraine.171.a
+		add_stability = -0.01
+    }
+}
+
 
 ##########################################################################
 ##########################################################################

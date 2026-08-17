@@ -4418,6 +4418,29 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = UKR_economic_blockade
+		icon = GFX_goal_no_focus_UKR
+		cost = 0.5
+		x = 10
+		y = 3
+		prerequisite = {
+			focus = UKR_law_on_special_status_of_donbass
+		}
+		available = {
+
+		}
+		relative_position_id = UKR_new_foreign_policy
+		available = {}
+		completion_reward = {
+			LPR = {
+                country_event = ukraine.168
+			} 
+			DPR = {
+                country_event = ukraine.168
+			}
+		}
+	}	
+	focus = {
 		id = UKR_stop_cooperation_with_russia
 		icon = GFX_goal_no_focus_UKR
 		cost = 0.5
@@ -5025,7 +5048,9 @@ focus_tree = {
 			focus = UKR_healthcare_reform
 		}
 		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
-		available = { }
+		available = { 
+			has_country_flag = Resignation_of_yatsenuk_happened
+		}
 		completion_reward = {
 			add_political_power = 25
 		}
@@ -5090,6 +5115,26 @@ focus_tree = {
 			    var = criminality_value
 			    value = 2.5
 			    tooltip = decreasing_criminality_small
+			}
+		}
+	}
+	focus = {
+		id = UKR_appoint_saakashvili
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = UKR_ministry_of_information_policy_of_ukraine
+		}
+		relative_position_id = UKR_ministry_of_information_policy_of_ukraine
+		available = {}
+		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = ukraine.170
+					days = 190
+				}
 			}
 		}
 	}
@@ -5276,7 +5321,7 @@ focus_tree = {
 		id = UKR_anticorruption_reforms
 		icon = GFX_goal_no_focus_UKR
 		cost = 4
-		x = 20
+		x = 22
 		y = 1
 		prerequisite = {
 			focus = UKR_poroshenko_victory
@@ -5508,14 +5553,39 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = UKR_constitutional_reform
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = UKR_financial_reform
+		}
+		prerequisite = {
+			focus = UKR_introduction_of_the_otg
+		}
+		prerequisite = {
+			focus = UKR_law_on_voluntary_association_of_ter_communities
+		}		
+		relative_position_id = UKR_decentralization
+		available = {}
+		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = 1
+				}
+			}
+		}
+	}
+	focus = {
 		id = UKR_introduction_of_the_institute_of_prefects
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
 		y = 3
 		prerequisite = {
-			focus = UKR_financial_reform
-		}
+			focus = UKR_constitutional_reform
+		}		
 		relative_position_id = UKR_decentralization
 		available = {}
 		completion_reward = {}
@@ -5537,7 +5607,7 @@ focus_tree = {
 		id = UKR_decentralization
 		icon = GFX_goal_no_focus_UKR
 		cost = 2
-		x = 15
+		x = 16
 		y = 1
 		prerequisite = {
 			focus = UKR_poroshenko_victory
@@ -5555,7 +5625,7 @@ focus_tree = {
 		id = UKR_introduction_of_the_otg
 		icon = GFX_goal_no_focus_UKR
 		cost = 2
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = {
 			focus = UKR_decentralization
@@ -5570,7 +5640,7 @@ focus_tree = {
 		id = UKR_law_on_voluntary_association_of_ter_communities
 		icon = GFX_goal_no_focus_UKR
 		cost = 2
-		x = 1
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = UKR_decentralization
@@ -5585,14 +5655,12 @@ focus_tree = {
 		id = UKR_financial_reform
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 0
-		y = 2
+		x = 2
+		y = 1
 		prerequisite = {
-			focus = UKR_introduction_of_the_otg
+			focus = UKR_decentralization
 		}
-		prerequisite = {
-			focus = UKR_law_on_voluntary_association_of_ter_communities
-		}
+
 		relative_position_id = UKR_decentralization
 		available = {}
 		completion_reward = {
@@ -5603,7 +5671,7 @@ focus_tree = {
 		id = UKR_deoligarhization
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 24
+		x = 26
 		y = 1
 		prerequisite = {
 			focus = UKR_poroshenko_victory
@@ -5690,7 +5758,7 @@ focus_tree = {
 		id = UKR_decomunization
 		icon = GFX_goal_no_focus_UKR
 		cost = 10
-		x = 29
+		x = 31
 		y = 1
 		prerequisite = {
 			focus = UKR_poroshenko_victory
@@ -6165,7 +6233,7 @@ focus_tree = {
 		id = UKR_timoshenko_victory
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 25
+		x = 27
 		y = 1
 		prerequisite = {
 			focus = UKR_snap_presidential_elections
@@ -6187,7 +6255,7 @@ focus_tree = {
 		id = UKR_oleg_lyashko_victory
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 28
+		x = 30
 		y = 1
 		prerequisite = {
 			focus = UKR_snap_presidential_elections

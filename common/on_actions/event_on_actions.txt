@@ -117,6 +117,19 @@ on_actions = {
 				set_global_flag = KHARKOV_STUDENTS_TOWN_ATTACKED
 				country_event = { id = ukraine.75 }
 			}
+			# 2015.2.22
+			if = {
+				limit = {
+					date > 2015.2.21
+					NOT = { has_country_flag = Terrorist_attack_in_Kharkiv_on_February_22_2015 }
+					tag = UKR
+					203 = {
+						is_controlled_by = UKR
+					}
+				}
+				set_country_flag = Terrorist_attack_in_Kharkiv_on_February_22_2015
+				country_event = { id = ukraine.171 }
+			}
 			# 2014.7.20 перемирие ивент
 			if = {
 				limit = {
