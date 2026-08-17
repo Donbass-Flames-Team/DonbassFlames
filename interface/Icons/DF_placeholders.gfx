@@ -1,10 +1,21 @@
-spriteTypes = {
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_goal_no_focus_UKR"
+		texturefile = "gfx/interface/goals/Placeholders/UKR_no_icon.png"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_no_focus_RUS"
+		texturefile = "gfx/interface/goals/Placeholders/RUS_no_icon.png"
+	}	
+
     spriteType = {
-        name = "GFX_focus_RUS_threat_to_the_regime_yanukovych_shine"
-        texturefile = "gfx/interface/goals/RUS/RUS_threat_to_the_regime_yanukovych.dds"
+        name = "GFX_goal_no_focus_UKR_shine"
+        texturefile = "gfx/interface/goals/Placeholders/UKR_no_icon.png"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/RUS/RUS_threat_to_the_regime_yanukovych.dds"
+            animationmaskfile = "gfx/interface/goals/Placeholders/UKR_no_icon.png"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -16,7 +27,7 @@ spriteTypes = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
-            animationmaskfile = "gfx/interface/goals/RUS/RUS_threat_to_the_regime_yanukovych.dds"
+            animationmaskfile = "gfx/interface/goals/Placeholders/UKR_no_icon.png"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -31,11 +42,11 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = "GFX_focus_RUS_meeting_in_kremel_shine"
-        texturefile = "gfx/interface/goals/RUS/RUS_meeting_in_kremel.png"
+        name = "GFX_goal_no_focus_RUS_shine"
+        texturefile = "gfx/interface/goals/Placeholders/RUS_no_icon.png"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/RUS/RUS_meeting_in_kremel.png"
+            animationmaskfile = "gfx/interface/goals/Placeholders/RUS_no_icon.png"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -47,7 +58,7 @@ spriteTypes = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
-            animationmaskfile = "gfx/interface/goals/RUS/RUS_meeting_in_kremel.png"
+            animationmaskfile = "gfx/interface/goals/Placeholders/RUS_no_icon.png"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -59,5 +70,6 @@ spriteTypes = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
         legacy_lazy_load = no
-    }
+    }		
+
 }
