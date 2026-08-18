@@ -459,7 +459,7 @@ guiTypes = {
 
 			iconType = {
 				name = "nat_spirit_glow_overlay"
-				position = { x = 105 y = 10 }
+				position = { x = 170 y = 1 }
 				spriteType = "GFX_nat_spirit_glow_overlay"
 				alwaystransparent = yes
 			}			
@@ -512,7 +512,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "drop_focus_button"
-				position = { x = 327 y = 12 }
+				position = { x = 395 y = 2 }
 				spriteType = "GFX_nf_close_button"
 				scale = 0.9
 				clicksound = click_default
@@ -520,7 +520,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "title"
-				position = { x = 128 y = 34 }
+				position = { x = 197 y = 24 }
 				font = "hoi_18mbs"
 				text = "POLITICS_ACTIVE_GOAL"
 				maxWidth = 200
@@ -533,12 +533,12 @@ guiTypes = {
 			iconType = {
 				name = "progress"
 				spriteType = "GFX_activegoal_progress"
-				position = { x=112 y = 72 }		
+				position = { x=177 y = 62 }		
 			}
 			
 			iconType = {
 				name = "progress_frame"
-				position = { x = 110 y = 72 }
+				position = { x = 175 y = 62 }
 				spriteType = "GFX_pol_goal_progress_frame"
 				alwaystransparent = yes
 			}			
@@ -562,8 +562,8 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "national_spirit_container"
-				position = { x = 99 y = 16 }
-				size = { width = 379 height = 74 }
+				position = { x = 99 y = -16 }
+				size = { width = 379 height = 107 }
 				horizontalScrollbar = "bottom_horizontal_slider"
 				
 				background = {
@@ -584,7 +584,7 @@ guiTypes = {
 					position = { x = 10 y = 1 }
 					size = { width = 330 height = 68 }
 					slotsize = { width = 60 height = 68 }
-					max_slots_vertical = 2
+					max_slots_vertical = 1
 					format = "UPPER_LEFT"
 				}
 			}
@@ -675,7 +675,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "manage_occupied_button"
-			position = { x = 10 y = 390 }
+			position = { x = 702 y = 412 }
 			quadTextureSprite = "GFX_government_button"
 			buttonFont = "hoi_16mbs"
 			Orientation = "UPPER_LEFT"
@@ -683,7 +683,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "manage_occupied_button_text"
-			position = { x = 48 y = 398 }
+			position = { x = -111148 y = 398 }
 			font = "hoi_16mbs"
 			text = "MANAGE_OCCUPIED_TERRITORIES"
 			maxWidth = 122
@@ -692,7 +692,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "subjects_button_container"
-			position = { x = 792 y = 390 }
+			position = { x = 792 y = 412 }
 
 			buttonType = {
 				name = "show_subjects_button"
@@ -723,7 +723,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "show_exiles_collaborations_button"
-			position = { x = 190 y = 390 }
+			position = { x = 747 y = 412 }
 			quadTextureSprite = "GFX_government_button"
 			buttonFont = "hoi_16mbs"
 			Orientation = "UPPER_LEFT"
@@ -732,7 +732,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "manage_exiled_collaborations_governments"
-			position = { x = 223 y = 398 }
+			position = { x = -11223 y = 398 }
 			font = "hoi_16mbs"
 			maxWidth = 130
 			maxHeight = 20
@@ -745,13 +745,13 @@ guiTypes = {
 		iconType = {
 			name = "icon_exiled_collaborations_governments"
 			spriteType = "GFX_icon_exiled_governments"
-			position = { x = 192 y = 391 }
+			position = { x = 750 y = 412 }
 		}
 
 		iconType = {
 			name = "icon_occupied_territories"
 			spriteType = "GFX_icon_occupied_territories"
-			position = { x = 12 y = 391 }
+			position = { x = 704 y = 413 }
 		}
 	}
 	
