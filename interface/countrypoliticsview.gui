@@ -71,7 +71,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "chart_explanation"
-			position = { x = 438 y = 261 } #df
+			position = { x = 438 y = 263 } #df
 			size = { width = 264 height = 163 } #df
 			clipping = yes #df
 			verticalScrollbar = "right_vertical_slider" #df
@@ -148,7 +148,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "faction"
-				position = { x = 500 y = 50}
+				position = { x = -180 y = 137 }
 				size = { width = 175 height = 20 }
 				clipping = no
 
@@ -562,8 +562,8 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "national_spirit_container"
-				position = { x = 99 y = -16 }
-				size = { width = 379 height = 107 }
+				position = { x = 99 y = -10 }
+				size = { width = 379 height = 100 }
 				horizontalScrollbar = "bottom_horizontal_slider"
 				
 				background = {
@@ -583,7 +583,7 @@ guiTypes = {
 					name = "spirit_grid_over_defined"
 					position = { x = 10 y = 1 }
 					size = { width = 330 height = 68 }
-					slotsize = { width = 60 height = 68 }
+					slotsize = { width = 75 height = 68 }
 					max_slots_vertical = 1
 					format = "UPPER_LEFT"
 				}
