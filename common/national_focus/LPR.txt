@@ -1250,7 +1250,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_energy_independence_from_ukr"
 			remove_dynamic_modifier = {
-				modifier = LPR_electricity_system_idea
+				modifier = LPR_dependent_electric_power
 			}
 			custom_effect_tooltip = LPR_energy_independence_from_ukr_tec_tt
 		}
