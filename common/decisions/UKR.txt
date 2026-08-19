@@ -1027,6 +1027,44 @@ UKR_decisions_of_the_transitional_government = {
 
 		}
 	}
+	UKR_anti_corruption_events = {
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+		}
+		visible = {
+			has_completed_focus = UKR_form_nabu
+		}
+		icon = GFX_decision_icon_of_Unknown_man
+
+		fire_only_once = no
+		cost = 35
+		days_re_enable = 70
+		days_remove = 55
+		complete_effect = {
+			custom_effect_tooltip = corruption_level_will_reduce_tt
+			hidden_effect = {
+				random_list = {
+					50 = {
+			            subtract_from_variable = {
+				            var = corruption_value
+				            value = 2
+			            }
+					}
+					10 = {
+			            subtract_from_variable = {
+				            var = corruption_value
+				            value = 3
+			            }
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 15
+		}
+	}
 
 }
 
@@ -1538,6 +1576,23 @@ UKR_maidan_decision = {
 				value = 1
 			}
 			custom_effect_tooltip = UKR_add_radicalisation_of_maidan
+			hidden_effect = {
+				clamp_variable = {
+					var = UKR_radicalisation_of_proeuropeans_value
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = UKR_radicalisation_of_nationalists_value
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = UKR_radicalisation_of_prorussians_value
+					min = 0
+					max = 100
+				}
+			}
 		}
 
 		complete_effect = {

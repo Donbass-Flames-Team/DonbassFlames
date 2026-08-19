@@ -1,0 +1,54 @@
+scripted_gui = {
+
+	eu_container = {
+		window_name = "development_button"
+		context_type = player_context
+		parent_window_name = countrypoliticsview
+
+		triggers = {
+			
+		}
+
+		visible = {
+			
+		}
+
+		effects = {
+			development_button_click = {
+				if = {
+					limit = {
+						has_country_flag = Development_tab_on
+					}
+					clr_country_flag = Development_tab_on
+					else = {
+						set_country_flag = Development_tab_on
+					}
+				}
+			}
+		}
+	}
+
+	development_container_container = {
+		context_type = player_context
+		parent_window_name = countrypoliticsview
+		window_name = "development_container_container"
+
+		visible = {
+			has_country_flag = Development_tab_on
+		}
+		
+		effects = {
+			
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+		properties = {
+			
+		}
+	}	
+
+
+}
