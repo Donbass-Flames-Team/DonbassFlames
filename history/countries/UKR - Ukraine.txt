@@ -3,6 +3,8 @@ DF_economy_setup = yes
 set_convoys = 417
 set_country_flag = open_start_gui
 
+
+
 add_to_variable = { JAM_ammo_stockpile = 10000 }
 
 2013.11.21 = {
@@ -40,6 +42,9 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	set_variable = { level_of_human_development = 35 }
 	set_variable = { level_of_infrastructure_development = 35 }
     set_variable = { level_of_public_administration = 35 }
+
+
+	set_variable = { global.price_per_barrel = 110 }
 
 	country_event = {
 		id = ukraine.101

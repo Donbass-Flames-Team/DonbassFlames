@@ -175,7 +175,7 @@ guiTypes = {
 			position = { x = 35 y = 26 }
 			font = hoi_24header
 			borderSize = { x = 0 y = 0}
-			maxWidth = 67
+			maxWidth = 87
 			maxHeight = 24
 			format = left
 			Orientation = "UPPER_LEFT"
@@ -353,6 +353,15 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			text = "recources_expense"
 		}		
+
+		instantTextboxType = {
+			name = "barrel_of_oil_title"
+			position = { x = 320 y = 332 }
+			font = hoi_24header
+			borderSize = {x = 0 y = 0}
+			format = left
+			text = "barrel_of_oil_title"
+		}
 
 		iconType = {
 			name = "economy_divider"
