@@ -36,6 +36,83 @@ on_actions = {
 				set_country_flag = Andrey_kuzmin_is_gone
 				country_event = { id = ukraine.160 }
 			}
+
+            # 20.07.2016 — УБИЙСТВО ПАВЛА ШЕРЕМЕТА
+            if = {
+                limit = {
+					tag = UKR
+                    date > 2016.7.19
+                    date < 2016.7.21
+                    NOT = {
+                        has_country_flag = UKR_sheremet
+                    }
+                }
+                set_country_flag = UKR_sheremet
+                country_event = { id = ukraine.172 }
+            }
+
+            # 21.10.2016 — ИНЦИДЕНТ С BELAVIA
+            if = {
+                limit = {
+					tag = UKR
+                    date > 2016.10.20
+                    date < 2016.10.22
+                    NOT = {
+                        has_country_flag = UKR_belavia
+                    }
+                }
+                set_country_flag = UKR_belavia
+                country_event = { id = ukraine.173 }
+            }
+
+            # 17.10.2017 — ПРОТЕСТЫ У ВЕРХОВНОЙ РАДЫ
+            if = {
+                limit = {
+					tag = UKR
+                    date > 2017.10.16
+                    date < 2017.10.18
+
+                    NOT = {
+                        has_country_flag = UKR_rada_protests
+                    }
+                }
+                set_country_flag = UKR_rada_protests
+
+                # СЛАБЫЕ ПРОТЕСТЫ
+                # Стабильность > 80%
+
+                if = {
+                    limit = {
+                        has_stability > 0.80
+                    }
+                    country_event = {
+                        id = ukraine.174
+                    }
+                }
+
+
+                # СРЕДНИЕ ПРОТЕСТЫ
+                # Стабильность 40–80%
+
+                else_if = {
+                    limit = {
+                        has_stability > 0.40
+                    }
+                    country_event = {
+                        id = ukraine.175
+                    }
+                }
+
+
+                # СИЛЬНЫЕ ПРОТЕСТЫ
+                # Стабильность < 40%
+
+                else = {
+                    country_event = {
+                        id = ukraine.176
+                    }
+                }
+            }
 		}
 	}
 }
