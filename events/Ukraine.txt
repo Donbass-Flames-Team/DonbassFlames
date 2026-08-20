@@ -6351,15 +6351,15 @@ country_event = {
         add_stability = -0.025
 			add_to_variable  = {
 			    var = corruption_value
-			    value = 5
+			    value = 3
 			    tooltip = UKR_cor_tt
 			}
     }
 
     option = {
         name = ukraine.172.b
-        add_stability = -0.025
-        add_political_power = -50
+        add_stability = -0.03
+        add_political_power = -75
     }
 }
 
@@ -6382,7 +6382,7 @@ BLR = {
 }
 			add_to_variable = {
 			    var = corruption_value
-			    value = 3
+			    value = -3
 			    tooltip = UKR_cor_tt
 			}
     }
@@ -6390,11 +6390,12 @@ BLR = {
         name = ukraine.173.b
         add_political_power = -100
         add_stability = -0.005
+        add_war_support = -0.005
 		add_manpower = -50
     }
 }
 
-#СЛАБКІ ПРОТЕСТИ БІЛЯ ВЕРХОВНОЇ РАДИ
+#СЛАБКІ ПРОТЕСТИ БІЛЯ ВЕРХОВНОЇ РАДИ 2018
 country_event = {
     id = ukraine.174
     title = ukraine.174.t
@@ -6405,12 +6406,12 @@ country_event = {
 
     option = {
         name = ukraine.174.a
-        add_stability = -0.01
+        add_stability = -0.005
         add_political_power = -10
     }
 }
 
-#СЕРЕДНІ ПРОТЕСТИ БІЛЯ ВЕРХОВНОЇ РАДИ
+#СЕРЕДНІ ПРОТЕСТИ БІЛЯ ВЕРХОВНОЇ РАДИ 2018
 country_event = {
     id = ukraine.175
     title = ukraine.175.t
@@ -6420,13 +6421,8 @@ country_event = {
 
     option = {
         name = ukraine.175.a
-        add_stability = -0.025
+        add_stability = -0.02
         add_political_power = -25
-		add_to_variable = {
-		var = corruption_value
-		value = 1
-		tooltip = UKR_cor_tt
-			}
         add_timed_idea = {
             idea = UKR_2018_protests
             days = 120
@@ -6436,6 +6432,11 @@ country_event = {
         name = ukraine.175.b
         add_political_power = -40
         add_stability = 0.01
+		add_to_variable = {
+		var = corruption_value
+		value = -3
+		tooltip = UKR_corr_tt
+			}
         add_timed_idea = {
             idea = UKR_2018_concessions_protesters
             days = 180
@@ -6443,7 +6444,7 @@ country_event = {
     }
 }
 
-#СИЛЬНІ ПРОТЕСТИ БІЛЯ ВЕРХОВНОЇ РАДИ
+#СИЛЬНІ ПРОТЕСТИ БІЛЯ ВЕРХОВНОЇ РАДИ 2018
 country_event = {
     id = ukraine.176
     title = ukraine.176.t
@@ -6461,17 +6462,17 @@ country_event = {
             idea = UKR_mass_2018_protests
             days = 180
         }
-		add_to_variable  = {
-		var = corruption_value
-		value = 2
-		tooltip = UKR_cor_tt
-			}
     }
 
     option = {
         name = ukraine.176.b
         add_political_power = -75
         add_stability = 0.02
+		add_to_variable  = {
+		var = corruption_value
+		value = -5
+		tooltip = UKR_corr_tt
+			}
         add_timed_idea = {
             idea = UKR_2018_concessions_protesters
             days = 360
@@ -6480,9 +6481,9 @@ country_event = {
 
     option = {
         name = ukraine.176.c
-        add_stability = -0.07
-        add_war_support = -0.02
-		add_manpower = -4
+        add_stability = -0.08
+        add_war_support = -0.03
+		add_manpower = -7
         add_timed_idea = {
             idea = UKR_2018_crackdown_on_protests
             days = 30
