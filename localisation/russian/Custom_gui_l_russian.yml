@@ -1,9 +1,11 @@
 ﻿l_russian:
- corruption_status: "[?corruption_value]%"
+ corruption_status: "Коррупция: [?corruption_value]%"
  corruption_tt_stats: "Уровень коррупция"
  criminality_tt_stats: "Уровень преступности"
- prestige_status: "[?prestige_value]"
- criminality_status: "[?criminality_value]%"
+ prestige_status: "Престиж: [?prestige_value]"
+ criminality_status: "Преступность: [?criminality_value]%"
+
+ energy_status: "£energy_texticon Энергетика: $ENERGY_GENERATED|H1$ "
 
 
 

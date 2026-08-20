@@ -10,13 +10,14 @@ guiTypes = {
 
 		buttonType = {
 			name = "EU_button"
-			position = { x = 0 y = 0 }
+			position = { x = 305 y = 8 }
 			quadTextureSprite = "GFX_eu_icon"
 			scale = 0.5
 			buttonFont = "hoi_16mbs"
 			Orientation = "UPPER_LEFT"
 			
 		}
+
 	}
 
 	containerWindowType = {
@@ -93,6 +94,87 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			
 		}
+
+        instantTextBoxType = {
+            name      = "prestige_value"
+            position  = { x = 25 y = 456 }
+            font      = "hoi_16mbs"
+            text      = "prestige_status"
+            format    = center 
+            maxWidth  = 128
+            maxHeight = 24
+            fixedsize = yes
+
+            pdx_tooltip = "prestige_tt_stats"
+            pdx_tooltip_delayed = "prestige_tt_desc"
+        }
+		
+        instantTextBoxType = {
+            name      = "corruption_value"
+            position  = { x = 162 y = 456 }
+            font      = "hoi_16mbs"
+            text      = "corruption_status"
+            format    = center
+            maxWidth  = 118
+            maxHeight = 24
+            fixedsize = yes
+
+            pdx_tooltip = "corruption_tt_stats"
+            pdx_tooltip_delayed = "corruption_tt_desc"
+        }
+
+        instantTextBoxType = {
+            name      = "criminality_value"
+            position  = { x = 294 y = 456 }
+            font      = "hoi_16mbs"
+            text      = "criminality_status"
+            format    = center
+            maxWidth  = 134
+            maxHeight = 24
+            fixedsize = yes
+
+            pdx_tooltip = "criminality_tt_stats"
+            pdx_tooltip_delayed = "criminality_tt_desc"
+        }	
+		
+        instantTextBoxType = {
+            name      = "energy_value"
+            position  = { x = 427 y = 456 }
+            font      = "hoi_16mbs"
+            text      = "energy_status"
+            format    = center
+            maxWidth  = 124
+            maxHeight = 24
+            fixedsize = yes
+        }
+
+
+		instantTextBoxType = {
+			name = "gdp_value"
+			position = { x = 577 y = 456 }
+			font = hoi_16mbs
+			borderSize = { x = 0 y = 0}
+			maxWidth = 110
+			maxHeight = 24
+			fixedsize = yes
+			format = right
+			Orientation = "UPPER_LEFT"
+			text = "gdp_value"
+		}
+
+		instantTextBoxType = {
+			name = "debt_value"
+			position = { x = 707 y = 456 }
+			font = hoi_16mbs
+			borderSize = { x = 0 y = 0}
+			maxWidth = 125
+			maxHeight = 24
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "debt_value"
+		}
+		
+
 	}
 
 
@@ -137,7 +219,7 @@ guiTypes = {
 			spriteType = "GFX_pol_view_bg"
 			position = { x= 6 y = 6 }
 			Orientation = "UPPER_LEFT"
-		}	
+		}
 
 		iconType ={
 			name ="pol_faction_icon"
@@ -146,6 +228,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}
+
 
 		containerWindowType = {
 			name = "chart_explanation"
@@ -407,11 +490,11 @@ guiTypes = {
 				name = "backgroundwrapper"
 				position = { x = 280 y = 12 }
 				size = { width = 230 height = 50 }
-			background = {
-				name = "Background"		
-				quadTextureSprite ="GFX_mini_bg"
-			}
-		}
+			    background = {
+				    name = "Background"		
+				    quadTextureSprite ="GFX_mini_bg"
+			    }
+		    }
 		
 			instantTextboxType = {
 			name = "overlord_name"	
@@ -748,7 +831,7 @@ guiTypes = {
 		iconType = {
 			name = "rules"
 			spriteType = "GFX_rules_sum_icon"
-			position = { x = 460 y = 7 }
+			position = { x = 760 y = 9 }
 		}
 
 		buttonType = {
