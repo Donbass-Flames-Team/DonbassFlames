@@ -6338,6 +6338,158 @@ country_event = {
     }
 }
 
+# УБИВСТВО ПАВЛА ШЕРЕМЕТА
+country_event = {
+    id = ukraine.172
+    title = ukraine.172.t
+    desc = ukraine.172.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.172.a
+        add_stability = -0.025
+			add_to_variable  = {
+			    var = corruption_value
+			    value = 5
+			    tooltip = UKR_cor_tt
+			}
+    }
+
+    option = {
+        name = ukraine.172.b
+        add_stability = -0.025
+        add_political_power = -50
+    }
+}
+
+# ІНЦИДЕНТ З BOEING 737 BELAVIA
+country_event = {
+    id = ukraine.173
+    title = ukraine.173.t
+    desc = ukraine.173.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.173.a
+        add_stability = -0.005
+BLR = {
+    add_opinion_modifier = {
+        target = UKR
+        modifier = UKR_belavia_incident
+    }
+}
+			add_to_variable = {
+			    var = corruption_value
+			    value = 3
+			    tooltip = UKR_cor_tt
+			}
+    }
+    option = {
+        name = ukraine.173.b
+        add_political_power = -100
+        add_stability = -0.005
+		add_manpower = -50
+    }
+}
+
+#СЛАБКІ ПРОТЕСТИ БІЛЯ ВЕРХОВНОЇ РАДИ
+country_event = {
+    id = ukraine.174
+    title = ukraine.174.t
+    desc = ukraine.174.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.174.a
+        add_stability = -0.01
+        add_political_power = -10
+    }
+}
+
+#СЕРЕДНІ ПРОТЕСТИ БІЛЯ ВЕРХОВНОЇ РАДИ
+country_event = {
+    id = ukraine.175
+    title = ukraine.175.t
+    desc = ukraine.175.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.175.a
+        add_stability = -0.025
+        add_political_power = -25
+		add_to_variable = {
+		var = corruption_value
+		value = 1
+		tooltip = UKR_cor_tt
+			}
+        add_timed_idea = {
+            idea = UKR_2018_protests
+            days = 120
+        }
+    }
+    option = {
+        name = ukraine.175.b
+        add_political_power = -40
+        add_stability = 0.01
+        add_timed_idea = {
+            idea = UKR_2018_concessions_protesters
+            days = 180
+        }
+    }
+}
+
+#СИЛЬНІ ПРОТЕСТИ БІЛЯ ВЕРХОВНОЇ РАДИ
+country_event = {
+    id = ukraine.176
+    title = ukraine.176.t
+    desc = ukraine.176.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.176.a
+        add_stability = -0.05
+        add_war_support = -0.01
+        add_political_power = -50
+        add_timed_idea = {
+            idea = UKR_mass_2018_protests
+            days = 180
+        }
+		add_to_variable  = {
+		var = corruption_value
+		value = 2
+		tooltip = UKR_cor_tt
+			}
+    }
+
+    option = {
+        name = ukraine.176.b
+        add_political_power = -75
+        add_stability = 0.02
+        add_timed_idea = {
+            idea = UKR_2018_concessions_protesters
+            days = 360
+        }
+    }
+
+    option = {
+        name = ukraine.176.c
+        add_stability = -0.07
+        add_war_support = -0.02
+		add_manpower = -4
+        add_timed_idea = {
+            idea = UKR_2018_crackdown_on_protests
+            days = 30
+        }
+    }
+}
+
 
 ##########################################################################
 ##########################################################################
@@ -6479,3 +6631,4 @@ country_event = {
         add_political_power = -25
     }
 }
+add_namespace = ukraine
