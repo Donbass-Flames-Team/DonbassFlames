@@ -6367,11 +6367,11 @@ country_event = {
     option = {
         name = ukraine.172.a
         add_stability = -0.025
-			add_to_variable  = {
-			    var = corruption_value
-			    value = 3
-			    tooltip = UKR_cor_tt
-			}
+		add_to_variable  = {
+			var = corruption_value
+			value = 2
+			tooltip = UKR_cor_tt
+		}
     }
 
     option = {
@@ -6392,17 +6392,17 @@ country_event = {
     option = {
         name = ukraine.173.a
         add_stability = -0.005
-BLR = {
-    add_opinion_modifier = {
-        target = UKR
-        modifier = UKR_belavia_incident
-    }
-}
-			add_to_variable = {
-			    var = corruption_value
-			    value = -3
-			    tooltip = UKR_cor_tt
-			}
+        BLR = {
+            add_opinion_modifier = {
+                target = UKR
+                modifier = UKR_belavia_incident
+            }
+        }
+		add_to_variable = {
+			var = corruption_value
+			value = -3
+			tooltip = UKR_cor_tt
+		}
     }
     option = {
         name = ukraine.173.b
@@ -6451,10 +6451,10 @@ country_event = {
         add_political_power = -40
         add_stability = 0.01
 		add_to_variable = {
-		var = corruption_value
-		value = -3
-		tooltip = UKR_corr_tt
-			}
+		    var = corruption_value
+		    value = -3
+		    tooltip = UKR_corr_tt
+		}
         add_timed_idea = {
             idea = UKR_2018_concessions_protesters
             days = 180
@@ -6497,17 +6497,19 @@ country_event = {
         }
     }
 
-    option = {
-        name = ukraine.176.c
-        add_stability = -0.08
-        add_war_support = -0.03
-		add_manpower = -7
-        add_timed_idea = {
-            idea = UKR_2018_crackdown_on_protests
-            days = 30
-        }
-    }
+    #option = {
+    #    name = ukraine.176.c
+    #    add_stability = -0.08
+    #    add_war_support = -0.03
+	#	add_manpower = -7
+    #    add_timed_idea = {
+    #        idea = UKR_2018_crackdown_on_protests
+    #        days = 30
+    #    }
+    #}
 }
+
+
 
 
 ##########################################################################
@@ -6650,4 +6652,3 @@ country_event = {
         add_political_power = -25
     }
 }
-add_namespace = ukraine
