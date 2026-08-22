@@ -19,14 +19,13 @@ sub_units = {
 
 		type = {
 			armor
-			bmd_type
 		}
 
 
 		combat_width = 2
 
 		need = {
-			bmd_chassis = 12
+			airborne_combat_vehicle = 12
 			infantry_equipment = 80
 			uniform_equipment = 80
 			bulletproof_vests_equipment = 80
