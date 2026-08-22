@@ -952,7 +952,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_introduce_martial_law
-		icon = GFX_focus_UKR_course_on_the_east
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = -2
 		y = 9
@@ -977,7 +977,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_fight_with_fascists
-		icon = GFX_focus_UKR_course_on_the_east
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = -4
 		y = 9
@@ -1003,7 +1003,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_ask_for_help_from_russia
-		icon = GFX_focus_UKR_course_on_the_east
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = -3
 		y = 10
@@ -1031,7 +1031,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_start_mobilization
-		icon = GFX_focus_UKR_course_on_the_east
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = 2
 		y = 1
@@ -1128,7 +1128,7 @@ focus_tree = {
 
 	focus = {
 		id = UKR_form_the_militia_of_the_east
-		icon = GFX_focus_UKR_course_on_the_east
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = 2
 		y = 2
@@ -1206,7 +1206,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_expand_interior_troops
-		icon = GFX_focus_UKR_course_on_the_east
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = 4
 		y = 2
@@ -1228,7 +1228,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_russian_military_advisors
-		icon = GFX_focus_UKR_course_on_the_east
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = -2
 		y = 1
@@ -1250,7 +1250,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_emergency_army_reforms
-		icon = GFX_focus_UKR_course_on_the_east
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = -2
 		y = 2
@@ -1272,7 +1272,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_suppress_facsists_cells
-		icon = GFX_focus_UKR_course_on_the_east
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = 0
 		y = 1
@@ -1295,7 +1295,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = UKR_filtration_camps
-		icon = GFX_focus_UKR_course_on_the_east
+		icon = GFX_goal_no_focus_UKR
 		cost = 0.3
 		x = 0
 		y = 2
@@ -4620,7 +4620,7 @@ focus_tree = {
 		}
 		relative_position_id = UKR_integration_with_nato
 		available = {
-			has_completed_focus = UKR_western_instructors
+			
 		}
 		completion_reward = {
 			army_experience = 35
@@ -4694,13 +4694,7 @@ focus_tree = {
 		relative_position_id = UKR_new_foreign_policy
 		available = {}
 		completion_reward = {
-			custom_effect_tooltip = UKR_breadbasket_tt
-			add_to_variable = {
-				UKR_eu_consumer_goods = -0.02
-			}
-			add_to_variable = {
-				UKR_eu_pp = 0.05
-			}
+			add_ideas = UKR_the_breadbasket_of_europe_idea
 			121 = {
 				add_extra_state_shared_building_slots = 1
 			}
@@ -4760,7 +4754,7 @@ focus_tree = {
 			add_political_power = 25
 			hidden_effect = {
 				news_event = {
-					id = news_events.39
+					id =  news_events.38
 					hours = 3
 				}
 			}
@@ -4960,7 +4954,7 @@ focus_tree = {
             }
 		}
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 65
 			add_stability = 0.05
 			add_war_support = 0.10
 		}
@@ -5423,7 +5417,7 @@ focus_tree = {
 	focus = {
 		id = UKR_anticorruption_reforms
 		icon = GFX_goal_no_focus_UKR
-		cost = 4
+		cost = 3
 		x = 22
 		y = 1
 		prerequisite = {
@@ -5443,7 +5437,7 @@ focus_tree = {
 	focus = {
 		id = UKR_lustration_law
 		icon = GFX_goal_no_focus_UKR
-		cost = 5
+		cost = 2
 		x = -2
 		y = 1
 		prerequisite = {
@@ -5454,6 +5448,11 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.02
 			add_political_power = 25
+			subtract_from_variable = {
+				var = corruption_value
+				value = 3
+			}
+			custom_effect_tooltip = corruption_level_will_reduce_tt
 		}
 	}
 	focus = {
@@ -5525,9 +5524,8 @@ focus_tree = {
 				var = corruption_value
 				value = 2
 			}
-			set_variable = { UKR_anti_corruption_agencies_monthly_decrease = 0.05
-			}
-			set_variable = { anti_corruption_monthly_decrease = 0.05 }
+			add_to_variable = { UKR_anti_corruption_agencies_monthly_decrease = 0.05 }
+			add_to_variable = { anti_corruption_monthly_decrease = 0.05 }
 			custom_effect_tooltip = corruption_level_will_reduce_tt
 		}
 	}
@@ -5547,12 +5545,9 @@ focus_tree = {
 				var = corruption_value
 				value = 2
 			}
-			set_variable = {
-				UKR_anti_corruption_agencies_monthly_decrease = 0.05
-			}
-			set_variable = {
-				anti_corruption_monthly_decrease = 0.05
-			}
+			set_variable = { UKR_anti_corruption_agencies_political_power_gain = -0.05 }
+			set_variable = { UKR_anti_corruption_agencies_monthly_decrease = 0.05 }
+			set_variable = { anti_corruption_monthly_decrease = 0.05 }
 			custom_effect_tooltip = corruption_level_will_reduce_tt
 		}
 	}
@@ -5591,12 +5586,9 @@ focus_tree = {
 				var = corruption_value
 				value = 2
 			}
-			set_variable = {
-				UKR_anti_corruption_agencies_monthly_decrease = 0.05
-			}
-			set_variable = {
-				anti_corruption_monthly_decrease = 0.05
-			}
+			set_variable = { UKR_anti_corruption_agencies_political_power_gain = -0.05 }
+			add_to_variable = { UKR_anti_corruption_agencies_monthly_decrease = 0.05 }
+			add_to_variable = { anti_corruption_monthly_decrease = 0.05 }
 			custom_effect_tooltip = corruption_level_will_reduce_tt
 		}
 	}
@@ -5616,12 +5608,8 @@ focus_tree = {
 				var = corruption_value
 				value = 2
 			}
-			set_variable = {
-				UKR_anti_corruption_agencies_monthly_decrease = 0.1
-			}
-			set_variable = {
-				anti_corruption_monthly_decrease = 0.1
-			}
+			add_to_variable = { UKR_anti_corruption_agencies_monthly_decrease = 0.1 }
+			add_to_variable = { anti_corruption_monthly_decrease = 0.1 }
 			custom_effect_tooltip = corruption_level_will_reduce_tt
 		}
 	}
@@ -6060,8 +6048,8 @@ focus_tree = {
 			has_country_flag = innextupdate
 		}
 		completion_reward = { 
-		add_political_power = 75
-		add_stability = 0.20
+		    add_political_power = 75
+		    add_stability = 0.05
 		}
 	}
 	focus = {
@@ -6075,9 +6063,10 @@ focus_tree = {
 		}
 		relative_position_id = UKR_zelensky
 		available = {
-			NOT = {
-				has_country_flag = Elections2014InProgress
-			}
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
 		}
 		completion_reward = {
 			add_political_power = 25
@@ -6096,7 +6085,12 @@ focus_tree = {
 			focus = UKR_start_personnel_purges
 		}
 		relative_position_id = UKR_create_the_office_of_the_president
-		available = {}
+		available = {
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
+		}
 		completion_reward = {
 			add_stability = 0.03
 		}
@@ -6112,9 +6106,10 @@ focus_tree = {
 		}
 		relative_position_id = UKR_zelensky
 		available = {
-			NOT = {
-				has_country_flag = Elections2014InProgress
-			}
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
 		}
 		completion_reward = {
 			add_political_power = 25
@@ -6130,26 +6125,19 @@ focus_tree = {
 			focus = UKR_start_large_construction
 		}
 		relative_position_id = UKR_create_the_office_of_the_president
-		available = {}
+		available = {
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
+		}
 		completion_reward = {
-			add_dynamic_modifier = {
-				modifier = UKR_electronic_country_idea
-			}
-			set_variable = {
-				UKR_electronic_country_consumer_goods_factor = -0.035
-			}
-			set_variable = {
-				UKR_electronic_country_political_power_gain = 0.075
-			}
-			set_variable = {
-				UKR_electronic_country_stability_factor = 0.05
-			}
-			set_variable = {
-				UKR_electronic_country_production_speed_buildings_factor = 0.035
-			}
-			set_variable = {
-				UKR_electronic_country_research_speed_factor = 0.005
-			}
+			add_dynamic_modifier = { modifier = UKR_electronic_country_idea }
+			set_variable = { UKR_electronic_country_consumer_goods_factor = -0.035 }
+			set_variable = { UKR_electronic_country_political_power_gain = 0.075 }
+			set_variable = { UKR_electronic_country_stability_factor = 0.05 }
+			set_variable = { UKR_electronic_country_production_speed_buildings_factor = 0.035 }
+			set_variable = { UKR_electronic_country_research_speed_factor = 0.005 }
 		}
 	}
 	focus = {
@@ -6162,12 +6150,15 @@ focus_tree = {
 			focus = UKR_create_digital_country
 		}
 		relative_position_id = UKR_create_digital_country
-		available = {}
+		available = {
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
+		}
 		completion_reward = {
 			add_political_power = 25
-			set_variable = {
-				UKR_electronic_country_research_speed_factor = 0.025
-			}
+			set_variable = { UKR_electronic_country_research_speed_factor = 0.025 }
 		}
 	}
 	focus = {
@@ -6183,7 +6174,12 @@ focus_tree = {
 			focus = UKR_start_personnel_purges
 		}
 		relative_position_id = UKR_create_the_office_of_the_president
-		available = {}
+		available = {
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
+		}
 		completion_reward = {
 			add_political_power = 25
 		}
@@ -6199,9 +6195,10 @@ focus_tree = {
 		}
 		relative_position_id = UKR_create_the_office_of_the_president
 		available = {
-			NOT = {
-				has_country_flag = Elections2014InProgress
-			}
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
 		}
 		completion_reward = {
 			add_political_power = 25
@@ -6218,9 +6215,10 @@ focus_tree = {
 		}
 		relative_position_id = UKR_new_information_policy
 		available = {
-			NOT = {
-				has_country_flag = Elections2014InProgress
-			}
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
 		}
 		completion_reward = {
 			add_political_power = 25
@@ -6237,9 +6235,10 @@ focus_tree = {
 		}
 		relative_position_id = UKR_new_information_policy
 		available = {
-			NOT = {
-				has_country_flag = Elections2014InProgress
-			}
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
 		}
 		completion_reward = {
 			add_political_power = 25
@@ -6256,9 +6255,10 @@ focus_tree = {
 		}
 		relative_position_id = UKR_call_early_parliamentary_elections
 		available = {
-			NOT = {
-				has_country_flag = Elections2014InProgress
-			}
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
 		}
 		completion_reward = {
 			add_political_power = 25
@@ -6275,9 +6275,10 @@ focus_tree = {
 		}
 		relative_position_id = UKR_create_the_office_of_the_president
 		available = {
-			NOT = {
-				has_country_flag = Elections2014InProgress
-			}
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
 		}
 		completion_reward = {
 			add_political_power = 25
@@ -6297,9 +6298,10 @@ focus_tree = {
 		}
 		relative_position_id = UKR_expand_privatization
 		available = {
-			NOT = {
-				has_country_flag = Elections2014InProgress
-			}
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
 		}
 		completion_reward = {
 			add_political_power = 25
@@ -6316,9 +6318,10 @@ focus_tree = {
 		}
 		relative_position_id = UKR_create_the_office_of_the_president
 		available = {
-			NOT = {
-				has_country_flag = Elections2014InProgress
-			}
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
 		}
 		completion_reward = {}
 	}
@@ -6345,9 +6348,10 @@ focus_tree = {
 		}
 		relative_position_id = UKR_create_the_office_of_the_president
 		available = {
-			NOT = {
-				has_country_flag = Elections2014InProgress
-			}
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
 		}
 		completion_reward = {}
 	}
@@ -6363,9 +6367,10 @@ focus_tree = {
 
 		relative_position_id = UKR_create_the_office_of_the_president
 		available = {
-			NOT = {
-				has_country_flag = Elections2014InProgress
-			}
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
 		}
 		completion_reward = {
 			
@@ -6382,9 +6387,10 @@ focus_tree = {
 		}
 		relative_position_id = UKR_expand_privatization
 		available = {
-			NOT = {
-				has_country_flag = Elections2014InProgress
-			}
+			has_country_leader = {
+	            character = volodymir_zelenskyy
+	            ruling_only = yes
+            }
 		}
 		completion_reward = {
 			add_political_power = 25
@@ -6438,7 +6444,7 @@ focus_tree = {
 		id = UKR_military_reforms_afu
 		icon = GFX_focus_UKR_afu_reforms
 		cost = 3
-		x = 83
+		x = 84
 		y = 0
 		available = {
 			has_country_flag = Focuses_after_Ato
@@ -6480,9 +6486,9 @@ focus_tree = {
 		completion_reward = {}
 	}
 	focus = {
-		id = UKR_western_instructors
+		id = UKR_operational_command_reform
 		icon = GFX_goal_no_focus_UKR
-		cost = 2
+		cost = 3
 		x = 0
 		y = 1
 		prerequisite = {
@@ -6490,10 +6496,10 @@ focus_tree = {
 		}
 		relative_position_id = UKR_military_reforms_afu
 		available = {
-			has_completed_focus = UKR_turn_to_the_west_for_help
-			has_completed_focus = UKR_integration_with_nato
+
 		}
 		completion_reward = {
+			custom_effect_tooltip = UKR_new_operational_command_formation_tt
 			army_experience = 15
 		}
 	}
@@ -6501,10 +6507,10 @@ focus_tree = {
 		id = UKR_new_communication_systems
 		icon = GFX_goal_no_focus_UKR
 		cost = 3
-		x = -4
+		x = -5
 		y = 2
 		prerequisite = {
-			focus = UKR_western_instructors
+			focus = UKR_operational_command_reform
 		}
 		relative_position_id = UKR_military_reforms_afu
 		available = {}
@@ -6518,14 +6524,15 @@ focus_tree = {
 		id = UKR_reliance_on_decentralized_command
 		icon = GFX_focus_UKR_reliance_on_decentralized_command
 		cost = 5
-		x = -2
+		x = -3
 		y = 2
 		prerequisite = {
-			focus = UKR_western_instructors
+			focus = UKR_operational_command_reform
 		}
 		relative_position_id = UKR_military_reforms_afu
 		mutually_exclusive = {
 			focus = UKR_reliance_on_centralized_command
+			has_completed_focus = UKR_integration_with_nato
 		}
 		available = {}
 		completion_reward = {
@@ -6573,7 +6580,7 @@ focus_tree = {
 		id = UKR_deosovetization_of_army
 		icon = GFX_focus_UKR_decomunization_of_army
 		cost = 2
-		x = 0
+		x = -1
 		y = 3
 		prerequisite = {
 			focus = UKR_reliance_on_decentralized_command
@@ -6590,10 +6597,11 @@ focus_tree = {
 		id = UKR_creation_of_a_reserve_corps
 		icon = GFX_focus_UKR_reserve_corp
 		cost = 8
-		x = 0
-		y = 4
+		x = 1
+		y = 3
 		prerequisite = {
-			focus = UKR_deosovetization_of_army
+			focus = UKR_reliance_on_decentralized_command
+			focus = UKR_reliance_on_centralized_command
 		}
 		relative_position_id = UKR_military_reforms_afu
 		available = {}
@@ -6610,14 +6618,13 @@ focus_tree = {
 		icon = GFX_focus_UKR_reforms_of_dshv
 		cost = 2
 		x = 0
-		y = 5
+		y = 4
 		prerequisite = {
 			focus = UKR_creation_of_a_reserve_corps
 		}
 		prerequisite = {
-			focus = UKR_creation_of_a_reserve_corps
-			focus = UKR_reform_of_the_sergeant_corps
-			focus = UKR_strengthen_general_staff_planning
+			focus = UKR_deosovetization_of_army
+
 		}
 		relative_position_id = UKR_military_reforms_afu
 		available = {}
@@ -6630,10 +6637,10 @@ focus_tree = {
 		id = UKR_increase_the_number_of_contract_soldiers
 		icon = GFX_goal_no_focus_UKR
 		cost = 5
-		x = 2
+		x = 1
 		y = 6
 		prerequisite = {
-			focus = UKR_reform_of_dshv
+			focus = UKR_command_of_the_logistics_forces_afu
 		}
 		relative_position_id = UKR_military_reforms_afu
 		available = {}
@@ -6644,10 +6651,14 @@ focus_tree = {
 		icon = GFX_focus_UKR_logistic_reforms
 		cost = 5
 		x = 0
-		y = 6
+		y = 5
 		prerequisite = {
 			focus = UKR_creation_of_a_reserve_corps
 		}
+		prerequisite = {
+			focus = UKR_strengthen_general_staff_planning
+			focus = UKR_reform_of_the_sergeant_corps
+		}		
 		relative_position_id = UKR_military_reforms_afu
 		available = {}
 		completion_reward = {
@@ -6659,10 +6670,10 @@ focus_tree = {
 		id = UKR_reform_of_tro
 		icon = GFX_focus_UKR_tro_reforms
 		cost = 5
-		x = -2
+		x = -1
 		y = 6
 		prerequisite = {
-			focus = UKR_reform_of_dshv
+			focus = UKR_command_of_the_logistics_forces_afu
 		}
 		relative_position_id = UKR_military_reforms_afu
 		available = {}
@@ -6672,7 +6683,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = UKR_nato_standard_army
+		id = UKR_medical_and_support_forces
 		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 0
@@ -6680,9 +6691,7 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_reform_of_tro
 		}
-		prerequisite = {
-			focus = UKR_command_of_the_logistics_forces_afu
-		}
+
 		prerequisite = {
 			focus = UKR_increase_the_number_of_contract_soldiers
 		}
@@ -6694,13 +6703,30 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = UKR_nato_standard_army
+		icon = GFX_goal_no_focus_UKR
+		cost = 5
+		x = 0
+		y = 8
+		prerequisite = {
+			focus = UKR_medical_and_support_forces
+		}
+
+		relative_position_id = UKR_military_reforms_afu
+		available = {}
+		completion_reward = {
+			add_to_variable = { UKR_AFU_army_org_factor = 0.035 }
+			add_to_variable = { UKR_AFU_initiative_factor = 0.015 }
+		}
+	}
+	focus = {
 		id = UKR_reliance_on_centralized_command
 		icon = GFX_goal_no_focus_UKR
 		cost = 5
-		x = 2
+		x = 3
 		y = 2
 		prerequisite = {
-			focus = UKR_western_instructors
+			focus = UKR_operational_command_reform
 		}
 		relative_position_id = UKR_military_reforms_afu
 		mutually_exclusive = {
@@ -6717,7 +6743,7 @@ focus_tree = {
 		id = UKR_expand_the_general_staff
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 2
+		x = 3
 		y = 3
 		prerequisite = {
 			focus = UKR_reliance_on_centralized_command
@@ -6736,7 +6762,7 @@ focus_tree = {
 		id = UKR_strengthen_general_staff_planning
 		icon = GFX_goal_no_focus_UKR
 		cost = 3
-		x = 2
+		x = 3
 		y = 4
 		prerequisite = {
 			focus = UKR_reliance_on_centralized_command
@@ -6752,10 +6778,10 @@ focus_tree = {
 		id = UKR_ukranian_mic
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = -6
+		x = -7
 		y = 2
 		prerequisite = {
-			focus = UKR_western_instructors
+			focus = UKR_operational_command_reform
 		}
 		relative_position_id = UKR_military_reforms_afu
 		available = {}
@@ -6868,13 +6894,32 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = UKR_defense_procurement_act
+		icon = GFX_focus_UKR_expand_millitary_factories
+		cost = 3
+		x = -1
+		y = 4
+		prerequisite = {
+			focus = UKR_expand_ammunition_plants
+		}
+		relative_position_id = UKR_ukranian_mic
+		available = {}
+		completion_reward = {
+			subtract_from_variable = {
+				var = corruption_value
+				value = 4
+			}
+			custom_effect_tooltip = corruption_level_will_reduce_tt
+		}
+	}	
+	focus = {
 		id = UKR_modernization_of_airfields
 		icon = GFX_focus_UKR_modernization_of_airfields
 		cost = 1
-		x = 8
+		x = 9
 		y = 2
 		prerequisite = {
-			focus = UKR_western_instructors
+			focus = UKR_operational_command_reform
 		}
 		relative_position_id = UKR_military_reforms_afu
 		available = {}
@@ -6899,10 +6944,10 @@ focus_tree = {
 		id = UKR_modernization_of_odessa_ports
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 10
+		x = 11
 		y = 2
 		prerequisite = {
-			focus = UKR_western_instructors
+			focus = UKR_operational_command_reform
 		}
 		relative_position_id = UKR_military_reforms_afu
 		available = {}
@@ -6922,16 +6967,17 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { UKR_ukrainian_navy_marine_attack_factor = 0.05 }
 			custom_effect_tooltip = UKR_marine_infantry_reform_tt
+			custom_effect_tooltip = UKR_new_marine_brigades_formation_tt
 		}
 	}
 	focus = {
 		id = UKR_creation_of_sso
 		icon = GFX_focus_UKR_creation_of_sso
 		cost = 1
-		x = 6
+		x = 7
 		y = 2
 		prerequisite = {
-			focus = UKR_western_instructors
+			focus = UKR_operational_command_reform
 		}
 		relative_position_id = UKR_military_reforms_afu
 		available = {}
@@ -6951,7 +6997,10 @@ focus_tree = {
 		}
 		relative_position_id = UKR_creation_of_sso
 		available = {}
-		completion_reward = {}
+		completion_reward = {
+		add_to_variable = { UKR_AFU_special_forces_out_of_supply_factor = 0.05 }
+			custom_effect_tooltip = UKR_creation_of_sso_tt
+		}
 	}
 	focus = {
 		id = UKR_hur_operations
