@@ -574,7 +574,6 @@ This affects how the AI scores the available equipment to buy. Must specify eith
 ```
 ai_strategy = {
 	type = equipment_market_buy
-	equipment_type = light_tank_chassis  # optional: equipment type or archetype to buy
 	seller = GER  # optional: which country to buy from. Can be scoped variable.
 	value = 200  # Part of the score calculation for things to buy. Related define: EQUIPMENT_MARKET_SCORE_FACTOR_AI_STRAT_WEIGHT
 }

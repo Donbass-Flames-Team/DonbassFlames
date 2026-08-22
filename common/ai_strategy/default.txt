@@ -29,24 +29,6 @@ default_unit_production = {
 	ai_strategy = { type = equipment_production_factor id = artillery value = 25 }
 }
 
-default_unit_production_super_heavies = {
-	enable = {
-		is_major = yes
-		num_of_military_factories > 150
-		NOT = { has_tech = main_battle_tank_chassis }
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = { type = role_ratio id = super_heavy_breakthrough_role value = 1 }
-}
-
-default_unit_production_land_cruiser = {
-	enable = { is_special_project_completed = sp:sp_land_land_cruiser }
-	abort_when_not_enabled = yes
-
-	ai_strategy = { type = role_ratio id = mega_heavy_breakthrough_role value = 2 }
-}
-
 default_role_ratios = {
 	enable = { always = yes }
 	abort_when_not_enabled = yes
@@ -489,11 +471,6 @@ default_build_a_lw_facility = {
 		is_major = yes
 		num_of_civilian_factories > 40
 		num_of_military_factories > 40
-		OR = {
-			has_tech = improved_light_tank_chassis
-			has_tech = basic_medium_tank_chassis
-			has_tech = improved_heavy_tank_chassis
-		}
 		land_facility < 1
 	}
 	abort_when_not_enabled = yes
