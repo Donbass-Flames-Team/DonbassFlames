@@ -25,19 +25,7 @@ technologies = {
 			marine
 			special_forces_infantry
 			territorial_defense_unit
-
-			engineer
-			recon
-			maintenance_company
-			medical_company
-			logistics_company
-			mortar
-			anti_tank
-			anti_air
-			tank_company
-			rocket_artillery
 			sniper_company
-			signal_company
 		}
 		
 		path = {
@@ -726,7 +714,10 @@ technologies = {
 		enable_equipments = {
 			grenade_launcher_equipment_0
 		}
-		
+
+		enable_subunits = {
+			anti_tank
+		}
 		path = {
 			leads_to_tech = atgl_weapons_1
 			research_cost_coeff = 1
@@ -1069,6 +1060,9 @@ technologies = {
 		enable_equipments = {
 			manpads_equipment_0
 		}
+		enable_subunits = {
+		anti_air
+		}
 		
 		path = {
 			leads_to_tech = manpads_weapons1
@@ -1198,6 +1192,9 @@ technologies = {
 
 		enable_equipments = {
 			mortar_equipment_0
+		}
+		enable_subunits = {
+			mortar
 		}
 		
 		path = {
