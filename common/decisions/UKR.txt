@@ -1626,7 +1626,7 @@ UKR_depreservation_decision = {
 		cost = 75
 		complete_effect = {
 			add_equipment_to_stockpile = { 
-				type = modern_tank_chassis 
+				type = modern_tank_equipment 
 				amount = 150 
 			}
 		}
@@ -1692,11 +1692,11 @@ UKR_depreservation_decision = {
 		cost = 45
 		complete_effect = {
 			add_equipment_to_stockpile = { 
-				type = apc_chassis_1
+				type = apc_1
 				amount = 115 
 			}
 			add_equipment_to_stockpile = { 
-				type = apc_chassis_2
+				type = apc_2
 				amount = 25 
 			}
 		}
@@ -3145,25 +3145,25 @@ UKR_ATO_decision = {
 			random_list = {
 				14 = {
 					add_equipment_to_stockpile = { 
-						type = bbm_chassis_0 
+						type = bbm_0 
 						amount = 4
 					}
 				}
 				5 = {
 					add_equipment_to_stockpile = { 
-						type = bbm_chassis_0 
+						type = bbm_0 
 						amount = 9
 					}
 				}
 				10 = {
 					add_equipment_to_stockpile = { 
-						type = bbm_chassis_1 
+						type = bbm_1 
 						amount = 2
 					}
 				}
 				3 = {
 					add_equipment_to_stockpile = { 
-						type = bbm_chassis_2 
+						type = bbm_2 
 						amount = 2
 					}
 				}

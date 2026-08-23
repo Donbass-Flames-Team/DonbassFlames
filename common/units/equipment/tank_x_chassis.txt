@@ -6,7 +6,7 @@ equipments = {
 	modern_tank_equipment_1 = {
 		year = 1955
 
-		archetype = modern_tank_chassis
+		archetype = modern_tank_equipment
 		priority = 170
 		visual_level = 0
 		is_convertable = yes
@@ -48,7 +48,7 @@ equipments = {
 	modern_tank_equipment_2 = {
 		year = 1960
 	
-		archetype = modern_tank_chassis
+		archetype = modern_tank_equipment
 		parent = modern_tank_equipment_1
 		priority = 10
 		visual_level = 1
@@ -82,7 +82,7 @@ equipments = {
 	modern_tank_equipment_3 = {
 		year = 1975
 	
-		archetype = modern_tank_chassis
+		archetype = modern_tank_equipment
 		parent = modern_tank_equipment_2
 		priority = 10
 		visual_level = 1
@@ -117,7 +117,7 @@ equipments = {
 	modern_tank_equipment_4 = {
 		year = 1980
 	
-		archetype = modern_tank_chassis
+		archetype = modern_tank_equipment
 		parent = modern_tank_equipment_3
 		priority = 10
 		visual_level = 1
@@ -151,7 +151,7 @@ equipments = {
 	modern_tank_equipment_5 = {
 		year = 1990
 	
-		archetype = modern_tank_chassis
+		archetype = modern_tank_equipment
 		parent = modern_tank_equipment_4
 		priority = 10
 		visual_level = 1

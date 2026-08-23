@@ -118,7 +118,7 @@ equipments = {
 		}
 	}
 
-	spau_chassis = {
+	spau = {
 		year = 1971
 		is_archetype = yes
 		is_buildable = no
@@ -144,13 +144,13 @@ equipments = {
 		manpower = 3
 	}
 
-	spau_chassis_0 = {
+	spau_0 = {
 		abbreviation = "sau0"
 		derived_variant_name = sau_equipment_0
 		visual_level = 0
 		year = 2000
 
-		archetype = spau_chassis
+		archetype = spau
 		priority = 50
 
 		defense = 17
@@ -164,13 +164,13 @@ equipments = {
 		}
 	}
 
-	spau_chassis_1 = {
+	spau_1 = {
 		abbreviation = "sau1"
 		derived_variant_name = sau_equipment_1
 		visual_level = 1
 
-		archetype = spau_chassis
-		parent = spau_chassis_0
+		archetype = spau
+		parent = spau_0
 		priority = 50
 
 		defense = 19
@@ -184,14 +184,14 @@ equipments = {
 		}
 	}
 
-	spau_chassis_2 = {
+	spau_2 = {
 		abbreviation = "sau2"
 		derived_variant_name = sau_equipment_2
 		visual_level = 2
 		year = 1976
 
-		archetype = spau_chassis
-		parent = spau_chassis_1
+		archetype = spau
+		parent = spau_1
 		priority = 50
 
 		defense = 21
@@ -205,14 +205,14 @@ equipments = {
 		}
 	}
 
-	spau_chassis_3 = {
+	spau_3 = {
 		abbreviation = "sau3"
 		derived_variant_name = sau_equipment_2
 		visual_level = 3
 		year = 1985
 
-		archetype = spau_chassis
-		parent = spau_chassis_2
+		archetype = spau
+		parent = spau_2
 		priority = 50
 
 		defense = 23
@@ -227,14 +227,14 @@ equipments = {
 		}
 	}
 
-	spau_chassis_4 = {
+	spau_4 = {
 		abbreviation = "sau4"
 		derived_variant_name = sau_equipment_3
 		visual_level = 4
 		year = 2016
 
-		archetype = spau_chassis
-		parent = spau_chassis_3
+		archetype = spau
+		parent = spau_3
 		priority = 50
 
 		defense = 24
@@ -249,7 +249,7 @@ equipments = {
 		}
 	}
 
-	mlrs_chassis = {
+	mlrs = {
 		year = 1970
 
 		is_archetype = yes
@@ -283,66 +283,66 @@ equipments = {
 		}
 	}
 
-	selfpropered_mortar_chassis_0 = {
+	selfpropered_mortar_0 = {
 		abbreviation = "selfmortar0"
 		derived_variant_name = selfmortar_equipment_0
 		visual_level = 0
 		year = 1971
-		archetype = mlrs_chassis
+		archetype = mlrs
 		priority = 2000
 		module_slots = inherit
 	}
 
-	selfpropered_mortar_chassis_1 = {
+	selfpropered_mortar_1 = {
 		abbreviation = "selfmortar1"
 		derived_variant_name = mlrs_equipment_0
 		visual_level = 0
 		year = 1971
-		archetype = mlrs_chassis
-		parent = selfpropered_mortar_chassis_0
+		archetype = mlrs
+		parent = selfpropered_mortar_0
 		priority = 2000
 		module_slots = inherit
 	}
 
-	selfpropered_mortar_chassis_2 = {
+	selfpropered_mortar_2 = {
 		abbreviation = "selfmortar2"
 		derived_variant_name = mlrs_equipment_1
 		visual_level = 0
 		year = 1971
-		archetype = mlrs_chassis
-		parent = selfpropered_mortar_chassis_1
+		archetype = mlrs
+		parent = selfpropered_mortar_1
 		priority = 2000
 		module_slots = inherit
 	}
 
-	mlrs_chassis_0 = {
+	mlrs_0 = {
 		abbreviation = "mlrs0"
 		derived_variant_name = mlrs_equipment_0
 		visual_level = 0
 		year = 1971
-		archetype = mlrs_chassis
+		archetype = mlrs
 		priority = 2000
 		module_slots = inherit
 	}
 
-	mlrs_chassis_1 = {
+	mlrs_1 = {
 		abbreviation = "mlrs1"
 		derived_variant_name = mlrs_equipment_0
 		visual_level = 0
 		year = 1971
-		archetype = mlrs_chassis
-		parent = mlrs_chassis_0
+		archetype = mlrs
+		parent = mlrs_0
 		priority = 2000
 		module_slots = inherit
 	}
 
-	mlrs_chassis_2 = {
+	mlrs_2 = {
 		abbreviation = "mlrs0"
 		derived_variant_name = mlrs_equipment_1
 		visual_level = 0
 		year = 1971
-		archetype = mlrs_chassis
-		parent = mlrs_chassis_1
+		archetype = mlrs
+		parent = mlrs_1
 		priority = 2000
 		module_slots = inherit
 	}

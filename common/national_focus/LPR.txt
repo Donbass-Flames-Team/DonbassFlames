@@ -323,7 +323,7 @@ focus_tree = {
 			add_stability = -0.05
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_vehicle_confiscation"
 			add_equipment_to_stockpile = {
-				type = bbm_chassis_0
+				type = bbm_0
 				amount = 425
 			}
 			add_equipment_to_stockpile = {
@@ -474,7 +474,7 @@ focus_tree = {
 				amount = 2500
 			}
 			add_equipment_to_stockpile = {
-				type = bbm_chassis_0
+				type = bbm_0
 				amount = 120
 			}
 			add_equipment_to_stockpile = {
