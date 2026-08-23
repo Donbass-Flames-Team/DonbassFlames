@@ -4,7 +4,7 @@
 equipments = {
 
 	modern_tank_equipment_1 = {
-		year = 1955
+		year = 1945
 
 		archetype = modern_tank_equipment
 		priority = 170
@@ -16,7 +16,7 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 15
+		defense = 26
 		breakthrough = 56
 		hardness = 0.98
 		armor_value = 110
@@ -37,16 +37,18 @@ equipments = {
 		}
 		build_cost_ic = 29
 		resources = {
-			#oil = 1
-			steel = 3
-			chromium = 4
+			steel = 8
+			chromium = 2
+			aluminium = 1
 		}
+
+		manpower = 3
 	
 		fuel_consumption = 5
 	}
 
 	modern_tank_equipment_2 = {
-		year = 1960
+		year = 1955
 	
 		archetype = modern_tank_equipment
 		parent = modern_tank_equipment_1
@@ -56,7 +58,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 12
-		reliability = 0.8
+		reliability = 0.82
 
 		#Defensive Abilities
 		defense = 29
@@ -66,7 +68,7 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 51
-		hard_attack = 53
+		hard_attack = 50
 		ap_attack = 108
 		air_attack = 0
 
@@ -75,12 +77,17 @@ equipments = {
 		fuel_consumption = 5
 		build_cost_ic = 32
 		resources = {
-			steel = 3
+			steel = 8
+			chromium = 2
+			aluminium = 1
 		}
+
+		manpower = 3
+
 	}
 
 	modern_tank_equipment_3 = {
-		year = 1975
+		year = 1970
 	
 		archetype = modern_tank_equipment
 		parent = modern_tank_equipment_2
@@ -90,17 +97,17 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 12
-		reliability = 0.8
+		reliability = 0.87
 
 		#Defensive Abilities
-		defense = 31
-		breakthrough = 69
+		defense = 35
+		breakthrough = 89
 		hardness = 0.99
 		armor_value = 124
 
 		#Offensive Abilities
 		soft_attack = 59
-		hard_attack = 54
+		hard_attack = 60
 		ap_attack = 113
 		air_attack = 0
 
@@ -109,13 +116,17 @@ equipments = {
 		fuel_consumption = 5
 		build_cost_ic = 35
 		resources = {
-			steel = 4
+			steel = 12
 			chromium = 3
+			aluminium = 1
 		}
+
+		manpower = 3
+
 	}
 
 	modern_tank_equipment_4 = {
-		year = 1980
+		year = 1975
 	
 		archetype = modern_tank_equipment
 		parent = modern_tank_equipment_3
@@ -125,7 +136,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 12
-		reliability = 0.8
+		reliability = 0.89
 
 		#Defensive Abilities
 		defense = 38
@@ -135,7 +146,7 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 64
-		hard_attack = 58
+		hard_attack = 62
 		ap_attack = 126
 		air_attack = 0
 
@@ -144,8 +155,13 @@ equipments = {
 		fuel_consumption = 5
 		build_cost_ic = 38
 		resources = {
-			steel = 4
+			steel = 12
+			chromium = 3
+			aluminium = 1
 		}
+
+		manpower = 3
+
 	}
 
 	modern_tank_equipment_5 = {
@@ -159,7 +175,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 12
-		reliability = 0.8
+		reliability = 0.92
 
 		#Defensive Abilities
 		defense = 41
@@ -169,7 +185,7 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 73
-		hard_attack = 64
+		hard_attack = 70
 		ap_attack = 142
 		air_attack = 0
 
@@ -178,8 +194,13 @@ equipments = {
 		fuel_consumption = 5
 		build_cost_ic = 41
 		resources = {
-			steel = 4
+			steel = 12
+			chromium = 3
+			aluminium = 1
 		}
+
+		manpower = 3
+
 	}
 
 }
