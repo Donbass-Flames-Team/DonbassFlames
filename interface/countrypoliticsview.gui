@@ -22,60 +22,221 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "development_container_container"
-			position = { x = 0 y = 501 }
-			size = { width=100%% height=100%% }
-			verticalScrollbar = "right_vertical_slider"
-			scroll_wheel_factor = 40
-			smooth_scrolling = yes
-			margin = { top = 14 bottom = 13}
+		position = { x = 0 y = 501 }
+		size = { width=100%% height=100%% }
+		verticalScrollbar = "right_vertical_slider"
+		scroll_wheel_factor = 40
+		smooth_scrolling = yes
+		margin = { top = 14 bottom = 13}
 		
-			background = {
-				name = "Background"
-				#quadTextureSprite ="GFX_tiled_window_2b_border"
-				#quadTextureSprite ="GFX_tiled_window_1b_border"
-				quadTextureSprite ="GFX_tiled_window_1b_border"
-			}
+		background = {
+			name = "Background"
+			#quadTextureSprite ="GFX_tiled_window_2b_border"
+			#quadTextureSprite ="GFX_tiled_window_1b_border"
+			quadTextureSprite ="GFX_tiled_window_1b_border"
+		}
 			
+
+        instantTextBoxType = {
+            name      = "well_being_text"
+            position  = { x = 6 y = 16 }
+            font      = "hoi_18mbs"
+            text      = "well_being_text"
+            format    = center
+
+			maxWidth = 300
+
+            fixedsize = yes
+
+            pdx_tooltip = "well_being_text"
+            pdx_tooltip_delayed = "well_being_text"
+        }
 		iconType = {
 			name = "well_being_bar_background"
-			spriteType = "GFX_Minsk_negotations_progress_bar_background"
-			position = { x = 50 y = 75 }
+			spriteType = "GFX_DF_progress_bar_background"
+			position = { x = 50 y = 45 }
 		}
+        instantTextBoxType = {
+            name      = "financial_sector_text"
+            position  = { x = 6 y = 116 }
+            font      = "hoi_18mbs"
+            text      = "financial_sector_text"
+            format    = center
+
+			maxWidth = 300
+
+            fixedsize = yes
+
+            pdx_tooltip = "financial_sector_text"
+            pdx_tooltip_delayed = "financial_sector_text"
+        }
 		iconType = {
 			name = "financial_sector_bar_background"
-			spriteType = "GFX_Minsk_negotations_progress_bar_background"
-			position = { x = 50 y = 155 }
+			spriteType = "GFX_DF_progress_bar_background"
+			position = { x = 50 y = 145 }
 		}
+        instantTextBoxType = {
+            name      = "technological_development_text"
+            position  = { x = 6 y = 216 }
+            font      = "hoi_18mbs"
+            text      = "technological_development_text"
+            format    = center
+
+			maxWidth = 300
+
+            fixedsize = yes
+
+            pdx_tooltip = "technological_development_text"
+            pdx_tooltip_delayed = "technological_development_text"
+        }
 		iconType = {	
 			name = "technological_development_bar_background"
-			spriteType = "GFX_Minsk_negotations_progress_bar_background"
-			position = { x = 50 y = 215 }
+			spriteType = "GFX_DF_progress_bar_background"
+			position = { x = 50 y = 245 }
 		}
+        instantTextBoxType = {
+            name      = "healthcare_text"
+            position  = { x = 6 y = 316 }
+            font      = "hoi_18mbs"
+            text      = "healthcare_text"
+            format    = center
+
+			maxWidth = 300
+
+            fixedsize = yes
+
+            pdx_tooltip = "healthcare_text"
+            pdx_tooltip_delayed = "healthcare_text"
+        }
 		iconType = {	
 			name = "healthcare_bar_background"
-			spriteType = "GFX_Minsk_negotations_progress_bar_background"
-			position = { x = 50 y = 265 }
+			spriteType = "GFX_DF_progress_bar_background"
+			position = { x = 50 y = 345 }
 		}	
+        instantTextBoxType = {
+            name      = "industrial_development_text"
+            position  = { x = 6 y = 416 }
+            font      = "hoi_18mbs"
+            text      = "industrial_development_text"
+            format    = center
+
+			maxWidth = 300
+
+            fixedsize = yes
+
+            pdx_tooltip = "industrial_development_text"
+            pdx_tooltip_delayed = "industrial_development_text"
+        }
 		iconType = {	
 			name = "industrial_development_bar_background"
-			spriteType = "GFX_Minsk_negotations_progress_bar_background"
-			position = { x = 50 y = 335 }
+			spriteType = "GFX_DF_progress_bar_background"
+			position = { x = 50 y = 445 }
 		}
+        instantTextBoxType = {
+            name      = "human_development_text"
+            position  = { x = 6 y = 516 }
+            font      = "hoi_18mbs"
+            text      = "human_development_text"
+            format    = center
+
+			maxWidth = 300
+
+            fixedsize = yes
+
+            pdx_tooltip = "human_development_text"
+            pdx_tooltip_delayed = "human_development_text"
+        }
 		iconType = {	
 			name = "human_development_bar_background"
-			spriteType = "GFX_Minsk_negotations_progress_bar_background"
-			position = { x = 50 y = 405 }
+			spriteType = "GFX_DF_progress_bar_background"
+			position = { x = 50 y = 545 }
 		}
+        instantTextBoxType = {
+            name      = "infrastructure_development_text"
+            position  = { x = 6 y = 616 }
+            font      = "hoi_18mbs"
+            text      = "infrastructure_development_text"
+            format    = center
+
+			maxWidth = 300
+
+            fixedsize = yes
+
+            pdx_tooltip = "infrastructure_development_text"
+            pdx_tooltip_delayed = "infrastructure_development_text"
+        }
 		iconType = {	
 			name = "infrastructure_development_bar_background"
-			spriteType = "GFX_Minsk_negotations_progress_bar_background"
-			position = { x = 50 y = 475 }
+			spriteType = "GFX_DF_progress_bar_background"
+			position = { x = 50 y = 645 }
 		}
+        instantTextBoxType = {
+            name      = "public_administration_text"
+            position  = { x = 6 y = 716 }
+            font      = "hoi_18mbs"
+            text      = "public_administration_text"
+            format    = center
+
+			maxWidth = 300
+
+            fixedsize = yes
+
+            pdx_tooltip = "public_administration_text"
+            pdx_tooltip_delayed = "public_administration_text"
+        }
 		iconType = {	
 			name = "public_administration_bar_background"
-			spriteType = "GFX_Minsk_negotations_progress_bar_background"
-			position = { x = 50 y = 525 }
-		}											
+			spriteType = "GFX_DF_progress_bar_background"
+			position = { x = 50 y = 745 }
+		}	
+		
+		#Population info
+
+		instantTextBoxType = {
+            name      = "population_info_title"
+            position  = { x = 572 y = 16 }
+            font      = "hoi_36header"
+            text      = "population_info_title"
+
+           	pdx_tooltip = "population_info_title"
+          	pdx_tooltip_delayed = "population_info_title"
+        }
+
+		instantTextBoxType = {
+            name      = "population_info"
+            position  = { x = 582 y = 56 }
+            font      = "hoi_18mbs"
+            text      = "population_info"
+
+           	pdx_tooltip = "population_info"
+        }
+
+		instantTextBoxType = {
+            name      = "birth_rate"
+            position  = { x = 582 y = 166 }
+            font      = "hoi_18mbs"
+            text      = "birth_rate"
+        }
+		
+		#Economic sectors
+
+		instantTextBoxType = {
+            name      = "economic_sectors_title"
+            position  = { x = 572 y = 216 }
+            font      = "hoi_36header"
+            text      = "economic_sectors_title"
+
+           	pdx_tooltip = "economic_sectors_title"
+        }
+
+		instantTextBoxType = {
+            name      = "economic_sectors"
+            position  = { x = 582 y = 246 }
+            font      = "hoi_18mbs"
+            text      = "economic_sectors"
+
+           	pdx_tooltip = "economic_sectors"
+        }		
 	}	
 
 

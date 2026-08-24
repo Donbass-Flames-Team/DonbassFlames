@@ -34,14 +34,24 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	set_variable = { business_activity = 65 } 
 
 	# Levels of development
-	set_variable = { level_of_the_financial_sector = 35 }
-	set_variable = { level_of_well_being = 35 }
-	set_variable = { level_of_technological_development = 35 }
-	set_variable = { level_of_healthcare = 35 }
-	set_variable = { level_of_industrial_development = 35 }
-	set_variable = { level_of_human_development = 35 }
+	set_variable = { level_of_the_financial_sector = 25 }
+	set_variable = { level_of_well_being = 20 }
+	set_variable = { level_of_technological_development = 25 }
+	set_variable = { level_of_healthcare = 30 }
+	set_variable = { level_of_industrial_development = 45 }
+	set_variable = { level_of_human_development = 20 }
 	set_variable = { level_of_infrastructure_development = 35 }
-    set_variable = { level_of_public_administration = 35 }
+    set_variable = { level_of_public_administration = 25 }
+
+    # Social levels
+	set_variable = { level_of_extremely_poor = 7 }
+	set_variable = { level_of_poor = 18 }
+	set_variable = { level_of_lower_middle_class = 31 } 
+	set_variable = { level_of_middle_class = 32 }	
+	set_variable = { level_of_rich_people = 12 }
+
+	set_variable = { birth_rate = 1.52 }
+
 
 
 	set_variable = { global.price_per_barrel = 110 }
