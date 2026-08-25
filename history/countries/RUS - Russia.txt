@@ -11,10 +11,19 @@ set_variable = { small_businesses = 356000 }
 set_variable = { individual_enterprises = 1350000 } 
 set_variable = { consumer_activity = 58 } 
 
-set_variable = { corruption_value = 60 } 
+set_variable = { corruption_value = 65 } 
 set_variable = { criminality_value = 20 }
 set_variable = { prestige_value = 90 } 
 
+# Levels of development
+set_variable = { level_of_the_financial_sector = 55 }
+set_variable = { level_of_well_being = 30 }
+set_variable = { level_of_technological_development = 35 }
+set_variable = { level_of_healthcare = 35 }
+set_variable = { level_of_industrial_development = 45 }
+set_variable = { level_of_human_development = 35 }
+set_variable = { level_of_infrastructure_development = 35 }
+set_variable = { level_of_public_administration = 45 }
 
 set_country_flag = open_start_gui
 add_to_variable = { JAM_ammo_stockpile = 1000 }
