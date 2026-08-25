@@ -10,7 +10,6 @@ set_variable = { sales_tax_rate = 20 }
 set_variable = { small_businesses = 356000 }
 set_variable = { individual_enterprises = 1350000 } 
 set_variable = { consumer_activity = 58 } 
-
 set_variable = { corruption_value = 65 } 
 set_variable = { criminality_value = 20 }
 set_variable = { prestige_value = 90 } 
@@ -106,7 +105,7 @@ set_convoys = 1074
     recruit_character = sergey_surovikin
     recruit_character = igor_turchenuk
     recruit_character = alexander_lapin
-	recruit_character = valelry_gerasimov
+	recruit_character = valery_gerasimov
 	recruit_character = viktor_bondarev
 
     add_opinion_modifier = {
