@@ -3496,7 +3496,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 3
 		x = 30
-		y = 10
+		y = 13
 		available = {}
 		allow_branch = {
 			has_country_flag = NATO_announced_preparations_for_war
@@ -3582,7 +3582,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
 		x = 30
-		y = 13
+		y = 16
 		prerequisite = {
 			focus = UKR_introduce_a_state_of_emergency
 		}
@@ -3624,7 +3624,7 @@ focus_tree = {
 		icon = GFX_focus_UKR_start_of_ato
 		cost = 1
 		x = 0
-		y = 1
+		y = 2
 		prerequisite = {
 			focus = UKR_battle_for_ukraine
 		}
@@ -4355,7 +4355,7 @@ focus_tree = {
 		id = UKR_new_foreign_policy
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 15
+		x = 16
 		y = 0
 		available = {
 			NOT = {
@@ -4921,7 +4921,7 @@ focus_tree = {
 		id = UKR_snap_parlamient_elections
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 3
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = UKR_snap_presidential_elections
@@ -5248,18 +5248,44 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = UKR_reform_ukraine
+		icon = GFX_goal_no_focus_UKR
+		cost = 0.3
+		x = 44
+		y = 8
+		available = {
+			has_country_flag = Focuses_after_Ato
+		}
+		allow_branch = {
+			if = {
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = SHOW
+						}
+					}
+				}
+				has_country_flag = Focuses_after_Ato
+			}
+			NOT = {
+				has_global_flag = Ukraine_suffered_heavy_defeat_after_ato
+			}
+		}
+
+		available = {}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 		id = UKR_economic_reforms
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 9
+		x = -10
 		y = 1
-		prerequisite = {
-			focus = UKR_poroshenko_victory
-			focus = UKR_timoshenko_victory
-			focus = UKR_oleg_lyashko_victory
-			focus = UKR_zelensky
-		}
-		relative_position_id = UKR_poroshenko_victory
+		prerequisite = { focus = UKR_reform_ukraine }
+		relative_position_id = UKR_reform_ukraine
 		available = {
 			NOT = {
 				has_country_flag = Elections2014InProgress
@@ -5417,16 +5443,11 @@ focus_tree = {
 	focus = {
 		id = UKR_anticorruption_reforms
 		icon = GFX_goal_no_focus_UKR
-		cost = 3
-		x = 22
+		cost = 1
+		x = 3
 		y = 1
-		prerequisite = {
-			focus = UKR_poroshenko_victory
-			focus = UKR_timoshenko_victory
-			focus = UKR_oleg_lyashko_victory
-			focus = UKR_zelensky
-		}
-		relative_position_id = UKR_poroshenko_victory
+        prerequisite = { focus = UKR_reform_ukraine }
+		relative_position_id = UKR_reform_ukraine
 		available = {
 			has_completed_focus = UKR_amend_the_law_on_joint_stock_companies
 		}
@@ -5730,16 +5751,11 @@ focus_tree = {
 	focus = {
 		id = UKR_decentralization
 		icon = GFX_goal_no_focus_UKR
-		cost = 2
-		x = 16
+		cost = 1
+		x = -3
 		y = 1
-		prerequisite = {
-			focus = UKR_poroshenko_victory
-			focus = UKR_timoshenko_victory
-			focus = UKR_oleg_lyashko_victory
-			focus = UKR_zelensky
-		}
-		relative_position_id = UKR_poroshenko_victory
+		prerequisite = { focus = UKR_reform_ukraine }
+		relative_position_id = UKR_reform_ukraine
 		available = {}
 		completion_reward = {
 			add_political_power = 25
@@ -5807,15 +5823,10 @@ focus_tree = {
 		id = UKR_deoligarhization
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 26
+		x = 7
 		y = 1
-		prerequisite = {
-			focus = UKR_poroshenko_victory
-			focus = UKR_timoshenko_victory
-			focus = UKR_oleg_lyashko_victory
-			focus = UKR_zelensky
-		}
-		relative_position_id = UKR_poroshenko_victory
+        prerequisite = { focus = UKR_reform_ukraine }
+		relative_position_id = UKR_reform_ukraine
 		available = {}
 		completion_reward = {
 			add_political_power = 25
@@ -5907,15 +5918,10 @@ focus_tree = {
 		id = UKR_decomunization
 		icon = GFX_goal_no_focus_UKR
 		cost = 3
-		x = 31
+		x = 13
 		y = 1
-		prerequisite = {
-			focus = UKR_poroshenko_victory
-			focus = UKR_timoshenko_victory
-			focus = UKR_oleg_lyashko_victory
-			focus = UKR_zelensky
-		}
-		relative_position_id = UKR_poroshenko_victory
+        prerequisite = { focus = UKR_reform_ukraine }
+		relative_position_id = UKR_reform_ukraine
 		completion_reward = {
 			add_popularity = {
 				ideology = communism
@@ -6400,7 +6406,7 @@ focus_tree = {
 		id = UKR_timoshenko_victory
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 27
+		x = 15
 		y = 1
 		prerequisite = {
 			focus = UKR_snap_presidential_elections
@@ -6422,7 +6428,7 @@ focus_tree = {
 		id = UKR_oleg_lyashko_victory
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 30
+		x = 6
 		y = 1
 		prerequisite = {
 			focus = UKR_snap_presidential_elections
@@ -6441,10 +6447,292 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = UKR_patriotic_war
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = UKR_oleg_lyashko_victory
+		}
+		relative_position_id = UKR_oleg_lyashko_victory
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = UKR_stabilization_of_donbass
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = UKR_patriotic_war
+		}
+		relative_position_id = UKR_patriotic_war
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = UKR_form_people_militia
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = UKR_stabilization_of_donbass
+		}
+		relative_position_id = UKR_patriotic_war
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+
+		}
+	}		
+	focus = {
+		id = UKR_erasure_of_moscals
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = UKR_patriotic_war
+		}
+		relative_position_id = UKR_patriotic_war
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = UKR_operations_of_sbu
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = UKR_erasure_of_moscals
+		}
+		relative_position_id = UKR_patriotic_war
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = UKR_wipe_ot_minsk_agreements
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = UKR_operations_of_sbu
+		}
+		prerequisite = {
+			focus = UKR_form_people_militia
+		}		
+		relative_position_id = UKR_patriotic_war
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = UKR_national_economy
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = UKR_oleg_lyashko_victory
+		}
+		relative_position_id = UKR_oleg_lyashko_victory
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = UKR_encouraging_small_businesses
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = UKR_national_economy
+		}
+		relative_position_id = UKR_national_economy
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+
+		}
+	}	
+	focus = {
+		id = UKR_if_there_no_village_there_will_be_no_ukraine
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = UKR_encouraging_small_businesses
+		}
+		relative_position_id = UKR_national_economy
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = UKR_full_economic_independent_from_russia
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = UKR_national_economy
+		}
+		relative_position_id = UKR_national_economy
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+
+		}
+	}	
+	focus = {
+		id = UKR_search_for_new_partners
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = UKR_full_economic_independent_from_russia
+		}
+		relative_position_id = UKR_national_economy
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = UKR_social_independent_economy
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = UKR_if_there_no_village_there_will_be_no_ukraine
+		}
+		prerequisite = {
+			focus = UKR_search_for_new_partners
+		}		
+		relative_position_id = UKR_national_economy
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
 		id = UKR_military_reforms_afu
 		icon = GFX_focus_UKR_afu_reforms
 		cost = 3
-		x = 84
+		x = 77
 		y = 0
 		available = {
 			has_country_flag = Focuses_after_Ato
