@@ -6509,7 +6509,118 @@ country_event = {
     #}
 }
 
+#Отставка министра экономики 3 февраля 2016
+country_event = {
+    id = ukraine.177
+    title = ukraine.177.t
+    desc = ukraine.177.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
 
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.178
+				days = 12
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.177.a
+        add_political_power = -45
+    }
+}
+
+#Вотум недоверия правительству 
+country_event = {
+    id = ukraine.178
+    title = ukraine.178.t
+    desc = ukraine.178.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.179
+				days = 2
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.178.a
+        add_political_power = -25
+    }
+}
+
+#Развал коалиции
+country_event = {
+    id = ukraine.179
+    title = ukraine.179.t
+    desc = ukraine.179.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.179.a
+        add_political_power = -25
+    }
+}
+
+#Отставка яценюка
+country_event = {
+    id = ukraine.180
+    title = ukraine.180.t
+    desc = ukraine.180.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id =  ukraine.181
+				days = 3
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.180.a
+        add_political_power = -25
+    }
+}
+
+#Новый премьер
+country_event = {
+    id = ukraine.181
+    title = ukraine.181.t
+    desc = ukraine.181.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = Resignation_of_yatsenuk_happened
+		}
+	}
+    # Владимир Гройсман
+    option = {
+        name = ukraine.181.a
+
+    }
+    # Наталья Яресько
+    option = {
+        name = ukraine.181.b
+       
+    }	
+}
 
 
 ##########################################################################

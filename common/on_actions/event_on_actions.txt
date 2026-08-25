@@ -245,6 +245,17 @@ on_actions = {
 				set_country_flag = UKR_17_th_summit_eu_ukr
 				country_event = { id = ukraine.161 }
 			}
+			if = {
+				limit = {
+					tag = UKR
+					date > 2016.2.2
+                    
+					NOT = { has_global_flag = Ukraine_suffered_heavy_defeat_after_ato }
+					NOT = { has_country_flag = UKR_resignation_of_enegry_minister_2016 }
+				}
+				set_country_flag = UKR_resignation_of_enegry_minister_2016
+				country_event = { id = ukraine.177 }
+			}
 			# 2014.7.3 Михаил куцин контужен(смена главкома)
 			if = {
 				limit = {
