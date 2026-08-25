@@ -652,63 +652,6 @@ technologies = {
 		}
 	}
 
-
-	civil_drones = {
-
-		research_speed_factor = 0.025
-
-		enable_equipments = {
-			drone_equipment_0
-		}
-		
-		path = {
-			leads_to_tech = introduction_of_drones
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1990
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1990 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	introduction_of_drones = {
-
-		enable_equipments = {
-			drone_equipment_1
-		}
-		
-		#path = {
-		#	leads_to_tech = atgl_weapons_2
-		#	research_cost_coeff = 1
-		#}
-
-		research_cost = 1.5
-		start_year = 2000
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @2000 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	atgl_weapons = {
 
 		enable_equipments = {
