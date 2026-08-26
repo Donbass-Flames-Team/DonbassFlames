@@ -217,12 +217,20 @@ guiTypes = {
             font      = "hoi_18mbs"
             text      = "birth_rate"
         }
-		
+
+		instantTextBoxType = {
+            name      = "population_fatigue"
+            position  = { x = 582 y = 191 }
+            font      = "hoi_18mbs"
+            text      = "population_fatigue"
+
+			pdx_tooltip = "population_fatigue_description"
+        }		
 		#Economic sectors
 
 		instantTextBoxType = {
             name      = "economic_sectors_title"
-            position  = { x = 572 y = 216 }
+            position  = { x = 572 y = 246 }
             font      = "hoi_36header"
             text      = "economic_sectors_title"
 
@@ -231,7 +239,7 @@ guiTypes = {
 
 		instantTextBoxType = {
             name      = "economic_sectors"
-            position  = { x = 582 y = 246 }
+            position  = { x = 582 y = 296 }
             font      = "hoi_18mbs"
             text      = "economic_sectors"
 
