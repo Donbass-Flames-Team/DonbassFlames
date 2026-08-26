@@ -496,11 +496,11 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = "GFX_focus_LPR_support_for_displaced_persons_shine"
-        texturefile = "gfx/interface/goals/LPR/LPR_support_for_displaced_persons.dds"
+        name = "GFX_focus_LPR_disarm_illegal_formations_shine"
+        texturefile = "gfx/interface/goals/LPR/LPR_disarm_illegal_formations.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/LPR/LPR_support_for_displaced_persons.dds"
+            animationmaskfile = "gfx/interface/goals/LPR/LPR_disarm_illegal_formations.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -512,7 +512,7 @@ spriteTypes = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
-            animationmaskfile = "gfx/interface/goals/LPR/LPR_support_for_displaced_persons.dds"
+            animationmaskfile = "gfx/interface/goals/LPR/LPR_disarm_illegal_formations.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
