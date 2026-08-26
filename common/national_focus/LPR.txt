@@ -13,7 +13,7 @@ focus_tree = {
 
 	focus = {
 		id = LPR_capture_SBU
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_capture_SBU
 		x = 12
 		y = 0
 		cost = 0
@@ -65,7 +65,7 @@ focus_tree = {
 
 	focus = {
 		id = LPR_create_coordination_center
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_create_coordination_center
 		x = 10
 		y = 1
 		cost = 0.5
@@ -95,7 +95,7 @@ focus_tree = {
 
 	focus = {
 		id = LPR_distribute_weapons
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_distribute_weapons
 		x = 14
 		y = 1
 		cost = 0.5
@@ -129,7 +129,7 @@ focus_tree = {
 
 	focus = {
 		id = LPR_set_checkpoints
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_set_checkpoints
 		x = 15
 		y = 2
 		cost = 0.3
@@ -157,7 +157,7 @@ focus_tree = {
 
 	focus = {
 		id = LPR_peoples_druzhina
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_peoples_druzhina
 		x = 14
 		y = 3
 		cost = 0.3
@@ -183,7 +183,7 @@ focus_tree = {
 
 	focus = {
 		id = LPR_luhansk_castle
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_luhansk_castle
 		x = 9
 		y = 2
 		cost = 0.3
@@ -312,7 +312,7 @@ focus_tree = {
 
 	focus = {
 		id = LPR_vehicle_confiscation
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_vehicle_confiscation
 		x = 13
 		y = 2
 		cost = 0.3
@@ -342,7 +342,7 @@ focus_tree = {
 
 	focus = {
 		id = LPR_act_on_sovereignty
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_act_on_sovereignty
 		x = 11
 		y = 2
 		cost = 0.2
@@ -393,7 +393,7 @@ focus_tree = {
 
 	focus = {
 		id = LPR_resource_mobilization
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_resource_mobilization
 		x = 10
 		y = 3
 		cost = 0.5
@@ -448,7 +448,7 @@ focus_tree = {
 
 	focus = {
 		id = LPR_Introduction_of_a_state_emergency
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_Introduction_of_a_state_emergency
 		x = 0
 		y = 1
 		cost = 0.3
@@ -510,7 +510,7 @@ focus_tree = {
 
 	focus = {
 		id = LPR_republic_of_bolotov
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_republic_of_bolotov
 		x = 0
 		y = 1
 		cost = 0.3
@@ -537,8 +537,8 @@ focus_tree = {
 
 	focus = {
 		id = LPR_seek_recognition
-		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 1
+		icon = GFX_focus_LPR_seek_recognition
+		x = 2
 		y = 1
 		cost = 1
 		relative_position_id = LPR_Introduction_of_a_state_emergency
@@ -563,13 +563,12 @@ focus_tree = {
 
 	focus = {
 		id = LPR_strengthen_mobilization
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_strengthen_mobilization
 		x = 0
-		y = 2
+		y = 1
 		cost = 2
 		relative_position_id = LPR_Introduction_of_a_state_emergency
-		prerequisite = { focus = LPR_experts_from_russia_in_government }
-		prerequisite = { focus = LPR_seek_recognition }
+		prerequisite = { focus = LPR_Introduction_of_a_state_emergency }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -584,12 +583,14 @@ focus_tree = {
 
 	focus = {
 		id = LPR_republic_of_plotnicky
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_republic_of_plotnicky
 		x = 0
 		y = 3
 		cost = 2
 		relative_position_id = LPR_Introduction_of_a_state_emergency
 		prerequisite = { focus = LPR_strengthen_mobilization }
+		prerequisite = { focus = LPR_seek_recognition }
+		prerequisite = { focus = LPR_experts_from_russia_in_government }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -604,11 +605,11 @@ focus_tree = {
 	
 	focus = {
 		id = LPR_elections_2014
-		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = -1
-		y = 4
+		icon = GFX_focus_LPR_elections_2014
+		x = 0
+		y = 1
 		cost = 2
-		relative_position_id = LPR_Introduction_of_a_state_emergency
+		relative_position_id = LPR_republic_of_plotnicky
 		prerequisite = { focus = LPR_republic_of_plotnicky }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -625,8 +626,8 @@ focus_tree = {
 
 	focus = {
 		id = LPR_experts_from_russia_in_government
-		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = -1
+		icon = GFX_focus_LPR_experts_from_russia_in_government
+		x = -2
 		y = 1
 		cost = 0.3
 		relative_position_id = LPR_Introduction_of_a_state_emergency
@@ -1349,7 +1350,7 @@ focus_tree = {
 
 	focus = {
 		id = LPR_support_for_displaced_persons
-		icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_LPR_support_for_displaced_persons
 		x = 1
 		y = 1
 		cost = 2
@@ -1484,7 +1485,7 @@ focus_tree = {
 	focus = {
 		id = LPR_disarm_illegal_formations
 		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = 1
+		x = 2
 		y = 1
 		cost = 0
 		prerequisite = { focus = LPR_republic_of_plotnicky }
@@ -1502,13 +1503,12 @@ focus_tree = {
 
 	focus = {
 		id = LPR_fight_with_traitors
-		icon = GFX_focus_UKR_The_regime_is_under_threat
-		x = -1
+		icon = GFX_focus_LPR_fight_with_traitors
+		x = -2
 		y = 1
 		cost = 0
-		prerequisite = { focus = LPR_disarm_illegal_formations }
-		prerequisite = { focus = LPR_elections_2014 }
-		relative_position_id = LPR_disarm_illegal_formations
+		prerequisite = { focus = LPR_republic_of_plotnicky }
+		relative_position_id = LPR_republic_of_plotnicky
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
