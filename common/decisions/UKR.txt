@@ -3214,23 +3214,26 @@ UKR_ATO_decision = {
 		}
 		custom_cost_text = decision_cost_CP_15
 		complete_effect = {
-			set_country_flag = UKR_counteroffensive_in_kramatorsk_slavyansk
-			activate_mission = UKR_counter_offensive_in_kramatorsk_mission
-			291 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+			hidden_effect = {
+				set_country_flag = UKR_counteroffensive_in_kramatorsk_slavyansk
+				activate_mission = UKR_counter_offensive_in_kramatorsk_mission
+				291 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				318 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				327 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				337 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				359 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
 			}
-			318 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			327 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			337 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			359 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
+			custom_effect_tooltip = UKR_counter_offensive_in_slavyansk_kramatorsk_tt
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -3309,25 +3312,27 @@ UKR_ATO_decision = {
 		}
 		custom_cost_text = decision_cost_CP_15
 		complete_effect = {
-			258 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+			hidden_effect = {
+				258 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				237 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				207 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				233 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				223 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				213 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
 			}
-			237 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			207 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			233 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			223 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			213 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-
+			custom_effect_tooltip = UKR_counter_offensive_in_svatovo_tt
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -3364,25 +3369,27 @@ UKR_ATO_decision = {
 		}
 		custom_cost_text = decision_cost_CP_15
 		complete_effect = {
-			432 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+			hidden_effect = {
+				432 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				424 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				408 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				433 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				437 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				435 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
 			}
-			424 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			408 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			433 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			437 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			435 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-
+			custom_effect_tooltip = UKR_counter_offensive_in_donetsk_tt
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -3418,18 +3425,21 @@ UKR_ATO_decision = {
 		}
 		custom_cost_text = decision_cost_CP_15
 		complete_effect = {
-			388 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+			hidden_effect = {
+				388 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				395 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				573 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				353 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
 			}
-			395 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			573 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			353 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
+			custom_effect_tooltip = UKR_counter_offensive_in_krasnoarmeysk_tt
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -3462,27 +3472,30 @@ UKR_ATO_decision = {
 		}
 		custom_cost_text = decision_cost_CP_15
 		complete_effect = {
-			486 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+			hidden_effect = {
+				486 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				652 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				518 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				502 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				527 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				653 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				526 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
 			}
-			652 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			518 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			502 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			527 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			653 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			526 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
+			custom_effect_tooltip = UKR_counter_offensive_in_mariupol_tt
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -3520,24 +3533,27 @@ UKR_ATO_decision = {
 		}
 		custom_cost_text = decision_cost_CP_15
 		complete_effect = {
-			426 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+			hidden_effect = {
+				426 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				412 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				401 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				399 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				390 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				391 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
 			}
-			412 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			401 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			399 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			390 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			391 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
+			custom_effect_tooltip = UKR_counter_offensive_in_avdiivka_tt
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -3572,24 +3588,27 @@ UKR_ATO_decision = {
 		}
 		custom_cost_text = decision_cost_CP_15
 		complete_effect = {
-			421 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+			hidden_effect = {
+				421 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				441 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				446 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				468 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				264 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				465 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
 			}
-			441 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			446 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			468 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			264 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			465 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
+			custom_effect_tooltip = UKR_counter_offensive_in_kurahovo_tt
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -3624,30 +3643,33 @@ UKR_ATO_decision = {
 		}
 		custom_cost_text = decision_cost_CP_15
 		complete_effect = {
-			304 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+			hidden_effect = {
+				304 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				307 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				297 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				269 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				285 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				259 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				305 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
+				271 = {
+					add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
+				}
 			}
-			307 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			297 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			269 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			285 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			259 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			305 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
-			271 = {
-				add_dynamic_modifier = { modifier = counter_offensive_ukraine_dynamic_idea scope = UKR days = 25 }
-			}
+			custom_effect_tooltip = UKR_counter_offensive_in_severodonetsk_lisichansk_tt
 		}
 		highlight_states = {
 			highlight_state_targets = {
