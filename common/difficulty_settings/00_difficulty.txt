@@ -71,4 +71,16 @@ difficulty_settings = {
 		countries = { ADY CRT GAG VOJ WAL ZPR }
 		multiplier = 2.0
 	}
+	difficulty_setting = {
+		key = "strong_west"
+		modifier = diff_strong_ai_generic
+		countries = { UKR AZV POL ROM SLO }
+		multiplier = 2.0
+	}
+	difficulty_setting = {
+		key = "strong_east"
+		modifier = diff_strong_ai_generic
+		countries = { RUS BLR LPR DPR NDR SDR TMR OPR KPR SKR BPR HPR ZPR DRR DKR SLR SDR WGN NPR}
+		multiplier = 2.0
+	}
 }
