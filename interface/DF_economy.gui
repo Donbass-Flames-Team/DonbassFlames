@@ -472,6 +472,13 @@ guiTypes = {
 			#pdx_tooltip_delayed = cental_bank_tt2
 		}
 
+		iconType = {
+			name = "DF_economy_help_button"
+			spriteType = "GFX_DF_question_button"
+			position = { x = 729 y = 13 }
+			pdx_tooltip = "DF_economy_help_button"
+		}
+
 		instantTextBoxType = {
 			name = "income_tax_precentage"
 			position = { x = 657 y = 45 }
@@ -689,6 +696,16 @@ guiTypes = {
 			scale = 0.5
 			#tooltip = cental_bank_tt
 			#pdx_tooltip_delayed = cental_bank_tt2
+		}
+
+		buttonType = {
+			name = "emission_button"
+			spriteType = "GFX_minus_button_decrease_DF"
+			position = { x = 745 y = 400 }
+			clicksound = click_close
+			scale = 0.5
+			pdx_tooltip = emission_button_tt
+			pdx_tooltip_delayed = emission_button_tt2
 		}
 
 		instantTextBoxType = {
