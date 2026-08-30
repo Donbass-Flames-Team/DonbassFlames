@@ -6426,7 +6426,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_oleg_lyashko_victory
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_oleg_lyashko_victory
 		cost = 1
 		x = 6
 		y = 1
@@ -6448,7 +6448,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_patriotic_war
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_patriotic_war
 		cost = 2
 		x = 3
 		y = 1
@@ -6471,7 +6471,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_stabilization_of_donbass
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_stabilization_of_donbass
 		cost = 2
 		x = 1
 		y = 1
@@ -6517,7 +6517,7 @@ focus_tree = {
 	}		
 	focus = {
 		id = UKR_erasure_of_moscals
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_erasure_of_moscals
 		cost = 2
 		x = -1
 		y = 1
@@ -6589,7 +6589,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_national_economy
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_national_economy
 		cost = 2
 		x = -3
 		y = 1
@@ -6612,7 +6612,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_encouraging_small_businesses
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_encouraging_small_businesses
 		cost = 2
 		x = -1
 		y = 1
@@ -6658,7 +6658,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_full_economic_independent_from_russia
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_full_economic_independent_from_russia
 		cost = 2
 		x = 1
 		y = 1
@@ -6681,7 +6681,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = UKR_search_for_new_partners
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_search_for_new_partners
 		cost = 2
 		x = 1
 		y = 2
@@ -6722,7 +6722,98 @@ focus_tree = {
 			has_country_leader = {
 	            character = UKR_oleg_lyashko
 	            ruling_only = yes
-            }
+			}
+		}
+	}	
+	focus = {
+		id = UKR_closing_of_russian_schools
+		icon = GFX_focus_UKR_closing_of_russian_schools
+		cost = 2
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = UKR_oleg_lyashko_victory
+		}
+		relative_position_id = UKR_oleg_lyashko_victory
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+		}
+		completion_reward = {
+		}
+		}
+	}
+	focus = {
+		id = UKR_economic_investitions_of_EU
+		icon = GFX_focus_UKR_economic_investitions_of_EU
+		cost = 2
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = UKR_closing_of_russian_schools
+		}
+		relative_position_id = UKR_oleg_lyashko_victory
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+		}
+		completion_reward = {
+		}
+		}
+	}
+	focus = {
+		id = UKR_corruption_on_stwills
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = UKR_economic_investitions_of_EU
+		}
+		relative_position_id = UKR_oleg_lyashko_victory
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
+		}
+		completion_reward = {
+		}
+		}
+	}
+    focus = {
+		id = UKR_dont_step_back
+		icon = GFX_goal_no_focus_UKR
+		cost = 2
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = UKR_social_independent_economy
+		}
+		prerequisite = {
+			focus = UKR_corruption_on_stwills
+		}
+		prerequisite = {
+			focus = UKR_wipe_ot_minsk_agreements
+		}
+		relative_position_id = UKR_oleg_lyashko_victory
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+			}
+			has_country_leader = {
+	            character = UKR_oleg_lyashko
+	            ruling_only = yes
 		}
 		completion_reward = {
 
