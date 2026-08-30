@@ -796,32 +796,58 @@ guiTypes = {
 				orientation = center_up
 				origo = center_up
 
-				instantTextBoxType = {
-					name = "armour_subtitle_medium"
-					position = { x = 557 y = -95 } 
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_MEDIUM"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
+			instantTextBoxType = {
+				name = "armour_subtitle_bmp"
+				position = { x = 460 y = -50 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = { x = 0 y = 4 }
+				text = "ARMOUR_TITLE_BMP"
+				maxWidth = 200
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+		}
 
-				instantTextBoxType = {
-					name = "armour_subtitle_light"
-					position = { x = -629 y = -95  }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_LIGHT"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
-			}
+			instantTextBoxType = {
+				name = "armour_subtitle_bmd"
+				position = { x = 750 y = -50 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = { x = 0 y = 4 }
+				text = "ARMOUR_TITLE_BMD"
+				maxWidth = 200
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+		}
+
+			instantTextBoxType = {
+				name = "armour_subtitle_obt"
+				position = { x = -225 y = -50 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = { x = 0 y = 4 }
+				text = "ARMOUR_TITLE_OBT"
+				maxWidth = 200
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+		}
+
+			instantTextBoxType = {
+				name = "armour_subtitle_apc"
+				position = { x = 100 y = -50 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = { x = 0 y = 4 }
+				text = "ARMOUR_TITLE_APC"
+				maxWidth = 200
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+		}
+}
 
 			gridboxtype = {
 				name = "modern_tank_1_tree"
