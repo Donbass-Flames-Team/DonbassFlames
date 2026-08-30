@@ -2234,11 +2234,12 @@ news_event = {
 			}
 		}
 	}
+}
 news_event = {
 	id = news_events.58
 	title = news_events.58.t
 	desc = news_events.58.d
-	picture = GFX_eu_association_with_ukraine
+	picture = GFX_vladlen_tatar
 
 	major = yes
 	is_triggered_only = yes
