@@ -6725,27 +6725,29 @@ focus_tree = {
 			}
 		}
 	}	
-	focus = {
-		id = UKR_closing_of_russian_schools
-		icon = GFX_focus_UKR_closing_of_russian_schools
-		cost = 2
-		x = 0
-		y = 2
-		prerequisite = {
-			focus = UKR_oleg_lyashko_victory
-		}
-		relative_position_id = UKR_oleg_lyashko_victory
-		available = {
-			NOT = {
-				has_country_flag = Elections2014InProgress
-			}
-			has_country_leader = {
-	            character = UKR_oleg_lyashko
-	            ruling_only = yes
-		}
-		completion_reward = {
-		}
-		}
+    focus = {
+	    id = UKR_closing_of_russian_schools
+	    icon = GFX_focus_UKR_closing_of_russian_schools
+	    cost = 2
+	    x = 0
+	    y = 2
+	    prerequisite = {
+		    focus = UKR_oleg_lyashko_victory
+	    }
+	    relative_position_id = UKR_oleg_lyashko_victory
+	    available = {
+		    NOT = {
+			    has_country_flag = Elections2014InProgress
+		    }
+		    has_country_leader = {
+			    character = UKR_oleg_lyashko
+			    ruling_only = yes
+		    }
+	completion_reward = { 
+		add_political_power = 100
+		add_stability = -0.1
+	    }
+    }
 	}
 	focus = {
 		id = UKR_economic_investitions_of_EU
