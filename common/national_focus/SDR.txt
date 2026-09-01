@@ -8,551 +8,1328 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 2500 y = 500 }
-
+	continuous_focus_position = {
+		x = 2500
+		y = 500
+	}
 	focus = {
 		id = SDR_capture_city_council
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.1
-		x = 12
-		y = 0
-
-		available = {
-			
-		}
-
+		x = 11
+		y = -1
+		available = {}
 		completion_reward = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			add_political_power = 35
 			load_oob = SDR_mariupol_militia
 		}
-}
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+	}
 	focus = {
 		id = SDR_capture_mvd
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.1
 		x = 0
-		y = 1
-		prerequisite = {focus = SDR_capture_city_council}
+		y = 3
 		relative_position_id = SDR_capture_city_council
-
-		available = {
-			
-		}
-
+		available = {}
 		completion_reward = {
-			add_equipment_to_stockpile = { 
-				type = infantry_equipment_1 
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
 				amount = 200
 			}
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = bulletproof_vests_equipment_1
 				amount = 50
 			}
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = uniform_equipment_3
 				amount = 250
 			}
-			add_equipment_to_stockpile = { 
-				type = support_equipment 
+			add_equipment_to_stockpile = {
+				type = support_equipment
 				amount = 20
 			}
 			add_to_variable = {
 				JAM_ammo_stockpile = 20
 			}
 		}
+		prerequisite = {
+			focus = SDR_supress_pro_ukr_residents
+		}
+		prerequisite = {
+			focus = SDR_prepare_the_victory_day_march
+		}
+		prerequisite = {
+			focus = SDR_popularize_the_idea_of_the_republic
+		}
+		icon = GFX_focus_SDR_capture_mvd
 	}
 	focus = {
 		id = SDR_build_barricades
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.1
-		x = 0
-		y = 2
-		prerequisite = {focus = SDR_capture_mvd}
+		x = 10
+		y = 6
 		relative_position_id = SDR_capture_city_council
-
-		available = {
-			
-		}
+		available = {}
 		completion_reward = {
-				if = {
-					limit = {
-						SDR = {
-							controls_province = 16487	   
-						}
-					}
-					526 = {
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 16487  
-							instant_build = yes	 
-						}
+			if = {
+				limit = {
+					SDR = {
+						controls_province = 16487
 					}
 				}
-				if = {
-					limit = {
-						SDR = {
-							controls_province = 18222	   
-						}
-					}
-					526 = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 18222  
-							instant_build = yes	 
-						}
+				526 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 16487
+						instant_build = yes
 					}
 				}
-				if = {
-					limit = {
-						SDR = {
-							controls_province = 18212	   
-						}
-					}
-					526 = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 18212  
-							instant_build = yes	 
-						}
+			}
+			if = {
+				limit = {
+					SDR = {
+						controls_province = 18222
 					}
 				}
-				if = {
-					limit = {
-						SDR = {
-							controls_province = 18221	   
-						}
-					}
-					526 = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 18221  
-							instant_build = yes	 
-						}
+				526 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 18222
+						instant_build = yes
 					}
 				}
-				if = {
-					limit = {
-						SDR = {
-							controls_province = 5830	   
-						}
-					}
-					526 = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 5830  
-							instant_build = yes	 
-						}
+			}
+			if = {
+				limit = {
+					SDR = {
+						controls_province = 18212
 					}
 				}
-				if = {
-					limit = {
-						SDR = {
-							controls_province = 18211	   
-						}
-					}
-					526 = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 18211  
-							instant_build = yes	 
-						}
+				526 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 18212
+						instant_build = yes
 					}
 				}
+			}
+			if = {
+				limit = {
+					SDR = {
+						controls_province = 18221
+					}
+				}
+				526 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 18221
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					SDR = {
+						controls_province = 5830
+					}
+				}
+				526 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 5830
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					SDR = {
+						controls_province = 18211
+					}
+				}
+				526 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 18211
+						instant_build = yes
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = SDR_ukraine_in_the_city
 		}
 	}
 	focus = {
 		id = SDR_capture_3057
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 0.1
-		x = 0
-		y = 3
-		prerequisite = {focus = SDR_build_barricades}
-		relative_position_id = SDR_capture_city_council
-
-		available = {
-			
-		}
-
-		completion_reward = {
-				random_list = {
-				50 = { country_event = { id = SDR.2 hours = 4 } }
-				50 = { country_event = { id = SDR.3 hours = 1 } }
-			}
-		}
-	}
-	focus = {
-		id = SDR_Azov
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
-		x = 1
+		x = -2
 		y = 4
-		prerequisite = {focus = SDR_capture_3057}
-		mutually_exclusive = { focus = SDR_Mariupol_fortress }
 		relative_position_id = SDR_capture_city_council
-
-		available = {
-			
-		}
-
+		available = {}
 		completion_reward = {
-				if = {
-					limit = {
-						SDR = {
-							controls_province = 18211	   
-						}
-					}
-					526 = {
-						add_building_construction = {
-							type = bunker
-							level = 5
-							province = 18211  
-							instant_build = yes	 
-						}
+			random_list = {
+				50 = {
+					country_event = {
+						id = SDR.2
+						hours = 4
 					}
 				}
-				if = {
-					limit = {
-						SDR = {
-							controls_province = 16487	   
-						}
-					}
-					526 = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 16487  
-							instant_build = yes	 
-						}
-					}
-				}
-				if = {
-					limit = {
-						SDR = {
-							controls_province = 18222	   
-						}
-					}
-					526 = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 18222  
-							instant_build = yes	 
-						}
-					}
-				}
-				if = {
-					limit = {
-						SDR = {
-							controls_province = 18212	   
-						}
-					}
-					526 = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = 18212  
-							instant_build = yes	 
-						}
-					}
-				}
-				if = {
-					limit = {
-						SDR = {
-							controls_province = 16477	   
-						}
-					}
-					526 = {
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 16477  
-							instant_build = yes	 
-						}
-					}
-				}
-				if = {
-					limit = {
-						SDR = {
-							controls_province = 18213	   
-						}
-					}
-					526 = {
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 18213  
-							instant_build = yes	 
-						}
+				50 = {
+					country_event = {
+						id = SDR.3
+						hours = 1
 					}
 				}
 			}
+		}
+		prerequisite = {
+			focus = SDR_capture_mvd
+		}
+		icon = GFX_focus_AUS_raid_military_storages
 	}
-	focus = {
-		id = SDR_Mariupol_fortress
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
-		cost = 1
-		x = -1
-		y = 4
-		prerequisite = {focus = SDR_capture_3057}
-		mutually_exclusive = { focus = SDR_Azov }
-		relative_position_id = SDR_capture_city_council
-
-		available = {
-			
-		}
-
-		completion_reward = {
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 5830
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 5830
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 18221
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 18221
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 5816
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 5816
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 18220
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 18220
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 18525
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 18525
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 16487
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 16487
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 18222
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 18222
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 7692
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 7692
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 18224
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 18224
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 18524
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 18524
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 18218
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 18218
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 18211
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 18211
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 16477
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 16477
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 18216
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 18216
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				SDR = {
-					controls_province = 16470
-				}
-			}
-			526 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 16470
-					instant_build = yes
-				}
-			}
-		}
-	}
-}
 	focus = {
 		id = SDR_referendum
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
 		x = 0
-		y = 5
-		prerequisite = {focus = SDR_Mariupol_fortress}
-		prerequisite = {focus = SDR_Azov}
+		y = 6
 		relative_position_id = SDR_capture_city_council
-
-		available = {
-			
-		}
-
+		available = {}
 		completion_reward = {
-			country_event = { id = SDR.4 hours = 12 }
+			country_event = {
+				id = SDR.4
+				hours = 12
+			}
+		}
+		icon = GFX_focus_AFG_pashtunistan_referendum
+	}
+	focus = {
+		id = SDR_supress_pro_ukr_residents
+		icon = GFX_focus_SIA_crack_down_of_foreign_merchants
+		x = 11
+		y = 1
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_expand_the_mangust_group
+		}
+		prerequisite = {
+			focus = SDR_demonstrations_of_peoples_might
+		}
+	}
+	focus = {
+		id = SDR_prepare_the_victory_day_march
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		x = 13
+		y = 1
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_demonstrations_of_peoples_might
+		}
+	}
+	focus = {
+		id = SDR_expand_the_mangust_group
+		icon = GFX_focus_GER_expand_ss_security_duties
+		x = 10
+		y = 0
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_capture_city_council
+		}
+	}
+	focus = {
+		id = SDR_demonstrations_of_peoples_might
+		icon = GFX_focus_GER_the_peoples_victory
+		x = 12
+		y = 0
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_capture_city_council
+		}
+	}
+	focus = {
+		id = SDR_popularize_the_idea_of_the_republic
+		icon = GFX_focus_CZE_federative_republic
+		x = 9
+		y = 1
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_expand_the_mangust_group
+		}
+	}
+	focus = {
+		id = SDR_recruit_loyal_militia_officers
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+		x = 11
+		y = 3
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_capture_mvd
+		}
+	}
+	focus = {
+		id = SDR_establish_control_over_tv_tower
+		icon = GFX_goal_generic_radar
+		x = 15
+		y = 3
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_capture_mvd
+		}
+	}
+	focus = {
+		id = SDR_appoint_peoples_mayor
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+		x = 9
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_capture_3057
+		}
+	}
+	focus = {
+		id = SDR_formation_of_mariupol_execute_committee
+		icon = GFX_focus_CHI_registry_of_property
+		x = 11
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_referendum
+		}
+		prerequisite = {
+			focus = SDR_appoint_peoples_mayor
+		}
+		prerequisite = {
+			focus = SDR_we_made_it
+		}
+	}
+	focus = {
+		id = SDR_take_control_of_mtv_office
+		icon = GFX_focus_SWE_radiotjanst
+		x = 14
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_establish_control_over_tv_tower
+		}
+	}
+	focus = {
+		id = SDR_subjugate_priazovskii_rabochii
+		icon = GFX_focus_ARG_a_new_trading_partner
+		x = 16
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_establish_control_over_tv_tower
+		}
+	}
+	focus = {
+		id = SDR_reassign_0629
+		icon = GFX_focus_generic_radio_communication
+		x = 15
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_take_control_of_mtv_office
+		}
+		prerequisite = {
+			focus = SDR_subjugate_priazovskii_rabochii
+		}
+	}
+	focus = {
+		id = SDR_demonize_the_kyiv_junta
+		icon = GFX_focus_ARG_anti_american_propaganda
+		x = 14
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_reassign_0629
+		}
+	}
+	focus = {
+		id = SDR_spread_anti_ukrainian_narratives
+		icon = GFX_focus_ger_assassinate_mussolini
+		x = 16
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_reassign_0629
+		}
+	}
+	focus = {
+		id = SDR_jam_enemy_broadcasts
+		icon = GFX_focus_AFG_anti_malaria
+		x = 15
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_spread_anti_ukrainian_narratives
+		}
+		prerequisite = {
+			focus = SDR_demonize_the_kyiv_junta
+		}
+	}
+	focus = {
+		id = SDR_demand_subordination_of_industrial_plants
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 9
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_formation_of_mariupol_execute_committee
+		}
+	}
+	focus = {
+		id = SDR_confiscation_of_weapons_from_sbu_warehouses
+		icon = GFX_focus_JAP_army_weapons_administration_hq
+		x = 11
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_formation_of_mariupol_execute_committee
+		}
+	}
+	focus = {
+		id = SDR_organize_humanitarian_supplies
+		icon = GFX_focus_AFG_fruit_processing
+		x = 13
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_formation_of_mariupol_execute_committee
+		}
+	}
+	focus = {
+		id = SDR_take_control_of_banks
+		icon = GFX_focus_CHL_strengthen_the_central_bank
+		x = 10
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_confiscation_of_weapons_from_sbu_warehouses
+		}
+		prerequisite = {
+			focus = SDR_demand_subordination_of_industrial_plants
+		}
+	}
+	focus = {
+		id = SDR_nationalization_of_state_property
+		icon = GFX_focus_ARG_revive_the_colonial_plan
+		x = 12
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_confiscation_of_weapons_from_sbu_warehouses
+		}
+		prerequisite = {
+			focus = SDR_organize_humanitarian_supplies
+		}
+	}
+	focus = {
+		id = SDR_proclamation_of_priazovskaya_rebuplic
+		icon = GFX_focus_JAP_new_order_in_east_asia
+		x = 11
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_nationalization_of_state_property
+		}
+		prerequisite = {
+			focus = SDR_take_control_of_banks
+		}
+	}
+	focus = {
+		id = SDR_mine_the_approaches
+		icon = GFX_goal_unknown
+		x = 20
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_build_barricades
+		}
+	}
+	focus = {
+		id = SDR_turn_avenues_into_a_trap
+		icon = GFX_goal_unknown
+		x = 22
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_build_barricades
+		}
+	}
+	focus = {
+		id = SDR_confiscation_of_civilian_vehicles
+		icon = GFX_goal_unknown
+		x = 21
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_turn_avenues_into_a_trap
+		}
+		prerequisite = {
+			focus = SDR_mine_the_approaches
+		}
+	}
+	focus = {
+		id = SDR_arm_the_locals
+		icon = GFX_focus_GER_support_the_proletarian_uprising
+		x = 20
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_confiscation_of_civilian_vehicles
+		}
+	}
+	focus = {
+		id = SDR_occupy_positions_in_houses
+		icon = GFX_goal_unknown
+		x = 22
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_confiscation_of_civilian_vehicles
+		}
+	}
+	focus = {
+		id = SDR_organize_ambushes
+		icon = GFX_goal_unknown
+		x = 21
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_arm_the_locals
+		}
+		prerequisite = {
+			focus = SDR_occupy_positions_in_houses
+		}
+	}
+	focus = {
+		id = SDR_expand_our_influence_in_priazovie
+		icon = GFX_goal_unknown
+		x = 21
+		y = -1
+		cost = 10
+		completion_reward = {}
+	}
+	focus = {
+		id = SDR_call_to_novoazovsk
+		icon = GFX_goal_unknown
+		x = 20
+		y = 0
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_expand_our_influence_in_priazovie
+		}
+	}
+	focus = {
+		id = SDR_raise_mangush
+		icon = GFX_goal_unknown
+		x = 22
+		y = 0
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_expand_our_influence_in_priazovie
+		}
+	}
+	focus = {
+		id = SDR_reassign_checkpoints
+		icon = GFX_goal_unknown
+		x = 21
+		y = 1
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_raise_mangush
+		}
+		prerequisite = {
+			focus = SDR_call_to_novoazovsk
+		}
+	}
+	focus = {
+		id = SDR_loyalization_of_local_communities
+		icon = GFX_goal_unknown
+		x = 20
+		y = 2
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_reassign_checkpoints
+		}
+	}
+	focus = {
+		id = SDR_establish_logistics_with_russia
+		icon = GFX_goal_unknown
+		x = 22
+		y = 2
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_reassign_checkpoints
+		}
+	}
+	focus = {
+		id = SDR_ukraine_in_the_city
+		icon = GFX_goal_unknown
+		x = 21
+		y = 4
+		cost = 10
+		completion_reward = {}
+	}
+	reset_on_civilwar = no
+	initial_show_position = {
+		x = 11
+		y = -1
+	}
+	focus = {
+		id = SDR_question_of_power
+		icon = GFX_focus_AUS_pardon_political_exiles
+		x = 11
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_proclamation_of_priazovskaya_rebuplic
+		}
+	}
+	focus = {
+		id = SDR_station_on_the_left_bank
+		icon = GFX_focus_AST_under_the_rule_of_canberra
+		x = 10
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_question_of_power
+		}
+	}
+	focus = {
+		id = SDR_establishment_of_the_supreme_council
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 10
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_station_on_the_left_bank
+		}
+	}
+	focus = {
+		id = SDR_new_militia_headquarters
+		icon = GFX_focus_generic_advanced_military_studies
+		x = 12
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_question_of_power
+		}
+	}
+	focus = {
+		id = SDR_creation_of_the_priazovye_peoples_militia
+		icon = GFX_focus_AUS_properly_trained_militias
+		x = 12
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_new_militia_headquarters
+		}
+	}
+	focus = {
+		id = SDR_consolidation_of_sovereignty
+		icon = GFX_focus_HUN_the_kingdom_of_ukraine
+		x = 11
+		y = 13
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_creation_of_the_priazovye_peoples_militia
+		}
+		prerequisite = {
+			focus = SDR_establishment_of_the_supreme_council
+		}
+	}
+	focus = {
+		id = SDR_opening_of_army_depots
+		icon = GFX_goal_unknown
+		x = 7
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_manifesto_on_the_sovereignty_of_priazovye
+		}
+		prerequisite = {
+			focus = SDR_formation_of_self_defense_units
+		}
+	}
+	focus = {
+		id = SDR_appeal_to_commanders
+		icon = GFX_goal_unknown
+		x = 5
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_manifesto_on_the_sovereignty_of_priazovye
+		}
+		prerequisite = {
+			focus = SDR_formation_of_self_defense_units
+		}
+	}
+	focus = {
+		id = SDR_clearing_of_sbu_armories
+		icon = GFX_goal_unknown
+		x = 3
+		y = 7
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_formation_of_self_defense_units
+		}
+		prerequisite = {
+			focus = SDR_manifesto_on_the_sovereignty_of_priazovye
+		}
+	}
+	focus = {
+		id = SDR_formation_of_self_defense_units
+		icon = GFX_goal_unknown
+		x = 4
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_we_wont_give_up_so_easily
+		}
+	}
+	focus = {
+		id = SDR_manifesto_on_the_sovereignty_of_priazovye
+		icon = GFX_goal_unknown
+		x = 6
+		y = 6
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_we_wont_give_up_so_easily
+		}
+	}
+	focus = {
+		id = SDR_end_of_our_independence
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_prove_viability
+		}
+	}
+	focus = {
+		id = SDR_we_wont_give_up_so_easily
+		icon = GFX_goal_unknown
+		x = 5
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_prove_viability
+		}
+	}
+	focus = {
+		id = SDR_we_made_it
+		icon = GFX_goal_unknown
+		x = 7
+		y = 5
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_prove_viability
+		}
+	}
+	focus = {
+		id = SDR_prove_viability
+		icon = GFX_goal_unknown
+		x = 5
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_help_allies_with_resources
+		}
+		prerequisite = {
+			focus = SDR_hold_the_priazov_front
+		}
+		prerequisite = {
+			focus = SDR_purge_the_underground
+		}
+	}
+	focus = {
+		id = SDR_hold_the_priazov_front
+		icon = GFX_goal_unknown
+		x = 3
+		y = 3
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_donetsk_ultimatum
+		}
+	}
+	focus = {
+		id = SDR_help_allies_with_resources
+		icon = GFX_goal_unknown
+		x = 5
+		y = 3
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_donetsk_ultimatum
+		}
+	}
+	focus = {
+		id = SDR_purge_the_underground
+		icon = GFX_goal_unknown
+		x = 7
+		y = 3
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_donetsk_ultimatum
+		}
+	}
+	focus = {
+		id = SDR_donetsk_ultimatum
+		icon = GFX_goal_unknown
+		x = 5
+		y = 2
+		cost = 10
+		completion_reward = {}
+	}
+	focus = {
+		id = SDR_call_up_of_priazovye_militia
+		icon = GFX_goal_unknown
+		x = 5
+		y = 8
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_appeal_to_commanders
+		}
+		prerequisite = {
+			focus = SDR_clearing_of_sbu_armories
+		}
+		prerequisite = {
+			focus = SDR_opening_of_army_depots
+		}
+	}
+	focus = {
+		id = SDR_mariupol_volunteer_corps
+		icon = GFX_goal_unknown
+		x = 5
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_call_up_of_priazovye_militia
+		}
+	}
+	focus = {
+		id = SDR_formation_of_mangush_battalion
+		icon = GFX_goal_unknown
+		x = 4
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_mariupol_volunteer_corps
+		}
+	}
+	focus = {
+		id = SDR_call_up_of_volodarske_reservists
+		icon = GFX_goal_unknown
+		x = 4
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_formation_of_mangush_battalion
+		}
+	}
+	focus = {
+		id = SDR_mobilization_of_novoazovsk_district
+		icon = GFX_goal_unknown
+		x = 6
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_mariupol_volunteer_corps
+		}
+	}
+	focus = {
+		id = SDR_formation_of_telmanovo_brigade
+		icon = GFX_goal_unknown
+		x = 6
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_mobilization_of_novoazovsk_district
+		}
+	}
+	focus = {
+		id = SDR_as_a_united_priazov_front
+		icon = GFX_goal_unknown
+		x = 5
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_formation_of_telmanovo_brigade
+		}
+		prerequisite = {
+			focus = SDR_call_up_of_volodarske_reservists
+		}
+	}
+	focus = {
+		id = SDR_peace_at_last
+		icon = GFX_goal_unknown
+		x = 13
+		y = 15
+		cost = 10
+		completion_reward = {}
+	}
+	focus = {
+		id = SDR_return_mariupol_to_peaceful_life
+		icon = GFX_goal_unknown
+		x = 13
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_neutralize_the_consequences_of_war
+		}
+		prerequisite = {
+			focus = SDR_request_reconstruction_funds_from_russia
+		}
+		prerequisite = {
+			focus = SDR_establishment_of_order_in_the_republic
+		}
+		prerequisite = {
+			focus = SDR_start_replacing_road_signs
+		}
+	}
+	focus = {
+		id = SDR_establish_food_supplies
+		icon = GFX_goal_unknown
+		x = 13
+		y = 18
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_return_mariupol_to_peaceful_life
+		}
+	}
+	focus = {
+		id = SDR_revive_the_sea_port
+		icon = GFX_goal_unknown
+		x = 12
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_establish_food_supplies
+		}
+	}
+	focus = {
+		id = SDR_restore_the_airport
+		icon = GFX_goal_unknown
+		x = 14
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_establish_food_supplies
+		}
+	}
+	focus = {
+		id = SDR_ask_valerii_kogan_for_help
+		icon = GFX_goal_unknown
+		x = 13
+		y = 20
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_restore_the_airport
+		}
+		prerequisite = {
+			focus = SDR_revive_the_sea_port
+		}
+	}
+	focus = {
+		id = SDR_neutralize_the_consequences_of_war
+		icon = GFX_goal_unknown
+		x = 12
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_peace_at_last
+		}
+	}
+	focus = {
+		id = SDR_request_reconstruction_funds_from_russia
+		icon = GFX_goal_unknown
+		x = 14
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_peace_at_last
+		}
+	}
+	focus = {
+		id = SDR_disposal_of_azov_legacy
+		icon = GFX_goal_unknown
+		x = 10
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_dismantlement_of_past_traces
+		}
+	}
+	focus = {
+		id = SDR_question_of_yanukovich_residence
+		icon = GFX_goal_unknown
+		x = 8
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_dismantlement_of_past_traces
+		}
+	}
+	focus = {
+		id = SDR_dismantlement_of_past_traces
+		icon = GFX_goal_unknown
+		x = 9
+		y = 18
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_restore_the_west_of_the_republic
+		}
+	}
+	focus = {
+		id = SDR_convert_recreation_centers_for_military_use
+		icon = GFX_goal_unknown
+		x = 16
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_resort_heritage_of_priazovye
+		}
+		mutually_exclusive = {
+			focus = SDR_restore_boarding_houses
+		}
+	}
+	focus = {
+		id = SDR_restore_boarding_houses
+		icon = GFX_goal_unknown
+		x = 18
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_resort_heritage_of_priazovye
+		}
+		mutually_exclusive = {
+			focus = SDR_convert_recreation_centers_for_military_use
+		}
+	}
+	focus = {
+		id = SDR_expand_veselo_voznesenka
+		icon = GFX_goal_unknown
+		x = 20
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_resort_heritage_of_priazovye
+		}
+	}
+	focus = {
+		id = SDR_resort_heritage_of_priazovye
+		icon = GFX_goal_unknown
+		x = 18
+		y = 18
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_development_of_the_east_of_the_republic
+		}
+	}
+	focus = {
+		id = SDR_launch_novoazovsk_wind_farm
+		icon = GFX_goal_unknown
+		x = 23
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_restore_local_infrastructure
+		}
+	}
+	focus = {
+		id = SDR_return_granite_quarries_to_operation
+		icon = GFX_goal_unknown
+		x = 25
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_restore_local_infrastructure
+		}
+	}
+	focus = {
+		id = SDR_restore_local_infrastructure
+		icon = GFX_goal_unknown
+		x = 24
+		y = 18
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_development_of_the_east_of_the_republic
+		}
+	}
+	focus = {
+		id = SDR_development_of_the_east_of_the_republic
+		icon = GFX_goal_unknown
+		x = 21
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_start_replacing_road_signs
+		}
+		prerequisite = {
+			focus = SDR_request_reconstruction_funds_from_russia
+		}
+		prerequisite = {
+			focus = SDR_neutralize_the_consequences_of_war
+		}
+		prerequisite = {
+			focus = SDR_establishment_of_order_in_the_republic
+		}
+	}
+	focus = {
+		id = SDR_protection_of_belosaray_limans
+		icon = GFX_goal_unknown
+		x = 4
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_develop_tourism_in_the_pearl_of_the_republic
+		}
+	}
+	focus = {
+		id = SDR_develop_tourism_in_the_pearl_of_the_republic
+		icon = GFX_goal_unknown
+		x = 3
+		y = 18
+		cost = 10
+		completion_reward = {}
+	}
+	focus = {
+		id = SDR_greek_heritage_of_priazovye
+		icon = GFX_goal_unknown
+		x = 2
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_develop_tourism_in_the_pearl_of_the_republic
+		}
+	}
+	focus = {
+		id = SDR_autonomy_of_priazov_greeks
+		icon = GFX_goal_unknown
+		x = 5
+		y = 20
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_greek_heritage_of_priazovye
+		}
+		prerequisite = {
+			focus = SDR_investments_in_agricultural_sector
+		}
+		mutually_exclusive = {
+			focus = SDR_support_for_greek_diasporas
+		}
+	}
+	focus = {
+		id = SDR_support_for_greek_diasporas
+		icon = GFX_goal_unknown
+		x = 3
+		y = 20
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_greek_heritage_of_priazovye
+		}
+		prerequisite = {
+			focus = SDR_investments_in_agricultural_sector
+		}
+		mutually_exclusive = {
+			focus = SDR_autonomy_of_priazov_greeks
+		}
+	}
+	focus = {
+		id = SDR_support_for_entrepreneurship
+		icon = GFX_goal_unknown
+		x = 2
+		y = 21
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_support_for_greek_diasporas
+		}
+	}
+	focus = {
+		id = SDR_development_of_greek_settlements
+		icon = GFX_goal_unknown
+		x = 4
+		y = 21
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_support_for_greek_diasporas
+		}
+	}
+	focus = {
+		id = SDR_wines_of_priazovye
+		icon = GFX_goal_unknown
+		x = 0
+		y = 20
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_investments_in_agricultural_sector
+		}
+	}
+	focus = {
+		id = SDR_investments_in_agricultural_sector
+		icon = GFX_goal_unknown
+		x = 0
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_revive_agricultural_industry
+		}
+	}
+	focus = {
+		id = SDR_grain_export_of_the_republic
+		icon = GFX_goal_unknown
+		x = -2
+		y = 19
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_revive_agricultural_industry
+		}
+	}
+	focus = {
+		id = SDR_revive_agricultural_industry
+		icon = GFX_focus_ARG_capitalize_the_beef_industry
+		x = -1
+		y = 18
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_restore_the_west_of_the_republic
+		}
+	}
+	focus = {
+		id = SDR_restore_the_west_of_the_republic
+		icon = GFX_goal_unknown
+		x = 4
+		y = 17
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_establishment_of_order_in_the_republic
+		}
+		prerequisite = {
+			focus = SDR_neutralize_the_consequences_of_war
+		}
+		prerequisite = {
+			focus = SDR_request_reconstruction_funds_from_russia
+		}
+		prerequisite = {
+			focus = SDR_start_replacing_road_signs
+		}
+	}
+	focus = {
+		id = SDR_establishment_of_order_in_the_republic
+		icon = GFX_goal_unknown
+		x = 10
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_peace_at_last
+		}
+	}
+	focus = {
+		id = SDR_start_replacing_road_signs
+		icon = GFX_goal_unknown
+		x = 16
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SDR_peace_at_last
 		}
 	}
 }
