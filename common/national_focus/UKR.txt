@@ -6441,9 +6441,9 @@ focus_tree = {
 			has_country_flag = innextupdate
 		}
 		completion_reward = { 
-		add_political_power = 50
-		add_war_support = 0.25
-		add_stability = -0.05
+		    add_political_power = 50
+		    add_war_support = 0.25
+		    add_stability = -0.05
 		}
 	}
 	focus = {
@@ -6724,6 +6724,9 @@ focus_tree = {
 	            ruling_only = yes
 			}
 		}
+		completion_reward = {
+
+		}		
 	}	
     focus = {
 	    id = UKR_closing_of_russian_schools
@@ -6743,11 +6746,11 @@ focus_tree = {
 			    character = UKR_oleg_lyashko
 			    ruling_only = yes
 		    }
-	completion_reward = { 
-		add_political_power = 100
-		add_stability = -0.1
+		}
+	    completion_reward = { 
+		    add_political_power = 100
+		    add_stability = -0.1
 	    }
-    }
 	}
 	focus = {
 		id = UKR_economic_investitions_of_EU
@@ -6766,9 +6769,10 @@ focus_tree = {
 			has_country_leader = {
 	            character = UKR_oleg_lyashko
 	            ruling_only = yes
+		    }
 		}
 		completion_reward = {
-		}
+
 		}
 	}
 	focus = {
@@ -6788,9 +6792,10 @@ focus_tree = {
 			has_country_leader = {
 	            character = UKR_oleg_lyashko
 	            ruling_only = yes
+		    }
 		}
 		completion_reward = {
-		}
+
 		}
 	}
     focus = {
@@ -6816,6 +6821,7 @@ focus_tree = {
 			has_country_leader = {
 	            character = UKR_oleg_lyashko
 	            ruling_only = yes
+		    }
 		}
 		completion_reward = {
 
