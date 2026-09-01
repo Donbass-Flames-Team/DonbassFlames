@@ -272,8 +272,18 @@ on_actions = {
 				set_country_flag = UKR_mikhail_kutsin_is_wounded
 				country_event = { id = ukraine.164 }
 			}
-
-
+                        # Ляшко застрял в лифте
+			if = {
+				limit = {
+					date = 2016.2.5
+					tag = UKR
+					NOT = {
+						has_country_flag = lyashko_lift_event
+					}
+				}
+				set_country_flag = lyashko_lift_event
+				country_event = { id = ukraine.182 }
+			}
 		}
 	}
 }
