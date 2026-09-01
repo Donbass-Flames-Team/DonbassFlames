@@ -5481,9 +5481,9 @@ focus_tree = {
 		icon = GFX_focus_UKR_form_nabu
 		cost = 3
 		x = 0
-		y = 1
+		y = 2
 		prerequisite = {
-			focus = UKR_anticorruption_reforms
+			focus = UKR_judicial_reform
 		}
 		relative_position_id = UKR_anticorruption_reforms
 		available = {}
@@ -5504,9 +5504,9 @@ focus_tree = {
 		icon = GFX_goal_no_focus_UKR
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		prerequisite = {
-			focus = UKR_form_nabu
+			focus = UKR_anticorruption_reforms
 		}
 		relative_position_id = UKR_anticorruption_reforms
 		available = {}
@@ -5552,12 +5552,12 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_form_sap
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_form_sap
 		cost = 5
 		x = 2
 		y = 2
 		prerequisite = {
-			focus = UKR_form_nabu
+			focus = UKR_judicial_reform
 		}
 		relative_position_id = UKR_anticorruption_reforms
 		available = {}
@@ -5593,12 +5593,12 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_form_napk
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_form_napk
 		cost = 5
 		x = -2
 		y = 2
 		prerequisite = {
-			focus = UKR_form_nabu
+			focus = UKR_judicial_reform
 		}
 		relative_position_id = UKR_anticorruption_reforms
 		available = {}
