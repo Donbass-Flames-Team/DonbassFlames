@@ -334,8 +334,6 @@ NB: there are no load order constriction when using include. The included MIO ju
 - `fuel_consumption`
 - `build_cost_ic`
 - `resources`
-- `thrust` - only if you have BBA DLC
-- `weight` - only if you have BBA DLC
 - `maximum_speed`
 - `air_range`
 - `air_agility`
@@ -345,9 +343,6 @@ NB: there are no load order constriction when using include. The included MIO ju
 - `sub_detection`
 - `air_ground_attack`
 - `air_bombing`
-- `mines_planting` - if you have MtG and BBA
-- `mines_sweeping` - if you have MtG and BBA
-- `night_penalty` - only if you have BBA DLC (you need to have module because base value is 0 - radio navigatio
 
 
 

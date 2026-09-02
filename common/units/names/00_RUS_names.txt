@@ -96,7 +96,7 @@ RUS = {
 air_wing_names_template = AIR_WING_NAME_RUS_FALLBACK
 
 	#Air wings can only be named through archetype
-	small_plane_airframe = {
+	fighter_equipment = {
 		prefix = ""
 		generic = { "IAD" "IAD-PVO"}
 		generic_pattern = AIR_WING_NAME_RUS_GENERIC
@@ -104,7 +104,7 @@ air_wing_names_template = AIR_WING_NAME_RUS_FALLBACK
 		}
 	}
 
-	medium_plane_scout_plane_airframe = {
+	scout_plane_equipment = {
 		prefix = ""
 		generic = { "ORAP" "RAP"}
 		generic_pattern = AIR_WING_NAME_RUS_GENERIC
@@ -120,7 +120,7 @@ air_wing_names_template = AIR_WING_NAME_RUS_FALLBACK
 		}
 	}
 
-	medium_plane_fighter_airframe = {
+	heavy_fighter_equipment = {
 		prefix = ""
 		generic = { "IAD" "IAD-PVO"}
 		generic_pattern = AIR_WING_NAME_RUS_GENERIC
@@ -128,7 +128,7 @@ air_wing_names_template = AIR_WING_NAME_RUS_FALLBACK
 		}
 	}
 
-	small_plane_cas_airframe = {
+	CAS_equipment = {
 		prefix = ""
 		generic = { "ShAD" "NBAD" }
 		generic_pattern = AIR_WING_NAME_RUS_GENERIC
@@ -136,7 +136,7 @@ air_wing_names_template = AIR_WING_NAME_RUS_FALLBACK
 		}
 	}
 
-	cv_small_plane_airframe = {
+	cv_fighter_equipment = {
 		prefix = ""
 		generic = { "OKIAP" }
 		generic_pattern = AIR_WING_NAME_RUS_CARRIER
@@ -144,14 +144,14 @@ air_wing_names_template = AIR_WING_NAME_RUS_FALLBACK
 		}
 	}
 
-	cv_small_plane_cas_airframe = {
+	cv_CAS_equipment = {
 		prefix = ""
 		generic = { "OKShAP" }
 		generic_pattern = AIR_WING_NAME_RUS_CARRIER
 		unique = {
 		}
 	}
-	cv_small_plane_naval_bomber_airframe = {
+	cv_nav_bomber_equipment = {
 		prefix = ""
 		generic = { "OKMTAP" }
 		generic_pattern = AIR_WING_NAME_RUS_CARRIER
@@ -159,7 +159,7 @@ air_wing_names_template = AIR_WING_NAME_RUS_FALLBACK
 		}
 	}
 
-	medium_plane_airframe = {
+	tac_bomber_equipment = {
 		prefix = ""
 		generic = { "BAD" }
 		generic_pattern = AIR_WING_NAME_RUS_GENERIC
@@ -175,31 +175,22 @@ air_wing_names_template = AIR_WING_NAME_RUS_FALLBACK
 		}
 	}
 
-	small_plane_naval_bomber_airframe = {
+	nav_bomber_equipment = {
 		prefix = ""
-		generic = { "MBAD" "MTAD" }
+		generic = { "MBAD" "MTAD" "TBAD" "OPAD" "ODRAD" }
 		generic_pattern = AIR_WING_NAME_RUS_GENERIC
 		unique = {
 		}
 	}
 
-	large_plane_airframe = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "OTBAD" }
 		generic_pattern = AIR_WING_NAME_RUS_GENERIC
 		unique = {
 		}
 	}
-
-	large_plane_maritime_patrol_plane_airframe = {
-		prefix = ""
-		generic = { "TBAD" "OPAD" "ODRAD" }
-		generic_pattern = AIR_WING_NAME_RUS_GENERIC
-		unique = {
-		}
-	}
-
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "OTBAD" }
 		generic_pattern = AIR_WING_NAME_RUS_GENERIC
