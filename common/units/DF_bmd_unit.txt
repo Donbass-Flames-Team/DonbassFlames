@@ -45,30 +45,30 @@ sub_units = {
 		suppression = 2.0
 
 		forest = {
-			attack = -0.4
-			movement = -0.4
+			attack = -0.1
+			movement = -0.15
 		}
 		mountain = 	{
-			attack = -0.5
+			attack = -0.25
+			movement = -0.3
 		}
 		jungle = {
-			attack = -0.3
-			movement = -0.4
+			attack = -0.2
+			movement = -0.25
 		}
 		marsh = {
 			attack = -0.2 
-			movement = -0.2
+			movement = -0.25
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.15
 		}
 		river = { 
 			attack = -0.2 
 			movement = -0.2
 		}
 		amphibious = { 
-			attack = -0.4
+			attack = -0.3
 		}
 	}
 }
