@@ -1,7 +1,3 @@
-# options for map_icon_category:
-# For land units: infantry,armored,other
-# For sea units: ship,transport,uboat
-
 sub_units = {
 
 	infantry = {
@@ -52,12 +48,12 @@ sub_units = {
 			bulletproof_vests_equipment = 100	
 			support_equipment = 15
 			grenade_launcher_equipment = 10
-			bbm_chassis = 10
+			bbm = 10
 		}
 
 		plains = {
 			attack = -0.25
-			defence = -0.25
+			defence = -0.20
 		}
 		marsh = {
 			attack = -0.20
@@ -66,7 +62,7 @@ sub_units = {
 		}
 		urban = {
 			attack = 0.10
-			defence = 0.10
+			defence = 0.15
 			movement = 0.05
 		}
 		forest = {
@@ -206,7 +202,7 @@ sub_units = {
 			uniform_equipment = 100
 			support_equipment = 30
 			grenade_launcher_equipment = 15
-			bbm_chassis = 10
+			bbm = 10
 		}
 
 		marsh = {
@@ -327,7 +323,7 @@ sub_units = {
 			bulletproof_vests_equipment = 100
 			support_equipment = 30	
 			grenade_launcher_equipment = 10
-			bbm_chassis = 10
+			bbm = 10
 		}
 
 		hills = {
@@ -391,7 +387,7 @@ sub_units = {
 			bulletproof_vests_equipment = 100	
 			support_equipment = 35
 			grenade_launcher_equipment = 10
-			bbm_chassis = 10
+			bbm = 10
 			airborne_combat_vehicle = 15
 		}
 	}
@@ -630,10 +626,7 @@ sub_units = {
 		type = {
 			infantry
 		}
-		
-		#can_exfiltrate_from_coast = yes #Can this subunit board convoys from a non-port location. 
-		#Intended for use with special forces marine templates; all non-support subunits in the division must have this flag set to yes
-		
+	
 		group = infantry
 		
 		categories = {
@@ -646,13 +639,13 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 10
-		max_organisation = 90
+		max_strength = 25
+		max_organisation = 75
 		default_morale = 0.3
 		manpower = 50
 
 		#Misc Abilities
-		training_time = 50
+		training_time = 20
 		weight = 0.5
 		supply_consumption = 0.05
 		breakthrough = -0.35
@@ -663,7 +656,33 @@ sub_units = {
 			bulletproof_vests_equipment = 25
 			support_equipment = 4
 			grenade_launcher_equipment = 5
-			bbm_chassis = 2
+			bbm = 2
+		}
+		plains = {
+			attack = -0.30
+			defence = -0.25
+		}
+		marsh = {
+			attack = -0.25
+			defence = -0.25
+			movement = -0.25
+		}
+		urban = {
+			attack = 0.15
+			defence = 0.20
+			movement = 0.10
+		}
+		forest = {
+			movement = -0.15
+		}
+		fort = {
+			defence = 0.15
+			attack = 0.05
+		}
+		river = {
+			attack = -0.30
+			defence = -0.20
+			movement = -0.35
 		}
 	}
 
@@ -711,7 +730,7 @@ sub_units = {
 			uniform_equipment = 100
 			grenade_launcher_equipment = 10
 			support_equipment = 15
-			bbm_chassis = 10
+			bbm = 10
 		}
 	}
 
@@ -764,7 +783,7 @@ sub_units = {
 			uniform_equipment = 50
 			bulletproof_vests_equipment = 50
 			support_equipment = 35
-			bbm_chassis = 10
+			bbm = 10
 			grenade_launcher_equipment = 12
 		}
 
@@ -848,7 +867,7 @@ sub_units = {
 			uniform_equipment = 110
 			grenade_launcher_equipment = 25
 			support_equipment = 45
-			bbm_chassis = 10
+			bbm = 10
 		}
 
 		plains = {

@@ -14,10 +14,6 @@ spriteTypes = {
 		name = "GFX_archetype_bulletproof_vests_equipment_medium"
 		texturefile = "gfx/interface/technologies/bulletproof_vests_equipment_0.png"
 	}
-	spriteType = {
-	name = "GFX_archetype_apc_chassis_medium"
-	texturefile = "gfx/interface/technologies/apc_1.png"
-	}
 
 	###################
 	### Uniform tech ###
@@ -432,42 +428,38 @@ spriteTypes = {
 	#####################
 
 	spriteType = {
-		name = "GFX_ifv_chassis_medium"
-		texturefile = "gfx/interface/technologies/ifv_1.png"
-	}
-
-	spriteType = {
 		name = "GFX_infantry_fighting_vehicle_0_medium"
 		texturefile = "gfx/interface/technologies/ifv_1.png"
 	}
-
 	spriteType = {
-		name = "GFX_ifv_chassis_2_medium"
-		texturefile = "gfx/interface/technologies/ifv_2.png"
+		name = "GFX_ifv_1_medium"
+		texturefile = "gfx/interface/technologies/ifv_1.png"
 	}
 
 	spriteType = {
 		name = "GFX_infantry_fighting_vehicle_1_medium"
 		texturefile = "gfx/interface/technologies/ifv_2.png"
 	}
-
 	spriteType = {
-		name = "GFX_ifv_chassis_3_medium"
-		texturefile = "gfx/interface/technologies/ifv_3.png"
+		name = "GFX_ifv_2_medium"
+		texturefile = "gfx/interface/technologies/ifv_2.png"
 	}
 
 	spriteType = {
 		name = "GFX_infantry_fighting_vehicle_2_medium"
 		texturefile = "gfx/interface/technologies/ifv_3.png"
 	}
-
 	spriteType = {
-		name = "GFX_ifv_chassis_4_medium"
+		name = "GFX_ifv_3_medium"
 		texturefile = "gfx/interface/technologies/ifv_3.png"
 	}
 
 	spriteType = {
 		name = "GFX_infantry_fighting_vehicle_3_medium"
+		texturefile = "gfx/interface/technologies/ifv_3.png"
+	}
+	spriteType = {
+		name = "GFX_ifv_4_medium"
 		texturefile = "gfx/interface/technologies/ifv_3.png"
 	}
 
@@ -646,30 +638,4 @@ spriteTypes = {
 		name = "GFX_APC_5_medium"
 		texturefile = "gfx/interface/technologies/apc_4.png"
 	}
-
-	spriteType = {
-		name = "GFX_apc_chassis_medium"
-		texturefile = "gfx/interface/technologies/apc_1.png"
-	}
-
-	spriteType = {
-		name = "GFX_apc_chassis_2_medium"
-		texturefile = "gfx/interface/technologies/apc_2.png"
-	}
-
-	spriteType = {
-		name = "GFX_apc_chassis_3_medium"
-		texturefile = "gfx/interface/technologies/apc_3.png"
-	}
-
-	spriteType = {
-		name = "GFX_apc_chassis_4_medium"
-		texturefile = "gfx/interface/technologies/apc_4.png"
-	}
-
-	spriteType = {
-		name = "GFX_apc_chassis_5_medium"
-		texturefile = "gfx/interface/technologies/apc_4.png"
-	}
-
 }

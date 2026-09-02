@@ -28,6 +28,262 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = get_region_preference_on_elections
+	
+	text = {
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 1
+                compare = equals
+            }
+		}
+		localization_key = "DF_prorussian_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 2
+                compare = equals
+            }
+		}
+		localization_key = "DF_prorussian_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 3
+                compare = equals
+            }
+		}
+		localization_key = "DF_prorussian_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 4
+                compare = equals
+            }
+		}
+		localization_key = "DF_prorussian_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 5
+                compare = equals
+            }
+		}
+		localization_key = "DF_prorussian_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 6
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 7
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_region_on_elections_favourite"
+	}		
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 8
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 9
+                compare = equals
+            }
+		}
+		localization_key = "DF_prorussian_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 10
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_and_nationalist_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 11
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_and_nationalist_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 12
+                compare = equals
+            }
+		}
+		localization_key = "DF_prorussian_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 13
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_region_on_elections_favourite"
+	}	
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 14
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 15
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_and_nationalist_region_on_elections_favourite"
+	}	
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 16
+                compare = equals
+            }
+		}
+		localization_key = "DF_prorussian_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 17
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 18
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 19
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_and_nationalist_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 20
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 21
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_and_nationalist_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 22
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_and_nationalist_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 23
+                compare = equals
+            }
+		}
+		localization_key = "DF_prorussian_region_on_elections_favourite"
+	}
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 24
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_and_nationalist_region_on_elections_favourite"
+	}	
+	text = { 
+		trigger = {
+			check_variable = {
+                var = select_separatists_region
+                value = 25
+                compare = equals
+            }
+		}
+		localization_key = "DF_proeuropean_and_nationalist_region_on_elections_favourite"
+	}	
+}
+
+
 ####################################################################
 ####################################################################
 ########################### Region color ###########################

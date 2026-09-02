@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 2500 y = 500 }
+	continuous_focus_position = { x = 2500 y = 1500 }
 	
 	focus = {
 		id = DPR_capture_administrations
@@ -158,7 +158,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_humanitaran_help_from_russia
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_humanitaran_help_from_russia
 		cost = 0.3
 		x = 2
 		y = 6
@@ -263,7 +263,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_create_roadblocks
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_create_roadblocks
 		cost = 0.5
 		x = 5
 		y = 6
@@ -292,7 +292,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_armed_forces_of_dpr
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_armed_forces_of_dpr
 		cost = 0.5
 		x = -9
 		y = 6
@@ -312,7 +312,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_set_up_ambushes
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_set_up_ambushes
 		cost = 1
 		x = 0
 		y = 1
@@ -331,7 +331,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_batallion_disel
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_batallion_disel
 		cost = 0.5
 		x = -1
 		y = 1
@@ -354,7 +354,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_batallion_sparta
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_batallion_sparta
 		cost = 0.5
 		x = 1
 		y = 1
@@ -388,7 +388,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_batallion_somali
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+	    icon = GFX_focus_DPR_batallion_somali
 		cost = 0.5
 		x = 3
 		y = 1
@@ -434,13 +434,12 @@ focus_tree = {
 
 	focus = {
 		id = DPR_expansion_of_the_dpr_elite
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_expansion_of_the_dpr_elite
 		cost = 1
-		x = 0
+		x = -1
 		y = 2
 
 		prerequisite = {focus = DPR_batallion_sparta}
-		prerequisite = {focus = DPR_batallion_somali}
 		prerequisite = {focus = DPR_batallion_disel}
 		prerequisite = {focus = DPR_batallion_oplot}
 		relative_position_id = DPR_armed_forces_of_dpr
@@ -459,7 +458,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_first_army_corp_of_dpr
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_first_army_corp_of_dpr
 		cost = 1
 		x = 0
 		y = 1
@@ -503,10 +502,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DPR_reforms_of_dpr_amy
+		id = DPR_reforms_of_dpr_army
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = 32
+		x = 35
 		y = 0
 
 		available = {
@@ -528,8 +527,8 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		prerequisite = {focus = DPR_reforms_of_dpr_amy}
-		relative_position_id = DPR_reforms_of_dpr_amy
+		prerequisite = {focus = DPR_reforms_of_dpr_army}
+		relative_position_id = DPR_reforms_of_dpr_army
 
 		available = {
 			date > 2015.1.1
@@ -547,8 +546,8 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		prerequisite = {focus = DPR_reforms_of_dpr_amy}
-		relative_position_id = DPR_reforms_of_dpr_amy
+		prerequisite = {focus = DPR_reforms_of_dpr_army}
+		relative_position_id = DPR_reforms_of_dpr_army
 
 		available = {
 			date > 2015.1.1
@@ -563,11 +562,11 @@ focus_tree = {
 		id = DPR_marine_infantry_of_dpr
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = -4
+		x = -3
 		y = 1
 
-		prerequisite = {focus = DPR_reforms_of_dpr_amy}
-		relative_position_id = DPR_reforms_of_dpr_amy
+		prerequisite = {focus = DPR_reforms_of_dpr_army}
+		relative_position_id = DPR_reforms_of_dpr_army
 
 		available = {
 			date > 2015.1.1
@@ -581,7 +580,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_set_up_production
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_set_up_production
 		cost = 1
 		x = -4
 		y = 9
@@ -601,7 +600,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_reopening_of_captured_ukrainian_warehouses
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_reopening_of_captured_ukrainian_warehouses
 		cost = 1
 		x = -4
 		y = 10
@@ -635,7 +634,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_arrise_donbass
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+	    icon = GFX_focus_DPR_arrise_donbass
 		cost = 0.3
 		x = 0
 		y = 5
@@ -661,7 +660,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_hold_referendum_on_independence
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_hold_referendum_on_independence
 		cost = 0.3
 		x = 0
 		y = 6
@@ -684,7 +683,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_accept_constitution
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_accept_constitution
 		cost = 0.3
 		x = -3
 		y = 7
@@ -707,7 +706,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_create_donetsk_mvd
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_create_donetsk_mvd
 		cost = 0.3
 		x = 0
 		y = 1
@@ -732,7 +731,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_nationalization_of_assets
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_nationalization_of_assets
 		cost = 0.3
 		x = -2
 		y = 1
@@ -757,7 +756,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_cooperation_with_lpr
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_cooperation_with_lpr
 		cost = 0.5
 		x = 3
 		y = 7
@@ -776,7 +775,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_novorossiya_project
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_novorossiya_project
 		cost = 0.5
 		x = 0
 		y = 1
@@ -793,12 +792,16 @@ focus_tree = {
 				id = news_events.50
 				hours = 3
 			}
+			news_event = {
+				id = news_events.58
+				days = 365
+			}
 		}
 	}
 
 	focus = {
 		id = DPR_united_parliament
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_united_parliament
 		cost = 0.5
 		x = 0
 		y = 2
@@ -817,7 +820,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_form_novorossia
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_form_novorossia
 		cost = 0.5
 		x = 0
 		y = 3
@@ -870,7 +873,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_defend_of_citites
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_defend_of_citites
 		cost = 1
 		x = 0
 		y = 7
@@ -897,7 +900,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_donetsk_castle
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_donetsk_castle
 		cost = 1
 		x = -1
 		y = 1
@@ -1099,7 +1102,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_organize_defense_in_donetsk
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_organize_defense_in_donetsk
 		cost = 1
 		x = -1
 		y = 1
@@ -1118,7 +1121,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_secure_south
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_secure_south
 		cost = 1
 		x = 1
 		y = 1
@@ -1326,7 +1329,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_centralize_donetsk_groups
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_centralize_donetsk_groups
 		cost = 0.5
 		x = 0
 		y = 2
@@ -1359,7 +1362,7 @@ focus_tree = {
 
 	focus = {
 		id = DPR_strelkovs_resignation
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_DPR_strelkovs_resignation
 		cost = 0.3
 		x = -1
 		y = 3
@@ -1522,7 +1525,7 @@ focus_tree = {
 		id = DPR_foreign_policy_of_the_dpr
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = -3
+		x = -2
 		y = 1
 
 		prerequisite = {focus = DPR_shaky_peace_on_donbass}
@@ -1579,7 +1582,7 @@ focus_tree = {
 		id = DPR_fight_with_banditry
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = -6
+		x = -5
 		y = 1
 
 		prerequisite = {focus = DPR_shaky_peace_on_donbass}
@@ -1598,7 +1601,7 @@ focus_tree = {
 		id = DPR_disarm_safonov
 		#icon = GFX_focus_UKR_The_regime_is_under_threat
 		cost = 1
-		x = -6
+		x = -5
 		y = 2
 
 		prerequisite = {focus = DPR_fight_with_banditry}
@@ -1610,6 +1613,63 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = DPR.35
+		}
+	}
+
+	focus = {
+		id = DPR_clear_minds
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 7
+		y = 1
+
+		prerequisite = {focus = DPR_shaky_peace_on_donbass}
+		relative_position_id = DPR_shaky_peace_on_donbass
+
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DPR_establish_donetsk_inform_agency
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = -1
+		y = 1
+
+		prerequisite = {focus = DPR_clear_minds}
+		relative_position_id = DPR_clear_minds
+
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DPR_transition_of_education_to_russian_standards
+		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		cost = 1
+		x = 1
+		y = 1
+
+		prerequisite = {focus = DPR_clear_minds}
+		relative_position_id = DPR_clear_minds
+
+		available = {
+			
+		}
+
+		completion_reward = {
+
 		}
 	}
 

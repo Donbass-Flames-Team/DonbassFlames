@@ -241,12 +241,12 @@ guiTypes = {
 		    text = "Коалиции"
 	    }
 
-		iconType = {
-		    name = "UKR_law_status"
-			spriteType = "GFX_UKR_law_menu_icon"
-			position = { x = 1200 y = 520 }
-			scale = 0.55
-		}
+		#iconType = {
+		#    name = "UKR_law_status"
+		#	spriteType = "GFX_UKR_law_menu_icon"
+		#	position = { x = 1200 y = 520 }
+		#	scale = 0.55
+		#}
 
 		buttonType = {
             name = "separatismgui_closebutton_nw"

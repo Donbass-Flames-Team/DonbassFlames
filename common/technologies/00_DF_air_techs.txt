@@ -93,7 +93,7 @@ technologies = {
 				y = 4
 			}
 		}
-		categories = { light_air light_fighter air_equipment mio_cat_all_light_fighter_and_modules mio_cat_all_light_aircraft_and_modules }
+		categories = { light_air light_fighter air_equipment light_fighter light_air }
 		special_project_specialization = { specialization_air }
 		sub_technologies = { cv_early_fighter }
 		ai_will_do = {
@@ -108,7 +108,7 @@ technologies = {
 		enable_equipments = { cv_fighter_equipment_0 }
 		research_cost = 1.0
 		start_year = 1933
-		categories = { naval_air air_equipment mio_cat_all_light_fighter_and_modules }
+		categories = { naval_air air_equipment light_fighter }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1.5
@@ -150,7 +150,7 @@ technologies = {
 				y = 2
 			}
 		}
-		categories = { light_air light_fighter air_equipment mio_cat_all_light_fighter_and_modules mio_cat_all_light_aircraft_and_modules }
+		categories = { light_air light_fighter air_equipment light_fighter light_air }
 		special_project_specialization = { specialization_air }
 		sub_technologies = { cv_fighter1 }
 		ai_will_do = {
@@ -181,7 +181,7 @@ technologies = {
 		enable_equipments = { cv_fighter_equipment_1 }
 		research_cost = 1
 		start_year = 1936
-		categories = { naval_air air_equipment mio_cat_all_light_fighter_and_modules }
+		categories = { naval_air air_equipment light_fighter }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -229,7 +229,7 @@ technologies = {
 				y = 1
 			}
 		}
-		categories = { light_air light_fighter air_equipment mio_cat_all_light_fighter_and_modules mio_cat_all_light_aircraft_and_modules }
+		categories = { light_air light_fighter air_equipment light_fighter light_air }
 		special_project_specialization = { specialization_air }
 		sub_technologies = { cv_fighter2 }
 		ai_will_do = {
@@ -260,7 +260,7 @@ technologies = {
 		enable_equipments = { cv_fighter_equipment_2 }
 		research_cost = 1.0
 		start_year = 1940
-		categories = { naval_air air_equipment mio_cat_all_light_fighter_and_modules }
+		categories = { naval_air air_equipment light_fighter }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -306,7 +306,7 @@ technologies = {
 				y = 1
 			}
 		}
-		categories = { light_air light_fighter air_equipment mio_cat_all_light_fighter_and_modules mio_cat_all_light_aircraft_and_modules }
+		categories = { light_air light_fighter air_equipment light_fighter light_air }
 		special_project_specialization = { specialization_air }
 		sub_technologies = { cv_fighter3 }
 		ai_will_do = {
@@ -337,7 +337,7 @@ technologies = {
 		enable_equipments = { cv_fighter_equipment_3 }
 		research_cost = 1.0
 		start_year = 1944
-		categories = { naval_air air_equipment mio_cat_all_light_fighter_and_modules }
+		categories = { naval_air air_equipment light_fighter }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -378,11 +378,8 @@ technologies = {
 			leads_to_tech = jet_fighter2
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = sp_centrifugal_jet_tech
-			research_cost_coeff = 1
-		}
-		is_special_project_tech = yes
+
+is_special_project_tech = yes
 		research_cost = 2
 		start_year = 1945
 		folder = {
@@ -392,7 +389,7 @@ technologies = {
 				y = 3
 			}
 		}
-		categories = { light_air jet_technology mio_cat_all_light_fighter_and_modules mio_cat_all_light_aircraft_and_modules }
+		categories = { light_air jet_technology light_fighter light_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -418,7 +415,7 @@ technologies = {
 				y = 3
 			}
 		}
-		categories = { light_air jet_technology mio_cat_all_light_fighter_and_modules mio_cat_all_light_aircraft_and_modules }
+		categories = { light_air jet_technology light_fighter light_air }
 		special_project_specialization = { specialization_air }
 		is_special_project_tech = yes
 		ai_will_do = {
@@ -437,7 +434,7 @@ technologies = {
 		enable_equipments = { supersonic_fighter_equipment_1 }
 		research_cost = 2
 		start_year = 1950
-		categories = { light_air jet_technology mio_cat_all_light_fighter_and_modules mio_cat_all_light_aircraft_and_modules }
+		categories = { light_air jet_technology light_fighter light_air }
 		special_project_specialization = { specialization_air }
 		is_special_project_tech = yes
 		ai_will_do = {
@@ -460,7 +457,7 @@ technologies = {
 			}
 		}
 		sub_technologies = { cv_CAS1 }
-		categories = { light_air cas_bomber air_equipment mio_cat_all_cas_and_modules mio_cat_all_light_aircraft_and_modules }
+		categories = { light_air cas_bomber air_equipment cas_bomber light_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -470,7 +467,7 @@ technologies = {
 		enable_equipments = { cv_CAS_equipment_1 }
 		research_cost = 1.0
 		start_year = 1936
-		categories = { naval_air air_equipment cas_bomber mio_cat_all_cas_and_modules }
+		categories = { naval_air air_equipment cas_bomber cas_bomber }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -513,7 +510,7 @@ technologies = {
 			}
 		}
 		sub_technologies = { cv_CAS2 }
-		categories = { light_air cas_bomber air_equipment mio_cat_all_cas_and_modules mio_cat_all_light_aircraft_and_modules }
+		categories = { light_air cas_bomber air_equipment cas_bomber light_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -530,7 +527,7 @@ technologies = {
 		enable_equipments = { cv_CAS_equipment_2 }
 		research_cost = 1.0
 		start_year = 1940
-		categories = { naval_air air_equipment cas_bomber mio_cat_all_cas_and_modules }
+		categories = { naval_air air_equipment cas_bomber cas_bomber }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -573,7 +570,7 @@ technologies = {
 			}
 		}
 		sub_technologies = { cv_CAS3 }
-		categories = { light_air cas_bomber air_equipment mio_cat_all_cas_and_modules mio_cat_all_light_aircraft_and_modules }
+		categories = { light_air cas_bomber air_equipment cas_bomber light_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -590,7 +587,7 @@ technologies = {
 		enable_equipments = { cv_CAS_equipment_3 }
 		research_cost = 1.0
 		start_year = 1944
-		categories = { naval_air air_equipment cas_bomber mio_cat_all_cas_and_modules }
+		categories = { naval_air air_equipment cas_bomber cas_bomber }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -626,7 +623,7 @@ technologies = {
 			}
 		}
 		sub_technologies = { cv_naval_bomber1 }
-		categories = { naval_air naval_bomber air_equipment mio_cat_all_naval_bomber_and_modules mio_cat_all_light_aircraft_and_modules }
+		categories = { naval_air naval_bomber air_equipment naval_bomber light_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -636,7 +633,7 @@ technologies = {
 		enable_equipments = { cv_nav_bomber_equipment_1 }
 		research_cost = 1.0
 		start_year = 1936
-		categories = { naval_air air_equipment mio_cat_all_naval_bomber_and_modules }
+		categories = { naval_air air_equipment naval_bomber }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -679,7 +676,7 @@ technologies = {
 			}
 		}
 		sub_technologies = { cv_naval_bomber2 }
-		categories = { naval_air air_equipment naval_bomber mio_cat_all_naval_bomber_and_modules mio_cat_all_light_aircraft_and_modules }
+		categories = { naval_air air_equipment naval_bomber naval_bomber light_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1.5
@@ -696,7 +693,7 @@ technologies = {
 		enable_equipments = { cv_nav_bomber_equipment_2 }
 		research_cost = 1.0
 		start_year = 1940
-		categories = { naval_air air_equipment mio_cat_all_naval_bomber_and_modules }
+		categories = { naval_air air_equipment naval_bomber }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 5
@@ -739,7 +736,7 @@ technologies = {
 			}
 		}
 		sub_technologies = { cv_naval_bomber3 }
-		categories = { naval_air naval_bomber air_equipment mio_cat_all_naval_bomber_and_modules mio_cat_all_light_aircraft_and_modules }
+		categories = { naval_air naval_bomber air_equipment naval_bomber light_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1.5
@@ -756,7 +753,7 @@ technologies = {
 		enable_equipments = { cv_nav_bomber_equipment_3 }
 		research_cost = 1.0
 		start_year = 1944
-		categories = { naval_air air_equipment mio_cat_all_naval_bomber_and_modules }
+		categories = { naval_air air_equipment naval_bomber }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -795,7 +792,7 @@ technologies = {
 				y = 8
 			}
 		}
-		categories = { medium_air tactical_bomber air_equipment mio_cat_all_medium_aircraft_and_modules }
+		categories = { medium_air tactical_bomber air_equipment medium_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -816,7 +813,7 @@ technologies = {
 				y = 8
 			}
 		}
-		categories = { medium_air air_equipment cat_heavy_fighter mio_cat_all_medium_aircraft_and_modules }
+		categories = { medium_air air_equipment cat_heavy_fighter medium_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -837,7 +834,7 @@ technologies = {
 				y = 7
 			}
 		}
-		categories = { medium_air air_equipment cat_heavy_fighter mio_cat_all_medium_aircraft_and_modules }
+		categories = { medium_air air_equipment cat_heavy_fighter medium_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -854,7 +851,7 @@ technologies = {
 				y = 7
 			}
 		}
-		categories = { medium_air air_equipment cat_heavy_fighter mio_cat_all_medium_aircraft_and_modules }
+		categories = { medium_air air_equipment cat_heavy_fighter medium_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -878,7 +875,7 @@ technologies = {
 				y = 13
 			}
 		}
-		categories = { medium_air air_equipment cat_scout_plane mio_cat_all_medium_aircraft_and_modules }
+		categories = { medium_air air_equipment cat_scout_plane medium_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -909,7 +906,7 @@ technologies = {
 				y = 13
 			}
 		}
-		categories = { medium_air air_equipment cat_scout_plane mio_cat_all_medium_aircraft_and_modules }
+		categories = { medium_air air_equipment cat_scout_plane medium_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -944,7 +941,7 @@ technologies = {
 				y = 10
 			}
 		}
-		categories = { medium_air tactical_bomber air_equipment mio_cat_all_medium_aircraft_and_modules }
+		categories = { medium_air tactical_bomber air_equipment medium_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -1004,7 +1001,7 @@ technologies = {
 				y = 9
 			}
 		}
-		categories = { medium_air tactical_bomber air_equipment mio_cat_all_medium_aircraft_and_modules }
+		categories = { medium_air tactical_bomber air_equipment medium_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -1047,7 +1044,7 @@ technologies = {
 				y = 9
 			}
 		}
-		categories = { medium_air tactical_bomber air_equipment mio_cat_all_medium_aircraft_and_modules }
+		categories = { medium_air tactical_bomber air_equipment medium_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -1096,7 +1093,7 @@ technologies = {
 				y = 9
 			}
 		}
-		categories = { medium_air jet_technology tactical_bomber mio_cat_all_medium_aircraft_and_modules }
+		categories = { medium_air jet_technology tactical_bomber medium_air }
 		special_project_specialization = { specialization_air }
 		is_special_project_tech = yes
 		ai_will_do = {
@@ -1123,7 +1120,7 @@ technologies = {
 				y = 9
 			}
 		}
-		categories = { medium_air jet_technology tactical_bomber mio_cat_all_medium_aircraft_and_modules }
+		categories = { medium_air jet_technology tactical_bomber medium_air }
 		special_project_specialization = { specialization_air }
 		is_special_project_tech = yes
 		ai_will_do = {
@@ -1145,7 +1142,7 @@ technologies = {
 				y = 12
 			}
 		}
-		categories = { heavy_air air_equipment cat_strategic_bomber mio_cat_all_heavy_aircraft_and_modules }
+		categories = { heavy_air air_equipment cat_strategic_bomber heavy_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -1180,11 +1177,8 @@ technologies = {
 			leads_to_tech = strategic_bomber3
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = reinforced_wings_mothership
-			research_cost_coeff = 1
-		}
-		research_cost = 2
+
+research_cost = 2
 		start_year = 1940
 		folder = {
 			name = air_techs_folder
@@ -1193,7 +1187,7 @@ technologies = {
 				y = 12
 			}
 		}
-		categories = { heavy_air air_equipment cat_strategic_bomber mio_cat_all_heavy_aircraft_and_modules }
+		categories = { heavy_air air_equipment cat_strategic_bomber heavy_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -1214,7 +1208,7 @@ technologies = {
 				y = 12
 			}
 		}
-		categories = { heavy_air air_equipment cat_strategic_bomber mio_cat_all_heavy_aircraft_and_modules }
+		categories = { heavy_air air_equipment cat_strategic_bomber heavy_air }
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
@@ -1236,7 +1230,7 @@ technologies = {
 				y = 12
 			}
 		}
-		categories = { heavy_air jet_technology cat_strategic_bomber mio_cat_all_heavy_aircraft_and_modules }
+		categories = { heavy_air jet_technology cat_strategic_bomber heavy_air }
 		special_project_specialization = { specialization_air }
 		is_special_project_tech = yes
 		ai_will_do = {

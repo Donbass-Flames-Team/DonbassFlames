@@ -1,0 +1,22 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "EU_gui"
+		position = { x = 0 y = -10 }
+		size = { width = 676 height = 558 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = no
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_General_staff_russian_selection_gui"
+			position = { x = 0 y = 0 }
+		}
+
+	}
+}

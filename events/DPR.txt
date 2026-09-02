@@ -1039,3 +1039,18 @@ country_event = {
 		add_stability = -0.02
 	}
 }
+
+# 2015 4 марта, взрыв на шахте имени Засядько в Донецке; погибло большое количество шахтёров.
+country_event = {
+	id = DPR.45
+	title = DPR.45.t
+	desc = DPR.45.d
+	picture = GFX_Report_event_Clashes_in_Donetsk_on_Apri_28_2014
+
+	is_triggered_only = yes
+
+	option = {
+		name = DPR.45.a
+		add_stability = -0.02
+	}
+}

@@ -3,6 +3,8 @@ DF_economy_setup = yes
 set_convoys = 417
 set_country_flag = open_start_gui
 
+
+
 add_to_variable = { JAM_ammo_stockpile = 10000 }
 
 2013.11.21 = {
@@ -10,6 +12,9 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 
 	parliament_gui_initial = yes
 
+	activate_mission = UKR_yanukovich_overthrow
+
+	# Economic values
 	set_variable = { cash = 1 }
 	set_variable = { debt = 257 }
 	set_variable = { state_reserves = 18.8 }
@@ -28,6 +33,29 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 
 	set_variable = { business_activity = 65 } 
 
+	# Levels of development
+	set_variable = { level_of_the_financial_sector = 25 }
+	set_variable = { level_of_well_being = 20 }
+	set_variable = { level_of_technological_development = 25 }
+	set_variable = { level_of_healthcare = 30 }
+	set_variable = { level_of_industrial_development = 45 }
+	set_variable = { level_of_human_development = 20 }
+	set_variable = { level_of_infrastructure_development = 35 }
+    set_variable = { level_of_public_administration = 25 }
+
+    # Social levels
+	set_variable = { level_of_extremely_poor = 7 }
+	set_variable = { level_of_poor = 18 }
+	set_variable = { level_of_lower_middle_class = 31 } 
+	set_variable = { level_of_middle_class = 32 }	
+	set_variable = { level_of_rich_people = 12 }
+
+	set_variable = { birth_rate = 1.52 }
+	set_variable = { population_fatigue = 0 }
+
+
+
+	set_variable = { global.price_per_barrel = 110 }
 
 	country_event = {
 		id = ukraine.101
@@ -54,11 +82,16 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 		autonomous_state = autonomy_integrated_puppet
 		freedom_level = 0.5
 	}
-
+	
+    set_country_flag = Mikhail_Kunitsin_is_commander_in_chief
 	set_country_flag = UKRBeforeOverthrowOfYanukovych
 	set_country_flag = Speaker_Is_Turchinov
 	set_country_flag = 7_congress_of_rada
 	set_research_slots = 3
+
+
+	add_dynamic_modifier = { modifier = GEN_corruption_dynamic_modifier}
+	add_dynamic_modifier = { modifier = GEN_inflation }
 
 	add_dynamic_modifier = { modifier = UKR_ukraine_army_idea }
 	set_variable = { UKR_AFU_army_org_factor = -0.55 }
@@ -104,8 +137,6 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	set_variable = { UKR_ukrainian_economy_production_oil_factor = -0.25 }
 	set_variable = { UKR_ukrainian_economy_industry_free_repair_factor = -0.35 }
 
-
-	add_dynamic_modifier = { modifier = GEN_inflation }
 	
 	set_technology = {
 		infantry_weapons = 1
@@ -171,45 +202,24 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	#	}
 	#}
 
-	if = {
-		limit = { has_dlc = "No Step Back" }
-			set_technology = {
- 				apc_chassis = 1
-				apc_chassis_2 = 1
-				apc_chassis_3 = 1
-				apc_chassis_4 = 1
-
-				ifv_chassis = 1
-				ifv_chassis_2 = 1
-				ifv_chassis_3 = 1
-				ifv_chassis_4 = 1
-				gwtank_chassis = 1
-			}
-			set_oob = "UKR_2013"
-		else = {
-			set_technology = {
-	 			apc_chassis = 1
-				apc_chassis_2 = 1
-				apc_chassis_3 = 1
-				apc_chassis_4 = 1
-
-				ifv_1 = 1
-				ifv_2 = 1
-				ifv_3 = 1
-				bmd_1 = 1
-				bmd_2 = 1
-				bmd_3 = 1
-				APC_1 = 1
-				APC_2 = 1
-				APC_3 = 1
-				modern_tank_1 = 1	
-				modern_tank_2 = 1
-				modern_tank_3 = 1		
-				modern_tank_4 = 1		   
-			}
-			set_oob = "UKR_2013"
-		}
+	set_technology = {
+		ifv_1 = 1
+		ifv_2 = 1
+		ifv_3 = 1
+		ifv_4 = 1
+		bmd_1 = 1
+		bmd_2 = 1
+		bmd_3 = 1
+		APC_1 = 1
+		APC_2 = 1
+		APC_3 = 1
+		APC_4 = 1
+		modern_tank_1 = 1
+		modern_tank_2 = 1
+		modern_tank_3 = 1
+		modern_tank_4 = 1
 	}
+	set_oob = "UKR_2013"
 
 	# Pralamient values
 	set_variable = {

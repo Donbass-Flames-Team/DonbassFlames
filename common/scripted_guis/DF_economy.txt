@@ -376,7 +376,17 @@ scripted_gui = {
 					min = 3
 				}
 				add_political_power = -10
-			}			
+			}	
+			emission_button_click = {
+				add_to_variable = {
+					var = weekly_inflation
+					value = 0.07
+				}
+				add_to_variable = {
+					var = cash
+					value = 0.2
+				}
+			}					
 		}
 	}
 

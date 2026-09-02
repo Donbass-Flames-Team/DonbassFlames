@@ -179,10 +179,8 @@ first_minsk_dynamic_effect = {
 		}
 		if = {
 			limit = {
-				AND = {
-					486 = { is_controlled_by = DPR }
-					652 = { is_controlled_by = DPR }
-				}
+				486 = { is_controlled_by = DPR }
+				652 = { is_controlled_by = DPR }
 			}
 			486 = { transfer_state_to = DPR }
 		}

@@ -74,9 +74,17 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
+			name = "UKR_region_preferences_text"
+			maxWidth = 450
+			position = { x = 926 y = 128 }
+			font = "hoi_24header"
+			text = "UKR_region_preferences_text"
+		}
+
+		instantTextBoxType = {
 			name = "UKR_favourite_candidate_elections_text"
 			maxWidth = 450
-			position = { x = 926 y = 178 }
+			position = { x = 926 y = 188 }
 			font = "hoi_36header"
 			text = "UKR_favourite_candidate_elections"
 		}

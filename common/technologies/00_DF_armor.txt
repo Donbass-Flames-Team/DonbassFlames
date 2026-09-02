@@ -8,7 +8,7 @@ technologies = {
 
 		}
 		enable_subunits = {
-			
+			bmd_unit
 		}
 
 		path = {
@@ -47,7 +47,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1960
+		start_year = 1980
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 2 }
@@ -77,7 +77,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1960
+		start_year = 2000
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 4 }
@@ -102,7 +102,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1960
+		start_year = 2020
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 6 }
@@ -157,7 +157,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1960
+		start_year = 1980
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 2 }
@@ -187,7 +187,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1960
+		start_year = 2000
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 4 }
@@ -217,7 +217,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1960
+		start_year = 2020
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 6 }
@@ -231,7 +231,7 @@ technologies = {
 		}
 	}
 
-	modern_tank_1 = { #Leichttraktor
+	modern_tank_1 = { 
 
 		enable_equipments = {
 			modern_tank_equipment_1
@@ -239,7 +239,7 @@ technologies = {
 		}
 		enable_subunits = {
 			modern_armor
-
+			tank_company
 		}
 		on_research_complete_limit = {
 			
@@ -256,7 +256,7 @@ technologies = {
 		start_year = 1955
 		folder = {
 			name = armour_folder
-			position = { x = -1 y = 0 }
+			position = { x = 0 y = 0 }
 		}
 
 		ai_will_do = {
@@ -295,7 +295,7 @@ technologies = {
 		start_year = 1960
 		folder = {
 			name = armour_folder
-			position = { x = -1 y = 2 }
+			position = { x = 0 y = 2 }
 		}
 
 		ai_will_do = {
@@ -334,7 +334,7 @@ technologies = {
 		start_year = 1975
 		folder = {
 			name = armour_folder
-			position = { x = -1 y = 4 }
+			position = { x = 0 y = 4 }
 		}
 
 		ai_will_do = {
@@ -370,10 +370,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1960
+		start_year = 1980
 		folder = {
 			name = armour_folder
-			position = { x = -1 y = 6 }
+			position = { x = 0 y = 6 }
 		}
 
 		ai_will_do = {
@@ -409,10 +409,10 @@ technologies = {
 		#}
 
 		research_cost = 2
-		start_year = 1960
+		start_year = 1990
 		folder = {
 			name = armour_folder
-			position = { x = -1 y = 8 }
+			position = { x = 0 y = 8 }
 		}
 
 		ai_will_do = {
@@ -447,7 +447,7 @@ technologies = {
 	#	start_year = 2015
 	#	folder = {
 	#		name = armour_folder
-	#		position = { x = -1 y = 10 }
+	#		position = { x = 0 y = 10 }
 	#	}
 
 	#	ai_will_do = {
@@ -464,10 +464,10 @@ technologies = {
 	#	special_project_specialization = { specialization_land }
 	#}
 
-	APC_1 = { #Leichttraktor
+	APC_1 = { 
 
 		enable_equipments = {
-			apc_chassis_0
+			apc_0
 		}
 		enable_subunits = {
 			apc_unit
@@ -484,7 +484,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1980
+		start_year = 1960
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 0 }
@@ -504,10 +504,10 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
-	APC_2 = { #Leichttraktor
+	APC_2 = { 
 
 		enable_equipments = {
-			apc_chassis_1
+			apc_1
 		}
 		enable_subunits = {
 
@@ -544,10 +544,10 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
-	APC_3 = { #Leichttraktor
+	APC_3 = { 
 
 		enable_equipments = {
-			apc_chassis_2
+			apc_2
 		}
 		enable_subunits = {
 
@@ -564,7 +564,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1980
+		start_year = 2000
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 4 }
@@ -584,10 +584,10 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
-	APC_4 = { #Leichttraktor
+	APC_4 = { 
 
 		enable_equipments = {
-			apc_chassis_3
+			apc_3
 		}
 		enable_subunits = {
 
@@ -602,7 +602,7 @@ technologies = {
 			leads_to_tech = APC_5
 		}
 		research_cost = 2
-		start_year = 1980
+		start_year = 2020
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 6 }
@@ -622,10 +622,10 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
-	APC_5 = { #Leichttraktor
+	APC_5 = { 
 
 		enable_equipments = {
-			apc_chassis_4
+			apc_4
 		}
 		enable_subunits = {
 
@@ -638,7 +638,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1980
+		start_year = 2020
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 8 }

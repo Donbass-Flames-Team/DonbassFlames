@@ -10,11 +10,21 @@ set_variable = { sales_tax_rate = 20 }
 set_variable = { small_businesses = 356000 }
 set_variable = { individual_enterprises = 1350000 } 
 set_variable = { consumer_activity = 58 } 
-
-set_variable = { corruption_value = 60 } 
+set_variable = { corruption_value = 65 } 
 set_variable = { criminality_value = 20 }
 set_variable = { prestige_value = 90 } 
 
+set_variable = { population_fatigue = 0 }
+
+# Levels of development
+set_variable = { level_of_the_financial_sector = 55 }
+set_variable = { level_of_well_being = 30 }
+set_variable = { level_of_technological_development = 35 }
+set_variable = { level_of_healthcare = 35 }
+set_variable = { level_of_industrial_development = 45 }
+set_variable = { level_of_human_development = 35 }
+set_variable = { level_of_infrastructure_development = 35 }
+set_variable = { level_of_public_administration = 45 }
 
 set_country_flag = open_start_gui
 add_to_variable = { JAM_ammo_stockpile = 1000 }
@@ -52,6 +62,10 @@ set_convoys = 1074
 		toward_artilery = 1
 		spau_artillery = 1
 		multiple_launch_rocket_system = 1
+		modern_tank_1 = 1
+		modern_tank_2 = 1
+		modern_tank_3 = 1
+		modern_tank_4 = 1
 		uniform_equipment = 1
 		uniform_equipment1 = 1
 		uniform_equipment2 = 1
@@ -93,7 +107,7 @@ set_convoys = 1074
     recruit_character = sergey_surovikin
     recruit_character = igor_turchenuk
     recruit_character = alexander_lapin
-	recruit_character = valelry_gerasimov
+	recruit_character = valery_gerasimov
 	recruit_character = viktor_bondarev
 
     add_opinion_modifier = {

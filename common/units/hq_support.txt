@@ -43,6 +43,28 @@ sub_units = {
 		weight = 0.1
 		can_be_parachuted = yes
 
+		forest = {
+			movement = -0.1
+		}
+		mountain = 	{
+			movement = -0.2
+		}
+		jungle = {
+			movement = -0.15
+		}
+		marsh = {
+			movement = -0.2
+		}
+		urban = {
+			attack = -0.05
+		}
+		river = { 
+			movement = -0.15
+		}
+		amphibious = { 
+			attack = -0.3
+		}
+
 		need = {
 			infantry_equipment = 20
 		}
@@ -102,6 +124,28 @@ sub_units = {
 		defense = 0.1
 		breakthrough = 0.5
 		soft_attack = -0.5
+
+		forest = {
+			movement = -0.05
+		}
+		mountain = 	{
+			movement = -0.1
+		}
+		jungle = {
+			movement = -0.1
+		}
+		marsh = {
+			movement = -0.15
+		}
+		urban = {
+			movement = 0.05
+		}
+		river = { 
+			movement = -0.05
+		}
+		amphibious = { 
+			attack = -0.1
+		}
 
 		need = {
 			infantry_equipment = 20
@@ -164,6 +208,28 @@ sub_units = {
 		hard_attack = -0.9
 		recon = 1
 
+		forest = {
+			movement = -0.05
+		}
+		mountain = 	{
+			movement = -0.1
+		}
+		jungle = {
+			movement = -0.1
+		}
+		marsh = {
+			movement = -0.15
+		}
+		urban = {
+			movement = 0.05
+		}
+		river = { 
+			movement = -0.1
+		}
+		amphibious = { 
+			attack = -0.2
+		}
+
 		need = {
 			infantry_equipment = 20
 			support_equipment = 10
@@ -217,6 +283,28 @@ sub_units = {
 
 		suppression_factor = 0.20
 
+		forest = {
+			movement = -0.05
+		}
+		mountain = 	{
+			movement = -0.15
+		}
+		jungle = {
+			movement = -0.15
+		}
+		marsh = {
+			movement = -0.15
+		}
+		urban = {
+			movement = 0.05
+		}
+		river = { 
+			movement = -0.1
+		}
+		amphibious = { 
+			attack = -0.2
+		}
+
 		need = {
 			support_equipment = 10
 		}
@@ -269,6 +357,28 @@ sub_units = {
 
 		reliability_factor = 0.05
 		equipment_capture_factor = 0.05
+
+		forest = {
+			movement = -0.05
+		}
+		mountain = 	{
+			movement = -0.15
+		}
+		jungle = {
+			movement = -0.15
+		}
+		marsh = {
+			movement = -0.15
+		}
+		urban = {
+			movement = 0.05
+		}
+		river = { 
+			movement = -0.1
+		}
+		amphibious = { 
+			attack = -0.2
+		}
 
 		need = {
 			support_equipment = 10
@@ -326,6 +436,28 @@ sub_units = {
 		casualty_trickleback = 0.20
 		experience_loss_factor = -0.15
 
+		forest = {
+			movement = -0.05
+		}
+		mountain = 	{
+			movement = -0.15
+		}
+		jungle = {
+			movement = -0.15
+		}
+		marsh = {
+			movement = -0.15
+		}
+		urban = {
+			movement = 0.05
+		}
+		river = { 
+			movement = -0.1
+		}
+		amphibious = { 
+			attack = -0.2
+		}
+
 		need = {
 			support_equipment = 10
 		}
@@ -380,6 +512,28 @@ sub_units = {
 
 		fuel_consumption_factor = -0.05
 
+		forest = {
+			movement = -0.05
+		}
+		mountain = 	{
+			movement = -0.15
+		}
+		jungle = {
+			movement = -0.15
+		}
+		marsh = {
+			movement = -0.2
+		}
+		urban = {
+			movement = 0.05
+		}
+		river = { 
+			movement = -0.1
+		}
+		amphibious = { 
+			attack = -0.2
+		}
+
 		need = {
 			support_equipment = 10
 		}
@@ -433,6 +587,28 @@ sub_units = {
 		weight = 0.1
 		can_be_parachuted = yes
 
+		forest = {
+			movement = -0.05
+		}
+		mountain = 	{
+			movement = -0.1
+		}
+		jungle = {
+			movement = -0.1
+		}
+		marsh = {
+			movement = -0.1
+		}
+		urban = {
+			movement = 0.05
+		}
+		river = { 
+			movement = -0.05
+		}
+		amphibious = { 
+			attack = -0.15
+		}
+
 		need = {
 			support_equipment = 10
 		}
@@ -483,6 +659,28 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.1
 		can_be_parachuted = yes
+
+		forest = {
+			movement = -0.05
+		}
+		mountain = 	{
+			movement = -0.1
+		}
+		jungle = {
+			movement = -0.1
+		}
+		marsh = {
+			movement = -0.1
+		}
+		urban = {
+			movement = 0.05
+		}
+		river = { 
+			movement = -0.05
+		}
+		amphibious = { 
+			attack = 0.1
+		}
 
 		need = {
 			support_equipment = 10
@@ -536,6 +734,28 @@ sub_units = {
 		weight = 0.1
 		can_be_parachuted = yes
 
+		forest = {
+			movement = -0.05
+		}
+		mountain = 	{
+			movement = -0.1
+		}
+		jungle = {
+			movement = -0.1
+		}
+		marsh = {
+			movement = -0.1
+		}
+		urban = {
+			movement = 0.05
+		}
+		river = { 
+			movement = -0.05
+		}
+		amphibious = { 
+			attack = -0.15
+		}
+
 		need = {
 			support_equipment = 10
 		}
@@ -587,6 +807,33 @@ sub_units = {
 		weight = 0.1
 		can_be_parachuted = yes
 
+		forest = {
+			attack = 0.05
+			movement = 0.05
+		}
+		mountain = 	{
+			attack = 0.1
+			movement = 0.05
+		}
+		jungle = {
+			attack = 0.1
+			movement = 0.05
+		}
+		marsh = {
+			movement = -0.05
+		}
+		urban = {
+			attack = 0.05
+		}
+		river = { 
+			attack = -0.05
+			movement = -0.05
+		}
+		amphibious = { 
+			attack = 0.05
+			movement = 0.05
+		}
+
 		need = {
 			support_equipment = 10
 		}
@@ -633,6 +880,35 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.5
 		suppression = 1.5
+
+		forest = {
+			attack = 0.05
+			movement = 0.05
+		}
+		mountain = 	{
+			attack = -0.1
+			movement = -0.15
+		}
+		jungle = {
+			attack = 0.05
+		}
+		marsh = {
+			attack = -0.1
+			movement = -0.15
+		}
+		urban = {
+			attack = 0.1
+			movement = 0.05
+			
+		}
+		river = { 
+			attack = -0.1
+			movement = -0.1
+		}
+		amphibious = { 
+			attack = -0.15
+			movement = -0.15
+		}
 
 		need = {
 			infantry_equipment = 60
@@ -685,29 +961,32 @@ sub_units = {
 		}
 
 		forest = {
-			attack = -0.1
-			movement = -0.5
+			attack = -0.05
+			movement = -0.1
 		}
 		mountain = {
-			attack = -0.05
+			attack = -0.2
+			movement = -0.3
 		}
 		jungle = {
-			attack = -0.2
-			movement = -0.5
+			attack = -0.15
+			movement = -0.2
 		}
 		marsh = {
-			attack = -0.1
-			movement = -0.3
+			attack = -0.15
+			movement = -0.25
 		}
 		urban = {
 			attack = -0.1
+			movement = -0.05
 		}
 		river = {
-			attack = -0.1
-			movement = -0.1
+			attack = -0.15
+			movement = -0.2
 		}
 		amphibious = {
-			attack = -0.2
+			attack = -0.25
+			movement = -0.3
 		}
 	}
 
@@ -753,235 +1032,37 @@ sub_units = {
 		can_be_parachuted = yes
 		suppression = 1
 
+		forest = {
+			attack = 0.05
+			movement = 0.05
+		}
+		mountain = {
+			attack = 0.1
+			movement = 0.05
+		}
+		jungle = {
+			attack = 0.1
+			movement = 0.05
+		}
+		marsh = {
+			attack = 0.05
+			movement = -0.05
+		}
+		urban = {
+			attack = 0.05
+		}
+		river = {
+			attack = -0.05
+			movement = -0.05
+		}
+		amphibious = {
+			attack = 0.05
+			movement = 0.05
+		}
+
 		need = {
 			infantry_equipment = 80
 		}
 	}
 
-	hq_light_armor = {
-		abbreviation = "HLTK"
-		sprite = light_armor
-		map_icon_category = armored
-		priority = 0
-		ai_priority = 0
-		active = yes
-
-		type = {
-			armor
-		}
-		
-		group = armor
-		
-		categories = {
-			category_tanks
-			category_front_line
-			category_all_armor
-			category_army
-		}
-
-
-		combat_width = 2
-		allow_in_army_hq = yes
-		allow_in_non_army_hq = no
-		deployment_cost = 3
-		required_dlc = { "Thunder at Our Gates" }
-
-		need = {
-			infantry_equipment = 40
-			light_tank_chassis = 30
-		}
-		manpower = 60
-		max_organisation = 40
-		default_morale = 0.1
-		training_time = 180
-		max_strength = 10
-		weight = 1
-		supply_consumption = 0.26
-
-		breakthrough = 0.1
-
-		suppression = 2.5
-
-		forest = {
-			attack = -0.2
-			movement = -0.4
-		}
-		mountain = 	{
-			attack = -0.1
-		}
-		jungle = {
-			attack = -0.3
-			movement = -0.4
-		}
-		marsh = {
-			attack = -0.1 
-			movement = -0.1
-		}
-		urban = {
-			attack = -0.4
-			defence = -0.1
-		}
-		river = { 
-			attack = -0.2 
-			movement = -0.2
-		}
-		amphibious = { 
-			attack = -0.4
-		}
-	}
-
-	hq_medium_armor = {
-		abbreviation = "HMTK"
-		sprite = medium_armor
-		map_icon_category = armored
-		priority = 0
-		ai_priority = 0
-		active = yes
-
-		type = {
-			armor
-		}
-
-		group = armor
-
-		categories = {
-			category_tanks
-			category_front_line
-			category_all_armor
-			category_army
-		}
-
-		combat_width = 2
-		allow_in_army_hq = yes
-		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
-
-		need = {
-			infantry_equipment = 40
-			medium_tank_chassis = 30
-		}
-
-		#Size Definitions
-		max_organisation = 35
-		default_morale = 0.1
-		manpower = 60
-		deployment_cost = 3
-		training_time = 180
-		max_strength = 10
-		weight = 1
-		supply_consumption = 0.28
-		breakthrough = 0.15
-
-		suppression = 2.5
-
-		forest = {
-			attack = -0.3
-			movement = -0.4
-		}
-		hills = {
-			attack = -0.1
-		}
-		mountain = {
-			attack = -0.2
-		}
-		jungle = {
-			attack = -0.4
-			movement = -0.4
-		}
-		marsh = {
-			attack = -0.1
-			movement = -0.1
-		}
-		urban = {
-			attack = -0.4
-			defence = -0.1
-		}
-		river = {
-			attack = -0.2
-			movement = -0.2
-		}
-		amphibious = {
-			attack = -0.8
-		}
-	}
-
-	hq_heavy_armor = {
-		abbreviation = "HHTK"
-		sprite = heavy_armor
-		map_icon_category = armored
-		priority = 0
-		ai_priority = 0
-		active = yes
-
-		type = {
-			armor
-		}
-		
-		group = armor
-		
-		categories = {
-			category_tanks
-			category_front_line
-			category_all_armor
-			category_army
-		}
-
-		allow_in_army_hq = yes
-		allow_in_non_army_hq = no
-		deployment_cost = 3
-		required_dlc = { "Thunder at Our Gates" }
-		training_time = 180
-
-		forest = {
-			attack = -0.40
-			movement = -0.40
-		}
-		hills = {
-			attack = -0.20
-		}
-		mountain = 	{
-			attack = -0.3
-		}
-		jungle = {
-			attack = -0.6
-			movement = -0.4
-		}
-		marsh = {
-			attack = -0.4 
-			movement = -0.2
-		}
-		urban = {
-			attack = -0.5
-			defence = -0.2
-		}
-		river = { 
-			attack = -0.4 
-			movement = -0.4
-		}
-		amphibious = { 
-			attack = -0.9
-		}
-		fort = {
-			attack = 0.1
-		}
-
-		combat_width = 2
-
-		need = {
-			infantry_equipment = 40
-			heavy_tank_chassis = 20
-		}
-
-		manpower = 60
-		max_organisation = 30
-		default_morale = 0.1
-		max_strength = 10
-		weight = 1.5
-		
-		supply_consumption = 0.34
-
-		breakthrough = 0.15
-		
-		suppression = 2.5		
-	}
 }

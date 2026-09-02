@@ -6,7 +6,7 @@ on_actions = {
 				DPR = {
 					if = {
 						limit = {
-							date = 2014.09.21
+							date = 2014.9.21
 							controls_state = 352
 							NOT = { has_country_flag = dpr_37_fired }
 						}
@@ -15,7 +15,7 @@ on_actions = {
 					}
 					if = {
 						limit = {
-							date = 2014.09.23
+							date = 2014.9.23
 							controls_state = 416
 							NOT = { has_country_flag = dpr_38_fired }
 						}
@@ -24,7 +24,7 @@ on_actions = {
 					}
 					if = {
 						limit = {
-							date = 2014.11.03
+							date = 2014.11.3
 							controls_state = 658
 							NOT = { has_country_flag = dpr_39_fired }
 						}

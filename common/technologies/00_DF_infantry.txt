@@ -15,7 +15,7 @@ technologies = {
 	infantry_weapons = {
 		enable_equipments = {
 			infantry_equipment_0
-			bbm_chassis_0
+			bbm_0
 		}
 		
 		enable_subunits = {
@@ -25,19 +25,7 @@ technologies = {
 			marine
 			special_forces_infantry
 			territorial_defense_unit
-
-			engineer
-			recon
-			maintenance_company
-			medical_company
-			logistics_company
-			mortar
-			anti_tank
-			anti_air
-			tank_company
-			rocket_artillery
 			sniper_company
-			signal_company
 		}
 		
 		path = {
@@ -664,69 +652,15 @@ technologies = {
 		}
 	}
 
-
-	civil_drones = {
-
-		research_speed_factor = 0.025
-
-		enable_equipments = {
-			drone_equipment_0
-		}
-		
-		path = {
-			leads_to_tech = introduction_of_drones
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1990
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1990 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	introduction_of_drones = {
-
-		enable_equipments = {
-			drone_equipment_1
-		}
-		
-		#path = {
-		#	leads_to_tech = atgl_weapons_2
-		#	research_cost_coeff = 1
-		#}
-
-		research_cost = 1.5
-		start_year = 2000
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @2000 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	atgl_weapons = {
 
 		enable_equipments = {
 			grenade_launcher_equipment_0
 		}
-		
+
+		enable_subunits = {
+			anti_tank
+		}
 		path = {
 			leads_to_tech = atgl_weapons_1
 			research_cost_coeff = 1
@@ -1069,6 +1003,9 @@ technologies = {
 		enable_equipments = {
 			manpads_equipment_0
 		}
+		enable_subunits = {
+		anti_air
+		}
 		
 		path = {
 			leads_to_tech = manpads_weapons1
@@ -1198,6 +1135,9 @@ technologies = {
 
 		enable_equipments = {
 			mortar_equipment_0
+		}
+		enable_subunits = {
+			mortar
 		}
 		
 		path = {

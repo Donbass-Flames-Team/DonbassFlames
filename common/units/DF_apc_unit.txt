@@ -28,7 +28,7 @@ sub_units = {
 			infantry_equipment = 85
 			uniform_equipment = 85
 			bulletproof_vests_equipment = 85
-			apc_chassis = 8
+			apc = 8
 			support_equipment = 18
 			grenade_launcher_equipment = 12
 		}
@@ -36,7 +36,7 @@ sub_units = {
 		max_organisation = 60
 		default_morale = 0.3
 		training_time = 180
-		max_strength = 75
+		max_strength = 70
 		weight = 1
 		supply_consumption = 0.22
 
@@ -45,18 +45,19 @@ sub_units = {
 		suppression = 2.5
 
 		forest = {
-			attack = -0.2
-			movement = -0.4
+			attack = -0.25
+			movement = -0.3
 		}
 		mountain = 	{
-			attack = -0.3
+			attack = -0.2
+			movement = -0.2
 		}
 		jungle = {
 			attack = -0.3
-			movement = -0.4
+			movement = -0.35
 		}
 		marsh = {
-			attack = -0.25
+			attack = -0.
 			movement = -0.25
 		}
 		urban = {

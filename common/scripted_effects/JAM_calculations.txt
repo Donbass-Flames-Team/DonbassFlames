@@ -721,18 +721,6 @@ JAM_se_calculate_army_ammo_demand = {
             subtract_from_temp_variable = { total_units = temp_units    }
         }
         
-        # Doctrine multiplier
-        if = {
-            limit = {
-                has_tech = superior_firepower
-                has_game_rule = {
-                    rule   = JAM_gr_army_ammo_sup_fire_mult
-                    option = enable
-                }
-            }
-            multiply_temp_variable = { total_demand = @JAM_army_sup_fpwr_mult }
-        }
-        
         # Balancing multiplier
         multiply_temp_variable = { total_demand = @JAM_army_ammo_mult }
         

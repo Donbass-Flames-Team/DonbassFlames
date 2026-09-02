@@ -158,13 +158,14 @@ country_event = {
 	title = LPR.8.t
 	desc = LPR.8.d
 	#picture = GFX_report_event_royal_parade
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = LPR.8.a
 		add_political_power = -5
-	}
+		custom_effect_tooltip = LPR_electricity_crisis_tt
+    }
 }
 
 #Проблемы с социалкой/здравоохранением,ивент
@@ -309,7 +310,7 @@ country_event = {
 		add_political_power = 10
 		LPR = {
 			add_equipment_to_stockpile = {
-				type = bbm_chassis_2
+				type = bbm_1
 				amount = 1
 			}
 		}

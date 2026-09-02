@@ -1,0 +1,78 @@
+scripted_gui = {
+
+	development_button = {
+		window_name = "development_button"
+		context_type = player_context
+		parent_window_name = countrypoliticsview
+
+		triggers = {
+			
+		}
+
+		visible = {
+			
+		}
+
+		effects = {
+			development_button_click = {
+				if = {
+					limit = {
+						has_country_flag = Development_tab_on
+					}
+					clr_country_flag = Development_tab_on
+					else = {
+						set_country_flag = Development_tab_on
+					}
+				}
+			}
+		}
+	}
+
+	development_container_container = {
+		context_type = player_context
+		parent_window_name = countrypoliticsview
+		window_name = "development_container_container"
+
+		visible = {
+			has_country_flag = Development_tab_on
+		}
+		
+		effects = {
+			
+		}
+		
+		dynamic_lists = {
+
+		}
+		
+		properties = {
+			well_being_bar_background = {
+				frame = level_of_well_being # you can set a temp var in the triggers section and then use it here if you want the frame to not be 1:1 with the var
+			}
+			financial_sector_bar_background = {
+				frame = level_of_the_financial_sector # you can set a temp var in the triggers section and then use it here if you want the frame to not be 1:1 with the var
+			}			
+			technological_development_bar_background = {
+				frame = level_of_technological_development # you can set a temp var in the triggers section and then use it here if you want the frame to not be 1:1 with the var
+			}
+			healthcare_bar_background = {
+				frame = level_of_healthcare # you can set a temp var in the triggers section and then use it here if you want the frame to not be 1:1 with the var
+			}
+			industrial_development_bar_background = {
+				frame = level_of_industrial_development # you can set a temp var in the triggers section and then use it here if you want the frame to not be 1:1 with the var
+			}
+			human_development_bar_background = {
+				frame = level_of_human_development # you can set a temp var in the triggers section and then use it here if you want the frame to not be 1:1 with the var
+			}			
+			infrastructure_development_bar_background = {
+				frame = level_of_infrastructure_development # you can set a temp var in the triggers section and then use it here if you want the frame to not be 1:1 with the var
+			}
+			public_administration_bar_background = {
+				frame = level_of_public_administration # you can set a temp var in the triggers section and then use it here if you want the frame to not be 1:1 with the var
+			}				
+			
+		}
+	}	
+
+
+}

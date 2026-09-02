@@ -86,13 +86,46 @@ on_actions = {
                 var = corruption_value
                 max = 100
             }
+
+		}
+		# Corruption level dynamic modifier
+		effect = {
+			set_variable = {
+				var = corruption_level_political_power_gain_modifier
+				value = corruption_value
+			}
+            divide_variable = {
+				var = corruption_level_political_power_gain_modifier
+				value = 50
+			}
+			set_variable = {
+				var = corruption_level_consumer_goods_factor
+				value = corruption_value
+			}
+            divide_variable = {
+				var = corruption_level_consumer_goods_factor
+				value = 300
+			}
+			set_variable = {
+				var = corruption_level_stability_factor
+				value = corruption_value
+			}
+            divide_variable = {
+				var = corruption_level_stability_factor
+				value = -500
+			}			
+            set_variable = { GEN_corruption_political_power_gain = corruption_level_political_power_gain_modifier }
+            set_variable = { GEN_corruption_consumer_goods_factor = corruption_level_consumer_goods_factor }
+            set_variable = { GEN_corruption_stability_factor = corruption_level_stability_factor }
+		
+
+			
 		}
 	}
 	on_weekly = {
 		effect = {
 			DF_key_rate_calc = yes
 		}
-		
 	}
 	on_weekly = {
 		effect = {

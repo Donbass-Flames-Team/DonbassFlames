@@ -184,15 +184,33 @@ country_event = {
 				days = 7
 			}
 			432 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 55 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 65 }
 			}
 			424 = {
-				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 55 }
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 65 }
 			}
 			426 = {
 				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 35 }
 			}
 			421 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 35 }
+			}
+			397 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 35 }
+			}		
+			398 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 35 }
+			}			
+			402 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 35 }
+			}			
+			394 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 35 }
+			}			
+			327 = {
+				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 35 }
+			}
+			526 = {
 				add_dynamic_modifier = { modifier = prorussian_rallies_region_idea scope = UKR days = 35 }
 			}
 		}
@@ -1007,6 +1025,9 @@ country_event = {
 			value = 60
 			compare = greater_than_or_equals
 		}
+		NOT = {
+			has_global_flag = Maidan_is_suppressed
+		}
 	}
 
 	option = {
@@ -1041,6 +1062,9 @@ country_event = {
 			var = UKR_radicalisation_of_nationalists_value
 			value = 50
 			compare = greater_than_or_equals
+		}
+		NOT = {
+			has_global_flag = Maidan_is_suppressed
 		}
 	}
 
@@ -2319,7 +2343,11 @@ country_event = {
 
 	option = {
 		name = ukraine.59.a
-		add_political_power = -5				
+		add_political_power = -5
+		if = {
+			limit = { has_completed_focus = UKR_liqudation_of_opposition }
+			activate_mission = UKR_suppress_the_maidan_with_tanks
+		}				
 	}
 }
 
@@ -4656,7 +4684,7 @@ country_event = {
 	}
 }
 
-# Восстание на западе
+# Беспорядки на западе
 country_event = {
 	id = ukraine.123
 	title = ukraine.123.t
@@ -4679,41 +4707,63 @@ country_event = {
 				transfer_state = 196
 
 
-				add_core_state = 220
-				add_core_state = 322
-				add_core_state = 150
-				add_core_state = 306
-				add_core_state = 249
-				add_core_state = 183
-				add_core_state = 119
-				add_core_state = 70
-				add_core_state = 189
-				add_core_state = 196	
-				add_core_state = 224			
+				add_state_core  = 220
+				add_state_core  = 322
+				add_state_core  = 150
+				add_state_core  = 306
+				add_state_core  = 249
+				add_state_core  = 183
+				add_state_core  = 119
+				add_state_core  = 70
+				add_state_core  = 189
+				add_state_core  = 196	
+				add_state_core  = 224	
+				
+				load_oob = USR_uprising_militia
+				puppet = {
+                    target = LVO
+                    end_wars = no
+                }  
+
+				create_faction_from_template = {
+	                template = faction_template_generic
+	                name = faction_nationalists_of_ukraine
+	                icon = GFX_faction_nationalists_of_ukraine
+                }
+
+				add_to_faction = AZV
 			}
 			LVO = {
 				transfer_state = 224
-				add_core_state = 224
+				add_state_core  = 224
+
+				load_oob = LVO_uprising_militia
 			}
 			CHR = {
 				transfer_state = 150
-				add_core_state = 150
+				add_state_core  = 150
+
+				load_oob = CHR_uprising_militia
 			}
 			KOC = {
 				transfer_state = 70
 				transfer_state = 119
-				add_core_state = 70
-				add_core_state = 119
-				add_core_state = 111
-				add_core_state = 66
+				add_state_core  = 70
+				add_state_core  = 119
+				add_state_core  = 111
+				add_state_core  = 66
+
+				load_oob = KOC_uprising_militia
 			}		
 			RSB = {
 				transfer_state = 111
 				transfer_state = 66
-				add_core_state = 111
-				add_core_state = 66
-				add_core_state = 70
-				add_core_state = 119
+				add_state_core  = 111
+				add_state_core  = 66
+				add_state_core  = 70
+				add_state_core  = 119
+
+				load_oob = RSB_sbu_forces
 			}
 			IVN = {
 				transfer_state = 249
@@ -4722,18 +4772,20 @@ country_event = {
 				transfer_state = 278
                 transfer_state = 242
 
-				add_core_state = 249
-				add_core_state = 306
-				add_core_state = 332
-				add_core_state = 278
-				add_core_state = 242
+				add_state_core  = 249
+				add_state_core  = 306
+				add_state_core  = 332
+				add_state_core  = 278
+				add_state_core  = 242
 			}
 			AZV = {
 				transfer_state = 143
 				transfer_state = 190
 
-				add_core_state = 143
-				add_core_state = 190
+				add_state_core  = 143
+				add_state_core  = 190
+
+				load_oob = AZV_uprising_militia
 			}												
 		}
 	}
@@ -4794,15 +4846,17 @@ country_event = {
 				transfer_state = 231
 				transfer_state = 293
 
-				#declare_war_on = {
-				#	target = UKR
-				#	type = annex_everything
-				#}
+
+				add_state_core  = 279
+				add_state_core  = 355
+				add_state_core  = 293
+				add_state_core = 239
+				add_state_core = 179
+				add_state_core = 142
+				add_state_core = 214
+				add_state_core = 231
+				add_state_core = 293
 				load_oob = MLR_Uprising_Militia
-			}
-			country_event = {
-				id = ukraine.126
-				days = 2
 			}
 		}
 	}
@@ -4836,10 +4890,6 @@ country_event = {
 				picture = gfx/leaders/UKR/UKR_anarchy.dds
 				traits = {}
 			}
-			country_event = {
-				id = ukraine.133
-				hours = 8
-			}
 		}
 	}
 
@@ -4862,14 +4912,21 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			FUR = {
-				set_state_controller  = 75
-				set_state_controller = 67
-				set_state_controller = 148
-				set_state_controller = 113
+				transfer_state  = 75
+				transfer_state = 67
+				transfer_state = 148
+				transfer_state = 113
+
+				add_state_core = 75
+				add_state_core = 67
+				add_state_core = 148
+				add_state_core = 113		
+				
+				load_oob = FUR_oob
 			}
 			country_event = {
 				id = ukraine.128
-				days = 7
+				days = 13
 			}
 		}
 	}
@@ -4902,6 +4959,13 @@ country_event = {
 				transfer_state = 316
 				transfer_state = 274
 				transfer_state = 292
+
+				add_state_core = 241
+				add_state_core = 314
+				add_state_core = 286
+				add_state_core = 316
+				add_state_core = 274
+				add_state_core = 292				
 				load_oob = UWC_Uprising_army
 				declare_war_on = {
 					target = UKR
@@ -4970,6 +5034,26 @@ country_event = {
 					type = annex_everything
 				}
 			}		
+			CHR = {
+				declare_war_on = {
+					target = USR
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = AZV
+					type = annex_everything
+				}							
+			}
+			UKR = {
+				declare_war_on = {
+					target = CHR
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = AZV
+					type = annex_everything
+				}							
+			}
 		}
 	}
 
@@ -5849,7 +5933,7 @@ country_event = {
     id = ukraine.160
     title = ukraine.160.t
     desc = ukraine.160.d
-    picture = GFX_Report_event_neli_Stepa_picture
+    picture = GFX_Report_event_kuzmenko_is_dead
 
     is_triggered_only = yes
 
@@ -5858,6 +5942,705 @@ country_event = {
     }
 }
 
+# Стрельба в мукачево
+country_event = {
+    id = ukraine.161
+    title = ukraine.161.t
+    desc = ukraine.161.d
+    picture = GFX_Report_event_right_corp_is_expanded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.162
+				days = 6
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.161.a
+		add_stability = -0.01
+		add_political_power = -5
+    }
+}
+
+# Новый курс «Правого сектора»
+country_event = {
+    id = ukraine.162
+    title = ukraine.162.t
+    desc = ukraine.162.d
+    picture = GFX_Report_event_right_corp_is_expanded_picture
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.162.a
+    }
+}
+
+# 17-й саммит Украина–ЕС
+country_event = {
+    id = ukraine.163
+    title = ukraine.163.t
+    desc = ukraine.163.d
+    picture = GFX_Report_event_neli_Stepa_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = news_events.57
+				hours = 6
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.163.a
+    }
+}
+
+# Михаил Николаевич Куцин получает контузию
+country_event = {
+    id = ukraine.164
+    title = ukraine.164.t
+    desc = ukraine.164.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = Mikhail_Kunitsin_is_commander_in_chief
+			set_country_flag = Viktor_Muzhenko_is_commander_in_chief
+		}
+	}
+
+    option = {
+        name = ukraine.164.a
+		add_command_power = -10
+		custom_effect_tooltip = Viktor_Muzhenko_is_commander_in_chief_tt
+    }
+}
+
+# Майдан подавлен танками
+country_event = {
+    id = ukraine.165
+    title = ukraine.165.t
+    desc = ukraine.165.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			country_event = {
+				id = ukraine.166
+				days = 5
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.165.a
+		add_stability = -0.15
+		154 = {
+			add_manpower = -5000
+		}
+		remove_mission = UKR_yanukovich_overthrow
+		remove_mission = UKR_weekly_radicalisation_value
+		set_global_flag = Maidan_is_suppressed
+		complete_national_focus = UKR_maidan_is_suppressed
+    }
+}
+
+# Бандеровцы готовят восстание на западе
+country_event = {
+    id = ukraine.166
+    title = ukraine.166.t
+    desc = ukraine.166.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+    immediate = {
+		hidden_effect = {
+            LVO = {
+				transfer_state = 224
+				add_state_core  = 224
+
+				load_oob = LVO_uprising_militia
+			}
+			CHR = {
+				transfer_state = 150
+				add_state_core  = 150
+
+				load_oob = CHR_uprising_militia
+			}
+			KOC = {
+				transfer_state = 70
+				transfer_state = 119
+				add_state_core  = 70
+				add_state_core  = 119
+				add_state_core  = 111
+				add_state_core  = 66
+
+				load_oob = KOC_uprising_militia
+			}		
+			RSB = {
+				transfer_state = 111
+				transfer_state = 66
+				add_state_core  = 111
+				add_state_core  = 66
+				add_state_core  = 70
+				add_state_core  = 119
+
+				load_oob = RSB_sbu_forces
+			}
+			IVN = {
+				transfer_state = 249
+				transfer_state = 306
+				transfer_state = 332
+				transfer_state = 278
+                transfer_state = 242
+
+				add_state_core  = 249
+				add_state_core  = 306
+				add_state_core  = 332
+				add_state_core  = 278
+				add_state_core  = 242
+			}
+			AZV = {
+				transfer_state = 143
+				transfer_state = 190
+
+				add_state_core  = 143
+				add_state_core  = 190
+
+				load_oob = AZV_uprising_militia
+			}	
+			
+			ZKR = {
+				add_state_core = 331
+				add_state_core = 361
+				add_state_core = 385
+				add_state_core = 382
+				add_state_core = 315
+				add_state_core = 289
+				add_state_core = 375
+			}
+			331 = { transfer_state_to = ZKR }
+			361 = { transfer_state_to = ZKR }
+			385 = { transfer_state_to = ZKR }
+			382 = { transfer_state_to = ZKR }
+			315 = { transfer_state_to = ZKR }
+			289 = { transfer_state_to = ZKR }
+			375 = { transfer_state_to = ZKR }
+
+			FUR = {
+				add_state_core = 67
+				add_state_core = 75
+				add_state_core = 113
+				add_state_core = 148
+				add_state_core = 153
+				add_state_core = 120
+
+				load_oob = FUR_oob
+			}
+			67 = { transfer_state_to = FUR }
+			75 = { transfer_state_to = FUR }
+			113 = { transfer_state_to = FUR }
+			148 = { transfer_state_to = FUR }
+			153 = { transfer_state_to = FUR }
+			120 = { transfer_state_to = FUR }
+
+
+			660 = { transfer_state_to = OPS }
+		    OPS = {
+			    add_state_core = 660
+			    add_state_core = 572
+				load_oob = OPS_self_defense_units
+		    }
+			USR = {
+				transfer_state = 220
+				transfer_state = 322
+				transfer_state = 306
+				transfer_state = 249
+				transfer_state = 183
+				transfer_state = 119
+				transfer_state = 70
+				transfer_state = 189
+				transfer_state = 196
+				transfer_state = 262
+
+
+				add_state_core  = 220
+				add_state_core  = 322
+				add_state_core  = 150
+				add_state_core  = 306
+				add_state_core  = 249
+				add_state_core  = 183
+				add_state_core  = 119
+				add_state_core  = 70
+				add_state_core  = 189
+				add_state_core  = 196	
+				add_state_core  = 224	
+				add_state_core  = 262
+				
+				load_oob = USR_uprising_militia
+				puppet = {
+                    target = LVO
+                    end_wars = no
+                }  
+
+				create_faction_from_template = {
+	                template = faction_template_generic
+	                name = faction_nationalists_of_ukraine
+	                icon = GFX_faction_nationalists_of_ukraine
+                }
+
+				add_to_faction = AZV
+				add_to_faction = OPS
+				add_to_faction = FUR
+				add_to_faction = IVN
+				add_to_faction = RSB
+				add_to_faction = KOC
+				add_to_faction = CHR
+			}
+
+
+			country_event = {
+				id = ukraine.167
+				days = 3
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.166.a
+		add_stability = -0.05
+    }
+}
+
+# начало боевых действий
+country_event = {
+    id = ukraine.167
+    title = ukraine.167.t
+    desc = ukraine.167.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			declare_war_on = {
+				target = OPS
+                type = annex_everything
+			}
+			declare_war_on = {
+				target = AZV
+                type = annex_everything
+			}			
+			declare_war_on = {
+				target = FUR
+                type = annex_everything
+			}
+			declare_war_on = {
+				target = CHR
+                type = annex_everything
+			}
+			declare_war_on = {
+				target = KOC
+                type = annex_everything
+			}
+			declare_war_on = {
+				target = IVN
+                type = annex_everything
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.167.a
+		add_political_power = -25
+		add_stability = -0.05
+    }
+}
+
+# Перестают приходит выплаты пенсии из украины (ивент у днров)
+country_event = {
+    id = ukraine.168
+    title = ukraine.168.t
+    desc = ukraine.168.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			
+		}
+	}
+
+    option = {
+        name = ukraine.168.a
+		add_stability = -0.05
+    }
+}
+
+# взрыв под верховной радой
+country_event = {
+    id = ukraine.169
+    title = ukraine.169.t
+    desc = ukraine.169.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			
+		}
+	}
+
+    option = {
+        name = ukraine.169.a
+		add_stability = -0.03
+    }
+}
+
+# Саакашвили показывает размеры коррупции
+country_event = {
+    id = ukraine.170
+    title = ukraine.170.t
+    desc = ukraine.170.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			
+		}
+	}
+
+    option = {
+        name = ukraine.170.a
+		custom_effect_tooltip = the_political_crisis_is_worsening_tt
+		add_political_power = -5
+    }
+}
+
+# теракт во время «Марша достоинства» в Харькове 22 февраля 2014
+country_event = {
+    id = ukraine.171
+    title = ukraine.171.t
+    desc = ukraine.171.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+        hidden_effect = {
+			
+		}
+	}
+
+    option = {
+        name = ukraine.171.a
+		add_stability = -0.01
+    }
+}
+
+# УБИВСТВО ПАВЛА ШЕРЕМЕТА
+country_event = {
+    id = ukraine.172
+    title = ukraine.172.t
+    desc = ukraine.172.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.172.a
+        add_stability = -0.025
+		add_to_variable  = {
+			var = corruption_value
+			value = 2
+			tooltip = UKR_cor_tt
+		}
+    }
+
+    option = {
+        name = ukraine.172.b
+        add_stability = -0.03
+        add_political_power = -75
+    }
+}
+
+# ІНЦИДЕНТ З BOEING 737 BELAVIA
+country_event = {
+    id = ukraine.173
+    title = ukraine.173.t
+    desc = ukraine.173.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.173.a
+        add_stability = -0.005
+        BLR = {
+            add_opinion_modifier = {
+                target = UKR
+                modifier = UKR_belavia_incident
+            }
+        }
+		add_to_variable = {
+			var = corruption_value
+			value = -3
+			tooltip = UKR_cor_tt
+		}
+    }
+    option = {
+        name = ukraine.173.b
+        add_political_power = -100
+        add_stability = -0.005
+        add_war_support = -0.005
+		add_manpower = -50
+    }
+}
+
+#СЛАБКІ ПРОТЕСТИ БІЛЯ ВЕРХОВНОЇ РАДИ 2018
+country_event = {
+    id = ukraine.174
+    title = ukraine.174.t
+    desc = ukraine.174.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.174.a
+        add_stability = -0.005
+        add_political_power = -10
+    }
+}
+
+#СЕРЕДНІ ПРОТЕСТИ БІЛЯ ВЕРХОВНОЇ РАДИ 2018
+country_event = {
+    id = ukraine.175
+    title = ukraine.175.t
+    desc = ukraine.175.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.175.a
+        add_stability = -0.02
+        add_political_power = -25
+        add_timed_idea = {
+            idea = UKR_2018_protests
+            days = 120
+        }
+    }
+    option = {
+        name = ukraine.175.b
+        add_political_power = -40
+        add_stability = 0.01
+		add_to_variable = {
+		    var = corruption_value
+		    value = -3
+		    tooltip = UKR_corr_tt
+		}
+        add_timed_idea = {
+            idea = UKR_2018_concessions_protesters
+            days = 180
+        }
+    }
+}
+
+#СИЛЬНІ ПРОТЕСТИ БІЛЯ ВЕРХОВНОЇ РАДИ 2018
+country_event = {
+    id = ukraine.176
+    title = ukraine.176.t
+    desc = ukraine.176.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.176.a
+        add_stability = -0.05
+        add_war_support = -0.01
+        add_political_power = -50
+        add_timed_idea = {
+            idea = UKR_mass_2018_protests
+            days = 180
+        }
+    }
+
+    option = {
+        name = ukraine.176.b
+        add_political_power = -75
+        add_stability = 0.02
+		add_to_variable  = {
+		var = corruption_value
+		value = -5
+		tooltip = UKR_corr_tt
+			}
+        add_timed_idea = {
+            idea = UKR_2018_concessions_protesters
+            days = 360
+        }
+    }
+
+    #option = {
+    #    name = ukraine.176.c
+    #    add_stability = -0.08
+    #    add_war_support = -0.03
+	#	add_manpower = -7
+    #    add_timed_idea = {
+    #        idea = UKR_2018_crackdown_on_protests
+    #        days = 30
+    #    }
+    #}
+}
+
+#Отставка министра экономики 3 февраля 2016
+country_event = {
+    id = ukraine.177
+    title = ukraine.177.t
+    desc = ukraine.177.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.178
+				days = 12
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.177.a
+        add_political_power = -45
+    }
+}
+
+#Вотум недоверия правительству 
+country_event = {
+    id = ukraine.178
+    title = ukraine.178.t
+    desc = ukraine.178.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ukraine.179
+				days = 2
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.178.a
+        add_political_power = -25
+    }
+}
+
+#Развал коалиции
+country_event = {
+    id = ukraine.179
+    title = ukraine.179.t
+    desc = ukraine.179.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.179.a
+        add_political_power = -25
+    }
+}
+
+#Отставка яценюка
+country_event = {
+    id = ukraine.180
+    title = ukraine.180.t
+    desc = ukraine.180.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id =  ukraine.181
+				days = 3
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.180.a
+        add_political_power = -25
+    }
+}
+
+#Новый премьер
+country_event = {
+    id = ukraine.181
+    title = ukraine.181.t
+    desc = ukraine.181.d
+    picture = GFX_Report_event_mihail_kutsin_is_wounded_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = Resignation_of_yatsenuk_happened
+		}
+	}
+    # Владимир Гройсман
+    option = {
+        name = ukraine.181.a
+
+    }
+    # Наталья Яресько
+    option = {
+        name = ukraine.181.b
+       
+    }	
+}
+
+# ЛЯШКО ЗАСТРЯЛ В ЛИФТЕ
+country_event = {
+    id = ukraine.182
+    title = ukraine.182.t
+    desc = ukraine.182.d
+    picture = GFX_oleg_lyashko_v_lifte_picture
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.182.a
+        add_stability = 0.01
+    }
+    option = {
+        name = ukraine.182.b
+        add_stability = -0.05
+        add_political_power = 25
+    }
+}
 
 
 

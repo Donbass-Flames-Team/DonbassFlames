@@ -1,6 +1,34 @@
 ﻿l_russian:
- corruption_status:0 "[?corruption_value]%"
- corruption_tt_stats:0 "Уровень коррупция"
- criminality_tt_stats:0 "Уровень преступности"
- prestige_status:0 "[?prestige_value]"
- criminality_status:0 "[?criminality_value]%"
+ corruption_status: "Коррупция: [?corruption_value]%"
+ corruption_tt_stats: "Уровень коррупция"
+ criminality_tt_stats: "Уровень преступности"
+ prestige_status: "Престиж: [?prestige_value]"
+ criminality_status: "Преступность: [?criminality_value]%"
+
+ energy_status: "£energy_texticon Энергетика: $ENERGY_GENERATED|H1$ "
+
+
+
+ barrel_of_oil_title: "Цена за баррель:\n[?global.price_per_barrel]$"
+
+
+ #Уровень развития
+ well_being_text: "Уровень благосостояния"
+ financial_sector_text: "Уровень финансового сектора"
+ technological_development_text: "Уровень технологического развития"
+ healthcare_text: "Уровень здравоохранения"
+ industrial_development_text: "Уровень промышленного развития"
+ human_development_text: "Уровень человеческого развития"
+ infrastructure_development_text: "Уровень развития инфраструктуры"
+ public_administration_text: "Уровень государственного управления"
+
+ population_info_title: "Социальные слои"
+ population_info: "Крайне бедные: [?level_of_extremely_poor]%\nБедные: [?level_of_poor]%\nНижний средний класс: [?level_of_lower_middle_class]%\nСредний класс: [?level_of_middle_class]%\nБогатые: [?level_of_rich_people]%"
+
+ economic_sectors_title: "Сектора экономики"
+ economic_sectors: "Военная промышленность: [?mil_factories_gdp]\nГражданская промышленность: [?civ_factories_gdp]\nСельское хозяйство: [?agro_complex_gdp]\nМалый бизнес: [?small_buissnes_gdp]\nИндивидуальные предприниматели: [?individual_enterprises_gdp]\nКрупный бизнес: [?office_gdp]"
+
+ birth_rate: "Уровень рождаемости: [?birth_rate]"
+ population_fatigue: "Усталость населения: [?population_fatigue]"
+ population_fatigue_description: "Усталость населения — это социальный показатель, отражающий уровень психологического истощения общества в условиях затяжного военного конфликта. Он напрямую влияет на стабильность, уровень готовности к военной службе и прирост политической власти."
+ 

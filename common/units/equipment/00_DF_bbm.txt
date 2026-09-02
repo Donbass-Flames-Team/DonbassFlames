@@ -1,6 +1,6 @@
 equipments = {
 
-	bbm_chassis = {
+	bbm = {
 		year = 1950
 
 		is_archetype = yes
@@ -28,20 +28,20 @@ equipments = {
 		fuel_consumption = 1.2
 	}
 
-	bbm_chassis_0 = {
+	bbm_0 = {
 		year = 1950
 
-		archetype = bbm_chassis
+		archetype = bbm
 		active = yes
 		priority = 5
 		visual_level = 0	
 	}
 
-	bbm_chassis_1 = {
+	bbm_1 = {
 		year = 1980
 
-		archetype = bbm_chassis
-		parent = bbm_chassis_0
+		archetype = bbm
+		parent = bbm_0
 		priority = 30	
 		
 		maximum_speed = 13
@@ -58,11 +58,11 @@ equipments = {
 		fuel_consumption = 1.2
 	}
 
-	bbm_chassis_2 = {
+	bbm_2 = {
 		year = 1995
 
-		archetype = bbm_chassis
-		parent = bbm_chassis_1
+		archetype = bbm
+		parent = bbm_1
 		priority = 30		
 		
 		maximum_speed = 14
@@ -79,11 +79,11 @@ equipments = {
 		fuel_consumption = 1.2
 	}
 
-	bbm_chassis_3 = {
+	bbm_3 = {
 		year = 2010
 
-		archetype = bbm_chassis
-		parent = bbm_chassis_2
+		archetype = bbm
+		parent = bbm_2
 		priority = 30
 		
 		maximum_speed = 14
@@ -100,11 +100,11 @@ equipments = {
 		fuel_consumption = 1.2
 	}
 
-	bbm_chassis_4 = {
+	bbm_4 = {
 		year = 2015
 
-		archetype = bbm_chassis
-		parent = bbm_chassis_3
+		archetype = bbm
+		parent = bbm_3
 		priority = 30	
 		
 		maximum_speed = 14
@@ -121,11 +121,11 @@ equipments = {
 		fuel_consumption = 1.2
 	}
 
-	bbm_chassis_5 = {
+	bbm_5 = {
 		year = 2020
 
-		archetype = bbm_chassis
-		parent = bbm_chassis_4
+		archetype = bbm
+		parent = bbm_4
 		priority = 30		
 		
 		maximum_speed = 14

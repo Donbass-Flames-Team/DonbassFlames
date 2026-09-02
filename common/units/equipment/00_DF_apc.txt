@@ -1,5 +1,5 @@
 equipments = {
-	apc_chassis = {
+	apc = {
 		year = 1960
 		is_archetype = yes
 		is_buildable = no
@@ -32,21 +32,21 @@ equipments = {
 		active = yes
 	}
 
-	apc_chassis_0 = {
+	apc_0 = {
 		year = 1960
 
-		archetype = apc_chassis
+		archetype = apc
 		picture = apc_1
 		active = yes
 		priority = 5
 		visual_level = 0
 	}
 
-	apc_chassis_1 = {
+	apc_1 = {
 		year = 1980
 
-		archetype = apc_chassis
-		parent = apc_chassis_0
+		archetype = apc
+		parent = apc_0
 		picture = apc_2
 		priority = 10
 		visual_level = 1
@@ -74,11 +74,11 @@ equipments = {
 		build_cost_ic = 12.5
 	}
 
-	apc_chassis_2 = {
+	apc_2 = {
 		year = 2000
 
-		archetype = apc_chassis
-		parent = apc_chassis_1
+		archetype = apc
+		parent = apc_1
 		picture = apc_3
 		priority = 10
 		visual_level = 1
@@ -106,11 +106,11 @@ equipments = {
 		build_cost_ic = 12.5
 	}
 
-	apc_chassis_3 = {
+	apc_3 = {
 		year = 2020
 
-		archetype = apc_chassis
-		parent = apc_chassis_2
+		archetype = apc
+		parent = apc_2
 		picture = apc_4
 		priority = 10
 		visual_level = 1
@@ -138,11 +138,11 @@ equipments = {
 		build_cost_ic = 12.8
 	}
 
-	apc_chassis_4 = {
+	apc_4 = {
 		year = 2020
 
-		archetype = apc_chassis
-		parent = apc_chassis_3
+		archetype = apc
+		parent = apc_3
 		picture = apc_5
 		priority = 10
 		visual_level = 1

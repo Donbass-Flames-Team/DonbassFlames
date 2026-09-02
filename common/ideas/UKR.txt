@@ -274,8 +274,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.10
-				political_power_gain = 0.15
+				stability_factor = 0.03
+				political_power_gain = 0.04
+				monthly_population = 0.03
 			}
 		}
 		UKR_church_2_idea = {
@@ -290,8 +291,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.15
-				political_power_gain = 0.20
+				stability_factor = 0.08
+				political_power_gain = 0.07
+				monthly_population = 0.08
 			}
 		}
 		UKR_reformed_healthcare_idea = {
@@ -336,12 +338,35 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.10
+				army_org_factor = 0.025
+				army_morale_factor = 0.05
+				monthly_population = 0.05
 				political_power_gain = 0.15
 				war_support_factor = 0.15
 			}
 		}
-
-	}
-
+        UKR_2018_protests = {
+            modifier = {
+                stability_factor = -0.02
+                political_power_factor = -0.03
+            }
+        }
+        UKR_mass_2018_protests = {
+            modifier = {
+                stability_factor = -0.04
+                political_power_factor = -0.08
+            }
+        }
+        UKR_2018_concessions_protesters = {
+            modifier = {
+                political_power_factor = -0.10
+            }
+        }
+        UKR_2018_crackdown_on_protests = {
+            modifier = {
+                stability_factor = -0.10
+                war_support_factor = -0.04
+            }
+        }
+    }
 }

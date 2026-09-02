@@ -1,0 +1,334 @@
+division_template = {
+	name = "Mekhanizovanyy batalyon"
+	regiments = {
+		ifv_unit = { x = 0 y = 0 }
+		ifv_unit = { x = 0 y = 1 }
+		apc_unit = { x = 0 y = 2 }
+		apc_unit = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3}	 
+	}
+
+	is_locked = yes
+}
+
+division_template = {
+	name = "Motoryzovanyy zahin"
+	regiments = {
+		apc_unit = { x = 0 y = 0 }
+		apc_unit = { x = 0 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3}	 
+	}
+
+	is_locked = yes
+}
+
+division_template = {
+	name = "Tankovyy batalyon"
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		ifv_unit = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+	is_locked = yes
+}
+
+division_template = {
+	name = "Batalyon samokhidnoyi artyleriyi"
+	regiments = {
+		sau_artillery = { x = 0 y = 0 }
+		sau_artillery = { x = 0 y = 1 }
+		sau_artillery = { x = 0 y = 2 }
+		sau_artillery = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+	is_locked = yes
+}
+
+division_template = {
+	name = "Hirnycho-pikhotnyy batalʹyon"
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+	is_locked = yes
+}
+
+division_template = {
+	name = "SBU «Alpha»"
+	regiments = {
+		special_forces_infantry = { x = 0 y = 0 }
+		special_forces_infantry = { x = 0 y = 1 }
+		special_forces_infantry = { x = 0 y = 2 }
+		special_forces_infantry = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+	is_locked = yes
+}
+
+division_template = {
+	name = "SSO"
+	regiments = {
+		special_forces_infantry = { x = 0 y = 0 }
+		special_forces_infantry = { x = 0 y = 1 }
+		special_forces_infantry = { x = 0 y = 2 }
+		special_forces_infantry = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+	is_locked = yes
+}
+
+division_template = {
+	name = "Batalyon hur"
+	regiments = {
+		special_forces_infantry = { x = 0 y = 0 }
+		special_forces_infantry = { x = 0 y = 1 }
+		special_forces_infantry = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+	is_locked = yes
+}
+
+division_template = {
+	name = "Morska pikhota"
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+	is_locked = yes
+}
+
+
+division_template = {
+	name = "Desantno-Povitryani Viyska"
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+
+	is_locked = yes
+}
+
+division_template = {
+	name = "Dobrovol'che formuvannya"
+	regiments = {
+		territorial_defense_unit = { x = 0 y = 0 }
+		territorial_defense_unit = { x = 0 y = 1 }
+		territorial_defense_unit = { x = 0 y = 2 }
+		territorial_defense_unit = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+}
+
+units = {
+    division= {
+		name = "1-y Mekhanizovanyy batalyon"
+		location = 3619
+		division_template = "Mekhanizovanyy batalyon"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.15
+		start_manpower_factor = 1
+	}
+	division= {
+		name = "2-y Mekhanizovanyy batalyon"
+		location = 3619
+		division_template = "Mekhanizovanyy batalyon"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.15
+		start_manpower_factor = 1
+	} 
+	division= {
+		name = "1-y Motoryzovanyy zahin"
+		location = 13023
+		division_template = "Motoryzovanyy zahin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 1
+	}
+	division= {
+		name = "2-y Motoryzovanyy zahin"
+		location = 4463
+		division_template = "Motoryzovanyy zahin"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.2
+		start_manpower_factor = 0.2
+	} 
+	division= {
+		name = "3-y Motoryzovanyy zahin"
+		location = 7363
+		division_template = "Motoryzovanyy zahin"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.2
+		start_manpower_factor = 0.3
+	}
+
+	division= {
+		name = "1-y Zahin dobrovol'tsiv"
+		location = 4463
+		division_template = "Dobrovol'che formuvannya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 1
+	}
+	division= {
+		name = "2-y Zahin dobrovol'tsiv"
+		location = 4463
+		division_template = "Dobrovol'che formuvannya"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.5
+		start_manpower_factor = 1
+	} 
+	division= {
+		name = "3-y Zahin dobrovol'tsiv"
+		location = 3619
+		division_template = "Dobrovol'che formuvannya"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.5
+		start_manpower_factor = 1
+	}
+	division= {
+		name = "4-y Zahin dobrovol'tsiv"
+		location = 10372
+		division_template = "Dobrovol'che formuvannya"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.1
+	}	
+	division= {
+		name = "5-y Zahin dobrovol'tsiv"
+		location = 4643
+		division_template = "Dobrovol'che formuvannya"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.1
+	}	
+}

@@ -643,3 +643,54 @@ country_event = {
 		
 	}
 }
+
+#стрелков прибыл в славянск
+country_event = {
+	id = russia.33
+	title = russia.33.t
+	desc = russia.33.d
+	#picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = russia.33.a
+		
+	}
+
+	option = {
+		name = russia.33.b
+	    NDR = {
+			change_tag_from = root
+		}
+	}	
+}
+#Будет новоросия будет
+country_event = {
+	id = russia.33
+	title = russia.33.t
+	desc = russia.33.d
+	#picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = russia.33.a
+		
+	}
+
+	option = {
+		name = russia.33.b
+	    NDR = {
+			change_tag_from = root
+		}
+	}	
+}

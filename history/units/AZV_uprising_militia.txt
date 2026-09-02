@@ -1,0 +1,102 @@
+division_template = {
+	name = "Dobrovol'che formuvannya"
+	regiments = {
+		territorial_defense_unit = { x = 0 y = 0 }
+		territorial_defense_unit = { x = 0 y = 1 }
+		territorial_defense_unit = { x = 0 y = 2 }
+		territorial_defense_unit = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		atgm_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4} 
+		sniper_company = { x = 1 y = 0 }
+		manpads_platoon = { x = 1 y = 1}
+  		logistics_company = { x = 1 y = 2}
+		signal_company = { x = 1 y = 3} 
+	}
+}
+
+
+units = {
+	division= {
+		name = "2-y batalyon AZOV"
+		location = 2310
+		division_template = "Mekhanizovanyy batalyon"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+		start_manpower_factor = 1
+	}
+
+
+	division= {
+		name = "3-y batalyon AZOV"
+		location = 3319
+		division_template = "Mekhanizovanyy batalyon"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+		start_manpower_factor = 1
+	}
+
+	division= {
+		name = "4-y batalyon AZOV"
+		location = 3319
+		division_template = "Mekhanizovanyy batalyon"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+		start_manpower_factor = 1
+	}
+
+	division= {
+		name = "5-y batalyon AZOV"
+		location = 2310
+		division_template = "Dobrovol'che formuvannya"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+		start_manpower_factor = 1
+	}
+
+
+	division= {
+		name = "6-y batalyon AZOV"
+		location = 3319
+		division_template = "Dobrovol'che formuvannya"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+		start_manpower_factor = 1
+	}
+
+	division= {
+		name = "7-y batalyon AZOV"
+		location = 3319
+		division_template = "Dobrovol'che formuvannya"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+		start_manpower_factor = 1
+	}
+	
+	division= {
+		name = "8-y batalyon AZOV"
+		location = 3319
+		division_template = "Dobrovol'che formuvannya"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+		start_manpower_factor = 1
+	}	
+
+	division= {
+		name = "9-y batalyon AZOV"
+		location = 3319
+		division_template = "Dobrovol'che formuvannya"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+		start_manpower_factor = 1
+	}	
+	
+	
+}
+
+
+
