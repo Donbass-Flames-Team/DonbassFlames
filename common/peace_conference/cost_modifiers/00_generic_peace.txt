@@ -146,7 +146,7 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = take_states
         enable = {
-            ROOT = { has_government = democratic }
+            ROOT = { has_government = liberal_democracy }
             NOT = { # state is not taker's core
                 FROM.FROM.FROM = { is_core_of = ROOT.FROM }
             }
@@ -159,8 +159,8 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = liberate
         enable = {
-            ROOT = { has_government = democratic }
-            ROOT.FROM = { has_government = democratic }
+            ROOT = { has_government = liberal_democracy }
+            ROOT.FROM = { has_government = liberal_democracy }
         }
         cost_multiplier = 0.9
     }
@@ -170,7 +170,7 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = force_government
         enable = {
-            ROOT = { has_government = democratic }
+            ROOT = { has_government = liberal_democracy }
             ROOT.FROM = { has_government = fascism }
         }
         cost_multiplier = 0.9
@@ -181,7 +181,7 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = force_government
         enable = {
-            ROOT = { has_government = democratic }
+            ROOT = { has_government = liberal_democracy }
             ROOT.FROM = { has_government = communism }
         }
         cost_multiplier = 0.9
@@ -192,7 +192,7 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = puppet
         enable = {
-            ROOT = { has_government = democratic }
+            ROOT = { has_government = liberal_democracy }
         }
         cost_multiplier = 1.2
     }
@@ -328,7 +328,7 @@ peace_action_modifiers = {
             ROOT.FROM.FROM = {
                 is_major = yes
 				NOT = { has_government = fascism }
-				NOT = { has_government = neutrality }
+				NOT = { has_government = autoritarian_democracy }
             }
         }
         cost_multiplier = 0.80
@@ -341,7 +341,7 @@ peace_action_modifiers = {
 
         enable = {
             ROOT = {
-                has_government = democratic
+                has_government = liberal_democracy
                 is_major = yes
             }
             ROOT.FROM.FROM = {
