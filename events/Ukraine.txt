@@ -6622,6 +6622,27 @@ country_event = {
     }	
 }
 
+# ЛЯШКО ЗАСТРЯЛ В ЛИФТЕ
+country_event = {
+    id = ukraine.182
+    title = ukraine.182.t
+    desc = ukraine.182.d
+    picture = GFX_oleg_lyashko_v_lifte_picture
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.182.a
+        add_stability = 0.01
+    }
+    option = {
+        name = ukraine.182.b
+        add_stability = -0.05
+        add_political_power = 25
+    }
+}
+
+
 
 ##########################################################################
 ##########################################################################
