@@ -1,0 +1,89 @@
+focus_tree = {
+	id = MLR_Start
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MLR
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	focus = {
+		id = MLR_Medvenchuk1
+		icon = GFX_goal_unknown
+		x = -1
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = MLR_Medvenchuk2
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_weapons1
+				amount = 3000
+				producer = MLR
+			}
+		}
+		prerequisite = {
+			focus = MLR_Medvenchuk1
+		}
+	}
+	focus = {
+		id = MLR_Medvenchuk3
+		icon = GFX_goal_unknown
+		x = -2
+		y = 3
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = MLR_Medvenchuk2
+		}
+		mutually_exclusive = {
+			focus = MLR_Medvenchuk_RUS
+		}
+	}
+	focus = {
+		id = MLR_Medvenchuk_RUS
+		icon = GFX_goal_unknown
+		x = 0
+		y = 3
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = MLR_Medvenchuk2
+		}
+		mutually_exclusive = {
+			focus = MLR_Medvenchuk3
+		}
+	}
+	focus = {
+		id = MLR_Army1
+		icon = GFX_goal_unknown
+		x = -2
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = MLR_Medvenchuk3
+		}
+	}
+	focus = {
+		id = MLR_Medvenchuk_RUS1
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = MLR_Medvenchuk_RUS
+		}
+	}
+}
