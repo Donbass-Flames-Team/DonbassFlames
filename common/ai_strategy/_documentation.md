@@ -564,7 +564,7 @@ Affects the AI's perceived archetype needs regarding equipment purchases on the 
 ```
 ai_strategy = {
 	type = equipment_market_buying_threshold
-	id = small_plane_cas_airframe  # equipment archetype
+	id = CAS_equipment  # equipment archetype
 	value = 100  # Absolute number of units
 }
 ```
