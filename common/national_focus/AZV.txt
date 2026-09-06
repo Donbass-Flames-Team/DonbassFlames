@@ -12,7 +12,7 @@ focus_tree = {
 	
 	focus = {
 		id = AZV_form_first_batalion
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_AZV_form_first_batalion
 		cost = 2
 		x = 12
 		y = 0
@@ -26,15 +26,36 @@ focus_tree = {
 			load_oob = AZV_2014
 		}
 	}
+    focus = {
+		id = AZV_getting_ready_for_assault
+		icon = GFX_focus_AZV_liberate_mariupol
+		cost = 0.7
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AZV_form_first_batalion
+			}
+		relative_position_id = AZV_form_first_batalion
+		available = {
+			
+		}
 
+		completion_reward = {
+			526 = {
+			add_dynamic_modifier = { modifier = AZV_getting_ready_for_assault_dynamic_idea }
+			}
+		}
+	}
 	focus = {
 		id = AZV_liberate_mariupol
-		#icon = GFX_focus_UKR_The_regime_is_under_threat
+		icon = GFX_focus_AZV_liberate_mariupol
 		cost = 0.1
 		x = 0
 		y = 1
-		prerequisite = {focus = AZV_form_first_batalion}
-		relative_position_id = AZV_form_first_batalion
+		prerequisite = {
+			focus = AZV_getting_ready_for_assault
+			}
+		relative_position_id = AZV_getting_ready_for_assault
 		available = {
 			
 		}
@@ -46,6 +67,215 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = AZV_art_of_modern_warfare
+		icon = GFX_focus_AZV_liberate_mariupol
+		cost = 0.7
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AZV_liberate_mariupol
+			}
+		relative_position_id = AZV_liberate_mariupol
+		available = {
+			
+		}
 
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AZV_lessons_of_urban_warfare
+		icon = GFX_focus_AZV_liberate_mariupol
+		cost = 0.7
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AZV_art_of_modern_warfare
+			}
+		relative_position_id = AZV_art_of_modern_warfare
+		available = {
+			
+		}
 
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AZV_on_our_own
+		icon = GFX_focus_AZV_liberate_mariupol
+		cost = 0.7
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = AZV_cooperation_with_the_generals
+		    }
+		prerequisite = {
+			focus = AZV_lessons_of_urban_warfare
+			}
+		relative_position_id = AZV_lessons_of_urban_warfare
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AZV_cooperation_with_the_generals
+		icon = GFX_focus_AZV_liberate_mariupol
+		cost = 0.7
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = AZV_on_our_own
+		}
+		prerequisite = {
+			focus = AZV_lessons_of_urban_warfare
+			}
+		relative_position_id = AZV_lessons_of_urban_warfare
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AZV_volunteer_recruitment_drive
+		icon = GFX_focus_AZV_liberate_mariupol
+		cost = 0.7
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = AZV_liberate_mariupol
+			}
+		relative_position_id = AZV_liberate_mariupol
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AZV_school_of_patriots
+		icon = GFX_focus_AZV_liberate_mariupol
+		cost = 0.7
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AZV_volunteer_recruitment_drive
+			}
+		relative_position_id = AZV_volunteer_recruitment_drive
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AZV_formation_of_volunteer_detachments
+		icon = GFX_focus_AZV_liberate_mariupol
+		cost = 0.7
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AZV_school_of_patriots
+			}
+		relative_position_id = AZV_school_of_patriots
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AZV_reach_an_agreement_on_arms_supplies
+		icon = GFX_focus_AZV_liberate_mariupol
+		cost = 0.7
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = AZV_liberate_mariupol
+			}
+		relative_position_id = AZV_liberate_mariupol
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AZV_ensure_delivery_of_light_vehicles
+		icon = GFX_focus_AZV_liberate_mariupol
+		cost = 0.7
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AZV_reach_an_agreement_on_arms_supplies
+			}
+		relative_position_id = AZV_reach_an_agreement_on_arms_supplies
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AZV_stable_supplies_of_weaponry
+		icon = GFX_focus_AZV_liberate_mariupol
+		cost = 0.7
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AZV_ensure_delivery_of_light_vehicles
+			}
+		relative_position_id = AZV_ensure_delivery_of_light_vehicles
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AZV_declare_war_on_separatism
+		icon = GFX_focus_AZV_liberate_mariupol
+		cost = 0.7
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = AZV_stable_supplies_of_weaponry
+			}
+		prerequisite = {
+			focus = AZV_cooperation_with_the_generals
+			focus = AZV_on_our_own
+			}
+		prerequisite = {
+			focus = AZV_formation_of_volunteer_detachments
+			}
+		relative_position_id = AZV_cooperation_with_the_generals
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
 }
