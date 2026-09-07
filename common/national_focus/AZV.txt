@@ -41,9 +41,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			526 = {
 			add_dynamic_modifier = { modifier = AZV_getting_ready_for_assault_dynamic_idea }
-			}
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -82,7 +81,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			army_experience = 25
+			add_command_power = 50
 		}
 	}
 	focus = {
@@ -100,7 +100,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			army_experience = 50
 		}
 	}
 	focus = {
@@ -121,7 +121,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_command_power = 100
+			custom_effect_tooltip = AZV_on_our_own_tt
 		}
 	}
 	focus = {
@@ -142,7 +143,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+		    army_experience = 100
 		}
 	}
 	focus = {
