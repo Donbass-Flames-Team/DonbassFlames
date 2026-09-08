@@ -1,0 +1,25 @@
+division_template = {
+	name = "Dobrovolchyy Batalyon"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		mortar = { x = 0 y = 2 }
+		sniper_company = { x = 0 y = 3 }
+		atgm_company = { x = 1 y = 0 }
+	}
+}
+units = {
+	division= {
+		name = "Dobrovolchyy Batalyon"
+		location = 10761
+		division_template = "Dobrovolchyy Batalyon"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+	}
+}

@@ -161,17 +161,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			load_oob = "AZV_dobrobat"
+			load_oob = "AZV_dobrobat"
 		}
 	}
 	focus = {
 		id = AZV_school_of_patriots
 		icon = GFX_focus_AZV_liberate_mariupol
 		cost = 0.7
-		x = 0
-		y = 1
+		x = -2
+		y = 0
 		prerequisite = {
-			focus = AZV_volunteer_recruitment_drive
+			focus = AZV_liberate_mariupol
 			}
 		relative_position_id = AZV_volunteer_recruitment_drive
 		available = {
@@ -186,10 +187,13 @@ focus_tree = {
 		id = AZV_formation_of_volunteer_detachments
 		icon = GFX_focus_AZV_liberate_mariupol
 		cost = 0.7
-		x = 0
+		x = 1
 		y = 1
 		prerequisite = {
 			focus = AZV_school_of_patriots
+			}
+		prerequisite = {
+			focus = AZV_volunteer_recruitment_drive
 			}
 		relative_position_id = AZV_school_of_patriots
 		available = {
@@ -215,17 +219,32 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+            add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1250
+			}
+			add_equipment_to_stockpile = {
+				type = bulletproof_vests_equipment_1
+				amount = 800
+			}
+			add_equipment_to_stockpile = {
+				type = uniform_equipment_1 
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = grenade_launcher_equipment_1
+				amount = 300
+			}
 		}
 	}
 	focus = {
 		id = AZV_ensure_delivery_of_light_vehicles
 		icon = GFX_focus_AZV_liberate_mariupol
 		cost = 0.7
-		x = 0
-		y = 1
+		x = 2
+		y = 0
 		prerequisite = {
-			focus = AZV_reach_an_agreement_on_arms_supplies
+			focus = AZV_liberate_mariupol
 			}
 		relative_position_id = AZV_reach_an_agreement_on_arms_supplies
 		available = {
@@ -233,17 +252,27 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+            add_equipment_to_stockpile = {
+				type = bbm_0
+				amount = 300
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_0
+				amount = 550
+			}
 		}
 	}
 	focus = {
 		id = AZV_stable_supplies_of_weaponry
 		icon = GFX_focus_AZV_liberate_mariupol
 		cost = 0.7
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = {
 			focus = AZV_ensure_delivery_of_light_vehicles
+			}
+		prerequisite = {
+			focus = AZV_reach_an_agreement_on_arms_supplies
 			}
 		relative_position_id = AZV_ensure_delivery_of_light_vehicles
 		available = {
