@@ -9,8 +9,6 @@ state = {
 	resources = { coal = 26 } 
 	history = { 
 		owner = UKR 
-
-		add_dynamic_modifier = { modifier = donbass_state_idea }
 		
 		victory_points = { 9377 5 }
 		victory_points = { 10298 50 }
@@ -22,22 +20,24 @@ state = {
 		victory_points = { 18561 5 }
 		
 		buildings = { 
-			offices_building = 3
-			social_infrastructure = 4
-			network_infrastructure = 4
-			industrial_complex = 5
-			arms_factory = 3
-			steel_mill = 2
-			ammunition_plant = 2
+			offices_building = 3 
+			social_infrastructure = 4 
+			network_infrastructure = 4 
+			industrial_complex = 5 
+			arms_factory = 3 
+			steel_mill = 2 
+			ammunition_plant = 2 
 			infrastructure = 4 
 		}
 		
+		add_dynamic_modifier = { modifier = donbass_state_idea }
 		add_core_of = UKR 
 		
 		
 		2014.5.19 = { 
 			owner = DPR 
 			controller = DPR 
+			
 			add_core_of = DPR 
 		}
 	}
