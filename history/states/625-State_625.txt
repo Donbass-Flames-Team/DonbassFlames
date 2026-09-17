@@ -20,18 +20,17 @@ state = {
 		
 		add_core_of = CRI 
 		add_core_of = UKR 
-		add_core_of = RUS 
+		add_core_of = RUS
 		add_extra_state_shared_building_slots = 0 
 		
 		
-		2014.5.19 = { 
-			owner = RUS 
-			controller = RUS 
-			
-			remove_core_of = UKR 
-			add_claim_by = UKR 
-			add_core_of = RUS 
-			add_core_of = CRI 
+		2014.5.19 = {
+			owner = RUS
+			controller = RUS
+			remove_core_of = UKR
+			add_claim_by = UKR
+			add_core_of = RUS
+			add_core_of = CRI
 		}
 	}
 	provinces = { 17482 }
