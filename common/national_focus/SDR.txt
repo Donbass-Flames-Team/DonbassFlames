@@ -264,7 +264,9 @@ focus_tree = {
 		x = 9
 		y = 1
 		cost = 10
-		completion_reward = {}
+		completion_reward = {
+			add_political_power = 35
+		}
 		prerequisite = {
 			focus = SDR_expand_the_mangust_group
 		}
@@ -275,7 +277,9 @@ focus_tree = {
 		x = 11
 		y = 3
 		cost = 10
-		completion_reward = {}
+		completion_reward = {
+			add_political_power = 35
+		}
 		prerequisite = {
 			focus = SDR_capture_mvd
 		}
