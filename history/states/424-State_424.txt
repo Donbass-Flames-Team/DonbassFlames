@@ -3,15 +3,16 @@ state = {
 	name = "STATE_424" 
 	manpower = 246702 
 	
-	state_category = slot_7 
+	state_category = slot_7
 	buildings_max_level_factor = 2 
-	
 	resources = { 
 		steel = 4 
-		coal = 22 
+		coal = 22
 	} 
 	history = { 
 		owner = UKR 
+
+		add_dynamic_modifier = { modifier = donbass_state_idea }
 		
 		victory_points = { 8269 5 }
 		victory_points = { 11018 3 }
@@ -26,14 +27,12 @@ state = {
 			infrastructure = 4 
 		}
 		
-		add_dynamic_modifier = { modifier = donbass_state_idea }
 		add_core_of = UKR 
 		
 		
 		2014.5.19 = { 
 			owner = DPR 
 			controller = DPR 
-			
 			add_core_of = DPR 
 		}
 	}

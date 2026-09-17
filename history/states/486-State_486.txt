@@ -12,6 +12,8 @@ state = {
 	} 
 	history = { 
 		owner = UKR 
+
+		add_dynamic_modifier = { modifier = donbass_state_idea }
 		
 		victory_points = { 6983 5 }
 		victory_points = { 10105 3 }
@@ -29,7 +31,6 @@ state = {
 			industrial_complex = 0 
 		}
 		
-		add_dynamic_modifier = { modifier = donbass_state_idea }
 		add_core_of = UKR 
 		
 		
