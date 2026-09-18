@@ -9,8 +9,6 @@ state = {
 	resources = { coal = 14 } 
 	history = { 
 		owner = UKR 
-
-		add_dynamic_modifier = { modifier = donbass_state_idea }
 		
 		victory_points = { 15930 10 }
 		
@@ -22,11 +20,9 @@ state = {
 			infrastructure = 4 
 		}
 		
+		add_dynamic_modifier = { modifier = donbass_state_idea }
 		add_core_of = UKR 
-
-		strategic_province_location = {
-			defensive_chokepoint = 15930
-		}
+		strategic_province_location = { defensive_chokepoint = 15930 }
 		
 		
 		2014.5.19 = { 
