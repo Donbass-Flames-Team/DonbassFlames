@@ -264,7 +264,9 @@ focus_tree = {
 		x = 9
 		y = 1
 		cost = 10
-		completion_reward = {}
+		completion_reward = {
+			add_political_power = 35
+		}
 		prerequisite = {
 			focus = SDR_expand_the_mangust_group
 		}
@@ -274,8 +276,11 @@ focus_tree = {
 		icon = GFX_focus_BRA_reach_out_to_military_dem
 		x = 11
 		y = 3
-		cost = 10
-		completion_reward = {}
+		cost = 3
+		completion_reward = {
+			add_political_power = 35
+			add_manpower = 200
+		}
 		prerequisite = {
 			focus = SDR_capture_mvd
 		}
@@ -285,8 +290,10 @@ focus_tree = {
 		icon = GFX_goal_generic_radar
 		x = 15
 		y = 3
-		cost = 10
-		completion_reward = {}
+		cost = 3
+		completion_reward = {
+			add_war_support = 0.05
+		}
 		prerequisite = {
 			focus = SDR_capture_mvd
 		}
@@ -296,8 +303,11 @@ focus_tree = {
 		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
 		x = 9
 		y = 5
-		cost = 10
-		completion_reward = {}
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.15
+		}
 		prerequisite = {
 			focus = SDR_capture_3057
 		}
