@@ -11,7 +11,7 @@ focus_tree = {
 	continuous_focus_position = { x = 2500 y = 500 }
 
 	focus = {
-		id = OPR_arrise_novorossia
+		id = OPR_the_odessa_underground
 		cost = 0.5
 		x = 12
 		y = 0
@@ -24,13 +24,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OPR_appeal_to_the_russian_spirit
+		id = OPR_kulikovo_field_camps
 		cost = 1
-		x = 0
-		y = 1
+		x = 2
+		y = 2
 
-		prerequisite = { focus = OPR_arrise_novorossia }
-		relative_position_id = OPR_arrise_novorossia
+		prerequisite = { focus = OPR_the_odessa_underground }
+		relative_position_id = OPR_the_odessa_underground
 
 		available = { }
 
@@ -43,19 +43,132 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OPR_zachvat_flota
+		id = OPR_peoples_druzhina
+		cost = 2
+		x = -2
+		y = 2
+		prerequisite = { focus = OPR_the_odessa_underground }
+		relative_position_id = OPR_the_odessa_underground
+		available = { }
+
+	}
+
+	focus = {
+		id = OPR_appers_to_locals
+		cost = 2
+		x = 2
+		y = 2
+		prerequisite = { focus = OPR_peoples_druzhina  }
+		prerequisite = { focus = OPR_kulikovo_field_camps }
+		relative_position_id = OPR_peoples_druzhina
+		available = { }
+
+	}
+
+	focus = {
+		id = OPR_appeals_to_the_militia
+		cost = 3
+		x = -3
+		y = 3
+		prerequisite = { focus = OPR_appers_to_locals }
+		relative_position_id = OPR_appers_to_locals
+		available = { }
+
+	}
+
+	focus = {
+		id = OPR_clashes_in_the_city_center
+		cost = 2
+		x = 0
+		y = 2
+		prerequisite = { focus = OPR_appers_to_locals }
+		relative_position_id = OPR_appers_to_locals
+		available = { }
+
+	}
+
+	focus = {
+		id = OPR_smuggling_chanels
+		cost = 1
+		x = 3
+		y = 3
+		prerequisite = { focus = OPR_appers_to_locals }
+		relative_position_id = OPR_appers_to_locals
+		available = { }
+	}
+
+	focus = {
+		id = OPR_transnistrian_boarder
+		cost = 4
+		x = 0
+		y = 2
+		prerequisite = { focus = OPR_smuggling_chanels }
+		prerequisite = { focus = OPR_clashes_in_the_city_center }
+		prerequisite = { focus = OPR_appeals_to_the_militia }
+		relative_position_id =  OPR_clashes_in_the_city_center
+		available = { }
+	}
+
+	focus = {
+		id = OPR_partisan_cell
+		cost = 2
+		x = 4
+		y = 2
+		prerequisite = { focus = OPR_transnistrian_boarder }
+		relative_position_id = OPR_transnistrian_boarder
+		available = { }
+	}
+
+	focus = {
+		id = OPR_raiway_sabotage
+		cost = 2
+		x = 2
+		y = 2
+		prerequisite = { focus = OPR_transnistrian_boarder }
+		relative_position_id = OPR_transnistrian_boarder
+		available = { }
+	}
+
+	focus = {
+		id = OPR_surrogate_equipment
+		cost = 2
+		x = -2
+		y = 2
+		prerequisite = { focus = OPR_transnistrian_boarder }
+		relative_position_id = OPR_transnistrian_boarder
+		available = { }
+	}
+
+	focus = {
+		id = OPR_contacts_with_donbass
+		cost = 1
+		x = -4
+		y = 2
+		prerequisite = { focus = OPR_transnistrian_boarder }
+		relative_position_id = OPR_transnistrian_boarder
+		available = { }
+	}
+
+	focus = {
+		id = OPR_fire_in_the_house_of_trade_unic
+		cost = 3
+		x = -4
+		y = 2
+		prerequisite = { focus = OPR_contacts_with_donbass }
+		prerequisite = { focus = OPR_surrogate_equipment }
+		prerequisite = { focus = OPR_raiway_sabotage }
+		prerequisite = { focus = OPR_partisan_cell }
+		relative_position_id = OPR_partisan_cell
+		available = { }
+	}
+
+	focus = {
+		id = OPR_escape_to_the_catacombs
 		cost = 1
 		x = 0
-		y = 5 
-		prerequisite = { focus = OPR_appeal_to_the_russian_spirit }
-		relative_position_id = OPR_arrise_novorossia
-
+		y = 2
+		prerequisite = { focus = OPR_fire_in_the_house_of_trade_unic }
+		relative_position_id = OPR_fire_in_the_house_of_trade_unic
 		available = { }
-		completion_reward = { add_equipment_to_stockpile = {
-	type = convoy_1
-	amount = 20
-	producer = ROOT
-}
- }
 	}
 }
