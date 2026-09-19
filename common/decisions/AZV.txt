@@ -1,0 +1,72 @@
+AZV_Postavki_oryjia = {   
+    AZV_zbir_na_Azov_mission = { 
+            allowed = { 
+                original_tag = AZV
+            }
+
+            icon = POL_looming_peasants_strike
+
+            available = {
+                hidden_trigger = { always = no }
+            }
+
+            activation = {
+                has_completed_focus = AZV_stable_supplies_of_weaponry
+            }
+            
+
+            days_mission_timeout = 30
+            fire_only_once = yes 
+            is_good = yes
+
+            timeout_effect = {
+                activate_mission = UKR_zbir_na_pihotky_mission
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment_1
+                    amount = 500
+                }
+                add_equipment_to_stockpile = {
+                    type = uniform_equipment_1 
+                    amount = 500
+                }
+                add_equipment_to_stockpile = {
+                    type = motorized_equipment_1
+                    amount = 100
+                }
+                add_equipment_to_stockpile = {
+                    type = support_equipment_1
+                    amount = 500
+                }
+                add_equipment_to_stockpile = {
+                    type = bbm_1
+                    amount = 500
+                }
+                add_equipment_to_stockpile = {
+                    type = mortar_equipment_2
+                    amount = 500
+                }
+                add_equipment_to_stockpile = {
+                    type = manpads_equipment_2
+                    amount = 500
+                }
+            }
+        }
+}       
+
+AZV_formuvania_batalioniv = {
+    AZV_dobrobat_create = {
+        allowed = { 
+            original_tag = AZV
+            has_completed_focus = AZV_formation_of_volunteer_detachments
+        }
+
+        fire_only_once = no
+
+        cost = 75
+
+        days_remove = 28
+        remove_effect = {
+            load_oob = AZV_dobrobat
+        }
+    }
+}

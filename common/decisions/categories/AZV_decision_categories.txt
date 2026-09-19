@@ -1,0 +1,21 @@
+AZV_Postavki_oryjia = {
+    priority = 100
+	
+	icon = GFX_decision_UKR_separatism_icon
+	
+	allowed = {
+		original_tag = AZV
+        has_completed_focus = AZV_stable_supplies_of_weaponry
+	}
+}
+
+AZV_formuvania_batalioniv  = {
+    priority = 90
+	
+	icon = GFX_decision_UKR_separatism_icon
+	
+	allowed = {
+		original_tag = AZV
+        has_completed_focus = AZV_formation_of_volunteer_detachments
+	}
+}
