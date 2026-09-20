@@ -357,11 +357,11 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "patch_notes_text"
 			position = { x = 562 y = 125 }
-			font = "hoi_36header"
+			font = "hoi_18mbs"
 			text = "patch_notes_text"
 			maxWidth = 645
 			maxHeight = 500
-			format = centre
+			format = left
 			alwaystransparent = yes
 			scrollbarType = standardtext_slider
 		}
