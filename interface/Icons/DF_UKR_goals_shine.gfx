@@ -2975,7 +2975,7 @@ spriteTypes = {
         legacy_lazy_load = no
     }
     spriteType = {
-        name = "GFX_focus_UKR_visa_free_travel_with_the_eu"
+        name = "GFX_focus_UKR_visa_free_travel_with_the_eu_shine"
         texturefile = "gfx/interface/goals/UKR/UKR_visa_free_travel_with_the_eu.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
@@ -3005,7 +3005,7 @@ spriteTypes = {
         legacy_lazy_load = no
     }
     spriteType = {
-        name = "GFX_focus_UKR_trade_with_the_eu"
+        name = "GFX_focus_UKR_trade_with_the_eu_shine"
         texturefile = "gfx/interface/goals/UKR/UKR_trade_with_the_eu.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
@@ -3035,7 +3035,7 @@ spriteTypes = {
         legacy_lazy_load = no
     }
     spriteType = {
-        name = "GFX_focus_UKR_join_to_the_nato"
+        name = "GFX_focus_UKR_join_to_the_nato_shine"
         texturefile = "gfx/interface/goals/UKR/UKR_join_to_the_nato.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
@@ -3052,6 +3052,36 @@ spriteTypes = {
         }
         animation = {
             animationmaskfile = "gfx/interface/goals/UKR/UKR_join_to_the_nato.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_focus_UKR_macro_financial_assistance_from_the_eu"
+        texturefile = "gfx/interface/goals/UKR/UKR_macro_financial_assistance_from_the_eu.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/UKR/UKR_macro_financial_assistance_from_the_eu.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/UKR/UKR_macro_financial_assistance_from_the_eu.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
