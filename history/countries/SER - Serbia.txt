@@ -2,6 +2,8 @@ capital = 636
 set_variable = { cash = 1 }
 set_variable = { debt = -1 }
 
+recruit_character = SER_tomislav_nikolic
+
 2013.11.21 = {
 
 	set_research_slots = 3
@@ -43,7 +45,7 @@ set_variable = { debt = -1 }
 	}
 
 	set_politics = {
-		ruling_party = conservatism_democracy 
+		ruling_party = nationalism 
 		last_election = "2012.05.20"
 		election_frequency = 60
 		elections_allowed = yes

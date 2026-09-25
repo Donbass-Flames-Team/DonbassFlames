@@ -275,3 +275,10 @@ UKR_EU_integration_modifier = {
 	monthly_population = UKR_eu_monthly_pop
 	industrial_capacity_factory = UKR_eu_factory_eff
 }
+UKR_if_there_no_village_there_will_be_no_ukraine_modifier = {
+	enable = {
+		always = yes
+	}
+	icon = penis
+	production_speed_buildings_factor = infrastructure
+}
