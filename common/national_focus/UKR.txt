@@ -6406,7 +6406,7 @@ focus_tree = {
 		id = UKR_timoshenko_victory
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
-		x = 15
+		x = 18
 		y = 1
 		prerequisite = {
 			focus = UKR_snap_presidential_elections
@@ -6831,7 +6831,7 @@ focus_tree = {
 		id = UKR_military_reforms_afu
 		icon = GFX_focus_UKR_afu_reforms
 		cost = 3
-		x = 77
+		x = 84
 		y = 0
 		available = {
 			has_country_flag = Focuses_after_Ato
@@ -8774,5 +8774,222 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {}
 		}
+	}
+	focus = {
+		id = UKR_timoshenko_Abolition_of_immunity
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_victory
+		}
+		relative_position_id = UKR_timoshenko_victory
+	}
+	focus = {
+		id = UKR_timoshenko_Law_enforcement_reform
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Abolition_of_immunity
+		}
+		relative_position_id = UKR_timoshenko_Abolition_of_immunity
+	}
+	focus = {
+		id = UKR_timoshenko_Ultimatum_to_big_business
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Abolition_of_immunity
+		}
+		relative_position_id = UKR_timoshenko_Abolition_of_immunity
+	}
+	focus = {
+		id = UKR_timoshenko_Judicial_cleanup_and_lustration
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Abolition_of_immunity
+		}
+		relative_position_id = UKR_timoshenko_Abolition_of_immunity
+	}
+	focus = {
+		id = UKR_timoshenko_Kill_coruption
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Law_enforcement_reform
+		}
+		relative_position_id = UKR_timoshenko_Law_enforcement_reform
+	}
+	focus = {
+		id = UKR_timoshenko_New_social_contract
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Decentralization_Ukrainian_style
+		}
+		prerequisite = {
+			focus = UKR_timoshenko_Kill_coruption
+		}
+		relative_position_id = UKR_timoshenko_Kill_coruption
+	}
+	focus = {
+		id = UKR_timoshenko_Taking_up_arms
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_victory
+		}
+		relative_position_id = UKR_timoshenko_victory
+	}
+	focus = {
+		id = UKR_timoshenko_Aid_fund_for_displaced_persons
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Taking_up_arms
+		}
+		relative_position_id = UKR_timoshenko_Taking_up_arms
+	}
+	focus = {
+		id = UKR_timoshenko_Reorganization_of_the_General_Staff
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Documenting_damages
+		}
+		prerequisite = {
+			focus = UKR_timoshenko_Aid_fund_for_displaced_persons
+		}
+		relative_position_id = UKR_timoshenko_Aid_fund_for_displaced_persons
+	}
+	focus = {
+		id = UKR_timoshenko_Elimination_of_shadow_schemes
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Reorganization_of_the_General_Staff
+		}
+		relative_position_id = UKR_timoshenko_Reorganization_of_the_General_Staff
+	}
+	focus = {
+		id = UKR_timoshenko_Law_on_information_security
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Reorganization_of_the_General_Staff
+		}
+		relative_position_id = UKR_timoshenko_Reorganization_of_the_General_Staff
+	}
+	focus = {
+		id = UKR_timoshenko_Documenting_damages
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Taking_up_arms
+		}
+		relative_position_id = UKR_timoshenko_Taking_up_arms
+	}
+	focus = {
+		id = UKR_timoshenko_Audit_of_utility_monopolies
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_victory
+		}
+		relative_position_id = UKR_timoshenko_victory
+	}
+	focus = {
+		id = UKR_timoshenko_Micro_loans_for_small_business
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Audit_of_utility_monopolies
+		}
+		relative_position_id = UKR_timoshenko_Audit_of_utility_monopolies
+	}
+	focus = {
+		id = UKR_timoshenko_Funded_pension_system
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Micro_loans_for_small_business
+		}
+		relative_position_id = UKR_timoshenko_Micro_loans_for_small_business
+	}
+	focus = {
+		id = UKR_timoshenko_New_course_for_the_national_economy
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Funded_pension_system
+		}
+		relative_position_id = UKR_timoshenko_Funded_pension_system
+	}
+	focus = {
+		id = UKR_timoshenko_death_with_a_scythe
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_New_course_for_the_national_economy
+		}
+		prerequisite = {
+			focus = UKR_timoshenko_New_social_contract
+		}
+		prerequisite = {
+			focus = UKR_timoshenko_Law_on_information_security
+		}
+		prerequisite = {
+			focus = UKR_timoshenko_Elimination_of_shadow_schemes
+		}
+
+		relative_position_id = UKR_timoshenko_New_course_for_the_national_economy
+	}
+	focus = {
+		id = UKR_timoshenko_Decentralization_Ukrainian_style
+		icon = GFX_goal_no_focus_UKR
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = UKR_timoshenko_Ultimatum_to_big_business
+		}
+		prerequisite = {
+			focus = UKR_timoshenko_Judicial_cleanup_and_lustration
+		}
+		relative_position_id = UKR_timoshenko_Ultimatum_to_big_business
 	}
 }
