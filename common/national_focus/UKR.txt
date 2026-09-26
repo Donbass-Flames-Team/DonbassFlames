@@ -4922,7 +4922,7 @@ focus_tree = {
 		icon = GFX_goal_no_focus_UKR
 		cost = 1
 		x = 0
-		y = 1
+		y = 2
 		prerequisite = {
 			focus = UKR_snap_presidential_elections
 		}
@@ -4944,6 +4944,8 @@ focus_tree = {
 			focus = UKR_snap_presidential_elections
 		}
 		relative_position_id = UKR_snap_presidential_elections
+		mutually_exclusive = { focus = UKR_oleg_lyashko_victory }
+		mutually_exclusive = { focus = UKR_zelensky }
 		available = {
 			NOT = {
 				has_country_flag = Elections2014InProgress
@@ -6046,6 +6048,7 @@ focus_tree = {
 			focus = UKR_snap_presidential_elections
 		}
 		relative_position_id = UKR_snap_presidential_elections
+		mutually_exclusive = { focus = UKR_poroshenko_victory }
 		available = {
 			date = 2018.01.01
 			NOT = {
@@ -6412,6 +6415,7 @@ focus_tree = {
 			focus = UKR_snap_presidential_elections
 		}
 		relative_position_id = UKR_snap_presidential_elections
+		mutually_exclusive = { focus = UKR_oleg_lyashko_victory }
 		available = {
 			NOT = {
 				has_country_flag = Elections2014InProgress
@@ -6434,6 +6438,8 @@ focus_tree = {
 			focus = UKR_snap_presidential_elections
 		}
 		relative_position_id = UKR_snap_presidential_elections
+		mutually_exclusive = { focus = UKR_timoshenko_victory }
+		mutually_exclusive = { focus = UKR_poroshenko_victory }
 		available = {
 			NOT = {
 				has_country_flag = Elections2014InProgress
