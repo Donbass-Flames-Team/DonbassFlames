@@ -368,5 +368,22 @@ ideas = {
                 war_support_factor = -0.04
             }
 		}
+		UKR_decentralized_idea = {
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.02
+				political_power_gain = 0.06
+				consumer_goods_factor = -0.10
+			}
+		}
     }
 }
