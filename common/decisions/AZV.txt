@@ -1,33 +1,71 @@
 AZV_Postavki_oryjia = {   
     AZV_zbir_na_Azov_mission = { 
-            allowed = { 
-                original_tag = AZV
-            }
+        allowed = { 
+            tag = AZV
+        }
 
-            icon = POL_looming_peasants_strike
+        icon = POL_looming_peasants_strike
 
-            available = {
-                hidden_trigger = { always = no }
-            }
+        available = {
+            hidden_trigger = { always = no }
+        }
 
-            activation = {
-                has_completed_focus = AZV_stable_supplies_of_weaponry
+        activation = {
+            has_completed_focus = AZV_stable_supplies_of_weaponry
+            UKR = {
+                has_equipment = {
+                    infantry_equipment > 549
+                }
+                has_equipment = {
+                    support_equipment > 49
+                }
+                has_equipment = {
+                    uniform_equipment > 549
+                }
+                has_equipment = {
+                    bbm_equipment > 49
+                }
+                has_equipment = {
+                    mortar_equipment > 49 
+                }
             }
+        }
+
+
+        days_mission_timeout = 30
+        fire_only_once = yes 
+        is_good = yes
+
+        timeout_effect = {
+            IF = {
+                limit = {
+                    UKR = {
+                        has_equipment = {
+                            infantry_equipment > 549
+                        }
+                        has_equipment = {
+                            support_equipment > 49
+                        }
+                        has_equipment = {
+                            uniform_equipment > 549
+                        }
+                        has_equipment = {
+                            bbm_equipment > 49
+                        }
+                        has_equipment = {
+                            mortar_equipment > 49 
+                        }
+                    }
+                }
             
-
-            days_mission_timeout = 30
-            fire_only_once = yes 
-            is_good = yes
-
-            timeout_effect = {
                 activate_mission = AZV_zbir_na_Azov_mission
                 add_equipment_to_stockpile = {
                     type = infantry_equipment_1
-                    amount = 500
+                    amount = 600
                 }
                 add_equipment_to_stockpile = {
                     type = uniform_equipment_1 
-                    amount = 500
+                    amount = 600
                 }
                 add_equipment_to_stockpile = {
                     type = motorized_equipment_1
@@ -39,24 +77,87 @@ AZV_Postavki_oryjia = {
                 }
                 add_equipment_to_stockpile = {
                     type = bbm_1
-                    amount = 500
+                    amount = 50
                 }
                 add_equipment_to_stockpile = {
                     type = mortar_equipment_2
-                    amount = 500
+                    amount = 50
                 }
                 add_equipment_to_stockpile = {
                     type = manpads_equipment_2
-                    amount = 500
+                    amount = 50
+                }
+                add_equipment_to_stockpile = {
+                    type = atgm_equipment_1
+                    amount = 50
+                }
+                UKR = {
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment_1
+                        amount = -600
+                    }
+                    add_equipment_to_stockpile = {
+                        type = uniform_equipment_1 
+                        amount = -600
+                    }
+                    add_equipment_to_stockpile = {
+                        type = motorized_equipment_1
+                        amount = -100
+                    }
+                    add_equipment_to_stockpile = {
+                        type = support_equipment_1
+                        amount = -500
+                    }
+                    add_equipment_to_stockpile = {
+                        type = bbm_1
+                        amount = -50
+                    }
+                    add_equipment_to_stockpile = {
+                        type = mortar_equipment_2
+                        amount = -50
+                    }
+                    add_equipment_to_stockpile = {
+                        type = manpads_equipment_2
+                        amount = -50
+                    }
+                    add_equipment_to_stockpile = {
+                        type = atgm_equipment_1
+                        amount = -50
+                    }
                 }
             }
         }
+    }
 }       
 
-AZV_formuvania_batalioniv = {
+AZV_formuvania_batalioniv  = {
     AZV_dobrobat_create = {
         allowed = { 
-            original_tag = AZV
+            tag = AZV
+        }
+
+        available = {
+            has_equipment = {
+                infantry_equipment > 549
+            }
+            has_equipment = {
+                support_equipment > 49
+            }
+            has_equipment = {
+                uniform_equipment > 549
+            }
+            has_equipment = {
+                bbm_equipment > 49
+            }
+            has_equipment = {
+                mortar_equipment > 49 
+            }
+            
+            has_manpower > 100
+            has_completed_focus = AZV_formation_of_volunteer_detachments
+        }
+
+        visible = {
             has_completed_focus = AZV_formation_of_volunteer_detachments
         }
 
