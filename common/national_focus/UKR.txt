@@ -8781,98 +8781,222 @@ focus_tree = {
 	focus = {
 		id = UKR_timoshenko_Abolition_of_immunity
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 10
 		x = 3
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_victory
 		}
 		relative_position_id = UKR_timoshenko_victory
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = { 
+		    add_political_power = 50
+		    add_stability = -0.01
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_Law_enforcement_reform
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 4
 		x = -1
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_Abolition_of_immunity
 		}
 		relative_position_id = UKR_timoshenko_Abolition_of_immunity
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+			add_political_power = 25
+			subtract_from_variable = {
+			    var = criminality_value
+			    value = 5
+			    tooltip = decreasing_criminality_middle_tt
+			}
+			subtract_from_variable = {
+			    var = corruption_value
+			    value = 2.5
+			    tooltip = corruption_level_will_reduce_tt
+			}
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_Ultimatum_to_big_business
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 3
 		x = 1
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_Abolition_of_immunity
 		}
 		relative_position_id = UKR_timoshenko_Abolition_of_immunity
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+			add_stability = -0.04
+			subtract_from_variable = {
+			    var = corruption_value
+			    value = 2
+			    tooltip = corruption_level_will_reduce_tt
+			}
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_Judicial_cleanup_and_lustration
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 3
 		x = 3
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_Abolition_of_immunity
 		}
 		relative_position_id = UKR_timoshenko_Abolition_of_immunity
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+			add_stability = -0.02
+			subtract_from_variable = {
+			    var = corruption_value
+			    value = 2
+			    tooltip = corruption_level_will_reduce_tt
+			}
+		}
 	}
 	focus = {
-		id = UKR_timoshenko_Kill_coruption
+		id = UKR_timoshenko_New_social_contract
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 20
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_Law_enforcement_reform
 		}
 		relative_position_id = UKR_timoshenko_Law_enforcement_reform
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = { 
+		    add_political_power = 20
+		    add_stability = 0.01
+		}
 	}
 	focus = {
-		id = UKR_timoshenko_New_social_contract
+		id = UKR_timoshenko_Kill_coruption
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 6
 		x = 1
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_Decentralization_Ukrainian_style
 		}
 		prerequisite = {
-			focus = UKR_timoshenko_Kill_coruption
+			focus = UKR_timoshenko_New_social_contract
 		}
-		relative_position_id = UKR_timoshenko_Kill_coruption
+		relative_position_id = UKR_timoshenko_New_social_contract
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+			add_stability = -0.05
+			subtract_from_variable = {
+			    var = corruption_value
+			    value = 10
+			    tooltip = corruption_level_will_reduce_tt
+			}
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_Taking_up_arms
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 3
 		x = -3
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_victory
 		}
 		relative_position_id = UKR_timoshenko_victory
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = { 
+		    add_political_power = 20
+		    add_war_support = 0.25
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_Aid_fund_for_displaced_persons
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 3
 		x = 1
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_Taking_up_arms
 		}
 		relative_position_id = UKR_timoshenko_Taking_up_arms
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = { 
+		    add_stability = 0.03
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_Reorganization_of_the_General_Staff
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 4
 		x = -1
 		y = 1
 		prerequisite = {
@@ -8882,95 +9006,204 @@ focus_tree = {
 			focus = UKR_timoshenko_Aid_fund_for_displaced_persons
 		}
 		relative_position_id = UKR_timoshenko_Aid_fund_for_displaced_persons
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = { 
+		    add_command_power = 30
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_Elimination_of_shadow_schemes
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 7
 		x = 1
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_Reorganization_of_the_General_Staff
 		}
 		relative_position_id = UKR_timoshenko_Reorganization_of_the_General_Staff
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+			subtract_from_variable = {
+			    var = corruption_value
+			    value = 2
+			    tooltip = corruption_level_will_reduce_tt
+			}
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_Law_on_information_security
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 7
 		x = -1
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_Reorganization_of_the_General_Staff
 		}
 		relative_position_id = UKR_timoshenko_Reorganization_of_the_General_Staff
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = { 
+		    add_stability = 0.01
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_Documenting_damages
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 4
 		x = -1
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_Taking_up_arms
 		}
 		relative_position_id = UKR_timoshenko_Taking_up_arms
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = { 
+		    add_political_power = 100
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_Audit_of_utility_monopolies
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 4
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_victory
 		}
 		relative_position_id = UKR_timoshenko_victory
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+			subtract_from_variable = {
+			    var = corruption_value
+			    value = 2
+			    tooltip = corruption_level_will_reduce_tt
+			}
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_Micro_loans_for_small_business
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_Audit_of_utility_monopolies
 		}
 		relative_position_id = UKR_timoshenko_Audit_of_utility_monopolies
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = { 
+		add_political_power = 25
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_Funded_pension_system
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 6
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_Micro_loans_for_small_business
 		}
 		relative_position_id = UKR_timoshenko_Micro_loans_for_small_business
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = { 
+		add_political_power = 25
+		add_stability = 0.03
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_New_course_for_the_national_economy
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_Funded_pension_system
 		}
 		relative_position_id = UKR_timoshenko_Funded_pension_system
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+			add_to_variable = {
+				var = level_of_the_financial_sector
+				value = 2.5
+			}
+			custom_effect_tooltip = increase_level_of_the_financial_sector_tt
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_death_with_a_scythe
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 28
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = UKR_timoshenko_New_course_for_the_national_economy
 		}
 		prerequisite = {
-			focus = UKR_timoshenko_New_social_contract
+			focus = UKR_timoshenko_Kill_coruption
 		}
 		prerequisite = {
 			focus = UKR_timoshenko_Law_on_information_security
@@ -8980,11 +9213,20 @@ focus_tree = {
 		}
 
 		relative_position_id = UKR_timoshenko_New_course_for_the_national_economy
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
 	}
 	focus = {
 		id = UKR_timoshenko_Decentralization_Ukrainian_style
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 12
 		x = 0
 		y = 1
 		prerequisite = {
@@ -8994,5 +9236,17 @@ focus_tree = {
 			focus = UKR_timoshenko_Judicial_cleanup_and_lustration
 		}
 		relative_position_id = UKR_timoshenko_Ultimatum_to_big_business
+		available = {
+			NOT = {
+				has_country_flag = Elections2014InProgress
+				}
+			has_country_leader = {
+	            character = UKR_yulia_timoshenko
+	            ruling_only = yes
+            }
+		}
+		completion_reward = {
+			add_ideas = UKR_decentralized_idea
+		}
 	}
 }
