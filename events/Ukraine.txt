@@ -6642,6 +6642,23 @@ country_event = {
     }
 }
 
+# Россия нападает на нас
+country_event = {
+    id = ukraine.183
+    title = ukraine.183.t
+    desc = ukraine.183.d
+    picture = GFX_oleg_lyashko_v_lifte_picture
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukraine.183.a
+        add_stability = 0.01
+		set_country_flag = Russo_Ukranian_War
+		mark_focus_tree_layout_dirty = yes
+    }
+
+}
 
 
 ##########################################################################
