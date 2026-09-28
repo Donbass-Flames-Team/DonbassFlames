@@ -68,7 +68,7 @@ UKR_ukrainian_economy_idea = {
 	enable = {
 		always = yes
 	}
-	icon = GFX_idea_UKR_oligarchs
+	icon = GFX_idea_UKR_ukrainian_economy
 	consumer_goods_factor = UKR_ukrainian_economy_consumer_goods_factor
 	production_speed_buildings_factor = UKR_ukrainian_economy_production_speed_buildings_factor
 	industrial_capacity_factory = UKR_ukrainian_economy_industrial_capacity_factory
@@ -90,7 +90,7 @@ UKR_ATO_idea = {
 	enable = {
 		always = yes
 	}
-	icon = GFX_idea_UKR_oligarchs
+	icon = GFX_idea_UKR_ATO_idea
 	pocket_penalty = UKR_ATO_pocket_penalty
 	experience_loss_factor = UKR_ATO_experience_loss_factor
 	casualty_trickleback = UKR_ATO_casualty_trickleback
@@ -101,7 +101,7 @@ People_republic_ATO_idea = {
 	enable = {
 		always = yes
 	}
-	icon = GFX_idea_UKR_oligarchs
+	icon = GFX_idea_UKR_ATO_idea
 	pocket_penalty = People_republic_pocket_penalty
 	experience_loss_factor = People_republic_experience_loss_factor
 	casualty_trickleback = People_republic_casualty_trickleback
