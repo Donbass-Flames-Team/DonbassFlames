@@ -31,6 +31,9 @@ DPR_armed_forces_of_dpr_category = {
 
 		allowed = {
 			original_tag = DPR
+		}
+
+		available = {
 			date > 2014.11.11
 		}
 
@@ -57,6 +60,9 @@ DPR_armed_forces_of_dpr_category = {
 
 		allowed = {
 			original_tag = DPR
+		}
+
+		available = {
 			date > 2014.12.12
 		}
 
@@ -83,6 +89,9 @@ DPR_armed_forces_of_dpr_category = {
 
 		allowed = {
 			original_tag = DPR
+		}
+
+		available = {
 			date > 2014.7.7
 		}
 
@@ -130,7 +139,6 @@ DPR_war_for_independence_of_donbass = {
 
 		timeout_effect = {
 			activate_mission = DPR_help_from_russia_decision
-			DPR_help_from_russia_effect = yes			
 		}
 
 		complete_effect = {
@@ -444,7 +452,7 @@ DPR_government_of_republic = {
 		fire_only_once = no
 		days_mission_timeout = 5
 
-		allowed = {
+		visible = {
 			has_country_flag = DPR_change_of_governments
 		}
 

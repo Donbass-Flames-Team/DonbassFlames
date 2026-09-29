@@ -671,9 +671,9 @@ country_event = {
 }
 #Будет новоросия будет
 country_event = {
-	id = russia.33
-	title = russia.33.t
-	desc = russia.33.d
+	id = russia.34
+	title = russia.34.t
+	desc = russia.34.d
 	#picture = GFX_report_event_royal_parade
 
 	is_triggered_only = yes
@@ -683,12 +683,12 @@ country_event = {
 	}
 
 	option = {
-		name = russia.33.a
+		name = russia.34.a
 		
 	}
 
 	option = {
-		name = russia.33.b
+		name = russia.34.b
 	    NDR = {
 			change_tag_from = root
 		}

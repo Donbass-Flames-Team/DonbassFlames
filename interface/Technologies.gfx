@@ -638,4 +638,31 @@ spriteTypes = {
 		name = "GFX_APC_5_medium"
 		texturefile = "gfx/interface/technologies/apc_4.png"
 	}
+
+	# Definitions retained from the current base game for technology-tree controls.
+	spriteType = {
+		name = "GFX_subtech_td"
+		textureFile = "gfx//interface//technologies//subtech_td.dds"
+	}
+	spriteType = {
+		name = "GFX_subtech_rocket"
+		textureFile = "gfx//interface//technologies//subtech_rocket.dds"
+	}
+	spriteType = {
+		name = "GFX_subtech_heavy_battleship"
+		textureFile = "gfx//interface//subtech_heavy_battleship.dds"
+	}
+	spriteType = {
+		name = "GFX_subtech_art"
+		textureFile = "gfx//interface//technologies//subtech_art.dds"
+	}
+	spriteType = {
+		name = "GFX_subtech_aa"
+		textureFile = "gfx//interface//technologies//subtech_aa.dds"
+	}
+	spriteType = {
+		name = "GFX_mobile_warfare_medium"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_placeholder.dds"
+		alwaystransparent = yes
+	}
 }

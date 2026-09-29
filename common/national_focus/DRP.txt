@@ -201,7 +201,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DRP_organize_forces_of_self_defence
+		id = DRP_organize_independent_self_defence
 		icon = GFX_focus_DRP_expand_the_company_10000
 		cost = 0.2
 
@@ -425,8 +425,6 @@ focus_tree = {
 		icon = GFX_focus_DRP_expand_the_company_10000
 		cost = 0.2
 
-		prerequisite = { focus =  DRP_restoration_of_life }
-		relative_position_id = DRP_restoration_of_life
 		x = 22
 		y = 0
 		allow_branch = {

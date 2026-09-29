@@ -1,13 +1,11 @@
 focus_tree = {
 	id = POL
-	country = 0
-	default = no
-
-	focus = {
-		id = empty
-		x = 10
-		y = 0
-		cost = 10
-		completion_reward = { }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
 	}
+	default = no
 }
