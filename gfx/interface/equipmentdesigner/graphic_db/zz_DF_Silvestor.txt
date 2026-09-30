@@ -1,0 +1,247 @@
+UKR = {
+    spau_0 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_2s1_entity
+            }
+        }
+        pool = {
+            weight = 90
+            models = {
+                DF_Silvestor_boghdana_entity
+                DF_Silvestor_dana_entity
+                DF_Silvestor_pzh2000_entity
+                DF_Silvestor_m109a3_entity
+            }
+        }
+    }
+    spau_1 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_2s3_entity
+            }
+        }
+        pool = {
+            weight = 90
+            models = {
+                DF_Silvestor_boghdana_entity
+                DF_Silvestor_dana_entity
+                DF_Silvestor_pzh2000_entity
+                DF_Silvestor_m109a3_entity
+            }
+        }
+    }
+    spau_2 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_giatsint_entity
+            }
+        }
+        pool = {
+            weight = 90
+            models = {
+                DF_Silvestor_boghdana_entity
+                DF_Silvestor_dana_entity
+                DF_Silvestor_pzh2000_entity
+                DF_Silvestor_m109a3_entity
+            }
+        }
+    }
+    spau_3 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_msta_entity
+            }
+        }
+        pool = {
+            weight = 90
+            models = {
+                DF_Silvestor_boghdana_entity
+                DF_Silvestor_dana_entity
+                DF_Silvestor_pzh2000_entity
+                DF_Silvestor_m109a3_entity
+            }
+        }
+    }
+    spau_4 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_msta_entity
+            }
+        }
+        pool = {
+            weight = 90
+            models = {
+                DF_Silvestor_boghdana_entity
+                DF_Silvestor_dana_entity
+                DF_Silvestor_pzh2000_entity
+                DF_Silvestor_m109a3_entity
+            }
+        }
+    }
+    mlrs_0 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_grad_entity
+            }
+        }
+        pool = {
+            weight = 90
+            models = {
+                DF_Silvestor_rm70_entity
+                DF_Silvestor_m270_entity
+            }
+        }
+    }
+    mlrs_1 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_uragan_entity
+            }
+        }
+        pool = {
+            weight = 90
+            models = {
+                DF_Silvestor_rm70_entity
+                DF_Silvestor_m270_entity
+            }
+        }
+    }
+    mlrs_2 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_smerch_entity
+            }
+        }
+        pool = {
+            weight = 90
+            models = {
+                DF_Silvestor_rm70_entity
+                DF_Silvestor_m270_entity
+            }
+        }
+    }
+    bbm_0 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_brdm2_entity
+            }
+        }
+    }
+    bbm_1 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_brdm2_entity
+            }
+        }
+    }
+    modern_tank_equipment = {
+        pool = {
+            weight = 10
+            models = {
+                DF_Silvestor_t64a_entity
+            }
+        }
+    }
+}
+
+RUS = {
+    spau_0 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_2s1_entity
+            }
+        }
+    }
+    spau_1 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_2s3_entity
+            }
+        }
+    }
+    spau_2 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_giatsint_entity
+            }
+        }
+    }
+    spau_3 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_msta_entity
+            }
+        }
+    }
+    spau_4 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_msta_entity
+            }
+        }
+    }
+    mlrs_0 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_grad_entity
+            }
+        }
+    }
+    mlrs_1 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_uragan_entity
+            }
+        }
+    }
+    mlrs_2 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_smerch_entity
+            }
+        }
+    }
+    bbm_0 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_brdm2_entity
+            }
+        }
+    }
+    bbm_1 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Silvestor_brdm2_entity
+            }
+        }
+    }
+    modern_tank_equipment = {
+        pool = {
+            weight = 10
+            models = {
+                DF_Silvestor_t64a_entity
+            }
+        }
+    }
+}

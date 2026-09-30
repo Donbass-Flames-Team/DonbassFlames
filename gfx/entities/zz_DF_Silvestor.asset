@@ -1,0 +1,1214 @@
+entity = {
+    name = "DF_Silvestor_msta_entity"
+    pdxmesh = "DF_Silvestor_msta_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_2s1_entity"
+    pdxmesh = "DF_Silvestor_2s1_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_2s3_entity"
+    pdxmesh = "DF_Silvestor_2s3_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_giatsint_entity"
+    pdxmesh = "DF_Silvestor_giatsint_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_brdm2_entity"
+    pdxmesh = "DF_Silvestor_brdm2_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_boghdana_entity"
+    pdxmesh = "DF_Silvestor_boghdana_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_grad_entity"
+    pdxmesh = "DF_Silvestor_grad_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_uragan_entity"
+    pdxmesh = "DF_Silvestor_uragan_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_smerch_entity"
+    pdxmesh = "DF_Silvestor_smerch_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_m270_entity"
+    pdxmesh = "DF_Silvestor_m270_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_dana_entity"
+    pdxmesh = "DF_Silvestor_dana_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_pzh2000_entity"
+    pdxmesh = "DF_Silvestor_pzh2000_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_m109a3_entity"
+    pdxmesh = "DF_Silvestor_m109a3_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_rm70_entity"
+    pdxmesh = "DF_Silvestor_rm70_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_ats103_entity"
+    pdxmesh = "DF_Silvestor_ats103_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_koksan_entity"
+    pdxmesh = "DF_Silvestor_koksan_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_ratel20_entity"
+    pdxmesh = "DF_Silvestor_ratel20_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_ratel90_entity"
+    pdxmesh = "DF_Silvestor_ratel90_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_rooikat_entity"
+    pdxmesh = "DF_Silvestor_rooikat_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_auf1_entity"
+    pdxmesh = "DF_Silvestor_auf1_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_a222_entity"
+    pdxmesh = "DF_Silvestor_a222_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_osa_entity"
+    pdxmesh = "DF_Silvestor_osa_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_strela1_entity"
+    pdxmesh = "DF_Silvestor_strela1_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_t64a_entity"
+    pdxmesh = "DF_Silvestor_t64a_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_g6_entity"
+    pdxmesh = "DF_Silvestor_g6_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_gepard_entity"
+    pdxmesh = "DF_Silvestor_gepard_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Silvestor_phl81_entity"
+    pdxmesh = "DF_Silvestor_phl81_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    game_data = {
+        texture_anim_speed = 0.5
+    }
+    scale = 1.0
+}
