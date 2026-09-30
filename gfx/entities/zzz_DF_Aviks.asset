@@ -1,0 +1,1203 @@
+entity = {
+    name = "DF_Aviks_russian-btr_entity"
+    pdxmesh = "DF_Aviks_russian-btr_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_russian-infantry-medic_entity"
+    pdxmesh = "DF_Aviks_russian-infantry-medic_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "death"
+        animation = "death"
+        animation_blend_time = 0.2
+        looping = no
+    }
+    scale = 0.5
+    attach = {
+        name = "rifle"
+        Right_Hand_node = "DF_Aviks_aks74_entity"
+    }
+}
+
+entity = {
+    name = "DF_Aviks_russian-infantry-pk-gunner_entity"
+    pdxmesh = "DF_Aviks_russian-infantry-pk-gunner_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "death"
+        animation = "death"
+        animation_blend_time = 0.2
+        looping = no
+    }
+    scale = 0.5
+    attach = {
+        name = "rifle"
+        Right_Hand_node = "DF_Aviks_pkm_entity"
+    }
+}
+
+entity = {
+    name = "DF_Aviks_russian-infantry-rifleman_entity"
+    pdxmesh = "DF_Aviks_russian-infantry-rifleman_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "death"
+        animation = "death"
+        animation_blend_time = 0.2
+        looping = no
+    }
+    scale = 0.5
+    attach = {
+        name = "rifle"
+        Right_Hand_node = "DF_Aviks_aks74_entity"
+    }
+}
+
+entity = {
+    name = "DF_Aviks_russian-kamaz-63968-typhoon_entity"
+    pdxmesh = "DF_Aviks_russian-kamaz-63968-typhoon_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_russian-t-72b3_entity"
+    pdxmesh = "DF_Aviks_russian-t-72b3_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_russian-t-90a-with-cope-cage_entity"
+    pdxmesh = "DF_Aviks_russian-t-90a-with-cope-cage_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_russian-t-90a_entity"
+    pdxmesh = "DF_Aviks_russian-t-90a_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_russian-t-90m3_entity"
+    pdxmesh = "DF_Aviks_russian-t-90m3_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_russian-vdv-paratrooper-bucha-2022_entity"
+    pdxmesh = "DF_Aviks_russian-vdv-paratrooper-bucha-2022_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "death"
+        animation = "death"
+        animation_blend_time = 0.2
+        looping = no
+    }
+    scale = 0.5
+    attach = {
+        name = "rifle"
+        Right_Hand_node = "DF_Aviks_aks74_entity"
+    }
+}
+
+entity = {
+    name = "DF_Aviks_bmp-3_entity"
+    pdxmesh = "DF_Aviks_bmp-3_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_d-30-howitzer_entity"
+    pdxmesh = "DF_Aviks_d-30-howitzer_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_mt-lbm_entity"
+    pdxmesh = "DF_Aviks_mt-lbm_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_azov-brigade-btr-3e_entity"
+    pdxmesh = "DF_Aviks_azov-brigade-btr-3e_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_mt-lbu-1v14_entity"
+    pdxmesh = "DF_Aviks_mt-lbu-1v14_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_spm-2s9-nona-dcs-world_entity"
+    pdxmesh = "DF_Aviks_spm-2s9-nona-dcs-world_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_ukrainian-amz-dzik_entity"
+    pdxmesh = "DF_Aviks_ukrainian-amz-dzik_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_ukrainian-kozak-5-kursk-operation_entity"
+    pdxmesh = "DF_Aviks_ukrainian-kozak-5-kursk-operation_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_ukrainian-m998-humvee-pickup_entity"
+    pdxmesh = "DF_Aviks_ukrainian-m998-humvee-pickup_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_ukrainian-modified-humvee_entity"
+    pdxmesh = "DF_Aviks_ukrainian-modified-humvee_mesh"
+    default_state = "idle"
+    state = {
+        name = "idle"
+        animation = "idle"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "move"
+        animation = "move"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "retreat"
+        animation = "retreat"
+        animation_blend_time = 0.2
+    }
+    state = {
+        name = "attack"
+        animation = "attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        animation = "defend"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        animation = "support_attack"
+        animation_blend_time = 0.2
+        event = {
+            time = 1.2
+            node = "barrel"
+            particle = "tank_attack_barrel_smoke_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "training"
+        animation = "training"
+        animation_blend_time = 0.2
+    }
+    scale = 1.0
+}
+
+entity = {
+    name = "DF_Aviks_pkm_entity"
+    pdxmesh = "DF_Aviks_pkm_mesh"
+    get_state_from_parent = yes
+    default_state = "idle"
+    state = { name = "idle" }
+    state = { name = "move" }
+    state = {
+        name = "attack"
+        event = {
+            time = 0.5
+            node = "muzzle"
+            particle = "mg_muzzle_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        event = {
+            time = 0.5
+            node = "muzzle"
+            particle = "mg_muzzle_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        event = {
+            time = 0.5
+            node = "muzzle"
+            particle = "mg_muzzle_particle"
+            keep_particle = no
+        }
+    }
+}
+
+entity = {
+    name = "DF_Aviks_aks74_entity"
+    pdxmesh = "geo_AKS74_mesh"
+    get_state_from_parent = yes
+    default_state = "idle"
+    state = { name = "idle" }
+    state = { name = "move" }
+    state = {
+        name = "attack"
+        event = {
+            time = 0.5
+            node = "muzzle"
+            particle = "mg_muzzle_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "defend"
+        event = {
+            time = 0.5
+            node = "muzzle"
+            particle = "mg_muzzle_particle"
+            keep_particle = no
+        }
+    }
+    state = {
+        name = "support_attack"
+        event = {
+            time = 0.5
+            node = "muzzle"
+            particle = "mg_muzzle_particle"
+            keep_particle = no
+        }
+    }
+}
+
+entity = {
+    name = "RUS_infantry_entity"
+    clone = "DF_Aviks_russian-infantry-rifleman_entity"
+}
+
+entity = {
+    name = "RUS_infantry_0_entity"
+    clone = "DF_Aviks_russian-infantry-rifleman_entity"
+}
+
+entity = {
+    name = "RUS_infantry_1_entity"
+    clone = "DF_Aviks_russian-infantry-rifleman_entity"
+}
+
+entity = {
+    name = "RUS_infantry_2_entity"
+    clone = "DF_Aviks_russian-infantry-rifleman_entity"
+}
+
+entity = {
+    name = "RUS_infantry_3_entity"
+    clone = "DF_Aviks_russian-infantry-rifleman_entity"
+}
+
+entity = {
+    name = "RUS_infantry_4_entity"
+    clone = "DF_Aviks_russian-infantry-rifleman_entity"
+}
+
+entity = {
+    name = "RUS_paratrooper_entity"
+    clone = "DF_Aviks_russian-vdv-paratrooper-bucha-2022_entity"
+}
+
