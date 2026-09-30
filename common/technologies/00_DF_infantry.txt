@@ -770,92 +770,11 @@ technologies = {
 			grenade_launcher_equipment_4
 		}
 
-		path = {
-			leads_to_tech = atgl_weapons_5
-			research_cost_coeff = 1
-		}
-
 		research_cost = 1.5
 		start_year = 2000
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @2000 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	atgl_weapons_5 = {
-
-		enable_equipments = {
-			grenade_launcher_equipment_5
-		}
-
-		path = {
-			leads_to_tech = atgl_weapons_6
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 2010
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @2010 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	atgl_weapons_6 = {
-
-		enable_equipments = {
-			grenade_launcher_equipment_6
-		}
-
-		path = {
-			leads_to_tech = atgl_weapons_7
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 2015
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @2015 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	atgl_weapons_7 = {
-
-		enable_equipments = {
-			grenade_launcher_equipment_7
-		}
-
-		research_cost = 1.5
-		start_year = 2020
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @2020 }
 		}
 
 		categories = {

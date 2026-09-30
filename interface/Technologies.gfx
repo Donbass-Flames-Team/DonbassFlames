@@ -16,7 +16,7 @@ spriteTypes = {
 	}
 
 	###################
-	### Uniform tech ###
+	### Uniform tech ##
 	###################
 
 	spriteType = {
@@ -301,72 +301,42 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_atgl_weapons_1_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
+		texturefile = "gfx/interface/technologies/RPG_18.png"
 	}
 
 	spriteType = {
 		name = "GFX_grenade_launcher_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
+		texturefile = "gfx/interface/technologies/RPG_18.png"
 	}
 
 	spriteType = {
 		name = "GFX_atgl_weapons_2_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
+		texturefile = "gfx/interface/technologies/rpg26.png"
 	}
 
 	spriteType = {
 		name = "GFX_grenade_launcher_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
+		texturefile = "gfx/interface/technologies/rpg26.png"
 	}
 
 	spriteType = {
 		name = "GFX_atgl_weapons_3_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
+		texturefile = "gfx/interface/technologies/rpg29.png"
 	}
 
 	spriteType = {
 		name = "GFX_grenade_launcher_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
+		texturefile = "gfx/interface/technologies/rpg29.png"
 	}
 
 	spriteType = {
 		name = "GFX_atgl_weapons_4_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
+		texturefile = "gfx/interface/technologies/rpg30.png"
 	}
 
 	spriteType = {
 		name = "GFX_grenade_launcher_equipment_4_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
-	}
-
-	spriteType = {
-		name = "GFX_atgl_weapons_5_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
-	}
-
-	spriteType = {
-		name = "GFX_grenade_launcher_equipment_5_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
-	}
-
-	spriteType = {
-		name = "GFX_atgl_weapons_6_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
-	}
-
-	spriteType = {
-		name = "GFX_grenade_launcher_equipment_6_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
-	}
-
-	spriteType = {
-		name = "GFX_atgl_weapons_7_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
-	}
-
-	spriteType = {
-		name = "GFX_grenade_launcher_equipment_7_medium"
-		texturefile = "gfx/interface/technologies/rpg1.png"
+		texturefile = "gfx/interface/technologies/rpg30.png"
 	}
 
 	######################
@@ -638,6 +608,7 @@ spriteTypes = {
 		name = "GFX_APC_5_medium"
 		texturefile = "gfx/interface/technologies/apc_4.png"
 	}
+<<<<<<< Updated upstream
 
 	# Definitions retained from the current base game for technology-tree controls.
 	spriteType = {
@@ -665,4 +636,284 @@ spriteTypes = {
 		texturefile = "gfx/interface/doctrines/icons/doctrine_placeholder.dds"
 		alwaystransparent = yes
 	}
+=======
+spriteType = {
+    name = "GFX_archetype_motorized_equipment"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_archetype_motorized_equipment_medium"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_small"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_medium"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_designer"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_0"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_1"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_2"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_3"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_4"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_0_small"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_1_small"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_2_small"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_3_small"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_4_small"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_0_medium"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_1_medium"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_2_medium"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_3_medium"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_4_medium"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_0_designer"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_1_designer"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_2_designer"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_3_designer"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_motorized_equipment_4_designer"
+    texturefile = "gfx/interface/technologies/motorized.png"
+}
+
+spriteType = {
+    name = "GFX_archetype_bbm_chassis"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_archetype_bbm_chassis_medium"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_small"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_medium"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_designer"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_0"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_1"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_2"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_3"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_4"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_5"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_0_small"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_1_small"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_2_small"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_3_small"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_4_small"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_5_small"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_0_medium"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_1_medium"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_2_medium"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_3_medium"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_4_medium"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_5_medium"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_0_designer"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_1_designer"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_2_designer"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_3_designer"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_4_designer"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
+
+spriteType = {
+    name = "GFX_bbm_5_designer"
+    texturefile = "gfx/interface/technologies/bbm_1.png"
+}
 }
