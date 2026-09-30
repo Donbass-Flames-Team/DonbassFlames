@@ -1,0 +1,156 @@
+# Existing vehicle models, mapped to equipment unlocked by the armor technologies.
+# No date/limit triggers. RUS shares existing Soviet vehicle meshes and their original textures.
+UKR = {
+    modern_tank_equipment_3 = {
+        pool = {
+            weight = 200
+            models = {
+                UKR_t72bv_entity
+                UKR_t72av_entity
+            }
+        }
+    }
+    apc_1 = {
+        pool = {
+            weight = 200
+            models = {
+                geo_btr70_UKR_entity
+            }
+        }
+    }
+    apc_2 = {
+        pool = {
+            weight = 200
+            models = {
+                geo_btr70_UKR_entity
+            }
+        }
+    }
+    apc_3 = {
+        pool = {
+            weight = 200
+            models = {
+                geo_btr80_UKR_entity
+            }
+        }
+    }
+    infantry_fighting_vehicle_0 = {
+        pool = {
+            weight = 200
+            models = {
+                UKR_bmp1_entity
+            }
+        }
+    }
+    infantry_fighting_vehicle_1 = {
+        pool = {
+            weight = 200
+            models = {
+                UKR_bmp2_entity
+            }
+        }
+    }
+    airborne_combat_vehicle_2 = {
+        pool = {
+            weight = 200
+            models = {
+                UKR_bmp1_entity
+            }
+        }
+    }
+    airborne_combat_vehicle_3 = {
+        pool = {
+            weight = 200
+            models = {
+                UKR_bmp2_entity
+            }
+        }
+    }
+    apc_4 = {
+        pool = {
+            weight = 200
+            models = {
+                geo_btr4_UKR_entity
+                geo_btr3_UKR_entity
+                geo_btr4mv_UKR_entity
+            }
+        }
+    }
+    infantry_fighting_vehicle_3 = {
+        pool = {
+            weight = 200
+            models = {
+                UKR_bmp1u_entity
+                UKR_bmp2_entity
+            }
+        }
+    }
+}
+
+RUS = {
+    modern_tank_equipment_3 = {
+        pool = {
+            weight = 200
+            models = {
+                UKR_t72bv_entity
+                UKR_t72av_entity
+            }
+        }
+    }
+    apc_1 = {
+        pool = {
+            weight = 200
+            models = {
+                geo_btr70_UKR_entity
+            }
+        }
+    }
+    apc_2 = {
+        pool = {
+            weight = 200
+            models = {
+                geo_btr70_UKR_entity
+            }
+        }
+    }
+    apc_3 = {
+        pool = {
+            weight = 200
+            models = {
+                geo_btr80_UKR_entity
+            }
+        }
+    }
+    infantry_fighting_vehicle_0 = {
+        pool = {
+            weight = 200
+            models = {
+                UKR_bmp1_entity
+            }
+        }
+    }
+    infantry_fighting_vehicle_1 = {
+        pool = {
+            weight = 200
+            models = {
+                UKR_bmp2_entity
+            }
+        }
+    }
+    airborne_combat_vehicle_2 = {
+        pool = {
+            weight = 200
+            models = {
+                UKR_bmp1_entity
+            }
+        }
+    }
+    airborne_combat_vehicle_3 = {
+        pool = {
+            weight = 200
+            models = {
+                UKR_bmp2_entity
+            }
+        }
+    }
+}

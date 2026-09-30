@@ -1,473 +1,955 @@
 equipments = { 
 
+
+
 	towed_artillery_equipment = {
+
 		year = 1970
 
+
+
 		is_archetype = yes
+
 		picture = archetype_artillery_equipment		
+
 		type = {
+
 			artillery
+
 			infantry
+
 		}
+
 		group_by = archetype
+
 		
+
 		interface_category = interface_category_land
 
+
+
 		reliability = 0.8
+
+
 
 		defense = 10
+
 		breakthrough = 6
+
 		hardness = 0
+
 		armor_value = 0
 
+
+
 		soft_attack = 25
+
 		hard_attack = 2
+
 		ap_attack = 5
+
 		air_attack = 0
 
+
+
 		lend_lease_cost = 5
+
 		
+
 		build_cost_ic = 3.5
+
 		resources = {
+
 			tungsten = 1
+
 			steel = 2
+
 		}
+
 	}
+
+
 
 	towed_artillery_equipment_1 = {
+
 		year = 1991
 
+
+
 		archetype = towed_artillery_equipment
+
 		priority = 50
+
 		visual_level = 0
+
 	}
+
 	
+
 	towed_artillery_equipment_2 = {
+
 		year = 2000
 
+
+
 		archetype = towed_artillery_equipment
+
 		parent = towed_artillery_equipment_1
+
 		priority = 50
+
 		visual_level = 1
 
+
+
 		defense = 15
+
 		breakthrough = 8
+
 		soft_attack = 30
+
 		
+
 		build_cost_ic = 4
+
 		resources = {
+
 			tungsten = 1
+
 			steel = 2
+
 		}
+
 	}
+
 	
+
 	towed_artillery_equipment_3 = {
+
 		year = 2005
 
+
+
 		archetype = towed_artillery_equipment
+
 		parent = towed_artillery_equipment_2
+
 		priority = 50
+
 		visual_level = 2
+
 		
+
 		defense = 18
+
 		breakthrough = 8
+
 		soft_attack = 35
+
 		
+
 		build_cost_ic = 4.5
+
 		resources = {
+
 			tungsten = 1
+
 			steel = 3
+
 		}
+
 	}
+
+
 
 	towed_artillery_equipment_4 = {
+
 		year = 2014
 
+
+
 		archetype = towed_artillery_equipment
+
 		parent = towed_artillery_equipment_3
+
 		priority = 50
+
 		visual_level = 2
+
 		
+
 		defense = 21
+
 		breakthrough = 9.1
+
 		soft_attack = 38
+
 		
+
 		build_cost_ic = 4.5
+
 		resources = {
+
 			tungsten = 1
+
 			steel = 3
+
 		}
+
 	}
+
+
 
 	towed_artillery_equipment_5 = {
+
 		year = 2020
 
+
+
 		archetype = towed_artillery_equipment
+
 		parent = towed_artillery_equipment_4
+
 		priority = 50
+
 		visual_level = 2
+
 		
+
 		defense = 22
+
 		breakthrough = 9.7
+
 		soft_attack = 41
+
 		
+
 		build_cost_ic = 4.5
+
 		resources = {
+
 			tungsten = 1
+
 			steel = 3
+
 		}
+
 	}
 
+
+
 	spau = {
+
 		year = 1971
+
 		is_archetype = yes
+
 		is_buildable = no
 
+
+
 		picture = archetype_btr1_equipment_medium
+
 		type = armor
+
 		group_by = archetype
+
 		interface_category = interface_category_armor
+
 		priority = 2000		
 
+
+
 		fuel_consumption = 0
+
 		maximum_speed = 25
+
 		build_cost_ic = 1
+
 		reliability = 0.8
+
 		hardness = 0.8
+
 		armor_value = 10
+
 		resources = {
+
 			steel = 2
+
 		}
+
+
 
 		lend_lease_cost = 10
 
+
+
 		manpower = 3
+
 	}
+
+
 
 	spau_0 = {
+        sprite = df_eq_spau_0
+
+
 		abbreviation = "sau0"
+
 		derived_variant_name = sau_equipment_0
+
 		visual_level = 0
+
 		year = 2000
 
+
+
 		archetype = spau
+
 		priority = 50
+
+
 
 		defense = 17
+
 		breakthrough = 11
+
 		soft_attack = 33
+
 		
+
 		build_cost_ic = 9
+
 		resources = {
+
 			tungsten = 1
+
 			steel = 2
+
 		}
+
 	}
+
+
 
 	spau_1 = {
+        sprite = df_eq_spau_1
+
+
 		abbreviation = "sau1"
+
 		derived_variant_name = sau_equipment_1
+
 		visual_level = 1
 
+
+
 		archetype = spau
+
 		parent = spau_0
+
 		priority = 50
+
+
 
 		defense = 19
+
 		breakthrough = 13
+
 		soft_attack = 46
+
 		
+
 		build_cost_ic = 12
+
 		resources = {
+
 			tungsten = 1
+
 			steel = 2
+
 		}
+
 	}
+
+
 
 	spau_2 = {
+        sprite = df_eq_spau_2
+
+
 		abbreviation = "sau2"
+
 		derived_variant_name = sau_equipment_2
+
 		visual_level = 2
+
 		year = 1976
 
+
+
 		archetype = spau
+
 		parent = spau_1
+
 		priority = 50
+
+
 
 		defense = 21
+
 		breakthrough = 15
+
 		soft_attack = 59
+
 		
+
 		build_cost_ic = 14
+
 		resources = {
+
 			tungsten = 1
+
 			steel = 2
+
 		}
+
 	}
+
+
 
 	spau_3 = {
+        sprite = df_eq_spau_3
+
+
 		abbreviation = "sau3"
+
 		derived_variant_name = sau_equipment_2
+
 		visual_level = 3
+
 		year = 1985
 
+
+
 		archetype = spau
+
 		parent = spau_2
+
 		priority = 50
+
+
 
 		defense = 23
+
 		breakthrough = 21
+
 		soft_attack = 63
+
 		
+
 		build_cost_ic = 16
+
 		resources = {
+
 			tungsten = 1
+
 			steel = 2
+
 			chromium = 1
+
 		}
+
 	}
+
+
 
 	spau_4 = {
+        sprite = df_eq_spau_4
+
+
 		abbreviation = "sau4"
+
 		derived_variant_name = sau_equipment_3
+
 		visual_level = 4
+
 		year = 2016
 
+
+
 		archetype = spau
+
 		parent = spau_3
+
 		priority = 50
 
+
+
 		defense = 24
+
 		breakthrough = 22
+
 		soft_attack = 77
+
 		
+
 		build_cost_ic = 19
+
 		resources = {
+
 			tungsten = 1
+
 			steel = 3
+
 			chromium = 1
+
 		}
+
 	}
+
+
 
 	mlrs = {
+
 		year = 1970
 
+
+
 		is_archetype = yes
+
 		picture = archetype_artillery_equipment		
+
 		type = {
+
 			artillery
+
 			infantry
+
 		}
+
 		group_by = archetype
+
 		
+
 		interface_category = interface_category_land
 
+
+
 		reliability = 0.8
+
+
 
 		defense = 10
+
 		breakthrough = 6
+
 		hardness = 0
+
 		armor_value = 0
+
+
 
 		soft_attack = 25
+
 		hard_attack = 2
+
 		ap_attack = 5
+
 		air_attack = 0
 
+
+
 		lend_lease_cost = 5
+
 		
+
 		build_cost_ic = 3.5
+
 		resources = {
+
 			tungsten = 1
+
 			steel = 2
+
 		}
+
 	}
+
+
 
 	selfpropered_mortar_0 = {
+
 		abbreviation = "selfmortar0"
+
 		derived_variant_name = selfmortar_equipment_0
+
 		visual_level = 0
+
 		year = 1971
+
 		archetype = mlrs
+
 		priority = 2000
+
 		module_slots = inherit
+
 	}
+
+
 
 	selfpropered_mortar_1 = {
+
 		abbreviation = "selfmortar1"
+
 		derived_variant_name = mlrs_equipment_0
+
 		visual_level = 0
+
 		year = 1971
+
 		archetype = mlrs
+
 		parent = selfpropered_mortar_0
+
 		priority = 2000
+
 		module_slots = inherit
+
 	}
+
+
 
 	selfpropered_mortar_2 = {
+
 		abbreviation = "selfmortar2"
+
 		derived_variant_name = mlrs_equipment_1
+
 		visual_level = 0
+
 		year = 1971
+
 		archetype = mlrs
+
 		parent = selfpropered_mortar_1
+
 		priority = 2000
+
 		module_slots = inherit
+
 	}
+
+
 
 	mlrs_0 = {
+
 		abbreviation = "mlrs0"
+
 		derived_variant_name = mlrs_equipment_0
+
 		visual_level = 0
+
 		year = 1971
+
 		archetype = mlrs
+
 		priority = 2000
+
 		module_slots = inherit
+
 	}
+
+
 
 	mlrs_1 = {
+
 		abbreviation = "mlrs1"
+
 		derived_variant_name = mlrs_equipment_0
-		visual_level = 0
-		year = 1971
-		archetype = mlrs
-		parent = mlrs_0
-		priority = 2000
-		module_slots = inherit
-	}
 
-	mlrs_2 = {
-		abbreviation = "mlrs0"
-		derived_variant_name = mlrs_equipment_1
-		visual_level = 0
-		year = 1971
-		archetype = mlrs
-		parent = mlrs_1
-		priority = 2000
-		module_slots = inherit
-	}
-
-	mortar_equipment = {
-		year = 1960
-	
-		is_archetype = yes
-		picture = archetype_mortar_equipment		
-		is_buildable = no
-		type = infantry
-		group_by = archetype
-		
-		interface_category = interface_category_land
-		
-		active = yes
-
-		defense = 20
-		breakthrough = 4
-		hardness = 0
-		armor_value = 0
-		reliability = 0.7
-
-		soft_attack = 16
-		hard_attack = 0.2
-		ap_attack = 1
-
-		lend_lease_cost = 1
-		
-		build_cost_ic = 2.3
-		resources = {
-			steel = 2
-		}
-	}
-
-	mortar_equipment_0 = {
-		year = 1960
-	
-		archetype = mortar_equipment
-		active = yes
-		priority = 5
-		visual_level = 0
-	}
-
-	mortar_equipment_1 = {
-		year = 1970
-	
-		archetype = mortar_equipment
-		parent = mortar_equipment_0
-		priority = 10
 		visual_level = 1
 
-		soft_attack = 19
-		hard_attack = 0.2
-		ap_attack = 1.1
-		defense = 22
-		breakthrough = 5
+		year = 1971
 
-		reliability = 0.75
-		build_cost_ic = 2.6
-		resources = {
-			steel = 2
-		}
+		archetype = mlrs
+
+		parent = mlrs_0
+
+		priority = 2000
+
+		module_slots = inherit
+
 	}
 
-	mortar_equipment_2 = {
-		year = 1990
-	
-		archetype = mortar_equipment
-		parent = mortar_equipment_1
-		priority = 10
+
+
+	mlrs_2 = {
+
+		abbreviation = "mlrs0"
+
+		derived_variant_name = mlrs_equipment_1
+
 		visual_level = 2
 
+		year = 1971
+
+		archetype = mlrs
+
+		parent = mlrs_1
+
+		priority = 2000
+
+		module_slots = inherit
+
+	}
+
+
+
+	mortar_equipment = {
+
+		year = 1960
+
+	
+
+		is_archetype = yes
+
+		picture = archetype_mortar_equipment		
+
+		is_buildable = no
+
+		type = infantry
+
+		group_by = archetype
+
+		
+
+		interface_category = interface_category_land
+
+		
+
+		active = yes
+
+
+
+		defense = 20
+
+		breakthrough = 4
+
+		hardness = 0
+
+		armor_value = 0
+
+		reliability = 0.7
+
+
+
+		soft_attack = 16
+
+		hard_attack = 0.2
+
+		ap_attack = 1
+
+
+
+		lend_lease_cost = 1
+
+		
+
+		build_cost_ic = 2.3
+
+		resources = {
+
+			steel = 2
+
+		}
+
+	}
+
+
+
+	mortar_equipment_0 = {
+
+		year = 1960
+
+	
+
+		archetype = mortar_equipment
+
+		active = yes
+
+		priority = 5
+
+		visual_level = 0
+
+	}
+
+
+
+	mortar_equipment_1 = {
+
+		year = 1970
+
+	
+
+		archetype = mortar_equipment
+
+		parent = mortar_equipment_0
+
+		priority = 10
+
+		visual_level = 1
+
+
+
+		soft_attack = 19
+
+		hard_attack = 0.2
+
+		ap_attack = 1.1
+
+		defense = 22
+
+		breakthrough = 5
+
+
+
+		reliability = 0.75
+
+		build_cost_ic = 2.6
+
+		resources = {
+
+			steel = 2
+
+		}
+
+	}
+
+
+
+	mortar_equipment_2 = {
+
+		year = 1990
+
+	
+
+		archetype = mortar_equipment
+
+		parent = mortar_equipment_1
+
+		priority = 10
+
+		visual_level = 2
+
+
+
 		soft_attack = 22.6
+
 		hard_attack = 0.3
+
 		ap_attack = 1.2
+
 		defense = 25
+
 		breakthrough = 6
 
+
+
 		reliability = 0.8
+
 		build_cost_ic = 3
+
 		resources = {
+
 			steel = 2
+
 		}
+
 	}
+
+
 
 	mortar_equipment_3 = {
+
 		year = 2010
+
 	
+
 		archetype = mortar_equipment
+
 		parent = mortar_equipment_2
+
 		priority = 10
+
 		visual_level = 3
 
+
+
 		soft_attack = 26.6
+
 		hard_attack = 0.3
+
 		ap_attack = 1.2
+
 		defense = 27
+
 		breakthrough = 8
 
+
+
 		reliability = 0.85
+
 		build_cost_ic = 3.4
+
 		resources = {
+
 			steel = 2
+
 		}
+
 	}
+
+
 
 	mortar_equipment_4 = {
+
 		year = 2020
+
 	
+
 		archetype = mortar_equipment
+
 		parent = mortar_equipment_3
+
 		priority = 10
+
 		visual_level = 4
 
+
+
 		soft_attack = 31.8
+
 		hard_attack = 0.4
+
 		ap_attack = 1.3
+
 		defense = 30
+
 		breakthrough = 11
 
+
+
 		reliability = 0.85
+
 		build_cost_ic = 4
+
 		resources = {
+
 			steel = 2
+
 		}
+
 	}
+
 }

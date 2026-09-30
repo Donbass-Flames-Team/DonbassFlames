@@ -1,0 +1,213 @@
+UKR = {
+    infantry_fighting_vehicle_2 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_bmp-3_entity
+            }
+        }
+    }
+    towed_artillery_equipment_1 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_d-30-howitzer_entity
+            }
+        }
+    }
+    apc = {
+        pool = {
+            weight = 80
+            models = {
+                DF_Aviks_mt-lbm_entity
+            }
+        }
+    }
+    bbm_1 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_mt-lbu-1v14_entity
+                DF_Aviks_ukrainian-m998-humvee-pickup_entity
+            }
+        }
+    }
+    bbm_2 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_ukrainian-amz-dzik_entity
+                DF_Aviks_ukrainian-modified-humvee_entity
+            }
+        }
+    }
+    bbm_3 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_ukrainian-kozak-5-kursk-operation_entity
+            }
+        }
+    }
+    selfpropered_mortar_0 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_spm-2s9-nona-dcs-world_entity
+            }
+        }
+    }
+    selfpropered_mortar_1 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_spm-2s9-nona-dcs-world_entity
+            }
+        }
+    }
+    selfpropered_mortar_2 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_spm-2s9-nona-dcs-world_entity
+            }
+        }
+    }
+    apc_4 = {
+        pool = {
+            weight = 80
+            models = {
+                DF_Aviks_azov-brigade-btr-3e_entity
+            }
+        }
+    }
+}
+
+RUS = {
+    infantry_fighting_vehicle_2 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_bmp-3_entity
+            }
+        }
+    }
+    towed_artillery_equipment_1 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_d-30-howitzer_entity
+            }
+        }
+    }
+    apc = {
+        pool = {
+            weight = 80
+            models = {
+                DF_Aviks_mt-lbm_entity
+            }
+        }
+    }
+    apc_3 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_russian-btr_entity
+            }
+        }
+    }
+    apc_4 = {
+        pool = {
+            weight = 100
+            models = {
+                DF_Aviks_russian-btr_entity
+            }
+        }
+    }
+    modern_tank_equipment_3 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_russian-t-72b3_entity
+            }
+        }
+    }
+    modern_tank_equipment_5 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_russian-t-90m3_entity
+                DF_Aviks_russian-t-90a_entity
+                DF_Aviks_russian-t-90a-with-cope-cage_entity
+            }
+        }
+    }
+    bbm_3 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_russian-kamaz-63968-typhoon_entity
+            }
+        }
+    }
+    infantry_equipment = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_russian-infantry-rifleman_entity
+            }
+        }
+        pool = {
+            weight = 90
+            models = {
+                DF_Aviks_russian-infantry-medic_entity
+                DF_Aviks_russian-infantry-pk-gunner_entity
+                DF_Aviks_russian-vdv-paratrooper-bucha-2022_entity
+            }
+        }
+    }
+}
+
+AZV = {
+    apc_0 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_azov-brigade-btr-3e_entity
+            }
+        }
+    }
+    apc_1 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_azov-brigade-btr-3e_entity
+            }
+        }
+    }
+    apc_2 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_azov-brigade-btr-3e_entity
+            }
+        }
+    }
+    apc_3 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_azov-brigade-btr-3e_entity
+            }
+        }
+    }
+    apc_4 = {
+        pool = {
+            weight = 300
+            models = {
+                DF_Aviks_azov-brigade-btr-3e_entity
+            }
+        }
+    }
+}
+

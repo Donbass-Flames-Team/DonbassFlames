@@ -33,6 +33,8 @@ equipments = {
 	}
 
 	apc_0 = {
+        sprite = df_eq_apc_0
+
 		year = 1960
 
 		archetype = apc
@@ -43,6 +45,8 @@ equipments = {
 	}
 
 	apc_1 = {
+        sprite = df_eq_apc_1
+
 		year = 1980
 
 		archetype = apc
@@ -75,13 +79,15 @@ equipments = {
 	}
 
 	apc_2 = {
+        sprite = df_eq_apc_2
+
 		year = 2000
 
 		archetype = apc
 		parent = apc_1
 		picture = apc_3
 		priority = 10
-		visual_level = 1
+		visual_level = 2
 
 		maximum_speed = 16
 		reliability = 0.92
@@ -107,13 +113,15 @@ equipments = {
 	}
 
 	apc_3 = {
+        sprite = df_eq_apc_3
+
 		year = 2020
 
 		archetype = apc
 		parent = apc_2
 		picture = apc_4
 		priority = 10
-		visual_level = 1
+		visual_level = 3
 
 		maximum_speed = 16
 		breakthrough = 16
@@ -139,13 +147,15 @@ equipments = {
 	}
 
 	apc_4 = {
+        sprite = df_eq_apc_4
+
 		year = 2020
 
 		archetype = apc
 		parent = apc_3
 		picture = apc_5
 		priority = 10
-		visual_level = 1
+		visual_level = 4
 
 		maximum_speed = 16
 		reliability = 0.98

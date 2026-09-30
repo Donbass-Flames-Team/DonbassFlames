@@ -1,0 +1,702 @@
+objectTypes = {
+    pdxmesh = {
+        name = "DF_Aviks_russian-btr_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/russian-btr/russian-btr.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_russian-btr_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_russian-btr_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_russian-btr_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_russian-btr_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_russian-btr_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_russian-btr_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_russian-btr_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_russian-infantry-medic_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/russian-infantry-medic/russian-infantry-medic.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_russian-infantry-medic_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_russian-infantry-medic_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_russian-infantry-medic_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_russian-infantry-medic_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_russian-infantry-medic_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_russian-infantry-medic_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_russian-infantry-medic_training"
+        }
+        animation = {
+            id = "death"
+            type = "DF_Aviks_russian-infantry-medic_death"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_russian-infantry-pk-gunner_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/russian-infantry-pk-gunner/russian-infantry-pk-gunner.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_russian-infantry-pk-gunner_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_russian-infantry-pk-gunner_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_russian-infantry-pk-gunner_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_russian-infantry-pk-gunner_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_russian-infantry-pk-gunner_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_russian-infantry-pk-gunner_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_russian-infantry-pk-gunner_training"
+        }
+        animation = {
+            id = "death"
+            type = "DF_Aviks_russian-infantry-pk-gunner_death"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_russian-infantry-rifleman_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/russian-infantry-rifleman/russian-infantry-rifleman.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_russian-infantry-rifleman_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_russian-infantry-rifleman_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_russian-infantry-rifleman_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_russian-infantry-rifleman_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_russian-infantry-rifleman_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_russian-infantry-rifleman_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_russian-infantry-rifleman_training"
+        }
+        animation = {
+            id = "death"
+            type = "DF_Aviks_russian-infantry-rifleman_death"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_russian-kamaz-63968-typhoon_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/russian-kamaz-63968-typhoon/russian-kamaz-63968-typhoon.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_russian-kamaz-63968-typhoon_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_russian-kamaz-63968-typhoon_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_russian-kamaz-63968-typhoon_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_russian-kamaz-63968-typhoon_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_russian-kamaz-63968-typhoon_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_russian-kamaz-63968-typhoon_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_russian-kamaz-63968-typhoon_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_russian-t-72b3_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/russian-t-72b3/russian-t-72b3.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_russian-t-72b3_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_russian-t-72b3_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_russian-t-72b3_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_russian-t-72b3_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_russian-t-72b3_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_russian-t-72b3_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_russian-t-72b3_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_russian-t-90a-with-cope-cage_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/russian-t-90a-with-cope-cage/russian-t-90a-with-cope-cage.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_russian-t-90a-with-cope-cage_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_russian-t-90a-with-cope-cage_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_russian-t-90a-with-cope-cage_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_russian-t-90a-with-cope-cage_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_russian-t-90a-with-cope-cage_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_russian-t-90a-with-cope-cage_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_russian-t-90a-with-cope-cage_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_russian-t-90a_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/russian-t-90a/russian-t-90a.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_russian-t-90a_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_russian-t-90a_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_russian-t-90a_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_russian-t-90a_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_russian-t-90a_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_russian-t-90a_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_russian-t-90a_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_russian-t-90m3_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/russian-t-90m3/russian-t-90m3.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_russian-t-90m3_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_russian-t-90m3_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_russian-t-90m3_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_russian-t-90m3_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_russian-t-90m3_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_russian-t-90m3_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_russian-t-90m3_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_russian-vdv-paratrooper-bucha-2022_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/russian-vdv-paratrooper-bucha-2022/russian-vdv-paratrooper-bucha-2022.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_russian-vdv-paratrooper-bucha-2022_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_russian-vdv-paratrooper-bucha-2022_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_russian-vdv-paratrooper-bucha-2022_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_russian-vdv-paratrooper-bucha-2022_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_russian-vdv-paratrooper-bucha-2022_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_russian-vdv-paratrooper-bucha-2022_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_russian-vdv-paratrooper-bucha-2022_training"
+        }
+        animation = {
+            id = "death"
+            type = "DF_Aviks_russian-vdv-paratrooper-bucha-2022_death"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_bmp-3_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/bmp-3/bmp-3.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_bmp-3_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_bmp-3_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_bmp-3_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_bmp-3_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_bmp-3_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_bmp-3_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_bmp-3_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_d-30-howitzer_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/d-30-howitzer/d-30-howitzer.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_d-30-howitzer_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_d-30-howitzer_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_d-30-howitzer_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_d-30-howitzer_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_d-30-howitzer_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_d-30-howitzer_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_d-30-howitzer_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_mt-lbm_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/mt-lbm/mt-lbm.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_mt-lbm_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_mt-lbm_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_mt-lbm_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_mt-lbm_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_mt-lbm_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_mt-lbm_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_mt-lbm_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_azov-brigade-btr-3e_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/azov-brigade-btr-3e/azov-brigade-btr-3e.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_azov-brigade-btr-3e_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_azov-brigade-btr-3e_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_azov-brigade-btr-3e_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_azov-brigade-btr-3e_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_azov-brigade-btr-3e_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_azov-brigade-btr-3e_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_azov-brigade-btr-3e_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_mt-lbu-1v14_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/mt-lbu-1v14/mt-lbu-1v14.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_mt-lbu-1v14_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_mt-lbu-1v14_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_mt-lbu-1v14_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_mt-lbu-1v14_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_mt-lbu-1v14_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_mt-lbu-1v14_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_mt-lbu-1v14_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_spm-2s9-nona-dcs-world_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/spm-2s9-nona-dcs-world/spm-2s9-nona-dcs-world.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_spm-2s9-nona-dcs-world_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_spm-2s9-nona-dcs-world_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_spm-2s9-nona-dcs-world_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_spm-2s9-nona-dcs-world_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_spm-2s9-nona-dcs-world_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_spm-2s9-nona-dcs-world_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_spm-2s9-nona-dcs-world_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_ukrainian-amz-dzik_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/ukrainian-amz-dzik/ukrainian-amz-dzik.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_ukrainian-amz-dzik_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_ukrainian-amz-dzik_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_ukrainian-amz-dzik_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_ukrainian-amz-dzik_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_ukrainian-amz-dzik_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_ukrainian-amz-dzik_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_ukrainian-amz-dzik_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_ukrainian-kozak-5-kursk-operation_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/ukrainian-kozak-5-kursk-operation/ukrainian-kozak-5-kursk-operation.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_ukrainian-kozak-5-kursk-operation_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_ukrainian-kozak-5-kursk-operation_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_ukrainian-kozak-5-kursk-operation_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_ukrainian-kozak-5-kursk-operation_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_ukrainian-kozak-5-kursk-operation_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_ukrainian-kozak-5-kursk-operation_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_ukrainian-kozak-5-kursk-operation_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_ukrainian-m998-humvee-pickup_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/ukrainian-m998-humvee-pickup/ukrainian-m998-humvee-pickup.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_ukrainian-m998-humvee-pickup_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_ukrainian-m998-humvee-pickup_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_ukrainian-m998-humvee-pickup_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_ukrainian-m998-humvee-pickup_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_ukrainian-m998-humvee-pickup_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_ukrainian-m998-humvee-pickup_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_ukrainian-m998-humvee-pickup_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_ukrainian-modified-humvee_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/ukrainian-modified-humvee/ukrainian-modified-humvee.mesh"
+        scale = 1.0
+        animation = {
+            id = "idle"
+            type = "DF_Aviks_ukrainian-modified-humvee_idle"
+        }
+        animation = {
+            id = "move"
+            type = "DF_Aviks_ukrainian-modified-humvee_move"
+        }
+        animation = {
+            id = "retreat"
+            type = "DF_Aviks_ukrainian-modified-humvee_retreat"
+        }
+        animation = {
+            id = "attack"
+            type = "DF_Aviks_ukrainian-modified-humvee_attack"
+        }
+        animation = {
+            id = "defend"
+            type = "DF_Aviks_ukrainian-modified-humvee_defend"
+        }
+        animation = {
+            id = "support_attack"
+            type = "DF_Aviks_ukrainian-modified-humvee_support_attack"
+        }
+        animation = {
+            id = "training"
+            type = "DF_Aviks_ukrainian-modified-humvee_training"
+        }
+    }
+
+    pdxmesh = {
+        name = "DF_Aviks_pkm_mesh"
+        file = "gfx/models/units/Silvestor_models/Aviks/pkm/pkm.mesh"
+    }
+}
