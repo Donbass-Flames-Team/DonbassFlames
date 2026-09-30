@@ -5340,6 +5340,7 @@ country_event = {
 		add_political_power = -15
 		add_stability = -0.02
 		add_war_support = -0.015
+		
 	}
 }
 
@@ -5930,16 +5931,22 @@ country_event = {
 
 # Андрей Кузьменко умер
 country_event = {
-    id = ukraine.160
-    title = ukraine.160.t
-    desc = ukraine.160.d
-    picture = GFX_Report_event_kuzmenko_is_dead
+	id = ukraine.160
+	title = ukraine.160.t
+	desc = ukraine.160.d
+	picture = GFX_Report_event_kuzmenko_is_dead
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = ukraine.160.a
-    }
+	option = {
+	name = ukraine.160.a
+	if = {
+		limit = {
+			NOT = { has_country_flag = Andrey_kuzmin_is_gone }
+			}
+		set_country_flag = Andrey_kuzmin_is_gone
+		}
+	}
 }
 
 # Стрельба в мукачево
@@ -6372,6 +6379,12 @@ country_event = {
 			value = 2
 			tooltip = UKR_cor_tt
 		}
+	if = {
+		limit = {
+			NOT = { has_country_flag = UKR_sheremet }
+		}
+	set_country_flag = UKR_sheremet
+	}
     }
 
     option = {
@@ -6410,6 +6423,12 @@ country_event = {
         add_stability = -0.005
         add_war_support = -0.005
 		add_manpower = -50
+            if = {
+                limit = {
+                    NOT = { has_country_flag = UKR_belavia }
+                }
+                set_country_flag = UKR_belavia
+            }
     }
 }
 
@@ -6684,6 +6703,10 @@ country_event = {
 	option = {
 		name = ukr_elections_2019.1.a
 		activate_mission = UKR_elections_2019
+		if = {
+		limit = { NOT = { has_country_flag = Zelensky_is_running_for_president } }
+		set_country_flag = Zelensky_is_running_for_president
+		}
 	}
 }
 
