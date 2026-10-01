@@ -1,336 +1,256 @@
 sub_units = {
-
-	towed_artillery = {
-		abbreviation = "ART"
-		sprite = df_towed
-		map_icon_category = infantry
-		priority = 0
-		ai_priority = 0
-		active = yes
+	towed_artillery = {
+		abbreviation = "ART"
+		sprite = df_towed
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
 		affects_speed = no
-
-		type = {
-			infantry
-			support
+		type = {
+			infantry
+			support
 		}
-		
 		group = support
-		
-		categories = {
-			category_support_battalions
-			category_army
-			category_artillery
-			category_support_artillery
+		categories = {
+			category_support_battalions
+			category_army
+			category_artillery
+			category_support_artillery
 		}
-
-
 		combat_width = 0
-
-		need = {
-			infantry_equipment = 15
-			uniform_equipment = 15
-			bulletproof_vests_equipment = 15
-			towed_artillery_equipment = 8
+		need = {
+			infantry_equipment = 10
+			uniform_equipment = 30
+			bulletproof_vests_equipment = 10
+			towed_artillery_equipment = 8
 		}
-		manpower = 15
-		training_time = 110
-		max_organisation = 20
-		default_morale = 0.15
-		max_strength = 0.2
-		weight = 0.1
-		
+		manpower = 30
+		training_time = 120
+		max_organisation = 20
+		default_morale = 0.15
+		max_strength = 0.2
+		weight = 0.1
 		supply_consumption = 0.16
-
-		# Support nerfs to combat abilities
-		defense = -0.4
-		breakthrough = -0.4
-		soft_attack = -0.4
+		# Support nerfs to combat abilities
+		defense = -0.4
+		breakthrough = -0.4
+		soft_attack = -0.4
 		hard_attack = -0.4
-
-    	forest = {
-			attack = -0.2
-			movement = -0.3
-		}
-
-		mountain = {
-			attack = -0.3
-			movement = -0.4
-		}
-
-		jungle = {
-			attack = -0.3
-			movement = -0.4
-		}
-
-		marsh = {
-			attack = -0.25
-			movement = -0.3
-		}
-
-		urban = {
-			attack = -0.25
-		}
-
-		river = {
-			attack = -0.3
-			movement = -0.3
-		}
-
-		amphibious = {
-			attack = -0.4
-		}
-		
-		can_be_parachuted = yes
+    	forest = {
+			attack = -0.2
+			movement = -0.3
+		}
+		mountain = {
+			attack = -0.3
+			movement = -0.4
+		}
+		jungle = {
+			attack = -0.3
+			movement = -0.4
+		}
+		marsh = {
+			attack = -0.25
+			movement = -0.3
+		}
+		urban = {
+			attack = -0.25
+		}
+		river = {
+			attack = -0.3
+			movement = -0.3
+		}
+		amphibious = {
+			attack = -0.4
+		}
 	}
-
 	sau_artillery_company = {
-		abbreviation = "SAUAC"
-		sprite = df_spau
-		map_icon_category = infantry
-		priority = 0
-		ai_priority = 0
-		active = yes
+		abbreviation = "SAUAC"
+		sprite = df_spau
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
 		affects_speed = no
-
-		type = {
-			infantry
-			support
+		type = {
+			infantry
+			support
 		}
-		
-		group = support
-		
-		categories = {
-			category_support_battalions
-			category_army
-			category_artillery
-			category_support_artillery
+		group = support
+		categories = {
+			category_support_battalions
+			category_army
+			category_artillery
+			category_support_artillery
 		}
-
-
 		combat_width = 0
-
-		need = {
-			uniform_equipment = 20
-			bulletproof_vests_equipment = 20
-			infantry_equipment = 8
-			spau = 2
+		need = {
+			uniform_equipment = 20
+			bulletproof_vests_equipment = 20
+			infantry_equipment = 8
+			spau = 4
 		}
-		manpower = 20
-		training_time = 200
-		max_organisation = 20
-		default_morale = 0.1
-		max_strength = 0.2
-		weight = 0.1
-		
+		manpower = 20
+		training_time = 200
+		max_organisation = 20
+		default_morale = 0.1
+		max_strength = 0.2
+		weight = 0.1
 		supply_consumption = 0.16
-
 		# Support nerfs to combat abilities
-		defense = -0.35
-		breakthrough = -0.4
-		soft_attack = -0.4
-		hard_attack = -0.4
+		defense = -0.35
+		breakthrough = -0.4
+		soft_attack = -0.4
+		hard_attack = -0.4
 		ap_attack = -0.15
-
-        forest = {
-			attack = -0.15
-			movement = -0.2
-		}
-
-		mountain = {
-			attack = -0.25
-			movement = -0.3
-		}
-
-		jungle = {
-			attack = -0.2
-			movement = -0.25
-		}
-
-		marsh = {
-			attack = -0.25
-			movement = -0.3
-		}
-
-		urban = {
-			attack = -0.2
-		}
-
-		river = {
-			attack = -0.25
-			movement = -0.25
-		}
-
-		amphibious = {
-			attack = -0.35
-		}
-
-		can_be_parachuted = yes
-	}
-
+        forest = {
+			attack = -0.15
+			movement = -0.2
+		}
+		mountain = {
+			attack = -0.25
+			movement = -0.3
+		}
+		marsh = {
+			attack = -0.25
+			movement = -0.3
+		}
+		urban = {
+			attack = -0.2
+		}
+		river = {
+			attack = -0.25
+			movement = -0.25
+		}
+		amphibious = {
+			attack = -0.35
+		}
+		can_be_parachuted = yes
+	}
+
 	sau_artillery = {
-		abbreviation = "SAUA"
-		sprite = df_spau
-		map_icon_category = infantry
-		priority = 0
-		ai_priority = 0
-		active = yes
-		affects_speed = no
+		abbreviation = "SAUA"
+		sprite = df_spau
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
 		is_artillery_brigade = yes
-
-		type = {
-			infantry
-			artillery
+		type = {
+			infantry
+			artillery
 		}
-		
 		group = combat_support
-		
-		categories = {
-			category_army
-			category_artillery
-			category_line_artillery
+		categories = {
+			category_army
+			category_artillery
+			category_line_artillery
 		}
-
-
 		combat_width = 0
-
-		need = {
-			uniform_equipment = 40
-			bulletproof_vests_equipment = 25
-			infantry_equipment = 15
-			spau = 8
+		need = {
+			uniform_equipment = 40
+			bulletproof_vests_equipment = 25
+			infantry_equipment = 15
+			spau = 8
 		}
-		manpower = 40
-		training_time = 200
-		max_organisation = 60
-		default_morale = 0.1
-		max_strength = 30
-		weight = 0.1
-		
+		manpower = 40
+		training_time = 200
+		max_organisation = 60
+		default_morale = 0.1
+		max_strength = 30
+		weight = 0.1
 		supply_consumption = 0.16
-
 		# Support nerfs to combat abilities
-		defense = -0.35
-		breakthrough = -0.4
-		soft_attack = -0.4
-		hard_attack = -0.4
+		defense = -0.35
+		breakthrough = -0.4
+		soft_attack = -0.4
+		hard_attack = -0.4
 		ap_attack = -0.15
-
-		forest = {
-			attack = -0.2
-			movement = -0.25
+		forest = {
+			attack = -0.2
+			movement = -0.25
+		}
+		mountain = {
+			attack = -0.35
+			movement = -0.4
+		}
+		marsh = {
+			attack = -0.3
+			movement = -0.35
+		}
+		urban = {
+			attack = -0.3
+		}
+		river = {
+			attack = -0.3
+			movement = -0.3
+		}
+		amphibious = {
+			attack = -0.4
 		}
-
-		mountain = {
-			attack = -0.35
-			movement = -0.4
-		}
-
-		jungle = {
-			attack = -0.3
-			movement = -0.35
-		}
-
-		marsh = {
-			attack = -0.3
-			movement = -0.35
-		}
-
-		urban = {
-			attack = -0.3
-		}
-
-		river = {
-			attack = -0.3
-			movement = -0.3
-		}
-
-		amphibious = {
-			attack = -0.4
-		}
-
 		can_be_parachuted = yes
 	}
-	
 	MLRS = {
-		abbreviation = "MLRS"
-		sprite = df_mlrs
-		map_icon_category = infantry
-		priority = 0
-		ai_priority = 0
-		active = yes
-		affects_speed = no
+		abbreviation = "MLRS"
+		sprite = df_mlrs
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
 		is_artillery_brigade = yes
-
-		type = {
-			infantry
-			artillery
+		type = {
+			infantry
+			artillery
 		}
-
 		group = combat_support
-
-		categories = {
-			category_army
-			category_artillery
-			category_line_artillery
+		categories = {
+			category_army
+			category_artillery
+			category_line_artillery
 		}
-
 		combat_width = 0
-
-		need = {
-			uniform_equipment = 40
-			bulletproof_vests_equipment = 25
-			infantry_equipment = 15
-			mlrs_0 = 8
+		need = {
+			uniform_equipment = 40
+			bulletproof_vests_equipment = 25
+			infantry_equipment = 15
+			mlrs_0 = 8
 		}
-
-		manpower = 40
-		training_time = 120
-		max_organisation = 60
-		default_morale = 0.1
-		max_strength = 40
+		manpower = 40
+		training_time = 120
+		max_organisation = 60
+		default_morale = 0.1
+		max_strength = 40
 		weight = 0.1
-
 		supply_consumption = 0.16
-
-		# Support nerfs to combat abilities
-		defense = -0.5
-		breakthrough = -0.5
-		soft_attack = -0.5
+		# Support nerfs to combat abilities
+		defense = -0.5
+		breakthrough = -0.5
+		soft_attack = -0.5
 		hard_attack = -0.5
-
-		forest = {
-			attack = -0.2
-			movement = -0.25
-		}
-
-		mountain = {
-			attack = -0.3
-			movement = -0.35
-		}
-
-		jungle = {
-			attack = -0.3
-			movement = -0.35
-		}
-
-		marsh = {
-			attack = -0.25
-			movement = -0.3
-		}
-
-		urban = {
-			attack = -0.25
-		}
-
-		river = {
-			attack = -0.3
-			movement = -0.3
-		}
-
-		amphibious = {
-			attack = -0.4
-		}
-
+		forest = {
+			attack = -0.2
+			movement = -0.25
+		}
+		mountain = {
+			attack = -0.3
+			movement = -0.35
+		}
+		marsh = {
+			attack = -0.25
+			movement = -0.3
+		}
+		urban = {
+			attack = -0.25
+		}
+		river = {
+			attack = -0.3
+			movement = -0.3
+		}
+		amphibious = {
+			attack = -0.4
+		}
 		can_be_parachuted = yes
 	}
-}
+}
