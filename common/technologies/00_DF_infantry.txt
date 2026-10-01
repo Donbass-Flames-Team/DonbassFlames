@@ -771,10 +771,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 2000
+		start_year = 2010
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @2000 }
+			position = { x = 0 y = @2010 }
 		}
 
 		categories = {
@@ -932,16 +932,16 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1960
+		start_year = 1970
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1960 }
+			position = { x = 0 y = @1970 }
 		}
 		
 		categories = {
 			infantry_weapons
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -959,10 +959,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1970
+		start_year = 1975
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1970 }
+			position = { x = 0 y = @1980 }
 		}
 		
 		categories = {
@@ -986,7 +986,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1990
+		start_year = 1985
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @1990 }
@@ -1007,16 +1007,12 @@ technologies = {
 			manpads_equipment_3
 		}
 		
-		path = {
-			leads_to_tech = manpads_weapons4
-			research_cost_coeff = 1
-		}
 
 		research_cost = 1.5
-		start_year = 2010
+		start_year = 2015
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @2010 }
+			position = { x = 0 y = @2015 }
 		}
 		
 		categories = {
@@ -1028,27 +1024,6 @@ technologies = {
 		}
 	}
 
-	manpads_weapons4 = {
-
-		enable_equipments = {
-			manpads_equipment_4
-		}
-
-		research_cost = 1.5
-		start_year = 2020
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @2020 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	mortar_weapons = {
 
