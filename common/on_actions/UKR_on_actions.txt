@@ -1,11 +1,21 @@
 on_actions = {
 	on_startup = {
 		UKR = {
+		if = {
+		limit = { has_start_date = 2013.11.21 }
 		country_event = { id = ukr_elections_2019.1 days = 1866 } 
 		country_event = { id = ukraine.160 days = 438 }
 		country_event = { id = ukraine.172 days = 972 }
 		country_event = { id = ukraine.173 days = 1096 }
-            }
+		}
+		if = {
+		limit = { has_start_date = 2014.05.20 } #тут минусуем 180
+		country_event = { id = ukr_elections_2019.1 days = 1686 } 
+		country_event = { id = ukraine.160 days = 268 }
+		country_event = { id = ukraine.172 days = 792 }
+		country_event = { id = ukraine.173 days = 916 }
+		}
+	}
 }
 	on_daily = {
 		effect = {
