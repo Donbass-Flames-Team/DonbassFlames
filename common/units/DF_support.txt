@@ -1,5 +1,5 @@
 sub_units = {
-	
+
 	sniper_company = {
 		abbreviation = "SC"
 		sprite = infantry
@@ -8,14 +8,14 @@ sub_units = {
 		ai_priority = 0
 		active = yes
 		affects_speed = no
-		
+
 		group = support
-		
+
 		type = {
 			infantry
 			support
 		}
-		
+
 		categories = {
 			category_front_line
 			category_support_battalions
@@ -24,16 +24,17 @@ sub_units = {
 
 		regimental = yes
 
-
 		combat_width = 0
 
 		need = {
 			infantry_equipment = 8
 			bulletproof_vests_equipment = 8
 			uniform_equipment = 8
+			support_equipment = 1
 		}
+
 		manpower = 8
-		max_organisation = 20
+		max_organisation = 10
 		default_morale = 0.1
 		max_strength = 0.2
 		training_time = 120
@@ -45,7 +46,7 @@ sub_units = {
 		}
 
 		can_be_parachuted = yes
-		
+
 		supply_consumption = 0.08
 	}
 
@@ -63,38 +64,29 @@ sub_units = {
 		}
 
 		regimental = yes
-		
 		group = support
-		
+
 		categories = {
 			category_front_line
 			category_support_battalions
 			category_army
 		}
-
 	
 		combat_width = 0
-	
-		#Size Definitions
+
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
 		manpower = 40
 		training_time = 120
-
-		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.02
-		
 		entrenchment = 2
-		
 		defense = 0.1
 		breakthrough = 0.5
 
-		# Support nerfs to combat abilities
-
 		essential = {
-			support_equipment
+			mortar_equipment
 		}
 
 		battalion_mult = {
@@ -106,10 +98,10 @@ sub_units = {
 		}
 
 		need = {
-			bulletproof_vests_equipment = 15
+			bulletproof_vests_equipment = 16
 			uniform_equipment = 40
 			mortar_equipment = 8
-			infantry_equipment = 5
+			infantry_equipment = 8
 			bbm = 2
 		}
 
@@ -124,16 +116,16 @@ sub_units = {
 		ai_priority = 0
 		active = yes
 		affects_speed = no
-		
+
 		group = support
-		
+
 		type = {
 			infantry
 			support
 		}
 
-		regimental = no
-		
+		regimental = yes
+
 		categories = {
 			category_support_battalions
 			category_army
@@ -146,17 +138,22 @@ sub_units = {
 			manpads_equipment = 4
 			bulletproof_vests_equipment = 12
 			uniform_equipment = 12
-			bbm = 1
+			bbm = 2
 		}
+
+		essential = {
+			manpads_equipment
+		}
+
 		manpower = 12
-		max_organisation = 20
+		max_organisation = 10
 		default_morale = 0.1
 		max_strength = 0.2
 		training_time = 120
 		weight = 0.1
 
 		can_be_parachuted = yes
-		
+
 		supply_consumption = 0.08
 	}
 
@@ -173,46 +170,39 @@ sub_units = {
 			infantry
 			support
 		}
-		
+
 		group = support
-		
+
 		categories = {
 			category_support_battalions
 			category_army
 		}
 
 		regimental = no
-	
+
 		combat_width = 0
-	
-		#Size Definitions
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
 		manpower = 30
 		training_time = 120
-
-		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.05
 		can_be_parachuted = yes
-
-		# Important Ability
 		casualty_trickleback = 0.30
 		experience_loss_factor = -0.25
+		own_equipment_fuel_consumption_mult = 0.0
 
-		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
-		
 		battalion_mult = {
 			category = category_all_infantry
 			max_strength = 0.10
 		}
-		
+
 		essential = {
 			support_equipment
-			motorized_equipment
+			bbm
 		}
-		
+
 		need = {
 			support_equipment = 30
 			bbm = 10
@@ -232,20 +222,20 @@ sub_units = {
 		ai_priority = 0
 		active = yes
 		affects_speed = no
-		
+
 		group = support
-		
+
 		type = {
 			infantry
 			support
 		}
-		
+
 		categories = {
 			category_front_line
 			category_support_battalions
 			category_army
 		}
-		#divisional = no
+
 		regimental = no
 
 		combat_width = 0
@@ -258,6 +248,10 @@ sub_units = {
 			bbm = 3
 		}
 
+		essential = {
+			atgm_equipment
+		}
+
 		manpower = 24
 		max_organisation = 20
 		default_morale = 0.1
@@ -267,7 +261,7 @@ sub_units = {
 		weight = 0.1
 
 		can_be_parachuted = yes
-		
+
 		supply_consumption = 0.08
 	}
 
@@ -279,14 +273,14 @@ sub_units = {
 		ai_priority = 0
 		active = yes
 		affects_speed = no
-		
+
 		group = support
-		
+
 		type = {
 			infantry
 			support
 		}
-		
+
 		categories = {
 			category_support_battalions
 			category_army
@@ -312,7 +306,7 @@ sub_units = {
 		weight = 0.1
 
 		can_be_parachuted = yes
-		
+
 		supply_consumption = 0.08
 	}
 
@@ -330,9 +324,9 @@ sub_units = {
 			support
 			flame
 		}
-		
+
 		group = support
-		
+
 		categories = {
 			category_front_line
 			category_support_battalions
@@ -341,20 +335,16 @@ sub_units = {
 
 		regimental = no
 		combat_width = 0
-	
-		#Size Definitions
+
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
 		manpower = 40
 		training_time = 120
-
-		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.02
-		
 		entrenchment = 2
-		
+
 		battalion_mult = {
 			category = category_light_infantry
 			entrenchment = 0.20
@@ -363,8 +353,6 @@ sub_units = {
 
 		defense = 0.1
 		breakthrough = 0.5
-
-		# Support nerfs to combat abilities
 		soft_attack = -0.5
 
 		essential = {
@@ -380,38 +368,29 @@ sub_units = {
 		}
 
 		can_be_parachuted = yes
+
 		forest = {
 			defence = 0.25
 			movement = 0.05
 		}
-
 		hills = {
 			defence = 0.1
 		}
-
-		jungle = {
-			defence = 0.25
-		}
-
 		marsh = {
 			defence = 0.25
 			movement = 0.2
 		}
-
 		fort = {
 			attack = 0.1
 			defence = 0.25
 		}
-
 		river = {
 			defence = 0.25
 			movement = 0.25
 		}
-
 		amphibious = {
 			attack = 0.15
 		}
-
 		same_support_type = engineer
 	}
 
@@ -427,9 +406,9 @@ sub_units = {
 			infantry
 			support
 		}
-		
+
 		group = support
-		
+
 		categories = {
 			category_front_line
 			category_support_battalions
@@ -439,28 +418,23 @@ sub_units = {
 
 		regimental = no
 		combat_width = 0
-	
-		#Size Definitions
+
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
 		manpower = 25
 		training_time = 120
-
-		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.02
 		recon = 1
 		can_be_parachuted = yes
 
-		# Support nerfs to combat abilities
 		defense = -0.5
 		breakthrough = -0.5
 		soft_attack = -0.9
 		hard_attack = -0.9
+		maximum_speed = 0.6
 
-		maximum_speed = 0.6 # move at horsie speeds
-		
 		essential = {
 			infantry_equipment
 			support_equipment
@@ -473,12 +447,12 @@ sub_units = {
 			bulletproof_vests_equipment = 10
 			bbm = 3
 		}
-		
+
 		battalion_mult = {
 			category = category_artillery
 			soft_attack = 0.10
 		}
-		
+
 		forest = {
 			movement = 0.05
 		}
@@ -486,9 +460,6 @@ sub_units = {
 			movement = 0.10
 		}
 		mountain = {
-			movement = 0.10
-		}
-		jungle = {
 			movement = 0.10
 		}
 		marsh = {
@@ -503,8 +474,8 @@ sub_units = {
 		river = {
 			movement = 0.1
 		}
-		
-		same_support_type = recon # blocks adding other recon types to template
+
+		same_support_type = recon
 	}
 
 	signal_company = {
@@ -520,49 +491,42 @@ sub_units = {
 			infantry
 			support
 		}
-		
+
 		group = support
-		
+
 		categories = {
 			category_support_battalions
 			category_army
 		}
- 
+
 		regimental = no
 		combat_width = 0
-	
-		#Size Definitions
+
 		max_strength = 1
 		max_organisation = 20
 		default_morale = 0.3
-		manpower = 50
+		manpower = 25
 		training_time = 120
-
-		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.02
 		can_be_parachuted = yes
-		
-		# Important Ability
-		initiative = 0.1
-		
-		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
-		
+		initiative = 0.15
+
+		own_equipment_fuel_consumption_mult = 0.0
+
 		essential = {
 			support_equipment
-			motorized_equipment
 		}
 
 		need = {
 			support_equipment = 20
-			uniform_equipment = 40
-			bulletproof_vests_equipment = 8
+			uniform_equipment = 25
 			motorized_equipment = 5
 		}
 
 		same_support_type = signal_company
 	}
-	
+
 	logistics_company = {
 		abbreviation = "LOG"
 		sprite = infantry
@@ -576,9 +540,9 @@ sub_units = {
 			infantry
 			support
 		}
-		
+
 		group = support
-		
+
 		categories = {
 			category_support_battalions
 			category_army
@@ -586,33 +550,28 @@ sub_units = {
 
 		regimental = no
 		combat_width = 0
-	
-		#Size Definitions
+
 		max_strength = 1
 		max_organisation = 10	
 		default_morale = 0.3
-		manpower = 50
+		manpower = 40
 		training_time = 120
-
-		#Misc Abilities
 		weight = 0.1
 		can_be_parachuted = yes
+		supply_consumption_factor = -0.2
+		fuel_consumption_factor = -0.1
+		own_equipment_fuel_consumption_mult = 0.0
 
-		# Important Ability
-		supply_consumption_factor = -0.1
-		fuel_consumption_factor = -0.05
-
-		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
-		
 		essential = {
 			support_equipment
-			bbm
+			motorized_equipment
 		}
 
 		need = {
 			support_equipment = 10
-			bbm  = 20
-			uniform_equipment = 50
+			motorized_equipment = 15
+			bbm  = 10
+			uniform_equipment = 40
 		}
 	}
 }

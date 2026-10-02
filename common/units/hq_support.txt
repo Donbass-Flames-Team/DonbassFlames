@@ -12,7 +12,7 @@ sub_units = {
 			infantry
 			support
 		}
-		
+
 		group = support
 		
 		categories = {
@@ -48,9 +48,6 @@ sub_units = {
 		}
 		mountain = 	{
 			movement = -0.2
-		}
-		jungle = {
-			movement = -0.15
 		}
 		marsh = {
 			movement = -0.2
@@ -129,9 +126,6 @@ sub_units = {
 			movement = -0.05
 		}
 		mountain = 	{
-			movement = -0.1
-		}
-		jungle = {
 			movement = -0.1
 		}
 		marsh = {
@@ -214,9 +208,6 @@ sub_units = {
 		mountain = 	{
 			movement = -0.1
 		}
-		jungle = {
-			movement = -0.1
-		}
 		marsh = {
 			movement = -0.15
 		}
@@ -289,9 +280,6 @@ sub_units = {
 		mountain = 	{
 			movement = -0.15
 		}
-		jungle = {
-			movement = -0.15
-		}
 		marsh = {
 			movement = -0.15
 		}
@@ -362,9 +350,6 @@ sub_units = {
 			movement = -0.05
 		}
 		mountain = 	{
-			movement = -0.15
-		}
-		jungle = {
 			movement = -0.15
 		}
 		marsh = {
@@ -442,9 +427,6 @@ sub_units = {
 		mountain = 	{
 			movement = -0.15
 		}
-		jungle = {
-			movement = -0.15
-		}
 		marsh = {
 			movement = -0.15
 		}
@@ -516,9 +498,6 @@ sub_units = {
 			movement = -0.05
 		}
 		mountain = 	{
-			movement = -0.15
-		}
-		jungle = {
 			movement = -0.15
 		}
 		marsh = {
@@ -593,9 +572,6 @@ sub_units = {
 		mountain = 	{
 			movement = -0.1
 		}
-		jungle = {
-			movement = -0.1
-		}
 		marsh = {
 			movement = -0.1
 		}
@@ -664,9 +640,6 @@ sub_units = {
 			movement = -0.05
 		}
 		mountain = 	{
-			movement = -0.1
-		}
-		jungle = {
 			movement = -0.1
 		}
 		marsh = {
@@ -738,9 +711,6 @@ sub_units = {
 			movement = -0.05
 		}
 		mountain = 	{
-			movement = -0.1
-		}
-		jungle = {
 			movement = -0.1
 		}
 		marsh = {
@@ -815,10 +785,6 @@ sub_units = {
 			attack = 0.1
 			movement = 0.05
 		}
-		jungle = {
-			attack = 0.1
-			movement = 0.05
-		}
 		marsh = {
 			movement = -0.05
 		}
@@ -888,9 +854,6 @@ sub_units = {
 		mountain = 	{
 			attack = -0.1
 			movement = -0.15
-		}
-		jungle = {
-			attack = 0.05
 		}
 		marsh = {
 			attack = -0.1
@@ -968,10 +931,6 @@ sub_units = {
 			attack = -0.2
 			movement = -0.3
 		}
-		jungle = {
-			attack = -0.15
-			movement = -0.2
-		}
 		marsh = {
 			attack = -0.15
 			movement = -0.25
@@ -1037,10 +996,6 @@ sub_units = {
 			movement = 0.05
 		}
 		mountain = {
-			attack = 0.1
-			movement = 0.05
-		}
-		jungle = {
 			attack = 0.1
 			movement = 0.05
 		}
