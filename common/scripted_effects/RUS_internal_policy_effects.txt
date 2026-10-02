@@ -1,0 +1,204 @@
+RUS_internal_policy_init_effect = {
+	if = {
+		limit = { NOT = { has_variable = RUS_internal_policy_index } }
+		set_variable = { RUS_internal_policy_index = 0 }
+	}
+
+	if = {
+		limit = { NOT = { has_dynamic_modifier = { modifier = RUS_governance_dynamic_modifier } } }
+		add_dynamic_modifier = { modifier = RUS_governance_dynamic_modifier }
+	}
+	if = {
+		limit = { NOT = { has_dynamic_modifier = { modifier = RUS_digital_economy_dynamic_modifier } } }
+		add_dynamic_modifier = { modifier = RUS_digital_economy_dynamic_modifier }
+	}
+	if = {
+		limit = { NOT = { has_dynamic_modifier = { modifier = RUS_bureaucracy_dynamic_modifier } } }
+		add_dynamic_modifier = { modifier = RUS_bureaucracy_dynamic_modifier }
+	}
+	if = {
+		limit = { NOT = { has_dynamic_modifier = { modifier = RUS_crimea_integration_dynamic_modifier } } }
+		add_dynamic_modifier = { modifier = RUS_crimea_integration_dynamic_modifier }
+	}
+	if = {
+		limit = { NOT = { has_dynamic_modifier = { modifier = RUS_tatar_resistance_dynamic_modifier } } }
+		add_dynamic_modifier = { modifier = RUS_tatar_resistance_dynamic_modifier }
+	}
+	if = {
+		limit = { NOT = { has_dynamic_modifier = { modifier = RUS_sovereign_internet_dynamic_modifier } } }
+		add_dynamic_modifier = { modifier = RUS_sovereign_internet_dynamic_modifier }
+	}
+	if = {
+		limit = { NOT = { has_dynamic_modifier = { modifier = RUS_rosgvardia_dynamic_modifier } } }
+		add_dynamic_modifier = { modifier = RUS_rosgvardia_dynamic_modifier }
+	}
+	if = {
+		limit = { NOT = { has_dynamic_modifier = { modifier = RUS_pension_reform_dynamic_modifier } } }
+		add_dynamic_modifier = { modifier = RUS_pension_reform_dynamic_modifier }
+	}
+}
+
+RUS_internal_policy_recalculate_effect = {
+	RUS_internal_policy_init_effect = yes
+
+	set_variable = { RUS_governance_stability = RUS_internal_policy_index }
+	divide_variable = { RUS_governance_stability = 2000 }
+	set_variable = { RUS_governance_pp = RUS_internal_policy_index }
+	divide_variable = { RUS_governance_pp = 2500 }
+	set_variable = { RUS_governance_consumer_goods = RUS_internal_policy_index }
+	divide_variable = { RUS_governance_consumer_goods = -3000 }
+	set_variable = { RUS_governance_construction = RUS_internal_policy_index }
+	divide_variable = { RUS_governance_construction = 4000 }
+
+	if = {
+		limit = { has_country_flag = RUS_digital_economy_started }
+		set_variable = { RUS_digital_research = RUS_digital_economy_level }
+		divide_variable = { RUS_digital_research = 500 }
+		set_variable = { RUS_digital_construction = RUS_digital_economy_level }
+		divide_variable = { RUS_digital_construction = 250 }
+		set_variable = { RUS_digital_pp = RUS_digital_economy_level }
+		divide_variable = { RUS_digital_pp = 3000 }
+		set_variable = { RUS_digital_consumer_goods = RUS_digital_economy_level }
+		divide_variable = { RUS_digital_consumer_goods = 2000 }
+	}
+	else = {
+		set_variable = { RUS_digital_research = 0 }
+		set_variable = { RUS_digital_construction = 0 }
+		set_variable = { RUS_digital_pp = 0 }
+		set_variable = { RUS_digital_consumer_goods = 0 }
+	}
+
+	if = {
+		limit = { has_country_flag = RUS_bureaucracy_reformed }
+		set_variable = { RUS_bureaucracy_consumer_goods = -0.04 }
+		set_variable = { RUS_bureaucracy_stability = 0.02 }
+		set_variable = { RUS_bureaucracy_construction = 0.05 }
+	}
+	else = {
+		set_variable = { RUS_bureaucracy_consumer_goods = 0.03 }
+		set_variable = { RUS_bureaucracy_stability = -0.02 }
+		set_variable = { RUS_bureaucracy_construction = -0.03 }
+	}
+
+	if = {
+		limit = { has_country_flag = RUS_crimea_integrated }
+		set_variable = { RUS_crimea_stability = 0.03 }
+		set_variable = { RUS_crimea_construction = 0.08 }
+		set_variable = { RUS_crimea_consumer_goods = 0.05 }
+	}
+	else = {
+		set_variable = { RUS_crimea_stability = 0 }
+		set_variable = { RUS_crimea_construction = 0 }
+		set_variable = { RUS_crimea_consumer_goods = 0 }
+	}
+
+	if = {
+		limit = { has_country_flag = RUS_tatar_integrated }
+		set_variable = { RUS_tatar_stability = 0.02 }
+		set_variable = { RUS_tatar_population = 0.01 }
+		set_variable = { RUS_tatar_compliance = 0.05 }
+	}
+	else_if = {
+		limit = { has_country_flag = RUS_tatar_resistance_crushed }
+		set_variable = { RUS_tatar_stability = 0 }
+		set_variable = { RUS_tatar_population = 0 }
+		set_variable = { RUS_tatar_compliance = 0 }
+	}
+	else_if = {
+		limit = { has_country_flag = RUS_tatar_resistance_active }
+		set_variable = { RUS_tatar_stability = -0.05 }
+		set_variable = { RUS_tatar_population = -0.03 }
+		set_variable = { RUS_tatar_compliance = -0.15 }
+	}
+	else = {
+		set_variable = { RUS_tatar_stability = 0 }
+		set_variable = { RUS_tatar_population = 0 }
+		set_variable = { RUS_tatar_compliance = 0 }
+	}
+
+	if = {
+		limit = { has_country_flag = RUS_sovereign_internet_hard }
+		set_variable = { RUS_sovereign_net_stability = 0.05 }
+		set_variable = { RUS_sovereign_net_research = -0.08 }
+		set_variable = { RUS_sovereign_net_pp = 0.04 }
+	}
+	else_if = {
+		limit = { has_country_flag = RUS_sovereign_internet_soft }
+		set_variable = { RUS_sovereign_net_stability = 0.02 }
+		set_variable = { RUS_sovereign_net_research = -0.03 }
+		set_variable = { RUS_sovereign_net_pp = 0.02 }
+	}
+	else = {
+		set_variable = { RUS_sovereign_net_stability = 0 }
+		set_variable = { RUS_sovereign_net_research = 0 }
+		set_variable = { RUS_sovereign_net_pp = 0 }
+	}
+
+	if = {
+		limit = { has_country_flag = RUS_rosgvardia_direct_control }
+		set_variable = { RUS_rosgvardia_stability = 0.05 }
+		set_variable = { RUS_rosgvardia_resistance = -0.25 }
+		set_variable = { RUS_rosgvardia_conscription = -0.02 }
+	}
+	else_if = {
+		limit = { has_country_flag = RUS_rosgvardia_in_mvd }
+		set_variable = { RUS_rosgvardia_stability = 0.02 }
+		set_variable = { RUS_rosgvardia_resistance = -0.10 }
+		set_variable = { RUS_rosgvardia_conscription = -0.01 }
+	}
+	else = {
+		set_variable = { RUS_rosgvardia_stability = 0 }
+		set_variable = { RUS_rosgvardia_resistance = 0 }
+		set_variable = { RUS_rosgvardia_conscription = 0 }
+	}
+
+	if = {
+		limit = { has_country_flag = RUS_pension_reform_passed }
+		set_variable = { RUS_pension_stability = -0.10 }
+		set_variable = { RUS_pension_consumer_goods = -0.06 }
+		set_variable = { RUS_pension_factory = 0.05 }
+	}
+	else_if = {
+		limit = { has_country_flag = RUS_pension_reform_softened }
+		set_variable = { RUS_pension_stability = -0.04 }
+		set_variable = { RUS_pension_consumer_goods = -0.03 }
+		set_variable = { RUS_pension_factory = 0.02 }
+	}
+	else = {
+		set_variable = { RUS_pension_stability = 0 }
+		set_variable = { RUS_pension_consumer_goods = 0 }
+		set_variable = { RUS_pension_factory = 0 }
+	}
+
+	if = {
+		limit = { has_country_flag = RUS_yarovaya_strict }
+		set_variable = { RUS_yarovaya_stability = 0.03 }
+		set_variable = { RUS_yarovaya_research = -0.05 }
+	}
+	else_if = {
+		limit = { has_country_flag = RUS_yarovaya_soft }
+		set_variable = { RUS_yarovaya_stability = 0.01 }
+		set_variable = { RUS_yarovaya_research = -0.02 }
+	}
+	else = {
+		set_variable = { RUS_yarovaya_stability = 0 }
+		set_variable = { RUS_yarovaya_research = 0 }
+	}
+}
+
+RUS_internal_policy_bump_index_effect = {
+	RUS_internal_policy_init_effect = yes
+	add_to_variable = { RUS_internal_policy_index = 10 }
+	RUS_internal_policy_recalculate_effect = yes
+}
+
+RUS_internal_policy_cleanup_effect = {
+	remove_dynamic_modifier = { modifier = RUS_governance_dynamic_modifier }
+	remove_dynamic_modifier = { modifier = RUS_digital_economy_dynamic_modifier }
+	remove_dynamic_modifier = { modifier = RUS_bureaucracy_dynamic_modifier }
+	remove_dynamic_modifier = { modifier = RUS_crimea_integration_dynamic_modifier }
+	remove_dynamic_modifier = { modifier = RUS_tatar_resistance_dynamic_modifier }
+	remove_dynamic_modifier = { modifier = RUS_sovereign_internet_dynamic_modifier }
+	remove_dynamic_modifier = { modifier = RUS_rosgvardia_dynamic_modifier }
+	remove_dynamic_modifier = { modifier = RUS_pension_reform_dynamic_modifier }
+}

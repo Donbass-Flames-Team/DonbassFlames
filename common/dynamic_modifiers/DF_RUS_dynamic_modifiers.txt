@@ -1,0 +1,99 @@
+RUS_governance_dynamic_modifier = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_RUS_vertical_of_power_idea
+
+	stability_factor = RUS_governance_stability
+	political_power_gain = RUS_governance_pp
+	consumer_goods_factor = RUS_governance_consumer_goods
+	production_speed_buildings_factor = RUS_governance_construction
+}
+
+RUS_digital_economy_dynamic_modifier = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_RUS_oil_economy_idea
+
+	research_speed_factor = RUS_digital_research
+	production_speed_buildings_factor = RUS_digital_construction
+	political_power_gain = RUS_digital_pp
+	consumer_goods_factor = RUS_digital_consumer_goods
+}
+
+RUS_bureaucracy_dynamic_modifier = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_RUS_corruption_and_oligarchy_idea
+
+	consumer_goods_factor = RUS_bureaucracy_consumer_goods
+	stability_factor = RUS_bureaucracy_stability
+	production_speed_buildings_factor = RUS_bureaucracy_construction
+}
+
+RUS_crimea_integration_dynamic_modifier = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_RUS_vertical_of_power_idea
+
+	stability_factor = RUS_crimea_stability
+	production_speed_buildings_factor = RUS_crimea_construction
+	consumer_goods_factor = RUS_crimea_consumer_goods
+}
+
+RUS_tatar_resistance_dynamic_modifier = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_RUS_fears_of_protests_idea
+
+	stability_factor = RUS_tatar_stability
+	monthly_population = RUS_tatar_population
+	compliance_gain = RUS_tatar_compliance
+}
+
+RUS_sovereign_internet_dynamic_modifier = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_RUS_active_propaganda_idea
+
+	stability_factor = RUS_sovereign_net_stability
+	research_speed_factor = RUS_sovereign_net_research
+	political_power_gain = RUS_sovereign_net_pp
+}
+
+RUS_rosgvardia_dynamic_modifier = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_RUS_military_revival_idea
+
+	stability_factor = RUS_rosgvardia_stability
+	resistance_target = RUS_rosgvardia_resistance
+	conscription_factor = RUS_rosgvardia_conscription
+}
+
+RUS_pension_reform_dynamic_modifier = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_RUS_oil_economy_idea
+
+	stability_factor = RUS_pension_stability
+	consumer_goods_factor = RUS_pension_consumer_goods
+	industrial_capacity_factory = RUS_pension_factory
+}
+
+RUS_yarovaya_dynamic_modifier = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_RUS_fears_of_protests_idea
+
+	stability_factor = RUS_yarovaya_stability
+	research_speed_factor = RUS_yarovaya_research
+}

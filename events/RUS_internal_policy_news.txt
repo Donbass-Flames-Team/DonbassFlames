@@ -1,0 +1,395 @@
+# Мировые новости внутренней политики России
+# Список стран в триггерах приведён под восточную карту мода (без Англии и США)
+
+# Пакет Яровой
+news_event = {
+	id = news_events.59
+	title = news_events.59.t
+	desc = news_events.59.d
+	picture = GFX_report_event_royal_parade
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.59.a
+		trigger = { original_tag = RUS }
+	}
+
+	option = {
+		name = news_events.59.b
+		trigger = {
+			OR = {
+				original_tag = UKR
+				original_tag = POL
+				original_tag = GER
+				original_tag = FRA
+			}
+		}
+	}
+
+	option = {
+		name = news_events.59.c
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = RUS
+					original_tag = UKR
+					original_tag = POL
+					original_tag = GER
+					original_tag = FRA
+				}
+			}
+		}
+	}
+}
+
+# Создание Росгвардии
+news_event = {
+	id = news_events.60
+	title = news_events.60.t
+	desc = news_events.60.d
+	picture = GFX_report_event_royal_parade
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.60.a
+		trigger = { original_tag = RUS }
+	}
+
+	option = {
+		name = news_events.60.b
+		trigger = {
+			NOT = { original_tag = RUS }
+		}
+	}
+}
+
+# Пенсионная реформа
+news_event = {
+	id = news_events.61
+	title = news_events.61.t
+	desc = news_events.61.d
+	picture = GFX_report_event_royal_parade
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.61.a
+		trigger = { original_tag = RUS }
+	}
+
+	option = {
+		name = news_events.61.b
+		trigger = {
+			NOT = { original_tag = RUS }
+		}
+	}
+}
+
+# Цифровая экономика
+news_event = {
+	id = news_events.62
+	title = news_events.62.t
+	desc = news_events.62.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.62.a
+		trigger = { original_tag = RUS }
+	}
+
+	option = {
+		name = news_events.62.b
+		trigger = {
+			NOT = { original_tag = RUS }
+		}
+	}
+}
+
+# Крымскотатарское сопротивление
+news_event = {
+	id = news_events.63
+	title = news_events.63.t
+	desc = news_events.63.d
+	picture = GFX_report_event_royal_parade
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.63.a
+		trigger = {
+			OR = {
+				original_tag = RUS
+				original_tag = CRI
+			}
+		}
+	}
+
+	option = {
+		name = news_events.63.b
+		trigger = {
+			OR = {
+				original_tag = UKR
+				original_tag = GER
+				original_tag = FRA
+			}
+		}
+	}
+
+	option = {
+		name = news_events.63.c
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = RUS
+					original_tag = CRI
+					original_tag = UKR
+					original_tag = GER
+					original_tag = FRA
+				}
+			}
+		}
+	}
+}
+
+# Интеграция крымских татар
+news_event = {
+	id = news_events.64
+	title = news_events.64.t
+	desc = news_events.64.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.64.a
+		trigger = {
+			OR = {
+				original_tag = RUS
+				original_tag = CRI
+			}
+		}
+	}
+
+	option = {
+		name = news_events.64.b
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = RUS
+					original_tag = CRI
+				}
+			}
+		}
+	}
+}
+
+# Суверенный интернет
+news_event = {
+	id = news_events.65
+	title = news_events.65.t
+	desc = news_events.65.d
+	picture = GFX_report_event_royal_parade
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.65.a
+		trigger = { original_tag = RUS }
+	}
+
+	option = {
+		name = news_events.65.b
+		trigger = {
+			OR = {
+				original_tag = UKR
+				original_tag = GER
+				original_tag = FRA
+				original_tag = POL
+			}
+		}
+	}
+
+	option = {
+		name = news_events.65.c
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = RUS
+					original_tag = UKR
+					original_tag = GER
+					original_tag = FRA
+					original_tag = POL
+				}
+			}
+		}
+	}
+}
+
+# Обновление кабинета министров
+news_event = {
+	id = news_events.66
+	title = news_events.66.t
+	desc = news_events.66.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.66.a
+		trigger = { original_tag = RUS }
+	}
+
+	option = {
+		name = news_events.66.b
+		trigger = {
+			NOT = { original_tag = RUS }
+		}
+	}
+}
+
+# Поправки в Конституцию
+news_event = {
+	id = news_events.67
+	title = news_events.67.t
+	desc = news_events.67.d
+	picture = GFX_report_event_royal_parade
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.67.a
+		trigger = { original_tag = RUS }
+	}
+
+	option = {
+		name = news_events.67.b
+		trigger = {
+			OR = {
+				original_tag = UKR
+				original_tag = GER
+				original_tag = FRA
+				original_tag = POL
+			}
+		}
+	}
+
+	option = {
+		name = news_events.67.c
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = RUS
+					original_tag = UKR
+					original_tag = GER
+					original_tag = FRA
+					original_tag = POL
+				}
+			}
+		}
+	}
+}
+
+# Крымская интеграция
+news_event = {
+	id = news_events.68
+	title = news_events.68.t
+	desc = news_events.68.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.68.a
+		trigger = {
+			OR = {
+				original_tag = RUS
+				original_tag = CRI
+			}
+		}
+	}
+
+	option = {
+		name = news_events.68.b
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = RUS
+					original_tag = CRI
+				}
+			}
+		}
+	}
+}
+
+# Национальные проекты
+news_event = {
+	id = news_events.69
+	title = news_events.69.t
+	desc = news_events.69.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.69.a
+		trigger = { original_tag = RUS }
+	}
+
+	option = {
+		name = news_events.69.b
+		trigger = {
+			NOT = { original_tag = RUS }
+		}
+	}
+}
+
+# Этатизм и национализация элит
+news_event = {
+	id = news_events.70
+	title = news_events.70.t
+	desc = news_events.70.d
+	picture = GFX_report_event_royal_parade
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news_events.70.a
+		trigger = { original_tag = RUS }
+	}
+
+	option = {
+		name = news_events.70.b
+		trigger = {
+			OR = {
+				original_tag = UKR
+				original_tag = GER
+				original_tag = FRA
+			}
+		}
+	}
+
+	option = {
+		name = news_events.70.c
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = RUS
+					original_tag = UKR
+					original_tag = GER
+					original_tag = FRA
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,206 @@
+ideas = {
+	country = {
+
+		RUS_yunarmy_spirit_idea = {
+			picture = GFX_idea_RUS_active_propaganda_idea
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.10
+				conscription_factor = 0.05
+				stability_factor = 0.03
+				research_speed_factor = -0.04
+				consumer_goods_factor = 0.03
+			}
+			ai_will_do = { factor = 1 }
+		}
+
+		RUS_etatism_spirit_idea = {
+			picture = GFX_idea_RUS_vertical_of_power_idea
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.07
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = 0.07
+				political_power_gain = -0.05
+				research_speed_factor = -0.03
+			}
+			ai_will_do = { factor = 1 }
+		}
+
+		RUS_rosgvardia_spirit_idea = {
+			picture = GFX_idea_RUS_military_revival_idea
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.06
+				resistance_target = -0.20
+				suppression_effect = 0.15
+				army_attack_factor = -0.02
+				recruitable_population_factor = -0.02
+			}
+			ai_will_do = { factor = 1 }
+		}
+
+		RUS_yarovaya_package_spirit_idea = {
+			picture = GFX_idea_RUS_fears_of_protests_idea
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.04
+				drift_defence_factor = 0.04
+				research_speed_factor = -0.06
+				political_power_gain = -0.03
+				consumer_goods_factor = 0.02
+			}
+			ai_will_do = { factor = 1 }
+		}
+
+		RUS_foreign_agents_spirit_idea = {
+			picture = GFX_idea_RUS_fears_of_protests_idea
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.05
+				enemy_justify_war_goal_time = -0.10
+				research_speed_factor = -0.04
+				world_tension_impact = 0.05
+			}
+			ai_will_do = { factor = 1 }
+		}
+
+		RUS_digital_economy_spirit_idea = {
+			picture = GFX_idea_RUS_oil_economy_idea
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.08
+				production_speed_buildings_factor = 0.06
+				political_power_gain = 0.03
+				consumer_goods_factor = 0.05
+				stability_factor = -0.02
+			}
+			ai_will_do = { factor = 1 }
+		}
+
+		RUS_national_projects_spirit_idea = {
+			picture = GFX_idea_RUS_oil_economy_idea
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.08
+				political_power_gain = -0.03
+			}
+			ai_will_do = { factor = 1 }
+		}
+
+		RUS_sovereign_internet_spirit_idea = {
+			picture = GFX_idea_RUS_active_propaganda_idea
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.06
+				research_speed_factor = -0.07
+				political_power_gain = 0.03
+				world_tension_impact = 0.05
+			}
+			ai_will_do = { factor = 1 }
+		}
+
+		RUS_pension_reform_spirit_idea = {
+			picture = GFX_idea_RUS_oil_economy_idea
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = -0.07
+				industrial_capacity_factory = 0.06
+				war_support_factor = -0.05
+			}
+			ai_will_do = { factor = 1 }
+		}
+
+		RUS_cabinet_renewal_spirit_idea = {
+			picture = GFX_idea_RUS_vertical_of_power_idea
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.08
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.03
+				research_speed_factor = -0.03
+			}
+			ai_will_do = { factor = 1 }
+		}
+
+		RUS_constitutional_amendments_spirit_idea = {
+			picture = GFX_idea_RUS_vertical_of_power_idea
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.08
+				drift_defence_factor = 0.08
+				political_power_gain = 0.05
+				world_tension_impact = 0.05
+				enemy_justify_war_goal_time = -0.15
+			}
+			ai_will_do = { factor = 1 }
+		}
+
+		RUS_crimea_development_spirit_idea = {
+			picture = GFX_idea_RUS_vertical_of_power_idea
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				stability_factor = 0.03
+				consumer_goods_factor = 0.06
+			}
+			ai_will_do = { factor = 1 }
+		}
+
+		RUS_tatar_resistance_spirit_idea = {
+			picture = GFX_idea_RUS_fears_of_protests_idea
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				monthly_population = -0.03
+				compliance_gain = -0.10
+				resistance_target = 0.15
+			}
+			ai_will_do = { factor = 1 }
+		}
+	}
+}

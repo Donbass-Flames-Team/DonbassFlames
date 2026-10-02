@@ -1227,7 +1227,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			hidden_effect = {
+				RUS_internal_policy_init_effect = yes
+			}
 		}
 	}
 
@@ -1644,6 +1646,9 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+			hidden_effect = {
+				RUS_internal_policy_bump_index_effect = yes
+			}
 		}
 	}
 
@@ -1667,6 +1672,10 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+			add_war_support = 0.03
+			hidden_effect = {
+				RUS_internal_policy_bump_index_effect = yes
+			}
 		}
 	}
 
@@ -1714,7 +1723,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_family_values_protection }
 	
 		completion_reward = {
-			
+			add_ideas = RUS_yunarmy_spirit_idea
 		}
 	}
 
@@ -1758,7 +1767,7 @@ focus_tree = {
 
 		prerequisite = { focus = RUS_domestic_policy }
 		relative_position_id = RUS_domestic_policy
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1767,7 +1776,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			country_event = { id = russia.40 days = 1 }
 		}
 	}
 
@@ -1789,7 +1798,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 25
+			custom_effect_tooltip = RUS_digital_economy_dynamic_modifier_tt
+			hidden_effect = {
+				add_to_variable = { RUS_digital_economy_level = 15 }
+				RUS_internal_policy_recalculate_effect = yes
+			}
 		}
 	}
 
@@ -1811,7 +1825,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 25
+			custom_effect_tooltip = RUS_digital_economy_dynamic_modifier_tt
+			hidden_effect = {
+				add_to_variable = { RUS_digital_economy_level = 15 }
+				RUS_internal_policy_recalculate_effect = yes
+			}
 		}
 	}
 
@@ -1825,7 +1844,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_improve_internet_infrastructure }
 		prerequisite = { focus = RUS_development_of_digital_government_services }
 		relative_position_id = RUS_development_of_the_digital_economy
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1834,7 +1853,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 30
+			add_stability = 0.03
+			custom_effect_tooltip = RUS_bureaucracy_dynamic_modifier_tt
+			hidden_effect = {
+				set_country_flag = RUS_bureaucracy_reformed
+				RUS_internal_policy_recalculate_effect = yes
+			}
 		}
 	}
 
@@ -1858,6 +1883,11 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+			add_war_support = 0.02
+			custom_effect_tooltip = RUS_governance_dynamic_modifier_tt
+			hidden_effect = {
+				RUS_internal_policy_bump_index_effect = yes
+			}
 		}
 	}
 
@@ -1869,10 +1899,9 @@ focus_tree = {
 		relative_position_id = RUS_support_etatism
 		cost = 4
 		prerequisite = { focus = RUS_support_etatism }
-	
+
 		completion_reward = {
-			add_political_power = 70
-			add_stability = 0.05
+			country_event = { id = russia.49 days = 1 }
 		}
 	}
 
@@ -1898,9 +1927,9 @@ focus_tree = {
 		relative_position_id = RUS_nationalization_of_elites
 		cost = 3
 		prerequisite = { focus = RUS_nationalization_of_elites }
-	
+
 		completion_reward = {
-			
+			country_event = { id = russia.37 days = 1 }
 		}
 	}
 
@@ -1917,7 +1946,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_support_etatism }
 		prerequisite = { focus = RUS_propaganda_of_traditional_values }
 		relative_position_id = RUS_domestic_policy
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1926,7 +1955,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			country_event = { id = russia.36 days = 1 }
 		}
 	}
 
@@ -1939,7 +1968,7 @@ focus_tree = {
 
 		prerequisite = { focus = RUS_yarovaya_package }
 		relative_position_id = RUS_domestic_policy
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1948,7 +1977,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_ideas = RUS_foreign_agents_spirit_idea
 		}
 	}
 
@@ -1972,6 +2001,10 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.025
+			custom_effect_tooltip = RUS_governance_dynamic_modifier_tt
+			hidden_effect = {
+				RUS_internal_policy_bump_index_effect = yes
+			}
 		}
 	}
 
@@ -1984,7 +2017,7 @@ focus_tree = {
 
 		prerequisite = { focus = RUS_domestic_policy }
 		relative_position_id = RUS_domestic_policy
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1993,8 +2026,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025
+			country_event = { id = russia.47 days = 1 }
 		}
 	}
 	
@@ -2016,7 +2048,31 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 30
+			custom_effect_tooltip = RUS_crimea_integration_dynamic_modifier_tt
+			hidden_effect = {
+				if = {
+					limit = { 621 = { is_owned_by = ROOT } }
+					621 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = { 637 = { is_owned_by = ROOT } }
+					637 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				RUS_internal_policy_bump_index_effect = yes
+			}
 		}
 	}
 
@@ -2039,7 +2095,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			hidden_effect = {
+				if = {
+					limit = { 621 = { is_owned_by = ROOT } }
+					621 = { add_compliance = 15 }
+				}
+				if = {
+					limit = { 637 = { is_owned_by = ROOT } }
+					637 = { add_compliance = 15 }
+				}
+				RUS_internal_policy_bump_index_effect = yes
+			}
 		}
 	}
 	
@@ -2052,7 +2118,7 @@ focus_tree = {
 
 		prerequisite = { focus = RUS_investments_in_crimea }
 		relative_position_id = RUS_investments_in_crimea
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -2061,7 +2127,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			country_event = { id = russia.41 days = 1 }
 		}
 	}
 
@@ -2087,7 +2153,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_war_support = 0.03
+			add_political_power = 50
+			custom_effect_tooltip = RUS_governance_dynamic_modifier_tt
+			hidden_effect = {
+				RUS_internal_policy_bump_index_effect = yes
+			}
 		}
 	}
 
@@ -2100,7 +2172,7 @@ focus_tree = {
 
 		prerequisite = { focus = RUS_elections_2018 }
 		relative_position_id = RUS_elections_2018
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -2109,7 +2181,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			country_event = { id = russia.48 days = 1 }
 		}
 	}
 
@@ -2122,7 +2194,7 @@ focus_tree = {
 
 		prerequisite = { focus = RUS_national_projects }
 		relative_position_id = RUS_elections_2018
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -2131,7 +2203,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			country_event = { id = russia.44 days = 1 }
 		}
 	}
 
@@ -2144,7 +2216,7 @@ focus_tree = {
 
 		prerequisite = { focus = RUS_national_projects }
 		relative_position_id = RUS_elections_2018
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -2153,7 +2225,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			country_event = { id = russia.38 days = 1 }
 		}
 	}
 	#Мишустин становится презиком
@@ -2167,7 +2239,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_the_sovereign_internet_act }
 		prerequisite = { focus = RUS_raise_the_retirement_age }
 		relative_position_id = RUS_elections_2018
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -2176,7 +2248,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			country_event = { id = russia.45 days = 1 }
 		}
 	}
 
@@ -2189,7 +2261,7 @@ focus_tree = {
 
 		prerequisite = { focus = RUS_renew_the_cabinet_of_ministers }
 		relative_position_id = RUS_elections_2018
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -2198,7 +2270,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			country_event = { id = russia.46 days = 1 }
 		}
 	}
 

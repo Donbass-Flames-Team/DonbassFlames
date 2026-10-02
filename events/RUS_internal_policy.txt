@@ -1,0 +1,483 @@
+add_namespace = russia
+
+# Пакет Яровой
+country_event = {
+	id = russia.36
+	title = russia.36.t
+	desc = russia.36.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			add_ideas = RUS_yarovaya_package_spirit_idea
+			set_country_flag = RUS_yarovaya_package_introduced
+			RUS_internal_policy_bump_index_effect = yes
+		}
+	}
+
+	option = {
+		name = russia.36.a
+		add_stability = 0.05
+		add_political_power = 25
+		custom_effect_tooltip = RUS_strict_control_tt
+		hidden_effect = {
+			set_country_flag = RUS_yarovaya_strict
+			add_to_variable = { RUS_yarovaya_severity = 2 }
+			news_event = { id = news_events.59 hours = 6 }
+		}
+		ai_chance = { factor = 60 }
+	}
+
+	option = {
+		name = russia.36.b
+		add_stability = 0.02
+		add_political_power = 15
+		custom_effect_tooltip = RUS_soft_control_tt
+		hidden_effect = {
+			set_country_flag = RUS_yarovaya_soft
+			add_to_variable = { RUS_yarovaya_severity = 1 }
+			add_timed_idea = { idea = RUS_active_propaganda_idea days = 180 }
+		}
+		ai_chance = { factor = 40 }
+	}
+}
+
+# Создание Росгвардии
+country_event = {
+	id = russia.37
+	title = russia.37.t
+	desc = russia.37.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			add_ideas = RUS_rosgvardia_spirit_idea
+			set_country_flag = RUS_rosgvardia_formed
+			RUS_internal_policy_bump_index_effect = yes
+		}
+	}
+
+	option = {
+		name = russia.37.a
+		add_stability = 0.04
+		add_command_power = 25
+		hidden_effect = {
+			set_country_flag = RUS_rosgvardia_direct_control
+			news_event = { id = news_events.60 hours = 8 }
+		}
+		ai_chance = { factor = 70 }
+	}
+
+	option = {
+		name = russia.37.b
+		add_stability = 0.01
+		add_political_power = 20
+		hidden_effect = {
+			set_country_flag = RUS_rosgvardia_in_mvd
+			add_timed_idea = { idea = RUS_vertical_of_power_idea days = 240 }
+		}
+		ai_chance = { factor = 30 }
+	}
+}
+
+# Пенсионная реформа
+country_event = {
+	id = russia.38
+	title = russia.38.t
+	desc = russia.38.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.38.a
+		add_political_power = 40
+		custom_effect_tooltip = RUS_pension_hard_tt
+		hidden_effect = {
+			set_country_flag = RUS_pension_reform_passed
+			add_ideas = RUS_pension_reform_spirit_idea
+			capital_scope = {
+				add_state_modifier = {
+					modifier = {
+						local_industrial_capacity_factor = 0.10
+						local_building_slots = 2
+					}
+				}
+			}
+			RUS_internal_policy_bump_index_effect = yes
+			news_event = { id = news_events.61 days = 1 }
+			country_event = { id = russia.39 days = 90 }
+		}
+		ai_chance = { factor = 55 }
+	}
+
+	option = {
+		name = russia.38.b
+		add_political_power = 20
+		add_stability = 0.03
+		custom_effect_tooltip = RUS_pension_soft_tt
+		hidden_effect = {
+			set_country_flag = RUS_pension_reform_softened
+			RUS_internal_policy_bump_index_effect = yes
+		}
+		ai_chance = { factor = 45 }
+	}
+}
+
+# Отложенный ответ общества на жёсткую пенсионную реформу
+country_event = {
+	id = russia.39
+	title = russia.39.t
+	desc = russia.39.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.39.a
+		add_stability = -0.06
+		add_war_support = -0.03
+		hidden_effect = {
+			set_country_flag = RUS_pension_backlash
+			add_timed_idea = { idea = RUS_fears_of_protests_idea days = 180 }
+		}
+	}
+}
+
+# Цифровая экономика
+country_event = {
+	id = russia.40
+	title = russia.40.t
+	desc = russia.40.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.40.a
+		add_political_power = 30
+		hidden_effect = {
+			set_country_flag = RUS_digital_economy_started
+			add_to_variable = { RUS_digital_economy_level = 40 }
+			add_ideas = RUS_digital_economy_spirit_idea
+			RUS_internal_policy_bump_index_effect = yes
+			news_event = { id = news_events.62 hours = 12 }
+		}
+		ai_chance = { factor = 60 }
+	}
+
+	option = {
+		name = russia.40.b
+		add_political_power = 15
+		add_stability = 0.02
+		hidden_effect = {
+			set_country_flag = RUS_digital_economy_started
+			add_to_variable = { RUS_digital_economy_level = 20 }
+			RUS_internal_policy_bump_index_effect = yes
+		}
+		ai_chance = { factor = 40 }
+	}
+}
+
+# Крымскотатарское сопротивление
+country_event = {
+	id = russia.41
+	title = russia.41.t
+	desc = russia.41.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = RUS_tatar_resistance_active
+			add_ideas = RUS_tatar_resistance_spirit_idea
+			RUS_internal_policy_bump_index_effect = yes
+		}
+	}
+
+	option = {
+		name = russia.41.a
+		add_stability = -0.03
+		hidden_effect = {
+			set_country_flag = RUS_tatar_crackdown
+			add_timed_idea = { idea = RUS_rosgvardia_spirit_idea days = 120 }
+			news_event = { id = news_events.63 hours = 10 }
+			country_event = { id = russia.42 days = 60 }
+		}
+		ai_chance = { factor = 65 }
+	}
+
+	option = {
+		name = russia.41.b
+		add_political_power = -20
+		hidden_effect = {
+			set_country_flag = RUS_tatar_concessions
+			add_timed_idea = { idea = RUS_crimea_development_spirit_idea days = 240 }
+			country_event = { id = russia.43 days = 120 }
+		}
+		ai_chance = { factor = 35 }
+	}
+}
+
+# Итог силового пути по Крыму
+country_event = {
+	id = russia.42
+	title = russia.42.t
+	desc = russia.42.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.42.a
+		add_stability = 0.04
+		add_political_power = 20
+		remove_ideas = RUS_tatar_resistance_spirit_idea
+		hidden_effect = {
+			clr_country_flag = RUS_tatar_resistance_active
+			set_country_flag = RUS_tatar_resistance_crushed
+			RUS_internal_policy_recalculate_effect = yes
+		}
+	}
+}
+
+# Итог мирного пути по Крыму
+country_event = {
+	id = russia.43
+	title = russia.43.t
+	desc = russia.43.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.43.a
+		add_stability = 0.05
+		add_political_power = 35
+		remove_ideas = RUS_tatar_resistance_spirit_idea
+		hidden_effect = {
+			clr_country_flag = RUS_tatar_resistance_active
+			set_country_flag = RUS_tatar_integrated
+			if = {
+				limit = { 621 = { is_owned_by = ROOT } }
+				621 = {
+					add_compliance = 25
+					add_state_modifier = {
+						modifier = {
+							local_building_slots = 2
+							local_industrial_capacity_factor = 0.10
+						}
+					}
+				}
+			}
+			RUS_internal_policy_recalculate_effect = yes
+			news_event = { id = news_events.64 hours = 12 }
+		}
+	}
+}
+
+# Суверенный интернет
+country_event = {
+	id = russia.44
+	title = russia.44.t
+	desc = russia.44.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = RUS_sovereign_internet_active
+			add_ideas = RUS_sovereign_internet_spirit_idea
+			RUS_internal_policy_bump_index_effect = yes
+		}
+	}
+
+	option = {
+		name = russia.44.a
+		add_stability = 0.05
+		hidden_effect = {
+			set_country_flag = RUS_sovereign_internet_hard
+			news_event = { id = news_events.65 hours = 8 }
+		}
+		ai_chance = { factor = 60 }
+	}
+
+	option = {
+		name = russia.44.b
+		add_stability = 0.02
+		add_political_power = 20
+		custom_effect_tooltip = RUS_soft_control_tt
+		hidden_effect = {
+			set_country_flag = RUS_sovereign_internet_soft
+		}
+		ai_chance = { factor = 40 }
+	}
+}
+
+# Обновление кабинета министров
+country_event = {
+	id = russia.45
+	title = russia.45.t
+	desc = russia.45.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			add_ideas = RUS_cabinet_renewal_spirit_idea
+			set_country_flag = RUS_cabinet_renewed
+			RUS_internal_policy_bump_index_effect = yes
+		}
+	}
+
+	option = {
+		name = russia.45.a
+		add_political_power = 50
+		hidden_effect = {
+			news_event = { id = news_events.66 hours = 6 }
+		}
+	}
+}
+
+# Поправки в Конституцию
+country_event = {
+	id = russia.46
+	title = russia.46.t
+	desc = russia.46.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.46.a
+		add_stability = 0.05
+		hidden_effect = {
+			add_ideas = RUS_constitutional_amendments_spirit_idea
+			set_country_flag = RUS_constitution_amended
+			RUS_internal_policy_bump_index_effect = yes
+			news_event = { id = news_events.67 hours = 6 }
+		}
+		ai_chance = { factor = 70 }
+	}
+
+	option = {
+		name = russia.46.b
+		add_political_power = 30
+		add_stability = 0.02
+		hidden_effect = {
+			set_country_flag = RUS_constitution_postponed
+			add_timed_idea = { idea = RUS_vertical_of_power_idea days = 180 }
+		}
+		ai_chance = { factor = 30 }
+	}
+}
+
+# Крымская интеграция
+country_event = {
+	id = russia.47
+	title = russia.47.t
+	desc = russia.47.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.47.a
+		add_political_power = 40
+		hidden_effect = {
+			set_country_flag = RUS_crimea_integrated
+			if = {
+				limit = { 621 = { is_owned_by = ROOT } }
+				621 = {
+					add_state_modifier = {
+						modifier = {
+							local_building_slots = 3
+							local_resources_oil = 6
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 637 = { is_owned_by = ROOT } }
+				637 = {
+					add_state_modifier = {
+						modifier = {
+							local_building_slots = 2
+							local_industrial_capacity_factor = 0.15
+						}
+					}
+				}
+			}
+			RUS_internal_policy_bump_index_effect = yes
+			news_event = { id = news_events.68 hours = 10 }
+		}
+	}
+}
+
+# Национальные проекты
+country_event = {
+	id = russia.48
+	title = russia.48.t
+	desc = russia.48.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			add_ideas = RUS_national_projects_spirit_idea
+			set_country_flag = RUS_national_projects_started
+			RUS_internal_policy_bump_index_effect = yes
+		}
+	}
+
+	option = {
+		name = russia.48.a
+		add_political_power = 35
+		custom_effect_tooltip = RUS_national_projects_tt
+		hidden_effect = {
+			news_event = { id = news_events.69 hours = 12 }
+		}
+	}
+}
+
+# Этатизм и национализация элит
+country_event = {
+	id = russia.49
+	title = russia.49.t
+	desc = russia.49.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.49.a
+		add_political_power = 50
+		hidden_effect = {
+			add_ideas = RUS_etatism_spirit_idea
+			set_country_flag = RUS_elites_nationalized
+			add_timed_idea = { idea = RUS_corruption_and_oligarchy_idea days = 300 }
+			RUS_internal_policy_bump_index_effect = yes
+			news_event = { id = news_events.70 hours = 12 }
+		}
+		ai_chance = { factor = 65 }
+	}
+
+	option = {
+		name = russia.49.b
+		add_political_power = 15
+		add_stability = 0.03
+		hidden_effect = {
+			set_country_flag = RUS_elites_deal
+			add_timed_idea = { idea = RUS_vertical_of_power_idea days = 240 }
+		}
+		ai_chance = { factor = 35 }
+	}
+}
