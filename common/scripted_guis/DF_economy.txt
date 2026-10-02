@@ -390,4 +390,21 @@ scripted_gui = {
 		}
 	}
 
+	state_gdp = {
+		context_type = selected_state_context
+		window_name = "state_gdp"
+
+		parent_window_token = selected_state_view
+
+
+		triggers = {
+			
+		}
+
+		effects = {
+		
+		}
+	}
+
+
 }

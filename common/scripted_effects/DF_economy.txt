@@ -1489,3 +1489,127 @@ DF_business_activity_calc = {
 		value = 0
 	}
 }
+
+DF_state_economy_calc = {
+    set_variable = {
+        var = state_gdp
+        value = 0
+    }
+  
+    set_variable = {
+        var = mil_factories_gdp
+        value = building_level@arms_factory 
+    }
+    multiply_variable = {
+        var = mil_factories_gdp
+        value = 0.3
+    }
+    add_to_variable = {
+        var = state_gdp
+        value = mil_factories_gdp
+    }
+
+    set_variable = {
+        var = doc_factories_gdp
+        value = building_level@dockyard
+    }
+    multiply_variable = {
+        var = doc_factories_gdp
+        value = 0.2
+    }
+    add_to_variable = {
+        var = state_gdp
+        value = doc_factories_gdp
+    }
+
+    set_variable = {
+        var = civ_factories_gdp
+        value = building_level@industrial_complex
+    }
+    multiply_variable = {
+        var = civ_factories_gdp
+        value = 0.3
+    }
+    add_to_variable = {
+        var = state_gdp
+        value = civ_factories_gdp
+    }
+
+    set_variable = {
+        var = offices_gdp
+        value = building_level@offices_building
+    }
+    multiply_variable = {
+        var = offices_gdp
+        value = 0.6
+    }
+    add_to_variable = {
+        var = state_gdp
+        value = offices_gdp
+    }
+    set_variable = {
+        var = farm_gdp
+        value = building_level@agro_industrial_complex
+    }
+    multiply_variable = {
+        var = farm_gdp
+        value = 0.05
+    }
+    add_to_variable = {
+        var = state_gdp
+        value = farm_gdp
+    }	
+    # Base gdp
+    if = {
+		limit = {
+			state_population_k > 20
+		}
+        add_to_variable = {
+            var = state_gdp
+            value = 0.03
+        }
+		multiply_variable = {
+		    var = state_gdp
+		    value = building_level@infrastructure
+	    }
+	}
+    if = {
+		limit = {
+			state_population_k < 20
+		}
+        add_to_variable = {
+            var = state_gdp
+            value = 0.005
+        }
+	}	
+	if = {
+		limit = {
+			state_population_k < 1
+		}
+        set_variable = {
+			var = state_gdp
+			value = 0.00005
+		}		
+	}
+
+    divide_variable = {
+		var = state_gdp
+		value = 2
+	}
+
+	######################
+	### GDP Per Capita ###
+	######################
+	set_variable = {
+		var = state_gdp_per_population
+		value = state_gdp
+	}
+	divide_variable = {
+		var = state_gdp_per_population
+		value = state_population_k
+	}
+	multiply_variable = {
+		var = state_gdp_per_population
+		value = 1000000
+	}
+}

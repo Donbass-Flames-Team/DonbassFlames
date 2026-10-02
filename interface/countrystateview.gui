@@ -1,5 +1,30 @@
 guiTypes = {
 
+
+	containerWindowType = {
+		name = "state_gdp"
+		position = { x = 255 y = 0 }
+		iconType ={
+			name ="gdp_icon"
+			spriteType = "GFX_population_icon"
+			position = { x = -240 y = 57 } #df
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		instantTextboxType = {
+			name = "state_gdp"
+			position = { x = -210 y = 57 } #df
+			textureFile = ""
+			text = "state_gdp"
+			font = "hoi_24header"
+			maxWidth = 80
+			maxHeight = 30
+			format = center	
+		}
+	}
+
+	
 	containerWindowType = {
 		name = "claim_entry"
 		
@@ -227,6 +252,8 @@ guiTypes = {
 				maxHeight = 30
 				format = center	
 			}
+
+
 			
 			containerWindowType = {
 				name = "resistance_container"

@@ -89,3 +89,25 @@ defined_text = {
 	}	
 
 }
+
+
+defined_text = {
+	name = taxation_type
+
+
+	text = {
+		trigger = {
+			has_country_flag = proportional_taxation
+		}
+		localization_key = "proportional_taxation_text"
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = progressive_taxation
+		}
+		localization_key = "progressive_taxation_text"
+	}
+
+
+}

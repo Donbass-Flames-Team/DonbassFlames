@@ -512,6 +512,13 @@ guiTypes = {
 			#tooltip = cental_bank_tt
 			#pdx_tooltip_delayed = cental_bank_tt2
 		}
+
+		iconType = {
+			name = "taxation_type"
+			spriteType = "GFX_DF_question_button"
+			position = { x = 730 y = 72 }
+			pdx_tooltip = "taxation_type"
+		}
         ##########################################################
 		buttonType = {
 			name = "increase_corporate_tax"

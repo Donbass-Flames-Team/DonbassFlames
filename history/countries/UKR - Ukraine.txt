@@ -53,6 +53,9 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	set_variable = { birth_rate = 1.52 }
 	set_variable = { population_fatigue = 0 }
 
+	set_country_flag = progressive_taxation
+
+	DF_state_economy_calc = yes
 
 
 	set_variable = { global.price_per_barrel = 110 }

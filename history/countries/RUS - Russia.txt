@@ -26,6 +26,9 @@ set_variable = { level_of_human_development = 35 }
 set_variable = { level_of_infrastructure_development = 35 }
 set_variable = { level_of_public_administration = 45 }
 
+
+set_country_flag = proportional_taxation
+
 set_country_flag = open_start_gui
 add_to_variable = { JAM_ammo_stockpile = 1000 }
 set_research_slots = 4
