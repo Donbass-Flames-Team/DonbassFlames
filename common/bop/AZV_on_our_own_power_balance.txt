@@ -1,0 +1,102 @@
+AZV_on_our_own_power_balance = {
+    initial_value = 0.0
+    left_side = AZV_on_our_own_power_balance_independent_comand
+    right_side = AZV_on_our_own_power_balance_integrated_comand
+
+    range = {
+        id = AZV_on_our_own_power_balance_neutral
+        min = 0.0
+        max = -0.15
+        modifier = {
+        }
+    }
+
+    side = {
+        id = AZV_on_our_own_power_balance_independent_comand
+        icon = "GFX_AZV_on_our_own_power_balance_independent_comand"
+
+        range = {
+            id = AZV_on_our_own_power_balance_independent_comand_1
+            min = 0.0
+            max = 0.25
+            modifier = {
+                political_power_factor = 0.25
+                command_power_factor = 0.15
+                amry_xp_gain_factor = -0.05
+            }
+        }
+
+        range = {
+            id = AZV_on_our_own_power_balance_independent_comand_2
+            min = 0.26
+            max = 0.5
+            modifier = {
+                political_power_factor = 0.35
+                command_power_factor = 0.2
+                army_xp_gain_factor = -0.05
+            }
+        }
+
+        range = {
+            id = AZV_on_our_own_power_balance_independent_comand_3
+            min = 0.51
+            max = 0.75
+            modifier = {
+                political_power_factor = 0.5
+                command_power_factor = 0.25
+                army_xp_gain_factor = -0.1
+            }
+        }
+
+        range = {
+            id = AZV_on_our_own_power_balance_independent_comand_4
+            min = 0.76
+            max = 1.0
+            modifier = {
+                political_power_factor = 0.65
+                command_power_factor = 0.3
+                army_xp_gain_factor = -0.1
+            }
+        }
+
+    }
+
+    side = {
+        id = AZV_on_our_own_power_balance_integrated_comand
+        icon = "GFX_AZV_on_our_own_power_balance_integrated_comand"
+
+        range = {
+            id = AZV_on_our_own_power_balance_integrated_comand
+            min = -0.15
+            max = -0.4
+            modifier = {
+                political_power_factor = -0.15
+                comand_power_factor = -0.05
+                army_gain_xp = 0.05
+            }
+        }
+
+        range = {
+            id = AZV_on_our_own_power_balance_integrated_comand_2
+            min = -0.4
+            max = -0.65
+            modifier = {
+                political_power_factor = -0.25
+                comand_power_factor = -0.05
+                army_gain_xp = 0.05
+            }
+        }
+
+        range = {
+            id = AZV_on_our_own_power_balance_integrated_comand_3
+            min = -0.65
+            max = -1.0
+            modifier = {
+                political_power_factor = -0.5
+                comand_power_factor = -0.1
+                army_gain_xp = 0.15
+            }
+        }
+
+    }
+}

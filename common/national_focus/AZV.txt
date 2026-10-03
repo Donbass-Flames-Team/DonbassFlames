@@ -123,6 +123,14 @@ focus_tree = {
 		completion_reward = {
 			add_command_power = 100
 			custom_effect_tooltip = AZV_on_our_own_tt
+            hidden_effect = {
+    			set_power_balance = {
+                    id = AZV_on_our_own_power_balance
+                    left_side = AZV_on_our_own_power_balance_independent_comand
+                    right_side = AZV_on_our_own_power_balance_integrated_comand
+                    set_value = 0.0
+				}
+            }
 		}
 	}
 	focus = {
