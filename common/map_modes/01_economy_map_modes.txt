@@ -1,0 +1,138 @@
+scripted_map_modes = {
+	gdp_per_population_map_mode = {
+		top = {
+			type = none
+		}
+		bottom = {
+			type = state
+			color = {
+				set_temp_variable = { gdp_per_capita_var_temp = FROM.state_gdp_per_population }
+				if = { limit = { check_variable = { gdp_per_capita_var_temp < 500 } }
+					set_temp_variable = { r_clc = 1.000 }
+					set_temp_variable = { g_clc = 0.530 }
+					set_temp_variable = { b_clc = 0.140 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 1000 } }
+					set_temp_variable = { r_clc = 1.000 }
+					set_temp_variable = { g_clc = 0.600 }
+					set_temp_variable = { b_clc = 0.100 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 1500 } }
+					set_temp_variable = { r_clc = 1.000 }
+					set_temp_variable = { g_clc = 0.670 }
+					set_temp_variable = { b_clc = 0.050 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 2000 } }
+					set_temp_variable = { r_clc = 1.000 }
+					set_temp_variable = { g_clc = 0.730 }
+					set_temp_variable = { b_clc = 0.000 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 2500 } }
+					set_temp_variable = { r_clc = 0.980 }
+					set_temp_variable = { g_clc = 0.780 }
+					set_temp_variable = { b_clc = 0.000 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 3000 } }
+					set_temp_variable = { r_clc = 0.940 }
+					set_temp_variable = { g_clc = 0.820 }
+					set_temp_variable = { b_clc = 0.000 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 3500 } }
+					set_temp_variable = { r_clc = 0.880 }
+					set_temp_variable = { g_clc = 0.850 }
+					set_temp_variable = { b_clc = 0.000 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 4000 } }
+					set_temp_variable = { r_clc = 0.790 }
+					set_temp_variable = { g_clc = 0.870 }
+					set_temp_variable = { b_clc = 0.010 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 4500 } }
+					set_temp_variable = { r_clc = 0.680 }
+					set_temp_variable = { g_clc = 0.880 }
+					set_temp_variable = { b_clc = 0.030 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 5000 } }
+					set_temp_variable = { r_clc = 0.560 }
+					set_temp_variable = { g_clc = 0.880 }
+					set_temp_variable = { b_clc = 0.080 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 5500 } }
+					set_temp_variable = { r_clc = 0.420 }
+					set_temp_variable = { g_clc = 0.870 }
+					set_temp_variable = { b_clc = 0.150 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 6000 } }
+					set_temp_variable = { r_clc = 0.280 }
+					set_temp_variable = { g_clc = 0.850 }
+					set_temp_variable = { b_clc = 0.230 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 6500 } }
+					set_temp_variable = { r_clc = 0.150 }
+					set_temp_variable = { g_clc = 0.820 }
+					set_temp_variable = { b_clc = 0.350 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 7000 } }
+					set_temp_variable = { r_clc = 0.150 }
+					set_temp_variable = { g_clc = 0.850 }
+					set_temp_variable = { b_clc = 0.280 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 7500 } }
+					set_temp_variable = { r_clc = 0.050 }
+					set_temp_variable = { g_clc = 0.820 }
+					set_temp_variable = { b_clc = 0.400 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 8000 } }
+					set_temp_variable = { r_clc = 0.000 }
+					set_temp_variable = { g_clc = 0.780 }
+					set_temp_variable = { b_clc = 0.550 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 8500 } }
+					set_temp_variable = { r_clc = 0.000 }
+					set_temp_variable = { g_clc = 0.720 }
+					set_temp_variable = { b_clc = 0.700 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 9000 } }
+					set_temp_variable = { r_clc = 0.000 }
+					set_temp_variable = { g_clc = 0.620 }
+					set_temp_variable = { b_clc = 0.800 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 9500 } }
+					set_temp_variable = { r_clc = 0.050 }
+					set_temp_variable = { g_clc = 0.480 }
+					set_temp_variable = { b_clc = 0.850 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 13000 } }
+					set_temp_variable = { r_clc = 0.020 }
+					set_temp_variable = { g_clc = 0.320 }
+					set_temp_variable = { b_clc = 0.750 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 16500 } }
+					set_temp_variable = { r_clc = 0.040 }
+					set_temp_variable = { g_clc = 0.180 }
+					set_temp_variable = { b_clc = 0.600 }
+				}
+				else_if = { limit = { check_variable = { gdp_per_capita_var_temp < 18000 } }
+					set_temp_variable = { r_clc = 0.060 }
+					set_temp_variable = { g_clc = 0.080 }
+					set_temp_variable = { b_clc = 0.450 }
+				}
+				else = {
+					set_temp_variable = { r_clc = 0.080 }
+					set_temp_variable = { g_clc = 0.020 }
+					set_temp_variable = { b_clc = 0.300 }
+				}
+
+				set_temp_variable = { red = r_clc }
+				set_temp_variable = { green = g_clc }
+				set_temp_variable = { blue = b_clc }
+				set_temp_variable = { alpha = 1.00 }
+			}
+		}
+
+		far_text = country
+		near_text = state
+
+		update_daily = no
+	}
+}
