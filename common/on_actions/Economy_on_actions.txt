@@ -67,6 +67,19 @@ on_actions = {
 					value = 100					
 				}
 			}
+			# Debt
+            set_variable = {
+				var = debt
+				value = 0
+			}
+			add_to_variable = {
+				var = debt 
+				value = domestic_debt
+			}
+			add_to_variable = {
+				var = debt 
+				value = external_debt
+			}			
 		}
 		# Corruption level update
 		effect = {

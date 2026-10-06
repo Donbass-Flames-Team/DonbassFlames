@@ -897,6 +897,7 @@ UKR_decisions_of_the_transitional_government = {
 		cost = 5
 		complete_effect = {
 			country_event = ukraine.105
+			set_country_flag = Berkut_disbanded
 		}
 		ai_will_do = {
 			factor = 135

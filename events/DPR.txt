@@ -1054,3 +1054,20 @@ country_event = {
 		add_stability = -0.02
 	}
 }
+
+# Часть беркута переходит на нашу сторону
+country_event = {
+	id = DPR.46
+	title = DPR.46.t
+	desc = DPR.46.d
+	picture = GFX_Report_event_Clashes_in_Donetsk_on_Apri_28_2014
+
+	is_triggered_only = yes
+
+	option = {
+		name = DPR.46.a
+		hidden_effect = {
+			load_oob = DPR_berkut
+		}
+	}
+}

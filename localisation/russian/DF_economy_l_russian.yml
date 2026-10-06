@@ -18,6 +18,7 @@
  education_expense: "Образование: §R[?education_expense]§!"
  policing_expense: "Безопасность: §R[?policing_expense]§!"
  army_expense: "Вооруженные силы: §R[?army_expense_show]§!"
+ debt_repayment: "Долг: §R[?debt_repayment]§!"
 
  gdp_value: "ВВП:§G[?gdp]§!млрд."
  gdp_per_population_value: "ВВП на душу населения:§G[?gdp_per_population]§!$"
@@ -53,6 +54,8 @@
  sales_taxes: "НДС:  §Y[?sale_tax]§!"
  resources_income: "Экспорт: §Y[?resources_income]§!"
  other_income: "Остальное: §Y[?other_income]§!"
+ debt_repayment_tt: "Содержание долга \nВнешний долг:  §R[?payment_for_external_debt]§! \nРазмер содержания внешнего долга зависит от кредитного рейтинга \n\nВнутренний долг:  §R[?payment_for_domestic_debt]§! \nРазмер содержания внутреннего долга зависит от размера ключевой ставки центрального банка"
+ 
 
  Taxes: "Налогооблажение"
  corporate_tax_precentage: "Копроративный налог"

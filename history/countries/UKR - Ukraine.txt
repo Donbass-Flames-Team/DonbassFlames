@@ -16,8 +16,11 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 
 	# Economic values
 	set_variable = { cash = 1 }
-	set_variable = { debt = 257 }
-	set_variable = { state_reserves = 18.8 }
+	set_variable = { domestic_debt = 33.68 }
+	set_variable = { external_debt = 35.06 }
+
+	set_variable = { state_reserves = 17.18 }
+	set_variable = { gold_reserves = 1.62 }
 	set_variable = { percentage_shadow_economy = 35 }
 	set_variable = { income_tax_rate = 17 }
 	set_variable = { corporate_tax_rate = 18 }

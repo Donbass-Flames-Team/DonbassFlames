@@ -352,28 +352,32 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 			text = "recources_expense"
+		}	
+		
+		instantTextBoxType = {
+			name = "debt_repayment"
+			position = { x = 320 y = 320 }
+			font = hoi_24header
+			borderSize = { x = 0 y = 0}
+			maxWidth = 209
+			maxHeight = 32
+			fixedsize = yes
+			format = left
+			Orientation = "UPPER_LEFT"
+			text = "debt_repayment"
+			tooltip = debt_repayment_tt
 		}		
 
-		instantTextboxType = {
-			name = "barrel_of_oil_title"
-			position = { x = 320 y = 332 }
-			font = hoi_24header
-			borderSize = {x = 0 y = 0}
-			format = left
-			text = "barrel_of_oil_title"
-		}
+		#instantTextboxType = {
+		#	name = "barrel_of_oil_title"
+		#	position = { x = 320 y = 352 }
+		#	font = hoi_24header
+		#	borderSize = {x = 0 y = 0}
+		#	format = left
+		#	text = "barrel_of_oil_title"
+		#}
 
-		iconType = {
-			name = "economy_divider"
-			spriteType = "GFX_divider"
-			position = { x = 15 y = 320 }
-		}
 
-		iconType = {
-			name = "economy_divider_2"
-			spriteType = "GFX_divider"
-			position = { x = 80 y = 320 }
-		}
 
 		instantTextBoxType = {
 			name = "gdp_value"

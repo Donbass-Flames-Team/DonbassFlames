@@ -121,6 +121,15 @@ country_event = {
 					days = 34
 				}
 				load_oob = DPR_Uprising_Militia
+                if = {
+					limit = { NOT = { has_country_flag = Berkut_disbanded}}
+				}
+				UKR = {
+				    country_event = {
+					    id = ukraine.184
+				   	    hours = 4
+				    }
+			    }
 			}
 			if = {
 				limit = {
@@ -6672,11 +6681,36 @@ country_event = {
 
     option = {
         name = ukraine.183.a
-        add_stability = 0.01
+        add_stability = -0.05
 		set_country_flag = Russo_Ukranian_War
 		mark_focus_tree_layout_dirty = yes
     }
+}
 
+# Часть беркута переходит на сторону днр
+country_event = {
+    id = ukraine.184
+    title = ukraine.184.t
+    desc = ukraine.184.d
+    picture = GFX_oleg_lyashko_v_lifte_picture
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			DPR = {
+				country_event = {
+					id = DPR.46
+					hours = 6
+				}
+			}
+		}
+	}
+
+    option = {
+        name = ukraine.184.a
+        add_political_power = -25
+    }
 }
 
 

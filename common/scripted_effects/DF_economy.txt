@@ -932,6 +932,73 @@ DF_economy_setup = {
 	}
 
 	########################################
+	########### payment for debt ###########
+	########################################
+
+	set_variable = {
+		var = payment_for_domestic_debt
+		value = 0
+	}
+	set_variable = {
+		var = payment_for_external_debt
+		value = 0
+	}	
+	set_variable = {
+		var = debt_repayment
+		value = 0
+	}	
+
+    #External debt
+	set_variable = {
+		var = payment_for_external_debt
+		value = external_debt
+	}
+	multiply_variable = {
+		var = payment_for_external_debt
+		value = 0.05
+	}
+	divide_variable = {
+		var = payment_for_external_debt
+		value = 12
+	}
+	add_to_variable = {
+		var = debt_repayment
+		value = payment_for_external_debt
+	}
+
+    #Dometic debt
+	set_variable = {
+		var = payment_for_domestic_debt
+		value = domestic_debt
+	}
+	set_variable = {
+		var = key_rate_in_percentage
+		value = key_rate
+	}
+	divide_variable = {
+		var = key_rate_in_percentage
+		value = 100
+	}
+	multiply_variable = {
+		var = payment_for_domestic_debt
+		value = key_rate_in_percentage
+	}
+	divide_variable = {
+		var = payment_for_domestic_debt
+		value = 12
+	}
+	add_to_variable = {
+		var = debt_repayment
+		value = payment_for_domestic_debt
+	}
+
+	add_to_variable = {
+		var = expense
+		value = debt_repayment
+	}
+	
+
+	########################################
 	########## imported resources ##########
 	########################################
 	set_variable = {
