@@ -12,21 +12,20 @@ division_template = {
 		engineer = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
 		sniper_company = { x = 0 y = 2 }
-		signal_company = { x = 0 y = 3}
+		mortar = { x = 0 y = 3}
 		atgm_company = { x = 1 y = 0 }
 	}
 
 	is_locked = yes
 }
 
-#units = {
-#	division= {
-#		name = "1-y batal'on Prizrak Battalion"
-#		location = 15935
-#		division_template = "Battalyon Luhanskogo Opolcheniya"
-#		start_experience_factor = 0.2
-#		start_equipment_factor = 0.4
-#		start_manpower_factor = 1
-#	}
-
-#}
+units = {
+	division= {
+		name = "Prizrak Battalion"
+		location = 11062
+		division_template = "Prizrak Battalion"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.8
+	}
+}

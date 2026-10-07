@@ -20,6 +20,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			load_oob = "LPR_Leshy_battalion"
 			add_war_support = 0.05
 			add_stability = -0.10
 			add_political_power = 35
@@ -103,9 +104,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			load_oob = "LPR_Batman_battalion"
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_distribute_weapons"
 			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
+				type = infantry_equipment_2
 				amount = 600
 			}
 			add_equipment_to_stockpile = {
@@ -114,11 +116,11 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = uniform_equipment_1 
-				amount = 1200
+				amount = 1250
 			}
 			add_equipment_to_stockpile = {
-				type = grenade_launcher_equipment_1
-				amount = 50
+				type = grenade_launcher_equipment_0
+				amount = 75
 			}
 		}
 
@@ -138,9 +140,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
-			hidden_effect = {
-				load_oob = LPR_millitia
-			}
 			add_timed_idea = {
 				idea = LPR_set_checkpoints
 				days = 150
@@ -448,6 +447,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			load_oob = "LPR_Zara"
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_Introduction_of_a_state_emergency"
 			add_ideas = LPR_introduction_of_a_state_of_emergency
 			add_political_power = 20
@@ -458,8 +458,6 @@ focus_tree = {
 				idea = LPR_mobilization_shock
 				days = 40
 			}
-			add_political_power = 15
-			load_oob = "LPR_Zara"
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
 				amount = 2500
@@ -510,6 +508,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			load_oob = "LPR_Ghost_battalion"
 			log = "[GetDateText]: [Root.GetName]: Focus LPR_Introduction_of_a_state_emergency"
 			add_ideas = LPR_introduction_of_a_state_of_emergency
 			set_country_flag = LPR_politics
@@ -523,8 +522,6 @@ focus_tree = {
 			base = 1
 		}
 	}
-
-
 
 	focus = {
 		id = LPR_seek_recognition
