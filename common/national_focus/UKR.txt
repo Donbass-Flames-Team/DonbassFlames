@@ -6862,7 +6862,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_cooperation_with_volunteers
-		icon = GFX_goal_no_focus_UKR
+		icon = GFX_focus_UKR_cooperation_with_volunteers
 		cost = 5
 		x = 2
 		y = 1
@@ -6878,8 +6878,8 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_operational_command_reform
-		icon = GFX_goal_no_focus_UKR
-		cost = 3
+		icon = GFX_focus_UKR_operational_command_reform
+		cost = 2.5
 		x = 0
 		y = 1
 		prerequisite = {
@@ -6981,7 +6981,7 @@ focus_tree = {
 		available = {}
 		completion_reward = {
 			add_to_variable = { UKR_AFU_initiative_factor = 0.025 }
-			custom_effect_tooltip = UKR_reform_of_dshv_tt
+			custom_effect_tooltip = UKR_deosovetization_of_army_tt
 		}
 	}
 	focus = {
@@ -7044,7 +7044,7 @@ focus_tree = {
 		x = 0
 		y = 5
 		prerequisite = {
-			focus = UKR_creation_of_a_reserve_corps
+			focus = UKR_reform_of_dshv
 		}
 		prerequisite = {
 			focus = UKR_strengthen_general_staff_planning
@@ -7091,6 +7091,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { UKR_AFU_army_org_factor = 0.035 }
 			add_to_variable = { UKR_AFU_initiative_factor = 0.015 }
+			set_country_flag = UKR_medical_and_support_forces
 		}
 	}
 	focus = {
@@ -7104,10 +7105,23 @@ focus_tree = {
 		}
 
 		relative_position_id = UKR_military_reforms_afu
-		available = {}
+		available = {
+			has_country_flag = {
+				flag = UKR_medical_and_support_forces
+				days > 125
+			}
+			custom_trigger_tooltip = {
+				tooltip = UKR_land_market_days_tt
+				has_country_flag = {
+					flag = UKR_medical_and_support_forces
+					days > 125
+				}
+			}
+		}
 		completion_reward = {
 			add_to_variable = { UKR_AFU_army_org_factor = 0.035 }
 			add_to_variable = { UKR_AFU_initiative_factor = 0.015 }
+			custom_effect_tooltip = UKR_nato_standard_army_tt
 		}
 	}
 	focus = {
@@ -7133,7 +7147,7 @@ focus_tree = {
 	focus = {
 		id = UKR_expand_the_general_staff
 		icon = GFX_goal_no_focus_UKR
-		cost = 1
+		cost = 4
 		x = 3
 		y = 3
 		prerequisite = {
@@ -7389,8 +7403,8 @@ focus_tree = {
 		relative_position_id = UKR_creation_of_sso
 		available = {}
 		completion_reward = {
-		add_to_variable = { UKR_AFU_special_forces_out_of_supply_factor = 0.05 }
-			custom_effect_tooltip = UKR_creation_of_sso_tt
+		    add_to_variable = { UKR_AFU_special_forces_out_of_supply_factor = 0.05 }
+			custom_effect_tooltip = UKR_expansion_of_sso_training_centers_tt
 		}
 	}
 	focus = {

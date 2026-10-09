@@ -327,6 +327,98 @@ characters = {
 			logistics_skill = 3
 		}
 	}
+	aleksandr_pavluk = {
+		name = aleksandr_pavluk
+		portraits = {
+			army = {
+				large = "GFX_portrait_Aleksandr_pavluk"
+			}
+		}
+		corps_commander = {
+			traits = {}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	oleg_apostol = {
+		name = oleg_apostol
+		portraits = {
+			army = {
+				large = "GFX_portrait_Oleg_Apostol"
+			}
+		}
+		corps_commander = {
+			traits = {}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}	
+	denis_prokopenko = {
+		name = denis_prokopenko
+		portraits = {
+			army = {
+				large = "GFX_portrait_Denis_prokopenko"
+			}
+		}
+		corps_commander = {
+			traits = {}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			visible = {
+				#has_country_flag = denis_prokopenko_general
+			}
+		}
+	}	
+	andriy_biletsky = {
+		name = andriy_biletsky
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Andrii_Biletskyi_2"
+			}
+		}
+		corps_commander = {
+			traits = {}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			visible = {
+				#has_country_flag = denis_prokopenko_general
+			}
+		}
+		country_leader = {
+			ideology = nationalism
+			traits = { }
+			expire = "2060.1.1"
+			id = -1
+		}
+	}
+	igor_obolonsky = {
+		name = igor_obolonsky
+		portraits = {
+			army = {
+				large = "GFX_portrait_Igor_obolonsky"
+			}
+		}
+		corps_commander = {
+			traits = {}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}		
 	oleg_mikats = {
 		name = oleg_mikats
 		portraits = {
