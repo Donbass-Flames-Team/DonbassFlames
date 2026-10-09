@@ -359,6 +359,22 @@ characters = {
 			logistics_skill = 3
 		}
 	}	
+	andrei_kovalchuk = {
+		name = andrei_kovalchuk
+		portraits = {
+			army = {
+				large = "GFX_portrait_Andrei_kovalchuk"
+			}
+		}
+		corps_commander = {
+			traits = {}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}		
 	denis_prokopenko = {
 		name = denis_prokopenko
 		portraits = {
@@ -374,7 +390,7 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 3
 			visible = {
-				#has_country_flag = denis_prokopenko_general
+				has_country_flag = denis_prokopenko_general
 			}
 		}
 	}	
@@ -393,7 +409,7 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 3
 			visible = {
-				#has_country_flag = denis_prokopenko_general
+				has_country_flag = andrii_biletsky_general
 			}
 		}
 		country_leader = {
@@ -417,6 +433,9 @@ characters = {
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 4
+			visible = {
+				has_country_flag = igor_obolonsky_general
+			}
 		}
 	}		
 	oleg_mikats = {
