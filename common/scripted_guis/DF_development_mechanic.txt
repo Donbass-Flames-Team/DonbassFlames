@@ -26,6 +26,12 @@ scripted_gui = {
 				}
 			}
 		}
+
+		properties = {
+			international_recognition = {
+                image = "[get_international_recognition]"
+            }
+		}
 	}
 
 	development_container_container = {

@@ -264,6 +264,12 @@ guiTypes = {
 			
 		}
 
+		iconType = {
+			name = "international_recognition"
+			position = { x = 195 y = 345 }
+			spriteType = "GFX_icon_full_international_recognition"
+		}
+
         instantTextBoxType = {
             name      = "prestige_value"
             position  = { x = 25 y = 456 }
@@ -968,6 +974,8 @@ guiTypes = {
 				format = "UPPER_LEFT"
 			}
 		}
+
+
 
 		iconType ={
 			name ="tutorial_glow"

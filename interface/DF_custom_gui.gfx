@@ -10,6 +10,23 @@ spriteTypes = {
 		textureFile = "gfx/interface/scripted_guis/plus_button_increase.dds"
 	}	
 
+	spriteType = {
+		name = "GFX_icon_full_international_recognition"
+		textureFile = "gfx/interface/scripted_guis/icon_full_international_recognition.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_partial_international_recognition"
+		textureFile = "gfx/interface/scripted_guis/icon_partial_international_recognition.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_no_international_recognition"
+		textureFile = "gfx/interface/scripted_guis/icon_no_international_recognition.dds"
+	}
+
+
+
 
 
 }

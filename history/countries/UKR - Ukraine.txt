@@ -13,6 +13,7 @@ add_to_variable = { JAM_ammo_stockpile = 10000 }
 	parliament_gui_initial = yes
 
 	activate_mission = UKR_yanukovich_overthrow
+	set_country_flag = fully_international_recognition
 
 	# Economic values
 	set_variable = { cash = 1 }
