@@ -1,15 +1,12 @@
-AZV_Postavki_oryjia = {   
+AZV_stable_supplies_of_weaponry_decision = {   
     AZV_zbir_na_Azov_mission = { 
         allowed = { 
             tag = AZV
         }
-
         icon = POL_looming_peasants_strike
-
         available = {
             hidden_trigger = { always = no }
         }
-
         activation = {
             has_completed_focus = AZV_stable_supplies_of_weaponry
             UKR = {
@@ -30,12 +27,9 @@ AZV_Postavki_oryjia = {
                 }
             }
         }
-
-
         days_mission_timeout = 30
         fire_only_once = yes 
         is_good = yes
-
         timeout_effect = {
             IF = {
                 limit = {
@@ -130,44 +124,26 @@ AZV_Postavki_oryjia = {
     }
 }       
 
-AZV_formuvania_batalioniv  = {
-    AZV_dobrobat_create = {
-        allowed = { 
-            tag = AZV
-        }
+AZV_formation_of_volunteer_detachments_decision = {
+   	AZV_formation_pizda = {
+		icon = GFX_decision_UKR_batalion_donbass
+		allowed = {
+			original_tag = AZV
+		}
+		visible = {
+			has_completed_focus = AZV_formation_of_volunteer_detachments
+		}
+		fire_only_once = yes
+		cost = 35
+		complete_effect = {
+			custom_effect_tooltip = AZV_formation_of_volunteer_detachments_tt
+			hidden_effect = {
+				load_oob = "AZV_dobrobat"
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
 
-        available = {
-            has_equipment = {
-                infantry_equipment > 549
-            }
-            has_equipment = {
-                support_equipment > 49
-            }
-            has_equipment = {
-                uniform_equipment > 549
-            }
-            has_equipment = {
-                bbm_equipment > 49
-            }
-            has_equipment = {
-                mortar_equipment > 49 
-            }
-            
-            has_manpower > 100
-            has_completed_focus = AZV_formation_of_volunteer_detachments
-        }
-
-        visible = {
-            has_completed_focus = AZV_formation_of_volunteer_detachments
-        }
-
-        fire_only_once = no
-
-        cost = 75
-
-        days_remove = 28
-        remove_effect = {
-            load_oob = AZV_dobrobat
-        }
-    }
 }
