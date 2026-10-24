@@ -3,12 +3,12 @@ equipments = {
 		year = 1960
 		is_archetype = yes
 		is_buildable = no
-
 		picture = archetype_light_tank_equipment
 		type = armor
 		group_by = archetype
 		interface_category = interface_category_armor
 		priority = 1500
+		active = yes
 
 		defense = 10
 		breakthrough = 14
@@ -16,25 +16,21 @@ equipments = {
 		hard_attack = 2
 		ap_attack = 7
 		maximum_speed = 12
-		build_cost_ic = 14
 		reliability = 0.85
-		hardness = 0.95
+		hardness = 0.50
 		armor_value = 30
 		supply_consumption = 0.05
-
+		build_cost_ic = 15.5
+		manpower = 3
 		resources = {
 			steel = 4
 			aluminium = 1
 			rubber = 1
 		}
-
-		manpower = 3
-		active = yes
 	}
 
 	airborne_combat_vehicle_0 = {
 		year = 1960
-
 		archetype = airborne_combat_vehicle
 		active = yes
 		priority = 5
@@ -43,15 +39,14 @@ equipments = {
 
 	airborne_combat_vehicle_1 = {
 		year = 1980
-
 		archetype = airborne_combat_vehicle
 		parent = airborne_combat_vehicle_0
 		priority = 10
 		visual_level = 1
 
 		maximum_speed = 12
-		reliability = 0.89
-		hardness = 0.95
+		reliability = 0.87
+		hardness = 0.52
 		armor_value = 35
 		supply_consumption = 0.05
 		defense = 15
@@ -59,30 +54,25 @@ equipments = {
 		soft_attack = 22
 		hard_attack = 2.2
 		ap_attack = 8.1
-
-
+		manpower = 3
+		build_cost_ic = 16.5
 		resources = {
 			steel = 4
 			aluminium = 1
 			rubber = 1
 		}
-
-		manpower = 3
-
-		build_cost_ic = 16.5
 	}
 
 	airborne_combat_vehicle_2 = {
 		year = 2000
-
 		archetype = airborne_combat_vehicle
 		parent = airborne_combat_vehicle_1
 		priority = 10
 		visual_level = 1
 
-		maximum_speed = 12
-		reliability = 0.92
-		hardness = 0.95
+		maximum_speed = 14
+		reliability = 0.9
+		hardness = 0.55
 		armor_value = 40
 		supply_consumption = 0.05
 		defense = 25
@@ -90,30 +80,25 @@ equipments = {
 		soft_attack = 23
 		hard_attack = 2.4
 		ap_attack = 8.4
-
-
+		manpower = 3
+		build_cost_ic = 18.5
 		resources = {
 			steel = 4
 			aluminium = 1
 			rubber = 1
 		}
-
-		manpower = 3
-
-		build_cost_ic = 18.5
 	}
 
 	airborne_combat_vehicle_3 = {
 		year = 2020
-
 		archetype = airborne_combat_vehicle
 		parent = airborne_combat_vehicle_2
 		priority = 10
 		visual_level = 1
 
-		maximum_speed = 12
-		reliability = 0.94
-		hardness = 0.95
+		maximum_speed = 14
+		reliability = 0.92
+		hardness = 0.55
 		armor_value = 45
 		supply_consumption = 0.05
 		defense = 30
@@ -121,15 +106,12 @@ equipments = {
 		soft_attack = 25
 		hard_attack = 2.6
 		ap_attack = 8.7
-
+		manpower = 3
+		build_cost_ic = 20.5
 		resources = {
 			steel = 4
 			aluminium = 1
 			rubber = 1
 		}
-
-		manpower = 3
-
-		build_cost_ic = 20.5
 	}
 }

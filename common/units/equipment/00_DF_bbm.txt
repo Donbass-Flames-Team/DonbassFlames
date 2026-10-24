@@ -1,19 +1,15 @@
 equipments = {
-
 	bbm = {
 		year = 1950
-
 		is_archetype = yes
 		picture = archetype_bbm_chassis
 		is_buildable = no
 		type = {
-			#infantry #Removing inf type 
 			motorized
 		}
 		group_by = archetype
-		
 		interface_category = interface_category_land
-		
+
 		maximum_speed = 12
 		reliability = 0.8
 		hardness = 0.1
@@ -21,29 +17,26 @@ equipments = {
 		defense = 7.6
 		lend_lease_cost = 1
 		build_cost_ic = 6
+		fuel_consumption = 1.2
 		resources = {
 			steel = 1
 		}
-		
-		fuel_consumption = 1.2
 	}
 
 	bbm_0 = {
 		year = 1950
-
 		archetype = bbm
 		active = yes
 		priority = 5
-		visual_level = 0	
+		visual_level = 0
 	}
 
 	bbm_1 = {
 		year = 1980
-
 		archetype = bbm
 		parent = bbm_0
-		priority = 30	
-		
+		priority = 30
+
 		maximum_speed = 13
 		reliability = 0.8
 		hardness = 0.1
@@ -51,20 +44,18 @@ equipments = {
 		defense = 8
 		lend_lease_cost = 1
 		build_cost_ic = 6.2
+		fuel_consumption = 1.2
 		resources = {
 			steel = 1
 		}
-		
-		fuel_consumption = 1.2
 	}
 
 	bbm_2 = {
 		year = 1995
-
 		archetype = bbm
 		parent = bbm_1
-		priority = 30		
-		
+		priority = 30
+
 		maximum_speed = 14
 		reliability = 0.8
 		hardness = 0.1
@@ -72,20 +63,18 @@ equipments = {
 		defense = 8.2
 		lend_lease_cost = 1
 		build_cost_ic = 6.5
+		fuel_consumption = 1.2
 		resources = {
 			steel = 1
 		}
-		
-		fuel_consumption = 1.2
 	}
 
 	bbm_3 = {
 		year = 2010
-
 		archetype = bbm
 		parent = bbm_2
 		priority = 30
-		
+
 		maximum_speed = 14
 		reliability = 0.9
 		hardness = 0.15
@@ -93,20 +82,18 @@ equipments = {
 		defense = 8.6
 		lend_lease_cost = 1
 		build_cost_ic = 6.6
+		fuel_consumption = 1.2
 		resources = {
 			steel = 1
 		}
-		
-		fuel_consumption = 1.2
 	}
 
 	bbm_4 = {
 		year = 2015
-
 		archetype = bbm
 		parent = bbm_3
 		priority = 30	
-		
+
 		maximum_speed = 14
 		reliability = 0.9
 		hardness = 0.15
@@ -114,20 +101,18 @@ equipments = {
 		defense = 8.9
 		lend_lease_cost = 1
 		build_cost_ic = 6.8
+		fuel_consumption = 1.2
 		resources = {
 			steel = 1
 		}
-		
-		fuel_consumption = 1.2
 	}
 
 	bbm_5 = {
 		year = 2020
-
 		archetype = bbm
 		parent = bbm_4
-		priority = 30		
-		
+		priority = 30
+
 		maximum_speed = 14
 		reliability = 0.9
 		hardness = 0.15
@@ -135,11 +120,9 @@ equipments = {
 		defense = 9.1
 		lend_lease_cost = 1
 		build_cost_ic = 6.9
+		fuel_consumption = 1.2
 		resources = {
 			steel = 1
 		}
-		
-		fuel_consumption = 1.2
 	}
-
 }
